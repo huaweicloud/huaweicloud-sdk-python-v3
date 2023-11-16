@@ -1,3 +1,471 @@
+# 3.1.67 2023-11-16
+
+### HuaweiCloud SDK CDN
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowDomainFullConfig**
+    - changes of response param
+      - `+ configs.business_type`
+      - `+ configs.service_area`
+      - `+ configs.remark`
+      - `+ configs.flexible_origin`
+      - `+ configs.slice_etag_status`
+      - `+ configs.origin_receive_timeout`
+      - `+ configs.remote_auth`
+      - `+ configs.websocket`
+      - `+ configs.video_seek`
+      - `+ configs.request_limit_rules`
+      - `+ configs.ip_frequency_limit`
+      - `+ configs.hsts`
+      - `+ configs.quic`
+      - `+ configs.url_auth.sign_method`
+      - `+ configs.url_auth.match_type`
+      - `+ configs.url_auth.inherit_config`
+      - `+ configs.url_auth.key`
+      - `+ configs.url_auth.backup_key`
+      - `+ configs.url_auth.sign_arg`
+      - `+ configs.https.expire_time`
+      - `+ configs.https.certificate_type`
+      - `+ configs.https.ocsp_stapling_status`
+      - `+ configs.sources.weight`
+      - `+ configs.sources.obs_bucket_type`
+      - `+ configs.sources.bucket_access_key`
+      - `+ configs.sources.bucket_secret_key`
+      - `+ configs.sources.bucket_region`
+      - `+ configs.sources.bucket_name`
+      - `+ configs.compress.file_type`
+      - `+ configs.user_agent_filter.ua_list`
+  - **UpdateDomainFullConfig**
+    - changes of request param
+      - `+ configs.sources.weight`
+      - `+ configs.sources.obs_bucket_type`
+      - `+ configs.sources.bucket_access_key`
+      - `+ configs.sources.bucket_secret_key`
+      - `+ configs.sources.bucket_region`
+      - `+ configs.sources.bucket_name`
+      - `+ configs.compress.file_type`
+      - `+ configs.user_agent_filter.ua_list`
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _Features_
+  - Support the following APIs:
+    - `DownloadBuildLog`
+    - `DownloadTaskLog`
+    - `ShowFlowGraph`
+    - `ShowRecordDetail`
+    - `ShowOutputInfo`
+    - `StopJob`
+    - `CreateBuildJob`
+    - `UpdateBuildJob`
+    - `ListTemplates`
+    - `CreateTemplates`
+    - `DeleteTemplates`
+    - `ListNotice`
+    - `UpdateNotice`
+    - `DisableNotice`
+    - `ListJobConfig`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRecordInfo**
+    - changes of response param
+      - `+ result.duration`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _Features_
+  - Support the following APIs:
+    - `CreatePipelineTemplate`
+    - `ShowProjectOpenSourceStrategy`
+    - `ListProjectStrategy`
+    - `ListProjectOpenSourceStrategy`
+    - `ShowProjectStrategy`
+    - `ShowRule`
+    - `ListRule`
+    - `UpdateRule`
+    - `DeleteRule`
+    - `CreateRule`
+    - `CreateStrategy`
+    - `UpdateStrategy`
+    - `ShowStrategy`
+    - `ListStrategy`
+    - `DeleteStrategy`
+    - `SwitchStrategy`
+    - `CreateOpenSourceStrategy`
+    - `UpdateOpenSourceStrategy`
+    - `ShowOpenSourceStrategy`
+    - `ListOpenSourceStrategy`
+    - `DeleteOpenSourceStrategy`
+    - `SwitchOpenSourceStrategy`
+    - `CreatePipelineGroup`
+    - `UpdatePipelineGroup`
+    - `DeletePipelineGroup`
+    - `ShowPipelineGroupTree`
+    - `BatchMovePipelineToGroup`
+    - `PublishPlugin`
+    - `PublishPluginBind`
+    - `UploadPluginIcon`
+    - `UploadPublisherIcon`
+    - `DeletePluginDraft`
+    - `ListPublisher`
+    - `ListAvailablePublisher`
+    - `ListStagePlugins`
+    - `ListBasePlugins`
+    - `ListBasePluginsNewPost`
+    - `ListPlugins`
+    - `ShowPluginMetrics`
+    - `ShowPluginInputs`
+    - `ShowPluginOutputs`
+    - `ListPLuginVersion`
+    - `ShowPluginVersion`
+    - `ListPluginVersionNumber`
+    - `DeletePublisher`
+    - `ShowPublisher`
+    - `CreateBasicPlugin`
+    - `UpdateBasicPlugin`
+    - `DeleteBasicPlugin`
+    - `UploadBasicPlugin`
+    - `ShowBasicPlugin`
+    - `UpdatePipelineTemplate`
+    - `DeletePipelineTemplate`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListPipelines**
+    - changes of response param
+      - `+ pipelines.project_name`
+  - **CreatePipelineNew**
+    - changes of request param
+      - `+ variables`
+      - `+ schedules`
+      - `+ triggers`
+      - `+ manifest_version`
+      - `+ definition`
+      - `+ project_name`
+
+### HuaweiCloud SDK CSE
+
+- _Features_
+  - Support the following APIs:
+    - `ListGovernancePolicy`
+    - `CreateGovernancePolicy`
+    - `ListGovernancePolicyByPolicyId`
+    - `UpdateGovernancePolicy`
+    - `DeleteGovernancePolicy`
+    - `ListMicroserviceRouteRule`
+    - `CreateMicroserviceRouteRule`
+    - `DeleteMicroserviceRouteRule`
+    - `ListGovernancePolicys`
+    - `UpgradeEngineConfig`
+    - `ResizeEngine`
+    - `ListNacosNamespaces`
+    - `UpdateNacosNamespaces`
+    - `CreateNacosNamespaces`
+    - `DeleteNacosNamespaces`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK CSMS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListSecretTags**
+    - changes of response param
+      - `+ sys_tags.value`
+      - `- sys_tags.values`
+  - **ListNotificationRecords**
+    - changes of request param
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _Features_
+  - Support the API `UpdateFactoryJobName`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK DC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **UpdateVifPeer**
+    - changes of response param
+      - `+ vif_peer.receive_route_num`
+  - **CreateVifPeer**
+    - changes of response param
+      - `+ vif_peer.receive_route_num`
+  - **ShowVirtualInterface**
+    - changes of response param
+      - `+ virtual_interface.vif_peers.receive_route_num`
+  - **UpdateVirtualInterface**
+    - changes of response param
+      - `+ virtual_interface.vif_peers.receive_route_num`
+  - **ListVirtualInterfaces**
+    - changes of response param
+      - `+ virtual_interfaces.vif_peers.receive_route_num`
+  - **CreateVirtualInterface**
+    - changes of response param
+      - `+ virtual_interface.vif_peers.receive_route_num`
+
+### HuaweiCloud SDK DGC
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowScript**
+    - changes of response param
+      - `+ description`
+      - `+ approvers`
+      - `+ targetStatus`
+      - `+ type: enum value [RDSSQL,PRESTO,ClickHouseSQL,HetuEngineSQL,PYTHON,ImpalaSQL,SparkPython]`
+  - **UpdateScript**
+    - changes of request param
+      - `+ description`
+      - `+ approvers`
+      - `+ targetStatus`
+      - `+ type: enum value [RDSSQL,PRESTO,ClickHouseSQL,HetuEngineSQL,PYTHON,ImpalaSQL,SparkPython]`
+  - **CreateScript**
+    - changes of request param
+      - `+ description`
+      - `+ approvers`
+      - `+ targetStatus`
+      - `+ type: enum value [RDSSQL,PRESTO,ClickHouseSQL,HetuEngineSQL,PYTHON,ImpalaSQL,SparkPython]`
+  - **ListScripts**
+    - changes of response param
+      - `+ description`
+      - `+ approvers`
+      - `+ targetStatus`
+      - `+ scripts.description`
+      - `+ scripts.targetStatus`
+      - `+ scripts.approvers`
+      - `+ scripts.type: enum value [RDSSQL,PRESTO,ClickHouseSQL,HetuEngineSQL,PYTHON,ImpalaSQL,SparkPython]`
+
+### HuaweiCloud SDK DLI
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowSqlJobStatus**
+    - changes of response param
+      - `+ result_format`
+      - `+ result_path`
+
+### HuaweiCloud SDK DNS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreatePrivateZone**
+    - changes of request param
+      - `+ router.status`
+  - **AssociateRouter**
+    - changes of request param
+      - `+ router.status`
+  - **DisassociateRouter**
+    - changes of request param
+      - `+ router.status`
+  - **ShowPrivateZone**
+    - changes of response param
+      - `+ routers.status`
+
+### HuaweiCloud SDK EdgeSec
+
+- _Features_
+  - Support the following APIs:
+    - `ListCertificates`
+    - `CreateCertificate`
+    - `ShowCertificate`
+    - `UpdateCertificate`
+    - `DeleteCertificate`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK FunctionGraph
+
+- _Features_
+  - Support the following APIs:
+    - `ListFunctionTags`
+    - `ListBridgeFunctions`
+    - `ListBridgeVersions`
+    - `UpdateFunctionCollectState`
+    - `ListFunctionTemplate`
+    - `ShowFunctionTemplate`
+    - `ShowFuncReservedInstanceMetrics`
+    - `ShowFunctionMetrics`
+    - `EnableAsyncStatusLog`
+    - `ShowProjectAsyncStatusLogInfo`
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFunctions**
+    - changes of response param
+      - `+ functions.resource_id`
+  - **ShowFunctionConfig**
+    - changes of response param
+      - `+ func_id`
+      - `+ resource_id`
+  - **UpdateFunctionConfig**
+    - changes of response param
+      - `+ func_id`
+      - `+ resource_id`
+  - **ShowResInstanceInfo**
+    - changes of response param
+      - `+ resources.resource_detail.resource_id`
+
+### HuaweiCloud SDK GaussDB
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **CreateGaussMySqlInstance**
+    - changes of response param
+      - `* instance.volume.size: string -> int32`
+
+### HuaweiCloud SDK GSL
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListFlowBySimCards**
+    - changes of request param
+      - `+ sim_card_ids`
+
+### HuaweiCloud SDK IoTDA
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ShowRuleAction**
+    - changes of response param
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+  - **UpdateRuleAction**
+    - changes of request param
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+    - changes of response param
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+  - **CreateRuleAction**
+    - changes of request param
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+    - changes of response param
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+  - **ListRuleActions**
+    - changes of response param
+      - `+ actions.channel_detail.dms_kafka_forwarding.security_protocol`
+
+### HuaweiCloud SDK Kafka
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListInstanceConsumerGroups**
+    - changes of response param
+      - `* groups.createdAt: int32 -> int64`
+
+### HuaweiCloud SDK LTS
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ListTopnTrafficStatistics**
+    - changes of response param
+      - `+ results.cold_storage`
+
+### HuaweiCloud SDK MRS
+
+- _Features_
+  - Support the API `AddComponent`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK OCR
+
+- _Features_
+  - Support the API `RecognizePeruIdCard`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK RabbitMQ
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - Remove the API `ShowRabbitMqProductCores`
+
+### HuaweiCloud SDK RDS
+
+- _Features_
+  - Support the API `RevokePostgresqlDbPrivilege`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
+### HuaweiCloud SDK ServiceStage
+
+- _Features_
+  - None
+- _Bug Fix_
+  - None
+- _Change_
+  - **ChangeInstance**
+    - changes of request param
+      - `+ configuration.env`
+      - `+ configuration.storage`
+      - `+ configuration.strategy`
+      - `+ configuration.lifecycle`
+      - `+ configuration.scheduler`
+      - `+ configuration.probes`
+      - `* configuration: map<string, object> -> object<InstanceConfiguration>`
+
+### HuaweiCloud SDK Workspace
+
+- _Features_
+  - Support the APIs `BatchAddDesktopsTags`, `BatchDeleteDesktopsTags`
+- _Bug Fix_
+  - None
+- _Change_
+  - None
+
 # 3.1.66 2023-11-13
 
 ### HuaweiCloud SDK DCS

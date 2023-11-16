@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdktics'")
 
 
 class TicsAsyncClient(Client):
@@ -39,9 +44,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListAgentsRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListAgentsResponse`
         """
-        return self._list_agents_with_http_info(request)
+        http_info = self._list_agents_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_agents_with_http_info(self, request):
+    def list_agents_async_invoker(self, request):
+        http_info = self._list_agents_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_agents_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/agents",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAgentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -64,9 +81,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -75,20 +92,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agents',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAgentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_info_async(self, request):
         """查询审计日志
@@ -102,9 +115,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListAuditInfoRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListAuditInfoResponse`
         """
-        return self._list_audit_info_with_http_info(request)
+        http_info = self._list_audit_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_info_with_http_info(self, request):
+    def list_audit_info_async_invoker(self, request):
+        http_info = self._list_audit_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_audit_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/audit-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -125,9 +150,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -136,20 +161,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/audit-info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_fl_job_async(self, request):
         """查询联邦学习作业列表
@@ -163,9 +184,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListFlJobRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListFlJobResponse`
         """
-        return self._list_fl_job_with_http_info(request)
+        http_info = self._list_fl_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_fl_job_with_http_info(self, request):
+    def list_fl_job_async_invoker(self, request):
+        http_info = self._list_fl_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_fl_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/fl-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -186,9 +219,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -197,20 +230,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/fl-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_history_async(self, request):
         """查询作业的历史实例列表
@@ -224,9 +253,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListInstanceHistoryRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListInstanceHistoryResponse`
         """
-        return self._list_instance_history_with_http_info(request)
+        http_info = self._list_instance_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_history_with_http_info(self, request):
+    def list_instance_history_async_invoker(self, request):
+        http_info = self._list_instance_history_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_history_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/job-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -249,9 +290,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -260,20 +301,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/job-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_league_datasets_async(self, request):
         """查询联盟已注册数据集列表
@@ -287,9 +324,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListLeagueDatasetsRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListLeagueDatasetsResponse`
         """
-        return self._list_league_datasets_with_http_info(request)
+        http_info = self._list_league_datasets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_league_datasets_with_http_info(self, request):
+    def list_league_datasets_async_invoker(self, request):
+        http_info = self._list_league_datasets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_league_datasets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/datasets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLeagueDatasetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -314,9 +363,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -325,20 +374,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/datasets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLeagueDatasetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_leagues_async(self, request):
         """获取联盟列表
@@ -352,9 +397,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListLeaguesRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListLeaguesResponse`
         """
-        return self._list_leagues_with_http_info(request)
+        http_info = self._list_leagues_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_leagues_with_http_info(self, request):
+    def list_leagues_async_invoker(self, request):
+        http_info = self._list_leagues_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_leagues_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/league-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLeaguesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -375,9 +432,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -386,20 +443,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/league-info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLeaguesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nodes_async(self, request):
         """查询联盟节点列表
@@ -413,9 +466,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListNodesRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListNodesResponse`
         """
-        return self._list_nodes_with_http_info(request)
+        http_info = self._list_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nodes_with_http_info(self, request):
+    def list_nodes_async_invoker(self, request):
+        http_info = self._list_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -436,9 +501,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -447,20 +512,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notices_async(self, request):
         """查询通知管理列表
@@ -474,9 +535,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListNoticesRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListNoticesResponse`
         """
-        return self._list_notices_with_http_info(request)
+        http_info = self._list_notices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notices_with_http_info(self, request):
+    def list_notices_async_invoker(self, request):
+        http_info = self._list_notices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_notices_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/notices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNoticesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -495,9 +568,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -506,20 +579,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/notices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNoticesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_partners_async(self, request):
         """获取联盟组员信息
@@ -533,9 +602,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListPartnersRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListPartnersResponse`
         """
-        return self._list_partners_with_http_info(request)
+        http_info = self._list_partners_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_partners_with_http_info(self, request):
+    def list_partners_async_invoker(self, request):
+        http_info = self._list_partners_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_partners_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/partners",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartnersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -556,9 +637,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -567,20 +648,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/partners',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPartnersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sql_job_async(self, request):
         """查询联邦分析作业列表
@@ -594,9 +671,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ListSqlJobRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ListSqlJobResponse`
         """
-        return self._list_sql_job_with_http_info(request)
+        http_info = self._list_sql_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sql_job_with_http_info(self, request):
+    def list_sql_job_async_invoker(self, request):
+        http_info = self._list_sql_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sql_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/sql-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -617,9 +706,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -628,20 +717,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/sql-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSqlJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agent_detail_async(self, request):
         """获取计算节点详情信息
@@ -655,9 +740,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ShowAgentDetailRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ShowAgentDetailResponse`
         """
-        return self._show_agent_detail_with_http_info(request)
+        http_info = self._show_agent_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agent_detail_with_http_info(self, request):
+    def show_agent_detail_async_invoker(self, request):
+        http_info = self._show_agent_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_agent_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/agents/{agent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgentDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -674,9 +771,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -685,20 +782,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agents/{agent_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgentDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dataset_statistics_async(self, request):
         """数据集统计
@@ -712,9 +805,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ShowDatasetStatisticsRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ShowDatasetStatisticsResponse`
         """
-        return self._show_dataset_statistics_with_http_info(request)
+        http_info = self._show_dataset_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dataset_statistics_with_http_info(self, request):
+    def show_dataset_statistics_async_invoker(self, request):
+        http_info = self._show_dataset_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dataset_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/datasets-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatasetStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -735,9 +840,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -746,20 +851,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/datasets-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatasetStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_report_async(self, request):
         """查询实例执行报告
@@ -773,9 +874,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ShowInstanceReportRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ShowInstanceReportResponse`
         """
-        return self._show_instance_report_with_http_info(request)
+        http_info = self._show_instance_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_report_with_http_info(self, request):
+    def show_instance_report_async_invoker(self, request):
+        http_info = self._show_instance_report_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_report_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/job-instances/{instance_id}/report",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -794,9 +907,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -805,20 +918,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/job-instances/{instance_id}/report',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_instance_dag_async(self, request):
         """获取实例执行图
@@ -832,9 +941,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ShowJobInstanceDagRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ShowJobInstanceDagResponse`
         """
-        return self._show_job_instance_dag_with_http_info(request)
+        http_info = self._show_job_instance_dag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_instance_dag_with_http_info(self, request):
+    def show_job_instance_dag_async_invoker(self, request):
+        http_info = self._show_job_instance_dag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_instance_dag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/job-instances/{instance_id}/dag",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobInstanceDagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -855,9 +976,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -866,20 +987,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/job-instances/{instance_id}/dag',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobInstanceDagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_statistics_async(self, request):
         """作业统计
@@ -893,9 +1010,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ShowJobStatisticsRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ShowJobStatisticsResponse`
         """
-        return self._show_job_statistics_with_http_info(request)
+        http_info = self._show_job_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_statistics_with_http_info(self, request):
+    def show_job_statistics_async_invoker(self, request):
+        http_info = self._show_job_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/jobs-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -916,9 +1045,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -927,20 +1056,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/jobs-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_league_async(self, request):
         """获取联盟详细信息
@@ -954,9 +1079,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ShowLeagueRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ShowLeagueResponse`
         """
-        return self._show_league_with_http_info(request)
+        http_info = self._show_league_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_league_with_http_info(self, request):
+    def show_league_async_invoker(self, request):
+        http_info = self._show_league_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_league_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLeagueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -973,9 +1110,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -984,20 +1121,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLeagueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_overview_async(self, request):
         """查询租户下统计信息
@@ -1011,9 +1144,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ShowOverviewRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ShowOverviewResponse`
         """
-        return self._show_overview_with_http_info(request)
+        http_info = self._show_overview_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_overview_with_http_info(self, request):
+    def show_overview_async_invoker(self, request):
+        http_info = self._show_overview_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_overview_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/overview/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOverviewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1028,9 +1173,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1039,20 +1184,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/overview/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOverviewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_partner_statistics_async(self, request):
         """合作方统计
@@ -1066,9 +1207,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.ShowPartnerStatisticsRequest`
         :rtype: :class:`huaweicloudsdktics.v1.ShowPartnerStatisticsResponse`
         """
-        return self._show_partner_statistics_with_http_info(request)
+        http_info = self._show_partner_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_partner_statistics_with_http_info(self, request):
+    def show_partner_statistics_async_invoker(self, request):
+        http_info = self._show_partner_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_partner_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}/partners-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPartnerStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1089,9 +1242,9 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1100,20 +1253,16 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}/partners-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPartnerStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_league_async(self, request):
         """更新联盟信息
@@ -1127,9 +1276,21 @@ class TicsAsyncClient(Client):
         :type request: :class:`huaweicloudsdktics.v1.UpdateLeagueRequest`
         :rtype: :class:`huaweicloudsdktics.v1.UpdateLeagueResponse`
         """
-        return self._update_league_with_http_info(request)
+        http_info = self._update_league_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_league_with_http_info(self, request):
+    def update_league_async_invoker(self, request):
+        http_info = self._update_league_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_league_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/leagues/{league_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLeagueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1146,11 +1307,11 @@ class TicsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1159,20 +1320,26 @@ class TicsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/leagues/{league_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLeagueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1211,4 +1378,4 @@ class TicsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

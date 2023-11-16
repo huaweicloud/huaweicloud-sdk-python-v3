@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkedgesec'")
 
 
 class EdgeSecClient(Client):
@@ -38,9 +43,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ListEdgeSecSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ListEdgeSecSubscriptionResponse`
         """
-        return self._list_edge_sec_subscription_with_http_info(request)
+        http_info = self._list_edge_sec_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_sec_subscription_with_http_info(self, request):
+    def list_edge_sec_subscription_invoker(self, request):
+        http_info = self._list_edge_sec_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_sec_subscription_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgesec/subscription",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeSecSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,9 +75,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgesec/subscription',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeSecSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_d_do_s_domains(self, request):
         """添加ddos防护域名
@@ -94,9 +108,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.CreateEdgeDDoSDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.CreateEdgeDDoSDomainsResponse`
         """
-        return self._create_edge_d_do_s_domains_with_http_info(request)
+        http_info = self._create_edge_d_do_s_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_d_do_s_domains_with_http_info(self, request):
+    def create_edge_d_do_s_domains_invoker(self, request):
+        http_info = self._create_edge_d_do_s_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_edge_d_do_s_domains_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/edgeddos/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeDDoSDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgeddos/domains',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeDDoSDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_d_do_s_domains(self, request):
         """删除ddos防护域名
@@ -150,9 +173,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.DeleteEdgeDDoSDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.DeleteEdgeDDoSDomainsResponse`
         """
-        return self._delete_edge_d_do_s_domains_with_http_info(request)
+        http_info = self._delete_edge_d_do_s_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_d_do_s_domains_with_http_info(self, request):
+    def delete_edge_d_do_s_domains_invoker(self, request):
+        http_info = self._delete_edge_d_do_s_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_edge_d_do_s_domains_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/edgeddos/domains/{domainid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeDDoSDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -171,9 +207,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -182,20 +218,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgeddos/domains/{domainid}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeDDoSDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_d_do_s_domains(self, request):
         """查询ddos防护域名
@@ -208,9 +240,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ListEdgeDDoSDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ListEdgeDDoSDomainsResponse`
         """
-        return self._list_edge_d_do_s_domains_with_http_info(request)
+        http_info = self._list_edge_d_do_s_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_d_do_s_domains_with_http_info(self, request):
+    def list_edge_d_do_s_domains_invoker(self, request):
+        http_info = self._list_edge_d_do_s_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_d_do_s_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgeddos/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeDDoSDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,9 +278,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgeddos/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeDDoSDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_statistics_event(self, request):
         """查询租户受攻击事件数据
@@ -270,9 +311,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ShowStatisticsEventRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ShowStatisticsEventResponse`
         """
-        return self._show_statistics_event_with_http_info(request)
+        http_info = self._show_statistics_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_statistics_event_with_http_info(self, request):
+    def show_statistics_event_invoker(self, request):
+        http_info = self._show_statistics_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_statistics_event_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/statistics/event",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticsEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -295,9 +349,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -306,20 +360,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/statistics/event',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStatisticsEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_statistics_traffic(self, request):
         """查询租户流量数据
@@ -332,9 +382,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ShowStatisticsTrafficRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ShowStatisticsTrafficResponse`
         """
-        return self._show_statistics_traffic_with_http_info(request)
+        http_info = self._show_statistics_traffic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_statistics_traffic_with_http_info(self, request):
+    def show_statistics_traffic_invoker(self, request):
+        http_info = self._show_statistics_traffic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_statistics_traffic_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/statistics/traffic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticsTrafficResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -357,9 +420,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -368,20 +431,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/statistics/traffic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStatisticsTrafficResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_d_do_s_domains(self, request):
         """更新ddos防护域名
@@ -394,9 +453,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.UpdateEdgeDDoSDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.UpdateEdgeDDoSDomainsResponse`
         """
-        return self._update_edge_d_do_s_domains_with_http_info(request)
+        http_info = self._update_edge_d_do_s_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_d_do_s_domains_with_http_info(self, request):
+    def update_edge_d_do_s_domains_invoker(self, request):
+        http_info = self._update_edge_d_do_s_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_edge_d_do_s_domains_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/edgeddos/domains/{domainid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeDDoSDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -413,11 +485,11 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -426,20 +498,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgeddos/domains/{domainid}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeDDoSDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def apply_waf_policy(self, request):
         """更新防护策略的域名
@@ -452,9 +520,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ApplyWafPolicyRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ApplyWafPolicyResponse`
         """
-        return self._apply_waf_policy_with_http_info(request)
+        http_info = self._apply_waf_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_waf_policy_with_http_info(self, request):
+    def apply_waf_policy_invoker(self, request):
+        http_info = self._apply_waf_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _apply_waf_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/edgewaf/policies/{policy_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyWafPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -471,11 +552,11 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -484,91 +565,44 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgewaf/policies/{policy_id}/hosts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyWafPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
 
-    def create_edge_waf_domains(self, request):
-        """创建防护域名
+        return http_info
 
-        创建防护域名
+    def create_certificate(self, request):
+        """创建证书
+
+        创建证书
         
         Please refer to HUAWEI cloud API Explorer for details.
 
-        :param request: Request instance for CreateEdgeWafDomains
-        :type request: :class:`huaweicloudsdkedgesec.v1.CreateEdgeWafDomainsRequest`
-        :rtype: :class:`huaweicloudsdkedgesec.v1.CreateEdgeWafDomainsResponse`
+        :param request: Request instance for CreateCertificate
+        :type request: :class:`huaweicloudsdkedgesec.v1.CreateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v1.CreateCertificateResponse`
         """
-        return self._create_edge_waf_domains_with_http_info(request)
+        http_info = self._create_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_waf_domains_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+    def create_certificate_invoker(self, request):
+        http_info = self._create_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
 
-        cname = None
+    @classmethod
+    def _create_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateResponse"
+            }
 
-        collection_formats = {}
-
-        path_params = {}
-
-        query_params = []
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if 'body' in local_var_params:
-            body_params = local_var_params['body']
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v1/edgewaf/domains',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeWafDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
-
-    def create_policy(self, request):
-        """创建防护策略
-
-        创建防护策略，系统会在生成策略时配置一些默认的配置项，如果需要修改策略的默认配置项需要通过调用更新防护策略接口实现
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-        :param request: Request instance for CreatePolicy
-        :type request: :class:`huaweicloudsdkedgesec.v1.CreatePolicyRequest`
-        :rtype: :class:`huaweicloudsdkedgesec.v1.CreatePolicyResponse`
-        """
-        return self._create_policy_with_http_info(request)
-
-    def _create_policy_with_http_info(self, request):
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -587,11 +621,11 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -600,20 +634,219 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_edge_waf_domains(self, request):
+        """创建防护域名
+
+        创建防护域名
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreateEdgeWafDomains
+        :type request: :class:`huaweicloudsdkedgesec.v1.CreateEdgeWafDomainsRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v1.CreateEdgeWafDomainsResponse`
+        """
+        http_info = self._create_edge_waf_domains_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_edge_waf_domains_invoker(self, request):
+        http_info = self._create_edge_waf_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_edge_waf_domains_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/edgewaf/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeWafDomainsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_policy(self, request):
+        """创建防护策略
+
+        创建防护策略，系统会在生成策略时配置一些默认的配置项，如果需要修改策略的默认配置项需要通过调用更新防护策略接口实现
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for CreatePolicy
+        :type request: :class:`huaweicloudsdkedgesec.v1.CreatePolicyRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v1.CreatePolicyResponse`
+        """
+        http_info = self._create_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_policy_invoker(self, request):
+        http_info = self._create_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_certificate(self, request):
+        """删除证书
+
+        删除证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for DeleteCertificate
+        :type request: :class:`huaweicloudsdkedgesec.v1.DeleteCertificateRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v1.DeleteCertificateResponse`
+        """
+        http_info = self._delete_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_certificate_invoker(self, request):
+        http_info = self._delete_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_certificate_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_waf_domains(self, request):
         """删除防护域名
@@ -626,9 +859,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.DeleteEdgeWafDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.DeleteEdgeWafDomainsResponse`
         """
-        return self._delete_edge_waf_domains_with_http_info(request)
+        http_info = self._delete_edge_waf_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_waf_domains_with_http_info(self, request):
+    def delete_edge_waf_domains_invoker(self, request):
+        http_info = self._delete_edge_waf_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_edge_waf_domains_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/edgewaf/domains/{domainid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeWafDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -647,9 +893,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -658,20 +904,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgewaf/domains/{domainid}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeWafDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_policy(self, request):
         """删除防护策略
@@ -684,9 +926,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.DeletePolicyRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.DeletePolicyResponse`
         """
-        return self._delete_policy_with_http_info(request)
+        http_info = self._delete_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_policy_with_http_info(self, request):
+    def delete_policy_invoker(self, request):
+        http_info = self._delete_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -707,9 +962,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -718,20 +973,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cdn_domains(self, request):
         """查询CDN域名列表
@@ -744,9 +995,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ListCdnDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ListCdnDomainsResponse`
         """
-        return self._list_cdn_domains_with_http_info(request)
+        http_info = self._list_cdn_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cdn_domains_with_http_info(self, request):
+    def list_cdn_domains_invoker(self, request):
+        http_info = self._list_cdn_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cdn_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgesec/cdn/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCdnDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -769,9 +1033,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -780,20 +1044,93 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgesec/cdn/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCdnDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_certificates(self, request):
+        """查询证书列表
+
+        查询证书列表
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ListCertificates
+        :type request: :class:`huaweicloudsdkedgesec.v1.ListCertificatesRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v1.ListCertificatesResponse`
+        """
+        http_info = self._list_certificates_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_certificates_invoker(self, request):
+        http_info = self._list_certificates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_certificates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificatesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+        if 'page' in local_var_params:
+            query_params.append(('page', local_var_params['page']))
+        if 'pagesize' in local_var_params:
+            query_params.append(('pagesize', local_var_params['pagesize']))
+        if 'name' in local_var_params:
+            query_params.append(('name', local_var_params['name']))
+        if 'host' in local_var_params:
+            query_params.append(('host', local_var_params['host']))
+        if 'exp_status' in local_var_params:
+            query_params.append(('exp_status', local_var_params['exp_status']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_waf_domains(self, request):
         """查询WAF防护域名列表
@@ -806,9 +1143,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ListEdgeWafDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ListEdgeWafDomainsResponse`
         """
-        return self._list_edge_waf_domains_with_http_info(request)
+        http_info = self._list_edge_waf_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_waf_domains_with_http_info(self, request):
+    def list_edge_waf_domains_invoker(self, request):
+        http_info = self._list_edge_waf_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_waf_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgewaf/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeWafDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -833,9 +1183,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -844,20 +1194,16 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgewaf/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeWafDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy(self, request):
         """查询防护策略列表
@@ -870,9 +1216,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ListPolicyRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ListPolicyResponse`
         """
-        return self._list_policy_with_http_info(request)
+        http_info = self._list_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_with_http_info(self, request):
+    def list_policy_invoker(self, request):
+        http_info = self._list_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -897,9 +1256,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -908,20 +1267,85 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def show_certificate(self, request):
+        """查询证书
+
+        查询证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for ShowCertificate
+        :type request: :class:`huaweicloudsdkedgesec.v1.ShowCertificateRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v1.ShowCertificateResponse`
+        """
+        http_info = self._show_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def show_certificate_invoker(self, request):
+        http_info = self._show_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_waf_domains(self, request):
         """查询防护域名
@@ -934,9 +1358,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.ShowEdgeWafDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.ShowEdgeWafDomainsResponse`
         """
-        return self._show_edge_waf_domains_with_http_info(request)
+        http_info = self._show_edge_waf_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_waf_domains_with_http_info(self, request):
+    def show_edge_waf_domains_invoker(self, request):
+        http_info = self._show_edge_waf_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_edge_waf_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgewaf/domains/{domainid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeWafDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -955,9 +1392,9 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -966,20 +1403,87 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgewaf/domains/{domainid}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeWafDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_certificate(self, request):
+        """修改证书
+
+        修改证书
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateCertificate
+        :type request: :class:`huaweicloudsdkedgesec.v1.UpdateCertificateRequest`
+        :rtype: :class:`huaweicloudsdkedgesec.v1.UpdateCertificateResponse`
+        """
+        http_info = self._update_certificate_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_certificate_invoker(self, request):
+        http_info = self._update_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_certificate_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCertificateResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'project_id' in local_var_params:
+            path_params['project_id'] = local_var_params['project_id']
+        if 'certificate_id' in local_var_params:
+            path_params['certificate_id'] = local_var_params['certificate_id']
+
+        query_params = []
+        if 'enterprise_project_id' in local_var_params:
+            query_params.append(('enterprise_project_id', local_var_params['enterprise_project_id']))
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_waf_domains(self, request):
         """更新防护域名
@@ -992,9 +1496,22 @@ class EdgeSecClient(Client):
         :type request: :class:`huaweicloudsdkedgesec.v1.UpdateEdgeWafDomainsRequest`
         :rtype: :class:`huaweicloudsdkedgesec.v1.UpdateEdgeWafDomainsResponse`
         """
-        return self._update_edge_waf_domains_with_http_info(request)
+        http_info = self._update_edge_waf_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_waf_domains_with_http_info(self, request):
+    def update_edge_waf_domains_invoker(self, request):
+        http_info = self._update_edge_waf_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_edge_waf_domains_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/edgewaf/domains/{domainid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeWafDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1011,11 +1528,11 @@ class EdgeSecClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1024,20 +1541,25 @@ class EdgeSecClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgewaf/domains/{domainid}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeWafDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

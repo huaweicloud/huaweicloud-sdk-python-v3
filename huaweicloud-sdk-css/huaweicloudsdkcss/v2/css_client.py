@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcss'")
 
 
 class CssClient(Client):
@@ -38,9 +43,22 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.CreateClusterResponse`
         """
-        return self._create_cluster_with_http_info(request)
+        http_info = self._create_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_with_http_info(self, request):
+    def create_cluster_invoker(self, request):
+        http_info = self._create_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class CssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class CssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/clusters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_cluster(self, request):
         """重启集群V2
@@ -94,9 +108,22 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.RestartClusterResponse`
         """
-        return self._restart_cluster_with_http_info(request)
+        http_info = self._restart_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_cluster_with_http_info(self, request):
+    def restart_cluster_invoker(self, request):
+        http_info = self._restart_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/clusters/{cluster_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +140,11 @@ class CssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +153,16 @@ class CssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/clusters/{cluster_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rolling_restart(self, request):
         """滚动重启
@@ -154,9 +177,22 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.RollingRestartRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.RollingRestartResponse`
         """
-        return self._rolling_restart_with_http_info(request)
+        http_info = self._rolling_restart_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rolling_restart_with_http_info(self, request):
+    def rolling_restart_invoker(self, request):
+        http_info = self._rolling_restart_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rolling_restart_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/clusters/{cluster_id}/rolling_restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollingRestartResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class CssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class CssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/clusters/{cluster_id}/rolling_restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RollingRestartResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_auto_create_snapshots(self, request):
         """开启自动创建快照功能
@@ -212,9 +244,22 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.StartAutoCreateSnapshotsResponse`
         """
-        return self._start_auto_create_snapshots_with_http_info(request)
+        http_info = self._start_auto_create_snapshots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_auto_create_snapshots_with_http_info(self, request):
+    def start_auto_create_snapshots_invoker(self, request):
+        http_info = self._start_auto_create_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_auto_create_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/clusters/{cluster_id}/snapshots/policy/open",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartAutoCreateSnapshotsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class CssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class CssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/clusters/{cluster_id}/snapshots/policy/open',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartAutoCreateSnapshotsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_auto_create_snapshots(self, request):
         """关闭自动创建快照功能
@@ -270,9 +311,22 @@ class CssClient(Client):
         :type request: :class:`huaweicloudsdkcss.v2.StopAutoCreateSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcss.v2.StopAutoCreateSnapshotsResponse`
         """
-        return self._stop_auto_create_snapshots_with_http_info(request)
+        http_info = self._stop_auto_create_snapshots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_auto_create_snapshots_with_http_info(self, request):
+    def stop_auto_create_snapshots_invoker(self, request):
+        http_info = self._stop_auto_create_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_auto_create_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/{project_id}/clusters/{cluster_id}/snapshots/policy/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopAutoCreateSnapshotsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -289,9 +343,9 @@ class CssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -300,20 +354,25 @@ class CssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/clusters/{cluster_id}/snapshots/policy/close',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopAutoCreateSnapshotsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcdn'")
 
 
 class CdnAsyncClient(Client):
@@ -40,9 +45,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.BatchCopyDomainRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.BatchCopyDomainResponse`
         """
-        return self._batch_copy_domain_with_http_info(request)
+        http_info = self._batch_copy_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_copy_domain_with_http_info(self, request):
+    def batch_copy_domain_async_invoker(self, request):
+        http_info = self._batch_copy_domain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_copy_domain_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/configuration/domains/batch-copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCopyDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +74,11 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +87,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/configuration/domains/batch-copy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCopyDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_preheating_tasks_async(self, request):
         """创建预热缓存任务
@@ -97,9 +110,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.CreatePreheatingTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.CreatePreheatingTasksResponse`
         """
-        return self._create_preheating_tasks_with_http_info(request)
+        http_info = self._create_preheating_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_preheating_tasks_with_http_info(self, request):
+    def create_preheating_tasks_async_invoker(self, request):
+        http_info = self._create_preheating_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_preheating_tasks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/content/preheating-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePreheatingTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -116,11 +141,11 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -129,20 +154,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/content/preheating-tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePreheatingTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_refresh_tasks_async(self, request):
         """创建刷新缓存任务
@@ -156,9 +177,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.CreateRefreshTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.CreateRefreshTasksResponse`
         """
-        return self._create_refresh_tasks_with_http_info(request)
+        http_info = self._create_refresh_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_refresh_tasks_with_http_info(self, request):
+    def create_refresh_tasks_async_invoker(self, request):
+        http_info = self._create_refresh_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_refresh_tasks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/cdn/content/refresh-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRefreshTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -175,11 +208,11 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -188,20 +221,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/content/refresh-tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRefreshTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_region_carrier_excel_async(self, request):
         """下载区域运营商指标数据表格文件
@@ -225,9 +254,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.DownloadRegionCarrierExcelRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.DownloadRegionCarrierExcelResponse`
         """
-        return self._download_region_carrier_excel_with_http_info(request)
+        http_info = self._download_region_carrier_excel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_region_carrier_excel_with_http_info(self, request):
+    def download_region_carrier_excel_async_invoker(self, request):
+        http_info = self._download_region_carrier_excel_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_region_carrier_excel_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/region-carrier-excel",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadRegionCarrierExcelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -262,9 +303,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -273,20 +314,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/statistics/region-carrier-excel',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadRegionCarrierExcelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_statistics_excel_async(self, request):
         """下载统计指标数据表格文件
@@ -310,9 +347,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.DownloadStatisticsExcelRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.DownloadStatisticsExcelResponse`
         """
-        return self._download_statistics_excel_with_http_info(request)
+        http_info = self._download_statistics_excel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_statistics_excel_with_http_info(self, request):
+    def download_statistics_excel_async_invoker(self, request):
+        http_info = self._download_statistics_excel_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_statistics_excel_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/statistics-excel",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadStatisticsExcelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -343,9 +392,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +403,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/statistics/statistics-excel',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadStatisticsExcelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domains_async(self, request):
         """查询加速域名
@@ -381,9 +426,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ListDomainsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ListDomainsResponse`
         """
-        return self._list_domains_with_http_info(request)
+        http_info = self._list_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domains_with_http_info(self, request):
+    def list_domains_async_invoker(self, request):
+        http_info = self._list_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_domains_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -416,9 +473,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -427,20 +484,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_charge_modes_async(self, request):
         """设置用户计费模式
@@ -462,9 +515,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.SetChargeModesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.SetChargeModesResponse`
         """
-        return self._set_charge_modes_with_http_info(request)
+        http_info = self._set_charge_modes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_charge_modes_with_http_info(self, request):
+    def set_charge_modes_async_invoker(self, request):
+        http_info = self._set_charge_modes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_charge_modes_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/cdn/charge/charge-modes",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetChargeModesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -479,11 +544,11 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +557,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/charge/charge-modes',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetChargeModesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bandwidth_calc_async(self, request):
         """查询域名带宽峰值类数据
@@ -531,9 +592,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowBandwidthCalcRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowBandwidthCalcResponse`
         """
-        return self._show_bandwidth_calc_with_http_info(request)
+        http_info = self._show_bandwidth_calc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bandwidth_calc_with_http_info(self, request):
+    def show_bandwidth_calc_async_invoker(self, request):
+        http_info = self._show_bandwidth_calc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_bandwidth_calc_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/bandwidth-calc",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBandwidthCalcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -560,9 +633,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -571,20 +644,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/statistics/bandwidth-calc',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBandwidthCalcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_charge_modes_async(self, request):
         """查询用户计费模式
@@ -606,9 +675,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowChargeModesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowChargeModesResponse`
         """
-        return self._show_charge_modes_with_http_info(request)
+        http_info = self._show_charge_modes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_charge_modes_with_http_info(self, request):
+    def show_charge_modes_async_invoker(self, request):
+        http_info = self._show_charge_modes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_charge_modes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/charge/charge-modes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowChargeModesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -629,9 +710,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -640,20 +721,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/charge/charge-modes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowChargeModesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_detail_by_name_async(self, request):
         """查询加速域名详情
@@ -667,9 +744,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainDetailByNameRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainDetailByNameResponse`
         """
-        return self._show_domain_detail_by_name_with_http_info(request)
+        http_info = self._show_domain_detail_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_detail_by_name_with_http_info(self, request):
+    def show_domain_detail_by_name_async_invoker(self, request):
+        http_info = self._show_domain_detail_by_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_detail_by_name_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/configuration/domains/{domain_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainDetailByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -688,9 +777,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -699,20 +788,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/configuration/domains/{domain_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainDetailByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_full_config_async(self, request):
         """查询域名配置接口
@@ -726,9 +811,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainFullConfigRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainFullConfigResponse`
         """
-        return self._show_domain_full_config_with_http_info(request)
+        http_info = self._show_domain_full_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_full_config_with_http_info(self, request):
+    def show_domain_full_config_async_invoker(self, request):
+        http_info = self._show_domain_full_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_full_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/cdn/configuration/domains/{domain_name}/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainFullConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -749,9 +846,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -760,20 +857,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/cdn/configuration/domains/{domain_name}/configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainFullConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_location_stats_async(self, request):
         """按区域运营商查询域名统计数据
@@ -799,9 +892,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainLocationStatsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainLocationStatsResponse`
         """
-        return self._show_domain_location_stats_with_http_info(request)
+        http_info = self._show_domain_location_stats_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_location_stats_with_http_info(self, request):
+    def show_domain_location_stats_async_invoker(self, request):
+        http_info = self._show_domain_location_stats_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_location_stats_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/domain-location-stats",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainLocationStatsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -838,9 +943,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -849,20 +954,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/statistics/domain-location-stats',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainLocationStatsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_stats_async(self, request):
         """查询域名统计数据
@@ -888,9 +989,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowDomainStatsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowDomainStatsResponse`
         """
-        return self._show_domain_stats_with_http_info(request)
+        http_info = self._show_domain_stats_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_stats_with_http_info(self, request):
+    def show_domain_stats_async_invoker(self, request):
+        http_info = self._show_domain_stats_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_stats_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/domain-stats",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainStatsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -923,9 +1036,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -934,20 +1047,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/statistics/domain-stats',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainStatsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_history_task_details_async(self, request):
         """查询刷新预热任务详情
@@ -961,9 +1070,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowHistoryTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowHistoryTaskDetailsResponse`
         """
-        return self._show_history_task_details_with_http_info(request)
+        http_info = self._show_history_task_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_history_task_details_with_http_info(self, request):
+    def show_history_task_details_async_invoker(self, request):
+        http_info = self._show_history_task_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_history_task_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/historytasks/{history_tasks_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHistoryTaskDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -992,9 +1113,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1003,20 +1124,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/historytasks/{history_tasks_id}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHistoryTaskDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_history_tasks_async(self, request):
         """查询刷新预热任务
@@ -1030,9 +1147,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowHistoryTasksRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowHistoryTasksResponse`
         """
-        return self._show_history_tasks_with_http_info(request)
+        http_info = self._show_history_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_history_tasks_with_http_info(self, request):
+    def show_history_tasks_async_invoker(self, request):
+        http_info = self._show_history_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_history_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/historytasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHistoryTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1067,9 +1196,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1078,20 +1207,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/historytasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHistoryTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_top_domain_names_async(self, request):
         """查询TOP域名
@@ -1117,9 +1242,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowTopDomainNamesRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowTopDomainNamesResponse`
         """
-        return self._show_top_domain_names_with_http_info(request)
+        http_info = self._show_top_domain_names_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_top_domain_names_with_http_info(self, request):
+    def show_top_domain_names_async_invoker(self, request):
+        http_info = self._show_top_domain_names_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_top_domain_names_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cdn/statistics/top-domain-names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTopDomainNamesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1146,9 +1283,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1157,20 +1294,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cdn/statistics/top-domain-names',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTopDomainNamesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_top_url_async(self, request):
         """查询TOP100 URL明细
@@ -1196,9 +1329,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowTopUrlRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowTopUrlResponse`
         """
-        return self._show_top_url_with_http_info(request)
+        http_info = self._show_top_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_top_url_with_http_info(self, request):
+    def show_top_url_async_invoker(self, request):
+        http_info = self._show_top_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_top_url_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/statistics/top-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTopUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1225,9 +1370,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1236,20 +1381,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/statistics/top-url',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTopUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_url_task_info_async(self, request):
         """查询刷新预热URL记录
@@ -1263,9 +1404,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.ShowUrlTaskInfoRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.ShowUrlTaskInfoResponse`
         """
-        return self._show_url_task_info_with_http_info(request)
+        http_info = self._show_url_task_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_url_task_info_with_http_info(self, request):
+    def show_url_task_info_async_invoker(self, request):
+        http_info = self._show_url_task_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_url_task_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/cdn/contentgateway/url-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUrlTaskInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1296,9 +1449,9 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1307,20 +1460,16 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/cdn/contentgateway/url-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUrlTaskInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_full_config_async(self, request):
         """修改域名全量配置接口
@@ -1334,9 +1483,21 @@ class CdnAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcdn.v2.UpdateDomainFullConfigRequest`
         :rtype: :class:`huaweicloudsdkcdn.v2.UpdateDomainFullConfigResponse`
         """
-        return self._update_domain_full_config_with_http_info(request)
+        http_info = self._update_domain_full_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_full_config_with_http_info(self, request):
+    def update_domain_full_config_async_invoker(self, request):
+        http_info = self._update_domain_full_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_domain_full_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.1/cdn/configuration/domains/{domain_name}/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainFullConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1355,11 +1516,11 @@ class CdnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1368,20 +1529,26 @@ class CdnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/cdn/configuration/domains/{domain_name}/configs',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainFullConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1420,4 +1587,4 @@ class CdnAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

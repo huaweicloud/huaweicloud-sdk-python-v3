@@ -19,15 +19,16 @@
 """
 
 import json
-from huaweicloudsdkcore.exceptions import exceptions
+
 from requests.exceptions import ConnectionError
-from urllib3.exceptions import SSLError, NewConnectionError
+
+from huaweicloudsdkcore.exceptions.exception_handler import process_connection_error
 
 
 class SdkResponse(object):
     def __init__(self):
-        self._status_code = None    # type: int | None
-        self._raw_content = None    # type: bytes | None
+        self._status_code = None  # type: int | None
+        self._raw_content = None  # type: bytes | None
 
     @property
     def status_code(self):
@@ -61,17 +62,7 @@ class FutureSdkResponse:
             future_response = self._future.result().result()
             response = future_response.data \
                 if hasattr(future_response, "data") and future_response.data is not None else future_response
-        except ConnectionError as connectionError:
-            for each in connectionError.args:
-                reason_str = str(each.reason)
-                if isinstance(each.reason, SSLError):
-                    self._logger.error("Sync SslHandShakeException occurred. %s", reason_str)
-                    raise exceptions.SslHandShakeException(reason_str)
-                if isinstance(each.reason, NewConnectionError):
-                    if reason_str.endswith("getaddrinfo failed") or reason_str.endswith("Name or service not known"):
-                        raise exceptions.HostUnreachableException(reason_str)
-                    self._logger.error("Sync ConnectionException occurred. %s", reason_str)
-                    raise exceptions.ConnectionException(reason_str)
-            self._logger.error("Sync ConnectionException occurred. %s", connectionError)
-            raise exceptions.ConnectionException(str(connectionError))
+        except ConnectionError as conn_err:
+            raise process_connection_error(conn_err, self._logger)
+
         return response

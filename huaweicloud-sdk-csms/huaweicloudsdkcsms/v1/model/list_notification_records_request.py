@@ -17,20 +17,80 @@ class ListNotificationRecordsRequest:
     sensitive_list = []
 
     openapi_types = {
+        'limit': 'str',
+        'marker': 'str'
     }
 
     attribute_map = {
+        'limit': 'limit',
+        'marker': 'marker'
     }
 
-    def __init__(self):
+    def __init__(self, limit=None, marker=None):
         """ListNotificationRecordsRequest
 
         The model defined in huaweicloud sdk
 
+        :param limit: 每页返回的个数。  默认值：50。
+        :type limit: str
+        :param marker: 分页查询起始的事件通知记录时间，为空时为查询第一页
+        :type marker: str
         """
         
         
+
+        self._limit = None
+        self._marker = None
         self.discriminator = None
+
+        if limit is not None:
+            self.limit = limit
+        if marker is not None:
+            self.marker = marker
+
+    @property
+    def limit(self):
+        """Gets the limit of this ListNotificationRecordsRequest.
+
+        每页返回的个数。  默认值：50。
+
+        :return: The limit of this ListNotificationRecordsRequest.
+        :rtype: str
+        """
+        return self._limit
+
+    @limit.setter
+    def limit(self, limit):
+        """Sets the limit of this ListNotificationRecordsRequest.
+
+        每页返回的个数。  默认值：50。
+
+        :param limit: The limit of this ListNotificationRecordsRequest.
+        :type limit: str
+        """
+        self._limit = limit
+
+    @property
+    def marker(self):
+        """Gets the marker of this ListNotificationRecordsRequest.
+
+        分页查询起始的事件通知记录时间，为空时为查询第一页
+
+        :return: The marker of this ListNotificationRecordsRequest.
+        :rtype: str
+        """
+        return self._marker
+
+    @marker.setter
+    def marker(self, marker):
+        """Sets the marker of this ListNotificationRecordsRequest.
+
+        分页查询起始的事件通知记录时间，为空时为查询第一页
+
+        :param marker: The marker of this ListNotificationRecordsRequest.
+        :type marker: str
+        """
+        self._marker = marker
 
     def to_dict(self):
         """Returns the model properties as a dict"""

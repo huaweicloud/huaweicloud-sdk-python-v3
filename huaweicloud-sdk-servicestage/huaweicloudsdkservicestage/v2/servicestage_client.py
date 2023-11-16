@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkservicestage'")
 
 
 class ServiceStageClient(Client):
@@ -38,9 +43,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationResponse`
         """
-        return self._change_application_with_http_info(request)
+        http_info = self._change_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_application_with_http_info(self, request):
+    def change_application_invoker(self, request):
+        http_info = self._change_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_application_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_application_configuration(self, request):
         """修改应用配置信息
@@ -96,9 +110,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationConfigurationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeApplicationConfigurationResponse`
         """
-        return self._change_application_configuration_with_http_info(request)
+        http_info = self._change_application_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_application_configuration_with_http_info(self, request):
+    def change_application_configuration_invoker(self, request):
+        http_info = self._change_application_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_application_configuration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeApplicationConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/configuration',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeApplicationConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_component(self, request):
         """根据组件ID修改组件信息
@@ -154,9 +177,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeComponentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeComponentResponse`
         """
-        return self._change_component_with_http_info(request)
+        http_info = self._change_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_component_with_http_info(self, request):
+    def change_component_invoker(self, request):
+        http_info = self._change_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_component_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -175,11 +211,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -188,20 +224,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_environment(self, request):
         """修改环境信息
@@ -214,9 +246,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeEnvironmentResponse`
         """
-        return self._change_environment_with_http_info(request)
+        http_info = self._change_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_environment_with_http_info(self, request):
+    def change_environment_invoker(self, request):
+        http_info = self._change_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_environment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cas/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,11 +278,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +291,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/environments/{environment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_instance(self, request):
         """修改应用组件实例
@@ -272,9 +313,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeInstanceRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeInstanceResponse`
         """
-        return self._change_instance_with_http_info(request)
+        http_info = self._change_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_instance_with_http_info(self, request):
+    def change_instance_invoker(self, request):
+        http_info = self._change_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -295,11 +349,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -308,20 +362,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_resource_in_environment(self, request):
         """修改环境资源
@@ -334,9 +384,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ChangeResourceInEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ChangeResourceInEnvironmentResponse`
         """
-        return self._change_resource_in_environment_with_http_info(request)
+        http_info = self._change_resource_in_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_resource_in_environment_with_http_info(self, request):
+    def change_resource_in_environment_invoker(self, request):
+        http_info = self._change_resource_in_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_resource_in_environment_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/{project_id}/cas/environments/{environment_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeResourceInEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,11 +416,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +429,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/environments/{environment_id}/resources',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeResourceInEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_application(self, request):
         """创建应用
@@ -394,9 +453,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateApplicationResponse`
         """
-        return self._create_application_with_http_info(request)
+        http_info = self._create_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_application_with_http_info(self, request):
+    def create_application_invoker(self, request):
+        http_info = self._create_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_application_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cas/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -411,11 +483,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -424,20 +496,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cam_instance(self, request):
         """创建、更新实例
@@ -448,9 +516,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateCamInstanceRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateCamInstanceResponse`
         """
-        return self._create_cam_instance_with_http_info(request)
+        http_info = self._create_cam_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cam_instance_with_http_info(self, request):
+    def create_cam_instance_invoker(self, request):
+        http_info = self._create_cam_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cam_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCamInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -465,11 +546,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -478,20 +559,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCamInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_component(self, request):
         """应用中创建组件
@@ -506,9 +583,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateComponentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateComponentResponse`
         """
-        return self._create_component_with_http_info(request)
+        http_info = self._create_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_component_with_http_info(self, request):
+    def create_component_invoker(self, request):
+        http_info = self._create_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_component_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -525,11 +615,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -538,20 +628,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_environment(self, request):
         """创建环境
@@ -566,9 +652,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateEnvironmentResponse`
         """
-        return self._create_environment_with_http_info(request)
+        http_info = self._create_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_environment_with_http_info(self, request):
+    def create_environment_invoker(self, request):
+        http_info = self._create_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_environment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cas/environments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -583,11 +682,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -596,20 +695,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/environments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance(self, request):
         """创建组件实例
@@ -622,9 +717,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateInstanceResponse`
         """
-        return self._create_instance_with_http_info(request)
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_with_http_info(self, request):
+    def create_instance_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -643,11 +751,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -656,20 +764,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template(self, request):
         """创建模板
@@ -680,9 +784,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateTemplateResponse`
         """
-        return self._create_template_with_http_info(request)
+        http_info = self._create_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_with_http_info(self, request):
+    def create_template_invoker(self, request):
+        http_info = self._create_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -697,11 +814,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +827,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_application(self, request):
         """根据应用ID删除应用
@@ -736,9 +849,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationResponse`
         """
-        return self._delete_application_with_http_info(request)
+        http_info = self._delete_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_application_with_http_info(self, request):
+    def delete_application_invoker(self, request):
+        http_info = self._delete_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_application_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -755,9 +881,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -766,20 +892,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_application_configuration(self, request):
         """删除应用配置
@@ -792,9 +914,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationConfigurationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteApplicationConfigurationResponse`
         """
-        return self._delete_application_configuration_with_http_info(request)
+        http_info = self._delete_application_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_application_configuration_with_http_info(self, request):
+    def delete_application_configuration_invoker(self, request):
+        http_info = self._delete_application_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_application_configuration_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -813,9 +948,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -824,20 +959,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/configuration',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApplicationConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_component(self, request):
         """根据应用组件ID删除应用组件
@@ -850,9 +981,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteComponentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteComponentResponse`
         """
-        return self._delete_component_with_http_info(request)
+        http_info = self._delete_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_component_with_http_info(self, request):
+    def delete_component_invoker(self, request):
+        http_info = self._delete_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_component_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -873,9 +1017,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -884,20 +1028,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_environment(self, request):
         """根据环境ID删除环境
@@ -910,9 +1050,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteEnvironmentResponse`
         """
-        return self._delete_environment_with_http_info(request)
+        http_info = self._delete_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_environment_with_http_info(self, request):
+    def delete_environment_invoker(self, request):
+        http_info = self._delete_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_environment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/cas/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,9 +1082,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -940,20 +1093,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/environments/{environment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance(self, request):
         """删除应用组件实例
@@ -966,9 +1115,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceResponse`
         """
-        return self._delete_instance_with_http_info(request)
+        http_info = self._delete_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_with_http_info(self, request):
+    def delete_instance_invoker(self, request):
+        http_info = self._delete_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -991,9 +1153,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1002,20 +1164,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance_by_id(self, request):
         """删除实例
@@ -1026,9 +1184,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceByIdRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteInstanceByIdResponse`
         """
-        return self._delete_instance_by_id_with_http_info(request)
+        http_info = self._delete_instance_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_by_id_with_http_info(self, request):
+    def delete_instance_by_id_invoker(self, request):
+        http_info = self._delete_instance_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_instance_by_id_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1045,9 +1216,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1056,20 +1227,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template(self, request):
         """删除模板
@@ -1080,9 +1247,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteTemplateResponse`
         """
-        return self._delete_template_with_http_info(request)
+        http_info = self._delete_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_with_http_info(self, request):
+    def delete_template_invoker(self, request):
+        http_info = self._delete_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1099,9 +1279,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1110,20 +1290,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def deploy_instance(self, request):
         """部署实例
@@ -1134,9 +1310,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeployInstanceRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeployInstanceResponse`
         """
-        return self._deploy_instance_with_http_info(request)
+        http_info = self._deploy_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _deploy_instance_with_http_info(self, request):
+    def deploy_instance_invoker(self, request):
+        http_info = self._deploy_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _deploy_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instance/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeployInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1151,11 +1340,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1164,20 +1353,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instance/deployments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeployInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_applications(self, request):
         """获取所有应用
@@ -1190,9 +1375,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListApplicationsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListApplicationsResponse`
         """
-        return self._list_applications_with_http_info(request)
+        http_info = self._list_applications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_applications_with_http_info(self, request):
+    def list_applications_invoker(self, request):
+        http_info = self._list_applications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_applications_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1215,9 +1413,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1226,20 +1424,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApplicationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_components(self, request):
         """获取应用所有组件
@@ -1252,9 +1446,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListComponentsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListComponentsResponse`
         """
-        return self._list_components_with_http_info(request)
+        http_info = self._list_components_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_components_with_http_info(self, request):
+    def list_components_invoker(self, request):
+        http_info = self._list_components_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_components_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComponentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1279,9 +1486,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1290,20 +1497,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComponentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_environments(self, request):
         """获取所有环境
@@ -1316,9 +1519,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListEnvironmentsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListEnvironmentsResponse`
         """
-        return self._list_environments_with_http_info(request)
+        http_info = self._list_environments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_environments_with_http_info(self, request):
+    def list_environments_invoker(self, request):
+        http_info = self._list_environments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_environments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/environments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvironmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1341,9 +1557,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1352,20 +1568,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/environments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvironmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_snapshots(self, request):
         """获取组件实例快照
@@ -1378,9 +1590,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListInstanceSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListInstanceSnapshotsResponse`
         """
-        return self._list_instance_snapshots_with_http_info(request)
+        http_info = self._list_instance_snapshots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_snapshots_with_http_info(self, request):
+    def list_instance_snapshots_invoker(self, request):
+        http_info = self._list_instance_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}/snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceSnapshotsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1409,9 +1634,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1420,20 +1645,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}/snapshots',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceSnapshotsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances(self, request):
         """获取应用组件实例
@@ -1446,9 +1667,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListInstancesResponse`
         """
-        return self._list_instances_with_http_info(request)
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_with_http_info(self, request):
+    def list_instances_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1475,9 +1709,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1486,20 +1720,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_application_configuration(self, request):
         """获取应用配置
@@ -1512,9 +1742,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowApplicationConfigurationRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowApplicationConfigurationResponse`
         """
-        return self._show_application_configuration_with_http_info(request)
+        http_info = self._show_application_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_application_configuration_with_http_info(self, request):
+    def show_application_configuration_invoker(self, request):
+        http_info = self._show_application_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_application_configuration_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplicationConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1533,9 +1776,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1544,20 +1787,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/configuration',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplicationConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_application_detail(self, request):
         """根据应用ID获取应用详细信息
@@ -1570,9 +1809,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowApplicationDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowApplicationDetailResponse`
         """
-        return self._show_application_detail_with_http_info(request)
+        http_info = self._show_application_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_application_detail_with_http_info(self, request):
+    def show_application_detail_invoker(self, request):
+        http_info = self._show_application_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_application_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplicationDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1589,9 +1841,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1600,20 +1852,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplicationDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_component_detail(self, request):
         """根据组件ID获取应用组件信息
@@ -1626,9 +1874,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowComponentDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowComponentDetailResponse`
         """
-        return self._show_component_detail_with_http_info(request)
+        http_info = self._show_component_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_component_detail_with_http_info(self, request):
+    def show_component_detail_invoker(self, request):
+        http_info = self._show_component_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_component_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowComponentDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1647,9 +1908,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1658,20 +1919,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowComponentDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_environment_detail(self, request):
         """根据环境ID获取环境详细信息
@@ -1684,9 +1941,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowEnvironmentDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowEnvironmentDetailResponse`
         """
-        return self._show_environment_detail_with_http_info(request)
+        http_info = self._show_environment_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_environment_detail_with_http_info(self, request):
+    def show_environment_detail_invoker(self, request):
+        http_info = self._show_environment_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_environment_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnvironmentDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1703,9 +1973,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1714,20 +1984,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/environments/{environment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnvironmentDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_detail(self, request):
         """根据实例ID获取实例详细信息
@@ -1740,9 +2006,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowInstanceDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowInstanceDetailResponse`
         """
-        return self._show_instance_detail_with_http_info(request)
+        http_info = self._show_instance_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_detail_with_http_info(self, request):
+    def show_instance_detail_invoker(self, request):
+        http_info = self._show_instance_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1763,9 +2042,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1774,20 +2053,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_detail(self, request):
         """获取部署任务详细信息
@@ -1800,9 +2075,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowJobDetailResponse`
         """
-        return self._show_job_detail_with_http_info(request)
+        http_info = self._show_job_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_detail_with_http_info(self, request):
+    def show_job_detail_invoker(self, request):
+        http_info = self._show_job_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1827,9 +2115,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1838,20 +2126,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_action(self, request):
         """对组件实例的操作
@@ -1864,9 +2148,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.UpdateInstanceActionRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.UpdateInstanceActionResponse`
         """
-        return self._update_instance_action_with_http_info(request)
+        http_info = self._update_instance_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_action_with_http_info(self, request):
+    def update_instance_action_invoker(self, request):
+        http_info = self._update_instance_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1887,11 +2184,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1900,20 +2197,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/applications/{application_id}/components/{component_id}/instances/{instance_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_template(self, request):
         """更新模板
@@ -1924,9 +2217,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.UpdateTemplateRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.UpdateTemplateResponse`
         """
-        return self._update_template_with_http_info(request)
+        http_info = self._update_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_template_with_http_info(self, request):
+    def update_template_invoker(self, request):
+        http_info = self._update_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1943,11 +2249,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1956,20 +2262,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_file(self, request):
         """创建仓库文件
@@ -1982,9 +2284,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateFileRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateFileResponse`
         """
-        return self._create_file_with_http_info(request)
+        http_info = self._create_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_file_with_http_info(self, request):
+    def create_file_invoker(self, request):
+        http_info = self._create_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/git/files/{namespace}/{project}/{path}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2009,11 +2324,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2022,20 +2337,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/files/{namespace}/{project}/{path}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_hook(self, request):
         """创建项目hook
@@ -2048,9 +2359,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateHookRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateHookResponse`
         """
-        return self._create_hook_with_http_info(request)
+        http_info = self._create_hook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_hook_with_http_info(self, request):
+    def create_hook_invoker(self, request):
+        http_info = self._create_hook_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_hook_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/{project}/hooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2071,11 +2395,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2084,20 +2408,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/{project}/hooks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateHookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_o_auth(self, request):
         """创建OAuth授权
@@ -2110,9 +2430,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateOAuthRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateOAuthResponse`
         """
-        return self._create_o_auth_with_http_info(request)
+        http_info = self._create_o_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_o_auth_with_http_info(self, request):
+    def create_o_auth_invoker(self, request):
+        http_info = self._create_o_auth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_o_auth_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/git/auths/{repo_type}/oauth",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2131,11 +2464,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2144,20 +2477,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/auths/{repo_type}/oauth',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_password_auth(self, request):
         """创建口令授权
@@ -2170,9 +2499,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreatePasswordAuthRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreatePasswordAuthResponse`
         """
-        return self._create_password_auth_with_http_info(request)
+        http_info = self._create_password_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_password_auth_with_http_info(self, request):
+    def create_password_auth_invoker(self, request):
+        http_info = self._create_password_auth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_password_auth_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/git/auths/{repo_type}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePasswordAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2189,11 +2531,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2202,20 +2544,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/auths/{repo_type}/password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePasswordAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_personal_auth(self, request):
         """创建私人令牌授权
@@ -2228,9 +2566,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreatePersonalAuthRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreatePersonalAuthResponse`
         """
-        return self._create_personal_auth_with_http_info(request)
+        http_info = self._create_personal_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_personal_auth_with_http_info(self, request):
+    def create_personal_auth_invoker(self, request):
+        http_info = self._create_personal_auth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_personal_auth_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/git/auths/{repo_type}/personal",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePersonalAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2247,11 +2598,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2260,20 +2611,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/auths/{repo_type}/personal',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePersonalAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project(self, request):
         """创建软件仓库项目
@@ -2286,9 +2633,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateProjectRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateProjectResponse`
         """
-        return self._create_project_with_http_info(request)
+        http_info = self._create_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_with_http_info(self, request):
+    def create_project_invoker(self, request):
+        http_info = self._create_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_project_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2307,11 +2667,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2320,20 +2680,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/projects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tag(self, request):
         """创建项目tag标签
@@ -2346,9 +2702,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.CreateTagResponse`
         """
-        return self._create_tag_with_http_info(request)
+        http_info = self._create_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tag_with_http_info(self, request):
+    def create_tag_invoker(self, request):
+        http_info = self._create_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/{project}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2371,11 +2740,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2384,20 +2753,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/{project}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_authorize(self, request):
         """删除仓库授权
@@ -2410,9 +2775,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteAuthorizeRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteAuthorizeResponse`
         """
-        return self._delete_authorize_with_http_info(request)
+        http_info = self._delete_authorize_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_authorize_with_http_info(self, request):
+    def delete_authorize_invoker(self, request):
+        http_info = self._delete_authorize_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_authorize_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/git/auths/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAuthorizeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2429,9 +2807,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2440,20 +2818,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/auths/{name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAuthorizeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_file(self, request):
         """删除仓库文件
@@ -2466,9 +2840,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteFileRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteFileResponse`
         """
-        return self._delete_file_with_http_info(request)
+        http_info = self._delete_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_file_with_http_info(self, request):
+    def delete_file_invoker(self, request):
+        http_info = self._delete_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_file_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/git/files/{namespace}/{project}/{path}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2497,9 +2884,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2508,20 +2895,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/files/{namespace}/{project}/{path}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_hook(self, request):
         """删除项目hook
@@ -2534,9 +2917,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteHookRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteHookResponse`
         """
-        return self._delete_hook_with_http_info(request)
+        http_info = self._delete_hook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_hook_with_http_info(self, request):
+    def delete_hook_invoker(self, request):
+        http_info = self._delete_hook_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_hook_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/{project}/hooks/{hook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2559,9 +2955,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2570,20 +2966,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/{project}/hooks/{hook_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteHookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tag(self, request):
         """删除项目tag标签
@@ -2596,9 +2988,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.DeleteTagResponse`
         """
-        return self._delete_tag_with_http_info(request)
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tag_with_http_info(self, request):
+    def delete_tag_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/{project}/tags/{tag_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2621,9 +3026,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2632,20 +3037,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/{project}/tags/{tag_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_authorizations(self, request):
         """获取仓库授权列表
@@ -2658,9 +3059,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListAuthorizationsResponse`
         """
-        return self._list_authorizations_with_http_info(request)
+        http_info = self._list_authorizations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_authorizations_with_http_info(self, request):
+    def list_authorizations_invoker(self, request):
+        http_info = self._list_authorizations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_authorizations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/auths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuthorizationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2675,9 +3089,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2686,20 +3100,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/auths',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuthorizationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_branches(self, request):
         """获取项目分支
@@ -2712,9 +3122,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListBranchesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListBranchesResponse`
         """
-        return self._list_branches_with_http_info(request)
+        http_info = self._list_branches_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_branches_with_http_info(self, request):
+    def list_branches_invoker(self, request):
+        http_info = self._list_branches_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_branches_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/{project}/branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBranchesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2735,9 +3158,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2746,20 +3169,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/{project}/branches',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBranchesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_commits(self, request):
         """获取项目commit提交记录
@@ -2772,9 +3191,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListCommitsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListCommitsResponse`
         """
-        return self._list_commits_with_http_info(request)
+        http_info = self._list_commits_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_commits_with_http_info(self, request):
+    def list_commits_invoker(self, request):
+        http_info = self._list_commits_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_commits_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/{project}/commits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2797,9 +3229,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2808,20 +3240,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/{project}/commits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCommitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_hooks(self, request):
         """获取项目hooks
@@ -2834,9 +3262,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListHooksRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListHooksResponse`
         """
-        return self._list_hooks_with_http_info(request)
+        http_info = self._list_hooks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_hooks_with_http_info(self, request):
+    def list_hooks_invoker(self, request):
+        http_info = self._list_hooks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_hooks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/{project}/hooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHooksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2857,9 +3298,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2868,20 +3309,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/{project}/hooks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHooksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_namespaces(self, request):
         """获取仓库的namespaces
@@ -2894,9 +3331,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListNamespacesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListNamespacesResponse`
         """
-        return self._list_namespaces_with_http_info(request)
+        http_info = self._list_namespaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_namespaces_with_http_info(self, request):
+    def list_namespaces_invoker(self, request):
+        http_info = self._list_namespaces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_namespaces_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/repos/namespaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNamespacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2913,9 +3363,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2924,20 +3374,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/namespaces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNamespacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_projects(self, request):
         """获取组织下所有项目
@@ -2950,9 +3396,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListProjectsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListProjectsResponse`
         """
-        return self._list_projects_with_http_info(request)
+        http_info = self._list_projects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_projects_with_http_info(self, request):
+    def list_projects_invoker(self, request):
+        http_info = self._list_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2971,9 +3430,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2982,20 +3441,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags(self, request):
         """获取项目的所有tag标签
@@ -3008,9 +3463,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListTagsResponse`
         """
-        return self._list_tags_with_http_info(request)
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_with_http_info(self, request):
+    def list_tags_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/repos/{namespace}/{project}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3031,9 +3499,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3042,20 +3510,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/{namespace}/{project}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_trees(self, request):
         """获取仓库文件列表
@@ -3068,9 +3532,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTreesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListTreesResponse`
         """
-        return self._list_trees_with_http_info(request)
+        http_info = self._list_trees_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_trees_with_http_info(self, request):
+    def list_trees_invoker(self, request):
+        http_info = self._list_trees_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_trees_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/files/{namespace}/{project}/trees",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTreesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3093,9 +3570,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3104,20 +3581,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/files/{namespace}/{project}/trees',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTreesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_content(self, request):
         """获取仓库文件内容
@@ -3130,9 +3603,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowContentRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowContentResponse`
         """
-        return self._show_content_with_http_info(request)
+        http_info = self._show_content_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_content_with_http_info(self, request):
+    def show_content_invoker(self, request):
+        http_info = self._show_content_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_content_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/files/{namespace}/{project}/{path}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowContentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3157,9 +3643,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3168,20 +3654,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/files/{namespace}/{project}/{path}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowContentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_detail(self, request):
         """通过clone url 获取仓库信息
@@ -3194,9 +3676,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowProjectDetailRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowProjectDetailResponse`
         """
-        return self._show_project_detail_with_http_info(request)
+        http_info = self._show_project_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_detail_with_http_info(self, request):
+    def show_project_detail_invoker(self, request):
+        http_info = self._show_project_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/repos/project-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3215,9 +3710,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3226,20 +3721,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/repos/project-info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_redirect_url(self, request):
         """获取授权重定向URL
@@ -3252,9 +3743,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ShowRedirectUrlRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ShowRedirectUrlResponse`
         """
-        return self._show_redirect_url_with_http_info(request)
+        http_info = self._show_redirect_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_redirect_url_with_http_info(self, request):
+    def show_redirect_url_invoker(self, request):
+        http_info = self._show_redirect_url_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_redirect_url_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/git/auths/{repo_type}/redirect",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRedirectUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3273,9 +3777,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3284,20 +3788,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/auths/{repo_type}/redirect',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRedirectUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_file(self, request):
         """更新仓库文件内容
@@ -3310,9 +3810,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.UpdateFileRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.UpdateFileResponse`
         """
-        return self._update_file_with_http_info(request)
+        http_info = self._update_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_file_with_http_info(self, request):
+    def update_file_invoker(self, request):
+        http_info = self._update_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_file_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/git/files/{namespace}/{project}/{path}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3337,11 +3850,11 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3350,20 +3863,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/git/files/{namespace}/{project}/{path}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors(self, request):
         """获取所有支持的应用资源规格
@@ -3376,9 +3885,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/metadata/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3393,9 +3915,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3404,20 +3926,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/metadata/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_runtimes(self, request):
         """获取所有支持的应用组件运行时类型
@@ -3430,9 +3948,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListRuntimesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListRuntimesResponse`
         """
-        return self._list_runtimes_with_http_info(request)
+        http_info = self._list_runtimes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_runtimes_with_http_info(self, request):
+    def list_runtimes_invoker(self, request):
+        http_info = self._list_runtimes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_runtimes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/metadata/runtimes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRuntimesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3447,9 +3978,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3458,20 +3989,16 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/metadata/runtimes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRuntimesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_templates(self, request):
         """获取所有支持的应用组件模板
@@ -3484,9 +4011,22 @@ class ServiceStageClient(Client):
         :type request: :class:`huaweicloudsdkservicestage.v2.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkservicestage.v2.ListTemplatesResponse`
         """
-        return self._list_templates_with_http_info(request)
+        http_info = self._list_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_templates_with_http_info(self, request):
+    def list_templates_invoker(self, request):
+        http_info = self._list_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cas/metadata/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3501,9 +4041,9 @@ class ServiceStageClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3512,20 +4052,25 @@ class ServiceStageClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cas/metadata/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

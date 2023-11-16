@@ -1,3 +1,471 @@
+# 3.1.67 2023-11-16
+
+### HuaweiCloud SDK CDN
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowDomainFullConfig**
+    - 响应参数变更
+      - `+ configs.business_type`
+      - `+ configs.service_area`
+      - `+ configs.remark`
+      - `+ configs.flexible_origin`
+      - `+ configs.slice_etag_status`
+      - `+ configs.origin_receive_timeout`
+      - `+ configs.remote_auth`
+      - `+ configs.websocket`
+      - `+ configs.video_seek`
+      - `+ configs.request_limit_rules`
+      - `+ configs.ip_frequency_limit`
+      - `+ configs.hsts`
+      - `+ configs.quic`
+      - `+ configs.url_auth.sign_method`
+      - `+ configs.url_auth.match_type`
+      - `+ configs.url_auth.inherit_config`
+      - `+ configs.url_auth.key`
+      - `+ configs.url_auth.backup_key`
+      - `+ configs.url_auth.sign_arg`
+      - `+ configs.https.expire_time`
+      - `+ configs.https.certificate_type`
+      - `+ configs.https.ocsp_stapling_status`
+      - `+ configs.sources.weight`
+      - `+ configs.sources.obs_bucket_type`
+      - `+ configs.sources.bucket_access_key`
+      - `+ configs.sources.bucket_secret_key`
+      - `+ configs.sources.bucket_region`
+      - `+ configs.sources.bucket_name`
+      - `+ configs.compress.file_type`
+      - `+ configs.user_agent_filter.ua_list`
+  - **UpdateDomainFullConfig**
+    - 请求参数变更
+      - `+ configs.sources.weight`
+      - `+ configs.sources.obs_bucket_type`
+      - `+ configs.sources.bucket_access_key`
+      - `+ configs.sources.bucket_secret_key`
+      - `+ configs.sources.bucket_region`
+      - `+ configs.sources.bucket_name`
+      - `+ configs.compress.file_type`
+      - `+ configs.user_agent_filter.ua_list`
+
+### HuaweiCloud SDK CodeArtsBuild
+
+- _新增特性_
+  - 支持以下接口：
+    - `DownloadBuildLog`
+    - `DownloadTaskLog`
+    - `ShowFlowGraph`
+    - `ShowRecordDetail`
+    - `ShowOutputInfo`
+    - `StopJob`
+    - `CreateBuildJob`
+    - `UpdateBuildJob`
+    - `ListTemplates`
+    - `CreateTemplates`
+    - `DeleteTemplates`
+    - `ListNotice`
+    - `UpdateNotice`
+    - `DisableNotice`
+    - `ListJobConfig`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRecordInfo**
+    - 响应参数变更
+      - `+ result.duration`
+
+### HuaweiCloud SDK CodeArtsPipeline
+
+- _新增特性_
+  - 支持以下接口：
+    - `CreatePipelineTemplate`
+    - `ShowProjectOpenSourceStrategy`
+    - `ListProjectStrategy`
+    - `ListProjectOpenSourceStrategy`
+    - `ShowProjectStrategy`
+    - `ShowRule`
+    - `ListRule`
+    - `UpdateRule`
+    - `DeleteRule`
+    - `CreateRule`
+    - `CreateStrategy`
+    - `UpdateStrategy`
+    - `ShowStrategy`
+    - `ListStrategy`
+    - `DeleteStrategy`
+    - `SwitchStrategy`
+    - `CreateOpenSourceStrategy`
+    - `UpdateOpenSourceStrategy`
+    - `ShowOpenSourceStrategy`
+    - `ListOpenSourceStrategy`
+    - `DeleteOpenSourceStrategy`
+    - `SwitchOpenSourceStrategy`
+    - `CreatePipelineGroup`
+    - `UpdatePipelineGroup`
+    - `DeletePipelineGroup`
+    - `ShowPipelineGroupTree`
+    - `BatchMovePipelineToGroup`
+    - `PublishPlugin`
+    - `PublishPluginBind`
+    - `UploadPluginIcon`
+    - `UploadPublisherIcon`
+    - `DeletePluginDraft`
+    - `ListPublisher`
+    - `ListAvailablePublisher`
+    - `ListStagePlugins`
+    - `ListBasePlugins`
+    - `ListBasePluginsNewPost`
+    - `ListPlugins`
+    - `ShowPluginMetrics`
+    - `ShowPluginInputs`
+    - `ShowPluginOutputs`
+    - `ListPLuginVersion`
+    - `ShowPluginVersion`
+    - `ListPluginVersionNumber`
+    - `DeletePublisher`
+    - `ShowPublisher`
+    - `CreateBasicPlugin`
+    - `UpdateBasicPlugin`
+    - `DeleteBasicPlugin`
+    - `UploadBasicPlugin`
+    - `ShowBasicPlugin`
+    - `UpdatePipelineTemplate`
+    - `DeletePipelineTemplate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListPipelines**
+    - 响应参数变更
+      - `+ pipelines.project_name`
+  - **CreatePipelineNew**
+    - 请求参数变更
+      - `+ variables`
+      - `+ schedules`
+      - `+ triggers`
+      - `+ manifest_version`
+      - `+ definition`
+      - `+ project_name`
+
+### HuaweiCloud SDK CSE
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListGovernancePolicy`
+    - `CreateGovernancePolicy`
+    - `ListGovernancePolicyByPolicyId`
+    - `UpdateGovernancePolicy`
+    - `DeleteGovernancePolicy`
+    - `ListMicroserviceRouteRule`
+    - `CreateMicroserviceRouteRule`
+    - `DeleteMicroserviceRouteRule`
+    - `ListGovernancePolicys`
+    - `UpgradeEngineConfig`
+    - `ResizeEngine`
+    - `ListNacosNamespaces`
+    - `UpdateNacosNamespaces`
+    - `CreateNacosNamespaces`
+    - `DeleteNacosNamespaces`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK CSMS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListSecretTags**
+    - 响应参数变更
+      - `+ sys_tags.value`
+      - `- sys_tags.values`
+  - **ListNotificationRecords**
+    - 请求参数变更
+      - `+ limit`
+      - `+ marker`
+
+### HuaweiCloud SDK DataArtsStudio
+
+- _新增特性_
+  - 支持接口`UpdateFactoryJobName`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK DC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **UpdateVifPeer**
+    - 响应参数变更
+      - `+ vif_peer.receive_route_num`
+  - **CreateVifPeer**
+    - 响应参数变更
+      - `+ vif_peer.receive_route_num`
+  - **ShowVirtualInterface**
+    - 响应参数变更
+      - `+ virtual_interface.vif_peers.receive_route_num`
+  - **UpdateVirtualInterface**
+    - 响应参数变更
+      - `+ virtual_interface.vif_peers.receive_route_num`
+  - **ListVirtualInterfaces**
+    - 响应参数变更
+      - `+ virtual_interfaces.vif_peers.receive_route_num`
+  - **CreateVirtualInterface**
+    - 响应参数变更
+      - `+ virtual_interface.vif_peers.receive_route_num`
+
+### HuaweiCloud SDK DGC
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowScript**
+    - 响应参数变更
+      - `+ description`
+      - `+ approvers`
+      - `+ targetStatus`
+      - `+ type: enum value [RDSSQL,PRESTO,ClickHouseSQL,HetuEngineSQL,PYTHON,ImpalaSQL,SparkPython]`
+  - **UpdateScript**
+    - 请求参数变更
+      - `+ description`
+      - `+ approvers`
+      - `+ targetStatus`
+      - `+ type: enum value [RDSSQL,PRESTO,ClickHouseSQL,HetuEngineSQL,PYTHON,ImpalaSQL,SparkPython]`
+  - **CreateScript**
+    - 请求参数变更
+      - `+ description`
+      - `+ approvers`
+      - `+ targetStatus`
+      - `+ type: enum value [RDSSQL,PRESTO,ClickHouseSQL,HetuEngineSQL,PYTHON,ImpalaSQL,SparkPython]`
+  - **ListScripts**
+    - 响应参数变更
+      - `+ description`
+      - `+ approvers`
+      - `+ targetStatus`
+      - `+ scripts.description`
+      - `+ scripts.targetStatus`
+      - `+ scripts.approvers`
+      - `+ scripts.type: enum value [RDSSQL,PRESTO,ClickHouseSQL,HetuEngineSQL,PYTHON,ImpalaSQL,SparkPython]`
+
+### HuaweiCloud SDK DLI
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowSqlJobStatus**
+    - 响应参数变更
+      - `+ result_format`
+      - `+ result_path`
+
+### HuaweiCloud SDK DNS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreatePrivateZone**
+    - 请求参数变更
+      - `+ router.status`
+  - **AssociateRouter**
+    - 请求参数变更
+      - `+ router.status`
+  - **DisassociateRouter**
+    - 请求参数变更
+      - `+ router.status`
+  - **ShowPrivateZone**
+    - 响应参数变更
+      - `+ routers.status`
+
+### HuaweiCloud SDK EdgeSec
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListCertificates`
+    - `CreateCertificate`
+    - `ShowCertificate`
+    - `UpdateCertificate`
+    - `DeleteCertificate`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK FunctionGraph
+
+- _新增特性_
+  - 支持以下接口：
+    - `ListFunctionTags`
+    - `ListBridgeFunctions`
+    - `ListBridgeVersions`
+    - `UpdateFunctionCollectState`
+    - `ListFunctionTemplate`
+    - `ShowFunctionTemplate`
+    - `ShowFuncReservedInstanceMetrics`
+    - `ShowFunctionMetrics`
+    - `EnableAsyncStatusLog`
+    - `ShowProjectAsyncStatusLogInfo`
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFunctions**
+    - 响应参数变更
+      - `+ functions.resource_id`
+  - **ShowFunctionConfig**
+    - 响应参数变更
+      - `+ func_id`
+      - `+ resource_id`
+  - **UpdateFunctionConfig**
+    - 响应参数变更
+      - `+ func_id`
+      - `+ resource_id`
+  - **ShowResInstanceInfo**
+    - 响应参数变更
+      - `+ resources.resource_detail.resource_id`
+
+### HuaweiCloud SDK GaussDB
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **CreateGaussMySqlInstance**
+    - 响应参数变更
+      - `* instance.volume.size: string -> int32`
+
+### HuaweiCloud SDK GSL
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListFlowBySimCards**
+    - 请求参数变更
+      - `+ sim_card_ids`
+
+### HuaweiCloud SDK IoTDA
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ShowRuleAction**
+    - 响应参数变更
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+  - **UpdateRuleAction**
+    - 请求参数变更
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+    - 响应参数变更
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+  - **CreateRuleAction**
+    - 请求参数变更
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+    - 响应参数变更
+      - `+ channel_detail.dms_kafka_forwarding.security_protocol`
+  - **ListRuleActions**
+    - 响应参数变更
+      - `+ actions.channel_detail.dms_kafka_forwarding.security_protocol`
+
+### HuaweiCloud SDK Kafka
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListInstanceConsumerGroups**
+    - 响应参数变更
+      - `* groups.createdAt: int32 -> int64`
+
+### HuaweiCloud SDK LTS
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ListTopnTrafficStatistics**
+    - 响应参数变更
+      - `+ results.cold_storage`
+
+### HuaweiCloud SDK MRS
+
+- _新增特性_
+  - 支持接口`AddComponent`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK OCR
+
+- _新增特性_
+  - 支持接口`RecognizePeruIdCard`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK RabbitMQ
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - 移除接口`ShowRabbitMqProductCores`
+
+### HuaweiCloud SDK RDS
+
+- _新增特性_
+  - 支持接口`RevokePostgresqlDbPrivilege`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
+### HuaweiCloud SDK ServiceStage
+
+- _新增特性_
+  - 无
+- _解决问题_
+  - 无
+- _特性变更_
+  - **ChangeInstance**
+    - 请求参数变更
+      - `+ configuration.env`
+      - `+ configuration.storage`
+      - `+ configuration.strategy`
+      - `+ configuration.lifecycle`
+      - `+ configuration.scheduler`
+      - `+ configuration.probes`
+      - `* configuration: map<string, object> -> object<InstanceConfiguration>`
+
+### HuaweiCloud SDK Workspace
+
+- _新增特性_
+  - 支持接口`BatchAddDesktopsTags`、`BatchDeleteDesktopsTags`
+- _解决问题_
+  - 无
+- _特性变更_
+  - 无
+
 # 3.1.66 2023-11-13
 
 ### HuaweiCloud SDK DCS

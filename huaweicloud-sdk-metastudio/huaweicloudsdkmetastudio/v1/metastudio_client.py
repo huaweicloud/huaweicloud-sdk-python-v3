@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkmetastudio'")
 
 
 class MetaStudioClient(Client):
@@ -38,9 +43,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalAssetResponse`
         """
-        return self._create_digital_asset_with_http_info(request)
+        http_info = self._create_digital_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_digital_asset_with_http_info(self, request):
+    def create_digital_asset_invoker(self, request):
+        http_info = self._create_digital_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_digital_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDigitalAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -70,20 +88,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-assets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDigitalAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_asset(self, request):
         """删除资产
@@ -96,9 +110,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteAssetResponse`
         """
-        return self._delete_asset_with_http_info(request)
+        http_info = self._delete_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_asset_with_http_info(self, request):
+    def delete_asset_invoker(self, request):
+        http_info = self._delete_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_asset_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,9 +146,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -130,20 +157,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-assets/{asset_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_asset_summary(self, request):
         """查询资产概要
@@ -156,9 +179,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListAssetSummaryRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListAssetSummaryResponse`
         """
-        return self._list_asset_summary_with_http_info(request)
+        http_info = self._list_asset_summary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_asset_summary_with_http_info(self, request):
+    def list_asset_summary_invoker(self, request):
+        http_info = self._list_asset_summary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_asset_summary_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-assets/summarys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetSummaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -186,20 +222,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-assets/summarys',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssetSummaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_assets(self, request):
         """查询资产列表
@@ -212,9 +244,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListAssetsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListAssetsResponse`
         """
-        return self._list_assets_with_http_info(request)
+        http_info = self._list_assets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_assets_with_http_info(self, request):
+    def list_assets_invoker(self, request):
+        http_info = self._list_assets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_assets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -265,9 +310,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -276,20 +321,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-assets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_asset(self, request):
         """恢复被删除的资产
@@ -302,9 +343,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.RestoreAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.RestoreAssetResponse`
         """
-        return self._restore_asset_with_http_info(request)
+        http_info = self._restore_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_asset_with_http_info(self, request):
+    def restore_asset_invoker(self, request):
+        http_info = self._restore_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-assets/{asset_id}/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -323,9 +377,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -334,20 +388,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-assets/{asset_id}/restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset(self, request):
         """查询资产详情
@@ -360,9 +410,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowAssetResponse`
         """
-        return self._show_asset_with_http_info(request)
+        http_info = self._show_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_with_http_info(self, request):
+    def show_asset_invoker(self, request):
+        http_info = self._show_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -381,9 +444,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -392,20 +455,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-assets/{asset_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_digital_asset(self, request):
         """更新资产
@@ -418,9 +477,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateDigitalAssetRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateDigitalAssetResponse`
         """
-        return self._update_digital_asset_with_http_info(request)
+        http_info = self._update_digital_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_digital_asset_with_http_info(self, request):
+    def update_digital_asset_invoker(self, request):
+        http_info = self._update_digital_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_digital_asset_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDigitalAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -439,11 +511,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -452,20 +524,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-assets/{asset_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDigitalAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_digital_human_business_card(self, request):
         """创建数字人名片制作
@@ -478,9 +546,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalHumanBusinessCardRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateDigitalHumanBusinessCardResponse`
         """
-        return self._create_digital_human_business_card_with_http_info(request)
+        http_info = self._create_digital_human_business_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_digital_human_business_card_with_http_info(self, request):
+    def create_digital_human_business_card_invoker(self, request):
+        http_info = self._create_digital_human_business_card_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_digital_human_business_card_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-business-cards",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDigitalHumanBusinessCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -497,11 +578,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -510,20 +591,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-business-cards',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDigitalHumanBusinessCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_digital_human_business_card(self, request):
         """删除数字人名片制作任务
@@ -536,9 +613,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteDigitalHumanBusinessCardRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteDigitalHumanBusinessCardResponse`
         """
-        return self._delete_digital_human_business_card_with_http_info(request)
+        http_info = self._delete_digital_human_business_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_digital_human_business_card_with_http_info(self, request):
+    def delete_digital_human_business_card_invoker(self, request):
+        http_info = self._delete_digital_human_business_card_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_digital_human_business_card_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-human-business-cards/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDigitalHumanBusinessCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -557,9 +647,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -568,20 +658,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-business-cards/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDigitalHumanBusinessCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_digital_human_business_card(self, request):
         """查询数字人名片制作任务列表
@@ -594,9 +680,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListDigitalHumanBusinessCardRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListDigitalHumanBusinessCardResponse`
         """
-        return self._list_digital_human_business_card_with_http_info(request)
+        http_info = self._list_digital_human_business_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_digital_human_business_card_with_http_info(self, request):
+    def list_digital_human_business_card_invoker(self, request):
+        http_info = self._list_digital_human_business_card_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_digital_human_business_card_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-business-cards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDigitalHumanBusinessCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -629,9 +728,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -640,20 +739,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-business-cards',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDigitalHumanBusinessCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_digital_human_business_card(self, request):
         """查询数字人名片制作任务详情
@@ -666,9 +761,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowDigitalHumanBusinessCardRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowDigitalHumanBusinessCardResponse`
         """
-        return self._show_digital_human_business_card_with_http_info(request)
+        http_info = self._show_digital_human_business_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_digital_human_business_card_with_http_info(self, request):
+    def show_digital_human_business_card_invoker(self, request):
+        http_info = self._show_digital_human_business_card_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_digital_human_business_card_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-business-cards/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDigitalHumanBusinessCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -687,9 +795,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -698,20 +806,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-business-cards/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDigitalHumanBusinessCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_digital_human_business_card(self, request):
         """更新数字人名片制作
@@ -724,9 +828,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateDigitalHumanBusinessCardRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateDigitalHumanBusinessCardResponse`
         """
-        return self._update_digital_human_business_card_with_http_info(request)
+        http_info = self._update_digital_human_business_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_digital_human_business_card_with_http_info(self, request):
+    def update_digital_human_business_card_invoker(self, request):
+        http_info = self._update_digital_human_business_card_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_digital_human_business_card_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-business-cards/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDigitalHumanBusinessCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -745,11 +862,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -758,20 +875,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-business-cards/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDigitalHumanBusinessCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel2_d_digital_human_video(self, request):
         """取消等待中的分身数字人视频制作任务
@@ -784,9 +897,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.Cancel2DDigitalHumanVideoRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.Cancel2DDigitalHumanVideoResponse`
         """
-        return self._cancel2_d_digital_human_video_with_http_info(request)
+        http_info = self._cancel2_d_digital_human_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel2_d_digital_human_video_with_http_info(self, request):
+    def cancel2_d_digital_human_video_invoker(self, request):
+        http_info = self._cancel2_d_digital_human_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel2_d_digital_human_video_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/2d-digital-human-videos/{job_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "Cancel2DDigitalHumanVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -805,9 +931,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -816,20 +942,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/2d-digital-human-videos/{job_id}/cancel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='Cancel2DDigitalHumanVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create2_d_digital_human_video(self, request):
         """创建分身数字人视频制作任务
@@ -842,9 +964,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.Create2DDigitalHumanVideoRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.Create2DDigitalHumanVideoResponse`
         """
-        return self._create2_d_digital_human_video_with_http_info(request)
+        http_info = self._create2_d_digital_human_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create2_d_digital_human_video_with_http_info(self, request):
+    def create2_d_digital_human_video_invoker(self, request):
+        http_info = self._create2_d_digital_human_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create2_d_digital_human_video_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/2d-digital-human-videos",
+            "request_type": request.__class__.__name__,
+            "response_type": "Create2DDigitalHumanVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -861,11 +996,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -874,20 +1009,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/2d-digital-human-videos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='Create2DDigitalHumanVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show2_d_digital_human_video(self, request):
         """查询分身数字人视频制作任务详情
@@ -900,9 +1031,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.Show2DDigitalHumanVideoRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.Show2DDigitalHumanVideoResponse`
         """
-        return self._show2_d_digital_human_video_with_http_info(request)
+        http_info = self._show2_d_digital_human_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show2_d_digital_human_video_with_http_info(self, request):
+    def show2_d_digital_human_video_invoker(self, request):
+        http_info = self._show2_d_digital_human_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show2_d_digital_human_video_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/2d-digital-human-videos/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "Show2DDigitalHumanVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -923,9 +1067,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -934,20 +1078,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/2d-digital-human-videos/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='Show2DDigitalHumanVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_photo_digital_human_video(self, request):
         """取消等待中的照片分身数字人视频制作任务
@@ -960,9 +1100,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CancelPhotoDigitalHumanVideoRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CancelPhotoDigitalHumanVideoResponse`
         """
-        return self._cancel_photo_digital_human_video_with_http_info(request)
+        http_info = self._cancel_photo_digital_human_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_photo_digital_human_video_with_http_info(self, request):
+    def cancel_photo_digital_human_video_invoker(self, request):
+        http_info = self._cancel_photo_digital_human_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_photo_digital_human_video_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/photo-digital-human-videos/{job_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelPhotoDigitalHumanVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -981,9 +1134,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -992,20 +1145,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/photo-digital-human-videos/{job_id}/cancel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelPhotoDigitalHumanVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_photo_detection(self, request):
         """创建照片检测任务
@@ -1018,9 +1167,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDetectionRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDetectionResponse`
         """
-        return self._create_photo_detection_with_http_info(request)
+        http_info = self._create_photo_detection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_photo_detection_with_http_info(self, request):
+    def create_photo_detection_invoker(self, request):
+        http_info = self._create_photo_detection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_photo_detection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/photo-detection",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePhotoDetectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1037,11 +1199,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1050,20 +1212,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/photo-detection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePhotoDetectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_photo_digital_human_video(self, request):
         """创建照片分身数字人视频制作任务
@@ -1076,9 +1234,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDigitalHumanVideoRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePhotoDigitalHumanVideoResponse`
         """
-        return self._create_photo_digital_human_video_with_http_info(request)
+        http_info = self._create_photo_digital_human_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_photo_digital_human_video_with_http_info(self, request):
+    def create_photo_digital_human_video_invoker(self, request):
+        http_info = self._create_photo_digital_human_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_photo_digital_human_video_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/photo-digital-human-videos",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePhotoDigitalHumanVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1095,11 +1266,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1108,20 +1279,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/photo-digital-human-videos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePhotoDigitalHumanVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_photo_detection(self, request):
         """查询照片检测任务详情
@@ -1134,9 +1301,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPhotoDetectionRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPhotoDetectionResponse`
         """
-        return self._show_photo_detection_with_http_info(request)
+        http_info = self._show_photo_detection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_photo_detection_with_http_info(self, request):
+    def show_photo_detection_invoker(self, request):
+        http_info = self._show_photo_detection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_photo_detection_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/photo-detection/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPhotoDetectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1155,9 +1335,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1166,20 +1346,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/photo-detection/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPhotoDetectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_photo_digital_human_video(self, request):
         """查询照片分身数字人视频制作任务详情
@@ -1192,9 +1368,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPhotoDigitalHumanVideoRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPhotoDigitalHumanVideoResponse`
         """
-        return self._show_photo_digital_human_video_with_http_info(request)
+        http_info = self._show_photo_digital_human_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_photo_digital_human_video_with_http_info(self, request):
+    def show_photo_digital_human_video_invoker(self, request):
+        http_info = self._show_photo_digital_human_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_photo_digital_human_video_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/photo-digital-human-videos/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPhotoDigitalHumanVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1215,9 +1404,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1226,20 +1415,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/photo-digital-human-videos/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPhotoDigitalHumanVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def confirm_file_upload(self, request):
         """确认文件已上传
@@ -1252,9 +1437,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ConfirmFileUploadRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ConfirmFileUploadResponse`
         """
-        return self._confirm_file_upload_with_http_info(request)
+        http_info = self._confirm_file_upload_http_info(request)
+        return self._call_api(**http_info)
 
-    def _confirm_file_upload_with_http_info(self, request):
+    def confirm_file_upload_invoker(self, request):
+        http_info = self._confirm_file_upload_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _confirm_file_upload_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/files/{file_id}/complete",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmFileUploadResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1273,11 +1471,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1286,20 +1484,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/files/{file_id}/complete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ConfirmFileUploadResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_file(self, request):
         """创建文件并获取上传URL
@@ -1312,9 +1506,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateFileRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateFileResponse`
         """
-        return self._create_file_with_http_info(request)
+        http_info = self._create_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_file_with_http_info(self, request):
+    def create_file_invoker(self, request):
+        http_info = self._create_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1331,11 +1538,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1344,20 +1551,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/files',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_file(self, request):
         """删除文件
@@ -1370,9 +1573,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteFileRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteFileResponse`
         """
-        return self._delete_file_with_http_info(request)
+        http_info = self._delete_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_file_with_http_info(self, request):
+    def delete_file_invoker(self, request):
+        http_info = self._delete_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_file_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/files/{file_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1391,9 +1607,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1402,20 +1618,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/files/{file_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_picture_modeling_by_url_job(self, request):
         """基于图片URL创建照片建模任务
@@ -1428,9 +1640,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingByUrlJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingByUrlJobResponse`
         """
-        return self._create_picture_modeling_by_url_job_with_http_info(request)
+        http_info = self._create_picture_modeling_by_url_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_picture_modeling_by_url_job_with_http_info(self, request):
+    def create_picture_modeling_by_url_job_invoker(self, request):
+        http_info = self._create_picture_modeling_by_url_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_picture_modeling_by_url_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human/stylized/picture-modelings-by-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePictureModelingByUrlJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1447,11 +1672,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1460,20 +1685,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/stylized/picture-modelings-by-url',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePictureModelingByUrlJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_picture_modeling_job(self, request):
         """创建照片建模任务
@@ -1486,9 +1707,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreatePictureModelingJobResponse`
         """
-        return self._create_picture_modeling_job_with_http_info(request)
+        http_info = self._create_picture_modeling_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_picture_modeling_job_with_http_info(self, request):
+    def create_picture_modeling_job_invoker(self, request):
+        http_info = self._create_picture_modeling_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_picture_modeling_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human/stylized/picture-modelings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePictureModelingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1513,11 +1747,11 @@ class MetaStudioClient(Client):
         if 'notify_url' in local_var_params:
             form_params['notify_url'] = local_var_params['notify_url']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1526,20 +1760,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/stylized/picture-modelings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePictureModelingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_picture_modeling_jobs(self, request):
         """照片建模任务列表查询
@@ -1552,9 +1782,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListPictureModelingJobsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListPictureModelingJobsResponse`
         """
-        return self._list_picture_modeling_jobs_with_http_info(request)
+        http_info = self._list_picture_modeling_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_picture_modeling_jobs_with_http_info(self, request):
+    def list_picture_modeling_jobs_invoker(self, request):
+        http_info = self._list_picture_modeling_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_picture_modeling_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human/stylized/picture-modelings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPictureModelingJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1585,9 +1828,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1596,20 +1839,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/stylized/picture-modelings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPictureModelingJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_picture_modeling_job(self, request):
         """照片建模任务详情查询
@@ -1622,9 +1861,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowPictureModelingJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowPictureModelingJobResponse`
         """
-        return self._show_picture_modeling_job_with_http_info(request)
+        http_info = self._show_picture_modeling_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_picture_modeling_job_with_http_info(self, request):
+    def show_picture_modeling_job_invoker(self, request):
+        http_info = self._show_picture_modeling_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_picture_modeling_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human/stylized/picture-modelings/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPictureModelingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1643,9 +1895,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1654,20 +1906,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/stylized/picture-modelings/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPictureModelingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_smart_live_command(self, request):
         """控制数字人直播过程
@@ -1680,9 +1928,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ExecuteSmartLiveCommandRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ExecuteSmartLiveCommandResponse`
         """
-        return self._execute_smart_live_command_with_http_info(request)
+        http_info = self._execute_smart_live_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_smart_live_command_with_http_info(self, request):
+    def execute_smart_live_command_invoker(self, request):
+        http_info = self._execute_smart_live_command_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_smart_live_command_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}/command",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteSmartLiveCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1703,11 +1964,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1716,20 +1977,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}/command',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteSmartLiveCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_smart_live(self, request):
         """查询数字人智能直播任务列表
@@ -1742,9 +1999,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveResponse`
         """
-        return self._list_smart_live_with_http_info(request)
+        http_info = self._list_smart_live_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_smart_live_with_http_info(self, request):
+    def list_smart_live_invoker(self, request):
+        http_info = self._list_smart_live_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_smart_live_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmartLiveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1777,9 +2047,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1788,20 +2058,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSmartLiveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def live_event_report(self, request):
         """上报直播间事件
@@ -1814,9 +2080,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.LiveEventReportRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.LiveEventReportResponse`
         """
-        return self._live_event_report_with_http_info(request)
+        http_info = self._live_event_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _live_event_report_with_http_info(self, request):
+    def live_event_report_invoker(self, request):
+        http_info = self._live_event_report_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _live_event_report_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}/live-event-report",
+            "request_type": request.__class__.__name__,
+            "response_type": "LiveEventReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1843,11 +2122,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1856,20 +2135,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}/live-event-report',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='LiveEventReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_smart_live(self, request):
         """查询数字人智能直播任务详情
@@ -1882,9 +2157,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowSmartLiveRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowSmartLiveResponse`
         """
-        return self._show_smart_live_with_http_info(request)
+        http_info = self._show_smart_live_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_smart_live_with_http_info(self, request):
+    def show_smart_live_invoker(self, request):
+        http_info = self._show_smart_live_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_smart_live_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSmartLiveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1905,9 +2193,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1916,20 +2204,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSmartLiveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_smart_live(self, request):
         """启动数字人智能直播任务
@@ -1942,9 +2226,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.StartSmartLiveRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.StartSmartLiveResponse`
         """
-        return self._start_smart_live_with_http_info(request)
+        http_info = self._start_smart_live_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_smart_live_with_http_info(self, request):
+    def start_smart_live_invoker(self, request):
+        http_info = self._start_smart_live_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_smart_live_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartSmartLiveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1963,11 +2260,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1976,20 +2273,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartSmartLiveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_smart_live(self, request):
         """结束数字人智能直播任务
@@ -2002,9 +2295,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.StopSmartLiveRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.StopSmartLiveResponse`
         """
-        return self._stop_smart_live_with_http_info(request)
+        http_info = self._stop_smart_live_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_smart_live_with_http_info(self, request):
+    def stop_smart_live_invoker(self, request):
+        http_info = self._stop_smart_live_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_smart_live_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopSmartLiveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2025,9 +2331,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2036,20 +2342,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}/smart-live-jobs/{job_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopSmartLiveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_smart_live_room(self, request):
         """创建智能直播间
@@ -2062,9 +2364,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateSmartLiveRoomRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateSmartLiveRoomResponse`
         """
-        return self._create_smart_live_room_with_http_info(request)
+        http_info = self._create_smart_live_room_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_smart_live_room_with_http_info(self, request):
+    def create_smart_live_room_invoker(self, request):
+        http_info = self._create_smart_live_room_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_smart_live_room_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/smart-live-rooms",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSmartLiveRoomResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2081,11 +2396,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2094,20 +2409,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSmartLiveRoomResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_smart_live_room(self, request):
         """删除智能直播间
@@ -2120,9 +2431,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteSmartLiveRoomRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteSmartLiveRoomResponse`
         """
-        return self._delete_smart_live_room_with_http_info(request)
+        http_info = self._delete_smart_live_room_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_smart_live_room_with_http_info(self, request):
+    def delete_smart_live_room_invoker(self, request):
+        http_info = self._delete_smart_live_room_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_smart_live_room_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSmartLiveRoomResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2141,9 +2465,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2152,20 +2476,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSmartLiveRoomResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_smart_live_rooms(self, request):
         """查询智能直播间列表
@@ -2178,9 +2498,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveRoomsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListSmartLiveRoomsResponse`
         """
-        return self._list_smart_live_rooms_with_http_info(request)
+        http_info = self._list_smart_live_rooms_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_smart_live_rooms_with_http_info(self, request):
+    def list_smart_live_rooms_invoker(self, request):
+        http_info = self._list_smart_live_rooms_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_smart_live_rooms_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-rooms",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmartLiveRoomsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2213,9 +2546,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2224,20 +2557,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSmartLiveRoomsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_smart_live_room(self, request):
         """查询智能直播剧本详情
@@ -2250,9 +2579,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowSmartLiveRoomRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowSmartLiveRoomResponse`
         """
-        return self._show_smart_live_room_with_http_info(request)
+        http_info = self._show_smart_live_room_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_smart_live_room_with_http_info(self, request):
+    def show_smart_live_room_invoker(self, request):
+        http_info = self._show_smart_live_room_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_smart_live_room_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSmartLiveRoomResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2271,9 +2613,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2282,20 +2624,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSmartLiveRoomResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_smart_live_room(self, request):
         """更新智能直播间信息
@@ -2308,9 +2646,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateSmartLiveRoomRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateSmartLiveRoomResponse`
         """
-        return self._update_smart_live_room_with_http_info(request)
+        http_info = self._update_smart_live_room_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_smart_live_room_with_http_info(self, request):
+    def update_smart_live_room_invoker(self, request):
+        http_info = self._update_smart_live_room_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_smart_live_room_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/smart-live-rooms/{room_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSmartLiveRoomResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2329,11 +2680,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2342,20 +2693,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/smart-live-rooms/{room_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSmartLiveRoomResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_styles(self, request):
         """查询数字人风格列表
@@ -2368,9 +2715,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListStylesRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListStylesResponse`
         """
-        return self._list_styles_with_http_info(request)
+        http_info = self._list_styles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_styles_with_http_info(self, request):
+    def list_styles_invoker(self, request):
+        http_info = self._list_styles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_styles_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/styles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStylesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2401,9 +2761,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2412,20 +2772,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/styles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStylesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ttsa(self, request):
         """创建语音驱动任务
@@ -2438,9 +2794,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateTtsaRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateTtsaResponse`
         """
-        return self._create_ttsa_with_http_info(request)
+        http_info = self._create_ttsa_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ttsa_with_http_info(self, request):
+    def create_ttsa_invoker(self, request):
+        http_info = self._create_ttsa_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ttsa_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ttsa-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTtsaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2457,11 +2826,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2470,20 +2839,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ttsa-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTtsaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ttsa_data(self, request):
         """获取语音驱动数据
@@ -2496,9 +2861,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListTtsaDataRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTtsaDataResponse`
         """
-        return self._list_ttsa_data_with_http_info(request)
+        http_info = self._list_ttsa_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ttsa_data_with_http_info(self, request):
+    def list_ttsa_data_invoker(self, request):
+        http_info = self._list_ttsa_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ttsa_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsa-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTtsaDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2517,9 +2895,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2528,20 +2906,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ttsa-jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTtsaDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ttsa_jobs(self, request):
         """获取语音驱动任务列表
@@ -2554,9 +2928,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListTtsaJobsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListTtsaJobsResponse`
         """
-        return self._list_ttsa_jobs_with_http_info(request)
+        http_info = self._list_ttsa_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ttsa_jobs_with_http_info(self, request):
+    def list_ttsa_jobs_invoker(self, request):
+        http_info = self._list_ttsa_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ttsa_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ttsa-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTtsaJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2577,9 +2964,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2588,20 +2975,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ttsa-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTtsaJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_video_motion_capture_job(self, request):
         """创建视频驱动任务
@@ -2614,9 +2997,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateVideoMotionCaptureJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateVideoMotionCaptureJobResponse`
         """
-        return self._create_video_motion_capture_job_with_http_info(request)
+        http_info = self._create_video_motion_capture_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_video_motion_capture_job_with_http_info(self, request):
+    def create_video_motion_capture_job_invoker(self, request):
+        http_info = self._create_video_motion_capture_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_video_motion_capture_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/video-motion-capture-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVideoMotionCaptureJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2635,11 +3031,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2648,20 +3044,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/video-motion-capture-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVideoMotionCaptureJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_video_motion_capture_command(self, request):
         """控制数字人驱动
@@ -2674,9 +3066,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ExecuteVideoMotionCaptureCommandRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ExecuteVideoMotionCaptureCommandResponse`
         """
-        return self._execute_video_motion_capture_command_with_http_info(request)
+        http_info = self._execute_video_motion_capture_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_video_motion_capture_command_with_http_info(self, request):
+    def execute_video_motion_capture_command_invoker(self, request):
+        http_info = self._execute_video_motion_capture_command_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_video_motion_capture_command_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/video-motion-capture-jobs/{job_id}/command",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteVideoMotionCaptureCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2695,11 +3100,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2708,20 +3113,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/video-motion-capture-jobs/{job_id}/command',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteVideoMotionCaptureCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_video_motion_capture_jobs(self, request):
         """查询视频驱动任务列表
@@ -2734,9 +3135,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListVideoMotionCaptureJobsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListVideoMotionCaptureJobsResponse`
         """
-        return self._list_video_motion_capture_jobs_with_http_info(request)
+        http_info = self._list_video_motion_capture_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_video_motion_capture_jobs_with_http_info(self, request):
+    def list_video_motion_capture_jobs_invoker(self, request):
+        http_info = self._list_video_motion_capture_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_video_motion_capture_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/video-motion-capture-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVideoMotionCaptureJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2757,9 +3171,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2768,20 +3182,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/video-motion-capture-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVideoMotionCaptureJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_video_motion_capture_job(self, request):
         """查询视频驱动任务详情
@@ -2794,9 +3204,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowVideoMotionCaptureJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowVideoMotionCaptureJobResponse`
         """
-        return self._show_video_motion_capture_job_with_http_info(request)
+        http_info = self._show_video_motion_capture_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_video_motion_capture_job_with_http_info(self, request):
+    def show_video_motion_capture_job_invoker(self, request):
+        http_info = self._show_video_motion_capture_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_video_motion_capture_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/video-motion-capture-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVideoMotionCaptureJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2815,9 +3238,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2826,20 +3249,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/video-motion-capture-jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVideoMotionCaptureJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_video_motion_capture_job(self, request):
         """停止视频驱动任务
@@ -2852,9 +3271,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.StopVideoMotionCaptureJobRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.StopVideoMotionCaptureJobResponse`
         """
-        return self._stop_video_motion_capture_job_with_http_info(request)
+        http_info = self._stop_video_motion_capture_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_video_motion_capture_job_with_http_info(self, request):
+    def stop_video_motion_capture_job_invoker(self, request):
+        http_info = self._stop_video_motion_capture_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_video_motion_capture_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/video-motion-capture-jobs/{job_id}/finish",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopVideoMotionCaptureJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2873,9 +3305,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2884,20 +3316,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/video-motion-capture-jobs/{job_id}/finish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopVideoMotionCaptureJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_video_scripts(self, request):
         """创建视频制作剧本
@@ -2910,9 +3338,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.CreateVideoScriptsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.CreateVideoScriptsResponse`
         """
-        return self._create_video_scripts_with_http_info(request)
+        http_info = self._create_video_scripts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_video_scripts_with_http_info(self, request):
+    def create_video_scripts_invoker(self, request):
+        http_info = self._create_video_scripts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_video_scripts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human-video-scripts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVideoScriptsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2929,11 +3370,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2942,20 +3383,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-video-scripts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVideoScriptsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_video_script(self, request):
         """删除视频制作剧本
@@ -2968,9 +3405,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.DeleteVideoScriptRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.DeleteVideoScriptResponse`
         """
-        return self._delete_video_script_with_http_info(request)
+        http_info = self._delete_video_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_video_script_with_http_info(self, request):
+    def delete_video_script_invoker(self, request):
+        http_info = self._delete_video_script_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_video_script_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-human-video-scripts/{script_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVideoScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2989,9 +3439,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -3000,20 +3450,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-video-scripts/{script_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVideoScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_video_scripts(self, request):
         """查询视频制作剧本列表
@@ -3026,9 +3472,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ListVideoScriptsRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ListVideoScriptsResponse`
         """
-        return self._list_video_scripts_with_http_info(request)
+        http_info = self._list_video_scripts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_video_scripts_with_http_info(self, request):
+    def list_video_scripts_invoker(self, request):
+        http_info = self._list_video_scripts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_video_scripts_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-video-scripts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVideoScriptsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3049,9 +3508,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -3060,20 +3519,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-video-scripts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVideoScriptsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_video_script(self, request):
         """查询视频制作剧本详情
@@ -3086,9 +3541,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.ShowVideoScriptRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.ShowVideoScriptResponse`
         """
-        return self._show_video_script_with_http_info(request)
+        http_info = self._show_video_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_video_script_with_http_info(self, request):
+    def show_video_script_invoker(self, request):
+        http_info = self._show_video_script_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_video_script_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human-video-scripts/{script_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVideoScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3107,9 +3575,9 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -3118,20 +3586,16 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-video-scripts/{script_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVideoScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_video_script(self, request):
         """更新视频制作剧本
@@ -3144,9 +3608,22 @@ class MetaStudioClient(Client):
         :type request: :class:`huaweicloudsdkmetastudio.v1.UpdateVideoScriptRequest`
         :rtype: :class:`huaweicloudsdkmetastudio.v1.UpdateVideoScriptResponse`
         """
-        return self._update_video_script_with_http_info(request)
+        http_info = self._update_video_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_video_script_with_http_info(self, request):
+    def update_video_script_invoker(self, request):
+        http_info = self._update_video_script_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_video_script_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human-video-scripts/{script_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVideoScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3165,11 +3642,11 @@ class MetaStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -3178,20 +3655,25 @@ class MetaStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human-video-scripts/{script_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVideoScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

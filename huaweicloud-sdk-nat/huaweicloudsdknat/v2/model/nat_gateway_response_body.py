@@ -65,7 +65,7 @@ class NatGatewayResponseBody:
         :type tenant_id: str
         :param name: 公网NAT网关实例的名字，长度限制为64。
         :type name: str
-        :param description: 公网NAT网关实例的描述，长度限制为255。
+        :param description: 公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         :param spec: 公网NAT网关的规格。 取值为： “1”：小型，SNAT最大连接数10000 “2”：中型，SNAT最大连接数50000 “3”：大型，SNAT最大连接数200000 “4”：超大型，SNAT最大连接数1000000 
         :type spec: str
@@ -85,7 +85,7 @@ class NatGatewayResponseBody:
         :type session_conf: :class:`huaweicloudsdknat.v2.SessionConfiguration`
         :param ngport_ip_address: 公网NAT网关私有IP地址，由VPC中子网分配。
         :type ngport_ip_address: str
-        :param billing_info: 订单信息。
+        :param billing_info: 订单信息。此字段只有在订购包周期资源时才会有订单信息，而在订购按需资源时则为空。
         :type billing_info: str
         :param dnat_rules_limit: 公网NAT网关下DNAT规则数量限制，默认为200。
         :type dnat_rules_limit: int
@@ -200,7 +200,7 @@ class NatGatewayResponseBody:
     def description(self):
         """Gets the description of this NatGatewayResponseBody.
 
-        公网NAT网关实例的描述，长度限制为255。
+        公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this NatGatewayResponseBody.
         :rtype: str
@@ -211,7 +211,7 @@ class NatGatewayResponseBody:
     def description(self, description):
         """Sets the description of this NatGatewayResponseBody.
 
-        公网NAT网关实例的描述，长度限制为255。
+        公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this NatGatewayResponseBody.
         :type description: str
@@ -416,7 +416,7 @@ class NatGatewayResponseBody:
     def billing_info(self):
         """Gets the billing_info of this NatGatewayResponseBody.
 
-        订单信息。
+        订单信息。此字段只有在订购包周期资源时才会有订单信息，而在订购按需资源时则为空。
 
         :return: The billing_info of this NatGatewayResponseBody.
         :rtype: str
@@ -427,7 +427,7 @@ class NatGatewayResponseBody:
     def billing_info(self, billing_info):
         """Sets the billing_info of this NatGatewayResponseBody.
 
-        订单信息。
+        订单信息。此字段只有在订购包周期资源时才会有订单信息，而在订购按需资源时则为空。
 
         :param billing_info: The billing_info of this NatGatewayResponseBody.
         :type billing_info: str

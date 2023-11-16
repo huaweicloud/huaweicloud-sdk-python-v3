@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkmsgsms'")
 
 
 class MsgsmsAsyncClient(Client):
@@ -39,9 +44,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.CreateAppResponse`
         """
-        return self._create_app_with_http_info(request)
+        http_info = self._create_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_with_http_info(self, request):
+    def create_app_async_invoker(self, request):
+        http_info = self._create_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/msgsms/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_details_async(self, request):
         """查询短信应用
@@ -96,9 +109,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListAppDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListAppDetailsResponse`
         """
-        return self._list_app_details_with_http_info(request)
+        http_info = self._list_app_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_details_with_http_info(self, request):
+    def list_app_details_async_invoker(self, request):
+        http_info = self._list_app_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -131,9 +156,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -142,20 +167,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_async(self, request):
         """获取应用详情
@@ -169,9 +190,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowAppResponse`
         """
-        return self._show_app_with_http_info(request)
+        http_info = self._show_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_with_http_info(self, request):
+    def show_app_async_invoker(self, request):
+        http_info = self._show_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/apps/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -188,9 +221,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -199,20 +232,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/apps/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_count_async(self, request):
         """查询应用数量
@@ -226,9 +255,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowAppCountRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowAppCountResponse`
         """
-        return self._show_app_count_with_http_info(request)
+        http_info = self._show_app_count_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_count_with_http_info(self, request):
+    def show_app_count_async_invoker(self, request):
+        http_info = self._show_app_count_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_app_count_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/apps-count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppCountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -245,9 +286,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -256,20 +297,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/apps-count',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppCountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_async(self, request):
         """修改短信应用
@@ -283,9 +320,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UpdateAppResponse`
         """
-        return self._update_app_with_http_info(request)
+        http_info = self._update_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_with_http_info(self, request):
+    def update_app_async_invoker(self, request):
+        http_info = self._update_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_app_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/msgsms/apps/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -302,11 +351,11 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -315,20 +364,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/apps/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_signature_async(self, request):
         """创建短信签名
@@ -342,9 +387,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.CreateSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.CreateSignatureResponse`
         """
-        return self._create_signature_with_http_info(request)
+        http_info = self._create_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_signature_with_http_info(self, request):
+    def create_signature_async_invoker(self, request):
+        http_info = self._create_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_signature_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/msgsms/signatures",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -359,11 +416,11 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -372,20 +429,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/signatures',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_signature_async(self, request):
         """删除短信签名
@@ -399,9 +452,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.DeleteSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.DeleteSignatureResponse`
         """
-        return self._delete_signature_with_http_info(request)
+        http_info = self._delete_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_signature_with_http_info(self, request):
+    def delete_signature_async_invoker(self, request):
+        http_info = self._delete_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_signature_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/msgsms/signatures/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -418,9 +483,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -429,20 +494,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/signatures/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_signature_async(self, request):
         """申请激活签名
@@ -456,9 +517,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.EnableSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.EnableSignatureResponse`
         """
-        return self._enable_signature_with_http_info(request)
+        http_info = self._enable_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_signature_with_http_info(self, request):
+    def enable_signature_async_invoker(self, request):
+        http_info = self._enable_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_signature_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/msgsms/signatures/{id}/active",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -475,9 +548,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -486,20 +559,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/signatures/{id}/active',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_signature_details_async(self, request):
         """查询签名信息
@@ -513,9 +582,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListSignatureDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListSignatureDetailsResponse`
         """
-        return self._list_signature_details_with_http_info(request)
+        http_info = self._list_signature_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_signature_details_with_http_info(self, request):
+    def list_signature_details_async_invoker(self, request):
+        http_info = self._list_signature_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_signature_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/signatures",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSignatureDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -554,9 +635,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -565,20 +646,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/signatures',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSignatureDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_signature_async(self, request):
         """获取签名详情
@@ -592,9 +669,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowSignatureResponse`
         """
-        return self._show_signature_with_http_info(request)
+        http_info = self._show_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_signature_with_http_info(self, request):
+    def show_signature_async_invoker(self, request):
+        http_info = self._show_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_signature_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/signatures/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -611,9 +700,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -622,20 +711,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/signatures/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_signature_file_async(self, request):
         """查询申请文件
@@ -649,9 +734,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowSignatureFileRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowSignatureFileResponse`
         """
-        return self._show_signature_file_with_http_info(request)
+        http_info = self._show_signature_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_signature_file_with_http_info(self, request):
+    def show_signature_file_async_invoker(self, request):
+        http_info = self._show_signature_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_signature_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/upload-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSignatureFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -668,9 +765,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -679,20 +776,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/upload-files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSignatureFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_signature_async(self, request):
         """修改短信签名
@@ -706,9 +799,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.UpdateSignatureRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UpdateSignatureResponse`
         """
-        return self._update_signature_with_http_info(request)
+        http_info = self._update_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_signature_with_http_info(self, request):
+    def update_signature_async_invoker(self, request):
+        http_info = self._update_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_signature_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/msgsms/signatures/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -725,11 +830,11 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -738,20 +843,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/signatures/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_signature_file_async(self, request):
         """上传申请文件
@@ -765,9 +866,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.UploadSignatureFileRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UploadSignatureFileResponse`
         """
-        return self._upload_signature_file_with_http_info(request)
+        http_info = self._upload_signature_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_signature_file_with_http_info(self, request):
+    def upload_signature_file_async_invoker(self, request):
+        http_info = self._upload_signature_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_signature_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/msgsms/upload-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadSignatureFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -786,11 +899,11 @@ class MsgsmsAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -799,20 +912,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/upload-files',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadSignatureFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template_async(self, request):
         """创建短信模板
@@ -826,9 +935,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.CreateTemplateResponse`
         """
-        return self._create_template_with_http_info(request)
+        http_info = self._create_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_with_http_info(self, request):
+    def create_template_async_invoker(self, request):
+        http_info = self._create_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/msgsms/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -843,11 +964,11 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -856,20 +977,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_async(self, request):
         """删除短信模板
@@ -883,9 +1000,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.DeleteTemplateResponse`
         """
-        return self._delete_template_with_http_info(request)
+        http_info = self._delete_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_with_http_info(self, request):
+    def delete_template_async_invoker(self, request):
+        http_info = self._delete_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/msgsms/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -902,9 +1031,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -913,20 +1042,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/templates/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_send_country_details_async(self, request):
         """查询发送国家
@@ -940,9 +1065,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListSendCountryDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListSendCountryDetailsResponse`
         """
-        return self._list_send_country_details_with_http_info(request)
+        http_info = self._list_send_country_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_send_country_details_with_http_info(self, request):
+    def list_send_country_details_async_invoker(self, request):
+        http_info = self._list_send_country_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_send_country_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/country",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSendCountryDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -961,9 +1098,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -972,20 +1109,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/country',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSendCountryDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_details_async(self, request):
         """查询短信模板
@@ -999,9 +1132,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListTemplateDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListTemplateDetailsResponse`
         """
-        return self._list_template_details_with_http_info(request)
+        http_info = self._list_template_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_details_with_http_info(self, request):
+    def list_template_details_async_invoker(self, request):
+        http_info = self._list_template_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_template_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1046,9 +1191,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1057,20 +1202,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_varilable_details_async(self, request):
         """查询模板变量
@@ -1084,9 +1225,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ListTemplateVarilableDetailsRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ListTemplateVarilableDetailsResponse`
         """
-        return self._list_template_varilable_details_with_http_info(request)
+        http_info = self._list_template_varilable_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_varilable_details_with_http_info(self, request):
+    def list_template_varilable_details_async_invoker(self, request):
+        http_info = self._list_template_varilable_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_template_varilable_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/templates/{id}/varilable",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateVarilableDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1103,9 +1256,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1114,20 +1267,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/templates/{id}/varilable',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateVarilableDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_async(self, request):
         """获取模板详情
@@ -1141,9 +1290,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.ShowTemplateRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.ShowTemplateResponse`
         """
-        return self._show_template_with_http_info(request)
+        http_info = self._show_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_with_http_info(self, request):
+    def show_template_async_invoker(self, request):
+        http_info = self._show_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/msgsms/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1160,9 +1321,9 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1171,20 +1332,16 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/templates/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_template_async(self, request):
         """修改短信模板
@@ -1198,9 +1355,21 @@ class MsgsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmsgsms.v2.UpdateTemplateRequest`
         :rtype: :class:`huaweicloudsdkmsgsms.v2.UpdateTemplateResponse`
         """
-        return self._update_template_with_http_info(request)
+        http_info = self._update_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_template_with_http_info(self, request):
+    def update_template_async_invoker(self, request):
+        http_info = self._update_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/msgsms/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1217,11 +1386,11 @@ class MsgsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1230,20 +1399,26 @@ class MsgsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/msgsms/templates/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1282,4 +1457,4 @@ class MsgsmsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

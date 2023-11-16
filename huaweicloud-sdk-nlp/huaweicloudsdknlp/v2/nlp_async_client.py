@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdknlp'")
 
 
 class NlpAsyncClient(Client):
@@ -40,9 +45,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunAspectSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunAspectSentimentResponse`
         """
-        return self._run_aspect_sentiment_with_http_info(request)
+        http_info = self._run_aspect_sentiment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_aspect_sentiment_with_http_info(self, request):
+    def run_aspect_sentiment_async_invoker(self, request):
+        http_info = self._run_aspect_sentiment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_aspect_sentiment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlu/aspect-sentiment",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunAspectSentimentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +74,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +87,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlu/aspect-sentiment',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunAspectSentimentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_aspect_sentiment_advance_async(self, request):
         """属性级情感分析（高级版）
@@ -98,9 +111,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunAspectSentimentAdvanceRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunAspectSentimentAdvanceResponse`
         """
-        return self._run_aspect_sentiment_advance_with_http_info(request)
+        http_info = self._run_aspect_sentiment_advance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_aspect_sentiment_advance_with_http_info(self, request):
+    def run_aspect_sentiment_advance_async_invoker(self, request):
+        http_info = self._run_aspect_sentiment_advance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_aspect_sentiment_advance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlu/aspect-sentiment/advance",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunAspectSentimentAdvanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +140,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +153,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlu/aspect-sentiment/advance',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunAspectSentimentAdvanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_classification_async(self, request):
         """文本分类
@@ -156,9 +177,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunClassificationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunClassificationResponse`
         """
-        return self._run_classification_with_http_info(request)
+        http_info = self._run_classification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_classification_with_http_info(self, request):
+    def run_classification_async_invoker(self, request):
+        http_info = self._run_classification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_classification_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlu/classification",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunClassificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +206,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +219,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlu/classification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunClassificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_constituency_parser_async(self, request):
         """成分句法分析
@@ -214,9 +243,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunConstituencyParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunConstituencyParserResponse`
         """
-        return self._run_constituency_parser_with_http_info(request)
+        http_info = self._run_constituency_parser_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_constituency_parser_with_http_info(self, request):
+    def run_constituency_parser_async_invoker(self, request):
+        http_info = self._run_constituency_parser_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_constituency_parser_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/constituency-parser",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunConstituencyParserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +272,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +285,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/constituency-parser',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunConstituencyParserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_dependency_parser_async(self, request):
         """依存句法分析
@@ -272,9 +309,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunDependencyParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDependencyParserResponse`
         """
-        return self._run_dependency_parser_with_http_info(request)
+        http_info = self._run_dependency_parser_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_dependency_parser_with_http_info(self, request):
+    def run_dependency_parser_async_invoker(self, request):
+        http_info = self._run_dependency_parser_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_dependency_parser_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/dependency-parser",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunDependencyParserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -289,11 +338,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -302,20 +351,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/dependency-parser',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunDependencyParserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_doc_classification_async(self, request):
         """文档分类
@@ -330,9 +375,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunDocClassificationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDocClassificationResponse`
         """
-        return self._run_doc_classification_with_http_info(request)
+        http_info = self._run_doc_classification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_doc_classification_with_http_info(self, request):
+    def run_doc_classification_async_invoker(self, request):
+        http_info = self._run_doc_classification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_doc_classification_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlu/doc-classification",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunDocClassificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,11 +404,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +417,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlu/doc-classification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunDocClassificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_domain_sentiment_async(self, request):
         """情感分析（领域版）
@@ -388,9 +441,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunDomainSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunDomainSentimentResponse`
         """
-        return self._run_domain_sentiment_with_http_info(request)
+        http_info = self._run_domain_sentiment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_domain_sentiment_with_http_info(self, request):
+    def run_domain_sentiment_async_invoker(self, request):
+        http_info = self._run_domain_sentiment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_domain_sentiment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlu/sentiment/domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunDomainSentimentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -405,11 +470,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -418,20 +483,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlu/sentiment/domain',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunDomainSentimentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_entity_linking_async(self, request):
         """实体链接
@@ -446,9 +507,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunEntityLinkingRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEntityLinkingResponse`
         """
-        return self._run_entity_linking_with_http_info(request)
+        http_info = self._run_entity_linking_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_entity_linking_with_http_info(self, request):
+    def run_entity_linking_async_invoker(self, request):
+        http_info = self._run_entity_linking_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_entity_linking_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/entity-linking",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunEntityLinkingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -463,11 +536,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -476,20 +549,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/entity-linking',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunEntityLinkingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_entity_sentiment_async(self, request):
         """实体级情感分析
@@ -504,9 +573,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunEntitySentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEntitySentimentResponse`
         """
-        return self._run_entity_sentiment_with_http_info(request)
+        http_info = self._run_entity_sentiment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_entity_sentiment_with_http_info(self, request):
+    def run_entity_sentiment_async_invoker(self, request):
+        http_info = self._run_entity_sentiment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_entity_sentiment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlu/entity-sentiment",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunEntitySentimentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -521,11 +602,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -534,20 +615,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlu/entity-sentiment',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunEntitySentimentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_event_extraction_async(self, request):
         """事件抽取
@@ -563,9 +640,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunEventExtractionRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunEventExtractionResponse`
         """
-        return self._run_event_extraction_with_http_info(request)
+        http_info = self._run_event_extraction_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_event_extraction_with_http_info(self, request):
+    def run_event_extraction_async_invoker(self, request):
+        http_info = self._run_event_extraction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_event_extraction_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/event-extraction",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunEventExtractionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -580,11 +669,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -593,20 +682,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/event-extraction',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunEventExtractionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_file_translation_async(self, request):
         """文档翻译
@@ -621,9 +706,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunFileTranslationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunFileTranslationResponse`
         """
-        return self._run_file_translation_with_http_info(request)
+        http_info = self._run_file_translation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_file_translation_with_http_info(self, request):
+    def run_file_translation_async_invoker(self, request):
+        http_info = self._run_file_translation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_file_translation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/machine-translation/file-translation/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunFileTranslationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -638,11 +735,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -651,20 +748,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/machine-translation/file-translation/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunFileTranslationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_get_file_translation_result_async(self, request):
         """文档翻译状态查询
@@ -678,9 +771,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunGetFileTranslationResultRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunGetFileTranslationResultResponse`
         """
-        return self._run_get_file_translation_result_with_http_info(request)
+        http_info = self._run_get_file_translation_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_get_file_translation_result_with_http_info(self, request):
+    def run_get_file_translation_result_async_invoker(self, request):
+        http_info = self._run_get_file_translation_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_get_file_translation_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/machine-translation/file-translation/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunGetFileTranslationResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -697,9 +802,9 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -708,20 +813,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/machine-translation/file-translation/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunGetFileTranslationResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_keyword_extract_async(self, request):
         """关键词抽取
@@ -736,9 +837,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunKeywordExtractRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunKeywordExtractResponse`
         """
-        return self._run_keyword_extract_with_http_info(request)
+        http_info = self._run_keyword_extract_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_keyword_extract_with_http_info(self, request):
+    def run_keyword_extract_async_invoker(self, request):
+        http_info = self._run_keyword_extract_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_keyword_extract_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/keyword-extraction",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunKeywordExtractResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -753,11 +866,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -766,20 +879,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/keyword-extraction',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunKeywordExtractResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_language_detection_async(self, request):
         """语种识别
@@ -794,9 +903,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunLanguageDetectionRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunLanguageDetectionResponse`
         """
-        return self._run_language_detection_with_http_info(request)
+        http_info = self._run_language_detection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_language_detection_with_http_info(self, request):
+    def run_language_detection_async_invoker(self, request):
+        http_info = self._run_language_detection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_language_detection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/machine-translation/language-detection",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunLanguageDetectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -811,11 +932,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -824,20 +945,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/machine-translation/language-detection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunLanguageDetectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_multi_grained_segment_async(self, request):
         """多粒度分词
@@ -852,9 +969,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunMultiGrainedSegmentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunMultiGrainedSegmentResponse`
         """
-        return self._run_multi_grained_segment_with_http_info(request)
+        http_info = self._run_multi_grained_segment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_multi_grained_segment_with_http_info(self, request):
+    def run_multi_grained_segment_async_invoker(self, request):
+        http_info = self._run_multi_grained_segment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_multi_grained_segment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/multi-grained-segment",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunMultiGrainedSegmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -869,11 +998,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -882,20 +1011,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/multi-grained-segment',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunMultiGrainedSegmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_ner_async(self, request):
         """命名实体识别（基础版）
@@ -910,9 +1035,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunNerRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunNerResponse`
         """
-        return self._run_ner_with_http_info(request)
+        http_info = self._run_ner_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_ner_with_http_info(self, request):
+    def run_ner_async_invoker(self, request):
+        http_info = self._run_ner_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_ner_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/ner",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunNerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -927,11 +1064,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -940,20 +1077,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/ner',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunNerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_ner_domain_async(self, request):
         """命名实体识别（领域版）
@@ -968,9 +1101,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunNerDomainRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunNerDomainResponse`
         """
-        return self._run_ner_domain_with_http_info(request)
+        http_info = self._run_ner_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_ner_domain_with_http_info(self, request):
+    def run_ner_domain_async_invoker(self, request):
+        http_info = self._run_ner_domain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_ner_domain_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/ner/domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunNerDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -985,11 +1130,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -998,20 +1143,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/ner/domain',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunNerDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_poem_async(self, request):
         """诗歌生成
@@ -1026,9 +1167,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunPoemRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunPoemResponse`
         """
-        return self._run_poem_with_http_info(request)
+        http_info = self._run_poem_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_poem_with_http_info(self, request):
+    def run_poem_async_invoker(self, request):
+        http_info = self._run_poem_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_poem_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlg/poem",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunPoemResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1043,11 +1196,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1056,20 +1209,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlg/poem',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunPoemResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_segment_async(self, request):
         """分词
@@ -1084,9 +1233,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSegmentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSegmentResponse`
         """
-        return self._run_segment_with_http_info(request)
+        http_info = self._run_segment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_segment_with_http_info(self, request):
+    def run_segment_async_invoker(self, request):
+        http_info = self._run_segment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_segment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/segment",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSegmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1101,11 +1262,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1114,20 +1275,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/segment',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSegmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_semantic_parser_async(self, request):
         """意图理解
@@ -1142,9 +1299,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSemanticParserRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSemanticParserResponse`
         """
-        return self._run_semantic_parser_with_http_info(request)
+        http_info = self._run_semantic_parser_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_semantic_parser_with_http_info(self, request):
+    def run_semantic_parser_async_invoker(self, request):
+        http_info = self._run_semantic_parser_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_semantic_parser_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlu/semantic-parser",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSemanticParserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1159,11 +1328,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1172,20 +1341,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlu/semantic-parser',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSemanticParserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_sentence_embedding_async(self, request):
         """句向量
@@ -1200,9 +1365,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSentenceEmbeddingRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSentenceEmbeddingResponse`
         """
-        return self._run_sentence_embedding_with_http_info(request)
+        http_info = self._run_sentence_embedding_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_sentence_embedding_with_http_info(self, request):
+    def run_sentence_embedding_async_invoker(self, request):
+        http_info = self._run_sentence_embedding_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_sentence_embedding_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/sentence-embedding",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSentenceEmbeddingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1217,11 +1394,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1230,20 +1407,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/sentence-embedding',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSentenceEmbeddingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_sentiment_async(self, request):
         """情感分析（基础版）
@@ -1258,9 +1431,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSentimentRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSentimentResponse`
         """
-        return self._run_sentiment_with_http_info(request)
+        http_info = self._run_sentiment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_sentiment_with_http_info(self, request):
+    def run_sentiment_async_invoker(self, request):
+        http_info = self._run_sentiment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_sentiment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlu/sentiment",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSentimentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1275,11 +1460,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1288,20 +1473,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlu/sentiment',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSentimentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_summary_async(self, request):
         """文本摘要（基础版）
@@ -1316,9 +1497,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSummaryRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSummaryResponse`
         """
-        return self._run_summary_with_http_info(request)
+        http_info = self._run_summary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_summary_with_http_info(self, request):
+    def run_summary_async_invoker(self, request):
+        http_info = self._run_summary_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_summary_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlg/summarization",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSummaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1333,11 +1526,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1346,20 +1539,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlg/summarization',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSummaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_summary_domain_async(self, request):
         """文本摘要（领域版）
@@ -1374,9 +1563,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunSummaryDomainRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunSummaryDomainResponse`
         """
-        return self._run_summary_domain_with_http_info(request)
+        http_info = self._run_summary_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_summary_domain_with_http_info(self, request):
+    def run_summary_domain_async_invoker(self, request):
+        http_info = self._run_summary_domain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_summary_domain_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlg/summarization/domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSummaryDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1391,11 +1592,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1404,20 +1605,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlg/summarization/domain',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSummaryDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_text_similarity_async(self, request):
         """文本相似度（基础版）
@@ -1432,9 +1629,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunTextSimilarityRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextSimilarityResponse`
         """
-        return self._run_text_similarity_with_http_info(request)
+        http_info = self._run_text_similarity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_text_similarity_with_http_info(self, request):
+    def run_text_similarity_async_invoker(self, request):
+        http_info = self._run_text_similarity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_text_similarity_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/text-similarity",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunTextSimilarityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1449,11 +1658,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1462,20 +1671,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/text-similarity',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunTextSimilarityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_text_similarity_advance_async(self, request):
         """文本相似度（高级版）
@@ -1490,9 +1695,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunTextSimilarityAdvanceRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextSimilarityAdvanceResponse`
         """
-        return self._run_text_similarity_advance_with_http_info(request)
+        http_info = self._run_text_similarity_advance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_text_similarity_advance_with_http_info(self, request):
+    def run_text_similarity_advance_async_invoker(self, request):
+        http_info = self._run_text_similarity_advance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_text_similarity_advance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nlp-fundamental/text-similarity/advance",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunTextSimilarityAdvanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1507,11 +1724,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1520,20 +1737,16 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nlp-fundamental/text-similarity/advance',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunTextSimilarityAdvanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_text_translation_async(self, request):
         """文本翻译
@@ -1548,9 +1761,21 @@ class NlpAsyncClient(Client):
         :type request: :class:`huaweicloudsdknlp.v2.RunTextTranslationRequest`
         :rtype: :class:`huaweicloudsdknlp.v2.RunTextTranslationResponse`
         """
-        return self._run_text_translation_with_http_info(request)
+        http_info = self._run_text_translation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_text_translation_with_http_info(self, request):
+    def run_text_translation_async_invoker(self, request):
+        http_info = self._run_text_translation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_text_translation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/machine-translation/text-translation",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunTextTranslationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1565,11 +1790,11 @@ class NlpAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1578,20 +1803,26 @@ class NlpAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/machine-translation/text-translation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunTextTranslationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1630,4 +1861,4 @@ class NlpAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

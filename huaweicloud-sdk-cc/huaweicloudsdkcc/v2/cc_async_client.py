@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcc'")
 
 
 class CcAsyncClient(Client):
@@ -39,9 +44,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v2.BatchCreateDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v2.BatchCreateDeleteTagsResponse`
         """
-        return self._batch_create_delete_tags_with_http_info(request)
+        http_info = self._batch_create_delete_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_delete_tags_with_http_info(self, request):
+    def batch_create_delete_tags_async_invoker(self, request):
+        http_info = self._batch_create_delete_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_delete_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateDeleteTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateDeleteTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tag_async(self, request):
         """添加资源标签
@@ -100,9 +113,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v2.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkcc.v2.CreateTagResponse`
         """
-        return self._create_tag_with_http_info(request)
+        http_info = self._create_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tag_with_http_info(self, request):
+    def create_tag_async_invoker(self, request):
+        http_info = self._create_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,11 +146,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -134,20 +159,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tag_async(self, request):
         """删除资源标签
@@ -161,9 +182,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkcc.v2.DeleteTagResponse`
         """
-        return self._delete_tag_with_http_info(request)
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tag_with_http_info(self, request):
+    def delete_tag_async_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags/{tag_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -184,9 +217,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -195,20 +228,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags/{tag_key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_tags_async(self, request):
         """查询账户资源标签
@@ -222,9 +251,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v2.ListDomainTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v2.ListDomainTagsResponse`
         """
-        return self._list_domain_tags_with_http_info(request)
+        http_info = self._list_domain_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_tags_with_http_info(self, request):
+    def list_domain_tags_async_invoker(self, request):
+        http_info = self._list_domain_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_domain_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -241,9 +282,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -252,20 +293,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_by_filter_tag_async(self, request):
         """查询资源实例
@@ -279,9 +316,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v2.ListResourceByFilterTagRequest`
         :rtype: :class:`huaweicloudsdkcc.v2.ListResourceByFilterTagResponse`
         """
-        return self._list_resource_by_filter_tag_with_http_info(request)
+        http_info = self._list_resource_by_filter_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_by_filter_tag_with_http_info(self, request):
+    def list_resource_by_filter_tag_async_invoker(self, request):
+        http_info = self._list_resource_by_filter_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_by_filter_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/{resource_type}/resource-instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceByFilterTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -298,11 +347,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -311,20 +360,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/resource-instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceByFilterTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags_async(self, request):
         """查询资源标签
@@ -338,9 +383,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v2.ListTagsResponse`
         """
-        return self._list_tags_with_http_info(request)
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_with_http_info(self, request):
+    def list_tags_async_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -359,9 +416,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -370,20 +427,26 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -422,4 +485,4 @@ class CcAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

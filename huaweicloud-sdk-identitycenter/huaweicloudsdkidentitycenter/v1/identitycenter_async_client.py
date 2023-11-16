@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkidentitycenter'")
 
 
 class IdentityCenterAsyncClient(Client):
@@ -39,9 +44,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.CreateAccountAssignmentRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.CreateAccountAssignmentResponse`
         """
-        return self._create_account_assignment_with_http_info(request)
+        http_info = self._create_account_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_account_assignment_with_http_info(self, request):
+    def create_account_assignment_async_invoker(self, request):
+        http_info = self._create_account_assignment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_account_assignment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/instances/{instance_id}/account-assignments/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccountAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/account-assignments/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAccountAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_account_assignment_async(self, request):
         """使用指定的权限集从指定帐户删除主体的访问权限
@@ -98,9 +111,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.DeleteAccountAssignmentRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DeleteAccountAssignmentResponse`
         """
-        return self._delete_account_assignment_with_http_info(request)
+        http_info = self._delete_account_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_account_assignment_with_http_info(self, request):
+    def delete_account_assignment_async_invoker(self, request):
+        http_info = self._delete_account_assignment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_account_assignment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/instances/{instance_id}/account-assignments/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAccountAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/account-assignments/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAccountAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def describe_account_assignment_creation_status_async(self, request):
         """查询账号分配请求的状态
@@ -157,9 +178,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.DescribeAccountAssignmentCreationStatusRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DescribeAccountAssignmentCreationStatusResponse`
         """
-        return self._describe_account_assignment_creation_status_with_http_info(request)
+        http_info = self._describe_account_assignment_creation_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _describe_account_assignment_creation_status_with_http_info(self, request):
+    def describe_account_assignment_creation_status_async_invoker(self, request):
+        http_info = self._describe_account_assignment_creation_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _describe_account_assignment_creation_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/account-assignments/creation-status/{request_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DescribeAccountAssignmentCreationStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -178,9 +211,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/account-assignments/creation-status/{request_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DescribeAccountAssignmentCreationStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def describe_account_assignment_deletion_status_async(self, request):
         """查询账户分配删除状态详情
@@ -216,9 +245,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.DescribeAccountAssignmentDeletionStatusRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DescribeAccountAssignmentDeletionStatusResponse`
         """
-        return self._describe_account_assignment_deletion_status_with_http_info(request)
+        http_info = self._describe_account_assignment_deletion_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _describe_account_assignment_deletion_status_with_http_info(self, request):
+    def describe_account_assignment_deletion_status_async_invoker(self, request):
+        http_info = self._describe_account_assignment_deletion_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _describe_account_assignment_deletion_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/account-assignments/deletion-status/{request_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DescribeAccountAssignmentDeletionStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,9 +278,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/account-assignments/deletion-status/{request_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DescribeAccountAssignmentDeletionStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_account_assignment_creation_status_async(self, request):
         """列出账户分配创建状态
@@ -275,9 +312,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListAccountAssignmentCreationStatusRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListAccountAssignmentCreationStatusResponse`
         """
-        return self._list_account_assignment_creation_status_with_http_info(request)
+        http_info = self._list_account_assignment_creation_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_account_assignment_creation_status_with_http_info(self, request):
+    def list_account_assignment_creation_status_async_invoker(self, request):
+        http_info = self._list_account_assignment_creation_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_account_assignment_creation_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/account-assignments/creation-statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccountAssignmentCreationStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -300,9 +349,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -311,20 +360,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/account-assignments/creation-statuses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccountAssignmentCreationStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_account_assignment_deletion_status_async(self, request):
         """列出账户分配删除状态
@@ -338,9 +383,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListAccountAssignmentDeletionStatusRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListAccountAssignmentDeletionStatusResponse`
         """
-        return self._list_account_assignment_deletion_status_with_http_info(request)
+        http_info = self._list_account_assignment_deletion_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_account_assignment_deletion_status_with_http_info(self, request):
+    def list_account_assignment_deletion_status_async_invoker(self, request):
+        http_info = self._list_account_assignment_deletion_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_account_assignment_deletion_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/account-assignments/deletion-statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccountAssignmentDeletionStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -363,9 +420,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -374,20 +431,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/account-assignments/deletion-statuses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccountAssignmentDeletionStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_account_assignments_async(self, request):
         """列出与指定权限集以及指定帐户关联的用户/用户组
@@ -401,9 +454,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListAccountAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListAccountAssignmentsResponse`
         """
-        return self._list_account_assignments_with_http_info(request)
+        http_info = self._list_account_assignments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_account_assignments_with_http_info(self, request):
+    def list_account_assignments_async_invoker(self, request):
+        http_info = self._list_account_assignments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_account_assignments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/account-assignments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccountAssignmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -428,9 +493,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -439,20 +504,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/account-assignments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccountAssignmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_profile_associations_async(self, request):
         """查询profile关联的用户或组列表
@@ -466,9 +527,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListProfileAssociationsRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListProfileAssociationsResponse`
         """
-        return self._list_profile_associations_with_http_info(request)
+        http_info = self._list_profile_associations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_profile_associations_with_http_info(self, request):
+    def list_profile_associations_async_invoker(self, request):
+        http_info = self._list_profile_associations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_profile_associations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/profile-associations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProfileAssociationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -487,9 +560,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -498,20 +571,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/profile-associations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProfileAssociationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_async(self, request):
         """查询实例列表
@@ -525,9 +594,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListInstancesResponse`
         """
-        return self._list_instances_with_http_info(request)
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_with_http_info(self, request):
+    def list_instances_async_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -546,9 +627,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -557,20 +638,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_customer_managed_policy_to_permission_set_async(self, request):
         """将指定的客户自定义管理策略附加到指定的权限集
@@ -584,9 +661,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.AttachCustomerManagedPolicyToPermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.AttachCustomerManagedPolicyToPermissionSetResponse`
         """
-        return self._attach_customer_managed_policy_to_permission_set_with_http_info(request)
+        http_info = self._attach_customer_managed_policy_to_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_customer_managed_policy_to_permission_set_with_http_info(self, request):
+    def attach_customer_managed_policy_to_permission_set_async_invoker(self, request):
+        http_info = self._attach_customer_managed_policy_to_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_customer_managed_policy_to_permission_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}/attach-customer-managed-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachCustomerManagedPolicyToPermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -605,11 +694,11 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -618,20 +707,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}/attach-customer-managed-policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachCustomerManagedPolicyToPermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_managed_policy_to_permission_set_async(self, request):
         """将系统管理策略附加到权限集
@@ -645,9 +730,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.AttachManagedPolicyToPermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.AttachManagedPolicyToPermissionSetResponse`
         """
-        return self._attach_managed_policy_to_permission_set_with_http_info(request)
+        http_info = self._attach_managed_policy_to_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_managed_policy_to_permission_set_with_http_info(self, request):
+    def attach_managed_policy_to_permission_set_async_invoker(self, request):
+        http_info = self._attach_managed_policy_to_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_managed_policy_to_permission_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}/attach-managed-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachManagedPolicyToPermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -666,11 +763,11 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -679,20 +776,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}/attach-managed-policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachManagedPolicyToPermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_permission_set_async(self, request):
         """在指定的IAM Identity Center实例中创建权限集
@@ -706,9 +799,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.CreatePermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.CreatePermissionSetResponse`
         """
-        return self._create_permission_set_with_http_info(request)
+        http_info = self._create_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_permission_set_with_http_info(self, request):
+    def create_permission_set_async_invoker(self, request):
+        http_info = self._create_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_permission_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -725,11 +830,11 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -738,20 +843,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_permission_set_async(self, request):
         """删除指定实例的权限集
@@ -765,9 +866,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.DeletePermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DeletePermissionSetResponse`
         """
-        return self._delete_permission_set_with_http_info(request)
+        http_info = self._delete_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_permission_set_with_http_info(self, request):
+    def delete_permission_set_async_invoker(self, request):
+        http_info = self._delete_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_permission_set_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -786,9 +899,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -797,20 +910,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def describe_permission_set_async(self, request):
         """查询权限集详情
@@ -824,9 +933,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.DescribePermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DescribePermissionSetResponse`
         """
-        return self._describe_permission_set_with_http_info(request)
+        http_info = self._describe_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _describe_permission_set_with_http_info(self, request):
+    def describe_permission_set_async_invoker(self, request):
+        http_info = self._describe_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _describe_permission_set_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DescribePermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -845,9 +966,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -856,20 +977,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DescribePermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def describe_permission_set_provisioning_status_async(self, request):
         """查询权限集预分配状态详情
@@ -883,9 +1000,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.DescribePermissionSetProvisioningStatusRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DescribePermissionSetProvisioningStatusResponse`
         """
-        return self._describe_permission_set_provisioning_status_with_http_info(request)
+        http_info = self._describe_permission_set_provisioning_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _describe_permission_set_provisioning_status_with_http_info(self, request):
+    def describe_permission_set_provisioning_status_async_invoker(self, request):
+        http_info = self._describe_permission_set_provisioning_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _describe_permission_set_provisioning_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/provisioning-status/{request_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DescribePermissionSetProvisioningStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -904,9 +1033,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -915,20 +1044,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/provisioning-status/{request_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DescribePermissionSetProvisioningStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_customer_managed_policy_reference_from_permission_set_async(self, request):
         """将附加的客户自定义管理策略从指定的权限集中分离
@@ -942,9 +1067,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.DetachCustomerManagedPolicyReferenceFromPermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DetachCustomerManagedPolicyReferenceFromPermissionSetResponse`
         """
-        return self._detach_customer_managed_policy_reference_from_permission_set_with_http_info(request)
+        http_info = self._detach_customer_managed_policy_reference_from_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_customer_managed_policy_reference_from_permission_set_with_http_info(self, request):
+    def detach_customer_managed_policy_reference_from_permission_set_async_invoker(self, request):
+        http_info = self._detach_customer_managed_policy_reference_from_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detach_customer_managed_policy_reference_from_permission_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}/detach-customer-managed-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachCustomerManagedPolicyReferenceFromPermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -963,11 +1100,11 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -976,20 +1113,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}/detach-customer-managed-policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachCustomerManagedPolicyReferenceFromPermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_managed_policy_from_permission_set_async(self, request):
         """将附加的系统策略从指定的权限集中分离
@@ -1003,9 +1136,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.DetachManagedPolicyFromPermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.DetachManagedPolicyFromPermissionSetResponse`
         """
-        return self._detach_managed_policy_from_permission_set_with_http_info(request)
+        http_info = self._detach_managed_policy_from_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_managed_policy_from_permission_set_with_http_info(self, request):
+    def detach_managed_policy_from_permission_set_async_invoker(self, request):
+        http_info = self._detach_managed_policy_from_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detach_managed_policy_from_permission_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}/detach-managed-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachManagedPolicyFromPermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1024,11 +1169,11 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1037,20 +1182,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}/detach-managed-policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachManagedPolicyFromPermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_accounts_for_provisioned_permission_set_async(self, request):
         """列出权限集关联的账户
@@ -1064,9 +1205,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListAccountsForProvisionedPermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListAccountsForProvisionedPermissionSetResponse`
         """
-        return self._list_accounts_for_provisioned_permission_set_with_http_info(request)
+        http_info = self._list_accounts_for_provisioned_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_accounts_for_provisioned_permission_set_with_http_info(self, request):
+    def list_accounts_for_provisioned_permission_set_async_invoker(self, request):
+        http_info = self._list_accounts_for_provisioned_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_accounts_for_provisioned_permission_set_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}/accounts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccountsForProvisionedPermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1091,9 +1244,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1102,20 +1255,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}/accounts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccountsForProvisionedPermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customer_managed_policy_references_in_permission_set_async(self, request):
         """获取附加到指定权限集的所有客户自定义策略列表
@@ -1129,9 +1278,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListCustomerManagedPolicyReferencesInPermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListCustomerManagedPolicyReferencesInPermissionSetResponse`
         """
-        return self._list_customer_managed_policy_references_in_permission_set_with_http_info(request)
+        http_info = self._list_customer_managed_policy_references_in_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customer_managed_policy_references_in_permission_set_with_http_info(self, request):
+    def list_customer_managed_policy_references_in_permission_set_async_invoker(self, request):
+        http_info = self._list_customer_managed_policy_references_in_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customer_managed_policy_references_in_permission_set_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}/customer-managed-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerManagedPolicyReferencesInPermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1154,9 +1315,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1165,20 +1326,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}/customer-managed-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomerManagedPolicyReferencesInPermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_managed_policies_in_permission_set_async(self, request):
         """列出权限集中附加的系统管理策略
@@ -1192,9 +1349,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListManagedPoliciesInPermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListManagedPoliciesInPermissionSetResponse`
         """
-        return self._list_managed_policies_in_permission_set_with_http_info(request)
+        http_info = self._list_managed_policies_in_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_managed_policies_in_permission_set_with_http_info(self, request):
+    def list_managed_policies_in_permission_set_async_invoker(self, request):
+        http_info = self._list_managed_policies_in_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_managed_policies_in_permission_set_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}/managed-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListManagedPoliciesInPermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1217,9 +1386,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1228,20 +1397,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}/managed-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListManagedPoliciesInPermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_permission_set_provisioning_status_async(self, request):
         """列出权限集预分配状态
@@ -1255,9 +1420,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListPermissionSetProvisioningStatusRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListPermissionSetProvisioningStatusResponse`
         """
-        return self._list_permission_set_provisioning_status_with_http_info(request)
+        http_info = self._list_permission_set_provisioning_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_permission_set_provisioning_status_with_http_info(self, request):
+    def list_permission_set_provisioning_status_async_invoker(self, request):
+        http_info = self._list_permission_set_provisioning_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_permission_set_provisioning_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/provisioning-statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermissionSetProvisioningStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1280,9 +1457,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1291,20 +1468,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/provisioning-statuses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPermissionSetProvisioningStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_permission_sets_async(self, request):
         """列出指定实例的权限集列表
@@ -1318,9 +1491,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListPermissionSetsRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListPermissionSetsResponse`
         """
-        return self._list_permission_sets_with_http_info(request)
+        http_info = self._list_permission_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_permission_sets_with_http_info(self, request):
+    def list_permission_sets_async_invoker(self, request):
+        http_info = self._list_permission_sets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_permission_sets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermissionSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1347,9 +1532,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1358,20 +1543,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPermissionSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_permission_sets_provisioned_to_account_async(self, request):
         """列出分配给指定帐户的权限集列表
@@ -1385,9 +1566,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.ListPermissionSetsProvisionedToAccountRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.ListPermissionSetsProvisionedToAccountResponse`
         """
-        return self._list_permission_sets_provisioned_to_account_with_http_info(request)
+        http_info = self._list_permission_sets_provisioned_to_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_permission_sets_provisioned_to_account_with_http_info(self, request):
+    def list_permission_sets_provisioned_to_account_async_invoker(self, request):
+        http_info = self._list_permission_sets_provisioned_to_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_permission_sets_provisioned_to_account_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/provisioned-to-accounts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermissionSetsProvisionedToAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1412,9 +1605,9 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1423,20 +1616,16 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/provisioned-to-accounts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPermissionSetsProvisionedToAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_permission_set_async(self, request):
         """更新权限集
@@ -1450,9 +1639,21 @@ class IdentityCenterAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidentitycenter.v1.UpdatePermissionSetRequest`
         :rtype: :class:`huaweicloudsdkidentitycenter.v1.UpdatePermissionSetResponse`
         """
-        return self._update_permission_set_with_http_info(request)
+        http_info = self._update_permission_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_permission_set_with_http_info(self, request):
+    def update_permission_set_async_invoker(self, request):
+        http_info = self._update_permission_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_permission_set_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/instances/{instance_id}/permission-sets/{permission_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePermissionSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1471,11 +1672,11 @@ class IdentityCenterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1484,20 +1685,26 @@ class IdentityCenterAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/instances/{instance_id}/permission-sets/{permission_set_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePermissionSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1536,4 +1743,4 @@ class IdentityCenterAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

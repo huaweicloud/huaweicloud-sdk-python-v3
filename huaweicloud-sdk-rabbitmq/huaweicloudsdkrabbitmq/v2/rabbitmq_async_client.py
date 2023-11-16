@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkrabbitmq'")
 
 
 class RabbitMQAsyncClient(Client):
@@ -39,9 +44,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchCreateOrDeleteRabbitMqTagResponse`
         """
-        return self._batch_create_or_delete_rabbit_mq_tag_with_http_info(request)
+        http_info = self._batch_create_or_delete_rabbit_mq_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_or_delete_rabbit_mq_tag_with_http_info(self, request):
+    def batch_create_or_delete_rabbit_mq_tag_async_invoker(self, request):
+        http_info = self._batch_create_or_delete_rabbit_mq_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_or_delete_rabbit_mq_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/rabbitmq/{instance_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOrDeleteRabbitMqTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/rabbitmq/{instance_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateOrDeleteRabbitMqTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_restart_or_delete_instances_async(self, request):
         """批量重启或删除实例
@@ -102,9 +115,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.BatchRestartOrDeleteInstancesResponse`
         """
-        return self._batch_restart_or_delete_instances_with_http_info(request)
+        http_info = self._batch_restart_or_delete_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_restart_or_delete_instances_with_http_info(self, request):
+    def batch_restart_or_delete_instances_async_invoker(self, request):
+        http_info = self._batch_restart_or_delete_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_restart_or_delete_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRestartOrDeleteInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +144,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +157,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRestartOrDeleteInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_post_paid_instance_async(self, request):
         """创建实例(按需)
@@ -159,9 +180,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceResponse`
         """
-        return self._create_post_paid_instance_with_http_info(request)
+        http_info = self._create_post_paid_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_post_paid_instance_with_http_info(self, request):
+    def create_post_paid_instance_async_invoker(self, request):
+        http_info = self._create_post_paid_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_post_paid_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePostPaidInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePostPaidInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_post_paid_instance_by_engine_async(self, request):
         """创建实例
@@ -216,9 +245,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceByEngineRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.CreatePostPaidInstanceByEngineResponse`
         """
-        return self._create_post_paid_instance_by_engine_with_http_info(request)
+        http_info = self._create_post_paid_instance_by_engine_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_post_paid_instance_by_engine_with_http_info(self, request):
+    def create_post_paid_instance_by_engine_async_invoker(self, request):
+        http_info = self._create_post_paid_instance_by_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_post_paid_instance_by_engine_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{engine}/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePostPaidInstanceByEngineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +276,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{engine}/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePostPaidInstanceByEngineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_background_task_async(self, request):
         """删除后台任务管理中的指定记录
@@ -275,9 +312,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteBackgroundTaskResponse`
         """
-        return self._delete_background_task_with_http_info(request)
+        http_info = self._delete_background_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_background_task_with_http_info(self, request):
+    def delete_background_task_async_invoker(self, request):
+        http_info = self._delete_background_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_background_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBackgroundTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -296,9 +345,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -307,20 +356,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBackgroundTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance_async(self, request):
         """删除指定的实例
@@ -334,9 +379,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.DeleteInstanceResponse`
         """
-        return self._delete_instance_with_http_info(request)
+        http_info = self._delete_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_with_http_info(self, request):
+    def delete_instance_async_invoker(self, request):
+        http_info = self._delete_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,9 +410,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -364,20 +421,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_available_zones_async(self, request):
         """查询可用区信息
@@ -391,9 +444,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListAvailableZonesResponse`
         """
-        return self._list_available_zones_with_http_info(request)
+        http_info = self._list_available_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_available_zones_with_http_info(self, request):
+    def list_available_zones_async_invoker(self, request):
+        http_info = self._list_available_zones_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_zones_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/available-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -408,9 +473,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -419,20 +484,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/available-zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailableZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_background_tasks_async(self, request):
         """查询实例的后台任务列表
@@ -446,9 +507,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListBackgroundTasksResponse`
         """
-        return self._list_background_tasks_with_http_info(request)
+        http_info = self._list_background_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_background_tasks_with_http_info(self, request):
+    def list_background_tasks_async_invoker(self, request):
+        http_info = self._list_background_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_background_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackgroundTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -473,9 +546,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -484,20 +557,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackgroundTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_engine_products_async(self, request):
         """查询产品规格列表
@@ -511,9 +580,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListEngineProductsResponse`
         """
-        return self._list_engine_products_with_http_info(request)
+        http_info = self._list_engine_products_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_engine_products_with_http_info(self, request):
+    def list_engine_products_async_invoker(self, request):
+        http_info = self._list_engine_products_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_engine_products_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{engine}/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEngineProductsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -532,9 +613,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -543,20 +624,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{engine}/products',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEngineProductsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_details_async(self, request):
         """查询所有实例列表
@@ -570,9 +647,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListInstancesDetailsResponse`
         """
-        return self._list_instances_details_with_http_info(request)
+        http_info = self._list_instances_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_details_with_http_info(self, request):
+    def list_instances_details_async_invoker(self, request):
+        http_info = self._list_instances_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -605,9 +694,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -616,20 +705,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_plugins_async(self, request):
         """查询插件列表
@@ -643,9 +728,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListPluginsResponse`
         """
-        return self._list_plugins_with_http_info(request)
+        http_info = self._list_plugins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_plugins_with_http_info(self, request):
+    def list_plugins_async_invoker(self, request):
+        http_info = self._list_plugins_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_plugins_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/rabbitmq/plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -662,9 +759,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -673,20 +770,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/rabbitmq/plugins',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPluginsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_products_async(self, request):
         """查询产品规格列表
@@ -700,9 +793,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ListProductsResponse`
         """
-        return self._list_products_with_http_info(request)
+        http_info = self._list_products_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_products_with_http_info(self, request):
+    def list_products_async_invoker(self, request):
+        http_info = self._list_products_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_products_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -719,9 +824,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -730,20 +835,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/products',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_password_async(self, request):
         """重置密码
@@ -757,9 +858,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResetPasswordResponse`
         """
-        return self._reset_password_with_http_info(request)
+        http_info = self._reset_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_password_with_http_info(self, request):
+    def reset_password_async_invoker(self, request):
+        http_info = self._reset_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -776,11 +889,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -789,20 +902,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_engine_instance_async(self, request):
         """新规格实例的规格变更
@@ -818,9 +927,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResizeEngineInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResizeEngineInstanceResponse`
         """
-        return self._resize_engine_instance_with_http_info(request)
+        http_info = self._resize_engine_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_engine_instance_with_http_info(self, request):
+    def resize_engine_instance_async_invoker(self, request):
+        http_info = self._resize_engine_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_engine_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeEngineInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -839,11 +960,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -852,20 +973,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/extend',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeEngineInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_instance_async(self, request):
         """实例规格变更
@@ -881,9 +998,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ResizeInstanceResponse`
         """
-        return self._resize_instance_with_http_info(request)
+        http_info = self._resize_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_instance_with_http_info(self, request):
+    def resize_instance_async_invoker(self, request):
+        http_info = self._resize_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -900,11 +1029,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -913,20 +1042,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/extend',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_background_task_async(self, request):
         """查询后台任务管理中的指定记录
@@ -940,9 +1065,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowBackgroundTaskResponse`
         """
-        return self._show_background_task_with_http_info(request)
+        http_info = self._show_background_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_background_task_with_http_info(self, request):
+    def show_background_task_async_invoker(self, request):
+        http_info = self._show_background_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_background_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackgroundTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -961,9 +1098,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -972,20 +1109,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBackgroundTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ces_hierarchy_async(self, request):
         """查询实例在CES的监控层级关系
@@ -999,9 +1132,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowCesHierarchyRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowCesHierarchyResponse`
         """
-        return self._show_ces_hierarchy_with_http_info(request)
+        http_info = self._show_ces_hierarchy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ces_hierarchy_with_http_info(self, request):
+    def show_ces_hierarchy_async_invoker(self, request):
+        http_info = self._show_ces_hierarchy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ces_hierarchy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/ces-hierarchy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCesHierarchyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1018,9 +1163,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1029,20 +1174,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/ces-hierarchy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCesHierarchyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_engine_instance_extend_product_info_async(self, request):
         """查询新规格可扩容规格列表
@@ -1056,9 +1197,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowEngineInstanceExtendProductInfoRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowEngineInstanceExtendProductInfoResponse`
         """
-        return self._show_engine_instance_extend_product_info_with_http_info(request)
+        http_info = self._show_engine_instance_extend_product_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_engine_instance_extend_product_info_with_http_info(self, request):
+    def show_engine_instance_extend_product_info_async_invoker(self, request):
+        http_info = self._show_engine_instance_extend_product_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_engine_instance_extend_product_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{engine}/{project_id}/instances/{instance_id}/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEngineInstanceExtendProductInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1079,9 +1232,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1090,20 +1243,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{engine}/{project_id}/instances/{instance_id}/extend',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEngineInstanceExtendProductInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_async(self, request):
         """查询指定实例
@@ -1117,9 +1266,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceResponse`
         """
-        return self._show_instance_with_http_info(request)
+        http_info = self._show_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_with_http_info(self, request):
+    def show_instance_async_invoker(self, request):
+        http_info = self._show_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1136,9 +1297,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1147,20 +1308,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_extend_product_info_async(self, request):
         """查询可扩容规格列表
@@ -1176,9 +1333,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowInstanceExtendProductInfoResponse`
         """
-        return self._show_instance_extend_product_info_with_http_info(request)
+        http_info = self._show_instance_extend_product_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_extend_product_info_with_http_info(self, request):
+    def show_instance_extend_product_info_async_invoker(self, request):
+        http_info = self._show_instance_extend_product_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_extend_product_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceExtendProductInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1199,9 +1368,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1210,20 +1379,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/extend',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceExtendProductInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_maintain_windows_async(self, request):
         """查询维护时间窗时间段
@@ -1237,9 +1402,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowMaintainWindowsResponse`
         """
-        return self._show_maintain_windows_with_http_info(request)
+        http_info = self._show_maintain_windows_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_maintain_windows_with_http_info(self, request):
+    def show_maintain_windows_async_invoker(self, request):
+        http_info = self._show_maintain_windows_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_maintain_windows_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/instances/maintain-windows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMaintainWindowsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1254,9 +1431,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1265,83 +1442,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/maintain-windows',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMaintainWindowsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
 
-    def show_rabbit_mq_product_cores_async(self, request):
-        """查询RabbitMQ产品规格核数
-
-        查询RabbitMQ产品规格核数
-        
-        Please refer to HUAWEI cloud API Explorer for details.
-
-
-        :param request: Request instance for ShowRabbitMqProductCores
-        :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProductCoresRequest`
-        :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProductCoresResponse`
-        """
-        return self._show_rabbit_mq_product_cores_with_http_info(request)
-
-    def _show_rabbit_mq_product_cores_with_http_info(self, request):
-        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
-
-        cname = None
-
-        collection_formats = {}
-
-        path_params = {}
-        if 'engine' in local_var_params:
-            path_params['engine'] = local_var_params['engine']
-
-        query_params = []
-        if 'product_id' in local_var_params:
-            query_params.append(('product_id', local_var_params['product_id']))
-        if 'broker_num' in local_var_params:
-            query_params.append(('broker_num', local_var_params['broker_num']))
-        if 'instance_id' in local_var_params:
-            query_params.append(('instance_id', local_var_params['instance_id']))
-
-        header_params = {}
-
-        form_params = {}
-
-        body_params = None
-        if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
-
-        response_headers = []
-
-        header_params['Content-Type'] = http_utils.select_header_content_type(
-            ['application/json'])
-
-        auth_settings = []
-
-        return self.call_api(
-            resource_path='/v2/{engine}/products/cores',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRabbitMqProductCoresResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        return http_info
 
     def show_rabbit_mq_project_tags_async(self, request):
         """查询项目标签
@@ -1355,9 +1465,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqProjectTagsResponse`
         """
-        return self._show_rabbit_mq_project_tags_with_http_info(request)
+        http_info = self._show_rabbit_mq_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_rabbit_mq_project_tags_with_http_info(self, request):
+    def show_rabbit_mq_project_tags_async_invoker(self, request):
+        http_info = self._show_rabbit_mq_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_rabbit_mq_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rabbitmq/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRabbitMqProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1372,9 +1494,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1383,20 +1505,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/rabbitmq/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRabbitMqProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_rabbit_mq_tags_async(self, request):
         """查询实例标签
@@ -1410,9 +1528,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.ShowRabbitMqTagsResponse`
         """
-        return self._show_rabbit_mq_tags_with_http_info(request)
+        http_info = self._show_rabbit_mq_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_rabbit_mq_tags_with_http_info(self, request):
+    def show_rabbit_mq_tags_async_invoker(self, request):
+        http_info = self._show_rabbit_mq_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_rabbit_mq_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rabbitmq/{instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRabbitMqTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1429,9 +1559,9 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1440,20 +1570,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/rabbitmq/{instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRabbitMqTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_async(self, request):
         """修改实例信息
@@ -1467,9 +1593,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdateInstanceResponse`
         """
-        return self._update_instance_with_http_info(request)
+        http_info = self._update_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_with_http_info(self, request):
+    def update_instance_async_invoker(self, request):
+        http_info = self._update_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1486,11 +1624,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1499,20 +1637,16 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_plugins_async(self, request):
         """开启或关闭插件
@@ -1526,9 +1660,21 @@ class RabbitMQAsyncClient(Client):
         :type request: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsRequest`
         :rtype: :class:`huaweicloudsdkrabbitmq.v2.UpdatePluginsResponse`
         """
-        return self._update_plugins_with_http_info(request)
+        http_info = self._update_plugins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_plugins_with_http_info(self, request):
+    def update_plugins_async_invoker(self, request):
+        http_info = self._update_plugins_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_plugins_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/rabbitmq/plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePluginsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1545,11 +1691,11 @@ class RabbitMQAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1558,20 +1704,26 @@ class RabbitMQAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/rabbitmq/plugins',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePluginsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1610,4 +1762,4 @@ class RabbitMQAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

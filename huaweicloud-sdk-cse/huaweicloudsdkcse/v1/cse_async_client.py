@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcse'")
 
 
 class CseAsyncClient(Client):
@@ -39,9 +44,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.CreateEngineRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.CreateEngineResponse`
         """
-        return self._create_engine_with_http_info(request)
+        http_info = self._create_engine_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_engine_with_http_info(self, request):
+    def create_engine_async_invoker(self, request):
+        http_info = self._create_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_engine_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/enginemgr/engines",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEngineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,168 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/enginemgr/engines',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEngineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_governance_policy_async(self, request):
+        """创建治理策略
+
+        创建治理策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateGovernancePolicy
+        :type request: :class:`huaweicloudsdkcse.v1.CreateGovernancePolicyRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.CreateGovernancePolicyResponse`
+        """
+        http_info = self._create_governance_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_governance_policy_async_invoker(self, request):
+        http_info = self._create_governance_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_governance_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/govern/governance/{kind}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGovernancePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'kind' in local_var_params:
+            path_params['kind'] = local_var_params['kind']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment' in local_var_params:
+            header_params['x-environment'] = local_var_params['x_environment']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_microservice_route_rule_async(self, request):
+        """创建灰度发布策略
+
+        创建灰度发布策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateMicroserviceRouteRule
+        :type request: :class:`huaweicloudsdkcse.v1.CreateMicroserviceRouteRuleRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.CreateMicroserviceRouteRuleResponse`
+        """
+        http_info = self._create_microservice_route_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_microservice_route_rule_async_invoker(self, request):
+        http_info = self._create_microservice_route_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_microservice_route_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/govern/route-rule/microservices/{service_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMicroserviceRouteRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_name' in local_var_params:
+            path_params['service_name'] = local_var_params['service_name']
+
+        query_params = []
+        if 'environment' in local_var_params:
+            query_params.append(('environment', local_var_params['environment']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_engine_async(self, request):
         """删除微服务引擎专享版
@@ -98,9 +263,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.DeleteEngineRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.DeleteEngineResponse`
         """
-        return self._delete_engine_with_http_info(request)
+        http_info = self._delete_engine_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_engine_with_http_info(self, request):
+    def delete_engine_async_invoker(self, request):
+        http_info = self._delete_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_engine_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/enginemgr/engines/{engine_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEngineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,9 +296,9 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +307,166 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/enginemgr/engines/{engine_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEngineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_governance_policy_async(self, request):
+        """删除治理策略
+
+        删除治理策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteGovernancePolicy
+        :type request: :class:`huaweicloudsdkcse.v1.DeleteGovernancePolicyRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.DeleteGovernancePolicyResponse`
+        """
+        http_info = self._delete_governance_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_governance_policy_async_invoker(self, request):
+        http_info = self._delete_governance_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_governance_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/govern/governance/{kind}/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGovernancePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'kind' in local_var_params:
+            path_params['kind'] = local_var_params['kind']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment' in local_var_params:
+            header_params['x-environment'] = local_var_params['x_environment']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_microservice_route_rule_async(self, request):
+        """删除灰度发布策略
+
+        删除灰度发布策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteMicroserviceRouteRule
+        :type request: :class:`huaweicloudsdkcse.v1.DeleteMicroserviceRouteRuleRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.DeleteMicroserviceRouteRuleResponse`
+        """
+        http_info = self._delete_microservice_route_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_microservice_route_rule_async_invoker(self, request):
+        http_info = self._delete_microservice_route_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_microservice_route_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/govern/route-rule/microservices/{service_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMicroserviceRouteRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_name' in local_var_params:
+            path_params['service_name'] = local_var_params['service_name']
+
+        query_params = []
+        if 'environment' in local_var_params:
+            query_params.append(('environment', local_var_params['environment']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_kie_async(self, request):
         """导出kie配置
@@ -157,9 +480,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.DownloadKieRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.DownloadKieResponse`
         """
-        return self._download_kie_with_http_info(request)
+        http_info = self._download_kie_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_kie_with_http_info(self, request):
+    def download_kie_async_invoker(self, request):
+        http_info = self._download_kie_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_kie_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/kie/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadKieResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -182,11 +517,11 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -195,20 +530,16 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/kie/download',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadKieResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_engines_async(self, request):
         """查询微服务引擎列表
@@ -222,9 +553,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.ListEnginesRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.ListEnginesResponse`
         """
-        return self._list_engines_with_http_info(request)
+        http_info = self._list_engines_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_engines_with_http_info(self, request):
+    def list_engines_async_invoker(self, request):
+        http_info = self._list_engines_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_engines_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/enginemgr/engines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnginesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -243,9 +586,9 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -254,20 +597,16 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/enginemgr/engines',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnginesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors_async(self, request):
         """查询微服务引擎专享版的规格列表
@@ -281,9 +620,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_async_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/enginemgr/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -300,9 +651,9 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -311,20 +662,383 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/enginemgr/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_governance_policy_async(self, request):
+        """查询指定类型治理策略列表
+
+        查询指定类型治理策略列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGovernancePolicy
+        :type request: :class:`huaweicloudsdkcse.v1.ListGovernancePolicyRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ListGovernancePolicyResponse`
+        """
+        http_info = self._list_governance_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_governance_policy_async_invoker(self, request):
+        http_info = self._list_governance_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_governance_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/govern/governance/{kind}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGovernancePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'kind' in local_var_params:
+            path_params['kind'] = local_var_params['kind']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment' in local_var_params:
+            header_params['x-environment'] = local_var_params['x_environment']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_governance_policy_by_policy_id_async(self, request):
+        """查询治理策略详情
+
+        查询治理策略详情。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGovernancePolicyByPolicyId
+        :type request: :class:`huaweicloudsdkcse.v1.ListGovernancePolicyByPolicyIdRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ListGovernancePolicyByPolicyIdResponse`
+        """
+        http_info = self._list_governance_policy_by_policy_id_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_governance_policy_by_policy_id_async_invoker(self, request):
+        http_info = self._list_governance_policy_by_policy_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_governance_policy_by_policy_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/govern/governance/{kind}/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGovernancePolicyByPolicyIdResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'kind' in local_var_params:
+            path_params['kind'] = local_var_params['kind']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment' in local_var_params:
+            header_params['x-environment'] = local_var_params['x_environment']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_governance_policys_async(self, request):
+        """查询治理策略列表
+
+        查询治理策略列表。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListGovernancePolicys
+        :type request: :class:`huaweicloudsdkcse.v1.ListGovernancePolicysRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ListGovernancePolicysResponse`
+        """
+        http_info = self._list_governance_policys_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_governance_policys_async_invoker(self, request):
+        http_info = self._list_governance_policys_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_governance_policys_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/govern/governance/display",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGovernancePolicysResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'environment' in local_var_params:
+            query_params.append(('environment', local_var_params['environment']))
+        if 'app' in local_var_params:
+            query_params.append(('app', local_var_params['app']))
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_microservice_route_rule_async(self, request):
+        """查询微服务的灰度发布规则
+
+        查询微服务的灰度发布规则。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListMicroserviceRouteRule
+        :type request: :class:`huaweicloudsdkcse.v1.ListMicroserviceRouteRuleRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ListMicroserviceRouteRuleResponse`
+        """
+        http_info = self._list_microservice_route_rule_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_microservice_route_rule_async_invoker(self, request):
+        http_info = self._list_microservice_route_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_microservice_route_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/govern/route-rule/microservices/{service_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMicroserviceRouteRuleResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'service_name' in local_var_params:
+            path_params['service_name'] = local_var_params['service_name']
+
+        query_params = []
+        if 'environment' in local_var_params:
+            query_params.append(('environment', local_var_params['environment']))
+        if 'app_id' in local_var_params:
+            query_params.append(('app_id', local_var_params['app_id']))
+
+        header_params = {}
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def resize_engine_async(self, request):
+        """变更微服务引擎规格
+
+        变更微服务引擎规格。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ResizeEngine
+        :type request: :class:`huaweicloudsdkcse.v1.ResizeEngineRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ResizeEngineResponse`
+        """
+        http_info = self._resize_engine_http_info(request)
+        return self._call_api(**http_info)
+
+    def resize_engine_async_invoker(self, request):
+        http_info = self._resize_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_engine_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/enginemgr/engines/{engine_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeEngineResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine_id' in local_var_params:
+            path_params['engine_id'] = local_var_params['engine_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'accept' in local_var_params:
+            header_params['Accept'] = local_var_params['accept']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_engine_async(self, request):
         """对微服务引擎专享版进行重试
@@ -338,9 +1052,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.RetryEngineRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.RetryEngineResponse`
         """
-        return self._retry_engine_with_http_info(request)
+        http_info = self._retry_engine_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_engine_with_http_info(self, request):
+    def retry_engine_async_invoker(self, request):
+        http_info = self._retry_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _retry_engine_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/enginemgr/engines/{engine_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryEngineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -359,11 +1085,11 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -372,20 +1098,16 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/enginemgr/engines/{engine_id}/actions',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryEngineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_engine_async(self, request):
         """查询微服务引擎专享版详情
@@ -399,9 +1121,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.ShowEngineRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.ShowEngineResponse`
         """
-        return self._show_engine_with_http_info(request)
+        http_info = self._show_engine_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_engine_with_http_info(self, request):
+    def show_engine_async_invoker(self, request):
+        http_info = self._show_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_engine_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/enginemgr/engines/{engine_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEngineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -420,9 +1154,9 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -431,20 +1165,16 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/enginemgr/engines/{engine_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEngineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_engine_job_async(self, request):
         """查询微服务引擎任务详情
@@ -458,9 +1188,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.ShowEngineJobRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.ShowEngineJobResponse`
         """
-        return self._show_engine_job_with_http_info(request)
+        http_info = self._show_engine_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_engine_job_with_http_info(self, request):
+    def show_engine_job_async_invoker(self, request):
+        http_info = self._show_engine_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_engine_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/enginemgr/engines/{engine_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEngineJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -481,9 +1223,9 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +1234,93 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/enginemgr/engines/{engine_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEngineJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_governance_policy_async(self, request):
+        """修改治理策略
+
+        修改治理策略。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateGovernancePolicy
+        :type request: :class:`huaweicloudsdkcse.v1.UpdateGovernancePolicyRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.UpdateGovernancePolicyResponse`
+        """
+        http_info = self._update_governance_policy_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_governance_policy_async_invoker(self, request):
+        http_info = self._update_governance_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_governance_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/govern/governance/{kind}/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGovernancePolicyResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'kind' in local_var_params:
+            path_params['kind'] = local_var_params['kind']
+        if 'policy_id' in local_var_params:
+            path_params['policy_id'] = local_var_params['policy_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'content_type' in local_var_params:
+            header_params['Content-Type'] = local_var_params['content_type']
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+        if 'x_environment' in local_var_params:
+            header_params['x-environment'] = local_var_params['x_environment']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_engine_async(self, request):
         """升级微服务引擎专享版
@@ -519,9 +1334,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.UpgradeEngineRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.UpgradeEngineResponse`
         """
-        return self._upgrade_engine_with_http_info(request)
+        http_info = self._upgrade_engine_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_engine_with_http_info(self, request):
+    def upgrade_engine_async_invoker(self, request):
+        http_info = self._upgrade_engine_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_engine_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/enginemgr/engines/{engine_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeEngineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -540,11 +1367,11 @@ class CseAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -553,20 +1380,85 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/enginemgr/engines/{engine_id}/upgrade',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeEngineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def upgrade_engine_config_async(self, request):
+        """更新微服务引擎专享版配置
+
+        更新微服务引擎专享版配置
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpgradeEngineConfig
+        :type request: :class:`huaweicloudsdkcse.v1.UpgradeEngineConfigRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.UpgradeEngineConfigResponse`
+        """
+        http_info = self._upgrade_engine_config_http_info(request)
+        return self._call_api(**http_info)
+
+    def upgrade_engine_config_async_invoker(self, request):
+        http_info = self._upgrade_engine_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_engine_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/enginemgr/engines/{engine_id}/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeEngineConfigResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'engine_id' in local_var_params:
+            path_params['engine_id'] = local_var_params['engine_id']
+
+        query_params = []
+
+        header_params = {}
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_kie_async(self, request):
         """导入kie配置
@@ -580,9 +1472,21 @@ class CseAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcse.v1.UploadKieRequest`
         :rtype: :class:`huaweicloudsdkcse.v1.UploadKieResponse`
         """
-        return self._upload_kie_with_http_info(request)
+        http_info = self._upload_kie_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_kie_with_http_info(self, request):
+    def upload_kie_async_invoker(self, request):
+        http_info = self._upload_kie_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_kie_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/kie/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadKieResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -607,11 +1511,11 @@ class CseAsyncClient(Client):
         if 'upload_file' in local_var_params:
             form_params['upload_file'] = local_var_params['upload_file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -620,20 +1524,312 @@ class CseAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/kie/file',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadKieResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def create_nacos_namespaces_async(self, request):
+        """创建nacos命名空间
+
+        创建nacos命名空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for CreateNacosNamespaces
+        :type request: :class:`huaweicloudsdkcse.v1.CreateNacosNamespacesRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.CreateNacosNamespacesResponse`
+        """
+        http_info = self._create_nacos_namespaces_http_info(request)
+        return self._call_api(**http_info)
+
+    def create_nacos_namespaces_async_invoker(self, request):
+        http_info = self._create_nacos_namespaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_nacos_namespaces_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nacos/v1/console/namespaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNacosNamespacesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'custom_namespace_id' in local_var_params:
+            query_params.append(('custom_namespace_id', local_var_params['custom_namespace_id']))
+        if 'namespace_name' in local_var_params:
+            query_params.append(('namespace_name', local_var_params['namespace_name']))
+        if 'namespace_desc' in local_var_params:
+            query_params.append(('namespace_desc', local_var_params['namespace_desc']))
+
+        header_params = {}
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def delete_nacos_namespaces_async(self, request):
+        """删除nacos命名空间
+
+        删除nacos命名空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for DeleteNacosNamespaces
+        :type request: :class:`huaweicloudsdkcse.v1.DeleteNacosNamespacesRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.DeleteNacosNamespacesResponse`
+        """
+        http_info = self._delete_nacos_namespaces_http_info(request)
+        return self._call_api(**http_info)
+
+    def delete_nacos_namespaces_async_invoker(self, request):
+        http_info = self._delete_nacos_namespaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_nacos_namespaces_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/nacos/v1/console/namespaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNacosNamespacesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'namespace_id' in local_var_params:
+            query_params.append(('namespace_id', local_var_params['namespace_id']))
+
+        header_params = {}
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def list_nacos_namespaces_async(self, request):
+        """查询nacos命名空间
+
+        查询nacos命名空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for ListNacosNamespaces
+        :type request: :class:`huaweicloudsdkcse.v1.ListNacosNamespacesRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.ListNacosNamespacesResponse`
+        """
+        http_info = self._list_nacos_namespaces_http_info(request)
+        return self._call_api(**http_info)
+
+    def list_nacos_namespaces_async_invoker(self, request):
+        http_info = self._list_nacos_namespaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nacos_namespaces_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/nacos/v1/console/namespaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNacosNamespacesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'offset' in local_var_params:
+            query_params.append(('offset', local_var_params['offset']))
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+
+        header_params = {}
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_nacos_namespaces_async(self, request):
+        """更新nacos命名空间
+
+        更新nacos命名空间。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for UpdateNacosNamespaces
+        :type request: :class:`huaweicloudsdkcse.v1.UpdateNacosNamespacesRequest`
+        :rtype: :class:`huaweicloudsdkcse.v1.UpdateNacosNamespacesResponse`
+        """
+        http_info = self._update_nacos_namespaces_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_nacos_namespaces_async_invoker(self, request):
+        http_info = self._update_nacos_namespaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_nacos_namespaces_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/nacos/v1/console/namespaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNacosNamespacesResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+        if 'namespace' in local_var_params:
+            query_params.append(('namespace', local_var_params['namespace']))
+        if 'namespace_show_name' in local_var_params:
+            query_params.append(('namespace_show_name', local_var_params['namespace_show_name']))
+        if 'namespace_desc' in local_var_params:
+            query_params.append(('namespace_desc', local_var_params['namespace_desc']))
+
+        header_params = {}
+        if 'x_engine_id' in local_var_params:
+            header_params['x-engine-id'] = local_var_params['x_engine_id']
+        if 'x_enterprise_project_id' in local_var_params:
+            header_params['X-Enterprise-Project-ID'] = local_var_params['x_enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -672,4 +1868,4 @@ class CseAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

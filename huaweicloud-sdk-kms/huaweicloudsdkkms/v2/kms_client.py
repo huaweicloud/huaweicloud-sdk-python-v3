@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkkms'")
 
 
 class KmsClient(Client):
@@ -38,9 +43,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.BatchCreateKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.BatchCreateKmsTagsResponse`
         """
-        return self._batch_create_kms_tags_with_http_info(request)
+        http_info = self._batch_create_kms_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_kms_tags_with_http_info(self, request):
+    def batch_create_kms_tags_invoker(self, request):
+        http_info = self._batch_create_kms_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_kms_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/{key_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateKmsTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/{key_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateKmsTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_grant(self, request):
         """撤销授权
@@ -98,9 +112,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CancelGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CancelGrantResponse`
         """
-        return self._cancel_grant_with_http_info(request)
+        http_info = self._cancel_grant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_grant_with_http_info(self, request):
+    def cancel_grant_invoker(self, request):
+        http_info = self._cancel_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_grant_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/revoke-grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelGrantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/revoke-grant',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelGrantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_key_deletion(self, request):
         """取消计划删除密钥
@@ -155,9 +178,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CancelKeyDeletionRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CancelKeyDeletionResponse`
         """
-        return self._cancel_key_deletion_with_http_info(request)
+        http_info = self._cancel_key_deletion_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_key_deletion_with_http_info(self, request):
+    def cancel_key_deletion_invoker(self, request):
+        http_info = self._cancel_key_deletion_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_key_deletion_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/cancel-key-deletion",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelKeyDeletionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,11 +208,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -185,20 +221,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/cancel-key-deletion',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelKeyDeletionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_self_grant(self, request):
         """退役授权
@@ -218,9 +250,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CancelSelfGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CancelSelfGrantResponse`
         """
-        return self._cancel_self_grant_with_http_info(request)
+        http_info = self._cancel_self_grant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_self_grant_with_http_info(self, request):
+    def cancel_self_grant_invoker(self, request):
+        http_info = self._cancel_self_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_self_grant_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/retire-grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelSelfGrantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +280,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +293,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/retire-grant',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelSelfGrantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_datakey(self, request):
         """创建数据密钥
@@ -274,9 +315,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateDatakeyResponse`
         """
-        return self._create_datakey_with_http_info(request)
+        http_info = self._create_datakey_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_datakey_with_http_info(self, request):
+    def create_datakey_invoker(self, request):
+        http_info = self._create_datakey_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_datakey_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/create-datakey",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatakeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,11 +345,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +358,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/create-datakey',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatakeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_datakey_without_plaintext(self, request):
         """创建不含明文数据密钥
@@ -330,9 +380,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateDatakeyWithoutPlaintextRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateDatakeyWithoutPlaintextResponse`
         """
-        return self._create_datakey_without_plaintext_with_http_info(request)
+        http_info = self._create_datakey_without_plaintext_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_datakey_without_plaintext_with_http_info(self, request):
+    def create_datakey_without_plaintext_invoker(self, request):
+        http_info = self._create_datakey_without_plaintext_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_datakey_without_plaintext_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/create-datakey-without-plaintext",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatakeyWithoutPlaintextResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,11 +410,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +423,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/create-datakey-without-plaintext',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatakeyWithoutPlaintextResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_grant(self, request):
         """创建授权
@@ -388,9 +447,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateGrantRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateGrantResponse`
         """
-        return self._create_grant_with_http_info(request)
+        http_info = self._create_grant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_grant_with_http_info(self, request):
+    def create_grant_invoker(self, request):
+        http_info = self._create_grant_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_grant_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/create-grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGrantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -405,11 +477,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -418,20 +490,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/create-grant',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGrantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_key(self, request):
         """创建密钥
@@ -446,9 +514,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyResponse`
         """
-        return self._create_key_with_http_info(request)
+        http_info = self._create_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_key_with_http_info(self, request):
+    def create_key_invoker(self, request):
+        http_info = self._create_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/create-key",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -463,11 +544,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -476,20 +557,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/create-key',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_key_store(self, request):
         """创建专属密钥库
@@ -502,9 +579,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateKeyStoreResponse`
         """
-        return self._create_key_store_with_http_info(request)
+        http_info = self._create_key_store_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_key_store_with_http_info(self, request):
+    def create_key_store_invoker(self, request):
+        http_info = self._create_key_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_key_store_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/keystores",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKeyStoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -519,11 +609,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -532,20 +622,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/keystores',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateKeyStoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_kms_tag(self, request):
         """添加密钥标签
@@ -558,9 +644,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateKmsTagRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateKmsTagResponse`
         """
-        return self._create_kms_tag_with_http_info(request)
+        http_info = self._create_kms_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_kms_tag_with_http_info(self, request):
+    def create_kms_tag_invoker(self, request):
+        http_info = self._create_kms_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_kms_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/{key_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKmsTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -577,11 +676,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -590,20 +689,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/{key_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateKmsTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_parameters_for_import(self, request):
         """获取密钥导入参数
@@ -617,9 +712,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateParametersForImportRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateParametersForImportResponse`
         """
-        return self._create_parameters_for_import_with_http_info(request)
+        http_info = self._create_parameters_for_import_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_parameters_for_import_with_http_info(self, request):
+    def create_parameters_for_import_invoker(self, request):
+        http_info = self._create_parameters_for_import_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_parameters_for_import_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/get-parameters-for-import",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateParametersForImportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -634,11 +742,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -647,20 +755,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/get-parameters-for-import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateParametersForImportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_random(self, request):
         """创建随机数
@@ -674,9 +778,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.CreateRandomRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.CreateRandomResponse`
         """
-        return self._create_random_with_http_info(request)
+        http_info = self._create_random_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_random_with_http_info(self, request):
+    def create_random_invoker(self, request):
+        http_info = self._create_random_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_random_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/gen-random",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRandomResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -691,11 +808,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -704,20 +821,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/gen-random',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRandomResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def decrypt_data(self, request):
         """解密数据
@@ -730,9 +843,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DecryptDataRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DecryptDataResponse`
         """
-        return self._decrypt_data_with_http_info(request)
+        http_info = self._decrypt_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _decrypt_data_with_http_info(self, request):
+    def decrypt_data_invoker(self, request):
+        http_info = self._decrypt_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _decrypt_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/decrypt-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "DecryptDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -747,11 +873,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -760,20 +886,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/decrypt-data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DecryptDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def decrypt_datakey(self, request):
         """解密数据密钥
@@ -786,9 +908,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DecryptDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DecryptDatakeyResponse`
         """
-        return self._decrypt_datakey_with_http_info(request)
+        http_info = self._decrypt_datakey_http_info(request)
+        return self._call_api(**http_info)
 
-    def _decrypt_datakey_with_http_info(self, request):
+    def decrypt_datakey_invoker(self, request):
+        http_info = self._decrypt_datakey_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _decrypt_datakey_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/decrypt-datakey",
+            "request_type": request.__class__.__name__,
+            "response_type": "DecryptDatakeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -803,11 +938,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -816,20 +951,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/decrypt-datakey',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DecryptDatakeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_imported_key_material(self, request):
         """删除密钥材料
@@ -842,9 +973,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DeleteImportedKeyMaterialRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteImportedKeyMaterialResponse`
         """
-        return self._delete_imported_key_material_with_http_info(request)
+        http_info = self._delete_imported_key_material_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_imported_key_material_with_http_info(self, request):
+    def delete_imported_key_material_invoker(self, request):
+        http_info = self._delete_imported_key_material_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_imported_key_material_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/delete-imported-key-material",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteImportedKeyMaterialResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -859,11 +1003,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -872,20 +1016,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/delete-imported-key-material',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteImportedKeyMaterialResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_key(self, request):
         """计划删除密钥
@@ -898,9 +1038,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DeleteKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteKeyResponse`
         """
-        return self._delete_key_with_http_info(request)
+        http_info = self._delete_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_key_with_http_info(self, request):
+    def delete_key_invoker(self, request):
+        http_info = self._delete_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/schedule-key-deletion",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -915,11 +1068,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -928,20 +1081,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/schedule-key-deletion',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_key_store(self, request):
         """删除专属密钥库
@@ -954,9 +1103,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DeleteKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteKeyStoreResponse`
         """
-        return self._delete_key_store_with_http_info(request)
+        http_info = self._delete_key_store_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_key_store_with_http_info(self, request):
+    def delete_key_store_invoker(self, request):
+        http_info = self._delete_key_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_key_store_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/keystores/{keystore_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKeyStoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -973,9 +1135,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -984,20 +1146,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/keystores/{keystore_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteKeyStoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tag(self, request):
         """删除密钥标签
@@ -1010,9 +1168,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DeleteTagResponse`
         """
-        return self._delete_tag_with_http_info(request)
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tag_with_http_info(self, request):
+    def delete_tag_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/kms/{key_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1031,9 +1202,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1042,20 +1213,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/{key_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_key(self, request):
         """禁用密钥
@@ -1069,9 +1236,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DisableKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyResponse`
         """
-        return self._disable_key_with_http_info(request)
+        http_info = self._disable_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_key_with_http_info(self, request):
+    def disable_key_invoker(self, request):
+        http_info = self._disable_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/disable-key",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1086,11 +1266,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1099,20 +1279,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/disable-key',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_key_rotation(self, request):
         """关闭密钥轮换
@@ -1125,9 +1301,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DisableKeyRotationRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyRotationResponse`
         """
-        return self._disable_key_rotation_with_http_info(request)
+        http_info = self._disable_key_rotation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_key_rotation_with_http_info(self, request):
+    def disable_key_rotation_invoker(self, request):
+        http_info = self._disable_key_rotation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_key_rotation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/disable-key-rotation",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableKeyRotationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1142,11 +1331,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1155,20 +1344,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/disable-key-rotation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableKeyRotationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_key_store(self, request):
         """禁用专属密钥库
@@ -1181,9 +1366,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.DisableKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.DisableKeyStoreResponse`
         """
-        return self._disable_key_store_with_http_info(request)
+        http_info = self._disable_key_store_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_key_store_with_http_info(self, request):
+    def disable_key_store_invoker(self, request):
+        http_info = self._disable_key_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_key_store_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/keystores/{keystore_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableKeyStoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1200,9 +1398,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1211,20 +1409,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/keystores/{keystore_id}/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableKeyStoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_key(self, request):
         """启用密钥
@@ -1238,9 +1432,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EnableKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyResponse`
         """
-        return self._enable_key_with_http_info(request)
+        http_info = self._enable_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_key_with_http_info(self, request):
+    def enable_key_invoker(self, request):
+        http_info = self._enable_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/enable-key",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1255,11 +1462,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1268,20 +1475,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/enable-key',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_key_rotation(self, request):
         """开启密钥轮换
@@ -1297,9 +1500,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EnableKeyRotationRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyRotationResponse`
         """
-        return self._enable_key_rotation_with_http_info(request)
+        http_info = self._enable_key_rotation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_key_rotation_with_http_info(self, request):
+    def enable_key_rotation_invoker(self, request):
+        http_info = self._enable_key_rotation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_key_rotation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/enable-key-rotation",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableKeyRotationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1314,11 +1530,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1327,20 +1543,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/enable-key-rotation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableKeyRotationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_key_store(self, request):
         """启用专属密钥库
@@ -1353,9 +1565,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EnableKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EnableKeyStoreResponse`
         """
-        return self._enable_key_store_with_http_info(request)
+        http_info = self._enable_key_store_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_key_store_with_http_info(self, request):
+    def enable_key_store_invoker(self, request):
+        http_info = self._enable_key_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_key_store_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/keystores/{keystore_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableKeyStoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1372,9 +1597,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1383,20 +1608,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/keystores/{keystore_id}/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableKeyStoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def encrypt_data(self, request):
         """加密数据
@@ -1409,9 +1630,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EncryptDataRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EncryptDataResponse`
         """
-        return self._encrypt_data_with_http_info(request)
+        http_info = self._encrypt_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _encrypt_data_with_http_info(self, request):
+    def encrypt_data_invoker(self, request):
+        http_info = self._encrypt_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _encrypt_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/encrypt-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "EncryptDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1426,11 +1660,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1439,20 +1673,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/encrypt-data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EncryptDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def encrypt_datakey(self, request):
         """加密数据密钥
@@ -1465,9 +1695,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.EncryptDatakeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.EncryptDatakeyResponse`
         """
-        return self._encrypt_datakey_with_http_info(request)
+        http_info = self._encrypt_datakey_http_info(request)
+        return self._call_api(**http_info)
 
-    def _encrypt_datakey_with_http_info(self, request):
+    def encrypt_datakey_invoker(self, request):
+        http_info = self._encrypt_datakey_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _encrypt_datakey_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/encrypt-datakey",
+            "request_type": request.__class__.__name__,
+            "response_type": "EncryptDatakeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1482,11 +1725,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1495,20 +1738,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/encrypt-datakey',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EncryptDatakeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_key_material(self, request):
         """导入密钥材料
@@ -1521,9 +1760,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ImportKeyMaterialResponse`
         """
-        return self._import_key_material_with_http_info(request)
+        http_info = self._import_key_material_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_key_material_with_http_info(self, request):
+    def import_key_material_invoker(self, request):
+        http_info = self._import_key_material_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_key_material_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/import-key-material",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportKeyMaterialResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1538,11 +1790,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1551,20 +1803,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/import-key-material',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportKeyMaterialResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_grants(self, request):
         """查询授权列表
@@ -1577,9 +1825,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListGrantsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListGrantsResponse`
         """
-        return self._list_grants_with_http_info(request)
+        http_info = self._list_grants_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_grants_with_http_info(self, request):
+    def list_grants_invoker(self, request):
+        http_info = self._list_grants_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_grants_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/list-grants",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGrantsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1594,11 +1855,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1607,20 +1868,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/list-grants',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGrantsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_key_detail(self, request):
         """查询密钥信息
@@ -1633,9 +1890,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKeyDetailRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKeyDetailResponse`
         """
-        return self._list_key_detail_with_http_info(request)
+        http_info = self._list_key_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_key_detail_with_http_info(self, request):
+    def list_key_detail_invoker(self, request):
+        http_info = self._list_key_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_key_detail_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/describe-key",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKeyDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1650,11 +1920,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1663,20 +1933,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/describe-key',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKeyDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_key_stores(self, request):
         """查询专属密钥库列表
@@ -1689,9 +1955,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKeyStoresRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKeyStoresResponse`
         """
-        return self._list_key_stores_with_http_info(request)
+        http_info = self._list_key_stores_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_key_stores_with_http_info(self, request):
+    def list_key_stores_invoker(self, request):
+        http_info = self._list_key_stores_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_key_stores_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/keystores",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKeyStoresResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1710,9 +1989,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1721,20 +2000,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/keystores',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKeyStoresResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_keys(self, request):
         """查询密钥列表
@@ -1747,9 +2022,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKeysRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKeysResponse`
         """
-        return self._list_keys_with_http_info(request)
+        http_info = self._list_keys_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_keys_with_http_info(self, request):
+    def list_keys_invoker(self, request):
+        http_info = self._list_keys_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_keys_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/list-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKeysResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1764,11 +2052,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1777,20 +2065,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/list-keys',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKeysResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_kms_by_tags(self, request):
         """查询密钥实例
@@ -1803,9 +2087,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKmsByTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKmsByTagsResponse`
         """
-        return self._list_kms_by_tags_with_http_info(request)
+        http_info = self._list_kms_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_kms_by_tags_with_http_info(self, request):
+    def list_kms_by_tags_invoker(self, request):
+        http_info = self._list_kms_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_kms_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/{resource_instances}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKmsByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1822,11 +2119,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1835,20 +2132,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/{resource_instances}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKmsByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_kms_tags(self, request):
         """查询项目标签
@@ -1861,9 +2154,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListKmsTagsResponse`
         """
-        return self._list_kms_tags_with_http_info(request)
+        http_info = self._list_kms_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_kms_tags_with_http_info(self, request):
+    def list_kms_tags_invoker(self, request):
+        http_info = self._list_kms_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_kms_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKmsTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1878,9 +2184,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1889,20 +2195,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKmsTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_retirable_grants(self, request):
         """查询可退役授权列表
@@ -1915,9 +2217,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ListRetirableGrantsResponse`
         """
-        return self._list_retirable_grants_with_http_info(request)
+        http_info = self._list_retirable_grants_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_retirable_grants_with_http_info(self, request):
+    def list_retirable_grants_invoker(self, request):
+        http_info = self._list_retirable_grants_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_retirable_grants_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/list-retirable-grants",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRetirableGrantsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1932,11 +2247,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1945,20 +2260,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/list-retirable-grants',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRetirableGrantsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_key_rotation_status(self, request):
         """查询密钥轮换状态
@@ -1971,9 +2282,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowKeyRotationStatusRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowKeyRotationStatusResponse`
         """
-        return self._show_key_rotation_status_with_http_info(request)
+        http_info = self._show_key_rotation_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_key_rotation_status_with_http_info(self, request):
+    def show_key_rotation_status_invoker(self, request):
+        http_info = self._show_key_rotation_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_key_rotation_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/get-key-rotation-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKeyRotationStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1988,11 +2312,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2001,20 +2325,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/get-key-rotation-status',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowKeyRotationStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_key_store(self, request):
         """获取专属密钥库
@@ -2027,9 +2347,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowKeyStoreRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowKeyStoreResponse`
         """
-        return self._show_key_store_with_http_info(request)
+        http_info = self._show_key_store_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_key_store_with_http_info(self, request):
+    def show_key_store_invoker(self, request):
+        http_info = self._show_key_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_key_store_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/keystores/{keystore_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKeyStoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2046,9 +2379,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2057,20 +2390,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/keystores/{keystore_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowKeyStoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_kms_tags(self, request):
         """查询密钥标签
@@ -2083,9 +2412,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowKmsTagsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowKmsTagsResponse`
         """
-        return self._show_kms_tags_with_http_info(request)
+        http_info = self._show_kms_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_kms_tags_with_http_info(self, request):
+    def show_kms_tags_invoker(self, request):
+        http_info = self._show_kms_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_kms_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/{key_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKmsTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2102,9 +2444,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2113,20 +2455,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/{key_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowKmsTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_public_key(self, request):
         """查询公钥信息
@@ -2139,9 +2477,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowPublicKeyRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowPublicKeyResponse`
         """
-        return self._show_public_key_with_http_info(request)
+        http_info = self._show_public_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_public_key_with_http_info(self, request):
+    def show_public_key_invoker(self, request):
+        http_info = self._show_public_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_public_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/get-publickey",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2156,11 +2507,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2169,20 +2520,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/get-publickey',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user_instances(self, request):
         """查询实例数
@@ -2195,9 +2542,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowUserInstancesRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowUserInstancesResponse`
         """
-        return self._show_user_instances_with_http_info(request)
+        http_info = self._show_user_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_instances_with_http_info(self, request):
+    def show_user_instances_invoker(self, request):
+        http_info = self._show_user_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_user_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/user-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2212,9 +2572,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2223,20 +2583,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/user-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user_quotas(self, request):
         """查询配额
@@ -2249,9 +2605,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowUserQuotasRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowUserQuotasResponse`
         """
-        return self._show_user_quotas_with_http_info(request)
+        http_info = self._show_user_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_quotas_with_http_info(self, request):
+    def show_user_quotas_invoker(self, request):
+        http_info = self._show_user_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_user_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/kms/user-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2266,9 +2635,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2277,20 +2646,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/user-quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def sign(self, request):
         """签名数据
@@ -2303,9 +2668,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.SignRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.SignResponse`
         """
-        return self._sign_with_http_info(request)
+        http_info = self._sign_http_info(request)
+        return self._call_api(**http_info)
 
-    def _sign_with_http_info(self, request):
+    def sign_invoker(self, request):
+        http_info = self._sign_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _sign_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/sign",
+            "request_type": request.__class__.__name__,
+            "response_type": "SignResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2320,11 +2698,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2333,20 +2711,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/sign',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SignResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_key_alias(self, request):
         """修改密钥别名
@@ -2362,9 +2736,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyAliasRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyAliasResponse`
         """
-        return self._update_key_alias_with_http_info(request)
+        http_info = self._update_key_alias_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_key_alias_with_http_info(self, request):
+    def update_key_alias_invoker(self, request):
+        http_info = self._update_key_alias_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_key_alias_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/update-key-alias",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKeyAliasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2379,11 +2766,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2392,20 +2779,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/update-key-alias',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateKeyAliasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_key_description(self, request):
         """修改密钥描述
@@ -2421,9 +2804,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyDescriptionRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyDescriptionResponse`
         """
-        return self._update_key_description_with_http_info(request)
+        http_info = self._update_key_description_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_key_description_with_http_info(self, request):
+    def update_key_description_invoker(self, request):
+        http_info = self._update_key_description_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_key_description_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/update-key-description",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKeyDescriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2438,11 +2834,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2451,20 +2847,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/update-key-description',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateKeyDescriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_key_rotation_interval(self, request):
         """修改密钥轮换周期
@@ -2477,9 +2869,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.UpdateKeyRotationIntervalRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.UpdateKeyRotationIntervalResponse`
         """
-        return self._update_key_rotation_interval_with_http_info(request)
+        http_info = self._update_key_rotation_interval_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_key_rotation_interval_with_http_info(self, request):
+    def update_key_rotation_interval_invoker(self, request):
+        http_info = self._update_key_rotation_interval_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_key_rotation_interval_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/update-key-rotation-interval",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKeyRotationIntervalResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2494,11 +2899,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2507,20 +2912,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/update-key-rotation-interval',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateKeyRotationIntervalResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_signature(self, request):
         """验证签名
@@ -2533,9 +2934,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ValidateSignatureRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ValidateSignatureResponse`
         """
-        return self._validate_signature_with_http_info(request)
+        http_info = self._validate_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_signature_with_http_info(self, request):
+    def validate_signature_invoker(self, request):
+        http_info = self._validate_signature_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_signature_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/kms/verify",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2550,11 +2964,11 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2563,20 +2977,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/kms/verify',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_version(self, request):
         """查询指定版本信息
@@ -2589,9 +2999,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowVersionResponse`
         """
-        return self._show_version_with_http_info(request)
+        http_info = self._show_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_version_with_http_info(self, request):
+    def show_version_invoker(self, request):
+        http_info = self._show_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2608,9 +3031,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2619,20 +3042,16 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{version_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_versions(self, request):
         """查询版本信息列表
@@ -2645,9 +3064,22 @@ class KmsClient(Client):
         :type request: :class:`huaweicloudsdkkms.v2.ShowVersionsRequest`
         :rtype: :class:`huaweicloudsdkkms.v2.ShowVersionsResponse`
         """
-        return self._show_versions_with_http_info(request)
+        http_info = self._show_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_versions_with_http_info(self, request):
+    def show_versions_invoker(self, request):
+        http_info = self._show_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2662,9 +3094,9 @@ class KmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2673,20 +3105,25 @@ class KmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

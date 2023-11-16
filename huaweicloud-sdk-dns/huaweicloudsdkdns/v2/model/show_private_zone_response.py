@@ -96,7 +96,7 @@ class ShowPrivateZoneResponse(SdkResponse):
         :type masters: list[str]
         :param routers: 与该zone关联的Router(VPC)列表。
         :type routers: list[:class:`huaweicloudsdkdns.v2.Router`]
-        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。 取值范围： AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        :param proxy_pattern: 内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
         :type proxy_pattern: str
         :param enterprise_project_id: 域名关联的企业项目ID，长度不超过36个字符。
         :type enterprise_project_id: str
@@ -513,7 +513,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def proxy_pattern(self):
         """Gets the proxy_pattern of this ShowPrivateZoneResponse.
 
-        内网Zone的子域名递归解析代理模式。 取值范围： AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
 
         :return: The proxy_pattern of this ShowPrivateZoneResponse.
         :rtype: str
@@ -524,7 +524,7 @@ class ShowPrivateZoneResponse(SdkResponse):
     def proxy_pattern(self, proxy_pattern):
         """Sets the proxy_pattern of this ShowPrivateZoneResponse.
 
-        内网Zone的子域名递归解析代理模式。 取值范围： AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
+        内网Zone的子域名递归解析代理模式。  取值范围：  AUTHORITY：当前Zone不进行递归解析 RECURSIVE：开启递归解析代理
 
         :param proxy_pattern: The proxy_pattern of this ShowPrivateZoneResponse.
         :type proxy_pattern: str

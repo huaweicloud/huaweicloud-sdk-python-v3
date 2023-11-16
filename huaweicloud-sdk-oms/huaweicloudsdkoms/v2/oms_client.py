@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkoms'")
 
 
 class OmsClient(Client):
@@ -38,9 +43,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.CreateSyncEventsRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateSyncEventsResponse`
         """
-        return self._create_sync_events_with_http_info(request)
+        http_info = self._create_sync_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sync_events_with_http_info(self, request):
+    def create_sync_events_invoker(self, request):
+        http_info = self._create_sync_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_sync_events_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/sync-tasks/{sync_task_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSyncEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/sync-tasks/{sync_task_id}/events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSyncEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_task(self, request):
         """创建迁移任务
@@ -96,9 +110,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskResponse`
         """
-        return self._create_task_with_http_info(request)
+        http_info = self._create_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_task_with_http_info(self, request):
+    def create_task_invoker(self, request):
+        http_info = self._create_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +140,11 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +153,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task(self, request):
         """删除迁移任务
@@ -153,9 +176,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.DeleteTaskResponse`
         """
-        return self._delete_task_with_http_info(request)
+        http_info = self._delete_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_with_http_info(self, request):
+    def delete_task_invoker(self, request):
+        http_info = self._delete_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,9 +208,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +219,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tasks(self, request):
         """查询迁移任务列表
@@ -209,9 +241,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListTasksResponse`
         """
-        return self._list_tasks_with_http_info(request)
+        http_info = self._list_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tasks_with_http_info(self, request):
+    def list_tasks_invoker(self, request):
+        http_info = self._list_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -234,9 +279,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -245,20 +290,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task(self, request):
         """查询指定ID的任务详情
@@ -271,9 +312,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowTaskResponse`
         """
-        return self._show_task_with_http_info(request)
+        http_info = self._show_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_with_http_info(self, request):
+    def show_task_invoker(self, request):
+        http_info = self._show_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -290,9 +344,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -301,20 +355,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_task(self, request):
         """启动迁移任务
@@ -327,9 +377,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.StartTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskResponse`
         """
-        return self._start_task_with_http_info(request)
+        http_info = self._start_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_task_with_http_info(self, request):
+    def start_task_invoker(self, request):
+        http_info = self._start_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -346,11 +409,11 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -359,20 +422,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_task(self, request):
         """暂停迁移任务
@@ -385,9 +444,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.StopTaskRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StopTaskResponse`
         """
-        return self._stop_task_with_http_info(request)
+        http_info = self._stop_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_task_with_http_info(self, request):
+    def stop_task_invoker(self, request):
+        http_info = self._stop_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -404,9 +476,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -415,20 +487,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_bandwidth_policy(self, request):
         """更新任务带宽策略
@@ -441,9 +509,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.UpdateBandwidthPolicyResponse`
         """
-        return self._update_bandwidth_policy_with_http_info(request)
+        http_info = self._update_bandwidth_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_bandwidth_policy_with_http_info(self, request):
+    def update_bandwidth_policy_invoker(self, request):
+        http_info = self._update_bandwidth_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_bandwidth_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/bandwidth-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBandwidthPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -460,11 +541,11 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -473,20 +554,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/bandwidth-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBandwidthPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_task_group(self, request):
         """创建迁移任务组
@@ -499,9 +576,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.CreateTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.CreateTaskGroupResponse`
         """
-        return self._create_task_group_with_http_info(request)
+        http_info = self._create_task_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_task_group_with_http_info(self, request):
+    def create_task_group_invoker(self, request):
+        http_info = self._create_task_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_task_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/taskgroups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTaskGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -516,11 +606,11 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -529,20 +619,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/taskgroups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTaskGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task_group(self, request):
         """删除指定ID的迁移任务组
@@ -556,9 +642,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.DeleteTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.DeleteTaskGroupResponse`
         """
-        return self._delete_task_group_with_http_info(request)
+        http_info = self._delete_task_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_group_with_http_info(self, request):
+    def delete_task_group_invoker(self, request):
+        http_info = self._delete_task_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_task_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/taskgroups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -575,9 +674,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -586,20 +685,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/taskgroups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_task_group(self, request):
         """查询迁移任务组列表
@@ -612,9 +707,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ListTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListTaskGroupResponse`
         """
-        return self._list_task_group_with_http_info(request)
+        http_info = self._list_task_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_task_group_with_http_info(self, request):
+    def list_task_group_invoker(self, request):
+        http_info = self._list_task_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_task_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/taskgroups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -635,9 +743,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -646,20 +754,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/taskgroups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTaskGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_task_group(self, request):
         """对已经失败的指定ID迁移任务组进行重启
@@ -672,9 +776,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.RetryTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.RetryTaskGroupResponse`
         """
-        return self._retry_task_group_with_http_info(request)
+        http_info = self._retry_task_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_task_group_with_http_info(self, request):
+    def retry_task_group_invoker(self, request):
+        http_info = self._retry_task_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _retry_task_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/taskgroups/{group_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryTaskGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -691,11 +808,11 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -704,20 +821,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/taskgroups/{group_id}/retry',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryTaskGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_group(self, request):
         """获取指定ID的taskgroup信息
@@ -730,9 +843,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ShowTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowTaskGroupResponse`
         """
-        return self._show_task_group_with_http_info(request)
+        http_info = self._show_task_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_group_with_http_info(self, request):
+    def show_task_group_invoker(self, request):
+        http_info = self._show_task_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/taskgroups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -749,9 +875,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -760,20 +886,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/taskgroups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_task_group(self, request):
         """恢复指定ID的迁移任务组
@@ -786,9 +908,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.StartTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StartTaskGroupResponse`
         """
-        return self._start_task_group_with_http_info(request)
+        http_info = self._start_task_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_task_group_with_http_info(self, request):
+    def start_task_group_invoker(self, request):
+        http_info = self._start_task_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_task_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/taskgroups/{group_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartTaskGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -805,11 +940,11 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -818,20 +953,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/taskgroups/{group_id}/start',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartTaskGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_task_group(self, request):
         """暂停指定ID的迁移任务组
@@ -844,9 +975,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.StopTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.StopTaskGroupResponse`
         """
-        return self._stop_task_group_with_http_info(request)
+        http_info = self._stop_task_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_task_group_with_http_info(self, request):
+    def stop_task_group_invoker(self, request):
+        http_info = self._stop_task_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_task_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/taskgroups/{group_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopTaskGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -863,9 +1007,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -874,20 +1018,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/taskgroups/{group_id}/stop',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopTaskGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_group(self, request):
         """更新指定ID的迁移任务组的流控策略
@@ -900,9 +1040,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.UpdateTaskGroupRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.UpdateTaskGroupResponse`
         """
-        return self._update_task_group_with_http_info(request)
+        http_info = self._update_task_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_group_with_http_info(self, request):
+    def update_task_group_invoker(self, request):
+        http_info = self._update_task_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/taskgroups/{group_id}/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -919,11 +1072,11 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -932,20 +1085,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/taskgroups/{group_id}/update',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions(self, request):
         """查询API版本信息列表
@@ -958,9 +1107,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -975,9 +1137,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -986,20 +1148,16 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_info(self, request):
         """查询指定API版本信息
@@ -1012,9 +1170,22 @@ class OmsClient(Client):
         :type request: :class:`huaweicloudsdkoms.v2.ShowApiInfoRequest`
         :rtype: :class:`huaweicloudsdkoms.v2.ShowApiInfoResponse`
         """
-        return self._show_api_info_with_http_info(request)
+        http_info = self._show_api_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_info_with_http_info(self, request):
+    def show_api_info_invoker(self, request):
+        http_info = self._show_api_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_api_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1031,9 +1202,9 @@ class OmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1042,20 +1213,25 @@ class OmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

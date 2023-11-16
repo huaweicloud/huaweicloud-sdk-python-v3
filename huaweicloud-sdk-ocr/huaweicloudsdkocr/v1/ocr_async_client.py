@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkocr'")
 
 
 class OcrAsyncClient(Client):
@@ -39,9 +44,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeAcceptanceBillRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeAcceptanceBillResponse`
         """
-        return self._recognize_acceptance_bill_with_http_info(request)
+        http_info = self._recognize_acceptance_bill_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_acceptance_bill_with_http_info(self, request):
+    def recognize_acceptance_bill_async_invoker(self, request):
+        http_info = self._recognize_acceptance_bill_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_acceptance_bill_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/acceptance-bill",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeAcceptanceBillResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/acceptance-bill',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeAcceptanceBillResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_auto_classification_async(self, request):
         """智能分类识别
@@ -100,9 +113,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeAutoClassificationRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeAutoClassificationResponse`
         """
-        return self._recognize_auto_classification_with_http_info(request)
+        http_info = self._recognize_auto_classification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_auto_classification_with_http_info(self, request):
+    def recognize_auto_classification_async_invoker(self, request):
+        http_info = self._recognize_auto_classification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_auto_classification_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/auto-classification",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeAutoClassificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +144,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +157,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/auto-classification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeAutoClassificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_bankcard_async(self, request):
         """银行卡识别
@@ -161,9 +182,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBankcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBankcardResponse`
         """
-        return self._recognize_bankcard_with_http_info(request)
+        http_info = self._recognize_bankcard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_bankcard_with_http_info(self, request):
+    def recognize_bankcard_async_invoker(self, request):
+        http_info = self._recognize_bankcard_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_bankcard_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/bankcard",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeBankcardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -180,11 +213,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -193,20 +226,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/bankcard',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeBankcardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_business_card_async(self, request):
         """名片识别
@@ -220,9 +249,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBusinessCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBusinessCardResponse`
         """
-        return self._recognize_business_card_with_http_info(request)
+        http_info = self._recognize_business_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_business_card_with_http_info(self, request):
+    def recognize_business_card_async_invoker(self, request):
+        http_info = self._recognize_business_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_business_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/business-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeBusinessCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -239,11 +280,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -252,20 +293,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/business-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeBusinessCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_business_license_async(self, request):
         """营业执照识别
@@ -283,9 +320,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeBusinessLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeBusinessLicenseResponse`
         """
-        return self._recognize_business_license_with_http_info(request)
+        http_info = self._recognize_business_license_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_business_license_with_http_info(self, request):
+    def recognize_business_license_async_invoker(self, request):
+        http_info = self._recognize_business_license_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_business_license_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/business-license",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeBusinessLicenseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -302,11 +351,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -315,20 +364,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/business-license',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeBusinessLicenseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_cambodian_id_card_async(self, request):
         """柬文身份证识别
@@ -342,9 +387,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeCambodianIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeCambodianIdCardResponse`
         """
-        return self._recognize_cambodian_id_card_with_http_info(request)
+        http_info = self._recognize_cambodian_id_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_cambodian_id_card_with_http_info(self, request):
+    def recognize_cambodian_id_card_async_invoker(self, request):
+        http_info = self._recognize_cambodian_id_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_cambodian_id_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/cambodian-idcard",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeCambodianIdCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -361,11 +418,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -374,20 +431,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/cambodian-idcard',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeCambodianIdCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_chile_id_card_async(self, request):
         """智利身份证识别
@@ -401,9 +454,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeChileIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeChileIdCardResponse`
         """
-        return self._recognize_chile_id_card_with_http_info(request)
+        http_info = self._recognize_chile_id_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_chile_id_card_with_http_info(self, request):
+    def recognize_chile_id_card_async_invoker(self, request):
+        http_info = self._recognize_chile_id_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_chile_id_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/chile-id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeChileIdCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -420,11 +485,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -433,20 +498,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/chile-id-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeChileIdCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_colombia_id_card_async(self, request):
         """哥伦比亚身份证识别
@@ -460,9 +521,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeColombiaIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeColombiaIdCardResponse`
         """
-        return self._recognize_colombia_id_card_with_http_info(request)
+        http_info = self._recognize_colombia_id_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_colombia_id_card_with_http_info(self, request):
+    def recognize_colombia_id_card_async_invoker(self, request):
+        http_info = self._recognize_colombia_id_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_colombia_id_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/colombia-id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeColombiaIdCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -479,11 +552,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +565,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/colombia-id-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeColombiaIdCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_driver_license_async(self, request):
         """驾驶证识别
@@ -523,9 +592,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeDriverLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeDriverLicenseResponse`
         """
-        return self._recognize_driver_license_with_http_info(request)
+        http_info = self._recognize_driver_license_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_driver_license_with_http_info(self, request):
+    def recognize_driver_license_async_invoker(self, request):
+        http_info = self._recognize_driver_license_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_driver_license_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/driver-license",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeDriverLicenseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -542,11 +623,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -555,20 +636,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/driver-license',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeDriverLicenseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_exit_entry_permit_async(self, request):
         """往来港澳台通行证识别
@@ -582,9 +659,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeExitEntryPermitRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeExitEntryPermitResponse`
         """
-        return self._recognize_exit_entry_permit_with_http_info(request)
+        http_info = self._recognize_exit_entry_permit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_exit_entry_permit_with_http_info(self, request):
+    def recognize_exit_entry_permit_async_invoker(self, request):
+        http_info = self._recognize_exit_entry_permit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_exit_entry_permit_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/exit-entry-permit",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeExitEntryPermitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -601,11 +690,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -614,20 +703,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/exit-entry-permit',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeExitEntryPermitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_financial_statement_async(self, request):
         """财务报表识别
@@ -641,9 +726,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeFinancialStatementRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeFinancialStatementResponse`
         """
-        return self._recognize_financial_statement_with_http_info(request)
+        http_info = self._recognize_financial_statement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_financial_statement_with_http_info(self, request):
+    def recognize_financial_statement_async_invoker(self, request):
+        http_info = self._recognize_financial_statement_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_financial_statement_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/financial-statement",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeFinancialStatementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -660,11 +757,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -673,20 +770,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/financial-statement',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeFinancialStatementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_flight_itinerary_async(self, request):
         """飞机行程单识别
@@ -702,9 +795,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeFlightItineraryRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeFlightItineraryResponse`
         """
-        return self._recognize_flight_itinerary_with_http_info(request)
+        http_info = self._recognize_flight_itinerary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_flight_itinerary_with_http_info(self, request):
+    def recognize_flight_itinerary_async_invoker(self, request):
+        http_info = self._recognize_flight_itinerary_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_flight_itinerary_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/flight-itinerary",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeFlightItineraryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -721,11 +826,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -734,20 +839,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/flight-itinerary',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeFlightItineraryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_general_table_async(self, request):
         """通用表格识别
@@ -761,9 +862,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTableRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTableResponse`
         """
-        return self._recognize_general_table_with_http_info(request)
+        http_info = self._recognize_general_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_general_table_with_http_info(self, request):
+    def recognize_general_table_async_invoker(self, request):
+        http_info = self._recognize_general_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_general_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/general-table",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeGeneralTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -780,11 +893,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -793,20 +906,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/general-table',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeGeneralTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_general_text_async(self, request):
         """通用文字识别
@@ -820,9 +929,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTextRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeGeneralTextResponse`
         """
-        return self._recognize_general_text_with_http_info(request)
+        http_info = self._recognize_general_text_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_general_text_with_http_info(self, request):
+    def recognize_general_text_async_invoker(self, request):
+        http_info = self._recognize_general_text_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_general_text_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/general-text",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeGeneralTextResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -839,11 +960,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -852,20 +973,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/general-text',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeGeneralTextResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_handwriting_async(self, request):
         """手写文字识别
@@ -879,9 +996,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHandwritingRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHandwritingResponse`
         """
-        return self._recognize_handwriting_with_http_info(request)
+        http_info = self._recognize_handwriting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_handwriting_with_http_info(self, request):
+    def recognize_handwriting_async_invoker(self, request):
+        http_info = self._recognize_handwriting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_handwriting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/handwriting",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeHandwritingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -898,11 +1027,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -911,20 +1040,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/handwriting',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeHandwritingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_health_code_async(self, request):
         """防疫健康码识别
@@ -938,9 +1063,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHealthCodeRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHealthCodeResponse`
         """
-        return self._recognize_health_code_with_http_info(request)
+        http_info = self._recognize_health_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_health_code_with_http_info(self, request):
+    def recognize_health_code_async_invoker(self, request):
+        http_info = self._recognize_health_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_health_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/health-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeHealthCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -957,11 +1094,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -970,20 +1107,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/health-code',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeHealthCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_hk_id_card_async(self, request):
         """香港身份证识别
@@ -997,9 +1130,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeHkIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeHkIdCardResponse`
         """
-        return self._recognize_hk_id_card_with_http_info(request)
+        http_info = self._recognize_hk_id_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_hk_id_card_with_http_info(self, request):
+    def recognize_hk_id_card_async_invoker(self, request):
+        http_info = self._recognize_hk_id_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_hk_id_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/hk-id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeHkIdCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1016,11 +1161,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1029,20 +1174,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/hk-id-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeHkIdCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_id_card_async(self, request):
         """身份证识别
@@ -1062,9 +1203,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeIdCardResponse`
         """
-        return self._recognize_id_card_with_http_info(request)
+        http_info = self._recognize_id_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_id_card_with_http_info(self, request):
+    def recognize_id_card_async_invoker(self, request):
+        http_info = self._recognize_id_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_id_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeIdCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1081,11 +1234,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1094,20 +1247,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/id-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeIdCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_id_document_async(self, request):
         """通用证件识别
@@ -1145,9 +1294,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeIdDocumentRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeIdDocumentResponse`
         """
-        return self._recognize_id_document_with_http_info(request)
+        http_info = self._recognize_id_document_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_id_document_with_http_info(self, request):
+    def recognize_id_document_async_invoker(self, request):
+        http_info = self._recognize_id_document_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_id_document_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/id-document",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeIdDocumentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1164,11 +1325,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1177,20 +1338,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/id-document',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeIdDocumentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_insurance_policy_async(self, request):
         """保险单识别
@@ -1204,9 +1361,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeInsurancePolicyRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeInsurancePolicyResponse`
         """
-        return self._recognize_insurance_policy_with_http_info(request)
+        http_info = self._recognize_insurance_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_insurance_policy_with_http_info(self, request):
+    def recognize_insurance_policy_async_invoker(self, request):
+        http_info = self._recognize_insurance_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_insurance_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/insurance-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeInsurancePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1223,11 +1392,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1236,20 +1405,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/insurance-policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeInsurancePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_invoice_verification_async(self, request):
         """发票验真
@@ -1263,9 +1428,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeInvoiceVerificationRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeInvoiceVerificationResponse`
         """
-        return self._recognize_invoice_verification_with_http_info(request)
+        http_info = self._recognize_invoice_verification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_invoice_verification_with_http_info(self, request):
+    def recognize_invoice_verification_async_invoker(self, request):
+        http_info = self._recognize_invoice_verification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_invoice_verification_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/invoice-verification",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeInvoiceVerificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1282,11 +1459,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1295,20 +1472,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/invoice-verification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeInvoiceVerificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_license_plate_async(self, request):
         """车牌识别
@@ -1322,9 +1495,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeLicensePlateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeLicensePlateResponse`
         """
-        return self._recognize_license_plate_with_http_info(request)
+        http_info = self._recognize_license_plate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_license_plate_with_http_info(self, request):
+    def recognize_license_plate_async_invoker(self, request):
+        http_info = self._recognize_license_plate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_license_plate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/license-plate",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeLicensePlateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1341,11 +1526,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1354,20 +1539,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/license-plate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeLicensePlateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_macao_id_card_async(self, request):
         """澳门身份证识别
@@ -1381,9 +1562,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMacaoIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMacaoIdCardResponse`
         """
-        return self._recognize_macao_id_card_with_http_info(request)
+        http_info = self._recognize_macao_id_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_macao_id_card_with_http_info(self, request):
+    def recognize_macao_id_card_async_invoker(self, request):
+        http_info = self._recognize_macao_id_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_macao_id_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/macao-id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeMacaoIdCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1400,11 +1593,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1413,20 +1606,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/macao-id-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeMacaoIdCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_mainland_travel_permit_async(self, request):
         """港澳台居民来往内地通行证识别
@@ -1440,9 +1629,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMainlandTravelPermitRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMainlandTravelPermitResponse`
         """
-        return self._recognize_mainland_travel_permit_with_http_info(request)
+        http_info = self._recognize_mainland_travel_permit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_mainland_travel_permit_with_http_info(self, request):
+    def recognize_mainland_travel_permit_async_invoker(self, request):
+        http_info = self._recognize_mainland_travel_permit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_mainland_travel_permit_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/mainland-travel-permit",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeMainlandTravelPermitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1459,11 +1660,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1472,20 +1673,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/mainland-travel-permit',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeMainlandTravelPermitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_mvs_invoice_async(self, request):
         """机动车销售发票识别
@@ -1502,9 +1699,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMvsInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMvsInvoiceResponse`
         """
-        return self._recognize_mvs_invoice_with_http_info(request)
+        http_info = self._recognize_mvs_invoice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_mvs_invoice_with_http_info(self, request):
+    def recognize_mvs_invoice_async_invoker(self, request):
+        http_info = self._recognize_mvs_invoice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_mvs_invoice_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/mvs-invoice",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeMvsInvoiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1521,11 +1730,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1534,20 +1743,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/mvs-invoice',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeMvsInvoiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_myanmar_driver_license_async(self, request):
         """缅文驾驶证识别
@@ -1561,9 +1766,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarDriverLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarDriverLicenseResponse`
         """
-        return self._recognize_myanmar_driver_license_with_http_info(request)
+        http_info = self._recognize_myanmar_driver_license_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_myanmar_driver_license_with_http_info(self, request):
+    def recognize_myanmar_driver_license_async_invoker(self, request):
+        http_info = self._recognize_myanmar_driver_license_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_myanmar_driver_license_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/myanmar-driver-license",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeMyanmarDriverLicenseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1580,11 +1797,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1593,20 +1810,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/myanmar-driver-license',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeMyanmarDriverLicenseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_myanmar_idcard_async(self, request):
         """缅文身份证识别
@@ -1620,9 +1833,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarIdcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeMyanmarIdcardResponse`
         """
-        return self._recognize_myanmar_idcard_with_http_info(request)
+        http_info = self._recognize_myanmar_idcard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_myanmar_idcard_with_http_info(self, request):
+    def recognize_myanmar_idcard_async_invoker(self, request):
+        http_info = self._recognize_myanmar_idcard_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_myanmar_idcard_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/myanmar-id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeMyanmarIdcardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1639,11 +1864,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1652,20 +1877,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/myanmar-id-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeMyanmarIdcardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_passport_async(self, request):
         """护照识别
@@ -1681,9 +1902,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizePassportRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizePassportResponse`
         """
-        return self._recognize_passport_with_http_info(request)
+        http_info = self._recognize_passport_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_passport_with_http_info(self, request):
+    def recognize_passport_async_invoker(self, request):
+        http_info = self._recognize_passport_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_passport_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/passport",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizePassportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1700,11 +1933,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1713,20 +1946,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/passport',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizePassportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_pcr_test_record_async(self, request):
         """核酸检测记录识别
@@ -1740,9 +1969,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizePcrTestRecordRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizePcrTestRecordResponse`
         """
-        return self._recognize_pcr_test_record_with_http_info(request)
+        http_info = self._recognize_pcr_test_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_pcr_test_record_with_http_info(self, request):
+    def recognize_pcr_test_record_async_invoker(self, request):
+        http_info = self._recognize_pcr_test_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_pcr_test_record_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/pcr-test-record",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizePcrTestRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1759,11 +2000,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1772,20 +2013,83 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/pcr-test-record',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizePcrTestRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def recognize_peru_id_card_async(self, request):
+        """秘鲁身份证识别
+
+        识别秘鲁身份证图片中的文字内容，并将识别的结构化结果返回给用户。
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for RecognizePeruIdCard
+        :type request: :class:`huaweicloudsdkocr.v1.RecognizePeruIdCardRequest`
+        :rtype: :class:`huaweicloudsdkocr.v1.RecognizePeruIdCardResponse`
+        """
+        http_info = self._recognize_peru_id_card_http_info(request)
+        return self._call_api(**http_info)
+
+    def recognize_peru_id_card_async_invoker(self, request):
+        http_info = self._recognize_peru_id_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_peru_id_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/peru-id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizePeruIdCardResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+        if 'enterprise_project_id' in local_var_params:
+            header_params['Enterprise-Project-Id'] = local_var_params['enterprise_project_id']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_qualification_certificate_async(self, request):
         """道路运输从业资格证识别
@@ -1799,9 +2103,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeQualificationCertificateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeQualificationCertificateResponse`
         """
-        return self._recognize_qualification_certificate_with_http_info(request)
+        http_info = self._recognize_qualification_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_qualification_certificate_with_http_info(self, request):
+    def recognize_qualification_certificate_async_invoker(self, request):
+        http_info = self._recognize_qualification_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_qualification_certificate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/transportation-qualification-certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeQualificationCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1818,11 +2134,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1831,20 +2147,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/transportation-qualification-certificate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeQualificationCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_quota_invoice_async(self, request):
         """定额发票识别
@@ -1862,9 +2174,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeQuotaInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeQuotaInvoiceResponse`
         """
-        return self._recognize_quota_invoice_with_http_info(request)
+        http_info = self._recognize_quota_invoice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_quota_invoice_with_http_info(self, request):
+    def recognize_quota_invoice_async_invoker(self, request):
+        http_info = self._recognize_quota_invoice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_quota_invoice_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/quota-invoice",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeQuotaInvoiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1881,11 +2205,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1894,20 +2218,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/quota-invoice',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeQuotaInvoiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_real_estate_certificate_async(self, request):
         """不动产证识别
@@ -1922,9 +2242,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeRealEstateCertificateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeRealEstateCertificateResponse`
         """
-        return self._recognize_real_estate_certificate_with_http_info(request)
+        http_info = self._recognize_real_estate_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_real_estate_certificate_with_http_info(self, request):
+    def recognize_real_estate_certificate_async_invoker(self, request):
+        http_info = self._recognize_real_estate_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_real_estate_certificate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/real-estate-certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeRealEstateCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1941,11 +2273,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1954,20 +2286,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/real-estate-certificate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeRealEstateCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_smart_document_recognizer_async(self, request):
         """智能文档解析
@@ -1981,9 +2309,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeSmartDocumentRecognizerRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeSmartDocumentRecognizerResponse`
         """
-        return self._recognize_smart_document_recognizer_with_http_info(request)
+        http_info = self._recognize_smart_document_recognizer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_smart_document_recognizer_with_http_info(self, request):
+    def recognize_smart_document_recognizer_async_invoker(self, request):
+        http_info = self._recognize_smart_document_recognizer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_smart_document_recognizer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/smart-document-recognizer",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeSmartDocumentRecognizerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2000,11 +2340,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2013,20 +2353,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/smart-document-recognizer',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeSmartDocumentRecognizerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_taxi_invoice_async(self, request):
         """出租车发票识别
@@ -2043,9 +2379,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTaxiInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTaxiInvoiceResponse`
         """
-        return self._recognize_taxi_invoice_with_http_info(request)
+        http_info = self._recognize_taxi_invoice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_taxi_invoice_with_http_info(self, request):
+    def recognize_taxi_invoice_async_invoker(self, request):
+        http_info = self._recognize_taxi_invoice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_taxi_invoice_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/taxi-invoice",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeTaxiInvoiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2062,11 +2410,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2075,20 +2423,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/taxi-invoice',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeTaxiInvoiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_thailand_idcard_async(self, request):
         """泰文身份证识别
@@ -2102,9 +2446,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeThailandIdcardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeThailandIdcardResponse`
         """
-        return self._recognize_thailand_idcard_with_http_info(request)
+        http_info = self._recognize_thailand_idcard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_thailand_idcard_with_http_info(self, request):
+    def recognize_thailand_idcard_async_invoker(self, request):
+        http_info = self._recognize_thailand_idcard_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_thailand_idcard_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/thailand-id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeThailandIdcardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2121,11 +2477,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2134,20 +2490,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/thailand-id-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeThailandIdcardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_thailand_license_plate_async(self, request):
         """泰国车牌识别
@@ -2161,9 +2513,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeThailandLicensePlateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeThailandLicensePlateResponse`
         """
-        return self._recognize_thailand_license_plate_with_http_info(request)
+        http_info = self._recognize_thailand_license_plate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_thailand_license_plate_with_http_info(self, request):
+    def recognize_thailand_license_plate_async_invoker(self, request):
+        http_info = self._recognize_thailand_license_plate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_thailand_license_plate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/thailand-license-plate",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeThailandLicensePlateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2180,11 +2544,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2193,20 +2557,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/thailand-license-plate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeThailandLicensePlateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_toll_invoice_async(self, request):
         """车辆通行费发票识别
@@ -2222,9 +2582,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTollInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTollInvoiceResponse`
         """
-        return self._recognize_toll_invoice_with_http_info(request)
+        http_info = self._recognize_toll_invoice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_toll_invoice_with_http_info(self, request):
+    def recognize_toll_invoice_async_invoker(self, request):
+        http_info = self._recognize_toll_invoice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_toll_invoice_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/toll-invoice",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeTollInvoiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2241,11 +2613,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2254,20 +2626,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/toll-invoice',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeTollInvoiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_train_ticket_async(self, request):
         """火车票识别
@@ -2283,9 +2651,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTrainTicketRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTrainTicketResponse`
         """
-        return self._recognize_train_ticket_with_http_info(request)
+        http_info = self._recognize_train_ticket_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_train_ticket_with_http_info(self, request):
+    def recognize_train_ticket_async_invoker(self, request):
+        http_info = self._recognize_train_ticket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_train_ticket_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/train-ticket",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeTrainTicketResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2302,11 +2682,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2315,20 +2695,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/train-ticket',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeTrainTicketResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_transportation_license_async(self, request):
         """道路运输证识别
@@ -2343,9 +2719,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeTransportationLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeTransportationLicenseResponse`
         """
-        return self._recognize_transportation_license_with_http_info(request)
+        http_info = self._recognize_transportation_license_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_transportation_license_with_http_info(self, request):
+    def recognize_transportation_license_async_invoker(self, request):
+        http_info = self._recognize_transportation_license_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_transportation_license_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/transportation-license",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeTransportationLicenseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2362,11 +2750,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2375,20 +2763,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/transportation-license',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeTransportationLicenseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_vat_invoice_async(self, request):
         """增值税发票识别
@@ -2406,9 +2790,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVatInvoiceRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVatInvoiceResponse`
         """
-        return self._recognize_vat_invoice_with_http_info(request)
+        http_info = self._recognize_vat_invoice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_vat_invoice_with_http_info(self, request):
+    def recognize_vat_invoice_async_invoker(self, request):
+        http_info = self._recognize_vat_invoice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_vat_invoice_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/vat-invoice",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeVatInvoiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2425,11 +2821,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2438,20 +2834,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/vat-invoice',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeVatInvoiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_vehicle_certificate_async(self, request):
         """车辆合格证识别
@@ -2465,9 +2857,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVehicleCertificateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVehicleCertificateResponse`
         """
-        return self._recognize_vehicle_certificate_with_http_info(request)
+        http_info = self._recognize_vehicle_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_vehicle_certificate_with_http_info(self, request):
+    def recognize_vehicle_certificate_async_invoker(self, request):
+        http_info = self._recognize_vehicle_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_vehicle_certificate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/vehicle-certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeVehicleCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2484,11 +2888,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2497,20 +2901,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/vehicle-certificate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeVehicleCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_vehicle_license_async(self, request):
         """行驶证识别
@@ -2526,9 +2926,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVehicleLicenseRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVehicleLicenseResponse`
         """
-        return self._recognize_vehicle_license_with_http_info(request)
+        http_info = self._recognize_vehicle_license_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_vehicle_license_with_http_info(self, request):
+    def recognize_vehicle_license_async_invoker(self, request):
+        http_info = self._recognize_vehicle_license_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_vehicle_license_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/vehicle-license",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeVehicleLicenseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2545,11 +2957,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2558,20 +2970,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/vehicle-license',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeVehicleLicenseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_vietnam_id_card_async(self, request):
         """越南身份证识别
@@ -2585,9 +2993,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVietnamIdCardRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVietnamIdCardResponse`
         """
-        return self._recognize_vietnam_id_card_with_http_info(request)
+        http_info = self._recognize_vietnam_id_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_vietnam_id_card_with_http_info(self, request):
+    def recognize_vietnam_id_card_async_invoker(self, request):
+        http_info = self._recognize_vietnam_id_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_vietnam_id_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/vietnam-id-card",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeVietnamIdCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2604,11 +3024,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2617,20 +3037,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/vietnam-id-card',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeVietnamIdCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_waybill_electronic_async(self, request):
         """电子面单识别
@@ -2644,9 +3060,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeWaybillElectronicRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeWaybillElectronicResponse`
         """
-        return self._recognize_waybill_electronic_with_http_info(request)
+        http_info = self._recognize_waybill_electronic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_waybill_electronic_with_http_info(self, request):
+    def recognize_waybill_electronic_async_invoker(self, request):
+        http_info = self._recognize_waybill_electronic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_waybill_electronic_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/waybill-electronic",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeWaybillElectronicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2663,11 +3091,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2676,20 +3104,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/waybill-electronic',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeWaybillElectronicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_web_image_async(self, request):
         """网络图片识别
@@ -2703,9 +3127,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeWebImageRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeWebImageResponse`
         """
-        return self._recognize_web_image_with_http_info(request)
+        http_info = self._recognize_web_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_web_image_with_http_info(self, request):
+    def recognize_web_image_async_invoker(self, request):
+        http_info = self._recognize_web_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_web_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/web-image",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeWebImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2722,11 +3158,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2735,20 +3171,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/web-image',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeWebImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_custom_template_async(self, request):
         """自定义模板OCR
@@ -2762,9 +3194,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeCustomTemplateRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeCustomTemplateResponse`
         """
-        return self._recognize_custom_template_with_http_info(request)
+        http_info = self._recognize_custom_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_custom_template_with_http_info(self, request):
+    def recognize_custom_template_async_invoker(self, request):
+        http_info = self._recognize_custom_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_custom_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/custom-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeCustomTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2781,11 +3225,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2794,20 +3238,16 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/custom-template',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeCustomTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_vin_async(self, request):
         """VIN码识别
@@ -2821,9 +3261,21 @@ class OcrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkocr.v1.RecognizeVinRequest`
         :rtype: :class:`huaweicloudsdkocr.v1.RecognizeVinResponse`
         """
-        return self._recognize_vin_with_http_info(request)
+        http_info = self._recognize_vin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_vin_with_http_info(self, request):
+    def recognize_vin_async_invoker(self, request):
+        http_info = self._recognize_vin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_vin_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ocr/vin",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeVinResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2840,11 +3292,11 @@ class OcrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2853,20 +3305,26 @@ class OcrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ocr/vin',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeVinResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2905,4 +3363,4 @@ class OcrAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

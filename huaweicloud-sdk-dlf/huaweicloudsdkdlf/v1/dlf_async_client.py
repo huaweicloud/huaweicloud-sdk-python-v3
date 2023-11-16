@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdlf'")
 
 
 class DlfAsyncClient(Client):
@@ -38,9 +43,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.CancelScriptRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.CancelScriptResponse`
         """
-        return self._cancel_script_with_http_info(request)
+        http_info = self._cancel_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_script_with_http_info(self, request):
+    def cancel_script_async_invoker(self, request):
+        http_info = self._cancel_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_script_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/scripts/{script_name}/instances/{instance_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -61,9 +78,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +89,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts/{script_name}/instances/{instance_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_connection_async(self, request):
         """创建连接
@@ -98,9 +111,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.CreateConnectionRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.CreateConnectionResponse`
         """
-        return self._create_connection_with_http_info(request)
+        http_info = self._create_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_connection_with_http_info(self, request):
+    def create_connection_async_invoker(self, request):
+        http_info = self._create_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_job_async(self, request):
         """创建作业
@@ -156,9 +177,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.CreateJobRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.CreateJobResponse`
         """
-        return self._create_job_with_http_info(request)
+        http_info = self._create_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_job_with_http_info(self, request):
+    def create_job_async_invoker(self, request):
+        http_info = self._create_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -175,11 +208,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -188,20 +221,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resource_async(self, request):
         """创建资源
@@ -214,9 +243,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.CreateResourceRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.CreateResourceResponse`
         """
-        return self._create_resource_with_http_info(request)
+        http_info = self._create_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resource_with_http_info(self, request):
+    def create_resource_async_invoker(self, request):
+        http_info = self._create_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,11 +274,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +287,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_script_async(self, request):
         """创建脚本
@@ -272,9 +309,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.CreateScriptRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.CreateScriptResponse`
         """
-        return self._create_script_with_http_info(request)
+        http_info = self._create_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_script_with_http_info(self, request):
+    def create_script_async_invoker(self, request):
+        http_info = self._create_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_script_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/scripts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,11 +340,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +353,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_connction_async(self, request):
         """删除连接
@@ -330,9 +375,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.DeleteConnctionRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.DeleteConnctionResponse`
         """
-        return self._delete_connction_with_http_info(request)
+        http_info = self._delete_connction_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_connction_with_http_info(self, request):
+    def delete_connction_async_invoker(self, request):
+        http_info = self._delete_connction_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_connction_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/connections/{connection_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConnctionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -351,9 +408,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -362,20 +419,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connection_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConnctionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_job_async(self, request):
         """删除作业
@@ -388,9 +441,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.DeleteJobResponse`
         """
-        return self._delete_job_with_http_info(request)
+        http_info = self._delete_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_job_with_http_info(self, request):
+    def delete_job_async_invoker(self, request):
+        http_info = self._delete_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -409,9 +474,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -420,20 +485,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_async(self, request):
         """删除资源
@@ -446,9 +507,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.DeleteResourceResponse`
         """
-        return self._delete_resource_with_http_info(request)
+        http_info = self._delete_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_with_http_info(self, request):
+    def delete_resource_async_invoker(self, request):
+        http_info = self._delete_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/resources/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -467,9 +540,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -478,20 +551,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/resources/{resource_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_script_async(self, request):
         """删除脚本
@@ -504,9 +573,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.DeleteScriptRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.DeleteScriptResponse`
         """
-        return self._delete_script_with_http_info(request)
+        http_info = self._delete_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_script_with_http_info(self, request):
+    def delete_script_async_invoker(self, request):
+        http_info = self._delete_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_script_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/scripts/{script_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -525,9 +606,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -536,20 +617,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts/{script_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_script_async(self, request):
         """执行脚本
@@ -562,9 +639,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ExecuteScriptRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ExecuteScriptResponse`
         """
-        return self._execute_script_with_http_info(request)
+        http_info = self._execute_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_script_with_http_info(self, request):
+    def execute_script_async_invoker(self, request):
+        http_info = self._execute_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_script_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/scripts/{script_name}/execute",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -583,11 +672,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -596,20 +685,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts/{script_name}/execute',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_connections_async(self, request):
         """导出连接
@@ -622,9 +707,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ExportConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ExportConnectionsResponse`
         """
-        return self._export_connections_with_http_info(request)
+        http_info = self._export_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_connections_with_http_info(self, request):
+    def export_connections_async_invoker(self, request):
+        http_info = self._export_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_connections_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/connections/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -641,9 +738,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -652,20 +749,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_job_async(self, request):
         """导出作业
@@ -678,9 +771,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ExportJobRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ExportJobResponse`
         """
-        return self._export_job_with_http_info(request)
+        http_info = self._export_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_job_with_http_info(self, request):
+    def export_job_async_invoker(self, request):
+        http_info = self._export_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -699,9 +804,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +815,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_job_list_async(self, request):
         """批量导出作业
@@ -736,9 +837,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ExportJobListRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ExportJobListResponse`
         """
-        return self._export_job_list_with_http_info(request)
+        http_info = self._export_job_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_job_list_with_http_info(self, request):
+    def export_job_list_async_invoker(self, request):
+        http_info = self._export_job_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_job_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/batch-export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportJobListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -755,11 +868,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -768,20 +881,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/batch-export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportJobListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_connections_async(self, request):
         """导入连接
@@ -794,9 +903,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ImportConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ImportConnectionsResponse`
         """
-        return self._import_connections_with_http_info(request)
+        http_info = self._import_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_connections_with_http_info(self, request):
+    def import_connections_async_invoker(self, request):
+        http_info = self._import_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_connections_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/connections/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -813,11 +934,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -826,20 +947,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_job_async(self, request):
         """导入作业
@@ -852,9 +969,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ImportJobRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ImportJobResponse`
         """
-        return self._import_job_with_http_info(request)
+        http_info = self._import_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_job_with_http_info(self, request):
+    def import_job_async_invoker(self, request):
+        http_info = self._import_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -871,11 +1000,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -884,20 +1013,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_connections_async(self, request):
         """查询连接列表
@@ -910,9 +1035,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ListConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ListConnectionsResponse`
         """
-        return self._list_connections_with_http_info(request)
+        http_info = self._list_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_connections_with_http_info(self, request):
+    def list_connections_async_invoker(self, request):
+        http_info = self._list_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,9 +1066,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -940,20 +1077,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_job_instances_async(self, request):
         """查询作业实例列表
@@ -966,9 +1099,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ListJobInstancesRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ListJobInstancesResponse`
         """
-        return self._list_job_instances_with_http_info(request)
+        http_info = self._list_job_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_job_instances_with_http_info(self, request):
+    def list_job_instances_async_invoker(self, request):
+        http_info = self._list_job_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_job_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/instances/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -985,9 +1130,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -996,20 +1141,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/instances/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_jobs_async(self, request):
         """查询作业列表
@@ -1022,9 +1163,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ListJobsResponse`
         """
-        return self._list_jobs_with_http_info(request)
+        http_info = self._list_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_jobs_with_http_info(self, request):
+    def list_jobs_async_invoker(self, request):
+        http_info = self._list_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1041,9 +1194,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1052,20 +1205,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resources_async(self, request):
         """查询资源列表
@@ -1078,9 +1227,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ListResourcesRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ListResourcesResponse`
         """
-        return self._list_resources_with_http_info(request)
+        http_info = self._list_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resources_with_http_info(self, request):
+    def list_resources_async_invoker(self, request):
+        http_info = self._list_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1097,9 +1258,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1108,20 +1269,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_script_results_async(self, request):
         """查询脚本实例执行结果
@@ -1134,9 +1291,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ListScriptResultsRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ListScriptResultsResponse`
         """
-        return self._list_script_results_with_http_info(request)
+        http_info = self._list_script_results_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_script_results_with_http_info(self, request):
+    def list_script_results_async_invoker(self, request):
+        http_info = self._list_script_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_script_results_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/scripts/{script_name}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScriptResultsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1157,9 +1326,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1168,20 +1337,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts/{script_name}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScriptResultsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scripts_async(self, request):
         """查询脚本列表
@@ -1194,9 +1359,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ListScriptsRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ListScriptsResponse`
         """
-        return self._list_scripts_with_http_info(request)
+        http_info = self._list_scripts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scripts_with_http_info(self, request):
+    def list_scripts_async_invoker(self, request):
+        http_info = self._list_scripts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scripts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/scripts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScriptsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1213,9 +1390,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1224,20 +1401,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScriptsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_system_tasks_async(self, request):
         """查询系统任务详情
@@ -1250,9 +1423,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ListSystemTasksRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ListSystemTasksResponse`
         """
-        return self._list_system_tasks_with_http_info(request)
+        http_info = self._list_system_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_system_tasks_with_http_info(self, request):
+    def list_system_tasks_async_invoker(self, request):
+        http_info = self._list_system_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_system_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSystemTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1271,9 +1456,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1282,20 +1467,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system-tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSystemTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_job_instance_async(self, request):
         """重跑作业实例
@@ -1308,9 +1489,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.RestoreJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.RestoreJobInstanceResponse`
         """
-        return self._restore_job_instance_with_http_info(request)
+        http_info = self._restore_job_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_job_instance_with_http_info(self, request):
+    def restore_job_instance_async_invoker(self, request):
+        http_info = self._restore_job_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_job_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}/instances/{instance_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreJobInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1331,9 +1524,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1342,20 +1535,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}/instances/{instance_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreJobInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_once_async(self, request):
         """单次执行作业
@@ -1368,9 +1557,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.RunOnceRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.RunOnceResponse`
         """
-        return self._run_once_with_http_info(request)
+        http_info = self._run_once_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_once_with_http_info(self, request):
+    def run_once_async_invoker(self, request):
+        http_info = self._run_once_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_once_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}/run-immediate",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunOnceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1389,11 +1590,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1402,20 +1603,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}/run-immediate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunOnceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_connection_async(self, request):
         """查询连接详情
@@ -1428,9 +1625,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ShowConnectionRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ShowConnectionResponse`
         """
-        return self._show_connection_with_http_info(request)
+        http_info = self._show_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_connection_with_http_info(self, request):
+    def show_connection_async_invoker(self, request):
+        http_info = self._show_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_connection_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/connections/{connection_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1449,9 +1658,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1460,20 +1669,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connection_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_directory_tree_async(self, request):
         """查询目录树
@@ -1486,9 +1691,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ShowDirectoryTreeRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ShowDirectoryTreeResponse`
         """
-        return self._show_directory_tree_with_http_info(request)
+        http_info = self._show_directory_tree_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_directory_tree_with_http_info(self, request):
+    def show_directory_tree_async_invoker(self, request):
+        http_info = self._show_directory_tree_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_directory_tree_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/directory/tree",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDirectoryTreeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1515,9 +1732,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1526,20 +1743,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/directory/tree',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDirectoryTreeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_file_info_async(self, request):
         """检查导入作业文件中的作业和脚本
@@ -1552,9 +1765,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ShowFileInfoRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ShowFileInfoResponse`
         """
-        return self._show_file_info_with_http_info(request)
+        http_info = self._show_file_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_file_info_with_http_info(self, request):
+    def show_file_info_async_invoker(self, request):
+        http_info = self._show_file_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_file_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/check-file",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFileInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1571,11 +1796,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1584,20 +1809,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/check-file',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFileInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_async(self, request):
         """查询作业详情
@@ -1610,9 +1831,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_async_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1631,9 +1864,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1642,20 +1875,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_instance_async(self, request):
         """查询作业实例详情
@@ -1668,9 +1897,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ShowJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ShowJobInstanceResponse`
         """
-        return self._show_job_instance_with_http_info(request)
+        http_info = self._show_job_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_instance_with_http_info(self, request):
+    def show_job_instance_async_invoker(self, request):
+        http_info = self._show_job_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1691,9 +1932,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1702,20 +1943,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_status_async(self, request):
         """查询实时作业的运行状态
@@ -1728,9 +1965,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ShowJobStatusRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ShowJobStatusResponse`
         """
-        return self._show_job_status_with_http_info(request)
+        http_info = self._show_job_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_status_with_http_info(self, request):
+    def show_job_status_async_invoker(self, request):
+        http_info = self._show_job_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1749,9 +1998,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1760,20 +2009,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_async(self, request):
         """查询资源详情
@@ -1786,9 +2031,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ShowResourceRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ShowResourceResponse`
         """
-        return self._show_resource_with_http_info(request)
+        http_info = self._show_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_with_http_info(self, request):
+    def show_resource_async_invoker(self, request):
+        http_info = self._show_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/resources/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1807,9 +2064,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1818,20 +2075,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/resources/{resource_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_script_async(self, request):
         """查询脚本信息
@@ -1844,9 +2097,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.ShowScriptRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.ShowScriptResponse`
         """
-        return self._show_script_with_http_info(request)
+        http_info = self._show_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_script_with_http_info(self, request):
+    def show_script_async_invoker(self, request):
+        http_info = self._show_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_script_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/scripts/{script_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1865,9 +2130,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1876,20 +2141,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts/{script_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_job_async(self, request):
         """启动作业
@@ -1902,9 +2163,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.StartJobRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.StartJobResponse`
         """
-        return self._start_job_with_http_info(request)
+        http_info = self._start_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_job_with_http_info(self, request):
+    def start_job_async_invoker(self, request):
+        http_info = self._start_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1923,11 +2196,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1936,20 +2209,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_job_async(self, request):
         """停止作业
@@ -1962,9 +2231,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.StopJobRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.StopJobResponse`
         """
-        return self._stop_job_with_http_info(request)
+        http_info = self._stop_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_job_with_http_info(self, request):
+    def stop_job_async_invoker(self, request):
+        http_info = self._stop_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1983,9 +2264,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1994,20 +2275,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_job_instance_async(self, request):
         """停止作业实例
@@ -2020,9 +2297,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.StopJobInstanceRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.StopJobInstanceResponse`
         """
-        return self._stop_job_instance_with_http_info(request)
+        http_info = self._stop_job_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_job_instance_with_http_info(self, request):
+    def stop_job_instance_async_invoker(self, request):
+        http_info = self._stop_job_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_job_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}/instances/{instance_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopJobInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2043,9 +2332,9 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2054,20 +2343,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}/instances/{instance_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopJobInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_connection_async(self, request):
         """修改连接
@@ -2080,9 +2365,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.UpdateConnectionRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.UpdateConnectionResponse`
         """
-        return self._update_connection_with_http_info(request)
+        http_info = self._update_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_connection_with_http_info(self, request):
+    def update_connection_async_invoker(self, request):
+        http_info = self._update_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_connection_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/connections/{connection_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2101,11 +2398,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2114,20 +2411,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connection_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_job_async(self, request):
         """修改作业
@@ -2140,9 +2433,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.UpdateJobResponse`
         """
-        return self._update_job_with_http_info(request)
+        http_info = self._update_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_job_with_http_info(self, request):
+    def update_job_async_invoker(self, request):
+        http_info = self._update_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_job_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/jobs/{job_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2161,11 +2466,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2174,20 +2479,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_resource_async(self, request):
         """修改资源
@@ -2200,9 +2501,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.UpdateResourceRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.UpdateResourceResponse`
         """
-        return self._update_resource_with_http_info(request)
+        http_info = self._update_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_resource_with_http_info(self, request):
+    def update_resource_async_invoker(self, request):
+        http_info = self._update_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_resource_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/resources/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2221,11 +2534,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2234,20 +2547,16 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/resources/{resource_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_script_async(self, request):
         """修改脚本内容
@@ -2260,9 +2569,21 @@ class DlfAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdlf.v1.UpdateScriptRequest`
         :rtype: :class:`huaweicloudsdkdlf.v1.UpdateScriptResponse`
         """
-        return self._update_script_with_http_info(request)
+        http_info = self._update_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_script_with_http_info(self, request):
+    def update_script_async_invoker(self, request):
+        http_info = self._update_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_script_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/scripts/{script_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2281,11 +2602,11 @@ class DlfAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2294,20 +2615,26 @@ class DlfAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/scripts/{script_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2346,4 +2673,4 @@ class DlfAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcss'")
 
 
 class CssAsyncClient(Client):
@@ -39,9 +44,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.AddIndependentNodeRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.AddIndependentNodeResponse`
         """
-        return self._add_independent_node_with_http_info(request)
+        http_info = self._add_independent_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_independent_node_with_http_info(self, request):
+    def add_independent_node_async_invoker(self, request):
+        http_info = self._add_independent_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_independent_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/type/{type}/independent",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddIndependentNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/type/{type}/independent',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddIndependentNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_mode_async(self, request):
         """安全模式修改
@@ -100,9 +113,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ChangeModeRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ChangeModeResponse`
         """
-        return self._change_mode_with_http_info(request)
+        http_info = self._change_mode_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_mode_with_http_info(self, request):
+    def change_mode_async_invoker(self, request):
+        http_info = self._change_mode_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_mode_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/mode/change",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeModeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +144,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +157,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/mode/change',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeModeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_security_group_async(self, request):
         """切换安全组
@@ -159,9 +180,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ChangeSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ChangeSecurityGroupResponse`
         """
-        return self._change_security_group_with_http_info(request)
+        http_info = self._change_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_security_group_with_http_info(self, request):
+    def change_security_group_async_invoker(self, request):
+        http_info = self._change_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_security_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/sg/change",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -178,11 +211,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -191,20 +224,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/sg/change',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ai_ops_async(self, request):
         """创建一次集群检测任务
@@ -218,9 +247,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateAiOpsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateAiOpsResponse`
         """
-        return self._create_ai_ops_with_http_info(request)
+        http_info = self._create_ai_ops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ai_ops_with_http_info(self, request):
+    def create_ai_ops_async_invoker(self, request):
+        http_info = self._create_ai_ops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ai_ops_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ai-ops",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAiOpsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,11 +278,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +291,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ai-ops',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAiOpsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_auto_create_policy_async(self, request):
         """设置自动创建快照策略
@@ -277,9 +314,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateAutoCreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateAutoCreatePolicyResponse`
         """
-        return self._create_auto_create_policy_with_http_info(request)
+        http_info = self._create_auto_create_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_auto_create_policy_with_http_info(self, request):
+    def create_auto_create_policy_async_invoker(self, request):
+        http_info = self._create_auto_create_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_auto_create_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutoCreatePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -296,11 +345,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -309,20 +358,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAutoCreatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_bind_public_async(self, request):
         """开启公网访问
@@ -336,9 +381,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateBindPublicRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateBindPublicResponse`
         """
-        return self._create_bind_public_with_http_info(request)
+        http_info = self._create_bind_public_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_bind_public_with_http_info(self, request):
+    def create_bind_public_async_invoker(self, request):
+        http_info = self._create_bind_public_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_bind_public_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/public/open",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBindPublicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -355,11 +412,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -368,20 +425,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/public/open',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBindPublicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cluster_async(self, request):
         """创建集群
@@ -395,9 +448,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClusterResponse`
         """
-        return self._create_cluster_with_http_info(request)
+        http_info = self._create_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_with_http_info(self, request):
+    def create_cluster_async_invoker(self, request):
+        http_info = self._create_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -412,11 +477,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -425,20 +490,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_clusters_tags_async(self, request):
         """添加指定集群标签
@@ -452,9 +513,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateClustersTagsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateClustersTagsResponse`
         """
-        return self._create_clusters_tags_with_http_info(request)
+        http_info = self._create_clusters_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_clusters_tags_with_http_info(self, request):
+    def create_clusters_tags_async_invoker(self, request):
+        http_info = self._create_clusters_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_clusters_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/{resource_type}/{cluster_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClustersTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -473,11 +546,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -486,20 +559,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/{resource_type}/{cluster_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClustersTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_elb_listener_async(self, request):
         """es监听器配置。
@@ -513,9 +582,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateElbListenerRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateElbListenerResponse`
         """
-        return self._create_elb_listener_with_http_info(request)
+        http_info = self._create_elb_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_elb_listener_with_http_info(self, request):
+    def create_elb_listener_async_invoker(self, request):
+        http_info = self._create_elb_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_elb_listener_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/es-listeners",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateElbListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -532,11 +613,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -545,20 +626,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/es-listeners',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateElbListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_load_ik_thesaurus_async(self, request):
         """加载自定义词库
@@ -572,9 +649,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateLoadIkThesaurusRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateLoadIkThesaurusResponse`
         """
-        return self._create_load_ik_thesaurus_with_http_info(request)
+        http_info = self._create_load_ik_thesaurus_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_load_ik_thesaurus_with_http_info(self, request):
+    def create_load_ik_thesaurus_async_invoker(self, request):
+        http_info = self._create_load_ik_thesaurus_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_load_ik_thesaurus_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/thesaurus",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLoadIkThesaurusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -591,11 +680,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -604,20 +693,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/thesaurus',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLoadIkThesaurusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_log_backup_async(self, request):
         """备份日志
@@ -631,9 +716,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateLogBackupRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateLogBackupResponse`
         """
-        return self._create_log_backup_with_http_info(request)
+        http_info = self._create_log_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_log_backup_with_http_info(self, request):
+    def create_log_backup_async_invoker(self, request):
+        http_info = self._create_log_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_log_backup_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/collect",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLogBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -650,9 +747,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -661,20 +758,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/collect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLogBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_snapshot_async(self, request):
         """手动创建快照
@@ -688,9 +781,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateSnapshotResponse`
         """
-        return self._create_snapshot_with_http_info(request)
+        http_info = self._create_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_snapshot_with_http_info(self, request):
+    def create_snapshot_async_invoker(self, request):
+        http_info = self._create_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_snapshot_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -707,11 +812,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -720,20 +825,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ai_ops_async(self, request):
         """删除一个检测任务记录
@@ -747,9 +848,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DeleteAiOpsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteAiOpsResponse`
         """
-        return self._delete_ai_ops_with_http_info(request)
+        http_info = self._delete_ai_ops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ai_ops_with_http_info(self, request):
+    def delete_ai_ops_async_invoker(self, request):
+        http_info = self._delete_ai_ops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ai_ops_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ai-ops/{aiops_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAiOpsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -768,9 +881,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -779,20 +892,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ai-ops/{aiops_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAiOpsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cluster_async(self, request):
         """删除集群
@@ -808,9 +917,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteClusterResponse`
         """
-        return self._delete_cluster_with_http_info(request)
+        http_info = self._delete_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cluster_with_http_info(self, request):
+    def delete_cluster_async_invoker(self, request):
+        http_info = self._delete_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_cluster_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -827,9 +948,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -838,20 +959,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_clusters_tags_async(self, request):
         """删除集群标签
@@ -865,9 +982,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DeleteClustersTagsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteClustersTagsResponse`
         """
-        return self._delete_clusters_tags_with_http_info(request)
+        http_info = self._delete_clusters_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_clusters_tags_with_http_info(self, request):
+    def delete_clusters_tags_async_invoker(self, request):
+        http_info = self._delete_clusters_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_clusters_tags_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/{resource_type}/{cluster_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClustersTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -888,9 +1017,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -899,20 +1028,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/{resource_type}/{cluster_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteClustersTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ik_thesaurus_async(self, request):
         """删除自定义词库
@@ -926,9 +1051,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DeleteIkThesaurusRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteIkThesaurusResponse`
         """
-        return self._delete_ik_thesaurus_with_http_info(request)
+        http_info = self._delete_ik_thesaurus_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ik_thesaurus_with_http_info(self, request):
+    def delete_ik_thesaurus_async_invoker(self, request):
+        http_info = self._delete_ik_thesaurus_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ik_thesaurus_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/thesaurus",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIkThesaurusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -945,9 +1082,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -956,20 +1093,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/thesaurus',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIkThesaurusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_snapshot_async(self, request):
         """删除快照
@@ -983,9 +1116,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DeleteSnapshotRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteSnapshotResponse`
         """
-        return self._delete_snapshot_with_http_info(request)
+        http_info = self._delete_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_snapshot_with_http_info(self, request):
+    def delete_snapshot_async_invoker(self, request):
+        http_info = self._delete_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_snapshot_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1004,9 +1149,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1015,20 +1160,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/{snapshot_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_cert_async(self, request):
         """下载安全证书
@@ -1042,9 +1183,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DownloadCertRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DownloadCertResponse`
         """
-        return self._download_cert_with_http_info(request)
+        http_info = self._download_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_cert_with_http_info(self, request):
+    def download_cert_async_invoker(self, request):
+        http_info = self._download_cert_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_cert_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/cer/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1059,9 +1212,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1070,20 +1223,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/cer/download',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_or_disable_elb_async(self, request):
         """打开或关闭es负载均衡器
@@ -1097,9 +1246,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.EnableOrDisableElbRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.EnableOrDisableElbResponse`
         """
-        return self._enable_or_disable_elb_with_http_info(request)
+        http_info = self._enable_or_disable_elb_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_or_disable_elb_with_http_info(self, request):
+    def enable_or_disable_elb_async_invoker(self, request):
+        http_info = self._enable_or_disable_elb_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_or_disable_elb_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/loadbalancers/es-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableOrDisableElbResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1116,11 +1277,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1129,20 +1290,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/loadbalancers/es-switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableOrDisableElbResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ai_ops_async(self, request):
         """获取智能运维任务列表及详情
@@ -1156,9 +1313,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListAiOpsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListAiOpsResponse`
         """
-        return self._list_ai_ops_with_http_info(request)
+        http_info = self._list_ai_ops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ai_ops_with_http_info(self, request):
+    def list_ai_ops_async_invoker(self, request):
+        http_info = self._list_ai_ops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ai_ops_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ai-ops",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAiOpsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1179,9 +1348,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1190,20 +1359,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ai-ops',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAiOpsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_clusters_details_async(self, request):
         """查询集群列表
@@ -1217,9 +1382,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListClustersDetailsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListClustersDetailsResponse`
         """
-        return self._list_clusters_details_with_http_info(request)
+        http_info = self._list_clusters_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_clusters_details_with_http_info(self, request):
+    def list_clusters_details_async_invoker(self, request):
+        http_info = self._list_clusters_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_clusters_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClustersDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1238,9 +1415,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1249,20 +1426,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClustersDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_clusters_tags_async(self, request):
         """查询所有标签
@@ -1276,9 +1449,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListClustersTagsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListClustersTagsResponse`
         """
-        return self._list_clusters_tags_with_http_info(request)
+        http_info = self._list_clusters_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_clusters_tags_with_http_info(self, request):
+    def list_clusters_tags_async_invoker(self, request):
+        http_info = self._list_clusters_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_clusters_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClustersTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1295,9 +1480,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1306,20 +1491,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClustersTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_elb_certs_async(self, request):
         """查询证书列表
@@ -1333,9 +1514,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListElbCertsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListElbCertsResponse`
         """
-        return self._list_elb_certs_with_http_info(request)
+        http_info = self._list_elb_certs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_elb_certs_with_http_info(self, request):
+    def list_elb_certs_async_invoker(self, request):
+        http_info = self._list_elb_certs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_elb_certs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/elb/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListElbCertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1352,9 +1545,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1363,20 +1556,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/elb/certificates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListElbCertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_elbs_async(self, request):
         """查询集群支持的elbv3负载均衡器
@@ -1390,9 +1579,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListElbsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListElbsResponse`
         """
-        return self._list_elbs_with_http_info(request)
+        http_info = self._list_elbs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_elbs_with_http_info(self, request):
+    def list_elbs_async_invoker(self, request):
+        http_info = self._list_elbs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_elbs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/loadbalancers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListElbsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1409,9 +1610,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1420,20 +1621,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/loadbalancers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListElbsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors_async(self, request):
         """获取实例规格列表
@@ -1447,9 +1644,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_async_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/es-flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1464,9 +1673,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1475,20 +1684,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/es-flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_images_async(self, request):
         """获取目标镜像ID
@@ -1502,9 +1707,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListImagesResponse`
         """
-        return self._list_images_with_http_info(request)
+        http_info = self._list_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_images_with_http_info(self, request):
+    def list_images_async_invoker(self, request):
+        http_info = self._list_images_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_images_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/target/{upgrade_type}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1523,9 +1740,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1534,20 +1751,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/target/{upgrade_type}/images',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_logs_job_async(self, request):
         """查询作业列表
@@ -1561,9 +1774,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListLogsJobRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListLogsJobResponse`
         """
-        return self._list_logs_job_with_http_info(request)
+        http_info = self._list_logs_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_logs_job_with_http_info(self, request):
+    def list_logs_job_async_invoker(self, request):
+        http_info = self._list_logs_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logs_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogsJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1584,9 +1809,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1595,20 +1820,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLogsJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_smn_topics_async(self, request):
         """获取智能运维告警可用的SMN主题
@@ -1622,9 +1843,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListSmnTopicsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListSmnTopicsResponse`
         """
-        return self._list_smn_topics_with_http_info(request)
+        http_info = self._list_smn_topics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_smn_topics_with_http_info(self, request):
+    def list_smn_topics_async_invoker(self, request):
+        http_info = self._list_smn_topics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_smn_topics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/domains/{domain_id}/ai-ops/smn-topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmnTopicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1641,9 +1874,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1652,20 +1885,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/domains/{domain_id}/ai-ops/smn-topics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSmnTopicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshots_async(self, request):
         """查询快照列表
@@ -1679,9 +1908,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListSnapshotsResponse`
         """
-        return self._list_snapshots_with_http_info(request)
+        http_info = self._list_snapshots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshots_with_http_info(self, request):
+    def list_snapshots_async_invoker(self, request):
+        http_info = self._list_snapshots_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_snapshots_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1698,9 +1939,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1709,20 +1950,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshots',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ymls_async(self, request):
         """获取参数配置列表
@@ -1736,9 +1973,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListYmlsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListYmlsResponse`
         """
-        return self._list_ymls_with_http_info(request)
+        http_info = self._list_ymls_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ymls_with_http_info(self, request):
+    def list_ymls_async_invoker(self, request):
+        http_info = self._list_ymls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ymls_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ymls/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListYmlsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1755,9 +2004,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1766,20 +2015,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ymls/template',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListYmlsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ymls_job_async(self, request):
         """获取参数配置任务列表
@@ -1793,9 +2038,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListYmlsJobRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListYmlsJobResponse`
         """
-        return self._list_ymls_job_with_http_info(request)
+        http_info = self._list_ymls_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ymls_job_with_http_info(self, request):
+    def list_ymls_job_async_invoker(self, request):
+        http_info = self._list_ymls_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ymls_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ymls/joblists",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListYmlsJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1816,9 +2073,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1827,20 +2084,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ymls/joblists',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListYmlsJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_password_async(self, request):
         """修改密码
@@ -1854,9 +2107,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ResetPasswordResponse`
         """
-        return self._reset_password_with_http_info(request)
+        http_info = self._reset_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_password_with_http_info(self, request):
+    def reset_password_async_invoker(self, request):
+        http_info = self._reset_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/password/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1873,11 +2138,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1886,20 +2151,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/password/reset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_cluster_async(self, request):
         """重启集群
@@ -1913,9 +2174,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.RestartClusterResponse`
         """
-        return self._restart_cluster_with_http_info(request)
+        http_info = self._restart_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_cluster_with_http_info(self, request):
+    def restart_cluster_async_invoker(self, request):
+        http_info = self._restart_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1932,9 +2205,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1943,20 +2216,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_snapshot_async(self, request):
         """恢复快照
@@ -1970,9 +2239,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.RestoreSnapshotRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.RestoreSnapshotResponse`
         """
-        return self._restore_snapshot_with_http_info(request)
+        http_info = self._restore_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_snapshot_with_http_info(self, request):
+    def restore_snapshot_async_invoker(self, request):
+        http_info = self._restore_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_snapshot_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/{snapshot_id}/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1991,11 +2272,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2004,20 +2285,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/{snapshot_id}/restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_upgrade_task_async(self, request):
         """重试升级失败任务
@@ -2031,9 +2308,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.RetryUpgradeTaskRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.RetryUpgradeTaskResponse`
         """
-        return self._retry_upgrade_task_with_http_info(request)
+        http_info = self._retry_upgrade_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_upgrade_task_with_http_info(self, request):
+    def retry_upgrade_task_async_invoker(self, request):
+        http_info = self._retry_upgrade_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _retry_upgrade_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/upgrade/{action_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryUpgradeTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2054,9 +2343,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2065,20 +2354,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/upgrade/{action_id}/retry',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryUpgradeTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_auto_create_policy_async(self, request):
         """查询自动创建快照的策略
@@ -2092,9 +2377,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowAutoCreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowAutoCreatePolicyResponse`
         """
-        return self._show_auto_create_policy_with_http_info(request)
+        http_info = self._show_auto_create_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_auto_create_policy_with_http_info(self, request):
+    def show_auto_create_policy_async_invoker(self, request):
+        http_info = self._show_auto_create_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_auto_create_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoCreatePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2111,9 +2408,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2122,20 +2419,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAutoCreatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cluster_detail_async(self, request):
         """查询集群详情
@@ -2149,9 +2442,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowClusterDetailRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowClusterDetailResponse`
         """
-        return self._show_cluster_detail_with_http_info(request)
+        http_info = self._show_cluster_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cluster_detail_with_http_info(self, request):
+    def show_cluster_detail_async_invoker(self, request):
+        http_info = self._show_cluster_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cluster_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2168,9 +2473,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2179,20 +2484,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClusterDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cluster_tag_async(self, request):
         """查询指定集群的标签
@@ -2206,9 +2507,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowClusterTagRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowClusterTagResponse`
         """
-        return self._show_cluster_tag_with_http_info(request)
+        http_info = self._show_cluster_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cluster_tag_with_http_info(self, request):
+    def show_cluster_tag_async_invoker(self, request):
+        http_info = self._show_cluster_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cluster_tag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/{resource_type}/{cluster_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2227,9 +2540,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2238,20 +2551,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/{resource_type}/{cluster_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClusterTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_elb_detail_async(self, request):
         """获取该esELB的信息，以及页面需要展示健康检查状态
@@ -2265,9 +2574,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowElbDetailRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowElbDetailResponse`
         """
-        return self._show_elb_detail_with_http_info(request)
+        http_info = self._show_elb_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_elb_detail_with_http_info(self, request):
+    def show_elb_detail_async_invoker(self, request):
+        http_info = self._show_elb_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_elb_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/es-listeners",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowElbDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2284,9 +2605,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2295,20 +2616,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/es-listeners',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowElbDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_get_log_setting_async(self, request):
         """查询日志基础配置
@@ -2322,9 +2639,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowGetLogSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowGetLogSettingResponse`
         """
-        return self._show_get_log_setting_with_http_info(request)
+        http_info = self._show_get_log_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_get_log_setting_with_http_info(self, request):
+    def show_get_log_setting_async_invoker(self, request):
+        http_info = self._show_get_log_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_get_log_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGetLogSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2341,9 +2670,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2352,20 +2681,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/settings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGetLogSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ik_thesaurus_async(self, request):
         """查询自定义词库状态
@@ -2379,9 +2704,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowIkThesaurusRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowIkThesaurusResponse`
         """
-        return self._show_ik_thesaurus_with_http_info(request)
+        http_info = self._show_ik_thesaurus_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ik_thesaurus_with_http_info(self, request):
+    def show_ik_thesaurus_async_invoker(self, request):
+        http_info = self._show_ik_thesaurus_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ik_thesaurus_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/thesaurus",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIkThesaurusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2398,9 +2735,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2409,20 +2746,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/thesaurus',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIkThesaurusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_log_backup_async(self, request):
         """查询日志
@@ -2436,9 +2769,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowLogBackupRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowLogBackupResponse`
         """
-        return self._show_log_backup_with_http_info(request)
+        http_info = self._show_log_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_log_backup_with_http_info(self, request):
+    def show_log_backup_async_invoker(self, request):
+        http_info = self._show_log_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_log_backup_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLogBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2455,11 +2800,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2468,20 +2813,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLogBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpcep_connection_async(self, request):
         """获取终端节点连接
@@ -2495,9 +2836,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowVpcepConnectionRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowVpcepConnectionResponse`
         """
-        return self._show_vpcep_connection_with_http_info(request)
+        http_info = self._show_vpcep_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpcep_connection_with_http_info(self, request):
+    def show_vpcep_connection_async_invoker(self, request):
+        http_info = self._show_vpcep_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vpcep_connection_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpcepConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2518,9 +2871,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2529,20 +2882,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpcepConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_auto_setting_async(self, request):
         """自动设置集群快照的基础配置（不推荐使用）
@@ -2565,9 +2914,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartAutoSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartAutoSettingResponse`
         """
-        return self._start_auto_setting_with_http_info(request)
+        http_info = self._start_auto_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_auto_setting_with_http_info(self, request):
+    def start_auto_setting_async_invoker(self, request):
+        http_info = self._start_auto_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_auto_setting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/auto_setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartAutoSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2584,9 +2945,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2595,20 +2956,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/auto_setting',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartAutoSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_log_auto_backup_policy_async(self, request):
         """开启日志自动备份策略
@@ -2622,9 +2979,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartLogAutoBackupPolicyResponse`
         """
-        return self._start_log_auto_backup_policy_with_http_info(request)
+        http_info = self._start_log_auto_backup_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_log_auto_backup_policy_with_http_info(self, request):
+    def start_log_auto_backup_policy_async_invoker(self, request):
+        http_info = self._start_log_auto_backup_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_log_auto_backup_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/policy/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartLogAutoBackupPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2641,11 +3010,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2654,20 +3023,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/policy/update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartLogAutoBackupPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_logs_async(self, request):
         """开启日志功能
@@ -2681,9 +3046,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartLogsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartLogsResponse`
         """
-        return self._start_logs_with_http_info(request)
+        http_info = self._start_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_logs_with_http_info(self, request):
+    def start_logs_async_invoker(self, request):
+        http_info = self._start_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_logs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/open",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2700,11 +3077,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2713,20 +3090,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/open',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_public_whitelist_async(self, request):
         """开启公网访问控制白名单
@@ -2740,9 +3113,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartPublicWhitelistResponse`
         """
-        return self._start_public_whitelist_with_http_info(request)
+        http_info = self._start_public_whitelist_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_public_whitelist_with_http_info(self, request):
+    def start_public_whitelist_async_invoker(self, request):
+        http_info = self._start_public_whitelist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_public_whitelist_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/public/whitelist/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartPublicWhitelistResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2759,11 +3144,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2772,20 +3157,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/public/whitelist/update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartPublicWhitelistResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_vpecp_async(self, request):
         """开启终端节点服务
@@ -2799,9 +3180,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartVpecpRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartVpecpResponse`
         """
-        return self._start_vpecp_with_http_info(request)
+        http_info = self._start_vpecp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_vpecp_with_http_info(self, request):
+    def start_vpecp_async_invoker(self, request):
+        http_info = self._start_vpecp_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_vpecp_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/open",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartVpecpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2818,11 +3211,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2831,20 +3224,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/open',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartVpecpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_log_auto_backup_policy_async(self, request):
         """关闭日志自动备份策略
@@ -2858,9 +3247,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StopLogAutoBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopLogAutoBackupPolicyResponse`
         """
-        return self._stop_log_auto_backup_policy_with_http_info(request)
+        http_info = self._stop_log_auto_backup_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_log_auto_backup_policy_with_http_info(self, request):
+    def stop_log_auto_backup_policy_async_invoker(self, request):
+        http_info = self._stop_log_auto_backup_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_log_auto_backup_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/policy/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopLogAutoBackupPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2877,9 +3278,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2888,20 +3289,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/policy/close',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopLogAutoBackupPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_logs_async(self, request):
         """关闭日志功能
@@ -2915,9 +3312,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StopLogsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopLogsResponse`
         """
-        return self._stop_logs_with_http_info(request)
+        http_info = self._stop_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_logs_with_http_info(self, request):
+    def stop_logs_async_invoker(self, request):
+        http_info = self._stop_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_logs_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2934,9 +3343,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2945,20 +3354,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/close',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_public_whitelist_async(self, request):
         """关闭公网访问控制白名单
@@ -2972,9 +3377,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StopPublicWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopPublicWhitelistResponse`
         """
-        return self._stop_public_whitelist_with_http_info(request)
+        http_info = self._stop_public_whitelist_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_public_whitelist_with_http_info(self, request):
+    def stop_public_whitelist_async_invoker(self, request):
+        http_info = self._stop_public_whitelist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_public_whitelist_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/public/whitelist/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopPublicWhitelistResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2991,9 +3408,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3002,20 +3419,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/public/whitelist/close',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopPublicWhitelistResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_snapshot_async(self, request):
         """停用快照功能
@@ -3029,9 +3442,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StopSnapshotRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopSnapshotResponse`
         """
-        return self._stop_snapshot_with_http_info(request)
+        http_info = self._stop_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_snapshot_with_http_info(self, request):
+    def stop_snapshot_async_invoker(self, request):
+        http_info = self._stop_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_snapshot_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3048,9 +3473,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3059,20 +3484,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshots',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_vpecp_async(self, request):
         """关闭终端节点服务
@@ -3086,9 +3507,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StopVpecpRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopVpecpResponse`
         """
-        return self._stop_vpecp_with_http_info(request)
+        http_info = self._stop_vpecp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_vpecp_with_http_info(self, request):
+    def stop_vpecp_async_invoker(self, request):
+        http_info = self._stop_vpecp_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_vpecp_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopVpecpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3105,9 +3538,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3116,20 +3549,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/close',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopVpecpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_az_by_instance_type_async(self, request):
         """切换集群实例AZ
@@ -3143,9 +3572,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateAzByInstanceTypeRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateAzByInstanceTypeResponse`
         """
-        return self._update_az_by_instance_type_with_http_info(request)
+        http_info = self._update_az_by_instance_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_az_by_instance_type_with_http_info(self, request):
+    def update_az_by_instance_type_async_invoker(self, request):
+        http_info = self._update_az_by_instance_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_az_by_instance_type_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/inst-type/{inst_type}/azmigrate",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAzByInstanceTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3164,11 +3605,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3177,20 +3618,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/inst-type/{inst_type}/azmigrate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAzByInstanceTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_batch_clusters_tags_async(self, request):
         """批量添加或删除集群标签
@@ -3204,9 +3641,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateBatchClustersTagsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateBatchClustersTagsResponse`
         """
-        return self._update_batch_clusters_tags_with_http_info(request)
+        http_info = self._update_batch_clusters_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_batch_clusters_tags_with_http_info(self, request):
+    def update_batch_clusters_tags_async_invoker(self, request):
+        http_info = self._update_batch_clusters_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_batch_clusters_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/{resource_type}/{cluster_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBatchClustersTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3225,11 +3674,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3238,20 +3687,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/{resource_type}/{cluster_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBatchClustersTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cluster_name_async(self, request):
         """修改集群名称
@@ -3265,9 +3710,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateClusterNameRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateClusterNameResponse`
         """
-        return self._update_cluster_name_with_http_info(request)
+        http_info = self._update_cluster_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cluster_name_with_http_info(self, request):
+    def update_cluster_name_async_invoker(self, request):
+        http_info = self._update_cluster_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_cluster_name_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/changename",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClusterNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3284,11 +3741,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3297,20 +3754,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/changename',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateClusterNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_es_listener_async(self, request):
         """更新es监听器
@@ -3324,9 +3777,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateEsListenerRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateEsListenerResponse`
         """
-        return self._update_es_listener_with_http_info(request)
+        http_info = self._update_es_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_es_listener_with_http_info(self, request):
+    def update_es_listener_async_invoker(self, request):
+        http_info = self._update_es_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_es_listener_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/es-listeners/{listener_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEsListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3345,11 +3810,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3358,20 +3823,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/es-listeners/{listener_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEsListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_extend_cluster_async(self, request):
         """扩容集群
@@ -3387,9 +3848,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateExtendClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateExtendClusterResponse`
         """
-        return self._update_extend_cluster_with_http_info(request)
+        http_info = self._update_extend_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_extend_cluster_with_http_info(self, request):
+    def update_extend_cluster_async_invoker(self, request):
+        http_info = self._update_extend_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_extend_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateExtendClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3406,11 +3879,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3419,20 +3892,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/extend',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateExtendClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_extend_instance_storage_async(self, request):
         """扩容实例的数量和存储容量
@@ -3446,9 +3915,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateExtendInstanceStorageRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateExtendInstanceStorageResponse`
         """
-        return self._update_extend_instance_storage_with_http_info(request)
+        http_info = self._update_extend_instance_storage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_extend_instance_storage_with_http_info(self, request):
+    def update_extend_instance_storage_async_invoker(self, request):
+        http_info = self._update_extend_instance_storage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_extend_instance_storage_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/role_extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateExtendInstanceStorageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3465,11 +3946,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3478,20 +3959,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/role_extend',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateExtendInstanceStorageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_flavor_async(self, request):
         """变更规格
@@ -3505,9 +3982,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateFlavorRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorResponse`
         """
-        return self._update_flavor_with_http_info(request)
+        http_info = self._update_flavor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_flavor_with_http_info(self, request):
+    def update_flavor_async_invoker(self, request):
+        http_info = self._update_flavor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_flavor_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/flavor",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlavorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3524,11 +4013,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3537,20 +4026,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/flavor',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFlavorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_flavor_by_type_async(self, request):
         """指定节点类型规格变更
@@ -3568,9 +4053,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateFlavorByTypeResponse`
         """
-        return self._update_flavor_by_type_with_http_info(request)
+        http_info = self._update_flavor_by_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_flavor_by_type_with_http_info(self, request):
+    def update_flavor_by_type_async_invoker(self, request):
+        http_info = self._update_flavor_by_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_flavor_by_type_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/{types}/flavor",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlavorByTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3589,11 +4086,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3602,20 +4099,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/{types}/flavor',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFlavorByTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_async(self, request):
         """节点替换
@@ -3629,9 +4122,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateInstanceResponse`
         """
-        return self._update_instance_with_http_info(request)
+        http_info = self._update_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_with_http_info(self, request):
+    def update_instance_async_invoker(self, request):
+        http_info = self._update_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/instance/{instance_id}/replace",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3650,11 +4155,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3663,20 +4168,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/instance/{instance_id}/replace',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_log_setting_async(self, request):
         """修改日志基础配置
@@ -3690,9 +4191,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateLogSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateLogSettingResponse`
         """
-        return self._update_log_setting_with_http_info(request)
+        http_info = self._update_log_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_log_setting_with_http_info(self, request):
+    def update_log_setting_async_invoker(self, request):
+        http_info = self._update_log_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_log_setting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/logs/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3709,11 +4222,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3722,20 +4235,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/logs/settings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLogSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ondemand_cluster_to_period_async(self, request):
         """按需集群转包周期
@@ -3749,9 +4258,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateOndemandClusterToPeriodRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateOndemandClusterToPeriodResponse`
         """
-        return self._update_ondemand_cluster_to_period_with_http_info(request)
+        http_info = self._update_ondemand_cluster_to_period_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ondemand_cluster_to_period_with_http_info(self, request):
+    def update_ondemand_cluster_to_period_async_invoker(self, request):
+        http_info = self._update_ondemand_cluster_to_period_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ondemand_cluster_to_period_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/cluster/{cluster_id}/period",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOndemandClusterToPeriodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3768,11 +4289,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3781,20 +4302,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/cluster/{cluster_id}/period',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateOndemandClusterToPeriodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_public_band_width_async(self, request):
         """修改公网访问带宽
@@ -3808,9 +4325,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdatePublicBandWidthRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicBandWidthResponse`
         """
-        return self._update_public_band_width_with_http_info(request)
+        http_info = self._update_public_band_width_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_public_band_width_with_http_info(self, request):
+    def update_public_band_width_async_invoker(self, request):
+        http_info = self._update_public_band_width_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_public_band_width_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/public/bandwidth",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicBandWidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3827,11 +4356,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3840,20 +4369,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/public/bandwidth',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePublicBandWidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_shrink_cluster_async(self, request):
         """指定节点类型缩容
@@ -3867,9 +4392,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateShrinkClusterRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateShrinkClusterResponse`
         """
-        return self._update_shrink_cluster_with_http_info(request)
+        http_info = self._update_shrink_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_shrink_cluster_with_http_info(self, request):
+    def update_shrink_cluster_async_invoker(self, request):
+        http_info = self._update_shrink_cluster_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_shrink_cluster_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/extend/{project_id}/clusters/{cluster_id}/role/shrink",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateShrinkClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3886,11 +4423,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3899,20 +4436,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/extend/{project_id}/clusters/{cluster_id}/role/shrink',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateShrinkClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_shrink_nodes_async(self, request):
         """指定节点缩容
@@ -3926,9 +4459,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateShrinkNodesRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateShrinkNodesResponse`
         """
-        return self._update_shrink_nodes_with_http_info(request)
+        http_info = self._update_shrink_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_shrink_nodes_with_http_info(self, request):
+    def update_shrink_nodes_async_invoker(self, request):
+        http_info = self._update_shrink_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_shrink_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/node/offline",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateShrinkNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3945,11 +4490,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3958,20 +4503,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/node/offline',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateShrinkNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_snapshot_setting_async(self, request):
         """修改集群快照的基础配置
@@ -3987,9 +4528,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateSnapshotSettingRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateSnapshotSettingResponse`
         """
-        return self._update_snapshot_setting_with_http_info(request)
+        http_info = self._update_snapshot_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_snapshot_setting_with_http_info(self, request):
+    def update_snapshot_setting_async_invoker(self, request):
+        http_info = self._update_snapshot_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_snapshot_setting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSnapshotSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4006,11 +4559,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4019,20 +4572,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/index_snapshot/setting',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSnapshotSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_unbind_public_async(self, request):
         """关闭公网访问
@@ -4046,9 +4595,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateUnbindPublicRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateUnbindPublicResponse`
         """
-        return self._update_unbind_public_with_http_info(request)
+        http_info = self._update_unbind_public_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_unbind_public_with_http_info(self, request):
+    def update_unbind_public_async_invoker(self, request):
+        http_info = self._update_unbind_public_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_unbind_public_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/public/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUnbindPublicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4065,11 +4626,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4078,20 +4639,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/public/close',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUnbindPublicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpcep_connection_async(self, request):
         """更新终端节点连接
@@ -4105,9 +4662,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateVpcepConnectionRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateVpcepConnectionResponse`
         """
-        return self._update_vpcep_connection_with_http_info(request)
+        http_info = self._update_vpcep_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpcep_connection_with_http_info(self, request):
+    def update_vpcep_connection_async_invoker(self, request):
+        http_info = self._update_vpcep_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpcep_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcepConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4124,11 +4693,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4137,20 +4706,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/connections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcepConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpcep_whitelist_async(self, request):
         """修改终端节点服务白名单
@@ -4164,9 +4729,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateVpcepWhitelistResponse`
         """
-        return self._update_vpcep_whitelist_with_http_info(request)
+        http_info = self._update_vpcep_whitelist_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpcep_whitelist_with_http_info(self, request):
+    def update_vpcep_whitelist_async_invoker(self, request):
+        http_info = self._update_vpcep_whitelist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpcep_whitelist_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcepWhitelistResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4183,11 +4760,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4196,20 +4773,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/vpcepservice/permissions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcepWhitelistResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ymls_async(self, request):
         """修改参数配置
@@ -4223,9 +4796,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateYmlsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateYmlsResponse`
         """
-        return self._update_ymls_with_http_info(request)
+        http_info = self._update_ymls_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ymls_with_http_info(self, request):
+    def update_ymls_async_invoker(self, request):
+        http_info = self._update_ymls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ymls_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ymls/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateYmlsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4242,11 +4827,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4255,20 +4840,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ymls/update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateYmlsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_core_async(self, request):
         """集群内核升级
@@ -4282,9 +4863,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpgradeCoreRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpgradeCoreResponse`
         """
-        return self._upgrade_core_with_http_info(request)
+        http_info = self._upgrade_core_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_core_with_http_info(self, request):
+    def upgrade_core_async_invoker(self, request):
+        http_info = self._upgrade_core_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_core_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/inst-type/{inst_type}/image/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeCoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4303,11 +4896,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4316,20 +4909,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/inst-type/{inst_type}/image/upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeCoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_detail_async(self, request):
         """获取升级详情信息
@@ -4343,9 +4932,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpgradeDetailRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpgradeDetailResponse`
         """
-        return self._upgrade_detail_with_http_info(request)
+        http_info = self._upgrade_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_detail_with_http_info(self, request):
+    def upgrade_detail_async_invoker(self, request):
+        http_info = self._upgrade_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/upgrade/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4368,9 +4969,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4379,20 +4980,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/upgrade/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_kibana_public_async(self, request):
         """开启Kibana公网访问
@@ -4406,9 +5003,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartKibanaPublicRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartKibanaPublicResponse`
         """
-        return self._start_kibana_public_with_http_info(request)
+        http_info = self._start_kibana_public_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_kibana_public_with_http_info(self, request):
+    def start_kibana_public_async_invoker(self, request):
+        http_info = self._start_kibana_public_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_kibana_public_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/publickibana/open",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartKibanaPublicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4425,11 +5034,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4438,20 +5047,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/publickibana/open',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartKibanaPublicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_public_kibana_whitelist_async(self, request):
         """关闭Kibana公网访问控制
@@ -4465,9 +5070,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StopPublicKibanaWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopPublicKibanaWhitelistResponse`
         """
-        return self._stop_public_kibana_whitelist_with_http_info(request)
+        http_info = self._stop_public_kibana_whitelist_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_public_kibana_whitelist_with_http_info(self, request):
+    def stop_public_kibana_whitelist_async_invoker(self, request):
+        http_info = self._stop_public_kibana_whitelist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_public_kibana_whitelist_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/publickibana/whitelist/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopPublicKibanaWhitelistResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4484,9 +5101,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4495,20 +5112,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/publickibana/whitelist/close',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopPublicKibanaWhitelistResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alter_kibana_async(self, request):
         """修改Kibana公网带宽
@@ -4522,9 +5135,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateAlterKibanaRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateAlterKibanaResponse`
         """
-        return self._update_alter_kibana_with_http_info(request)
+        http_info = self._update_alter_kibana_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alter_kibana_with_http_info(self, request):
+    def update_alter_kibana_async_invoker(self, request):
+        http_info = self._update_alter_kibana_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_alter_kibana_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/publickibana/bandwidth",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlterKibanaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4541,11 +5166,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4554,20 +5179,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/publickibana/bandwidth',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlterKibanaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_close_kibana_async(self, request):
         """关闭Kibana公网访问
@@ -4581,9 +5202,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateCloseKibanaRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateCloseKibanaResponse`
         """
-        return self._update_close_kibana_with_http_info(request)
+        http_info = self._update_close_kibana_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_close_kibana_with_http_info(self, request):
+    def update_close_kibana_async_invoker(self, request):
+        http_info = self._update_close_kibana_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_close_kibana_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/publickibana/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCloseKibanaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4600,11 +5233,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4613,20 +5246,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/publickibana/close',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCloseKibanaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_public_kibana_whitelist_async(self, request):
         """修改Kibana公网访问控制
@@ -4640,9 +5269,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdatePublicKibanaWhitelistResponse`
         """
-        return self._update_public_kibana_whitelist_with_http_info(request)
+        http_info = self._update_public_kibana_whitelist_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_public_kibana_whitelist_with_http_info(self, request):
+    def update_public_kibana_whitelist_async_invoker(self, request):
+        http_info = self._update_public_kibana_whitelist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_public_kibana_whitelist_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/publickibana/whitelist/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicKibanaWhitelistResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4659,11 +5300,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4672,20 +5313,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/publickibana/whitelist/update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePublicKibanaWhitelistResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_favorite_async(self, request):
         """添加到自定义模板
@@ -4699,9 +5336,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.AddFavoriteRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.AddFavoriteResponse`
         """
-        return self._add_favorite_with_http_info(request)
+        http_info = self._add_favorite_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_favorite_with_http_info(self, request):
+    def add_favorite_async_invoker(self, request):
+        http_info = self._add_favorite_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_favorite_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/favorite",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFavoriteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4718,11 +5367,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4731,20 +5380,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/favorite',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddFavoriteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cnf_async(self, request):
         """创建配置文件
@@ -4758,9 +5403,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.CreateCnfRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.CreateCnfResponse`
         """
-        return self._create_cnf_with_http_info(request)
+        http_info = self._create_cnf_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cnf_with_http_info(self, request):
+    def create_cnf_async_invoker(self, request):
+        http_info = self._create_cnf_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_cnf_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/submit",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCnfResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4777,11 +5434,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4790,20 +5447,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/submit',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCnfResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_conf_async(self, request):
         """删除配置文件
@@ -4817,9 +5470,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DeleteConfRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteConfResponse`
         """
-        return self._delete_conf_with_http_info(request)
+        http_info = self._delete_conf_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_conf_with_http_info(self, request):
+    def delete_conf_async_invoker(self, request):
+        http_info = self._delete_conf_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_conf_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConfResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4836,11 +5501,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4849,20 +5514,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/delete',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConfResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_config_async(self, request):
         """删除配置文件V2
@@ -4876,9 +5537,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DeleteConfigRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteConfigResponse`
         """
-        return self._delete_config_with_http_info(request)
+        http_info = self._delete_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_config_with_http_info(self, request):
+    def delete_config_async_invoker(self, request):
+        http_info = self._delete_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_config_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/clusters/{cluster_id}/lgsconf/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4895,11 +5568,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4908,20 +5581,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/clusters/{cluster_id}/lgsconf/delete',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_async(self, request):
         """删除自定义模板
@@ -4935,9 +5604,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.DeleteTemplateResponse`
         """
-        return self._delete_template_with_http_info(request)
+        http_info = self._delete_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_with_http_info(self, request):
+    def delete_template_async_invoker(self, request):
+        http_info = self._delete_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/lgsconf/deletetemplate",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4952,11 +5633,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4965,20 +5646,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/lgsconf/deletetemplate',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_actions_async(self, request):
         """查询操作记录
@@ -4992,9 +5669,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListActionsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListActionsResponse`
         """
-        return self._list_actions_with_http_info(request)
+        http_info = self._list_actions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_actions_with_http_info(self, request):
+    def list_actions_async_invoker(self, request):
+        http_info = self._list_actions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_actions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/listactions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListActionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5011,9 +5700,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5022,20 +5711,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/listactions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListActionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certs_async(self, request):
         """查询证书列表
@@ -5049,9 +5734,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListCertsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListCertsResponse`
         """
-        return self._list_certs_with_http_info(request)
+        http_info = self._list_certs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certs_with_http_info(self, request):
+    def list_certs_async_invoker(self, request):
+        http_info = self._list_certs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_certs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/certs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5074,9 +5771,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5085,20 +5782,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/certs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_confs_async(self, request):
         """查询配置文件列表
@@ -5112,9 +5805,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListConfsRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListConfsResponse`
         """
-        return self._list_confs_with_http_info(request)
+        http_info = self._list_confs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_confs_with_http_info(self, request):
+    def list_confs_async_invoker(self, request):
+        http_info = self._list_confs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_confs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/listconfs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5131,9 +5836,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5142,20 +5847,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/listconfs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pipelines_async(self, request):
         """查询pipeline列表
@@ -5169,9 +5870,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListPipelinesRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListPipelinesResponse`
         """
-        return self._list_pipelines_with_http_info(request)
+        http_info = self._list_pipelines_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pipelines_with_http_info(self, request):
+    def list_pipelines_async_invoker(self, request):
+        http_info = self._list_pipelines_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_pipelines_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/listpipelines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPipelinesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5188,9 +5901,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5199,20 +5912,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/listpipelines',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPipelinesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_templates_async(self, request):
         """查询模板列表
@@ -5226,9 +5935,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ListTemplatesResponse`
         """
-        return self._list_templates_with_http_info(request)
+        http_info = self._list_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_templates_with_http_info(self, request):
+    def list_templates_async_invoker(self, request):
+        http_info = self._list_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/lgsconf/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5245,9 +5966,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5256,20 +5977,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/lgsconf/template',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_get_conf_detail_async(self, request):
         """查询配置文件内容
@@ -5283,9 +6000,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.ShowGetConfDetailRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.ShowGetConfDetailResponse`
         """
-        return self._show_get_conf_detail_with_http_info(request)
+        http_info = self._show_get_conf_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_get_conf_detail_with_http_info(self, request):
+    def show_get_conf_detail_async_invoker(self, request):
+        http_info = self._show_get_conf_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_get_conf_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/confdetail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGetConfDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5304,9 +6033,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5315,20 +6044,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/confdetail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGetConfDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_connectivity_test_async(self, request):
         """连通性测试
@@ -5342,9 +6067,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartConnectivityTestRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartConnectivityTestResponse`
         """
-        return self._start_connectivity_test_with_http_info(request)
+        http_info = self._start_connectivity_test_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_connectivity_test_with_http_info(self, request):
+    def start_connectivity_test_async_invoker(self, request):
+        http_info = self._start_connectivity_test_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_connectivity_test_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/checkconnection",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartConnectivityTestResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5361,11 +6098,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5374,20 +6111,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/checkconnection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartConnectivityTestResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_pipeline_async(self, request):
         """启动pipeline迁移数据
@@ -5401,9 +6134,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StartPipelineRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StartPipelineResponse`
         """
-        return self._start_pipeline_with_http_info(request)
+        http_info = self._start_pipeline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_pipeline_with_http_info(self, request):
+    def start_pipeline_async_invoker(self, request):
+        http_info = self._start_pipeline_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_pipeline_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartPipelineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5420,11 +6165,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5433,20 +6178,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartPipelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_hot_pipeline_async(self, request):
         """热停止pipeline迁移数据。
@@ -5460,9 +6201,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StopHotPipelineRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopHotPipelineResponse`
         """
-        return self._stop_hot_pipeline_with_http_info(request)
+        http_info = self._stop_hot_pipeline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_hot_pipeline_with_http_info(self, request):
+    def stop_hot_pipeline_async_invoker(self, request):
+        http_info = self._stop_hot_pipeline_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_hot_pipeline_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/hot-stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopHotPipelineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5479,11 +6232,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5492,20 +6245,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/hot-stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopHotPipelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_pipeline_async(self, request):
         """停止pipeline迁移数据
@@ -5519,9 +6268,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.StopPipelineRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.StopPipelineResponse`
         """
-        return self._stop_pipeline_with_http_info(request)
+        http_info = self._stop_pipeline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_pipeline_with_http_info(self, request):
+    def stop_pipeline_async_invoker(self, request):
+        http_info = self._stop_pipeline_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_pipeline_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopPipelineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5538,9 +6299,9 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5549,20 +6310,16 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopPipelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cnf_async(self, request):
         """更新配置文件
@@ -5576,9 +6333,21 @@ class CssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcss.v1.UpdateCnfRequest`
         :rtype: :class:`huaweicloudsdkcss.v1.UpdateCnfResponse`
         """
-        return self._update_cnf_with_http_info(request)
+        http_info = self._update_cnf_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cnf_with_http_info(self, request):
+    def update_cnf_async_invoker(self, request):
+        http_info = self._update_cnf_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_cnf_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCnfResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5595,11 +6364,11 @@ class CssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5608,20 +6377,26 @@ class CssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/lgsconf/update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCnfResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -5660,4 +6435,4 @@ class CssAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

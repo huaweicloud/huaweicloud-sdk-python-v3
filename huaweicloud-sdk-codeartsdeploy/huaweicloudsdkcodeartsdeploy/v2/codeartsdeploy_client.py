@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcodeartsdeploy'")
 
 
 class CodeArtsDeployClient(Client):
@@ -38,9 +43,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListTaskSuccessRateRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListTaskSuccessRateResponse`
         """
-        return self._list_task_success_rate_with_http_info(request)
+        http_info = self._list_task_success_rate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_task_success_rate_with_http_info(self, request):
+    def list_task_success_rate_invoker(self, request):
+        http_info = self._list_task_success_rate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_task_success_rate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/tasks/metrics/success-rate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskSuccessRateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/metrics/success-rate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTaskSuccessRateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_success_rate(self, request):
         """获取指定项目的应用部署成功率
@@ -96,9 +110,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowProjectSuccessRateRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowProjectSuccessRateResponse`
         """
-        return self._show_project_success_rate_with_http_info(request)
+        http_info = self._show_project_success_rate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_success_rate_with_http_info(self, request):
+    def show_project_success_rate_invoker(self, request):
+        http_info = self._show_project_success_rate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_success_rate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/metrics/success-rate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectSuccessRateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,9 +146,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +157,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/metrics/success-rate',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectSuccessRateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app(self, request):
         """新建应用
@@ -156,9 +179,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateAppResponse`
         """
-        return self._create_app_with_http_info(request)
+        http_info = self._create_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_with_http_info(self, request):
+    def create_app_invoker(self, request):
+        http_info = self._create_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_deploy_task_by_template(self, request):
         """通过模板新建应用
@@ -212,9 +244,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateDeployTaskByTemplateRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateDeployTaskByTemplateResponse`
         """
-        return self._create_deploy_task_by_template_with_http_info(request)
+        http_info = self._create_deploy_task_by_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_deploy_task_by_template_with_http_info(self, request):
+    def create_deploy_task_by_template_invoker(self, request):
+        http_info = self._create_deploy_task_by_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_deploy_task_by_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/tasks/template-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeployTaskByTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -229,11 +274,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +287,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/tasks/template-task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeployTaskByTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_application(self, request):
         """删除应用
@@ -268,9 +309,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteApplicationResponse`
         """
-        return self._delete_application_with_http_info(request)
+        http_info = self._delete_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_application_with_http_info(self, request):
+    def delete_application_invoker(self, request):
+        http_info = self._delete_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_application_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/applications/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -287,9 +341,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -298,20 +352,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_deploy_task(self, request):
         """删除应用
@@ -324,9 +374,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteDeployTaskRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteDeployTaskResponse`
         """
-        return self._delete_deploy_task_with_http_info(request)
+        http_info = self._delete_deploy_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_deploy_task_with_http_info(self, request):
+    def delete_deploy_task_invoker(self, request):
+        http_info = self._delete_deploy_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_deploy_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeployTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -343,9 +406,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +417,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeployTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_app(self, request):
         """获取应用列表
@@ -380,9 +439,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListAllAppRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListAllAppResponse`
         """
-        return self._list_all_app_with_http_info(request)
+        http_info = self._list_all_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_app_with_http_info(self, request):
+    def list_all_app_invoker(self, request):
+        http_info = self._list_all_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/applications/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -397,11 +469,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -410,20 +482,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_deploy_task_history_by_date(self, request):
         """根据开始时间和结束时间查询项目下指定应用的历史部署记录列表
@@ -436,9 +504,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListDeployTaskHistoryByDateRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListDeployTaskHistoryByDateResponse`
         """
-        return self._list_deploy_task_history_by_date_with_http_info(request)
+        http_info = self._list_deploy_task_history_by_date_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_deploy_task_history_by_date_with_http_info(self, request):
+    def list_deploy_task_history_by_date_invoker(self, request):
+        http_info = self._list_deploy_task_history_by_date_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_deploy_task_history_by_date_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/task/{id}/history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDeployTaskHistoryByDateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -465,9 +546,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -476,20 +557,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/task/{id}/history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDeployTaskHistoryByDateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_deploy_tasks(self, request):
         """获取应用列表
@@ -502,9 +579,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListDeployTasksRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListDeployTasksResponse`
         """
-        return self._list_deploy_tasks_with_http_info(request)
+        http_info = self._list_deploy_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_deploy_tasks_with_http_info(self, request):
+    def list_deploy_tasks_invoker(self, request):
+        http_info = self._list_deploy_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_deploy_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDeployTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -525,9 +615,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -536,20 +626,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDeployTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_detail_by_id(self, request):
         """获取应用详情
@@ -562,9 +648,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowAppDetailByIdRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowAppDetailByIdResponse`
         """
-        return self._show_app_detail_by_id_with_http_info(request)
+        http_info = self._show_app_detail_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_detail_by_id_with_http_info(self, request):
+    def show_app_detail_by_id_invoker(self, request):
+        http_info = self._show_app_detail_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_detail_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/applications/{app_id}/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppDetailByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -581,9 +680,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -592,20 +691,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{app_id}/info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppDetailByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deploy_task_detail(self, request):
         """获取应用详情
@@ -618,9 +713,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowDeployTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowDeployTaskDetailResponse`
         """
-        return self._show_deploy_task_detail_with_http_info(request)
+        http_info = self._show_deploy_task_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deploy_task_detail_with_http_info(self, request):
+    def show_deploy_task_detail_invoker(self, request):
+        http_info = self._show_deploy_task_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_deploy_task_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeployTaskDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -637,9 +745,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -648,20 +756,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeployTaskDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_execution_params(self, request):
         """查询部署记录的执行参数
@@ -674,9 +778,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowExecutionParamsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowExecutionParamsResponse`
         """
-        return self._show_execution_params_with_http_info(request)
+        http_info = self._show_execution_params_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_execution_params_with_http_info(self, request):
+    def show_execution_params_invoker(self, request):
+        http_info = self._show_execution_params_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_execution_params_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/history/tasks/{task_id}/params",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExecutionParamsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -695,9 +812,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -706,20 +823,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/history/tasks/{task_id}/params',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExecutionParamsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_deploy_task(self, request):
         """部署应用
@@ -732,9 +845,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.StartDeployTaskRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.StartDeployTaskResponse`
         """
-        return self._start_deploy_task_with_http_info(request)
+        http_info = self._start_deploy_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_deploy_task_with_http_info(self, request):
+    def start_deploy_task_invoker(self, request):
+        http_info = self._start_deploy_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_deploy_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/tasks/{task_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartDeployTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -751,11 +877,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -764,20 +890,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartDeployTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_environment(self, request):
         """应用下创建环境
@@ -790,9 +912,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateEnvironmentResponse`
         """
-        return self._create_environment_with_http_info(request)
+        http_info = self._create_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_environment_with_http_info(self, request):
+    def create_environment_invoker(self, request):
+        http_info = self._create_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_environment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/applications/{application_id}/environments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -809,11 +944,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -822,20 +957,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_environment(self, request):
         """删除应用下的环境
@@ -848,9 +979,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteEnvironmentResponse`
         """
-        return self._delete_environment_with_http_info(request)
+        http_info = self._delete_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_environment_with_http_info(self, request):
+    def delete_environment_invoker(self, request):
+        http_info = self._delete_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_environment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/applications/{application_id}/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -869,9 +1013,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -880,20 +1024,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments/{environment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_host_from_environment(self, request):
         """环境下删除主机
@@ -906,9 +1046,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteHostFromEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteHostFromEnvironmentResponse`
         """
-        return self._delete_host_from_environment_with_http_info(request)
+        http_info = self._delete_host_from_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_host_from_environment_with_http_info(self, request):
+    def delete_host_from_environment_invoker(self, request):
+        http_info = self._delete_host_from_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_host_from_environment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/applications/{application_id}/environments/{environment_id}/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHostFromEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,9 +1082,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -940,20 +1093,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments/{environment_id}/{host_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteHostFromEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_host_to_environment(self, request):
         """环境下导入主机
@@ -966,9 +1115,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ImportHostToEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ImportHostToEnvironmentResponse`
         """
-        return self._import_host_to_environment_with_http_info(request)
+        http_info = self._import_host_to_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_host_to_environment_with_http_info(self, request):
+    def import_host_to_environment_invoker(self, request):
+        http_info = self._import_host_to_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_host_to_environment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/applications/{application_id}/environments/{environment_id}/hosts/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportHostToEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -987,11 +1149,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1000,20 +1162,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments/{environment_id}/hosts/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportHostToEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_environments(self, request):
         """查询应用下环境列表
@@ -1026,9 +1184,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListEnvironmentsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListEnvironmentsResponse`
         """
-        return self._list_environments_with_http_info(request)
+        http_info = self._list_environments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_environments_with_http_info(self, request):
+    def list_environments_invoker(self, request):
+        http_info = self._list_environments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_environments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/applications/{application_id}/environments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvironmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1057,9 +1228,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1068,20 +1239,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvironmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_environment_detail(self, request):
         """查询环境详情
@@ -1094,9 +1261,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowEnvironmentDetailRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowEnvironmentDetailResponse`
         """
-        return self._show_environment_detail_with_http_info(request)
+        http_info = self._show_environment_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_environment_detail_with_http_info(self, request):
+    def show_environment_detail_invoker(self, request):
+        http_info = self._show_environment_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_environment_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/applications/{application_id}/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnvironmentDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1115,9 +1295,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1126,20 +1306,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments/{environment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnvironmentDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_deployment_host(self, request):
         """新建主机
@@ -1152,9 +1328,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateDeploymentHostResponse`
         """
-        return self._create_deployment_host_with_http_info(request)
+        http_info = self._create_deployment_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_deployment_host_with_http_info(self, request):
+    def create_deployment_host_invoker(self, request):
+        http_info = self._create_deployment_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_deployment_host_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/host-groups/{group_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeploymentHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1171,11 +1360,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1184,20 +1373,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups/{group_id}/hosts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeploymentHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_host(self, request):
         """新建主机
@@ -1210,9 +1395,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostResponse`
         """
-        return self._create_host_with_http_info(request)
+        http_info = self._create_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_host_with_http_info(self, request):
+    def create_host_invoker(self, request):
+        http_info = self._create_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_host_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resources/host-groups/{group_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1229,11 +1427,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1242,20 +1440,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/resources/host-groups/{group_id}/hosts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_deployment_host(self, request):
         """删除主机
@@ -1268,9 +1462,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteDeploymentHostResponse`
         """
-        return self._delete_deployment_host_with_http_info(request)
+        http_info = self._delete_deployment_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_deployment_host_with_http_info(self, request):
+    def delete_deployment_host_invoker(self, request):
+        http_info = self._delete_deployment_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_deployment_host_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/host-groups/{group_id}/hosts/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeploymentHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1289,9 +1496,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1300,20 +1507,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups/{group_id}/hosts/{host_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeploymentHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_hosts(self, request):
         """查询主机列表
@@ -1326,9 +1529,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListHostsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListHostsResponse`
         """
-        return self._list_hosts_with_http_info(request)
+        http_info = self._list_hosts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_hosts_with_http_info(self, request):
+    def list_hosts_invoker(self, request):
+        http_info = self._list_hosts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_hosts_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/host-groups/{group_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1359,9 +1575,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1370,20 +1586,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups/{group_id}/hosts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_new_hosts(self, request):
         """查询主机列表
@@ -1396,9 +1608,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListNewHostsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListNewHostsResponse`
         """
-        return self._list_new_hosts_with_http_info(request)
+        http_info = self._list_new_hosts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_new_hosts_with_http_info(self, request):
+    def list_new_hosts_invoker(self, request):
+        http_info = self._list_new_hosts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_new_hosts_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resources/host-groups/{group_id}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNewHostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1429,9 +1654,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1440,20 +1665,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/resources/host-groups/{group_id}/hosts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNewHostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deployment_host_detail(self, request):
         """查询主机详情
@@ -1466,9 +1687,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowDeploymentHostDetailRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowDeploymentHostDetailResponse`
         """
-        return self._show_deployment_host_detail_with_http_info(request)
+        http_info = self._show_deployment_host_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deployment_host_detail_with_http_info(self, request):
+    def show_deployment_host_detail_invoker(self, request):
+        http_info = self._show_deployment_host_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_deployment_host_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/host-groups/{group_id}/hosts/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeploymentHostDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1487,9 +1721,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1498,20 +1732,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups/{group_id}/hosts/{host_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeploymentHostDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_host_detail(self, request):
         """查询主机详情
@@ -1524,9 +1754,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowHostDetailRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowHostDetailResponse`
         """
-        return self._show_host_detail_with_http_info(request)
+        http_info = self._show_host_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_host_detail_with_http_info(self, request):
+    def show_host_detail_invoker(self, request):
+        http_info = self._show_host_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_host_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resources/host-groups/{group_id}/hosts/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHostDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1545,9 +1788,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1556,20 +1799,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/resources/host-groups/{group_id}/hosts/{host_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHostDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_deployment_host(self, request):
         """修改主机
@@ -1582,9 +1821,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateDeploymentHostRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateDeploymentHostResponse`
         """
-        return self._update_deployment_host_with_http_info(request)
+        http_info = self._update_deployment_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_deployment_host_with_http_info(self, request):
+    def update_deployment_host_invoker(self, request):
+        http_info = self._update_deployment_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_deployment_host_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/host-groups/{group_id}/hosts/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeploymentHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1603,11 +1855,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1616,20 +1868,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups/{group_id}/hosts/{host_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeploymentHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_deployment_group(self, request):
         """新建主机集群
@@ -1642,9 +1890,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateDeploymentGroupResponse`
         """
-        return self._create_deployment_group_with_http_info(request)
+        http_info = self._create_deployment_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_deployment_group_with_http_info(self, request):
+    def create_deployment_group_invoker(self, request):
+        http_info = self._create_deployment_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_deployment_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/host-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeploymentGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1659,11 +1920,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1672,20 +1933,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeploymentGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_host_cluster(self, request):
         """新建主机集群
@@ -1698,9 +1955,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostClusterRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.CreateHostClusterResponse`
         """
-        return self._create_host_cluster_with_http_info(request)
+        http_info = self._create_host_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_host_cluster_with_http_info(self, request):
+    def create_host_cluster_invoker(self, request):
+        http_info = self._create_host_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_host_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resources/host-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHostClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1715,11 +1985,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1728,20 +1998,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/resources/host-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateHostClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_deployment_group(self, request):
         """删除主机集群
@@ -1754,9 +2020,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.DeleteDeploymentGroupResponse`
         """
-        return self._delete_deployment_group_with_http_info(request)
+        http_info = self._delete_deployment_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_deployment_group_with_http_info(self, request):
+    def delete_deployment_group_invoker(self, request):
+        http_info = self._delete_deployment_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_deployment_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/host-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeploymentGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1773,9 +2052,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1784,20 +2063,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeploymentGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_clusters(self, request):
         """查询主机集群列表
@@ -1810,9 +2085,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListHostClustersRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListHostClustersResponse`
         """
-        return self._list_host_clusters_with_http_info(request)
+        http_info = self._list_host_clusters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_clusters_with_http_info(self, request):
+    def list_host_clusters_invoker(self, request):
+        http_info = self._list_host_clusters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_host_clusters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resources/host-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostClustersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1845,9 +2133,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1856,20 +2144,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/resources/host-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostClustersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_groups(self, request):
         """查询主机集群列表
@@ -1882,9 +2166,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ListHostGroupsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ListHostGroupsResponse`
         """
-        return self._list_host_groups_with_http_info(request)
+        http_info = self._list_host_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_groups_with_http_info(self, request):
+    def list_host_groups_invoker(self, request):
+        http_info = self._list_host_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_host_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/host-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1915,9 +2212,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1926,20 +2223,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deployment_group_detail(self, request):
         """查询主机集群详情
@@ -1952,9 +2245,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowDeploymentGroupDetailRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowDeploymentGroupDetailResponse`
         """
-        return self._show_deployment_group_detail_with_http_info(request)
+        http_info = self._show_deployment_group_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deployment_group_detail_with_http_info(self, request):
+    def show_deployment_group_detail_invoker(self, request):
+        http_info = self._show_deployment_group_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_deployment_group_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/host-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeploymentGroupDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1971,9 +2277,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1982,20 +2288,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeploymentGroupDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_host_cluster_detail(self, request):
         """查询主机集群详情
@@ -2008,9 +2310,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowHostClusterDetailRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.ShowHostClusterDetailResponse`
         """
-        return self._show_host_cluster_detail_with_http_info(request)
+        http_info = self._show_host_cluster_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_host_cluster_detail_with_http_info(self, request):
+    def show_host_cluster_detail_invoker(self, request):
+        http_info = self._show_host_cluster_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_host_cluster_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resources/host-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHostClusterDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2027,9 +2342,9 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2038,20 +2353,16 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/resources/host-groups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHostClusterDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_deployment_group(self, request):
         """修改主机集群
@@ -2064,9 +2375,22 @@ class CodeArtsDeployClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateDeploymentGroupRequest`
         :rtype: :class:`huaweicloudsdkcodeartsdeploy.v2.UpdateDeploymentGroupResponse`
         """
-        return self._update_deployment_group_with_http_info(request)
+        http_info = self._update_deployment_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_deployment_group_with_http_info(self, request):
+    def update_deployment_group_invoker(self, request):
+        http_info = self._update_deployment_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_deployment_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/host-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeploymentGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2083,11 +2407,11 @@ class CodeArtsDeployClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2096,20 +2420,25 @@ class CodeArtsDeployClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/host-groups/{group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeploymentGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

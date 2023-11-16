@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkiec'")
 
 
 class IecAsyncClient(Client):
@@ -39,9 +44,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.AddNicsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.AddNicsResponse`
         """
-        return self._add_nics_with_http_info(request)
+        http_info = self._add_nics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_nics_with_http_info(self, request):
+    def add_nics_async_invoker(self, request):
+        http_info = self._add_nics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_nics_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudservers/{instance_id}/nics",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddNicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/{instance_id}/nics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddNicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_subnet_async(self, request):
         """路由表关联子网
@@ -98,9 +111,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.AssociateSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.AssociateSubnetResponse`
         """
-        return self._associate_subnet_with_http_info(request)
+        http_info = self._associate_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_subnet_with_http_info(self, request):
+    def associate_subnet_async_invoker(self, request):
+        http_info = self._associate_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_subnet_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/routetables/{routetable_id}/associate-subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}/associate-subnets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_reboot_instance_async(self, request):
         """批量重启边缘实例
@@ -157,9 +178,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.BatchRebootInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.BatchRebootInstanceResponse`
         """
-        return self._batch_reboot_instance_with_http_info(request)
+        http_info = self._batch_reboot_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_reboot_instance_with_http_info(self, request):
+    def batch_reboot_instance_async_invoker(self, request):
+        http_info = self._batch_reboot_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_reboot_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRebootInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -174,11 +207,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -187,20 +220,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRebootInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_start_instance_async(self, request):
         """批量启动边缘实例
@@ -214,9 +243,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.BatchStartInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.BatchStartInstanceResponse`
         """
-        return self._batch_start_instance_with_http_info(request)
+        http_info = self._batch_start_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_start_instance_with_http_info(self, request):
+    def batch_start_instance_async_invoker(self, request):
+        http_info = self._batch_start_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_start_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStartInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +272,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +285,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStartInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_stop_instance_async(self, request):
         """批量关机边缘实例
@@ -271,9 +308,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.BatchStopInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.BatchStopInstanceResponse`
         """
-        return self._batch_stop_instance_with_http_info(request)
+        http_info = self._batch_stop_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_stop_instance_with_http_info(self, request):
+    def batch_stop_instance_async_invoker(self, request):
+        http_info = self._batch_stop_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_stop_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStopInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -288,11 +337,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -301,20 +350,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStopInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_os_async(self, request):
         """切换操作系统
@@ -330,9 +375,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ChangeOsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ChangeOsResponse`
         """
-        return self._change_os_with_http_info(request)
+        http_info = self._change_os_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_os_with_http_info(self, request):
+    def change_os_async_invoker(self, request):
+        http_info = self._change_os_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_os_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudservers/{instance_id}/change-os",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeOsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -349,11 +406,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -362,20 +419,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/{instance_id}/change-os',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeOsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_deployment_async(self, request):
         """创建部署计划
@@ -395,9 +448,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateDeploymentResponse`
         """
-        return self._create_deployment_with_http_info(request)
+        http_info = self._create_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_deployment_with_http_info(self, request):
+    def create_deployment_async_invoker(self, request):
+        http_info = self._create_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_deployment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -412,11 +477,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -425,20 +490,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/deployments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_image_async(self, request):
         """从边缘实例创建边缘私有镜像
@@ -452,9 +513,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateImageRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateImageResponse`
         """
-        return self._create_image_with_http_info(request)
+        http_info = self._create_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_image_with_http_info(self, request):
+    def create_image_async_invoker(self, request):
+        http_info = self._create_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/images/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -469,11 +542,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -482,20 +555,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/images/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_keypair_async(self, request):
         """创建和导入密钥
@@ -511,9 +580,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateKeypairRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateKeypairResponse`
         """
-        return self._create_keypair_with_http_info(request)
+        http_info = self._create_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_keypair_with_http_info(self, request):
+    def create_keypair_async_invoker(self, request):
+        http_info = self._create_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_keypair_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/os-keypairs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -528,11 +609,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -541,20 +622,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/os-keypairs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_port_async(self, request):
         """创建端口
@@ -568,9 +645,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreatePortRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreatePortResponse`
         """
-        return self._create_port_with_http_info(request)
+        http_info = self._create_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_port_with_http_info(self, request):
+    def create_port_async_invoker(self, request):
+        http_info = self._create_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_port_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -585,11 +674,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -598,20 +687,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ports',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_routes_async(self, request):
         """创建路由
@@ -625,9 +710,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateRoutesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateRoutesResponse`
         """
-        return self._create_routes_with_http_info(request)
+        http_info = self._create_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_routes_with_http_info(self, request):
+    def create_routes_async_invoker(self, request):
+        http_info = self._create_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_routes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/routetables/{routetable_id}/add-routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -644,11 +741,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -657,20 +754,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}/add-routes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_routetable_async(self, request):
         """创建路由表
@@ -684,9 +777,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateRoutetableRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateRoutetableResponse`
         """
-        return self._create_routetable_with_http_info(request)
+        http_info = self._create_routetable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_routetable_with_http_info(self, request):
+    def create_routetable_async_invoker(self, request):
+        http_info = self._create_routetable_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_routetable_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/routetables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRoutetableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,11 +806,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -714,20 +819,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRoutetableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_security_group_async(self, request):
         """创建边缘安全组
@@ -741,9 +842,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupResponse`
         """
-        return self._create_security_group_with_http_info(request)
+        http_info = self._create_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_security_group_with_http_info(self, request):
+    def create_security_group_async_invoker(self, request):
+        http_info = self._create_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_security_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -758,11 +871,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -771,20 +884,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/security-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_security_group_rule_async(self, request):
         """创建安全组规则
@@ -798,9 +907,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateSecurityGroupRuleResponse`
         """
-        return self._create_security_group_rule_with_http_info(request)
+        http_info = self._create_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_security_group_rule_with_http_info(self, request):
+    def create_security_group_rule_async_invoker(self, request):
+        http_info = self._create_security_group_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_security_group_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/security-group-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -815,11 +936,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -828,20 +949,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/security-group-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc_async(self, request):
         """创建虚拟私有云
@@ -855,9 +972,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateVpcRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateVpcResponse`
         """
-        return self._create_vpc_with_http_info(request)
+        http_info = self._create_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_with_http_info(self, request):
+    def create_vpc_async_invoker(self, request):
+        http_info = self._create_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vpc_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -872,11 +1001,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -885,20 +1014,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/vpcs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_bandwidth_async(self, request):
         """删除带宽
@@ -912,9 +1037,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteBandwidthRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteBandwidthResponse`
         """
-        return self._delete_bandwidth_with_http_info(request)
+        http_info = self._delete_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_bandwidth_with_http_info(self, request):
+    def delete_bandwidth_async_invoker(self, request):
+        http_info = self._delete_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/bandwidths/{bandwidth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -931,9 +1068,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -942,20 +1079,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/bandwidths/{bandwidth_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_deployment_async(self, request):
         """删除部署计划
@@ -969,9 +1102,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteDeploymentResponse`
         """
-        return self._delete_deployment_with_http_info(request)
+        http_info = self._delete_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_deployment_with_http_info(self, request):
+    def delete_deployment_async_invoker(self, request):
+        http_info = self._delete_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_deployment_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -988,9 +1133,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -999,20 +1144,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/deployments/{deployment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_cloud_async(self, request):
         """删除边缘业务
@@ -1026,9 +1167,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteEdgeCloudRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteEdgeCloudResponse`
         """
-        return self._delete_edge_cloud_with_http_info(request)
+        http_info = self._delete_edge_cloud_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_cloud_with_http_info(self, request):
+    def delete_edge_cloud_async_invoker(self, request):
+        http_info = self._delete_edge_cloud_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_edge_cloud_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/edgeclouds/{edgecloud_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeCloudResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1045,9 +1198,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1056,20 +1209,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgeclouds/{edgecloud_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeCloudResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_image_async(self, request):
         """删除边缘私有镜像
@@ -1083,9 +1232,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteImageRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteImageResponse`
         """
-        return self._delete_image_with_http_info(request)
+        http_info = self._delete_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_image_with_http_info(self, request):
+    def delete_image_async_invoker(self, request):
+        http_info = self._delete_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_image_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1102,9 +1263,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1113,20 +1274,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/images/{image_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instances_async(self, request):
         """批量删除边缘实例
@@ -1140,9 +1297,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteInstancesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteInstancesResponse`
         """
-        return self._delete_instances_with_http_info(request)
+        http_info = self._delete_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instances_with_http_info(self, request):
+    def delete_instances_async_invoker(self, request):
+        http_info = self._delete_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudservers/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1157,11 +1326,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1170,20 +1339,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_keypair_async(self, request):
         """删除密钥
@@ -1197,9 +1362,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteKeypairRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteKeypairResponse`
         """
-        return self._delete_keypair_with_http_info(request)
+        http_info = self._delete_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_keypair_with_http_info(self, request):
+    def delete_keypair_async_invoker(self, request):
+        http_info = self._delete_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_keypair_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/os-keypairs/{keypair_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1216,9 +1393,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1227,20 +1404,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/os-keypairs/{keypair_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_nics_async(self, request):
         """删除网卡
@@ -1254,9 +1427,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteNicsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteNicsResponse`
         """
-        return self._delete_nics_with_http_info(request)
+        http_info = self._delete_nics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_nics_with_http_info(self, request):
+    def delete_nics_async_invoker(self, request):
+        http_info = self._delete_nics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_nics_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudservers/{instance_id}/nics/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1273,11 +1458,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1286,20 +1471,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/{instance_id}/nics/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_port_async(self, request):
         """删除端口
@@ -1313,9 +1494,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeletePortRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeletePortResponse`
         """
-        return self._delete_port_with_http_info(request)
+        http_info = self._delete_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_port_with_http_info(self, request):
+    def delete_port_async_invoker(self, request):
+        http_info = self._delete_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_port_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1332,9 +1525,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1343,20 +1536,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ports/{port_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_routes_async(self, request):
         """删除路由
@@ -1370,9 +1559,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteRoutesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteRoutesResponse`
         """
-        return self._delete_routes_with_http_info(request)
+        http_info = self._delete_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_routes_with_http_info(self, request):
+    def delete_routes_async_invoker(self, request):
+        http_info = self._delete_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_routes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/routetables/{routetable_id}/delete-routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1389,11 +1590,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1402,20 +1603,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}/delete-routes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_routetable_async(self, request):
         """删除路由表
@@ -1429,9 +1626,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteRoutetableRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteRoutetableResponse`
         """
-        return self._delete_routetable_with_http_info(request)
+        http_info = self._delete_routetable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_routetable_with_http_info(self, request):
+    def delete_routetable_async_invoker(self, request):
+        http_info = self._delete_routetable_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_routetable_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/routetables/{routetable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRoutetableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1448,9 +1657,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1459,20 +1668,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRoutetableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_security_group_async(self, request):
         """删除安全组
@@ -1486,9 +1691,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupResponse`
         """
-        return self._delete_security_group_with_http_info(request)
+        http_info = self._delete_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_security_group_with_http_info(self, request):
+    def delete_security_group_async_invoker(self, request):
+        http_info = self._delete_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_security_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1505,9 +1722,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1516,20 +1733,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/security-groups/{security_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_security_group_rule_async(self, request):
         """删除安全组规则
@@ -1543,9 +1756,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteSecurityGroupRuleResponse`
         """
-        return self._delete_security_group_rule_with_http_info(request)
+        http_info = self._delete_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_security_group_rule_with_http_info(self, request):
+    def delete_security_group_rule_async_invoker(self, request):
+        http_info = self._delete_security_group_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_security_group_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/security-group-rules/{security_group_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1562,9 +1787,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1573,20 +1798,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/security-group-rules/{security_group_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_subnet_async(self, request):
         """删除子网
@@ -1600,9 +1821,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteSubnetResponse`
         """
-        return self._delete_subnet_with_http_info(request)
+        http_info = self._delete_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_subnet_with_http_info(self, request):
+    def delete_subnet_async_invoker(self, request):
+        http_info = self._delete_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_subnet_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1619,9 +1852,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1630,20 +1863,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/subnets/{subnet_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc_async(self, request):
         """删除虚拟私有云
@@ -1657,9 +1886,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteVpcRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteVpcResponse`
         """
-        return self._delete_vpc_with_http_info(request)
+        http_info = self._delete_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_with_http_info(self, request):
+    def delete_vpc_async_invoker(self, request):
+        http_info = self._delete_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vpc_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1676,9 +1917,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1687,20 +1928,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/vpcs/{vpc_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_subnet_async(self, request):
         """路由表解关联子网
@@ -1714,9 +1951,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DisassociateSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DisassociateSubnetResponse`
         """
-        return self._disassociate_subnet_with_http_info(request)
+        http_info = self._disassociate_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_subnet_with_http_info(self, request):
+    def disassociate_subnet_async_invoker(self, request):
+        http_info = self._disassociate_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_subnet_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/routetables/{routetable_id}/disassociate-subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1733,11 +1982,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1746,20 +1995,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}/disassociate-subnets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_deployment_async(self, request):
         """执行部署计划
@@ -1773,9 +2018,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ExecuteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ExecuteDeploymentResponse`
         """
-        return self._execute_deployment_with_http_info(request)
+        http_info = self._execute_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_deployment_with_http_info(self, request):
+    def execute_deployment_async_invoker(self, request):
+        http_info = self._execute_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_deployment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/deployments/{deployment_id}/deploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1792,9 +2049,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1803,20 +2060,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/deployments/{deployment_id}/deploy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_edgecloud_async(self, request):
         """扩容边缘业务
@@ -1830,9 +2083,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ExpandEdgecloudRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ExpandEdgecloudResponse`
         """
-        return self._expand_edgecloud_with_http_info(request)
+        http_info = self._expand_edgecloud_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_edgecloud_with_http_info(self, request):
+    def expand_edgecloud_async_invoker(self, request):
+        http_info = self._expand_edgecloud_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _expand_edgecloud_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/deployments/{deployment_id}/expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandEdgecloudResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1849,9 +2114,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1860,20 +2125,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/deployments/{deployment_id}/expand',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandEdgecloudResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bandwidths_async(self, request):
         """查询带宽列表
@@ -1887,9 +2148,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListBandwidthsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListBandwidthsResponse`
         """
-        return self._list_bandwidths_with_http_info(request)
+        http_info = self._list_bandwidths_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bandwidths_with_http_info(self, request):
+    def list_bandwidths_async_invoker(self, request):
+        http_info = self._list_bandwidths_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidths_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1910,9 +2183,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1921,20 +2194,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/bandwidths',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBandwidthsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_images_async(self, request):
         """查询中心镜像列表
@@ -1948,9 +2217,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListCloudImagesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListCloudImagesResponse`
         """
-        return self._list_cloud_images_with_http_info(request)
+        http_info = self._list_cloud_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_images_with_http_info(self, request):
+    def list_cloud_images_async_invoker(self, request):
+        http_info = self._list_cloud_images_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_images_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudimages/{region_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2013,9 +2294,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2024,20 +2305,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/{region_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_deployments_async(self, request):
         """查询部署计划列表
@@ -2051,9 +2328,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListDeploymentsResponse`
         """
-        return self._list_deployments_with_http_info(request)
+        http_info = self._list_deployments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_deployments_with_http_info(self, request):
+    def list_deployments_async_invoker(self, request):
+        http_info = self._list_deployments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_deployments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDeploymentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2078,9 +2367,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2089,20 +2378,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/deployments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDeploymentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_cloud_async(self, request):
         """查询边缘业务列表
@@ -2116,9 +2401,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListEdgeCloudRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListEdgeCloudResponse`
         """
-        return self._list_edge_cloud_with_http_info(request)
+        http_info = self._list_edge_cloud_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_cloud_with_http_info(self, request):
+    def list_edge_cloud_async_invoker(self, request):
+        http_info = self._list_edge_cloud_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_edge_cloud_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgeclouds",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeCloudResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2141,9 +2438,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2152,20 +2449,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgeclouds',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeCloudResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors_async(self, request):
         """查询边缘规格列表
@@ -2179,9 +2472,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_async_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudservers/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2214,9 +2519,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2225,20 +2530,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_images_async(self, request):
         """查询镜像列表
@@ -2255,9 +2556,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListImagesResponse`
         """
-        return self._list_images_with_http_info(request)
+        http_info = self._list_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_images_with_http_info(self, request):
+    def list_images_async_invoker(self, request):
+        http_info = self._list_images_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_images_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2310,9 +2623,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2321,20 +2634,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/images',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_async(self, request):
         """查询边缘实例列表
@@ -2348,9 +2657,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListInstancesResponse`
         """
-        return self._list_instances_with_http_info(request)
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_with_http_info(self, request):
+    def list_instances_async_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2383,9 +2704,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2394,20 +2715,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_keypairs_async(self, request):
         """查询密钥列表
@@ -2421,9 +2738,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListKeypairsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListKeypairsResponse`
         """
-        return self._list_keypairs_with_http_info(request)
+        http_info = self._list_keypairs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_keypairs_with_http_info(self, request):
+    def list_keypairs_async_invoker(self, request):
+        http_info = self._list_keypairs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_keypairs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/os-keypairs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKeypairsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2444,9 +2773,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2455,20 +2784,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/os-keypairs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKeypairsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ports_async(self, request):
         """查询端口列表
@@ -2482,9 +2807,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListPortsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListPortsResponse`
         """
-        return self._list_ports_with_http_info(request)
+        http_info = self._list_ports_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ports_with_http_info(self, request):
+    def list_ports_async_invoker(self, request):
+        http_info = self._list_ports_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ports_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2524,9 +2861,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2535,20 +2872,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ports',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPortsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quota_async(self, request):
         """查询配额
@@ -2562,9 +2895,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListQuotaRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListQuotaResponse`
         """
-        return self._list_quota_with_http_info(request)
+        http_info = self._list_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quota_with_http_info(self, request):
+    def list_quota_async_invoker(self, request):
+        http_info = self._list_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgeclouds/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2579,9 +2924,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2590,20 +2935,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgeclouds/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_related_routetables_async(self, request):
         """查询子网关联的路由表
@@ -2617,9 +2958,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListRelatedRoutetablesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListRelatedRoutetablesResponse`
         """
-        return self._list_related_routetables_with_http_info(request)
+        http_info = self._list_related_routetables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_related_routetables_with_http_info(self, request):
+    def list_related_routetables_async_invoker(self, request):
+        http_info = self._list_related_routetables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_related_routetables_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/subnets/{subnet_id}/routetables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelatedRoutetablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2636,9 +2989,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2647,20 +3000,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/subnets/{subnet_id}/routetables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRelatedRoutetablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_routes_async(self, request):
         """查询路由列表
@@ -2674,9 +3023,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListRoutesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListRoutesResponse`
         """
-        return self._list_routes_with_http_info(request)
+        http_info = self._list_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_routes_with_http_info(self, request):
+    def list_routes_async_invoker(self, request):
+        http_info = self._list_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_routes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/routetables/{routetable_id}/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2693,9 +3054,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2704,20 +3065,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}/routes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_routetables_async(self, request):
         """查询路由表列表
@@ -2731,9 +3088,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListRoutetablesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListRoutetablesResponse`
         """
-        return self._list_routetables_with_http_info(request)
+        http_info = self._list_routetables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_routetables_with_http_info(self, request):
+    def list_routetables_async_invoker(self, request):
+        http_info = self._list_routetables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_routetables_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/routetables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRoutetablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2758,9 +3127,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2769,20 +3138,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRoutetablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_security_group_rules_async(self, request):
         """查询安全组规则列表
@@ -2796,9 +3161,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListSecurityGroupRulesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListSecurityGroupRulesResponse`
         """
-        return self._list_security_group_rules_with_http_info(request)
+        http_info = self._list_security_group_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_security_group_rules_with_http_info(self, request):
+    def list_security_group_rules_async_invoker(self, request):
+        http_info = self._list_security_group_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_group_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/security-group-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2819,9 +3196,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2830,20 +3207,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/security-group-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecurityGroupRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_security_groups_async(self, request):
         """查询安全组列表
@@ -2857,9 +3230,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListSecurityGroupsResponse`
         """
-        return self._list_security_groups_with_http_info(request)
+        http_info = self._list_security_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_security_groups_with_http_info(self, request):
+    def list_security_groups_async_invoker(self, request):
+        http_info = self._list_security_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2878,9 +3263,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2889,20 +3274,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/security-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecurityGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sites_async(self, request):
         """查询边缘站点列表
@@ -2919,9 +3300,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListSitesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListSitesResponse`
         """
-        return self._list_sites_with_http_info(request)
+        http_info = self._list_sites_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sites_with_http_info(self, request):
+    def list_sites_async_invoker(self, request):
+        http_info = self._list_sites_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sites_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sites",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSitesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2952,9 +3345,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2963,20 +3356,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sites',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSitesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subnets_async(self, request):
         """查询子网列表
@@ -2990,9 +3379,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListSubnetsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListSubnetsResponse`
         """
-        return self._list_subnets_with_http_info(request)
+        http_info = self._list_subnets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subnets_with_http_info(self, request):
+    def list_subnets_async_invoker(self, request):
+        http_info = self._list_subnets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_subnets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubnetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3015,9 +3416,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3026,20 +3427,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/subnets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubnetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpcs_async(self, request):
         """查询虚拟私有云列表
@@ -3053,9 +3450,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListVpcsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListVpcsResponse`
         """
-        return self._list_vpcs_with_http_info(request)
+        http_info = self._list_vpcs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpcs_with_http_info(self, request):
+    def list_vpcs_async_invoker(self, request):
+        http_info = self._list_vpcs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpcs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3078,9 +3487,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3089,20 +3498,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/vpcs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rebuild_image_async(self, request):
         """重试边缘镜像任务
@@ -3116,9 +3521,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.RebuildImageRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.RebuildImageResponse`
         """
-        return self._rebuild_image_with_http_info(request)
+        http_info = self._rebuild_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rebuild_image_with_http_info(self, request):
+    def rebuild_image_async_invoker(self, request):
+        http_info = self._rebuild_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _rebuild_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/jobs/{job_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebuildImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3135,11 +3552,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3148,20 +3565,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/jobs/{job_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RebuildImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_image_async(self, request):
         """注册边缘私有镜像
@@ -3176,9 +3589,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.RegisterImageRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.RegisterImageResponse`
         """
-        return self._register_image_with_http_info(request)
+        http_info = self._register_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_image_with_http_info(self, request):
+    def register_image_async_invoker(self, request):
+        http_info = self._register_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/images/register",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3193,11 +3618,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3206,20 +3631,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/images/register',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bandwidth_async(self, request):
         """查询带宽详情
@@ -3233,9 +3654,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowBandwidthRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowBandwidthResponse`
         """
-        return self._show_bandwidth_with_http_info(request)
+        http_info = self._show_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bandwidth_with_http_info(self, request):
+    def show_bandwidth_async_invoker(self, request):
+        http_info = self._show_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/bandwidths/{bandwidth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3252,9 +3685,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3263,20 +3696,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/bandwidths/{bandwidth_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_cloud_async(self, request):
         """查询边缘业务详情
@@ -3290,9 +3719,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowEdgeCloudRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowEdgeCloudResponse`
         """
-        return self._show_edge_cloud_with_http_info(request)
+        http_info = self._show_edge_cloud_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_cloud_with_http_info(self, request):
+    def show_edge_cloud_async_invoker(self, request):
+        http_info = self._show_edge_cloud_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_edge_cloud_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/edgeclouds/{edgecloud_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeCloudResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3309,9 +3750,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3320,20 +3761,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/edgeclouds/{edgecloud_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeCloudResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_image_async(self, request):
         """查询镜像详情
@@ -3347,9 +3784,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowImageRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowImageResponse`
         """
-        return self._show_image_with_http_info(request)
+        http_info = self._show_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_image_with_http_info(self, request):
+    def show_image_async_invoker(self, request):
+        http_info = self._show_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_image_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3366,9 +3815,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3377,20 +3826,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/images/{image_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_async(self, request):
         """查询边缘实例详情
@@ -3404,9 +3849,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowInstanceResponse`
         """
-        return self._show_instance_with_http_info(request)
+        http_info = self._show_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_with_http_info(self, request):
+    def show_instance_async_invoker(self, request):
+        http_info = self._show_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudservers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3423,9 +3880,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3434,20 +3891,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/{server_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_keypair_async(self, request):
         """查询密钥详情
@@ -3461,9 +3914,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowKeypairRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowKeypairResponse`
         """
-        return self._show_keypair_with_http_info(request)
+        http_info = self._show_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_keypair_with_http_info(self, request):
+    def show_keypair_async_invoker(self, request):
+        http_info = self._show_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_keypair_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/os-keypairs/{keypair_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3480,9 +3945,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3491,20 +3956,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/os-keypairs/{keypair_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_port_async(self, request):
         """查询端口详情
@@ -3518,9 +3979,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowPortRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowPortResponse`
         """
-        return self._show_port_with_http_info(request)
+        http_info = self._show_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_port_with_http_info(self, request):
+    def show_port_async_invoker(self, request):
+        http_info = self._show_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_port_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3537,9 +4010,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3548,20 +4021,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ports/{port_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_routetable_async(self, request):
         """查询路由表详情
@@ -3575,9 +4044,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowRoutetableRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowRoutetableResponse`
         """
-        return self._show_routetable_with_http_info(request)
+        http_info = self._show_routetable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_routetable_with_http_info(self, request):
+    def show_routetable_async_invoker(self, request):
+        http_info = self._show_routetable_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_routetable_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/routetables/{routetable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRoutetableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3594,9 +4075,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3605,20 +4086,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRoutetableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_security_group_async(self, request):
         """查询安全组详情
@@ -3632,9 +4109,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupResponse`
         """
-        return self._show_security_group_with_http_info(request)
+        http_info = self._show_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_security_group_with_http_info(self, request):
+    def show_security_group_async_invoker(self, request):
+        http_info = self._show_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_security_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3651,9 +4140,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3662,20 +4151,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/security-groups/{security_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_security_group_rule_async(self, request):
         """查询安全组规则详情
@@ -3689,9 +4174,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowSecurityGroupRuleResponse`
         """
-        return self._show_security_group_rule_with_http_info(request)
+        http_info = self._show_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_security_group_rule_with_http_info(self, request):
+    def show_security_group_rule_async_invoker(self, request):
+        http_info = self._show_security_group_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_security_group_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/security-group-rules/{security_group_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3708,9 +4205,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3719,20 +4216,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/security-group-rules/{security_group_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_subnet_async(self, request):
         """查询子网详情
@@ -3746,9 +4239,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowSubnetResponse`
         """
-        return self._show_subnet_with_http_info(request)
+        http_info = self._show_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_subnet_with_http_info(self, request):
+    def show_subnet_async_invoker(self, request):
+        http_info = self._show_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_subnet_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3765,9 +4270,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3776,20 +4281,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/subnets/{subnet_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_volume_async(self, request):
         """查询硬盘详情
@@ -3803,9 +4304,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowVolumeRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowVolumeResponse`
         """
-        return self._show_volume_with_http_info(request)
+        http_info = self._show_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_volume_with_http_info(self, request):
+    def show_volume_async_invoker(self, request):
+        http_info = self._show_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_volume_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudvolumes/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3822,9 +4335,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3833,20 +4346,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudvolumes/{volume_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_volume_types_async(self, request):
         """查询硬盘类型列表
@@ -3860,9 +4369,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowVolumeTypesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowVolumeTypesResponse`
         """
-        return self._show_volume_types_with_http_info(request)
+        http_info = self._show_volume_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_volume_types_with_http_info(self, request):
+    def show_volume_types_async_invoker(self, request):
+        http_info = self._show_volume_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_volume_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudvolumes/volume-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVolumeTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3877,9 +4398,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3888,20 +4409,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudvolumes/volume-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVolumeTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpc_async(self, request):
         """查询虚拟私有云详情
@@ -3915,9 +4432,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowVpcRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowVpcResponse`
         """
-        return self._show_vpc_with_http_info(request)
+        http_info = self._show_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpc_with_http_info(self, request):
+    def show_vpc_async_invoker(self, request):
+        http_info = self._show_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vpc_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3934,9 +4463,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3945,20 +4474,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/vpcs/{vpc_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_bandwidth_async(self, request):
         """更新带宽
@@ -3972,9 +4497,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateBandwidthRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateBandwidthResponse`
         """
-        return self._update_bandwidth_with_http_info(request)
+        http_info = self._update_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_bandwidth_with_http_info(self, request):
+    def update_bandwidth_async_invoker(self, request):
+        http_info = self._update_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/bandwidths/{bandwidth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3991,11 +4528,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4004,20 +4541,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/bandwidths/{bandwidth_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_async(self, request):
         """修改边缘实例
@@ -4031,9 +4564,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateInstanceResponse`
         """
-        return self._update_instance_with_http_info(request)
+        http_info = self._update_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_with_http_info(self, request):
+    def update_instance_async_invoker(self, request):
+        http_info = self._update_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/cloudservers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4050,11 +4595,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4063,20 +4608,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudservers/{server_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_port_async(self, request):
         """更新端口
@@ -4090,9 +4631,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdatePortRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdatePortResponse`
         """
-        return self._update_port_with_http_info(request)
+        http_info = self._update_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_port_with_http_info(self, request):
+    def update_port_async_invoker(self, request):
+        http_info = self._update_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_port_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4109,11 +4662,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4122,20 +4675,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ports/{port_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_routes_async(self, request):
         """更新路由
@@ -4149,9 +4698,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateRoutesRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateRoutesResponse`
         """
-        return self._update_routes_with_http_info(request)
+        http_info = self._update_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_routes_with_http_info(self, request):
+    def update_routes_async_invoker(self, request):
+        http_info = self._update_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_routes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/routetables/{routetable_id}/update-routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4168,11 +4729,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4181,20 +4742,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}/update-routes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_routetable_async(self, request):
         """更新路由表
@@ -4208,9 +4765,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateRoutetableRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateRoutetableResponse`
         """
-        return self._update_routetable_with_http_info(request)
+        http_info = self._update_routetable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_routetable_with_http_info(self, request):
+    def update_routetable_async_invoker(self, request):
+        http_info = self._update_routetable_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_routetable_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/routetables/{routetable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRoutetableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4227,11 +4796,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4240,20 +4809,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/routetables/{routetable_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRoutetableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_subnet_async(self, request):
         """更新子网
@@ -4267,9 +4832,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateSubnetRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateSubnetResponse`
         """
-        return self._update_subnet_with_http_info(request)
+        http_info = self._update_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_subnet_with_http_info(self, request):
+    def update_subnet_async_invoker(self, request):
+        http_info = self._update_subnet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_subnet_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4286,11 +4863,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4299,20 +4876,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/subnets/{subnet_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpc_async(self, request):
         """更新虚拟私有云
@@ -4326,9 +4899,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateVpcRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateVpcResponse`
         """
-        return self._update_vpc_with_http_info(request)
+        http_info = self._update_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpc_with_http_info(self, request):
+    def update_vpc_async_invoker(self, request):
+        http_info = self._update_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpc_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4345,11 +4930,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4358,20 +4943,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/vpcs/{vpc_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_firewall_async(self, request):
         """创建网络ACL
@@ -4385,9 +4966,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreateFirewallRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreateFirewallResponse`
         """
-        return self._create_firewall_with_http_info(request)
+        http_info = self._create_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_firewall_with_http_info(self, request):
+    def create_firewall_async_invoker(self, request):
+        http_info = self._create_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_firewall_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/firewalls",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4402,11 +4995,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4415,20 +5008,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/firewalls',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_firewall_async(self, request):
         """删除网络ACL
@@ -4442,9 +5031,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeleteFirewallRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeleteFirewallResponse`
         """
-        return self._delete_firewall_with_http_info(request)
+        http_info = self._delete_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_firewall_with_http_info(self, request):
+    def delete_firewall_async_invoker(self, request):
+        http_info = self._delete_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_firewall_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/firewalls/{firewall_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4461,9 +5062,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4472,20 +5073,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/firewalls/{firewall_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_firewalls_async(self, request):
         """查询网络ACL列表
@@ -4499,9 +5096,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListFirewallsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListFirewallsResponse`
         """
-        return self._list_firewalls_with_http_info(request)
+        http_info = self._list_firewalls_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_firewalls_with_http_info(self, request):
+    def list_firewalls_async_invoker(self, request):
+        http_info = self._list_firewalls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_firewalls_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/firewalls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFirewallsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4524,9 +5133,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4535,20 +5144,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/firewalls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFirewallsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_firewall_async(self, request):
         """查询网络ACL详情
@@ -4562,9 +5167,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowFirewallRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowFirewallResponse`
         """
-        return self._show_firewall_with_http_info(request)
+        http_info = self._show_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_firewall_with_http_info(self, request):
+    def show_firewall_async_invoker(self, request):
+        http_info = self._show_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_firewall_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/firewalls/{firewall_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4581,9 +5198,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4592,20 +5209,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/firewalls/{firewall_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_firewall_async(self, request):
         """更新网络ACL
@@ -4619,9 +5232,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateFirewallRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateFirewallResponse`
         """
-        return self._update_firewall_with_http_info(request)
+        http_info = self._update_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_firewall_with_http_info(self, request):
+    def update_firewall_async_invoker(self, request):
+        http_info = self._update_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_firewall_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/firewalls/{firewall_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4638,11 +5263,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4651,20 +5276,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/firewalls/{firewall_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_firewall_rule_async(self, request):
         """更新网络ACL规则
@@ -4678,9 +5299,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdateFirewallRuleResponse`
         """
-        return self._update_firewall_rule_with_http_info(request)
+        http_info = self._update_firewall_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_firewall_rule_with_http_info(self, request):
+    def update_firewall_rule_async_invoker(self, request):
+        http_info = self._update_firewall_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_firewall_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/firewalls/{firewall_id}/firewall-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFirewallRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4697,11 +5330,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4710,20 +5343,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/firewalls/{firewall_id}/firewall-rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFirewallRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_public_ip_async(self, request):
         """创建弹性公网IP
@@ -4737,9 +5366,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.CreatePublicIpRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.CreatePublicIpResponse`
         """
-        return self._create_public_ip_with_http_info(request)
+        http_info = self._create_public_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_public_ip_with_http_info(self, request):
+    def create_public_ip_async_invoker(self, request):
+        http_info = self._create_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_public_ip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/publicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePublicIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4754,11 +5395,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4767,20 +5408,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/publicips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePublicIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_public_ip_async(self, request):
         """删除弹性公网IP
@@ -4794,9 +5431,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.DeletePublicIpRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.DeletePublicIpResponse`
         """
-        return self._delete_public_ip_with_http_info(request)
+        http_info = self._delete_public_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_public_ip_with_http_info(self, request):
+    def delete_public_ip_async_invoker(self, request):
+        http_info = self._delete_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_public_ip_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/publicips/{publicip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePublicIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4813,9 +5462,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4824,20 +5473,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/publicips/{publicip_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePublicIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_public_ips_async(self, request):
         """查询弹性公网IP列表
@@ -4851,9 +5496,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ListPublicIpsRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ListPublicIpsResponse`
         """
-        return self._list_public_ips_with_http_info(request)
+        http_info = self._list_public_ips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_public_ips_with_http_info(self, request):
+    def list_public_ips_async_invoker(self, request):
+        http_info = self._list_public_ips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_public_ips_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/publicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublicIpsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4876,9 +5533,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4887,20 +5544,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/publicips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPublicIpsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_public_ip_async(self, request):
         """查询弹性公网IP
@@ -4914,9 +5567,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.ShowPublicIpRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.ShowPublicIpResponse`
         """
-        return self._show_public_ip_with_http_info(request)
+        http_info = self._show_public_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_public_ip_with_http_info(self, request):
+    def show_public_ip_async_invoker(self, request):
+        http_info = self._show_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_public_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/publicips/{publicip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4933,9 +5598,9 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4944,20 +5609,16 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/publicips/{publicip_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_public_ip_async(self, request):
         """更新弹性公网IP
@@ -4971,9 +5632,21 @@ class IecAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiec.v1.UpdatePublicIpRequest`
         :rtype: :class:`huaweicloudsdkiec.v1.UpdatePublicIpResponse`
         """
-        return self._update_public_ip_with_http_info(request)
+        http_info = self._update_public_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_public_ip_with_http_info(self, request):
+    def update_public_ip_async_invoker(self, request):
+        http_info = self._update_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_public_ip_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/publicips/{publicip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4990,11 +5663,11 @@ class IecAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5003,20 +5676,26 @@ class IecAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/publicips/{publicip_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePublicIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -5055,4 +5734,4 @@ class IecAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

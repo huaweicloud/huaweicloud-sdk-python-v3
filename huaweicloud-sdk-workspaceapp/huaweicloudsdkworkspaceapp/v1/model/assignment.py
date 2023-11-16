@@ -17,41 +17,62 @@ class Assignment:
     sensitive_list = []
 
     openapi_types = {
+        'policy_statement_id': 'str',
         'attach': 'str',
-        'attach_type': 'AttachType',
-        'policy_statement_id': 'str'
+        'attach_type': 'AttachType'
     }
 
     attribute_map = {
+        'policy_statement_id': 'policy_statement_id',
         'attach': 'attach',
-        'attach_type': 'attach_type',
-        'policy_statement_id': 'policy_statement_id'
+        'attach_type': 'attach_type'
     }
 
-    def __init__(self, attach=None, attach_type=None, policy_statement_id=None):
+    def __init__(self, policy_statement_id=None, attach=None, attach_type=None):
         """Assignment
 
         The model defined in huaweicloud sdk
 
+        :param policy_statement_id: 策略ID
+        :type policy_statement_id: str
         :param attach: 目标
         :type attach: str
         :param attach_type: 
         :type attach_type: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`
-        :param policy_statement_id: 策略ID
-        :type policy_statement_id: str
         """
         
         
 
+        self._policy_statement_id = None
         self._attach = None
         self._attach_type = None
-        self._policy_statement_id = None
         self.discriminator = None
 
+        self.policy_statement_id = policy_statement_id
         self.attach = attach
         self.attach_type = attach_type
-        if policy_statement_id is not None:
-            self.policy_statement_id = policy_statement_id
+
+    @property
+    def policy_statement_id(self):
+        """Gets the policy_statement_id of this Assignment.
+
+        策略ID
+
+        :return: The policy_statement_id of this Assignment.
+        :rtype: str
+        """
+        return self._policy_statement_id
+
+    @policy_statement_id.setter
+    def policy_statement_id(self, policy_statement_id):
+        """Sets the policy_statement_id of this Assignment.
+
+        策略ID
+
+        :param policy_statement_id: The policy_statement_id of this Assignment.
+        :type policy_statement_id: str
+        """
+        self._policy_statement_id = policy_statement_id
 
     @property
     def attach(self):
@@ -92,28 +113,6 @@ class Assignment:
         :type attach_type: :class:`huaweicloudsdkworkspaceapp.v1.AttachType`
         """
         self._attach_type = attach_type
-
-    @property
-    def policy_statement_id(self):
-        """Gets the policy_statement_id of this Assignment.
-
-        策略ID
-
-        :return: The policy_statement_id of this Assignment.
-        :rtype: str
-        """
-        return self._policy_statement_id
-
-    @policy_statement_id.setter
-    def policy_statement_id(self, policy_statement_id):
-        """Sets the policy_statement_id of this Assignment.
-
-        策略ID
-
-        :param policy_statement_id: The policy_statement_id of this Assignment.
-        :type policy_statement_id: str
-        """
-        self._policy_statement_id = policy_statement_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

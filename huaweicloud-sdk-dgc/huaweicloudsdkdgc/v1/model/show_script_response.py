@@ -25,7 +25,10 @@ class ShowScriptResponse(SdkResponse):
         'connection_name': 'str',
         'database': 'str',
         'queue_name': 'str',
-        'configuration': 'str'
+        'configuration': 'str',
+        'description': 'str',
+        'target_status': 'str',
+        'approvers': 'list[JobApprover]'
     }
 
     attribute_map = {
@@ -36,10 +39,13 @@ class ShowScriptResponse(SdkResponse):
         'connection_name': 'connectionName',
         'database': 'database',
         'queue_name': 'queueName',
-        'configuration': 'configuration'
+        'configuration': 'configuration',
+        'description': 'description',
+        'target_status': 'targetStatus',
+        'approvers': 'approvers'
     }
 
-    def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None):
+    def __init__(self, name=None, type=None, directory=None, content=None, connection_name=None, database=None, queue_name=None, configuration=None, description=None, target_status=None, approvers=None):
         """ShowScriptResponse
 
         The model defined in huaweicloud sdk
@@ -60,6 +66,12 @@ class ShowScriptResponse(SdkResponse):
         :type queue_name: str
         :param configuration: 脚本的配置项参数
         :type configuration: str
+        :param description: 脚本描述，长度不能超过255个字符
+        :type description: str
+        :param target_status: 在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态。
+        :type target_status: str
+        :param approvers: 在开启审批开关后，需要填写该字段，表示脚本审批人
+        :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
         """
         
         super(ShowScriptResponse, self).__init__()
@@ -72,6 +84,9 @@ class ShowScriptResponse(SdkResponse):
         self._database = None
         self._queue_name = None
         self._configuration = None
+        self._description = None
+        self._target_status = None
+        self._approvers = None
         self.discriminator = None
 
         if name is not None:
@@ -90,6 +105,12 @@ class ShowScriptResponse(SdkResponse):
             self.queue_name = queue_name
         if configuration is not None:
             self.configuration = configuration
+        if description is not None:
+            self.description = description
+        if target_status is not None:
+            self.target_status = target_status
+        if approvers is not None:
+            self.approvers = approvers
 
     @property
     def name(self):
@@ -262,6 +283,72 @@ class ShowScriptResponse(SdkResponse):
         :type configuration: str
         """
         self._configuration = configuration
+
+    @property
+    def description(self):
+        """Gets the description of this ShowScriptResponse.
+
+        脚本描述，长度不能超过255个字符
+
+        :return: The description of this ShowScriptResponse.
+        :rtype: str
+        """
+        return self._description
+
+    @description.setter
+    def description(self, description):
+        """Sets the description of this ShowScriptResponse.
+
+        脚本描述，长度不能超过255个字符
+
+        :param description: The description of this ShowScriptResponse.
+        :type description: str
+        """
+        self._description = description
+
+    @property
+    def target_status(self):
+        """Gets the target_status of this ShowScriptResponse.
+
+        在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态。
+
+        :return: The target_status of this ShowScriptResponse.
+        :rtype: str
+        """
+        return self._target_status
+
+    @target_status.setter
+    def target_status(self, target_status):
+        """Sets the target_status of this ShowScriptResponse.
+
+        在开启审批开关后，需要填写该字段。表示创建脚本的目标状态，有三种状态：SAVED、SUBMITTED和PRODUCTION，分别表示脚本创建后是保存态，提交态，生产态。
+
+        :param target_status: The target_status of this ShowScriptResponse.
+        :type target_status: str
+        """
+        self._target_status = target_status
+
+    @property
+    def approvers(self):
+        """Gets the approvers of this ShowScriptResponse.
+
+        在开启审批开关后，需要填写该字段，表示脚本审批人
+
+        :return: The approvers of this ShowScriptResponse.
+        :rtype: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        """
+        return self._approvers
+
+    @approvers.setter
+    def approvers(self, approvers):
+        """Sets the approvers of this ShowScriptResponse.
+
+        在开启审批开关后，需要填写该字段，表示脚本审批人
+
+        :param approvers: The approvers of this ShowScriptResponse.
+        :type approvers: list[:class:`huaweicloudsdkdgc.v1.JobApprover`]
+        """
+        self._approvers = approvers
 
     def to_dict(self):
         """Returns the model properties as a dict"""

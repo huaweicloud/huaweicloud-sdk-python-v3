@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcloudrtc'")
 
 
 class CloudRTCClient(Client):
@@ -38,9 +43,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateAppResponse`
         """
-        return self._create_app_with_http_info(request)
+        http_info = self._create_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_with_http_info(self, request):
+    def create_app_invoker(self, request):
+        http_info = self._create_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -63,11 +81,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -76,20 +94,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_individual_stream_job(self, request):
         """启动单流任务
@@ -106,9 +120,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateIndividualStreamJobResponse`
         """
-        return self._create_individual_stream_job_with_http_info(request)
+        http_info = self._create_individual_stream_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_individual_stream_job_with_http_info(self, request):
+    def create_individual_stream_job_invoker(self, request):
+        http_info = self._create_individual_stream_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_individual_stream_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/apps/{app_id}/individual-stream-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIndividualStreamJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -133,11 +160,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -146,20 +173,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/individual-stream-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIndividualStreamJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_mix_job(self, request):
         """启动合流任务
@@ -188,9 +211,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateMixJobResponse`
         """
-        return self._create_mix_job_with_http_info(request)
+        http_info = self._create_mix_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_mix_job_with_http_info(self, request):
+    def create_mix_job_invoker(self, request):
+        http_info = self._create_mix_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_mix_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/apps/{app_id}/mix-stream-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMixJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -215,11 +251,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -228,20 +264,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/mix-stream-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMixJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_record_rule(self, request):
         """创建或更新录制规则
@@ -257,9 +289,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.CreateRecordRuleResponse`
         """
-        return self._create_record_rule_with_http_info(request)
+        http_info = self._create_record_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_record_rule_with_http_info(self, request):
+    def create_record_rule_invoker(self, request):
+        http_info = self._create_record_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_record_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/apps/{app_id}/record-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -284,11 +329,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -297,20 +342,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/record-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRecordRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app(self, request):
         """删除应用
@@ -323,9 +364,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.DeleteAppResponse`
         """
-        return self._delete_app_with_http_info(request)
+        http_info = self._delete_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_with_http_info(self, request):
+    def delete_app_invoker(self, request):
+        http_info = self._delete_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -350,9 +404,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -361,20 +415,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_record_rule(self, request):
         """删除录制规则
@@ -387,9 +437,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.DeleteRecordRuleResponse`
         """
-        return self._delete_record_rule_with_http_info(request)
+        http_info = self._delete_record_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_record_rule_with_http_info(self, request):
+    def delete_record_rule_invoker(self, request):
+        http_info = self._delete_record_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_record_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/apps/{app_id}/record-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecordRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -416,9 +479,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -427,20 +490,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/record-rules/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRecordRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps(self, request):
         """查询应用列表
@@ -453,9 +512,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListAppsResponse`
         """
-        return self._list_apps_with_http_info(request)
+        http_info = self._list_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_with_http_info(self, request):
+    def list_apps_invoker(self, request):
+        http_info = self._list_apps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -484,9 +556,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -495,20 +567,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_record_rules(self, request):
         """查询录制规则列表
@@ -521,9 +589,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListRecordRulesResponse`
         """
-        return self._list_record_rules_with_http_info(request)
+        http_info = self._list_record_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_record_rules_with_http_info(self, request):
+    def list_record_rules_invoker(self, request):
+        http_info = self._list_record_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_record_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps/{app_id}/record-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -552,9 +633,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -563,20 +644,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/record-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecordRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_room(self, request):
         """解散房间
@@ -589,9 +666,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveRoomResponse`
         """
-        return self._remove_room_with_http_info(request)
+        http_info = self._remove_room_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_room_with_http_info(self, request):
+    def remove_room_invoker(self, request):
+        http_info = self._remove_room_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_room_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/apps/{app_id}/rooms/{room_id}/dismiss",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveRoomResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -618,9 +708,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -629,20 +719,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/rooms/{room_id}/dismiss',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveRoomResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_users(self, request):
         """踢除在线用户
@@ -655,9 +741,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.RemoveUsersResponse`
         """
-        return self._remove_users_with_http_info(request)
+        http_info = self._remove_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_users_with_http_info(self, request):
+    def remove_users_invoker(self, request):
+        http_info = self._remove_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_users_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/apps/{app_id}/rooms/{room_id}/batch-remove-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -684,11 +783,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -697,20 +796,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/rooms/{room_id}/batch-remove-users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app(self, request):
         """查询单个应用
@@ -723,9 +818,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowAppResponse`
         """
-        return self._show_app_with_http_info(request)
+        http_info = self._show_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_with_http_info(self, request):
+    def show_app_invoker(self, request):
+        http_info = self._show_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -750,9 +858,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -761,20 +869,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_auto_record(self, request):
         """查询自动录制配置
@@ -787,9 +891,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowAutoRecordResponse`
         """
-        return self._show_auto_record_with_http_info(request)
+        http_info = self._show_auto_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_auto_record_with_http_info(self, request):
+    def show_auto_record_invoker(self, request):
+        http_info = self._show_auto_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps/{app_id}/auto-record-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -814,9 +931,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -825,20 +942,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/auto-record-mode',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAutoRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_individual_stream_job(self, request):
         """查询单流任务状态
@@ -853,9 +966,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowIndividualStreamJobResponse`
         """
-        return self._show_individual_stream_job_with_http_info(request)
+        http_info = self._show_individual_stream_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_individual_stream_job_with_http_info(self, request):
+    def show_individual_stream_job_invoker(self, request):
+        http_info = self._show_individual_stream_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_individual_stream_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps/{app_id}/individual-stream-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIndividualStreamJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -882,9 +1008,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -893,20 +1019,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/individual-stream-jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIndividualStreamJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_mix_job(self, request):
         """查询合流任务
@@ -919,9 +1041,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowMixJobResponse`
         """
-        return self._show_mix_job_with_http_info(request)
+        http_info = self._show_mix_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_mix_job_with_http_info(self, request):
+    def show_mix_job_invoker(self, request):
+        http_info = self._show_mix_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_mix_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps/{app_id}/mix-stream-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMixJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -948,9 +1083,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -959,20 +1094,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/mix-stream-jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMixJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_record_callback(self, request):
         """查询增值（录制）事件回调配置
@@ -985,9 +1116,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordCallbackResponse`
         """
-        return self._show_record_callback_with_http_info(request)
+        http_info = self._show_record_callback_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_record_callback_with_http_info(self, request):
+    def show_record_callback_invoker(self, request):
+        http_info = self._show_record_callback_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_record_callback_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps/{app_id}/record-callback",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordCallbackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1012,9 +1156,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1023,20 +1167,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/record-callback',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordCallbackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_record_rule(self, request):
         """查询录制规则
@@ -1049,9 +1189,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowRecordRuleResponse`
         """
-        return self._show_record_rule_with_http_info(request)
+        http_info = self._show_record_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_record_rule_with_http_info(self, request):
+    def show_record_rule_invoker(self, request):
+        http_info = self._show_record_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_record_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps/{app_id}/record-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1078,9 +1231,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1089,20 +1242,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/record-rules/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_url_auth(self, request):
         """查询访问控制参数
@@ -1115,9 +1264,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ShowUrlAuthResponse`
         """
-        return self._show_url_auth_with_http_info(request)
+        http_info = self._show_url_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_url_auth_with_http_info(self, request):
+    def show_url_auth_invoker(self, request):
+        http_info = self._show_url_auth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_url_auth_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/apps/{app_id}/authentication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUrlAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1142,9 +1304,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1153,20 +1315,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/authentication',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUrlAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_app(self, request):
         """启用应用
@@ -1179,9 +1337,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StartAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StartAppResponse`
         """
-        return self._start_app_with_http_info(request)
+        http_info = self._start_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_app_with_http_info(self, request):
+    def start_app_invoker(self, request):
+        http_info = self._start_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/apps/{app_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1206,9 +1377,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1217,20 +1388,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_app(self, request):
         """停用应用
@@ -1245,9 +1412,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopAppRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopAppResponse`
         """
-        return self._stop_app_with_http_info(request)
+        http_info = self._stop_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_app_with_http_info(self, request):
+    def stop_app_invoker(self, request):
+        http_info = self._stop_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/apps/{app_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1272,9 +1452,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1283,20 +1463,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_individual_stream_job(self, request):
         """停止单流任务
@@ -1309,9 +1485,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopIndividualStreamJobResponse`
         """
-        return self._stop_individual_stream_job_with_http_info(request)
+        http_info = self._stop_individual_stream_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_individual_stream_job_with_http_info(self, request):
+    def stop_individual_stream_job_invoker(self, request):
+        http_info = self._stop_individual_stream_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_individual_stream_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/apps/{app_id}/individual-stream-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopIndividualStreamJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1338,9 +1527,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1349,20 +1538,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/individual-stream-jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopIndividualStreamJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_mix_job(self, request):
         """停止合流任务
@@ -1375,9 +1560,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.StopMixJobResponse`
         """
-        return self._stop_mix_job_with_http_info(request)
+        http_info = self._stop_mix_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_mix_job_with_http_info(self, request):
+    def stop_mix_job_invoker(self, request):
+        http_info = self._stop_mix_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_mix_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/apps/{app_id}/mix-stream-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopMixJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1404,9 +1602,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1415,20 +1613,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/mix-stream-jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopMixJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_auto_record(self, request):
         """更新自动录制配置
@@ -1441,9 +1635,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateAutoRecordResponse`
         """
-        return self._update_auto_record_with_http_info(request)
+        http_info = self._update_auto_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_auto_record_with_http_info(self, request):
+    def update_auto_record_invoker(self, request):
+        http_info = self._update_auto_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_auto_record_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/apps/{app_id}/auto-record-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutoRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1468,11 +1675,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1481,20 +1688,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/auto-record-mode',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAutoRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_individual_stream_job(self, request):
         """更新单流任务
@@ -1509,9 +1712,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateIndividualStreamJobResponse`
         """
-        return self._update_individual_stream_job_with_http_info(request)
+        http_info = self._update_individual_stream_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_individual_stream_job_with_http_info(self, request):
+    def update_individual_stream_job_invoker(self, request):
+        http_info = self._update_individual_stream_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_individual_stream_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/apps/{app_id}/individual-stream-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIndividualStreamJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1538,11 +1754,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1551,20 +1767,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/individual-stream-jobs/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIndividualStreamJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_mix_job(self, request):
         """修改合流任务
@@ -1577,9 +1789,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateMixJobResponse`
         """
-        return self._update_mix_job_with_http_info(request)
+        http_info = self._update_mix_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_mix_job_with_http_info(self, request):
+    def update_mix_job_invoker(self, request):
+        http_info = self._update_mix_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_mix_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/apps/{app_id}/mix-stream-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMixJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1606,11 +1831,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1619,20 +1844,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/mix-stream-jobs/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMixJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_record_callback(self, request):
         """配置RTC增值（录制）事件回调
@@ -1649,9 +1870,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordCallbackResponse`
         """
-        return self._update_record_callback_with_http_info(request)
+        http_info = self._update_record_callback_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_record_callback_with_http_info(self, request):
+    def update_record_callback_invoker(self, request):
+        http_info = self._update_record_callback_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_record_callback_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/apps/{app_id}/record-callback",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecordCallbackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1676,11 +1910,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1689,20 +1923,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/record-callback',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRecordCallbackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_record_rule(self, request):
         """更新录制规则
@@ -1715,9 +1945,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateRecordRuleResponse`
         """
-        return self._update_record_rule_with_http_info(request)
+        http_info = self._update_record_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_record_rule_with_http_info(self, request):
+    def update_record_rule_invoker(self, request):
+        http_info = self._update_record_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_record_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/apps/{app_id}/record-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecordRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1744,11 +1987,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1757,20 +2000,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/record-rules/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRecordRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_url_auth(self, request):
         """开关访问控制
@@ -1783,9 +2022,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateUrlAuthResponse`
         """
-        return self._update_url_auth_with_http_info(request)
+        http_info = self._update_url_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_url_auth_with_http_info(self, request):
+    def update_url_auth_invoker(self, request):
+        http_info = self._update_url_auth_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_url_auth_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/apps/{app_id}/authentication",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUrlAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1810,11 +2062,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1823,20 +2075,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/apps/{app_id}/authentication',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUrlAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_obs_bucket_objects(self, request):
         """查询OBS桶下对象列表
@@ -1849,9 +2097,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListObsBucketObjectsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListObsBucketObjectsResponse`
         """
-        return self._list_obs_bucket_objects_with_http_info(request)
+        http_info = self._list_obs_bucket_objects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_obs_bucket_objects_with_http_info(self, request):
+    def list_obs_bucket_objects_invoker(self, request):
+        http_info = self._list_obs_bucket_objects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_obs_bucket_objects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rtc-ops/buckets/objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObsBucketObjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1874,9 +2135,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1885,20 +2146,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/rtc-ops/buckets/objects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListObsBucketObjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_obs_buckets(self, request):
         """查询OBS桶列表
@@ -1911,9 +2168,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.ListObsBucketsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.ListObsBucketsResponse`
         """
-        return self._list_obs_buckets_with_http_info(request)
+        http_info = self._list_obs_buckets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_obs_buckets_with_http_info(self, request):
+    def list_obs_buckets_invoker(self, request):
+        http_info = self._list_obs_buckets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_obs_buckets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rtc-ops/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObsBucketsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1928,9 +2198,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1939,20 +2209,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/rtc-ops/buckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListObsBucketsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_obs_bucket_authority(self, request):
         """OBS桶授权及取消授权
@@ -1965,9 +2231,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v2.UpdateObsBucketAuthorityRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v2.UpdateObsBucketAuthorityResponse`
         """
-        return self._update_obs_bucket_authority_with_http_info(request)
+        http_info = self._update_obs_bucket_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_obs_bucket_authority_with_http_info(self, request):
+    def update_obs_bucket_authority_invoker(self, request):
+        http_info = self._update_obs_bucket_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_obs_bucket_authority_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/rtc-ops/buckets/authentication",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateObsBucketAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1982,11 +2261,11 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-Id", ]
 
@@ -1995,20 +2274,25 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/rtc-ops/buckets/authentication',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateObsBucketAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

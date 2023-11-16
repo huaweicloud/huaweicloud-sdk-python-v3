@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkgsl'")
 
 
 class GslAsyncClient(Client):
@@ -39,9 +44,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.BatchSetAttributesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.BatchSetAttributesResponse`
         """
-        return self._batch_set_attributes_with_http_info(request)
+        http_info = self._batch_set_attributes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_set_attributes_with_http_info(self, request):
+    def batch_set_attributes_async_invoker(self, request):
+        http_info = self._batch_set_attributes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_attributes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/attributes/batch-set",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetAttributesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/attributes/batch-set',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSetAttributesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_attribute_async(self, request):
         """用户新增自定义属性接口
@@ -96,9 +109,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.CreateAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.CreateAttributeResponse`
         """
-        return self._create_attribute_with_http_info(request)
+        http_info = self._create_attribute_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_attribute_with_http_info(self, request):
+    def create_attribute_async_invoker(self, request):
+        http_info = self._create_attribute_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_attribute_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/attributes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAttributeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +138,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/attributes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAttributeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_attribute_async(self, request):
         """停用自定义属性接口
@@ -153,9 +174,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.DisableAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DisableAttributeResponse`
         """
-        return self._disable_attribute_with_http_info(request)
+        http_info = self._disable_attribute_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_attribute_with_http_info(self, request):
+    def disable_attribute_async_invoker(self, request):
+        http_info = self._disable_attribute_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_attribute_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/attributes/{attribute_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableAttributeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,9 +205,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/attributes/{attribute_id}/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableAttributeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_attribute_async(self, request):
         """启用自定义属性接口
@@ -210,9 +239,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.EnableAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.EnableAttributeResponse`
         """
-        return self._enable_attribute_with_http_info(request)
+        http_info = self._enable_attribute_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_attribute_with_http_info(self, request):
+    def enable_attribute_async_invoker(self, request):
+        http_info = self._enable_attribute_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_attribute_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/attributes/{attribute_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableAttributeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -229,9 +270,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +281,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/attributes/{attribute_id}/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableAttributeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_attributes_async(self, request):
         """查询自定义属性列表接口
@@ -267,9 +304,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListAttributesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListAttributesResponse`
         """
-        return self._list_attributes_with_http_info(request)
+        http_info = self._list_attributes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_attributes_with_http_info(self, request):
+    def list_attributes_async_invoker(self, request):
+        http_info = self._list_attributes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_attributes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/attributes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAttributesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -292,9 +341,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -303,20 +352,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/attributes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAttributesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_attribute_async(self, request):
         """修改自定义属性接口
@@ -330,9 +375,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.UpdateAttributeRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.UpdateAttributeResponse`
         """
-        return self._update_attribute_with_http_info(request)
+        http_info = self._update_attribute_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_attribute_with_http_info(self, request):
+    def update_attribute_async_invoker(self, request):
+        http_info = self._update_attribute_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_attribute_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/attributes/{attribute_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAttributeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -349,11 +406,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -362,20 +419,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/attributes/{attribute_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAttributeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_back_pool_members_async(self, request):
         """查询后向流量池成员列表
@@ -389,9 +442,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolMembersResponse`
         """
-        return self._list_back_pool_members_with_http_info(request)
+        http_info = self._list_back_pool_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_back_pool_members_with_http_info(self, request):
+    def list_back_pool_members_async_invoker(self, request):
+        http_info = self._list_back_pool_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_back_pool_members_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/back-pools/{back_pool_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackPoolMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -416,9 +481,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -427,20 +492,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/back-pools/{back_pool_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackPoolMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_back_pools_async(self, request):
         """查询后向流量池列表
@@ -454,9 +515,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListBackPoolsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListBackPoolsResponse`
         """
-        return self._list_back_pools_with_http_info(request)
+        http_info = self._list_back_pools_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_back_pools_with_http_info(self, request):
+    def list_back_pools_async_invoker(self, request):
+        http_info = self._list_back_pools_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_back_pools_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/back-pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackPoolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -481,9 +554,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +565,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/back-pools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackPoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pro_price_plans_async(self, request):
         """查询套餐列表信息
@@ -519,9 +588,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListProPricePlansRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListProPricePlansResponse`
         """
-        return self._list_pro_price_plans_with_http_info(request)
+        http_info = self._list_pro_price_plans_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pro_price_plans_with_http_info(self, request):
+    def list_pro_price_plans_async_invoker(self, request):
+        http_info = self._list_pro_price_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_pro_price_plans_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/price-plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProPricePlansResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -552,9 +633,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -563,20 +644,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/price-plans',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProPricePlansResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_real_name_async(self, request):
         """清除实名认证信息
@@ -590,9 +667,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.DeleteRealNameRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DeleteRealNameResponse`
         """
-        return self._delete_real_name_with_http_info(request)
+        http_info = self._delete_real_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_real_name_with_http_info(self, request):
+    def delete_real_name_async_invoker(self, request):
+        http_info = self._delete_real_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_real_name_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/clear-real-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRealNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -611,9 +700,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -622,20 +711,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/clear-real-name',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRealNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_sim_card_async(self, request):
         """激活实体卡
@@ -649,9 +734,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.EnableSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.EnableSimCardResponse`
         """
-        return self._enable_sim_card_with_http_info(request)
+        http_info = self._enable_sim_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_sim_card_with_http_info(self, request):
+    def enable_sim_card_async_invoker(self, request):
+        http_info = self._enable_sim_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_sim_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableSimCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -670,9 +767,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -681,20 +778,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableSimCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sim_cards_async(self, request):
         """查询SIM卡列表
@@ -708,9 +801,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimCardsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimCardsResponse`
         """
-        return self._list_sim_cards_with_http_info(request)
+        http_info = self._list_sim_cards_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sim_cards_with_http_info(self, request):
+    def list_sim_cards_async_invoker(self, request):
+        http_info = self._list_sim_cards_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sim_cards_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sim-cards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSimCardsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -780,9 +885,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -791,20 +896,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSimCardsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_imei_async(self, request):
         """SIM卡机卡重绑
@@ -818,9 +919,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.RegisterImeiRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.RegisterImeiResponse`
         """
-        return self._register_imei_with_http_info(request)
+        http_info = self._register_imei_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_imei_with_http_info(self, request):
+    def register_imei_async_invoker(self, request):
+        http_info = self._register_imei_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_imei_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/bind-device",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterImeiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -837,11 +950,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -850,20 +963,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/bind-device',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterImeiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_sim_card_async(self, request):
         """SIM卡单卡复机
@@ -877,9 +986,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ResetSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ResetSimCardResponse`
         """
-        return self._reset_sim_card_with_http_info(request)
+        http_info = self._reset_sim_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_sim_card_with_http_info(self, request):
+    def reset_sim_card_async_invoker(self, request):
+        http_info = self._reset_sim_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_sim_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetSimCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -896,11 +1017,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -909,20 +1030,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/reset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetSimCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_exceed_cut_net_async(self, request):
         """SIM卡达量断网/取消达量断网
@@ -936,9 +1053,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.SetExceedCutNetRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.SetExceedCutNetResponse`
         """
-        return self._set_exceed_cut_net_with_http_info(request)
+        http_info = self._set_exceed_cut_net_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_exceed_cut_net_with_http_info(self, request):
+    def set_exceed_cut_net_async_invoker(self, request):
+        http_info = self._set_exceed_cut_net_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_exceed_cut_net_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/exceed-cut-net",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetExceedCutNetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -955,11 +1084,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -968,20 +1097,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/exceed-cut-net',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetExceedCutNetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_speed_value_async(self, request):
         """实体卡限速
@@ -995,9 +1120,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.SetSpeedValueRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.SetSpeedValueResponse`
         """
-        return self._set_speed_value_with_http_info(request)
+        http_info = self._set_speed_value_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_speed_value_with_http_info(self, request):
+    def set_speed_value_async_invoker(self, request):
+        http_info = self._set_speed_value_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_speed_value_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/speed-limit",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetSpeedValueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1014,11 +1151,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1027,20 +1164,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/speed-limit',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetSpeedValueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_month_usages_async(self, request):
         """月用量统计
@@ -1054,9 +1187,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ShowMonthUsagesRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowMonthUsagesResponse`
         """
-        return self._show_month_usages_with_http_info(request)
+        http_info = self._show_month_usages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_month_usages_with_http_info(self, request):
+    def show_month_usages_async_invoker(self, request):
+        http_info = self._show_month_usages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_month_usages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/month-usages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMonthUsagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1071,11 +1216,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1084,20 +1229,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/month-usages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMonthUsagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_real_named_async(self, request):
         """查询SIM卡实名认证信息
@@ -1111,9 +1252,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ShowRealNamedRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowRealNamedResponse`
         """
-        return self._show_real_named_with_http_info(request)
+        http_info = self._show_real_named_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_real_named_with_http_info(self, request):
+    def show_real_named_async_invoker(self, request):
+        http_info = self._show_real_named_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_real_named_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/real-named",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRealNamedResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1132,9 +1285,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1143,20 +1296,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/real-named',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRealNamedResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sim_card_async(self, request):
         """查询SIM卡详情
@@ -1170,9 +1319,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ShowSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ShowSimCardResponse`
         """
-        return self._show_sim_card_with_http_info(request)
+        http_info = self._show_sim_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sim_card_with_http_info(self, request):
+    def show_sim_card_async_invoker(self, request):
+        http_info = self._show_sim_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sim_card_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sim-cards/{sim_card_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSimCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1191,9 +1352,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1202,20 +1363,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSimCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_stop_net_async(self, request):
         """SIM卡申请断网/恢复在用
@@ -1229,9 +1386,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.StartStopNetRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.StartStopNetResponse`
         """
-        return self._start_stop_net_with_http_info(request)
+        http_info = self._start_stop_net_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_stop_net_with_http_info(self, request):
+    def start_stop_net_async_invoker(self, request):
+        http_info = self._start_stop_net_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_stop_net_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/cut-net",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartStopNetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1248,11 +1417,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1261,20 +1430,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/cut-net',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartStopNetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_sim_card_async(self, request):
         """SIM卡单卡停机
@@ -1288,9 +1453,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.StopSimCardRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.StopSimCardResponse`
         """
-        return self._stop_sim_card_with_http_info(request)
+        http_info = self._stop_sim_card_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_sim_card_with_http_info(self, request):
+    def stop_sim_card_async_invoker(self, request):
+        http_info = self._stop_sim_card_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_sim_card_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-cards/{sim_card_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopSimCardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1307,11 +1484,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1320,20 +1497,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-cards/{sim_card_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopSimCardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sim_pool_members_async(self, request):
         """查询流量池成员列表
@@ -1347,9 +1520,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPoolMembersRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPoolMembersResponse`
         """
-        return self._list_sim_pool_members_with_http_info(request)
+        http_info = self._list_sim_pool_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sim_pool_members_with_http_info(self, request):
+    def list_sim_pool_members_async_invoker(self, request):
+        http_info = self._list_sim_pool_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sim_pool_members_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sim-pools/{sim_pool_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSimPoolMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1374,9 +1559,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1385,20 +1570,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-pools/{sim_pool_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSimPoolMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sim_pools_async(self, request):
         """查询流量池列表
@@ -1412,9 +1593,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPoolsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPoolsResponse`
         """
-        return self._list_sim_pools_with_http_info(request)
+        http_info = self._list_sim_pools_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sim_pools_with_http_info(self, request):
+    def list_sim_pools_async_invoker(self, request):
+        http_info = self._list_sim_pools_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sim_pools_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sim-pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSimPoolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1439,9 +1632,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1450,20 +1643,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-pools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSimPoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flow_by_sim_cards_async(self, request):
         """批量查询实体卡流量
@@ -1477,9 +1666,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListFlowBySimCardsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListFlowBySimCardsResponse`
         """
-        return self._list_flow_by_sim_cards_with_http_info(request)
+        http_info = self._list_flow_by_sim_cards_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flow_by_sim_cards_with_http_info(self, request):
+    def list_flow_by_sim_cards_async_invoker(self, request):
+        http_info = self._list_flow_by_sim_cards_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flow_by_sim_cards_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-price-plans/usage/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlowBySimCardsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1494,11 +1695,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1507,20 +1708,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-price-plans/usage/batch-query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlowBySimCardsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sim_price_plans_async(self, request):
         """sim卡套餐列表查询
@@ -1534,9 +1731,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSimPricePlansRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSimPricePlansResponse`
         """
-        return self._list_sim_price_plans_with_http_info(request)
+        http_info = self._list_sim_price_plans_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sim_price_plans_with_http_info(self, request):
+    def list_sim_price_plans_async_invoker(self, request):
+        http_info = self._list_sim_price_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sim_price_plans_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sim-price-plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSimPricePlansResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1561,9 +1770,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1572,20 +1781,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-price-plans',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSimPricePlansResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sms_details_async(self, request):
         """短信发送详情
@@ -1599,9 +1804,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListSmsDetailsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListSmsDetailsResponse`
         """
-        return self._list_sms_details_with_http_info(request)
+        http_info = self._list_sms_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sms_details_with_http_info(self, request):
+    def list_sms_details_async_invoker(self, request):
+        http_info = self._list_sms_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sms_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms-send-infos/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSmsDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1626,9 +1843,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1637,20 +1854,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sms-send-infos/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSmsDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_sms_async(self, request):
         """发送短信
@@ -1664,9 +1877,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.SendSmsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.SendSmsResponse`
         """
-        return self._send_sms_with_http_info(request)
+        http_info = self._send_sms_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_sms_with_http_info(self, request):
+    def send_sms_async_invoker(self, request):
+        http_info = self._send_sms_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_sms_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sms-send-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendSmsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1681,11 +1906,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1694,20 +1919,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sms-send-infos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendSmsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_set_tags_async(self, request):
         """批量设置/取消设置标签接口
@@ -1721,9 +1942,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.BatchSetTagsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.BatchSetTagsResponse`
         """
-        return self._batch_set_tags_with_http_info(request)
+        http_info = self._batch_set_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_set_tags_with_http_info(self, request):
+    def batch_set_tags_async_invoker(self, request):
+        http_info = self._batch_set_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sim-tags/batch-set",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1738,11 +1971,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1751,20 +1984,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/sim-tags/batch-set',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSetTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tag_async(self, request):
         """用户添加标签
@@ -1778,9 +2007,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.CreateTagResponse`
         """
-        return self._create_tag_with_http_info(request)
+        http_info = self._create_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tag_with_http_info(self, request):
+    def create_tag_async_invoker(self, request):
+        http_info = self._create_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1795,11 +2036,11 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1808,20 +2049,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tag_async(self, request):
         """删除标签
@@ -1835,9 +2072,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.DeleteTagResponse`
         """
-        return self._delete_tag_with_http_info(request)
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tag_with_http_info(self, request):
+    def delete_tag_async_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/tags/{tag_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1854,9 +2103,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1865,20 +2114,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/tags/{tag_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags_async(self, request):
         """查询标签列表
@@ -1892,9 +2137,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListTagsResponse`
         """
-        return self._list_tags_with_http_info(request)
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_with_http_info(self, request):
+    def list_tags_async_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1917,9 +2174,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1928,20 +2185,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_work_order_details_async(self, request):
         """分页查询业务受理明细
@@ -1955,9 +2208,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListWorkOrderDetailsRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListWorkOrderDetailsResponse`
         """
-        return self._list_work_order_details_with_http_info(request)
+        http_info = self._list_work_order_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_work_order_details_with_http_info(self, request):
+    def list_work_order_details_async_invoker(self, request):
+        http_info = self._list_work_order_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_work_order_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/work-orders/{work_order_id}/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkOrderDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1984,9 +2249,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1995,20 +2260,16 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/work-orders/{work_order_id}/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkOrderDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_work_orders_async(self, request):
         """分页查询业务受理单
@@ -2022,9 +2283,21 @@ class GslAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgsl.v3.ListWorkOrdersRequest`
         :rtype: :class:`huaweicloudsdkgsl.v3.ListWorkOrdersResponse`
         """
-        return self._list_work_orders_with_http_info(request)
+        http_info = self._list_work_orders_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_work_orders_with_http_info(self, request):
+    def list_work_orders_async_invoker(self, request):
+        http_info = self._list_work_orders_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_work_orders_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/work-orders",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkOrdersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2051,9 +2324,9 @@ class GslAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2062,20 +2335,26 @@ class GslAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/work-orders',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkOrdersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2114,4 +2393,4 @@ class GslAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

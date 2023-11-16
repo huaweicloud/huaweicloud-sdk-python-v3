@@ -20,7 +20,7 @@ class JobType:
     UPGRADE_ACCESS_AGENT = "UPGRADE_ACCESS_AGENT"
     UPDATE_SERVER_TSVI = "UPDATE_SERVER_TSVI"
     SCHEDULED_TASK = "SCHEDULED_TASK"
-    COLLECT_HDA_LOG = "COLLECT_HDA_LOG"
+    COLLECT_APS_LOG = "COLLECT_APS_LOG"
     """
     Attributes:
       openapi_types (dict): The key is attribute name

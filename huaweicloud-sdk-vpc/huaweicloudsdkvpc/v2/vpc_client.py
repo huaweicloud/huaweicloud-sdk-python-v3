@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkvpc'")
 
 
 class VpcClient(Client):
@@ -38,9 +43,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.AcceptVpcPeeringRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.AcceptVpcPeeringResponse`
         """
-        return self._accept_vpc_peering_with_http_info(request)
+        http_info = self._accept_vpc_peering_http_info(request)
+        return self._call_api(**http_info)
 
-    def _accept_vpc_peering_with_http_info(self, request):
+    def accept_vpc_peering_invoker(self, request):
+        http_info = self._accept_vpc_peering_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _accept_vpc_peering_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/vpc/peerings/{peering_id}/accept",
+            "request_type": request.__class__.__name__,
+            "response_type": "AcceptVpcPeeringResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,9 +75,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/peerings/{peering_id}/accept',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AcceptVpcPeeringResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_route_table(self, request):
         """子网关联路由表
@@ -94,9 +108,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.AssociateRouteTableResponse`
         """
-        return self._associate_route_table_with_http_info(request)
+        http_info = self._associate_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_route_table_with_http_info(self, request):
+    def associate_route_table_invoker(self, request):
+        http_info = self._associate_route_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_route_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/routetables/{routetable_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +140,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +153,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/routetables/{routetable_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_subnet_tags(self, request):
         """批量创建子网资源标签
@@ -153,9 +176,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.BatchCreateSubnetTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchCreateSubnetTagsResponse`
         """
-        return self._batch_create_subnet_tags_with_http_info(request)
+        http_info = self._batch_create_subnet_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_subnet_tags_with_http_info(self, request):
+    def batch_create_subnet_tags_invoker(self, request):
+        http_info = self._batch_create_subnet_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_subnet_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/subnets/{subnet_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSubnetTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,11 +208,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -185,20 +221,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateSubnetTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_subnet_tags(self, request):
         """批量删除子网资源标签
@@ -212,9 +244,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteSubnetTagsResponse`
         """
-        return self._batch_delete_subnet_tags_with_http_info(request)
+        http_info = self._batch_delete_subnet_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_subnet_tags_with_http_info(self, request):
+    def batch_delete_subnet_tags_invoker(self, request):
+        http_info = self._batch_delete_subnet_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_subnet_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/subnets/{subnet_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteSubnetTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteSubnetTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_flow_log(self, request):
         """创建流日志
@@ -272,9 +313,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateFlowLogRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateFlowLogResponse`
         """
-        return self._create_flow_log_with_http_info(request)
+        http_info = self._create_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_flow_log_with_http_info(self, request):
+    def create_flow_log_invoker(self, request):
+        http_info = self._create_flow_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_flow_log_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/fl/flow_logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -289,11 +343,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -302,20 +356,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/fl/flow_logs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_port(self, request):
         """创建端口
@@ -328,9 +378,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreatePortRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreatePortResponse`
         """
-        return self._create_port_with_http_info(request)
+        http_info = self._create_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_port_with_http_info(self, request):
+    def create_port_invoker(self, request):
+        http_info = self._create_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_port_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -345,11 +408,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -358,20 +421,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ports',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_route_table(self, request):
         """创建路由表
@@ -384,9 +443,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateRouteTableRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateRouteTableResponse`
         """
-        return self._create_route_table_with_http_info(request)
+        http_info = self._create_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_route_table_with_http_info(self, request):
+    def create_route_table_invoker(self, request):
+        http_info = self._create_route_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_route_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/routetables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -401,11 +473,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -414,20 +486,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/routetables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_security_group(self, request):
         """创建安全组
@@ -440,9 +508,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupResponse`
         """
-        return self._create_security_group_with_http_info(request)
+        http_info = self._create_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_security_group_with_http_info(self, request):
+    def create_security_group_invoker(self, request):
+        http_info = self._create_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -457,11 +538,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -470,20 +551,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/security-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_security_group_rule(self, request):
         """创建安全组规则
@@ -496,9 +573,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateSecurityGroupRuleResponse`
         """
-        return self._create_security_group_rule_with_http_info(request)
+        http_info = self._create_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_security_group_rule_with_http_info(self, request):
+    def create_security_group_rule_invoker(self, request):
+        http_info = self._create_security_group_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_security_group_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/security-group-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -513,11 +603,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -526,20 +616,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/security-group-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_subnet(self, request):
         """创建子网
@@ -552,9 +638,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateSubnetRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateSubnetResponse`
         """
-        return self._create_subnet_with_http_info(request)
+        http_info = self._create_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_subnet_with_http_info(self, request):
+    def create_subnet_invoker(self, request):
+        http_info = self._create_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_subnet_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -569,11 +668,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -582,20 +681,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subnets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_subnet_tag(self, request):
         """创建子网资源标签
@@ -609,9 +704,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateSubnetTagResponse`
         """
-        return self._create_subnet_tag_with_http_info(request)
+        http_info = self._create_subnet_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_subnet_tag_with_http_info(self, request):
+    def create_subnet_tag_invoker(self, request):
+        http_info = self._create_subnet_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_subnet_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/subnets/{subnet_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubnetTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -628,11 +736,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -641,20 +749,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubnetTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc_peering(self, request):
         """创建对等连接
@@ -667,9 +771,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcPeeringResponse`
         """
-        return self._create_vpc_peering_with_http_info(request)
+        http_info = self._create_vpc_peering_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_peering_with_http_info(self, request):
+    def create_vpc_peering_invoker(self, request):
+        http_info = self._create_vpc_peering_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vpc_peering_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/vpc/peerings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcPeeringResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -684,11 +801,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -697,20 +814,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/peerings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcPeeringResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_flow_log(self, request):
         """删除流日志
@@ -723,9 +836,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteFlowLogRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteFlowLogResponse`
         """
-        return self._delete_flow_log_with_http_info(request)
+        http_info = self._delete_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_flow_log_with_http_info(self, request):
+    def delete_flow_log_invoker(self, request):
+        http_info = self._delete_flow_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_flow_log_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/fl/flow_logs/{flowlog_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -742,9 +868,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -753,20 +879,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/fl/flow_logs/{flowlog_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_port(self, request):
         """删除端口
@@ -779,9 +901,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeletePortRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeletePortResponse`
         """
-        return self._delete_port_with_http_info(request)
+        http_info = self._delete_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_port_with_http_info(self, request):
+    def delete_port_invoker(self, request):
+        http_info = self._delete_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_port_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -798,9 +933,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -809,20 +944,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ports/{port_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_route_table(self, request):
         """删除路由表
@@ -835,9 +966,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteRouteTableRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteRouteTableResponse`
         """
-        return self._delete_route_table_with_http_info(request)
+        http_info = self._delete_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_route_table_with_http_info(self, request):
+    def delete_route_table_invoker(self, request):
+        http_info = self._delete_route_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_route_table_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/routetables/{routetable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -854,9 +998,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -865,20 +1009,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/routetables/{routetable_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_security_group(self, request):
         """删除安全组
@@ -891,9 +1031,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupResponse`
         """
-        return self._delete_security_group_with_http_info(request)
+        http_info = self._delete_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_security_group_with_http_info(self, request):
+    def delete_security_group_invoker(self, request):
+        http_info = self._delete_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_security_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -910,9 +1063,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -921,20 +1074,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/security-groups/{security_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_security_group_rule(self, request):
         """删除安全组规则
@@ -947,9 +1096,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSecurityGroupRuleResponse`
         """
-        return self._delete_security_group_rule_with_http_info(request)
+        http_info = self._delete_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_security_group_rule_with_http_info(self, request):
+    def delete_security_group_rule_invoker(self, request):
+        http_info = self._delete_security_group_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_security_group_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/security-group-rules/{security_group_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -966,9 +1128,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -977,20 +1139,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/security-group-rules/{security_group_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_subnet(self, request):
         """删除子网
@@ -1003,9 +1161,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteSubnetRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSubnetResponse`
         """
-        return self._delete_subnet_with_http_info(request)
+        http_info = self._delete_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_subnet_with_http_info(self, request):
+    def delete_subnet_invoker(self, request):
+        http_info = self._delete_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_subnet_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/vpcs/{vpc_id}/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1024,9 +1195,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1035,20 +1206,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vpcs/{vpc_id}/subnets/{subnet_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_subnet_tag(self, request):
         """删除子网资源标签
@@ -1062,9 +1229,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteSubnetTagRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteSubnetTagResponse`
         """
-        return self._delete_subnet_tag_with_http_info(request)
+        http_info = self._delete_subnet_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_subnet_tag_with_http_info(self, request):
+    def delete_subnet_tag_invoker(self, request):
+        http_info = self._delete_subnet_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_subnet_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/subnets/{subnet_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubnetTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1083,9 +1263,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1094,20 +1274,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubnetTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc_peering(self, request):
         """删除对等连接
@@ -1121,9 +1297,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteVpcPeeringRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteVpcPeeringResponse`
         """
-        return self._delete_vpc_peering_with_http_info(request)
+        http_info = self._delete_vpc_peering_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_peering_with_http_info(self, request):
+    def delete_vpc_peering_invoker(self, request):
+        http_info = self._delete_vpc_peering_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vpc_peering_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/vpc/peerings/{peering_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcPeeringResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1140,9 +1329,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1151,20 +1340,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/peerings/{peering_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcPeeringResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_route_table(self, request):
         """子网解关联路由表
@@ -1177,9 +1362,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DisassociateRouteTableRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DisassociateRouteTableResponse`
         """
-        return self._disassociate_route_table_with_http_info(request)
+        http_info = self._disassociate_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_route_table_with_http_info(self, request):
+    def disassociate_route_table_invoker(self, request):
+        http_info = self._disassociate_route_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_route_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/routetables/{routetable_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1196,11 +1394,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1209,20 +1407,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/routetables/{routetable_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flow_logs(self, request):
         """查询流日志列表
@@ -1235,9 +1429,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListFlowLogsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListFlowLogsResponse`
         """
-        return self._list_flow_logs_with_http_info(request)
+        http_info = self._list_flow_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flow_logs_with_http_info(self, request):
+    def list_flow_logs_invoker(self, request):
+        http_info = self._list_flow_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_flow_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/fl/flow_logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlowLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1278,9 +1485,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1289,20 +1496,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/fl/flow_logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlowLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ports(self, request):
         """查询端口列表
@@ -1315,9 +1518,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListPortsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListPortsResponse`
         """
-        return self._list_ports_with_http_info(request)
+        http_info = self._list_ports_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ports_with_http_info(self, request):
+    def list_ports_invoker(self, request):
+        http_info = self._list_ports_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ports_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1362,9 +1578,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1373,20 +1589,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ports',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPortsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_route_tables(self, request):
         """查询路由表列表
@@ -1399,9 +1611,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListRouteTablesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListRouteTablesResponse`
         """
-        return self._list_route_tables_with_http_info(request)
+        http_info = self._list_route_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_route_tables_with_http_info(self, request):
+    def list_route_tables_invoker(self, request):
+        http_info = self._list_route_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_route_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/routetables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRouteTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1426,9 +1651,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1437,20 +1662,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/routetables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRouteTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_security_group_rules(self, request):
         """查询安全组规则列表
@@ -1463,9 +1684,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupRulesResponse`
         """
-        return self._list_security_group_rules_with_http_info(request)
+        http_info = self._list_security_group_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_security_group_rules_with_http_info(self, request):
+    def list_security_group_rules_invoker(self, request):
+        http_info = self._list_security_group_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_group_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security-group-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1488,9 +1722,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1499,20 +1733,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/security-group-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecurityGroupRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_security_groups(self, request):
         """查询安全组列表
@@ -1525,9 +1755,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListSecurityGroupsResponse`
         """
-        return self._list_security_groups_with_http_info(request)
+        http_info = self._list_security_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_security_groups_with_http_info(self, request):
+    def list_security_groups_invoker(self, request):
+        http_info = self._list_security_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_security_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1550,9 +1793,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1561,20 +1804,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/security-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecurityGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subnet_tags(self, request):
         """查询子网项目标签
@@ -1587,9 +1826,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListSubnetTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListSubnetTagsResponse`
         """
-        return self._list_subnet_tags_with_http_info(request)
+        http_info = self._list_subnet_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subnet_tags_with_http_info(self, request):
+    def list_subnet_tags_invoker(self, request):
+        http_info = self._list_subnet_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_subnet_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/subnets/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubnetTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1604,9 +1856,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1615,20 +1867,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/subnets/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubnetTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subnets(self, request):
         """查询子网列表
@@ -1641,9 +1889,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListSubnetsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListSubnetsResponse`
         """
-        return self._list_subnets_with_http_info(request)
+        http_info = self._list_subnets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subnets_with_http_info(self, request):
+    def list_subnets_invoker(self, request):
+        http_info = self._list_subnets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_subnets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubnetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1664,9 +1925,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1675,20 +1936,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subnets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubnetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subnets_by_tags(self, request):
         """查询子网资源实例
@@ -1701,9 +1958,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListSubnetsByTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListSubnetsByTagsResponse`
         """
-        return self._list_subnets_by_tags_with_http_info(request)
+        http_info = self._list_subnets_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subnets_by_tags_with_http_info(self, request):
+    def list_subnets_by_tags_invoker(self, request):
+        http_info = self._list_subnets_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_subnets_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/subnets/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubnetsByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1718,11 +1988,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1731,20 +2001,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/subnets/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubnetsByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpc_peerings(self, request):
         """查询对等连接列表
@@ -1757,9 +2023,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListVpcPeeringsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcPeeringsResponse`
         """
-        return self._list_vpc_peerings_with_http_info(request)
+        http_info = self._list_vpc_peerings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpc_peerings_with_http_info(self, request):
+    def list_vpc_peerings_invoker(self, request):
+        http_info = self._list_vpc_peerings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpc_peerings_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/vpc/peerings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcPeeringsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1788,9 +2067,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1799,20 +2078,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/peerings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcPeeringsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reject_vpc_peering(self, request):
         """拒绝对等连接请求
@@ -1825,9 +2100,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.RejectVpcPeeringRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.RejectVpcPeeringResponse`
         """
-        return self._reject_vpc_peering_with_http_info(request)
+        http_info = self._reject_vpc_peering_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reject_vpc_peering_with_http_info(self, request):
+    def reject_vpc_peering_invoker(self, request):
+        http_info = self._reject_vpc_peering_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reject_vpc_peering_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/vpc/peerings/{peering_id}/reject",
+            "request_type": request.__class__.__name__,
+            "response_type": "RejectVpcPeeringResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1844,9 +2132,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1855,20 +2143,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/peerings/{peering_id}/reject',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RejectVpcPeeringResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_flow_log(self, request):
         """查询流日志
@@ -1881,9 +2165,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowFlowLogRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowFlowLogResponse`
         """
-        return self._show_flow_log_with_http_info(request)
+        http_info = self._show_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_flow_log_with_http_info(self, request):
+    def show_flow_log_invoker(self, request):
+        http_info = self._show_flow_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_flow_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/fl/flow_logs/{flowlog_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1900,9 +2197,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1911,20 +2208,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/fl/flow_logs/{flowlog_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_port(self, request):
         """查询端口
@@ -1937,9 +2230,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowPortRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowPortResponse`
         """
-        return self._show_port_with_http_info(request)
+        http_info = self._show_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_port_with_http_info(self, request):
+    def show_port_invoker(self, request):
+        http_info = self._show_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_port_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1956,9 +2262,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1967,20 +2273,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ports/{port_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quota(self, request):
         """查询配额
@@ -1993,9 +2295,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowQuotaRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowQuotaResponse`
         """
-        return self._show_quota_with_http_info(request)
+        http_info = self._show_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quota_with_http_info(self, request):
+    def show_quota_invoker(self, request):
+        http_info = self._show_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2012,9 +2327,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2023,20 +2338,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_route_table(self, request):
         """查询路由表
@@ -2049,9 +2360,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowRouteTableRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowRouteTableResponse`
         """
-        return self._show_route_table_with_http_info(request)
+        http_info = self._show_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_route_table_with_http_info(self, request):
+    def show_route_table_invoker(self, request):
+        http_info = self._show_route_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_route_table_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/routetables/{routetable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2068,9 +2392,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2079,20 +2403,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/routetables/{routetable_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_security_group(self, request):
         """查询安全组
@@ -2105,9 +2425,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupResponse`
         """
-        return self._show_security_group_with_http_info(request)
+        http_info = self._show_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_security_group_with_http_info(self, request):
+    def show_security_group_invoker(self, request):
+        http_info = self._show_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2124,9 +2457,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2135,20 +2468,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/security-groups/{security_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_security_group_rule(self, request):
         """查询安全组规则
@@ -2161,9 +2490,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowSecurityGroupRuleResponse`
         """
-        return self._show_security_group_rule_with_http_info(request)
+        http_info = self._show_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_security_group_rule_with_http_info(self, request):
+    def show_security_group_rule_invoker(self, request):
+        http_info = self._show_security_group_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_security_group_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/security-group-rules/{security_group_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2180,9 +2522,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2191,20 +2533,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/security-group-rules/{security_group_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_subnet(self, request):
         """查询子网
@@ -2217,9 +2555,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowSubnetRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowSubnetResponse`
         """
-        return self._show_subnet_with_http_info(request)
+        http_info = self._show_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_subnet_with_http_info(self, request):
+    def show_subnet_invoker(self, request):
+        http_info = self._show_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_subnet_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2236,9 +2587,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2247,20 +2598,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subnets/{subnet_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_subnet_tags(self, request):
         """查询子网资源标签
@@ -2273,9 +2620,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowSubnetTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowSubnetTagsResponse`
         """
-        return self._show_subnet_tags_with_http_info(request)
+        http_info = self._show_subnet_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_subnet_tags_with_http_info(self, request):
+    def show_subnet_tags_invoker(self, request):
+        http_info = self._show_subnet_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_subnet_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/subnets/{subnet_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubnetTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2292,9 +2652,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2303,20 +2663,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/subnets/{subnet_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSubnetTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpc_peering(self, request):
         """查询对等连接
@@ -2329,9 +2685,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowVpcPeeringRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowVpcPeeringResponse`
         """
-        return self._show_vpc_peering_with_http_info(request)
+        http_info = self._show_vpc_peering_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpc_peering_with_http_info(self, request):
+    def show_vpc_peering_invoker(self, request):
+        http_info = self._show_vpc_peering_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vpc_peering_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/vpc/peerings/{peering_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpcPeeringResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2348,9 +2717,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2359,20 +2728,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/peerings/{peering_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpcPeeringResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_flow_log(self, request):
         """更新流日志
@@ -2385,9 +2750,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.UpdateFlowLogRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateFlowLogResponse`
         """
-        return self._update_flow_log_with_http_info(request)
+        http_info = self._update_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_flow_log_with_http_info(self, request):
+    def update_flow_log_invoker(self, request):
+        http_info = self._update_flow_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_flow_log_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/fl/flow_logs/{flowlog_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2404,11 +2782,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2417,20 +2795,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/fl/flow_logs/{flowlog_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_port(self, request):
         """更新端口
@@ -2443,9 +2817,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.UpdatePortRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdatePortResponse`
         """
-        return self._update_port_with_http_info(request)
+        http_info = self._update_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_port_with_http_info(self, request):
+    def update_port_invoker(self, request):
+        http_info = self._update_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_port_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2462,11 +2849,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2475,20 +2862,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ports/{port_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_route_table(self, request):
         """更新路由表
@@ -2501,9 +2884,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.UpdateRouteTableRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateRouteTableResponse`
         """
-        return self._update_route_table_with_http_info(request)
+        http_info = self._update_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_route_table_with_http_info(self, request):
+    def update_route_table_invoker(self, request):
+        http_info = self._update_route_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_route_table_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/routetables/{routetable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2520,11 +2916,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2533,20 +2929,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/routetables/{routetable_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_subnet(self, request):
         """更新子网
@@ -2559,9 +2951,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.UpdateSubnetRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateSubnetResponse`
         """
-        return self._update_subnet_with_http_info(request)
+        http_info = self._update_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_subnet_with_http_info(self, request):
+    def update_subnet_invoker(self, request):
+        http_info = self._update_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_subnet_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/vpcs/{vpc_id}/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2580,11 +2985,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2593,20 +2998,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vpcs/{vpc_id}/subnets/{subnet_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpc_peering(self, request):
         """更新对等连接
@@ -2619,9 +3020,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateVpcPeeringResponse`
         """
-        return self._update_vpc_peering_with_http_info(request)
+        http_info = self._update_vpc_peering_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpc_peering_with_http_info(self, request):
+    def update_vpc_peering_invoker(self, request):
+        http_info = self._update_vpc_peering_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vpc_peering_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/vpc/peerings/{peering_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcPeeringResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2638,11 +3052,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2651,20 +3065,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/peerings/{peering_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcPeeringResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_privateip(self, request):
         """申请私有IP
@@ -2677,9 +3087,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreatePrivateipRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreatePrivateipResponse`
         """
-        return self._create_privateip_with_http_info(request)
+        http_info = self._create_privateip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_privateip_with_http_info(self, request):
+    def create_privateip_invoker(self, request):
+        http_info = self._create_privateip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_privateip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/privateips",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2694,11 +3117,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2707,20 +3130,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/privateips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivateipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_privateip(self, request):
         """删除私有IP
@@ -2733,9 +3152,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeletePrivateipRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeletePrivateipResponse`
         """
-        return self._delete_privateip_with_http_info(request)
+        http_info = self._delete_privateip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_privateip_with_http_info(self, request):
+    def delete_privateip_invoker(self, request):
+        http_info = self._delete_privateip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_privateip_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/privateips/{privateip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2752,9 +3184,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2763,20 +3195,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/privateips/{privateip_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePrivateipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_privateips(self, request):
         """查询私有IP列表
@@ -2789,9 +3217,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListPrivateipsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListPrivateipsResponse`
         """
-        return self._list_privateips_with_http_info(request)
+        http_info = self._list_privateips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_privateips_with_http_info(self, request):
+    def list_privateips_invoker(self, request):
+        http_info = self._list_privateips_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_privateips_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subnets/{subnet_id}/privateips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateipsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2812,9 +3253,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2823,20 +3264,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subnets/{subnet_id}/privateips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivateipsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_network_ip_availabilities(self, request):
         """查询网络IP使用情况
@@ -2856,9 +3293,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowNetworkIpAvailabilitiesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowNetworkIpAvailabilitiesResponse`
         """
-        return self._show_network_ip_availabilities_with_http_info(request)
+        http_info = self._show_network_ip_availabilities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_network_ip_availabilities_with_http_info(self, request):
+    def show_network_ip_availabilities_invoker(self, request):
+        http_info = self._show_network_ip_availabilities_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_network_ip_availabilities_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/network-ip-availabilities/{network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNetworkIpAvailabilitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2875,9 +3325,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2886,20 +3336,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/network-ip-availabilities/{network_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNetworkIpAvailabilitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_privateip(self, request):
         """查询私有IP
@@ -2912,9 +3358,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowPrivateipRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowPrivateipResponse`
         """
-        return self._show_privateip_with_http_info(request)
+        http_info = self._show_privateip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_privateip_with_http_info(self, request):
+    def show_privateip_invoker(self, request):
+        http_info = self._show_privateip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_privateip_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/privateips/{privateip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2931,9 +3390,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2942,20 +3401,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/privateips/{privateip_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivateipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_add_router_interface(self, request):
         """路由器添加接口
@@ -2968,9 +3423,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronAddRouterInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronAddRouterInterfaceResponse`
         """
-        return self._neutron_add_router_interface_with_http_info(request)
+        http_info = self._neutron_add_router_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_add_router_interface_with_http_info(self, request):
+    def neutron_add_router_interface_invoker(self, request):
+        http_info = self._neutron_add_router_interface_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_add_router_interface_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/routers/{router_id}/add_router_interface",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronAddRouterInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2987,11 +3455,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3000,20 +3468,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/routers/{router_id}/add_router_interface',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronAddRouterInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_network(self, request):
         """创建网络
@@ -3026,9 +3490,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateNetworkRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateNetworkResponse`
         """
-        return self._neutron_create_network_with_http_info(request)
+        http_info = self._neutron_create_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_network_with_http_info(self, request):
+    def neutron_create_network_invoker(self, request):
+        http_info = self._neutron_create_network_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_network_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3043,11 +3520,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3056,20 +3533,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/networks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_port(self, request):
         """创建端口
@@ -3082,9 +3555,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreatePortRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreatePortResponse`
         """
-        return self._neutron_create_port_with_http_info(request)
+        http_info = self._neutron_create_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_port_with_http_info(self, request):
+    def neutron_create_port_invoker(self, request):
+        http_info = self._neutron_create_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_port_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreatePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3099,11 +3585,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3112,20 +3598,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ports',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreatePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_router(self, request):
         """创建路由器
@@ -3138,9 +3620,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateRouterRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateRouterResponse`
         """
-        return self._neutron_create_router_with_http_info(request)
+        http_info = self._neutron_create_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_router_with_http_info(self, request):
+    def neutron_create_router_invoker(self, request):
+        http_info = self._neutron_create_router_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_router_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/routers",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3155,11 +3650,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3168,20 +3663,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/routers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_security_group(self, request):
         """创建安全组
@@ -3194,9 +3685,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupResponse`
         """
-        return self._neutron_create_security_group_with_http_info(request)
+        http_info = self._neutron_create_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_security_group_with_http_info(self, request):
+    def neutron_create_security_group_invoker(self, request):
+        http_info = self._neutron_create_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_security_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3211,11 +3715,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3224,20 +3728,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_security_group_rule(self, request):
         """创建安全组规则
@@ -3250,9 +3750,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateSecurityGroupRuleResponse`
         """
-        return self._neutron_create_security_group_rule_with_http_info(request)
+        http_info = self._neutron_create_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_security_group_rule_with_http_info(self, request):
+    def neutron_create_security_group_rule_invoker(self, request):
+        http_info = self._neutron_create_security_group_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_security_group_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/security-group-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3267,11 +3780,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3280,20 +3793,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-group-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_subnet(self, request):
         """创建子网
@@ -3306,9 +3815,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateSubnetRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateSubnetResponse`
         """
-        return self._neutron_create_subnet_with_http_info(request)
+        http_info = self._neutron_create_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_subnet_with_http_info(self, request):
+    def neutron_create_subnet_invoker(self, request):
+        http_info = self._neutron_create_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_subnet_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3323,11 +3845,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3336,20 +3858,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/subnets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_network(self, request):
         """删除网络
@@ -3362,9 +3880,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteNetworkRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteNetworkResponse`
         """
-        return self._neutron_delete_network_with_http_info(request)
+        http_info = self._neutron_delete_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_network_with_http_info(self, request):
+    def neutron_delete_network_invoker(self, request):
+        http_info = self._neutron_delete_network_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_network_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/networks/{network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3381,9 +3912,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3392,20 +3923,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/networks/{network_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_port(self, request):
         """删除端口
@@ -3418,9 +3945,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeletePortRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeletePortResponse`
         """
-        return self._neutron_delete_port_with_http_info(request)
+        http_info = self._neutron_delete_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_port_with_http_info(self, request):
+    def neutron_delete_port_invoker(self, request):
+        http_info = self._neutron_delete_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_port_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeletePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3437,9 +3977,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3448,20 +3988,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ports/{port_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeletePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_router(self, request):
         """删除路由器
@@ -3474,9 +4010,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteRouterRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteRouterResponse`
         """
-        return self._neutron_delete_router_with_http_info(request)
+        http_info = self._neutron_delete_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_router_with_http_info(self, request):
+    def neutron_delete_router_invoker(self, request):
+        http_info = self._neutron_delete_router_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_router_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/routers/{router_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3493,9 +4042,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3504,20 +4053,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/routers/{router_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_security_group(self, request):
         """删除安全组
@@ -3530,9 +4075,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSecurityGroupResponse`
         """
-        return self._neutron_delete_security_group_with_http_info(request)
+        http_info = self._neutron_delete_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_security_group_with_http_info(self, request):
+    def neutron_delete_security_group_invoker(self, request):
+        http_info = self._neutron_delete_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_security_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3549,9 +4107,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3560,20 +4118,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-groups/{security_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_security_group_rule(self, request):
         """删除安全组规则
@@ -3586,9 +4140,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSecurityGroupRuleResponse`
         """
-        return self._neutron_delete_security_group_rule_with_http_info(request)
+        http_info = self._neutron_delete_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_security_group_rule_with_http_info(self, request):
+    def neutron_delete_security_group_rule_invoker(self, request):
+        http_info = self._neutron_delete_security_group_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_security_group_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/security-group-rules/{security_group_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3605,9 +4172,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3616,20 +4183,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-group-rules/{security_group_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_subnet(self, request):
         """删除子网
@@ -3642,9 +4205,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSubnetRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteSubnetResponse`
         """
-        return self._neutron_delete_subnet_with_http_info(request)
+        http_info = self._neutron_delete_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_subnet_with_http_info(self, request):
+    def neutron_delete_subnet_invoker(self, request):
+        http_info = self._neutron_delete_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_subnet_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3661,9 +4237,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3672,20 +4248,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/subnets/{subnet_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_networks(self, request):
         """查询网络列表
@@ -3698,9 +4270,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListNetworksRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListNetworksResponse`
         """
-        return self._neutron_list_networks_with_http_info(request)
+        http_info = self._neutron_list_networks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_networks_with_http_info(self, request):
+    def neutron_list_networks_invoker(self, request):
+        http_info = self._neutron_list_networks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_networks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListNetworksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3735,9 +4320,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3746,20 +4331,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/networks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListNetworksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_ports(self, request):
         """查询端口列表
@@ -3772,9 +4353,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListPortsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListPortsResponse`
         """
-        return self._neutron_list_ports_with_http_info(request)
+        http_info = self._neutron_list_ports_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_ports_with_http_info(self, request):
+    def neutron_list_ports_invoker(self, request):
+        http_info = self._neutron_list_ports_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_ports_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListPortsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3817,9 +4411,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3828,20 +4422,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ports',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListPortsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_routers(self, request):
         """查询路由器列表
@@ -3854,9 +4444,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListRoutersRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListRoutersResponse`
         """
-        return self._neutron_list_routers_with_http_info(request)
+        http_info = self._neutron_list_routers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_routers_with_http_info(self, request):
+    def neutron_list_routers_invoker(self, request):
+        http_info = self._neutron_list_routers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_routers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/routers",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListRoutersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3883,9 +4486,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3894,20 +4497,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/routers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListRoutersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_security_group_rules(self, request):
         """查询安全组规则列表
@@ -3920,9 +4519,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListSecurityGroupRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListSecurityGroupRulesResponse`
         """
-        return self._neutron_list_security_group_rules_with_http_info(request)
+        http_info = self._neutron_list_security_group_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_security_group_rules_with_http_info(self, request):
+    def neutron_list_security_group_rules_invoker(self, request):
+        http_info = self._neutron_list_security_group_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_security_group_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/security-group-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListSecurityGroupRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3963,9 +4575,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3974,20 +4586,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-group-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListSecurityGroupRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_security_groups(self, request):
         """查询安全组列表
@@ -4000,9 +4608,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListSecurityGroupsResponse`
         """
-        return self._neutron_list_security_groups_with_http_info(request)
+        http_info = self._neutron_list_security_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_security_groups_with_http_info(self, request):
+    def neutron_list_security_groups_invoker(self, request):
+        http_info = self._neutron_list_security_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_security_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListSecurityGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4029,9 +4650,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4040,20 +4661,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListSecurityGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_subnets(self, request):
         """查询子网列表
@@ -4066,9 +4683,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListSubnetsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListSubnetsResponse`
         """
-        return self._neutron_list_subnets_with_http_info(request)
+        http_info = self._neutron_list_subnets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_subnets_with_http_info(self, request):
+    def neutron_list_subnets_invoker(self, request):
+        http_info = self._neutron_list_subnets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_subnets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListSubnetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4103,9 +4733,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4114,20 +4744,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/subnets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListSubnetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_remove_router_interface(self, request):
         """路由器删除接口
@@ -4140,9 +4766,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronRemoveRouterInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronRemoveRouterInterfaceResponse`
         """
-        return self._neutron_remove_router_interface_with_http_info(request)
+        http_info = self._neutron_remove_router_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_remove_router_interface_with_http_info(self, request):
+    def neutron_remove_router_interface_invoker(self, request):
+        http_info = self._neutron_remove_router_interface_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_remove_router_interface_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/routers/{router_id}/remove_router_interface",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronRemoveRouterInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4159,11 +4798,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4172,20 +4811,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/routers/{router_id}/remove_router_interface',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronRemoveRouterInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_network(self, request):
         """查询网络
@@ -4198,9 +4833,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowNetworkRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowNetworkResponse`
         """
-        return self._neutron_show_network_with_http_info(request)
+        http_info = self._neutron_show_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_network_with_http_info(self, request):
+    def neutron_show_network_invoker(self, request):
+        http_info = self._neutron_show_network_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_network_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/networks/{network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4217,9 +4865,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4228,20 +4876,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/networks/{network_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_port(self, request):
         """查询端口
@@ -4254,9 +4898,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowPortRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowPortResponse`
         """
-        return self._neutron_show_port_with_http_info(request)
+        http_info = self._neutron_show_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_port_with_http_info(self, request):
+    def neutron_show_port_invoker(self, request):
+        http_info = self._neutron_show_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_port_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowPortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4273,9 +4930,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4284,20 +4941,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ports/{port_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowPortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_router(self, request):
         """查询路由器
@@ -4310,9 +4963,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowRouterRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowRouterResponse`
         """
-        return self._neutron_show_router_with_http_info(request)
+        http_info = self._neutron_show_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_router_with_http_info(self, request):
+    def neutron_show_router_invoker(self, request):
+        http_info = self._neutron_show_router_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_router_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/routers/{router_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4329,9 +4995,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4340,20 +5006,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/routers/{router_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_security_group(self, request):
         """查询安全组
@@ -4366,9 +5028,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowSecurityGroupResponse`
         """
-        return self._neutron_show_security_group_with_http_info(request)
+        http_info = self._neutron_show_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_security_group_with_http_info(self, request):
+    def neutron_show_security_group_invoker(self, request):
+        http_info = self._neutron_show_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_security_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4385,9 +5060,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4396,20 +5071,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-groups/{security_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_security_group_rule(self, request):
         """查询安全组规则
@@ -4422,9 +5093,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowSecurityGroupRuleResponse`
         """
-        return self._neutron_show_security_group_rule_with_http_info(request)
+        http_info = self._neutron_show_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_security_group_rule_with_http_info(self, request):
+    def neutron_show_security_group_rule_invoker(self, request):
+        http_info = self._neutron_show_security_group_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_security_group_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/security-group-rules/{security_group_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4441,9 +5125,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4452,20 +5136,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-group-rules/{security_group_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_subnet(self, request):
         """查询子网
@@ -4478,9 +5158,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowSubnetRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowSubnetResponse`
         """
-        return self._neutron_show_subnet_with_http_info(request)
+        http_info = self._neutron_show_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_subnet_with_http_info(self, request):
+    def neutron_show_subnet_invoker(self, request):
+        http_info = self._neutron_show_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_subnet_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4497,9 +5190,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4508,20 +5201,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/subnets/{subnet_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_network(self, request):
         """更新网络
@@ -4534,9 +5223,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateNetworkRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateNetworkResponse`
         """
-        return self._neutron_update_network_with_http_info(request)
+        http_info = self._neutron_update_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_network_with_http_info(self, request):
+    def neutron_update_network_invoker(self, request):
+        http_info = self._neutron_update_network_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_update_network_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/networks/{network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdateNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4553,11 +5255,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4566,20 +5268,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/networks/{network_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdateNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_port(self, request):
         """更新端口
@@ -4592,9 +5290,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdatePortRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdatePortResponse`
         """
-        return self._neutron_update_port_with_http_info(request)
+        http_info = self._neutron_update_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_port_with_http_info(self, request):
+    def neutron_update_port_invoker(self, request):
+        http_info = self._neutron_update_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_update_port_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdatePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4611,11 +5322,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4624,20 +5335,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ports/{port_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdatePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_router(self, request):
         """更新路由器
@@ -4650,9 +5357,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateRouterRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateRouterResponse`
         """
-        return self._neutron_update_router_with_http_info(request)
+        http_info = self._neutron_update_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_router_with_http_info(self, request):
+    def neutron_update_router_invoker(self, request):
+        http_info = self._neutron_update_router_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_update_router_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/routers/{router_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdateRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4669,11 +5389,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4682,20 +5402,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/routers/{router_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdateRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_security_group(self, request):
         """更新安全组
@@ -4708,9 +5424,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSecurityGroupResponse`
         """
-        return self._neutron_update_security_group_with_http_info(request)
+        http_info = self._neutron_update_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_security_group_with_http_info(self, request):
+    def neutron_update_security_group_invoker(self, request):
+        http_info = self._neutron_update_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_update_security_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4727,11 +5456,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4740,20 +5469,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/security-groups/{security_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_subnet(self, request):
         """更新子网
@@ -4766,9 +5491,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSubnetRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateSubnetResponse`
         """
-        return self._neutron_update_subnet_with_http_info(request)
+        http_info = self._neutron_update_subnet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_subnet_with_http_info(self, request):
+    def neutron_update_subnet_invoker(self, request):
+        http_info = self._neutron_update_subnet_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_update_subnet_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/subnets/{subnet_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdateSubnetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4785,11 +5523,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4798,20 +5536,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/subnets/{subnet_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdateSubnetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_add_firewall_rule(self, request):
         """插入网络ACL规则
@@ -4824,9 +5558,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronAddFirewallRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronAddFirewallRuleResponse`
         """
-        return self._neutron_add_firewall_rule_with_http_info(request)
+        http_info = self._neutron_add_firewall_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_add_firewall_rule_with_http_info(self, request):
+    def neutron_add_firewall_rule_invoker(self, request):
+        http_info = self._neutron_add_firewall_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_add_firewall_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/fwaas/firewall_policies/{firewall_policy_id}/insert_rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronAddFirewallRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4843,11 +5590,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4856,20 +5603,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}/insert_rule',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronAddFirewallRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_firewall_group(self, request):
         """创建网络ACL组
@@ -4882,9 +5625,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallGroupResponse`
         """
-        return self._neutron_create_firewall_group_with_http_info(request)
+        http_info = self._neutron_create_firewall_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_firewall_group_with_http_info(self, request):
+    def neutron_create_firewall_group_invoker(self, request):
+        http_info = self._neutron_create_firewall_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_firewall_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/fwaas/firewall_groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateFirewallGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4899,11 +5655,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4912,20 +5668,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateFirewallGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_firewall_policy(self, request):
         """创建网络ACL策略
@@ -4938,9 +5690,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallPolicyRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallPolicyResponse`
         """
-        return self._neutron_create_firewall_policy_with_http_info(request)
+        http_info = self._neutron_create_firewall_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_firewall_policy_with_http_info(self, request):
+    def neutron_create_firewall_policy_invoker(self, request):
+        http_info = self._neutron_create_firewall_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_firewall_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/fwaas/firewall_policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateFirewallPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4955,11 +5720,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4968,20 +5733,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_policies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateFirewallPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_firewall_rule(self, request):
         """创建网络ACL规则
@@ -4994,9 +5755,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronCreateFirewallRuleResponse`
         """
-        return self._neutron_create_firewall_rule_with_http_info(request)
+        http_info = self._neutron_create_firewall_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_firewall_rule_with_http_info(self, request):
+    def neutron_create_firewall_rule_invoker(self, request):
+        http_info = self._neutron_create_firewall_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_create_firewall_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/fwaas/firewall_rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateFirewallRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5011,11 +5785,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5024,20 +5798,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateFirewallRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_firewall_group(self, request):
         """删除网络ACL组
@@ -5050,9 +5820,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallGroupResponse`
         """
-        return self._neutron_delete_firewall_group_with_http_info(request)
+        http_info = self._neutron_delete_firewall_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_firewall_group_with_http_info(self, request):
+    def neutron_delete_firewall_group_invoker(self, request):
+        http_info = self._neutron_delete_firewall_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_firewall_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/fwaas/firewall_groups/{firewall_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteFirewallGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5069,9 +5852,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5080,20 +5863,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_groups/{firewall_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteFirewallGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_firewall_policy(self, request):
         """删除网络ACL策略
@@ -5106,9 +5885,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallPolicyRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallPolicyResponse`
         """
-        return self._neutron_delete_firewall_policy_with_http_info(request)
+        http_info = self._neutron_delete_firewall_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_firewall_policy_with_http_info(self, request):
+    def neutron_delete_firewall_policy_invoker(self, request):
+        http_info = self._neutron_delete_firewall_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_firewall_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/fwaas/firewall_policies/{firewall_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteFirewallPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5125,9 +5917,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5136,20 +5928,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteFirewallPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_firewall_rule(self, request):
         """删除网络ACL规则
@@ -5162,9 +5950,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronDeleteFirewallRuleResponse`
         """
-        return self._neutron_delete_firewall_rule_with_http_info(request)
+        http_info = self._neutron_delete_firewall_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_firewall_rule_with_http_info(self, request):
+    def neutron_delete_firewall_rule_invoker(self, request):
+        http_info = self._neutron_delete_firewall_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_delete_firewall_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/fwaas/firewall_rules/{firewall_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteFirewallRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5181,9 +5982,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5192,20 +5993,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_rules/{firewall_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteFirewallRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_firewall_groups(self, request):
         """查询所有网络ACL组
@@ -5218,9 +6015,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallGroupsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallGroupsResponse`
         """
-        return self._neutron_list_firewall_groups_with_http_info(request)
+        http_info = self._neutron_list_firewall_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_firewall_groups_with_http_info(self, request):
+    def neutron_list_firewall_groups_invoker(self, request):
+        http_info = self._neutron_list_firewall_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_firewall_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/fwaas/firewall_groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListFirewallGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5252,9 +6062,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5263,20 +6073,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListFirewallGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_firewall_policies(self, request):
         """查询所有网络ACL策略
@@ -5289,9 +6095,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallPoliciesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallPoliciesResponse`
         """
-        return self._neutron_list_firewall_policies_with_http_info(request)
+        http_info = self._neutron_list_firewall_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_firewall_policies_with_http_info(self, request):
+    def neutron_list_firewall_policies_invoker(self, request):
+        http_info = self._neutron_list_firewall_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_firewall_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/fwaas/firewall_policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListFirewallPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5321,9 +6140,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5332,20 +6151,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListFirewallPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_firewall_rules(self, request):
         """查询所有网络ACL规则
@@ -5358,9 +6173,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronListFirewallRulesResponse`
         """
-        return self._neutron_list_firewall_rules_with_http_info(request)
+        http_info = self._neutron_list_firewall_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_firewall_rules_with_http_info(self, request):
+    def neutron_list_firewall_rules_invoker(self, request):
+        http_info = self._neutron_list_firewall_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_list_firewall_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/fwaas/firewall_rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListFirewallRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5392,9 +6220,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5403,20 +6231,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListFirewallRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_remove_firewall_rule(self, request):
         """移除网络ACL规则
@@ -5429,9 +6253,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronRemoveFirewallRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronRemoveFirewallRuleResponse`
         """
-        return self._neutron_remove_firewall_rule_with_http_info(request)
+        http_info = self._neutron_remove_firewall_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_remove_firewall_rule_with_http_info(self, request):
+    def neutron_remove_firewall_rule_invoker(self, request):
+        http_info = self._neutron_remove_firewall_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_remove_firewall_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/fwaas/firewall_policies/{firewall_policy_id}/remove_rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronRemoveFirewallRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5448,11 +6285,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5461,20 +6298,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}/remove_rule',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronRemoveFirewallRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_firewall_group(self, request):
         """查询特定网络ACL组详情
@@ -5487,9 +6320,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallGroupResponse`
         """
-        return self._neutron_show_firewall_group_with_http_info(request)
+        http_info = self._neutron_show_firewall_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_firewall_group_with_http_info(self, request):
+    def neutron_show_firewall_group_invoker(self, request):
+        http_info = self._neutron_show_firewall_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_firewall_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/fwaas/firewall_groups/{firewall_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowFirewallGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5506,9 +6352,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5517,20 +6363,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_groups/{firewall_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowFirewallGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_firewall_policy(self, request):
         """查询特定网络ACL策略详情
@@ -5543,9 +6385,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallPolicyRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallPolicyResponse`
         """
-        return self._neutron_show_firewall_policy_with_http_info(request)
+        http_info = self._neutron_show_firewall_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_firewall_policy_with_http_info(self, request):
+    def neutron_show_firewall_policy_invoker(self, request):
+        http_info = self._neutron_show_firewall_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_firewall_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/fwaas/firewall_policies/{firewall_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowFirewallPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5562,9 +6417,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5573,20 +6428,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowFirewallPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_firewall_rule(self, request):
         """查询特定网络ACL规则
@@ -5599,9 +6450,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronShowFirewallRuleResponse`
         """
-        return self._neutron_show_firewall_rule_with_http_info(request)
+        http_info = self._neutron_show_firewall_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_firewall_rule_with_http_info(self, request):
+    def neutron_show_firewall_rule_invoker(self, request):
+        http_info = self._neutron_show_firewall_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_show_firewall_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/fwaas/firewall_rules/{firewall_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowFirewallRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5618,9 +6482,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5629,20 +6493,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_rules/{firewall_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowFirewallRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_firewall_group(self, request):
         """更新网络ACL组
@@ -5655,9 +6515,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallGroupResponse`
         """
-        return self._neutron_update_firewall_group_with_http_info(request)
+        http_info = self._neutron_update_firewall_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_firewall_group_with_http_info(self, request):
+    def neutron_update_firewall_group_invoker(self, request):
+        http_info = self._neutron_update_firewall_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_update_firewall_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/fwaas/firewall_groups/{firewall_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdateFirewallGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5674,11 +6547,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5687,20 +6560,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_groups/{firewall_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdateFirewallGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_firewall_policy(self, request):
         """更新网络ACL策略
@@ -5713,9 +6582,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallPolicyRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallPolicyResponse`
         """
-        return self._neutron_update_firewall_policy_with_http_info(request)
+        http_info = self._neutron_update_firewall_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_firewall_policy_with_http_info(self, request):
+    def neutron_update_firewall_policy_invoker(self, request):
+        http_info = self._neutron_update_firewall_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_update_firewall_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/fwaas/firewall_policies/{firewall_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdateFirewallPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5732,11 +6614,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5745,20 +6627,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_policies/{firewall_policy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdateFirewallPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_firewall_rule(self, request):
         """更新网络ACL规则
@@ -5771,9 +6649,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.NeutronUpdateFirewallRuleResponse`
         """
-        return self._neutron_update_firewall_rule_with_http_info(request)
+        http_info = self._neutron_update_firewall_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_firewall_rule_with_http_info(self, request):
+    def neutron_update_firewall_rule_invoker(self, request):
+        http_info = self._neutron_update_firewall_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _neutron_update_firewall_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/fwaas/firewall_rules/{firewall_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdateFirewallRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5790,11 +6681,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5803,20 +6694,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/fwaas/firewall_rules/{firewall_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdateFirewallRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_version(self, request):
         """查询API版本信息列表
@@ -5829,9 +6716,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListApiVersionRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListApiVersionResponse`
         """
-        return self._list_api_version_with_http_info(request)
+        http_info = self._list_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_version_with_http_info(self, request):
+    def list_api_version_invoker(self, request):
+        http_info = self._list_api_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5846,9 +6746,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5857,20 +6757,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_vpc_tags(self, request):
         """批量创建VPC资源标签
@@ -5884,9 +6780,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchCreateVpcTagsResponse`
         """
-        return self._batch_create_vpc_tags_with_http_info(request)
+        http_info = self._batch_create_vpc_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_vpc_tags_with_http_info(self, request):
+    def batch_create_vpc_tags_invoker(self, request):
+        http_info = self._batch_create_vpc_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_vpc_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/vpcs/{vpc_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateVpcTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5903,11 +6812,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5916,20 +6825,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateVpcTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_vpc_tags(self, request):
         """批量删除VPC资源标签
@@ -5943,9 +6848,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.BatchDeleteVpcTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.BatchDeleteVpcTagsResponse`
         """
-        return self._batch_delete_vpc_tags_with_http_info(request)
+        http_info = self._batch_delete_vpc_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_vpc_tags_with_http_info(self, request):
+    def batch_delete_vpc_tags_invoker(self, request):
+        http_info = self._batch_delete_vpc_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_vpc_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/vpcs/{vpc_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteVpcTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5962,11 +6880,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5975,20 +6893,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteVpcTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc(self, request):
         """创建VPC
@@ -6001,9 +6915,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcResponse`
         """
-        return self._create_vpc_with_http_info(request)
+        http_info = self._create_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_with_http_info(self, request):
+    def create_vpc_invoker(self, request):
+        http_info = self._create_vpc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vpc_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6018,11 +6945,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6031,20 +6958,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vpcs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc_resource_tag(self, request):
         """创建VPC资源标签
@@ -6058,9 +6981,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateVpcResourceTagRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcResourceTagResponse`
         """
-        return self._create_vpc_resource_tag_with_http_info(request)
+        http_info = self._create_vpc_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_resource_tag_with_http_info(self, request):
+    def create_vpc_resource_tag_invoker(self, request):
+        http_info = self._create_vpc_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vpc_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/vpcs/{vpc_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6077,11 +7013,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6090,20 +7026,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc_route(self, request):
         """创建VPC路由
@@ -6116,9 +7048,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.CreateVpcRouteRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.CreateVpcRouteResponse`
         """
-        return self._create_vpc_route_with_http_info(request)
+        http_info = self._create_vpc_route_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_route_with_http_info(self, request):
+    def create_vpc_route_invoker(self, request):
+        http_info = self._create_vpc_route_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vpc_route_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/vpc/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcRouteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6133,11 +7078,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6146,20 +7091,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/routes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcRouteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc(self, request):
         """删除VPC
@@ -6172,9 +7113,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteVpcResponse`
         """
-        return self._delete_vpc_with_http_info(request)
+        http_info = self._delete_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_with_http_info(self, request):
+    def delete_vpc_invoker(self, request):
+        http_info = self._delete_vpc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vpc_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6191,9 +7145,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6202,20 +7156,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vpcs/{vpc_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc_route(self, request):
         """删除VPC路由
@@ -6228,9 +7178,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteVpcRouteRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteVpcRouteResponse`
         """
-        return self._delete_vpc_route_with_http_info(request)
+        http_info = self._delete_vpc_route_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_route_with_http_info(self, request):
+    def delete_vpc_route_invoker(self, request):
+        http_info = self._delete_vpc_route_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vpc_route_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/vpc/routes/{route_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcRouteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6247,9 +7210,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6258,20 +7221,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/routes/{route_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcRouteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc_tag(self, request):
         """删除VPC资源标签
@@ -6285,9 +7244,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.DeleteVpcTagRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.DeleteVpcTagResponse`
         """
-        return self._delete_vpc_tag_with_http_info(request)
+        http_info = self._delete_vpc_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_tag_with_http_info(self, request):
+    def delete_vpc_tag_invoker(self, request):
+        http_info = self._delete_vpc_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vpc_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/vpcs/{vpc_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6306,9 +7278,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6317,20 +7289,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpc_routes(self, request):
         """查询VPC路由列表
@@ -6343,9 +7311,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListVpcRoutesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcRoutesResponse`
         """
-        return self._list_vpc_routes_with_http_info(request)
+        http_info = self._list_vpc_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpc_routes_with_http_info(self, request):
+    def list_vpc_routes_invoker(self, request):
+        http_info = self._list_vpc_routes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpc_routes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/vpc/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6374,9 +7355,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6385,20 +7366,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/routes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpc_tags(self, request):
         """查询VPC项目标签
@@ -6411,9 +7388,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListVpcTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcTagsResponse`
         """
-        return self._list_vpc_tags_with_http_info(request)
+        http_info = self._list_vpc_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpc_tags_with_http_info(self, request):
+    def list_vpc_tags_invoker(self, request):
+        http_info = self._list_vpc_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpc_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/vpcs/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6428,9 +7418,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6439,20 +7429,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/vpcs/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpcs(self, request):
         """查询VPC列表
@@ -6465,9 +7451,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListVpcsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcsResponse`
         """
-        return self._list_vpcs_with_http_info(request)
+        http_info = self._list_vpcs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpcs_with_http_info(self, request):
+    def list_vpcs_invoker(self, request):
+        http_info = self._list_vpcs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpcs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6490,9 +7489,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6501,20 +7500,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vpcs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpcs_by_tags(self, request):
         """查询VPC资源实例
@@ -6527,9 +7522,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ListVpcsByTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ListVpcsByTagsResponse`
         """
-        return self._list_vpcs_by_tags_with_http_info(request)
+        http_info = self._list_vpcs_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpcs_by_tags_with_http_info(self, request):
+    def list_vpcs_by_tags_invoker(self, request):
+        http_info = self._list_vpcs_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpcs_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/vpcs/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcsByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6544,11 +7552,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6557,20 +7565,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/vpcs/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcsByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpc(self, request):
         """查询VPC
@@ -6583,9 +7587,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowVpcResponse`
         """
-        return self._show_vpc_with_http_info(request)
+        http_info = self._show_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpc_with_http_info(self, request):
+    def show_vpc_invoker(self, request):
+        http_info = self._show_vpc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vpc_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6602,9 +7619,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6613,20 +7630,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vpcs/{vpc_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpc_route(self, request):
         """查询VPC路由
@@ -6639,9 +7652,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowVpcRouteRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowVpcRouteResponse`
         """
-        return self._show_vpc_route_with_http_info(request)
+        http_info = self._show_vpc_route_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpc_route_with_http_info(self, request):
+    def show_vpc_route_invoker(self, request):
+        http_info = self._show_vpc_route_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vpc_route_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/vpc/routes/{route_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpcRouteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6658,9 +7684,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6669,20 +7695,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/vpc/routes/{route_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpcRouteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpc_tags(self, request):
         """查询VPC资源标签
@@ -6695,9 +7717,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.ShowVpcTagsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.ShowVpcTagsResponse`
         """
-        return self._show_vpc_tags_with_http_info(request)
+        http_info = self._show_vpc_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpc_tags_with_http_info(self, request):
+    def show_vpc_tags_invoker(self, request):
+        http_info = self._show_vpc_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vpc_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/vpcs/{vpc_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpcTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6714,9 +7749,9 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6725,20 +7760,16 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/vpcs/{vpc_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpcTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpc(self, request):
         """更新VPC
@@ -6751,9 +7782,22 @@ class VpcClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v2.UpdateVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v2.UpdateVpcResponse`
         """
-        return self._update_vpc_with_http_info(request)
+        http_info = self._update_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpc_with_http_info(self, request):
+    def update_vpc_invoker(self, request):
+        http_info = self._update_vpc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vpc_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6770,11 +7814,11 @@ class VpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6783,20 +7827,25 @@ class VpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vpcs/{vpc_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

@@ -69,7 +69,8 @@ class EnvironmentCreate:
         if enterprise_project_id is not None:
             self.enterprise_project_id = enterprise_project_id
         self.vpc_id = vpc_id
-        self.deploy_mode = deploy_mode
+        if deploy_mode is not None:
+            self.deploy_mode = deploy_mode
         if labels is not None:
             self.labels = labels
 

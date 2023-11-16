@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkeihealth'")
 
 
 class EiHealthAsyncClient(Client):
@@ -39,9 +44,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchCancelJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchCancelJobResponse`
         """
-        return self._batch_cancel_job_with_http_info(request)
+        http_info = self._batch_cancel_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_cancel_job_with_http_info(self, request):
+    def batch_cancel_job_async_invoker(self, request):
+        http_info = self._batch_cancel_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_cancel_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-terminate",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCancelJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-terminate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCancelJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_data_async(self, request):
         """批量删除项目数据
@@ -100,9 +113,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteDataResponse`
         """
-        return self._batch_delete_data_with_http_info(request)
+        http_info = self._batch_delete_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_data_with_http_info(self, request):
+    def batch_delete_data_async_invoker(self, request):
+        http_info = self._batch_delete_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +144,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +157,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_job_async(self, request):
         """批量删除作业
@@ -159,9 +180,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteJobResponse`
         """
-        return self._batch_delete_job_with_http_info(request)
+        http_info = self._batch_delete_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_job_with_http_info(self, request):
+    def batch_delete_job_async_invoker(self, request):
+        http_info = self._batch_delete_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -178,11 +211,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -191,20 +224,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_label_async(self, request):
         """批量删除标签
@@ -218,9 +247,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteLabelResponse`
         """
-        return self._batch_delete_label_with_http_info(request)
+        http_info = self._batch_delete_label_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_label_with_http_info(self, request):
+    def batch_delete_label_async_invoker(self, request):
+        http_info = self._batch_delete_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_label_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/labels/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteLabelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +276,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/labels/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteLabelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_member_async(self, request):
         """批量删除项目成员
@@ -275,9 +312,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteMemberResponse`
         """
-        return self._batch_delete_member_with_http_info(request)
+        http_info = self._batch_delete_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_member_with_http_info(self, request):
+    def batch_delete_member_async_invoker(self, request):
+        http_info = self._batch_delete_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_member_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/members/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -294,11 +343,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -307,20 +356,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/members/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_notice_async(self, request):
         """批量删除通知消息
@@ -334,9 +379,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteNoticeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteNoticeResponse`
         """
-        return self._batch_delete_notice_with_http_info(request)
+        http_info = self._batch_delete_notice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_notice_with_http_info(self, request):
+    def batch_delete_notice_async_invoker(self, request):
+        http_info = self._batch_delete_notice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_notice_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/notices/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteNoticeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -351,11 +408,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -364,20 +421,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/notices/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteNoticeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_tag_async(self, request):
         """批量删除镜像tag
@@ -391,9 +444,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDeleteTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDeleteTagResponse`
         """
-        return self._batch_delete_tag_with_http_info(request)
+        http_info = self._batch_delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_tag_with_http_info(self, request):
+    def batch_delete_tag_async_invoker(self, request):
+        http_info = self._batch_delete_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}/tags/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -412,11 +477,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -425,20 +490,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}/tags/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_download_resource_stat_data_async(self, request):
         """批量获取资源统计数据
@@ -452,9 +513,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchDownloadResourceStatDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchDownloadResourceStatDataResponse`
         """
-        return self._batch_download_resource_stat_data_with_http_info(request)
+        http_info = self._batch_download_resource_stat_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_download_resource_stat_data_with_http_info(self, request):
+    def batch_download_resource_stat_data_async_invoker(self, request):
+        http_info = self._batch_download_resource_stat_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_download_resource_stat_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/metric-data/batch-stat-metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDownloadResourceStatDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -469,11 +542,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -482,20 +555,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/metric-data/batch-stat-metric-data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDownloadResourceStatDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_import_app_async(self, request):
         """导入应用
@@ -509,9 +578,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchImportAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchImportAppResponse`
         """
-        return self._batch_import_app_with_http_info(request)
+        http_info = self._batch_import_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_import_app_with_http_info(self, request):
+    def batch_import_app_async_invoker(self, request):
+        http_info = self._batch_import_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_import_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/batch-import",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchImportAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -528,11 +609,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -541,20 +622,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/batch-import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchImportAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_retry_job_async(self, request):
         """批量重试作业
@@ -568,9 +645,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchRetryJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchRetryJobResponse`
         """
-        return self._batch_retry_job_with_http_info(request)
+        http_info = self._batch_retry_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_retry_job_with_http_info(self, request):
+    def batch_retry_job_async_invoker(self, request):
+        http_info = self._batch_retry_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_retry_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRetryJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -587,11 +676,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -600,20 +689,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/batch-retry',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRetryJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_node_label_async(self, request):
         """设置节点标签
@@ -627,9 +712,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNodeLabelResponse`
         """
-        return self._batch_update_node_label_with_http_info(request)
+        http_info = self._batch_update_node_label_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_node_label_with_http_info(self, request):
+    def batch_update_node_label_async_invoker(self, request):
+        http_info = self._batch_update_node_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_node_label_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/nodes/{server_id}/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateNodeLabelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -646,11 +743,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -659,20 +756,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/nodes/{server_id}/labels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateNodeLabelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_notice_async(self, request):
         """批量更新消息
@@ -686,9 +779,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNoticeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.BatchUpdateNoticeResponse`
         """
-        return self._batch_update_notice_with_http_info(request)
+        http_info = self._batch_update_notice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_notice_with_http_info(self, request):
+    def batch_update_notice_async_invoker(self, request):
+        http_info = self._batch_update_notice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_notice_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/notices/batch-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateNoticeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -703,11 +808,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -716,20 +821,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/notices/batch-update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateNoticeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_data_job_async(self, request):
         """取消数据作业
@@ -743,9 +844,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CancelDataJobResponse`
         """
-        return self._cancel_data_job_with_http_info(request)
+        http_info = self._cancel_data_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_data_job_with_http_info(self, request):
+    def cancel_data_job_async_invoker(self, request):
+        http_info = self._cancel_data_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_data_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelDataJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -764,9 +877,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -775,20 +888,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}/cancel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelDataJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_drug_job_async(self, request):
         """取消药物作业
@@ -802,9 +911,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelDrugJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CancelDrugJobResponse`
         """
-        return self._cancel_drug_job_with_http_info(request)
+        http_info = self._cancel_drug_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_drug_job_with_http_info(self, request):
+    def cancel_drug_job_async_invoker(self, request):
+        http_info = self._cancel_drug_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_drug_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/{job_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelDrugJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -823,9 +944,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -834,20 +955,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/{job_id}/cancel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelDrugJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_job_async(self, request):
         """取消或强制停止作业调度
@@ -861,9 +978,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CancelJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CancelJobResponse`
         """
-        return self._cancel_job_with_http_info(request)
+        http_info = self._cancel_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_job_with_http_info(self, request):
+    def cancel_job_async_invoker(self, request):
+        http_info = self._cancel_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/terminate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -882,11 +1011,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -895,20 +1024,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/terminate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_password_async(self, request):
         """修改密码
@@ -922,9 +1047,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ChangePasswordRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ChangePasswordResponse`
         """
-        return self._change_password_with_http_info(request)
+        http_info = self._change_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_password_with_http_info(self, request):
+    def change_password_async_invoker(self, request):
+        http_info = self._change_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/users/{user_id}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangePasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -941,11 +1078,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -954,20 +1091,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangePasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_email_connection_async(self, request):
         """邮箱连通性测试
@@ -981,9 +1114,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CheckEmailConnectionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CheckEmailConnectionResponse`
         """
-        return self._check_email_connection_with_http_info(request)
+        http_info = self._check_email_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_email_connection_with_http_info(self, request):
+    def check_email_connection_async_invoker(self, request):
+        http_info = self._check_email_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_email_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/messages/email-connection-test",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckEmailConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -998,11 +1143,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1011,20 +1156,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/email-connection-test',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckEmailConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_token_verification_async(self, request):
         """校验token
@@ -1038,9 +1179,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CheckTokenVerificationRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CheckTokenVerificationResponse`
         """
-        return self._check_token_verification_with_http_info(request)
+        http_info = self._check_token_verification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_token_verification_with_http_info(self, request):
+    def check_token_verification_async_invoker(self, request):
+        http_info = self._check_token_verification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_token_verification_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/users/token-verification",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckTokenVerificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1055,9 +1208,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1066,20 +1219,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/token-verification',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckTokenVerificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_data_async(self, request):
         """复制项目数据
@@ -1093,9 +1242,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CopyDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CopyDataResponse`
         """
-        return self._copy_data_with_http_info(request)
+        http_info = self._copy_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_data_with_http_info(self, request):
+    def copy_data_async_invoker(self, request):
+        http_info = self._copy_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _copy_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/clone",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1112,11 +1273,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1125,20 +1286,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/clone',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_admet_job_async(self, request):
         """创建分子属性预测作业
@@ -1152,9 +1309,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAdmetJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAdmetJobResponse`
         """
-        return self._create_admet_job_with_http_info(request)
+        http_info = self._create_admet_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_admet_job_with_http_info(self, request):
+    def create_admet_job_async_invoker(self, request):
+        http_info = self._create_admet_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_admet_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/admet",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAdmetJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1171,11 +1340,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1184,20 +1353,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/admet',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAdmetJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_async(self, request):
         """创建应用
@@ -1211,9 +1376,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAppResponse`
         """
-        return self._create_app_with_http_info(request)
+        http_info = self._create_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_with_http_info(self, request):
+    def create_app_async_invoker(self, request):
+        http_info = self._create_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1230,11 +1407,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1243,20 +1420,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_auto_job_async(self, request):
         """创建自动作业模板
@@ -1270,9 +1443,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateAutoJobResponse`
         """
-        return self._create_auto_job_with_http_info(request)
+        http_info = self._create_auto_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_auto_job_with_http_info(self, request):
+    def create_auto_job_async_invoker(self, request):
+        http_info = self._create_auto_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_auto_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAutoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1289,11 +1474,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1302,20 +1487,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAutoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_backup_async(self, request):
         """归档数据
@@ -1329,9 +1510,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateBackupResponse`
         """
-        return self._create_backup_with_http_info(request)
+        http_info = self._create_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_backup_with_http_info(self, request):
+    def create_backup_async_invoker(self, request):
+        http_info = self._create_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_backup_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1348,11 +1541,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1361,20 +1554,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_code_async(self, request):
         """发送验证码
@@ -1388,9 +1577,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateCodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCodeResponse`
         """
-        return self._create_code_with_http_info(request)
+        http_info = self._create_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_code_with_http_info(self, request):
+    def create_code_async_invoker(self, request):
+        http_info = self._create_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/users/{user_id}/verification-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1407,11 +1608,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1420,20 +1621,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/verification-code',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_computing_resource_async(self, request):
         """购买计算资源
@@ -1447,9 +1644,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateComputingResourceResponse`
         """
-        return self._create_computing_resource_with_http_info(request)
+        http_info = self._create_computing_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_computing_resource_with_http_info(self, request):
+    def create_computing_resource_async_invoker(self, request):
+        http_info = self._create_computing_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_computing_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/computing-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateComputingResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1464,11 +1673,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1477,20 +1686,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateComputingResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_data_async(self, request):
         """创建文件夹
@@ -1504,9 +1709,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDataResponse`
         """
-        return self._create_data_with_http_info(request)
+        http_info = self._create_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_data_with_http_info(self, request):
+    def create_data_async_invoker(self, request):
+        http_info = self._create_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1523,11 +1740,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1536,20 +1753,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_database_data_async(self, request):
         """插入单条数据
@@ -1563,9 +1776,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseDataResponse`
         """
-        return self._create_database_data_with_http_info(request)
+        http_info = self._create_database_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_database_data_with_http_info(self, request):
+    def create_database_data_async_invoker(self, request):
+        http_info = self._create_database_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_database_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data/insert",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1584,11 +1809,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1597,20 +1822,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data/insert',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatabaseDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_database_resource_async(self, request):
         """购买数据库资源
@@ -1624,9 +1845,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDatabaseResourceResponse`
         """
-        return self._create_database_resource_with_http_info(request)
+        http_info = self._create_database_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_database_resource_with_http_info(self, request):
+    def create_database_resource_async_invoker(self, request):
+        http_info = self._create_database_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_database_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/database-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1641,11 +1874,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1654,20 +1887,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/database-resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatabaseResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_docking_job_async(self, request):
         """创建分子对接作业
@@ -1681,9 +1910,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDockingJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDockingJobResponse`
         """
-        return self._create_docking_job_with_http_info(request)
+        http_info = self._create_docking_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_docking_job_with_http_info(self, request):
+    def create_docking_job_async_invoker(self, request):
+        http_info = self._create_docking_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_docking_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/docking",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDockingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1700,11 +1941,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1713,20 +1954,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/docking',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDockingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_drug_model_async(self, request):
         """创建模型
@@ -1740,9 +1977,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDrugModelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugModelResponse`
         """
-        return self._create_drug_model_with_http_info(request)
+        http_info = self._create_drug_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_drug_model_with_http_info(self, request):
+    def create_drug_model_async_invoker(self, request):
+        http_info = self._create_drug_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_drug_model_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/drug-models",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDrugModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1757,11 +2006,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1770,20 +2019,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/drug-models',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDrugModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_fep_job_async(self, request):
         """创建自由能微扰作业
@@ -1797,9 +2042,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateFepJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateFepJobResponse`
         """
-        return self._create_fep_job_with_http_info(request)
+        http_info = self._create_fep_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_fep_job_with_http_info(self, request):
+    def create_fep_job_async_invoker(self, request):
+        http_info = self._create_fep_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_fep_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/fep",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFepJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1816,11 +2073,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1829,20 +2086,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/fep',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFepJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_image_async(self, request):
         """创建镜像
@@ -1856,9 +2109,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateImageResponse`
         """
-        return self._create_image_with_http_info(request)
+        http_info = self._create_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_image_with_http_info(self, request):
+    def create_image_async_invoker(self, request):
+        http_info = self._create_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1875,11 +2140,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1888,20 +2153,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance_async(self, request):
         """创建数据库实例
@@ -1915,9 +2176,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateInstanceResponse`
         """
-        return self._create_instance_with_http_info(request)
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_with_http_info(self, request):
+    def create_instance_async_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1934,11 +2207,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1947,20 +2220,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_label_async(self, request):
         """创建标签
@@ -1974,9 +2243,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelResponse`
         """
-        return self._create_label_with_http_info(request)
+        http_info = self._create_label_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_label_with_http_info(self, request):
+    def create_label_async_invoker(self, request):
+        http_info = self._create_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_label_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLabelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1991,11 +2272,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2004,20 +2285,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/labels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLabelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_label_page_async(self, request):
         """创建标签页面
@@ -2031,9 +2308,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateLabelPageResponse`
         """
-        return self._create_label_page_with_http_info(request)
+        http_info = self._create_label_page_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_label_page_with_http_info(self, request):
+    def create_label_page_async_invoker(self, request):
+        http_info = self._create_label_page_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_label_page_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/label-pages",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLabelPageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2050,11 +2339,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2063,20 +2352,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/label-pages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLabelPageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_optm_job_async(self, request):
         """创建分子优化作业
@@ -2090,9 +2375,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateOptmJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateOptmJobResponse`
         """
-        return self._create_optm_job_with_http_info(request)
+        http_info = self._create_optm_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_optm_job_with_http_info(self, request):
+    def create_optm_job_async_invoker(self, request):
+        http_info = self._create_optm_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_optm_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/optimization",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOptmJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2109,11 +2406,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2122,20 +2419,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/optimization',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOptmJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_performance_resource_async(self, request):
         """购买性能加速资源
@@ -2149,9 +2442,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreatePerformanceResourceResponse`
         """
-        return self._create_performance_resource_with_http_info(request)
+        http_info = self._create_performance_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_performance_resource_with_http_info(self, request):
+    def create_performance_resource_async_invoker(self, request):
+        http_info = self._create_performance_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_performance_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/performance-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePerformanceResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2166,11 +2471,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2179,20 +2484,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/performance-resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePerformanceResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_pocket_detection_job_async(self, request):
         """创建靶点口袋发现作业
@@ -2206,9 +2507,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreatePocketDetectionJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreatePocketDetectionJobResponse`
         """
-        return self._create_pocket_detection_job_with_http_info(request)
+        http_info = self._create_pocket_detection_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_pocket_detection_job_with_http_info(self, request):
+    def create_pocket_detection_job_async_invoker(self, request):
+        http_info = self._create_pocket_detection_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_pocket_detection_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/pocket-detection",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePocketDetectionJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2225,11 +2538,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2238,20 +2551,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/pocket-detection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePocketDetectionJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_pocket_mol_design_job_async(self, request):
         """创建靶点口袋分子设计作业
@@ -2265,9 +2574,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreatePocketMolDesignJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreatePocketMolDesignJobResponse`
         """
-        return self._create_pocket_mol_design_job_with_http_info(request)
+        http_info = self._create_pocket_mol_design_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_pocket_mol_design_job_with_http_info(self, request):
+    def create_pocket_mol_design_job_async_invoker(self, request):
+        http_info = self._create_pocket_mol_design_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_pocket_mol_design_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/pocket-mol-design",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePocketMolDesignJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2284,11 +2605,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2297,20 +2618,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/pocket-mol-design',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePocketMolDesignJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project_async(self, request):
         """创建项目
@@ -2324,9 +2641,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateProjectResponse`
         """
-        return self._create_project_with_http_info(request)
+        http_info = self._create_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_with_http_info(self, request):
+    def create_project_async_invoker(self, request):
+        http_info = self._create_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_project_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2341,11 +2670,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2354,20 +2683,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_scale_out_policy_async(self, request):
         """创建扩容策略
@@ -2381,9 +2706,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateScaleOutPolicyResponse`
         """
-        return self._create_scale_out_policy_with_http_info(request)
+        http_info = self._create_scale_out_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_scale_out_policy_with_http_info(self, request):
+    def create_scale_out_policy_async_invoker(self, request):
+        http_info = self._create_scale_out_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_scale_out_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScaleOutPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2398,11 +2735,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2411,20 +2748,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScaleOutPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_study_async(self, request):
         """创建study
@@ -2438,9 +2771,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateStudyResponse`
         """
-        return self._create_study_with_http_info(request)
+        http_info = self._create_study_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_study_with_http_info(self, request):
+    def create_study_async_invoker(self, request):
+        http_info = self._create_study_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_study_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStudyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2457,11 +2802,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2470,20 +2815,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStudyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_study_job_async(self, request):
         """创建study作业
@@ -2497,9 +2838,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateStudyJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateStudyJobResponse`
         """
-        return self._create_study_job_with_http_info(request)
+        http_info = self._create_study_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_study_job_with_http_info(self, request):
+    def create_study_job_async_invoker(self, request):
+        http_info = self._create_study_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_study_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStudyJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2518,11 +2871,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2531,20 +2884,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStudyJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_synthesis_job_async(self, request):
         """创建分子合成路径规划作业
@@ -2558,9 +2907,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisJobResponse`
         """
-        return self._create_synthesis_job_with_http_info(request)
+        http_info = self._create_synthesis_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_synthesis_job_with_http_info(self, request):
+    def create_synthesis_job_async_invoker(self, request):
+        http_info = self._create_synthesis_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_synthesis_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/synthesis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSynthesisJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2577,11 +2938,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2590,20 +2951,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/synthesis',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSynthesisJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template_async(self, request):
         """创建模板
@@ -2617,9 +2974,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateTemplateResponse`
         """
-        return self._create_template_with_http_info(request)
+        http_info = self._create_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_with_http_info(self, request):
+    def create_template_async_invoker(self, request):
+        http_info = self._create_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2636,11 +3005,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2649,20 +3018,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_user_async(self, request):
         """创建用户
@@ -2676,9 +3041,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateUserResponse`
         """
-        return self._create_user_with_http_info(request)
+        http_info = self._create_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_user_with_http_info(self, request):
+    def create_user_async_invoker(self, request):
+        http_info = self._create_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2693,11 +3070,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2706,20 +3083,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_workflow_async(self, request):
         """创建流程
@@ -2733,9 +3106,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateWorkflowResponse`
         """
-        return self._create_workflow_with_http_info(request)
+        http_info = self._create_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_workflow_with_http_info(self, request):
+    def create_workflow_async_invoker(self, request):
+        http_info = self._create_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2752,11 +3137,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2765,20 +3150,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_async(self, request):
         """删除应用
@@ -2792,9 +3173,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAppResponse`
         """
-        return self._delete_app_with_http_info(request)
+        http_info = self._delete_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_with_http_info(self, request):
+    def delete_app_async_invoker(self, request):
+        http_info = self._delete_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_app_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2813,9 +3206,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2824,20 +3217,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_asset_version_async(self, request):
         """删除资产指定版本
@@ -2851,9 +3240,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAssetVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAssetVersionResponse`
         """
-        return self._delete_asset_version_with_http_info(request)
+        http_info = self._delete_asset_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_asset_version_with_http_info(self, request):
+    def delete_asset_version_async_invoker(self, request):
+        http_info = self._delete_asset_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_asset_version_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2872,9 +3273,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2883,20 +3284,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/versions/{version}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAssetVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_auto_job_async(self, request):
         """删除自动作业模板
@@ -2910,9 +3307,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteAutoJobResponse`
         """
-        return self._delete_auto_job_with_http_info(request)
+        http_info = self._delete_auto_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_auto_job_with_http_info(self, request):
+    def delete_auto_job_async_invoker(self, request):
+        http_info = self._delete_auto_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_auto_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAutoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2931,9 +3340,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2942,20 +3351,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAutoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_backup_async(self, request):
         """删除归档
@@ -2969,9 +3374,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteBackupResponse`
         """
-        return self._delete_backup_with_http_info(request)
+        http_info = self._delete_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_backup_with_http_info(self, request):
+    def delete_backup_async_invoker(self, request):
+        http_info = self._delete_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_backup_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2990,9 +3407,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3001,20 +3418,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups/{backup_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_computing_resource_async(self, request):
         """删除计算资源
@@ -3028,9 +3441,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteComputingResourceResponse`
         """
-        return self._delete_computing_resource_with_http_info(request)
+        http_info = self._delete_computing_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_computing_resource_with_http_info(self, request):
+    def delete_computing_resource_async_invoker(self, request):
+        http_info = self._delete_computing_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_computing_resource_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/system/computing-resources/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteComputingResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3047,9 +3472,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3058,20 +3483,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteComputingResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_data_job_async(self, request):
         """删除数据作业
@@ -3085,9 +3506,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDataJobResponse`
         """
-        return self._delete_data_job_with_http_info(request)
+        http_info = self._delete_data_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_data_job_with_http_info(self, request):
+    def delete_data_job_async_invoker(self, request):
+        http_info = self._delete_data_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_data_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDataJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3106,9 +3539,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3117,20 +3550,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDataJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_database_data_async(self, request):
         """删除数据
@@ -3144,9 +3573,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseDataResponse`
         """
-        return self._delete_database_data_with_http_info(request)
+        http_info = self._delete_database_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_database_data_with_http_info(self, request):
+    def delete_database_data_async_invoker(self, request):
+        http_info = self._delete_database_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_database_data_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data/{row_num}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabaseDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3167,9 +3608,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3178,20 +3619,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data/{row_num}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatabaseDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_database_resource_async(self, request):
         """删除数据库资源
@@ -3205,9 +3642,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDatabaseResourceResponse`
         """
-        return self._delete_database_resource_with_http_info(request)
+        http_info = self._delete_database_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_database_resource_with_http_info(self, request):
+    def delete_database_resource_async_invoker(self, request):
+        http_info = self._delete_database_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_database_resource_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/system/database-resources/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabaseResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3224,9 +3673,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3235,20 +3684,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/database-resources/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatabaseResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_drug_job_async(self, request):
         """删除药物作业
@@ -3262,9 +3707,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDrugJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDrugJobResponse`
         """
-        return self._delete_drug_job_with_http_info(request)
+        http_info = self._delete_drug_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_drug_job_with_http_info(self, request):
+    def delete_drug_job_async_invoker(self, request):
+        http_info = self._delete_drug_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_drug_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDrugJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3283,9 +3740,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3294,20 +3751,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDrugJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_drug_model_async(self, request):
         """删除模型
@@ -3321,9 +3774,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDrugModelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDrugModelResponse`
         """
-        return self._delete_drug_model_with_http_info(request)
+        http_info = self._delete_drug_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_drug_model_with_http_info(self, request):
+    def delete_drug_model_async_invoker(self, request):
+        http_info = self._delete_drug_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_drug_model_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/drug-models/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDrugModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3340,9 +3805,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3351,20 +3816,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/drug-models/{model_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDrugModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_image_async(self, request):
         """删除镜像仓库
@@ -3378,9 +3839,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteImageResponse`
         """
-        return self._delete_image_with_http_info(request)
+        http_info = self._delete_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_image_with_http_info(self, request):
+    def delete_image_async_invoker(self, request):
+        http_info = self._delete_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_image_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3399,9 +3872,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3410,20 +3883,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance_async(self, request):
         """删除实例
@@ -3437,9 +3906,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteInstanceResponse`
         """
-        return self._delete_instance_with_http_info(request)
+        http_info = self._delete_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_with_http_info(self, request):
+    def delete_instance_async_invoker(self, request):
+        http_info = self._delete_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3458,9 +3939,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3469,20 +3950,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_job_async(self, request):
         """删除作业
@@ -3496,9 +3973,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteJobResponse`
         """
-        return self._delete_job_with_http_info(request)
+        http_info = self._delete_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_job_with_http_info(self, request):
+    def delete_job_async_invoker(self, request):
+        http_info = self._delete_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3517,9 +4006,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3528,20 +4017,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_label_async(self, request):
         """删除标签
@@ -3555,9 +4040,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteLabelResponse`
         """
-        return self._delete_label_with_http_info(request)
+        http_info = self._delete_label_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_label_with_http_info(self, request):
+    def delete_label_async_invoker(self, request):
+        http_info = self._delete_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_label_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/system/labels/{label_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLabelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3574,9 +4071,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3585,20 +4082,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/labels/{label_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLabelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_label_page_async(self, request):
         """删除标签页面
@@ -3612,9 +4105,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteLabelPageResponse`
         """
-        return self._delete_label_page_with_http_info(request)
+        http_info = self._delete_label_page_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_label_page_with_http_info(self, request):
+    def delete_label_page_async_invoker(self, request):
+        http_info = self._delete_label_page_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_label_page_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/label-pages/{label_page_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLabelPageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3633,9 +4138,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3644,20 +4149,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/label-pages/{label_page_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLabelPageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_member_async(self, request):
         """移除项目成员
@@ -3671,9 +4172,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteMemberResponse`
         """
-        return self._delete_member_with_http_info(request)
+        http_info = self._delete_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_member_with_http_info(self, request):
+    def delete_member_async_invoker(self, request):
+        http_info = self._delete_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_member_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/members/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3692,9 +4205,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3703,20 +4216,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/members/{user_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_message_email_config_async(self, request):
         """删除消息邮件配置
@@ -3730,9 +4239,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteMessageEmailConfigResponse`
         """
-        return self._delete_message_email_config_with_http_info(request)
+        http_info = self._delete_message_email_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_message_email_config_with_http_info(self, request):
+    def delete_message_email_config_async_invoker(self, request):
+        http_info = self._delete_message_email_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_message_email_config_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/messages/email-server-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMessageEmailConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3747,9 +4268,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3758,20 +4279,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/email-server-config',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMessageEmailConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_performance_resource_async(self, request):
         """删除性能加速资源
@@ -3785,9 +4302,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeletePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeletePerformanceResourceResponse`
         """
-        return self._delete_performance_resource_with_http_info(request)
+        http_info = self._delete_performance_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_performance_resource_with_http_info(self, request):
+    def delete_performance_resource_async_invoker(self, request):
+        http_info = self._delete_performance_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_performance_resource_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/system/performance-resources/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePerformanceResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3804,9 +4333,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3815,20 +4344,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/performance-resources/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePerformanceResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_project_async(self, request):
         """删除项目
@@ -3842,9 +4367,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteProjectResponse`
         """
-        return self._delete_project_with_http_info(request)
+        http_info = self._delete_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_project_with_http_info(self, request):
+    def delete_project_async_invoker(self, request):
+        http_info = self._delete_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_project_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3863,9 +4400,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3874,20 +4411,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_scale_out_policy_async(self, request):
         """删除扩容策略
@@ -3901,9 +4434,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteScaleOutPolicyResponse`
         """
-        return self._delete_scale_out_policy_with_http_info(request)
+        http_info = self._delete_scale_out_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_scale_out_policy_with_http_info(self, request):
+    def delete_scale_out_policy_async_invoker(self, request):
+        http_info = self._delete_scale_out_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scale_out_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScaleOutPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3920,9 +4465,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3931,20 +4476,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScaleOutPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_star_async(self, request):
         """取消收藏
@@ -3958,9 +4499,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteStarResponse`
         """
-        return self._delete_star_with_http_info(request)
+        http_info = self._delete_star_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_star_with_http_info(self, request):
+    def delete_star_async_invoker(self, request):
+        http_info = self._delete_star_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_star_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/stars",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3977,9 +4530,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3988,20 +4541,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/stars',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_study_async(self, request):
         """删除study
@@ -4015,9 +4564,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteStudyResponse`
         """
-        return self._delete_study_with_http_info(request)
+        http_info = self._delete_study_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_study_with_http_info(self, request):
+    def delete_study_async_invoker(self, request):
+        http_info = self._delete_study_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_study_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStudyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4036,9 +4597,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4047,20 +4608,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStudyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tag_async(self, request):
         """删除指定镜像tag
@@ -4074,9 +4631,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteTagResponse`
         """
-        return self._delete_tag_with_http_info(request)
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tag_with_http_info(self, request):
+    def delete_tag_async_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}/tags/{tag}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4097,9 +4666,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4108,20 +4677,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}/tags/{tag}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_async(self, request):
         """删除模板
@@ -4135,9 +4700,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteTemplateResponse`
         """
-        return self._delete_template_with_http_info(request)
+        http_info = self._delete_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_with_http_info(self, request):
+    def delete_template_async_invoker(self, request):
+        http_info = self._delete_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4156,9 +4733,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4167,20 +4744,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates/{template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_user_async(self, request):
         """删除用户
@@ -4194,9 +4767,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteUserResponse`
         """
-        return self._delete_user_with_http_info(request)
+        http_info = self._delete_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_user_with_http_info(self, request):
+    def delete_user_async_invoker(self, request):
+        http_info = self._delete_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4213,9 +4798,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4224,20 +4809,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_workflow_async(self, request):
         """删除流程
@@ -4251,9 +4832,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteWorkflowResponse`
         """
-        return self._delete_workflow_with_http_info(request)
+        http_info = self._delete_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_workflow_with_http_info(self, request):
+    def delete_workflow_async_invoker(self, request):
+        http_info = self._delete_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_workflow_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4272,9 +4865,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4283,20 +4876,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_data_job_log_async(self, request):
         """下载数据作业执行日志
@@ -4310,9 +4899,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataJobLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataJobLogResponse`
         """
-        return self._download_data_job_log_with_http_info(request)
+        http_info = self._download_data_job_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_data_job_log_with_http_info(self, request):
+    def download_data_job_log_async_invoker(self, request):
+        http_info = self._download_data_job_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_data_job_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadDataJobLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4331,9 +4932,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4342,20 +4943,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}/logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadDataJobLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_data_trace_async(self, request):
         """下载近一万条审计日志
@@ -4369,9 +4966,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataTraceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataTraceResponse`
         """
-        return self._download_data_trace_with_http_info(request)
+        http_info = self._download_data_trace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_data_trace_with_http_info(self, request):
+    def download_data_trace_async_invoker(self, request):
+        http_info = self._download_data_trace_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_data_trace_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-traces",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadDataTraceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4390,9 +4999,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4401,20 +5010,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-traces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadDataTraceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_asset_action_async(self, request):
         """操作资产发布状态
@@ -4428,9 +5033,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ExecuteAssetActionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExecuteAssetActionResponse`
         """
-        return self._execute_asset_action_with_http_info(request)
+        http_info = self._execute_asset_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_asset_action_with_http_info(self, request):
+    def execute_asset_action_async_invoker(self, request):
+        http_info = self._execute_asset_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_asset_action_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/versions/{version}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteAssetActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4449,11 +5066,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4462,20 +5079,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/versions/{version}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteAssetActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_job_async(self, request):
         """启动作业
@@ -4489,9 +5102,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ExecuteJobResponse`
         """
-        return self._execute_job_with_http_info(request)
+        http_info = self._execute_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_job_with_http_info(self, request):
+    def execute_job_async_invoker(self, request):
+        http_info = self._execute_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4508,11 +5133,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4521,20 +5146,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_data_async(self, request):
         """导入项目数据
@@ -4548,9 +5169,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDataResponse`
         """
-        return self._import_data_with_http_info(request)
+        http_info = self._import_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_data_with_http_info(self, request):
+    def import_data_async_invoker(self, request):
+        http_info = self._import_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4567,11 +5200,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4580,20 +5213,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_database_data_async(self, request):
         """导入数据
@@ -4607,9 +5236,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportDatabaseDataResponse`
         """
-        return self._import_database_data_with_http_info(request)
+        http_info = self._import_database_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_database_data_with_http_info(self, request):
+    def import_database_data_async_invoker(self, request):
+        http_info = self._import_database_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_database_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportDatabaseDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4628,11 +5269,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4641,20 +5282,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportDatabaseDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_image_async(self, request):
         """导入镜像
@@ -4668,9 +5305,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportImageResponse`
         """
-        return self._import_image_with_http_info(request)
+        http_info = self._import_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_image_with_http_info(self, request):
+    def import_image_async_invoker(self, request):
+        http_info = self._import_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4687,11 +5336,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4700,20 +5349,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_network_data_async(self, request):
         """导入网上数据
@@ -4727,9 +5372,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportNetworkDataResponse`
         """
-        return self._import_network_data_with_http_info(request)
+        http_info = self._import_network_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_network_data_with_http_info(self, request):
+    def import_network_data_async_invoker(self, request):
+        http_info = self._import_network_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_network_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/import-from-network",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportNetworkDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4746,11 +5403,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4759,20 +5416,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/import-from-network',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportNetworkDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_template_async(self, request):
         """从其他项目导入模板
@@ -4786,9 +5439,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportTemplateResponse`
         """
-        return self._import_template_with_http_info(request)
+        http_info = self._import_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_template_with_http_info(self, request):
+    def import_template_async_invoker(self, request):
+        http_info = self._import_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates/batch-import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4805,11 +5470,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4818,20 +5483,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates/batch-import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_user_async(self, request):
         """导入用户
@@ -4845,9 +5506,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportUserResponse`
         """
-        return self._import_user_with_http_info(request)
+        http_info = self._import_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_user_with_http_info(self, request):
+    def import_user_async_invoker(self, request):
+        http_info = self._import_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/users/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4862,11 +5535,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4875,20 +5548,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_workflow_async(self, request):
         """导入流程
@@ -4902,9 +5571,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ImportWorkflowResponse`
         """
-        return self._import_workflow_with_http_info(request)
+        http_info = self._import_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_workflow_with_http_info(self, request):
+    def import_workflow_async_invoker(self, request):
+        http_info = self._import_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4921,11 +5602,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4934,20 +5615,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_async(self, request):
         """获取应用列表
@@ -4961,9 +5638,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAppResponse`
         """
-        return self._list_app_with_http_info(request)
+        http_info = self._list_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_with_http_info(self, request):
+    def list_app_async_invoker(self, request):
+        http_info = self._list_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4984,9 +5673,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4995,20 +5684,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_archive_configs_async(self, request):
         """获取跨域归档配置
@@ -5022,9 +5707,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListArchiveConfigsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListArchiveConfigsResponse`
         """
-        return self._list_archive_configs_with_http_info(request)
+        http_info = self._list_archive_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_archive_configs_with_http_info(self, request):
+    def list_archive_configs_async_invoker(self, request):
+        http_info = self._list_archive_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_archive_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/archive-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListArchiveConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5039,9 +5736,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5050,20 +5747,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/archive-configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListArchiveConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_asset_async(self, request):
         """获取资产列表
@@ -5077,9 +5770,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAssetRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAssetResponse`
         """
-        return self._list_asset_with_http_info(request)
+        http_info = self._list_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_asset_with_http_info(self, request):
+    def list_asset_async_invoker(self, request):
+        http_info = self._list_asset_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_asset_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5110,9 +5815,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5121,20 +5826,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_auto_job_async(self, request):
         """获取自动作业模板列表
@@ -5148,9 +5849,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListAutoJobResponse`
         """
-        return self._list_auto_job_with_http_info(request)
+        http_info = self._list_auto_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_auto_job_with_http_info(self, request):
+    def list_auto_job_async_invoker(self, request):
+        http_info = self._list_auto_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_auto_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5177,9 +5890,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5188,20 +5901,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAutoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_backup_async(self, request):
         """查询归档列表
@@ -5215,9 +5924,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListBackupResponse`
         """
-        return self._list_backup_with_http_info(request)
+        http_info = self._list_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_backup_with_http_info(self, request):
+    def list_backup_async_invoker(self, request):
+        http_info = self._list_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_backup_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5242,9 +5963,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5253,20 +5974,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bucket_async(self, request):
         """获取桶列表
@@ -5280,9 +5997,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListBucketRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListBucketResponse`
         """
-        return self._list_bucket_with_http_info(request)
+        http_info = self._list_bucket_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bucket_with_http_info(self, request):
+    def list_bucket_async_invoker(self, request):
+        http_info = self._list_bucket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bucket_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBucketResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5299,9 +6028,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5310,20 +6039,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/buckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBucketResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_checkpoint_async(self, request):
         """获取数据作业执行日志
@@ -5337,9 +6062,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListCheckpointRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListCheckpointResponse`
         """
-        return self._list_checkpoint_with_http_info(request)
+        http_info = self._list_checkpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_checkpoint_with_http_info(self, request):
+    def list_checkpoint_async_invoker(self, request):
+        http_info = self._list_checkpoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_checkpoint_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}/checkpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCheckpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5358,9 +6095,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5369,20 +6106,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}/checkpoints',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCheckpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_all_node_label_async(self, request):
         """获取节点标签集
@@ -5396,9 +6129,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListClusterAllNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListClusterAllNodeLabelResponse`
         """
-        return self._list_cluster_all_node_label_with_http_info(request)
+        http_info = self._list_cluster_all_node_label_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_all_node_label_with_http_info(self, request):
+    def list_cluster_all_node_label_async_invoker(self, request):
+        http_info = self._list_cluster_all_node_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cluster_all_node_label_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/cluster/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterAllNodeLabelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5413,9 +6158,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5424,20 +6169,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/cluster/labels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterAllNodeLabelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_computing_resource_flavors_async(self, request):
         """查询计算资源规格
@@ -5451,9 +6192,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingResourceFlavorsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListComputingResourceFlavorsResponse`
         """
-        return self._list_computing_resource_flavors_with_http_info(request)
+        http_info = self._list_computing_resource_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_computing_resource_flavors_with_http_info(self, request):
+    def list_computing_resource_flavors_async_invoker(self, request):
+        http_info = self._list_computing_resource_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_computing_resource_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/computing-resources/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComputingResourceFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5470,9 +6223,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5481,20 +6234,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComputingResourceFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_computing_resources_async(self, request):
         """查询计算资源
@@ -5508,9 +6257,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListComputingResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListComputingResourcesResponse`
         """
-        return self._list_computing_resources_with_http_info(request)
+        http_info = self._list_computing_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_computing_resources_with_http_info(self, request):
+    def list_computing_resources_async_invoker(self, request):
+        http_info = self._list_computing_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_computing_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/computing-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComputingResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5525,9 +6286,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5536,20 +6297,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComputingResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_data_async(self, request):
         """查询数据列表
@@ -5563,9 +6320,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDataResponse`
         """
-        return self._list_data_with_http_info(request)
+        http_info = self._list_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_data_with_http_info(self, request):
+    def list_data_async_invoker(self, request):
+        http_info = self._list_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5596,9 +6365,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5607,20 +6376,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_data_job_async(self, request):
         """获取数据作业列表
@@ -5634,9 +6399,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDataJobResponse`
         """
-        return self._list_data_job_with_http_info(request)
+        http_info = self._list_data_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_data_job_with_http_info(self, request):
+    def list_data_job_async_invoker(self, request):
+        http_info = self._list_data_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_data_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5677,9 +6454,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5688,20 +6465,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_database_data_async(self, request):
         """查询数据
@@ -5715,9 +6488,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseDataResponse`
         """
-        return self._list_database_data_with_http_info(request)
+        http_info = self._list_database_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_database_data_with_http_info(self, request):
+    def list_database_data_async_invoker(self, request):
+        http_info = self._list_database_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_database_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5746,9 +6531,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5757,20 +6542,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabaseDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_database_resource_async(self, request):
         """查询数据库资源
@@ -5784,9 +6565,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceResponse`
         """
-        return self._list_database_resource_with_http_info(request)
+        http_info = self._list_database_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_database_resource_with_http_info(self, request):
+    def list_database_resource_async_invoker(self, request):
+        http_info = self._list_database_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_database_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/database-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5801,9 +6594,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Resource-Mappings", ]
 
@@ -5812,20 +6605,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/database-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabaseResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_database_resource_flavor_async(self, request):
         """获取数据库资源规格列表
@@ -5839,9 +6628,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceFlavorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDatabaseResourceFlavorResponse`
         """
-        return self._list_database_resource_flavor_with_http_info(request)
+        http_info = self._list_database_resource_flavor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_database_resource_flavor_with_http_info(self, request):
+    def list_database_resource_flavor_async_invoker(self, request):
+        http_info = self._list_database_resource_flavor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_database_resource_flavor_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/database-resources/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseResourceFlavorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5856,9 +6657,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5867,20 +6668,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/database-resources/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabaseResourceFlavorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_drug_job_async(self, request):
         """获取药物作业列表
@@ -5894,9 +6691,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDrugJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDrugJobResponse`
         """
-        return self._list_drug_job_with_http_info(request)
+        http_info = self._list_drug_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_drug_job_with_http_info(self, request):
+    def list_drug_job_async_invoker(self, request):
+        http_info = self._list_drug_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_drug_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDrugJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5942,9 +6751,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5953,20 +6762,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDrugJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_drug_model_async(self, request):
         """获取模型列表
@@ -5980,9 +6785,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListDrugModelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListDrugModelResponse`
         """
-        return self._list_drug_model_with_http_info(request)
+        http_info = self._list_drug_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_drug_model_with_http_info(self, request):
+    def list_drug_model_async_invoker(self, request):
+        http_info = self._list_drug_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_drug_model_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/drug-models",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDrugModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6024,9 +6841,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6035,20 +6852,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/drug-models',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDrugModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_global_workflow_statistic_async(self, request):
         """统计全局流程、作业信息
@@ -6062,9 +6875,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListGlobalWorkflowStatisticRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListGlobalWorkflowStatisticResponse`
         """
-        return self._list_global_workflow_statistic_with_http_info(request)
+        http_info = self._list_global_workflow_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_global_workflow_statistic_with_http_info(self, request):
+    def list_global_workflow_statistic_async_invoker(self, request):
+        http_info = self._list_global_workflow_statistic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_workflow_statistic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/workflow-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalWorkflowStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6079,9 +6904,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6090,20 +6915,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/workflow-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGlobalWorkflowStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_iam_group_users_async(self, request):
         """查询IAM用户组的用户列表
@@ -6117,9 +6938,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListIamGroupUsersRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamGroupUsersResponse`
         """
-        return self._list_iam_group_users_with_http_info(request)
+        http_info = self._list_iam_group_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_iam_group_users_with_http_info(self, request):
+    def list_iam_group_users_async_invoker(self, request):
+        http_info = self._list_iam_group_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_iam_group_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/iam/groups/{group_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIamGroupUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6136,9 +6969,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6147,20 +6980,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/iam/groups/{group_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIamGroupUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_iam_groups_async(self, request):
         """查询IAM用户组列表
@@ -6174,9 +7003,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListIamGroupsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamGroupsResponse`
         """
-        return self._list_iam_groups_with_http_info(request)
+        http_info = self._list_iam_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_iam_groups_with_http_info(self, request):
+    def list_iam_groups_async_invoker(self, request):
+        http_info = self._list_iam_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_iam_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/iam/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIamGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6191,9 +7032,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6202,20 +7043,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/iam/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIamGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_iam_users_async(self, request):
         """查询IAM用户列表
@@ -6229,9 +7066,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListIamUsersRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListIamUsersResponse`
         """
-        return self._list_iam_users_with_http_info(request)
+        http_info = self._list_iam_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_iam_users_with_http_info(self, request):
+    def list_iam_users_async_invoker(self, request):
+        http_info = self._list_iam_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_iam_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/iam/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIamUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6246,9 +7095,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6257,20 +7106,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/iam/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIamUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_image_async(self, request):
         """获取镜像列表
@@ -6284,9 +7129,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListImageResponse`
         """
-        return self._list_image_with_http_info(request)
+        http_info = self._list_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_image_with_http_info(self, request):
+    def list_image_async_invoker(self, request):
+        http_info = self._list_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_image_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6309,9 +7166,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6320,20 +7177,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_image_tag_async(self, request):
         """获取指定镜像的tag列表
@@ -6347,9 +7200,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListImageTagRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListImageTagResponse`
         """
-        return self._list_image_tag_with_http_info(request)
+        http_info = self._list_image_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_image_tag_with_http_info(self, request):
+    def list_image_tag_async_invoker(self, request):
+        http_info = self._list_image_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_image_tag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6368,9 +7233,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6379,20 +7244,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImageTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_async(self, request):
         """获取实例列表
@@ -6406,9 +7267,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListInstanceResponse`
         """
-        return self._list_instance_with_http_info(request)
+        http_info = self._list_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_with_http_info(self, request):
+    def list_instance_async_invoker(self, request):
+        http_info = self._list_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6425,9 +7298,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6436,20 +7309,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_job_async(self, request):
         """获取作业列表
@@ -6463,9 +7332,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListJobResponse`
         """
-        return self._list_job_with_http_info(request)
+        http_info = self._list_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_job_with_http_info(self, request):
+    def list_job_async_invoker(self, request):
+        http_info = self._list_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6509,9 +7390,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6520,20 +7401,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_label_async(self, request):
         """获取标签列表
@@ -6547,9 +7424,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListLabelResponse`
         """
-        return self._list_label_with_http_info(request)
+        http_info = self._list_label_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_label_with_http_info(self, request):
+    def list_label_async_invoker(self, request):
+        http_info = self._list_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_label_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLabelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6564,9 +7453,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6575,20 +7464,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/labels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLabelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_label_page_async(self, request):
         """获取标签页面列表
@@ -6602,9 +7487,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListLabelPageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListLabelPageResponse`
         """
-        return self._list_label_page_with_http_info(request)
+        http_info = self._list_label_page_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_label_page_with_http_info(self, request):
+    def list_label_page_async_invoker(self, request):
+        http_info = self._list_label_page_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_label_page_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/label-pages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLabelPageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6621,9 +7518,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6632,20 +7529,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/label-pages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLabelPageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_message_async(self, request):
         """获取消息列表
@@ -6659,9 +7552,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMessageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListMessageResponse`
         """
-        return self._list_message_with_http_info(request)
+        http_info = self._list_message_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_message_with_http_info(self, request):
+    def list_message_async_invoker(self, request):
+        http_info = self._list_message_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_message_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6690,9 +7595,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6701,20 +7606,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMessageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_message_statistics_async(self, request):
         """统计消息信息
@@ -6728,9 +7629,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMessageStatisticsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListMessageStatisticsResponse`
         """
-        return self._list_message_statistics_with_http_info(request)
+        http_info = self._list_message_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_message_statistics_with_http_info(self, request):
+    def list_message_statistics_async_invoker(self, request):
+        http_info = self._list_message_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_message_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/messages/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessageStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6745,9 +7658,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6756,20 +7669,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMessageStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_mfa_async(self, request):
         """获取可用的认证方法
@@ -6783,9 +7692,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListMfaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListMfaResponse`
         """
-        return self._list_mfa_with_http_info(request)
+        http_info = self._list_mfa_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_mfa_with_http_info(self, request):
+    def list_mfa_async_invoker(self, request):
+        http_info = self._list_mfa_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_mfa_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/users/{user_id}/mfa/methods",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMfaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6802,9 +7723,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6813,20 +7734,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/mfa/methods',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMfaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_node_label_async(self, request):
         """获取节点标签集
@@ -6840,9 +7757,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNodeLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNodeLabelResponse`
         """
-        return self._list_node_label_with_http_info(request)
+        http_info = self._list_node_label_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_node_label_with_http_info(self, request):
+    def list_node_label_async_invoker(self, request):
+        http_info = self._list_node_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_node_label_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/nodes/{server_id}/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodeLabelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6859,9 +7788,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6870,20 +7799,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/nodes/{server_id}/labels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNodeLabelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nodes_async(self, request):
         """获取策略关联计算资源列表
@@ -6897,9 +7822,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNodesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNodesResponse`
         """
-        return self._list_nodes_with_http_info(request)
+        http_info = self._list_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nodes_with_http_info(self, request):
+    def list_nodes_async_invoker(self, request):
+        http_info = self._list_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/computing-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6916,9 +7853,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6927,20 +7864,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/computing-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notice_async(self, request):
         """获取通知消息列表
@@ -6954,9 +7887,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNoticeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNoticeResponse`
         """
-        return self._list_notice_with_http_info(request)
+        http_info = self._list_notice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notice_with_http_info(self, request):
+    def list_notice_async_invoker(self, request):
+        http_info = self._list_notice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_notice_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/notices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNoticeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6977,9 +7922,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6988,20 +7933,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/notices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNoticeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_performance_resource_stat_async(self, request):
         """获取性能加速资源上统计信息
@@ -7015,9 +7956,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourceStatRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourceStatResponse`
         """
-        return self._list_performance_resource_stat_with_http_info(request)
+        http_info = self._list_performance_resource_stat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_performance_resource_stat_with_http_info(self, request):
+    def list_performance_resource_stat_async_invoker(self, request):
+        http_info = self._list_performance_resource_stat_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_performance_resource_stat_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/performance-resources-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPerformanceResourceStatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7036,9 +7989,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7047,20 +8000,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/performance-resources-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPerformanceResourceStatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_performance_resources_async(self, request):
         """查询性能加速资源
@@ -7074,9 +8023,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPerformanceResourcesResponse`
         """
-        return self._list_performance_resources_with_http_info(request)
+        http_info = self._list_performance_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_performance_resources_with_http_info(self, request):
+    def list_performance_resources_async_invoker(self, request):
+        http_info = self._list_performance_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_performance_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/performance-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPerformanceResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7091,9 +8052,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7102,20 +8063,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/performance-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPerformanceResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy_events_async(self, request):
         """获取策略事件
@@ -7129,9 +8086,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPolicyEventsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPolicyEventsResponse`
         """
-        return self._list_policy_events_with_http_info(request)
+        http_info = self._list_policy_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_events_with_http_info(self, request):
+    def list_policy_events_async_invoker(self, request):
+        http_info = self._list_policy_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_policy_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7148,9 +8117,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7159,20 +8128,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_preset_label_async(self, request):
         """获取预置标签列表
@@ -7186,9 +8151,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPresetLabelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPresetLabelResponse`
         """
-        return self._list_preset_label_with_http_info(request)
+        http_info = self._list_preset_label_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_preset_label_with_http_info(self, request):
+    def list_preset_label_async_invoker(self, request):
+        http_info = self._list_preset_label_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_preset_label_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/preset-labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPresetLabelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7203,9 +8180,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7214,20 +8191,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/preset-labels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPresetLabelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_async(self, request):
         """获取项目列表
@@ -7241,9 +8214,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListProjectResponse`
         """
-        return self._list_project_with_http_info(request)
+        http_info = self._list_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_with_http_info(self, request):
+    def list_project_async_invoker(self, request):
+        http_info = self._list_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7258,9 +8243,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7269,20 +8254,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_property_async(self, request):
         """获取属性值列表
@@ -7296,9 +8277,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListPropertyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListPropertyResponse`
         """
-        return self._list_property_with_http_info(request)
+        http_info = self._list_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_property_with_http_info(self, request):
+    def list_property_async_invoker(self, request):
+        http_info = self._list_property_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_property_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/assets/properties",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7315,9 +8308,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7326,20 +8319,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/properties',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quota_async(self, request):
         """获取当前系统配额及资源使用情况
@@ -7353,9 +8342,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListQuotaResponse`
         """
-        return self._list_quota_with_http_info(request)
+        http_info = self._list_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quota_with_http_info(self, request):
+    def list_quota_async_invoker(self, request):
+        http_info = self._list_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7370,9 +8371,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7381,20 +8382,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scale_out_policy_async(self, request):
         """查询扩容策略列表
@@ -7408,9 +8405,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListScaleOutPolicyResponse`
         """
-        return self._list_scale_out_policy_with_http_info(request)
+        http_info = self._list_scale_out_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scale_out_policy_with_http_info(self, request):
+    def list_scale_out_policy_async_invoker(self, request):
+        http_info = self._list_scale_out_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scale_out_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScaleOutPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7425,9 +8434,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7436,20 +8445,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScaleOutPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_history_async(self, request):
         """获取策略伸缩历史
@@ -7463,9 +8468,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListScalingHistoryRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListScalingHistoryResponse`
         """
-        return self._list_scaling_history_with_http_info(request)
+        http_info = self._list_scaling_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_history_with_http_info(self, request):
+    def list_scaling_history_async_invoker(self, request):
+        http_info = self._list_scaling_history_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_history_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7482,9 +8499,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7493,20 +8510,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_star_async(self, request):
         """获取收藏资产列表
@@ -7520,9 +8533,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStarResponse`
         """
-        return self._list_star_with_http_info(request)
+        http_info = self._list_star_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_star_with_http_info(self, request):
+    def list_star_async_invoker(self, request):
+        http_info = self._list_star_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_star_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/assets/stars",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7537,9 +8562,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7548,20 +8573,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/stars',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_storage_resources_async(self, request):
         """查询存储资源
@@ -7575,9 +8596,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStorageResourcesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStorageResourcesResponse`
         """
-        return self._list_storage_resources_with_http_info(request)
+        http_info = self._list_storage_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_storage_resources_with_http_info(self, request):
+    def list_storage_resources_async_invoker(self, request):
+        http_info = self._list_storage_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_storage_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/storage-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStorageResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7592,9 +8625,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7603,20 +8636,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/storage-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStorageResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_study_async(self, request):
         """列举study
@@ -7630,9 +8659,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStudyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStudyResponse`
         """
-        return self._list_study_with_http_info(request)
+        http_info = self._list_study_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_study_with_http_info(self, request):
+    def list_study_async_invoker(self, request):
+        http_info = self._list_study_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_study_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/studies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStudyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7647,9 +8688,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7658,20 +8699,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/studies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStudyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_study_job_async(self, request):
         """列举study所有作业
@@ -7685,9 +8722,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListStudyJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListStudyJobResponse`
         """
-        return self._list_study_job_with_http_info(request)
+        http_info = self._list_study_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_study_job_with_http_info(self, request):
+    def list_study_job_async_invoker(self, request):
+        http_info = self._list_study_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_study_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStudyJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7706,9 +8755,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7717,20 +8766,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStudyJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_async(self, request):
         """查询模板列表
@@ -7744,9 +8789,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListTemplateResponse`
         """
-        return self._list_template_with_http_info(request)
+        http_info = self._list_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_with_http_info(self, request):
+    def list_template_async_invoker(self, request):
+        http_info = self._list_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7763,9 +8820,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7774,20 +8831,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_async(self, request):
         """获取用户列表
@@ -7801,9 +8854,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListUserResponse`
         """
-        return self._list_user_with_http_info(request)
+        http_info = self._list_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_with_http_info(self, request):
+    def list_user_async_invoker(self, request):
+        http_info = self._list_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7818,9 +8883,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7829,20 +8894,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vendor_async(self, request):
         """获取供应商列表
@@ -7856,9 +8917,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListVendorResponse`
         """
-        return self._list_vendor_with_http_info(request)
+        http_info = self._list_vendor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vendor_with_http_info(self, request):
+    def list_vendor_async_invoker(self, request):
+        http_info = self._list_vendor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vendor_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/vendors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVendorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7873,9 +8946,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7884,20 +8957,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vendors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVendorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workflow_async(self, request):
         """获取流程列表
@@ -7911,9 +8980,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListWorkflowResponse`
         """
-        return self._list_workflow_with_http_info(request)
+        http_info = self._list_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workflow_with_http_info(self, request):
+    def list_workflow_async_invoker(self, request):
+        http_info = self._list_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_workflow_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7934,9 +9015,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7945,20 +9026,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workflow_statistic_async(self, request):
         """统计应用、流程、作业数目
@@ -7972,9 +9049,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListWorkflowStatisticRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListWorkflowStatisticResponse`
         """
-        return self._list_workflow_statistic_with_http_info(request)
+        http_info = self._list_workflow_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workflow_statistic_with_http_info(self, request):
+    def list_workflow_statistic_async_invoker(self, request):
+        http_info = self._list_workflow_statistic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_workflow_statistic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkflowStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7991,9 +9080,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8002,20 +9091,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkflowStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_app_async(self, request):
         """发布应用
@@ -8029,9 +9114,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.PublishAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishAppResponse`
         """
-        return self._publish_app_with_http_info(request)
+        http_info = self._publish_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_app_with_http_info(self, request):
+    def publish_app_async_invoker(self, request):
+        http_info = self._publish_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8050,11 +9147,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8063,20 +9160,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_data_async(self, request):
         """发布数据资产
@@ -8090,9 +9183,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.PublishDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishDataResponse`
         """
-        return self._publish_data_with_http_info(request)
+        http_info = self._publish_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_data_with_http_info(self, request):
+    def publish_data_async_invoker(self, request):
+        http_info = self._publish_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8109,11 +9214,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8122,20 +9227,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_image_async(self, request):
         """发布镜像
@@ -8149,9 +9250,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.PublishImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishImageResponse`
         """
-        return self._publish_image_with_http_info(request)
+        http_info = self._publish_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_image_with_http_info(self, request):
+    def publish_image_async_invoker(self, request):
+        http_info = self._publish_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8168,11 +9281,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8181,20 +9294,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_workflow_async(self, request):
         """发布流程
@@ -8208,9 +9317,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.PublishWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.PublishWorkflowResponse`
         """
-        return self._publish_workflow_with_http_info(request)
+        http_info = self._publish_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_workflow_with_http_info(self, request):
+    def publish_workflow_async_invoker(self, request):
+        http_info = self._publish_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8229,11 +9350,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8242,20 +9363,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def quote_data_async(self, request):
         """引用项目数据
@@ -8269,9 +9386,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.QuoteDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.QuoteDataResponse`
         """
-        return self._quote_data_with_http_info(request)
+        http_info = self._quote_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _quote_data_with_http_info(self, request):
+    def quote_data_async_invoker(self, request):
+        http_info = self._quote_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _quote_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/quote",
+            "request_type": request.__class__.__name__,
+            "response_type": "QuoteDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8288,11 +9417,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8301,20 +9430,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/quote',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='QuoteDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def quote_instance_async(self, request):
         """引用数据库实例
@@ -8328,9 +9453,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.QuoteInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.QuoteInstanceResponse`
         """
-        return self._quote_instance_with_http_info(request)
+        http_info = self._quote_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _quote_instance_with_http_info(self, request):
+    def quote_instance_async_invoker(self, request):
+        http_info = self._quote_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _quote_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/batch-quote",
+            "request_type": request.__class__.__name__,
+            "response_type": "QuoteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8347,11 +9484,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8360,20 +9497,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/batch-quote',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='QuoteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reboot_node_async(self, request):
         """重启计算资源
@@ -8387,9 +9520,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RebootNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RebootNodeResponse`
         """
-        return self._reboot_node_with_http_info(request)
+        http_info = self._reboot_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reboot_node_with_http_info(self, request):
+    def reboot_node_async_invoker(self, request):
+        http_info = self._reboot_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reboot_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/computing-resources/{id}/reboot",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebootNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8408,9 +9553,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8419,20 +9564,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/{id}/reboot',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RebootNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_backup_async(self, request):
         """恢复归档
@@ -8446,9 +9587,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RestoreBackupRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RestoreBackupResponse`
         """
-        return self._restore_backup_with_http_info(request)
+        http_info = self._restore_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_backup_with_http_info(self, request):
+    def restore_backup_async_invoker(self, request):
+        http_info = self._restore_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_backup_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups/{backup_id}/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8467,11 +9620,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8480,20 +9633,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups/{backup_id}/restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_data_job_async(self, request):
         """重试数据作业
@@ -8507,9 +9656,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RetryDataJobResponse`
         """
-        return self._retry_data_job_with_http_info(request)
+        http_info = self._retry_data_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_data_job_with_http_info(self, request):
+    def retry_data_job_async_invoker(self, request):
+        http_info = self._retry_data_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _retry_data_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryDataJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8528,9 +9689,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8539,20 +9700,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}/retry',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryDataJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_job_async(self, request):
         """重试作业
@@ -8566,9 +9723,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RetryJobResponse`
         """
-        return self._retry_job_with_http_info(request)
+        http_info = self._retry_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_job_with_http_info(self, request):
+    def retry_job_async_invoker(self, request):
+        http_info = self._retry_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _retry_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8587,9 +9756,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8598,20 +9767,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/retry',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show3d_structure_content_async(self, request):
         """获取生成study作业3D结构的内容
@@ -8625,9 +9790,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.Show3dStructureContentRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.Show3dStructureContentResponse`
         """
-        return self._show3d_structure_content_with_http_info(request)
+        http_info = self._show3d_structure_content_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show3d_structure_content_with_http_info(self, request):
+    def show3d_structure_content_async_invoker(self, request):
+        http_info = self._show3d_structure_content_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show3d_structure_content_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}/jobs/{job_id}/3d-structure",
+            "request_type": request.__class__.__name__,
+            "response_type": "Show3dStructureContentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8652,9 +9829,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8663,20 +9840,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}/jobs/{job_id}/3d-structure',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='Show3dStructureContentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_admet_job_async(self, request):
         """查询分子属性预测作业详情
@@ -8690,9 +9863,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAdmetJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAdmetJobResponse`
         """
-        return self._show_admet_job_with_http_info(request)
+        http_info = self._show_admet_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_admet_job_with_http_info(self, request):
+    def show_admet_job_async_invoker(self, request):
+        http_info = self._show_admet_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_admet_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/admet/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAdmetJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8711,9 +9896,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8722,20 +9907,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/admet/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAdmetJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_async(self, request):
         """获取应用详情
@@ -8749,9 +9930,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAppResponse`
         """
-        return self._show_app_with_http_info(request)
+        http_info = self._show_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_with_http_info(self, request):
+    def show_app_async_invoker(self, request):
+        http_info = self._show_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8770,9 +9963,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8781,20 +9974,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_async(self, request):
         """查询资产详情
@@ -8808,9 +9997,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAssetRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAssetResponse`
         """
-        return self._show_asset_with_http_info(request)
+        http_info = self._show_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_with_http_info(self, request):
+    def show_asset_async_invoker(self, request):
+        http_info = self._show_asset_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_asset_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8827,9 +10028,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8838,20 +10039,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_version_async(self, request):
         """查询资产版本详情
@@ -8865,9 +10062,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAssetVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAssetVersionResponse`
         """
-        return self._show_asset_version_with_http_info(request)
+        http_info = self._show_asset_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_version_with_http_info(self, request):
+    def show_asset_version_async_invoker(self, request):
+        http_info = self._show_asset_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_asset_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8886,9 +10095,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8897,20 +10106,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/versions/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_auto_job_async(self, request):
         """查询自动作业模板
@@ -8924,9 +10129,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAutoJobResponse`
         """
-        return self._show_auto_job_with_http_info(request)
+        http_info = self._show_auto_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_auto_job_with_http_info(self, request):
+    def show_auto_job_async_invoker(self, request):
+        http_info = self._show_auto_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_auto_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8945,9 +10162,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8956,20 +10173,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAutoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_backup_path_async(self, request):
         """获取指定归档的全数据清单
@@ -8983,9 +10196,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBackupPathRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBackupPathResponse`
         """
-        return self._show_backup_path_with_http_info(request)
+        http_info = self._show_backup_path_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_backup_path_with_http_info(self, request):
+    def show_backup_path_async_invoker(self, request):
+        http_info = self._show_backup_path_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_backup_path_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups/{backup_id}/paths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupPathResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9004,9 +10229,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9015,20 +10240,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/backups/{backup_id}/paths',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBackupPathResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bms_devices_async(self, request):
         """查询bms计算资源显卡id列表
@@ -9042,9 +10263,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBmsDevicesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBmsDevicesResponse`
         """
-        return self._show_bms_devices_with_http_info(request)
+        http_info = self._show_bms_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bms_devices_with_http_info(self, request):
+    def show_bms_devices_async_invoker(self, request):
+        http_info = self._show_bms_devices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_bms_devices_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/computing-resources/{id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBmsDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9061,9 +10294,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9072,20 +10305,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/{id}/devices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBmsDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bucket_storage_async(self, request):
         """获取桶存量信息
@@ -9099,9 +10328,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowBucketStorageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowBucketStorageResponse`
         """
-        return self._show_bucket_storage_with_http_info(request)
+        http_info = self._show_bucket_storage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bucket_storage_with_http_info(self, request):
+    def show_bucket_storage_async_invoker(self, request):
+        http_info = self._show_bucket_storage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_bucket_storage_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/bucket-storage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBucketStorageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9118,9 +10359,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9129,20 +10370,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/bucket-storage',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBucketStorageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_async(self, request):
         """获取数据详情
@@ -9156,9 +10393,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataResponse`
         """
-        return self._show_data_with_http_info(request)
+        http_info = self._show_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_with_http_info(self, request):
+    def show_data_async_invoker(self, request):
+        http_info = self._show_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/{path}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9179,9 +10428,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9190,20 +10439,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/{path}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_job_async(self, request):
         """获取数据作业详细信息
@@ -9217,9 +10462,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataJobResponse`
         """
-        return self._show_data_job_with_http_info(request)
+        http_info = self._show_data_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_job_with_http_info(self, request):
+    def show_data_job_async_invoker(self, request):
+        http_info = self._show_data_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_data_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9238,9 +10495,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9249,20 +10506,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data-jobs/{data_job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_policy_async(self, request):
         """查询项目级数据权限控制策略
@@ -9276,9 +10529,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDataPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDataPolicyResponse`
         """
-        return self._show_data_policy_with_http_info(request)
+        http_info = self._show_data_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_policy_with_http_info(self, request):
+    def show_data_policy_async_invoker(self, request):
+        http_info = self._show_data_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_data_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9295,9 +10560,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9306,20 +10571,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_docker_login_async(self, request):
         """获取docker login指令
@@ -9333,9 +10594,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDockerLoginRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDockerLoginResponse`
         """
-        return self._show_docker_login_with_http_info(request)
+        http_info = self._show_docker_login_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_docker_login_with_http_info(self, request):
+    def show_docker_login_async_invoker(self, request):
+        http_info = self._show_docker_login_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_docker_login_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/docker-login-cmd",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDockerLoginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9352,9 +10625,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9363,20 +10636,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/docker-login-cmd',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDockerLoginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_docking_job_async(self, request):
         """查询分子对接作业详情
@@ -9390,9 +10659,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDockingJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDockingJobResponse`
         """
-        return self._show_docking_job_with_http_info(request)
+        http_info = self._show_docking_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_docking_job_with_http_info(self, request):
+    def show_docking_job_async_invoker(self, request):
+        http_info = self._show_docking_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_docking_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/docking/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDockingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9411,9 +10692,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9422,20 +10703,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/docking/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDockingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_env_async(self, request):
         """查询系统配置列表
@@ -9449,9 +10726,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowEnvRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowEnvResponse`
         """
-        return self._show_env_with_http_info(request)
+        http_info = self._show_env_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_env_with_http_info(self, request):
+    def show_env_async_invoker(self, request):
+        http_info = self._show_env_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_env_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnvResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9466,9 +10755,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9477,20 +10766,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_evs_quota_async(self, request):
         """获取EVS配额及使用情况
@@ -9504,9 +10789,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowEvsQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowEvsQuotaResponse`
         """
-        return self._show_evs_quota_with_http_info(request)
+        http_info = self._show_evs_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_evs_quota_with_http_info(self, request):
+    def show_evs_quota_async_invoker(self, request):
+        http_info = self._show_evs_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_evs_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/computing-resources/evs-quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEvsQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9521,9 +10818,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9532,20 +10829,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/evs-quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEvsQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_extremum_info_async(self, request):
         """获取study作业的最值信息
@@ -9559,9 +10852,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowExtremumInfoRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowExtremumInfoResponse`
         """
-        return self._show_extremum_info_with_http_info(request)
+        http_info = self._show_extremum_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_extremum_info_with_http_info(self, request):
+    def show_extremum_info_async_invoker(self, request):
+        http_info = self._show_extremum_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_extremum_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}/jobs/{job_id}/extremum",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExtremumInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9582,9 +10887,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9593,20 +10898,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/studies/{study_id}/jobs/{job_id}/extremum',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExtremumInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_fep_job_async(self, request):
         """查询自由能微扰作业详情
@@ -9620,9 +10921,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowFepJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowFepJobResponse`
         """
-        return self._show_fep_job_with_http_info(request)
+        http_info = self._show_fep_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_fep_job_with_http_info(self, request):
+    def show_fep_job_async_invoker(self, request):
+        http_info = self._show_fep_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_fep_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/fep/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFepJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9641,9 +10954,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9652,20 +10965,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/fep/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFepJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_async(self, request):
         """查询实例详情
@@ -9679,9 +10988,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowInstanceResponse`
         """
-        return self._show_instance_with_http_info(request)
+        http_info = self._show_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_with_http_info(self, request):
+    def show_instance_async_invoker(self, request):
+        http_info = self._show_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9700,9 +11021,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9711,20 +11032,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_async(self, request):
         """获取作业详情
@@ -9738,9 +11055,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_async_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9761,9 +11090,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9772,20 +11101,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_config_async(self, request):
         """获取作业配置
@@ -9799,9 +11124,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobConfigResponse`
         """
-        return self._show_job_config_with_http_info(request)
+        http_info = self._show_job_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_config_with_http_info(self, request):
+    def show_job_config_async_invoker(self, request):
+        http_info = self._show_job_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/job-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9816,9 +11153,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9827,20 +11164,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/job-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_event_async(self, request):
         """获取作业事件
@@ -9854,9 +11187,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobEventRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobEventResponse`
         """
-        return self._show_job_event_with_http_info(request)
+        http_info = self._show_job_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_event_with_http_info(self, request):
+    def show_job_event_async_invoker(self, request):
+        http_info = self._show_job_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_event_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9877,9 +11222,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9888,20 +11233,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_log_async(self, request):
         """获取作业日志
@@ -9915,9 +11256,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowJobLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowJobLogResponse`
         """
-        return self._show_job_log_with_http_info(request)
+        http_info = self._show_job_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_log_with_http_info(self, request):
+    def show_job_log_async_invoker(self, request):
+        http_info = self._show_job_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9940,9 +11293,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9951,20 +11304,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_left_quota_async(self, request):
         """获取节点剩余配额
@@ -9978,9 +11327,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowLeftQuotaRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowLeftQuotaResponse`
         """
-        return self._show_left_quota_with_http_info(request)
+        http_info = self._show_left_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_left_quota_with_http_info(self, request):
+    def show_left_quota_async_invoker(self, request):
+        http_info = self._show_left_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_left_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/computing-resources/quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLeftQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9995,9 +11356,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10006,20 +11367,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLeftQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_message_clear_rule_async(self, request):
         """获取消息清理规则
@@ -10033,9 +11390,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageClearRuleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageClearRuleResponse`
         """
-        return self._show_message_clear_rule_with_http_info(request)
+        http_info = self._show_message_clear_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_message_clear_rule_with_http_info(self, request):
+    def show_message_clear_rule_async_invoker(self, request):
+        http_info = self._show_message_clear_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_message_clear_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/messages/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMessageClearRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10050,9 +11419,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10061,20 +11430,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMessageClearRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_message_email_config_async(self, request):
         """获取消息邮件配置
@@ -10088,9 +11453,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageEmailConfigResponse`
         """
-        return self._show_message_email_config_with_http_info(request)
+        http_info = self._show_message_email_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_message_email_config_with_http_info(self, request):
+    def show_message_email_config_async_invoker(self, request):
+        http_info = self._show_message_email_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_message_email_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/messages/email-server-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMessageEmailConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10105,9 +11482,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10116,20 +11493,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/email-server-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMessageEmailConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_message_receive_config_async(self, request):
         """获取用户邮件配置
@@ -10143,9 +11516,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowMessageReceiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowMessageReceiveConfigResponse`
         """
-        return self._show_message_receive_config_with_http_info(request)
+        http_info = self._show_message_receive_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_message_receive_config_with_http_info(self, request):
+    def show_message_receive_config_async_invoker(self, request):
+        http_info = self._show_message_receive_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_message_receive_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/messages/email-client-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMessageReceiveConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10160,9 +11545,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10171,20 +11556,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/email-client-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMessageReceiveConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_optm_job_async(self, request):
         """查询分子优化作业详情
@@ -10198,9 +11579,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowOptmJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowOptmJobResponse`
         """
-        return self._show_optm_job_with_http_info(request)
+        http_info = self._show_optm_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_optm_job_with_http_info(self, request):
+    def show_optm_job_async_invoker(self, request):
+        http_info = self._show_optm_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_optm_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/optimization/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOptmJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10219,9 +11612,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10230,20 +11623,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/optimization/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOptmJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_pocket_detection_job_async(self, request):
         """查询靶点口袋发现作业详情
@@ -10257,9 +11646,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowPocketDetectionJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowPocketDetectionJobResponse`
         """
-        return self._show_pocket_detection_job_with_http_info(request)
+        http_info = self._show_pocket_detection_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_pocket_detection_job_with_http_info(self, request):
+    def show_pocket_detection_job_async_invoker(self, request):
+        http_info = self._show_pocket_detection_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_pocket_detection_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/pocket-detection/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPocketDetectionJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10278,9 +11679,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10289,20 +11690,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/pocket-detection/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPocketDetectionJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_pocket_mol_design_job_async(self, request):
         """查询靶点口袋分子设计作业详情
@@ -10316,9 +11713,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowPocketMolDesignJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowPocketMolDesignJobResponse`
         """
-        return self._show_pocket_mol_design_job_with_http_info(request)
+        http_info = self._show_pocket_mol_design_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_pocket_mol_design_job_with_http_info(self, request):
+    def show_pocket_mol_design_job_async_invoker(self, request):
+        http_info = self._show_pocket_mol_design_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_pocket_mol_design_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/pocket-mol-design/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPocketMolDesignJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10337,9 +11746,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10348,20 +11757,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/pocket-mol-design/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPocketMolDesignJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_async(self, request):
         """获取项目详情
@@ -10375,9 +11780,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectResponse`
         """
-        return self._show_project_with_http_info(request)
+        http_info = self._show_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_with_http_info(self, request):
+    def show_project_async_invoker(self, request):
+        http_info = self._show_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10398,9 +11815,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10409,20 +11826,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_trace_async(self, request):
         """获取项目审计日志
@@ -10436,9 +11849,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceResponse`
         """
-        return self._show_project_trace_with_http_info(request)
+        http_info = self._show_project_trace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_trace_with_http_info(self, request):
+    def show_project_trace_async_invoker(self, request):
+        http_info = self._show_project_trace_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_trace_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/project-traces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectTraceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10461,9 +11886,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10472,20 +11897,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/project-traces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectTraceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_trace_data_async(self, request):
         """获取指定审计日志
@@ -10499,9 +11920,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTraceDataResponse`
         """
-        return self._show_project_trace_data_with_http_info(request)
+        http_info = self._show_project_trace_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_trace_data_with_http_info(self, request):
+    def show_project_trace_data_async_invoker(self, request):
+        http_info = self._show_project_trace_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_trace_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/project-traces/{path}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectTraceDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10520,9 +11953,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10531,20 +11964,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/project-traces/{path}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectTraceDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_tracker_async(self, request):
         """获取项目审计日志追踪器
@@ -10558,9 +11987,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowProjectTrackerRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowProjectTrackerResponse`
         """
-        return self._show_project_tracker_with_http_info(request)
+        http_info = self._show_project_tracker_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_tracker_with_http_info(self, request):
+    def show_project_tracker_async_invoker(self, request):
+        http_info = self._show_project_tracker_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_project_tracker_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/project-tracker",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectTrackerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10577,9 +12018,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10588,20 +12029,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/project-tracker',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectTrackerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_metric_data_async(self, request):
         """获取资源监控数据
@@ -10615,9 +12052,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowResourceMetricDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowResourceMetricDataResponse`
         """
-        return self._show_resource_metric_data_with_http_info(request)
+        http_info = self._show_resource_metric_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_metric_data_with_http_info(self, request):
+    def show_resource_metric_data_async_invoker(self, request):
+        http_info = self._show_resource_metric_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_metric_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceMetricDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10646,9 +12095,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10657,20 +12106,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/metric-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceMetricDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_scale_in_policy_async(self, request):
         """查询缩容策略
@@ -10684,9 +12129,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowScaleInPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScaleInPolicyResponse`
         """
-        return self._show_scale_in_policy_with_http_info(request)
+        http_info = self._show_scale_in_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_scale_in_policy_with_http_info(self, request):
+    def show_scale_in_policy_async_invoker(self, request):
+        http_info = self._show_scale_in_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scale_in_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-in-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScaleInPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10701,9 +12158,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10712,20 +12169,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-in-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScaleInPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_scale_out_policy_async(self, request):
         """获取扩容策略详情
@@ -10739,9 +12192,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScaleOutPolicyResponse`
         """
-        return self._show_scale_out_policy_with_http_info(request)
+        http_info = self._show_scale_out_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_scale_out_policy_with_http_info(self, request):
+    def show_scale_out_policy_async_invoker(self, request):
+        http_info = self._show_scale_out_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scale_out_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScaleOutPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10758,9 +12223,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10769,20 +12234,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScaleOutPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_schedule_async(self, request):
         """查询计算资源调度信息
@@ -10796,9 +12257,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowScheduleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowScheduleResponse`
         """
-        return self._show_schedule_with_http_info(request)
+        http_info = self._show_schedule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_schedule_with_http_info(self, request):
+    def show_schedule_async_invoker(self, request):
+        http_info = self._show_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_schedule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/computing-resources/{id}/schedule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScheduleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10815,9 +12288,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10826,20 +12299,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/{id}/schedule',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScheduleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_synthesis_job_async(self, request):
         """查询分子合成路径规划作业详情
@@ -10853,9 +12322,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowSynthesisJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowSynthesisJobResponse`
         """
-        return self._show_synthesis_job_with_http_info(request)
+        http_info = self._show_synthesis_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_synthesis_job_with_http_info(self, request):
+    def show_synthesis_job_async_invoker(self, request):
+        http_info = self._show_synthesis_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_synthesis_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/synthesis/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSynthesisJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10874,9 +12355,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10885,20 +12366,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-jobs/synthesis/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSynthesisJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_events_async(self, request):
         """获取子任务启动事件
@@ -10912,9 +12389,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskEventsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskEventsResponse`
         """
-        return self._show_task_events_with_http_info(request)
+        http_info = self._show_task_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_events_with_http_info(self, request):
+    def show_task_events_async_invoker(self, request):
+        http_info = self._show_task_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10937,9 +12426,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10948,20 +12437,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_instance_events_async(self, request):
         """获取子任务中实例的事件
@@ -10975,9 +12460,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceEventsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceEventsResponse`
         """
-        return self._show_task_instance_events_with_http_info(request)
+        http_info = self._show_task_instance_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_instance_events_with_http_info(self, request):
+    def show_task_instance_events_async_invoker(self, request):
+        http_info = self._show_task_instance_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_instance_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances/{instance_name}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskInstanceEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11002,9 +12499,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11013,20 +12510,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances/{instance_name}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskInstanceEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_instance_metric_data_async(self, request):
         """获取子任务中实例的资源监控数据
@@ -11040,9 +12533,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceMetricDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstanceMetricDataResponse`
         """
-        return self._show_task_instance_metric_data_with_http_info(request)
+        http_info = self._show_task_instance_metric_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_instance_metric_data_with_http_info(self, request):
+    def show_task_instance_metric_data_async_invoker(self, request):
+        http_info = self._show_task_instance_metric_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_instance_metric_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances/{instance_name}/metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskInstanceMetricDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11075,9 +12580,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11086,20 +12591,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances/{instance_name}/metric-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskInstanceMetricDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_instance_pod_async(self, request):
         """获取子任务中实例的pod信息
@@ -11113,9 +12614,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancePodRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancePodResponse`
         """
-        return self._show_task_instance_pod_with_http_info(request)
+        http_info = self._show_task_instance_pod_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_instance_pod_with_http_info(self, request):
+    def show_task_instance_pod_async_invoker(self, request):
+        http_info = self._show_task_instance_pod_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_instance_pod_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances/{instance_name}/pod",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskInstancePodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11140,9 +12653,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11151,20 +12664,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances/{instance_name}/pod',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskInstancePodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_instances_async(self, request):
         """获取子任务实例信息
@@ -11178,9 +12687,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTaskInstancesResponse`
         """
-        return self._show_task_instances_with_http_info(request)
+        http_info = self._show_task_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_instances_with_http_info(self, request):
+    def show_task_instances_async_invoker(self, request):
+        http_info = self._show_task_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11203,9 +12724,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11214,20 +12735,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}/tasks/{task_name}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_async(self, request):
         """查询模板详情
@@ -11241,9 +12758,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowTemplateResponse`
         """
-        return self._show_template_with_http_info(request)
+        http_info = self._show_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_with_http_info(self, request):
+    def show_template_async_invoker(self, request):
+        http_info = self._show_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11262,9 +12791,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11273,20 +12802,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user_async(self, request):
         """获取指定用户详情
@@ -11300,9 +12825,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowUserResponse`
         """
-        return self._show_user_with_http_info(request)
+        http_info = self._show_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_with_http_info(self, request):
+    def show_user_async_invoker(self, request):
+        http_info = self._show_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_user_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11319,9 +12856,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11330,20 +12867,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user_setting_async(self, request):
         """查询用户设置
@@ -11357,9 +12890,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowUserSettingRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowUserSettingResponse`
         """
-        return self._show_user_setting_with_http_info(request)
+        http_info = self._show_user_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_setting_with_http_info(self, request):
+    def show_user_setting_async_invoker(self, request):
+        http_info = self._show_user_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_user_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/users/{user_id}/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11376,9 +12921,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11387,20 +12932,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/settings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vendor_async(self, request):
         """获取供应商配置
@@ -11414,9 +12955,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowVendorResponse`
         """
-        return self._show_vendor_with_http_info(request)
+        http_info = self._show_vendor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vendor_with_http_info(self, request):
+    def show_vendor_async_invoker(self, request):
+        http_info = self._show_vendor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vendor_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/vendor-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVendorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11431,9 +12984,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11442,20 +12995,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/vendor-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVendorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_workflow_async(self, request):
         """获取流程详情
@@ -11469,9 +13018,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowWorkflowResponse`
         """
-        return self._show_workflow_with_http_info(request)
+        http_info = self._show_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_workflow_with_http_info(self, request):
+    def show_workflow_async_invoker(self, request):
+        http_info = self._show_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_workflow_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11492,9 +13053,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11503,20 +13064,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_auto_job_async(self, request):
         """启动自动作业
@@ -11530,9 +13087,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StartAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StartAutoJobResponse`
         """
-        return self._start_auto_job_with_http_info(request)
+        http_info = self._start_auto_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_auto_job_with_http_info(self, request):
+    def start_auto_job_async_invoker(self, request):
+        http_info = self._start_auto_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_auto_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartAutoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11551,9 +13120,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11562,20 +13131,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartAutoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_node_async(self, request):
         """启动计算资源
@@ -11589,9 +13154,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StartNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StartNodeResponse`
         """
-        return self._start_node_with_http_info(request)
+        http_info = self._start_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_node_with_http_info(self, request):
+    def start_node_async_invoker(self, request):
+        http_info = self._start_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/computing-resources/{id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11608,9 +13185,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11619,20 +13196,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/{id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_scale_out_policy_async(self, request):
         """启动自动扩容策略
@@ -11646,9 +13219,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StartScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StartScaleOutPolicyResponse`
         """
-        return self._start_scale_out_policy_with_http_info(request)
+        http_info = self._start_scale_out_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_scale_out_policy_with_http_info(self, request):
+    def start_scale_out_policy_async_invoker(self, request):
+        http_info = self._start_scale_out_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_scale_out_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartScaleOutPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11665,9 +13250,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11676,20 +13261,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartScaleOutPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_auto_job_async(self, request):
         """停止自动作业
@@ -11703,9 +13284,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopAutoJobResponse`
         """
-        return self._stop_auto_job_with_http_info(request)
+        http_info = self._stop_auto_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_auto_job_with_http_info(self, request):
+    def stop_auto_job_async_invoker(self, request):
+        http_info = self._stop_auto_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_auto_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopAutoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11724,9 +13317,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11735,20 +13328,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopAutoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_node_async(self, request):
         """关闭计算资源
@@ -11762,9 +13351,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopNodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopNodeResponse`
         """
-        return self._stop_node_with_http_info(request)
+        http_info = self._stop_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_node_with_http_info(self, request):
+    def stop_node_async_invoker(self, request):
+        http_info = self._stop_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/computing-resources/{id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11783,9 +13384,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11794,20 +13395,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/{id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_scale_out_policy_async(self, request):
         """停用自动扩容策略
@@ -11821,9 +13418,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopScaleOutPolicyResponse`
         """
-        return self._stop_scale_out_policy_with_http_info(request)
+        http_info = self._stop_scale_out_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_scale_out_policy_with_http_info(self, request):
+    def stop_scale_out_policy_async_invoker(self, request):
+        http_info = self._stop_scale_out_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_scale_out_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopScaleOutPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11840,9 +13449,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11851,20 +13460,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopScaleOutPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def subscribe_app_async(self, request):
         """订阅应用
@@ -11878,9 +13483,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeAppResponse`
         """
-        return self._subscribe_app_with_http_info(request)
+        http_info = self._subscribe_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _subscribe_app_with_http_info(self, request):
+    def subscribe_app_async_invoker(self, request):
+        http_info = self._subscribe_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _subscribe_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/subscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "SubscribeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11897,11 +13514,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11910,20 +13527,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/subscribe',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SubscribeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def subscribe_data_async(self, request):
         """订阅资产市场数据
@@ -11937,9 +13550,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeDataResponse`
         """
-        return self._subscribe_data_with_http_info(request)
+        http_info = self._subscribe_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _subscribe_data_with_http_info(self, request):
+    def subscribe_data_async_invoker(self, request):
+        http_info = self._subscribe_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _subscribe_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/subscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "SubscribeDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11956,11 +13581,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11969,20 +13594,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/subscribe',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SubscribeDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def subscribe_image_async(self, request):
         """订阅镜像
@@ -11996,9 +13617,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeImageResponse`
         """
-        return self._subscribe_image_with_http_info(request)
+        http_info = self._subscribe_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _subscribe_image_with_http_info(self, request):
+    def subscribe_image_async_invoker(self, request):
+        http_info = self._subscribe_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _subscribe_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/subscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "SubscribeImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12015,11 +13648,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12028,20 +13661,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/subscribe',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SubscribeImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def subscribe_workflow_async(self, request):
         """订阅流程
@@ -12055,9 +13684,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.SubscribeWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.SubscribeWorkflowResponse`
         """
-        return self._subscribe_workflow_with_http_info(request)
+        http_info = self._subscribe_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _subscribe_workflow_with_http_info(self, request):
+    def subscribe_workflow_async_invoker(self, request):
+        http_info = self._subscribe_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _subscribe_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/subscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "SubscribeWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12074,11 +13715,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12087,20 +13728,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/subscribe',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SubscribeWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def transfer_project_async(self, request):
         """转移项目
@@ -12114,9 +13751,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.TransferProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.TransferProjectResponse`
         """
-        return self._transfer_project_with_http_info(request)
+        http_info = self._transfer_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _transfer_project_with_http_info(self, request):
+    def transfer_project_async_invoker(self, request):
+        http_info = self._transfer_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _transfer_project_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/transfer",
+            "request_type": request.__class__.__name__,
+            "response_type": "TransferProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12133,11 +13782,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12146,20 +13795,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/transfer',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='TransferProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_async(self, request):
         """更新应用
@@ -12173,9 +13818,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAppResponse`
         """
-        return self._update_app_with_http_info(request)
+        http_info = self._update_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_with_http_info(self, request):
+    def update_app_async_invoker(self, request):
+        http_info = self._update_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_app_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12194,11 +13851,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12207,20 +13864,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/apps/{app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_archive_config_async(self, request):
         """修改跨域归档设置
@@ -12234,9 +13887,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateArchiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateArchiveConfigResponse`
         """
-        return self._update_archive_config_with_http_info(request)
+        http_info = self._update_archive_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_archive_config_with_http_info(self, request):
+    def update_archive_config_async_invoker(self, request):
+        http_info = self._update_archive_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_archive_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/system/archive-configs/{region_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateArchiveConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12253,9 +13918,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12264,20 +13929,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/archive-configs/{region_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateArchiveConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_asset_version_async(self, request):
         """更新资产指定版本的信息
@@ -12291,9 +13952,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAssetVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAssetVersionResponse`
         """
-        return self._update_asset_version_with_http_info(request)
+        http_info = self._update_asset_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_asset_version_with_http_info(self, request):
+    def update_asset_version_async_invoker(self, request):
+        http_info = self._update_asset_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_asset_version_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssetVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12312,11 +13985,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12325,20 +13998,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/versions/{version}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAssetVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_auto_job_async(self, request):
         """更新自动作业模板
@@ -12352,9 +14021,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateAutoJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateAutoJobResponse`
         """
-        return self._update_auto_job_with_http_info(request)
+        http_info = self._update_auto_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_auto_job_with_http_info(self, request):
+    def update_auto_job_async_invoker(self, request):
+        http_info = self._update_auto_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_auto_job_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12373,11 +14054,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12386,20 +14067,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/auto-jobs/{auto_job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAutoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_data_path_policy_async(self, request):
         """设置数据对象策略
@@ -12413,9 +14090,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDataPathPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDataPathPolicyResponse`
         """
-        return self._update_data_path_policy_with_http_info(request)
+        http_info = self._update_data_path_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_data_path_policy_with_http_info(self, request):
+    def update_data_path_policy_async_invoker(self, request):
+        http_info = self._update_data_path_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_data_path_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/{path}/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataPathPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12434,11 +14123,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12447,20 +14136,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/{path}/policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataPathPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_data_policy_async(self, request):
         """设置项目级权限控制策略
@@ -12474,9 +14159,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDataPolicyResponse`
         """
-        return self._update_data_policy_with_http_info(request)
+        http_info = self._update_data_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_data_policy_with_http_info(self, request):
+    def update_data_policy_async_invoker(self, request):
+        http_info = self._update_data_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_data_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12493,11 +14190,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12506,20 +14203,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_database_data_async(self, request):
         """更新数据
@@ -12533,9 +14226,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDatabaseDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDatabaseDataResponse`
         """
-        return self._update_database_data_with_http_info(request)
+        http_info = self._update_database_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_database_data_with_http_info(self, request):
+    def update_database_data_async_invoker(self, request):
+        http_info = self._update_database_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_database_data_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data/{row_num}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatabaseDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12556,11 +14261,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12569,20 +14274,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/databases/{database_id}/data/{row_num}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDatabaseDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_drug_model_async(self, request):
         """更新药物模型
@@ -12596,9 +14297,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateDrugModelRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateDrugModelResponse`
         """
-        return self._update_drug_model_with_http_info(request)
+        http_info = self._update_drug_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_drug_model_with_http_info(self, request):
+    def update_drug_model_async_invoker(self, request):
+        http_info = self._update_drug_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_drug_model_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/drug-models/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDrugModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12615,11 +14328,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12628,20 +14341,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/drug-models/{model_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDrugModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_image_async(self, request):
         """更新镜像描述信息或者类型
@@ -12655,9 +14364,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateImageRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateImageResponse`
         """
-        return self._update_image_with_http_info(request)
+        http_info = self._update_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_image_with_http_info(self, request):
+    def update_image_async_invoker(self, request):
+        http_info = self._update_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_image_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12676,11 +14397,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12689,20 +14410,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/images/{image_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_init_password_async(self, request):
         """新用户重置密码
@@ -12716,9 +14433,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateInitPasswordRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateInitPasswordResponse`
         """
-        return self._update_init_password_with_http_info(request)
+        http_info = self._update_init_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_init_password_with_http_info(self, request):
+    def update_init_password_async_invoker(self, request):
+        http_info = self._update_init_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_init_password_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/users/{user_id}/init-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInitPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12735,11 +14464,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12748,20 +14477,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/init-password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInitPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_job_async(self, request):
         """更新作业
@@ -12775,9 +14500,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateJobResponse`
         """
-        return self._update_job_with_http_info(request)
+        http_info = self._update_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_job_with_http_info(self, request):
+    def update_job_async_invoker(self, request):
+        http_info = self._update_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_job_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12796,11 +14533,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12809,20 +14546,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/jobs/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_job_config_async(self, request):
         """设置作业配置
@@ -12836,9 +14569,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateJobConfigResponse`
         """
-        return self._update_job_config_with_http_info(request)
+        http_info = self._update_job_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_job_config_with_http_info(self, request):
+    def update_job_config_async_invoker(self, request):
+        http_info = self._update_job_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_job_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/system/job-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12853,11 +14598,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12866,20 +14611,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/job-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateJobConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_member_async(self, request):
         """更新或者添加项目成员角色
@@ -12893,9 +14634,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMemberRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMemberResponse`
         """
-        return self._update_member_with_http_info(request)
+        http_info = self._update_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_member_with_http_info(self, request):
+    def update_member_async_invoker(self, request):
+        http_info = self._update_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_member_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/members/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12914,11 +14667,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12927,20 +14680,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/members/{user_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_message_clear_rule_request_body_async(self, request):
         """设置消息清理规则
@@ -12954,9 +14703,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageClearRuleRequestBodyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageClearRuleRequestBodyResponse`
         """
-        return self._update_message_clear_rule_request_body_with_http_info(request)
+        http_info = self._update_message_clear_rule_request_body_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_message_clear_rule_request_body_with_http_info(self, request):
+    def update_message_clear_rule_request_body_async_invoker(self, request):
+        http_info = self._update_message_clear_rule_request_body_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_message_clear_rule_request_body_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/messages/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMessageClearRuleRequestBodyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12971,11 +14732,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12984,20 +14745,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMessageClearRuleRequestBodyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_message_email_config_async(self, request):
         """设置消息邮件配置
@@ -13011,9 +14768,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageEmailConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageEmailConfigResponse`
         """
-        return self._update_message_email_config_with_http_info(request)
+        http_info = self._update_message_email_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_message_email_config_with_http_info(self, request):
+    def update_message_email_config_async_invoker(self, request):
+        http_info = self._update_message_email_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_message_email_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/messages/email-server-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMessageEmailConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13028,11 +14797,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13041,20 +14810,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/email-server-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMessageEmailConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_message_receive_config_async(self, request):
         """设置用户邮件配置
@@ -13068,9 +14833,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateMessageReceiveConfigRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateMessageReceiveConfigResponse`
         """
-        return self._update_message_receive_config_with_http_info(request)
+        http_info = self._update_message_receive_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_message_receive_config_with_http_info(self, request):
+    def update_message_receive_config_async_invoker(self, request):
+        http_info = self._update_message_receive_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_message_receive_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/messages/email-client-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMessageReceiveConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13085,11 +14862,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13098,20 +14875,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/messages/email-client-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMessageReceiveConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_performance_resource_async(self, request):
         """更新性能加速资源配置
@@ -13125,9 +14898,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdatePerformanceResourceResponse`
         """
-        return self._update_performance_resource_with_http_info(request)
+        http_info = self._update_performance_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_performance_resource_with_http_info(self, request):
+    def update_performance_resource_async_invoker(self, request):
+        http_info = self._update_performance_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_performance_resource_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/system/performance-resources/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePerformanceResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13144,11 +14929,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13157,20 +14942,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/performance-resources/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePerformanceResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_project_async(self, request):
         """更新项目
@@ -13184,9 +14965,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateProjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateProjectResponse`
         """
-        return self._update_project_with_http_info(request)
+        http_info = self._update_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_project_with_http_info(self, request):
+    def update_project_async_invoker(self, request):
+        http_info = self._update_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_project_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13203,11 +14996,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13216,20 +15009,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_project_tracker_async(self, request):
         """更新项目审计日志追踪器配置
@@ -13243,9 +15032,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateProjectTrackerRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateProjectTrackerResponse`
         """
-        return self._update_project_tracker_with_http_info(request)
+        http_info = self._update_project_tracker_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_project_tracker_with_http_info(self, request):
+    def update_project_tracker_async_invoker(self, request):
+        http_info = self._update_project_tracker_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_project_tracker_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/project-tracker",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectTrackerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13262,11 +15063,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13275,20 +15076,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/project-tracker',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProjectTrackerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_scale_in_policy_async(self, request):
         """修改缩容策略
@@ -13302,9 +15099,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScaleInPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScaleInPolicyResponse`
         """
-        return self._update_scale_in_policy_with_http_info(request)
+        http_info = self._update_scale_in_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_scale_in_policy_with_http_info(self, request):
+    def update_scale_in_policy_async_invoker(self, request):
+        http_info = self._update_scale_in_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_scale_in_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-in-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScaleInPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13319,11 +15128,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13332,20 +15141,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-in-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateScaleInPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_scale_out_policy_async(self, request):
         """修改扩容策略
@@ -13359,9 +15164,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScaleOutPolicyRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScaleOutPolicyResponse`
         """
-        return self._update_scale_out_policy_with_http_info(request)
+        http_info = self._update_scale_out_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_scale_out_policy_with_http_info(self, request):
+    def update_scale_out_policy_async_invoker(self, request):
+        http_info = self._update_scale_out_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_scale_out_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/system/autoscaler/scale-out-policies/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScaleOutPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13378,11 +15195,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13391,20 +15208,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/autoscaler/scale-out-policies/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateScaleOutPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_schedule_async(self, request):
         """修改计算资源调度信息
@@ -13418,9 +15231,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateScheduleResponse`
         """
-        return self._update_schedule_with_http_info(request)
+        http_info = self._update_schedule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_schedule_with_http_info(self, request):
+    def update_schedule_async_invoker(self, request):
+        http_info = self._update_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_schedule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/system/computing-resources/{id}/schedule",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScheduleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13437,11 +15262,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13450,20 +15275,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/computing-resources/{id}/schedule',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateScheduleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_star_async(self, request):
         """收藏资产
@@ -13477,9 +15298,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateStarRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateStarResponse`
         """
-        return self._update_star_with_http_info(request)
+        http_info = self._update_star_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_star_with_http_info(self, request):
+    def update_star_async_invoker(self, request):
+        http_info = self._update_star_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_star_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/stars",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13496,9 +15329,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13507,20 +15340,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/stars',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_async(self, request):
         """修改用户基本信息
@@ -13534,9 +15363,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserResponse`
         """
-        return self._update_user_with_http_info(request)
+        http_info = self._update_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_with_http_info(self, request):
+    def update_user_async_invoker(self, request):
+        http_info = self._update_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13553,11 +15394,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13566,20 +15407,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_by_domain_async(self, request):
         """最终租户修改子用户
@@ -13593,9 +15430,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserByDomainResponse`
         """
-        return self._update_user_by_domain_with_http_info(request)
+        http_info = self._update_user_by_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_by_domain_with_http_info(self, request):
+    def update_user_by_domain_async_invoker(self, request):
+        http_info = self._update_user_by_domain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_by_domain_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/users/{user_id}/domain-change-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserByDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13612,11 +15461,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13625,20 +15474,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/domain-change-info',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserByDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_role_async(self, request):
         """更新用户角色
@@ -13652,9 +15497,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserRoleResponse`
         """
-        return self._update_user_role_with_http_info(request)
+        http_info = self._update_user_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_role_with_http_info(self, request):
+    def update_user_role_async_invoker(self, request):
+        http_info = self._update_user_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_role_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/users/{user_id}/role",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13671,11 +15528,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13684,20 +15541,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/role',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_setting_async(self, request):
         """更新用户设置
@@ -13711,9 +15564,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateUserSettingRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateUserSettingResponse`
         """
-        return self._update_user_setting_with_http_info(request)
+        http_info = self._update_user_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_setting_with_http_info(self, request):
+    def update_user_setting_async_invoker(self, request):
+        http_info = self._update_user_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_setting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/users/{user_id}/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13730,11 +15595,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13743,20 +15608,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/settings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vendor_async(self, request):
         """设置供应商配置
@@ -13770,9 +15631,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateVendorRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateVendorResponse`
         """
-        return self._update_vendor_with_http_info(request)
+        http_info = self._update_vendor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vendor_with_http_info(self, request):
+    def update_vendor_async_invoker(self, request):
+        http_info = self._update_vendor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vendor_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/system/vendor-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVendorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13791,11 +15664,11 @@ class EiHealthAsyncClient(Client):
         if 'name' in local_var_params:
             form_params['name'] = local_var_params['name']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13804,20 +15677,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/vendor-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVendorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_workflow_async(self, request):
         """更新流程
@@ -13831,9 +15700,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateWorkflowResponse`
         """
-        return self._update_workflow_with_http_info(request)
+        http_info = self._update_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_workflow_with_http_info(self, request):
+    def update_workflow_async_invoker(self, request):
+        http_info = self._update_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_workflow_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13852,11 +15733,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13865,20 +15746,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/workflows/{workflow_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_data_async(self, request):
         """上传数据文件
@@ -13892,9 +15769,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UploadDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UploadDataResponse`
         """
-        return self._upload_data_with_http_info(request)
+        http_info = self._upload_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_data_with_http_info(self, request):
+    def upload_data_async_invoker(self, request):
+        http_info = self._upload_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13925,11 +15814,11 @@ class EiHealthAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13938,20 +15827,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/datas/upload',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_template_async(self, request):
         """上传模板
@@ -13965,9 +15850,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UploadTemplateRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UploadTemplateResponse`
         """
-        return self._upload_template_with_http_info(request)
+        http_info = self._upload_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_template_with_http_info(self, request):
+    def upload_template_async_invoker(self, request):
+        http_info = self._upload_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13986,11 +15883,11 @@ class EiHealthAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13999,20 +15896,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/templates/upload',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_code_async(self, request):
         """预验证
@@ -14026,9 +15919,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ValidateCodeRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ValidateCodeResponse`
         """
-        return self._validate_code_with_http_info(request)
+        http_info = self._validate_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_code_with_http_info(self, request):
+    def validate_code_async_invoker(self, request):
+        http_info = self._validate_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _validate_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/users/{user_id}/code-verify",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14045,11 +15950,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14058,20 +15963,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/users/{user_id}/code-verify',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_admet_properties_async(self, request):
         """ADMET属性预测接口
@@ -14085,9 +15986,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowAdmetPropertiesRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowAdmetPropertiesResponse`
         """
-        return self._show_admet_properties_with_http_info(request)
+        http_info = self._show_admet_properties_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_admet_properties_with_http_info(self, request):
+    def show_admet_properties_async_invoker(self, request):
+        http_info = self._show_admet_properties_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_admet_properties_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/admet",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAdmetPropertiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14102,11 +16015,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14115,20 +16028,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/admet',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAdmetPropertiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cpi_task_async(self, request):
         """新建CPI任务接口
@@ -14142,9 +16051,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateCpiTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCpiTaskResponse`
         """
-        return self._create_cpi_task_with_http_info(request)
+        http_info = self._create_cpi_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cpi_task_with_http_info(self, request):
+    def create_cpi_task_async_invoker(self, request):
+        http_info = self._create_cpi_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_cpi_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/task/cpi",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCpiTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14159,11 +16080,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14172,20 +16093,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/cpi',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCpiTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cpi_task_result_async(self, request):
         """查询CPI任务
@@ -14199,9 +16116,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowCpiTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowCpiTaskResultResponse`
         """
-        return self._show_cpi_task_result_with_http_info(request)
+        http_info = self._show_cpi_task_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cpi_task_result_with_http_info(self, request):
+    def show_cpi_task_result_async_invoker(self, request):
+        http_info = self._show_cpi_task_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cpi_task_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/task/cpi/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCpiTaskResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14218,9 +16147,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14229,20 +16158,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/cpi/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCpiTaskResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_custom_props_task_async(self, request):
         """新建自定义属性任务接口
@@ -14256,9 +16181,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateCustomPropsTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateCustomPropsTaskResponse`
         """
-        return self._create_custom_props_task_with_http_info(request)
+        http_info = self._create_custom_props_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_custom_props_task_with_http_info(self, request):
+    def create_custom_props_task_async_invoker(self, request):
+        http_info = self._create_custom_props_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_custom_props_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/custom-props",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomPropsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14273,11 +16210,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14286,20 +16223,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/custom-props',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCustomPropsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_custom_props_task_result_async(self, request):
         """查询自定义属性任务
@@ -14313,9 +16246,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowCustomPropsTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowCustomPropsTaskResultResponse`
         """
-        return self._show_custom_props_task_result_with_http_info(request)
+        http_info = self._show_custom_props_task_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_custom_props_task_result_with_http_info(self, request):
+    def show_custom_props_task_result_async_invoker(self, request):
+        http_info = self._show_custom_props_task_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_custom_props_task_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/custom-props/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomPropsTaskResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14332,9 +16277,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14343,20 +16288,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/custom-props/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomPropsTaskResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_generation_task_async(self, request):
         """新建分子生成任务接口
@@ -14370,9 +16311,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateGenerationTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateGenerationTaskResponse`
         """
-        return self._create_generation_task_with_http_info(request)
+        http_info = self._create_generation_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_generation_task_with_http_info(self, request):
+    def create_generation_task_async_invoker(self, request):
+        http_info = self._create_generation_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_generation_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/task/generation",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGenerationTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14387,11 +16340,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14400,20 +16353,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/generation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGenerationTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_generation_task_result_async(self, request):
         """查询分子生成任务
@@ -14427,9 +16376,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowGenerationTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowGenerationTaskResultResponse`
         """
-        return self._show_generation_task_result_with_http_info(request)
+        http_info = self._show_generation_task_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_generation_task_result_with_http_info(self, request):
+    def show_generation_task_result_async_invoker(self, request):
+        http_info = self._show_generation_task_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_generation_task_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/task/generation/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGenerationTaskResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14446,9 +16407,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14457,20 +16418,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/generation/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGenerationTaskResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_drug_ligand_difference_async(self, request):
         """计算配体间的3D结构差异
@@ -14484,9 +16441,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CheckDrugLigandDifferenceRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CheckDrugLigandDifferenceResponse`
         """
-        return self._check_drug_ligand_difference_with_http_info(request)
+        http_info = self._check_drug_ligand_difference_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_drug_ligand_difference_with_http_info(self, request):
+    def check_drug_ligand_difference_async_invoker(self, request):
+        http_info = self._check_drug_ligand_difference_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_drug_ligand_difference_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/diff3d",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDrugLigandDifferenceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14503,11 +16472,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14516,20 +16485,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/diff3d',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckDrugLigandDifferenceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_drug_ligand_interaction2d_svg_async(self, request):
         """生成相互作用2D图
@@ -14543,9 +16508,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandInteraction2dSvgRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandInteraction2dSvgResponse`
         """
-        return self._create_drug_ligand_interaction2d_svg_with_http_info(request)
+        http_info = self._create_drug_ligand_interaction2d_svg_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_drug_ligand_interaction2d_svg_with_http_info(self, request):
+    def create_drug_ligand_interaction2d_svg_async_invoker(self, request):
+        http_info = self._create_drug_ligand_interaction2d_svg_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_drug_ligand_interaction2d_svg_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/interaction2d",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDrugLigandInteraction2dSvgResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14562,11 +16539,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14575,20 +16552,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/interaction2d',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDrugLigandInteraction2dSvgResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_drug_ligand_preview_task_async(self, request):
         """创建配体文件预览任务
@@ -14602,9 +16575,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandPreviewTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandPreviewTaskResponse`
         """
-        return self._create_drug_ligand_preview_task_with_http_info(request)
+        http_info = self._create_drug_ligand_preview_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_drug_ligand_preview_task_with_http_info(self, request):
+    def create_drug_ligand_preview_task_async_invoker(self, request):
+        http_info = self._create_drug_ligand_preview_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_drug_ligand_preview_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/preview",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDrugLigandPreviewTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14621,11 +16606,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14634,20 +16619,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/preview',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDrugLigandPreviewTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_drug_ligand_sdf_async(self, request):
         """生成分子SDF三维结构
@@ -14661,9 +16642,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandSdfRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandSdfResponse`
         """
-        return self._create_drug_ligand_sdf_with_http_info(request)
+        http_info = self._create_drug_ligand_sdf_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_drug_ligand_sdf_with_http_info(self, request):
+    def create_drug_ligand_sdf_async_invoker(self, request):
+        http_info = self._create_drug_ligand_sdf_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_drug_ligand_sdf_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/sdf",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDrugLigandSdfResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14680,11 +16673,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14693,20 +16686,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/sdf',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDrugLigandSdfResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_drug_ligand_similarity_graph_task_async(self, request):
         """创建配体相似性图计算任务
@@ -14720,9 +16709,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandSimilarityGraphTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandSimilarityGraphTaskResponse`
         """
-        return self._create_drug_ligand_similarity_graph_task_with_http_info(request)
+        http_info = self._create_drug_ligand_similarity_graph_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_drug_ligand_similarity_graph_task_with_http_info(self, request):
+    def create_drug_ligand_similarity_graph_task_async_invoker(self, request):
+        http_info = self._create_drug_ligand_similarity_graph_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_drug_ligand_similarity_graph_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/similarity-graph",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDrugLigandSimilarityGraphTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14739,11 +16740,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14752,20 +16753,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/similarity-graph',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDrugLigandSimilarityGraphTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_drug_ligand_svg_async(self, request):
         """生成分子SVG图
@@ -14779,9 +16776,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandSvgRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateDrugLigandSvgResponse`
         """
-        return self._create_drug_ligand_svg_with_http_info(request)
+        http_info = self._create_drug_ligand_svg_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_drug_ligand_svg_with_http_info(self, request):
+    def create_drug_ligand_svg_async_invoker(self, request):
+        http_info = self._create_drug_ligand_svg_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_drug_ligand_svg_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/svg",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDrugLigandSvgResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14798,11 +16807,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14811,20 +16820,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/svg',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDrugLigandSvgResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_drug_ligand_preview_task_async(self, request):
         """删除配体文件预览任务
@@ -14838,9 +16843,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDrugLigandPreviewTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDrugLigandPreviewTaskResponse`
         """
-        return self._delete_drug_ligand_preview_task_with_http_info(request)
+        http_info = self._delete_drug_ligand_preview_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_drug_ligand_preview_task_with_http_info(self, request):
+    def delete_drug_ligand_preview_task_async_invoker(self, request):
+        http_info = self._delete_drug_ligand_preview_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_drug_ligand_preview_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/preview/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDrugLigandPreviewTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14859,9 +16876,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14870,20 +16887,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/preview/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDrugLigandPreviewTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_drug_ligand_similarity_graph_task_async(self, request):
         """删除配体相似性图计算任务
@@ -14897,9 +16910,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteDrugLigandSimilarityGraphTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteDrugLigandSimilarityGraphTaskResponse`
         """
-        return self._delete_drug_ligand_similarity_graph_task_with_http_info(request)
+        http_info = self._delete_drug_ligand_similarity_graph_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_drug_ligand_similarity_graph_task_with_http_info(self, request):
+    def delete_drug_ligand_similarity_graph_task_async_invoker(self, request):
+        http_info = self._delete_drug_ligand_similarity_graph_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_drug_ligand_similarity_graph_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/similarity-graph/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDrugLigandSimilarityGraphTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14918,9 +16943,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14929,20 +16954,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/similarity-graph/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDrugLigandSimilarityGraphTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def parse_drug_receptor_info_async(self, request):
         """受体信息解析
@@ -14956,9 +16977,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ParseDrugReceptorInfoRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ParseDrugReceptorInfoResponse`
         """
-        return self._parse_drug_receptor_info_with_http_info(request)
+        http_info = self._parse_drug_receptor_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _parse_drug_receptor_info_with_http_info(self, request):
+    def parse_drug_receptor_info_async_invoker(self, request):
+        http_info = self._parse_drug_receptor_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _parse_drug_receptor_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/receptor/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ParseDrugReceptorInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14975,11 +17008,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14988,20 +17021,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/receptor/info',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ParseDrugReceptorInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_drug_receptor_pocket_async(self, request):
         """受体口袋检测
@@ -15015,9 +17044,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RecognizeDrugReceptorPocketRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RecognizeDrugReceptorPocketResponse`
         """
-        return self._recognize_drug_receptor_pocket_with_http_info(request)
+        http_info = self._recognize_drug_receptor_pocket_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_drug_receptor_pocket_with_http_info(self, request):
+    def recognize_drug_receptor_pocket_async_invoker(self, request):
+        http_info = self._recognize_drug_receptor_pocket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _recognize_drug_receptor_pocket_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/receptor/pocket",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeDrugReceptorPocketResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15034,11 +17075,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15047,20 +17088,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/receptor/pocket',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeDrugReceptorPocketResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_drug_ligand_to_smiles_conversion_async(self, request):
         """配体格式转换为SMILES
@@ -15074,9 +17111,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RunDrugLigandToSmilesConversionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RunDrugLigandToSmilesConversionResponse`
         """
-        return self._run_drug_ligand_to_smiles_conversion_with_http_info(request)
+        http_info = self._run_drug_ligand_to_smiles_conversion_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_drug_ligand_to_smiles_conversion_with_http_info(self, request):
+    def run_drug_ligand_to_smiles_conversion_async_invoker(self, request):
+        http_info = self._run_drug_ligand_to_smiles_conversion_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_drug_ligand_to_smiles_conversion_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/smiles",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunDrugLigandToSmilesConversionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15093,11 +17142,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15106,20 +17155,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/smiles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunDrugLigandToSmilesConversionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_drug_receptor_preprocess_async(self, request):
         """受体预处理
@@ -15133,9 +17178,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RunDrugReceptorPreprocessRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RunDrugReceptorPreprocessResponse`
         """
-        return self._run_drug_receptor_preprocess_with_http_info(request)
+        http_info = self._run_drug_receptor_preprocess_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_drug_receptor_preprocess_with_http_info(self, request):
+    def run_drug_receptor_preprocess_async_invoker(self, request):
+        http_info = self._run_drug_receptor_preprocess_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_drug_receptor_preprocess_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/receptor/preprocess",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunDrugReceptorPreprocessResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15152,11 +17209,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15165,20 +17222,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/receptor/preprocess',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunDrugReceptorPreprocessResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_drug_ligand_preview_task_async(self, request):
         """查询配体文件预览任务
@@ -15192,9 +17245,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDrugLigandPreviewTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDrugLigandPreviewTaskResponse`
         """
-        return self._show_drug_ligand_preview_task_with_http_info(request)
+        http_info = self._show_drug_ligand_preview_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_drug_ligand_preview_task_with_http_info(self, request):
+    def show_drug_ligand_preview_task_async_invoker(self, request):
+        http_info = self._show_drug_ligand_preview_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_drug_ligand_preview_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/preview/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDrugLigandPreviewTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15213,9 +17278,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15224,20 +17289,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/preview/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDrugLigandPreviewTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_drug_ligand_similarity_graph_task_async(self, request):
         """查询配体相似性图计算任务
@@ -15251,9 +17312,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowDrugLigandSimilarityGraphTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowDrugLigandSimilarityGraphTaskResponse`
         """
-        return self._show_drug_ligand_similarity_graph_task_with_http_info(request)
+        http_info = self._show_drug_ligand_similarity_graph_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_drug_ligand_similarity_graph_task_with_http_info(self, request):
+    def show_drug_ligand_similarity_graph_task_async_invoker(self, request):
+        http_info = self._show_drug_ligand_similarity_graph_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_drug_ligand_similarity_graph_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/similarity-graph/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDrugLigandSimilarityGraphTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15272,9 +17345,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15283,20 +17356,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/drug-common/ligand/similarity-graph/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDrugLigandSimilarityGraphTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_data_async(self, request):
         """文件下载
@@ -15310,9 +17379,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DownloadDataRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DownloadDataResponse`
         """
-        return self._download_data_with_http_info(request)
+        http_info = self._download_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_data_with_http_info(self, request):
+    def download_data_async_invoker(self, request):
+        http_info = self._download_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data/download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15329,11 +17410,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15342,20 +17423,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/data/download',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_overview_async(self, request):
         """获取医疗平台信息
@@ -15369,9 +17446,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowOverviewRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowOverviewResponse`
         """
-        return self._show_overview_with_http_info(request)
+        http_info = self._show_overview_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_overview_with_http_info(self, request):
+    def show_overview_async_invoker(self, request):
+        http_info = self._show_overview_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_overview_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/system/overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOverviewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15386,9 +17475,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15397,20 +17486,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/system/overview',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOverviewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def clean_nextflow_cache_async(self, request):
         """清理Nextflow缓存
@@ -15424,9 +17509,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CleanNextflowCacheRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CleanNextflowCacheResponse`
         """
-        return self._clean_nextflow_cache_with_http_info(request)
+        http_info = self._clean_nextflow_cache_http_info(request)
+        return self._call_api(**http_info)
 
-    def _clean_nextflow_cache_with_http_info(self, request):
+    def clean_nextflow_cache_async_invoker(self, request):
+        http_info = self._clean_nextflow_cache_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _clean_nextflow_cache_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nextflow/clean-cache",
+            "request_type": request.__class__.__name__,
+            "response_type": "CleanNextflowCacheResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15441,9 +17538,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15452,20 +17549,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nextflow/clean-cache',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CleanNextflowCacheResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_nextflow_job_async(self, request):
         """创建nextflow作业
@@ -15479,9 +17572,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNextflowJobResponse`
         """
-        return self._create_nextflow_job_with_http_info(request)
+        http_info = self._create_nextflow_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_nextflow_job_with_http_info(self, request):
+    def create_nextflow_job_async_invoker(self, request):
+        http_info = self._create_nextflow_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_nextflow_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNextflowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15511,11 +17616,11 @@ class EiHealthAsyncClient(Client):
         if 'priority' in local_var_params:
             form_params['priority'] = local_var_params['priority']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15524,20 +17629,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNextflowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_nextflow_workflow_async(self, request):
         """创建流程
@@ -15551,9 +17652,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNextflowWorkflowResponse`
         """
-        return self._create_nextflow_workflow_with_http_info(request)
+        http_info = self._create_nextflow_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_nextflow_workflow_with_http_info(self, request):
+    def create_nextflow_workflow_async_invoker(self, request):
+        http_info = self._create_nextflow_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_nextflow_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNextflowWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15583,11 +17696,11 @@ class EiHealthAsyncClient(Client):
         if 'params' in local_var_params:
             form_params['params'] = local_var_params['params']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15596,20 +17709,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNextflowWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_nextflow_job_async(self, request):
         """删除Nextflow作业
@@ -15623,9 +17732,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowJobResponse`
         """
-        return self._delete_nextflow_job_with_http_info(request)
+        http_info = self._delete_nextflow_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_nextflow_job_with_http_info(self, request):
+    def delete_nextflow_job_async_invoker(self, request):
+        http_info = self._delete_nextflow_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_nextflow_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNextflowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15644,9 +17765,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15655,20 +17776,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNextflowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_nextflow_workflow_async(self, request):
         """删除流程
@@ -15682,9 +17799,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNextflowWorkflowResponse`
         """
-        return self._delete_nextflow_workflow_with_http_info(request)
+        http_info = self._delete_nextflow_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_nextflow_workflow_with_http_info(self, request):
+    def delete_nextflow_workflow_async_invoker(self, request):
+        http_info = self._delete_nextflow_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_nextflow_workflow_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNextflowWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15703,9 +17832,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15714,20 +17843,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNextflowWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def install_nextflow_async(self, request):
         """安装Nextflow
@@ -15741,9 +17866,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.InstallNextflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.InstallNextflowResponse`
         """
-        return self._install_nextflow_with_http_info(request)
+        http_info = self._install_nextflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _install_nextflow_with_http_info(self, request):
+    def install_nextflow_async_invoker(self, request):
+        http_info = self._install_nextflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _install_nextflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/nextflow/engines",
+            "request_type": request.__class__.__name__,
+            "response_type": "InstallNextflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15770,11 +17907,11 @@ class EiHealthAsyncClient(Client):
         if 'version' in local_var_params:
             form_params['version'] = local_var_params['version']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15783,20 +17920,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nextflow/engines',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InstallNextflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nextflow_job_async(self, request):
         """查询nextflow作业列表
@@ -15810,9 +17943,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowJobResponse`
         """
-        return self._list_nextflow_job_with_http_info(request)
+        http_info = self._list_nextflow_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nextflow_job_with_http_info(self, request):
+    def list_nextflow_job_async_invoker(self, request):
+        http_info = self._list_nextflow_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nextflow_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNextflowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15856,9 +18001,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15867,20 +18012,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNextflowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nextflow_task_async(self, request):
         """获取task列表
@@ -15894,9 +18035,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowTaskResponse`
         """
-        return self._list_nextflow_task_with_http_info(request)
+        http_info = self._list_nextflow_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nextflow_task_with_http_info(self, request):
+    def list_nextflow_task_async_invoker(self, request):
+        http_info = self._list_nextflow_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nextflow_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNextflowTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15917,9 +18070,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15928,20 +18081,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNextflowTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nextflow_version_async(self, request):
         """查询Nextflow版本列表
@@ -15955,9 +18104,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowVersionRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowVersionResponse`
         """
-        return self._list_nextflow_version_with_http_info(request)
+        http_info = self._list_nextflow_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nextflow_version_with_http_info(self, request):
+    def list_nextflow_version_async_invoker(self, request):
+        http_info = self._list_nextflow_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nextflow_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/nextflow/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNextflowVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15972,9 +18133,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15983,20 +18144,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nextflow/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNextflowVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nextflow_workflow_async(self, request):
         """获取流程列表
@@ -16010,9 +18167,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNextflowWorkflowResponse`
         """
-        return self._list_nextflow_workflow_with_http_info(request)
+        http_info = self._list_nextflow_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nextflow_workflow_with_http_info(self, request):
+    def list_nextflow_workflow_async_invoker(self, request):
+        http_info = self._list_nextflow_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nextflow_workflow_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNextflowWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16031,9 +18200,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16042,20 +18211,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNextflowWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_nextflow_job_async(self, request):
         """重试Nextflow作业
@@ -16069,9 +18234,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.RetryNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.RetryNextflowJobResponse`
         """
-        return self._retry_nextflow_job_with_http_info(request)
+        http_info = self._retry_nextflow_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_nextflow_job_with_http_info(self, request):
+    def retry_nextflow_job_async_invoker(self, request):
+        http_info = self._retry_nextflow_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _retry_nextflow_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryNextflowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16092,11 +18269,11 @@ class EiHealthAsyncClient(Client):
         if 'params' in local_var_params:
             form_params['params'] = local_var_params['params']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16105,20 +18282,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/retry',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryNextflowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nextflow_async(self, request):
         """查询Nextflow配置详情
@@ -16132,9 +18305,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowResponse`
         """
-        return self._show_nextflow_with_http_info(request)
+        http_info = self._show_nextflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nextflow_with_http_info(self, request):
+    def show_nextflow_async_invoker(self, request):
+        http_info = self._show_nextflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_nextflow_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/nextflow/engines/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNextflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16151,9 +18336,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16162,20 +18347,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nextflow/engines/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNextflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nextflow_job_async(self, request):
         """获取Nextflow作业详情
@@ -16189,9 +18370,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobResponse`
         """
-        return self._show_nextflow_job_with_http_info(request)
+        http_info = self._show_nextflow_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nextflow_job_with_http_info(self, request):
+    def show_nextflow_job_async_invoker(self, request):
+        http_info = self._show_nextflow_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_nextflow_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNextflowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16210,9 +18403,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16221,20 +18414,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNextflowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nextflow_job_log_async(self, request):
         """获取Nextflow作业日志
@@ -16248,9 +18437,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobLogResponse`
         """
-        return self._show_nextflow_job_log_with_http_info(request)
+        http_info = self._show_nextflow_job_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nextflow_job_log_with_http_info(self, request):
+    def show_nextflow_job_log_async_invoker(self, request):
+        http_info = self._show_nextflow_job_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_nextflow_job_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNextflowJobLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16269,9 +18470,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16280,20 +18481,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNextflowJobLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nextflow_job_reports_async(self, request):
         """获取Nextflow作业报告
@@ -16307,9 +18504,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobReportsRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowJobReportsResponse`
         """
-        return self._show_nextflow_job_reports_with_http_info(request)
+        http_info = self._show_nextflow_job_reports_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nextflow_job_reports_with_http_info(self, request):
+    def show_nextflow_job_reports_async_invoker(self, request):
+        http_info = self._show_nextflow_job_reports_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_nextflow_job_reports_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/reports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNextflowJobReportsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16328,9 +18537,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16339,20 +18548,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/reports',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNextflowJobReportsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nextflow_task_detail_async(self, request):
         """获取task详情
@@ -16366,9 +18571,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskDetailResponse`
         """
-        return self._show_nextflow_task_detail_with_http_info(request)
+        http_info = self._show_nextflow_task_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nextflow_task_detail_with_http_info(self, request):
+    def show_nextflow_task_detail_async_invoker(self, request):
+        http_info = self._show_nextflow_task_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_nextflow_task_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNextflowTaskDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16389,9 +18606,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16400,20 +18617,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNextflowTaskDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nextflow_task_log_async(self, request):
         """获取Nextflow任务日志
@@ -16427,9 +18640,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskLogRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowTaskLogResponse`
         """
-        return self._show_nextflow_task_log_with_http_info(request)
+        http_info = self._show_nextflow_task_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nextflow_task_log_with_http_info(self, request):
+    def show_nextflow_task_log_async_invoker(self, request):
+        http_info = self._show_nextflow_task_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_nextflow_task_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks/{task_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNextflowTaskLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16450,9 +18675,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16461,20 +18686,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/tasks/{task_id}/logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNextflowTaskLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nextflow_workflow_async(self, request):
         """获取流程详情
@@ -16488,9 +18709,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNextflowWorkflowResponse`
         """
-        return self._show_nextflow_workflow_with_http_info(request)
+        http_info = self._show_nextflow_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nextflow_workflow_with_http_info(self, request):
+    def show_nextflow_workflow_async_invoker(self, request):
+        http_info = self._show_nextflow_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_nextflow_workflow_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNextflowWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16509,9 +18742,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16520,20 +18753,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNextflowWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_nextflow_job_async(self, request):
         """停止Nextflow作业
@@ -16547,9 +18776,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopNextflowJobRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopNextflowJobResponse`
         """
-        return self._stop_nextflow_job_with_http_info(request)
+        http_info = self._stop_nextflow_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_nextflow_job_with_http_info(self, request):
+    def stop_nextflow_job_async_invoker(self, request):
+        http_info = self._stop_nextflow_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_nextflow_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopNextflowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16568,9 +18809,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16579,20 +18820,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/jobs/{job_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopNextflowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def uninstall_nextflow_async(self, request):
         """卸载Nextflow
@@ -16606,9 +18843,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UninstallNextflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UninstallNextflowResponse`
         """
-        return self._uninstall_nextflow_with_http_info(request)
+        http_info = self._uninstall_nextflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _uninstall_nextflow_with_http_info(self, request):
+    def uninstall_nextflow_async_invoker(self, request):
+        http_info = self._uninstall_nextflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _uninstall_nextflow_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/nextflow/engines/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UninstallNextflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16625,9 +18874,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16636,20 +18885,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/nextflow/engines/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UninstallNextflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_nextflow_workflow_async(self, request):
         """更新流程
@@ -16663,9 +18908,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateNextflowWorkflowRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateNextflowWorkflowResponse`
         """
-        return self._update_nextflow_workflow_with_http_info(request)
+        http_info = self._update_nextflow_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_nextflow_workflow_with_http_info(self, request):
+    def update_nextflow_workflow_async_invoker(self, request):
+        http_info = self._update_nextflow_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_nextflow_workflow_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNextflowWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16695,11 +18952,11 @@ class EiHealthAsyncClient(Client):
         if 'params' in local_var_params:
             form_params['params'] = local_var_params['params']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16708,20 +18965,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/nextflow/workflows/{workflow_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNextflowWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_obs_bucket_async(self, request):
         """获取用户OBS桶列表
@@ -16735,9 +18988,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListObsBucketRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListObsBucketResponse`
         """
-        return self._list_obs_bucket_with_http_info(request)
+        http_info = self._list_obs_bucket_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_obs_bucket_with_http_info(self, request):
+    def list_obs_bucket_async_invoker(self, request):
+        http_info = self._list_obs_bucket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_obs_bucket_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/customer-buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObsBucketResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16754,9 +19019,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16765,20 +19030,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/customer-buckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListObsBucketResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_obs_bucket_object_async(self, request):
         """获取用户OBS桶内对象
@@ -16792,9 +19053,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListObsBucketObjectRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListObsBucketObjectResponse`
         """
-        return self._list_obs_bucket_object_with_http_info(request)
+        http_info = self._list_obs_bucket_object_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_obs_bucket_object_with_http_info(self, request):
+    def list_obs_bucket_object_async_invoker(self, request):
+        http_info = self._list_obs_bucket_object_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_obs_bucket_object_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/customer-buckets/{bucket_name}/objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObsBucketObjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16819,9 +19092,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16830,20 +19103,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/customer-buckets/{bucket_name}/objects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListObsBucketObjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_optimization_task_async(self, request):
         """新建分子优化任务接口
@@ -16857,9 +19126,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateOptimizationTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateOptimizationTaskResponse`
         """
-        return self._create_optimization_task_with_http_info(request)
+        http_info = self._create_optimization_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_optimization_task_with_http_info(self, request):
+    def create_optimization_task_async_invoker(self, request):
+        http_info = self._create_optimization_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_optimization_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/task/optimization",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOptimizationTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16874,11 +19155,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16887,20 +19168,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/optimization',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOptimizationTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_optimization_task_result_async(self, request):
         """查询分子优化任务
@@ -16914,9 +19191,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowOptimizationTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowOptimizationTaskResultResponse`
         """
-        return self._show_optimization_task_result_with_http_info(request)
+        http_info = self._show_optimization_task_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_optimization_task_result_with_http_info(self, request):
+    def show_optimization_task_result_async_invoker(self, request):
+        http_info = self._show_optimization_task_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_optimization_task_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/task/optimization/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOptimizationTaskResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16933,9 +19222,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16944,20 +19233,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/optimization/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOptimizationTaskResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_search_task_async(self, request):
         """新建分子搜索任务接口
@@ -16971,9 +19256,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateSearchTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateSearchTaskResponse`
         """
-        return self._create_search_task_with_http_info(request)
+        http_info = self._create_search_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_search_task_with_http_info(self, request):
+    def create_search_task_async_invoker(self, request):
+        http_info = self._create_search_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_search_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/task/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSearchTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16988,11 +19285,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17001,20 +19298,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSearchTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_search_task_result_async(self, request):
         """查询分子搜索任务
@@ -17028,9 +19321,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowSearchTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowSearchTaskResultResponse`
         """
-        return self._show_search_task_result_with_http_info(request)
+        http_info = self._show_search_task_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_search_task_result_with_http_info(self, request):
+    def show_search_task_result_async_invoker(self, request):
+        http_info = self._show_search_task_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_search_task_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/task/search/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSearchTaskResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17047,9 +19352,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17058,20 +19363,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/search/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSearchTaskResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_synthesis_task_async(self, request):
         """新建分子合成路径规划任务接口
@@ -17085,9 +19386,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisTaskRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateSynthesisTaskResponse`
         """
-        return self._create_synthesis_task_with_http_info(request)
+        http_info = self._create_synthesis_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_synthesis_task_with_http_info(self, request):
+    def create_synthesis_task_async_invoker(self, request):
+        http_info = self._create_synthesis_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_synthesis_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/task/synthesis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSynthesisTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17102,11 +19415,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17115,20 +19428,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/synthesis',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSynthesisTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_synthesis_task_result_async(self, request):
         """查询分子合成路径规划任务
@@ -17142,9 +19451,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowSynthesisTaskResultRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowSynthesisTaskResultResponse`
         """
-        return self._show_synthesis_task_result_with_http_info(request)
+        http_info = self._show_synthesis_task_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_synthesis_task_result_with_http_info(self, request):
+    def show_synthesis_task_result_async_invoker(self, request):
+        http_info = self._show_synthesis_task_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_synthesis_task_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/task/synthesis/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSynthesisTaskResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17161,9 +19482,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17172,20 +19493,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task/synthesis/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSynthesisTaskResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_notebook_async(self, request):
         """创建notebook
@@ -17199,9 +19516,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.CreateNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.CreateNotebookResponse`
         """
-        return self._create_notebook_with_http_info(request)
+        http_info = self._create_notebook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_notebook_with_http_info(self, request):
+    def create_notebook_async_invoker(self, request):
+        http_info = self._create_notebook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_notebook_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNotebookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17218,11 +19547,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17231,20 +19560,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNotebookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_notebook_async(self, request):
         """删除notebook
@@ -17258,9 +19583,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.DeleteNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.DeleteNotebookResponse`
         """
-        return self._delete_notebook_with_http_info(request)
+        http_info = self._delete_notebook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_notebook_with_http_info(self, request):
+    def delete_notebook_async_invoker(self, request):
+        http_info = self._delete_notebook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_notebook_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNotebookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17279,9 +19616,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17290,20 +19627,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNotebookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notebook_async(self, request):
         """获取notebook列表
@@ -17317,9 +19650,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNotebookResponse`
         """
-        return self._list_notebook_with_http_info(request)
+        http_info = self._list_notebook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notebook_with_http_info(self, request):
+    def list_notebook_async_invoker(self, request):
+        http_info = self._list_notebook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_notebook_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotebookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17344,9 +19689,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17355,20 +19700,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotebookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notebook_tool_async(self, request):
         """获取notebook工作环境
@@ -17382,9 +19723,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ListNotebookToolRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ListNotebookToolResponse`
         """
-        return self._list_notebook_tool_with_http_info(request)
+        http_info = self._list_notebook_tool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notebook_tool_with_http_info(self, request):
+    def list_notebook_tool_async_invoker(self, request):
+        http_info = self._list_notebook_tool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_notebook_tool_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/tools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotebookToolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17401,9 +19754,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17412,20 +19765,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/tools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotebookToolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_notebook_async(self, request):
         """获取notebook详情
@@ -17439,9 +19788,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNotebookResponse`
         """
-        return self._show_notebook_with_http_info(request)
+        http_info = self._show_notebook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_notebook_with_http_info(self, request):
+    def show_notebook_async_invoker(self, request):
+        http_info = self._show_notebook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_notebook_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNotebookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17460,9 +19821,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17471,20 +19832,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNotebookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_notebook_token_async(self, request):
         """获取notebook鉴权信息
@@ -17498,9 +19855,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.ShowNotebookTokenRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.ShowNotebookTokenResponse`
         """
-        return self._show_notebook_token_with_http_info(request)
+        http_info = self._show_notebook_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_notebook_token_with_http_info(self, request):
+    def show_notebook_token_async_invoker(self, request):
+        http_info = self._show_notebook_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_notebook_token_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}/token",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNotebookTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17519,9 +19888,9 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17530,20 +19899,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}/token',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNotebookTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_or_start_notebook_async(self, request):
         """启停notebook
@@ -17557,9 +19922,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.StopOrStartNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.StopOrStartNotebookResponse`
         """
-        return self._stop_or_start_notebook_with_http_info(request)
+        http_info = self._stop_or_start_notebook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_or_start_notebook_with_http_info(self, request):
+    def stop_or_start_notebook_async_invoker(self, request):
+        http_info = self._stop_or_start_notebook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_or_start_notebook_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopOrStartNotebookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17578,11 +19955,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17591,20 +19968,16 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopOrStartNotebookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_notebook_async(self, request):
         """更新notebook
@@ -17618,9 +19991,21 @@ class EiHealthAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookRequest`
         :rtype: :class:`huaweicloudsdkeihealth.v1.UpdateNotebookResponse`
         """
-        return self._update_notebook_with_http_info(request)
+        http_info = self._update_notebook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_notebook_with_http_info(self, request):
+    def update_notebook_async_invoker(self, request):
+        http_info = self._update_notebook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_notebook_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNotebookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17639,11 +20024,11 @@ class EiHealthAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17652,20 +20037,26 @@ class EiHealthAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eihealth-projects/{eihealth_project_id}/notebooks/{notebook_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNotebookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -17704,4 +20095,4 @@ class EiHealthAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

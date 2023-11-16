@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkbss'")
 
 
 class BssAsyncClient(Client):
@@ -39,9 +44,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListConversionsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListConversionsResponse`
         """
-        return self._list_conversions_with_http_info(request)
+        http_info = self._list_conversions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_conversions_with_http_info(self, request):
+    def list_conversions_async_invoker(self, request):
+        http_info = self._list_conversions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_conversions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bases/conversions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConversionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,9 +77,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bases/conversions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConversionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_costs_async(self, request):
         """查询成本数据
@@ -98,9 +111,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCostsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCostsResponse`
         """
-        return self._list_costs_with_http_info(request)
+        http_info = self._list_costs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_costs_with_http_info(self, request):
+    def list_costs_async_invoker(self, request):
+        http_info = self._list_costs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_costs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/costs/cost-analysed-bills/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v4/costs/cost-analysed-bills/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customer_bills_monthly_break_down_async(self, request):
         """查询月度成本
@@ -164,9 +185,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerBillsMonthlyBreakDownRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerBillsMonthlyBreakDownResponse`
         """
-        return self._list_customer_bills_monthly_break_down_with_http_info(request)
+        http_info = self._list_customer_bills_monthly_break_down_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customer_bills_monthly_break_down_with_http_info(self, request):
+    def list_customer_bills_monthly_break_down_async_invoker(self, request):
+        http_info = self._list_customer_bills_monthly_break_down_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customer_bills_monthly_break_down_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/costs/cost-analysed-bills/monthly-breakdown",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerBillsMonthlyBreakDownResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -209,9 +242,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -220,20 +253,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/costs/cost-analysed-bills/monthly-breakdown',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomerBillsMonthlyBreakDownResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_free_resource_infos_async(self, request):
         """查询资源包列表
@@ -247,9 +276,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListFreeResourceInfosRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListFreeResourceInfosResponse`
         """
-        return self._list_free_resource_infos_with_http_info(request)
+        http_info = self._list_free_resource_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_free_resource_infos_with_http_info(self, request):
+    def list_free_resource_infos_async_invoker(self, request):
+        http_info = self._list_free_resource_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_free_resource_infos_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/payments/free-resources/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFreeResourceInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -266,11 +307,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -279,20 +320,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/payments/free-resources/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFreeResourceInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_free_resource_usages_async(self, request):
         """查询资源包使用量
@@ -306,9 +343,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListFreeResourceUsagesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListFreeResourceUsagesResponse`
         """
-        return self._list_free_resource_usages_with_http_info(request)
+        http_info = self._list_free_resource_usages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_free_resource_usages_with_http_info(self, request):
+    def list_free_resource_usages_async_invoker(self, request):
+        http_info = self._list_free_resource_usages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_free_resource_usages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/payments/free-resources/usages/details/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFreeResourceUsagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -325,11 +374,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -338,20 +387,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/payments/free-resources/usages/details/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFreeResourceUsagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_free_resources_usage_records_async(self, request):
         """查询资源包使用明细
@@ -365,9 +410,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListFreeResourcesUsageRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListFreeResourcesUsageRecordsResponse`
         """
-        return self._list_free_resources_usage_records_with_http_info(request)
+        http_info = self._list_free_resources_usage_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_free_resources_usage_records_with_http_info(self, request):
+    def list_free_resources_usage_records_async_invoker(self, request):
+        http_info = self._list_free_resources_usage_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_free_resources_usage_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/customer-bills/free-resources-usage-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFreeResourcesUsageRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -396,9 +453,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -407,20 +464,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/customer-bills/free-resources-usage-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFreeResourcesUsageRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_incentive_discount_policies_async(self, request):
         """查询产品的折扣和激励策略
@@ -436,9 +489,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListIncentiveDiscountPoliciesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListIncentiveDiscountPoliciesResponse`
         """
-        return self._list_incentive_discount_policies_with_http_info(request)
+        http_info = self._list_incentive_discount_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_incentive_discount_policies_with_http_info(self, request):
+    def list_incentive_discount_policies_async_invoker(self, request):
+        http_info = self._list_incentive_discount_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_incentive_discount_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/products/incentive-discount-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIncentiveDiscountPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,9 +526,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -472,20 +537,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/products/incentive-discount-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIncentiveDiscountPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_measure_units_async(self, request):
         """查询度量单位列表
@@ -499,9 +560,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListMeasureUnitsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListMeasureUnitsResponse`
         """
-        return self._list_measure_units_with_http_info(request)
+        http_info = self._list_measure_units_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_measure_units_with_http_info(self, request):
+    def list_measure_units_async_invoker(self, request):
+        http_info = self._list_measure_units_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_measure_units_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bases/measurements",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMeasureUnitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -518,9 +591,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -529,20 +602,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bases/measurements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMeasureUnitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_partner_account_change_records_async(self, request):
         """查询收支明细
@@ -556,9 +625,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPartnerAccountChangeRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPartnerAccountChangeRecordsResponse`
         """
-        return self._list_partner_account_change_records_with_http_info(request)
+        http_info = self._list_partner_account_change_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_partner_account_change_records_with_http_info(self, request):
+    def list_partner_account_change_records_async_invoker(self, request):
+        http_info = self._list_partner_account_change_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_partner_account_change_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/accounts/partner-accounts/account-change-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartnerAccountChangeRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -587,9 +668,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -598,20 +679,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/account-change-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPartnerAccountChangeRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_types_async(self, request):
         """查询资源类型列表
@@ -625,9 +702,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListResourceTypesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListResourceTypesResponse`
         """
-        return self._list_resource_types_with_http_info(request)
+        http_info = self._list_resource_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_types_with_http_info(self, request):
+    def list_resource_types_async_invoker(self, request):
+        http_info = self._list_resource_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/products/resource-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -648,9 +737,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -659,20 +748,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/products/resource-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_usage_async(self, request):
         """查询95计费资源用量明细
@@ -689,9 +774,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListResourceUsageRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListResourceUsageResponse`
         """
-        return self._list_resource_usage_with_http_info(request)
+        http_info = self._list_resource_usage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_usage_with_http_info(self, request):
+    def list_resource_usage_async_invoker(self, request):
+        http_info = self._list_resource_usage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_usage_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/customer-bills/resources/usage/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceUsageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -722,9 +819,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -733,20 +830,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/customer-bills/resources/usage/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceUsageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_usage_summary_async(self, request):
         """查询95计费资源用量汇总
@@ -764,9 +857,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListResourceUsageSummaryRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListResourceUsageSummaryResponse`
         """
-        return self._list_resource_usage_summary_with_http_info(request)
+        http_info = self._list_resource_usage_summary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_usage_summary_with_http_info(self, request):
+    def list_resource_usage_summary_async_invoker(self, request):
+        http_info = self._list_resource_usage_summary_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_usage_summary_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/customer-bills/resources/usage/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceUsageSummaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -795,9 +900,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -806,20 +911,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/customer-bills/resources/usage/summary',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceUsageSummaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_service_types_async(self, request):
         """查询云服务类型列表
@@ -833,9 +934,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListServiceTypesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListServiceTypesResponse`
         """
-        return self._list_service_types_with_http_info(request)
+        http_info = self._list_service_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_service_types_with_http_info(self, request):
+    def list_service_types_async_invoker(self, request):
+        http_info = self._list_service_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_service_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/products/service-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -856,9 +969,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -867,20 +980,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/products/service-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServiceTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stored_value_cards_async(self, request):
         """查询储值卡列表
@@ -894,9 +1003,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListStoredValueCardsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListStoredValueCardsResponse`
         """
-        return self._list_stored_value_cards_with_http_info(request)
+        http_info = self._list_stored_value_cards_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stored_value_cards_with_http_info(self, request):
+    def list_stored_value_cards_async_invoker(self, request):
+        http_info = self._list_stored_value_cards_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stored_value_cards_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/promotions/benefits/stored-value-cards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStoredValueCardsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -919,9 +1040,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -930,20 +1051,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/promotions/benefits/stored-value-cards',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStoredValueCardsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sub_customer_new_tag_async(self, request):
         """查询客户新客标签
@@ -961,9 +1078,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubCustomerNewTagRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomerNewTagResponse`
         """
-        return self._list_sub_customer_new_tag_with_http_info(request)
+        http_info = self._list_sub_customer_new_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sub_customer_new_tag_with_http_info(self, request):
+    def list_sub_customer_new_tag_async_invoker(self, request):
+        http_info = self._list_sub_customer_new_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_customer_new_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/sub-customers/new-customers-tags/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubCustomerNewTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -978,11 +1107,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -991,20 +1120,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/new-customers-tags/batch-query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubCustomerNewTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_enterprise_realname_authentication_async(self, request):
         """申请实名认证变更
@@ -1020,9 +1145,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ChangeEnterpriseRealnameAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ChangeEnterpriseRealnameAuthenticationResponse`
         """
-        return self._change_enterprise_realname_authentication_with_http_info(request)
+        http_info = self._change_enterprise_realname_authentication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_enterprise_realname_authentication_with_http_info(self, request):
+    def change_enterprise_realname_authentication_async_invoker(self, request):
+        http_info = self._change_enterprise_realname_authentication_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_enterprise_realname_authentication_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/customers/realname-auths/enterprise",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeEnterpriseRealnameAuthenticationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1037,11 +1174,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1050,20 +1187,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/enterprise',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeEnterpriseRealnameAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_user_identity_async(self, request):
         """校验客户注册信息
@@ -1080,9 +1213,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CheckUserIdentityRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CheckUserIdentityResponse`
         """
-        return self._check_user_identity_with_http_info(request)
+        http_info = self._check_user_identity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_user_identity_with_http_info(self, request):
+    def check_user_identity_async_invoker(self, request):
+        http_info = self._check_user_identity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_user_identity_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/sub-customers/users/check-identity",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckUserIdentityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1097,11 +1242,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1110,20 +1255,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/users/check-identity',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckUserIdentityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def claim_enterprise_multi_account_coupon_async(self, request):
         """企业主账号向企业子账号拨款优惠券
@@ -1140,9 +1281,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ClaimEnterpriseMultiAccountCouponRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ClaimEnterpriseMultiAccountCouponResponse`
         """
-        return self._claim_enterprise_multi_account_coupon_with_http_info(request)
+        http_info = self._claim_enterprise_multi_account_coupon_http_info(request)
+        return self._call_api(**http_info)
 
-    def _claim_enterprise_multi_account_coupon_with_http_info(self, request):
+    def claim_enterprise_multi_account_coupon_async_invoker(self, request):
+        http_info = self._claim_enterprise_multi_account_coupon_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _claim_enterprise_multi_account_coupon_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/enterprises/multi-accounts/transfer-coupon",
+            "request_type": request.__class__.__name__,
+            "response_type": "ClaimEnterpriseMultiAccountCouponResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1157,11 +1310,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1170,20 +1323,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/transfer-coupon',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ClaimEnterpriseMultiAccountCouponResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_enterprise_project_auth_async(self, request):
         """开通客户企业项目权限
@@ -1197,9 +1346,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreateEnterpriseProjectAuthRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreateEnterpriseProjectAuthResponse`
         """
-        return self._create_enterprise_project_auth_with_http_info(request)
+        http_info = self._create_enterprise_project_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_enterprise_project_auth_with_http_info(self, request):
+    def create_enterprise_project_auth_async_invoker(self, request):
+        http_info = self._create_enterprise_project_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_enterprise_project_auth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/enterprises/enterprise-projects/authority",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnterpriseProjectAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1214,9 +1375,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1225,20 +1386,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/enterprise-projects/authority',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnterpriseProjectAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_enterprise_realname_authentication_async(self, request):
         """申请企业实名认证
@@ -1254,9 +1411,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreateEnterpriseRealnameAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreateEnterpriseRealnameAuthenticationResponse`
         """
-        return self._create_enterprise_realname_authentication_with_http_info(request)
+        http_info = self._create_enterprise_realname_authentication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_enterprise_realname_authentication_with_http_info(self, request):
+    def create_enterprise_realname_authentication_async_invoker(self, request):
+        http_info = self._create_enterprise_realname_authentication_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_enterprise_realname_authentication_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/customers/realname-auths/enterprise",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnterpriseRealnameAuthenticationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1271,11 +1440,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1284,20 +1453,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/enterprise',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnterpriseRealnameAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_partner_coupons_async(self, request):
         """发放优惠券
@@ -1316,9 +1481,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreatePartnerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreatePartnerCouponsResponse`
         """
-        return self._create_partner_coupons_with_http_info(request)
+        http_info = self._create_partner_coupons_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_partner_coupons_with_http_info(self, request):
+    def create_partner_coupons_async_invoker(self, request):
+        http_info = self._create_partner_coupons_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_partner_coupons_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/promotions/benefits/partner-coupons",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePartnerCouponsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1333,11 +1510,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1346,20 +1523,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/promotions/benefits/partner-coupons',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePartnerCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_personal_realname_auth_async(self, request):
         """申请个人实名认证
@@ -1375,9 +1548,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreatePersonalRealnameAuthRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreatePersonalRealnameAuthResponse`
         """
-        return self._create_personal_realname_auth_with_http_info(request)
+        http_info = self._create_personal_realname_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_personal_realname_auth_with_http_info(self, request):
+    def create_personal_realname_auth_async_invoker(self, request):
+        http_info = self._create_personal_realname_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_personal_realname_auth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/customers/realname-auths/individual",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePersonalRealnameAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1392,11 +1577,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1405,20 +1590,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/individual',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePersonalRealnameAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_sub_customer_async(self, request):
         """创建客户
@@ -1439,9 +1620,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreateSubCustomerRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreateSubCustomerResponse`
         """
-        return self._create_sub_customer_with_http_info(request)
+        http_info = self._create_sub_customer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sub_customer_with_http_info(self, request):
+    def create_sub_customer_async_invoker(self, request):
+        http_info = self._create_sub_customer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sub_customer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/sub-customers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubCustomerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1456,11 +1649,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1469,20 +1662,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubCustomerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_sub_enterprise_account_async(self, request):
         """创建企业子账号
@@ -1498,9 +1687,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CreateSubEnterpriseAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CreateSubEnterpriseAccountResponse`
         """
-        return self._create_sub_enterprise_account_with_http_info(request)
+        http_info = self._create_sub_enterprise_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sub_enterprise_account_with_http_info(self, request):
+    def create_sub_enterprise_account_async_invoker(self, request):
+        http_info = self._create_sub_enterprise_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sub_enterprise_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/enterprises/multi-accounts/sub-customers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubEnterpriseAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1515,11 +1716,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1528,20 +1729,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/sub-customers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubEnterpriseAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cities_async(self, request):
         """查询城市信息
@@ -1555,9 +1752,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCitiesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCitiesResponse`
         """
-        return self._list_cities_with_http_info(request)
+        http_info = self._list_cities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cities_with_http_info(self, request):
+    def list_cities_async_invoker(self, request):
+        http_info = self._list_cities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cities_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/systems/configs/cities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1580,9 +1789,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1591,20 +1800,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/systems/configs/cities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_consume_sub_customers_async(self, request):
         """查询伙伴消费子客户列表
@@ -1621,9 +1826,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListConsumeSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListConsumeSubCustomersResponse`
         """
-        return self._list_consume_sub_customers_with_http_info(request)
+        http_info = self._list_consume_sub_customers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_consume_sub_customers_with_http_info(self, request):
+    def list_consume_sub_customers_async_invoker(self, request):
+        http_info = self._list_consume_sub_customers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_consume_sub_customers_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/bills/subcustomer-bills/res-fee-records/sub-customers/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConsumeSubCustomersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1640,11 +1857,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1653,20 +1870,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/subcustomer-bills/res-fee-records/sub-customers/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConsumeSubCustomersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_counties_async(self, request):
         """查询区县信息
@@ -1680,9 +1893,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCountiesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCountiesResponse`
         """
-        return self._list_counties_with_http_info(request)
+        http_info = self._list_counties_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_counties_with_http_info(self, request):
+    def list_counties_async_invoker(self, request):
+        http_info = self._list_counties_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_counties_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/systems/configs/counties",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCountiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1705,9 +1930,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1716,20 +1941,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/systems/configs/counties',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCountiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_coupon_quotas_records_async(self, request):
         """查询代金券额度的发放回收记录
@@ -1748,9 +1969,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCouponQuotasRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCouponQuotasRecordsResponse`
         """
-        return self._list_coupon_quotas_records_with_http_info(request)
+        http_info = self._list_coupon_quotas_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_coupon_quotas_records_with_http_info(self, request):
+    def list_coupon_quotas_records_async_invoker(self, request):
+        http_info = self._list_coupon_quotas_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_coupon_quotas_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/partners/coupon-quotas/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCouponQuotasRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1781,9 +2014,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1792,20 +2025,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/coupon-quotas/records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCouponQuotasRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customer_account_change_records_async(self, request):
         """查询收支明细(客户)
@@ -1819,9 +2048,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerAccountChangeRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerAccountChangeRecordsResponse`
         """
-        return self._list_customer_account_change_records_with_http_info(request)
+        http_info = self._list_customer_account_change_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customer_account_change_records_with_http_info(self, request):
+    def list_customer_account_change_records_async_invoker(self, request):
+        http_info = self._list_customer_account_change_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customer_account_change_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/accounts/customer-accounts/account-change-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerAccountChangeRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1856,9 +2097,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1867,20 +2108,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/customer-accounts/account-change-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomerAccountChangeRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customer_bills_fee_records_async(self, request):
         """查询流水账单
@@ -1896,9 +2133,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerBillsFeeRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerBillsFeeRecordsResponse`
         """
-        return self._list_customer_bills_fee_records_with_http_info(request)
+        http_info = self._list_customer_bills_fee_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customer_bills_fee_records_with_http_info(self, request):
+    def list_customer_bills_fee_records_async_invoker(self, request):
+        http_info = self._list_customer_bills_fee_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customer_bills_fee_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/customer-bills/fee-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerBillsFeeRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1949,9 +2198,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1960,20 +2209,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/customer-bills/fee-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomerBillsFeeRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customer_on_demand_resources_async(self, request):
         """查询客户按需资源列表
@@ -1987,9 +2232,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerOnDemandResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerOnDemandResourcesResponse`
         """
-        return self._list_customer_on_demand_resources_with_http_info(request)
+        http_info = self._list_customer_on_demand_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customer_on_demand_resources_with_http_info(self, request):
+    def list_customer_on_demand_resources_async_invoker(self, request):
+        http_info = self._list_customer_on_demand_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customer_on_demand_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/sub-customers/on-demand-resources/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerOnDemandResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2006,11 +2263,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2019,20 +2276,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/on-demand-resources/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomerOnDemandResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customers_balances_detail_async(self, request):
         """查询客户账户余额
@@ -2051,9 +2304,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomersBalancesDetailRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomersBalancesDetailResponse`
         """
-        return self._list_customers_balances_detail_with_http_info(request)
+        http_info = self._list_customers_balances_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customers_balances_detail_with_http_info(self, request):
+    def list_customers_balances_detail_async_invoker(self, request):
+        http_info = self._list_customers_balances_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customers_balances_detail_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/accounts/customer-accounts/balances/batch-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomersBalancesDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2068,11 +2333,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2081,20 +2346,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/customer-accounts/balances/batch-query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomersBalancesDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customerself_resource_record_details_async(self, request):
         """查询资源详单
@@ -2113,9 +2374,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerselfResourceRecordDetailsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerselfResourceRecordDetailsResponse`
         """
-        return self._list_customerself_resource_record_details_with_http_info(request)
+        http_info = self._list_customerself_resource_record_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customerself_resource_record_details_with_http_info(self, request):
+    def list_customerself_resource_record_details_async_invoker(self, request):
+        http_info = self._list_customerself_resource_record_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customerself_resource_record_details_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/bills/customer-bills/res-records/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerselfResourceRecordDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2130,11 +2403,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2143,20 +2416,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/customer-bills/res-records/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomerselfResourceRecordDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customerself_resource_records_async(self, request):
         """查询资源消费记录
@@ -2172,9 +2441,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerselfResourceRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerselfResourceRecordsResponse`
         """
-        return self._list_customerself_resource_records_with_http_info(request)
+        http_info = self._list_customerself_resource_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customerself_resource_records_with_http_info(self, request):
+    def list_customerself_resource_records_async_invoker(self, request):
+        http_info = self._list_customerself_resource_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customerself_resource_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/customer-bills/res-fee-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerselfResourceRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2221,9 +2502,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2232,20 +2513,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/customer-bills/res-fee-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomerselfResourceRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enterprise_multi_account_async(self, request):
         """查询企业子账号可回收余额
@@ -2259,9 +2536,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListEnterpriseMultiAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListEnterpriseMultiAccountResponse`
         """
-        return self._list_enterprise_multi_account_with_http_info(request)
+        http_info = self._list_enterprise_multi_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enterprise_multi_account_with_http_info(self, request):
+    def list_enterprise_multi_account_async_invoker(self, request):
+        http_info = self._list_enterprise_multi_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enterprise_multi_account_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/enterprises/multi-accounts/retrieve-amount",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseMultiAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2284,9 +2573,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2295,20 +2584,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/retrieve-amount',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnterpriseMultiAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enterprise_organizations_async(self, request):
         """查询企业组织结构
@@ -2322,9 +2607,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListEnterpriseOrganizationsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListEnterpriseOrganizationsResponse`
         """
-        return self._list_enterprise_organizations_with_http_info(request)
+        http_info = self._list_enterprise_organizations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enterprise_organizations_with_http_info(self, request):
+    def list_enterprise_organizations_async_invoker(self, request):
+        http_info = self._list_enterprise_organizations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enterprise_organizations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/enterprises/multi-accounts/enterprise-organizations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseOrganizationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2343,9 +2640,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2354,20 +2651,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/enterprise-organizations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnterpriseOrganizationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enterprise_sub_customers_async(self, request):
         """查询企业子账号列表
@@ -2381,9 +2674,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListEnterpriseSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListEnterpriseSubCustomersResponse`
         """
-        return self._list_enterprise_sub_customers_with_http_info(request)
+        http_info = self._list_enterprise_sub_customers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enterprise_sub_customers_with_http_info(self, request):
+    def list_enterprise_sub_customers_async_invoker(self, request):
+        http_info = self._list_enterprise_sub_customers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enterprise_sub_customers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/enterprises/multi-accounts/sub-customers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseSubCustomersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2410,9 +2715,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2421,20 +2726,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/sub-customers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnterpriseSubCustomersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_indirect_partners_async(self, request):
         """查询云经销商列表
@@ -2450,9 +2751,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListIndirectPartnersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListIndirectPartnersResponse`
         """
-        return self._list_indirect_partners_with_http_info(request)
+        http_info = self._list_indirect_partners_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_indirect_partners_with_http_info(self, request):
+    def list_indirect_partners_async_invoker(self, request):
+        http_info = self._list_indirect_partners_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_indirect_partners_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/indirect-partners/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIndirectPartnersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2467,11 +2780,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2480,20 +2793,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/indirect-partners/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIndirectPartnersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_issued_coupon_quotas_async(self, request):
         """查询已发放的代金券额度
@@ -2512,9 +2821,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListIssuedCouponQuotasRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListIssuedCouponQuotasResponse`
         """
-        return self._list_issued_coupon_quotas_with_http_info(request)
+        http_info = self._list_issued_coupon_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_issued_coupon_quotas_with_http_info(self, request):
+    def list_issued_coupon_quotas_async_invoker(self, request):
+        http_info = self._list_issued_coupon_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_issued_coupon_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/partners/issued-coupon-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssuedCouponQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2539,9 +2860,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2550,20 +2871,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/issued-coupon-quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIssuedCouponQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_issued_partner_coupons_async(self, request):
         """查询已发放的优惠券
@@ -2585,9 +2902,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListIssuedPartnerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListIssuedPartnerCouponsResponse`
         """
-        return self._list_issued_partner_coupons_with_http_info(request)
+        http_info = self._list_issued_partner_coupons_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_issued_partner_coupons_with_http_info(self, request):
+    def list_issued_partner_coupons_async_invoker(self, request):
+        http_info = self._list_issued_partner_coupons_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_issued_partner_coupons_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/promotions/benefits/partner-coupons",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssuedPartnerCouponsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2630,9 +2959,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2641,20 +2970,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/promotions/benefits/partner-coupons',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIssuedPartnerCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_multi_account_retrieve_coupons_async(self, request):
         """查询企业子账号可回收优惠券列表
@@ -2671,9 +2996,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListMultiAccountRetrieveCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListMultiAccountRetrieveCouponsResponse`
         """
-        return self._list_multi_account_retrieve_coupons_with_http_info(request)
+        http_info = self._list_multi_account_retrieve_coupons_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_multi_account_retrieve_coupons_with_http_info(self, request):
+    def list_multi_account_retrieve_coupons_async_invoker(self, request):
+        http_info = self._list_multi_account_retrieve_coupons_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_multi_account_retrieve_coupons_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/enterprises/multi-accounts/retrieve-coupons",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMultiAccountRetrieveCouponsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2694,9 +3031,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2705,20 +3042,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/retrieve-coupons',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMultiAccountRetrieveCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_multi_account_transfer_coupons_async(self, request):
         """查询企业主账号可拨款优惠券列表
@@ -2735,9 +3068,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListMultiAccountTransferCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListMultiAccountTransferCouponsResponse`
         """
-        return self._list_multi_account_transfer_coupons_with_http_info(request)
+        http_info = self._list_multi_account_transfer_coupons_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_multi_account_transfer_coupons_with_http_info(self, request):
+    def list_multi_account_transfer_coupons_async_invoker(self, request):
+        http_info = self._list_multi_account_transfer_coupons_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_multi_account_transfer_coupons_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/enterprises/multi-accounts/transfer-coupons",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMultiAccountTransferCouponsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2756,9 +3101,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2767,20 +3112,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/transfer-coupons',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMultiAccountTransferCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_on_demand_resource_ratings_async(self, request):
         """查询按需产品价格
@@ -2801,9 +3142,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListOnDemandResourceRatingsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListOnDemandResourceRatingsResponse`
         """
-        return self._list_on_demand_resource_ratings_with_http_info(request)
+        http_info = self._list_on_demand_resource_ratings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_on_demand_resource_ratings_with_http_info(self, request):
+    def list_on_demand_resource_ratings_async_invoker(self, request):
+        http_info = self._list_on_demand_resource_ratings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_on_demand_resource_ratings_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/bills/ratings/on-demand-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOnDemandResourceRatingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2818,11 +3171,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2831,20 +3184,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/ratings/on-demand-resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOnDemandResourceRatingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_order_discounts_async(self, request):
         """查询订单可用折扣
@@ -2858,9 +3207,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListOrderDiscountsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListOrderDiscountsResponse`
         """
-        return self._list_order_discounts_with_http_info(request)
+        http_info = self._list_order_discounts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_order_discounts_with_http_info(self, request):
+    def list_order_discounts_async_invoker(self, request):
+        http_info = self._list_order_discounts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_order_discounts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/orders/customer-orders/order-discounts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrderDiscountsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2877,9 +3238,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2888,20 +3249,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/order-discounts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOrderDiscountsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_partner_adjust_records_async(self, request):
         """查询调账记录
@@ -2917,9 +3274,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPartnerAdjustRecordsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPartnerAdjustRecordsResponse`
         """
-        return self._list_partner_adjust_records_with_http_info(request)
+        http_info = self._list_partner_adjust_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_partner_adjust_records_with_http_info(self, request):
+    def list_partner_adjust_records_async_invoker(self, request):
+        http_info = self._list_partner_adjust_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_partner_adjust_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/accounts/partner-accounts/adjust-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartnerAdjustRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2950,9 +3319,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2961,20 +3330,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/accounts/partner-accounts/adjust-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPartnerAdjustRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_partner_balances_async(self, request):
         """查询云经销商账户余额
@@ -2988,9 +3353,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPartnerBalancesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPartnerBalancesResponse`
         """
-        return self._list_partner_balances_with_http_info(request)
+        http_info = self._list_partner_balances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_partner_balances_with_http_info(self, request):
+    def list_partner_balances_async_invoker(self, request):
+        http_info = self._list_partner_balances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_partner_balances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/accounts/partner-accounts/balances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartnerBalancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3007,9 +3384,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3018,20 +3395,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/balances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPartnerBalancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_partner_coupons_record_async(self, request):
         """查询优惠券的发放回收记录
@@ -3047,9 +3420,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPartnerCouponsRecordRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPartnerCouponsRecordResponse`
         """
-        return self._list_partner_coupons_record_with_http_info(request)
+        http_info = self._list_partner_coupons_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_partner_coupons_record_with_http_info(self, request):
+    def list_partner_coupons_record_async_invoker(self, request):
+        http_info = self._list_partner_coupons_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_partner_coupons_record_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/promotions/benefits/partner-coupons/records/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartnerCouponsRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3088,9 +3473,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3099,20 +3484,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/promotions/benefits/partner-coupons/records/query',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPartnerCouponsRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_provinces_async(self, request):
         """查询省份信息
@@ -3126,9 +3507,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListProvincesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListProvincesResponse`
         """
-        return self._list_provinces_with_http_info(request)
+        http_info = self._list_provinces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_provinces_with_http_info(self, request):
+    def list_provinces_async_invoker(self, request):
+        http_info = self._list_provinces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_provinces_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/systems/configs/provinces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProvincesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3149,9 +3542,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3160,20 +3553,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/systems/configs/provinces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProvincesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quota_coupons_async(self, request):
         """查询优惠券额度
@@ -3189,9 +3578,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListQuotaCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListQuotaCouponsResponse`
         """
-        return self._list_quota_coupons_with_http_info(request)
+        http_info = self._list_quota_coupons_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quota_coupons_with_http_info(self, request):
+    def list_quota_coupons_async_invoker(self, request):
+        http_info = self._list_quota_coupons_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quota_coupons_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/coupon-quotas/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotaCouponsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3206,11 +3607,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3219,20 +3620,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/coupon-quotas/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotaCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rate_on_period_detail_async(self, request):
         """查询包年/包月产品价格
@@ -3253,9 +3650,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListRateOnPeriodDetailRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListRateOnPeriodDetailResponse`
         """
-        return self._list_rate_on_period_detail_with_http_info(request)
+        http_info = self._list_rate_on_period_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rate_on_period_detail_with_http_info(self, request):
+    def list_rate_on_period_detail_async_invoker(self, request):
+        http_info = self._list_rate_on_period_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_rate_on_period_detail_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/bills/ratings/period-resources/subscribe-rate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRateOnPeriodDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3270,11 +3679,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3283,20 +3692,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/ratings/period-resources/subscribe-rate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRateOnPeriodDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_renew_rate_on_period_async(self, request):
         """查询待续订包年包月资源的续订金额
@@ -3310,9 +3715,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListRenewRateOnPeriodRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListRenewRateOnPeriodResponse`
         """
-        return self._list_renew_rate_on_period_with_http_info(request)
+        http_info = self._list_renew_rate_on_period_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_renew_rate_on_period_with_http_info(self, request):
+    def list_renew_rate_on_period_async_invoker(self, request):
+        http_info = self._list_renew_rate_on_period_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_renew_rate_on_period_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/bills/ratings/period-resources/renew-rate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRenewRateOnPeriodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3327,11 +3744,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3340,20 +3757,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/ratings/period-resources/renew-rate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRenewRateOnPeriodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_service_resources_async(self, request):
         """根据云服务类型查询资源列表
@@ -3367,9 +3780,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListServiceResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListServiceResourcesResponse`
         """
-        return self._list_service_resources_with_http_info(request)
+        http_info = self._list_service_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_service_resources_with_http_info(self, request):
+    def list_service_resources_async_invoker(self, request):
+        http_info = self._list_service_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_service_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/products/service-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3392,9 +3817,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3403,20 +3828,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/products/service-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServiceResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sub_customer_bill_detail_async(self, request):
         """查询伙伴子客户消费记录
@@ -3437,9 +3858,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubCustomerBillDetailRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomerBillDetailResponse`
         """
-        return self._list_sub_customer_bill_detail_with_http_info(request)
+        http_info = self._list_sub_customer_bill_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sub_customer_bill_detail_with_http_info(self, request):
+    def list_sub_customer_bill_detail_async_invoker(self, request):
+        http_info = self._list_sub_customer_bill_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_customer_bill_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/subcustomer-bills/res-fee-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubCustomerBillDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3488,9 +3921,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3499,20 +3932,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/subcustomer-bills/res-fee-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubCustomerBillDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sub_customer_coupons_async(self, request):
         """查询优惠券列表
@@ -3528,9 +3957,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubCustomerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomerCouponsResponse`
         """
-        return self._list_sub_customer_coupons_with_http_info(request)
+        http_info = self._list_sub_customer_coupons_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sub_customer_coupons_with_http_info(self, request):
+    def list_sub_customer_coupons_async_invoker(self, request):
+        http_info = self._list_sub_customer_coupons_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_customer_coupons_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/promotions/benefits/coupons",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubCustomerCouponsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3567,9 +4008,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3578,20 +4019,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/promotions/benefits/coupons',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubCustomerCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sub_customers_async(self, request):
         """查询客户列表
@@ -3607,9 +4044,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubCustomersResponse`
         """
-        return self._list_sub_customers_with_http_info(request)
+        http_info = self._list_sub_customers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sub_customers_with_http_info(self, request):
+    def list_sub_customers_async_invoker(self, request):
+        http_info = self._list_sub_customers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_customers_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/sub-customers/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubCustomersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3624,11 +4073,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3637,20 +4086,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/sub-customers/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubCustomersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subcustomer_monthly_bills_async(self, request):
         """查询客户月度消费账单
@@ -3670,9 +4115,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListSubcustomerMonthlyBillsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListSubcustomerMonthlyBillsResponse`
         """
-        return self._list_subcustomer_monthly_bills_with_http_info(request)
+        http_info = self._list_subcustomer_monthly_bills_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subcustomer_monthly_bills_with_http_info(self, request):
+    def list_subcustomer_monthly_bills_async_invoker(self, request):
+        http_info = self._list_subcustomer_monthly_bills_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_subcustomer_monthly_bills_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/partner-bills/subcustomer-bills/monthly-sum",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubcustomerMonthlyBillsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3703,9 +4160,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3714,20 +4171,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/partner-bills/subcustomer-bills/monthly-sum',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubcustomerMonthlyBillsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_usage_types_async(self, request):
         """查询使用量类型列表
@@ -3741,9 +4194,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListUsageTypesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListUsageTypesResponse`
         """
-        return self._list_usage_types_with_http_info(request)
+        http_info = self._list_usage_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_usage_types_with_http_info(self, request):
+    def list_usage_types_async_invoker(self, request):
+        http_info = self._list_usage_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_usage_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/products/usage-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsageTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3766,9 +4231,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3777,20 +4242,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/products/usage-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsageTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reclaim_coupon_quotas_async(self, request):
         """回收云经销商的代金券额度
@@ -3806,9 +4267,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimCouponQuotasRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimCouponQuotasResponse`
         """
-        return self._reclaim_coupon_quotas_with_http_info(request)
+        http_info = self._reclaim_coupon_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reclaim_coupon_quotas_with_http_info(self, request):
+    def reclaim_coupon_quotas_async_invoker(self, request):
+        http_info = self._reclaim_coupon_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reclaim_coupon_quotas_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/coupon-quotas/indirect-partner-reclaim",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReclaimCouponQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3823,11 +4296,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3836,20 +4309,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/coupon-quotas/indirect-partner-reclaim',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReclaimCouponQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reclaim_enterprise_multi_account_coupon_async(self, request):
         """企业主账号从企业子账号回收优惠券
@@ -3866,9 +4335,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimEnterpriseMultiAccountCouponRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimEnterpriseMultiAccountCouponResponse`
         """
-        return self._reclaim_enterprise_multi_account_coupon_with_http_info(request)
+        http_info = self._reclaim_enterprise_multi_account_coupon_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reclaim_enterprise_multi_account_coupon_with_http_info(self, request):
+    def reclaim_enterprise_multi_account_coupon_async_invoker(self, request):
+        http_info = self._reclaim_enterprise_multi_account_coupon_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reclaim_enterprise_multi_account_coupon_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/enterprises/multi-accounts/retrieve-coupon",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReclaimEnterpriseMultiAccountCouponResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3883,11 +4364,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3896,20 +4377,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/retrieve-coupon',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReclaimEnterpriseMultiAccountCouponResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reclaim_indirect_partner_account_async(self, request):
         """回收云经销商账户拨款
@@ -3925,9 +4402,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimIndirectPartnerAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimIndirectPartnerAccountResponse`
         """
-        return self._reclaim_indirect_partner_account_with_http_info(request)
+        http_info = self._reclaim_indirect_partner_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reclaim_indirect_partner_account_with_http_info(self, request):
+    def reclaim_indirect_partner_account_async_invoker(self, request):
+        http_info = self._reclaim_indirect_partner_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reclaim_indirect_partner_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/accounts/partner-accounts/indirect-partner-reclaim",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReclaimIndirectPartnerAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3942,11 +4431,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3955,20 +4444,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/indirect-partner-reclaim',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReclaimIndirectPartnerAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reclaim_partner_coupons_async(self, request):
         """回收优惠券
@@ -3987,9 +4472,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimPartnerCouponsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimPartnerCouponsResponse`
         """
-        return self._reclaim_partner_coupons_with_http_info(request)
+        http_info = self._reclaim_partner_coupons_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reclaim_partner_coupons_with_http_info(self, request):
+    def reclaim_partner_coupons_async_invoker(self, request):
+        http_info = self._reclaim_partner_coupons_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reclaim_partner_coupons_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/promotions/benefits/partner-coupons/reclaim",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReclaimPartnerCouponsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4004,11 +4501,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4017,20 +4514,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/promotions/benefits/partner-coupons/reclaim',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReclaimPartnerCouponsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reclaim_sub_enterprise_amount_async(self, request):
         """企业主账号从企业子账号回收拨款
@@ -4046,9 +4539,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimSubEnterpriseAmountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimSubEnterpriseAmountResponse`
         """
-        return self._reclaim_sub_enterprise_amount_with_http_info(request)
+        http_info = self._reclaim_sub_enterprise_amount_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reclaim_sub_enterprise_amount_with_http_info(self, request):
+    def reclaim_sub_enterprise_amount_async_invoker(self, request):
+        http_info = self._reclaim_sub_enterprise_amount_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reclaim_sub_enterprise_amount_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/enterprises/multi-accounts/retrieve-amount",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReclaimSubEnterpriseAmountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4063,11 +4568,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4076,20 +4581,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/retrieve-amount',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReclaimSubEnterpriseAmountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reclaim_to_partner_account_async(self, request):
         """回收客户账户余额
@@ -4105,9 +4606,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ReclaimToPartnerAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ReclaimToPartnerAccountResponse`
         """
-        return self._reclaim_to_partner_account_with_http_info(request)
+        http_info = self._reclaim_to_partner_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reclaim_to_partner_account_with_http_info(self, request):
+    def reclaim_to_partner_account_async_invoker(self, request):
+        http_info = self._reclaim_to_partner_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reclaim_to_partner_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/accounts/partner-accounts/reclaim",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReclaimToPartnerAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4122,11 +4635,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4135,20 +4648,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/reclaim',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReclaimToPartnerAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_sms_verification_code_async(self, request):
         """发送短信验证码
@@ -4162,9 +4671,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.SendSmsVerificationCodeRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.SendSmsVerificationCodeResponse`
         """
-        return self._send_sms_verification_code_with_http_info(request)
+        http_info = self._send_sms_verification_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_sms_verification_code_with_http_info(self, request):
+    def send_sms_verification_code_async_invoker(self, request):
+        http_info = self._send_sms_verification_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_sms_verification_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/enterprises/multi-accounts/sm-verification-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendSmsVerificationCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4179,11 +4700,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4192,20 +4713,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/sm-verification-code',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendSmsVerificationCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_verification_message_code_async(self, request):
         """发送验证码
@@ -4219,9 +4736,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.SendVerificationMessageCodeRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.SendVerificationMessageCodeResponse`
         """
-        return self._send_verification_message_code_with_http_info(request)
+        http_info = self._send_verification_message_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_verification_message_code_with_http_info(self, request):
+    def send_verification_message_code_async_invoker(self, request):
+        http_info = self._send_verification_message_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_verification_message_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/bases/verificationcode/send",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendVerificationMessageCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4236,11 +4765,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4249,20 +4778,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bases/verificationcode/send',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendVerificationMessageCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_customer_account_balances_async(self, request):
         """查询账户余额
@@ -4278,9 +4803,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowCustomerAccountBalancesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowCustomerAccountBalancesResponse`
         """
-        return self._show_customer_account_balances_with_http_info(request)
+        http_info = self._show_customer_account_balances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_customer_account_balances_with_http_info(self, request):
+    def show_customer_account_balances_async_invoker(self, request):
+        http_info = self._show_customer_account_balances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_customer_account_balances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/accounts/customer-accounts/balances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomerAccountBalancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4295,9 +4832,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4306,20 +4843,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/customer-accounts/balances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomerAccountBalancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_customer_monthly_sum_async(self, request):
         """查询汇总账单
@@ -4338,9 +4871,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowCustomerMonthlySumRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowCustomerMonthlySumResponse`
         """
-        return self._show_customer_monthly_sum_with_http_info(request)
+        http_info = self._show_customer_monthly_sum_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_customer_monthly_sum_with_http_info(self, request):
+    def show_customer_monthly_sum_async_invoker(self, request):
+        http_info = self._show_customer_monthly_sum_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_customer_monthly_sum_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/bills/customer-bills/monthly-sum",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomerMonthlySumResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4369,9 +4914,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4380,20 +4925,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/bills/customer-bills/monthly-sum',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomerMonthlySumResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_multi_account_transfer_amount_async(self, request):
         """查询企业主账号可拨款余额
@@ -4407,9 +4948,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowMultiAccountTransferAmountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowMultiAccountTransferAmountResponse`
         """
-        return self._show_multi_account_transfer_amount_with_http_info(request)
+        http_info = self._show_multi_account_transfer_amount_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_multi_account_transfer_amount_with_http_info(self, request):
+    def show_multi_account_transfer_amount_async_invoker(self, request):
+        http_info = self._show_multi_account_transfer_amount_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_multi_account_transfer_amount_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/enterprises/multi-accounts/transfer-amount",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMultiAccountTransferAmountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4430,9 +4983,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4441,20 +4994,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/transfer-amount',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMultiAccountTransferAmountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_realname_authentication_review_result_async(self, request):
         """查询实名认证审核结果
@@ -4468,9 +5017,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowRealnameAuthenticationReviewResultRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowRealnameAuthenticationReviewResultResponse`
         """
-        return self._show_realname_authentication_review_result_with_http_info(request)
+        http_info = self._show_realname_authentication_review_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_realname_authentication_review_result_with_http_info(self, request):
+    def show_realname_authentication_review_result_async_invoker(self, request):
+        http_info = self._show_realname_authentication_review_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_realname_authentication_review_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/customers/realname-auths/result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRealnameAuthenticationReviewResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4487,9 +5048,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4498,20 +5059,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/customers/realname-auths/result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRealnameAuthenticationReviewResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_coupon_quotas_async(self, request):
         """向云经销商发放代金券额度
@@ -4527,9 +5084,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdateCouponQuotasRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdateCouponQuotasResponse`
         """
-        return self._update_coupon_quotas_with_http_info(request)
+        http_info = self._update_coupon_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_coupon_quotas_with_http_info(self, request):
+    def update_coupon_quotas_async_invoker(self, request):
+        http_info = self._update_coupon_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_coupon_quotas_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/partners/coupon-quotas/indirect-partner-adjust",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCouponQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4544,11 +5113,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4557,20 +5126,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/partners/coupon-quotas/indirect-partner-adjust',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCouponQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_customer_account_amount_async(self, request):
         """向客户账户拨款
@@ -4586,9 +5151,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdateCustomerAccountAmountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdateCustomerAccountAmountResponse`
         """
-        return self._update_customer_account_amount_with_http_info(request)
+        http_info = self._update_customer_account_amount_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_customer_account_amount_with_http_info(self, request):
+    def update_customer_account_amount_async_invoker(self, request):
+        http_info = self._update_customer_account_amount_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_customer_account_amount_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/accounts/partner-accounts/adjust-amount",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomerAccountAmountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4603,11 +5180,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4616,20 +5193,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/adjust-amount',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCustomerAccountAmountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_indirect_partner_account_async(self, request):
         """向云经销商账户拨款
@@ -4645,9 +5218,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdateIndirectPartnerAccountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdateIndirectPartnerAccountResponse`
         """
-        return self._update_indirect_partner_account_with_http_info(request)
+        http_info = self._update_indirect_partner_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_indirect_partner_account_with_http_info(self, request):
+    def update_indirect_partner_account_async_invoker(self, request):
+        http_info = self._update_indirect_partner_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_indirect_partner_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/accounts/partner-accounts/indirect-partner-adjust",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIndirectPartnerAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4662,11 +5247,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4675,20 +5260,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/accounts/partner-accounts/indirect-partner-adjust',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIndirectPartnerAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_period_to_on_demand_async(self, request):
         """设置或取消包年/包月资源到期转按需
@@ -4711,9 +5292,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdatePeriodToOnDemandRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdatePeriodToOnDemandResponse`
         """
-        return self._update_period_to_on_demand_with_http_info(request)
+        http_info = self._update_period_to_on_demand_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_period_to_on_demand_with_http_info(self, request):
+    def update_period_to_on_demand_async_invoker(self, request):
+        http_info = self._update_period_to_on_demand_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_period_to_on_demand_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/orders/subscriptions/resources/to-on-demand",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePeriodToOnDemandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4728,11 +5321,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4741,20 +5334,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/to-on-demand',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePeriodToOnDemandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_sub_enterprise_amount_async(self, request):
         """企业主账号向企业子账号拨款
@@ -4768,9 +5357,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.UpdateSubEnterpriseAmountRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.UpdateSubEnterpriseAmountResponse`
         """
-        return self._update_sub_enterprise_amount_with_http_info(request)
+        http_info = self._update_sub_enterprise_amount_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_sub_enterprise_amount_with_http_info(self, request):
+    def update_sub_enterprise_amount_async_invoker(self, request):
+        http_info = self._update_sub_enterprise_amount_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sub_enterprise_amount_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/enterprises/multi-accounts/transfer-amount",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubEnterpriseAmountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4785,11 +5386,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4798,20 +5399,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/enterprises/multi-accounts/transfer-amount',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubEnterpriseAmountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def auto_renewal_resources_async(self, request):
         """设置包年/包月资源自动续费
@@ -4834,9 +5431,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.AutoRenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.AutoRenewalResourcesResponse`
         """
-        return self._auto_renewal_resources_with_http_info(request)
+        http_info = self._auto_renewal_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _auto_renewal_resources_with_http_info(self, request):
+    def auto_renewal_resources_async_invoker(self, request):
+        http_info = self._auto_renewal_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _auto_renewal_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/orders/subscriptions/resources/autorenew/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AutoRenewalResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4853,9 +5462,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4864,20 +5473,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/autorenew/{resource_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AutoRenewalResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_auto_renewal_resources_async(self, request):
         """取消包年/包月资源自动续费
@@ -4898,9 +5503,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CancelAutoRenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CancelAutoRenewalResourcesResponse`
         """
-        return self._cancel_auto_renewal_resources_with_http_info(request)
+        http_info = self._cancel_auto_renewal_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_auto_renewal_resources_with_http_info(self, request):
+    def cancel_auto_renewal_resources_async_invoker(self, request):
+        http_info = self._cancel_auto_renewal_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_auto_renewal_resources_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/orders/subscriptions/resources/autorenew/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelAutoRenewalResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4917,9 +5534,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4928,20 +5545,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/autorenew/{resource_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelAutoRenewalResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_customer_order_async(self, request):
         """取消待支付订单
@@ -4960,9 +5573,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CancelCustomerOrderRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CancelCustomerOrderResponse`
         """
-        return self._cancel_customer_order_with_http_info(request)
+        http_info = self._cancel_customer_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_customer_order_with_http_info(self, request):
+    def cancel_customer_order_async_invoker(self, request):
+        http_info = self._cancel_customer_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_customer_order_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/orders/customer-orders/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelCustomerOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4977,11 +5602,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4990,20 +5615,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/cancel',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelCustomerOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_resources_subscription_async(self, request):
         """退订包年/包月资源
@@ -5027,9 +5648,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.CancelResourcesSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.CancelResourcesSubscriptionResponse`
         """
-        return self._cancel_resources_subscription_with_http_info(request)
+        http_info = self._cancel_resources_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_resources_subscription_with_http_info(self, request):
+    def cancel_resources_subscription_async_invoker(self, request):
+        http_info = self._cancel_resources_subscription_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_resources_subscription_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/orders/subscriptions/resources/unsubscribe",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelResourcesSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5044,11 +5677,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5057,20 +5690,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/unsubscribe',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelResourcesSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customer_orders_async(self, request):
         """查询订单列表
@@ -5089,9 +5718,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListCustomerOrdersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListCustomerOrdersResponse`
         """
-        return self._list_customer_orders_with_http_info(request)
+        http_info = self._list_customer_orders_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customer_orders_with_http_info(self, request):
+    def list_customer_orders_async_invoker(self, request):
+        http_info = self._list_customer_orders_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customer_orders_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/orders/customer-orders",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomerOrdersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5132,9 +5773,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5143,20 +5784,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomerOrdersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_order_coupons_by_order_id_async(self, request):
         """查询订单可用优惠券
@@ -5170,9 +5807,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListOrderCouponsByOrderIdRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListOrderCouponsByOrderIdResponse`
         """
-        return self._list_order_coupons_by_order_id_with_http_info(request)
+        http_info = self._list_order_coupons_by_order_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_order_coupons_by_order_id_with_http_info(self, request):
+    def list_order_coupons_by_order_id_async_invoker(self, request):
+        http_info = self._list_order_coupons_by_order_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_order_coupons_by_order_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/orders/customer-orders/order-coupons",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrderCouponsByOrderIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5189,9 +5838,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5200,20 +5849,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/order-coupons',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOrderCouponsByOrderIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pay_per_use_customer_resources_async(self, request):
         """查询客户包年/包月资源列表
@@ -5230,9 +5875,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ListPayPerUseCustomerResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ListPayPerUseCustomerResourcesResponse`
         """
-        return self._list_pay_per_use_customer_resources_with_http_info(request)
+        http_info = self._list_pay_per_use_customer_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pay_per_use_customer_resources_with_http_info(self, request):
+    def list_pay_per_use_customer_resources_async_invoker(self, request):
+        http_info = self._list_pay_per_use_customer_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_pay_per_use_customer_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/orders/suscriptions/resources/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPayPerUseCustomerResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5247,11 +5904,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5260,20 +5917,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/suscriptions/resources/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPayPerUseCustomerResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def pay_orders_async(self, request):
         """支付包年/包月产品订单
@@ -5296,9 +5949,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.PayOrdersRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.PayOrdersResponse`
         """
-        return self._pay_orders_with_http_info(request)
+        http_info = self._pay_orders_http_info(request)
+        return self._call_api(**http_info)
 
-    def _pay_orders_with_http_info(self, request):
+    def pay_orders_async_invoker(self, request):
+        http_info = self._pay_orders_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _pay_orders_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/orders/customer-orders/pay",
+            "request_type": request.__class__.__name__,
+            "response_type": "PayOrdersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5313,11 +5978,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5326,20 +5991,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/orders/customer-orders/pay',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PayOrdersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def renewal_resources_async(self, request):
         """续订包年/包月资源
@@ -5360,9 +6021,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.RenewalResourcesRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.RenewalResourcesResponse`
         """
-        return self._renewal_resources_with_http_info(request)
+        http_info = self._renewal_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _renewal_resources_with_http_info(self, request):
+    def renewal_resources_async_invoker(self, request):
+        http_info = self._renewal_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _renewal_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/orders/subscriptions/resources/renew",
+            "request_type": request.__class__.__name__,
+            "response_type": "RenewalResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5377,11 +6050,11 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5390,20 +6063,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/subscriptions/resources/renew',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RenewalResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_customer_order_details_async(self, request):
         """查询订单详情
@@ -5422,9 +6091,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowCustomerOrderDetailsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowCustomerOrderDetailsResponse`
         """
-        return self._show_customer_order_details_with_http_info(request)
+        http_info = self._show_customer_order_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_customer_order_details_with_http_info(self, request):
+    def show_customer_order_details_async_invoker(self, request):
+        http_info = self._show_customer_order_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_customer_order_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/orders/customer-orders/details/{order_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomerOrderDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5449,9 +6130,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5460,20 +6141,16 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/details/{order_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomerOrderDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_refund_order_details_async(self, request):
         """查询退款订单的金额详情
@@ -5491,9 +6168,21 @@ class BssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkbss.v2.ShowRefundOrderDetailsRequest`
         :rtype: :class:`huaweicloudsdkbss.v2.ShowRefundOrderDetailsResponse`
         """
-        return self._show_refund_order_details_with_http_info(request)
+        http_info = self._show_refund_order_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_refund_order_details_with_http_info(self, request):
+    def show_refund_order_details_async_invoker(self, request):
+        http_info = self._show_refund_order_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_refund_order_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/orders/customer-orders/refund-orders",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRefundOrderDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5510,9 +6199,9 @@ class BssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5521,20 +6210,26 @@ class BssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/orders/customer-orders/refund-orders',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRefundOrderDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -5573,4 +6268,4 @@ class BssAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

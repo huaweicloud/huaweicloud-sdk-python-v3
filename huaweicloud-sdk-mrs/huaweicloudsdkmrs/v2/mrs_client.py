@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkmrs'")
 
 
 class MrsClient(Client):
@@ -38,9 +43,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.BatchDeleteJobsRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.BatchDeleteJobsResponse`
         """
-        return self._batch_delete_jobs_with_http_info(request)
+        http_info = self._batch_delete_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_jobs_with_http_info(self, request):
+    def batch_delete_jobs_invoker(self, request):
+        http_info = self._batch_delete_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_jobs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/job-executions/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/job-executions/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cluster(self, request):
         """创建集群
@@ -100,9 +114,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.CreateClusterResponse`
         """
-        return self._create_cluster_with_http_info(request)
+        http_info = self._create_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_with_http_info(self, request):
+    def create_cluster_invoker(self, request):
+        http_info = self._create_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +144,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +157,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_execute_job(self, request):
         """新增并执行作业
@@ -162,9 +185,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.CreateExecuteJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.CreateExecuteJobResponse`
         """
-        return self._create_execute_job_with_http_info(request)
+        http_info = self._create_execute_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_execute_job_with_http_info(self, request):
+    def create_execute_job_invoker(self, request):
+        http_info = self._create_execute_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_execute_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/job-executions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExecuteJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -181,11 +217,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -194,20 +230,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/job-executions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateExecuteJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_job_flow(self, request):
         """创建集群并提交作业
@@ -224,9 +256,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.RunJobFlowRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.RunJobFlowResponse`
         """
-        return self._run_job_flow_with_http_info(request)
+        http_info = self._run_job_flow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_job_flow_with_http_info(self, request):
+    def run_job_flow_invoker(self, request):
+        http_info = self._run_job_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_job_flow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/run-job-flow",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunJobFlowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -241,11 +286,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -254,20 +299,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/run-job-flow',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunJobFlowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agency_mapping(self, request):
         """查询用户（组）与IAM委托的映射关系
@@ -280,9 +321,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowAgencyMappingRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowAgencyMappingResponse`
         """
-        return self._show_agency_mapping_with_http_info(request)
+        http_info = self._show_agency_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agency_mapping_with_http_info(self, request):
+    def show_agency_mapping_invoker(self, request):
+        http_info = self._show_agency_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agency_mapping_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/agency-mapping",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -299,9 +353,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -310,20 +364,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/agency-mapping',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgencyMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_auto_scaling_policy(self, request):
         """查看弹性伸缩策略
@@ -336,9 +386,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowAutoScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowAutoScalingPolicyResponse`
         """
-        return self._show_auto_scaling_policy_with_http_info(request)
+        http_info = self._show_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_auto_scaling_policy_with_http_info(self, request):
+    def show_auto_scaling_policy_invoker(self, request):
+        http_info = self._show_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/autoscaling-policy/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -355,9 +418,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +429,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/autoscaling-policy/{cluster_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAutoScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_exe_list_new(self, request):
         """查询作业列表信息
@@ -392,9 +451,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowJobExeListNewRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowJobExeListNewResponse`
         """
-        return self._show_job_exe_list_new_with_http_info(request)
+        http_info = self._show_job_exe_list_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_exe_list_new_with_http_info(self, request):
+    def show_job_exe_list_new_invoker(self, request):
+        http_info = self._show_job_exe_list_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_exe_list_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/job-executions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobExeListNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -435,9 +507,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -446,20 +518,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/job-executions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobExeListNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_single_job_exe(self, request):
         """查询单个作业信息
@@ -472,9 +540,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowSingleJobExeRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowSingleJobExeResponse`
         """
-        return self._show_single_job_exe_with_http_info(request)
+        http_info = self._show_single_job_exe_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_single_job_exe_with_http_info(self, request):
+    def show_single_job_exe_invoker(self, request):
+        http_info = self._show_single_job_exe_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_single_job_exe_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/job-executions/{job_execution_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSingleJobExeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -493,9 +574,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -504,20 +585,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/job-executions/{job_execution_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSingleJobExeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_result_with_job(self, request):
         """获取SQL结果
@@ -530,9 +607,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowSqlResultWithJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowSqlResultWithJobResponse`
         """
-        return self._show_sql_result_with_job_with_http_info(request)
+        http_info = self._show_sql_result_with_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_result_with_job_with_http_info(self, request):
+    def show_sql_result_with_job_invoker(self, request):
+        http_info = self._show_sql_result_with_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_result_with_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/job-executions/{job_execution_id}/sql-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlResultWithJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -551,9 +641,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -562,20 +652,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/job-executions/{job_execution_id}/sql-result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlResultWithJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_job(self, request):
         """终止作业
@@ -588,9 +674,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.StopJobRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.StopJobResponse`
         """
-        return self._stop_job_with_http_info(request)
+        http_info = self._stop_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_job_with_http_info(self, request):
+    def stop_job_invoker(self, request):
+        http_info = self._stop_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/job-executions/{job_execution_id}/kill",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -609,9 +708,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -620,20 +719,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/job-executions/{job_execution_id}/kill',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_agency_mapping(self, request):
         """更新用户（组）与IAM委托的映射关系
@@ -646,9 +741,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.UpdateAgencyMappingRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.UpdateAgencyMappingResponse`
         """
-        return self._update_agency_mapping_with_http_info(request)
+        http_info = self._update_agency_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_agency_mapping_with_http_info(self, request):
+    def update_agency_mapping_invoker(self, request):
+        http_info = self._update_agency_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_agency_mapping_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/agency-mapping",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAgencyMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -665,11 +773,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -678,20 +786,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/agency-mapping',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAgencyMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cluster_name(self, request):
         """修改集群名称
@@ -704,9 +808,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.UpdateClusterNameRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.UpdateClusterNameResponse`
         """
-        return self._update_cluster_name_with_http_info(request)
+        http_info = self._update_cluster_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cluster_name_with_http_info(self, request):
+    def update_cluster_name_invoker(self, request):
+        http_info = self._update_cluster_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cluster_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/cluster-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClusterNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -723,11 +840,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -736,20 +853,83 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/cluster-name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateClusterNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def add_component(self, request):
+        """集群添加组件
+
+        集群添加组件
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for AddComponent
+        :type request: :class:`huaweicloudsdkmrs.v2.AddComponentRequest`
+        :rtype: :class:`huaweicloudsdkmrs.v2.AddComponentResponse`
+        """
+        http_info = self._add_component_http_info(request)
+        return self._call_api(**http_info)
+
+    def add_component_invoker(self, request):
+        http_info = self._add_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_component_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/components",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddComponentResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'cluster_id' in local_var_params:
+            path_params['cluster_id'] = local_var_params['cluster_id']
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_cluster(self, request):
         """扩容集群
@@ -762,9 +942,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ExpandClusterRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ExpandClusterResponse`
         """
-        return self._expand_cluster_with_http_info(request)
+        http_info = self._expand_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_cluster_with_http_info(self, request):
+    def expand_cluster_invoker(self, request):
+        http_info = self._expand_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -781,11 +974,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -794,20 +987,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/expand',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def shrink_cluster(self, request):
         """缩容集群
@@ -820,9 +1009,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShrinkClusterRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShrinkClusterResponse`
         """
-        return self._shrink_cluster_with_http_info(request)
+        http_info = self._shrink_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _shrink_cluster_with_http_info(self, request):
+    def shrink_cluster_invoker(self, request):
+        http_info = self._shrink_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _shrink_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/shrink",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShrinkClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -839,11 +1041,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -852,20 +1054,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/shrink',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShrinkClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_data_connector(self, request):
         """创建数据连接
@@ -878,9 +1076,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.CreateDataConnectorRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.CreateDataConnectorResponse`
         """
-        return self._create_data_connector_with_http_info(request)
+        http_info = self._create_data_connector_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_data_connector_with_http_info(self, request):
+    def create_data_connector_invoker(self, request):
+        http_info = self._create_data_connector_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_data_connector_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/data-connectors",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataConnectorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -895,11 +1106,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -908,20 +1119,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/data-connectors',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDataConnectorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_data_connector(self, request):
         """删除数据连接
@@ -934,9 +1141,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.DeleteDataConnectorRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.DeleteDataConnectorResponse`
         """
-        return self._delete_data_connector_with_http_info(request)
+        http_info = self._delete_data_connector_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_data_connector_with_http_info(self, request):
+    def delete_data_connector_invoker(self, request):
+        http_info = self._delete_data_connector_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_data_connector_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/data-connectors/{connector_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDataConnectorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -953,9 +1173,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -964,20 +1184,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/data-connectors/{connector_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDataConnectorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_data_connector(self, request):
         """查询数据连接列表
@@ -990,9 +1206,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ListDataConnectorRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ListDataConnectorResponse`
         """
-        return self._list_data_connector_with_http_info(request)
+        http_info = self._list_data_connector_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_data_connector_with_http_info(self, request):
+    def list_data_connector_invoker(self, request):
+        http_info = self._list_data_connector_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_data_connector_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/data-connectors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataConnectorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1019,9 +1248,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1030,20 +1259,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/data-connectors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataConnectorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_data_connector(self, request):
         """更新数据连接
@@ -1056,9 +1281,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.UpdateDataConnectorRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.UpdateDataConnectorResponse`
         """
-        return self._update_data_connector_with_http_info(request)
+        http_info = self._update_data_connector_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_data_connector_with_http_info(self, request):
+    def update_data_connector_invoker(self, request):
+        http_info = self._update_data_connector_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_data_connector_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/data-connectors/{connector_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataConnectorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1075,11 +1313,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1088,20 +1326,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/data-connectors/{connector_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataConnectorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_hdfs_file_list(self, request):
         """获取指定目录文件列表
@@ -1114,9 +1348,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowHdfsFileListRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowHdfsFileListResponse`
         """
-        return self._show_hdfs_file_list_with_http_info(request)
+        http_info = self._show_hdfs_file_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_hdfs_file_list_with_http_info(self, request):
+    def show_hdfs_file_list_invoker(self, request):
+        http_info = self._show_hdfs_file_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_hdfs_file_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHdfsFileListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1143,9 +1390,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1154,20 +1401,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHdfsFileListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_sql(self, request):
         """取消SQL执行任务
@@ -1180,9 +1423,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.CancelSqlRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.CancelSqlResponse`
         """
-        return self._cancel_sql_with_http_info(request)
+        http_info = self._cancel_sql_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_sql_with_http_info(self, request):
+    def cancel_sql_invoker(self, request):
+        http_info = self._cancel_sql_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_sql_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/sql-execution/{sql_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelSqlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1201,9 +1457,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1212,20 +1468,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/sql-execution/{sql_id}/cancel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelSqlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_sql(self, request):
         """提交SQL语句
@@ -1238,9 +1490,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ExecuteSqlRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ExecuteSqlResponse`
         """
-        return self._execute_sql_with_http_info(request)
+        http_info = self._execute_sql_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_sql_with_http_info(self, request):
+    def execute_sql_invoker(self, request):
+        http_info = self._execute_sql_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_sql_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/sql-execution",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteSqlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1257,11 +1522,11 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1270,20 +1535,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/sql-execution',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteSqlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_result(self, request):
         """查询SQL结果
@@ -1296,9 +1557,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowSqlResultRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowSqlResultResponse`
         """
-        return self._show_sql_result_with_http_info(request)
+        http_info = self._show_sql_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_result_with_http_info(self, request):
+    def show_sql_result_invoker(self, request):
+        http_info = self._show_sql_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/sql-execution/{sql_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1317,9 +1591,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1328,20 +1602,16 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/sql-execution/{sql_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_mrs_version_list(self, request):
         """展示MRS版本列表
@@ -1354,9 +1624,22 @@ class MrsClient(Client):
         :type request: :class:`huaweicloudsdkmrs.v2.ShowMrsVersionListRequest`
         :rtype: :class:`huaweicloudsdkmrs.v2.ShowMrsVersionListResponse`
         """
-        return self._show_mrs_version_list_with_http_info(request)
+        http_info = self._show_mrs_version_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_mrs_version_list_with_http_info(self, request):
+    def show_mrs_version_list_invoker(self, request):
+        http_info = self._show_mrs_version_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_mrs_version_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/metadata/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMrsVersionListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1371,9 +1654,9 @@ class MrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1382,20 +1665,25 @@ class MrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/metadata/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMrsVersionListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

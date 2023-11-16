@@ -41,7 +41,7 @@ class UpdateNatGatewaySnatRuleOption:
         :type public_ip_address: str
         :param global_eip_id: 全域弹性公网IP的id。
         :type global_eip_id: str
-        :param description: SNAT规则的描述，长度限制为255。
+        :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         """
         
@@ -131,7 +131,7 @@ class UpdateNatGatewaySnatRuleOption:
     def description(self):
         """Gets the description of this UpdateNatGatewaySnatRuleOption.
 
-        SNAT规则的描述，长度限制为255。
+        SNAT规则的描述，长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this UpdateNatGatewaySnatRuleOption.
         :rtype: str
@@ -142,7 +142,7 @@ class UpdateNatGatewaySnatRuleOption:
     def description(self, description):
         """Sets the description of this UpdateNatGatewaySnatRuleOption.
 
-        SNAT规则的描述，长度限制为255。
+        SNAT规则的描述，长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this UpdateNatGatewaySnatRuleOption.
         :type description: str

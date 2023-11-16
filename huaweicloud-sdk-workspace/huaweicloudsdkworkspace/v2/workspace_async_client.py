@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkworkspace'")
 
 
 class WorkspaceAsyncClient(Client):
@@ -39,9 +44,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteAccessPoliciesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteAccessPoliciesResponse`
         """
-        return self._batch_delete_access_policies_with_http_info(request)
+        http_info = self._batch_delete_access_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_access_policies_with_http_info(self, request):
+    def batch_delete_access_policies_async_invoker(self, request):
+        http_info = self._batch_delete_access_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_access_policies_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/access-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAccessPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/access-policy',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteAccessPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_access_policy_async(self, request):
         """创建接入策略
@@ -96,9 +109,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateAccessPolicyResponse`
         """
-        return self._create_access_policy_with_http_info(request)
+        http_info = self._create_access_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_access_policy_with_http_info(self, request):
+    def create_access_policy_async_invoker(self, request):
+        http_info = self._create_access_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_access_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/access-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccessPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +138,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/access-policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAccessPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_access_policies_async(self, request):
         """查询接入策略
@@ -153,9 +174,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListAccessPoliciesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListAccessPoliciesResponse`
         """
-        return self._list_access_policies_with_http_info(request)
+        http_info = self._list_access_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_access_policies_with_http_info(self, request):
+    def list_access_policies_async_invoker(self, request):
+        http_info = self._list_access_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_access_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/access-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -174,9 +207,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -185,20 +218,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/access-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccessPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_access_policy_objects_async(self, request):
         """查询指定接入策略的应用对象
@@ -212,9 +241,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListAccessPolicyObjectsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListAccessPolicyObjectsResponse`
         """
-        return self._list_access_policy_objects_with_http_info(request)
+        http_info = self._list_access_policy_objects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_access_policy_objects_with_http_info(self, request):
+    def list_access_policy_objects_async_invoker(self, request):
+        http_info = self._list_access_policy_objects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_access_policy_objects_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/access-policy/{access_policy_id}/objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessPolicyObjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,9 +276,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +287,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/access-policy/{access_policy_id}/objects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccessPolicyObjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_access_policy_objects_async(self, request):
         """更新指定接入策略的应用对象
@@ -273,9 +310,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateAccessPolicyObjectsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAccessPolicyObjectsResponse`
         """
-        return self._update_access_policy_objects_with_http_info(request)
+        http_info = self._update_access_policy_objects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_access_policy_objects_with_http_info(self, request):
+    def update_access_policy_objects_async_invoker(self, request):
+        http_info = self._update_access_policy_objects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_access_policy_objects_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/access-policy/{access_policy_id}/objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAccessPolicyObjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -292,11 +341,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -305,20 +354,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/access-policy/{access_policy_id}/objects',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAccessPolicyObjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_assist_auth_config_async(self, request):
         """查询辅助认证配置
@@ -332,9 +377,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowAssistAuthConfigRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowAssistAuthConfigResponse`
         """
-        return self._show_assist_auth_config_with_http_info(request)
+        http_info = self._show_assist_auth_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_assist_auth_config_with_http_info(self, request):
+    def show_assist_auth_config_async_invoker(self, request):
+        http_info = self._show_assist_auth_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_assist_auth_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/assist-auth-config/method-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssistAuthConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -349,9 +406,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +417,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/assist-auth-config/method-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssistAuthConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_assist_auth_method_config_async(self, request):
         """更新辅助认证策略配置
@@ -387,9 +440,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateAssistAuthMethodConfigRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateAssistAuthMethodConfigResponse`
         """
-        return self._update_assist_auth_method_config_with_http_info(request)
+        http_info = self._update_assist_auth_method_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_assist_auth_method_config_with_http_info(self, request):
+    def update_assist_auth_method_config_async_invoker(self, request):
+        http_info = self._update_assist_auth_method_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_assist_auth_method_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/assist-auth-config/method-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssistAuthMethodConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -404,11 +469,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -417,20 +482,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/assist-auth-config/method-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAssistAuthMethodConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_availability_zones_async(self, request):
         """查询可用分区列表
@@ -444,9 +505,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListAvailabilityZonesResponse`
         """
-        return self._list_availability_zones_with_http_info(request)
+        http_info = self._list_availability_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_availability_zones_with_http_info(self, request):
+    def list_availability_zones_async_invoker(self, request):
+        http_info = self._list_availability_zones_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_availability_zones_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/availability-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailabilityZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,9 +534,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -472,20 +545,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/availability-zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailabilityZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_user_login_info_new_async(self, request):
         """导出连接记录
@@ -499,9 +568,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExportUserLoginInfoNewResponse`
         """
-        return self._export_user_login_info_new_with_http_info(request)
+        http_info = self._export_user_login_info_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_user_login_info_new_with_http_info(self, request):
+    def export_user_login_info_new_async_invoker(self, request):
+        http_info = self._export_user_login_info_new_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_user_login_info_new_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/connections/desktops/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportUserLoginInfoNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -528,9 +609,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -539,20 +620,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/connections/desktops/export',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportUserLoginInfoNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_history_online_info_new_async(self, request):
         """查询登录人数
@@ -566,9 +643,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListHistoryOnlineInfoNewResponse`
         """
-        return self._list_history_online_info_new_with_http_info(request)
+        http_info = self._list_history_online_info_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_history_online_info_new_with_http_info(self, request):
+    def list_history_online_info_new_async_invoker(self, request):
+        http_info = self._list_history_online_info_new_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_history_online_info_new_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/connections/online-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHistoryOnlineInfoNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -589,9 +678,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -600,20 +689,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/connections/online-users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHistoryOnlineInfoNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_login_records_new_async(self, request):
         """查询登录信息
@@ -627,9 +712,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListLoginRecordsNewRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListLoginRecordsNewResponse`
         """
-        return self._list_login_records_new_with_http_info(request)
+        http_info = self._list_login_records_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_login_records_new_with_http_info(self, request):
+    def list_login_records_new_async_invoker(self, request):
+        http_info = self._list_login_records_new_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_login_records_new_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/connections/desktops",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLoginRecordsNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -658,9 +755,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -669,20 +766,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/connections/desktops',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLoginRecordsNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_desktops_async(self, request):
         """批量删除桌面
@@ -696,9 +789,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsResponse`
         """
-        return self._batch_delete_desktops_with_http_info(request)
+        http_info = self._batch_delete_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_desktops_with_http_info(self, request):
+    def batch_delete_desktops_async_invoker(self, request):
+        http_info = self._batch_delete_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_desktops_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -713,11 +818,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -726,20 +831,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_logoff_desktops_async(self, request):
         """批量注销桌面
@@ -753,9 +854,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchLogoffDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchLogoffDesktopsResponse`
         """
-        return self._batch_logoff_desktops_with_http_info(request)
+        http_info = self._batch_logoff_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_logoff_desktops_with_http_info(self, request):
+    def batch_logoff_desktops_async_invoker(self, request):
+        http_info = self._batch_logoff_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_logoff_desktops_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/logoff",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchLogoffDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -770,11 +883,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -783,20 +896,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/logoff',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchLogoffDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_rebuild_desktops_system_disk_async(self, request):
         """重建桌面
@@ -810,9 +919,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchRebuildDesktopsSystemDiskRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchRebuildDesktopsSystemDiskResponse`
         """
-        return self._batch_rebuild_desktops_system_disk_with_http_info(request)
+        http_info = self._batch_rebuild_desktops_system_disk_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_rebuild_desktops_system_disk_with_http_info(self, request):
+    def batch_rebuild_desktops_system_disk_async_invoker(self, request):
+        http_info = self._batch_rebuild_desktops_system_disk_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_rebuild_desktops_system_disk_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/rebuild",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRebuildDesktopsSystemDiskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -827,11 +948,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -840,20 +961,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/rebuild',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRebuildDesktopsSystemDiskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_run_desktops_async(self, request):
         """操作桌面
@@ -867,9 +984,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchRunDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchRunDesktopsResponse`
         """
-        return self._batch_run_desktops_with_http_info(request)
+        http_info = self._batch_run_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_run_desktops_with_http_info(self, request):
+    def batch_run_desktops_async_invoker(self, request):
+        http_info = self._batch_run_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_run_desktops_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRunDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -884,11 +1013,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -897,20 +1026,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRunDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_desktop_network_async(self, request):
         """切换桌面网络
@@ -924,9 +1049,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ChangeDesktopNetworkRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ChangeDesktopNetworkResponse`
         """
-        return self._change_desktop_network_with_http_info(request)
+        http_info = self._change_desktop_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_desktop_network_with_http_info(self, request):
+    def change_desktop_network_async_invoker(self, request):
+        http_info = self._change_desktop_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_desktop_network_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeDesktopNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -943,11 +1080,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -956,20 +1093,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}/networks',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeDesktopNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_desktop_async(self, request):
         """创建桌面
@@ -983,9 +1116,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopResponse`
         """
-        return self._create_desktop_with_http_info(request)
+        http_info = self._create_desktop_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_desktop_with_http_info(self, request):
+    def create_desktop_async_invoker(self, request):
+        http_info = self._create_desktop_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_desktop_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesktopResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1000,11 +1145,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1013,20 +1158,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDesktopResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_desktop_async(self, request):
         """删除单个桌面
@@ -1040,9 +1181,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopResponse`
         """
-        return self._delete_desktop_with_http_info(request)
+        http_info = self._delete_desktop_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_desktop_with_http_info(self, request):
+    def delete_desktop_async_invoker(self, request):
+        http_info = self._delete_desktop_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_desktop_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesktopResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1065,9 +1218,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1076,20 +1229,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDesktopResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_desktops_async(self, request):
         """查询桌面列表
@@ -1103,9 +1252,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsResponse`
         """
-        return self._list_desktops_with_http_info(request)
+        http_info = self._list_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_desktops_with_http_info(self, request):
+    def list_desktops_async_invoker(self, request):
+        http_info = self._list_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_desktops_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1136,9 +1297,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1147,20 +1308,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_desktops_detail_async(self, request):
         """查询桌面详情列表
@@ -1174,9 +1331,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsDetailResponse`
         """
-        return self._list_desktops_detail_with_http_info(request)
+        http_info = self._list_desktops_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_desktops_detail_with_http_info(self, request):
+    def list_desktops_detail_async_invoker(self, request):
+        http_info = self._list_desktops_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_desktops_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopsDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1229,9 +1398,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1240,20 +1409,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDesktopsDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_desktop_async(self, request):
         """变更规格
@@ -1267,9 +1432,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResizeDesktopResponse`
         """
-        return self._resize_desktop_with_http_info(request)
+        http_info = self._resize_desktop_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_desktop_with_http_info(self, request):
+    def resize_desktop_async_invoker(self, request):
+        http_info = self._resize_desktop_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_desktop_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeDesktopResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1284,11 +1461,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1297,20 +1474,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeDesktopResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_desktop_detail_async(self, request):
         """查询单个桌面详情
@@ -1324,9 +1497,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowDesktopDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowDesktopDetailResponse`
         """
-        return self._show_desktop_detail_with_http_info(request)
+        http_info = self._show_desktop_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_desktop_detail_with_http_info(self, request):
+    def show_desktop_detail_async_invoker(self, request):
+        http_info = self._show_desktop_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_desktop_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDesktopDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1343,9 +1528,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1354,20 +1539,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDesktopDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_desktop_network_async(self, request):
         """查询桌面网络
@@ -1381,9 +1562,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowDesktopNetworkRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowDesktopNetworkResponse`
         """
-        return self._show_desktop_network_with_http_info(request)
+        http_info = self._show_desktop_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_desktop_network_with_http_info(self, request):
+    def show_desktop_network_async_invoker(self, request):
+        http_info = self._show_desktop_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_desktop_network_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDesktopNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1400,9 +1593,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1411,20 +1604,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}/networks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDesktopNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_unused_desktops_async(self, request):
         """查询在指定时间段未使用的桌面
@@ -1438,9 +1627,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUnusedDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUnusedDesktopsResponse`
         """
-        return self._list_unused_desktops_with_http_info(request)
+        http_info = self._list_unused_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_unused_desktops_with_http_info(self, request):
+    def list_unused_desktops_async_invoker(self, request):
+        http_info = self._list_unused_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_unused_desktops_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops/statistics/unused",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUnusedDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1463,9 +1664,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1474,20 +1675,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/statistics/unused',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUnusedDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_used_desktop_info_async(self, request):
         """查询使用桌面的时长
@@ -1501,9 +1698,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUsedDesktopInfoRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUsedDesktopInfoResponse`
         """
-        return self._list_used_desktop_info_with_http_info(request)
+        http_info = self._list_used_desktop_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_used_desktop_info_with_http_info(self, request):
+    def list_used_desktop_info_async_invoker(self, request):
+        http_info = self._list_used_desktop_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_used_desktop_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/statistics/used",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsedDesktopInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1518,11 +1727,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1531,20 +1740,81 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/statistics/used',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsedDesktopInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_add_desktops_tags_async(self, request):
+        """批量添加多个桌面标签
+
+        同时对多个桌面批量添加标签，如果创建的标签已经存在（key相同）则覆，最大支持100个桌面，每个桌面最大20个标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchAddDesktopsTags
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchAddDesktopsTagsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchAddDesktopsTagsResponse`
+        """
+        http_info = self._batch_add_desktops_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_add_desktops_tags_async_invoker(self, request):
+        http_info = self._batch_add_desktops_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_add_desktops_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/batch-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddDesktopsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_change_tags_async(self, request):
         """批量添加删除标签
@@ -1558,9 +1828,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchChangeTagsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchChangeTagsResponse`
         """
-        return self._batch_change_tags_with_http_info(request)
+        http_info = self._batch_change_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_change_tags_with_http_info(self, request):
+    def batch_change_tags_async_invoker(self, request):
+        http_info = self._batch_change_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_change_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchChangeTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1577,11 +1859,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1590,20 +1872,81 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchChangeTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def batch_delete_desktops_tags_async(self, request):
+        """批量删除多个桌面标签
+
+        同时对多个桌面批量添加标签，删除时，如果删除的标签不存在默认处理成功，最大支持100个桌面，每个桌面最大20个标签
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+
+        :param request: Request instance for BatchDeleteDesktopsTags
+        :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsTagsRequest`
+        :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteDesktopsTagsResponse`
+        """
+        http_info = self._batch_delete_desktops_tags_http_info(request)
+        return self._call_api(**http_info)
+
+    def batch_delete_desktops_tags_async_invoker(self, request):
+        http_info = self._batch_delete_desktops_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_desktops_tags_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/desktops/batch-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDesktopsTagsResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+
+        query_params = []
+
+        header_params = {}
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tag_async(self, request):
         """创建桌面标签
@@ -1617,9 +1960,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateTagResponse`
         """
-        return self._create_tag_with_http_info(request)
+        http_info = self._create_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tag_with_http_info(self, request):
+    def create_tag_async_invoker(self, request):
+        http_info = self._create_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1636,11 +1991,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1649,20 +2004,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tag_async(self, request):
         """删除桌面标签
@@ -1676,9 +2027,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteTagResponse`
         """
-        return self._delete_tag_with_http_info(request)
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tag_with_http_info(self, request):
+    def delete_tag_async_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1697,9 +2060,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1708,20 +2071,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_desktop_by_tags_async(self, request):
         """使用标签过滤桌面
@@ -1735,9 +2094,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopByTagsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopByTagsResponse`
         """
-        return self._list_desktop_by_tags_with_http_info(request)
+        http_info = self._list_desktop_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_desktop_by_tags_with_http_info(self, request):
+    def list_desktop_by_tags_async_invoker(self, request):
+        http_info = self._list_desktop_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_desktop_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1752,11 +2123,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1765,20 +2136,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDesktopByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags_async(self, request):
         """查询项目标签
@@ -1792,9 +2159,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_async_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1809,9 +2188,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1820,20 +2199,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tag_by_desktop_id_async(self, request):
         """查询桌面标签
@@ -1847,9 +2222,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowTagByDesktopIdRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowTagByDesktopIdResponse`
         """
-        return self._show_tag_by_desktop_id_with_http_info(request)
+        http_info = self._show_tag_by_desktop_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tag_by_desktop_id_with_http_info(self, request):
+    def show_tag_by_desktop_id_async_invoker(self, request):
+        http_info = self._show_tag_by_desktop_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tag_by_desktop_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagByDesktopIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1866,9 +2253,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1877,20 +2264,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTagByDesktopIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_user_groups_async(self, request):
         """批量删除用户组
@@ -1904,9 +2287,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteUserGroupsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteUserGroupsResponse`
         """
-        return self._batch_delete_user_groups_with_http_info(request)
+        http_info = self._batch_delete_user_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_user_groups_with_http_info(self, request):
+    def batch_delete_user_groups_async_invoker(self, request):
+        http_info = self._batch_delete_user_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_user_groups_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/groups/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteUserGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1921,11 +2316,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1934,20 +2329,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/groups/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteUserGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_user_group_async(self, request):
         """创建用户组
@@ -1961,9 +2352,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateUserGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateUserGroupResponse`
         """
-        return self._create_user_group_with_http_info(request)
+        http_info = self._create_user_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_user_group_with_http_info(self, request):
+    def create_user_group_async_invoker(self, request):
+        http_info = self._create_user_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_user_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUserGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1978,11 +2381,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1991,20 +2394,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateUserGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_user_group_async(self, request):
         """删除用户组
@@ -2018,9 +2417,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteUserGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteUserGroupResponse`
         """
-        return self._delete_user_group_with_http_info(request)
+        http_info = self._delete_user_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_user_group_with_http_info(self, request):
+    def delete_user_group_async_invoker(self, request):
+        http_info = self._delete_user_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2037,9 +2448,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2048,20 +2459,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteUserGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_groups_async(self, request):
         """查询用户组列表
@@ -2075,9 +2482,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUserGroupsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUserGroupsResponse`
         """
-        return self._list_user_groups_with_http_info(request)
+        http_info = self._list_user_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_groups_with_http_info(self, request):
+    def list_user_groups_async_invoker(self, request):
+        http_info = self._list_user_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2098,9 +2517,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2109,20 +2528,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_users_of_group_async(self, request):
         """查询用户组中的用户
@@ -2136,9 +2551,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUsersOfGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUsersOfGroupResponse`
         """
-        return self._list_users_of_group_with_http_info(request)
+        http_info = self._list_users_of_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_users_of_group_with_http_info(self, request):
+    def list_users_of_group_async_invoker(self, request):
+        http_info = self._list_users_of_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_users_of_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/groups/{group_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersOfGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2165,9 +2592,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2176,20 +2603,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/groups/{group_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsersOfGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_actions_on_group_async(self, request):
         """操作用户组
@@ -2203,9 +2626,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.RunActionsOnGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.RunActionsOnGroupResponse`
         """
-        return self._run_actions_on_group_with_http_info(request)
+        http_info = self._run_actions_on_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_actions_on_group_with_http_info(self, request):
+    def run_actions_on_group_async_invoker(self, request):
+        http_info = self._run_actions_on_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_actions_on_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/groups/{group_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunActionsOnGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2222,11 +2657,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2235,20 +2670,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/groups/{group_id}/actions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunActionsOnGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_group_async(self, request):
         """修改用户组信息
@@ -2262,9 +2693,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateUserGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateUserGroupResponse`
         """
-        return self._update_user_group_with_http_info(request)
+        http_info = self._update_user_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_group_with_http_info(self, request):
+    def update_user_group_async_invoker(self, request):
+        http_info = self._update_user_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2281,11 +2724,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2294,20 +2737,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/groups/{group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_images_async(self, request):
         """查询产品镜像列表
@@ -2321,9 +2760,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListImagesResponse`
         """
-        return self._list_images_with_http_info(request)
+        http_info = self._list_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_images_with_http_info(self, request):
+    def list_images_async_invoker(self, request):
+        http_info = self._list_images_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_images_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2352,9 +2803,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2363,20 +2814,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/images',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ita_sub_jobs_async(self, request):
         """子任务查询
@@ -2390,9 +2837,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListItaSubJobsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListItaSubJobsResponse`
         """
-        return self._list_ita_sub_jobs_with_http_info(request)
+        http_info = self._list_ita_sub_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ita_sub_jobs_with_http_info(self, request):
+    def list_ita_sub_jobs_async_invoker(self, request):
+        http_info = self._list_ita_sub_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ita_sub_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspace-sub-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListItaSubJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2419,9 +2878,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2430,20 +2889,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/workspace-sub-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListItaSubJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def apply_desktops_internet_async(self, request):
         """开通桌面上网功能
@@ -2457,9 +2912,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ApplyDesktopsInternetRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyDesktopsInternetResponse`
         """
-        return self._apply_desktops_internet_with_http_info(request)
+        http_info = self._apply_desktops_internet_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_desktops_internet_with_http_info(self, request):
+    def apply_desktops_internet_async_invoker(self, request):
+        http_info = self._apply_desktops_internet_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _apply_desktops_internet_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/eips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyDesktopsInternetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2474,11 +2941,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2487,20 +2954,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/eips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyDesktopsInternetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_desktops_eip_async(self, request):
         """桌面绑定EIP
@@ -2514,9 +2977,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.AssociateDesktopsEipRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.AssociateDesktopsEipResponse`
         """
-        return self._associate_desktops_eip_with_http_info(request)
+        http_info = self._associate_desktops_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_desktops_eip_with_http_info(self, request):
+    def associate_desktops_eip_async_invoker(self, request):
+        http_info = self._associate_desktops_eip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_desktops_eip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/eips/binding",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateDesktopsEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2531,11 +3006,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2544,20 +3019,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/eips/binding',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateDesktopsEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disassociate_desktops_eip_async(self, request):
         """批量桌面解绑EIP
@@ -2571,9 +3042,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDisassociateDesktopsEipRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDisassociateDesktopsEipResponse`
         """
-        return self._batch_disassociate_desktops_eip_with_http_info(request)
+        http_info = self._batch_disassociate_desktops_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disassociate_desktops_eip_with_http_info(self, request):
+    def batch_disassociate_desktops_eip_async_invoker(self, request):
+        http_info = self._batch_disassociate_desktops_eip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_disassociate_desktops_eip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/eips/unbinding",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociateDesktopsEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2588,11 +3071,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2601,20 +3084,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/eips/unbinding',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisassociateDesktopsEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_desktops_eips_async(self, request):
         """查询已绑定桌面和未绑定的Eip
@@ -2628,9 +3107,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListDesktopsEipsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListDesktopsEipsResponse`
         """
-        return self._list_desktops_eips_with_http_info(request)
+        http_info = self._list_desktops_eips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_desktops_eips_with_http_info(self, request):
+    def list_desktops_eips_async_invoker(self, request):
+        http_info = self._list_desktops_eips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_desktops_eips_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/eips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDesktopsEipsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2661,9 +3152,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2672,20 +3163,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/eips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDesktopsEipsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_products_async(self, request):
         """查询产品套餐列表
@@ -2699,9 +3186,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListProductsResponse`
         """
-        return self._list_products_with_http_info(request)
+        http_info = self._list_products_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_products_with_http_info(self, request):
+    def list_products_async_invoker(self, request):
+        http_info = self._list_products_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_products_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2732,9 +3231,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2743,20 +3242,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/products',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas_async(self, request):
         """查询租户配额
@@ -2770,9 +3265,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_async_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2787,9 +3294,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2798,20 +3305,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_terminals_binding_desktops_async(self, request):
         """增加终端与桌面绑定配置
@@ -2825,9 +3328,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateTerminalsBindingDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateTerminalsBindingDesktopsResponse`
         """
-        return self._create_terminals_binding_desktops_with_http_info(request)
+        http_info = self._create_terminals_binding_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_terminals_binding_desktops_with_http_info(self, request):
+    def create_terminals_binding_desktops_async_invoker(self, request):
+        http_info = self._create_terminals_binding_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_terminals_binding_desktops_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/terminals/binding-desktops",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTerminalsBindingDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2842,11 +3357,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2855,20 +3370,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/terminals/binding-desktops',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTerminalsBindingDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_terminals_binding_desktops_async(self, request):
         """删除终端与桌面绑定配置
@@ -2882,9 +3393,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteTerminalsBindingDesktopsResponse`
         """
-        return self._delete_terminals_binding_desktops_with_http_info(request)
+        http_info = self._delete_terminals_binding_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_terminals_binding_desktops_with_http_info(self, request):
+    def delete_terminals_binding_desktops_async_invoker(self, request):
+        http_info = self._delete_terminals_binding_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_terminals_binding_desktops_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/terminals/binding-desktops/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTerminalsBindingDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2899,11 +3422,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2912,20 +3435,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/terminals/binding-desktops/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTerminalsBindingDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_terminals_binding_desktops_async(self, request):
         """查询终端与桌面绑定配置列表
@@ -2939,9 +3458,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListTerminalsBindingDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListTerminalsBindingDesktopsResponse`
         """
-        return self._list_terminals_binding_desktops_with_http_info(request)
+        http_info = self._list_terminals_binding_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_terminals_binding_desktops_with_http_info(self, request):
+    def list_terminals_binding_desktops_async_invoker(self, request):
+        http_info = self._list_terminals_binding_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_terminals_binding_desktops_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/terminals/binding-desktops",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTerminalsBindingDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2966,9 +3497,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2977,20 +3508,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/terminals/binding-desktops',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTerminalsBindingDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_terminals_binding_desktops_config_async(self, request):
         """查询终端与桌面绑定的开关配置信息
@@ -3004,9 +3531,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListTerminalsBindingDesktopsConfigRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListTerminalsBindingDesktopsConfigResponse`
         """
-        return self._list_terminals_binding_desktops_config_with_http_info(request)
+        http_info = self._list_terminals_binding_desktops_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_terminals_binding_desktops_config_with_http_info(self, request):
+    def list_terminals_binding_desktops_config_async_invoker(self, request):
+        http_info = self._list_terminals_binding_desktops_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_terminals_binding_desktops_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/terminals/binding-desktops/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTerminalsBindingDesktopsConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3021,9 +3560,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3032,20 +3571,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/terminals/binding-desktops/config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTerminalsBindingDesktopsConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_terminals_binding_desktops_async(self, request):
         """修改终端与桌面绑定配置
@@ -3059,9 +3594,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateTerminalsBindingDesktopsRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateTerminalsBindingDesktopsResponse`
         """
-        return self._update_terminals_binding_desktops_with_http_info(request)
+        http_info = self._update_terminals_binding_desktops_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_terminals_binding_desktops_with_http_info(self, request):
+    def update_terminals_binding_desktops_async_invoker(self, request):
+        http_info = self._update_terminals_binding_desktops_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_terminals_binding_desktops_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/terminals/binding-desktops",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTerminalsBindingDesktopsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3076,11 +3623,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3089,20 +3636,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/terminals/binding-desktops',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTerminalsBindingDesktopsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_terminals_binding_desktops_config_async(self, request):
         """设置终端与桌面绑定的开关配置
@@ -3116,9 +3659,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateTerminalsBindingDesktopsConfigRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateTerminalsBindingDesktopsConfigResponse`
         """
-        return self._update_terminals_binding_desktops_config_with_http_info(request)
+        http_info = self._update_terminals_binding_desktops_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_terminals_binding_desktops_config_with_http_info(self, request):
+    def update_terminals_binding_desktops_config_async_invoker(self, request):
+        http_info = self._update_terminals_binding_desktops_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_terminals_binding_desktops_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/terminals/binding-desktops/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTerminalsBindingDesktopsConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3133,11 +3688,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3146,20 +3701,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/terminals/binding-desktops/config',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTerminalsBindingDesktopsConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_users_async(self, request):
         """批量创建用户
@@ -3173,9 +3724,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchCreateUsersRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchCreateUsersResponse`
         """
-        return self._batch_create_users_with_http_info(request)
+        http_info = self._batch_create_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_users_with_http_info(self, request):
+    def batch_create_users_async_invoker(self, request):
+        http_info = self._batch_create_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_users_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/users/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3190,11 +3753,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3203,20 +3766,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/batch-create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_otp_devices_async(self, request):
         """解绑OTP设备
@@ -3230,9 +3789,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.BatchDeleteOtpDevicesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.BatchDeleteOtpDevicesResponse`
         """
-        return self._batch_delete_otp_devices_with_http_info(request)
+        http_info = self._batch_delete_otp_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_otp_devices_with_http_info(self, request):
+    def batch_delete_otp_devices_async_invoker(self, request):
+        http_info = self._batch_delete_otp_devices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_otp_devices_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/users/{user_id}/otp-devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteOtpDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3249,11 +3820,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3262,20 +3833,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/{user_id}/otp-devices',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteOtpDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_user_status_async(self, request):
         """操作用户
@@ -3289,9 +3856,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ChangeUserStatusRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ChangeUserStatusResponse`
         """
-        return self._change_user_status_with_http_info(request)
+        http_info = self._change_user_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_user_status_with_http_info(self, request):
+    def change_user_status_async_invoker(self, request):
+        http_info = self._change_user_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_user_status_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/users/{user_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeUserStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3308,11 +3887,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3321,20 +3900,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/{user_id}/actions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeUserStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_desktop_user_async(self, request):
         """创建用户
@@ -3348,9 +3923,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CreateDesktopUserRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CreateDesktopUserResponse`
         """
-        return self._create_desktop_user_with_http_info(request)
+        http_info = self._create_desktop_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_desktop_user_with_http_info(self, request):
+    def create_desktop_user_async_invoker(self, request):
+        http_info = self._create_desktop_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_desktop_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDesktopUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3365,11 +3952,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3378,20 +3965,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDesktopUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_user_async(self, request):
         """删除指定用户
@@ -3405,9 +3988,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteUserResponse`
         """
-        return self._delete_user_with_http_info(request)
+        http_info = self._delete_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_user_with_http_info(self, request):
+    def delete_user_async_invoker(self, request):
+        http_info = self._delete_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3424,9 +4019,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3435,20 +4030,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/{user_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_otp_devices_by_user_id_async(self, request):
         """查询OTP设备
@@ -3462,9 +4053,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListOtpDevicesByUserIdRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListOtpDevicesByUserIdResponse`
         """
-        return self._list_otp_devices_by_user_id_with_http_info(request)
+        http_info = self._list_otp_devices_by_user_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_otp_devices_by_user_id_with_http_info(self, request):
+    def list_otp_devices_by_user_id_async_invoker(self, request):
+        http_info = self._list_otp_devices_by_user_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_otp_devices_by_user_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/users/{user_id}/otp-devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOtpDevicesByUserIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3481,9 +4084,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3492,20 +4095,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/{user_id}/otp-devices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOtpDevicesByUserIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_detail_async(self, request):
         """查询用户详情信息
@@ -3519,9 +4118,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUserDetailRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUserDetailResponse`
         """
-        return self._list_user_detail_with_http_info(request)
+        http_info = self._list_user_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_detail_with_http_info(self, request):
+    def list_user_detail_async_invoker(self, request):
+        http_info = self._list_user_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3538,9 +4149,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3549,20 +4160,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/{user_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_users_async(self, request):
         """查询用户列表
@@ -3576,9 +4183,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListUsersResponse`
         """
-        return self._list_users_with_http_info(request)
+        http_info = self._list_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_users_with_http_info(self, request):
+    def list_users_async_invoker(self, request):
+        http_info = self._list_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3605,9 +4224,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3616,20 +4235,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_random_password_async(self, request):
         """给用户重置随机密码
@@ -3643,9 +4258,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ResetRandomPasswordRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ResetRandomPasswordResponse`
         """
-        return self._reset_random_password_with_http_info(request)
+        http_info = self._reset_random_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_random_password_with_http_info(self, request):
+    def reset_random_password_async_invoker(self, request):
+        http_info = self._reset_random_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_random_password_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/users/{user_id}/random-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetRandomPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3664,9 +4291,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3675,20 +4302,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/{user_id}/random-password',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetRandomPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_info_async(self, request):
         """修改用户信息
@@ -3702,9 +4325,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateUserInfoResponse`
         """
-        return self._update_user_info_with_http_info(request)
+        http_info = self._update_user_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_info_with_http_info(self, request):
+    def update_user_info_async_invoker(self, request):
+        http_info = self._update_user_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3721,11 +4356,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3734,20 +4369,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/{user_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_volumes_async(self, request):
         """增加桌面磁盘
@@ -3761,9 +4392,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.AddVolumesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.AddVolumesResponse`
         """
-        return self._add_volumes_with_http_info(request)
+        http_info = self._add_volumes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_volumes_with_http_info(self, request):
+    def add_volumes_async_invoker(self, request):
+        http_info = self._add_volumes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_volumes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/volumes",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddVolumesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3778,11 +4421,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3791,20 +4434,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/volumes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddVolumesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_desktop_volumes_async(self, request):
         """删除桌面数据盘
@@ -3818,9 +4457,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopVolumesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.DeleteDesktopVolumesResponse`
         """
-        return self._delete_desktop_volumes_with_http_info(request)
+        http_info = self._delete_desktop_volumes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_desktop_volumes_with_http_info(self, request):
+    def delete_desktop_volumes_async_invoker(self, request):
+        http_info = self._delete_desktop_volumes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_desktop_volumes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/desktops/{desktop_id}/volumes/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDesktopVolumesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3837,11 +4488,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3850,20 +4501,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/desktops/{desktop_id}/volumes/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDesktopVolumesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_volumes_async(self, request):
         """扩容桌面磁盘
@@ -3877,9 +4524,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ExpandVolumesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ExpandVolumesResponse`
         """
-        return self._expand_volumes_with_http_info(request)
+        http_info = self._expand_volumes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_volumes_with_http_info(self, request):
+    def expand_volumes_async_invoker(self, request):
+        http_info = self._expand_volumes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _expand_volumes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/volumes/expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandVolumesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3894,11 +4553,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3907,20 +4566,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/volumes/expand',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandVolumesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def apply_workspace_async(self, request):
         """开通云办公服务
@@ -3936,9 +4591,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ApplyWorkspaceResponse`
         """
-        return self._apply_workspace_with_http_info(request)
+        http_info = self._apply_workspace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_workspace_with_http_info(self, request):
+    def apply_workspace_async_invoker(self, request):
+        http_info = self._apply_workspace_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _apply_workspace_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyWorkspaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3953,11 +4620,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3966,20 +4633,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/workspaces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyWorkspaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_workspace_async(self, request):
         """注销云办公服务
@@ -3993,9 +4656,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.CancelWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.CancelWorkspaceResponse`
         """
-        return self._cancel_workspace_with_http_info(request)
+        http_info = self._cancel_workspace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_workspace_with_http_info(self, request):
+    def cancel_workspace_async_invoker(self, request):
+        http_info = self._cancel_workspace_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_workspace_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelWorkspaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4010,9 +4685,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4021,20 +4696,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/workspaces',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelWorkspaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workspaces_async(self, request):
         """查询云办公服务详情
@@ -4048,9 +4719,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ListWorkspacesRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ListWorkspacesResponse`
         """
-        return self._list_workspaces_with_http_info(request)
+        http_info = self._list_workspaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workspaces_with_http_info(self, request):
+    def list_workspaces_async_invoker(self, request):
+        http_info = self._list_workspaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_workspaces_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkspacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4065,9 +4748,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4076,20 +4759,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/workspaces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkspacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_workspace_lock_async(self, request):
         """查询云办公服务是否被锁定
@@ -4103,9 +4782,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.ShowWorkspaceLockRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.ShowWorkspaceLockResponse`
         """
-        return self._show_workspace_lock_with_http_info(request)
+        http_info = self._show_workspace_lock_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_workspace_lock_with_http_info(self, request):
+    def show_workspace_lock_async_invoker(self, request):
+        http_info = self._show_workspace_lock_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_workspace_lock_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/workspaces/lock-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkspaceLockResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4120,9 +4811,9 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4131,20 +4822,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/workspaces/lock-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkspaceLockResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unlock_workspace_async(self, request):
         """解除云办公服务锁定状态
@@ -4158,9 +4845,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UnlockWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UnlockWorkspaceResponse`
         """
-        return self._unlock_workspace_with_http_info(request)
+        http_info = self._unlock_workspace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unlock_workspace_with_http_info(self, request):
+    def unlock_workspace_async_invoker(self, request):
+        http_info = self._unlock_workspace_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unlock_workspace_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/workspaces/lock-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnlockWorkspaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4175,11 +4874,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4188,20 +4887,16 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/workspaces/lock-status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnlockWorkspaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_workspace_async(self, request):
         """修改云办公服务属性
@@ -4215,9 +4910,21 @@ class WorkspaceAsyncClient(Client):
         :type request: :class:`huaweicloudsdkworkspace.v2.UpdateWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkworkspace.v2.UpdateWorkspaceResponse`
         """
-        return self._update_workspace_with_http_info(request)
+        http_info = self._update_workspace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_workspace_with_http_info(self, request):
+    def update_workspace_async_invoker(self, request):
+        http_info = self._update_workspace_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_workspace_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkspaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4232,11 +4939,11 @@ class WorkspaceAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4245,20 +4952,26 @@ class WorkspaceAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/workspaces',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWorkspaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -4297,4 +5010,4 @@ class WorkspaceAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

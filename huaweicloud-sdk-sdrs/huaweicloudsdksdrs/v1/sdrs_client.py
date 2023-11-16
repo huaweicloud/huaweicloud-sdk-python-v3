@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdksdrs'")
 
 
 class SdrsClient(Client):
@@ -38,9 +43,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.AddProtectedInstanceNicRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.AddProtectedInstanceNicResponse`
         """
-        return self._add_protected_instance_nic_with_http_info(request)
+        http_info = self._add_protected_instance_nic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_protected_instance_nic_with_http_info(self, request):
+    def add_protected_instance_nic_invoker(self, request):
+        http_info = self._add_protected_instance_nic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_protected_instance_nic_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/nic",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddProtectedInstanceNicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/nic',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddProtectedInstanceNicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_protected_instance_tags(self, request):
         """添加保护实例标签
@@ -96,9 +110,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.AddProtectedInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.AddProtectedInstanceTagsResponse`
         """
-        return self._add_protected_instance_tags_with_http_info(request)
+        http_info = self._add_protected_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_protected_instance_tags_with_http_info(self, request):
+    def add_protected_instance_tags_invoker(self, request):
+        http_info = self._add_protected_instance_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_protected_instance_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddProtectedInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddProtectedInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_protected_instance_replication(self, request):
         """保护实例挂载复制对
@@ -154,9 +177,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.AttachProtectedInstanceReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.AttachProtectedInstanceReplicationResponse`
         """
-        return self._attach_protected_instance_replication_with_http_info(request)
+        http_info = self._attach_protected_instance_replication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_protected_instance_replication_with_http_info(self, request):
+    def attach_protected_instance_replication_invoker(self, request):
+        http_info = self._attach_protected_instance_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_protected_instance_replication_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/attachreplication",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachProtectedInstanceReplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/attachreplication',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachProtectedInstanceReplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_tags(self, request):
         """批量添加保护实例标签
@@ -215,9 +247,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.BatchAddTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchAddTagsResponse`
         """
-        return self._batch_add_tags_with_http_info(request)
+        http_info = self._batch_add_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_tags_with_http_info(self, request):
+    def batch_add_tags_invoker(self, request):
+        http_info = self._batch_add_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -234,11 +279,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -247,20 +292,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_protected_instances(self, request):
         """批量创建保护实例
@@ -274,9 +315,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchCreateProtectedInstancesResponse`
         """
-        return self._batch_create_protected_instances_with_http_info(request)
+        http_info = self._batch_create_protected_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_protected_instances_with_http_info(self, request):
+    def batch_create_protected_instances_invoker(self, request):
+        http_info = self._batch_create_protected_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_protected_instances_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateProtectedInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,11 +345,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +358,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/batch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateProtectedInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_protected_instances(self, request):
         """批量删除保护实例
@@ -331,9 +381,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.BatchDeleteProtectedInstancesRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchDeleteProtectedInstancesResponse`
         """
-        return self._batch_delete_protected_instances_with_http_info(request)
+        http_info = self._batch_delete_protected_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_protected_instances_with_http_info(self, request):
+    def batch_delete_protected_instances_invoker(self, request):
+        http_info = self._batch_delete_protected_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_protected_instances_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteProtectedInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -348,11 +411,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -361,20 +424,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteProtectedInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_tags(self, request):
         """批量删除保护实例标签
@@ -389,9 +448,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.BatchDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.BatchDeleteTagsResponse`
         """
-        return self._batch_delete_tags_with_http_info(request)
+        http_info = self._batch_delete_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_tags_with_http_info(self, request):
+    def batch_delete_tags_invoker(self, request):
+        http_info = self._batch_delete_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -408,11 +480,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -421,20 +493,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_disaster_recovery_drill(self, request):
         """创建容灾演练
@@ -447,9 +515,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateDisasterRecoveryDrillResponse`
         """
-        return self._create_disaster_recovery_drill_with_http_info(request)
+        http_info = self._create_disaster_recovery_drill_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_disaster_recovery_drill_with_http_info(self, request):
+    def create_disaster_recovery_drill_invoker(self, request):
+        http_info = self._create_disaster_recovery_drill_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_disaster_recovery_drill_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/disaster-recovery-drills",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDisasterRecoveryDrillResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -464,11 +545,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -477,20 +558,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/disaster-recovery-drills',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDisasterRecoveryDrillResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_protected_instance(self, request):
         """创建保护实例
@@ -503,9 +580,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.CreateProtectedInstanceRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateProtectedInstanceResponse`
         """
-        return self._create_protected_instance_with_http_info(request)
+        http_info = self._create_protected_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_protected_instance_with_http_info(self, request):
+    def create_protected_instance_invoker(self, request):
+        http_info = self._create_protected_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_protected_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProtectedInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -520,11 +610,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -533,20 +623,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProtectedInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_protection_group(self, request):
         """创建保护组
@@ -561,9 +647,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.CreateProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateProtectionGroupResponse`
         """
-        return self._create_protection_group_with_http_info(request)
+        http_info = self._create_protection_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_protection_group_with_http_info(self, request):
+    def create_protection_group_invoker(self, request):
+        http_info = self._create_protection_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_protection_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/server-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProtectionGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -578,11 +677,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -591,20 +690,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProtectionGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_replication(self, request):
         """创建复制对
@@ -617,9 +712,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.CreateReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.CreateReplicationResponse`
         """
-        return self._create_replication_with_http_info(request)
+        http_info = self._create_replication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_replication_with_http_info(self, request):
+    def create_replication_invoker(self, request):
+        http_info = self._create_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_replication_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/replications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateReplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -634,11 +742,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -647,20 +755,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/replications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateReplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_all_server_group_failure_jobs(self, request):
         """删除所有保护组失败任务
@@ -673,9 +777,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteAllServerGroupFailureJobsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteAllServerGroupFailureJobsResponse`
         """
-        return self._delete_all_server_group_failure_jobs_with_http_info(request)
+        http_info = self._delete_all_server_group_failure_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_all_server_group_failure_jobs_with_http_info(self, request):
+    def delete_all_server_group_failure_jobs_invoker(self, request):
+        http_info = self._delete_all_server_group_failure_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_all_server_group_failure_jobs_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/task-center/failure-jobs/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAllServerGroupFailureJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -690,9 +807,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -701,20 +818,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task-center/failure-jobs/batch',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAllServerGroupFailureJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_disaster_recovery_drill(self, request):
         """删除容灾演练
@@ -729,9 +842,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteDisasterRecoveryDrillRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteDisasterRecoveryDrillResponse`
         """
-        return self._delete_disaster_recovery_drill_with_http_info(request)
+        http_info = self._delete_disaster_recovery_drill_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_disaster_recovery_drill_with_http_info(self, request):
+    def delete_disaster_recovery_drill_invoker(self, request):
+        http_info = self._delete_disaster_recovery_drill_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_disaster_recovery_drill_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/disaster-recovery-drills/{disaster_recovery_drill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDisasterRecoveryDrillResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -748,9 +874,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -759,20 +885,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/disaster-recovery-drills/{disaster_recovery_drill_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDisasterRecoveryDrillResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_failure_job(self, request):
         """删除单个失败任务
@@ -785,9 +907,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteFailureJobRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteFailureJobResponse`
         """
-        return self._delete_failure_job_with_http_info(request)
+        http_info = self._delete_failure_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_failure_job_with_http_info(self, request):
+    def delete_failure_job_invoker(self, request):
+        http_info = self._delete_failure_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_failure_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/task-center/failure-jobs/{failure_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFailureJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -804,9 +939,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -815,20 +950,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task-center/failure-jobs/{failure_job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFailureJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_protected_instance(self, request):
         """删除保护实例
@@ -841,9 +972,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceResponse`
         """
-        return self._delete_protected_instance_with_http_info(request)
+        http_info = self._delete_protected_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_protected_instance_with_http_info(self, request):
+    def delete_protected_instance_invoker(self, request):
+        http_info = self._delete_protected_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_protected_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProtectedInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -860,11 +1004,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -873,20 +1017,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProtectedInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_protected_instance_nic(self, request):
         """保护实例删除网卡
@@ -899,9 +1039,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceNicRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceNicResponse`
         """
-        return self._delete_protected_instance_nic_with_http_info(request)
+        http_info = self._delete_protected_instance_nic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_protected_instance_nic_with_http_info(self, request):
+    def delete_protected_instance_nic_invoker(self, request):
+        http_info = self._delete_protected_instance_nic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_protected_instance_nic_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/nic/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProtectedInstanceNicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -918,11 +1071,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -931,20 +1084,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/nic/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProtectedInstanceNicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_protected_instance_tag(self, request):
         """删除保护实例标签
@@ -959,9 +1108,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceTagRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectedInstanceTagResponse`
         """
-        return self._delete_protected_instance_tag_with_http_info(request)
+        http_info = self._delete_protected_instance_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_protected_instance_tag_with_http_info(self, request):
+    def delete_protected_instance_tag_invoker(self, request):
+        http_info = self._delete_protected_instance_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_protected_instance_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProtectedInstanceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -980,9 +1142,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -991,20 +1153,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProtectedInstanceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_protection_group(self, request):
         """删除保护组
@@ -1017,9 +1175,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteProtectionGroupResponse`
         """
-        return self._delete_protection_group_with_http_info(request)
+        http_info = self._delete_protection_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_protection_group_with_http_info(self, request):
+    def delete_protection_group_invoker(self, request):
+        http_info = self._delete_protection_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_protection_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/server-groups/{server_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProtectionGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1036,9 +1207,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1047,20 +1218,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups/{server_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProtectionGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_replication(self, request):
         """删除复制对
@@ -1073,9 +1240,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteReplicationResponse`
         """
-        return self._delete_replication_with_http_info(request)
+        http_info = self._delete_replication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_replication_with_http_info(self, request):
+    def delete_replication_invoker(self, request):
+        http_info = self._delete_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_replication_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/replications/{replication_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteReplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1092,11 +1272,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1105,20 +1285,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/replications/{replication_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteReplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_server_group_failure_jobs(self, request):
         """删除指定保护组内的所有失败任务
@@ -1131,9 +1307,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DeleteServerGroupFailureJobsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DeleteServerGroupFailureJobsResponse`
         """
-        return self._delete_server_group_failure_jobs_with_http_info(request)
+        http_info = self._delete_server_group_failure_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_server_group_failure_jobs_with_http_info(self, request):
+    def delete_server_group_failure_jobs_invoker(self, request):
+        http_info = self._delete_server_group_failure_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_group_failure_jobs_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/task-center/{server_group_id}/failure-jobs/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerGroupFailureJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1150,9 +1339,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1161,20 +1350,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task-center/{server_group_id}/failure-jobs/batch',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServerGroupFailureJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_protected_instance_replication(self, request):
         """保护实例卸载复制对
@@ -1187,9 +1372,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.DetachProtectedInstanceReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.DetachProtectedInstanceReplicationResponse`
         """
-        return self._detach_protected_instance_replication_with_http_info(request)
+        http_info = self._detach_protected_instance_replication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_protected_instance_replication_with_http_info(self, request):
+    def detach_protected_instance_replication_invoker(self, request):
+        http_info = self._detach_protected_instance_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_protected_instance_replication_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/detachreplication/{replication_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachProtectedInstanceReplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1208,9 +1406,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1219,20 +1417,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/detachreplication/{replication_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachProtectedInstanceReplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_replication(self, request):
         """复制对扩容
@@ -1245,9 +1439,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ExpandReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ExpandReplicationResponse`
         """
-        return self._expand_replication_with_http_info(request)
+        http_info = self._expand_replication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_replication_with_http_info(self, request):
+    def expand_replication_invoker(self, request):
+        http_info = self._expand_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_replication_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/replications/{replication_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandReplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1264,11 +1471,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1277,20 +1484,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/replications/{replication_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandReplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_active_active_domains(self, request):
         """查询双活域
@@ -1303,9 +1506,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListActiveActiveDomainsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListActiveActiveDomainsResponse`
         """
-        return self._list_active_active_domains_with_http_info(request)
+        http_info = self._list_active_active_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_active_active_domains_with_http_info(self, request):
+    def list_active_active_domains_invoker(self, request):
+        http_info = self._list_active_active_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_active_active_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/active-domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListActiveActiveDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1320,9 +1536,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1331,20 +1547,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/active-domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListActiveActiveDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_disaster_recovery_drills(self, request):
         """查询容灾演练列表
@@ -1357,9 +1569,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListDisasterRecoveryDrillsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListDisasterRecoveryDrillsResponse`
         """
-        return self._list_disaster_recovery_drills_with_http_info(request)
+        http_info = self._list_disaster_recovery_drills_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_disaster_recovery_drills_with_http_info(self, request):
+    def list_disaster_recovery_drills_invoker(self, request):
+        http_info = self._list_disaster_recovery_drills_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_disaster_recovery_drills_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/disaster-recovery-drills",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDisasterRecoveryDrillsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1386,9 +1611,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1397,20 +1622,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/disaster-recovery-drills',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDisasterRecoveryDrillsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_failure_jobs(self, request):
         """查询失败任务列表
@@ -1423,9 +1644,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListFailureJobsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListFailureJobsResponse`
         """
-        return self._list_failure_jobs_with_http_info(request)
+        http_info = self._list_failure_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_failure_jobs_with_http_info(self, request):
+    def list_failure_jobs_invoker(self, request):
+        http_info = self._list_failure_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_failure_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/task-center/failure-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFailureJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1452,9 +1686,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1463,20 +1697,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task-center/failure-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFailureJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protected_instance_tags(self, request):
         """查询保护实例标签
@@ -1489,9 +1719,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectedInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstanceTagsResponse`
         """
-        return self._list_protected_instance_tags_with_http_info(request)
+        http_info = self._list_protected_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protected_instance_tags_with_http_info(self, request):
+    def list_protected_instance_tags_invoker(self, request):
+        http_info = self._list_protected_instance_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protected_instance_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectedInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1508,9 +1751,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1519,20 +1762,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectedInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protected_instances(self, request):
         """查询保护实例列表
@@ -1545,9 +1784,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesResponse`
         """
-        return self._list_protected_instances_with_http_info(request)
+        http_info = self._list_protected_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protected_instances_with_http_info(self, request):
+    def list_protected_instances_invoker(self, request):
+        http_info = self._list_protected_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protected_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/protected-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectedInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1580,9 +1832,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1591,20 +1843,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectedInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protected_instances_by_tags(self, request):
         """通过标签查询保护实例
@@ -1617,9 +1865,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesByTagsResponse`
         """
-        return self._list_protected_instances_by_tags_with_http_info(request)
+        http_info = self._list_protected_instances_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protected_instances_by_tags_with_http_info(self, request):
+    def list_protected_instances_by_tags_invoker(self, request):
+        http_info = self._list_protected_instances_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protected_instances_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectedInstancesByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1634,11 +1895,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1647,20 +1908,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectedInstancesByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protected_instances_project_tags(self, request):
         """查询保护实例项目标签
@@ -1673,9 +1930,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesProjectTagsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectedInstancesProjectTagsResponse`
         """
-        return self._list_protected_instances_project_tags_with_http_info(request)
+        http_info = self._list_protected_instances_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protected_instances_project_tags_with_http_info(self, request):
+    def list_protected_instances_project_tags_invoker(self, request):
+        http_info = self._list_protected_instances_project_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protected_instances_project_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/protected-instances/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectedInstancesProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1690,9 +1960,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1701,20 +1971,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectedInstancesProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protection_groups(self, request):
         """查询保护组列表
@@ -1727,9 +1993,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListProtectionGroupsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListProtectionGroupsResponse`
         """
-        return self._list_protection_groups_with_http_info(request)
+        http_info = self._list_protection_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protection_groups_with_http_info(self, request):
+    def list_protection_groups_invoker(self, request):
+        http_info = self._list_protection_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protection_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/server-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectionGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1756,9 +2035,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1767,20 +2046,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectionGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_replications(self, request):
         """查询复制对列表
@@ -1793,9 +2068,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListReplicationsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListReplicationsResponse`
         """
-        return self._list_replications_with_http_info(request)
+        http_info = self._list_replications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_replications_with_http_info(self, request):
+    def list_replications_invoker(self, request):
+        http_info = self._list_replications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_replications_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/replications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListReplicationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1830,9 +2118,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1841,20 +2129,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/replications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListReplicationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rpo_statistics(self, request):
         """查询资源的RPO超标趋势记录列表
@@ -1867,9 +2151,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListRpoStatisticsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListRpoStatisticsResponse`
         """
-        return self._list_rpo_statistics_with_http_info(request)
+        http_info = self._list_rpo_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rpo_statistics_with_http_info(self, request):
+    def list_rpo_statistics_invoker(self, request):
+        http_info = self._list_rpo_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rpo_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/resource/rpo-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRpoStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1894,9 +2191,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1905,20 +2202,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/resource/rpo-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRpoStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_protected_instance(self, request):
         """保护实例变更规格
@@ -1936,9 +2229,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ResizeProtectedInstanceResponse`
         """
-        return self._resize_protected_instance_with_http_info(request)
+        http_info = self._resize_protected_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_protected_instance_with_http_info(self, request):
+    def resize_protected_instance_invoker(self, request):
+        http_info = self._resize_protected_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_protected_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeProtectedInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1955,11 +2261,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1968,20 +2274,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}/resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeProtectedInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_disaster_recovery_drill(self, request):
         """查询单个容灾演练详情
@@ -1994,9 +2296,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowDisasterRecoveryDrillResponse`
         """
-        return self._show_disaster_recovery_drill_with_http_info(request)
+        http_info = self._show_disaster_recovery_drill_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_disaster_recovery_drill_with_http_info(self, request):
+    def show_disaster_recovery_drill_invoker(self, request):
+        http_info = self._show_disaster_recovery_drill_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_disaster_recovery_drill_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/disaster-recovery-drills/{disaster_recovery_drill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDisasterRecoveryDrillResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2013,9 +2328,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2024,20 +2339,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/disaster-recovery-drills/{disaster_recovery_drill_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDisasterRecoveryDrillResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_protected_instance(self, request):
         """查询单个保护实例详情
@@ -2050,9 +2361,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectedInstanceResponse`
         """
-        return self._show_protected_instance_with_http_info(request)
+        http_info = self._show_protected_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_protected_instance_with_http_info(self, request):
+    def show_protected_instance_invoker(self, request):
+        http_info = self._show_protected_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_protected_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProtectedInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2069,9 +2393,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2080,20 +2404,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProtectedInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_protection_group(self, request):
         """查询保护组详情
@@ -2106,9 +2426,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ShowProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowProtectionGroupResponse`
         """
-        return self._show_protection_group_with_http_info(request)
+        http_info = self._show_protection_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_protection_group_with_http_info(self, request):
+    def show_protection_group_invoker(self, request):
+        http_info = self._show_protection_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_protection_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/server-groups/{server_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProtectionGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2125,9 +2458,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2136,20 +2469,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups/{server_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProtectionGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quota(self, request):
         """查询租户配额
@@ -2162,9 +2491,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ShowQuotaRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowQuotaResponse`
         """
-        return self._show_quota_with_http_info(request)
+        http_info = self._show_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quota_with_http_info(self, request):
+    def show_quota_invoker(self, request):
+        http_info = self._show_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdrs/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2179,9 +2521,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2190,20 +2532,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdrs/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_replication(self, request):
         """查询单个复制对详情
@@ -2216,9 +2554,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ShowReplicationRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowReplicationResponse`
         """
-        return self._show_replication_with_http_info(request)
+        http_info = self._show_replication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_replication_with_http_info(self, request):
+    def show_replication_invoker(self, request):
+        http_info = self._show_replication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_replication_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/replications/{replication_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2235,9 +2586,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2246,20 +2597,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/replications/{replication_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowReplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_failover_protection_group(self, request):
         """保护组故障切换
@@ -2273,9 +2620,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.StartFailoverProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.StartFailoverProtectionGroupResponse`
         """
-        return self._start_failover_protection_group_with_http_info(request)
+        http_info = self._start_failover_protection_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_failover_protection_group_with_http_info(self, request):
+    def start_failover_protection_group_invoker(self, request):
+        http_info = self._start_failover_protection_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_failover_protection_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/server-groups/{server_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartFailoverProtectionGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2292,11 +2652,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2305,20 +2665,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups/{server_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartFailoverProtectionGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_protection_group(self, request):
         """保护组开启保护/重保护
@@ -2331,9 +2687,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.StartProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.StartProtectionGroupResponse`
         """
-        return self._start_protection_group_with_http_info(request)
+        http_info = self._start_protection_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_protection_group_with_http_info(self, request):
+    def start_protection_group_invoker(self, request):
+        http_info = self._start_protection_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_protection_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/server-groups/{server_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartProtectionGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2350,11 +2719,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2363,20 +2732,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups/{server_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartProtectionGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_reverse_protection_group(self, request):
         """保护组切换
@@ -2389,9 +2754,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.StartReverseProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.StartReverseProtectionGroupResponse`
         """
-        return self._start_reverse_protection_group_with_http_info(request)
+        http_info = self._start_reverse_protection_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_reverse_protection_group_with_http_info(self, request):
+    def start_reverse_protection_group_invoker(self, request):
+        http_info = self._start_reverse_protection_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_reverse_protection_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/server-groups/{server_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartReverseProtectionGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2408,11 +2786,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2421,20 +2799,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups/{server_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartReverseProtectionGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_protection_group(self, request):
         """保护组停止保护
@@ -2447,9 +2821,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.StopProtectionGroupRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.StopProtectionGroupResponse`
         """
-        return self._stop_protection_group_with_http_info(request)
+        http_info = self._stop_protection_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_protection_group_with_http_info(self, request):
+    def stop_protection_group_invoker(self, request):
+        http_info = self._stop_protection_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_protection_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/server-groups/{server_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopProtectionGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2466,11 +2853,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2479,20 +2866,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups/{server_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopProtectionGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_disaster_recovery_drill_name(self, request):
         """更新容灾演练名称
@@ -2505,9 +2888,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateDisasterRecoveryDrillNameResponse`
         """
-        return self._update_disaster_recovery_drill_name_with_http_info(request)
+        http_info = self._update_disaster_recovery_drill_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_disaster_recovery_drill_name_with_http_info(self, request):
+    def update_disaster_recovery_drill_name_invoker(self, request):
+        http_info = self._update_disaster_recovery_drill_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_disaster_recovery_drill_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/disaster-recovery-drills/{disaster_recovery_drill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDisasterRecoveryDrillNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2524,11 +2920,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2537,20 +2933,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/disaster-recovery-drills/{disaster_recovery_drill_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDisasterRecoveryDrillNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_protected_instance_name(self, request):
         """更新保护实例名称
@@ -2563,9 +2955,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateProtectedInstanceNameResponse`
         """
-        return self._update_protected_instance_name_with_http_info(request)
+        http_info = self._update_protected_instance_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_protected_instance_name_with_http_info(self, request):
+    def update_protected_instance_name_invoker(self, request):
+        http_info = self._update_protected_instance_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_protected_instance_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/protected-instances/{protected_instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProtectedInstanceNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2582,11 +2987,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2595,20 +3000,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/protected-instances/{protected_instance_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProtectedInstanceNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_protection_group_name(self, request):
         """更新保护组名称
@@ -2621,9 +3022,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.UpdateProtectionGroupNameRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateProtectionGroupNameResponse`
         """
-        return self._update_protection_group_name_with_http_info(request)
+        http_info = self._update_protection_group_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_protection_group_name_with_http_info(self, request):
+    def update_protection_group_name_invoker(self, request):
+        http_info = self._update_protection_group_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_protection_group_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/server-groups/{server_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProtectionGroupNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2640,11 +3054,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2653,20 +3067,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/server-groups/{server_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProtectionGroupNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_replication_name(self, request):
         """更新复制对名称
@@ -2679,9 +3089,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.UpdateReplicationNameResponse`
         """
-        return self._update_replication_name_with_http_info(request)
+        http_info = self._update_replication_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_replication_name_with_http_info(self, request):
+    def update_replication_name_invoker(self, request):
+        http_info = self._update_replication_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_replication_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/replications/{replication_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateReplicationNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2698,11 +3121,11 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2711,20 +3134,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/replications/{replication_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateReplicationNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions(self, request):
         """查询API版本信息
@@ -2737,9 +3156,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2754,9 +3186,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2765,20 +3197,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_specified_api_version(self, request):
         """查询指定API版本信息
@@ -2791,9 +3219,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ShowSpecifiedApiVersionRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowSpecifiedApiVersionResponse`
         """
-        return self._show_specified_api_version_with_http_info(request)
+        http_info = self._show_specified_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_specified_api_version_with_http_info(self, request):
+    def show_specified_api_version_invoker(self, request):
+        http_info = self._show_specified_api_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_specified_api_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{api_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSpecifiedApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2810,9 +3251,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2821,20 +3262,16 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{api_version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSpecifiedApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_status(self, request):
         """查询job状态
@@ -2848,9 +3285,22 @@ class SdrsClient(Client):
         :type request: :class:`huaweicloudsdksdrs.v1.ShowJobStatusRequest`
         :rtype: :class:`huaweicloudsdksdrs.v1.ShowJobStatusResponse`
         """
-        return self._show_job_status_with_http_info(request)
+        http_info = self._show_job_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_status_with_http_info(self, request):
+    def show_job_status_invoker(self, request):
+        http_info = self._show_job_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2867,9 +3317,9 @@ class SdrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2878,20 +3328,25 @@ class SdrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

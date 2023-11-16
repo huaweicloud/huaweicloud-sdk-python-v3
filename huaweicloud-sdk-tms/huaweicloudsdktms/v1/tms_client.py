@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdktms'")
 
 
 class TmsClient(Client):
@@ -38,9 +43,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.CreatePredefineTagsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.CreatePredefineTagsResponse`
         """
-        return self._create_predefine_tags_with_http_info(request)
+        http_info = self._create_predefine_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_predefine_tags_with_http_info(self, request):
+    def create_predefine_tags_invoker(self, request):
+        http_info = self._create_predefine_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_predefine_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/predefine_tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePredefineTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/predefine_tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePredefineTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resource_tag(self, request):
         """批量添加标签
@@ -94,9 +108,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.CreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdktms.v1.CreateResourceTagResponse`
         """
-        return self._create_resource_tag_with_http_info(request)
+        http_info = self._create_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resource_tag_with_http_info(self, request):
+    def create_resource_tag_invoker(self, request):
+        http_info = self._create_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/resource-tags/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/resource-tags/batch-create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_predefine_tags(self, request):
         """删除预定义标签
@@ -150,9 +173,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.DeletePredefineTagsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.DeletePredefineTagsResponse`
         """
-        return self._delete_predefine_tags_with_http_info(request)
+        http_info = self._delete_predefine_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_predefine_tags_with_http_info(self, request):
+    def delete_predefine_tags_invoker(self, request):
+        http_info = self._delete_predefine_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_predefine_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/predefine_tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePredefineTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,11 +203,11 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/predefine_tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePredefineTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_tag(self, request):
         """批量移除标签
@@ -206,9 +238,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdktms.v1.DeleteResourceTagResponse`
         """
-        return self._delete_resource_tag_with_http_info(request)
+        http_info = self._delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_tag_with_http_info(self, request):
+    def delete_resource_tag_invoker(self, request):
+        http_info = self._delete_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/resource-tags/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -223,11 +268,11 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +281,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/resource-tags/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions(self, request):
         """查询API版本列表
@@ -262,9 +303,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -279,9 +333,9 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -290,20 +344,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_predefine_tags(self, request):
         """查询预定义标签列表
@@ -316,9 +366,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListPredefineTagsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListPredefineTagsResponse`
         """
-        return self._list_predefine_tags_with_http_info(request)
+        http_info = self._list_predefine_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_predefine_tags_with_http_info(self, request):
+    def list_predefine_tags_invoker(self, request):
+        http_info = self._list_predefine_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_predefine_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/predefine_tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPredefineTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -345,9 +408,9 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -356,20 +419,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/predefine_tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPredefineTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_providers(self, request):
         """查询标签管理支持的服务
@@ -382,9 +441,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListProvidersRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListProvidersResponse`
         """
-        return self._list_providers_with_http_info(request)
+        http_info = self._list_providers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_providers_with_http_info(self, request):
+    def list_providers_invoker(self, request):
+        http_info = self._list_providers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_providers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/tms/providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProvidersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -407,9 +479,9 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -418,20 +490,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/tms/providers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProvidersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource(self, request):
         """根据标签过滤资源
@@ -444,9 +512,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListResourceRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListResourceResponse`
         """
-        return self._list_resource_with_http_info(request)
+        http_info = self._list_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_with_http_info(self, request):
+    def list_resource_invoker(self, request):
+        http_info = self._list_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,11 +542,11 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +555,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/resource-instances/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tag_keys(self, request):
         """查询标签键列表
@@ -500,9 +577,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListTagKeysRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListTagKeysResponse`
         """
-        return self._list_tag_keys_with_http_info(request)
+        http_info = self._list_tag_keys_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tag_keys_with_http_info(self, request):
+    def list_tag_keys_invoker(self, request):
+        http_info = self._list_tag_keys_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tag_keys_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/tag-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagKeysResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -523,9 +613,9 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -534,20 +624,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/tag-keys',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagKeysResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tag_values(self, request):
         """查询标签值列表
@@ -560,9 +646,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ListTagValuesRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ListTagValuesResponse`
         """
-        return self._list_tag_values_with_http_info(request)
+        http_info = self._list_tag_values_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tag_values_with_http_info(self, request):
+    def list_tag_values_invoker(self, request):
+        http_info = self._list_tag_values_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tag_values_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/tag-values",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagValuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -585,9 +684,9 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -596,20 +695,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/tag-values',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagValuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version(self, request):
         """查询API版本号详情
@@ -622,9 +717,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ShowApiVersionResponse`
         """
-        return self._show_api_version_with_http_info(request)
+        http_info = self._show_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_with_http_info(self, request):
+    def show_api_version_invoker(self, request):
+        http_info = self._show_api_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_api_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{api_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -641,9 +749,9 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -652,20 +760,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{api_version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_tag(self, request):
         """查询资源标签
@@ -678,9 +782,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ShowResourceTagResponse`
         """
-        return self._show_resource_tag_with_http_info(request)
+        http_info = self._show_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_tag_with_http_info(self, request):
+    def show_resource_tag_invoker(self, request):
+        http_info = self._show_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/resources/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,9 +818,9 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -712,20 +829,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/resources/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tag_quota(self, request):
         """查询标签配额
@@ -738,9 +851,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.ShowTagQuotaRequest`
         :rtype: :class:`huaweicloudsdktms.v1.ShowTagQuotaResponse`
         """
-        return self._show_tag_quota_with_http_info(request)
+        http_info = self._show_tag_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tag_quota_with_http_info(self, request):
+    def show_tag_quota_invoker(self, request):
+        http_info = self._show_tag_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tag_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/tms/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -755,9 +881,9 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -766,20 +892,16 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/tms/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTagQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_predefine_tags(self, request):
         """修改预定义标签
@@ -792,9 +914,22 @@ class TmsClient(Client):
         :type request: :class:`huaweicloudsdktms.v1.UpdatePredefineTagsRequest`
         :rtype: :class:`huaweicloudsdktms.v1.UpdatePredefineTagsResponse`
         """
-        return self._update_predefine_tags_with_http_info(request)
+        http_info = self._update_predefine_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_predefine_tags_with_http_info(self, request):
+    def update_predefine_tags_invoker(self, request):
+        http_info = self._update_predefine_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_predefine_tags_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/predefine_tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePredefineTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -809,11 +944,11 @@ class TmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -822,20 +957,25 @@ class TmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/predefine_tags',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePredefineTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

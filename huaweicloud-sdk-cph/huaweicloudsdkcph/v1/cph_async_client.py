@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcph'")
 
 
 class CphAsyncClient(Client):
@@ -39,9 +44,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchCreateTagsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchCreateTagsResponse`
         """
-        return self._batch_create_tags_with_http_info(request)
+        http_info = self._batch_create_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_tags_with_http_info(self, request):
+    def batch_create_tags_async_invoker(self, request):
+        http_info = self._batch_create_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_tags_async(self, request):
         """批量删除标签
@@ -100,9 +113,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchDeleteTagsResponse`
         """
-        return self._batch_delete_tags_with_http_info(request)
+        http_info = self._batch_delete_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_tags_with_http_info(self, request):
+    def batch_delete_tags_async_invoker(self, request):
+        http_info = self._batch_delete_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,11 +146,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -134,20 +159,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_export_cloud_phone_data_async(self, request):
         """导出云手机数据
@@ -161,9 +182,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchExportCloudPhoneDataResponse`
         """
-        return self._batch_export_cloud_phone_data_with_http_info(request)
+        http_info = self._batch_export_cloud_phone_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_export_cloud_phone_data_with_http_info(self, request):
+    def batch_export_cloud_phone_data_async_invoker(self, request):
+        http_info = self._batch_export_cloud_phone_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_export_cloud_phone_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/batch-storage",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchExportCloudPhoneDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -178,11 +211,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -191,20 +224,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/batch-storage',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchExportCloudPhoneDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_import_cloud_phone_data_async(self, request):
         """恢复云手机数据
@@ -218,9 +247,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.BatchImportCloudPhoneDataResponse`
         """
-        return self._batch_import_cloud_phone_data_with_http_info(request)
+        http_info = self._batch_import_cloud_phone_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_import_cloud_phone_data_with_http_info(self, request):
+    def batch_import_cloud_phone_data_async_invoker(self, request):
+        http_info = self._batch_import_cloud_phone_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_import_cloud_phone_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/batch-restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchImportCloudPhoneDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +276,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/batch-restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchImportCloudPhoneDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_cloud_phone_server_model_async(self, request):
         """变更云手机服务器规格
@@ -275,9 +312,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ChangeCloudPhoneServerModelResponse`
         """
-        return self._change_cloud_phone_server_model_with_http_info(request)
+        http_info = self._change_cloud_phone_server_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_cloud_phone_server_model_with_http_info(self, request):
+    def change_cloud_phone_server_model_async_invoker(self, request):
+        http_info = self._change_cloud_phone_server_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_cloud_phone_server_model_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/servers/change-server-model",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeCloudPhoneServerModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -292,11 +341,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -305,20 +354,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/servers/change-server-model',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeCloudPhoneServerModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_net2_cloud_phone_server_async(self, request):
         """购买自定义网络云手机服务器
@@ -336,9 +381,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.CreateNet2CloudPhoneServerResponse`
         """
-        return self._create_net2_cloud_phone_server_with_http_info(request)
+        http_info = self._create_net2_cloud_phone_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_net2_cloud_phone_server_with_http_info(self, request):
+    def create_net2_cloud_phone_server_async_invoker(self, request):
+        http_info = self._create_net2_cloud_phone_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_net2_cloud_phone_server_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cloud-phone/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNet2CloudPhoneServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,11 +410,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +423,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloud-phone/servers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNet2CloudPhoneServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_share_apps_async(self, request):
         """删除共享应用
@@ -393,9 +446,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.DeleteShareAppsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareAppsResponse`
         """
-        return self._delete_share_apps_with_http_info(request)
+        http_info = self._delete_share_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_share_apps_with_http_info(self, request):
+    def delete_share_apps_async_invoker(self, request):
+        http_info = self._delete_share_apps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_share_apps_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/share-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteShareAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -410,11 +475,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -423,20 +488,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/share-apps',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteShareAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_share_files_async(self, request):
         """删除共享存储文件
@@ -450,9 +511,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.DeleteShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.DeleteShareFilesResponse`
         """
-        return self._delete_share_files_with_http_info(request)
+        http_info = self._delete_share_files_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_share_files_with_http_info(self, request):
+    def delete_share_files_async_invoker(self, request):
+        http_info = self._delete_share_files_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_share_files_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/share-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteShareFilesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -467,11 +540,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -480,20 +553,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/share-files',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteShareFilesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_traffic_async(self, request):
         """云手机流量导流
@@ -507,9 +576,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ImportTrafficRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ImportTrafficResponse`
         """
-        return self._import_traffic_with_http_info(request)
+        http_info = self._import_traffic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_traffic_with_http_info(self, request):
+    def import_traffic_async_invoker(self, request):
+        http_info = self._import_traffic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_traffic_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones-traffic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportTrafficResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -524,11 +605,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -537,20 +618,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones-traffic',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportTrafficResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_phone_images_async(self, request):
         """查询手机镜像
@@ -564,9 +641,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneImagesResponse`
         """
-        return self._list_cloud_phone_images_with_http_info(request)
+        http_info = self._list_cloud_phone_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_phone_images_with_http_info(self, request):
+    def list_cloud_phone_images_async_invoker(self, request):
+        http_info = self._list_cloud_phone_images_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_phone_images_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/phone-images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudPhoneImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -581,9 +670,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -592,20 +681,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phone-images',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudPhoneImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_phone_models_async(self, request):
         """查询云手机规格列表
@@ -619,9 +704,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneModelsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneModelsResponse`
         """
-        return self._list_cloud_phone_models_with_http_info(request)
+        http_info = self._list_cloud_phone_models_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_phone_models_with_http_info(self, request):
+    def list_cloud_phone_models_async_invoker(self, request):
+        http_info = self._list_cloud_phone_models_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_phone_models_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/phone-models",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudPhoneModelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -642,9 +739,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -653,20 +750,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phone-models',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudPhoneModelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_phone_server_models_async(self, request):
         """查询云手机服务器规格列表
@@ -680,9 +773,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServerModelsResponse`
         """
-        return self._list_cloud_phone_server_models_with_http_info(request)
+        http_info = self._list_cloud_phone_server_models_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_phone_server_models_with_http_info(self, request):
+    def list_cloud_phone_server_models_async_invoker(self, request):
+        http_info = self._list_cloud_phone_server_models_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_phone_server_models_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/server-models",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudPhoneServerModelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -699,9 +804,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +815,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/server-models',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudPhoneServerModelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_phone_servers_async(self, request):
         """查询云手机服务器列表
@@ -737,9 +838,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServersRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhoneServersResponse`
         """
-        return self._list_cloud_phone_servers_with_http_info(request)
+        http_info = self._list_cloud_phone_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_phone_servers_with_http_info(self, request):
+    def list_cloud_phone_servers_async_invoker(self, request):
+        http_info = self._list_cloud_phone_servers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_phone_servers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudPhoneServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -764,9 +877,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -775,20 +888,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/servers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudPhoneServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_phones_async(self, request):
         """查询云手机列表
@@ -802,9 +911,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListCloudPhonesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListCloudPhonesResponse`
         """
-        return self._list_cloud_phones_with_http_info(request)
+        http_info = self._list_cloud_phones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_phones_with_http_info(self, request):
+    def list_cloud_phones_async_invoker(self, request):
+        http_info = self._list_cloud_phones_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_phones_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudPhonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -831,9 +952,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -842,20 +963,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudPhonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_encode_servers_async(self, request):
         """查询编码服务
@@ -869,9 +986,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListEncodeServersRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListEncodeServersResponse`
         """
-        return self._list_encode_servers_with_http_info(request)
+        http_info = self._list_encode_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_encode_servers_with_http_info(self, request):
+    def list_encode_servers_async_invoker(self, request):
+        http_info = self._list_encode_servers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_encode_servers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/encode-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEncodeServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -896,9 +1025,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -907,20 +1036,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/encode-servers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEncodeServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_jobs_async(self, request):
         """查询任务执行状态列表
@@ -934,9 +1059,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListJobsResponse`
         """
-        return self._list_jobs_with_http_info(request)
+        http_info = self._list_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_jobs_with_http_info(self, request):
+    def list_jobs_async_invoker(self, request):
+        http_info = self._list_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -959,9 +1096,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -970,20 +1107,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags_async(self, request):
         """查询项目标签
@@ -997,9 +1130,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_async_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1016,9 +1161,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1027,20 +1172,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_instances_async(self, request):
         """查询资源实例
@@ -1054,9 +1195,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListResourceInstancesResponse`
         """
-        return self._list_resource_instances_with_http_info(request)
+        http_info = self._list_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_instances_with_http_info(self, request):
+    def list_resource_instances_async_invoker(self, request):
+        http_info = self._list_resource_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1073,11 +1226,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1086,20 +1239,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_tags_async(self, request):
         """查询资源标签
@@ -1113,9 +1262,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListResourceTagsResponse`
         """
-        return self._list_resource_tags_with_http_info(request)
+        http_info = self._list_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_tags_with_http_info(self, request):
+    def list_resource_tags_async_invoker(self, request):
+        http_info = self._list_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1134,9 +1295,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1145,20 +1306,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_share_files_async(self, request):
         """查询共享存储文件
@@ -1172,9 +1329,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ListShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ListShareFilesResponse`
         """
-        return self._list_share_files_with_http_info(request)
+        http_info = self._list_share_files_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_share_files_with_http_info(self, request):
+    def list_share_files_async_invoker(self, request):
+        http_info = self._list_share_files_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_share_files_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/servers/share-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListShareFilesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1197,9 +1366,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1208,20 +1377,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/servers/share-files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListShareFilesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def push_share_apps_async(self, request):
         """推送共享应用
@@ -1235,9 +1400,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.PushShareAppsRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.PushShareAppsResponse`
         """
-        return self._push_share_apps_with_http_info(request)
+        http_info = self._push_share_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _push_share_apps_with_http_info(self, request):
+    def push_share_apps_async_invoker(self, request):
+        http_info = self._push_share_apps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _push_share_apps_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/share-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "PushShareAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1252,11 +1429,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1265,20 +1442,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/share-apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PushShareAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def push_share_files_async(self, request):
         """推送共享存储文件
@@ -1292,9 +1465,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.PushShareFilesRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.PushShareFilesResponse`
         """
-        return self._push_share_files_with_http_info(request)
+        http_info = self._push_share_files_http_info(request)
+        return self._call_api(**http_info)
 
-    def _push_share_files_with_http_info(self, request):
+    def push_share_files_async_invoker(self, request):
+        http_info = self._push_share_files_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _push_share_files_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/share-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "PushShareFilesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1309,11 +1494,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1322,20 +1507,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/share-files',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PushShareFilesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_cloud_phone_async(self, request):
         """重置云手机
@@ -1349,9 +1530,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ResetCloudPhoneResponse`
         """
-        return self._reset_cloud_phone_with_http_info(request)
+        http_info = self._reset_cloud_phone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_cloud_phone_with_http_info(self, request):
+    def reset_cloud_phone_async_invoker(self, request):
+        http_info = self._reset_cloud_phone_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_cloud_phone_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/batch-reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetCloudPhoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1366,11 +1559,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1379,20 +1572,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/batch-reset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetCloudPhoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_cloud_phone_async(self, request):
         """重启云手机
@@ -1406,9 +1595,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneResponse`
         """
-        return self._restart_cloud_phone_with_http_info(request)
+        http_info = self._restart_cloud_phone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_cloud_phone_with_http_info(self, request):
+    def restart_cloud_phone_async_invoker(self, request):
+        http_info = self._restart_cloud_phone_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_cloud_phone_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/batch-restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartCloudPhoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1423,11 +1624,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1436,20 +1637,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/batch-restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartCloudPhoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_cloud_phone_server_async(self, request):
         """重启云手机服务器
@@ -1463,9 +1660,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartCloudPhoneServerResponse`
         """
-        return self._restart_cloud_phone_server_with_http_info(request)
+        http_info = self._restart_cloud_phone_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_cloud_phone_server_with_http_info(self, request):
+    def restart_cloud_phone_server_async_invoker(self, request):
+        http_info = self._restart_cloud_phone_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_cloud_phone_server_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/servers/batch-restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartCloudPhoneServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1480,11 +1689,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1493,20 +1702,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/servers/batch-restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartCloudPhoneServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_encode_server_async(self, request):
         """重启编码服务
@@ -1520,9 +1725,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RestartEncodeServerRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RestartEncodeServerResponse`
         """
-        return self._restart_encode_server_with_http_info(request)
+        http_info = self._restart_encode_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_encode_server_with_http_info(self, request):
+    def restart_encode_server_async_invoker(self, request):
+        http_info = self._restart_encode_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_encode_server_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/encode-servers/batch-restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartEncodeServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1537,11 +1754,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1550,20 +1767,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/encode-servers/batch-restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartEncodeServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bandwidth_detail_async(self, request):
         """查询带宽信息
@@ -1577,9 +1790,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ShowBandwidthDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowBandwidthDetailResponse`
         """
-        return self._show_bandwidth_detail_with_http_info(request)
+        http_info = self._show_bandwidth_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bandwidth_detail_with_http_info(self, request):
+    def show_bandwidth_detail_async_invoker(self, request):
+        http_info = self._show_bandwidth_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_bandwidth_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBandwidthDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1598,9 +1823,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1609,20 +1834,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/bandwidths',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBandwidthDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cloud_phone_detail_async(self, request):
         """查询云手机详情
@@ -1636,9 +1857,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneDetailResponse`
         """
-        return self._show_cloud_phone_detail_with_http_info(request)
+        http_info = self._show_cloud_phone_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cloud_phone_detail_with_http_info(self, request):
+    def show_cloud_phone_detail_async_invoker(self, request):
+        http_info = self._show_cloud_phone_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cloud_phone_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/{phone_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCloudPhoneDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1655,9 +1888,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1666,20 +1899,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/{phone_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCloudPhoneDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cloud_phone_server_detail_async(self, request):
         """查询云手机服务器详情
@@ -1693,9 +1922,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowCloudPhoneServerDetailResponse`
         """
-        return self._show_cloud_phone_server_detail_with_http_info(request)
+        http_info = self._show_cloud_phone_server_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cloud_phone_server_detail_with_http_info(self, request):
+    def show_cloud_phone_server_detail_async_invoker(self, request):
+        http_info = self._show_cloud_phone_server_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cloud_phone_server_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/servers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCloudPhoneServerDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1712,9 +1953,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1723,20 +1964,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/servers/{server_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCloudPhoneServerDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_async(self, request):
         """查询任务执行状态
@@ -1750,9 +1987,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_async_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloud-phone/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1769,9 +2018,9 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1780,20 +2029,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_cloud_phone_async(self, request):
         """关闭云手机
@@ -1807,9 +2052,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.StopCloudPhoneRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.StopCloudPhoneResponse`
         """
-        return self._stop_cloud_phone_with_http_info(request)
+        http_info = self._stop_cloud_phone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_cloud_phone_with_http_info(self, request):
+    def stop_cloud_phone_async_invoker(self, request):
+        http_info = self._stop_cloud_phone_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_cloud_phone_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/batch-stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopCloudPhoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1824,11 +2081,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1837,20 +2094,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/batch-stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopCloudPhoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_bandwidth_async(self, request):
         """修改共享带宽
@@ -1864,9 +2117,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdateBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateBandwidthResponse`
         """
-        return self._update_bandwidth_with_http_info(request)
+        http_info = self._update_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_bandwidth_with_http_info(self, request):
+    def update_bandwidth_async_invoker(self, request):
+        http_info = self._update_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloud-phone/bandwidths/{band_width_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1883,11 +2148,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1896,20 +2161,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/bandwidths/{band_width_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cloud_phone_property_async(self, request):
         """更新云手机属性
@@ -1923,9 +2184,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateCloudPhonePropertyResponse`
         """
-        return self._update_cloud_phone_property_with_http_info(request)
+        http_info = self._update_cloud_phone_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cloud_phone_property_with_http_info(self, request):
+    def update_cloud_phone_property_async_invoker(self, request):
+        http_info = self._update_cloud_phone_property_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_cloud_phone_property_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/batch-update-property",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCloudPhonePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1940,11 +2213,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1953,20 +2226,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/batch-update-property',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCloudPhonePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_keypair_async(self, request):
         """更改密钥对
@@ -1980,9 +2249,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdateKeypairRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateKeypairResponse`
         """
-        return self._update_keypair_with_http_info(request)
+        http_info = self._update_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_keypair_with_http_info(self, request):
+    def update_keypair_async_invoker(self, request):
+        http_info = self._update_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_keypair_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloud-phone/servers/open-access",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1997,11 +2278,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2010,20 +2291,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/servers/open-access',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_phone_name_async(self, request):
         """修改云手机名称
@@ -2037,9 +2314,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdatePhoneNameResponse`
         """
-        return self._update_phone_name_with_http_info(request)
+        http_info = self._update_phone_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_phone_name_with_http_info(self, request):
+    def update_phone_name_async_invoker(self, request):
+        http_info = self._update_phone_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_phone_name_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/{phone_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePhoneNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2056,11 +2345,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2069,20 +2358,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/{phone_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePhoneNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_server_name_async(self, request):
         """修改云手机服务器名称
@@ -2096,9 +2381,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UpdateServerNameRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UpdateServerNameResponse`
         """
-        return self._update_server_name_with_http_info(request)
+        http_info = self._update_server_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_server_name_with_http_info(self, request):
+    def update_server_name_async_invoker(self, request):
+        http_info = self._update_server_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_server_name_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloud-phone/servers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2115,11 +2412,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2128,20 +2425,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/servers/{server_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServerNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def install_apk_async(self, request):
         """安装apk
@@ -2158,9 +2451,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.InstallApkRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.InstallApkResponse`
         """
-        return self._install_apk_with_http_info(request)
+        http_info = self._install_apk_http_info(request)
+        return self._call_api(**http_info)
 
-    def _install_apk_with_http_info(self, request):
+    def install_apk_async_invoker(self, request):
+        http_info = self._install_apk_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _install_apk_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "InstallApkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2175,11 +2480,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2188,20 +2493,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/commands',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InstallApkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def push_file_async(self, request):
         """推送文件
@@ -2218,9 +2519,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.PushFileRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.PushFileResponse`
         """
-        return self._push_file_with_http_info(request)
+        http_info = self._push_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _push_file_with_http_info(self, request):
+    def push_file_async_invoker(self, request):
+        http_info = self._push_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _push_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "PushFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2235,11 +2548,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2248,20 +2561,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/commands',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PushFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_shell_command_async(self, request):
         """执行异步adb命令
@@ -2276,9 +2585,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RunShellCommandRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RunShellCommandResponse`
         """
-        return self._run_shell_command_with_http_info(request)
+        http_info = self._run_shell_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_shell_command_with_http_info(self, request):
+    def run_shell_command_async_invoker(self, request):
+        http_info = self._run_shell_command_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_shell_command_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunShellCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2293,11 +2614,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2306,20 +2627,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/commands',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunShellCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_sync_command_async(self, request):
         """执行同步adb命令
@@ -2333,9 +2650,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.RunSyncCommandRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.RunSyncCommandResponse`
         """
-        return self._run_sync_command_with_http_info(request)
+        http_info = self._run_sync_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_sync_command_with_http_info(self, request):
+    def run_sync_command_async_invoker(self, request):
+        http_info = self._run_sync_command_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_sync_command_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/sync-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSyncCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2350,11 +2679,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2363,20 +2692,16 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/sync-commands',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSyncCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def uninstall_apk_async(self, request):
         """卸载apk
@@ -2391,9 +2716,21 @@ class CphAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcph.v1.UninstallApkRequest`
         :rtype: :class:`huaweicloudsdkcph.v1.UninstallApkResponse`
         """
-        return self._uninstall_apk_with_http_info(request)
+        http_info = self._uninstall_apk_http_info(request)
+        return self._call_api(**http_info)
 
-    def _uninstall_apk_with_http_info(self, request):
+    def uninstall_apk_async_invoker(self, request):
+        http_info = self._uninstall_apk_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _uninstall_apk_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloud-phone/phones/commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "UninstallApkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2408,11 +2745,11 @@ class CphAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2421,20 +2758,26 @@ class CphAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloud-phone/phones/commands',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UninstallApkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2473,4 +2816,4 @@ class CphAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

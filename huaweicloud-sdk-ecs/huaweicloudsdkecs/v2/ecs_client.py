@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkecs'")
 
 
 class EcsClient(Client):
@@ -38,9 +43,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.AddServerGroupMemberRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.AddServerGroupMemberResponse`
         """
-        return self._add_server_group_member_with_http_info(request)
+        http_info = self._add_server_group_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_server_group_member_with_http_info(self, request):
+    def add_server_group_member_invoker(self, request):
+        http_info = self._add_server_group_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_server_group_member_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddServerGroupMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddServerGroupMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_server_virtual_ip(self, request):
         """云服务器网卡配置虚拟IP地址
@@ -102,9 +116,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.AssociateServerVirtualIpResponse`
         """
-        return self._associate_server_virtual_ip_with_http_info(request)
+        http_info = self._associate_server_virtual_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_server_virtual_ip_with_http_info(self, request):
+    def associate_server_virtual_ip_invoker(self, request):
+        http_info = self._associate_server_virtual_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_server_virtual_ip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/nics/{nic_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateServerVirtualIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,11 +148,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -134,20 +161,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/nics/{nic_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateServerVirtualIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_server_volume(self, request):
         """弹性云服务器挂载磁盘
@@ -160,9 +183,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.AttachServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.AttachServerVolumeResponse`
         """
-        return self._attach_server_volume_with_http_info(request)
+        http_info = self._attach_server_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_server_volume_with_http_info(self, request):
+    def attach_server_volume_invoker(self, request):
+        http_info = self._attach_server_volume_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_server_volume_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/attachvolume",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachServerVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -179,11 +215,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -192,20 +228,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/attachvolume',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachServerVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_server_nics(self, request):
         """批量添加云服务器网卡
@@ -218,9 +250,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchAddServerNicsResponse`
         """
-        return self._batch_add_server_nics_with_http_info(request)
+        http_info = self._batch_add_server_nics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_server_nics_with_http_info(self, request):
+    def batch_add_server_nics_invoker(self, request):
+        http_info = self._batch_add_server_nics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_server_nics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/nics",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddServerNicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,11 +282,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +295,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/nics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddServerNicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_attach_sharable_volumes(self, request):
         """批量挂载指定共享盘
@@ -276,9 +317,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchAttachSharableVolumesResponse`
         """
-        return self._batch_attach_sharable_volumes_with_http_info(request)
+        http_info = self._batch_attach_sharable_volumes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_attach_sharable_volumes_with_http_info(self, request):
+    def batch_attach_sharable_volumes_invoker(self, request):
+        http_info = self._batch_attach_sharable_volumes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_attach_sharable_volumes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batchaction/attachvolumes/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAttachSharableVolumesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -295,11 +349,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -308,20 +362,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batchaction/attachvolumes/{volume_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAttachSharableVolumesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_server_tags(self, request):
         """批量添加云服务器标签
@@ -336,9 +386,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchCreateServerTagsResponse`
         """
-        return self._batch_create_server_tags_with_http_info(request)
+        http_info = self._batch_create_server_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_server_tags_with_http_info(self, request):
+    def batch_create_server_tags_invoker(self, request):
+        http_info = self._batch_create_server_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_server_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateServerTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -355,11 +418,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -368,20 +431,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateServerTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_server_nics(self, request):
         """批量删除云服务器网卡
@@ -394,9 +453,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerNicsResponse`
         """
-        return self._batch_delete_server_nics_with_http_info(request)
+        http_info = self._batch_delete_server_nics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_server_nics_with_http_info(self, request):
+    def batch_delete_server_nics_invoker(self, request):
+        http_info = self._batch_delete_server_nics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_server_nics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/nics/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteServerNicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -413,11 +485,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -426,20 +498,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/nics/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteServerNicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_server_tags(self, request):
         """批量删除云服务器标签
@@ -454,9 +522,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchDeleteServerTagsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchDeleteServerTagsResponse`
         """
-        return self._batch_delete_server_tags_with_http_info(request)
+        http_info = self._batch_delete_server_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_server_tags_with_http_info(self, request):
+    def batch_delete_server_tags_invoker(self, request):
+        http_info = self._batch_delete_server_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_server_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteServerTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -473,11 +554,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -486,20 +567,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteServerTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_reboot_servers(self, request):
         """批量重启云服务器
@@ -512,9 +589,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchRebootServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchRebootServersResponse`
         """
-        return self._batch_reboot_servers_with_http_info(request)
+        http_info = self._batch_reboot_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_reboot_servers_with_http_info(self, request):
+    def batch_reboot_servers_invoker(self, request):
+        http_info = self._batch_reboot_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_reboot_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRebootServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -529,11 +619,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -542,20 +632,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRebootServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_reset_servers_password(self, request):
         """批量重置弹性云服务器密码
@@ -568,9 +654,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchResetServersPasswordResponse`
         """
-        return self._batch_reset_servers_password_with_http_info(request)
+        http_info = self._batch_reset_servers_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_reset_servers_password_with_http_info(self, request):
+    def batch_reset_servers_password_invoker(self, request):
+        http_info = self._batch_reset_servers_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_reset_servers_password_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/os-reset-passwords",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchResetServersPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -585,11 +684,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -598,20 +697,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/os-reset-passwords',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchResetServersPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_start_servers(self, request):
         """批量启动云服务器
@@ -624,9 +719,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchStartServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchStartServersResponse`
         """
-        return self._batch_start_servers_with_http_info(request)
+        http_info = self._batch_start_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_start_servers_with_http_info(self, request):
+    def batch_start_servers_invoker(self, request):
+        http_info = self._batch_start_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_start_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStartServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -641,11 +749,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -654,20 +762,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStartServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_stop_servers(self, request):
         """批量关闭云服务器
@@ -680,9 +784,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchStopServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchStopServersResponse`
         """
-        return self._batch_stop_servers_with_http_info(request)
+        http_info = self._batch_stop_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_stop_servers_with_http_info(self, request):
+    def batch_stop_servers_invoker(self, request):
+        http_info = self._batch_stop_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_stop_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStopServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -697,11 +814,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +827,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStopServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_servers_name(self, request):
         """批量修改弹性云服务器
@@ -737,9 +850,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.BatchUpdateServersNameResponse`
         """
-        return self._batch_update_servers_name_with_http_info(request)
+        http_info = self._batch_update_servers_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_servers_name_with_http_info(self, request):
+    def batch_update_servers_name_invoker(self, request):
+        http_info = self._batch_update_servers_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_servers_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/server-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateServersNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -754,11 +880,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -767,20 +893,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/server-name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateServersNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_server_charge_mode(self, request):
         """更换云服务器计费模式
@@ -793,9 +915,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ChangeServerChargeModeRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerChargeModeResponse`
         """
-        return self._change_server_charge_mode_with_http_info(request)
+        http_info = self._change_server_charge_mode_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_server_charge_mode_with_http_info(self, request):
+    def change_server_charge_mode_invoker(self, request):
+        http_info = self._change_server_charge_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_server_charge_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/actions/change-charge-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeServerChargeModeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -810,11 +945,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -823,20 +958,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/actions/change-charge-mode',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeServerChargeModeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_server_os_with_cloud_init(self, request):
         """切换弹性云服务器操作系统(安装Cloud init)
@@ -851,9 +982,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithCloudInitRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithCloudInitResponse`
         """
-        return self._change_server_os_with_cloud_init_with_http_info(request)
+        http_info = self._change_server_os_with_cloud_init_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_server_os_with_cloud_init_with_http_info(self, request):
+    def change_server_os_with_cloud_init_invoker(self, request):
+        http_info = self._change_server_os_with_cloud_init_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_server_os_with_cloud_init_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cloudservers/{server_id}/changeos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeServerOsWithCloudInitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -870,11 +1014,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -883,20 +1027,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudservers/{server_id}/changeos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeServerOsWithCloudInitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_server_os_without_cloud_init(self, request):
         """切换弹性云服务器操作系统(未安装Cloud init)
@@ -911,9 +1051,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ChangeServerOsWithoutCloudInitResponse`
         """
-        return self._change_server_os_without_cloud_init_with_http_info(request)
+        http_info = self._change_server_os_without_cloud_init_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_server_os_without_cloud_init_with_http_info(self, request):
+    def change_server_os_without_cloud_init_invoker(self, request):
+        http_info = self._change_server_os_without_cloud_init_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_server_os_without_cloud_init_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/changeos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeServerOsWithoutCloudInitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -930,11 +1083,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -943,20 +1096,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/changeos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeServerOsWithoutCloudInitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_post_paid_servers(self, request):
         """创建云服务器(按需)
@@ -982,9 +1131,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.CreatePostPaidServersResponse`
         """
-        return self._create_post_paid_servers_with_http_info(request)
+        http_info = self._create_post_paid_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_post_paid_servers_with_http_info(self, request):
+    def create_post_paid_servers_invoker(self, request):
+        http_info = self._create_post_paid_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_post_paid_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePostPaidServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1001,11 +1163,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1014,20 +1176,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePostPaidServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_server_group(self, request):
         """创建云服务器组
@@ -1042,9 +1200,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.CreateServerGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.CreateServerGroupResponse`
         """
-        return self._create_server_group_with_http_info(request)
+        http_info = self._create_server_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_server_group_with_http_info(self, request):
+    def create_server_group_invoker(self, request):
+        http_info = self._create_server_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_server_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/os-server-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateServerGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1059,11 +1230,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1072,20 +1243,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/os-server-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateServerGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_servers(self, request):
         """创建云服务器
@@ -1120,9 +1287,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.CreateServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.CreateServersResponse`
         """
-        return self._create_servers_with_http_info(request)
+        http_info = self._create_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_servers_with_http_info(self, request):
+    def create_servers_invoker(self, request):
+        http_info = self._create_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/cloudservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1139,11 +1319,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1152,20 +1332,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/cloudservers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_server_group(self, request):
         """删除云服务器组
@@ -1180,9 +1356,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServerGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerGroupResponse`
         """
-        return self._delete_server_group_with_http_info(request)
+        http_info = self._delete_server_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_server_group_with_http_info(self, request):
+    def delete_server_group_invoker(self, request):
+        http_info = self._delete_server_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1199,9 +1388,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1210,20 +1399,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServerGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_server_group_member(self, request):
         """删除云服务器组成员
@@ -1236,9 +1421,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServerGroupMemberRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerGroupMemberResponse`
         """
-        return self._delete_server_group_member_with_http_info(request)
+        http_info = self._delete_server_group_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_server_group_member_with_http_info(self, request):
+    def delete_server_group_member_invoker(self, request):
+        http_info = self._delete_server_group_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_group_member_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerGroupMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1255,11 +1453,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1268,20 +1466,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServerGroupMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_server_metadata(self, request):
         """删除云服务器指定元数据
@@ -1294,9 +1488,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServerMetadataRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerMetadataResponse`
         """
-        return self._delete_server_metadata_with_http_info(request)
+        http_info = self._delete_server_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_server_metadata_with_http_info(self, request):
+    def delete_server_metadata_invoker(self, request):
+        http_info = self._delete_server_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_metadata_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1315,9 +1522,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1326,20 +1533,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/metadata/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServerMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_server_password(self, request):
         """云服务器清除密码(企业项目)
@@ -1352,9 +1555,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServerPasswordResponse`
         """
-        return self._delete_server_password_with_http_info(request)
+        http_info = self._delete_server_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_server_password_with_http_info(self, request):
+    def delete_server_password_invoker(self, request):
+        http_info = self._delete_server_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_password_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/os-server-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1371,9 +1587,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1382,20 +1598,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-server-password',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServerPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_servers(self, request):
         """删除云服务器
@@ -1410,9 +1622,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.DeleteServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DeleteServersResponse`
         """
-        return self._delete_servers_with_http_info(request)
+        http_info = self._delete_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_servers_with_http_info(self, request):
+    def delete_servers_invoker(self, request):
+        http_info = self._delete_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1427,11 +1652,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1440,20 +1665,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_server_volume(self, request):
         """弹性云服务器卸载磁盘
@@ -1466,9 +1687,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.DetachServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DetachServerVolumeResponse`
         """
-        return self._detach_server_volume_with_http_info(request)
+        http_info = self._detach_server_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_server_volume_with_http_info(self, request):
+    def detach_server_volume_invoker(self, request):
+        http_info = self._detach_server_volume_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_server_volume_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/detachvolume/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachServerVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1489,9 +1723,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1500,20 +1734,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/detachvolume/{volume_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachServerVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_server_virtual_ip(self, request):
         """云服务器网卡解绑虚拟IP地址
@@ -1528,9 +1758,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.DisassociateServerVirtualIpResponse`
         """
-        return self._disassociate_server_virtual_ip_with_http_info(request)
+        http_info = self._disassociate_server_virtual_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_server_virtual_ip_with_http_info(self, request):
+    def disassociate_server_virtual_ip_invoker(self, request):
+        http_info = self._disassociate_server_virtual_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_server_virtual_ip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/nics/{nic_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateServerVirtualIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1547,11 +1790,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1560,20 +1803,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/nics/{nic_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateServerVirtualIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavor_sell_policies(self, request):
         """查询规格销售策略
@@ -1586,9 +1825,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListFlavorSellPoliciesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListFlavorSellPoliciesResponse`
         """
-        return self._list_flavor_sell_policies_with_http_info(request)
+        http_info = self._list_flavor_sell_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavor_sell_policies_with_http_info(self, request):
+    def list_flavor_sell_policies_invoker(self, request):
+        http_info = self._list_flavor_sell_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_flavor_sell_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/flavor-sell-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorSellPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1625,9 +1877,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1636,20 +1888,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/flavor-sell-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorSellPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors(self, request):
         """查询规格详情和规格扩展信息列表
@@ -1662,9 +1910,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1681,9 +1942,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1692,20 +1953,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resize_flavors(self, request):
         """查询云服务器规格变更支持列表
@@ -1718,9 +1975,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListResizeFlavorsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListResizeFlavorsResponse`
         """
-        return self._list_resize_flavors_with_http_info(request)
+        http_info = self._list_resize_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resize_flavors_with_http_info(self, request):
+    def list_resize_flavors_invoker(self, request):
+        http_info = self._list_resize_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resize_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/resize_flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResizeFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1749,9 +2019,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1760,20 +2030,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/resize_flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResizeFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_server_block_devices(self, request):
         """查询弹性云服务器磁盘信息
@@ -1786,9 +2052,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServerBlockDevicesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerBlockDevicesResponse`
         """
-        return self._list_server_block_devices_with_http_info(request)
+        http_info = self._list_server_block_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_server_block_devices_with_http_info(self, request):
+    def list_server_block_devices_invoker(self, request):
+        http_info = self._list_server_block_devices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_server_block_devices_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/block_device",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServerBlockDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1805,9 +2084,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1816,20 +2095,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/block_device',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServerBlockDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_server_groups(self, request):
         """查询云服务器组列表
@@ -1844,9 +2119,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServerGroupsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerGroupsResponse`
         """
-        return self._list_server_groups_with_http_info(request)
+        http_info = self._list_server_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_server_groups_with_http_info(self, request):
+    def list_server_groups_invoker(self, request):
+        http_info = self._list_server_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_server_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/os-server-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServerGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1865,9 +2153,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1876,20 +2164,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/os-server-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServerGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_server_interfaces(self, request):
         """查询云服务器网卡信息
@@ -1902,9 +2186,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServerInterfacesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerInterfacesResponse`
         """
-        return self._list_server_interfaces_with_http_info(request)
+        http_info = self._list_server_interfaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_server_interfaces_with_http_info(self, request):
+    def list_server_interfaces_invoker(self, request):
+        http_info = self._list_server_interfaces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_server_interfaces_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/os-interface",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServerInterfacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1921,9 +2218,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1932,20 +2229,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-interface',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServerInterfacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_server_tags(self, request):
         """查询项目标签
@@ -1960,9 +2253,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServerTagsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServerTagsResponse`
         """
-        return self._list_server_tags_with_http_info(request)
+        http_info = self._list_server_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_server_tags_with_http_info(self, request):
+    def list_server_tags_invoker(self, request):
+        http_info = self._list_server_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_server_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServerTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1977,9 +2283,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1988,20 +2294,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServerTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_servers_by_tag(self, request):
         """按标签查询云服务器列表
@@ -2014,9 +2316,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServersByTagRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServersByTagResponse`
         """
-        return self._list_servers_by_tag_with_http_info(request)
+        http_info = self._list_servers_by_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_servers_by_tag_with_http_info(self, request):
+    def list_servers_by_tag_invoker(self, request):
+        http_info = self._list_servers_by_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_servers_by_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServersByTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2031,11 +2346,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2044,20 +2359,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServersByTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_servers_details(self, request):
         """查询云服务器详情列表
@@ -2072,9 +2383,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ListServersDetailsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ListServersDetailsResponse`
         """
-        return self._list_servers_details_with_http_info(request)
+        http_info = self._list_servers_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_servers_details_with_http_info(self, request):
+    def list_servers_details_invoker(self, request):
+        http_info = self._list_servers_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_servers_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServersDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2113,9 +2437,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2124,20 +2448,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServersDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_server(self, request):
         """冷迁移云服务器
@@ -2152,9 +2472,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.MigrateServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.MigrateServerResponse`
         """
-        return self._migrate_server_with_http_info(request)
+        http_info = self._migrate_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_server_with_http_info(self, request):
+    def migrate_server_invoker(self, request):
+        http_info = self._migrate_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_server_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/migrate",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2171,11 +2504,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2184,20 +2517,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/migrate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_associate_security_group(self, request):
         """添加安全组
@@ -2212,9 +2541,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAssociateSecurityGroupResponse`
         """
-        return self._nova_associate_security_group_with_http_info(request)
+        http_info = self._nova_associate_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_associate_security_group_with_http_info(self, request):
+    def nova_associate_security_group_invoker(self, request):
+        http_info = self._nova_associate_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_associate_security_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/{project_id}/servers/{server_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaAssociateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2231,11 +2573,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2244,20 +2586,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/servers/{server_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaAssociateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_attach_interface(self, request):
         """添加云服务器网卡
@@ -2270,9 +2608,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaAttachInterfaceRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaAttachInterfaceResponse`
         """
-        return self._nova_attach_interface_with_http_info(request)
+        http_info = self._nova_attach_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_attach_interface_with_http_info(self, request):
+    def nova_attach_interface_invoker(self, request):
+        http_info = self._nova_attach_interface_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_attach_interface_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/{project_id}/servers/{server_id}/os-interface",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaAttachInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2289,11 +2640,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2302,20 +2653,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/servers/{server_id}/os-interface',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaAttachInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_create_keypair(self, request):
         """创建和导入SSH密钥
@@ -2330,9 +2677,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateKeypairResponse`
         """
-        return self._nova_create_keypair_with_http_info(request)
+        http_info = self._nova_create_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_create_keypair_with_http_info(self, request):
+    def nova_create_keypair_invoker(self, request):
+        http_info = self._nova_create_keypair_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_create_keypair_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/{project_id}/os-keypairs",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaCreateKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2349,11 +2709,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2362,20 +2722,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/os-keypairs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaCreateKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_create_servers(self, request):
         """创建云服务器
@@ -2392,9 +2748,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaCreateServersRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaCreateServersResponse`
         """
-        return self._nova_create_servers_with_http_info(request)
+        http_info = self._nova_create_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_create_servers_with_http_info(self, request):
+    def nova_create_servers_invoker(self, request):
+        http_info = self._nova_create_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_create_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/{project_id}/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaCreateServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2411,11 +2780,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2424,20 +2793,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/servers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaCreateServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_delete_keypair(self, request):
         """删除SSH密钥
@@ -2450,9 +2815,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaDeleteKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDeleteKeypairResponse`
         """
-        return self._nova_delete_keypair_with_http_info(request)
+        http_info = self._nova_delete_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_delete_keypair_with_http_info(self, request):
+    def nova_delete_keypair_invoker(self, request):
+        http_info = self._nova_delete_keypair_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_delete_keypair_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/{project_id}/os-keypairs/{keypair_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaDeleteKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2469,9 +2847,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2480,20 +2858,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/os-keypairs/{keypair_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaDeleteKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_delete_server(self, request):
         """删除云服务器
@@ -2506,9 +2880,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaDeleteServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDeleteServerResponse`
         """
-        return self._nova_delete_server_with_http_info(request)
+        http_info = self._nova_delete_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_delete_server_with_http_info(self, request):
+    def nova_delete_server_invoker(self, request):
+        http_info = self._nova_delete_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_delete_server_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/{project_id}/servers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaDeleteServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2525,9 +2912,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2536,20 +2923,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/servers/{server_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaDeleteServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_disassociate_security_group(self, request):
         """移除安全组
@@ -2562,9 +2945,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaDisassociateSecurityGroupResponse`
         """
-        return self._nova_disassociate_security_group_with_http_info(request)
+        http_info = self._nova_disassociate_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_disassociate_security_group_with_http_info(self, request):
+    def nova_disassociate_security_group_invoker(self, request):
+        http_info = self._nova_disassociate_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_disassociate_security_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/{project_id}/servers/{server_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaDisassociateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2581,11 +2977,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2594,20 +2990,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/servers/{server_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaDisassociateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_list_availability_zones(self, request):
         """查询可用区列表
@@ -2620,9 +3012,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListAvailabilityZonesResponse`
         """
-        return self._nova_list_availability_zones_with_http_info(request)
+        http_info = self._nova_list_availability_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_list_availability_zones_with_http_info(self, request):
+    def nova_list_availability_zones_invoker(self, request):
+        http_info = self._nova_list_availability_zones_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_list_availability_zones_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/os-availability-zone",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaListAvailabilityZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2637,9 +3042,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2648,20 +3053,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/os-availability-zone',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaListAvailabilityZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_list_keypairs(self, request):
         """查询SSH密钥列表
@@ -2674,9 +3075,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListKeypairsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListKeypairsResponse`
         """
-        return self._nova_list_keypairs_with_http_info(request)
+        http_info = self._nova_list_keypairs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_list_keypairs_with_http_info(self, request):
+    def nova_list_keypairs_invoker(self, request):
+        http_info = self._nova_list_keypairs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_list_keypairs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/os-keypairs",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaListKeypairsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2697,9 +3111,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2708,20 +3122,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/os-keypairs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaListKeypairsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_list_server_security_groups(self, request):
         """查询指定云服务器安全组列表
@@ -2734,9 +3144,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListServerSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListServerSecurityGroupsResponse`
         """
-        return self._nova_list_server_security_groups_with_http_info(request)
+        http_info = self._nova_list_server_security_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_list_server_security_groups_with_http_info(self, request):
+    def nova_list_server_security_groups_invoker(self, request):
+        http_info = self._nova_list_server_security_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_list_server_security_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/servers/{server_id}/os-security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaListServerSecurityGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2753,9 +3176,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2764,20 +3187,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/servers/{server_id}/os-security-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaListServerSecurityGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_list_servers_details(self, request):
         """查询云服务器详情列表
@@ -2790,9 +3209,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaListServersDetailsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaListServersDetailsResponse`
         """
-        return self._nova_list_servers_details_with_http_info(request)
+        http_info = self._nova_list_servers_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_list_servers_details_with_http_info(self, request):
+    def nova_list_servers_details_invoker(self, request):
+        http_info = self._nova_list_servers_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_list_servers_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/servers/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaListServersDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2833,9 +3265,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2844,20 +3276,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/servers/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaListServersDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_show_keypair(self, request):
         """查询SSH密钥详情
@@ -2870,9 +3298,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaShowKeypairRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaShowKeypairResponse`
         """
-        return self._nova_show_keypair_with_http_info(request)
+        http_info = self._nova_show_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_show_keypair_with_http_info(self, request):
+    def nova_show_keypair_invoker(self, request):
+        http_info = self._nova_show_keypair_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_show_keypair_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/os-keypairs/{keypair_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaShowKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2891,9 +3332,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2902,20 +3343,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/os-keypairs/{keypair_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaShowKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def nova_show_server(self, request):
         """查询云服务器详情
@@ -2928,9 +3365,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.NovaShowServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.NovaShowServerResponse`
         """
-        return self._nova_show_server_with_http_info(request)
+        http_info = self._nova_show_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _nova_show_server_with_http_info(self, request):
+    def nova_show_server_invoker(self, request):
+        http_info = self._nova_show_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _nova_show_server_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/{project_id}/servers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NovaShowServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2949,9 +3399,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2960,20 +3410,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/servers/{server_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NovaShowServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_server_auto_recovery(self, request):
         """管理云服务器自动恢复动作
@@ -2986,9 +3432,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerAutoRecoveryResponse`
         """
-        return self._register_server_auto_recovery_with_http_info(request)
+        http_info = self._register_server_auto_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_server_auto_recovery_with_http_info(self, request):
+    def register_server_auto_recovery_invoker(self, request):
+        http_info = self._register_server_auto_recovery_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _register_server_auto_recovery_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/autorecovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterServerAutoRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3005,11 +3464,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3018,20 +3477,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/autorecovery',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterServerAutoRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_server_monitor(self, request):
         """注册云服务器监控
@@ -3046,9 +3501,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.RegisterServerMonitorResponse`
         """
-        return self._register_server_monitor_with_http_info(request)
+        http_info = self._register_server_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_server_monitor_with_http_info(self, request):
+    def register_server_monitor_invoker(self, request):
+        http_info = self._register_server_monitor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _register_server_monitor_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/servers/{server_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterServerMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3065,11 +3533,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3078,20 +3546,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/servers/{server_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterServerMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reinstall_server_with_cloud_init(self, request):
         """重装弹性云服务器操作系统(安装Cloud-init)
@@ -3106,9 +3570,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithCloudInitResponse`
         """
-        return self._reinstall_server_with_cloud_init_with_http_info(request)
+        http_info = self._reinstall_server_with_cloud_init_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reinstall_server_with_cloud_init_with_http_info(self, request):
+    def reinstall_server_with_cloud_init_invoker(self, request):
+        http_info = self._reinstall_server_with_cloud_init_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reinstall_server_with_cloud_init_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cloudservers/{server_id}/reinstallos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReinstallServerWithCloudInitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3125,11 +3602,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3138,20 +3615,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudservers/{server_id}/reinstallos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReinstallServerWithCloudInitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reinstall_server_without_cloud_init(self, request):
         """重装弹性云服务器操作系统(未安装Cloud init)
@@ -3166,9 +3639,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ReinstallServerWithoutCloudInitResponse`
         """
-        return self._reinstall_server_without_cloud_init_with_http_info(request)
+        http_info = self._reinstall_server_without_cloud_init_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reinstall_server_without_cloud_init_with_http_info(self, request):
+    def reinstall_server_without_cloud_init_invoker(self, request):
+        http_info = self._reinstall_server_without_cloud_init_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reinstall_server_without_cloud_init_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/reinstallos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReinstallServerWithoutCloudInitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3185,11 +3671,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3198,20 +3684,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/reinstallos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReinstallServerWithoutCloudInitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_server_password(self, request):
         """一键重置弹性云服务器密码(企业项目)
@@ -3224,9 +3706,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ResetServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ResetServerPasswordResponse`
         """
-        return self._reset_server_password_with_http_info(request)
+        http_info = self._reset_server_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_server_password_with_http_info(self, request):
+    def reset_server_password_invoker(self, request):
+        http_info = self._reset_server_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_server_password_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/os-reset-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetServerPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3243,11 +3738,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3256,20 +3751,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-reset-password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetServerPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_post_paid_server(self, request):
         """变更云服务器规格(按需)
@@ -3286,9 +3777,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ResizePostPaidServerResponse`
         """
-        return self._resize_post_paid_server_with_http_info(request)
+        http_info = self._resize_post_paid_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_post_paid_server_with_http_info(self, request):
+    def resize_post_paid_server_invoker(self, request):
+        http_info = self._resize_post_paid_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_post_paid_server_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizePostPaidServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3305,11 +3809,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3318,20 +3822,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizePostPaidServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_server(self, request):
         """变更云服务器规格
@@ -3352,9 +3852,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ResizeServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ResizeServerResponse`
         """
-        return self._resize_server_with_http_info(request)
+        http_info = self._resize_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_server_with_http_info(self, request):
+    def resize_server_invoker(self, request):
+        http_info = self._resize_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_server_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/cloudservers/{server_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3371,11 +3884,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3384,20 +3897,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/cloudservers/{server_id}/resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_reset_password_flag(self, request):
         """查询是否支持一键重置密码
@@ -3410,9 +3919,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowResetPasswordFlagRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowResetPasswordFlagResponse`
         """
-        return self._show_reset_password_flag_with_http_info(request)
+        http_info = self._show_reset_password_flag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_reset_password_flag_with_http_info(self, request):
+    def show_reset_password_flag_invoker(self, request):
+        http_info = self._show_reset_password_flag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_reset_password_flag_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/os-resetpwd-flag",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResetPasswordFlagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3429,9 +3951,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3440,20 +3962,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-resetpwd-flag',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResetPasswordFlagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server(self, request):
         """查询云服务器详情
@@ -3468,9 +3986,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerResponse`
         """
-        return self._show_server_with_http_info(request)
+        http_info = self._show_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_with_http_info(self, request):
+    def show_server_invoker(self, request):
+        http_info = self._show_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3487,9 +4018,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3498,20 +4029,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server_auto_recovery(self, request):
         """查询云服务器是否配置了自动恢复动作
@@ -3524,9 +4051,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerAutoRecoveryRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerAutoRecoveryResponse`
         """
-        return self._show_server_auto_recovery_with_http_info(request)
+        http_info = self._show_server_auto_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_auto_recovery_with_http_info(self, request):
+    def show_server_auto_recovery_invoker(self, request):
+        http_info = self._show_server_auto_recovery_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_auto_recovery_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/autorecovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerAutoRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3543,9 +4083,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3554,20 +4094,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/autorecovery',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerAutoRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server_block_device(self, request):
         """查询弹性云服务器单个磁盘信息
@@ -3580,9 +4116,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerBlockDeviceRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerBlockDeviceResponse`
         """
-        return self._show_server_block_device_with_http_info(request)
+        http_info = self._show_server_block_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_block_device_with_http_info(self, request):
+    def show_server_block_device_invoker(self, request):
+        http_info = self._show_server_block_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_block_device_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/block_device/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerBlockDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3601,9 +4150,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3612,20 +4161,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/block_device/{volume_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerBlockDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server_group(self, request):
         """查询云服务器组详情
@@ -3640,9 +4185,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerGroupRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerGroupResponse`
         """
-        return self._show_server_group_with_http_info(request)
+        http_info = self._show_server_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_group_with_http_info(self, request):
+    def show_server_group_invoker(self, request):
+        http_info = self._show_server_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3659,9 +4217,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3670,20 +4228,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/os-server-groups/{server_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server_limits(self, request):
         """查询租户配额
@@ -3696,9 +4250,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerLimitsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerLimitsResponse`
         """
-        return self._show_server_limits_with_http_info(request)
+        http_info = self._show_server_limits_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_limits_with_http_info(self, request):
+    def show_server_limits_invoker(self, request):
+        http_info = self._show_server_limits_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_limits_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/limits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerLimitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3713,9 +4280,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3724,20 +4291,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/limits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerLimitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server_password(self, request):
         """云服务器获取密码(企业项目)
@@ -3750,9 +4313,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerPasswordResponse`
         """
-        return self._show_server_password_with_http_info(request)
+        http_info = self._show_server_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_password_with_http_info(self, request):
+    def show_server_password_invoker(self, request):
+        http_info = self._show_server_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_password_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/os-server-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3769,9 +4345,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3780,20 +4356,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/os-server-password',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server_remote_console(self, request):
         """获取VNC远程登录地址
@@ -3806,9 +4378,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerRemoteConsoleResponse`
         """
-        return self._show_server_remote_console_with_http_info(request)
+        http_info = self._show_server_remote_console_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_remote_console_with_http_info(self, request):
+    def show_server_remote_console_invoker(self, request):
+        http_info = self._show_server_remote_console_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_remote_console_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/remote_console",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerRemoteConsoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3825,11 +4410,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3838,20 +4423,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/remote_console',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerRemoteConsoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server_tags(self, request):
         """查询云服务器标签
@@ -3866,9 +4447,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowServerTagsRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowServerTagsResponse`
         """
-        return self._show_server_tags_with_http_info(request)
+        http_info = self._show_server_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_tags_with_http_info(self, request):
+    def show_server_tags_invoker(self, request):
+        http_info = self._show_server_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3885,9 +4479,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3896,20 +4490,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_server(self, request):
         """修改云服务器
@@ -3922,9 +4512,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.UpdateServerRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerResponse`
         """
-        return self._update_server_with_http_info(request)
+        http_info = self._update_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_server_with_http_info(self, request):
+    def update_server_invoker(self, request):
+        http_info = self._update_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_server_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3941,11 +4544,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3954,20 +4557,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_server_auto_terminate_time(self, request):
         """修改云服务器定时删除时间
@@ -3982,9 +4581,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerAutoTerminateTimeResponse`
         """
-        return self._update_server_auto_terminate_time_with_http_info(request)
+        http_info = self._update_server_auto_terminate_time_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_server_auto_terminate_time_with_http_info(self, request):
+    def update_server_auto_terminate_time_invoker(self, request):
+        http_info = self._update_server_auto_terminate_time_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_server_auto_terminate_time_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/actions/update-auto-terminate-time",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerAutoTerminateTimeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4001,11 +4613,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4014,20 +4626,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/actions/update-auto-terminate-time',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServerAutoTerminateTimeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_server_block_device(self, request):
         """修改云服务器挂载的单个磁盘信息
@@ -4040,9 +4648,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerBlockDeviceResponse`
         """
-        return self._update_server_block_device_with_http_info(request)
+        http_info = self._update_server_block_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_server_block_device_with_http_info(self, request):
+    def update_server_block_device_invoker(self, request):
+        http_info = self._update_server_block_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_server_block_device_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/block_device/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerBlockDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4061,11 +4682,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4074,20 +4695,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/block_device/{volume_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServerBlockDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_server_metadata(self, request):
         """更新云服务器元数据
@@ -4106,9 +4723,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.UpdateServerMetadataResponse`
         """
-        return self._update_server_metadata_with_http_info(request)
+        http_info = self._update_server_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_server_metadata_with_http_info(self, request):
+    def update_server_metadata_invoker(self, request):
+        http_info = self._update_server_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_server_metadata_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cloudservers/{server_id}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4125,11 +4755,11 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4138,20 +4768,16 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cloudservers/{server_id}/metadata',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServerMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job(self, request):
         """查询任务的执行状态
@@ -4166,9 +4792,22 @@ class EcsClient(Client):
         :type request: :class:`huaweicloudsdkecs.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkecs.v2.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4185,9 +4824,9 @@ class EcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4196,20 +4835,25 @@ class EcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

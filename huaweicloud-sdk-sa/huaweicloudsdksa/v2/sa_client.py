@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdksa'")
 
 
 class SaClient(Client):
@@ -38,9 +43,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertRuleResponse`
         """
-        return self._create_alert_rule_with_http_info(request)
+        http_info = self._create_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alert_rule_with_http_info(self, request):
+    def create_alert_rule_invoker(self, request):
+        http_info = self._create_alert_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_alert_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -59,11 +77,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -72,20 +90,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_alert_rule_simulation(self, request):
         """模拟告警规则（仅支持华东-上海一使用）
@@ -98,9 +112,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateAlertRuleSimulationRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertRuleSimulationResponse`
         """
-        return self._create_alert_rule_simulation_with_http_info(request)
+        http_info = self._create_alert_rule_simulation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alert_rule_simulation_with_http_info(self, request):
+    def create_alert_rule_simulation_invoker(self, request):
+        http_info = self._create_alert_rule_simulation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_alert_rule_simulation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/simulation",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlertRuleSimulationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +146,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -132,20 +159,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/simulation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlertRuleSimulationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alert_rule(self, request):
         """删除告警规则（仅支持华东-上海一使用）
@@ -158,9 +181,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteAlertRuleResponse`
         """
-        return self._delete_alert_rule_with_http_info(request)
+        http_info = self._delete_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alert_rule_with_http_info(self, request):
+    def delete_alert_rule_invoker(self, request):
+        http_info = self._delete_alert_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_alert_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -179,11 +215,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -192,20 +228,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_alert_rule(self, request):
         """停用告警规则（仅支持华东-上海一使用）
@@ -218,9 +250,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DisableAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DisableAlertRuleResponse`
         """
-        return self._disable_alert_rule_with_http_info(request)
+        http_info = self._disable_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_alert_rule_with_http_info(self, request):
+    def disable_alert_rule_invoker(self, request):
+        http_info = self._disable_alert_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_alert_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -239,11 +284,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -252,20 +297,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_alert_rule(self, request):
         """启用告警规则（仅支持华东-上海一使用）
@@ -278,9 +319,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.EnableAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.EnableAlertRuleResponse`
         """
-        return self._enable_alert_rule_with_http_info(request)
+        http_info = self._enable_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_alert_rule_with_http_info(self, request):
+    def enable_alert_rule_invoker(self, request):
+        http_info = self._enable_alert_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_alert_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -299,11 +353,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -312,20 +366,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alert_rule_metrics(self, request):
         """告警规则总览（仅支持华东-上海一使用）
@@ -338,9 +388,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListAlertRuleMetricsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListAlertRuleMetricsResponse`
         """
-        return self._list_alert_rule_metrics_with_http_info(request)
+        http_info = self._list_alert_rule_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alert_rule_metrics_with_http_info(self, request):
+    def list_alert_rule_metrics_invoker(self, request):
+        http_info = self._list_alert_rule_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alert_rule_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertRuleMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -359,9 +422,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -370,20 +433,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/metrics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlertRuleMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alert_rule_templates(self, request):
         """列出告警规则模板（仅支持华东-上海一使用）
@@ -396,9 +455,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListAlertRuleTemplatesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListAlertRuleTemplatesResponse`
         """
-        return self._list_alert_rule_templates_with_http_info(request)
+        http_info = self._list_alert_rule_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alert_rule_templates_with_http_info(self, request):
+    def list_alert_rule_templates_invoker(self, request):
+        http_info = self._list_alert_rule_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alert_rule_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertRuleTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -428,9 +500,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -439,20 +511,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlertRuleTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alert_rules(self, request):
         """列出告警规则（仅支持华东-上海一使用）
@@ -465,9 +533,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListAlertRulesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListAlertRulesResponse`
         """
-        return self._list_alert_rules_with_http_info(request)
+        http_info = self._list_alert_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alert_rules_with_http_info(self, request):
+    def list_alert_rules_invoker(self, request):
+        http_info = self._list_alert_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alert_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -506,9 +587,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -517,20 +598,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlertRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alert_rule(self, request):
         """查看告警规则（仅支持华东-上海一使用）
@@ -543,9 +620,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRuleResponse`
         """
-        return self._show_alert_rule_with_http_info(request)
+        http_info = self._show_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alert_rule_with_http_info(self, request):
+    def show_alert_rule_invoker(self, request):
+        http_info = self._show_alert_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_alert_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -566,9 +656,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -577,20 +667,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alert_rule_template(self, request):
         """查看告警规则模板（仅支持华东-上海一使用）
@@ -603,9 +689,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowAlertRuleTemplateRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertRuleTemplateResponse`
         """
-        return self._show_alert_rule_template_with_http_info(request)
+        http_info = self._show_alert_rule_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alert_rule_template_with_http_info(self, request):
+    def show_alert_rule_template_invoker(self, request):
+        http_info = self._show_alert_rule_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_alert_rule_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlertRuleTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -626,9 +725,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -637,20 +736,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlertRuleTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alert_rule(self, request):
         """更新告警规则（仅支持华东-上海一使用）
@@ -663,9 +758,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdateAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdateAlertRuleResponse`
         """
-        return self._update_alert_rule_with_http_info(request)
+        http_info = self._update_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alert_rule_with_http_info(self, request):
+    def update_alert_rule_invoker(self, request):
+        http_info = self._update_alert_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_alert_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -686,11 +794,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -699,20 +807,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_alert(self, request):
         """更新告警（仅支持华东-上海一使用）
@@ -725,9 +829,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ChangeAlertRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ChangeAlertResponse`
         """
-        return self._change_alert_with_http_info(request)
+        http_info = self._change_alert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_alert_with_http_info(self, request):
+    def change_alert_invoker(self, request):
+        http_info = self._change_alert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_alert_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeAlertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -748,11 +865,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -761,20 +878,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeAlertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_alert(self, request):
         """创建告警（仅支持华东-上海一使用）
@@ -787,9 +900,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateAlertRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateAlertResponse`
         """
-        return self._create_alert_with_http_info(request)
+        http_info = self._create_alert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alert_with_http_info(self, request):
+    def create_alert_invoker(self, request):
+        http_info = self._create_alert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_alert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -808,11 +934,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -821,20 +947,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_batch_order_alerts(self, request):
         """告警转事件（仅支持华东-上海一使用）
@@ -847,9 +969,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateBatchOrderAlertsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateBatchOrderAlertsResponse`
         """
-        return self._create_batch_order_alerts_with_http_info(request)
+        http_info = self._create_batch_order_alerts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_batch_order_alerts_with_http_info(self, request):
+    def create_batch_order_alerts_invoker(self, request):
+        http_info = self._create_batch_order_alerts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_batch_order_alerts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/batch-order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBatchOrderAlertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -868,11 +1003,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -881,20 +1016,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/batch-order',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBatchOrderAlertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alert(self, request):
         """删除告警（仅支持华东-上海一使用）
@@ -907,9 +1038,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteAlertRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteAlertResponse`
         """
-        return self._delete_alert_with_http_info(request)
+        http_info = self._delete_alert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alert_with_http_info(self, request):
+    def delete_alert_invoker(self, request):
+        http_info = self._delete_alert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_alert_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -928,11 +1072,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -941,20 +1085,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alerts(self, request):
         """搜索告警列表（仅支持华东-上海一使用）
@@ -967,9 +1107,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListAlertsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListAlertsResponse`
         """
-        return self._list_alerts_with_http_info(request)
+        http_info = self._list_alerts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alerts_with_http_info(self, request):
+    def list_alerts_invoker(self, request):
+        http_info = self._list_alerts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alerts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -988,11 +1141,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1001,20 +1154,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alert(self, request):
         """获取告警详情（仅支持华东-上海一使用）
@@ -1027,9 +1176,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowAlertRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowAlertResponse`
         """
-        return self._show_alert_with_http_info(request)
+        http_info = self._show_alert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alert_with_http_info(self, request):
+    def show_alert_invoker(self, request):
+        http_info = self._show_alert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_alert_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1050,9 +1212,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1061,20 +1223,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_incident(self, request):
         """更新事件（仅支持华东-上海一使用）
@@ -1087,9 +1245,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ChangeIncidentRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ChangeIncidentResponse`
         """
-        return self._change_incident_with_http_info(request)
+        http_info = self._change_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_incident_with_http_info(self, request):
+    def change_incident_invoker(self, request):
+        http_info = self._change_incident_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_incident_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1110,11 +1281,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1123,20 +1294,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_incident(self, request):
         """创建事件（仅支持华东-上海一使用）
@@ -1149,9 +1316,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateIncidentRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateIncidentResponse`
         """
-        return self._create_incident_with_http_info(request)
+        http_info = self._create_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_incident_with_http_info(self, request):
+    def create_incident_invoker(self, request):
+        http_info = self._create_incident_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_incident_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1170,11 +1350,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1183,20 +1363,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_incident(self, request):
         """创建事件（仅支持华东-上海一使用）
@@ -1209,9 +1385,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteIncidentRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteIncidentResponse`
         """
-        return self._delete_incident_with_http_info(request)
+        http_info = self._delete_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_incident_with_http_info(self, request):
+    def delete_incident_invoker(self, request):
+        http_info = self._delete_incident_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_incident_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1230,11 +1419,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1243,20 +1432,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_incident_types(self, request):
         """获取事件的类型列表（仅支持华东-上海一使用）
@@ -1269,9 +1454,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListIncidentTypesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListIncidentTypesResponse`
         """
-        return self._list_incident_types_with_http_info(request)
+        http_info = self._list_incident_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_incident_types_with_http_info(self, request):
+    def list_incident_types_invoker(self, request):
+        http_info = self._list_incident_types_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_incident_types_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIncidentTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1308,9 +1506,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1319,20 +1517,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIncidentTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_incidents(self, request):
         """搜索事件列表（仅支持华东-上海一使用）
@@ -1345,9 +1539,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListIncidentsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListIncidentsResponse`
         """
-        return self._list_incidents_with_http_info(request)
+        http_info = self._list_incidents_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_incidents_with_http_info(self, request):
+    def list_incidents_invoker(self, request):
+        http_info = self._list_incidents_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_incidents_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIncidentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1366,11 +1573,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1379,20 +1586,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIncidentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_incident(self, request):
         """获取事件详情（仅支持华东-上海一使用）
@@ -1405,9 +1608,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowIncidentRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowIncidentResponse`
         """
-        return self._show_incident_with_http_info(request)
+        http_info = self._show_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_incident_with_http_info(self, request):
+    def show_incident_invoker(self, request):
+        http_info = self._show_incident_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_incident_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1428,9 +1644,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1439,20 +1655,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_indicator(self, request):
         """创建指标
@@ -1465,9 +1677,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateIndicatorRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateIndicatorResponse`
         """
-        return self._create_indicator_with_http_info(request)
+        http_info = self._create_indicator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_indicator_with_http_info(self, request):
+    def create_indicator_invoker(self, request):
+        http_info = self._create_indicator_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_indicator_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIndicatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1486,11 +1711,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1499,20 +1724,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIndicatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_indicator(self, request):
         """删除指标
@@ -1525,9 +1746,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteIndicatorRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteIndicatorResponse`
         """
-        return self._delete_indicator_with_http_info(request)
+        http_info = self._delete_indicator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_indicator_with_http_info(self, request):
+    def delete_indicator_invoker(self, request):
+        http_info = self._delete_indicator_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_indicator_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIndicatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1546,11 +1780,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1559,20 +1793,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIndicatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_indicators(self, request):
         """查询指标列表（仅支持华东-上海一使用）
@@ -1585,9 +1815,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListIndicatorsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListIndicatorsResponse`
         """
-        return self._list_indicators_with_http_info(request)
+        http_info = self._list_indicators_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_indicators_with_http_info(self, request):
+    def list_indicators_invoker(self, request):
+        http_info = self._list_indicators_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_indicators_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIndicatorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1612,11 +1855,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1625,20 +1868,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIndicatorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_indicator_detail(self, request):
         """查询指标详情
@@ -1651,9 +1890,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowIndicatorDetailRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowIndicatorDetailResponse`
         """
-        return self._show_indicator_detail_with_http_info(request)
+        http_info = self._show_indicator_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_indicator_detail_with_http_info(self, request):
+    def show_indicator_detail_invoker(self, request):
+        http_info = self._show_indicator_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_indicator_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIndicatorDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1674,9 +1926,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1685,20 +1937,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIndicatorDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_indicator(self, request):
         """更新指标
@@ -1711,9 +1959,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdateIndicatorRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdateIndicatorResponse`
         """
-        return self._update_indicator_with_http_info(request)
+        http_info = self._update_indicator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_indicator_with_http_info(self, request):
+    def update_indicator_invoker(self, request):
+        http_info = self._update_indicator_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_indicator_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIndicatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1734,11 +1995,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1747,20 +2008,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIndicatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook(self, request):
         """创建剧本（仅支持华东-上海一使用）
@@ -1773,9 +2030,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookResponse`
         """
-        return self._create_playbook_with_http_info(request)
+        http_info = self._create_playbook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_with_http_info(self, request):
+    def create_playbook_invoker(self, request):
+        http_info = self._create_playbook_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_playbook_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1794,11 +2064,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1807,20 +2077,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_playbook(self, request):
         """删除剧本（仅支持华东-上海一使用）
@@ -1833,9 +2099,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeletePlaybookRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeletePlaybookResponse`
         """
-        return self._delete_playbook_with_http_info(request)
+        http_info = self._delete_playbook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_playbook_with_http_info(self, request):
+    def delete_playbook_invoker(self, request):
+        http_info = self._delete_playbook_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_playbook_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePlaybookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1856,9 +2135,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1867,20 +2146,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePlaybookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbooks(self, request):
         """查询剧本列表（仅支持华东-上海一使用）
@@ -1893,9 +2168,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybooksRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybooksResponse`
         """
-        return self._list_playbooks_with_http_info(request)
+        http_info = self._list_playbooks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbooks_with_http_info(self, request):
+    def list_playbooks_invoker(self, request):
+        http_info = self._list_playbooks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_playbooks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybooksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1930,9 +2218,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1941,20 +2229,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybooksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook(self, request):
         """查询剧本详情（仅支持华东-上海一使用）
@@ -1967,9 +2251,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookResponse`
         """
-        return self._show_playbook_with_http_info(request)
+        http_info = self._show_playbook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_with_http_info(self, request):
+    def show_playbook_invoker(self, request):
+        http_info = self._show_playbook_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_playbook_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1990,9 +2287,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2001,20 +2298,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_monitors(self, request):
         """剧本运行监控（仅支持华东-上海一使用）
@@ -2027,9 +2320,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookMonitorsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookMonitorsResponse`
         """
-        return self._show_playbook_monitors_with_http_info(request)
+        http_info = self._show_playbook_monitors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_monitors_with_http_info(self, request):
+    def show_playbook_monitors_invoker(self, request):
+        http_info = self._show_playbook_monitors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_playbook_monitors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/monitor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookMonitorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2056,9 +2362,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2067,20 +2373,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/monitor',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookMonitorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_statistics(self, request):
         """剧本数据统计（仅支持华东-上海一使用）
@@ -2093,9 +2395,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookStatisticsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookStatisticsResponse`
         """
-        return self._show_playbook_statistics_with_http_info(request)
+        http_info = self._show_playbook_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_statistics_with_http_info(self, request):
+    def show_playbook_statistics_invoker(self, request):
+        http_info = self._show_playbook_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_playbook_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2114,9 +2429,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2125,20 +2440,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_playbook(self, request):
         """修改剧本（仅支持华东-上海一使用）
@@ -2151,9 +2462,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdatePlaybookRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdatePlaybookResponse`
         """
-        return self._update_playbook_with_http_info(request)
+        http_info = self._update_playbook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_playbook_with_http_info(self, request):
+    def update_playbook_invoker(self, request):
+        http_info = self._update_playbook_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_playbook_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlaybookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2174,11 +2498,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2187,20 +2511,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePlaybookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_action(self, request):
         """创建剧本动作（仅支持华东-上海一使用）
@@ -2213,9 +2533,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookActionResponse`
         """
-        return self._create_playbook_action_with_http_info(request)
+        http_info = self._create_playbook_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_action_with_http_info(self, request):
+    def create_playbook_action_invoker(self, request):
+        http_info = self._create_playbook_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_playbook_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2236,11 +2569,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2249,20 +2582,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_playbook_action(self, request):
         """删除剧本动作（仅支持华东-上海一使用）
@@ -2275,9 +2604,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeletePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeletePlaybookActionResponse`
         """
-        return self._delete_playbook_action_with_http_info(request)
+        http_info = self._delete_playbook_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_playbook_action_with_http_info(self, request):
+    def delete_playbook_action_invoker(self, request):
+        http_info = self._delete_playbook_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_playbook_action_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePlaybookActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2300,9 +2642,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2311,20 +2653,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePlaybookActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_actions(self, request):
         """查询剧本动作（仅支持华东-上海一使用）
@@ -2337,9 +2675,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookActionsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookActionsResponse`
         """
-        return self._list_playbook_actions_with_http_info(request)
+        http_info = self._list_playbook_actions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_actions_with_http_info(self, request):
+    def list_playbook_actions_invoker(self, request):
+        http_info = self._list_playbook_actions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_playbook_actions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookActionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2364,9 +2715,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2375,20 +2726,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookActionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_playbook_action(self, request):
         """更新剧本动作（仅支持华东-上海一使用）
@@ -2401,9 +2748,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdatePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdatePlaybookActionResponse`
         """
-        return self._update_playbook_action_with_http_info(request)
+        http_info = self._update_playbook_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_playbook_action_with_http_info(self, request):
+    def update_playbook_action_invoker(self, request):
+        http_info = self._update_playbook_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_playbook_action_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlaybookActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2426,11 +2786,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2439,20 +2799,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePlaybookActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_approve(self, request):
         """审核剧本（仅支持华东-上海一使用）
@@ -2465,9 +2821,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookApproveRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookApproveResponse`
         """
-        return self._create_playbook_approve_with_http_info(request)
+        http_info = self._create_playbook_approve_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_approve_with_http_info(self, request):
+    def create_playbook_approve_invoker(self, request):
+        http_info = self._create_playbook_approve_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_playbook_approve_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/approval",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookApproveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2488,11 +2857,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2501,20 +2870,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/approval',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookApproveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_approves(self, request):
         """查询剧本审核结果（仅支持华东-上海一使用）
@@ -2527,9 +2892,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookApprovesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookApprovesResponse`
         """
-        return self._list_playbook_approves_with_http_info(request)
+        http_info = self._list_playbook_approves_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_approves_with_http_info(self, request):
+    def list_playbook_approves_invoker(self, request):
+        http_info = self._list_playbook_approves_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_playbook_approves_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/approval",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookApprovesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2552,9 +2930,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2563,20 +2941,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/approval',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookApprovesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_playbook_instance(self, request):
         """操作剧本实例（仅支持华东-上海一使用）
@@ -2589,9 +2963,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ChangePlaybookInstanceRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ChangePlaybookInstanceResponse`
         """
-        return self._change_playbook_instance_with_http_info(request)
+        http_info = self._change_playbook_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_playbook_instance_with_http_info(self, request):
+    def change_playbook_instance_invoker(self, request):
+        http_info = self._change_playbook_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_playbook_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/operation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangePlaybookInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2612,11 +2999,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2625,20 +3012,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/operation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangePlaybookInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_audit_logs(self, request):
         """查询剧本实例审计日志（仅支持华东-上海一使用）
@@ -2651,9 +3034,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookAuditLogsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookAuditLogsResponse`
         """
-        return self._list_playbook_audit_logs_with_http_info(request)
+        http_info = self._list_playbook_audit_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_audit_logs_with_http_info(self, request):
+    def list_playbook_audit_logs_invoker(self, request):
+        http_info = self._list_playbook_audit_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_playbook_audit_logs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/auditlogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookAuditLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2680,11 +3076,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2693,20 +3089,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/auditlogs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookAuditLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_instances(self, request):
         """查询剧本实例列表（仅支持华东-上海一使用）
@@ -2719,9 +3111,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookInstancesRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookInstancesResponse`
         """
-        return self._list_playbook_instances_with_http_info(request)
+        http_info = self._list_playbook_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_instances_with_http_info(self, request):
+    def list_playbook_instances_invoker(self, request):
+        http_info = self._list_playbook_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_playbook_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2762,9 +3167,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2773,20 +3178,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_instance(self, request):
         """查询剧本实例详情（仅支持华东-上海一使用）
@@ -2799,9 +3200,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookInstanceRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookInstanceResponse`
         """
-        return self._show_playbook_instance_with_http_info(request)
+        http_info = self._show_playbook_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_instance_with_http_info(self, request):
+    def show_playbook_instance_invoker(self, request):
+        http_info = self._show_playbook_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_playbook_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2822,9 +3236,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2833,20 +3247,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_topology(self, request):
         """查询剧本拓扑关系（仅支持华东-上海一使用）
@@ -2859,9 +3269,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookTopologyRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookTopologyResponse`
         """
-        return self._show_playbook_topology_with_http_info(request)
+        http_info = self._show_playbook_topology_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_topology_with_http_info(self, request):
+    def show_playbook_topology_invoker(self, request):
+        http_info = self._show_playbook_topology_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_playbook_topology_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/topology",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookTopologyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2882,9 +3305,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2893,20 +3316,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/topology',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookTopologyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_rule(self, request):
         """创建剧本规则（仅支持华东-上海一使用）
@@ -2919,9 +3338,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookRuleResponse`
         """
-        return self._create_playbook_rule_with_http_info(request)
+        http_info = self._create_playbook_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_rule_with_http_info(self, request):
+    def create_playbook_rule_invoker(self, request):
+        http_info = self._create_playbook_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_playbook_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2942,11 +3374,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2955,20 +3387,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_playbook_rule(self, request):
         """删除剧本规则（仅支持华东-上海一使用）
@@ -2981,9 +3409,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeletePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeletePlaybookRuleResponse`
         """
-        return self._delete_playbook_rule_with_http_info(request)
+        http_info = self._delete_playbook_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_playbook_rule_with_http_info(self, request):
+    def delete_playbook_rule_invoker(self, request):
+        http_info = self._delete_playbook_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_playbook_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePlaybookRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3006,9 +3447,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3017,20 +3458,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePlaybookRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_rule(self, request):
         """查询剧本规则详情（仅支持华东-上海一使用）
@@ -3043,9 +3480,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookRuleResponse`
         """
-        return self._show_playbook_rule_with_http_info(request)
+        http_info = self._show_playbook_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_rule_with_http_info(self, request):
+    def show_playbook_rule_invoker(self, request):
+        http_info = self._show_playbook_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_playbook_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3068,9 +3518,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3079,20 +3529,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_playbook_rule(self, request):
         """更新剧本规则（仅支持华东-上海一使用）
@@ -3105,9 +3551,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdatePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdatePlaybookRuleResponse`
         """
-        return self._update_playbook_rule_with_http_info(request)
+        http_info = self._update_playbook_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_playbook_rule_with_http_info(self, request):
+    def update_playbook_rule_invoker(self, request):
+        http_info = self._update_playbook_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_playbook_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlaybookRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3130,11 +3589,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3143,20 +3602,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePlaybookRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_playbook_version(self, request):
         """克隆剧本及版本（仅支持华东-上海一使用）
@@ -3169,9 +3624,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CopyPlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CopyPlaybookVersionResponse`
         """
-        return self._copy_playbook_version_with_http_info(request)
+        http_info = self._copy_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_playbook_version_with_http_info(self, request):
+    def copy_playbook_version_invoker(self, request):
+        http_info = self._copy_playbook_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_playbook_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/clone",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyPlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3192,11 +3660,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3205,20 +3673,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/clone',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyPlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_version(self, request):
         """创建剧本版本（仅支持华东-上海一使用）
@@ -3231,9 +3695,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreatePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreatePlaybookVersionResponse`
         """
-        return self._create_playbook_version_with_http_info(request)
+        http_info = self._create_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_version_with_http_info(self, request):
+    def create_playbook_version_invoker(self, request):
+        http_info = self._create_playbook_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_playbook_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3254,11 +3731,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3267,20 +3744,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_playbook_version(self, request):
         """删除剧本版本（仅支持华东-上海一使用）
@@ -3293,9 +3766,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeletePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeletePlaybookVersionResponse`
         """
-        return self._delete_playbook_version_with_http_info(request)
+        http_info = self._delete_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_playbook_version_with_http_info(self, request):
+    def delete_playbook_version_invoker(self, request):
+        http_info = self._delete_playbook_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_playbook_version_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3316,9 +3802,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3327,20 +3813,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_versions(self, request):
         """查询剧本版本列表（仅支持华东-上海一使用）
@@ -3353,9 +3835,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListPlaybookVersionsRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListPlaybookVersionsResponse`
         """
-        return self._list_playbook_versions_with_http_info(request)
+        http_info = self._list_playbook_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_versions_with_http_info(self, request):
+    def list_playbook_versions_invoker(self, request):
+        http_info = self._list_playbook_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_playbook_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3388,9 +3883,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3399,20 +3894,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_version(self, request):
         """查询剧本版本详情（仅支持华东-上海一使用）
@@ -3425,9 +3916,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ShowPlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ShowPlaybookVersionResponse`
         """
-        return self._show_playbook_version_with_http_info(request)
+        http_info = self._show_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_version_with_http_info(self, request):
+    def show_playbook_version_invoker(self, request):
+        http_info = self._show_playbook_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_playbook_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3448,9 +3952,9 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3459,20 +3963,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_playbook_version(self, request):
         """更新剧本版本（仅支持华东-上海一使用）
@@ -3485,9 +3985,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.UpdatePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksa.v2.UpdatePlaybookVersionResponse`
         """
-        return self._update_playbook_version_with_http_info(request)
+        http_info = self._update_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_playbook_version_with_http_info(self, request):
+    def update_playbook_version_invoker(self, request):
+        http_info = self._update_playbook_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_playbook_version_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3508,11 +4021,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3521,20 +4034,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_dataobject_relation(self, request):
         """创建Dataobject关系
@@ -3547,9 +4056,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.CreateDataobjectRelationRequest`
         :rtype: :class:`huaweicloudsdksa.v2.CreateDataobjectRelationResponse`
         """
-        return self._create_dataobject_relation_with_http_info(request)
+        http_info = self._create_dataobject_relation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_dataobject_relation_with_http_info(self, request):
+    def create_dataobject_relation_invoker(self, request):
+        http_info = self._create_dataobject_relation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_dataobject_relation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataobjectRelationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3574,11 +4096,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3587,20 +4109,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDataobjectRelationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_dataobject_relation(self, request):
         """删除Dataobject关系
@@ -3613,9 +4131,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.DeleteDataobjectRelationRequest`
         :rtype: :class:`huaweicloudsdksa.v2.DeleteDataobjectRelationResponse`
         """
-        return self._delete_dataobject_relation_with_http_info(request)
+        http_info = self._delete_dataobject_relation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_dataobject_relation_with_http_info(self, request):
+    def delete_dataobject_relation_invoker(self, request):
+        http_info = self._delete_dataobject_relation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_dataobject_relation_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDataobjectRelationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3640,11 +4171,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3653,20 +4184,16 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDataobjectRelationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dataobject_relation(self, request):
         """查询Dataobject关系列表
@@ -3679,9 +4206,22 @@ class SaClient(Client):
         :type request: :class:`huaweicloudsdksa.v2.ListDataobjectRelationRequest`
         :rtype: :class:`huaweicloudsdksa.v2.ListDataobjectRelationResponse`
         """
-        return self._list_dataobject_relation_with_http_info(request)
+        http_info = self._list_dataobject_relation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dataobject_relation_with_http_info(self, request):
+    def list_dataobject_relation_invoker(self, request):
+        http_info = self._list_dataobject_relation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dataobject_relation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataobjectRelationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3706,11 +4246,11 @@ class SaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3719,20 +4259,25 @@ class SaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataobjectRelationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

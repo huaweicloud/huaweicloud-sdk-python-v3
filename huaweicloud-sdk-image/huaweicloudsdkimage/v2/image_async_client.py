@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkimage'")
 
 
 class ImageAsyncClient(Client):
@@ -39,9 +44,21 @@ class ImageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunCelebrityRecognitionRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunCelebrityRecognitionResponse`
         """
-        return self._run_celebrity_recognition_with_http_info(request)
+        http_info = self._run_celebrity_recognition_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_celebrity_recognition_with_http_info(self, request):
+    def run_celebrity_recognition_async_invoker(self, request):
+        http_info = self._run_celebrity_recognition_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_celebrity_recognition_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/image/celebrity-recognition",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCelebrityRecognitionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class ImageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class ImageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/image/celebrity-recognition',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCelebrityRecognitionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_image_main_object_detection_async(self, request):
         """主体识别
@@ -96,9 +109,21 @@ class ImageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageMainObjectDetectionRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageMainObjectDetectionResponse`
         """
-        return self._run_image_main_object_detection_with_http_info(request)
+        http_info = self._run_image_main_object_detection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_image_main_object_detection_with_http_info(self, request):
+    def run_image_main_object_detection_async_invoker(self, request):
+        http_info = self._run_image_main_object_detection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_image_main_object_detection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/image/main-object-detection",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunImageMainObjectDetectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +138,11 @@ class ImageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class ImageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/image/main-object-detection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunImageMainObjectDetectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_image_tagging_async(self, request):
         """图像标签
@@ -153,9 +174,21 @@ class ImageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageTaggingRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageTaggingResponse`
         """
-        return self._run_image_tagging_with_http_info(request)
+        http_info = self._run_image_tagging_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_image_tagging_with_http_info(self, request):
+    def run_image_tagging_async_invoker(self, request):
+        http_info = self._run_image_tagging_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_image_tagging_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/image/tagging",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunImageTaggingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -170,11 +203,11 @@ class ImageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class ImageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/image/tagging',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunImageTaggingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_recapture_detect_async(self, request):
         """翻拍识别
@@ -210,9 +239,21 @@ class ImageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunRecaptureDetectRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunRecaptureDetectResponse`
         """
-        return self._run_recapture_detect_with_http_info(request)
+        http_info = self._run_recapture_detect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_recapture_detect_with_http_info(self, request):
+    def run_recapture_detect_async_invoker(self, request):
+        http_info = self._run_recapture_detect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_recapture_detect_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/image/recapture-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunRecaptureDetectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -227,11 +268,11 @@ class ImageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +281,16 @@ class ImageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/image/recapture-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunRecaptureDetectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_image_media_tagging_async(self, request):
         """标签识别
@@ -267,9 +304,21 @@ class ImageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageMediaTaggingRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageMediaTaggingResponse`
         """
-        return self._run_image_media_tagging_with_http_info(request)
+        http_info = self._run_image_media_tagging_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_image_media_tagging_with_http_info(self, request):
+    def run_image_media_tagging_async_invoker(self, request):
+        http_info = self._run_image_media_tagging_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_image_media_tagging_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/image/media-tagging",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunImageMediaTaggingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -284,11 +333,11 @@ class ImageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -297,20 +346,16 @@ class ImageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/image/media-tagging',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunImageMediaTaggingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_image_media_tagging_det_async(self, request):
         """媒资图像标签检测
@@ -324,9 +369,21 @@ class ImageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimage.v2.RunImageMediaTaggingDetRequest`
         :rtype: :class:`huaweicloudsdkimage.v2.RunImageMediaTaggingDetResponse`
         """
-        return self._run_image_media_tagging_det_with_http_info(request)
+        http_info = self._run_image_media_tagging_det_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_image_media_tagging_det_with_http_info(self, request):
+    def run_image_media_tagging_det_async_invoker(self, request):
+        http_info = self._run_image_media_tagging_det_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_image_media_tagging_det_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/image/media-tagging-det",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunImageMediaTaggingDetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +398,11 @@ class ImageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +411,26 @@ class ImageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/image/media-tagging-det',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunImageMediaTaggingDetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -406,4 +469,4 @@ class ImageAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

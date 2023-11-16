@@ -29,7 +29,7 @@ class BatchDeleteServerReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        :param items: 批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
         :type items: list[str]
         """
         
@@ -44,7 +44,7 @@ class BatchDeleteServerReq:
     def items(self):
         """Gets the items of this BatchDeleteServerReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
         :return: The items of this BatchDeleteServerReq.
         :rtype: list[str]
@@ -55,7 +55,7 @@ class BatchDeleteServerReq:
     def items(self, items):
         """Sets the items of this BatchDeleteServerReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
         :param items: The items of this BatchDeleteServerReq.
         :type items: list[str]

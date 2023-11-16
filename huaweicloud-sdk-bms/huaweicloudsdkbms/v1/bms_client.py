@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkbms'")
 
 
 class BmsClient(Client):
@@ -37,9 +42,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.AddServerNicsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.AddServerNicsResponse`
         """
-        return self._add_server_nics_with_http_info(request)
+        http_info = self._add_server_nics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_server_nics_with_http_info(self, request):
+    def add_server_nics_invoker(self, request):
+        http_info = self._add_server_nics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_server_nics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/nics",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddServerNicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +74,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +87,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/nics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddServerNicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_baremetal_server_volume(self, request):
         """裸金属服务器挂载云硬盘
@@ -95,9 +109,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.AttachBaremetalServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.AttachBaremetalServerVolumeResponse`
         """
-        return self._attach_baremetal_server_volume_with_http_info(request)
+        http_info = self._attach_baremetal_server_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_baremetal_server_volume_with_http_info(self, request):
+    def attach_baremetal_server_volume_invoker(self, request):
+        http_info = self._attach_baremetal_server_volume_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_baremetal_server_volume_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/attachvolume",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachBaremetalServerVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -114,11 +141,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -127,20 +154,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/attachvolume',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachBaremetalServerVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_baremetal_server_tags(self, request):
         """批量添加裸金属服务器标签
@@ -153,9 +176,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchCreateBaremetalServerTagsResponse`
         """
-        return self._batch_create_baremetal_server_tags_with_http_info(request)
+        http_info = self._batch_create_baremetal_server_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_baremetal_server_tags_with_http_info(self, request):
+    def batch_create_baremetal_server_tags_invoker(self, request):
+        http_info = self._batch_create_baremetal_server_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_baremetal_server_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateBaremetalServerTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,11 +208,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -185,20 +221,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateBaremetalServerTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_baremetal_server_tags(self, request):
         """批量删除l裸金属服务器标签
@@ -211,9 +243,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchDeleteBaremetalServerTagsResponse`
         """
-        return self._batch_delete_baremetal_server_tags_with_http_info(request)
+        http_info = self._batch_delete_baremetal_server_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_baremetal_server_tags_with_http_info(self, request):
+    def batch_delete_baremetal_server_tags_invoker(self, request):
+        http_info = self._batch_delete_baremetal_server_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_baremetal_server_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteBaremetalServerTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -230,11 +275,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -243,20 +288,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteBaremetalServerTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_reboot_baremetal_servers(self, request):
         """重启裸金属服务器
@@ -269,9 +310,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchRebootBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchRebootBaremetalServersResponse`
         """
-        return self._batch_reboot_baremetal_servers_with_http_info(request)
+        http_info = self._batch_reboot_baremetal_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_reboot_baremetal_servers_with_http_info(self, request):
+    def batch_reboot_baremetal_servers_invoker(self, request):
+        http_info = self._batch_reboot_baremetal_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_reboot_baremetal_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRebootBaremetalServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -286,11 +340,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -299,20 +353,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRebootBaremetalServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_start_baremetal_servers(self, request):
         """启动裸金属服务器
@@ -325,9 +375,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchStartBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchStartBaremetalServersResponse`
         """
-        return self._batch_start_baremetal_servers_with_http_info(request)
+        http_info = self._batch_start_baremetal_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_start_baremetal_servers_with_http_info(self, request):
+    def batch_start_baremetal_servers_invoker(self, request):
+        http_info = self._batch_start_baremetal_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_start_baremetal_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStartBaremetalServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -342,11 +405,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -355,20 +418,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStartBaremetalServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_stop_baremetal_servers(self, request):
         """关闭裸金属服务器
@@ -381,9 +440,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.BatchStopBaremetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.BatchStopBaremetalServersResponse`
         """
-        return self._batch_stop_baremetal_servers_with_http_info(request)
+        http_info = self._batch_stop_baremetal_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_stop_baremetal_servers_with_http_info(self, request):
+    def batch_stop_baremetal_servers_invoker(self, request):
+        http_info = self._batch_stop_baremetal_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_stop_baremetal_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStopBaremetalServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -398,11 +470,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -411,20 +483,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStopBaremetalServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_baremetal_server_name(self, request):
         """修改裸金属服务器名称
@@ -437,9 +505,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerNameRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerNameResponse`
         """
-        return self._change_baremetal_server_name_with_http_info(request)
+        http_info = self._change_baremetal_server_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_baremetal_server_name_with_http_info(self, request):
+    def change_baremetal_server_name_invoker(self, request):
+        http_info = self._change_baremetal_server_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_baremetal_server_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeBaremetalServerNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -456,11 +537,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -469,20 +550,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeBaremetalServerNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_baremetal_server_os(self, request):
         """change_baremetal_server_os
@@ -495,9 +572,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerOsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ChangeBaremetalServerOsResponse`
         """
-        return self._change_baremetal_server_os_with_http_info(request)
+        http_info = self._change_baremetal_server_os_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_baremetal_server_os_with_http_info(self, request):
+    def change_baremetal_server_os_invoker(self, request):
+        http_info = self._change_baremetal_server_os_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_baremetal_server_os_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/changeos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeBaremetalServerOsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -514,11 +604,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -527,20 +617,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/changeos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeBaremetalServerOsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_bare_metal_servers(self, request):
         """创建裸金属服务器
@@ -553,9 +639,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.CreateBareMetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.CreateBareMetalServersResponse`
         """
-        return self._create_bare_metal_servers_with_http_info(request)
+        http_info = self._create_bare_metal_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_bare_metal_servers_with_http_info(self, request):
+    def create_bare_metal_servers_invoker(self, request):
+        http_info = self._create_bare_metal_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_bare_metal_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBareMetalServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -570,11 +669,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -583,20 +682,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBareMetalServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_server_nics(self, request):
         """裸金属服务器解绑弹性网卡
@@ -608,9 +703,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.DeleteServerNicsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteServerNicsResponse`
         """
-        return self._delete_server_nics_with_http_info(request)
+        http_info = self._delete_server_nics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_server_nics_with_http_info(self, request):
+    def delete_server_nics_invoker(self, request):
+        http_info = self._delete_server_nics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_nics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/nics/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerNicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -627,11 +735,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -640,20 +748,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/nics/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServerNicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_windows_bare_metal_server_password(self, request):
         """Windows裸金属服务器清除密码
@@ -666,9 +770,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.DeleteWindowsBareMetalServerPasswordRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DeleteWindowsBareMetalServerPasswordResponse`
         """
-        return self._delete_windows_bare_metal_server_password_with_http_info(request)
+        http_info = self._delete_windows_bare_metal_server_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_windows_bare_metal_server_password_with_http_info(self, request):
+    def delete_windows_bare_metal_server_password_invoker(self, request):
+        http_info = self._delete_windows_bare_metal_server_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_windows_bare_metal_server_password_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/os-server-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWindowsBareMetalServerPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -685,9 +802,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -696,20 +813,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-server-password',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWindowsBareMetalServerPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_baremetal_server_volume(self, request):
         """裸金属服务器卸载云磁盘
@@ -722,9 +835,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.DetachBaremetalServerVolumeRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.DetachBaremetalServerVolumeResponse`
         """
-        return self._detach_baremetal_server_volume_with_http_info(request)
+        http_info = self._detach_baremetal_server_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_baremetal_server_volume_with_http_info(self, request):
+    def detach_baremetal_server_volume_invoker(self, request):
+        http_info = self._detach_baremetal_server_volume_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_baremetal_server_volume_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/detachvolume/{attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachBaremetalServerVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -743,9 +869,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -754,20 +880,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/detachvolume/{attachment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachBaremetalServerVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bare_metal_server_details(self, request):
         """查询裸金属服务器详情
@@ -780,9 +902,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ListBareMetalServerDetailsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBareMetalServerDetailsResponse`
         """
-        return self._list_bare_metal_server_details_with_http_info(request)
+        http_info = self._list_bare_metal_server_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bare_metal_server_details_with_http_info(self, request):
+    def list_bare_metal_server_details_invoker(self, request):
+        http_info = self._list_bare_metal_server_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bare_metal_server_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBareMetalServerDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -799,9 +934,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -810,20 +945,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBareMetalServerDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bare_metal_servers(self, request):
         """查询裸金属服务器详情列表
@@ -836,9 +967,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ListBareMetalServersRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBareMetalServersResponse`
         """
-        return self._list_bare_metal_servers_with_http_info(request)
+        http_info = self._list_bare_metal_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bare_metal_servers_with_http_info(self, request):
+    def list_bare_metal_servers_invoker(self, request):
+        http_info = self._list_bare_metal_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bare_metal_servers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBareMetalServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -871,9 +1015,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -882,20 +1026,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBareMetalServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_baremetal_flavor_detail_extends(self, request):
         """查询规格详情和规格扩展信息列表
@@ -908,9 +1048,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ListBaremetalFlavorDetailExtendsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ListBaremetalFlavorDetailExtendsResponse`
         """
-        return self._list_baremetal_flavor_detail_extends_with_http_info(request)
+        http_info = self._list_baremetal_flavor_detail_extends_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_baremetal_flavor_detail_extends_with_http_info(self, request):
+    def list_baremetal_flavor_detail_extends_invoker(self, request):
+        http_info = self._list_baremetal_flavor_detail_extends_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_baremetal_flavor_detail_extends_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBaremetalFlavorDetailExtendsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -927,9 +1080,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -938,20 +1091,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBaremetalFlavorDetailExtendsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reinstall_baremetal_server_os(self, request):
         """重装裸金属服务器操作系统
@@ -964,9 +1113,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ReinstallBaremetalServerOsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ReinstallBaremetalServerOsResponse`
         """
-        return self._reinstall_baremetal_server_os_with_http_info(request)
+        http_info = self._reinstall_baremetal_server_os_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reinstall_baremetal_server_os_with_http_info(self, request):
+    def reinstall_baremetal_server_os_invoker(self, request):
+        http_info = self._reinstall_baremetal_server_os_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reinstall_baremetal_server_os_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/reinstallos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReinstallBaremetalServerOsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -983,11 +1145,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -996,20 +1158,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/reinstallos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReinstallBaremetalServerOsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_pwd_one_click(self, request):
         """一键重置裸金属服务器密码
@@ -1022,9 +1180,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ResetPwdOneClickRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ResetPwdOneClickResponse`
         """
-        return self._reset_pwd_one_click_with_http_info(request)
+        http_info = self._reset_pwd_one_click_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_pwd_one_click_with_http_info(self, request):
+    def reset_pwd_one_click_invoker(self, request):
+        http_info = self._reset_pwd_one_click_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_pwd_one_click_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/os-reset-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPwdOneClickResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1041,11 +1212,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1054,20 +1225,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-reset-password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPwdOneClickResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_baremetal_server_interface_attachments(self, request):
         """查询裸金属服务器网卡信息
@@ -1080,9 +1247,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerInterfaceAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerInterfaceAttachmentsResponse`
         """
-        return self._show_baremetal_server_interface_attachments_with_http_info(request)
+        http_info = self._show_baremetal_server_interface_attachments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_baremetal_server_interface_attachments_with_http_info(self, request):
+    def show_baremetal_server_interface_attachments_invoker(self, request):
+        http_info = self._show_baremetal_server_interface_attachments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_baremetal_server_interface_attachments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/os-interface",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBaremetalServerInterfaceAttachmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1099,9 +1279,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1110,20 +1290,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-interface',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBaremetalServerInterfaceAttachmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_baremetal_server_tags(self, request):
         """查询裸金属服务器标签
@@ -1136,9 +1312,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerTagsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerTagsResponse`
         """
-        return self._show_baremetal_server_tags_with_http_info(request)
+        http_info = self._show_baremetal_server_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_baremetal_server_tags_with_http_info(self, request):
+    def show_baremetal_server_tags_invoker(self, request):
+        http_info = self._show_baremetal_server_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_baremetal_server_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBaremetalServerTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1155,9 +1344,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1166,20 +1355,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBaremetalServerTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_baremetal_server_volume_info(self, request):
         """查询裸金属服务器挂载的云硬盘信息
@@ -1192,9 +1377,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerVolumeInfoRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowBaremetalServerVolumeInfoResponse`
         """
-        return self._show_baremetal_server_volume_info_with_http_info(request)
+        http_info = self._show_baremetal_server_volume_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_baremetal_server_volume_info_with_http_info(self, request):
+    def show_baremetal_server_volume_info_invoker(self, request):
+        http_info = self._show_baremetal_server_volume_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_baremetal_server_volume_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/os-volume_attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBaremetalServerVolumeInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1211,9 +1409,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1222,20 +1420,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-volume_attachments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBaremetalServerVolumeInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_reset_pwd(self, request):
         """查询是否支持一键重置密码
@@ -1248,9 +1442,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowResetPwdRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowResetPwdResponse`
         """
-        return self._show_reset_pwd_with_http_info(request)
+        http_info = self._show_reset_pwd_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_reset_pwd_with_http_info(self, request):
+    def show_reset_pwd_invoker(self, request):
+        http_info = self._show_reset_pwd_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_reset_pwd_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/os-resetpwd-flag",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResetPwdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1267,9 +1474,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1278,20 +1485,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-resetpwd-flag',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResetPwdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server_remote_console(self, request):
         """获取裸金属服务器远程登录地址
@@ -1303,9 +1506,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowServerRemoteConsoleRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowServerRemoteConsoleResponse`
         """
-        return self._show_server_remote_console_with_http_info(request)
+        http_info = self._show_server_remote_console_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_remote_console_with_http_info(self, request):
+    def show_server_remote_console_invoker(self, request):
+        http_info = self._show_server_remote_console_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_remote_console_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/remote_console",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerRemoteConsoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1322,11 +1538,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1335,20 +1551,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/remote_console',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerRemoteConsoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tenant_quota(self, request):
         """查询租户配额
@@ -1361,9 +1573,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowTenantQuotaRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowTenantQuotaResponse`
         """
-        return self._show_tenant_quota_with_http_info(request)
+        http_info = self._show_tenant_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tenant_quota_with_http_info(self, request):
+    def show_tenant_quota_invoker(self, request):
+        http_info = self._show_tenant_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tenant_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/limits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTenantQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1378,9 +1603,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1389,20 +1614,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/limits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTenantQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_windows_baremetal_server_pwd(self, request):
         """Windows裸金属服务器获取密码
@@ -1415,9 +1636,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowWindowsBaremetalServerPwdRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowWindowsBaremetalServerPwdResponse`
         """
-        return self._show_windows_baremetal_server_pwd_with_http_info(request)
+        http_info = self._show_windows_baremetal_server_pwd_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_windows_baremetal_server_pwd_with_http_info(self, request):
+    def show_windows_baremetal_server_pwd_invoker(self, request):
+        http_info = self._show_windows_baremetal_server_pwd_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_windows_baremetal_server_pwd_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/os-server-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWindowsBaremetalServerPwdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1434,9 +1668,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1445,20 +1679,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-server-password',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWindowsBaremetalServerPwdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_baremetal_server_interface_attachments(self, request):
         """修改裸金属服务器弹性网卡的属性
@@ -1470,9 +1700,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerInterfaceAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerInterfaceAttachmentsResponse`
         """
-        return self._update_baremetal_server_interface_attachments_with_http_info(request)
+        http_info = self._update_baremetal_server_interface_attachments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_baremetal_server_interface_attachments_with_http_info(self, request):
+    def update_baremetal_server_interface_attachments_invoker(self, request):
+        http_info = self._update_baremetal_server_interface_attachments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_baremetal_server_interface_attachments_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/os-interface/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBaremetalServerInterfaceAttachmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1491,11 +1734,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1504,20 +1747,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/os-interface/{port_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBaremetalServerInterfaceAttachmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_baremetal_server_metadata(self, request):
         """更新裸金属服务器元数据
@@ -1530,9 +1769,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.UpdateBaremetalServerMetadataResponse`
         """
-        return self._update_baremetal_server_metadata_with_http_info(request)
+        http_info = self._update_baremetal_server_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_baremetal_server_metadata_with_http_info(self, request):
+    def update_baremetal_server_metadata_invoker(self, request):
+        http_info = self._update_baremetal_server_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_baremetal_server_metadata_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/baremetalservers/{server_id}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBaremetalServerMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1549,11 +1801,11 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1562,20 +1814,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/baremetalservers/{server_id}/metadata',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBaremetalServerMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_specified_version(self, request):
         """查询指定API版本信息
@@ -1588,9 +1836,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowSpecifiedVersionRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowSpecifiedVersionResponse`
         """
-        return self._show_specified_version_with_http_info(request)
+        http_info = self._show_specified_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_specified_version_with_http_info(self, request):
+    def show_specified_version_invoker(self, request):
+        http_info = self._show_specified_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_specified_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{api_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSpecifiedVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1607,9 +1868,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1618,20 +1879,16 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{api_version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSpecifiedVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_infos(self, request):
         """查询Job状态
@@ -1644,9 +1901,22 @@ class BmsClient(Client):
         :type request: :class:`huaweicloudsdkbms.v1.ShowJobInfosRequest`
         :rtype: :class:`huaweicloudsdkbms.v1.ShowJobInfosResponse`
         """
-        return self._show_job_infos_with_http_info(request)
+        http_info = self._show_job_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_infos_with_http_info(self, request):
+    def show_job_infos_invoker(self, request):
+        http_info = self._show_job_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1663,9 +1933,9 @@ class BmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1674,20 +1944,25 @@ class BmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

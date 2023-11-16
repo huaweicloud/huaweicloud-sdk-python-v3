@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdli'")
 
 
 class DliAsyncClient(Client):
@@ -39,9 +44,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateJobTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateJobTemplatesResponse`
         """
-        return self._create_job_templates_with_http_info(request)
+        http_info = self._create_job_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_job_templates_with_http_info(self, request):
+    def create_job_templates_async_invoker(self, request):
+        http_info = self._create_job_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_job_templates_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateJobTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateJobTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_sql_templates_async(self, request):
         """存储指定SQL语句
@@ -96,9 +109,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateSqlTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlTemplatesResponse`
         """
-        return self._create_sql_templates_with_http_info(request)
+        http_info = self._create_sql_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sql_templates_with_http_info(self, request):
+    def create_sql_templates_async_invoker(self, request):
+        http_info = self._create_sql_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sql_templates_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/sqls",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +138,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/sqls',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSqlTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_sql_templates_async(self, request):
         """批量删除SQL模板
@@ -153,9 +174,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteSqlTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteSqlTemplatesResponse`
         """
-        return self._delete_sql_templates_with_http_info(request)
+        http_info = self._delete_sql_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_sql_templates_with_http_info(self, request):
+    def delete_sql_templates_async_invoker(self, request):
+        http_info = self._delete_sql_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_sql_templates_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/sqls-deletion",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSqlTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -170,11 +203,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/sqls-deletion',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSqlTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_job_templates_async(self, request):
         """查询作业模板列表
@@ -210,9 +239,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListJobTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListJobTemplatesResponse`
         """
-        return self._list_job_templates_with_http_info(request)
+        http_info = self._list_job_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_job_templates_with_http_info(self, request):
+    def list_job_templates_async_invoker(self, request):
+        http_info = self._list_job_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_job_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,9 +276,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +287,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_template_async(self, request):
         """获取作业模板
@@ -273,9 +310,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowJobTemplateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowJobTemplateResponse`
         """
-        return self._show_job_template_with_http_info(request)
+        http_info = self._show_job_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_template_with_http_info(self, request):
+    def show_job_template_async_invoker(self, request):
+        http_info = self._show_job_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -292,9 +341,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -303,20 +352,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/templates/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_sample_templates_async(self, request):
         """查询所有SQL样例模板
@@ -330,9 +375,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlSampleTemplatesResponse`
         """
-        return self._show_sql_sample_templates_with_http_info(request)
+        http_info = self._show_sql_sample_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_sample_templates_with_http_info(self, request):
+    def show_sql_sample_templates_async_invoker(self, request):
+        http_info = self._show_sql_sample_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_sample_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/sqls/sample",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlSampleTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,9 +404,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -358,20 +415,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/sqls/sample',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlSampleTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_templates_async(self, request):
         """查看所有SQL模板
@@ -385,9 +438,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlTemplatesResponse`
         """
-        return self._show_sql_templates_with_http_info(request)
+        http_info = self._show_sql_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_templates_with_http_info(self, request):
+    def show_sql_templates_async_invoker(self, request):
+        http_info = self._show_sql_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/sqls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -404,9 +469,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -415,20 +480,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/sqls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_job_templates_async(self, request):
         """修改作业模板
@@ -442,9 +503,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateJobTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateJobTemplatesResponse`
         """
-        return self._update_job_templates_with_http_info(request)
+        http_info = self._update_job_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_job_templates_with_http_info(self, request):
+    def update_job_templates_async_invoker(self, request):
+        http_info = self._update_job_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_job_templates_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,11 +534,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +547,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/templates/{template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateJobTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_sql_templates_async(self, request):
         """更新SQL模板
@@ -501,9 +570,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateSqlTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateSqlTemplatesResponse`
         """
-        return self._update_sql_templates_with_http_info(request)
+        http_info = self._update_sql_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_sql_templates_with_http_info(self, request):
+    def update_sql_templates_async_invoker(self, request):
+        http_info = self._update_sql_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sql_templates_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/sqls/{sql_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSqlTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -520,11 +601,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -533,20 +614,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/sqls/{sql_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSqlTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_connection_queue_async(self, request):
         """绑定队列
@@ -560,9 +637,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.AssociateConnectionQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.AssociateConnectionQueueResponse`
         """
-        return self._associate_connection_queue_with_http_info(request)
+        http_info = self._associate_connection_queue_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_connection_queue_with_http_info(self, request):
+    def associate_connection_queue_async_invoker(self, request):
+        http_info = self._associate_connection_queue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_connection_queue_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/associate-queue",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateConnectionQueueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -579,11 +668,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -592,20 +681,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/associate-queue',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateConnectionQueueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_queue_to_elastic_resource_pool_async(self, request):
         """关联队列到弹性资源池
@@ -619,9 +704,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.AssociateQueueToElasticResourcePoolResponse`
         """
-        return self._associate_queue_to_elastic_resource_pool_with_http_info(request)
+        http_info = self._associate_queue_to_elastic_resource_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_queue_to_elastic_resource_pool_with_http_info(self, request):
+    def associate_queue_to_elastic_resource_pool_async_invoker(self, request):
+        http_info = self._associate_queue_to_elastic_resource_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_queue_to_elastic_resource_pool_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateQueueToElasticResourcePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -638,11 +735,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -651,20 +748,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}/queues',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateQueueToElasticResourcePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def authorize_resource_async(self, request):
         """数据赋权（用户、项目）
@@ -678,9 +771,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.AuthorizeResourceRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.AuthorizeResourceResponse`
         """
-        return self._authorize_resource_with_http_info(request)
+        http_info = self._authorize_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _authorize_resource_with_http_info(self, request):
+    def authorize_resource_async_invoker(self, request):
+        http_info = self._authorize_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _authorize_resource_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "AuthorizeResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -695,11 +800,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -708,20 +813,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/authorization',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AuthorizeResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_queue_plans_async(self, request):
         """批量删除队列定时扩缩容计划
@@ -735,9 +836,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteQueuePlansResponse`
         """
-        return self._batch_delete_queue_plans_with_http_info(request)
+        http_info = self._batch_delete_queue_plans_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_queue_plans_with_http_info(self, request):
+    def batch_delete_queue_plans_async_invoker(self, request):
+        http_info = self._batch_delete_queue_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_queue_plans_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteQueuePlansResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -754,11 +867,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -767,20 +880,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/queues/{queue_name}/plans/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteQueuePlansResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_authorization_async(self, request):
         """数据赋权（用户）
@@ -796,9 +905,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeAuthorizationResponse`
         """
-        return self._change_authorization_with_http_info(request)
+        http_info = self._change_authorization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_authorization_with_http_info(self, request):
+    def change_authorization_async_invoker(self, request):
+        http_info = self._change_authorization_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_authorization_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/user-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeAuthorizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -813,11 +934,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -826,20 +947,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/user-authorization',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeAuthorizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_queue_plan_async(self, request):
         """修改队列定时扩缩容计划
@@ -853,9 +970,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeQueuePlanResponse`
         """
-        return self._change_queue_plan_with_http_info(request)
+        http_info = self._change_queue_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_queue_plan_with_http_info(self, request):
+    def change_queue_plan_async_invoker(self, request):
+        http_info = self._change_queue_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_queue_plan_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeQueuePlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -874,11 +1003,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -887,20 +1016,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/queues/{queue_name}/plans/{plan_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeQueuePlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_connection_async(self, request):
         """创建地址连通性请求
@@ -914,9 +1039,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CheckConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CheckConnectionResponse`
         """
-        return self._check_connection_with_http_info(request)
+        http_info = self._check_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_connection_with_http_info(self, request):
+    def check_connection_async_invoker(self, request):
+        http_info = self._check_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}/connection-test",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -933,11 +1070,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -946,20 +1083,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues/{queue_name}/connection-test',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_auth_info_async(self, request):
         """创建跨源认证
@@ -973,9 +1106,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateAuthInfoResponse`
         """
-        return self._create_auth_info_with_http_info(request)
+        http_info = self._create_auth_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_auth_info_with_http_info(self, request):
+    def create_auth_info_async_invoker(self, request):
+        http_info = self._create_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_auth_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -990,11 +1135,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1003,20 +1148,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/auth-infos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAuthInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_datasource_connection_async(self, request):
         """创建经典型跨源连接
@@ -1033,9 +1174,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDatasourceConnectionResponse`
         """
-        return self._create_datasource_connection_with_http_info(request)
+        http_info = self._create_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_datasource_connection_with_http_info(self, request):
+    def create_datasource_connection_async_invoker(self, request):
+        http_info = self._create_datasource_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_datasource_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatasourceConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1050,11 +1203,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1063,20 +1216,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource-connection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatasourceConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_dli_agency_async(self, request):
         """创建DLI委托
@@ -1090,9 +1239,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDliAgencyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDliAgencyResponse`
         """
-        return self._create_dli_agency_with_http_info(request)
+        http_info = self._create_dli_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_dli_agency_with_http_info(self, request):
+    def create_dli_agency_async_invoker(self, request):
+        http_info = self._create_dli_agency_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dli_agency_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDliAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1107,11 +1268,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1120,20 +1281,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/agency',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDliAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_elastic_resource_pool_async(self, request):
         """创建弹性资源池
@@ -1147,9 +1304,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateElasticResourcePoolResponse`
         """
-        return self._create_elastic_resource_pool_with_http_info(request)
+        http_info = self._create_elastic_resource_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_elastic_resource_pool_with_http_info(self, request):
+    def create_elastic_resource_pool_async_invoker(self, request):
+        http_info = self._create_elastic_resource_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_elastic_resource_pool_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elastic-resource-pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateElasticResourcePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1164,11 +1333,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1177,20 +1346,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elastic-resource-pools',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateElasticResourcePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_enhanced_connection_async(self, request):
         """创建增强型跨源连接
@@ -1204,9 +1369,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionResponse`
         """
-        return self._create_enhanced_connection_with_http_info(request)
+        http_info = self._create_enhanced_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_enhanced_connection_with_http_info(self, request):
+    def create_enhanced_connection_async_invoker(self, request):
+        http_info = self._create_enhanced_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_enhanced_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnhancedConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1221,11 +1398,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1234,20 +1411,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnhancedConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_enhanced_connection_routes_async(self, request):
         """创建路由
@@ -1261,9 +1434,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateEnhancedConnectionRoutesResponse`
         """
-        return self._create_enhanced_connection_routes_with_http_info(request)
+        http_info = self._create_enhanced_connection_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_enhanced_connection_routes_with_http_info(self, request):
+    def create_enhanced_connection_routes_async_invoker(self, request):
+        http_info = self._create_enhanced_connection_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_enhanced_connection_routes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnhancedConnectionRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1280,11 +1465,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1293,20 +1478,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/routes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnhancedConnectionRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_global_value_async(self, request):
         """创建DLI全局变量
@@ -1320,9 +1501,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateGlobalValueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateGlobalValueResponse`
         """
-        return self._create_global_value_with_http_info(request)
+        http_info = self._create_global_value_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_global_value_with_http_info(self, request):
+    def create_global_value_async_invoker(self, request):
+        http_info = self._create_global_value_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_global_value_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGlobalValueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1337,11 +1530,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1350,20 +1543,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/variables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGlobalValueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_queue_async(self, request):
         """创建队列
@@ -1377,9 +1566,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateQueueResponse`
         """
-        return self._create_queue_with_http_info(request)
+        http_info = self._create_queue_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_queue_with_http_info(self, request):
+    def create_queue_async_invoker(self, request):
+        http_info = self._create_queue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_queue_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQueueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1394,11 +1595,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1407,20 +1608,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateQueueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_queue_plan_async(self, request):
         """创建队列定时扩缩容计划
@@ -1434,9 +1631,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePlanResponse`
         """
-        return self._create_queue_plan_with_http_info(request)
+        http_info = self._create_queue_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_queue_plan_with_http_info(self, request):
+    def create_queue_plan_async_invoker(self, request):
+        http_info = self._create_queue_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_queue_plan_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQueuePlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1453,11 +1662,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1466,20 +1675,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/queues/{queue_name}/plans',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateQueuePlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_queue_property_async(self, request):
         """新增队列属性
@@ -1493,9 +1698,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateQueuePropertyResponse`
         """
-        return self._create_queue_property_with_http_info(request)
+        http_info = self._create_queue_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_queue_property_with_http_info(self, request):
+    def create_queue_property_async_invoker(self, request):
+        http_info = self._create_queue_property_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_queue_property_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/queues/{queue_name}/properties",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQueuePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1512,11 +1729,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1525,20 +1742,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/queues/{queue_name}/properties',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateQueuePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_auth_info_async(self, request):
         """删除跨源认证
@@ -1552,9 +1765,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteAuthInfoResponse`
         """
-        return self._delete_auth_info_with_http_info(request)
+        http_info = self._delete_auth_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_auth_info_with_http_info(self, request):
+    def delete_auth_info_async_invoker(self, request):
+        http_info = self._delete_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_auth_info_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/datasource/auth-infos/{auth_info_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAuthInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1571,9 +1796,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1582,20 +1807,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/auth-infos/{auth_info_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAuthInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_datasource_connection_async(self, request):
         """删除经典型跨源连接
@@ -1611,9 +1832,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatasourceConnectionResponse`
         """
-        return self._delete_datasource_connection_with_http_info(request)
+        http_info = self._delete_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_datasource_connection_with_http_info(self, request):
+    def delete_datasource_connection_async_invoker(self, request):
+        http_info = self._delete_datasource_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_datasource_connection_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/datasource-connection/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatasourceConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1630,9 +1863,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1641,20 +1874,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource-connection/{connection_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatasourceConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_elastic_resource_pool_async(self, request):
         """删除弹性资源池
@@ -1668,9 +1897,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteElasticResourcePoolRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteElasticResourcePoolResponse`
         """
-        return self._delete_elastic_resource_pool_with_http_info(request)
+        http_info = self._delete_elastic_resource_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_elastic_resource_pool_with_http_info(self, request):
+    def delete_elastic_resource_pool_async_invoker(self, request):
+        http_info = self._delete_elastic_resource_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_elastic_resource_pool_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteElasticResourcePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1687,9 +1928,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1698,20 +1939,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteElasticResourcePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_enhanced_connection_async(self, request):
         """删除增强型跨源连接
@@ -1725,9 +1962,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionResponse`
         """
-        return self._delete_enhanced_connection_with_http_info(request)
+        http_info = self._delete_enhanced_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_enhanced_connection_with_http_info(self, request):
+    def delete_enhanced_connection_async_invoker(self, request):
+        http_info = self._delete_enhanced_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_enhanced_connection_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnhancedConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1744,9 +1993,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1755,20 +2004,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnhancedConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_enhanced_connection_routes_async(self, request):
         """删除路由
@@ -1782,9 +2027,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteEnhancedConnectionRoutesResponse`
         """
-        return self._delete_enhanced_connection_routes_with_http_info(request)
+        http_info = self._delete_enhanced_connection_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_enhanced_connection_routes_with_http_info(self, request):
+    def delete_enhanced_connection_routes_async_invoker(self, request):
+        http_info = self._delete_enhanced_connection_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_enhanced_connection_routes_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/routes/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnhancedConnectionRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1803,9 +2060,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1814,20 +2071,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/routes/{name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnhancedConnectionRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_global_value_async(self, request):
         """删除DLI全局变量
@@ -1841,9 +2094,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteGlobalValueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteGlobalValueResponse`
         """
-        return self._delete_global_value_with_http_info(request)
+        http_info = self._delete_global_value_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_global_value_with_http_info(self, request):
+    def delete_global_value_async_invoker(self, request):
+        http_info = self._delete_global_value_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_global_value_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/variables/{var_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGlobalValueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1860,9 +2125,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1871,20 +2136,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/variables/{var_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGlobalValueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_queue_async(self, request):
         """删除队列
@@ -1900,9 +2161,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueueResponse`
         """
-        return self._delete_queue_with_http_info(request)
+        http_info = self._delete_queue_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_queue_with_http_info(self, request):
+    def delete_queue_async_invoker(self, request):
+        http_info = self._delete_queue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_queue_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteQueueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1919,9 +2192,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1930,20 +2203,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues/{queue_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteQueueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_queue_plan_async(self, request):
         """单个删除队列定时扩缩容计划
@@ -1957,9 +2226,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePlanResponse`
         """
-        return self._delete_queue_plan_with_http_info(request)
+        http_info = self._delete_queue_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_queue_plan_with_http_info(self, request):
+    def delete_queue_plan_async_invoker(self, request):
+        http_info = self._delete_queue_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_queue_plan_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteQueuePlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1978,9 +2259,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1989,20 +2270,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/queues/{queue_name}/plans/{plan_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteQueuePlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_queue_property_async(self, request):
         """删除队列的属性
@@ -2016,9 +2293,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteQueuePropertyResponse`
         """
-        return self._delete_queue_property_with_http_info(request)
+        http_info = self._delete_queue_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_queue_property_with_http_info(self, request):
+    def delete_queue_property_async_invoker(self, request):
+        http_info = self._delete_queue_property_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_queue_property_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/queues/{queue_name}/properties",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteQueuePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2035,11 +2324,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2048,20 +2337,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/queues/{queue_name}/properties',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteQueuePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_async(self, request):
         """删除组内资源包
@@ -2075,9 +2360,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteResourceResponse`
         """
-        return self._delete_resource_with_http_info(request)
+        http_info = self._delete_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_with_http_info(self, request):
+    def delete_resource_async_invoker(self, request):
+        http_info = self._delete_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/resources/{resource_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2096,9 +2393,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2107,20 +2404,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/resources/{resource_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_connection_queue_async(self, request):
         """解绑队列
@@ -2134,9 +2427,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DisassociateConnectionQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DisassociateConnectionQueueResponse`
         """
-        return self._disassociate_connection_queue_with_http_info(request)
+        http_info = self._disassociate_connection_queue_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_connection_queue_with_http_info(self, request):
+    def disassociate_connection_queue_async_invoker(self, request):
+        http_info = self._disassociate_connection_queue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_connection_queue_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/disassociate-queue",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateConnectionQueueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2153,11 +2458,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2166,20 +2471,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/disassociate-queue',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateConnectionQueueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_auth_info_async(self, request):
         """获取跨源认证列表
@@ -2193,9 +2494,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListAuthInfoResponse`
         """
-        return self._list_auth_info_with_http_info(request)
+        http_info = self._list_auth_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_auth_info_with_http_info(self, request):
+    def list_auth_info_async_invoker(self, request):
+        http_info = self._list_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_auth_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuthInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2216,9 +2529,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2227,20 +2540,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/auth-infos',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuthInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_database_users_async(self, request):
         """查看数据库的使用者
@@ -2254,9 +2563,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatabaseUsersResponse`
         """
-        return self._list_database_users_with_http_info(request)
+        http_info = self._list_database_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_database_users_with_http_info(self, request):
+    def list_database_users_async_invoker(self, request):
+        http_info = self._list_database_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_database_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2273,9 +2594,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2284,20 +2605,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabaseUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_datasource_connections_async(self, request):
         """查询经典型跨源连接列表
@@ -2311,9 +2628,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatasourceConnectionsResponse`
         """
-        return self._list_datasource_connections_with_http_info(request)
+        http_info = self._list_datasource_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_datasource_connections_with_http_info(self, request):
+    def list_datasource_connections_async_invoker(self, request):
+        http_info = self._list_datasource_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_datasource_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatasourceConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2330,9 +2659,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2341,20 +2670,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource-connection',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatasourceConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_elastic_resource_pool_queues_async(self, request):
         """查询弹性资源池所属队列
@@ -2368,9 +2693,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolQueuesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolQueuesResponse`
         """
-        return self._list_elastic_resource_pool_queues_with_http_info(request)
+        http_info = self._list_elastic_resource_pool_queues_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_elastic_resource_pool_queues_with_http_info(self, request):
+    def list_elastic_resource_pool_queues_async_invoker(self, request):
+        http_info = self._list_elastic_resource_pool_queues_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_elastic_resource_pool_queues_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListElasticResourcePoolQueuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2393,9 +2730,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2404,20 +2741,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}/queues',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListElasticResourcePoolQueuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_elastic_resource_pool_scale_records_async(self, request):
         """弹性资源池扩缩容历史记录
@@ -2431,9 +2764,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolScaleRecordsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolScaleRecordsResponse`
         """
-        return self._list_elastic_resource_pool_scale_records_with_http_info(request)
+        http_info = self._list_elastic_resource_pool_scale_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_elastic_resource_pool_scale_records_with_http_info(self, request):
+    def list_elastic_resource_pool_scale_records_async_invoker(self, request):
+        http_info = self._list_elastic_resource_pool_scale_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_elastic_resource_pool_scale_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}/scale-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListElasticResourcePoolScaleRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2460,9 +2805,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Auth-Token", ]
 
@@ -2471,20 +2816,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}/scale-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListElasticResourcePoolScaleRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_elastic_resource_pools_async(self, request):
         """查询所有弹性资源池
@@ -2498,9 +2839,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListElasticResourcePoolsResponse`
         """
-        return self._list_elastic_resource_pools_with_http_info(request)
+        http_info = self._list_elastic_resource_pools_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_elastic_resource_pools_with_http_info(self, request):
+    def list_elastic_resource_pools_async_invoker(self, request):
+        http_info = self._list_elastic_resource_pools_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_elastic_resource_pools_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elastic-resource-pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListElasticResourcePoolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2525,9 +2878,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2536,20 +2889,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elastic-resource-pools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListElasticResourcePoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enhanced_connections_async(self, request):
         """查询增强型跨源连接列表
@@ -2563,9 +2912,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListEnhancedConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListEnhancedConnectionsResponse`
         """
-        return self._list_enhanced_connections_with_http_info(request)
+        http_info = self._list_enhanced_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enhanced_connections_with_http_info(self, request):
+    def list_enhanced_connections_async_invoker(self, request):
+        http_info = self._list_enhanced_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enhanced_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnhancedConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2590,9 +2951,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2601,20 +2962,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnhancedConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_global_values_async(self, request):
         """查询DLI全局变量列表
@@ -2628,9 +2985,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListGlobalValuesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListGlobalValuesResponse`
         """
-        return self._list_global_values_with_http_info(request)
+        http_info = self._list_global_values_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_global_values_with_http_info(self, request):
+    def list_global_values_async_invoker(self, request):
+        http_info = self._list_global_values_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_global_values_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGlobalValuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2649,9 +3018,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2660,20 +3029,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/variables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGlobalValuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_queue_plans_async(self, request):
         """查看队列定时扩缩容计划
@@ -2687,9 +3052,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueuePlansRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueuePlansResponse`
         """
-        return self._list_queue_plans_with_http_info(request)
+        http_info = self._list_queue_plans_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_queue_plans_with_http_info(self, request):
+    def list_queue_plans_async_invoker(self, request):
+        http_info = self._list_queue_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_queue_plans_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/queues/{queue_name}/plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueuePlansResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2706,9 +3083,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2717,20 +3094,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/queues/{queue_name}/plans',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQueuePlansResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_queue_property_async(self, request):
         """获取队列属性
@@ -2744,9 +3117,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueuePropertyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueuePropertyResponse`
         """
-        return self._list_queue_property_with_http_info(request)
+        http_info = self._list_queue_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_queue_property_with_http_info(self, request):
+    def list_queue_property_async_invoker(self, request):
+        http_info = self._list_queue_property_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_queue_property_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/queues/{queue_name}/properties",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueuePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2767,9 +3152,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2778,20 +3163,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/queues/{queue_name}/properties',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQueuePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_queue_users_async(self, request):
         """查看队列的使用者
@@ -2805,9 +3186,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueueUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueueUsersResponse`
         """
-        return self._list_queue_users_with_http_info(request)
+        http_info = self._list_queue_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_queue_users_with_http_info(self, request):
+    def list_queue_users_async_invoker(self, request):
+        http_info = self._list_queue_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_queue_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueueUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2824,9 +3217,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2835,20 +3228,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues/{queue_name}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQueueUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_queues_async(self, request):
         """查询所有队列
@@ -2862,9 +3251,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListQueuesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListQueuesResponse`
         """
-        return self._list_queues_with_http_info(request)
+        http_info = self._list_queues_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_queues_with_http_info(self, request):
+    def list_queues_async_invoker(self, request):
+        http_info = self._list_queues_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_queues_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQueuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2887,9 +3288,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2898,20 +3299,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQueuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resources_async(self, request):
         """查看分组资源列表
@@ -2925,9 +3322,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListResourcesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListResourcesResponse`
         """
-        return self._list_resources_with_http_info(request)
+        http_info = self._list_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resources_with_http_info(self, request):
+    def list_resources_async_invoker(self, request):
+        http_info = self._list_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2946,9 +3355,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2957,20 +3366,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_table_privileges_async(self, request):
         """查看表的用户权限
@@ -2984,9 +3389,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListTablePrivilegesResponse`
         """
-        return self._list_table_privileges_with_http_info(request)
+        http_info = self._list_table_privileges_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_table_privileges_with_http_info(self, request):
+    def list_table_privileges_async_invoker(self, request):
+        http_info = self._list_table_privileges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_table_privileges_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/users/{user_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTablePrivilegesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3007,9 +3424,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3018,20 +3435,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/users/{user_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTablePrivilegesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_table_users_async(self, request):
         """查看表的使用者
@@ -3045,9 +3458,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListTableUsersRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListTableUsersResponse`
         """
-        return self._list_table_users_with_http_info(request)
+        http_info = self._list_table_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_table_users_with_http_info(self, request):
+    def list_table_users_async_invoker(self, request):
+        http_info = self._list_table_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_table_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3066,9 +3491,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3077,20 +3502,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTableUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_authorized_queue_async(self, request):
         """队列赋权
@@ -3104,9 +3525,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RegisterAuthorizedQueueResponse`
         """
-        return self._register_authorized_queue_with_http_info(request)
+        http_info = self._register_authorized_queue_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_authorized_queue_with_http_info(self, request):
+    def register_authorized_queue_async_invoker(self, request):
+        http_info = self._register_authorized_queue_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_authorized_queue_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/queues/user-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterAuthorizedQueueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3121,11 +3554,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3134,20 +3567,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues/user-authorization',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterAuthorizedQueueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_queue_action_async(self, request):
         """重启/扩容/缩容队列
@@ -3161,9 +3590,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RunQueueActionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RunQueueActionResponse`
         """
-        return self._run_queue_action_with_http_info(request)
+        http_info = self._run_queue_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_queue_action_with_http_info(self, request):
+    def run_queue_action_async_invoker(self, request):
+        http_info = self._run_queue_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_queue_action_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunQueueActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3180,11 +3621,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3193,20 +3634,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues/{queue_name}/action',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunQueueActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_datasource_connection_async(self, request):
         """查询经典型跨源连接
@@ -3220,9 +3657,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDatasourceConnectionResponse`
         """
-        return self._show_datasource_connection_with_http_info(request)
+        http_info = self._show_datasource_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_datasource_connection_with_http_info(self, request):
+    def show_datasource_connection_async_invoker(self, request):
+        http_info = self._show_datasource_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_datasource_connection_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource-connection/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatasourceConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3239,9 +3688,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3250,20 +3699,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource-connection/{connection_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatasourceConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dli_agency_async(self, request):
         """获取dli委托信息
@@ -3277,9 +3722,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDliAgencyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDliAgencyResponse`
         """
-        return self._show_dli_agency_with_http_info(request)
+        http_info = self._show_dli_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dli_agency_with_http_info(self, request):
+    def show_dli_agency_async_invoker(self, request):
+        http_info = self._show_dli_agency_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dli_agency_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDliAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3294,9 +3751,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3305,20 +3762,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/agency',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDliAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_enhanced_connection_async(self, request):
         """查询增强型跨源连接
@@ -3332,9 +3785,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowEnhancedConnectionRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowEnhancedConnectionResponse`
         """
-        return self._show_enhanced_connection_with_http_info(request)
+        http_info = self._show_enhanced_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_enhanced_connection_with_http_info(self, request):
+    def show_enhanced_connection_async_invoker(self, request):
+        http_info = self._show_enhanced_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_enhanced_connection_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnhancedConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3351,9 +3816,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3362,20 +3827,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnhancedConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_enhanced_privilege_async(self, request):
         """查询增强型跨源授权信息
@@ -3389,9 +3850,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowEnhancedPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowEnhancedPrivilegeResponse`
         """
-        return self._show_enhanced_privilege_with_http_info(request)
+        http_info = self._show_enhanced_privilege_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_enhanced_privilege_with_http_info(self, request):
+    def show_enhanced_privilege_async_invoker(self, request):
+        http_info = self._show_enhanced_privilege_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_enhanced_privilege_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/privileges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnhancedPrivilegeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3408,9 +3881,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3419,20 +3892,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}/privileges',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnhancedPrivilegeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_node_connectivity_async(self, request):
         """查询指定地址连通性测试详情
@@ -3446,9 +3915,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowNodeConnectivityRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowNodeConnectivityResponse`
         """
-        return self._show_node_connectivity_with_http_info(request)
+        http_info = self._show_node_connectivity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_node_connectivity_with_http_info(self, request):
+    def show_node_connectivity_async_invoker(self, request):
+        http_info = self._show_node_connectivity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_node_connectivity_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}/connection-test/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodeConnectivityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3467,9 +3948,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3478,20 +3959,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues/{queue_name}/connection-test/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNodeConnectivityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_object_user_async(self, request):
         """查看赋权对象的用者权限信息
@@ -3505,9 +3982,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowObjectUserRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowObjectUserResponse`
         """
-        return self._show_object_user_with_http_info(request)
+        http_info = self._show_object_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_object_user_with_http_info(self, request):
+    def show_object_user_async_invoker(self, request):
+        http_info = self._show_object_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_object_user_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/authorization/privileges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowObjectUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3524,9 +4013,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3535,20 +4024,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/authorization/privileges',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowObjectUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_queue_detail_async(self, request):
         """查询队列详情
@@ -3562,9 +4047,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowQueueDetailRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowQueueDetailResponse`
         """
-        return self._show_queue_detail_with_http_info(request)
+        http_info = self._show_queue_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_queue_detail_with_http_info(self, request):
+    def show_queue_detail_async_invoker(self, request):
+        http_info = self._show_queue_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_queue_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQueueDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3581,9 +4078,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3592,20 +4089,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues/{queue_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQueueDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_info_async(self, request):
         """查看组内资源包
@@ -3619,9 +4112,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowResourceInfoResponse`
         """
-        return self._show_resource_info_with_http_info(request)
+        http_info = self._show_resource_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_info_with_http_info(self, request):
+    def show_resource_info_async_invoker(self, request):
+        http_info = self._show_resource_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/resources/{resource_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3640,9 +4145,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3651,20 +4156,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/resources/{resource_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_auth_info_async(self, request):
         """更新跨源认证
@@ -3678,9 +4179,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateAuthInfoResponse`
         """
-        return self._update_auth_info_with_http_info(request)
+        http_info = self._update_auth_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_auth_info_with_http_info(self, request):
+    def update_auth_info_async_invoker(self, request):
+        http_info = self._update_auth_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_auth_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/{project_id}/datasource/auth-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAuthInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3695,11 +4208,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3708,20 +4221,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/auth-infos',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAuthInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_elastic_resource_pool_async(self, request):
         """修改弹性资源池信息
@@ -3735,9 +4244,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolResponse`
         """
-        return self._update_elastic_resource_pool_with_http_info(request)
+        http_info = self._update_elastic_resource_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_elastic_resource_pool_with_http_info(self, request):
+    def update_elastic_resource_pool_async_invoker(self, request):
+        http_info = self._update_elastic_resource_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_elastic_resource_pool_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateElasticResourcePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3754,11 +4275,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3767,20 +4288,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateElasticResourcePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_elastic_resource_pool_queue_info_async(self, request):
         """修改弹性资源池关联的队列优先级
@@ -3794,9 +4311,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateElasticResourcePoolQueueInfoResponse`
         """
-        return self._update_elastic_resource_pool_queue_info_with_http_info(request)
+        http_info = self._update_elastic_resource_pool_queue_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_elastic_resource_pool_queue_info_with_http_info(self, request):
+    def update_elastic_resource_pool_queue_info_async_invoker(self, request):
+        http_info = self._update_elastic_resource_pool_queue_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_elastic_resource_pool_queue_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}/queues/{queue_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateElasticResourcePoolQueueInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3815,11 +4344,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3828,20 +4357,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elastic-resource-pools/{elastic_resource_pool_name}/queues/{queue_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateElasticResourcePoolQueueInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_global_value_async(self, request):
         """修改DLI全局变量
@@ -3855,9 +4380,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateGlobalValueResponse`
         """
-        return self._update_global_value_with_http_info(request)
+        http_info = self._update_global_value_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_global_value_with_http_info(self, request):
+    def update_global_value_async_invoker(self, request):
+        http_info = self._update_global_value_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_global_value_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/variables/{var_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGlobalValueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3874,11 +4411,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3887,20 +4424,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/variables/{var_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGlobalValueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_group_or_resource_owner_async(self, request):
         """修改组或者资源包拥有者
@@ -3914,9 +4447,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateGroupOrResourceOwnerResponse`
         """
-        return self._update_group_or_resource_owner_with_http_info(request)
+        http_info = self._update_group_or_resource_owner_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_group_or_resource_owner_with_http_info(self, request):
+    def update_group_or_resource_owner_async_invoker(self, request):
+        http_info = self._update_group_or_resource_owner_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_group_or_resource_owner_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/{project_id}/resources/owner",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGroupOrResourceOwnerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3931,11 +4476,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3944,20 +4489,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/resources/owner',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGroupOrResourceOwnerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_host_massage_async(self, request):
         """修改增强型跨源主机信息
@@ -3971,9 +4512,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateHostMassageRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateHostMassageResponse`
         """
-        return self._update_host_massage_with_http_info(request)
+        http_info = self._update_host_massage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_host_massage_with_http_info(self, request):
+    def update_host_massage_async_invoker(self, request):
+        http_info = self._update_host_massage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_host_massage_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHostMassageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3990,11 +4543,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4003,20 +4556,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/datasource/enhanced-connections/{connection_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHostMassageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_queue_cidr_async(self, request):
         """修改队列网段
@@ -4032,9 +4581,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueueCidrResponse`
         """
-        return self._update_queue_cidr_with_http_info(request)
+        http_info = self._update_queue_cidr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_queue_cidr_with_http_info(self, request):
+    def update_queue_cidr_async_invoker(self, request):
+        http_info = self._update_queue_cidr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_queue_cidr_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/queues/{queue_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateQueueCidrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4051,11 +4612,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4064,20 +4625,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/queues/{queue_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateQueueCidrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_queue_property_async(self, request):
         """更新队列属性
@@ -4091,9 +4648,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateQueuePropertyRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateQueuePropertyResponse`
         """
-        return self._update_queue_property_with_http_info(request)
+        http_info = self._update_queue_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_queue_property_with_http_info(self, request):
+    def update_queue_property_async_invoker(self, request):
+        http_info = self._update_queue_property_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_queue_property_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/queues/{queue_name}/properties",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateQueuePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4110,11 +4679,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4123,20 +4692,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/queues/{queue_name}/properties',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateQueuePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_files_async(self, request):
         """上传file类型分组资源
@@ -4151,9 +4716,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadFilesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadFilesResponse`
         """
-        return self._upload_files_with_http_info(request)
+        http_info = self._upload_files_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_files_with_http_info(self, request):
+    def upload_files_async_invoker(self, request):
+        http_info = self._upload_files_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_files_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/resources/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadFilesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4170,11 +4747,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4183,20 +4760,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/resources/files',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadFilesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_jars_async(self, request):
         """上传jar类型分组资源
@@ -4211,9 +4784,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadJarsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadJarsResponse`
         """
-        return self._upload_jars_with_http_info(request)
+        http_info = self._upload_jars_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_jars_with_http_info(self, request):
+    def upload_jars_async_invoker(self, request):
+        http_info = self._upload_jars_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_jars_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/resources/jars",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadJarsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4230,11 +4815,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4243,20 +4828,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/resources/jars',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadJarsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_python_files_async(self, request):
         """上传pyfile类型分组资源
@@ -4271,9 +4852,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadPythonFilesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadPythonFilesResponse`
         """
-        return self._upload_python_files_with_http_info(request)
+        http_info = self._upload_python_files_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_python_files_with_http_info(self, request):
+    def upload_python_files_async_invoker(self, request):
+        http_info = self._upload_python_files_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_python_files_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/resources/pyfiles",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadPythonFilesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4290,11 +4883,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4303,20 +4896,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/resources/pyfiles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadPythonFilesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_resources_async(self, request):
         """上传分组资源
@@ -4330,9 +4919,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UploadResourcesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UploadResourcesResponse`
         """
-        return self._upload_resources_with_http_info(request)
+        http_info = self._upload_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_resources_with_http_info(self, request):
+    def upload_resources_async_invoker(self, request):
+        http_info = self._upload_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4349,11 +4950,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4362,20 +4963,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_flink_jobs_async(self, request):
         """批量删除Flink作业
@@ -4389,9 +4986,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.BatchDeleteFlinkJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.BatchDeleteFlinkJobsResponse`
         """
-        return self._batch_delete_flink_jobs_with_http_info(request)
+        http_info = self._batch_delete_flink_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_flink_jobs_with_http_info(self, request):
+    def batch_delete_flink_jobs_async_invoker(self, request):
+        http_info = self._batch_delete_flink_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_flink_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteFlinkJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4406,11 +5015,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4419,20 +5028,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteFlinkJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_run_flink_jobs_async(self, request):
         """批量运行Flink作业
@@ -4446,9 +5051,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.BatchRunFlinkJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.BatchRunFlinkJobsResponse`
         """
-        return self._batch_run_flink_jobs_with_http_info(request)
+        http_info = self._batch_run_flink_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_run_flink_jobs_with_http_info(self, request):
+    def batch_run_flink_jobs_async_invoker(self, request):
+        http_info = self._batch_run_flink_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_run_flink_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/run",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRunFlinkJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4463,11 +5080,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4476,20 +5093,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/run',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRunFlinkJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_flink_job_status_report_async(self, request):
         """边缘Flink作业状态信息上报
@@ -4503,9 +5116,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ChangeFlinkJobStatusReportResponse`
         """
-        return self._change_flink_job_status_report_with_http_info(request)
+        http_info = self._change_flink_job_status_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_flink_job_status_report_with_http_info(self, request):
+    def change_flink_job_status_report_async_invoker(self, request):
+        http_info = self._change_flink_job_status_report_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_flink_job_status_report_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/edgesrv/job-report",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeFlinkJobStatusReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4520,11 +5145,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4533,20 +5158,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/edgesrv/job-report',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeFlinkJobStatusReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_flink_jar_async(self, request):
         """新建Flink Jar作业
@@ -4560,9 +5181,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkJarRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkJarResponse`
         """
-        return self._create_flink_jar_with_http_info(request)
+        http_info = self._create_flink_jar_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_flink_jar_with_http_info(self, request):
+    def create_flink_jar_async_invoker(self, request):
+        http_info = self._create_flink_jar_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_flink_jar_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/flink-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlinkJarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4577,11 +5210,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4590,20 +5223,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/flink-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFlinkJarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_flink_sql_job_async(self, request):
         """新建Flink SQL作业
@@ -4617,9 +5246,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkSqlJobResponse`
         """
-        return self._create_flink_sql_job_with_http_info(request)
+        http_info = self._create_flink_sql_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_flink_sql_job_with_http_info(self, request):
+    def create_flink_sql_job_async_invoker(self, request):
+        http_info = self._create_flink_sql_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_flink_sql_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/sql-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlinkSqlJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4634,11 +5275,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4647,20 +5288,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/sql-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFlinkSqlJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_flink_template_async(self, request):
         """新建Flink作业模板
@@ -4674,9 +5311,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateFlinkTemplateResponse`
         """
-        return self._create_flink_template_with_http_info(request)
+        http_info = self._create_flink_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_flink_template_with_http_info(self, request):
+    def create_flink_template_async_invoker(self, request):
+        http_info = self._create_flink_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_flink_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/job-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlinkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4691,11 +5340,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4704,20 +5353,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/job-templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFlinkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ief_message_channel_async(self, request):
         """创建IEF消息通道
@@ -4731,9 +5376,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateIefMessageChannelResponse`
         """
-        return self._create_ief_message_channel_with_http_info(request)
+        http_info = self._create_ief_message_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ief_message_channel_with_http_info(self, request):
+    def create_ief_message_channel_async_invoker(self, request):
+        http_info = self._create_ief_message_channel_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ief_message_channel_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/edgesrv/message-channel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIefMessageChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4748,11 +5405,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4761,20 +5418,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/edgesrv/message-channel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIefMessageChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ief_system_events_async(self, request):
         """IEF系统事件上报
@@ -4788,9 +5441,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateIefSystemEventsResponse`
         """
-        return self._create_ief_system_events_with_http_info(request)
+        http_info = self._create_ief_system_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ief_system_events_with_http_info(self, request):
+    def create_ief_system_events_async_invoker(self, request):
+        http_info = self._create_ief_system_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ief_system_events_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/edgesrv/system-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIefSystemEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4805,11 +5470,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4818,20 +5483,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/edgesrv/system-events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIefSystemEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_stream_graph_async(self, request):
         """生成flink SQL作业的静态流图
@@ -4845,9 +5506,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateStreamGraphRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateStreamGraphResponse`
         """
-        return self._create_stream_graph_with_http_info(request)
+        http_info = self._create_stream_graph_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_stream_graph_with_http_info(self, request):
+    def create_stream_graph_async_invoker(self, request):
+        http_info = self._create_stream_graph_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_stream_graph_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/streaming/jobs/{job_id}/gen-graph",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStreamGraphResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4864,11 +5537,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4877,20 +5550,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/streaming/jobs/{job_id}/gen-graph',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStreamGraphResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_flink_job_async(self, request):
         """删除作业
@@ -4904,9 +5573,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteFlinkJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteFlinkJobResponse`
         """
-        return self._delete_flink_job_with_http_info(request)
+        http_info = self._delete_flink_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_flink_job_with_http_info(self, request):
+    def delete_flink_job_async_invoker(self, request):
+        http_info = self._delete_flink_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_flink_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFlinkJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4923,9 +5604,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4934,20 +5615,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFlinkJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_flink_template_async(self, request):
         """删除Flink作业模板
@@ -4961,9 +5638,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteFlinkTemplateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteFlinkTemplateResponse`
         """
-        return self._delete_flink_template_with_http_info(request)
+        http_info = self._delete_flink_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_flink_template_with_http_info(self, request):
+    def delete_flink_template_async_invoker(self, request):
+        http_info = self._delete_flink_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_flink_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/streaming/job-templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFlinkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4980,9 +5669,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4991,20 +5680,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/job-templates/{template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFlinkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_flink_job_async(self, request):
         """flink作业导出
@@ -5018,9 +5703,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportFlinkJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportFlinkJobResponse`
         """
-        return self._export_flink_job_with_http_info(request)
+        http_info = self._export_flink_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_flink_job_with_http_info(self, request):
+    def export_flink_job_async_invoker(self, request):
+        http_info = self._export_flink_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_flink_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportFlinkJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5035,11 +5732,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5048,20 +5745,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportFlinkJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_flink_job_async(self, request):
         """flink作业导入
@@ -5075,9 +5768,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ImportFlinkJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ImportFlinkJobResponse`
         """
-        return self._import_flink_job_with_http_info(request)
+        http_info = self._import_flink_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_flink_job_with_http_info(self, request):
+    def import_flink_job_async_invoker(self, request):
+        http_info = self._import_flink_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_flink_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportFlinkJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5092,11 +5797,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5105,20 +5810,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportFlinkJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flink_jobs_async(self, request):
         """查询Flink作业列表
@@ -5132,9 +5833,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListFlinkJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListFlinkJobsResponse`
         """
-        return self._list_flink_jobs_with_http_info(request)
+        http_info = self._list_flink_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flink_jobs_with_http_info(self, request):
+    def list_flink_jobs_async_invoker(self, request):
+        http_info = self._list_flink_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flink_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlinkJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5173,9 +5886,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5184,20 +5897,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlinkJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flink_templates_async(self, request):
         """查询Flink作业模板列表
@@ -5211,9 +5920,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListFlinkTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListFlinkTemplatesResponse`
         """
-        return self._list_flink_templates_with_http_info(request)
+        http_info = self._list_flink_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flink_templates_with_http_info(self, request):
+    def list_flink_templates_async_invoker(self, request):
+        http_info = self._list_flink_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flink_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/streaming/job-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlinkTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5238,9 +5959,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5249,20 +5970,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/job-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlinkTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_bucket_async(self, request):
         """OBS授权给DLI服务
@@ -5276,9 +5993,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RegisterBucketRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RegisterBucketResponse`
         """
-        return self._register_bucket_with_http_info(request)
+        http_info = self._register_bucket_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_bucket_with_http_info(self, request):
+    def register_bucket_async_invoker(self, request):
+        http_info = self._register_bucket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_bucket_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/dli/obs-authorize",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterBucketResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5293,11 +6022,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5306,20 +6035,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dli/obs-authorize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterBucketResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_ief_job_action_call_back_async(self, request):
         """边缘Flink作业Action状态回调
@@ -5333,9 +6058,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.RunIefJobActionCallBackResponse`
         """
-        return self._run_ief_job_action_call_back_with_http_info(request)
+        http_info = self._run_ief_job_action_call_back_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_ief_job_action_call_back_with_http_info(self, request):
+    def run_ief_job_action_call_back_async_invoker(self, request):
+        http_info = self._run_ief_job_action_call_back_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_ief_job_action_call_back_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/edgesrv/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunIefJobActionCallBackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5350,11 +6087,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5363,20 +6100,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/edgesrv/messages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunIefJobActionCallBackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_flink_execute_graph_async(self, request):
         """查询Flink作业执行计划
@@ -5390,9 +6123,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkExecuteGraphRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkExecuteGraphResponse`
         """
-        return self._show_flink_execute_graph_with_http_info(request)
+        http_info = self._show_flink_execute_graph_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_flink_execute_graph_with_http_info(self, request):
+    def show_flink_execute_graph_async_invoker(self, request):
+        http_info = self._show_flink_execute_graph_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flink_execute_graph_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/{job_id}/execute-graph",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlinkExecuteGraphResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5409,9 +6154,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5420,20 +6165,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/{job_id}/execute-graph',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFlinkExecuteGraphResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_flink_job_async(self, request):
         """查询Flink作业详情
@@ -5447,9 +6188,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkJobResponse`
         """
-        return self._show_flink_job_with_http_info(request)
+        http_info = self._show_flink_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_flink_job_with_http_info(self, request):
+    def show_flink_job_async_invoker(self, request):
+        http_info = self._show_flink_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flink_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlinkJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5466,9 +6219,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5477,20 +6230,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFlinkJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_flink_metric_async(self, request):
         """查询Flink作业监控信息
@@ -5504,9 +6253,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowFlinkMetricResponse`
         """
-        return self._show_flink_metric_with_http_info(request)
+        http_info = self._show_flink_metric_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_flink_metric_with_http_info(self, request):
+    def show_flink_metric_async_invoker(self, request):
+        http_info = self._show_flink_metric_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flink_metric_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlinkMetricResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5521,11 +6282,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5534,20 +6295,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/metrics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFlinkMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_flink_jobs_async(self, request):
         """批量停止Flink作业
@@ -5561,9 +6318,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.StopFlinkJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.StopFlinkJobsResponse`
         """
-        return self._stop_flink_jobs_with_http_info(request)
+        http_info = self._stop_flink_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_flink_jobs_with_http_info(self, request):
+    def stop_flink_jobs_async_invoker(self, request):
+        http_info = self._stop_flink_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_flink_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/streaming/jobs/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopFlinkJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5578,11 +6347,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5591,20 +6360,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/jobs/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopFlinkJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_flink_jar_async(self, request):
         """更新Flink Jar作业
@@ -5618,9 +6383,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkJarResponse`
         """
-        return self._update_flink_jar_with_http_info(request)
+        http_info = self._update_flink_jar_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_flink_jar_with_http_info(self, request):
+    def update_flink_jar_async_invoker(self, request):
+        http_info = self._update_flink_jar_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_flink_jar_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/streaming/flink-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlinkJarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5637,11 +6414,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5650,20 +6427,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/flink-jobs/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFlinkJarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_flink_sql_async(self, request):
         """更新Flink SQL作业
@@ -5677,9 +6450,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkSqlResponse`
         """
-        return self._update_flink_sql_with_http_info(request)
+        http_info = self._update_flink_sql_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_flink_sql_with_http_info(self, request):
+    def update_flink_sql_async_invoker(self, request):
+        http_info = self._update_flink_sql_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_flink_sql_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/streaming/sql-jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlinkSqlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5696,11 +6481,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5709,20 +6494,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/sql-jobs/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFlinkSqlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_flink_template_async(self, request):
         """更新Flink作业模板
@@ -5736,9 +6517,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateFlinkTemplateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateFlinkTemplateResponse`
         """
-        return self._update_flink_template_with_http_info(request)
+        http_info = self._update_flink_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_flink_template_with_http_info(self, request):
+    def update_flink_template_async_invoker(self, request):
+        http_info = self._update_flink_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_flink_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/streaming/job-templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlinkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5755,11 +6548,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5768,20 +6561,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/streaming/job-templates/{template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFlinkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_sql_job_async(self, request):
         """取消作业
@@ -5795,9 +6584,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CancelSqlJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CancelSqlJobResponse`
         """
-        return self._cancel_sql_job_with_http_info(request)
+        http_info = self._cancel_sql_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_sql_job_with_http_info(self, request):
+    def cancel_sql_job_async_invoker(self, request):
+        http_info = self._cancel_sql_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_sql_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelSqlJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5814,9 +6615,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5825,20 +6626,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelSqlJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_sql_async(self, request):
         """检查SQL语法
@@ -5852,9 +6649,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CheckSqlRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CheckSqlResponse`
         """
-        return self._check_sql_with_http_info(request)
+        http_info = self._check_sql_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_sql_with_http_info(self, request):
+    def check_sql_async_invoker(self, request):
+        http_info = self._check_sql_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_sql_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/jobs/check-sql",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckSqlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5869,11 +6678,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5882,20 +6691,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/check-sql',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckSqlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_database_async(self, request):
         """创建数据库
@@ -5909,9 +6714,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateDatabaseResponse`
         """
-        return self._create_database_with_http_info(request)
+        http_info = self._create_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_database_with_http_info(self, request):
+    def create_database_async_invoker(self, request):
+        http_info = self._create_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_database_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5926,11 +6743,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5939,20 +6756,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_sql_job_async(self, request):
         """提交SQL作业
@@ -5968,9 +6781,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateSqlJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateSqlJobResponse`
         """
-        return self._create_sql_job_with_http_info(request)
+        http_info = self._create_sql_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sql_job_with_http_info(self, request):
+    def create_sql_job_async_invoker(self, request):
+        http_info = self._create_sql_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sql_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/jobs/submit-job",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5985,11 +6810,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5998,20 +6823,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/submit-job',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSqlJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_table_async(self, request):
         """创建表
@@ -6025,9 +6846,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateTableResponse`
         """
-        return self._create_table_with_http_info(request)
+        http_info = self._create_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_table_with_http_info(self, request):
+    def create_table_async_invoker(self, request):
+        http_info = self._create_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6044,11 +6877,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6057,20 +6890,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_database_async(self, request):
         """删除数据库
@@ -6084,9 +6913,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteDatabaseResponse`
         """
-        return self._delete_database_with_http_info(request)
+        http_info = self._delete_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_database_with_http_info(self, request):
+    def delete_database_async_invoker(self, request):
+        http_info = self._delete_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_database_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6107,9 +6948,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6118,20 +6959,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_table_async(self, request):
         """删除表
@@ -6145,9 +6982,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.DeleteTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.DeleteTableResponse`
         """
-        return self._delete_table_with_http_info(request)
+        http_info = self._delete_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_table_with_http_info(self, request):
+    def delete_table_async_invoker(self, request):
+        http_info = self._delete_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_table_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6168,9 +7017,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6179,20 +7028,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables/{table_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_sql_job_result_async(self, request):
         """导出查询结果
@@ -6206,9 +7051,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportSqlJobResultResponse`
         """
-        return self._export_sql_job_result_with_http_info(request)
+        http_info = self._export_sql_job_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_sql_job_result_with_http_info(self, request):
+    def export_sql_job_result_async_invoker(self, request):
+        http_info = self._export_sql_job_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_sql_job_result_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/jobs/{job_id}/export-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportSqlJobResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6225,11 +7082,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6238,20 +7095,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/{job_id}/export-result',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportSqlJobResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_table_async(self, request):
         """导出查询结果
@@ -6265,9 +7118,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ExportTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ExportTableResponse`
         """
-        return self._export_table_with_http_info(request)
+        http_info = self._export_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_table_with_http_info(self, request):
+    def export_table_async_invoker(self, request):
+        http_info = self._export_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/jobs/export-table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6282,11 +7147,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6295,20 +7160,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/export-table',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_table_async(self, request):
         """导入数据
@@ -6322,9 +7183,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ImportTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ImportTableResponse`
         """
-        return self._import_table_with_http_info(request)
+        http_info = self._import_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_table_with_http_info(self, request):
+    def import_table_async_invoker(self, request):
+        http_info = self._import_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/jobs/import-table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6339,11 +7212,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6352,20 +7225,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/import-table',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_tables_async(self, request):
         """查询所有表
@@ -6379,9 +7248,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListAllTablesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListAllTablesResponse`
         """
-        return self._list_all_tables_with_http_info(request)
+        http_info = self._list_all_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_tables_with_http_info(self, request):
+    def list_all_tables_async_invoker(self, request):
+        http_info = self._list_all_tables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_tables_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6410,9 +7291,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6421,20 +7302,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_databases_async(self, request):
         """查询所有数据库
@@ -6448,9 +7325,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListDatabasesResponse`
         """
-        return self._list_databases_with_http_info(request)
+        http_info = self._list_databases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_databases_with_http_info(self, request):
+    def list_databases_async_invoker(self, request):
+        http_info = self._list_databases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_databases_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6475,9 +7364,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6486,20 +7375,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sql_jobs_async(self, request):
         """查询所有作业
@@ -6513,9 +7398,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListSqlJobsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListSqlJobsResponse`
         """
-        return self._list_sql_jobs_with_http_info(request)
+        http_info = self._list_sql_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sql_jobs_with_http_info(self, request):
+    def list_sql_jobs_async_invoker(self, request):
+        http_info = self._list_sql_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sql_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6558,9 +7455,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6569,20 +7466,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSqlJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def preview_job_result_async(self, request):
         """预览SQL作业查询结果
@@ -6597,9 +7490,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.PreviewJobResultRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.PreviewJobResultResponse`
         """
-        return self._preview_job_result_with_http_info(request)
+        http_info = self._preview_job_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _preview_job_result_with_http_info(self, request):
+    def preview_job_result_async_invoker(self, request):
+        http_info = self._preview_job_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _preview_job_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/jobs/{job_id}/preview",
+            "request_type": request.__class__.__name__,
+            "response_type": "PreviewJobResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6618,9 +7523,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6629,20 +7534,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/{job_id}/preview',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PreviewJobResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_describe_table_async(self, request):
         """描述表信息
@@ -6656,9 +7557,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowDescribeTableRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowDescribeTableResponse`
         """
-        return self._show_describe_table_with_http_info(request)
+        http_info = self._show_describe_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_describe_table_with_http_info(self, request):
+    def show_describe_table_async_invoker(self, request):
+        http_info = self._show_describe_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_describe_table_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDescribeTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6677,9 +7590,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6688,20 +7601,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables/{table_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDescribeTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_progress_async(self, request):
         """查询作业执行进度信息
@@ -6715,9 +7624,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowJobProgressRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowJobProgressResponse`
         """
-        return self._show_job_progress_with_http_info(request)
+        http_info = self._show_job_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_progress_with_http_info(self, request):
+    def show_job_progress_async_invoker(self, request):
+        http_info = self._show_job_progress_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_progress_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_id}/progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6734,9 +7655,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6745,20 +7666,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_id}/progress',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_partitions_async(self, request):
         """获取分区信息列表
@@ -6771,9 +7688,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowPartitionsRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowPartitionsResponse`
         """
-        return self._show_partitions_with_http_info(request)
+        http_info = self._show_partitions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_partitions_with_http_info(self, request):
+    def show_partitions_async_invoker(self, request):
+        http_info = self._show_partitions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_partitions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/partitions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPartitionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6796,9 +7725,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6807,20 +7736,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/partitions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPartitionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_job_detail_async(self, request):
         """查询作业详细信息
@@ -6834,9 +7759,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlJobDetailResponse`
         """
-        return self._show_sql_job_detail_with_http_info(request)
+        http_info = self._show_sql_job_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_job_detail_with_http_info(self, request):
+    def show_sql_job_detail_async_invoker(self, request):
+        http_info = self._show_sql_job_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_job_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/jobs/{job_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlJobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6853,9 +7790,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6864,20 +7801,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/{job_id}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlJobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_job_status_async(self, request):
         """查询作业状态
@@ -6891,9 +7824,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowSqlJobStatusRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowSqlJobStatusResponse`
         """
-        return self._show_sql_job_status_with_http_info(request)
+        http_info = self._show_sql_job_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_job_status_with_http_info(self, request):
+    def show_sql_job_status_async_invoker(self, request):
+        http_info = self._show_sql_job_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sql_job_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/jobs/{job_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlJobStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6910,9 +7855,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6921,20 +7866,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/jobs/{job_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlJobStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_table_content_async(self, request):
         """预览表内容
@@ -6948,9 +7889,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowTableContentRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowTableContentResponse`
         """
-        return self._show_table_content_with_http_info(request)
+        http_info = self._show_table_content_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_table_content_with_http_info(self, request):
+    def show_table_content_async_invoker(self, request):
+        http_info = self._show_table_content_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_table_content_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/preview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTableContentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6971,9 +7924,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6982,20 +7935,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/preview',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTableContentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_database_owner_async(self, request):
         """修改数据库用户
@@ -7009,9 +7958,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateDatabaseOwnerResponse`
         """
-        return self._update_database_owner_with_http_info(request)
+        http_info = self._update_database_owner_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_database_owner_with_http_info(self, request):
+    def update_database_owner_async_invoker(self, request):
+        http_info = self._update_database_owner_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_database_owner_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/owner",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatabaseOwnerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7028,11 +7989,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7041,20 +8002,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/owner',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDatabaseOwnerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_table_owner_async(self, request):
         """修改表用户
@@ -7068,9 +8025,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.UpdateTableOwnerResponse`
         """
-        return self._update_table_owner_with_http_info(request)
+        http_info = self._update_table_owner_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_table_owner_with_http_info(self, request):
+    def update_table_owner_async_invoker(self, request):
+        http_info = self._update_table_owner_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_table_owner_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/owner",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTableOwnerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7089,11 +8058,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7102,20 +8071,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/databases/{database_name}/tables/{table_name}/owner',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTableOwnerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_batch_job_async(self, request):
         """取消批处理作业
@@ -7129,9 +8094,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CancelBatchJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CancelBatchJobResponse`
         """
-        return self._cancel_batch_job_with_http_info(request)
+        http_info = self._cancel_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_batch_job_with_http_info(self, request):
+    def cancel_batch_job_async_invoker(self, request):
+        http_info = self._cancel_batch_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_batch_job_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/batches/{batch_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7148,9 +8125,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7159,20 +8136,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/batches/{batch_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_batch_job_async(self, request):
         """创建批处理作业
@@ -7186,9 +8159,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.CreateBatchJobRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.CreateBatchJobResponse`
         """
-        return self._create_batch_job_with_http_info(request)
+        http_info = self._create_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_batch_job_with_http_info(self, request):
+    def create_batch_job_async_invoker(self, request):
+        http_info = self._create_batch_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_batch_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/batches",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7205,11 +8190,11 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7218,20 +8203,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/batches',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_batches_async(self, request):
         """查询批处理作业列表
@@ -7245,9 +8226,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ListBatchesRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ListBatchesResponse`
         """
-        return self._list_batches_with_http_info(request)
+        http_info = self._list_batches_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_batches_with_http_info(self, request):
+    def list_batches_async_invoker(self, request):
+        http_info = self._list_batches_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_batches_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/batches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBatchesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7282,9 +8275,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7293,20 +8286,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/batches',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBatchesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_batch_info_async(self, request):
         """查询批处理作业详情
@@ -7320,9 +8309,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchInfoRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowBatchInfoResponse`
         """
-        return self._show_batch_info_with_http_info(request)
+        http_info = self._show_batch_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_batch_info_with_http_info(self, request):
+    def show_batch_info_async_invoker(self, request):
+        http_info = self._show_batch_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_batch_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/batches/{batch_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBatchInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7339,9 +8340,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7350,20 +8351,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/batches/{batch_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBatchInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_batch_log_async(self, request):
         """查询批处理作业日志
@@ -7377,9 +8374,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchLogRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowBatchLogResponse`
         """
-        return self._show_batch_log_with_http_info(request)
+        http_info = self._show_batch_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_batch_log_with_http_info(self, request):
+    def show_batch_log_async_invoker(self, request):
+        http_info = self._show_batch_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_batch_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/batches/{batch_id}/log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBatchLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7404,9 +8413,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7415,20 +8424,16 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/batches/{batch_id}/log',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBatchLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_batch_state_async(self, request):
         """查询批处理作业状态
@@ -7442,9 +8447,21 @@ class DliAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdli.v1.ShowBatchStateRequest`
         :rtype: :class:`huaweicloudsdkdli.v1.ShowBatchStateResponse`
         """
-        return self._show_batch_state_with_http_info(request)
+        http_info = self._show_batch_state_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_batch_state_with_http_info(self, request):
+    def show_batch_state_async_invoker(self, request):
+        http_info = self._show_batch_state_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_batch_state_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/batches/{batch_id}/state",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBatchStateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7461,9 +8478,9 @@ class DliAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7472,20 +8489,26 @@ class DliAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/batches/{batch_id}/state',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBatchStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -7524,4 +8547,4 @@ class DliAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

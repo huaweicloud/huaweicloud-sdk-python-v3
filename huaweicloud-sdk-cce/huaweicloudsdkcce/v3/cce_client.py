@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcce'")
 
 
 class CceClient(Client):
@@ -27,8 +32,8 @@ class CceClient(Client):
         try:
             from .cce_exception_handler import CceExceptionHandler
             client_builder.with_exception_handler(CceExceptionHandler())
-        except (ModuleNotFoundError, AttributeError):
-            pass
+        except (ImportError, AttributeError):
+            warnings.warn("failed to import 'CceExceptionHandler', please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcce'")
 
         return client_builder
 
@@ -44,9 +49,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.AddNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.AddNodeResponse`
         """
-        return self._add_node_with_http_info(request)
+        http_info = self._add_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_node_with_http_info(self, request):
+    def add_node_invoker(self, request):
+        http_info = self._add_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/add",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -63,11 +81,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -76,20 +94,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/add',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def awake_cluster(self, request):
         """集群唤醒
@@ -102,9 +116,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.AwakeClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.AwakeClusterResponse`
         """
-        return self._awake_cluster_with_http_info(request)
+        http_info = self._awake_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _awake_cluster_with_http_info(self, request):
+    def awake_cluster_invoker(self, request):
+        http_info = self._awake_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _awake_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/awake",
+            "request_type": request.__class__.__name__,
+            "response_type": "AwakeClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,9 +148,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +159,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/awake',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AwakeClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_cluster_tags(self, request):
         """批量添加指定集群的资源标签
@@ -160,9 +183,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.BatchCreateClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.BatchCreateClusterTagsResponse`
         """
-        return self._batch_create_cluster_tags_with_http_info(request)
+        http_info = self._batch_create_cluster_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_cluster_tags_with_http_info(self, request):
+    def batch_create_cluster_tags_invoker(self, request):
+        http_info = self._batch_create_cluster_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_cluster_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateClusterTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -179,11 +215,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -192,20 +228,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateClusterTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_cluster_tags(self, request):
         """批量删除指定集群的资源标签
@@ -219,9 +251,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.BatchDeleteClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.BatchDeleteClusterTagsResponse`
         """
-        return self._batch_delete_cluster_tags_with_http_info(request)
+        http_info = self._batch_delete_cluster_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_cluster_tags_with_http_info(self, request):
+    def batch_delete_cluster_tags_invoker(self, request):
+        http_info = self._batch_delete_cluster_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_cluster_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteClusterTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -238,11 +283,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -251,20 +296,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/tags/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteClusterTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def continue_upgrade_cluster_task(self, request):
         """继续执行集群升级任务
@@ -279,9 +320,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ContinueUpgradeClusterTaskRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ContinueUpgradeClusterTaskResponse`
         """
-        return self._continue_upgrade_cluster_task_with_http_info(request)
+        http_info = self._continue_upgrade_cluster_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _continue_upgrade_cluster_task_with_http_info(self, request):
+    def continue_upgrade_cluster_task_invoker(self, request):
+        http_info = self._continue_upgrade_cluster_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _continue_upgrade_cluster_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/continue",
+            "request_type": request.__class__.__name__,
+            "response_type": "ContinueUpgradeClusterTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -298,9 +352,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -309,20 +363,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/continue',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ContinueUpgradeClusterTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_addon_instance(self, request):
         """创建AddonInstance
@@ -335,9 +385,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateAddonInstanceResponse`
         """
-        return self._create_addon_instance_with_http_info(request)
+        http_info = self._create_addon_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_addon_instance_with_http_info(self, request):
+    def create_addon_instance_invoker(self, request):
+        http_info = self._create_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/addons",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAddonInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -352,11 +415,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -365,20 +428,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/addons',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAddonInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cloud_persistent_volume_claims(self, request):
         """创建PVC（待废弃）
@@ -394,9 +453,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateCloudPersistentVolumeClaimsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateCloudPersistentVolumeClaimsResponse`
         """
-        return self._create_cloud_persistent_volume_claims_with_http_info(request)
+        http_info = self._create_cloud_persistent_volume_claims_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cloud_persistent_volume_claims_with_http_info(self, request):
+    def create_cloud_persistent_volume_claims_invoker(self, request):
+        http_info = self._create_cloud_persistent_volume_claims_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cloud_persistent_volume_claims_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v1/namespaces/{namespace}/cloudpersistentvolumeclaims",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCloudPersistentVolumeClaimsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -415,11 +487,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -428,20 +500,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v1/namespaces/{namespace}/cloudpersistentvolumeclaims',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCloudPersistentVolumeClaimsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cluster(self, request):
         """创建集群
@@ -458,9 +526,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateClusterResponse`
         """
-        return self._create_cluster_with_http_info(request)
+        http_info = self._create_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_with_http_info(self, request):
+    def create_cluster_invoker(self, request):
+        http_info = self._create_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -475,11 +556,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -488,20 +569,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_kubernetes_cluster_cert(self, request):
         """获取集群证书
@@ -514,9 +591,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateKubernetesClusterCertRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateKubernetesClusterCertResponse`
         """
-        return self._create_kubernetes_cluster_cert_with_http_info(request)
+        http_info = self._create_kubernetes_cluster_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_kubernetes_cluster_cert_with_http_info(self, request):
+    def create_kubernetes_cluster_cert_invoker(self, request):
+        http_info = self._create_kubernetes_cluster_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_kubernetes_cluster_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/clustercert",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKubernetesClusterCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -533,11 +623,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Port-ID", ]
 
@@ -546,20 +636,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/clustercert',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateKubernetesClusterCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_node(self, request):
         """创建节点
@@ -574,9 +660,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateNodeResponse`
         """
-        return self._create_node_with_http_info(request)
+        http_info = self._create_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_node_with_http_info(self, request):
+    def create_node_invoker(self, request):
+        http_info = self._create_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -595,11 +694,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -608,20 +707,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_node_pool(self, request):
         """创建节点池
@@ -641,9 +736,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.CreateNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.CreateNodePoolResponse`
         """
-        return self._create_node_pool_with_http_info(request)
+        http_info = self._create_node_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_node_pool_with_http_info(self, request):
+    def create_node_pool_invoker(self, request):
+        http_info = self._create_node_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_node_pool_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNodePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -660,11 +768,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -673,20 +781,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNodePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_addon_instance(self, request):
         """删除AddonInstance
@@ -699,9 +803,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteAddonInstanceResponse`
         """
-        return self._delete_addon_instance_with_http_info(request)
+        http_info = self._delete_addon_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_addon_instance_with_http_info(self, request):
+    def delete_addon_instance_invoker(self, request):
+        http_info = self._delete_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/api/v3/addons/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAddonInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -720,9 +837,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -731,20 +848,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/addons/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAddonInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cloud_persistent_volume_claims(self, request):
         """删除PVC（待废弃）
@@ -758,9 +871,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteCloudPersistentVolumeClaimsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteCloudPersistentVolumeClaimsResponse`
         """
-        return self._delete_cloud_persistent_volume_claims_with_http_info(request)
+        http_info = self._delete_cloud_persistent_volume_claims_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cloud_persistent_volume_claims_with_http_info(self, request):
+    def delete_cloud_persistent_volume_claims_invoker(self, request):
+        http_info = self._delete_cloud_persistent_volume_claims_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cloud_persistent_volume_claims_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/api/v1/namespaces/{namespace}/cloudpersistentvolumeclaims/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCloudPersistentVolumeClaimsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -785,9 +911,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -796,20 +922,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v1/namespaces/{namespace}/cloudpersistentvolumeclaims/{name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCloudPersistentVolumeClaimsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cluster(self, request):
         """删除集群
@@ -823,9 +945,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteClusterResponse`
         """
-        return self._delete_cluster_with_http_info(request)
+        http_info = self._delete_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cluster_with_http_info(self, request):
+    def delete_cluster_invoker(self, request):
+        http_info = self._delete_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cluster_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -858,9 +993,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -869,20 +1004,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_node(self, request):
         """删除节点
@@ -896,9 +1027,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteNodeResponse`
         """
-        return self._delete_node_with_http_info(request)
+        http_info = self._delete_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_node_with_http_info(self, request):
+    def delete_node_invoker(self, request):
+        http_info = self._delete_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_node_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -919,9 +1063,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -930,20 +1074,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/{node_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_node_pool(self, request):
         """删除节点池
@@ -957,9 +1097,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.DeleteNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.DeleteNodePoolResponse`
         """
-        return self._delete_node_pool_with_http_info(request)
+        http_info = self._delete_node_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_node_pool_with_http_info(self, request):
+    def delete_node_pool_invoker(self, request):
+        http_info = self._delete_node_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_node_pool_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools/{nodepool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNodePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -978,9 +1131,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -989,20 +1142,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools/{nodepool_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNodePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def hibernate_cluster(self, request):
         """集群休眠
@@ -1015,9 +1164,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.HibernateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.HibernateClusterResponse`
         """
-        return self._hibernate_cluster_with_http_info(request)
+        http_info = self._hibernate_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _hibernate_cluster_with_http_info(self, request):
+    def hibernate_cluster_invoker(self, request):
+        http_info = self._hibernate_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _hibernate_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/hibernate",
+            "request_type": request.__class__.__name__,
+            "response_type": "HibernateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1034,9 +1196,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1045,20 +1207,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/hibernate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='HibernateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_addon_instances(self, request):
         """获取AddonInstance列表
@@ -1071,9 +1229,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListAddonInstancesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListAddonInstancesResponse`
         """
-        return self._list_addon_instances_with_http_info(request)
+        http_info = self._list_addon_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_addon_instances_with_http_info(self, request):
+    def list_addon_instances_invoker(self, request):
+        http_info = self._list_addon_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_addon_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/addons",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAddonInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1090,9 +1261,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1101,20 +1272,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/addons',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAddonInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_addon_templates(self, request):
         """查询AddonTemplates列表
@@ -1127,9 +1294,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListAddonTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListAddonTemplatesResponse`
         """
-        return self._list_addon_templates_with_http_info(request)
+        http_info = self._list_addon_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_addon_templates_with_http_info(self, request):
+    def list_addon_templates_invoker(self, request):
+        http_info = self._list_addon_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_addon_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/addontemplates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAddonTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1146,9 +1326,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1157,20 +1337,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/addontemplates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAddonTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_clusters(self, request):
         """获取指定项目下的集群
@@ -1183,9 +1359,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListClustersResponse`
         """
-        return self._list_clusters_with_http_info(request)
+        http_info = self._list_clusters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_clusters_with_http_info(self, request):
+    def list_clusters_invoker(self, request):
+        http_info = self._list_clusters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_clusters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClustersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1208,9 +1397,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1219,20 +1408,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClustersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_node_pools(self, request):
         """获取集群下所有节点池
@@ -1247,9 +1432,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListNodePoolsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListNodePoolsResponse`
         """
-        return self._list_node_pools_with_http_info(request)
+        http_info = self._list_node_pools_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_node_pools_with_http_info(self, request):
+    def list_node_pools_invoker(self, request):
+        http_info = self._list_node_pools_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_node_pools_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodePoolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1268,9 +1466,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1279,20 +1477,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNodePoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nodes(self, request):
         """获取集群下所有节点
@@ -1306,9 +1500,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ListNodesRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ListNodesResponse`
         """
-        return self._list_nodes_with_http_info(request)
+        http_info = self._list_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nodes_with_http_info(self, request):
+    def list_nodes_invoker(self, request):
+        http_info = self._list_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_nodes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1325,9 +1532,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1336,20 +1543,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_node(self, request):
         """节点迁移
@@ -1365,9 +1568,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.MigrateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.MigrateNodeResponse`
         """
-        return self._migrate_node_with_http_info(request)
+        http_info = self._migrate_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_node_with_http_info(self, request):
+    def migrate_node_invoker(self, request):
+        http_info = self._migrate_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_node_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/operation/migrateto/{target_cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1386,11 +1602,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1399,20 +1615,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/operation/migrateto/{target_cluster_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def pause_upgrade_cluster_task(self, request):
         """暂停集群升级任务
@@ -1427,9 +1639,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.PauseUpgradeClusterTaskRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.PauseUpgradeClusterTaskResponse`
         """
-        return self._pause_upgrade_cluster_task_with_http_info(request)
+        http_info = self._pause_upgrade_cluster_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _pause_upgrade_cluster_task_with_http_info(self, request):
+    def pause_upgrade_cluster_task_invoker(self, request):
+        http_info = self._pause_upgrade_cluster_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _pause_upgrade_cluster_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/pause",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseUpgradeClusterTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1446,9 +1671,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1457,20 +1682,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/pause',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PauseUpgradeClusterTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_node(self, request):
         """节点移除
@@ -1484,9 +1705,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.RemoveNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.RemoveNodeResponse`
         """
-        return self._remove_node_with_http_info(request)
+        http_info = self._remove_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_node_with_http_info(self, request):
+    def remove_node_invoker(self, request):
+        http_info = self._remove_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_node_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/operation/remove",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1503,11 +1737,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1516,20 +1750,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/operation/remove',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_node(self, request):
         """重置节点
@@ -1543,9 +1773,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ResetNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ResetNodeResponse`
         """
-        return self._reset_node_with_http_info(request)
+        http_info = self._reset_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_node_with_http_info(self, request):
+    def reset_node_invoker(self, request):
+        http_info = self._reset_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1562,11 +1805,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1575,20 +1818,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/reset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_cluster(self, request):
         """变更集群规格
@@ -1604,9 +1843,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ResizeClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ResizeClusterResponse`
         """
-        return self._resize_cluster_with_http_info(request)
+        http_info = self._resize_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_cluster_with_http_info(self, request):
+    def resize_cluster_invoker(self, request):
+        http_info = self._resize_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1623,11 +1875,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1636,20 +1888,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_upgrade_cluster_task(self, request):
         """重试集群升级任务
@@ -1664,9 +1912,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.RetryUpgradeClusterTaskRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.RetryUpgradeClusterTaskResponse`
         """
-        return self._retry_upgrade_cluster_task_with_http_info(request)
+        http_info = self._retry_upgrade_cluster_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_upgrade_cluster_task_with_http_info(self, request):
+    def retry_upgrade_cluster_task_invoker(self, request):
+        http_info = self._retry_upgrade_cluster_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _retry_upgrade_cluster_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryUpgradeClusterTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1683,9 +1944,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1694,20 +1955,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/retry',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryUpgradeClusterTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rollback_addon_instance(self, request):
         """回滚AddonInstance
@@ -1720,9 +1977,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.RollbackAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.RollbackAddonInstanceResponse`
         """
-        return self._rollback_addon_instance_with_http_info(request)
+        http_info = self._rollback_addon_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rollback_addon_instance_with_http_info(self, request):
+    def rollback_addon_instance_invoker(self, request):
+        http_info = self._rollback_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rollback_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/addons/{id}/operation/rollback",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollbackAddonInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1739,11 +2009,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1752,20 +2022,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/addons/{id}/operation/rollback',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RollbackAddonInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_addon_instance(self, request):
         """获取AddonInstance详情
@@ -1778,9 +2044,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowAddonInstanceResponse`
         """
-        return self._show_addon_instance_with_http_info(request)
+        http_info = self._show_addon_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_addon_instance_with_http_info(self, request):
+    def show_addon_instance_invoker(self, request):
+        http_info = self._show_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/addons/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAddonInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1799,9 +2078,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1810,20 +2089,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/addons/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAddonInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cluster(self, request):
         """获取指定的集群
@@ -1837,9 +2112,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterResponse`
         """
-        return self._show_cluster_with_http_info(request)
+        http_info = self._show_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cluster_with_http_info(self, request):
+    def show_cluster_invoker(self, request):
+        http_info = self._show_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cluster_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1858,9 +2146,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1869,20 +2157,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cluster_endpoints(self, request):
         """获取集群访问的地址
@@ -1896,9 +2180,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowClusterEndpointsRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowClusterEndpointsResponse`
         """
-        return self._show_cluster_endpoints_with_http_info(request)
+        http_info = self._show_cluster_endpoints_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cluster_endpoints_with_http_info(self, request):
+    def show_cluster_endpoints_invoker(self, request):
+        http_info = self._show_cluster_endpoints_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cluster_endpoints_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/openapi",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterEndpointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1915,9 +2212,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1926,20 +2223,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/openapi',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClusterEndpointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job(self, request):
         """获取任务信息
@@ -1956,9 +2249,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1975,9 +2281,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1986,20 +2292,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_node(self, request):
         """获取指定的节点
@@ -2013,9 +2315,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowNodeResponse`
         """
-        return self._show_node_with_http_info(request)
+        http_info = self._show_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_node_with_http_info(self, request):
+    def show_node_invoker(self, request):
+        http_info = self._show_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_node_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2034,9 +2349,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2045,20 +2360,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/{node_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_node_pool(self, request):
         """获取指定的节点池
@@ -2072,9 +2383,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowNodePoolResponse`
         """
-        return self._show_node_pool_with_http_info(request)
+        http_info = self._show_node_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_node_pool_with_http_info(self, request):
+    def show_node_pool_invoker(self, request):
+        http_info = self._show_node_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_node_pool_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools/{nodepool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2093,9 +2417,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2104,20 +2428,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools/{nodepool_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNodePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas(self, request):
         """查询CCE服务下的资源配额
@@ -2130,9 +2450,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2147,9 +2480,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2158,20 +2491,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_upgrade_cluster_task(self, request):
         """获取集群升级任务详情
@@ -2186,9 +2515,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowUpgradeClusterTaskRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowUpgradeClusterTaskResponse`
         """
-        return self._show_upgrade_cluster_task_with_http_info(request)
+        http_info = self._show_upgrade_cluster_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_upgrade_cluster_task_with_http_info(self, request):
+    def show_upgrade_cluster_task_invoker(self, request):
+        http_info = self._show_upgrade_cluster_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_upgrade_cluster_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUpgradeClusterTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2207,9 +2549,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2218,20 +2560,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUpgradeClusterTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_addon_instance(self, request):
         """更新AddonInstance
@@ -2244,9 +2582,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateAddonInstanceRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateAddonInstanceResponse`
         """
-        return self._update_addon_instance_with_http_info(request)
+        http_info = self._update_addon_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_addon_instance_with_http_info(self, request):
+    def update_addon_instance_invoker(self, request):
+        http_info = self._update_addon_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_addon_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/addons/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAddonInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2263,11 +2614,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2276,20 +2627,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/addons/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAddonInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cluster(self, request):
         """更新指定的集群
@@ -2303,9 +2650,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateClusterResponse`
         """
-        return self._update_cluster_with_http_info(request)
+        http_info = self._update_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cluster_with_http_info(self, request):
+    def update_cluster_invoker(self, request):
+        http_info = self._update_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cluster_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2322,11 +2682,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2335,20 +2695,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cluster_eip(self, request):
         """绑定、解绑集群公网apiserver地址
@@ -2362,9 +2718,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateClusterEipRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateClusterEipResponse`
         """
-        return self._update_cluster_eip_with_http_info(request)
+        http_info = self._update_cluster_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cluster_eip_with_http_info(self, request):
+    def update_cluster_eip_invoker(self, request):
+        http_info = self._update_cluster_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cluster_eip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/mastereip",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClusterEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2381,11 +2750,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2394,20 +2763,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/mastereip',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateClusterEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_node(self, request):
         """更新指定的节点
@@ -2422,9 +2787,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateNodeRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodeResponse`
         """
-        return self._update_node_with_http_info(request)
+        http_info = self._update_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_node_with_http_info(self, request):
+    def update_node_invoker(self, request):
+        http_info = self._update_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_node_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2443,11 +2821,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2456,20 +2834,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodes/{node_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_node_pool(self, request):
         """更新指定节点池
@@ -2487,9 +2861,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpdateNodePoolRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpdateNodePoolResponse`
         """
-        return self._update_node_pool_with_http_info(request)
+        http_info = self._update_node_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_node_pool_with_http_info(self, request):
+    def update_node_pool_invoker(self, request):
+        http_info = self._update_node_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_node_pool_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools/{nodepool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNodePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2508,11 +2895,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2521,20 +2908,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/nodepools/{nodepool_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNodePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_cluster(self, request):
         """集群升级
@@ -2549,9 +2932,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.UpgradeClusterRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.UpgradeClusterResponse`
         """
-        return self._upgrade_cluster_with_http_info(request)
+        http_info = self._upgrade_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_cluster_with_http_info(self, request):
+    def upgrade_cluster_invoker(self, request):
+        http_info = self._upgrade_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2568,11 +2964,11 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2581,20 +2977,16 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/api/v3/projects/{project_id}/clusters/{cluster_id}/operation/upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_version(self, request):
         """查询API版本信息列表。
@@ -2607,9 +2999,22 @@ class CceClient(Client):
         :type request: :class:`huaweicloudsdkcce.v3.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkcce.v3.ShowVersionResponse`
         """
-        return self._show_version_with_http_info(request)
+        http_info = self._show_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_version_with_http_info(self, request):
+    def show_version_invoker(self, request):
+        http_info = self._show_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2624,9 +3029,9 @@ class CceClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2635,20 +3040,25 @@ class CceClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

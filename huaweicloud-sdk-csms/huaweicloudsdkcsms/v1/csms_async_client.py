@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcsms'")
 
 
 class CsmsAsyncClient(Client):
@@ -39,9 +44,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.BatchCreateOrDeleteTagsResponse`
         """
-        return self._batch_create_or_delete_tags_with_http_info(request)
+        http_info = self._batch_create_or_delete_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_or_delete_tags_with_http_info(self, request):
+    def batch_create_or_delete_tags_async_invoker(self, request):
+        http_info = self._batch_create_or_delete_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_or_delete_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/csms/{secret_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOrDeleteTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/{secret_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateOrDeleteTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_secret_async(self, request):
         """创建凭据
@@ -102,9 +115,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretResponse`
         """
-        return self._create_secret_with_http_info(request)
+        http_info = self._create_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_secret_with_http_info(self, request):
+    def create_secret_async_invoker(self, request):
+        http_info = self._create_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_secret_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +144,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +157,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_secret_event_async(self, request):
         """创建事件
@@ -159,9 +180,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretEventRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretEventResponse`
         """
-        return self._create_secret_event_with_http_info(request)
+        http_info = self._create_secret_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_secret_event_with_http_info(self, request):
+    def create_secret_event_async_invoker(self, request):
+        http_info = self._create_secret_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_secret_event_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/csms/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecretEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecretEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_secret_tag_async(self, request):
         """添加凭据标签
@@ -216,9 +245,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretTagRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretTagResponse`
         """
-        return self._create_secret_tag_with_http_info(request)
+        http_info = self._create_secret_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_secret_tag_with_http_info(self, request):
+    def create_secret_tag_async_invoker(self, request):
+        http_info = self._create_secret_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_secret_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/csms/{secret_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecretTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +276,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/{secret_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecretTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_secret_version_async(self, request):
         """创建凭据版本
@@ -275,9 +312,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.CreateSecretVersionResponse`
         """
-        return self._create_secret_version_with_http_info(request)
+        http_info = self._create_secret_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_secret_version_with_http_info(self, request):
+    def create_secret_version_async_invoker(self, request):
+        http_info = self._create_secret_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_secret_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecretVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -294,11 +343,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -307,20 +356,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/versions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecretVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_secret_async(self, request):
         """立即删除凭据
@@ -334,9 +379,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretResponse`
         """
-        return self._delete_secret_with_http_info(request)
+        http_info = self._delete_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_secret_with_http_info(self, request):
+    def delete_secret_async_invoker(self, request):
+        http_info = self._delete_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_secret_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,9 +410,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -364,20 +421,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_secret_event_async(self, request):
         """立即删除事件
@@ -391,9 +444,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretEventRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretEventResponse`
         """
-        return self._delete_secret_event_with_http_info(request)
+        http_info = self._delete_secret_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_secret_event_with_http_info(self, request):
+    def delete_secret_event_async_invoker(self, request):
+        http_info = self._delete_secret_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_secret_event_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/csms/events/{event_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecretEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -410,9 +475,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -421,20 +486,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/events/{event_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecretEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_secret_for_schedule_async(self, request):
         """创建凭据的定时删除任务
@@ -448,9 +509,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretForScheduleResponse`
         """
-        return self._delete_secret_for_schedule_with_http_info(request)
+        http_info = self._delete_secret_for_schedule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_secret_for_schedule_with_http_info(self, request):
+    def delete_secret_for_schedule_async_invoker(self, request):
+        http_info = self._delete_secret_for_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_secret_for_schedule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/scheduled-deleted-tasks/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecretForScheduleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -467,11 +540,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -480,20 +553,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/scheduled-deleted-tasks/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecretForScheduleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_secret_stage_async(self, request):
         """删除凭据的版本状态
@@ -507,9 +576,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretStageResponse`
         """
-        return self._delete_secret_stage_with_http_info(request)
+        http_info = self._delete_secret_stage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_secret_stage_with_http_info(self, request):
+    def delete_secret_stage_async_invoker(self, request):
+        http_info = self._delete_secret_stage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_secret_stage_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/stages/{stage_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecretStageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -528,9 +609,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -539,20 +620,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/stages/{stage_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecretStageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_secret_tag_async(self, request):
         """删除凭据标签
@@ -566,9 +643,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DeleteSecretTagRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DeleteSecretTagResponse`
         """
-        return self._delete_secret_tag_with_http_info(request)
+        http_info = self._delete_secret_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_secret_tag_with_http_info(self, request):
+    def delete_secret_tag_async_invoker(self, request):
+        http_info = self._delete_secret_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_secret_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/csms/{secret_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecretTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -587,9 +676,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -598,20 +687,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/{secret_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecretTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_secret_blob_async(self, request):
         """下载凭据备份
@@ -625,9 +710,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.DownloadSecretBlobRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.DownloadSecretBlobResponse`
         """
-        return self._download_secret_blob_with_http_info(request)
+        http_info = self._download_secret_blob_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_secret_blob_with_http_info(self, request):
+    def download_secret_blob_async_invoker(self, request):
+        http_info = self._download_secret_blob_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_secret_blob_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/backup",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadSecretBlobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -644,9 +741,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -655,20 +752,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/backup',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadSecretBlobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notification_records_async(self, request):
         """查询已触发的事件通知记录
@@ -682,9 +775,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListNotificationRecordsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListNotificationRecordsResponse`
         """
-        return self._list_notification_records_with_http_info(request)
+        http_info = self._list_notification_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notification_records_with_http_info(self, request):
+    def list_notification_records_async_invoker(self, request):
+        http_info = self._list_notification_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_notification_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/csms/notification-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotificationRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -694,14 +799,18 @@ class CsmsAsyncClient(Client):
         path_params = {}
 
         query_params = []
+        if 'limit' in local_var_params:
+            query_params.append(('limit', local_var_params['limit']))
+        if 'marker' in local_var_params:
+            query_params.append(('marker', local_var_params['marker']))
 
         header_params = {}
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +819,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/notification-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotificationRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_secrets_tags_async(self, request):
         """查询项目标签
@@ -737,9 +842,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListProjectSecretsTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListProjectSecretsTagsResponse`
         """
-        return self._list_project_secrets_tags_with_http_info(request)
+        http_info = self._list_project_secrets_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_secrets_tags_with_http_info(self, request):
+    def list_project_secrets_tags_async_invoker(self, request):
+        http_info = self._list_project_secrets_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_secrets_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/csms/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectSecretsTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -754,9 +871,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -765,20 +882,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectSecretsTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_instances_async(self, request):
         """查询凭据实例
@@ -792,9 +905,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListResourceInstancesResponse`
         """
-        return self._list_resource_instances_with_http_info(request)
+        http_info = self._list_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_instances_with_http_info(self, request):
+    def list_resource_instances_async_invoker(self, request):
+        http_info = self._list_resource_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/csms/{resource_instances}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -811,11 +936,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -824,20 +949,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/{resource_instances}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_secret_events_async(self, request):
         """查询事件列表
@@ -851,9 +972,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretEventsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretEventsResponse`
         """
-        return self._list_secret_events_with_http_info(request)
+        http_info = self._list_secret_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_secret_events_with_http_info(self, request):
+    def list_secret_events_async_invoker(self, request):
+        http_info = self._list_secret_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_secret_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/csms/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecretEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -872,9 +1005,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -883,20 +1016,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecretEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_secret_tags_async(self, request):
         """查询凭据标签
@@ -910,9 +1039,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretTagsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretTagsResponse`
         """
-        return self._list_secret_tags_with_http_info(request)
+        http_info = self._list_secret_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_secret_tags_with_http_info(self, request):
+    def list_secret_tags_async_invoker(self, request):
+        http_info = self._list_secret_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_secret_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/csms/{secret_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecretTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,9 +1070,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -940,20 +1081,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/{secret_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecretTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_secret_versions_async(self, request):
         """查询凭据的版本列表
@@ -967,9 +1104,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretVersionsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretVersionsResponse`
         """
-        return self._list_secret_versions_with_http_info(request)
+        http_info = self._list_secret_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_secret_versions_with_http_info(self, request):
+    def list_secret_versions_async_invoker(self, request):
+        http_info = self._list_secret_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_secret_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecretVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -990,9 +1139,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1001,20 +1150,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecretVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_secrets_async(self, request):
         """查询凭据列表
@@ -1028,9 +1173,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ListSecretsResponse`
         """
-        return self._list_secrets_with_http_info(request)
+        http_info = self._list_secrets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_secrets_with_http_info(self, request):
+    def list_secrets_async_invoker(self, request):
+        http_info = self._list_secrets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_secrets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/secrets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecretsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1051,9 +1208,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1062,20 +1219,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecretsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_secret_async(self, request):
         """取消凭据的定时删除任务
@@ -1089,9 +1242,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.RestoreSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.RestoreSecretResponse`
         """
-        return self._restore_secret_with_http_info(request)
+        http_info = self._restore_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_secret_with_http_info(self, request):
+    def restore_secret_async_invoker(self, request):
+        http_info = self._restore_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_secret_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/scheduled-deleted-tasks/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1108,9 +1273,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1119,20 +1284,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/scheduled-deleted-tasks/cancel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rotate_secret_async(self, request):
         """轮转凭据
@@ -1146,9 +1307,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.RotateSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.RotateSecretResponse`
         """
-        return self._rotate_secret_with_http_info(request)
+        http_info = self._rotate_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rotate_secret_with_http_info(self, request):
+    def rotate_secret_async_invoker(self, request):
+        http_info = self._rotate_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _rotate_secret_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/rotate",
+            "request_type": request.__class__.__name__,
+            "response_type": "RotateSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1165,9 +1338,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1176,20 +1349,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/rotate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RotateSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_secret_async(self, request):
         """查询凭据
@@ -1203,9 +1372,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretResponse`
         """
-        return self._show_secret_with_http_info(request)
+        http_info = self._show_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_secret_with_http_info(self, request):
+    def show_secret_async_invoker(self, request):
+        http_info = self._show_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_secret_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1222,9 +1403,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1233,20 +1414,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_secret_event_async(self, request):
         """查询事件
@@ -1260,9 +1437,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretEventRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretEventResponse`
         """
-        return self._show_secret_event_with_http_info(request)
+        http_info = self._show_secret_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_secret_event_with_http_info(self, request):
+    def show_secret_event_async_invoker(self, request):
+        http_info = self._show_secret_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_secret_event_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/csms/events/{event_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecretEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1279,9 +1468,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1290,20 +1479,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/events/{event_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecretEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_secret_stage_async(self, request):
         """查询凭据的版本状态
@@ -1317,9 +1502,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretStageResponse`
         """
-        return self._show_secret_stage_with_http_info(request)
+        http_info = self._show_secret_stage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_secret_stage_with_http_info(self, request):
+    def show_secret_stage_async_invoker(self, request):
+        http_info = self._show_secret_stage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_secret_stage_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/stages/{stage_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecretStageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1338,9 +1535,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1349,20 +1546,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/stages/{stage_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecretStageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_secret_version_async(self, request):
         """查询凭据的版本与凭据值
@@ -1377,9 +1570,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.ShowSecretVersionRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.ShowSecretVersionResponse`
         """
-        return self._show_secret_version_with_http_info(request)
+        http_info = self._show_secret_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_secret_version_with_http_info(self, request):
+    def show_secret_version_async_invoker(self, request):
+        http_info = self._show_secret_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_secret_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecretVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1398,9 +1603,9 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1409,20 +1614,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/versions/{version_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecretVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_secret_async(self, request):
         """更新凭据
@@ -1436,9 +1637,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretResponse`
         """
-        return self._update_secret_with_http_info(request)
+        http_info = self._update_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_secret_with_http_info(self, request):
+    def update_secret_async_invoker(self, request):
+        http_info = self._update_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_secret_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1455,11 +1668,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1468,20 +1681,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_secret_event_async(self, request):
         """更新事件
@@ -1495,9 +1704,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretEventRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretEventResponse`
         """
-        return self._update_secret_event_with_http_info(request)
+        http_info = self._update_secret_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_secret_event_with_http_info(self, request):
+    def update_secret_event_async_invoker(self, request):
+        http_info = self._update_secret_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_secret_event_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/csms/events/{event_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecretEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1514,11 +1735,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1527,20 +1748,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/csms/events/{event_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecretEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_secret_stage_async(self, request):
         """更新凭据的版本状态
@@ -1554,9 +1771,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateSecretStageResponse`
         """
-        return self._update_secret_stage_with_http_info(request)
+        http_info = self._update_secret_stage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_secret_stage_with_http_info(self, request):
+    def update_secret_stage_async_invoker(self, request):
+        http_info = self._update_secret_stage_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_secret_stage_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/stages/{stage_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecretStageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1575,11 +1804,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1588,20 +1817,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/stages/{stage_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecretStageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_version_async(self, request):
         """更新凭据版本
@@ -1615,9 +1840,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.UpdateVersionRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UpdateVersionResponse`
         """
-        return self._update_version_with_http_info(request)
+        http_info = self._update_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_version_with_http_info(self, request):
+    def update_version_async_invoker(self, request):
+        http_info = self._update_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_version_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/secrets/{secret_name}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1636,11 +1873,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1649,20 +1886,16 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/{secret_name}/versions/{version_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_secret_blob_async(self, request):
         """恢复凭据对象
@@ -1676,9 +1909,21 @@ class CsmsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobRequest`
         :rtype: :class:`huaweicloudsdkcsms.v1.UploadSecretBlobResponse`
         """
-        return self._upload_secret_blob_with_http_info(request)
+        http_info = self._upload_secret_blob_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_secret_blob_with_http_info(self, request):
+    def upload_secret_blob_async_invoker(self, request):
+        http_info = self._upload_secret_blob_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_secret_blob_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secrets/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadSecretBlobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1693,11 +1938,11 @@ class CsmsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1706,20 +1951,26 @@ class CsmsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secrets/restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadSecretBlobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1758,4 +2009,4 @@ class CsmsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

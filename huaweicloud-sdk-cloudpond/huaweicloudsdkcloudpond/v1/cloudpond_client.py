@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcloudpond'")
 
 
 class CloudPondClient(Client):
@@ -39,9 +44,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.CreateEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.CreateEdgeSiteResponse`
         """
-        return self._create_edge_site_with_http_info(request)
+        http_info = self._create_edge_site_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_site_with_http_info(self, request):
+    def create_edge_site_invoker(self, request):
+        http_info = self._create_edge_site_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_edge_site_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{domain_id}/edge-sites",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeSiteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +74,11 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +87,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/edge-sites',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeSiteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_site(self, request):
         """删除边缘小站
@@ -95,9 +109,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.DeleteEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.DeleteEdgeSiteResponse`
         """
-        return self._delete_edge_site_with_http_info(request)
+        http_info = self._delete_edge_site_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_site_with_http_info(self, request):
+    def delete_edge_site_invoker(self, request):
+        http_info = self._delete_edge_site_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_edge_site_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{domain_id}/edge-sites/{site_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeSiteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -114,9 +141,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -125,20 +152,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/edge-sites/{site_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeSiteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_sites(self, request):
         """查询边缘小站列表
@@ -151,9 +174,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ListEdgeSitesRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ListEdgeSitesResponse`
         """
-        return self._list_edge_sites_with_http_info(request)
+        http_info = self._list_edge_sites_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_sites_with_http_info(self, request):
+    def list_edge_sites_invoker(self, request):
+        http_info = self._list_edge_sites_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_sites_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/edge-sites",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeSitesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -190,9 +226,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -201,20 +237,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/edge-sites',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeSitesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_site(self, request):
         """查询边缘小站详情
@@ -227,9 +259,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ShowEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ShowEdgeSiteResponse`
         """
-        return self._show_edge_site_with_http_info(request)
+        http_info = self._show_edge_site_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_site_with_http_info(self, request):
+    def show_edge_site_invoker(self, request):
+        http_info = self._show_edge_site_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_edge_site_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/edge-sites/{site_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeSiteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -246,9 +291,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -257,20 +302,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/edge-sites/{site_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeSiteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_site(self, request):
         """更新边缘小站
@@ -284,9 +325,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.UpdateEdgeSiteRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.UpdateEdgeSiteResponse`
         """
-        return self._update_edge_site_with_http_info(request)
+        http_info = self._update_edge_site_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_site_with_http_info(self, request):
+    def update_edge_site_invoker(self, request):
+        http_info = self._update_edge_site_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_edge_site_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{domain_id}/edge-sites/{site_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeSiteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -303,11 +357,11 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -316,20 +370,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/edge-sites/{site_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeSiteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_site_metrics(self, request):
         """查看站点容量信息
@@ -342,9 +392,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ListEdgeSiteMetricsRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ListEdgeSiteMetricsResponse`
         """
-        return self._list_edge_site_metrics_with_http_info(request)
+        http_info = self._list_edge_site_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_site_metrics_with_http_info(self, request):
+    def list_edge_site_metrics_invoker(self, request):
+        http_info = self._list_edge_site_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_site_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/edge-sites/{site_id}/metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeSiteMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -363,9 +426,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -374,20 +437,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/edge-sites/{site_id}/metric-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeSiteMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas(self, request):
         """查询配额
@@ -400,9 +459,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -417,9 +489,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -428,20 +500,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_racks(self, request):
         """查询机柜列表
@@ -454,9 +522,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ListRacksRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ListRacksResponse`
         """
-        return self._list_racks_with_http_info(request)
+        http_info = self._list_racks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_racks_with_http_info(self, request):
+    def list_racks_invoker(self, request):
+        http_info = self._list_racks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_racks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/racks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRacksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -483,9 +564,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -494,20 +575,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/racks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRacksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_rack(self, request):
         """查询机柜详情
@@ -520,9 +597,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ShowRackRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ShowRackResponse`
         """
-        return self._show_rack_with_http_info(request)
+        http_info = self._show_rack_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_rack_with_http_info(self, request):
+    def show_rack_invoker(self, request):
+        http_info = self._show_rack_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_rack_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/racks/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -539,9 +629,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -550,20 +640,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/racks/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_supported_regions(self, request):
         """查询支持的区域列表
@@ -576,9 +662,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ListSupportedRegionsRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ListSupportedRegionsResponse`
         """
-        return self._list_supported_regions_with_http_info(request)
+        http_info = self._list_supported_regions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_supported_regions_with_http_info(self, request):
+    def list_supported_regions_invoker(self, request):
+        http_info = self._list_supported_regions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_supported_regions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupportedRegionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -605,9 +704,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -616,20 +715,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/regions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSupportedRegionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_storage_pools(self, request):
         """查询存储池列表
@@ -642,9 +737,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ListStoragePoolsRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ListStoragePoolsResponse`
         """
-        return self._list_storage_pools_with_http_info(request)
+        http_info = self._list_storage_pools_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_storage_pools_with_http_info(self, request):
+    def list_storage_pools_invoker(self, request):
+        http_info = self._list_storage_pools_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_storage_pools_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/storage-pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStoragePoolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -671,9 +779,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -682,20 +790,16 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/storage-pools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStoragePoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_storage_pool(self, request):
         """查询存储池详情
@@ -708,9 +812,22 @@ class CloudPondClient(Client):
         :type request: :class:`huaweicloudsdkcloudpond.v1.ShowStoragePoolRequest`
         :rtype: :class:`huaweicloudsdkcloudpond.v1.ShowStoragePoolResponse`
         """
-        return self._show_storage_pool_with_http_info(request)
+        http_info = self._show_storage_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_storage_pool_with_http_info(self, request):
+    def show_storage_pool_invoker(self, request):
+        http_info = self._show_storage_pool_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_storage_pool_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{domain_id}/storage-pools/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStoragePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -727,9 +844,9 @@ class CloudPondClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -738,20 +855,25 @@ class CloudPondClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{domain_id}/storage-pools/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStoragePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkiam'")
 
 
 class IamClient(Client):
@@ -40,9 +45,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithAllProjectsPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithAllProjectsPermissionResponse`
         """
-        return self._associate_agency_with_all_projects_permission_with_http_info(request)
+        http_info = self._associate_agency_with_all_projects_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_agency_with_all_projects_permission_with_http_info(self, request):
+    def associate_agency_with_all_projects_permission_invoker(self, request):
+        http_info = self._associate_agency_with_all_projects_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_agency_with_all_projects_permission_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-INHERIT/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}/inherited_to_projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateAgencyWithAllProjectsPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -63,9 +81,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -74,20 +92,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-INHERIT/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}/inherited_to_projects',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateAgencyWithAllProjectsPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_agency_with_domain_permission(self, request):
         """为委托授予全局服务权限
@@ -102,9 +116,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithDomainPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithDomainPermissionResponse`
         """
-        return self._associate_agency_with_domain_permission_with_http_info(request)
+        http_info = self._associate_agency_with_domain_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_agency_with_domain_permission_with_http_info(self, request):
+    def associate_agency_with_domain_permission_invoker(self, request):
+        http_info = self._associate_agency_with_domain_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_agency_with_domain_permission_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateAgencyWithDomainPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -125,9 +152,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -136,20 +163,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateAgencyWithDomainPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_agency_with_project_permission(self, request):
         """为委托授予项目服务权限
@@ -164,9 +187,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithProjectPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateAgencyWithProjectPermissionResponse`
         """
-        return self._associate_agency_with_project_permission_with_http_info(request)
+        http_info = self._associate_agency_with_project_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_agency_with_project_permission_with_http_info(self, request):
+    def associate_agency_with_project_permission_invoker(self, request):
+        http_info = self._associate_agency_with_project_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_agency_with_project_permission_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateAgencyWithProjectPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -187,9 +223,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -198,20 +234,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateAgencyWithProjectPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_role_to_agency_on_enterprise_project(self, request):
         """application/json
@@ -224,9 +256,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToAgencyOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateRoleToAgencyOnEnterpriseProjectResponse`
         """
-        return self._associate_role_to_agency_on_enterprise_project_with_http_info(request)
+        http_info = self._associate_role_to_agency_on_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_role_to_agency_on_enterprise_project_with_http_info(self, request):
+    def associate_role_to_agency_on_enterprise_project_invoker(self, request):
+        http_info = self._associate_role_to_agency_on_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_role_to_agency_on_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-PERMISSION/subjects/agency/scopes/enterprise-project/role-assignments",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRoleToAgencyOnEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -241,11 +286,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -254,20 +299,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/subjects/agency/scopes/enterprise-project/role-assignments',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRoleToAgencyOnEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_role_to_group_on_enterprise_project(self, request):
         """基于用户组为企业项目授权
@@ -282,9 +323,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateRoleToGroupOnEnterpriseProjectResponse`
         """
-        return self._associate_role_to_group_on_enterprise_project_with_http_info(request)
+        http_info = self._associate_role_to_group_on_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_role_to_group_on_enterprise_project_with_http_info(self, request):
+    def associate_role_to_group_on_enterprise_project_invoker(self, request):
+        http_info = self._associate_role_to_group_on_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_role_to_group_on_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRoleToGroupOnEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -305,9 +359,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -316,20 +370,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles/{role_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRoleToGroupOnEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_role_to_user_on_enterprise_project(self, request):
         """基于用户为企业项目授权
@@ -343,9 +393,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.AssociateRoleToUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.AssociateRoleToUserOnEnterpriseProjectResponse`
         """
-        return self._associate_role_to_user_on_enterprise_project_with_http_info(request)
+        http_info = self._associate_role_to_user_on_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_role_to_user_on_enterprise_project_with_http_info(self, request):
+    def associate_role_to_user_on_enterprise_project_invoker(self, request):
+        http_info = self._associate_role_to_user_on_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_role_to_user_on_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRoleToUserOnEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -366,9 +429,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -377,20 +440,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles/{role_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRoleToUserOnEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_all_projects_permission_for_agency(self, request):
         """检查委托下是否具有所有项目服务权限
@@ -405,9 +464,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CheckAllProjectsPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckAllProjectsPermissionForAgencyResponse`
         """
-        return self._check_all_projects_permission_for_agency_with_http_info(request)
+        http_info = self._check_all_projects_permission_for_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_all_projects_permission_for_agency_with_http_info(self, request):
+    def check_all_projects_permission_for_agency_invoker(self, request):
+        http_info = self._check_all_projects_permission_for_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_all_projects_permission_for_agency_http_info(cls, request):
+        http_info = {
+            "method": "HEAD",
+            "resource_path": "/v3.0/OS-INHERIT/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}/inherited_to_projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckAllProjectsPermissionForAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -428,9 +500,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -439,20 +511,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-INHERIT/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}/inherited_to_projects',
-            method='HEAD',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckAllProjectsPermissionForAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_domain_permission_for_agency(self, request):
         """查询委托是否拥有全局服务权限
@@ -467,9 +535,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CheckDomainPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckDomainPermissionForAgencyResponse`
         """
-        return self._check_domain_permission_for_agency_with_http_info(request)
+        http_info = self._check_domain_permission_for_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_domain_permission_for_agency_with_http_info(self, request):
+    def check_domain_permission_for_agency_invoker(self, request):
+        http_info = self._check_domain_permission_for_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_domain_permission_for_agency_http_info(cls, request):
+        http_info = {
+            "method": "HEAD",
+            "resource_path": "/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDomainPermissionForAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -490,9 +571,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -501,20 +582,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}',
-            method='HEAD',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckDomainPermissionForAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_project_permission_for_agency(self, request):
         """查询委托是否拥有项目服务权限
@@ -529,9 +606,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CheckProjectPermissionForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CheckProjectPermissionForAgencyResponse`
         """
-        return self._check_project_permission_for_agency_with_http_info(request)
+        http_info = self._check_project_permission_for_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_project_permission_for_agency_with_http_info(self, request):
+    def check_project_permission_for_agency_invoker(self, request):
+        http_info = self._check_project_permission_for_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_project_permission_for_agency_http_info(cls, request):
+        http_info = {
+            "method": "HEAD",
+            "resource_path": "/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckProjectPermissionForAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -552,9 +642,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -563,20 +653,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}',
-            method='HEAD',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckProjectPermissionForAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_agency(self, request):
         """创建委托
@@ -591,9 +677,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyResponse`
         """
-        return self._create_agency_with_http_info(request)
+        http_info = self._create_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_agency_with_http_info(self, request):
+    def create_agency_invoker(self, request):
+        http_info = self._create_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-AGENCY/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -608,11 +707,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -621,20 +720,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/agencies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_agency_custom_policy(self, request):
         """创建委托自定义策略
@@ -649,9 +744,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateAgencyCustomPolicyResponse`
         """
-        return self._create_agency_custom_policy_with_http_info(request)
+        http_info = self._create_agency_custom_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_agency_custom_policy_with_http_info(self, request):
+    def create_agency_custom_policy_invoker(self, request):
+        http_info = self._create_agency_custom_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agency_custom_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-ROLE/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgencyCustomPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -666,11 +774,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -679,20 +787,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-ROLE/roles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAgencyCustomPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cloud_service_custom_policy(self, request):
         """创建云服务自定义策略
@@ -707,9 +811,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateCloudServiceCustomPolicyResponse`
         """
-        return self._create_cloud_service_custom_policy_with_http_info(request)
+        http_info = self._create_cloud_service_custom_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cloud_service_custom_policy_with_http_info(self, request):
+    def create_cloud_service_custom_policy_invoker(self, request):
+        http_info = self._create_cloud_service_custom_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cloud_service_custom_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-ROLE/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCloudServiceCustomPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -724,11 +841,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -737,20 +854,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-ROLE/roles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCloudServiceCustomPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_login_token(self, request):
         """获取自定义代理登录票据
@@ -767,9 +880,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateLoginTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateLoginTokenResponse`
         """
-        return self._create_login_token_with_http_info(request)
+        http_info = self._create_login_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_login_token_with_http_info(self, request):
+    def create_login_token_invoker(self, request):
+        http_info = self._create_login_token_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_login_token_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-AUTH/securitytoken/logintokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLoginTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -784,11 +910,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Subject-LoginToken", ]
 
@@ -797,20 +923,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AUTH/securitytoken/logintokens',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLoginTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_metadata(self, request):
         """导入Metadata文件
@@ -827,9 +949,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateMetadataRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMetadataResponse`
         """
-        return self._create_metadata_with_http_info(request)
+        http_info = self._create_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_metadata_with_http_info(self, request):
+    def create_metadata_invoker(self, request):
+        http_info = self._create_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_metadata_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3-ext/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -848,11 +983,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -861,20 +996,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3-ext/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}/metadata',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_open_id_connect_config(self, request):
         """创建OpenId Connect身份提供商配置
@@ -887,9 +1018,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateOpenIdConnectConfigResponse`
         """
-        return self._create_open_id_connect_config_with_http_info(request)
+        http_info = self._create_open_id_connect_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_open_id_connect_config_with_http_info(self, request):
+    def create_open_id_connect_config_invoker(self, request):
+        http_info = self._create_open_id_connect_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_open_id_connect_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOpenIdConnectConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -906,11 +1050,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -919,20 +1063,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOpenIdConnectConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_token_with_id_token(self, request):
         """获取联邦认证token(OpenId Connect Id token方式)
@@ -945,9 +1085,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateTokenWithIdTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTokenWithIdTokenResponse`
         """
-        return self._create_token_with_id_token_with_http_info(request)
+        http_info = self._create_token_with_id_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_token_with_id_token_with_http_info(self, request):
+    def create_token_with_id_token_invoker(self, request):
+        http_info = self._create_token_with_id_token_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_token_with_id_token_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-AUTH/id-token/tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTokenWithIdTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -964,11 +1117,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Subject-Token", ]
 
@@ -977,20 +1130,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AUTH/id-token/tokens',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTokenWithIdTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_unscoped_token_with_id_token(self, request):
         """获取联邦认证unscoped token(OpenId Connect Id token方式)
@@ -1003,9 +1152,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateUnscopedTokenWithIdTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateUnscopedTokenWithIdTokenResponse`
         """
-        return self._create_unscoped_token_with_id_token_with_http_info(request)
+        http_info = self._create_unscoped_token_with_id_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_unscoped_token_with_id_token_with_http_info(self, request):
+    def create_unscoped_token_with_id_token_invoker(self, request):
+        http_info = self._create_unscoped_token_with_id_token_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_unscoped_token_with_id_token_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}/auth",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUnscopedTokenWithIdTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1026,9 +1188,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Subject-Token", ]
 
@@ -1037,20 +1199,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}/auth',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateUnscopedTokenWithIdTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_agency(self, request):
         """删除委托
@@ -1065,9 +1223,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteAgencyResponse`
         """
-        return self._delete_agency_with_http_info(request)
+        http_info = self._delete_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_agency_with_http_info(self, request):
+    def delete_agency_invoker(self, request):
+        http_info = self._delete_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_agency_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-AGENCY/agencies/{agency_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1084,9 +1255,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1095,20 +1266,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/agencies/{agency_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_custom_policy(self, request):
         """删除自定义策略
@@ -1123,9 +1290,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteCustomPolicyResponse`
         """
-        return self._delete_custom_policy_with_http_info(request)
+        http_info = self._delete_custom_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_custom_policy_with_http_info(self, request):
+    def delete_custom_policy_invoker(self, request):
+        http_info = self._delete_custom_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_custom_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-ROLE/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1142,9 +1322,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1153,20 +1333,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-ROLE/roles/{role_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCustomPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domain_group_inherited_role(self, request):
         """移除用户组的所有项目服务权限
@@ -1181,9 +1357,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteDomainGroupInheritedRoleRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteDomainGroupInheritedRoleResponse`
         """
-        return self._delete_domain_group_inherited_role_with_http_info(request)
+        http_info = self._delete_domain_group_inherited_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domain_group_inherited_role_with_http_info(self, request):
+    def delete_domain_group_inherited_role_invoker(self, request):
+        http_info = self._delete_domain_group_inherited_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_group_inherited_role_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainGroupInheritedRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1204,9 +1393,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1215,20 +1404,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainGroupInheritedRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_add_user_to_group(self, request):
         """添加IAM用户到用户组
@@ -1243,9 +1428,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAddUserToGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAddUserToGroupResponse`
         """
-        return self._keystone_add_user_to_group_with_http_info(request)
+        http_info = self._keystone_add_user_to_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_add_user_to_group_with_http_info(self, request):
+    def keystone_add_user_to_group_invoker(self, request):
+        http_info = self._keystone_add_user_to_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_add_user_to_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/groups/{group_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneAddUserToGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1264,9 +1462,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1275,20 +1473,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups/{group_id}/users/{user_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneAddUserToGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_associate_group_with_domain_permission(self, request):
         """为用户组授予全局服务权限
@@ -1303,9 +1497,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithDomainPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithDomainPermissionResponse`
         """
-        return self._keystone_associate_group_with_domain_permission_with_http_info(request)
+        http_info = self._keystone_associate_group_with_domain_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_associate_group_with_domain_permission_with_http_info(self, request):
+    def keystone_associate_group_with_domain_permission_invoker(self, request):
+        http_info = self._keystone_associate_group_with_domain_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_associate_group_with_domain_permission_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneAssociateGroupWithDomainPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1326,9 +1533,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1337,20 +1544,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneAssociateGroupWithDomainPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_associate_group_with_project_permission(self, request):
         """为用户组授予项目服务权限
@@ -1365,9 +1568,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithProjectPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneAssociateGroupWithProjectPermissionResponse`
         """
-        return self._keystone_associate_group_with_project_permission_with_http_info(request)
+        http_info = self._keystone_associate_group_with_project_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_associate_group_with_project_permission_with_http_info(self, request):
+    def keystone_associate_group_with_project_permission_invoker(self, request):
+        http_info = self._keystone_associate_group_with_project_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_associate_group_with_project_permission_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneAssociateGroupWithProjectPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1388,9 +1604,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1399,20 +1615,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneAssociateGroupWithProjectPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_check_domain_permission_for_group(self, request):
         """查询用户组是否拥有全局服务权限
@@ -1427,9 +1639,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckDomainPermissionForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckDomainPermissionForGroupResponse`
         """
-        return self._keystone_check_domain_permission_for_group_with_http_info(request)
+        http_info = self._keystone_check_domain_permission_for_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_check_domain_permission_for_group_with_http_info(self, request):
+    def keystone_check_domain_permission_for_group_invoker(self, request):
+        http_info = self._keystone_check_domain_permission_for_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_check_domain_permission_for_group_http_info(cls, request):
+        http_info = {
+            "method": "HEAD",
+            "resource_path": "/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCheckDomainPermissionForGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1450,9 +1675,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1461,20 +1686,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}',
-            method='HEAD',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCheckDomainPermissionForGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_check_project_permission_for_group(self, request):
         """查询用户组是否拥有项目服务权限
@@ -1489,9 +1710,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckProjectPermissionForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckProjectPermissionForGroupResponse`
         """
-        return self._keystone_check_project_permission_for_group_with_http_info(request)
+        http_info = self._keystone_check_project_permission_for_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_check_project_permission_for_group_with_http_info(self, request):
+    def keystone_check_project_permission_for_group_invoker(self, request):
+        http_info = self._keystone_check_project_permission_for_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_check_project_permission_for_group_http_info(cls, request):
+        http_info = {
+            "method": "HEAD",
+            "resource_path": "/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCheckProjectPermissionForGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1512,9 +1746,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1523,20 +1757,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}',
-            method='HEAD',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCheckProjectPermissionForGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_check_user_in_group(self, request):
         """查询IAM用户是否在用户组中
@@ -1551,9 +1781,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckUserInGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckUserInGroupResponse`
         """
-        return self._keystone_check_user_in_group_with_http_info(request)
+        http_info = self._keystone_check_user_in_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_check_user_in_group_with_http_info(self, request):
+    def keystone_check_user_in_group_invoker(self, request):
+        http_info = self._keystone_check_user_in_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_check_user_in_group_http_info(cls, request):
+        http_info = {
+            "method": "HEAD",
+            "resource_path": "/v3/groups/{group_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCheckUserInGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1572,9 +1815,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1583,20 +1826,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups/{group_id}/users/{user_id}',
-            method='HEAD',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCheckUserInGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_checkrole_for_group(self, request):
         """查询用户组是否拥有所有项目指定权限
@@ -1611,9 +1850,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCheckroleForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCheckroleForGroupResponse`
         """
-        return self._keystone_checkrole_for_group_with_http_info(request)
+        http_info = self._keystone_checkrole_for_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_checkrole_for_group_with_http_info(self, request):
+    def keystone_checkrole_for_group_invoker(self, request):
+        http_info = self._keystone_checkrole_for_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_checkrole_for_group_http_info(cls, request):
+        http_info = {
+            "method": "HEAD",
+            "resource_path": "/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCheckroleForGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1634,9 +1886,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1645,20 +1897,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects',
-            method='HEAD',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCheckroleForGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_group(self, request):
         """创建用户组
@@ -1673,9 +1921,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateGroupResponse`
         """
-        return self._keystone_create_group_with_http_info(request)
+        http_info = self._keystone_create_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_group_with_http_info(self, request):
+    def keystone_create_group_invoker(self, request):
+        http_info = self._keystone_create_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1690,11 +1951,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1703,20 +1964,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_identity_provider(self, request):
         """注册身份提供商
@@ -1731,9 +1988,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateIdentityProviderResponse`
         """
-        return self._keystone_create_identity_provider_with_http_info(request)
+        http_info = self._keystone_create_identity_provider_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_identity_provider_with_http_info(self, request):
+    def keystone_create_identity_provider_invoker(self, request):
+        http_info = self._keystone_create_identity_provider_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_identity_provider_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateIdentityProviderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1750,11 +2020,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1763,20 +2033,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateIdentityProviderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_mapping(self, request):
         """注册映射
@@ -1791,9 +2057,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateMappingResponse`
         """
-        return self._keystone_create_mapping_with_http_info(request)
+        http_info = self._keystone_create_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_mapping_with_http_info(self, request):
+    def keystone_create_mapping_invoker(self, request):
+        http_info = self._keystone_create_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_mapping_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/OS-FEDERATION/mappings/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1810,11 +2089,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1823,20 +2102,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/mappings/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_project(self, request):
         """创建项目
@@ -1851,9 +2126,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProjectResponse`
         """
-        return self._keystone_create_project_with_http_info(request)
+        http_info = self._keystone_create_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_project_with_http_info(self, request):
+    def keystone_create_project_invoker(self, request):
+        http_info = self._keystone_create_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_project_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1868,11 +2156,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1881,20 +2169,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/projects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_protocol(self, request):
         """注册协议
@@ -1909,9 +2193,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateProtocolResponse`
         """
-        return self._keystone_create_protocol_with_http_info(request)
+        http_info = self._keystone_create_protocol_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_protocol_with_http_info(self, request):
+    def keystone_create_protocol_invoker(self, request):
+        http_info = self._keystone_create_protocol_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_protocol_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateProtocolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1930,11 +2227,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1943,20 +2240,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateProtocolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_scoped_token(self, request):
         """获取联邦认证scoped token
@@ -1971,9 +2264,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateScopedTokenResponse`
         """
-        return self._keystone_create_scoped_token_with_http_info(request)
+        http_info = self._keystone_create_scoped_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_scoped_token_with_http_info(self, request):
+    def keystone_create_scoped_token_invoker(self, request):
+        http_info = self._keystone_create_scoped_token_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_scoped_token_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/auth/tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateScopedTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1988,11 +2294,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Subject-Token", ]
 
@@ -2001,20 +2307,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/auth/tokens',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateScopedTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_delete_group(self, request):
         """删除用户组
@@ -2029,9 +2331,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteGroupResponse`
         """
-        return self._keystone_delete_group_with_http_info(request)
+        http_info = self._keystone_delete_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_delete_group_with_http_info(self, request):
+    def keystone_delete_group_invoker(self, request):
+        http_info = self._keystone_delete_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_delete_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneDeleteGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2048,9 +2363,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2059,20 +2374,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneDeleteGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_delete_identity_provider(self, request):
         """删除身份提供商
@@ -2087,9 +2398,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteIdentityProviderResponse`
         """
-        return self._keystone_delete_identity_provider_with_http_info(request)
+        http_info = self._keystone_delete_identity_provider_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_delete_identity_provider_with_http_info(self, request):
+    def keystone_delete_identity_provider_invoker(self, request):
+        http_info = self._keystone_delete_identity_provider_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_delete_identity_provider_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneDeleteIdentityProviderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2106,9 +2430,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2117,20 +2441,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneDeleteIdentityProviderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_delete_mapping(self, request):
         """删除映射
@@ -2145,9 +2465,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteMappingResponse`
         """
-        return self._keystone_delete_mapping_with_http_info(request)
+        http_info = self._keystone_delete_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_delete_mapping_with_http_info(self, request):
+    def keystone_delete_mapping_invoker(self, request):
+        http_info = self._keystone_delete_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_delete_mapping_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/OS-FEDERATION/mappings/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneDeleteMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2164,9 +2497,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2175,20 +2508,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/mappings/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneDeleteMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_delete_protocol(self, request):
         """删除协议
@@ -2203,9 +2532,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteProtocolResponse`
         """
-        return self._keystone_delete_protocol_with_http_info(request)
+        http_info = self._keystone_delete_protocol_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_delete_protocol_with_http_info(self, request):
+    def keystone_delete_protocol_invoker(self, request):
+        http_info = self._keystone_delete_protocol_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_delete_protocol_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneDeleteProtocolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2224,9 +2566,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2235,20 +2577,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneDeleteProtocolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_all_project_permissions_for_group(self, request):
         """查询用户组的所有项目权限列表
@@ -2261,9 +2599,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAllProjectPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAllProjectPermissionsForGroupResponse`
         """
-        return self._keystone_list_all_project_permissions_for_group_with_http_info(request)
+        http_info = self._keystone_list_all_project_permissions_for_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_all_project_permissions_for_group_with_http_info(self, request):
+    def keystone_list_all_project_permissions_for_group_invoker(self, request):
+        http_info = self._keystone_list_all_project_permissions_for_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_all_project_permissions_for_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/inherited_to_projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListAllProjectPermissionsForGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2282,9 +2633,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2293,20 +2644,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/inherited_to_projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListAllProjectPermissionsForGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_auth_domains(self, request):
         """查询IAM用户可以访问的账号详情
@@ -2321,9 +2668,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAuthDomainsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAuthDomainsResponse`
         """
-        return self._keystone_list_auth_domains_with_http_info(request)
+        http_info = self._keystone_list_auth_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_auth_domains_with_http_info(self, request):
+    def keystone_list_auth_domains_invoker(self, request):
+        http_info = self._keystone_list_auth_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_auth_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/auth/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListAuthDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2338,9 +2698,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2349,20 +2709,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/auth/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListAuthDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_auth_projects(self, request):
         """查询IAM用户可以访问的项目列表
@@ -2377,9 +2733,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListAuthProjectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListAuthProjectsResponse`
         """
-        return self._keystone_list_auth_projects_with_http_info(request)
+        http_info = self._keystone_list_auth_projects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_auth_projects_with_http_info(self, request):
+    def keystone_list_auth_projects_invoker(self, request):
+        http_info = self._keystone_list_auth_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_auth_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/auth/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListAuthProjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2394,9 +2763,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2405,20 +2774,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/auth/projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListAuthProjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_domain_permissions_for_group(self, request):
         """查询全局服务中的用户组权限
@@ -2433,9 +2798,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListDomainPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListDomainPermissionsForGroupResponse`
         """
-        return self._keystone_list_domain_permissions_for_group_with_http_info(request)
+        http_info = self._keystone_list_domain_permissions_for_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_domain_permissions_for_group_with_http_info(self, request):
+    def keystone_list_domain_permissions_for_group_invoker(self, request):
+        http_info = self._keystone_list_domain_permissions_for_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_domain_permissions_for_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/domains/{domain_id}/groups/{group_id}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListDomainPermissionsForGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2454,9 +2832,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2465,20 +2843,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/domains/{domain_id}/groups/{group_id}/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListDomainPermissionsForGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_endpoints(self, request):
         """查询终端节点列表
@@ -2493,9 +2867,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListEndpointsResponse`
         """
-        return self._keystone_list_endpoints_with_http_info(request)
+        http_info = self._keystone_list_endpoints_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_endpoints_with_http_info(self, request):
+    def keystone_list_endpoints_invoker(self, request):
+        http_info = self._keystone_list_endpoints_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_endpoints_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListEndpointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2514,9 +2901,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2525,20 +2912,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/endpoints',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListEndpointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_federation_domains(self, request):
         """查询联邦用户可以访问的账号列表
@@ -2554,9 +2937,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListFederationDomainsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListFederationDomainsResponse`
         """
-        return self._keystone_list_federation_domains_with_http_info(request)
+        http_info = self._keystone_list_federation_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_federation_domains_with_http_info(self, request):
+    def keystone_list_federation_domains_invoker(self, request):
+        http_info = self._keystone_list_federation_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_federation_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/OS-FEDERATION/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListFederationDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2571,9 +2967,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2582,20 +2978,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListFederationDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_groups(self, request):
         """查询用户组列表
@@ -2610,9 +3002,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsResponse`
         """
-        return self._keystone_list_groups_with_http_info(request)
+        http_info = self._keystone_list_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_groups_with_http_info(self, request):
+    def keystone_list_groups_invoker(self, request):
+        http_info = self._keystone_list_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2631,9 +3036,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2642,20 +3047,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_identity_providers(self, request):
         """查询身份提供商列表
@@ -2670,9 +3071,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListIdentityProvidersRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListIdentityProvidersResponse`
         """
-        return self._keystone_list_identity_providers_with_http_info(request)
+        http_info = self._keystone_list_identity_providers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_identity_providers_with_http_info(self, request):
+    def keystone_list_identity_providers_invoker(self, request):
+        http_info = self._keystone_list_identity_providers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_identity_providers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListIdentityProvidersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2687,9 +3101,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2698,20 +3112,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListIdentityProvidersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_mappings(self, request):
         """查询映射列表
@@ -2726,9 +3136,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListMappingsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListMappingsResponse`
         """
-        return self._keystone_list_mappings_with_http_info(request)
+        http_info = self._keystone_list_mappings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_mappings_with_http_info(self, request):
+    def keystone_list_mappings_invoker(self, request):
+        http_info = self._keystone_list_mappings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_mappings_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/OS-FEDERATION/mappings",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListMappingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2743,9 +3166,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2754,20 +3177,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/mappings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListMappingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_permissions(self, request):
         """查询权限列表
@@ -2782,9 +3201,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListPermissionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListPermissionsResponse`
         """
-        return self._keystone_list_permissions_with_http_info(request)
+        http_info = self._keystone_list_permissions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_permissions_with_http_info(self, request):
+    def keystone_list_permissions_invoker(self, request):
+        http_info = self._keystone_list_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_permissions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListPermissionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2815,9 +3247,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2826,20 +3258,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListPermissionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_project_permissions_for_group(self, request):
         """查询项目服务中的用户组权限
@@ -2854,9 +3282,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectPermissionsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectPermissionsForGroupResponse`
         """
-        return self._keystone_list_project_permissions_for_group_with_http_info(request)
+        http_info = self._keystone_list_project_permissions_for_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_project_permissions_for_group_with_http_info(self, request):
+    def keystone_list_project_permissions_for_group_invoker(self, request):
+        http_info = self._keystone_list_project_permissions_for_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_project_permissions_for_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/projects/{project_id}/groups/{group_id}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListProjectPermissionsForGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2875,9 +3316,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2886,20 +3327,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/projects/{project_id}/groups/{group_id}/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListProjectPermissionsForGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_projects(self, request):
         """查询指定条件下的项目列表
@@ -2914,9 +3351,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsResponse`
         """
-        return self._keystone_list_projects_with_http_info(request)
+        http_info = self._keystone_list_projects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_projects_with_http_info(self, request):
+    def keystone_list_projects_invoker(self, request):
+        http_info = self._keystone_list_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListProjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2945,9 +3395,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2956,20 +3406,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListProjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_projects_for_user(self, request):
         """查询指定IAM用户的项目列表
@@ -2984,9 +3430,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProjectsForUserResponse`
         """
-        return self._keystone_list_projects_for_user_with_http_info(request)
+        http_info = self._keystone_list_projects_for_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_projects_for_user_with_http_info(self, request):
+    def keystone_list_projects_for_user_invoker(self, request):
+        http_info = self._keystone_list_projects_for_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_projects_for_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/users/{user_id}/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListProjectsForUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3003,9 +3462,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3014,20 +3473,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/users/{user_id}/projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListProjectsForUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_protocols(self, request):
         """查询协议列表
@@ -3042,9 +3497,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListProtocolsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListProtocolsResponse`
         """
-        return self._keystone_list_protocols_with_http_info(request)
+        http_info = self._keystone_list_protocols_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_protocols_with_http_info(self, request):
+    def keystone_list_protocols_invoker(self, request):
+        http_info = self._keystone_list_protocols_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_protocols_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListProtocolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3061,9 +3529,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3072,20 +3540,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListProtocolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_regions(self, request):
         """查询区域列表
@@ -3100,9 +3564,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListRegionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListRegionsResponse`
         """
-        return self._keystone_list_regions_with_http_info(request)
+        http_info = self._keystone_list_regions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_regions_with_http_info(self, request):
+    def keystone_list_regions_invoker(self, request):
+        http_info = self._keystone_list_regions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_regions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListRegionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3117,9 +3594,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3128,20 +3605,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/regions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListRegionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_services(self, request):
         """查询服务列表
@@ -3156,9 +3629,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListServicesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListServicesResponse`
         """
-        return self._keystone_list_services_with_http_info(request)
+        http_info = self._keystone_list_services_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_services_with_http_info(self, request):
+    def keystone_list_services_invoker(self, request):
+        http_info = self._keystone_list_services_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_services_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/services",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListServicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3175,9 +3661,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3186,20 +3672,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/services',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListServicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_users_for_group_by_admin(self, request):
         """管理员查询用户组所包含的IAM用户
@@ -3214,9 +3696,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListUsersForGroupByAdminResponse`
         """
-        return self._keystone_list_users_for_group_by_admin_with_http_info(request)
+        http_info = self._keystone_list_users_for_group_by_admin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_users_for_group_by_admin_with_http_info(self, request):
+    def keystone_list_users_for_group_by_admin_invoker(self, request):
+        http_info = self._keystone_list_users_for_group_by_admin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_users_for_group_by_admin_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/groups/{group_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListUsersForGroupByAdminResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3233,9 +3728,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3244,20 +3739,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups/{group_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListUsersForGroupByAdminResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_versions(self, request):
         """查询版本信息列表
@@ -3272,9 +3763,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListVersionsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListVersionsResponse`
         """
-        return self._keystone_list_versions_with_http_info(request)
+        http_info = self._keystone_list_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_versions_with_http_info(self, request):
+    def keystone_list_versions_invoker(self, request):
+        http_info = self._keystone_list_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3289,9 +3793,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3300,20 +3804,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_remove_domain_permission_from_group(self, request):
         """移除用户组的全局服务权限
@@ -3328,9 +3828,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveDomainPermissionFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveDomainPermissionFromGroupResponse`
         """
-        return self._keystone_remove_domain_permission_from_group_with_http_info(request)
+        http_info = self._keystone_remove_domain_permission_from_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_remove_domain_permission_from_group_with_http_info(self, request):
+    def keystone_remove_domain_permission_from_group_invoker(self, request):
+        http_info = self._keystone_remove_domain_permission_from_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_remove_domain_permission_from_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneRemoveDomainPermissionFromGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3351,9 +3864,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3362,20 +3875,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/domains/{domain_id}/groups/{group_id}/roles/{role_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneRemoveDomainPermissionFromGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_remove_project_permission_from_group(self, request):
         """移除用户组的项目服务权限
@@ -3390,9 +3899,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveProjectPermissionFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveProjectPermissionFromGroupResponse`
         """
-        return self._keystone_remove_project_permission_from_group_with_http_info(request)
+        http_info = self._keystone_remove_project_permission_from_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_remove_project_permission_from_group_with_http_info(self, request):
+    def keystone_remove_project_permission_from_group_invoker(self, request):
+        http_info = self._keystone_remove_project_permission_from_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_remove_project_permission_from_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneRemoveProjectPermissionFromGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3413,9 +3935,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3424,20 +3946,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/projects/{project_id}/groups/{group_id}/roles/{role_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneRemoveProjectPermissionFromGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_remove_user_from_group(self, request):
         """移除用户组中的IAM用户
@@ -3452,9 +3970,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneRemoveUserFromGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneRemoveUserFromGroupResponse`
         """
-        return self._keystone_remove_user_from_group_with_http_info(request)
+        http_info = self._keystone_remove_user_from_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_remove_user_from_group_with_http_info(self, request):
+    def keystone_remove_user_from_group_invoker(self, request):
+        http_info = self._keystone_remove_user_from_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_remove_user_from_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/groups/{group_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneRemoveUserFromGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3473,9 +4004,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3484,20 +4015,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups/{group_id}/users/{user_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneRemoveUserFromGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_catalog(self, request):
         """查询服务目录
@@ -3512,9 +4039,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowCatalogRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowCatalogResponse`
         """
-        return self._keystone_show_catalog_with_http_info(request)
+        http_info = self._keystone_show_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_catalog_with_http_info(self, request):
+    def keystone_show_catalog_invoker(self, request):
+        http_info = self._keystone_show_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_catalog_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/auth/catalog",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3529,9 +4069,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3540,20 +4080,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/auth/catalog',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_endpoint(self, request):
         """查询终端节点详情
@@ -3568,9 +4104,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowEndpointRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowEndpointResponse`
         """
-        return self._keystone_show_endpoint_with_http_info(request)
+        http_info = self._keystone_show_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_endpoint_with_http_info(self, request):
+    def keystone_show_endpoint_invoker(self, request):
+        http_info = self._keystone_show_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3587,9 +4136,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3598,20 +4147,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/endpoints/{endpoint_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_group(self, request):
         """查询用户组详情
@@ -3626,9 +4171,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowGroupResponse`
         """
-        return self._keystone_show_group_with_http_info(request)
+        http_info = self._keystone_show_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_group_with_http_info(self, request):
+    def keystone_show_group_invoker(self, request):
+        http_info = self._keystone_show_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3645,9 +4203,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3656,20 +4214,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_identity_provider(self, request):
         """查询身份提供商详情
@@ -3684,9 +4238,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowIdentityProviderResponse`
         """
-        return self._keystone_show_identity_provider_with_http_info(request)
+        http_info = self._keystone_show_identity_provider_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_identity_provider_with_http_info(self, request):
+    def keystone_show_identity_provider_invoker(self, request):
+        http_info = self._keystone_show_identity_provider_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_identity_provider_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowIdentityProviderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3703,9 +4270,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3714,20 +4281,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowIdentityProviderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_mapping(self, request):
         """查询映射详情
@@ -3742,9 +4305,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowMappingResponse`
         """
-        return self._keystone_show_mapping_with_http_info(request)
+        http_info = self._keystone_show_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_mapping_with_http_info(self, request):
+    def keystone_show_mapping_invoker(self, request):
+        http_info = self._keystone_show_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_mapping_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/OS-FEDERATION/mappings/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3761,9 +4337,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3772,20 +4348,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/mappings/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_permission(self, request):
         """查询权限详情
@@ -3800,9 +4372,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowPermissionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowPermissionResponse`
         """
-        return self._keystone_show_permission_with_http_info(request)
+        http_info = self._keystone_show_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_permission_with_http_info(self, request):
+    def keystone_show_permission_invoker(self, request):
+        http_info = self._keystone_show_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_permission_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3819,9 +4404,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3830,20 +4415,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/roles/{role_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_project(self, request):
         """查询项目详情
@@ -3858,9 +4439,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowProjectResponse`
         """
-        return self._keystone_show_project_with_http_info(request)
+        http_info = self._keystone_show_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_project_with_http_info(self, request):
+    def keystone_show_project_invoker(self, request):
+        http_info = self._keystone_show_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_project_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/projects/{project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3877,9 +4471,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3888,20 +4482,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/projects/{project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_protocol(self, request):
         """查询协议详情
@@ -3916,9 +4506,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowProtocolResponse`
         """
-        return self._keystone_show_protocol_with_http_info(request)
+        http_info = self._keystone_show_protocol_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_protocol_with_http_info(self, request):
+    def keystone_show_protocol_invoker(self, request):
+        http_info = self._keystone_show_protocol_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_protocol_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowProtocolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3937,9 +4540,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3948,20 +4551,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowProtocolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_region(self, request):
         """查询区域详情
@@ -3976,9 +4575,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowRegionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowRegionResponse`
         """
-        return self._keystone_show_region_with_http_info(request)
+        http_info = self._keystone_show_region_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_region_with_http_info(self, request):
+    def keystone_show_region_invoker(self, request):
+        http_info = self._keystone_show_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_region_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/regions/{region_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowRegionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3995,9 +4607,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4006,20 +4618,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/regions/{region_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowRegionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_security_compliance(self, request):
         """查询账号密码强度策略
@@ -4034,9 +4642,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceResponse`
         """
-        return self._keystone_show_security_compliance_with_http_info(request)
+        http_info = self._keystone_show_security_compliance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_security_compliance_with_http_info(self, request):
+    def keystone_show_security_compliance_invoker(self, request):
+        http_info = self._keystone_show_security_compliance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_security_compliance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/domains/{domain_id}/config/security_compliance",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowSecurityComplianceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4053,9 +4674,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4064,20 +4685,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/domains/{domain_id}/config/security_compliance',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowSecurityComplianceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_security_compliance_by_option(self, request):
         """按条件查询账号密码强度策略
@@ -4092,9 +4709,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceByOptionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowSecurityComplianceByOptionResponse`
         """
-        return self._keystone_show_security_compliance_by_option_with_http_info(request)
+        http_info = self._keystone_show_security_compliance_by_option_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_security_compliance_by_option_with_http_info(self, request):
+    def keystone_show_security_compliance_by_option_invoker(self, request):
+        http_info = self._keystone_show_security_compliance_by_option_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_security_compliance_by_option_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/domains/{domain_id}/config/security_compliance/{option}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowSecurityComplianceByOptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4113,9 +4743,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4124,20 +4754,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/domains/{domain_id}/config/security_compliance/{option}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowSecurityComplianceByOptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_service(self, request):
         """查询服务详情
@@ -4152,9 +4778,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowServiceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowServiceResponse`
         """
-        return self._keystone_show_service_with_http_info(request)
+        http_info = self._keystone_show_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_service_with_http_info(self, request):
+    def keystone_show_service_invoker(self, request):
+        http_info = self._keystone_show_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_service_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4171,9 +4810,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4182,20 +4821,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/services/{service_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_version(self, request):
         """查询版本信息
@@ -4210,9 +4845,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowVersionRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowVersionResponse`
         """
-        return self._keystone_show_version_with_http_info(request)
+        http_info = self._keystone_show_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_version_with_http_info(self, request):
+    def keystone_show_version_invoker(self, request):
+        http_info = self._keystone_show_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4227,9 +4875,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4238,20 +4886,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_update_group(self, request):
         """更新用户组
@@ -4266,9 +4910,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateGroupResponse`
         """
-        return self._keystone_update_group_with_http_info(request)
+        http_info = self._keystone_update_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_update_group_with_http_info(self, request):
+    def keystone_update_group_invoker(self, request):
+        http_info = self._keystone_update_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_update_group_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneUpdateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4285,11 +4942,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4298,20 +4955,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/groups/{group_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneUpdateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_update_identity_provider(self, request):
         """更新身份提供商
@@ -4326,9 +4979,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateIdentityProviderResponse`
         """
-        return self._keystone_update_identity_provider_with_http_info(request)
+        http_info = self._keystone_update_identity_provider_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_update_identity_provider_with_http_info(self, request):
+    def keystone_update_identity_provider_invoker(self, request):
+        http_info = self._keystone_update_identity_provider_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_update_identity_provider_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneUpdateIdentityProviderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4345,11 +5011,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4358,20 +5024,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneUpdateIdentityProviderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_update_mapping(self, request):
         """更新映射
@@ -4386,9 +5048,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateMappingResponse`
         """
-        return self._keystone_update_mapping_with_http_info(request)
+        http_info = self._keystone_update_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_update_mapping_with_http_info(self, request):
+    def keystone_update_mapping_invoker(self, request):
+        http_info = self._keystone_update_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_update_mapping_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3/OS-FEDERATION/mappings/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneUpdateMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4405,11 +5080,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4418,20 +5093,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/mappings/{id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneUpdateMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_update_project(self, request):
         """修改项目信息
@@ -4446,9 +5117,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProjectResponse`
         """
-        return self._keystone_update_project_with_http_info(request)
+        http_info = self._keystone_update_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_update_project_with_http_info(self, request):
+    def keystone_update_project_invoker(self, request):
+        http_info = self._keystone_update_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_update_project_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3/projects/{project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneUpdateProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4465,11 +5149,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4478,20 +5162,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/projects/{project_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneUpdateProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_update_protocol(self, request):
         """更新协议
@@ -4506,9 +5186,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateProtocolResponse`
         """
-        return self._keystone_update_protocol_with_http_info(request)
+        http_info = self._keystone_update_protocol_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_update_protocol_with_http_info(self, request):
+    def keystone_update_protocol_invoker(self, request):
+        http_info = self._keystone_update_protocol_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_update_protocol_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneUpdateProtocolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4527,11 +5220,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4540,20 +5233,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneUpdateProtocolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_agencies(self, request):
         """查询指定条件下的委托列表
@@ -4568,9 +5257,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListAgenciesResponse`
         """
-        return self._list_agencies_with_http_info(request)
+        http_info = self._list_agencies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_agencies_with_http_info(self, request):
+    def list_agencies_invoker(self, request):
+        http_info = self._list_agencies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_agencies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-AGENCY/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAgenciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4591,9 +5293,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4602,20 +5304,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/agencies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAgenciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_projects_permissions_for_agency(self, request):
         """查询委托下的所有项目服务权限列表
@@ -4630,9 +5328,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListAllProjectsPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListAllProjectsPermissionsForAgencyResponse`
         """
-        return self._list_all_projects_permissions_for_agency_with_http_info(request)
+        http_info = self._list_all_projects_permissions_for_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_projects_permissions_for_agency_with_http_info(self, request):
+    def list_all_projects_permissions_for_agency_invoker(self, request):
+        http_info = self._list_all_projects_permissions_for_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_projects_permissions_for_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-INHERIT/domains/{domain_id}/agencies/{agency_id}/roles/inherited_to_projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllProjectsPermissionsForAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4651,9 +5362,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4662,20 +5373,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-INHERIT/domains/{domain_id}/agencies/{agency_id}/roles/inherited_to_projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllProjectsPermissionsForAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_custom_policies(self, request):
         """查询自定义策略列表
@@ -4690,9 +5397,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListCustomPoliciesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListCustomPoliciesResponse`
         """
-        return self._list_custom_policies_with_http_info(request)
+        http_info = self._list_custom_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_custom_policies_with_http_info(self, request):
+    def list_custom_policies_invoker(self, request):
+        http_info = self._list_custom_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-ROLE/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4711,9 +5431,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4722,20 +5442,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-ROLE/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_permissions_for_agency(self, request):
         """查询全局服务中的委托权限
@@ -4750,9 +5466,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListDomainPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListDomainPermissionsForAgencyResponse`
         """
-        return self._list_domain_permissions_for_agency_with_http_info(request)
+        http_info = self._list_domain_permissions_for_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_permissions_for_agency_with_http_info(self, request):
+    def list_domain_permissions_for_agency_invoker(self, request):
+        http_info = self._list_domain_permissions_for_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_permissions_for_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainPermissionsForAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4771,9 +5500,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4782,20 +5511,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainPermissionsForAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enterprise_projects_for_group(self, request):
         """查询用户组关联的企业项目
@@ -4810,9 +5535,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForGroupRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForGroupResponse`
         """
-        return self._list_enterprise_projects_for_group_with_http_info(request)
+        http_info = self._list_enterprise_projects_for_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enterprise_projects_for_group_with_http_info(self, request):
+    def list_enterprise_projects_for_group_invoker(self, request):
+        http_info = self._list_enterprise_projects_for_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_enterprise_projects_for_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-PERMISSION/groups/{group_id}/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseProjectsForGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4829,9 +5567,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4840,20 +5578,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/groups/{group_id}/enterprise-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnterpriseProjectsForGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enterprise_projects_for_user(self, request):
         """查询用户关联的企业项目
@@ -4868,9 +5602,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListEnterpriseProjectsForUserResponse`
         """
-        return self._list_enterprise_projects_for_user_with_http_info(request)
+        http_info = self._list_enterprise_projects_for_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enterprise_projects_for_user_with_http_info(self, request):
+    def list_enterprise_projects_for_user_invoker(self, request):
+        http_info = self._list_enterprise_projects_for_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_enterprise_projects_for_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-PERMISSION/users/{user_id}/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseProjectsForUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4887,9 +5634,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4898,20 +5645,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/users/{user_id}/enterprise-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnterpriseProjectsForUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_groups_for_enterprise_project(self, request):
         """查询企业项目关联的用户组
@@ -4926,9 +5669,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListGroupsForEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListGroupsForEnterpriseProjectResponse`
         """
-        return self._list_groups_for_enterprise_project_with_http_info(request)
+        http_info = self._list_groups_for_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_groups_for_enterprise_project_with_http_info(self, request):
+    def list_groups_for_enterprise_project_invoker(self, request):
+        http_info = self._list_groups_for_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_groups_for_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupsForEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4945,9 +5701,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4956,20 +5712,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGroupsForEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_permissions_for_agency(self, request):
         """查询项目服务中的委托权限
@@ -4984,9 +5736,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListProjectPermissionsForAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListProjectPermissionsForAgencyResponse`
         """
-        return self._list_project_permissions_for_agency_with_http_info(request)
+        http_info = self._list_project_permissions_for_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_permissions_for_agency_with_http_info(self, request):
+    def list_project_permissions_for_agency_invoker(self, request):
+        http_info = self._list_project_permissions_for_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_permissions_for_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectPermissionsForAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5005,9 +5770,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5016,20 +5781,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectPermissionsForAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_roles_for_group_on_enterprise_project(self, request):
         """查询企业项目已关联用户组的权限
@@ -5044,9 +5805,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListRolesForGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListRolesForGroupOnEnterpriseProjectResponse`
         """
-        return self._list_roles_for_group_on_enterprise_project_with_http_info(request)
+        http_info = self._list_roles_for_group_on_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_roles_for_group_on_enterprise_project_with_http_info(self, request):
+    def list_roles_for_group_on_enterprise_project_invoker(self, request):
+        http_info = self._list_roles_for_group_on_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_roles_for_group_on_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRolesForGroupOnEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5065,9 +5839,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5076,20 +5850,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRolesForGroupOnEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_roles_for_user_on_enterprise_project(self, request):
         """查询企业项目直接关联用户的权限
@@ -5103,9 +5873,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListRolesForUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListRolesForUserOnEnterpriseProjectResponse`
         """
-        return self._list_roles_for_user_on_enterprise_project_with_http_info(request)
+        http_info = self._list_roles_for_user_on_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_roles_for_user_on_enterprise_project_with_http_info(self, request):
+    def list_roles_for_user_on_enterprise_project_invoker(self, request):
+        http_info = self._list_roles_for_user_on_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_roles_for_user_on_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRolesForUserOnEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5124,9 +5907,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5135,20 +5918,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRolesForUserOnEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_users_for_enterprise_project(self, request):
         """查询企业项目直接关联用户
@@ -5162,9 +5941,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUsersForEnterpriseProjectResponse`
         """
-        return self._list_users_for_enterprise_project_with_http_info(request)
+        http_info = self._list_users_for_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_users_for_enterprise_project_with_http_info(self, request):
+    def list_users_for_enterprise_project_invoker(self, request):
+        http_info = self._list_users_for_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_users_for_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersForEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5181,9 +5973,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5192,20 +5984,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsersForEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_all_projects_permission_from_agency(self, request):
         """移除委托下的所有项目服务权限
@@ -5220,9 +6008,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RemoveAllProjectsPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveAllProjectsPermissionFromAgencyResponse`
         """
-        return self._remove_all_projects_permission_from_agency_with_http_info(request)
+        http_info = self._remove_all_projects_permission_from_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_all_projects_permission_from_agency_with_http_info(self, request):
+    def remove_all_projects_permission_from_agency_invoker(self, request):
+        http_info = self._remove_all_projects_permission_from_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_all_projects_permission_from_agency_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-INHERIT/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}/inherited_to_projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveAllProjectsPermissionFromAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5243,9 +6044,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5254,20 +6055,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-INHERIT/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}/inherited_to_projects',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveAllProjectsPermissionFromAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_domain_permission_from_agency(self, request):
         """移除委托的全局服务权限
@@ -5282,9 +6079,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RemoveDomainPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveDomainPermissionFromAgencyResponse`
         """
-        return self._remove_domain_permission_from_agency_with_http_info(request)
+        http_info = self._remove_domain_permission_from_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_domain_permission_from_agency_with_http_info(self, request):
+    def remove_domain_permission_from_agency_invoker(self, request):
+        http_info = self._remove_domain_permission_from_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_domain_permission_from_agency_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveDomainPermissionFromAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5305,9 +6115,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5316,20 +6126,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/domains/{domain_id}/agencies/{agency_id}/roles/{role_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveDomainPermissionFromAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_project_permission_from_agency(self, request):
         """移除委托的项目服务权限
@@ -5344,9 +6150,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RemoveProjectPermissionFromAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RemoveProjectPermissionFromAgencyResponse`
         """
-        return self._remove_project_permission_from_agency_with_http_info(request)
+        http_info = self._remove_project_permission_from_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_project_permission_from_agency_with_http_info(self, request):
+    def remove_project_permission_from_agency_invoker(self, request):
+        http_info = self._remove_project_permission_from_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_project_permission_from_agency_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveProjectPermissionFromAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5367,9 +6186,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5378,20 +6197,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/projects/{project_id}/agencies/{agency_id}/roles/{role_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveProjectPermissionFromAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def revoke_role_from_agency_on_enterprise_project(self, request):
         """revoke_role_from_agency_on_enterprise_project
@@ -5404,9 +6219,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromAgencyOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RevokeRoleFromAgencyOnEnterpriseProjectResponse`
         """
-        return self._revoke_role_from_agency_on_enterprise_project_with_http_info(request)
+        http_info = self._revoke_role_from_agency_on_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _revoke_role_from_agency_on_enterprise_project_with_http_info(self, request):
+    def revoke_role_from_agency_on_enterprise_project_invoker(self, request):
+        http_info = self._revoke_role_from_agency_on_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _revoke_role_from_agency_on_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-PERMISSION/subjects/agency/scopes/enterprise-project/role-assignments",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokeRoleFromAgencyOnEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5421,11 +6249,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5434,20 +6262,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/subjects/agency/scopes/enterprise-project/role-assignments',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RevokeRoleFromAgencyOnEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def revoke_role_from_group_on_enterprise_project(self, request):
         """删除企业项目关联用户组的权限
@@ -5462,9 +6286,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromGroupOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RevokeRoleFromGroupOnEnterpriseProjectResponse`
         """
-        return self._revoke_role_from_group_on_enterprise_project_with_http_info(request)
+        http_info = self._revoke_role_from_group_on_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _revoke_role_from_group_on_enterprise_project_with_http_info(self, request):
+    def revoke_role_from_group_on_enterprise_project_invoker(self, request):
+        http_info = self._revoke_role_from_group_on_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _revoke_role_from_group_on_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokeRoleFromGroupOnEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5485,9 +6322,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5496,20 +6333,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/groups/{group_id}/roles/{role_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RevokeRoleFromGroupOnEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def revoke_role_from_user_on_enterprise_project(self, request):
         """删除企业项目直接关联用户的权限
@@ -5523,9 +6356,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.RevokeRoleFromUserOnEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.RevokeRoleFromUserOnEnterpriseProjectResponse`
         """
-        return self._revoke_role_from_user_on_enterprise_project_with_http_info(request)
+        http_info = self._revoke_role_from_user_on_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _revoke_role_from_user_on_enterprise_project_with_http_info(self, request):
+    def revoke_role_from_user_on_enterprise_project_invoker(self, request):
+        http_info = self._revoke_role_from_user_on_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _revoke_role_from_user_on_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokeRoleFromUserOnEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5546,9 +6392,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5557,20 +6403,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/enterprise-projects/{enterprise_project_id}/users/{user_id}/roles/{role_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RevokeRoleFromUserOnEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agency(self, request):
         """查询委托详情
@@ -5585,9 +6427,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowAgencyResponse`
         """
-        return self._show_agency_with_http_info(request)
+        http_info = self._show_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agency_with_http_info(self, request):
+    def show_agency_invoker(self, request):
+        http_info = self._show_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-AGENCY/agencies/{agency_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5604,9 +6459,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5615,20 +6470,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/agencies/{agency_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_custom_policy(self, request):
         """查询自定义策略详情
@@ -5643,9 +6494,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowCustomPolicyResponse`
         """
-        return self._show_custom_policy_with_http_info(request)
+        http_info = self._show_custom_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_custom_policy_with_http_info(self, request):
+    def show_custom_policy_invoker(self, request):
+        http_info = self._show_custom_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_custom_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-ROLE/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5662,9 +6526,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5673,20 +6537,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-ROLE/roles/{role_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_api_acl_policy(self, request):
         """查询账号接口访问策略
@@ -5701,9 +6561,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainApiAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainApiAclPolicyResponse`
         """
-        return self._show_domain_api_acl_policy_with_http_info(request)
+        http_info = self._show_domain_api_acl_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_api_acl_policy_with_http_info(self, request):
+    def show_domain_api_acl_policy_invoker(self, request):
+        http_info = self._show_domain_api_acl_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_api_acl_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/api-acl-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainApiAclPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5720,9 +6593,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5731,20 +6604,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/api-acl-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainApiAclPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_console_acl_policy(self, request):
         """查询账号控制台访问策略
@@ -5759,9 +6628,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainConsoleAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainConsoleAclPolicyResponse`
         """
-        return self._show_domain_console_acl_policy_with_http_info(request)
+        http_info = self._show_domain_console_acl_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_console_acl_policy_with_http_info(self, request):
+    def show_domain_console_acl_policy_invoker(self, request):
+        http_info = self._show_domain_console_acl_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_console_acl_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/console-acl-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainConsoleAclPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5778,9 +6660,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5789,20 +6671,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/console-acl-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainConsoleAclPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_login_policy(self, request):
         """查询账号登录策略
@@ -5817,9 +6695,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainLoginPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainLoginPolicyResponse`
         """
-        return self._show_domain_login_policy_with_http_info(request)
+        http_info = self._show_domain_login_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_login_policy_with_http_info(self, request):
+    def show_domain_login_policy_invoker(self, request):
+        http_info = self._show_domain_login_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_login_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/login-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainLoginPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5836,9 +6727,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5847,20 +6738,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/login-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainLoginPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_password_policy(self, request):
         """查询账号密码策略
@@ -5875,9 +6762,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainPasswordPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainPasswordPolicyResponse`
         """
-        return self._show_domain_password_policy_with_http_info(request)
+        http_info = self._show_domain_password_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_password_policy_with_http_info(self, request):
+    def show_domain_password_policy_invoker(self, request):
+        http_info = self._show_domain_password_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_password_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/password-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainPasswordPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5894,9 +6794,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5905,20 +6805,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/password-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainPasswordPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_protect_policy(self, request):
         """查询账号操作保护策略
@@ -5933,9 +6829,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainProtectPolicyResponse`
         """
-        return self._show_domain_protect_policy_with_http_info(request)
+        http_info = self._show_domain_protect_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_protect_policy_with_http_info(self, request):
+    def show_domain_protect_policy_invoker(self, request):
+        http_info = self._show_domain_protect_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_protect_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/protect-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainProtectPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5952,9 +6861,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5963,20 +6872,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/protect-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainProtectPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_quota(self, request):
         """查询账号配额
@@ -5991,9 +6896,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainQuotaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainQuotaResponse`
         """
-        return self._show_domain_quota_with_http_info(request)
+        http_info = self._show_domain_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_quota_with_http_info(self, request):
+    def show_domain_quota_invoker(self, request):
+        http_info = self._show_domain_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-QUOTA/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6012,9 +6930,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6023,20 +6941,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-QUOTA/domains/{domain_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_role_assignments(self, request):
         """查询指定账号中的授权记录
@@ -6050,9 +6964,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowDomainRoleAssignmentsResponse`
         """
-        return self._show_domain_role_assignments_with_http_info(request)
+        http_info = self._show_domain_role_assignments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_role_assignments_with_http_info(self, request):
+    def show_domain_role_assignments_invoker(self, request):
+        http_info = self._show_domain_role_assignments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_role_assignments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-PERMISSION/role-assignments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainRoleAssignmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6095,9 +7022,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6106,20 +7033,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-PERMISSION/role-assignments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainRoleAssignmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metadata(self, request):
         """查询Metadata文件
@@ -6134,9 +7057,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowMetadataRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowMetadataResponse`
         """
-        return self._show_metadata_with_http_info(request)
+        http_info = self._show_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metadata_with_http_info(self, request):
+    def show_metadata_invoker(self, request):
+        http_info = self._show_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metadata_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3-ext/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6155,9 +7091,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6166,20 +7102,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3-ext/OS-FEDERATION/identity_providers/{idp_id}/protocols/{protocol_id}/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_open_id_connect_config(self, request):
         """查询OpenId Connect身份提供商配置
@@ -6192,9 +7124,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowOpenIdConnectConfigResponse`
         """
-        return self._show_open_id_connect_config_with_http_info(request)
+        http_info = self._show_open_id_connect_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_open_id_connect_config_with_http_info(self, request):
+    def show_open_id_connect_config_invoker(self, request):
+        http_info = self._show_open_id_connect_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_open_id_connect_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpenIdConnectConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6211,9 +7156,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6222,20 +7167,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOpenIdConnectConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_details_and_status(self, request):
         """查询项目详情与状态
@@ -6250,9 +7191,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowProjectDetailsAndStatusRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowProjectDetailsAndStatusResponse`
         """
-        return self._show_project_details_and_status_with_http_info(request)
+        http_info = self._show_project_details_and_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_details_and_status_with_http_info(self, request):
+    def show_project_details_and_status_invoker(self, request):
+        http_info = self._show_project_details_and_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_details_and_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3-ext/projects/{project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectDetailsAndStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6269,9 +7223,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6280,20 +7234,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3-ext/projects/{project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectDetailsAndStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_quota(self, request):
         """查询项目配额
@@ -6308,9 +7258,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowProjectQuotaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowProjectQuotaResponse`
         """
-        return self._show_project_quota_with_http_info(request)
+        http_info = self._show_project_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_quota_with_http_info(self, request):
+    def show_project_quota_invoker(self, request):
+        http_info = self._show_project_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-QUOTA/projects/{project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6327,9 +7290,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6338,20 +7301,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-QUOTA/projects/{project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_agency(self, request):
         """修改委托
@@ -6366,9 +7325,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyResponse`
         """
-        return self._update_agency_with_http_info(request)
+        http_info = self._update_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_agency_with_http_info(self, request):
+    def update_agency_invoker(self, request):
+        http_info = self._update_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_agency_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-AGENCY/agencies/{agency_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6385,11 +7357,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6398,20 +7370,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-AGENCY/agencies/{agency_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_agency_custom_policy(self, request):
         """修改委托自定义策略
@@ -6426,9 +7394,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateAgencyCustomPolicyResponse`
         """
-        return self._update_agency_custom_policy_with_http_info(request)
+        http_info = self._update_agency_custom_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_agency_custom_policy_with_http_info(self, request):
+    def update_agency_custom_policy_invoker(self, request):
+        http_info = self._update_agency_custom_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_agency_custom_policy_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3.0/OS-ROLE/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAgencyCustomPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6445,11 +7426,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6458,20 +7439,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-ROLE/roles/{role_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAgencyCustomPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cloud_service_custom_policy(self, request):
         """修改云服务自定义策略
@@ -6486,9 +7463,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateCloudServiceCustomPolicyResponse`
         """
-        return self._update_cloud_service_custom_policy_with_http_info(request)
+        http_info = self._update_cloud_service_custom_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cloud_service_custom_policy_with_http_info(self, request):
+    def update_cloud_service_custom_policy_invoker(self, request):
+        http_info = self._update_cloud_service_custom_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cloud_service_custom_policy_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3.0/OS-ROLE/roles/{role_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCloudServiceCustomPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6505,11 +7495,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6518,20 +7508,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-ROLE/roles/{role_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCloudServiceCustomPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_api_acl_policy(self, request):
         """修改账号接口访问策略
@@ -6546,9 +7532,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainApiAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainApiAclPolicyResponse`
         """
-        return self._update_domain_api_acl_policy_with_http_info(request)
+        http_info = self._update_domain_api_acl_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_api_acl_policy_with_http_info(self, request):
+    def update_domain_api_acl_policy_invoker(self, request):
+        http_info = self._update_domain_api_acl_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_api_acl_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/api-acl-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainApiAclPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6565,11 +7564,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6578,20 +7577,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/api-acl-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainApiAclPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_console_acl_policy(self, request):
         """修改账号控制台访问策略
@@ -6606,9 +7601,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainConsoleAclPolicyResponse`
         """
-        return self._update_domain_console_acl_policy_with_http_info(request)
+        http_info = self._update_domain_console_acl_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_console_acl_policy_with_http_info(self, request):
+    def update_domain_console_acl_policy_invoker(self, request):
+        http_info = self._update_domain_console_acl_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_console_acl_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/console-acl-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainConsoleAclPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6625,11 +7633,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6638,20 +7646,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/console-acl-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainConsoleAclPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_group_inherit_role(self, request):
         """为用户组授予所有项目服务权限
@@ -6666,9 +7670,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainGroupInheritRoleRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainGroupInheritRoleResponse`
         """
-        return self._update_domain_group_inherit_role_with_http_info(request)
+        http_info = self._update_domain_group_inherit_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_group_inherit_role_with_http_info(self, request):
+    def update_domain_group_inherit_role_invoker(self, request):
+        http_info = self._update_domain_group_inherit_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_group_inherit_role_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainGroupInheritRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6689,9 +7706,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6700,20 +7717,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/OS-INHERIT/domains/{domain_id}/groups/{group_id}/roles/{role_id}/inherited_to_projects',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainGroupInheritRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_login_policy(self, request):
         """修改账号登录策略
@@ -6728,9 +7741,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainLoginPolicyResponse`
         """
-        return self._update_domain_login_policy_with_http_info(request)
+        http_info = self._update_domain_login_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_login_policy_with_http_info(self, request):
+    def update_domain_login_policy_invoker(self, request):
+        http_info = self._update_domain_login_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_login_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/login-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainLoginPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6747,11 +7773,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6760,20 +7786,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/login-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainLoginPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_password_policy(self, request):
         """修改账号密码策略
@@ -6788,9 +7810,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainPasswordPolicyResponse`
         """
-        return self._update_domain_password_policy_with_http_info(request)
+        http_info = self._update_domain_password_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_password_policy_with_http_info(self, request):
+    def update_domain_password_policy_invoker(self, request):
+        http_info = self._update_domain_password_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_password_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/password-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainPasswordPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6807,11 +7842,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6820,20 +7855,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/password-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainPasswordPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_protect_policy(self, request):
         """修改账号操作保护策略
@@ -6848,9 +7879,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateDomainProtectPolicyResponse`
         """
-        return self._update_domain_protect_policy_with_http_info(request)
+        http_info = self._update_domain_protect_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_protect_policy_with_http_info(self, request):
+    def update_domain_protect_policy_invoker(self, request):
+        http_info = self._update_domain_protect_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_protect_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/protect-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainProtectPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6867,11 +7911,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6880,20 +7924,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-SECURITYPOLICY/domains/{domain_id}/protect-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainProtectPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_open_id_connect_config(self, request):
         """修改OpenId Connect身份提供商配置
@@ -6906,9 +7946,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateOpenIdConnectConfigResponse`
         """
-        return self._update_open_id_connect_config_with_http_info(request)
+        http_info = self._update_open_id_connect_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_open_id_connect_config_with_http_info(self, request):
+    def update_open_id_connect_config_invoker(self, request):
+        http_info = self._update_open_id_connect_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_open_id_connect_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOpenIdConnectConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6925,11 +7978,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6938,20 +7991,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-FEDERATION/identity-providers/{idp_id}/openid-connect-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateOpenIdConnectConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_project_status(self, request):
         """设置项目状态
@@ -6966,9 +8015,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateProjectStatusResponse`
         """
-        return self._update_project_status_with_http_info(request)
+        http_info = self._update_project_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_project_status_with_http_info(self, request):
+    def update_project_status_invoker(self, request):
+        http_info = self._update_project_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_project_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3-ext/projects/{project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6985,11 +8047,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6998,20 +8060,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3-ext/projects/{project_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProjectStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_permanent_access_key(self, request):
         """创建永久访问密钥
@@ -7028,9 +8086,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreatePermanentAccessKeyResponse`
         """
-        return self._create_permanent_access_key_with_http_info(request)
+        http_info = self._create_permanent_access_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_permanent_access_key_with_http_info(self, request):
+    def create_permanent_access_key_invoker(self, request):
+        http_info = self._create_permanent_access_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_permanent_access_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-CREDENTIAL/credentials",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePermanentAccessKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7045,11 +8116,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7058,20 +8129,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-CREDENTIAL/credentials',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePermanentAccessKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_temporary_access_key_by_agency(self, request):
         """通过委托获取临时访问密钥
@@ -7088,9 +8155,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByAgencyResponse`
         """
-        return self._create_temporary_access_key_by_agency_with_http_info(request)
+        http_info = self._create_temporary_access_key_by_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_temporary_access_key_by_agency_with_http_info(self, request):
+    def create_temporary_access_key_by_agency_invoker(self, request):
+        http_info = self._create_temporary_access_key_by_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_temporary_access_key_by_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-CREDENTIAL/securitytokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemporaryAccessKeyByAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7105,11 +8185,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7118,20 +8198,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-CREDENTIAL/securitytokens',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemporaryAccessKeyByAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_temporary_access_key_by_token(self, request):
         """通过token获取临时访问密钥
@@ -7148,9 +8224,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateTemporaryAccessKeyByTokenResponse`
         """
-        return self._create_temporary_access_key_by_token_with_http_info(request)
+        http_info = self._create_temporary_access_key_by_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_temporary_access_key_by_token_with_http_info(self, request):
+    def create_temporary_access_key_by_token_invoker(self, request):
+        http_info = self._create_temporary_access_key_by_token_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_temporary_access_key_by_token_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-CREDENTIAL/securitytokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemporaryAccessKeyByTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7165,11 +8254,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7178,20 +8267,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-CREDENTIAL/securitytokens',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemporaryAccessKeyByTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_permanent_access_key(self, request):
         """删除指定永久访问密钥
@@ -7206,9 +8291,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeletePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeletePermanentAccessKeyResponse`
         """
-        return self._delete_permanent_access_key_with_http_info(request)
+        http_info = self._delete_permanent_access_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_permanent_access_key_with_http_info(self, request):
+    def delete_permanent_access_key_invoker(self, request):
+        http_info = self._delete_permanent_access_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_permanent_access_key_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-CREDENTIAL/credentials/{access_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePermanentAccessKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7225,9 +8323,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7236,20 +8334,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-CREDENTIAL/credentials/{access_key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePermanentAccessKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_permanent_access_keys(self, request):
         """查询所有永久访问密钥
@@ -7264,9 +8358,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListPermanentAccessKeysRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListPermanentAccessKeysResponse`
         """
-        return self._list_permanent_access_keys_with_http_info(request)
+        http_info = self._list_permanent_access_keys_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_permanent_access_keys_with_http_info(self, request):
+    def list_permanent_access_keys_invoker(self, request):
+        http_info = self._list_permanent_access_keys_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_permanent_access_keys_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-CREDENTIAL/credentials",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermanentAccessKeysResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7283,9 +8390,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7294,20 +8401,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-CREDENTIAL/credentials',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPermanentAccessKeysResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_permanent_access_key(self, request):
         """查询指定永久访问密钥
@@ -7322,9 +8425,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowPermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowPermanentAccessKeyResponse`
         """
-        return self._show_permanent_access_key_with_http_info(request)
+        http_info = self._show_permanent_access_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_permanent_access_key_with_http_info(self, request):
+    def show_permanent_access_key_invoker(self, request):
+        http_info = self._show_permanent_access_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_permanent_access_key_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-CREDENTIAL/credentials/{access_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPermanentAccessKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7341,9 +8457,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7352,20 +8468,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-CREDENTIAL/credentials/{access_key}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPermanentAccessKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_permanent_access_key(self, request):
         """修改指定永久访问密钥
@@ -7380,9 +8492,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdatePermanentAccessKeyResponse`
         """
-        return self._update_permanent_access_key_with_http_info(request)
+        http_info = self._update_permanent_access_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_permanent_access_key_with_http_info(self, request):
+    def update_permanent_access_key_invoker(self, request):
+        http_info = self._update_permanent_access_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_permanent_access_key_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-CREDENTIAL/credentials/{access_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePermanentAccessKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7399,11 +8524,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7412,20 +8537,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-CREDENTIAL/credentials/{access_key}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePermanentAccessKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_binding_device(self, request):
         """绑定MFA设备
@@ -7440,9 +8561,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateBindingDeviceResponse`
         """
-        return self._create_binding_device_with_http_info(request)
+        http_info = self._create_binding_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_binding_device_with_http_info(self, request):
+    def create_binding_device_invoker(self, request):
+        http_info = self._create_binding_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_binding_device_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-MFA/mfa-devices/bind",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBindingDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7457,11 +8591,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7470,20 +8604,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-MFA/mfa-devices/bind',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBindingDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_mfa_device(self, request):
         """创建MFA设备
@@ -7498,9 +8628,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateMfaDeviceResponse`
         """
-        return self._create_mfa_device_with_http_info(request)
+        http_info = self._create_mfa_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_mfa_device_with_http_info(self, request):
+    def create_mfa_device_invoker(self, request):
+        http_info = self._create_mfa_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_mfa_device_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-MFA/virtual-mfa-devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMfaDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7515,11 +8658,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7528,20 +8671,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-MFA/virtual-mfa-devices',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMfaDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_user(self, request):
         """管理员创建IAM用户（推荐）
@@ -7556,9 +8695,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.CreateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.CreateUserResponse`
         """
-        return self._create_user_with_http_info(request)
+        http_info = self._create_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_user_with_http_info(self, request):
+    def create_user_invoker(self, request):
+        http_info = self._create_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.0/OS-USER/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7573,11 +8725,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7586,20 +8738,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-USER/users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_binding_device(self, request):
         """解绑MFA设备
@@ -7614,9 +8762,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteBindingDeviceResponse`
         """
-        return self._delete_binding_device_with_http_info(request)
+        http_info = self._delete_binding_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_binding_device_with_http_info(self, request):
+    def delete_binding_device_invoker(self, request):
+        http_info = self._delete_binding_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_binding_device_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-MFA/mfa-devices/unbind",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBindingDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7631,11 +8792,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7644,20 +8805,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-MFA/mfa-devices/unbind',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBindingDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_mfa_device(self, request):
         """删除MFA设备
@@ -7672,9 +8829,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.DeleteMfaDeviceResponse`
         """
-        return self._delete_mfa_device_with_http_info(request)
+        http_info = self._delete_mfa_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_mfa_device_with_http_info(self, request):
+    def delete_mfa_device_invoker(self, request):
+        http_info = self._delete_mfa_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_mfa_device_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3.0/OS-MFA/virtual-mfa-devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMfaDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7693,9 +8863,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7704,20 +8874,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-MFA/virtual-mfa-devices',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMfaDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_user(self, request):
         """管理员创建IAM用户
@@ -7732,9 +8898,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserResponse`
         """
-        return self._keystone_create_user_with_http_info(request)
+        http_info = self._keystone_create_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_user_with_http_info(self, request):
+    def keystone_create_user_invoker(self, request):
+        http_info = self._keystone_create_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7749,11 +8928,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7762,20 +8941,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_delete_user(self, request):
         """管理员删除IAM用户
@@ -7790,9 +8965,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneDeleteUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneDeleteUserResponse`
         """
-        return self._keystone_delete_user_with_http_info(request)
+        http_info = self._keystone_delete_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_delete_user_with_http_info(self, request):
+    def keystone_delete_user_invoker(self, request):
+        http_info = self._keystone_delete_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_delete_user_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneDeleteUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7809,9 +8997,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7820,20 +9008,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/users/{user_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneDeleteUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_groups_for_user(self, request):
         """查询IAM用户所属用户组
@@ -7848,9 +9032,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsForUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListGroupsForUserResponse`
         """
-        return self._keystone_list_groups_for_user_with_http_info(request)
+        http_info = self._keystone_list_groups_for_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_groups_for_user_with_http_info(self, request):
+    def keystone_list_groups_for_user_invoker(self, request):
+        http_info = self._keystone_list_groups_for_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_groups_for_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/users/{user_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListGroupsForUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7867,9 +9064,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7878,20 +9075,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/users/{user_id}/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListGroupsForUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_list_users(self, request):
         """管理员查询IAM用户列表
@@ -7906,9 +9099,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneListUsersRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneListUsersResponse`
         """
-        return self._keystone_list_users_with_http_info(request)
+        http_info = self._keystone_list_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_list_users_with_http_info(self, request):
+    def keystone_list_users_invoker(self, request):
+        http_info = self._keystone_list_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_list_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneListUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7931,9 +9137,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7942,20 +9148,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneListUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_show_user(self, request):
         """查询IAM用户详情
@@ -7970,9 +9172,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneShowUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneShowUserResponse`
         """
-        return self._keystone_show_user_with_http_info(request)
+        http_info = self._keystone_show_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_show_user_with_http_info(self, request):
+    def keystone_show_user_invoker(self, request):
+        http_info = self._keystone_show_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_show_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneShowUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7989,9 +9204,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8000,20 +9215,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/users/{user_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneShowUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_update_user_by_admin(self, request):
         """管理员修改IAM用户信息
@@ -8028,9 +9239,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserByAdminResponse`
         """
-        return self._keystone_update_user_by_admin_with_http_info(request)
+        http_info = self._keystone_update_user_by_admin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_update_user_by_admin_with_http_info(self, request):
+    def keystone_update_user_by_admin_invoker(self, request):
+        http_info = self._keystone_update_user_by_admin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_update_user_by_admin_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneUpdateUserByAdminResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8047,11 +9271,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8060,20 +9284,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/users/{user_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneUpdateUserByAdminResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_update_user_password(self, request):
         """修改IAM用户密码
@@ -8088,9 +9308,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneUpdateUserPasswordResponse`
         """
-        return self._keystone_update_user_password_with_http_info(request)
+        http_info = self._keystone_update_user_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_update_user_password_with_http_info(self, request):
+    def keystone_update_user_password_invoker(self, request):
+        http_info = self._keystone_update_user_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_update_user_password_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/users/{user_id}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneUpdateUserPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8107,11 +9340,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8120,20 +9353,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/users/{user_id}/password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneUpdateUserPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_login_protects(self, request):
         """查询IAM用户的登录保护状态信息列表
@@ -8148,9 +9377,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListUserLoginProtectsRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUserLoginProtectsResponse`
         """
-        return self._list_user_login_protects_with_http_info(request)
+        http_info = self._list_user_login_protects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_login_protects_with_http_info(self, request):
+    def list_user_login_protects_invoker(self, request):
+        http_info = self._list_user_login_protects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_user_login_protects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-USER/login-protects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserLoginProtectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8165,9 +9407,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8176,20 +9418,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-USER/login-protects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserLoginProtectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_mfa_devices(self, request):
         """该接口可以用于获取MFA设备。
@@ -8204,9 +9442,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ListUserMfaDevicesRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ListUserMfaDevicesResponse`
         """
-        return self._list_user_mfa_devices_with_http_info(request)
+        http_info = self._list_user_mfa_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_mfa_devices_with_http_info(self, request):
+    def list_user_mfa_devices_invoker(self, request):
+        http_info = self._list_user_mfa_devices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_user_mfa_devices_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-MFA/virtual-mfa-devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserMfaDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8221,9 +9472,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8232,20 +9483,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-MFA/virtual-mfa-devices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserMfaDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user(self, request):
         """查询IAM用户详情（推荐）
@@ -8260,9 +9507,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserResponse`
         """
-        return self._show_user_with_http_info(request)
+        http_info = self._show_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_with_http_info(self, request):
+    def show_user_invoker(self, request):
+        http_info = self._show_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-USER/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8279,9 +9539,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8290,20 +9550,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-USER/users/{user_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user_login_protect(self, request):
         """查询指定IAM用户的登录保护状态信息
@@ -8318,9 +9574,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserLoginProtectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserLoginProtectResponse`
         """
-        return self._show_user_login_protect_with_http_info(request)
+        http_info = self._show_user_login_protect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_login_protect_with_http_info(self, request):
+    def show_user_login_protect_invoker(self, request):
+        http_info = self._show_user_login_protect_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_user_login_protect_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-USER/users/{user_id}/login-protect",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserLoginProtectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8337,9 +9606,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8348,20 +9617,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-USER/users/{user_id}/login-protect',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserLoginProtectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user_mfa_device(self, request):
         """查询指定IAM用户的MFA绑定信息
@@ -8376,9 +9641,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.ShowUserMfaDeviceRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.ShowUserMfaDeviceResponse`
         """
-        return self._show_user_mfa_device_with_http_info(request)
+        http_info = self._show_user_mfa_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_mfa_device_with_http_info(self, request):
+    def show_user_mfa_device_invoker(self, request):
+        http_info = self._show_user_mfa_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_user_mfa_device_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.0/OS-MFA/users/{user_id}/virtual-mfa-device",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserMfaDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8395,9 +9673,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8406,20 +9684,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-MFA/users/{user_id}/virtual-mfa-device',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserMfaDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_login_protect(self, request):
         """修改IAM用户登录保护状态信息
@@ -8434,9 +9708,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateLoginProtectResponse`
         """
-        return self._update_login_protect_with_http_info(request)
+        http_info = self._update_login_protect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_login_protect_with_http_info(self, request):
+    def update_login_protect_invoker(self, request):
+        http_info = self._update_login_protect_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_login_protect_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-USER/users/{user_id}/login-protect",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLoginProtectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8453,11 +9740,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8466,20 +9753,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-USER/users/{user_id}/login-protect',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLoginProtectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user(self, request):
         """管理员修改IAM用户信息（推荐）
@@ -8494,9 +9777,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserResponse`
         """
-        return self._update_user_with_http_info(request)
+        http_info = self._update_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_with_http_info(self, request):
+    def update_user_invoker(self, request):
+        http_info = self._update_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_user_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-USER/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8513,11 +9809,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8526,20 +9822,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-USER/users/{user_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_information(self, request):
         """修改IAM用户信息（推荐）
@@ -8554,9 +9846,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.UpdateUserInformationRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.UpdateUserInformationResponse`
         """
-        return self._update_user_information_with_http_info(request)
+        http_info = self._update_user_information_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_information_with_http_info(self, request):
+    def update_user_information_invoker(self, request):
+        http_info = self._update_user_information_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_user_information_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3.0/OS-USER/users/{user_id}/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserInformationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8573,11 +9878,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8586,20 +9891,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.0/OS-USER/users/{user_id}/info',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserInformationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_agency_token(self, request):
         """获取委托Token
@@ -8620,9 +9921,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateAgencyTokenResponse`
         """
-        return self._keystone_create_agency_token_with_http_info(request)
+        http_info = self._keystone_create_agency_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_agency_token_with_http_info(self, request):
+    def keystone_create_agency_token_invoker(self, request):
+        http_info = self._keystone_create_agency_token_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_agency_token_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/auth/tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateAgencyTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8639,11 +9953,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Subject-Token", ]
 
@@ -8652,20 +9966,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/auth/tokens',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateAgencyTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_user_token_by_password(self, request):
         """获取IAM用户Token（使用密码）
@@ -8685,9 +9995,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordResponse`
         """
-        return self._keystone_create_user_token_by_password_with_http_info(request)
+        http_info = self._keystone_create_user_token_by_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_user_token_by_password_with_http_info(self, request):
+    def keystone_create_user_token_by_password_invoker(self, request):
+        http_info = self._keystone_create_user_token_by_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_user_token_by_password_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/auth/tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateUserTokenByPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8704,11 +10027,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Subject-Token", ]
 
@@ -8717,20 +10040,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/auth/tokens',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateUserTokenByPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_create_user_token_by_password_and_mfa(self, request):
         """获取IAM用户Token（使用密码+虚拟MFA）
@@ -8750,9 +10069,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneCreateUserTokenByPasswordAndMfaResponse`
         """
-        return self._keystone_create_user_token_by_password_and_mfa_with_http_info(request)
+        http_info = self._keystone_create_user_token_by_password_and_mfa_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_create_user_token_by_password_and_mfa_with_http_info(self, request):
+    def keystone_create_user_token_by_password_and_mfa_invoker(self, request):
+        http_info = self._keystone_create_user_token_by_password_and_mfa_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_create_user_token_by_password_and_mfa_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/auth/tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneCreateUserTokenByPasswordAndMfaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8769,11 +10101,11 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Subject-Token", ]
 
@@ -8782,20 +10114,16 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/auth/tokens',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneCreateUserTokenByPasswordAndMfaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def keystone_validate_token(self, request):
         """校验Token的有效性
@@ -8810,9 +10138,22 @@ class IamClient(Client):
         :type request: :class:`huaweicloudsdkiam.v3.KeystoneValidateTokenRequest`
         :rtype: :class:`huaweicloudsdkiam.v3.KeystoneValidateTokenResponse`
         """
-        return self._keystone_validate_token_with_http_info(request)
+        http_info = self._keystone_validate_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _keystone_validate_token_with_http_info(self, request):
+    def keystone_validate_token_invoker(self, request):
+        http_info = self._keystone_validate_token_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _keystone_validate_token_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/auth/tokens",
+            "request_type": request.__class__.__name__,
+            "response_type": "KeystoneValidateTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8831,9 +10172,9 @@ class IamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Subject-Token", ]
 
@@ -8842,20 +10183,25 @@ class IamClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/auth/tokens',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='KeystoneValidateTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

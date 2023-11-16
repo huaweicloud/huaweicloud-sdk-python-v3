@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkmoderation'")
 
 
 class ModerationAsyncClient(Client):
@@ -39,9 +44,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.CheckImageModerationRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.CheckImageModerationResponse`
         """
-        return self._check_image_moderation_with_http_info(request)
+        http_info = self._check_image_moderation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_image_moderation_with_http_info(self, request):
+    def check_image_moderation_async_invoker(self, request):
+        http_info = self._check_image_moderation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_image_moderation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/image",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckImageModerationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/image',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckImageModerationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_close_audio_stream_moderation_job_async(self, request):
         """关闭音频流内容审核作业
@@ -96,9 +109,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCloseAudioStreamModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCloseAudioStreamModerationJobResponse`
         """
-        return self._run_close_audio_stream_moderation_job_with_http_info(request)
+        http_info = self._run_close_audio_stream_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_close_audio_stream_moderation_job_with_http_info(self, request):
+    def run_close_audio_stream_moderation_job_async_invoker(self, request):
+        http_info = self._run_close_audio_stream_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_close_audio_stream_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/audio-stream/jobs/stop/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCloseAudioStreamModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,9 +140,9 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/audio-stream/jobs/stop/{job_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCloseAudioStreamModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_close_video_stream_moderation_job_async(self, request):
         """关闭视频流内容审核作业
@@ -153,9 +174,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCloseVideoStreamModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCloseVideoStreamModerationJobResponse`
         """
-        return self._run_close_video_stream_moderation_job_with_http_info(request)
+        http_info = self._run_close_video_stream_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_close_video_stream_moderation_job_with_http_info(self, request):
+    def run_close_video_stream_moderation_job_async_invoker(self, request):
+        http_info = self._run_close_video_stream_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_close_video_stream_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/video-stream/jobs/stop/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCloseVideoStreamModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,9 +205,9 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/video-stream/jobs/stop/{job_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCloseVideoStreamModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_create_audio_moderation_job_async(self, request):
         """创建音频内容审核作业
@@ -210,9 +239,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateAudioModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateAudioModerationJobResponse`
         """
-        return self._run_create_audio_moderation_job_with_http_info(request)
+        http_info = self._run_create_audio_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_create_audio_moderation_job_with_http_info(self, request):
+    def run_create_audio_moderation_job_async_invoker(self, request):
+        http_info = self._run_create_audio_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_create_audio_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/audio/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCreateAudioModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -227,11 +268,11 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +281,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/audio/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCreateAudioModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_create_audio_stream_moderation_job_async(self, request):
         """创建音频流内容审核作业
@@ -267,9 +304,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateAudioStreamModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateAudioStreamModerationJobResponse`
         """
-        return self._run_create_audio_stream_moderation_job_with_http_info(request)
+        http_info = self._run_create_audio_stream_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_create_audio_stream_moderation_job_with_http_info(self, request):
+    def run_create_audio_stream_moderation_job_async_invoker(self, request):
+        http_info = self._run_create_audio_stream_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_create_audio_stream_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/audio-stream/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCreateAudioStreamModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -284,11 +333,11 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -297,20 +346,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/audio-stream/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCreateAudioStreamModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_create_document_moderation_job_async(self, request):
         """创建文档内容审核作业
@@ -324,9 +369,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateDocumentModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateDocumentModerationJobResponse`
         """
-        return self._run_create_document_moderation_job_with_http_info(request)
+        http_info = self._run_create_document_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_create_document_moderation_job_with_http_info(self, request):
+    def run_create_document_moderation_job_async_invoker(self, request):
+        http_info = self._run_create_document_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_create_document_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/document/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCreateDocumentModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +398,11 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +411,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/document/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCreateDocumentModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_create_video_moderation_job_async(self, request):
         """创建视频内容审核作业
@@ -381,9 +434,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateVideoModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateVideoModerationJobResponse`
         """
-        return self._run_create_video_moderation_job_with_http_info(request)
+        http_info = self._run_create_video_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_create_video_moderation_job_with_http_info(self, request):
+    def run_create_video_moderation_job_async_invoker(self, request):
+        http_info = self._run_create_video_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_create_video_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/video/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCreateVideoModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -398,11 +463,11 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -411,20 +476,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/video/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCreateVideoModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_create_video_stream_moderation_job_async(self, request):
         """创建视频流内容审核作业
@@ -438,9 +499,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunCreateVideoStreamModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunCreateVideoStreamModerationJobResponse`
         """
-        return self._run_create_video_stream_moderation_job_with_http_info(request)
+        http_info = self._run_create_video_stream_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_create_video_stream_moderation_job_with_http_info(self, request):
+    def run_create_video_stream_moderation_job_async_invoker(self, request):
+        http_info = self._run_create_video_stream_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_create_video_stream_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/video-stream/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCreateVideoStreamModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -455,11 +528,11 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -468,20 +541,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/video-stream/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCreateVideoStreamModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_query_audio_moderation_job_async(self, request):
         """查询音频内容审核作业
@@ -494,9 +563,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunQueryAudioModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunQueryAudioModerationJobResponse`
         """
-        return self._run_query_audio_moderation_job_with_http_info(request)
+        http_info = self._run_query_audio_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_query_audio_moderation_job_with_http_info(self, request):
+    def run_query_audio_moderation_job_async_invoker(self, request):
+        http_info = self._run_query_audio_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_query_audio_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/moderation/audio/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunQueryAudioModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -513,9 +594,9 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -524,20 +605,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/audio/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunQueryAudioModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_query_document_moderation_job_async(self, request):
         """查询文档审核作业结果
@@ -551,9 +628,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunQueryDocumentModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunQueryDocumentModerationJobResponse`
         """
-        return self._run_query_document_moderation_job_with_http_info(request)
+        http_info = self._run_query_document_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_query_document_moderation_job_with_http_info(self, request):
+    def run_query_document_moderation_job_async_invoker(self, request):
+        http_info = self._run_query_document_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_query_document_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/moderation/document/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunQueryDocumentModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -570,9 +659,9 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -581,20 +670,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/document/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunQueryDocumentModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_query_video_moderation_job_async(self, request):
         """查询视频内容审核作业
@@ -608,9 +693,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunQueryVideoModerationJobRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunQueryVideoModerationJobResponse`
         """
-        return self._run_query_video_moderation_job_with_http_info(request)
+        http_info = self._run_query_video_moderation_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_query_video_moderation_job_with_http_info(self, request):
+    def run_query_video_moderation_job_async_invoker(self, request):
+        http_info = self._run_query_video_moderation_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_query_video_moderation_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/moderation/video/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunQueryVideoModerationJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -627,9 +724,9 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -638,20 +735,16 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/video/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunQueryVideoModerationJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_text_moderation_async(self, request):
         """文本内容审核
@@ -665,9 +758,21 @@ class ModerationAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmoderation.v3.RunTextModerationRequest`
         :rtype: :class:`huaweicloudsdkmoderation.v3.RunTextModerationResponse`
         """
-        return self._run_text_moderation_with_http_info(request)
+        http_info = self._run_text_moderation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_text_moderation_with_http_info(self, request):
+    def run_text_moderation_async_invoker(self, request):
+        http_info = self._run_text_moderation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_text_moderation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/moderation/text",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunTextModerationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -682,11 +787,11 @@ class ModerationAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -695,20 +800,26 @@ class ModerationAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/moderation/text',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunTextModerationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -747,4 +858,4 @@ class ModerationAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

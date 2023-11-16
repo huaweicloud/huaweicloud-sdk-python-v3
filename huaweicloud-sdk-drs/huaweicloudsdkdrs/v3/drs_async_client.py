@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdrs'")
 
 
 class DrsAsyncClient(Client):
@@ -39,9 +44,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchChangeDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchChangeDataResponse`
         """
-        return self._batch_change_data_with_http_info(request)
+        http_info = self._batch_change_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_change_data_with_http_info(self, request):
+    def batch_change_data_async_invoker(self, request):
+        http_info = self._batch_change_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_change_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-transformation",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchChangeDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-transformation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchChangeDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_check_jobs_async(self, request):
         """批量预检查
@@ -98,9 +111,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCheckJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCheckJobsResponse`
         """
-        return self._batch_check_jobs_with_http_info(request)
+        http_info = self._batch_check_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_check_jobs_with_http_info(self, request):
+    def batch_check_jobs_async_invoker(self, request):
+        http_info = self._batch_check_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_check_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-precheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCheckJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-precheck',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCheckJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_check_results_async(self, request):
         """批量查询预检查结果
@@ -157,9 +178,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCheckResultsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCheckResultsResponse`
         """
-        return self._batch_check_results_with_http_info(request)
+        http_info = self._batch_check_results_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_check_results_with_http_info(self, request):
+    def batch_check_results_async_invoker(self, request):
+        http_info = self._batch_check_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_check_results_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-precheck-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCheckResultsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-precheck-result',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCheckResultsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_jobs_async(self, request):
         """批量创建任务
@@ -216,9 +245,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchCreateJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchCreateJobsResponse`
         """
-        return self._batch_create_jobs_with_http_info(request)
+        http_info = self._batch_create_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_jobs_with_http_info(self, request):
+    def batch_create_jobs_async_invoker(self, request):
+        http_info = self._batch_create_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-creation",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +276,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-creation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_jobs_async(self, request):
         """批量结束任务或删除任务
@@ -275,9 +312,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchDeleteJobsResponse`
         """
-        return self._batch_delete_jobs_with_http_info(request)
+        http_info = self._batch_delete_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_jobs_with_http_info(self, request):
+    def batch_delete_jobs_async_invoker(self, request):
+        http_info = self._batch_delete_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_jobs_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/jobs/batch-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -294,11 +343,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -307,20 +356,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-jobs',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_job_details_async(self, request):
         """批量查询任务详情
@@ -334,9 +379,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListJobDetailsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListJobDetailsResponse`
         """
-        return self._batch_list_job_details_with_http_info(request)
+        http_info = self._batch_list_job_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_job_details_with_http_info(self, request):
+    def batch_list_job_details_async_invoker(self, request):
+        http_info = self._batch_list_job_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_job_details_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListJobDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,11 +410,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +423,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-detail',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListJobDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_job_status_async(self, request):
         """批量查询任务状态
@@ -393,9 +446,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListJobStatusRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListJobStatusResponse`
         """
-        return self._batch_list_job_status_with_http_info(request)
+        http_info = self._batch_list_job_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_job_status_with_http_info(self, request):
+    def batch_list_job_status_async_invoker(self, request):
+        http_info = self._batch_list_job_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_job_status_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListJobStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -412,11 +477,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -425,20 +490,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-status',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListJobStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_progresses_async(self, request):
         """批量查询任务进度
@@ -452,9 +513,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListProgressesRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListProgressesResponse`
         """
-        return self._batch_list_progresses_with_http_info(request)
+        http_info = self._batch_list_progresses_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_progresses_with_http_info(self, request):
+    def batch_list_progresses_async_invoker(self, request):
+        http_info = self._batch_list_progresses_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_progresses_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListProgressesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -471,11 +544,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -484,20 +557,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-progress',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListProgressesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_rpos_and_rtos_async(self, request):
         """批量查询RPO和RTO
@@ -511,9 +580,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListRposAndRtosRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListRposAndRtosResponse`
         """
-        return self._batch_list_rpos_and_rtos_with_http_info(request)
+        http_info = self._batch_list_rpos_and_rtos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_rpos_and_rtos_with_http_info(self, request):
+    def batch_list_rpos_and_rtos_async_invoker(self, request):
+        http_info = self._batch_list_rpos_and_rtos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_rpos_and_rtos_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-rpo-and-rto",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListRposAndRtosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -530,11 +611,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -543,20 +624,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-rpo-and-rto',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListRposAndRtosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_struct_detail_async(self, request):
         """批量查询灾备初始化对象详情
@@ -570,9 +647,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListStructDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListStructDetailResponse`
         """
-        return self._batch_list_struct_detail_with_http_info(request)
+        http_info = self._batch_list_struct_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_struct_detail_with_http_info(self, request):
+    def batch_list_struct_detail_async_invoker(self, request):
+        http_info = self._batch_list_struct_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_struct_detail_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/{type}/batch-struct-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListStructDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -591,11 +680,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -604,20 +693,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/{type}/batch-struct-detail',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListStructDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_struct_process_async(self, request):
         """批量查询灾备初始化进度
@@ -631,9 +716,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchListStructProcessRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchListStructProcessResponse`
         """
-        return self._batch_list_struct_process_with_http_info(request)
+        http_info = self._batch_list_struct_process_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_struct_process_with_http_info(self, request):
+    def batch_list_struct_process_async_invoker(self, request):
+        http_info = self._batch_list_struct_process_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_struct_process_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-struct-process",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListStructProcessResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -650,11 +747,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -663,20 +760,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-struct-process',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListStructProcessResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_reset_password_async(self, request):
         """批量修改源库/目标库密码
@@ -690,9 +783,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchResetPasswordResponse`
         """
-        return self._batch_reset_password_with_http_info(request)
+        http_info = self._batch_reset_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_reset_password_with_http_info(self, request):
+    def batch_reset_password_async_invoker(self, request):
+        http_info = self._batch_reset_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_reset_password_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/jobs/batch-modify-pwd",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchResetPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -709,11 +814,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -722,20 +827,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-modify-pwd',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchResetPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_restore_task_async(self, request):
         """批量续传/重试
@@ -749,9 +850,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchRestoreTaskRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchRestoreTaskResponse`
         """
-        return self._batch_restore_task_with_http_info(request)
+        http_info = self._batch_restore_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_restore_task_with_http_info(self, request):
+    def batch_restore_task_async_invoker(self, request):
+        http_info = self._batch_restore_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_restore_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-retry-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRestoreTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -768,11 +881,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -781,20 +894,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-retry-task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRestoreTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_set_definer_async(self, request):
         """批量设置definer
@@ -810,9 +919,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetDefinerRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetDefinerResponse`
         """
-        return self._batch_set_definer_with_http_info(request)
+        http_info = self._batch_set_definer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_set_definer_with_http_info(self, request):
+    def batch_set_definer_async_invoker(self, request):
+        http_info = self._batch_set_definer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_definer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-replace-definer",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetDefinerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -829,11 +950,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -842,20 +963,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-replace-definer',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSetDefinerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_set_objects_async(self, request):
         """批量数据库对象选择
@@ -869,9 +986,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetObjectsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetObjectsResponse`
         """
-        return self._batch_set_objects_with_http_info(request)
+        http_info = self._batch_set_objects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_set_objects_with_http_info(self, request):
+    def batch_set_objects_async_invoker(self, request):
+        http_info = self._batch_set_objects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_objects_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/jobs/batch-select-objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetObjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -888,11 +1017,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -901,20 +1030,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-select-objects',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSetObjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_set_policy_async(self, request):
         """批量设置同步策略
@@ -929,9 +1054,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetPolicyRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetPolicyResponse`
         """
-        return self._batch_set_policy_with_http_info(request)
+        http_info = self._batch_set_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_set_policy_with_http_info(self, request):
+    def batch_set_policy_async_invoker(self, request):
+        http_info = self._batch_set_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-sync-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -948,11 +1085,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -961,20 +1098,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-sync-policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSetPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_set_smn_async(self, request):
         """批量配置异常通知
@@ -989,9 +1122,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetSmnRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetSmnResponse`
         """
-        return self._batch_set_smn_with_http_info(request)
+        http_info = self._batch_set_smn_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_set_smn_with_http_info(self, request):
+    def batch_set_smn_async_invoker(self, request):
+        http_info = self._batch_set_smn_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_smn_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-set-smn",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetSmnResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1008,11 +1153,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1021,20 +1166,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-set-smn',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSetSmnResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_set_speed_async(self, request):
         """批量设置任务限速
@@ -1050,9 +1191,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSetSpeedRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSetSpeedResponse`
         """
-        return self._batch_set_speed_with_http_info(request)
+        http_info = self._batch_set_speed_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_set_speed_with_http_info(self, request):
+    def batch_set_speed_async_invoker(self, request):
+        http_info = self._batch_set_speed_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_speed_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/jobs/batch-limit-speed",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetSpeedResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1069,11 +1222,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1082,20 +1235,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-limit-speed',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSetSpeedResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_params_async(self, request):
         """批量获取数据库参数
@@ -1109,9 +1258,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchShowParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchShowParamsResponse`
         """
-        return self._batch_show_params_with_http_info(request)
+        http_info = self._batch_show_params_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_params_with_http_info(self, request):
+    def batch_show_params_async_invoker(self, request):
+        http_info = self._batch_show_params_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_params_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-get-params",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowParamsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1128,11 +1289,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1141,20 +1302,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-get-params',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowParamsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_start_jobs_async(self, request):
         """批量启动任务
@@ -1168,9 +1325,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchStartJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchStartJobsResponse`
         """
-        return self._batch_start_jobs_with_http_info(request)
+        http_info = self._batch_start_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_start_jobs_with_http_info(self, request):
+    def batch_start_jobs_async_invoker(self, request):
+        http_info = self._batch_start_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_start_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-starting",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStartJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1187,11 +1356,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1200,20 +1369,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-starting',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStartJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_stop_jobs_async(self, request):
         """批量暂停任务
@@ -1227,9 +1392,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchStopJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchStopJobsResponse`
         """
-        return self._batch_stop_jobs_with_http_info(request)
+        http_info = self._batch_stop_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_stop_jobs_with_http_info(self, request):
+    def batch_stop_jobs_async_invoker(self, request):
+        http_info = self._batch_stop_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_stop_jobs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-pause-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStopJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1246,11 +1423,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1259,20 +1436,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-pause-task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStopJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_switchover_async(self, request):
         """批量主备倒换
@@ -1286,9 +1459,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchSwitchoverResponse`
         """
-        return self._batch_switchover_with_http_info(request)
+        http_info = self._batch_switchover_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_switchover_with_http_info(self, request):
+    def batch_switchover_async_invoker(self, request):
+        http_info = self._batch_switchover_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_switchover_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-switchover",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSwitchoverResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1305,11 +1490,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1318,20 +1503,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-switchover',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSwitchoverResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_job_async(self, request):
         """批量修改任务
@@ -1345,9 +1526,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchUpdateJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateJobResponse`
         """
-        return self._batch_update_job_with_http_info(request)
+        http_info = self._batch_update_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_job_with_http_info(self, request):
+    def batch_update_job_async_invoker(self, request):
+        http_info = self._batch_update_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_job_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/jobs/batch-modification",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1364,11 +1557,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1377,20 +1570,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-modification',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_user_async(self, request):
         """批量更新迁移用户信息
@@ -1404,9 +1593,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchUpdateUserRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchUpdateUserResponse`
         """
-        return self._batch_update_user_with_http_info(request)
+        http_info = self._batch_update_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_user_with_http_info(self, request):
+    def batch_update_user_async_invoker(self, request):
+        http_info = self._batch_update_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_user_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/jobs/batch-update-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1423,11 +1624,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1436,20 +1637,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-update-user',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_validate_clusters_connections_async(self, request):
         """批量测试连接-集群模式
@@ -1464,9 +1661,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchValidateClustersConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchValidateClustersConnectionsResponse`
         """
-        return self._batch_validate_clusters_connections_with_http_info(request)
+        http_info = self._batch_validate_clusters_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_validate_clusters_connections_with_http_info(self, request):
+    def batch_validate_clusters_connections_async_invoker(self, request):
+        http_info = self._batch_validate_clusters_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_validate_clusters_connections_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/cluster/batch-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchValidateClustersConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1483,11 +1692,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1496,20 +1705,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/cluster/batch-connection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchValidateClustersConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_validate_connections_async(self, request):
         """批量测试连接
@@ -1523,9 +1728,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.BatchValidateConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.BatchValidateConnectionsResponse`
         """
-        return self._batch_validate_connections_with_http_info(request)
+        http_info = self._batch_validate_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_validate_connections_with_http_info(self, request):
+    def batch_validate_connections_async_invoker(self, request):
+        http_info = self._batch_validate_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_validate_connections_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/batch-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchValidateConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1542,11 +1759,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1555,20 +1772,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/batch-connection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchValidateConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_compare_task_async(self, request):
         """创建对比任务
@@ -1582,9 +1795,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.CreateCompareTaskResponse`
         """
-        return self._create_compare_task_with_http_info(request)
+        http_info = self._create_compare_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_compare_task_with_http_info(self, request):
+    def create_compare_task_async_invoker(self, request):
+        http_info = self._create_compare_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_compare_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/create-compare-task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCompareTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1601,11 +1826,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1614,20 +1839,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/create-compare-task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCompareTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_available_zone_async(self, request):
         """查询规格未售罄的可用区
@@ -1641,9 +1862,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListAvailableZoneRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListAvailableZoneResponse`
         """
-        return self._list_available_zone_with_http_info(request)
+        http_info = self._list_available_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_available_zone_with_http_info(self, request):
+    def list_available_zone_async_invoker(self, request):
+        http_info = self._list_available_zone_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_zone_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/available-zone",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1660,11 +1893,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1673,20 +1906,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/available-zone',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailableZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_compare_result_async(self, request):
         """查询对比结果
@@ -1700,9 +1929,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListCompareResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListCompareResultResponse`
         """
-        return self._list_compare_result_with_http_info(request)
+        http_info = self._list_compare_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_compare_result_with_http_info(self, request):
+    def list_compare_result_async_invoker(self, request):
+        http_info = self._list_compare_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_compare_result_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/query-compare-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCompareResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1719,11 +1960,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1732,20 +1973,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/query-compare-result',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCompareResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_users_async(self, request):
         """获取源库迁移用户列表
@@ -1759,9 +1996,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ListUsersResponse`
         """
-        return self._list_users_with_http_info(request)
+        http_info = self._list_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_users_with_http_info(self, request):
+    def list_users_async_invoker(self, request):
+        http_info = self._list_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}/get-src-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1780,9 +2029,9 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1791,20 +2040,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/{job_id}/get-src-user',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_list_async(self, request):
         """查询租户任务列表
@@ -1818,9 +2063,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ShowJobListRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ShowJobListResponse`
         """
-        return self._show_job_list_with_http_info(request)
+        http_info = self._show_job_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_list_with_http_info(self, request):
+    def show_job_list_async_invoker(self, request):
+        http_info = self._show_job_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1837,11 +2094,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1850,20 +2107,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_monitoring_data_async(self, request):
         """查询容灾监控数据
@@ -1877,9 +2130,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ShowMonitoringDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ShowMonitoringDataResponse`
         """
-        return self._show_monitoring_data_with_http_info(request)
+        http_info = self._show_monitoring_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_monitoring_data_with_http_info(self, request):
+    def show_monitoring_data_async_invoker(self, request):
+        http_info = self._show_monitoring_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_monitoring_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/disaster-recovery-monitoring-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMonitoringDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1896,11 +2161,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1909,20 +2174,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/disaster-recovery-monitoring-data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMonitoringDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas_async(self, request):
         """查询配额
@@ -1936,9 +2197,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_async_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1955,9 +2228,9 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1966,20 +2239,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_params_async(self, request):
         """修改数据库参数
@@ -1993,9 +2262,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.UpdateParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.UpdateParamsResponse`
         """
-        return self._update_params_with_http_info(request)
+        http_info = self._update_params_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_params_with_http_info(self, request):
+    def update_params_async_invoker(self, request):
+        http_info = self._update_params_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_params_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}/params",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateParamsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2014,11 +2295,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2027,20 +2308,16 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/{job_id}/params',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateParamsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_tuning_params_async(self, request):
         """高级设置
@@ -2054,9 +2331,21 @@ class DrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v3.UpdateTuningParamsResponse`
         """
-        return self._update_tuning_params_with_http_info(request)
+        http_info = self._update_tuning_params_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_tuning_params_with_http_info(self, request):
+    def update_tuning_params_async_invoker(self, request):
+        http_info = self._update_tuning_params_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_tuning_params_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/job/{job_id}/tuning-params/modify-params",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTuningParamsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2075,11 +2364,11 @@ class DrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2088,20 +2377,26 @@ class DrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/job/{job_id}/tuning-params/modify-params',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTuningParamsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2140,4 +2435,4 @@ class DrsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

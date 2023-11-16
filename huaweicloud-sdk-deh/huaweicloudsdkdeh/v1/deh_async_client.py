@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdeh'")
 
 
 class DeHAsyncClient(Client):
@@ -41,9 +46,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.BatchCreateDedicatedHostTagsResponse`
         """
-        return self._batch_create_dedicated_host_tags_with_http_info(request)
+        http_info = self._batch_create_dedicated_host_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_dedicated_host_tags_with_http_info(self, request):
+    def batch_create_dedicated_host_tags_async_invoker(self, request):
+        http_info = self._batch_create_dedicated_host_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_dedicated_host_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/dedicated-host-tags/{dedicated_host_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateDedicatedHostTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-host-tags/{dedicated_host_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateDedicatedHostTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_dedicated_host_tags_async(self, request):
         """批量删除专属主机标签
@@ -102,9 +115,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.BatchDeleteDedicatedHostTagsResponse`
         """
-        return self._batch_delete_dedicated_host_tags_with_http_info(request)
+        http_info = self._batch_delete_dedicated_host_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_dedicated_host_tags_with_http_info(self, request):
+    def batch_delete_dedicated_host_tags_async_invoker(self, request):
+        http_info = self._batch_delete_dedicated_host_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_dedicated_host_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/dedicated-host-tags/{dedicated_host_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDedicatedHostTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,11 +146,11 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -134,20 +159,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-host-tags/{dedicated_host_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteDedicatedHostTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_dedicated_host_async(self, request):
         """分配专属主机
@@ -161,9 +182,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.CreateDedicatedHostResponse`
         """
-        return self._create_dedicated_host_with_http_info(request)
+        http_info = self._create_dedicated_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_dedicated_host_with_http_info(self, request):
+    def create_dedicated_host_async_invoker(self, request):
+        http_info = self._create_dedicated_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dedicated_host_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/dedicated-hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDedicatedHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -178,11 +211,11 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -191,20 +224,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-hosts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDedicatedHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_dedicated_host_async(self, request):
         """释放专属主机
@@ -218,9 +247,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.DeleteDedicatedHostResponse`
         """
-        return self._delete_dedicated_host_with_http_info(request)
+        http_info = self._delete_dedicated_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_dedicated_host_with_http_info(self, request):
+    def delete_dedicated_host_async_invoker(self, request):
+        http_info = self._delete_dedicated_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dedicated_host_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/dedicated-hosts/{dedicated_host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDedicatedHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,9 +278,9 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-hosts/{dedicated_host_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDedicatedHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dedicated_host_types_async(self, request):
         """查询可用的专属主机类型
@@ -275,9 +312,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostTypesResponse`
         """
-        return self._list_dedicated_host_types_with_http_info(request)
+        http_info = self._list_dedicated_host_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dedicated_host_types_with_http_info(self, request):
+    def list_dedicated_host_types_async_invoker(self, request):
+        http_info = self._list_dedicated_host_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dedicated_host_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/availability-zone/{availability_zone}/dedicated-host-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDedicatedHostTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -294,9 +343,9 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -305,20 +354,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/availability-zone/{availability_zone}/dedicated-host-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDedicatedHostTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dedicated_hosts_async(self, request):
         """查询专属主机列表
@@ -332,9 +377,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsResponse`
         """
-        return self._list_dedicated_hosts_with_http_info(request)
+        http_info = self._list_dedicated_hosts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dedicated_hosts_with_http_info(self, request):
+    def list_dedicated_hosts_async_invoker(self, request):
+        http_info = self._list_dedicated_hosts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dedicated_hosts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dedicated-hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDedicatedHostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -377,9 +434,9 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -388,20 +445,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-hosts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDedicatedHostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dedicated_hosts_by_tags_async(self, request):
         """按标签查询专属主机列表
@@ -417,9 +470,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListDedicatedHostsByTagsResponse`
         """
-        return self._list_dedicated_hosts_by_tags_with_http_info(request)
+        http_info = self._list_dedicated_hosts_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dedicated_hosts_by_tags_with_http_info(self, request):
+    def list_dedicated_hosts_by_tags_async_invoker(self, request):
+        http_info = self._list_dedicated_hosts_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dedicated_hosts_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/dedicated-host-tags/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDedicatedHostsByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -434,11 +499,11 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -447,20 +512,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-host-tags/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDedicatedHostsByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_servers_dedicated_host_async(self, request):
         """查询专属主机上的云服务器
@@ -474,9 +535,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ListServersDedicatedHostResponse`
         """
-        return self._list_servers_dedicated_host_with_http_info(request)
+        http_info = self._list_servers_dedicated_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_servers_dedicated_host_with_http_info(self, request):
+    def list_servers_dedicated_host_async_invoker(self, request):
+        http_info = self._list_servers_dedicated_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_servers_dedicated_host_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dedicated-hosts/{dedicated_host_id}/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServersDedicatedHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -497,9 +570,9 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -508,20 +581,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-hosts/{dedicated_host_id}/servers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServersDedicatedHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dedicated_host_async(self, request):
         """查询专属主机详情
@@ -535,9 +604,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostResponse`
         """
-        return self._show_dedicated_host_with_http_info(request)
+        http_info = self._show_dedicated_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dedicated_host_with_http_info(self, request):
+    def show_dedicated_host_async_invoker(self, request):
+        http_info = self._show_dedicated_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dedicated_host_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dedicated-hosts/{dedicated_host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDedicatedHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -554,9 +635,9 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -565,20 +646,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-hosts/{dedicated_host_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDedicatedHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dedicated_host_tags_async(self, request):
         """查询指定专属主机标签
@@ -594,9 +671,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowDedicatedHostTagsResponse`
         """
-        return self._show_dedicated_host_tags_with_http_info(request)
+        http_info = self._show_dedicated_host_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dedicated_host_tags_with_http_info(self, request):
+    def show_dedicated_host_tags_async_invoker(self, request):
+        http_info = self._show_dedicated_host_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dedicated_host_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dedicated-host-tags/{dedicated_host_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDedicatedHostTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -613,9 +702,9 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -624,20 +713,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-host-tags/{dedicated_host_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDedicatedHostTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quota_sets_async(self, request):
         """查询租户的专属主机配额
@@ -651,9 +736,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.ShowQuotaSetsResponse`
         """
-        return self._show_quota_sets_with_http_info(request)
+        http_info = self._show_quota_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quota_sets_with_http_info(self, request):
+    def show_quota_sets_async_invoker(self, request):
+        http_info = self._show_quota_sets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_quota_sets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/quota-sets/{tenant_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotaSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -672,9 +769,9 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -683,20 +780,16 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/quota-sets/{tenant_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotaSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_dedicated_host_async(self, request):
         """更新专属主机属性
@@ -710,9 +803,21 @@ class DeHAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostRequest`
         :rtype: :class:`huaweicloudsdkdeh.v1.UpdateDedicatedHostResponse`
         """
-        return self._update_dedicated_host_with_http_info(request)
+        http_info = self._update_dedicated_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_dedicated_host_with_http_info(self, request):
+    def update_dedicated_host_async_invoker(self, request):
+        http_info = self._update_dedicated_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_dedicated_host_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/dedicated-hosts/{dedicated_host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDedicatedHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -729,11 +834,11 @@ class DeHAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -742,20 +847,26 @@ class DeHAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dedicated-hosts/{dedicated_host_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDedicatedHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -794,4 +905,4 @@ class DeHAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

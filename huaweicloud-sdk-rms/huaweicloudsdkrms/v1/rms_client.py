@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkrms'")
 
 
 class RmsClient(Client):
@@ -38,9 +43,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.CreateAggregationAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreateAggregationAuthorizationResponse`
         """
-        return self._create_aggregation_authorization_with_http_info(request)
+        http_info = self._create_aggregation_authorization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_aggregation_authorization_with_http_info(self, request):
+    def create_aggregation_authorization_invoker(self, request):
+        http_info = self._create_aggregation_authorization_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_aggregation_authorization_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAggregationAuthorizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAggregationAuthorizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_configuration_aggregator(self, request):
         """创建资源聚合器
@@ -94,9 +108,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.CreateConfigurationAggregatorRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreateConfigurationAggregatorResponse`
         """
-        return self._create_configuration_aggregator_with_http_info(request)
+        http_info = self._create_configuration_aggregator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_configuration_aggregator_with_http_info(self, request):
+    def create_configuration_aggregator_invoker(self, request):
+        http_info = self._create_configuration_aggregator_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_configuration_aggregator_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConfigurationAggregatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConfigurationAggregatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_aggregation_authorization(self, request):
         """删除资源聚合器授权
@@ -150,9 +173,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.DeleteAggregationAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeleteAggregationAuthorizationResponse`
         """
-        return self._delete_aggregation_authorization_with_http_info(request)
+        http_info = self._delete_aggregation_authorization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_aggregation_authorization_with_http_info(self, request):
+    def delete_aggregation_authorization_invoker(self, request):
+        http_info = self._delete_aggregation_authorization_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_aggregation_authorization_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization/{authorized_account_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAggregationAuthorizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -169,9 +205,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization/{authorized_account_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAggregationAuthorizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_configuration_aggregator(self, request):
         """删除资源聚合器
@@ -206,9 +238,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.DeleteConfigurationAggregatorRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeleteConfigurationAggregatorResponse`
         """
-        return self._delete_configuration_aggregator_with_http_info(request)
+        http_info = self._delete_configuration_aggregator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_configuration_aggregator_with_http_info(self, request):
+    def delete_configuration_aggregator_invoker(self, request):
+        http_info = self._delete_configuration_aggregator_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_configuration_aggregator_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConfigurationAggregatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -225,9 +270,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +281,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConfigurationAggregatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_pending_aggregation_request(self, request):
         """删除聚合器帐号中挂起的授权请求
@@ -262,9 +303,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.DeletePendingAggregationRequestRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeletePendingAggregationRequestResponse`
         """
-        return self._delete_pending_aggregation_request_with_http_info(request)
+        http_info = self._delete_pending_aggregation_request_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_pending_aggregation_request_with_http_info(self, request):
+    def delete_pending_aggregation_request_invoker(self, request):
+        http_info = self._delete_pending_aggregation_request_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_pending_aggregation_request_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/pending-aggregation-request/{requester_account_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePendingAggregationRequestResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -281,9 +335,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -292,20 +346,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/pending-aggregation-request/{requester_account_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePendingAggregationRequestResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aggregate_compliance_by_policy_assignment(self, request):
         """查询聚合合规规则列表
@@ -318,9 +368,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListAggregateComplianceByPolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListAggregateComplianceByPolicyAssignmentResponse`
         """
-        return self._list_aggregate_compliance_by_policy_assignment_with_http_info(request)
+        http_info = self._list_aggregate_compliance_by_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aggregate_compliance_by_policy_assignment_with_http_info(self, request):
+    def list_aggregate_compliance_by_policy_assignment_invoker(self, request):
+        http_info = self._list_aggregate_compliance_by_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_aggregate_compliance_by_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/policy-assignments/compliance",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAggregateComplianceByPolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -339,11 +402,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -352,20 +415,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/policy-assignments/compliance',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAggregateComplianceByPolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aggregate_discovered_resources(self, request):
         """查询聚合器中资源的列表
@@ -378,9 +437,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListAggregateDiscoveredResourcesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListAggregateDiscoveredResourcesResponse`
         """
-        return self._list_aggregate_discovered_resources_with_http_info(request)
+        http_info = self._list_aggregate_discovered_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aggregate_discovered_resources_with_http_info(self, request):
+    def list_aggregate_discovered_resources_invoker(self, request):
+        http_info = self._list_aggregate_discovered_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_aggregate_discovered_resources_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/aggregate-discovered-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAggregateDiscoveredResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -399,11 +471,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -412,20 +484,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/aggregate-discovered-resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAggregateDiscoveredResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aggregation_authorizations(self, request):
         """查询资源聚合器授权列表
@@ -438,9 +506,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListAggregationAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListAggregationAuthorizationsResponse`
         """
-        return self._list_aggregation_authorizations_with_http_info(request)
+        http_info = self._list_aggregation_authorizations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aggregation_authorizations_with_http_info(self, request):
+    def list_aggregation_authorizations_invoker(self, request):
+        http_info = self._list_aggregation_authorizations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_aggregation_authorizations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAggregationAuthorizationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,9 +542,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -472,20 +553,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregation-authorization',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAggregationAuthorizationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configuration_aggregators(self, request):
         """查询资源聚合器列表
@@ -498,9 +575,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListConfigurationAggregatorsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListConfigurationAggregatorsResponse`
         """
-        return self._list_configuration_aggregators_with_http_info(request)
+        http_info = self._list_configuration_aggregators_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configuration_aggregators_with_http_info(self, request):
+    def list_configuration_aggregators_invoker(self, request):
+        http_info = self._list_configuration_aggregators_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_configuration_aggregators_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationAggregatorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -521,9 +611,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -532,20 +622,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigurationAggregatorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pending_aggregation_requests(self, request):
         """查询所有挂起的聚合请求列表
@@ -558,9 +644,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListPendingAggregationRequestsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPendingAggregationRequestsResponse`
         """
-        return self._list_pending_aggregation_requests_with_http_info(request)
+        http_info = self._list_pending_aggregation_requests_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pending_aggregation_requests_with_http_info(self, request):
+    def list_pending_aggregation_requests_invoker(self, request):
+        http_info = self._list_pending_aggregation_requests_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pending_aggregation_requests_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/pending-aggregation-request",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPendingAggregationRequestsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -581,9 +680,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -592,20 +691,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/pending-aggregation-request',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPendingAggregationRequestsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_aggregate_resource_query(self, request):
         """对指定聚合器执行高级查询
@@ -618,9 +713,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.RunAggregateResourceQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.RunAggregateResourceQueryResponse`
         """
-        return self._run_aggregate_resource_query_with_http_info(request)
+        http_info = self._run_aggregate_resource_query_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_aggregate_resource_query_with_http_info(self, request):
+    def run_aggregate_resource_query_invoker(self, request):
+        http_info = self._run_aggregate_resource_query_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_aggregate_resource_query_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}/run-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunAggregateResourceQueryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -637,11 +745,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -650,20 +758,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}/run-query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunAggregateResourceQueryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aggregate_compliance_details_by_policy_assignment(self, request):
         """查询指定聚合合规规则的评估结果详情
@@ -676,9 +780,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowAggregateComplianceDetailsByPolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowAggregateComplianceDetailsByPolicyAssignmentResponse`
         """
-        return self._show_aggregate_compliance_details_by_policy_assignment_with_http_info(request)
+        http_info = self._show_aggregate_compliance_details_by_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aggregate_compliance_details_by_policy_assignment_with_http_info(self, request):
+    def show_aggregate_compliance_details_by_policy_assignment_invoker(self, request):
+        http_info = self._show_aggregate_compliance_details_by_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_aggregate_compliance_details_by_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/policy-states/compliance-details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAggregateComplianceDetailsByPolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -697,11 +814,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +827,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/policy-states/compliance-details',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAggregateComplianceDetailsByPolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aggregate_discovered_resource_counts(self, request):
         """查询聚合器中帐号资源的计数
@@ -736,9 +849,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowAggregateDiscoveredResourceCountsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowAggregateDiscoveredResourceCountsResponse`
         """
-        return self._show_aggregate_discovered_resource_counts_with_http_info(request)
+        http_info = self._show_aggregate_discovered_resource_counts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aggregate_discovered_resource_counts_with_http_info(self, request):
+    def show_aggregate_discovered_resource_counts_invoker(self, request):
+        http_info = self._show_aggregate_discovered_resource_counts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_aggregate_discovered_resource_counts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/aggregate-discovered-resource-counts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAggregateDiscoveredResourceCountsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -753,11 +879,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -766,20 +892,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/aggregate-discovered-resource-counts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAggregateDiscoveredResourceCountsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aggregate_policy_assignment_detail(self, request):
         """查询指定聚合合规规则详情
@@ -792,9 +914,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowAggregatePolicyAssignmentDetailRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowAggregatePolicyAssignmentDetailResponse`
         """
-        return self._show_aggregate_policy_assignment_detail_with_http_info(request)
+        http_info = self._show_aggregate_policy_assignment_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aggregate_policy_assignment_detail_with_http_info(self, request):
+    def show_aggregate_policy_assignment_detail_invoker(self, request):
+        http_info = self._show_aggregate_policy_assignment_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_aggregate_policy_assignment_detail_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/policy-assignment/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAggregatePolicyAssignmentDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -809,11 +944,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -822,20 +957,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/policy-assignment/detail',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAggregatePolicyAssignmentDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aggregate_policy_state_compliance_summary(self, request):
         """查询聚合器中一个或多个帐户的合规概况
@@ -848,9 +979,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowAggregatePolicyStateComplianceSummaryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowAggregatePolicyStateComplianceSummaryResponse`
         """
-        return self._show_aggregate_policy_state_compliance_summary_with_http_info(request)
+        http_info = self._show_aggregate_policy_state_compliance_summary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aggregate_policy_state_compliance_summary_with_http_info(self, request):
+    def show_aggregate_policy_state_compliance_summary_invoker(self, request):
+        http_info = self._show_aggregate_policy_state_compliance_summary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_aggregate_policy_state_compliance_summary_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/policy-states/compliance-summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAggregatePolicyStateComplianceSummaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -865,11 +1009,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -878,20 +1022,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-data/policy-states/compliance-summary',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAggregatePolicyStateComplianceSummaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aggregate_resource_config(self, request):
         """查询源帐号中资源的详情
@@ -904,9 +1044,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowAggregateResourceConfigRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowAggregateResourceConfigResponse`
         """
-        return self._show_aggregate_resource_config_with_http_info(request)
+        http_info = self._show_aggregate_resource_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aggregate_resource_config_with_http_info(self, request):
+    def show_aggregate_resource_config_invoker(self, request):
+        http_info = self._show_aggregate_resource_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_aggregate_resource_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-resource-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAggregateResourceConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -921,11 +1074,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -934,20 +1087,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/aggregate-resource-config',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAggregateResourceConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_configuration_aggregator(self, request):
         """查询指定资源聚合器
@@ -960,9 +1109,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowConfigurationAggregatorRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowConfigurationAggregatorResponse`
         """
-        return self._show_configuration_aggregator_with_http_info(request)
+        http_info = self._show_configuration_aggregator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_configuration_aggregator_with_http_info(self, request):
+    def show_configuration_aggregator_invoker(self, request):
+        http_info = self._show_configuration_aggregator_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_configuration_aggregator_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigurationAggregatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -979,9 +1141,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -990,20 +1152,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigurationAggregatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_configuration_aggregator_sources_status(self, request):
         """查询指定资源聚合器聚合帐号的状态信息
@@ -1016,9 +1174,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowConfigurationAggregatorSourcesStatusRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowConfigurationAggregatorSourcesStatusResponse`
         """
-        return self._show_configuration_aggregator_sources_status_with_http_info(request)
+        http_info = self._show_configuration_aggregator_sources_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_configuration_aggregator_sources_status_with_http_info(self, request):
+    def show_configuration_aggregator_sources_status_invoker(self, request):
+        http_info = self._show_configuration_aggregator_sources_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_configuration_aggregator_sources_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}/aggregator-sources-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigurationAggregatorSourcesStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1041,9 +1212,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1052,20 +1223,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}/aggregator-sources-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigurationAggregatorSourcesStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_configuration_aggregator(self, request):
         """更新资源聚合器
@@ -1078,9 +1245,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.UpdateConfigurationAggregatorRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.UpdateConfigurationAggregatorResponse`
         """
-        return self._update_configuration_aggregator_with_http_info(request)
+        http_info = self._update_configuration_aggregator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_configuration_aggregator_with_http_info(self, request):
+    def update_configuration_aggregator_invoker(self, request):
+        http_info = self._update_configuration_aggregator_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_configuration_aggregator_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConfigurationAggregatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1097,11 +1277,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1110,20 +1290,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/aggregators/{aggregator_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConfigurationAggregatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_history(self, request):
         """查询资源历史
@@ -1136,9 +1312,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceHistoryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceHistoryResponse`
         """
-        return self._show_resource_history_with_http_info(request)
+        http_info = self._show_resource_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_history_with_http_info(self, request):
+    def show_resource_history_invoker(self, request):
+        http_info = self._show_resource_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_resource_history_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/resources/{resource_id}/history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1165,9 +1354,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1176,20 +1365,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/resources/{resource_id}/history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_organization_policy_assignment(self, request):
         """创建或更新组织合规规则
@@ -1202,9 +1387,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.CreateOrganizationPolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreateOrganizationPolicyAssignmentResponse`
         """
-        return self._create_organization_policy_assignment_with_http_info(request)
+        http_info = self._create_organization_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_organization_policy_assignment_with_http_info(self, request):
+    def create_organization_policy_assignment_invoker(self, request):
+        http_info = self._create_organization_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_organization_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/organizations/{organization_id}/policy-assignments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrganizationPolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1221,11 +1419,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1234,20 +1432,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignments',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrganizationPolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_policy_assignments(self, request):
         """创建合规规则
@@ -1260,9 +1454,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.CreatePolicyAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreatePolicyAssignmentsResponse`
         """
-        return self._create_policy_assignments_with_http_info(request)
+        http_info = self._create_policy_assignments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_policy_assignments_with_http_info(self, request):
+    def create_policy_assignments_invoker(self, request):
+        http_info = self._create_policy_assignments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_policy_assignments_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyAssignmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1277,11 +1484,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1290,20 +1497,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePolicyAssignmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_organization_policy_assignment(self, request):
         """删除组织合规规则
@@ -1316,9 +1519,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.DeleteOrganizationPolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeleteOrganizationPolicyAssignmentResponse`
         """
-        return self._delete_organization_policy_assignment_with_http_info(request)
+        http_info = self._delete_organization_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_organization_policy_assignment_with_http_info(self, request):
+    def delete_organization_policy_assignment_invoker(self, request):
+        http_info = self._delete_organization_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_organization_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-manager/organizations/{organization_id}/policy-assignments/{organization_policy_assignment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOrganizationPolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1337,9 +1553,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1348,20 +1564,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignments/{organization_policy_assignment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteOrganizationPolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_policy_assignment(self, request):
         """删除合规规则
@@ -1374,9 +1586,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.DeletePolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeletePolicyAssignmentResponse`
         """
-        return self._delete_policy_assignment_with_http_info(request)
+        http_info = self._delete_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_policy_assignment_with_http_info(self, request):
+    def delete_policy_assignment_invoker(self, request):
+        http_info = self._delete_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1393,9 +1618,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1404,20 +1629,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_policy_assignment(self, request):
         """停用合规规则
@@ -1430,9 +1651,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.DisablePolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DisablePolicyAssignmentResponse`
         """
-        return self._disable_policy_assignment_with_http_info(request)
+        http_info = self._disable_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_policy_assignment_with_http_info(self, request):
+    def disable_policy_assignment_invoker(self, request):
+        http_info = self._disable_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisablePolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1449,9 +1683,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1460,20 +1694,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisablePolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_policy_assignment(self, request):
         """启用合规规则
@@ -1486,9 +1716,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.EnablePolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.EnablePolicyAssignmentResponse`
         """
-        return self._enable_policy_assignment_with_http_info(request)
+        http_info = self._enable_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_policy_assignment_with_http_info(self, request):
+    def enable_policy_assignment_invoker(self, request):
+        http_info = self._enable_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnablePolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1505,9 +1748,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1516,20 +1759,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnablePolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_built_in_policy_definitions(self, request):
         """列出内置策略
@@ -1542,9 +1781,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListBuiltInPolicyDefinitionsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListBuiltInPolicyDefinitionsResponse`
         """
-        return self._list_built_in_policy_definitions_with_http_info(request)
+        http_info = self._list_built_in_policy_definitions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_built_in_policy_definitions_with_http_info(self, request):
+    def list_built_in_policy_definitions_invoker(self, request):
+        http_info = self._list_built_in_policy_definitions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_built_in_policy_definitions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/policy-definitions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBuiltInPolicyDefinitionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1561,9 +1813,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1572,20 +1824,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/policy-definitions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBuiltInPolicyDefinitionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_organization_policy_assignments(self, request):
         """查询组织合规规则列表
@@ -1598,9 +1846,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListOrganizationPolicyAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListOrganizationPolicyAssignmentsResponse`
         """
-        return self._list_organization_policy_assignments_with_http_info(request)
+        http_info = self._list_organization_policy_assignments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_organization_policy_assignments_with_http_info(self, request):
+    def list_organization_policy_assignments_invoker(self, request):
+        http_info = self._list_organization_policy_assignments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_organization_policy_assignments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/organizations/{organization_id}/policy-assignments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrganizationPolicyAssignmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1623,9 +1884,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1634,20 +1895,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOrganizationPolicyAssignmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy_assignments(self, request):
         """列出合规规则
@@ -1660,9 +1917,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyAssignmentsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyAssignmentsResponse`
         """
-        return self._list_policy_assignments_with_http_info(request)
+        http_info = self._list_policy_assignments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_assignments_with_http_info(self, request):
+    def list_policy_assignments_invoker(self, request):
+        http_info = self._list_policy_assignments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_assignments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyAssignmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1677,9 +1947,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1688,20 +1958,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyAssignmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy_states_by_assignment_id(self, request):
         """获取规则的合规结果
@@ -1714,9 +1980,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByAssignmentIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByAssignmentIdResponse`
         """
-        return self._list_policy_states_by_assignment_id_with_http_info(request)
+        http_info = self._list_policy_states_by_assignment_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_states_by_assignment_id_with_http_info(self, request):
+    def list_policy_states_by_assignment_id_invoker(self, request):
+        http_info = self._list_policy_states_by_assignment_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_states_by_assignment_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/policy-states",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyStatesByAssignmentIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1743,9 +2022,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1754,20 +2033,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/policy-states',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyStatesByAssignmentIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy_states_by_domain_id(self, request):
         """获取用户的合规结果
@@ -1780,9 +2055,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByDomainIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByDomainIdResponse`
         """
-        return self._list_policy_states_by_domain_id_with_http_info(request)
+        http_info = self._list_policy_states_by_domain_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_states_by_domain_id_with_http_info(self, request):
+    def list_policy_states_by_domain_id_invoker(self, request):
+        http_info = self._list_policy_states_by_domain_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_states_by_domain_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-states",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyStatesByDomainIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1807,9 +2095,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1818,20 +2106,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-states',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyStatesByDomainIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy_states_by_resource_id(self, request):
         """获取资源的合规结果
@@ -1844,9 +2128,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByResourceIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListPolicyStatesByResourceIdResponse`
         """
-        return self._list_policy_states_by_resource_id_with_http_info(request)
+        http_info = self._list_policy_states_by_resource_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_states_by_resource_id_with_http_info(self, request):
+    def list_policy_states_by_resource_id_invoker(self, request):
+        http_info = self._list_policy_states_by_resource_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_states_by_resource_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/resources/{resource_id}/policy-states",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyStatesByResourceIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1869,9 +2166,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1880,20 +2177,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/resources/{resource_id}/policy-states',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyStatesByResourceIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_evaluation_by_policy_assignment_id(self, request):
         """运行合规评估
@@ -1906,9 +2199,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.RunEvaluationByPolicyAssignmentIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.RunEvaluationByPolicyAssignmentIdResponse`
         """
-        return self._run_evaluation_by_policy_assignment_id_with_http_info(request)
+        http_info = self._run_evaluation_by_policy_assignment_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_evaluation_by_policy_assignment_id_with_http_info(self, request):
+    def run_evaluation_by_policy_assignment_id_invoker(self, request):
+        http_info = self._run_evaluation_by_policy_assignment_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_evaluation_by_policy_assignment_id_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/policy-states/run-evaluation",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunEvaluationByPolicyAssignmentIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1925,9 +2231,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1936,20 +2242,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/policy-states/run-evaluation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunEvaluationByPolicyAssignmentIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_built_in_policy_definition(self, request):
         """查询单个内置策略
@@ -1962,9 +2264,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowBuiltInPolicyDefinitionRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowBuiltInPolicyDefinitionResponse`
         """
-        return self._show_built_in_policy_definition_with_http_info(request)
+        http_info = self._show_built_in_policy_definition_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_built_in_policy_definition_with_http_info(self, request):
+    def show_built_in_policy_definition_invoker(self, request):
+        http_info = self._show_built_in_policy_definition_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_built_in_policy_definition_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/policy-definitions/{policy_definition_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBuiltInPolicyDefinitionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1983,9 +2298,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1994,20 +2309,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/policy-definitions/{policy_definition_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBuiltInPolicyDefinitionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_evaluation_state_by_assignment_id(self, request):
         """获取规则的评估状态
@@ -2020,9 +2331,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowEvaluationStateByAssignmentIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowEvaluationStateByAssignmentIdResponse`
         """
-        return self._show_evaluation_state_by_assignment_id_with_http_info(request)
+        http_info = self._show_evaluation_state_by_assignment_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_evaluation_state_by_assignment_id_with_http_info(self, request):
+    def show_evaluation_state_by_assignment_id_invoker(self, request):
+        http_info = self._show_evaluation_state_by_assignment_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_evaluation_state_by_assignment_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/policy-states/evaluation-state",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEvaluationStateByAssignmentIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2039,9 +2363,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2050,20 +2374,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}/policy-states/evaluation-state',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEvaluationStateByAssignmentIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_organization_policy_assignment(self, request):
         """查询指定组织合规规则
@@ -2076,9 +2396,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentResponse`
         """
-        return self._show_organization_policy_assignment_with_http_info(request)
+        http_info = self._show_organization_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_organization_policy_assignment_with_http_info(self, request):
+    def show_organization_policy_assignment_invoker(self, request):
+        http_info = self._show_organization_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_organization_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/organizations/{organization_id}/policy-assignments/{organization_policy_assignment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrganizationPolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2097,9 +2430,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2108,20 +2441,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignments/{organization_policy_assignment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOrganizationPolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_organization_policy_assignment_detailed_status(self, request):
         """查询组织内每个成员帐号合规规则部署的详细状态
@@ -2134,9 +2463,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentDetailedStatusRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentDetailedStatusResponse`
         """
-        return self._show_organization_policy_assignment_detailed_status_with_http_info(request)
+        http_info = self._show_organization_policy_assignment_detailed_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_organization_policy_assignment_detailed_status_with_http_info(self, request):
+    def show_organization_policy_assignment_detailed_status_invoker(self, request):
+        http_info = self._show_organization_policy_assignment_detailed_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_organization_policy_assignment_detailed_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/organizations/{organization_id}/policy-assignment-detailed-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrganizationPolicyAssignmentDetailedStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2161,9 +2503,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2172,20 +2514,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignment-detailed-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOrganizationPolicyAssignmentDetailedStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_organization_policy_assignment_statuses(self, request):
         """查询组织合规规则部署状态
@@ -2198,9 +2536,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentStatusesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowOrganizationPolicyAssignmentStatusesResponse`
         """
-        return self._show_organization_policy_assignment_statuses_with_http_info(request)
+        http_info = self._show_organization_policy_assignment_statuses_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_organization_policy_assignment_statuses_with_http_info(self, request):
+    def show_organization_policy_assignment_statuses_invoker(self, request):
+        http_info = self._show_organization_policy_assignment_statuses_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_organization_policy_assignment_statuses_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/organizations/{organization_id}/policy-assignment-statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrganizationPolicyAssignmentStatusesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2223,9 +2574,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2234,20 +2585,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/organizations/{organization_id}/policy-assignment-statuses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOrganizationPolicyAssignmentStatusesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_policy_assignment(self, request):
         """获取单个合规规则
@@ -2260,9 +2607,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowPolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowPolicyAssignmentResponse`
         """
-        return self._show_policy_assignment_with_http_info(request)
+        http_info = self._show_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_policy_assignment_with_http_info(self, request):
+    def show_policy_assignment_invoker(self, request):
+        http_info = self._show_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2279,9 +2639,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2290,20 +2650,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy_assignment(self, request):
         """更新合规规则
@@ -2316,9 +2672,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.UpdatePolicyAssignmentRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.UpdatePolicyAssignmentResponse`
         """
-        return self._update_policy_assignment_with_http_info(request)
+        http_info = self._update_policy_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_assignment_with_http_info(self, request):
+    def update_policy_assignment_invoker(self, request):
+        http_info = self._update_policy_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_policy_assignment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2335,11 +2704,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2348,20 +2717,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-assignments/{policy_assignment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy_state(self, request):
         """更新合规评估结果
@@ -2374,9 +2739,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.UpdatePolicyStateRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.UpdatePolicyStateResponse`
         """
-        return self._update_policy_state_with_http_info(request)
+        http_info = self._update_policy_state_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_state_with_http_info(self, request):
+    def update_policy_state_invoker(self, request):
+        http_info = self._update_policy_state_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_policy_state_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/policy-states",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyStateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2391,11 +2769,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2404,20 +2782,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/policy-states',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_stored_query(self, request):
         """创建高级查询
@@ -2430,9 +2804,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.CreateStoredQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreateStoredQueryResponse`
         """
-        return self._create_stored_query_with_http_info(request)
+        http_info = self._create_stored_query_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_stored_query_with_http_info(self, request):
+    def create_stored_query_invoker(self, request):
+        http_info = self._create_stored_query_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_stored_query_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/stored-queries",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStoredQueryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2447,11 +2834,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2460,20 +2847,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStoredQueryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_stored_query(self, request):
         """删除高级查询
@@ -2486,9 +2869,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.DeleteStoredQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeleteStoredQueryResponse`
         """
-        return self._delete_stored_query_with_http_info(request)
+        http_info = self._delete_stored_query_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_stored_query_with_http_info(self, request):
+    def delete_stored_query_invoker(self, request):
+        http_info = self._delete_stored_query_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_stored_query_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStoredQueryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2505,9 +2901,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2516,20 +2912,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStoredQueryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_schemas(self, request):
         """列举高级查询Schema
@@ -2542,9 +2934,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListSchemasRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListSchemasResponse`
         """
-        return self._list_schemas_with_http_info(request)
+        http_info = self._list_schemas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_schemas_with_http_info(self, request):
+    def list_schemas_invoker(self, request):
+        http_info = self._list_schemas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_schemas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/schemas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSchemasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2563,9 +2968,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2574,20 +2979,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/schemas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSchemasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stored_queries(self, request):
         """列出高级查询
@@ -2600,9 +3001,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListStoredQueriesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListStoredQueriesResponse`
         """
-        return self._list_stored_queries_with_http_info(request)
+        http_info = self._list_stored_queries_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stored_queries_with_http_info(self, request):
+    def list_stored_queries_invoker(self, request):
+        http_info = self._list_stored_queries_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_stored_queries_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/stored-queries",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStoredQueriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2623,9 +3037,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2634,20 +3048,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStoredQueriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_query(self, request):
         """运行高级查询
@@ -2660,9 +3070,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.RunQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.RunQueryResponse`
         """
-        return self._run_query_with_http_info(request)
+        http_info = self._run_query_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_query_with_http_info(self, request):
+    def run_query_invoker(self, request):
+        http_info = self._run_query_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_query_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/run-query",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunQueryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2677,11 +3100,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2690,20 +3113,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/run-query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunQueryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_stored_query(self, request):
         """查询单个高级查询
@@ -2716,9 +3135,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowStoredQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowStoredQueryResponse`
         """
-        return self._show_stored_query_with_http_info(request)
+        http_info = self._show_stored_query_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_stored_query_with_http_info(self, request):
+    def show_stored_query_invoker(self, request):
+        http_info = self._show_stored_query_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_stored_query_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStoredQueryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2735,9 +3167,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2746,20 +3178,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStoredQueryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_stored_query(self, request):
         """更新单个高级查询
@@ -2772,9 +3200,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.UpdateStoredQueryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.UpdateStoredQueryResponse`
         """
-        return self._update_stored_query_with_http_info(request)
+        http_info = self._update_stored_query_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_stored_query_with_http_info(self, request):
+    def update_stored_query_invoker(self, request):
+        http_info = self._update_stored_query_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_stored_query_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStoredQueryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2791,11 +3232,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2804,20 +3245,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/stored-queries/{query_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStoredQueryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_regions(self, request):
         """查询用户可见的区域
@@ -2830,9 +3267,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListRegionsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListRegionsResponse`
         """
-        return self._list_regions_with_http_info(request)
+        http_info = self._list_regions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_regions_with_http_info(self, request):
+    def list_regions_invoker(self, request):
+        http_info = self._list_regions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_regions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRegionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2849,9 +3299,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2860,20 +3310,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/regions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRegionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_relations(self, request):
         """列举资源关系
@@ -2886,9 +3332,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsResponse`
         """
-        return self._show_resource_relations_with_http_info(request)
+        http_info = self._show_resource_relations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_relations_with_http_info(self, request):
+    def show_resource_relations_invoker(self, request):
+        http_info = self._show_resource_relations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_resource_relations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/resources/{resource_id}/relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceRelationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2911,9 +3370,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2922,20 +3381,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/resources/{resource_id}/relations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceRelationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_relations_detail(self, request):
         """列举资源关系详情
@@ -2948,9 +3403,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsDetailRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceRelationsDetailResponse`
         """
-        return self._show_resource_relations_detail_with_http_info(request)
+        http_info = self._show_resource_relations_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_relations_detail_with_http_info(self, request):
+    def show_resource_relations_detail_invoker(self, request):
+        http_info = self._show_resource_relations_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_resource_relations_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-resources/{resource_id}/relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceRelationsDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2973,9 +3441,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2984,20 +3452,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/{resource_id}/relations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceRelationsDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_all_resources_summary(self, request):
         """列举资源概要
@@ -3010,9 +3474,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.CollectAllResourcesSummaryRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CollectAllResourcesSummaryResponse`
         """
-        return self._collect_all_resources_summary_with_http_info(request)
+        http_info = self._collect_all_resources_summary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_all_resources_summary_with_http_info(self, request):
+    def collect_all_resources_summary_invoker(self, request):
+        http_info = self._collect_all_resources_summary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_all_resources_summary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-resources/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectAllResourcesSummaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3044,9 +3521,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3055,20 +3532,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/summary',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectAllResourcesSummaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_all_resources(self, request):
         """查询资源数量
@@ -3081,9 +3554,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.CountAllResourcesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CountAllResourcesResponse`
         """
-        return self._count_all_resources_with_http_info(request)
+        http_info = self._count_all_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_all_resources_with_http_info(self, request):
+    def count_all_resources_invoker(self, request):
+        http_info = self._count_all_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_all_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-resources/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountAllResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3117,9 +3603,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3128,20 +3614,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/count',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountAllResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_resources(self, request):
         """列举所有资源
@@ -3154,9 +3636,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListAllResourcesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListAllResourcesResponse`
         """
-        return self._list_all_resources_with_http_info(request)
+        http_info = self._list_all_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_resources_with_http_info(self, request):
+    def list_all_resources_invoker(self, request):
+        http_info = self._list_all_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3188,9 +3683,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3199,20 +3694,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_tags(self, request):
         """列举资源标签
@@ -3225,9 +3716,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListAllTagsRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListAllTagsResponse`
         """
-        return self._list_all_tags_with_http_info(request)
+        http_info = self._list_all_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_tags_with_http_info(self, request):
+    def list_all_tags_invoker(self, request):
+        http_info = self._list_all_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-resources/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3248,9 +3752,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3259,20 +3763,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_providers(self, request):
         """列举云服务
@@ -3285,9 +3785,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListProvidersRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListProvidersResponse`
         """
-        return self._list_providers_with_http_info(request)
+        http_info = self._list_providers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_providers_with_http_info(self, request):
+    def list_providers_invoker(self, request):
+        http_info = self._list_providers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_providers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProvidersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3310,9 +3823,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3321,20 +3834,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/providers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProvidersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resources(self, request):
         """列举指定类型的资源
@@ -3347,9 +3856,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ListResourcesRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ListResourcesResponse`
         """
-        return self._list_resources_with_http_info(request)
+        http_info = self._list_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resources_with_http_info(self, request):
+    def list_resources_invoker(self, request):
+        http_info = self._list_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/provider/{provider}/type/{type}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3378,9 +3900,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3389,20 +3911,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/provider/{provider}/type/{type}/resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_by_id(self, request):
         """查询单个资源
@@ -3415,9 +3933,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceByIdRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceByIdResponse`
         """
-        return self._show_resource_by_id_with_http_info(request)
+        http_info = self._show_resource_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_by_id_with_http_info(self, request):
+    def show_resource_by_id_invoker(self, request):
+        http_info = self._show_resource_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_resource_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/provider/{provider}/type/{type}/resources/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3438,9 +3969,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3449,20 +3980,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/provider/{provider}/type/{type}/resources/{resource_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_detail(self, request):
         """查询帐号下的单个资源
@@ -3475,9 +4002,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowResourceDetailRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowResourceDetailResponse`
         """
-        return self._show_resource_detail_with_http_info(request)
+        http_info = self._show_resource_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_detail_with_http_info(self, request):
+    def show_resource_detail_invoker(self, request):
+        http_info = self._show_resource_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_resource_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/all-resources/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3494,9 +4034,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3505,20 +4045,16 @@ class RmsClient(Client):
 
         auth_settings = ['AccessKeyAuth', 'PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/all-resources/{resource_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tracker_config(self, request):
         """创建或更新记录器
@@ -3531,9 +4067,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.CreateTrackerConfigRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.CreateTrackerConfigResponse`
         """
-        return self._create_tracker_config_with_http_info(request)
+        http_info = self._create_tracker_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tracker_config_with_http_info(self, request):
+    def create_tracker_config_invoker(self, request):
+        http_info = self._create_tracker_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_tracker_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/tracker-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTrackerConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3548,11 +4097,11 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3561,20 +4110,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/tracker-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTrackerConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tracker_config(self, request):
         """删除记录器
@@ -3587,9 +4132,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.DeleteTrackerConfigRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.DeleteTrackerConfigResponse`
         """
-        return self._delete_tracker_config_with_http_info(request)
+        http_info = self._delete_tracker_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tracker_config_with_http_info(self, request):
+    def delete_tracker_config_invoker(self, request):
+        http_info = self._delete_tracker_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_tracker_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/tracker-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTrackerConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3604,9 +4162,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3615,20 +4173,16 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/tracker-config',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTrackerConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tracker_config(self, request):
         """查询记录器
@@ -3641,9 +4195,22 @@ class RmsClient(Client):
         :type request: :class:`huaweicloudsdkrms.v1.ShowTrackerConfigRequest`
         :rtype: :class:`huaweicloudsdkrms.v1.ShowTrackerConfigResponse`
         """
-        return self._show_tracker_config_with_http_info(request)
+        http_info = self._show_tracker_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tracker_config_with_http_info(self, request):
+    def show_tracker_config_invoker(self, request):
+        http_info = self._show_tracker_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tracker_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-manager/domains/{domain_id}/tracker-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrackerConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3658,9 +4225,9 @@ class RmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3669,20 +4236,25 @@ class RmsClient(Client):
 
         auth_settings = ['PkiTokenAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-manager/domains/{domain_id}/tracker-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTrackerConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

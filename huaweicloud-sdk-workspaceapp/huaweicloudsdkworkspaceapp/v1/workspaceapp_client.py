@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkworkspaceapp'")
 
 
 class WorkspaceAppClient(Client):
@@ -38,9 +43,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListPublishedAppRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListPublishedAppResponse`
         """
-        return self._list_published_app_with_http_info(request)
+        http_info = self._list_published_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_published_app_with_http_info(self, request):
+    def list_published_app_invoker(self, request):
+        http_info = self._list_published_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_published_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-groups/{app_group_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublishedAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -67,9 +85,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -78,20 +96,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/{app_group_id}/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPublishedAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_app(self, request):
         """发布应用
@@ -104,9 +118,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.PublishAppRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PublishAppResponse`
         """
-        return self._publish_app_with_http_info(request)
+        http_info = self._publish_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_app_with_http_info(self, request):
+    def publish_app_invoker(self, request):
+        http_info = self._publish_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-groups/{app_group_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -123,11 +150,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -136,20 +163,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/{app_group_id}/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_publishable_app(self, request):
         """可发布应用列表
@@ -162,9 +185,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowPublishableAppRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowPublishableAppResponse`
         """
-        return self._show_publishable_app_with_http_info(request)
+        http_info = self._show_publishable_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_publishable_app_with_http_info(self, request):
+    def show_publishable_app_invoker(self, request):
+        http_info = self._show_publishable_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_publishable_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-groups/{app_group_id}/publishable-app",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublishableAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -181,9 +217,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -192,20 +228,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/{app_group_id}/publishable-app',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublishableAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unpublish_app(self, request):
         """批量取消应用发布
@@ -219,9 +251,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UnpublishAppRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UnpublishAppResponse`
         """
-        return self._unpublish_app_with_http_info(request)
+        http_info = self._unpublish_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unpublish_app_with_http_info(self, request):
+    def unpublish_app_invoker(self, request):
+        http_info = self._unpublish_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _unpublish_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-groups/{app_group_id}/apps/batch-unpublish",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnpublishAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -238,11 +283,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -251,20 +296,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/{app_group_id}/apps/batch-unpublish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnpublishAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app(self, request):
         """修改应用信息
@@ -277,9 +318,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateAppResponse`
         """
-        return self._update_app_with_http_info(request)
+        http_info = self._update_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_with_http_info(self, request):
+    def update_app_invoker(self, request):
+        http_info = self._update_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-groups/{app_group_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -298,11 +352,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -311,20 +365,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/{app_group_id}/apps/{app_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_app_icon(self, request):
         """修改自定义应用图标
@@ -337,9 +387,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UploadAppIconRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UploadAppIconResponse`
         """
-        return self._upload_app_icon_with_http_info(request)
+        http_info = self._upload_app_icon_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_app_icon_with_http_info(self, request):
+    def upload_app_icon_invoker(self, request):
+        http_info = self._upload_app_icon_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_app_icon_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-groups/{app_group_id}/apps/{app_id}/icon",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadAppIconResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -360,11 +423,11 @@ class WorkspaceAppClient(Client):
         if 'data' in local_var_params:
             form_params['data'] = local_var_params['data']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -373,20 +436,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/{app_group_id}/apps/{app_id}/icon',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadAppIconResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_app_group(self, request):
         """批量删除应用组
@@ -399,9 +458,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteAppGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteAppGroupResponse`
         """
-        return self._batch_delete_app_group_with_http_info(request)
+        http_info = self._batch_delete_app_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_app_group_with_http_info(self, request):
+    def batch_delete_app_group_invoker(self, request):
+        http_info = self._batch_delete_app_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_app_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-groups/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAppGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -416,11 +488,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -429,20 +501,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteAppGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_group(self, request):
         """创建应用组
@@ -456,9 +524,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppGroupResponse`
         """
-        return self._create_app_group_with_http_info(request)
+        http_info = self._create_app_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_group_with_http_info(self, request):
+    def create_app_group_invoker(self, request):
+        http_info = self._create_app_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -473,11 +554,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -486,20 +567,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_group(self, request):
         """查询应用组
@@ -512,9 +589,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListAppGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListAppGroupResponse`
         """
-        return self._list_app_group_with_http_info(request)
+        http_info = self._list_app_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_group_with_http_info(self, request):
+    def list_app_group_invoker(self, request):
+        http_info = self._list_app_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -543,9 +633,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -554,20 +644,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_group(self, request):
         """修改应用组
@@ -580,9 +666,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdateAppGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateAppGroupResponse`
         """
-        return self._update_app_group_with_http_info(request)
+        http_info = self._update_app_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_group_with_http_info(self, request):
+    def update_app_group_invoker(self, request):
+        http_info = self._update_app_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_group_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-groups/{app_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -599,11 +698,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -612,20 +711,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/{app_group_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_product(self, request):
         """查询云应用套餐
@@ -638,9 +733,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListProductRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListProductResponse`
         """
-        return self._list_product_with_http_info(request)
+        http_info = self._list_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_product_with_http_info(self, request):
+    def list_product_invoker(self, request):
+        http_info = self._list_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_product_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/product",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -667,9 +775,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -678,20 +786,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/product',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_session_type(self, request):
         """查询会话套餐列表
@@ -704,9 +808,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionTypeRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionTypeResponse`
         """
-        return self._list_session_type_with_http_info(request)
+        http_info = self._list_session_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_session_type_with_http_info(self, request):
+    def list_session_type_invoker(self, request):
+        http_info = self._list_session_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_session_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/session-type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSessionTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -721,9 +838,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -732,20 +849,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/session-type',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSessionTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_app_group_authorization(self, request):
         """增加应用组授权
@@ -758,9 +871,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.AddAppGroupAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.AddAppGroupAuthorizationResponse`
         """
-        return self._add_app_group_authorization_with_http_info(request)
+        http_info = self._add_app_group_authorization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_app_group_authorization_with_http_info(self, request):
+    def add_app_group_authorization_invoker(self, request):
+        http_info = self._add_app_group_authorization_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_app_group_authorization_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-groups/authorizations",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAppGroupAuthorizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -777,11 +903,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -790,23 +916,19 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/authorizations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddAppGroupAuthorizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_app_group_authorization(self, request):
-        """移除授权
+        """移除应用组授权
 
         移除应用组内的指定用户的授权，用户授权删除后，用户将没有权限访问应用组内的任何应用。注意：重复执行会按照操作成功处理。
         
@@ -816,9 +938,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteAppGroupAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteAppGroupAuthorizationResponse`
         """
-        return self._batch_delete_app_group_authorization_with_http_info(request)
+        http_info = self._batch_delete_app_group_authorization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_app_group_authorization_with_http_info(self, request):
+    def batch_delete_app_group_authorization_invoker(self, request):
+        http_info = self._batch_delete_app_group_authorization_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_app_group_authorization_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-groups/actions/batch-delete-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAppGroupAuthorizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -835,11 +970,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -848,23 +983,19 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/actions/batch-delete-authorization',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteAppGroupAuthorizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_group_authorization(self, request):
-        """查询授权记录
+        """查询应用组授权记录
 
         查询应用内已授权的用户列表。
         
@@ -874,9 +1005,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListAppGroupAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListAppGroupAuthorizationResponse`
         """
-        return self._list_app_group_authorization_with_http_info(request)
+        http_info = self._list_app_group_authorization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_group_authorization_with_http_info(self, request):
+    def list_app_group_authorization_invoker(self, request):
+        http_info = self._list_app_group_authorization_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_group_authorization_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-groups/actions/list-authorizations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppGroupAuthorizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -894,14 +1038,16 @@ class WorkspaceAppClient(Client):
             query_params.append(('app_group_id', local_var_params['app_group_id']))
         if 'account' in local_var_params:
             query_params.append(('account', local_var_params['account']))
+        if 'account_type' in local_var_params:
+            query_params.append(('account_type', local_var_params['account_type']))
 
         header_params = {}
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -910,20 +1056,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-groups/actions/list-authorizations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppGroupAuthorizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_availability_zone(self, request):
         """查询可用分区列表
@@ -936,9 +1078,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListAvailabilityZoneRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListAvailabilityZoneResponse`
         """
-        return self._list_availability_zone_with_http_info(request)
+        http_info = self._list_availability_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_availability_zone_with_http_info(self, request):
+    def list_availability_zone_invoker(self, request):
+        http_info = self._list_availability_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_availability_zone_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/availability-zone",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailabilityZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -953,9 +1108,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -964,20 +1119,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/availability-zone',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailabilityZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job(self, request):
         """查询任务的执行状态
@@ -992,9 +1143,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/job/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1011,9 +1175,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1022,20 +1186,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/job/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_or_update_storage_policy_statement(self, request):
         """新增或更新存储目录访问权限自定义策略
@@ -1048,9 +1208,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreateOrUpdateStoragePolicyStatementRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateOrUpdateStoragePolicyStatementResponse`
         """
-        return self._create_or_update_storage_policy_statement_with_http_info(request)
+        http_info = self._create_or_update_storage_policy_statement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_or_update_storage_policy_statement_with_http_info(self, request):
+    def create_or_update_storage_policy_statement_invoker(self, request):
+        http_info = self._create_or_update_storage_policy_statement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_or_update_storage_policy_statement_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/storages-policy/actions/create-statements",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrUpdateStoragePolicyStatementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1065,11 +1238,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1078,20 +1251,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/storages-policy/actions/create-statements',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrUpdateStoragePolicyStatementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_persistent_storage(self, request):
         """创建WKS存储
@@ -1104,9 +1273,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreatePersistentStorageRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreatePersistentStorageResponse`
         """
-        return self._create_persistent_storage_with_http_info(request)
+        http_info = self._create_persistent_storage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_persistent_storage_with_http_info(self, request):
+    def create_persistent_storage_invoker(self, request):
+        http_info = self._create_persistent_storage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_persistent_storage_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/persistent-storages",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePersistentStorageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1121,11 +1303,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1134,20 +1316,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePersistentStorageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_share_folder(self, request):
         """创建共享存储目录
@@ -1160,9 +1338,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreateShareFolderRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateShareFolderResponse`
         """
-        return self._create_share_folder_with_http_info(request)
+        http_info = self._create_share_folder_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_share_folder_with_http_info(self, request):
+    def create_share_folder_invoker(self, request):
+        http_info = self._create_share_folder_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_share_folder_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/persistent-storages/{storage_id}/actions/create-share-folder",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateShareFolderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1179,11 +1370,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1192,20 +1383,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages/{storage_id}/actions/create-share-folder',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateShareFolderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_persistent_storage(self, request):
         """删除WKS存储
@@ -1218,9 +1405,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.DeletePersistentStorageRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeletePersistentStorageResponse`
         """
-        return self._delete_persistent_storage_with_http_info(request)
+        http_info = self._delete_persistent_storage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_persistent_storage_with_http_info(self, request):
+    def delete_persistent_storage_invoker(self, request):
+        http_info = self._delete_persistent_storage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_persistent_storage_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/persistent-storages/{storage_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePersistentStorageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1237,9 +1437,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1248,20 +1448,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages/{storage_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePersistentStorageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_storage_claim(self, request):
         """删除共享目录
@@ -1275,9 +1471,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.DeleteStorageClaimRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeleteStorageClaimResponse`
         """
-        return self._delete_storage_claim_with_http_info(request)
+        http_info = self._delete_storage_claim_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_storage_claim_with_http_info(self, request):
+    def delete_storage_claim_invoker(self, request):
+        http_info = self._delete_storage_claim_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_storage_claim_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/persistent-storages/{storage_id}/actions/delete-storage-claim",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStorageClaimResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1294,11 +1503,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1307,20 +1516,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages/{storage_id}/actions/delete-storage-claim',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStorageClaimResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_user_storage_attachment(self, request):
         """删除个人存储目录
@@ -1333,9 +1538,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.DeleteUserStorageAttachmentRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeleteUserStorageAttachmentResponse`
         """
-        return self._delete_user_storage_attachment_with_http_info(request)
+        http_info = self._delete_user_storage_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_user_storage_attachment_with_http_info(self, request):
+    def delete_user_storage_attachment_invoker(self, request):
+        http_info = self._delete_user_storage_attachment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_user_storage_attachment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/persistent-storages/{storage_id}/actions/delete-user-attachment",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserStorageAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1352,11 +1570,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1365,20 +1583,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages/{storage_id}/actions/delete-user-attachment',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteUserStorageAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_persistent_storage(self, request):
         """查询WKS存储
@@ -1391,9 +1605,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListPersistentStorageRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListPersistentStorageResponse`
         """
-        return self._list_persistent_storage_with_http_info(request)
+        http_info = self._list_persistent_storage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_persistent_storage_with_http_info(self, request):
+    def list_persistent_storage_invoker(self, request):
+        http_info = self._list_persistent_storage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_persistent_storage_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/persistent-storages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPersistentStorageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1416,9 +1643,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1427,20 +1654,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPersistentStorageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_share_folder(self, request):
         """查询共享存储目录
@@ -1453,9 +1676,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListShareFolderRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListShareFolderResponse`
         """
-        return self._list_share_folder_with_http_info(request)
+        http_info = self._list_share_folder_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_share_folder_with_http_info(self, request):
+    def list_share_folder_invoker(self, request):
+        http_info = self._list_share_folder_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_share_folder_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/persistent-storages/actions/list-share-folders",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListShareFolderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1480,9 +1716,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1491,20 +1727,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages/actions/list-share-folders',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListShareFolderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_storage_assignment(self, request):
         """查询个人存储目录
@@ -1517,9 +1749,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListStorageAssignmentRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListStorageAssignmentResponse`
         """
-        return self._list_storage_assignment_with_http_info(request)
+        http_info = self._list_storage_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_storage_assignment_with_http_info(self, request):
+    def list_storage_assignment_invoker(self, request):
+        http_info = self._list_storage_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_storage_assignment_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/persistent-storages/actions/list-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStorageAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1548,9 +1793,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1559,20 +1804,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages/actions/list-attachments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStorageAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_storage_policy_statement(self, request):
         """查询存储目录访问权限策略
@@ -1585,9 +1826,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListStoragePolicyStatementRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListStoragePolicyStatementResponse`
         """
-        return self._list_storage_policy_statement_with_http_info(request)
+        http_info = self._list_storage_policy_statement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_storage_policy_statement_with_http_info(self, request):
+    def list_storage_policy_statement_invoker(self, request):
+        http_info = self._list_storage_policy_statement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_storage_policy_statement_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/storages-policy/actions/list-statements",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStoragePolicyStatementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1606,9 +1860,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1617,20 +1871,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/storages-policy/actions/list-statements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStoragePolicyStatementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_share_folder_assignment(self, request):
         """修改共享目录成员
@@ -1643,9 +1893,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdateShareFolderAssignmentRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateShareFolderAssignmentResponse`
         """
-        return self._update_share_folder_assignment_with_http_info(request)
+        http_info = self._update_share_folder_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_share_folder_assignment_with_http_info(self, request):
+    def update_share_folder_assignment_invoker(self, request):
+        http_info = self._update_share_folder_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_share_folder_assignment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/persistent-storages/{storage_id}/actions/assign-share-folder",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateShareFolderAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1662,11 +1925,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1675,25 +1938,21 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages/{storage_id}/actions/assign-share-folder',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateShareFolderAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_folder_assignment(self, request):
         """创建个人存储目录
 
-        创建个人存储目录
+        创建个人存储目录,已存在对应目录时,仅更新策略不会重复创建目录
         
         Please refer to HUAWEI cloud API Explorer for details.
 
@@ -1701,9 +1960,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdateUserFolderAssignmentRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateUserFolderAssignmentResponse`
         """
-        return self._update_user_folder_assignment_with_http_info(request)
+        http_info = self._update_user_folder_assignment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_folder_assignment_with_http_info(self, request):
+    def update_user_folder_assignment_invoker(self, request):
+        http_info = self._update_user_folder_assignment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_user_folder_assignment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/persistent-storages/{storage_id}/actions/assign-folder",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserFolderAssignmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1720,11 +1992,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1733,20 +2005,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/persistent-storages/{storage_id}/actions/assign-folder',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserFolderAssignmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_policy_group(self, request):
         """新增策略组
@@ -1759,9 +2027,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreatePolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreatePolicyGroupResponse`
         """
-        return self._create_policy_group_with_http_info(request)
+        http_info = self._create_policy_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_policy_group_with_http_info(self, request):
+    def create_policy_group_invoker(self, request):
+        http_info = self._create_policy_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_policy_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/policy-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1776,11 +2057,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1789,20 +2070,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePolicyGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_policy_template(self, request):
         """新增策略模板
@@ -1815,9 +2092,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreatePolicyTemplateRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreatePolicyTemplateResponse`
         """
-        return self._create_policy_template_with_http_info(request)
+        http_info = self._create_policy_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_policy_template_with_http_info(self, request):
+    def create_policy_template_invoker(self, request):
+        http_info = self._create_policy_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_policy_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/policy-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1832,11 +2122,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1845,20 +2135,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePolicyTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_policy_group(self, request):
         """删除策略组
@@ -1871,9 +2157,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.DeletePolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeletePolicyGroupResponse`
         """
-        return self._delete_policy_group_with_http_info(request)
+        http_info = self._delete_policy_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_policy_group_with_http_info(self, request):
+    def delete_policy_group_invoker(self, request):
+        http_info = self._delete_policy_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_policy_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/policy-groups/{policy_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1890,9 +2189,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1901,20 +2200,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-groups/{policy_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePolicyGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_policy_template(self, request):
         """删除策略模板
@@ -1927,9 +2222,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.DeletePolicyTemplateRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeletePolicyTemplateResponse`
         """
-        return self._delete_policy_template_with_http_info(request)
+        http_info = self._delete_policy_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_policy_template_with_http_info(self, request):
+    def delete_policy_template_invoker(self, request):
+        http_info = self._delete_policy_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_policy_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/policy-templates/{policy_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1946,9 +2254,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1957,20 +2265,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-templates/{policy_template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePolicyTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy_group(self, request):
         """查询策略组列表
@@ -1983,9 +2287,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListPolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListPolicyGroupResponse`
         """
-        return self._list_policy_group_with_http_info(request)
+        http_info = self._list_policy_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_group_with_http_info(self, request):
+    def list_policy_group_invoker(self, request):
+        http_info = self._list_policy_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/policy-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2008,9 +2325,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2019,20 +2336,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy_template(self, request):
         """查询策略模板列表
@@ -2045,9 +2358,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListPolicyTemplateRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListPolicyTemplateResponse`
         """
-        return self._list_policy_template_with_http_info(request)
+        http_info = self._list_policy_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_template_with_http_info(self, request):
+    def list_policy_template_invoker(self, request):
+        http_info = self._list_policy_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/policy-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2068,9 +2394,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2079,20 +2405,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_targets_of_policy_group(self, request):
         """查询策略组应用对象
@@ -2105,9 +2427,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListTargetsOfPolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListTargetsOfPolicyGroupResponse`
         """
-        return self._list_targets_of_policy_group_with_http_info(request)
+        http_info = self._list_targets_of_policy_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_targets_of_policy_group_with_http_info(self, request):
+    def list_targets_of_policy_group_invoker(self, request):
+        http_info = self._list_targets_of_policy_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_targets_of_policy_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/policy-groups/{policy_group_id}/target",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTargetsOfPolicyGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2126,9 +2461,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2137,20 +2472,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-groups/{policy_group_id}/target',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTargetsOfPolicyGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_original_policy_info(self, request):
         """查询初始策略项
@@ -2163,9 +2494,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ShowOriginalPolicyInfoRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ShowOriginalPolicyInfoResponse`
         """
-        return self._show_original_policy_info_with_http_info(request)
+        http_info = self._show_original_policy_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_original_policy_info_with_http_info(self, request):
+    def show_original_policy_info_invoker(self, request):
+        http_info = self._show_original_policy_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_original_policy_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/policy-groups/actions/list-original-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOriginalPolicyInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2180,9 +2524,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2191,20 +2535,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-groups/actions/list-original-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOriginalPolicyInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy_group(self, request):
         """修改策略组
@@ -2217,9 +2557,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdatePolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdatePolicyGroupResponse`
         """
-        return self._update_policy_group_with_http_info(request)
+        http_info = self._update_policy_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_group_with_http_info(self, request):
+    def update_policy_group_invoker(self, request):
+        http_info = self._update_policy_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_policy_group_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/policy-groups/{policy_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2236,11 +2589,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2249,20 +2602,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-groups/{policy_group_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy_template(self, request):
         """修改策略模板
@@ -2275,9 +2624,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdatePolicyTemplateRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdatePolicyTemplateResponse`
         """
-        return self._update_policy_template_with_http_info(request)
+        http_info = self._update_policy_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_template_with_http_info(self, request):
+    def update_policy_template_invoker(self, request):
+        http_info = self._update_policy_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_policy_template_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/policy-templates/{policy_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2294,11 +2656,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2307,20 +2669,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/policy-templates/{policy_template_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_quota(self, request):
         """配额校验
@@ -2333,9 +2691,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CheckQuotaRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CheckQuotaResponse`
         """
-        return self._check_quota_with_http_info(request)
+        http_info = self._check_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_quota_with_http_info(self, request):
+    def check_quota_invoker(self, request):
+        http_info = self._check_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/check/quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2364,9 +2735,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2375,20 +2746,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/check/quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_server(self, request):
         """批量删除服务器
@@ -2402,9 +2769,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteServerRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchDeleteServerResponse`
         """
-        return self._batch_delete_server_with_http_info(request)
+        http_info = self._batch_delete_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_server_with_http_info(self, request):
+    def batch_delete_server_invoker(self, request):
+        http_info = self._batch_delete_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_server_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-servers/actions/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2419,11 +2799,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2432,20 +2812,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/actions/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_migrate_hosts_server(self, request):
         """迁移云办公主机下面的服务器到目标云办公主机
@@ -2458,9 +2834,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchMigrateHostsServerRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchMigrateHostsServerResponse`
         """
-        return self._batch_migrate_hosts_server_with_http_info(request)
+        http_info = self._batch_migrate_hosts_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_migrate_hosts_server_with_http_info(self, request):
+    def batch_migrate_hosts_server_invoker(self, request):
+        http_info = self._batch_migrate_hosts_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_migrate_hosts_server_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-servers/hosts/batch-migrate",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchMigrateHostsServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2475,11 +2864,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2488,20 +2877,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/hosts/batch-migrate',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchMigrateHostsServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_reboot_server(self, request):
         """重启服务器
@@ -2514,9 +2899,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchRebootServerRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchRebootServerResponse`
         """
-        return self._batch_reboot_server_with_http_info(request)
+        http_info = self._batch_reboot_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_reboot_server_with_http_info(self, request):
+    def batch_reboot_server_invoker(self, request):
+        http_info = self._batch_reboot_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_reboot_server_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-servers/actions/batch-reboot",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRebootServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2531,11 +2929,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2544,20 +2942,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/actions/batch-reboot',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRebootServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_rejoin_domain(self, request):
         """批量服务器重新加域
@@ -2570,9 +2964,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchRejoinDomainRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchRejoinDomainResponse`
         """
-        return self._batch_rejoin_domain_with_http_info(request)
+        http_info = self._batch_rejoin_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_rejoin_domain_with_http_info(self, request):
+    def batch_rejoin_domain_invoker(self, request):
+        http_info = self._batch_rejoin_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_rejoin_domain_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-servers/actions/batch-rejoin-domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRejoinDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2587,11 +2994,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2600,20 +3007,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/actions/batch-rejoin-domain',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRejoinDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_start_server(self, request):
         """启动服务器
@@ -2626,9 +3029,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchStartServerRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchStartServerResponse`
         """
-        return self._batch_start_server_with_http_info(request)
+        http_info = self._batch_start_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_start_server_with_http_info(self, request):
+    def batch_start_server_invoker(self, request):
+        http_info = self._batch_start_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_start_server_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-servers/actions/batch-start",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStartServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2643,11 +3059,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2656,20 +3072,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/actions/batch-start',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStartServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_stop_server(self, request):
         """关闭服务器
@@ -2682,9 +3094,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchStopServerRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchStopServerResponse`
         """
-        return self._batch_stop_server_with_http_info(request)
+        http_info = self._batch_stop_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_stop_server_with_http_info(self, request):
+    def batch_stop_server_invoker(self, request):
+        http_info = self._batch_stop_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_stop_server_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-servers/actions/batch-stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStopServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2699,11 +3124,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2712,20 +3137,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/actions/batch-stop',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStopServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_tsvi(self, request):
         """批量更新服务器虚拟会话IP配置
@@ -2738,9 +3159,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.BatchUpdateTsviRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.BatchUpdateTsviResponse`
         """
-        return self._batch_update_tsvi_with_http_info(request)
+        http_info = self._batch_update_tsvi_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_tsvi_with_http_info(self, request):
+    def batch_update_tsvi_invoker(self, request):
+        http_info = self._batch_update_tsvi_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_tsvi_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-servers/actions/batch-update-tsvi",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateTsviResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2755,11 +3189,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2768,20 +3202,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/actions/batch-update-tsvi',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateTsviResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_server_image(self, request):
         """修改服务器的镜像
@@ -2795,9 +3225,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ChangeServerImageRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ChangeServerImageResponse`
         """
-        return self._change_server_image_with_http_info(request)
+        http_info = self._change_server_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_server_image_with_http_info(self, request):
+    def change_server_image_invoker(self, request):
+        http_info = self._change_server_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_server_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-servers/{server_id}/actions/change-image",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeServerImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2814,11 +3257,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2827,20 +3270,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/{server_id}/actions/change-image',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeServerImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_servers(self, request):
         """创建云服务器
@@ -2853,9 +3292,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppServersRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateAppServersResponse`
         """
-        return self._create_app_servers_with_http_info(request)
+        http_info = self._create_app_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_servers_with_http_info(self, request):
+    def create_app_servers_invoker(self, request):
+        http_info = self._create_app_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-servers/actions/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2870,11 +3322,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2883,20 +3335,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/actions/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_servers(self, request):
         """查询服务器列表
@@ -2909,9 +3357,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListServersRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListServersResponse`
         """
-        return self._list_servers_with_http_info(request)
+        http_info = self._list_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_servers_with_http_info(self, request):
+    def list_servers_invoker(self, request):
+        http_info = self._list_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_servers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2940,9 +3401,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2951,20 +3412,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reinstall_server(self, request):
         """重装服务器
@@ -2978,9 +3435,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ReinstallServerRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ReinstallServerResponse`
         """
-        return self._reinstall_server_with_http_info(request)
+        http_info = self._reinstall_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reinstall_server_with_http_info(self, request):
+    def reinstall_server_invoker(self, request):
+        http_info = self._reinstall_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reinstall_server_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-servers/{server_id}/actions/reinstall",
+            "request_type": request.__class__.__name__,
+            "response_type": "ReinstallServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2997,11 +3467,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3010,20 +3480,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/{server_id}/actions/reinstall',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ReinstallServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_server(self, request):
         """修改服务器
@@ -3037,9 +3503,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdateServerRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateServerResponse`
         """
-        return self._update_server_with_http_info(request)
+        http_info = self._update_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_server_with_http_info(self, request):
+    def update_server_invoker(self, request):
+        http_info = self._update_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_server_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-servers/{server_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3056,11 +3535,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3069,20 +3548,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-servers/{server_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_server_group(self, request):
         """创建服务器组
@@ -3096,9 +3571,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerGroupResponse`
         """
-        return self._create_server_group_with_http_info(request)
+        http_info = self._create_server_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_server_group_with_http_info(self, request):
+    def create_server_group_invoker(self, request):
+        http_info = self._create_server_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_server_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/app-server-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateServerGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3113,11 +3601,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3126,20 +3614,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-server-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateServerGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_server_groups(self, request):
         """删除服务器组
@@ -3153,9 +3637,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.DeleteServerGroupsRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.DeleteServerGroupsResponse`
         """
-        return self._delete_server_groups_with_http_info(request)
+        http_info = self._delete_server_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_server_groups_with_http_info(self, request):
+    def delete_server_groups_invoker(self, request):
+        http_info = self._delete_server_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_groups_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/app-server-groups/{server_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3172,9 +3669,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3183,20 +3680,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-server-groups/{server_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServerGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_server_groups(self, request):
         """查询服务器组列表
@@ -3209,9 +3702,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListServerGroupsRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListServerGroupsResponse`
         """
-        return self._list_server_groups_with_http_info(request)
+        http_info = self._list_server_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_server_groups_with_http_info(self, request):
+    def list_server_groups_invoker(self, request):
+        http_info = self._list_server_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_server_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/app-server-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServerGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3236,9 +3742,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3247,20 +3753,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-server-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServerGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_server_group(self, request):
         """修改服务器组
@@ -3274,9 +3776,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.UpdateServerGroupRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.UpdateServerGroupResponse`
         """
-        return self._update_server_group_with_http_info(request)
+        http_info = self._update_server_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_server_group_with_http_info(self, request):
+    def update_server_group_invoker(self, request):
+        http_info = self._update_server_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_server_group_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/app-server-groups/{server_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3293,11 +3808,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3306,20 +3821,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/app-server-groups/{server_group_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServerGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_connection(self, request):
         """查询应用使用记录
@@ -3332,9 +3843,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListAppConnectionRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListAppConnectionResponse`
         """
-        return self._list_app_connection_with_http_info(request)
+        http_info = self._list_app_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_connection_with_http_info(self, request):
+    def list_app_connection_invoker(self, request):
+        http_info = self._list_app_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_connection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/session/app-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3353,11 +3877,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3366,20 +3890,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/session/app-connection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_session_by_user_name(self, request):
         """根据用户名查询当前会话
@@ -3392,9 +3912,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionByUserNameRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListSessionByUserNameResponse`
         """
-        return self._list_session_by_user_name_with_http_info(request)
+        http_info = self._list_session_by_user_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_session_by_user_name_with_http_info(self, request):
+    def list_session_by_user_name_invoker(self, request):
+        http_info = self._list_session_by_user_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_session_by_user_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/session/user-session-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSessionByUserNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3411,9 +3944,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3422,20 +3955,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/session/user-session-info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSessionByUserNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_connection(self, request):
         """查询用户登录记录
@@ -3448,9 +3977,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListUserConnectionRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListUserConnectionResponse`
         """
-        return self._list_user_connection_with_http_info(request)
+        http_info = self._list_user_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_connection_with_http_info(self, request):
+    def list_user_connection_invoker(self, request):
+        http_info = self._list_user_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_user_connection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/session/user-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3469,11 +4011,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3482,20 +4024,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/session/user-connection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def logoff_user_session(self, request):
         """用户会话注销
@@ -3508,9 +4046,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.LogoffUserSessionRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.LogoffUserSessionResponse`
         """
-        return self._logoff_user_session_with_http_info(request)
+        http_info = self._logoff_user_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _logoff_user_session_with_http_info(self, request):
+    def logoff_user_session_invoker(self, request):
+        http_info = self._logoff_user_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _logoff_user_session_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/session/logoff",
+            "request_type": request.__class__.__name__,
+            "response_type": "LogoffUserSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3525,11 +4076,11 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3538,20 +4089,16 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/session/logoff',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='LogoffUserSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_volume_type(self, request):
         """查询可用磁盘类型
@@ -3564,9 +4111,22 @@ class WorkspaceAppClient(Client):
         :type request: :class:`huaweicloudsdkworkspaceapp.v1.ListVolumeTypeRequest`
         :rtype: :class:`huaweicloudsdkworkspaceapp.v1.ListVolumeTypeResponse`
         """
-        return self._list_volume_type_with_http_info(request)
+        http_info = self._list_volume_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_volume_type_with_http_info(self, request):
+    def list_volume_type_invoker(self, request):
+        http_info = self._list_volume_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_volume_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/volume-type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVolumeTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3581,9 +4141,9 @@ class WorkspaceAppClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3592,20 +4152,25 @@ class WorkspaceAppClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/volume-type',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVolumeTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

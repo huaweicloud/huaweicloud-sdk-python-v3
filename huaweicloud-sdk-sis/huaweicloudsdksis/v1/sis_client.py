@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdksis'")
 
 
 class SisClient(Client):
@@ -38,9 +43,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.CollectTranscriberJobRequest`
         :rtype: :class:`huaweicloudsdksis.v1.CollectTranscriberJobResponse`
         """
-        return self._collect_transcriber_job_with_http_info(request)
+        http_info = self._collect_transcriber_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_transcriber_job_with_http_info(self, request):
+    def collect_transcriber_job_invoker(self, request):
+        http_info = self._collect_transcriber_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_transcriber_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asr/transcriber/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectTranscriberJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,9 +75,9 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/transcriber/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectTranscriberJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vocabulary(self, request):
         """创建热词表
@@ -94,9 +108,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.CreateVocabularyRequest`
         :rtype: :class:`huaweicloudsdksis.v1.CreateVocabularyResponse`
         """
-        return self._create_vocabulary_with_http_info(request)
+        http_info = self._create_vocabulary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vocabulary_with_http_info(self, request):
+    def create_vocabulary_invoker(self, request):
+        http_info = self._create_vocabulary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vocabulary_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asr/vocabularies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVocabularyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/vocabularies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVocabularyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vocabulary(self, request):
         """删除热词表
@@ -150,9 +173,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.DeleteVocabularyRequest`
         :rtype: :class:`huaweicloudsdksis.v1.DeleteVocabularyResponse`
         """
-        return self._delete_vocabulary_with_http_info(request)
+        http_info = self._delete_vocabulary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vocabulary_with_http_info(self, request):
+    def delete_vocabulary_invoker(self, request):
+        http_info = self._delete_vocabulary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vocabulary_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/asr/vocabularies/{vocabulary_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVocabularyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -169,9 +205,9 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/vocabularies/{vocabulary_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVocabularyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def push_transcriber_jobs(self, request):
         """提交录音文件识别任务
@@ -215,9 +247,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.PushTranscriberJobsRequest`
         :rtype: :class:`huaweicloudsdksis.v1.PushTranscriberJobsResponse`
         """
-        return self._push_transcriber_jobs_with_http_info(request)
+        http_info = self._push_transcriber_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _push_transcriber_jobs_with_http_info(self, request):
+    def push_transcriber_jobs_invoker(self, request):
+        http_info = self._push_transcriber_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _push_transcriber_jobs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asr/transcriber/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "PushTranscriberJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -234,11 +279,11 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -247,20 +292,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/transcriber/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PushTranscriberJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_flash_asr(self, request):
         """录音文件识别极速版
@@ -274,9 +315,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.RecognizeFlashAsrRequest`
         :rtype: :class:`huaweicloudsdksis.v1.RecognizeFlashAsrResponse`
         """
-        return self._recognize_flash_asr_with_http_info(request)
+        http_info = self._recognize_flash_asr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_flash_asr_with_http_info(self, request):
+    def recognize_flash_asr_invoker(self, request):
+        http_info = self._recognize_flash_asr_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _recognize_flash_asr_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asr/flash",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeFlashAsrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -309,9 +363,9 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -320,20 +374,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/flash',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeFlashAsrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def recognize_short_audio(self, request):
         """一句话识别
@@ -346,9 +396,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.RecognizeShortAudioRequest`
         :rtype: :class:`huaweicloudsdksis.v1.RecognizeShortAudioResponse`
         """
-        return self._recognize_short_audio_with_http_info(request)
+        http_info = self._recognize_short_audio_http_info(request)
+        return self._call_api(**http_info)
 
-    def _recognize_short_audio_with_http_info(self, request):
+    def recognize_short_audio_invoker(self, request):
+        http_info = self._recognize_short_audio_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _recognize_short_audio_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asr/short-audio",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecognizeShortAudioResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -363,11 +426,11 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -376,20 +439,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/short-audio',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecognizeShortAudioResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_tts(self, request):
         """语音合成
@@ -402,9 +461,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.RunTtsRequest`
         :rtype: :class:`huaweicloudsdksis.v1.RunTtsResponse`
         """
-        return self._run_tts_with_http_info(request)
+        http_info = self._run_tts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_tts_with_http_info(self, request):
+    def run_tts_invoker(self, request):
+        http_info = self._run_tts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_tts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/tts",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunTtsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -419,11 +491,11 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -432,20 +504,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunTtsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vocabularies(self, request):
         """查询热词表列表
@@ -458,9 +526,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.ShowVocabulariesRequest`
         :rtype: :class:`huaweicloudsdksis.v1.ShowVocabulariesResponse`
         """
-        return self._show_vocabularies_with_http_info(request)
+        http_info = self._show_vocabularies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vocabularies_with_http_info(self, request):
+    def show_vocabularies_invoker(self, request):
+        http_info = self._show_vocabularies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vocabularies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asr/vocabularies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVocabulariesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -479,11 +560,11 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +573,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/vocabularies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVocabulariesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vocabulary(self, request):
         """查询热词表信息
@@ -518,9 +595,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.ShowVocabularyRequest`
         :rtype: :class:`huaweicloudsdksis.v1.ShowVocabularyResponse`
         """
-        return self._show_vocabulary_with_http_info(request)
+        http_info = self._show_vocabulary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vocabulary_with_http_info(self, request):
+    def show_vocabulary_invoker(self, request):
+        http_info = self._show_vocabulary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vocabulary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asr/vocabularies/{vocabulary_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVocabularyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -537,9 +627,9 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -548,20 +638,16 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/vocabularies/{vocabulary_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVocabularyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vocabulary(self, request):
         """更新热词表
@@ -574,9 +660,22 @@ class SisClient(Client):
         :type request: :class:`huaweicloudsdksis.v1.UpdateVocabularyRequest`
         :rtype: :class:`huaweicloudsdksis.v1.UpdateVocabularyResponse`
         """
-        return self._update_vocabulary_with_http_info(request)
+        http_info = self._update_vocabulary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vocabulary_with_http_info(self, request):
+    def update_vocabulary_invoker(self, request):
+        http_info = self._update_vocabulary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vocabulary_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/asr/vocabularies/{vocabulary_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVocabularyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -593,11 +692,11 @@ class SisClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -606,20 +705,25 @@ class SisClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asr/vocabularies/{vocabulary_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVocabularyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

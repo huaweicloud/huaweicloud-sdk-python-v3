@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkivs'")
 
 
 class IvsClient(Client):
@@ -38,9 +43,22 @@ class IvsClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectExtentionByIdCardImageRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectExtentionByIdCardImageResponse`
         """
-        return self._detect_extention_by_id_card_image_with_http_info(request)
+        http_info = self._detect_extention_by_id_card_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_extention_by_id_card_image_with_http_info(self, request):
+    def detect_extention_by_id_card_image_invoker(self, request):
+        http_info = self._detect_extention_by_id_card_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detect_extention_by_id_card_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/ivs-idcard-extention",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectExtentionByIdCardImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class IvsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -70,20 +88,16 @@ class IvsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ivs-idcard-extention',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectExtentionByIdCardImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_extention_by_name_and_id(self, request):
         """人证核身证件版（二要素）
@@ -96,9 +110,22 @@ class IvsClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectExtentionByNameAndIdRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectExtentionByNameAndIdResponse`
         """
-        return self._detect_extention_by_name_and_id_with_http_info(request)
+        http_info = self._detect_extention_by_name_and_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_extention_by_name_and_id_with_http_info(self, request):
+    def detect_extention_by_name_and_id_invoker(self, request):
+        http_info = self._detect_extention_by_name_and_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detect_extention_by_name_and_id_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/ivs-idcard-extention",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectExtentionByNameAndIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class IvsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -128,20 +155,16 @@ class IvsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ivs-idcard-extention',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectExtentionByNameAndIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_standard_by_id_card_image(self, request):
         """人证核身标准版（三要素）
@@ -154,9 +177,22 @@ class IvsClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByIdCardImageRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByIdCardImageResponse`
         """
-        return self._detect_standard_by_id_card_image_with_http_info(request)
+        http_info = self._detect_standard_by_id_card_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_standard_by_id_card_image_with_http_info(self, request):
+    def detect_standard_by_id_card_image_invoker(self, request):
+        http_info = self._detect_standard_by_id_card_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detect_standard_by_id_card_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/ivs-standard",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectStandardByIdCardImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class IvsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -186,20 +222,16 @@ class IvsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ivs-standard',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectStandardByIdCardImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_standard_by_name_and_id(self, request):
         """人证核身标准版（三要素）
@@ -212,9 +244,22 @@ class IvsClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByNameAndIdRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByNameAndIdResponse`
         """
-        return self._detect_standard_by_name_and_id_with_http_info(request)
+        http_info = self._detect_standard_by_name_and_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_standard_by_name_and_id_with_http_info(self, request):
+    def detect_standard_by_name_and_id_invoker(self, request):
+        http_info = self._detect_standard_by_name_and_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detect_standard_by_name_and_id_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/ivs-standard",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectStandardByNameAndIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class IvsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -244,20 +289,16 @@ class IvsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ivs-standard',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectStandardByNameAndIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_standard_by_video_and_id_card_image(self, request):
         """人证核身标准版（三要素）
@@ -270,9 +311,22 @@ class IvsClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndIdCardImageRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndIdCardImageResponse`
         """
-        return self._detect_standard_by_video_and_id_card_image_with_http_info(request)
+        http_info = self._detect_standard_by_video_and_id_card_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_standard_by_video_and_id_card_image_with_http_info(self, request):
+    def detect_standard_by_video_and_id_card_image_invoker(self, request):
+        http_info = self._detect_standard_by_video_and_id_card_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detect_standard_by_video_and_id_card_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/ivs-standard",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectStandardByVideoAndIdCardImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -289,11 +343,11 @@ class IvsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -302,20 +356,16 @@ class IvsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ivs-standard',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectStandardByVideoAndIdCardImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_standard_by_video_and_name_and_id(self, request):
         """人证核身标准版（三要素）
@@ -328,9 +378,22 @@ class IvsClient(Client):
         :type request: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndNameAndIdRequest`
         :rtype: :class:`huaweicloudsdkivs.v2.DetectStandardByVideoAndNameAndIdResponse`
         """
-        return self._detect_standard_by_video_and_name_and_id_with_http_info(request)
+        http_info = self._detect_standard_by_video_and_name_and_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_standard_by_video_and_name_and_id_with_http_info(self, request):
+    def detect_standard_by_video_and_name_and_id_invoker(self, request):
+        http_info = self._detect_standard_by_video_and_name_and_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detect_standard_by_video_and_name_and_id_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/ivs-standard",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectStandardByVideoAndNameAndIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,11 +410,11 @@ class IvsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -360,20 +423,25 @@ class IvsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/ivs-standard',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectStandardByVideoAndNameAndIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

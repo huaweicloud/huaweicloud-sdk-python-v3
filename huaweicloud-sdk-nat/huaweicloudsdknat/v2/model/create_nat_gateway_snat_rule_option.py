@@ -47,7 +47,7 @@ class CreateNatGatewaySnatRuleOption:
         :type cidr: str
         :param network_id: 规则使用的网络id。与cidr参数二选一。
         :type network_id: str
-        :param description: SNAT规则的描述，长度限制为255。
+        :param description: SNAT规则的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         :param source_type: 0：VPC侧，可以指定network_id 或者cidr 1：专线侧，只能指定cidr 不输入默认为0（VPC） 
         :type source_type: int
@@ -151,7 +151,7 @@ class CreateNatGatewaySnatRuleOption:
     def description(self):
         """Gets the description of this CreateNatGatewaySnatRuleOption.
 
-        SNAT规则的描述，长度限制为255。
+        SNAT规则的描述，长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this CreateNatGatewaySnatRuleOption.
         :rtype: str
@@ -162,7 +162,7 @@ class CreateNatGatewaySnatRuleOption:
     def description(self, description):
         """Sets the description of this CreateNatGatewaySnatRuleOption.
 
-        SNAT规则的描述，长度限制为255。
+        SNAT规则的描述，长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this CreateNatGatewaySnatRuleOption.
         :type description: str

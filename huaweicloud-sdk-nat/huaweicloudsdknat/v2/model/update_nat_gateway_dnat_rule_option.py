@@ -51,7 +51,7 @@ class UpdateNatGatewayDnatRuleOption:
 
         :param nat_gateway_id: NAT网关的id。
         :type nat_gateway_id: str
-        :param description: DNAT规则的描述，长度限制为255。
+        :param description: DNAT规则的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         :param port_id: 虚拟机或者裸机的Port ID，对应虚拟私有云场景，与private_ip参数二选一。
         :type port_id: str
@@ -136,7 +136,7 @@ class UpdateNatGatewayDnatRuleOption:
     def description(self):
         """Gets the description of this UpdateNatGatewayDnatRuleOption.
 
-        DNAT规则的描述，长度限制为255。
+        DNAT规则的描述，长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this UpdateNatGatewayDnatRuleOption.
         :rtype: str
@@ -147,7 +147,7 @@ class UpdateNatGatewayDnatRuleOption:
     def description(self, description):
         """Sets the description of this UpdateNatGatewayDnatRuleOption.
 
-        DNAT规则的描述，长度限制为255。
+        DNAT规则的描述，长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this UpdateNatGatewayDnatRuleOption.
         :type description: str

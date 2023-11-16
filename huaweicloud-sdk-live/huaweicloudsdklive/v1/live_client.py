@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdklive'")
 
 
 class LiveClient(Client):
@@ -38,9 +43,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.BatchShowIpBelongsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.BatchShowIpBelongsResponse`
         """
-        return self._batch_show_ip_belongs_with_http_info(request)
+        http_info = self._batch_show_ip_belongs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_ip_belongs_with_http_info(self, request):
+    def batch_show_ip_belongs_invoker(self, request):
+        http_info = self._batch_show_ip_belongs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_show_ip_belongs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cdn/ip-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowIpBelongsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,9 +76,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +87,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cdn/ip-info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowIpBelongsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_domain(self, request):
         """创建直播域名
@@ -95,9 +109,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateDomainResponse`
         """
-        return self._create_domain_with_http_info(request)
+        http_info = self._create_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_domain_with_http_info(self, request):
+    def create_domain_invoker(self, request):
+        http_info = self._create_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_domain_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -112,11 +139,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -125,20 +152,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_domain_mapping(self, request):
         """域名映射
@@ -151,9 +174,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateDomainMappingRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateDomainMappingResponse`
         """
-        return self._create_domain_mapping_with_http_info(request)
+        http_info = self._create_domain_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_domain_mapping_with_http_info(self, request):
+    def create_domain_mapping_invoker(self, request):
+        http_info = self._create_domain_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_domain_mapping_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domains_mapping",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDomainMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -168,11 +204,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -181,20 +217,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domains_mapping',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDomainMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_record_callback_config(self, request):
         """创建录制回调配置
@@ -207,9 +239,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordCallbackConfigResponse`
         """
-        return self._create_record_callback_config_with_http_info(request)
+        http_info = self._create_record_callback_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_record_callback_config_with_http_info(self, request):
+    def create_record_callback_config_invoker(self, request):
+        http_info = self._create_record_callback_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_record_callback_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/record/callbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordCallbackConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -224,11 +269,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -237,20 +282,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/callbacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRecordCallbackConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_record_index(self, request):
         """创建录制视频索引文件
@@ -263,9 +304,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordIndexRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordIndexResponse`
         """
-        return self._create_record_index_with_http_info(request)
+        http_info = self._create_record_index_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_record_index_with_http_info(self, request):
+    def create_record_index_invoker(self, request):
+        http_info = self._create_record_index_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_record_index_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/record/indexes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordIndexResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -280,11 +334,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -293,20 +347,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/indexes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRecordIndexResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_record_rule(self, request):
         """创建录制规则
@@ -319,9 +369,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateRecordRuleResponse`
         """
-        return self._create_record_rule_with_http_info(request)
+        http_info = self._create_record_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_record_rule_with_http_info(self, request):
+    def create_record_rule_invoker(self, request):
+        http_info = self._create_record_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_record_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/record/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -336,11 +399,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -349,20 +412,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRecordRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_snapshot_config(self, request):
         """创建直播截图配置
@@ -375,9 +434,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateSnapshotConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateSnapshotConfigResponse`
         """
-        return self._create_snapshot_config_with_http_info(request)
+        http_info = self._create_snapshot_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_snapshot_config_with_http_info(self, request):
+    def create_snapshot_config_invoker(self, request):
+        http_info = self._create_snapshot_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_snapshot_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stream/snapshot",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSnapshotConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -392,11 +464,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -405,20 +477,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/snapshot',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSnapshotConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_stream_forbidden(self, request):
         """禁止直播推流
@@ -431,9 +499,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateStreamForbiddenResponse`
         """
-        return self._create_stream_forbidden_with_http_info(request)
+        http_info = self._create_stream_forbidden_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_stream_forbidden_with_http_info(self, request):
+    def create_stream_forbidden_invoker(self, request):
+        http_info = self._create_stream_forbidden_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_stream_forbidden_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stream/blocks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStreamForbiddenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -448,11 +529,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -461,20 +542,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/blocks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStreamForbiddenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_transcodings_template(self, request):
         """创建直播转码模板
@@ -487,9 +564,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.CreateTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.CreateTranscodingsTemplateResponse`
         """
-        return self._create_transcodings_template_with_http_info(request)
+        http_info = self._create_transcodings_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_transcodings_template_with_http_info(self, request):
+    def create_transcodings_template_invoker(self, request):
+        http_info = self._create_transcodings_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_transcodings_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTranscodingsTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -504,11 +594,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -517,20 +607,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/transcodings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTranscodingsTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domain(self, request):
         """删除直播域名
@@ -543,9 +629,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainResponse`
         """
-        return self._delete_domain_with_http_info(request)
+        http_info = self._delete_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domain_with_http_info(self, request):
+    def delete_domain_invoker(self, request):
+        http_info = self._delete_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -562,9 +661,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -573,20 +672,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domain_key_chain(self, request):
         """删除指定域名的Key防盗链配置
@@ -599,9 +694,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainKeyChainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainKeyChainResponse`
         """
-        return self._delete_domain_key_chain_with_http_info(request)
+        http_info = self._delete_domain_key_chain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domain_key_chain_with_http_info(self, request):
+    def delete_domain_key_chain_invoker(self, request):
+        http_info = self._delete_domain_key_chain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_key_chain_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/guard/key-chain",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainKeyChainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -618,9 +726,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -629,20 +737,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/guard/key-chain',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainKeyChainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domain_mapping(self, request):
         """删除直播域名映射关系
@@ -655,9 +759,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainMappingRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainMappingResponse`
         """
-        return self._delete_domain_mapping_with_http_info(request)
+        http_info = self._delete_domain_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domain_mapping_with_http_info(self, request):
+    def delete_domain_mapping_invoker(self, request):
+        http_info = self._delete_domain_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_mapping_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/domains_mapping",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -676,9 +793,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -687,20 +804,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domains_mapping',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_record_callback_config(self, request):
         """删除录制回调配置
@@ -713,9 +826,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteRecordCallbackConfigResponse`
         """
-        return self._delete_record_callback_config_with_http_info(request)
+        http_info = self._delete_record_callback_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_record_callback_config_with_http_info(self, request):
+    def delete_record_callback_config_invoker(self, request):
+        http_info = self._delete_record_callback_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_record_callback_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/record/callbacks/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecordCallbackConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -732,9 +858,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -743,20 +869,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/callbacks/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRecordCallbackConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_record_rule(self, request):
         """删除录制规则
@@ -769,9 +891,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteRecordRuleResponse`
         """
-        return self._delete_record_rule_with_http_info(request)
+        http_info = self._delete_record_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_record_rule_with_http_info(self, request):
+    def delete_record_rule_invoker(self, request):
+        http_info = self._delete_record_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_record_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/record/rules/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecordRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -788,9 +923,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -799,20 +934,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/rules/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRecordRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_snapshot_config(self, request):
         """删除直播截图配置
@@ -825,9 +956,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteSnapshotConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteSnapshotConfigResponse`
         """
-        return self._delete_snapshot_config_with_http_info(request)
+        http_info = self._delete_snapshot_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_snapshot_config_with_http_info(self, request):
+    def delete_snapshot_config_invoker(self, request):
+        http_info = self._delete_snapshot_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_snapshot_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/stream/snapshot",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSnapshotConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -846,9 +990,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -857,20 +1001,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/snapshot',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSnapshotConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_stream_forbidden(self, request):
         """禁推恢复
@@ -883,9 +1023,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteStreamForbiddenResponse`
         """
-        return self._delete_stream_forbidden_with_http_info(request)
+        http_info = self._delete_stream_forbidden_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_stream_forbidden_with_http_info(self, request):
+    def delete_stream_forbidden_invoker(self, request):
+        http_info = self._delete_stream_forbidden_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_stream_forbidden_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/stream/blocks",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStreamForbiddenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -906,9 +1059,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -917,20 +1070,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/blocks',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStreamForbiddenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_transcodings_template(self, request):
         """删除直播转码模板
@@ -943,9 +1092,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteTranscodingsTemplateResponse`
         """
-        return self._delete_transcodings_template_with_http_info(request)
+        http_info = self._delete_transcodings_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_transcodings_template_with_http_info(self, request):
+    def delete_transcodings_template_invoker(self, request):
+        http_info = self._delete_transcodings_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_transcodings_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTranscodingsTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -964,9 +1126,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -975,20 +1137,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/transcodings',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTranscodingsTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_live_sample_logs(self, request):
         """获取直播播放日志
@@ -1001,9 +1159,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListLiveSampleLogsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListLiveSampleLogsResponse`
         """
-        return self._list_live_sample_logs_with_http_info(request)
+        http_info = self._list_live_sample_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_live_sample_logs_with_http_info(self, request):
+    def list_live_sample_logs_invoker(self, request):
+        http_info = self._list_live_sample_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_live_sample_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLiveSampleLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1024,9 +1195,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1035,20 +1206,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLiveSampleLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_live_streams_online(self, request):
         """查询直播中的流信息
@@ -1061,9 +1228,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListLiveStreamsOnlineRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListLiveStreamsOnlineResponse`
         """
-        return self._list_live_streams_online_with_http_info(request)
+        http_info = self._list_live_streams_online_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_live_streams_online_with_http_info(self, request):
+    def list_live_streams_online_invoker(self, request):
+        http_info = self._list_live_streams_online_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_live_streams_online_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/realtime/streams",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLiveStreamsOnlineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1088,9 +1268,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1099,20 +1279,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/realtime/streams',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLiveStreamsOnlineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_record_callback_configs(self, request):
         """查询录制回调配置列表
@@ -1125,9 +1301,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListRecordCallbackConfigsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordCallbackConfigsResponse`
         """
-        return self._list_record_callback_configs_with_http_info(request)
+        http_info = self._list_record_callback_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_record_callback_configs_with_http_info(self, request):
+    def list_record_callback_configs_invoker(self, request):
+        http_info = self._list_record_callback_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_record_callback_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/record/callbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordCallbackConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1150,9 +1339,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1161,20 +1350,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/callbacks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecordCallbackConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_record_contents(self, request):
         """录制完成内容的查询
@@ -1187,9 +1372,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListRecordContentsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordContentsResponse`
         """
-        return self._list_record_contents_with_http_info(request)
+        http_info = self._list_record_contents_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_record_contents_with_http_info(self, request):
+    def list_record_contents_invoker(self, request):
+        http_info = self._list_record_contents_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_record_contents_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/record/contents",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordContentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1220,9 +1418,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1231,20 +1429,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/contents',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecordContentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_record_rules(self, request):
         """查询录制规则列表
@@ -1257,9 +1451,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListRecordRulesRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListRecordRulesResponse`
         """
-        return self._list_record_rules_with_http_info(request)
+        http_info = self._list_record_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_record_rules_with_http_info(self, request):
+    def list_record_rules_invoker(self, request):
+        http_info = self._list_record_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_record_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/record/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1286,9 +1493,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1297,20 +1504,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecordRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshot_configs(self, request):
         """查询直播截图配置
@@ -1323,9 +1526,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListSnapshotConfigsRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListSnapshotConfigsResponse`
         """
-        return self._list_snapshot_configs_with_http_info(request)
+        http_info = self._list_snapshot_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshot_configs_with_http_info(self, request):
+    def list_snapshot_configs_invoker(self, request):
+        http_info = self._list_snapshot_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stream/snapshot",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1348,9 +1564,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1359,20 +1575,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/snapshot',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stream_forbidden(self, request):
         """查询禁止直播推流列表
@@ -1385,9 +1597,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ListStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ListStreamForbiddenResponse`
         """
-        return self._list_stream_forbidden_with_http_info(request)
+        http_info = self._list_stream_forbidden_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stream_forbidden_with_http_info(self, request):
+    def list_stream_forbidden_invoker(self, request):
+        http_info = self._list_stream_forbidden_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_stream_forbidden_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stream/blocks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStreamForbiddenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1412,9 +1637,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1423,20 +1648,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/blocks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStreamForbiddenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_record(self, request):
         """提交录制控制命令
@@ -1449,9 +1670,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.RunRecordRequest`
         :rtype: :class:`huaweicloudsdklive.v1.RunRecordResponse`
         """
-        return self._run_record_with_http_info(request)
+        http_info = self._run_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_record_with_http_info(self, request):
+    def run_record_invoker(self, request):
+        http_info = self._run_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_record_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/record/control",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1468,11 +1702,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1481,20 +1715,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/control',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain(self, request):
         """查询直播域名
@@ -1507,9 +1737,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowDomainResponse`
         """
-        return self._show_domain_with_http_info(request)
+        http_info = self._show_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_with_http_info(self, request):
+    def show_domain_invoker(self, request):
+        http_info = self._show_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1528,9 +1771,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1539,20 +1782,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_key_chain(self, request):
         """查询指定域名的Key防盗链配置
@@ -1565,9 +1804,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowDomainKeyChainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowDomainKeyChainResponse`
         """
-        return self._show_domain_key_chain_with_http_info(request)
+        http_info = self._show_domain_key_chain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_key_chain_with_http_info(self, request):
+    def show_domain_key_chain_invoker(self, request):
+        http_info = self._show_domain_key_chain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_key_chain_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/guard/key-chain",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainKeyChainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1584,9 +1836,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1595,20 +1847,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/guard/key-chain',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainKeyChainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_record_callback_config(self, request):
         """查询录制回调配置
@@ -1621,9 +1869,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowRecordCallbackConfigResponse`
         """
-        return self._show_record_callback_config_with_http_info(request)
+        http_info = self._show_record_callback_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_record_callback_config_with_http_info(self, request):
+    def show_record_callback_config_invoker(self, request):
+        http_info = self._show_record_callback_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_record_callback_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/record/callbacks/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordCallbackConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1640,9 +1901,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1651,20 +1912,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/callbacks/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordCallbackConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_record_rule(self, request):
         """查询录制规则配置
@@ -1677,9 +1934,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowRecordRuleResponse`
         """
-        return self._show_record_rule_with_http_info(request)
+        http_info = self._show_record_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_record_rule_with_http_info(self, request):
+    def show_record_rule_invoker(self, request):
+        http_info = self._show_record_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_record_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/record/rules/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1696,9 +1966,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1707,20 +1977,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/rules/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_transcodings_template(self, request):
         """查询直播转码模板
@@ -1733,9 +1999,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowTranscodingsTemplateResponse`
         """
-        return self._show_transcodings_template_with_http_info(request)
+        http_info = self._show_transcodings_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_transcodings_template_with_http_info(self, request):
+    def show_transcodings_template_invoker(self, request):
+        http_info = self._show_transcodings_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_transcodings_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTranscodingsTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1758,9 +2037,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1769,20 +2048,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/transcodings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTranscodingsTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain(self, request):
         """修改直播域名
@@ -1795,9 +2070,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainResponse`
         """
-        return self._update_domain_with_http_info(request)
+        http_info = self._update_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_with_http_info(self, request):
+    def update_domain_invoker(self, request):
+        http_info = self._update_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1812,11 +2100,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1825,20 +2113,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_ip6_switch(self, request):
         """配置域名IPV6开关
@@ -1851,9 +2135,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainIp6SwitchRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainIp6SwitchResponse`
         """
-        return self._update_domain_ip6_switch_with_http_info(request)
+        http_info = self._update_domain_ip6_switch_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_ip6_switch_with_http_info(self, request):
+    def update_domain_ip6_switch_invoker(self, request):
+        http_info = self._update_domain_ip6_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_ip6_switch_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domain/ipv6-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainIp6SwitchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1868,11 +2165,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1881,20 +2178,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain/ipv6-switch',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainIp6SwitchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_key_chain(self, request):
         """更新指定域名的Key防盗链配置
@@ -1907,9 +2200,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainKeyChainRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainKeyChainResponse`
         """
-        return self._update_domain_key_chain_with_http_info(request)
+        http_info = self._update_domain_key_chain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_key_chain_with_http_info(self, request):
+    def update_domain_key_chain_invoker(self, request):
+        http_info = self._update_domain_key_chain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_key_chain_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/guard/key-chain",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainKeyChainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1926,11 +2232,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1939,20 +2245,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/guard/key-chain',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainKeyChainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_record_callback_config(self, request):
         """修改录制回调配置
@@ -1965,9 +2267,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateRecordCallbackConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateRecordCallbackConfigResponse`
         """
-        return self._update_record_callback_config_with_http_info(request)
+        http_info = self._update_record_callback_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_record_callback_config_with_http_info(self, request):
+    def update_record_callback_config_invoker(self, request):
+        http_info = self._update_record_callback_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_record_callback_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/record/callbacks/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecordCallbackConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1984,11 +2299,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1997,20 +2312,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/callbacks/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRecordCallbackConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_record_rule(self, request):
         """修改录制规则
@@ -2023,9 +2334,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateRecordRuleRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateRecordRuleResponse`
         """
-        return self._update_record_rule_with_http_info(request)
+        http_info = self._update_record_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_record_rule_with_http_info(self, request):
+    def update_record_rule_invoker(self, request):
+        http_info = self._update_record_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_record_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/record/rules/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecordRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2042,11 +2366,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2055,20 +2379,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/record/rules/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRecordRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_snapshot_config(self, request):
         """修改直播截图配置
@@ -2081,9 +2401,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateSnapshotConfigRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateSnapshotConfigResponse`
         """
-        return self._update_snapshot_config_with_http_info(request)
+        http_info = self._update_snapshot_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_snapshot_config_with_http_info(self, request):
+    def update_snapshot_config_invoker(self, request):
+        http_info = self._update_snapshot_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_snapshot_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/stream/snapshot",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSnapshotConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2098,11 +2431,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2111,20 +2444,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/snapshot',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSnapshotConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_stream_forbidden(self, request):
         """修改禁推属性
@@ -2137,9 +2466,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateStreamForbiddenRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateStreamForbiddenResponse`
         """
-        return self._update_stream_forbidden_with_http_info(request)
+        http_info = self._update_stream_forbidden_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_stream_forbidden_with_http_info(self, request):
+    def update_stream_forbidden_invoker(self, request):
+        http_info = self._update_stream_forbidden_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_stream_forbidden_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/stream/blocks",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStreamForbiddenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2154,11 +2496,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2167,20 +2509,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stream/blocks',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStreamForbiddenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_transcodings_template(self, request):
         """配置直播转码模板
@@ -2193,9 +2531,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateTranscodingsTemplateRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateTranscodingsTemplateResponse`
         """
-        return self._update_transcodings_template_with_http_info(request)
+        http_info = self._update_transcodings_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_transcodings_template_with_http_info(self, request):
+    def update_transcodings_template_invoker(self, request):
+        http_info = self._update_transcodings_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_transcodings_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTranscodingsTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2210,11 +2561,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2223,20 +2574,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/transcodings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTranscodingsTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domain_https_cert(self, request):
         """删除指定域名的https证书配置
@@ -2249,9 +2596,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.DeleteDomainHttpsCertRequest`
         :rtype: :class:`huaweicloudsdklive.v1.DeleteDomainHttpsCertResponse`
         """
-        return self._delete_domain_https_cert_with_http_info(request)
+        http_info = self._delete_domain_https_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domain_https_cert_with_http_info(self, request):
+    def delete_domain_https_cert_invoker(self, request):
+        http_info = self._delete_domain_https_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_https_cert_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/guard/https-cert",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainHttpsCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2268,9 +2628,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2279,20 +2639,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/guard/https-cert',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainHttpsCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_https_cert(self, request):
         """查询指定域名的https证书配置
@@ -2305,9 +2661,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.ShowDomainHttpsCertRequest`
         :rtype: :class:`huaweicloudsdklive.v1.ShowDomainHttpsCertResponse`
         """
-        return self._show_domain_https_cert_with_http_info(request)
+        http_info = self._show_domain_https_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_https_cert_with_http_info(self, request):
+    def show_domain_https_cert_invoker(self, request):
+        http_info = self._show_domain_https_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_https_cert_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/guard/https-cert",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainHttpsCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2324,9 +2693,9 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2335,20 +2704,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/guard/https-cert',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainHttpsCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_https_cert(self, request):
         """修改指定域名的https证书配置
@@ -2361,9 +2726,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateDomainHttpsCertRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateDomainHttpsCertResponse`
         """
-        return self._update_domain_https_cert_with_http_info(request)
+        http_info = self._update_domain_https_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_https_cert_with_http_info(self, request):
+    def update_domain_https_cert_invoker(self, request):
+        http_info = self._update_domain_https_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_https_cert_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/guard/https-cert",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainHttpsCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2380,11 +2758,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2393,20 +2771,16 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/guard/https-cert',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainHttpsCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_obs_bucket_authority_public(self, request):
         """OBS桶授权及取消授权
@@ -2419,9 +2793,22 @@ class LiveClient(Client):
         :type request: :class:`huaweicloudsdklive.v1.UpdateObsBucketAuthorityPublicRequest`
         :rtype: :class:`huaweicloudsdklive.v1.UpdateObsBucketAuthorityPublicResponse`
         """
-        return self._update_obs_bucket_authority_public_with_http_info(request)
+        http_info = self._update_obs_bucket_authority_public_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_obs_bucket_authority_public_with_http_info(self, request):
+    def update_obs_bucket_authority_public_invoker(self, request):
+        http_info = self._update_obs_bucket_authority_public_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_obs_bucket_authority_public_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/obs/authority",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateObsBucketAuthorityPublicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2436,11 +2823,11 @@ class LiveClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2449,20 +2836,25 @@ class LiveClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/obs/authority',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateObsBucketAuthorityPublicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

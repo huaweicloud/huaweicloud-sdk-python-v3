@@ -41,7 +41,7 @@ class CreatePrivateNatOption:
 
         :param name: 私网NAT网关实例的名字。 私网NAT网关实例的名字仅支持数字、字母、_（下划线）、-（中划线）、中文。
         :type name: str
-        :param description: 私网NAT网关实例的描述。
+        :param description: 私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         :param spec: 私网NAT网关实例的规格。 取值为： \&quot;Small\&quot;：小型 \&quot;Medium\&quot;：中型 \&quot;Large\&quot;：大型 \&quot;Extra-large\&quot;：超大型
         :type spec: str
@@ -100,7 +100,7 @@ class CreatePrivateNatOption:
     def description(self):
         """Gets the description of this CreatePrivateNatOption.
 
-        私网NAT网关实例的描述。
+        私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this CreatePrivateNatOption.
         :rtype: str
@@ -111,7 +111,7 @@ class CreatePrivateNatOption:
     def description(self, description):
         """Sets the description of this CreatePrivateNatOption.
 
-        私网NAT网关实例的描述。
+        私网NAT网关实例的描述。长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this CreatePrivateNatOption.
         :type description: str

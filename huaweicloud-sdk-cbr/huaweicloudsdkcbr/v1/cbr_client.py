@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcbr'")
 
 
 class CbrClient(Client):
@@ -38,9 +43,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.AddAgentPathRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.AddAgentPathResponse`
         """
-        return self._add_agent_path_with_http_info(request)
+        http_info = self._add_agent_path_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_agent_path_with_http_info(self, request):
+    def add_agent_path_invoker(self, request):
+        http_info = self._add_agent_path_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_agent_path_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/agents/{agent_id}/add-path",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAgentPathResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/agents/{agent_id}/add-path',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddAgentPathResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_member(self, request):
         """添加备份成员
@@ -96,9 +110,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.AddMemberRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.AddMemberResponse`
         """
-        return self._add_member_with_http_info(request)
+        http_info = self._add_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_member_with_http_info(self, request):
+    def add_member_invoker(self, request):
+        http_info = self._add_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_member_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/members',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_vault_resource(self, request):
         """添加资源
@@ -154,9 +177,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.AddVaultResourceRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.AddVaultResourceResponse`
         """
-        return self._add_vault_resource_with_http_info(request)
+        http_info = self._add_vault_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_vault_resource_with_http_info(self, request):
+    def add_vault_resource_invoker(self, request):
+        http_info = self._add_vault_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_vault_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}/addresources",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddVaultResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}/addresources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddVaultResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_vault_policy(self, request):
         """设置存储库策略
@@ -212,9 +244,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.AssociateVaultPolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.AssociateVaultPolicyResponse`
         """
-        return self._associate_vault_policy_with_http_info(request)
+        http_info = self._associate_vault_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_vault_policy_with_http_info(self, request):
+    def associate_vault_policy_invoker(self, request):
+        http_info = self._associate_vault_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_vault_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}/associatepolicy",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateVaultPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}/associatepolicy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateVaultPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_and_delete_vault_tags(self, request):
         """批量添加删除存储库资源标签
@@ -277,9 +318,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.BatchCreateAndDeleteVaultTagsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.BatchCreateAndDeleteVaultTagsResponse`
         """
-        return self._batch_create_and_delete_vault_tags_with_http_info(request)
+        http_info = self._batch_create_and_delete_vault_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_and_delete_vault_tags_with_http_info(self, request):
+    def batch_create_and_delete_vault_tags_invoker(self, request):
+        http_info = self._batch_create_and_delete_vault_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_and_delete_vault_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vault/{vault_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateAndDeleteVaultTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -296,11 +350,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -309,20 +363,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vault/{vault_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateAndDeleteVaultTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_vault(self, request):
         """批量修改存储库
@@ -335,9 +385,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.BatchUpdateVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.BatchUpdateVaultResponse`
         """
-        return self._batch_update_vault_with_http_info(request)
+        http_info = self._batch_update_vault_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_vault_with_http_info(self, request):
+    def batch_update_vault_invoker(self, request):
+        http_info = self._batch_update_vault_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_vault_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vaults/batch-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateVaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -352,11 +415,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -365,20 +428,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/batch-update',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateVaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_agent(self, request):
         """查询agent状态
@@ -391,9 +450,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.CheckAgentRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CheckAgentResponse`
         """
-        return self._check_agent_with_http_info(request)
+        http_info = self._check_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_agent_with_http_info(self, request):
+    def check_agent_invoker(self, request):
+        http_info = self._check_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_agent_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/agent/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -408,11 +480,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -421,20 +493,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/agent/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_backup(self, request):
         """复制备份
@@ -447,9 +515,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.CopyBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CopyBackupResponse`
         """
-        return self._copy_backup_with_http_info(request)
+        http_info = self._copy_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_backup_with_http_info(self, request):
+    def copy_backup_invoker(self, request):
+        http_info = self._copy_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_backup_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/replicate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -466,11 +547,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -479,20 +560,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/replicate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_checkpoint(self, request):
         """复制备份还原点
@@ -505,9 +582,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.CopyCheckpointRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CopyCheckpointResponse`
         """
-        return self._copy_checkpoint_with_http_info(request)
+        http_info = self._copy_checkpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_checkpoint_with_http_info(self, request):
+    def copy_checkpoint_invoker(self, request):
+        http_info = self._copy_checkpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_checkpoint_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/checkpoints/replicate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyCheckpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -522,11 +612,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -535,20 +625,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/checkpoints/replicate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyCheckpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_checkpoint(self, request):
         """创建备份还原点
@@ -561,9 +647,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.CreateCheckpointRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreateCheckpointResponse`
         """
-        return self._create_checkpoint_with_http_info(request)
+        http_info = self._create_checkpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_checkpoint_with_http_info(self, request):
+    def create_checkpoint_invoker(self, request):
+        http_info = self._create_checkpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_checkpoint_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/checkpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCheckpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -578,11 +677,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -591,20 +690,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/checkpoints',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCheckpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_policy(self, request):
         """创建策略
@@ -617,9 +712,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.CreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreatePolicyResponse`
         """
-        return self._create_policy_with_http_info(request)
+        http_info = self._create_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_policy_with_http_info(self, request):
+    def create_policy_invoker(self, request):
+        http_info = self._create_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -634,11 +742,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -647,20 +755,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/policies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_post_paid_vault(self, request):
         """创建包周期存储库
@@ -673,9 +777,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.CreatePostPaidVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreatePostPaidVaultResponse`
         """
-        return self._create_post_paid_vault_with_http_info(request)
+        http_info = self._create_post_paid_vault_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_post_paid_vault_with_http_info(self, request):
+    def create_post_paid_vault_invoker(self, request):
+        http_info = self._create_post_paid_vault_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_post_paid_vault_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vaults/order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePostPaidVaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -690,11 +807,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -703,20 +820,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/order',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePostPaidVaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vault(self, request):
         """创建存储库
@@ -729,9 +842,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.CreateVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreateVaultResponse`
         """
-        return self._create_vault_with_http_info(request)
+        http_info = self._create_vault_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vault_with_http_info(self, request):
+    def create_vault_invoker(self, request):
+        http_info = self._create_vault_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vault_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vaults",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -746,11 +872,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -759,20 +885,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vault_tags(self, request):
         """添加存储库资源标签
@@ -786,9 +908,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.CreateVaultTagsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.CreateVaultTagsResponse`
         """
-        return self._create_vault_tags_with_http_info(request)
+        http_info = self._create_vault_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vault_tags_with_http_info(self, request):
+    def create_vault_tags_invoker(self, request):
+        http_info = self._create_vault_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vault_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vault/{vault_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVaultTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -805,11 +940,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -818,20 +953,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vault/{vault_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVaultTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_backup(self, request):
         """删除备份
@@ -844,9 +975,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeleteBackupResponse`
         """
-        return self._delete_backup_with_http_info(request)
+        http_info = self._delete_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_backup_with_http_info(self, request):
+    def delete_backup_invoker(self, request):
+        http_info = self._delete_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_backup_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -863,9 +1007,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -874,20 +1018,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_member(self, request):
         """删除指定备份成员
@@ -900,9 +1040,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeleteMemberResponse`
         """
-        return self._delete_member_with_http_info(request)
+        http_info = self._delete_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_member_with_http_info(self, request):
+    def delete_member_invoker(self, request):
+        http_info = self._delete_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_member_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -921,9 +1074,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -932,20 +1085,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/members/{member_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_policy(self, request):
         """删除策略
@@ -958,9 +1107,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.DeletePolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeletePolicyResponse`
         """
-        return self._delete_policy_with_http_info(request)
+        http_info = self._delete_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_policy_with_http_info(self, request):
+    def delete_policy_invoker(self, request):
+        http_info = self._delete_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -977,9 +1139,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -988,20 +1150,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/policies/{policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vault(self, request):
         """删除存储库
@@ -1014,9 +1172,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeleteVaultResponse`
         """
-        return self._delete_vault_with_http_info(request)
+        http_info = self._delete_vault_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vault_with_http_info(self, request):
+    def delete_vault_invoker(self, request):
+        http_info = self._delete_vault_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vault_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1033,9 +1204,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1044,20 +1215,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vault_tag(self, request):
         """删除存储库资源标签
@@ -1070,9 +1237,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.DeleteVaultTagRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DeleteVaultTagResponse`
         """
-        return self._delete_vault_tag_with_http_info(request)
+        http_info = self._delete_vault_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vault_tag_with_http_info(self, request):
+    def delete_vault_tag_invoker(self, request):
+        http_info = self._delete_vault_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vault_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vault/{vault_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVaultTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1091,9 +1271,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1102,20 +1282,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vault/{vault_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVaultTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_vault_policy(self, request):
         """解除存储库策略
@@ -1128,9 +1304,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.DisassociateVaultPolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.DisassociateVaultPolicyResponse`
         """
-        return self._disassociate_vault_policy_with_http_info(request)
+        http_info = self._disassociate_vault_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_vault_policy_with_http_info(self, request):
+    def disassociate_vault_policy_invoker(self, request):
+        http_info = self._disassociate_vault_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_vault_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}/dissociatepolicy",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateVaultPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1147,11 +1336,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1160,20 +1349,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}/dissociatepolicy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateVaultPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_backup(self, request):
         """同步备份
@@ -1186,9 +1371,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ImportBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ImportBackupResponse`
         """
-        return self._import_backup_with_http_info(request)
+        http_info = self._import_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_backup_with_http_info(self, request):
+    def import_backup_invoker(self, request):
+        http_info = self._import_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_backup_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/backups/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1203,11 +1401,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1216,20 +1414,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/sync',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_checkpoint(self, request):
         """同步备份还原点
@@ -1242,9 +1436,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ImportCheckpointRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ImportCheckpointResponse`
         """
-        return self._import_checkpoint_with_http_info(request)
+        http_info = self._import_checkpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_checkpoint_with_http_info(self, request):
+    def import_checkpoint_invoker(self, request):
+        http_info = self._import_checkpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_checkpoint_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/checkpoints/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportCheckpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1259,11 +1466,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1272,20 +1479,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/checkpoints/sync',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportCheckpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_agent(self, request):
         """查询客户端列表
@@ -1298,9 +1501,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListAgentRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListAgentResponse`
         """
-        return self._list_agent_with_http_info(request)
+        http_info = self._list_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_agent_with_http_info(self, request):
+    def list_agent_invoker(self, request):
+        http_info = self._list_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_agent_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/agents",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1324,9 +1540,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1335,20 +1551,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/agents',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_backups(self, request):
         """查询所有备份
@@ -1361,9 +1573,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListBackupsResponse`
         """
-        return self._list_backups_with_http_info(request)
+        http_info = self._list_backups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_backups_with_http_info(self, request):
+    def list_backups_invoker(self, request):
+        http_info = self._list_backups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_backups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1424,9 +1649,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1435,20 +1660,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_projects(self, request):
         """查询租户项目列表
@@ -1461,9 +1682,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListDomainProjectsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListDomainProjectsResponse`
         """
-        return self._list_domain_projects_with_http_info(request)
+        http_info = self._list_domain_projects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_projects_with_http_info(self, request):
+    def list_domain_projects_invoker(self, request):
+        http_info = self._list_domain_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/domain/{domain_name}/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainProjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1480,9 +1714,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1491,20 +1725,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/domain/{domain_name}/projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainProjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_external_vault(self, request):
         """查询其他区域存储库列表
@@ -1517,9 +1747,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListExternalVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListExternalVaultResponse`
         """
-        return self._list_external_vault_with_http_info(request)
+        http_info = self._list_external_vault_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_external_vault_with_http_info(self, request):
+    def list_external_vault_invoker(self, request):
+        http_info = self._list_external_vault_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_external_vault_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vaults/external",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExternalVaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1550,9 +1793,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1561,20 +1804,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/external',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListExternalVaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_op_logs(self, request):
         """查询任务列表
@@ -1587,9 +1826,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListOpLogsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListOpLogsResponse`
         """
-        return self._list_op_logs_with_http_info(request)
+        http_info = self._list_op_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_op_logs_with_http_info(self, request):
+    def list_op_logs_invoker(self, request):
+        http_info = self._list_op_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_op_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/operation-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1628,9 +1880,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1639,20 +1891,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/operation-logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOpLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policies(self, request):
         """查询策略列表
@@ -1665,9 +1913,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListPoliciesRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListPoliciesResponse`
         """
-        return self._list_policies_with_http_info(request)
+        http_info = self._list_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policies_with_http_info(self, request):
+    def list_policies_invoker(self, request):
+        http_info = self._list_policies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1686,9 +1947,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1697,20 +1958,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_projects(self, request):
         """查询租户的项目信息
@@ -1723,9 +1980,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListProjectsRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListProjectsResponse`
         """
-        return self._list_projects_with_http_info(request)
+        http_info = self._list_projects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_projects_with_http_info(self, request):
+    def list_projects_invoker(self, request):
+        http_info = self._list_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/region-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1740,9 +2010,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1751,20 +2021,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/region-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protectable(self, request):
         """查询可保护资源
@@ -1777,9 +2043,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListProtectableRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListProtectableResponse`
         """
-        return self._list_protectable_with_http_info(request)
+        http_info = self._list_protectable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protectable_with_http_info(self, request):
+    def list_protectable_invoker(self, request):
+        http_info = self._list_protectable_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protectable_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/protectables/{protectable_type}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1810,9 +2089,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1821,20 +2100,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/protectables/{protectable_type}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vault(self, request):
         """查询存储库列表
@@ -1847,9 +2122,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ListVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ListVaultResponse`
         """
-        return self._list_vault_with_http_info(request)
+        http_info = self._list_vault_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vault_with_http_info(self, request):
+    def list_vault_invoker(self, request):
+        http_info = self._list_vault_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vault_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vaults",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1887,9 +2175,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1898,20 +2186,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_domain(self, request):
         """租户迁移
@@ -1924,9 +2208,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.MigrateDomainRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.MigrateDomainResponse`
         """
-        return self._migrate_domain_with_http_info(request)
+        http_info = self._migrate_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_domain_with_http_info(self, request):
+    def migrate_domain_invoker(self, request):
+        http_info = self._migrate_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_domain_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/migrates",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1941,11 +2238,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1954,20 +2251,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/migrates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_vault_resource(self, request):
         """迁移资源
@@ -1980,9 +2273,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.MigrateVaultResourceRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.MigrateVaultResourceResponse`
         """
-        return self._migrate_vault_resource_with_http_info(request)
+        http_info = self._migrate_vault_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_vault_resource_with_http_info(self, request):
+    def migrate_vault_resource_invoker(self, request):
+        http_info = self._migrate_vault_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_vault_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}/migrateresources",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateVaultResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1999,11 +2305,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2012,20 +2318,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}/migrateresources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateVaultResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_agent(self, request):
         """注册客户端
@@ -2038,9 +2340,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.RegisterAgentRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.RegisterAgentResponse`
         """
-        return self._register_agent_with_http_info(request)
+        http_info = self._register_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_agent_with_http_info(self, request):
+    def register_agent_invoker(self, request):
+        http_info = self._register_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _register_agent_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/agents",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2055,11 +2370,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2068,20 +2383,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/agents',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_agent_path(self, request):
         """移除备份路径
@@ -2094,9 +2405,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.RemoveAgentPathRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.RemoveAgentPathResponse`
         """
-        return self._remove_agent_path_with_http_info(request)
+        http_info = self._remove_agent_path_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_agent_path_with_http_info(self, request):
+    def remove_agent_path_invoker(self, request):
+        http_info = self._remove_agent_path_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_agent_path_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/agents/{agent_id}/remove-path",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveAgentPathResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2113,11 +2437,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2126,20 +2450,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/agents/{agent_id}/remove-path',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveAgentPathResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_vault_resource(self, request):
         """移除资源
@@ -2152,9 +2472,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.RemoveVaultResourceRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.RemoveVaultResourceResponse`
         """
-        return self._remove_vault_resource_with_http_info(request)
+        http_info = self._remove_vault_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_vault_resource_with_http_info(self, request):
+    def remove_vault_resource_invoker(self, request):
+        http_info = self._remove_vault_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_vault_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}/removeresources",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveVaultResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2171,11 +2504,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2184,20 +2517,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}/removeresources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveVaultResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_backup(self, request):
         """备份恢复
@@ -2210,9 +2539,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.RestoreBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.RestoreBackupResponse`
         """
-        return self._restore_backup_with_http_info(request)
+        http_info = self._restore_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_backup_with_http_info(self, request):
+    def restore_backup_invoker(self, request):
+        http_info = self._restore_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_backup_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2229,11 +2571,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2242,20 +2584,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_vault_resource(self, request):
         """设置存储库资源
@@ -2268,9 +2606,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.SetVaultResourceRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.SetVaultResourceResponse`
         """
-        return self._set_vault_resource_with_http_info(request)
+        http_info = self._set_vault_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_vault_resource_with_http_info(self, request):
+    def set_vault_resource_invoker(self, request):
+        http_info = self._set_vault_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_vault_resource_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}/set-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetVaultResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2287,11 +2638,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2300,20 +2651,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}/set-resources',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetVaultResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agent(self, request):
         """查询指定客户端
@@ -2326,9 +2673,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowAgentRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowAgentResponse`
         """
-        return self._show_agent_with_http_info(request)
+        http_info = self._show_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agent_with_http_info(self, request):
+    def show_agent_invoker(self, request):
+        http_info = self._show_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agent_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/agents/{agent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2345,9 +2705,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2356,20 +2716,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/agents/{agent_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_backup(self, request):
         """查询指定备份
@@ -2382,9 +2738,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowBackupResponse`
         """
-        return self._show_backup_with_http_info(request)
+        http_info = self._show_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_backup_with_http_info(self, request):
+    def show_backup_invoker(self, request):
+        http_info = self._show_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_backup_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2401,9 +2770,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2412,20 +2781,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_checkpoint(self, request):
         """查询备份还原点
@@ -2438,9 +2803,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowCheckpointRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowCheckpointResponse`
         """
-        return self._show_checkpoint_with_http_info(request)
+        http_info = self._show_checkpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_checkpoint_with_http_info(self, request):
+    def show_checkpoint_invoker(self, request):
+        http_info = self._show_checkpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_checkpoint_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/checkpoints/{checkpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCheckpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2457,9 +2835,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2468,20 +2846,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/checkpoints/{checkpoint_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCheckpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain(self, request):
         """查询租户信息
@@ -2494,9 +2868,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowDomainRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowDomainResponse`
         """
-        return self._show_domain_with_http_info(request)
+        http_info = self._show_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_with_http_info(self, request):
+    def show_domain_invoker(self, request):
+        http_info = self._show_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/domain/{source_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2513,9 +2900,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2524,20 +2911,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/domain/{source_project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_member_detail(self, request):
         """获取备份成员详情
@@ -2550,9 +2933,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowMemberDetailRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowMemberDetailResponse`
         """
-        return self._show_member_detail_with_http_info(request)
+        http_info = self._show_member_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_member_detail_with_http_info(self, request):
+    def show_member_detail_invoker(self, request):
+        http_info = self._show_member_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_member_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMemberDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2571,9 +2967,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2582,20 +2978,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/members/{member_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMemberDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_members_detail(self, request):
         """获取备份成员列表
@@ -2608,9 +3000,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowMembersDetailRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowMembersDetailResponse`
         """
-        return self._show_members_detail_with_http_info(request)
+        http_info = self._show_members_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_members_detail_with_http_info(self, request):
+    def show_members_detail_invoker(self, request):
+        http_info = self._show_members_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_members_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMembersDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2643,9 +3048,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2654,20 +3059,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMembersDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metadata(self, request):
         """查询备份元数据
@@ -2680,9 +3081,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowMetadataRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowMetadataResponse`
         """
-        return self._show_metadata_with_http_info(request)
+        http_info = self._show_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metadata_with_http_info(self, request):
+    def show_metadata_invoker(self, request):
+        http_info = self._show_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metadata_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2699,9 +3113,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2710,20 +3124,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_migrate_status(self, request):
         """查询迁移
@@ -2736,9 +3146,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowMigrateStatusRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowMigrateStatusResponse`
         """
-        return self._show_migrate_status_with_http_info(request)
+        http_info = self._show_migrate_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_migrate_status_with_http_info(self, request):
+    def show_migrate_status_invoker(self, request):
+        http_info = self._show_migrate_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_migrate_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/migrates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMigrateStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2755,9 +3178,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2766,20 +3189,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/migrates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMigrateStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_op_log(self, request):
         """查询单个任务
@@ -2792,9 +3211,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowOpLogRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowOpLogResponse`
         """
-        return self._show_op_log_with_http_info(request)
+        http_info = self._show_op_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_op_log_with_http_info(self, request):
+    def show_op_log_invoker(self, request):
+        http_info = self._show_op_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_op_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/operation-logs/{operation_log_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2811,9 +3243,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2822,20 +3254,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/operation-logs/{operation_log_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOpLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_policy(self, request):
         """查询单个策略
@@ -2848,9 +3276,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowPolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowPolicyResponse`
         """
-        return self._show_policy_with_http_info(request)
+        http_info = self._show_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_policy_with_http_info(self, request):
+    def show_policy_invoker(self, request):
+        http_info = self._show_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2867,9 +3308,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2878,20 +3319,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/policies/{policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_protectable(self, request):
         """查询指定可保护资源
@@ -2904,9 +3341,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowProtectableRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowProtectableResponse`
         """
-        return self._show_protectable_with_http_info(request)
+        http_info = self._show_protectable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_protectable_with_http_info(self, request):
+    def show_protectable_invoker(self, request):
+        http_info = self._show_protectable_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_protectable_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/protectables/{protectable_type}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProtectableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2925,9 +3375,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2936,20 +3386,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/protectables/{protectable_type}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProtectableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_replication_capabilities(self, request):
         """查询复制能力
@@ -2962,9 +3408,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowReplicationCapabilitiesRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowReplicationCapabilitiesResponse`
         """
-        return self._show_replication_capabilities_with_http_info(request)
+        http_info = self._show_replication_capabilities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_replication_capabilities_with_http_info(self, request):
+    def show_replication_capabilities_invoker(self, request):
+        http_info = self._show_replication_capabilities_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_replication_capabilities_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/replication-capabilities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReplicationCapabilitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2979,9 +3438,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2990,20 +3449,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/replication-capabilities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowReplicationCapabilitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_storage_usage(self, request):
         """查询容量统计
@@ -3016,9 +3471,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowStorageUsageRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowStorageUsageResponse`
         """
-        return self._show_storage_usage_with_http_info(request)
+        http_info = self._show_storage_usage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_storage_usage_with_http_info(self, request):
+    def show_storage_usage_invoker(self, request):
+        http_info = self._show_storage_usage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_storage_usage_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/storage_usage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStorageUsageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3041,9 +3509,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3052,20 +3520,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/storage_usage',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStorageUsageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_summary(self, request):
         """存储库容量总览
@@ -3078,9 +3542,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowSummaryRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowSummaryResponse`
         """
-        return self._show_summary_with_http_info(request)
+        http_info = self._show_summary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_summary_with_http_info(self, request):
+    def show_summary_invoker(self, request):
+        http_info = self._show_summary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_summary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vaults/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSummaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3095,9 +3572,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3106,20 +3583,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/summary',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSummaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vault(self, request):
         """查询指定存储库
@@ -3132,9 +3605,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowVaultResponse`
         """
-        return self._show_vault_with_http_info(request)
+        http_info = self._show_vault_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vault_with_http_info(self, request):
+    def show_vault_invoker(self, request):
+        http_info = self._show_vault_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vault_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3151,9 +3637,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3162,20 +3648,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vault_project_tag(self, request):
         """查询存储库项目标签
@@ -3189,9 +3671,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultProjectTagRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowVaultProjectTagResponse`
         """
-        return self._show_vault_project_tag_with_http_info(request)
+        http_info = self._show_vault_project_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vault_project_tag_with_http_info(self, request):
+    def show_vault_project_tag_invoker(self, request):
+        http_info = self._show_vault_project_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vault_project_tag_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vault/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVaultProjectTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3206,9 +3701,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3217,20 +3712,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vault/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVaultProjectTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vault_resource_instances(self, request):
         """查询存储库资源实例
@@ -3244,9 +3735,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowVaultResourceInstancesResponse`
         """
-        return self._show_vault_resource_instances_with_http_info(request)
+        http_info = self._show_vault_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vault_resource_instances_with_http_info(self, request):
+    def show_vault_resource_instances_invoker(self, request):
+        http_info = self._show_vault_resource_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vault_resource_instances_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vault/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVaultResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3261,11 +3765,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3274,20 +3778,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vault/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVaultResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vault_tag(self, request):
         """查询存储库资源标签
@@ -3301,9 +3801,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.ShowVaultTagRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.ShowVaultTagResponse`
         """
-        return self._show_vault_tag_with_http_info(request)
+        http_info = self._show_vault_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vault_tag_with_http_info(self, request):
+    def show_vault_tag_invoker(self, request):
+        http_info = self._show_vault_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vault_tag_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vault/{vault_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVaultTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3320,9 +3833,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3331,20 +3844,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vault/{vault_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVaultTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unregister_agent(self, request):
         """移除客户端
@@ -3357,9 +3866,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.UnregisterAgentRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UnregisterAgentResponse`
         """
-        return self._unregister_agent_with_http_info(request)
+        http_info = self._unregister_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unregister_agent_with_http_info(self, request):
+    def unregister_agent_invoker(self, request):
+        http_info = self._unregister_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _unregister_agent_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/agents/{agent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnregisterAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3376,9 +3898,9 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3387,20 +3909,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/agents/{agent_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnregisterAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_agent(self, request):
         """修改客户端
@@ -3413,9 +3931,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateAgentRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateAgentResponse`
         """
-        return self._update_agent_with_http_info(request)
+        http_info = self._update_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_agent_with_http_info(self, request):
+    def update_agent_invoker(self, request):
+        http_info = self._update_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_agent_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/agents/{agent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3432,11 +3963,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3445,20 +3976,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/agents/{agent_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_backup(self, request):
         """更新备份
@@ -3471,9 +3998,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateBackupRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateBackupResponse`
         """
-        return self._update_backup_with_http_info(request)
+        http_info = self._update_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_backup_with_http_info(self, request):
+    def update_backup_invoker(self, request):
+        http_info = self._update_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_backup_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3490,11 +4030,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3503,20 +4043,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_member_status(self, request):
         """更新备份成员状态
@@ -3529,9 +4065,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateMemberStatusRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateMemberStatusResponse`
         """
-        return self._update_member_status_with_http_info(request)
+        http_info = self._update_member_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_member_status_with_http_info(self, request):
+    def update_member_status_invoker(self, request):
+        http_info = self._update_member_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_member_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMemberStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3550,11 +4099,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3563,20 +4112,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/members/{member_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMemberStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_order(self, request):
         """变更
@@ -3589,9 +4134,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateOrderRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateOrderResponse`
         """
-        return self._update_order_with_http_info(request)
+        http_info = self._update_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_order_with_http_info(self, request):
+    def update_order_invoker(self, request):
+        http_info = self._update_order_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_order_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/orders/{order_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3608,11 +4166,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3621,20 +4179,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/orders/{order_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy(self, request):
         """修改策略
@@ -3647,9 +4201,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.UpdatePolicyRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdatePolicyResponse`
         """
-        return self._update_policy_with_http_info(request)
+        http_info = self._update_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_with_http_info(self, request):
+    def update_policy_invoker(self, request):
+        http_info = self._update_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3666,11 +4233,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3679,20 +4246,16 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/policies/{policy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vault(self, request):
         """修改存储库
@@ -3705,9 +4268,22 @@ class CbrClient(Client):
         :type request: :class:`huaweicloudsdkcbr.v1.UpdateVaultRequest`
         :rtype: :class:`huaweicloudsdkcbr.v1.UpdateVaultResponse`
         """
-        return self._update_vault_with_http_info(request)
+        http_info = self._update_vault_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vault_with_http_info(self, request):
+    def update_vault_invoker(self, request):
+        http_info = self._update_vault_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vault_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vaults/{vault_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3724,11 +4300,11 @@ class CbrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3737,20 +4313,25 @@ class CbrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vaults/{vault_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

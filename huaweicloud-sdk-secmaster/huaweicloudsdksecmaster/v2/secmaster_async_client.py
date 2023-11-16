@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdksecmaster'")
 
 
 class SecMasterAsyncClient(Client):
@@ -39,9 +44,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ChangeAlertRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ChangeAlertResponse`
         """
-        return self._change_alert_with_http_info(request)
+        http_info = self._change_alert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_alert_with_http_info(self, request):
+    def change_alert_async_invoker(self, request):
+        http_info = self._change_alert_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_alert_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeAlertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -62,11 +79,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -75,20 +92,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeAlertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_incident_async(self, request):
         """更新事件
@@ -102,9 +115,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ChangeIncidentRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ChangeIncidentResponse`
         """
-        return self._change_incident_with_http_info(request)
+        http_info = self._change_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_incident_with_http_info(self, request):
+    def change_incident_async_invoker(self, request):
+        http_info = self._change_incident_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_incident_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -125,11 +150,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -138,20 +163,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_playbook_instance_async(self, request):
         """操作剧本实例
@@ -165,9 +186,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ChangePlaybookInstanceRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ChangePlaybookInstanceResponse`
         """
-        return self._change_playbook_instance_with_http_info(request)
+        http_info = self._change_playbook_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_playbook_instance_with_http_info(self, request):
+    def change_playbook_instance_async_invoker(self, request):
+        http_info = self._change_playbook_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_playbook_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/operation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangePlaybookInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -188,11 +221,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -201,20 +234,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/operation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangePlaybookInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_playbook_version_async(self, request):
         """克隆剧本及版本
@@ -228,9 +257,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CopyPlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CopyPlaybookVersionResponse`
         """
-        return self._copy_playbook_version_with_http_info(request)
+        http_info = self._copy_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_playbook_version_with_http_info(self, request):
+    def copy_playbook_version_async_invoker(self, request):
+        http_info = self._copy_playbook_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _copy_playbook_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/clone",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyPlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -251,11 +292,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -264,20 +305,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/clone',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyPlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_alert_async(self, request):
         """创建告警
@@ -291,9 +328,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreateAlertRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAlertResponse`
         """
-        return self._create_alert_with_http_info(request)
+        http_info = self._create_alert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alert_with_http_info(self, request):
+    def create_alert_async_invoker(self, request):
+        http_info = self._create_alert_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_alert_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -312,11 +361,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -325,20 +374,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_alert_rule_async(self, request):
         """创建告警规则
@@ -352,9 +397,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleResponse`
         """
-        return self._create_alert_rule_with_http_info(request)
+        http_info = self._create_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alert_rule_with_http_info(self, request):
+    def create_alert_rule_async_invoker(self, request):
+        http_info = self._create_alert_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_alert_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -373,11 +430,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -386,20 +443,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_alert_rule_simulation_async(self, request):
         """模拟告警规则
@@ -413,9 +466,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleSimulationRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateAlertRuleSimulationResponse`
         """
-        return self._create_alert_rule_simulation_with_http_info(request)
+        http_info = self._create_alert_rule_simulation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alert_rule_simulation_with_http_info(self, request):
+    def create_alert_rule_simulation_async_invoker(self, request):
+        http_info = self._create_alert_rule_simulation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_alert_rule_simulation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/simulation",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlertRuleSimulationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -434,11 +499,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -447,20 +512,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/simulation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlertRuleSimulationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_batch_order_alerts_async(self, request):
         """告警转事件
@@ -474,9 +535,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreateBatchOrderAlertsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateBatchOrderAlertsResponse`
         """
-        return self._create_batch_order_alerts_with_http_info(request)
+        http_info = self._create_batch_order_alerts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_batch_order_alerts_with_http_info(self, request):
+    def create_batch_order_alerts_async_invoker(self, request):
+        http_info = self._create_batch_order_alerts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_batch_order_alerts_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/batch-order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBatchOrderAlertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -495,11 +568,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -508,20 +581,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/batch-order',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBatchOrderAlertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_dataobject_relations_async(self, request):
         """关联Dataobject
@@ -535,9 +604,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreateDataobjectRelationsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateDataobjectRelationsResponse`
         """
-        return self._create_dataobject_relations_with_http_info(request)
+        http_info = self._create_dataobject_relations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_dataobject_relations_with_http_info(self, request):
+    def create_dataobject_relations_async_invoker(self, request):
+        http_info = self._create_dataobject_relations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dataobject_relations_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataobjectRelationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -562,11 +643,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -575,20 +656,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDataobjectRelationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_incident_async(self, request):
         """创建事件
@@ -602,9 +679,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreateIncidentRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateIncidentResponse`
         """
-        return self._create_incident_with_http_info(request)
+        http_info = self._create_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_incident_with_http_info(self, request):
+    def create_incident_async_invoker(self, request):
+        http_info = self._create_incident_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_incident_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -623,11 +712,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -636,20 +725,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_indicator_async(self, request):
         """创建指标
@@ -663,9 +748,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreateIndicatorResponse`
         """
-        return self._create_indicator_with_http_info(request)
+        http_info = self._create_indicator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_indicator_with_http_info(self, request):
+    def create_indicator_async_invoker(self, request):
+        http_info = self._create_indicator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_indicator_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIndicatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -684,11 +781,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -697,20 +794,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIndicatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_async(self, request):
         """创建剧本
@@ -724,9 +817,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookResponse`
         """
-        return self._create_playbook_with_http_info(request)
+        http_info = self._create_playbook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_with_http_info(self, request):
+    def create_playbook_async_invoker(self, request):
+        http_info = self._create_playbook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_playbook_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -745,11 +850,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -758,20 +863,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_action_async(self, request):
         """创建剧本动作
@@ -785,9 +886,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookActionResponse`
         """
-        return self._create_playbook_action_with_http_info(request)
+        http_info = self._create_playbook_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_action_with_http_info(self, request):
+    def create_playbook_action_async_invoker(self, request):
+        http_info = self._create_playbook_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_playbook_action_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -808,11 +921,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -821,20 +934,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_approve_async(self, request):
         """审核剧本
@@ -848,9 +957,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookApproveRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookApproveResponse`
         """
-        return self._create_playbook_approve_with_http_info(request)
+        http_info = self._create_playbook_approve_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_approve_with_http_info(self, request):
+    def create_playbook_approve_async_invoker(self, request):
+        http_info = self._create_playbook_approve_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_playbook_approve_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/approval",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookApproveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -871,11 +992,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -884,20 +1005,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/approval',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookApproveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_rule_async(self, request):
         """创建剧本规则
@@ -911,9 +1028,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookRuleResponse`
         """
-        return self._create_playbook_rule_with_http_info(request)
+        http_info = self._create_playbook_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_rule_with_http_info(self, request):
+    def create_playbook_rule_async_invoker(self, request):
+        http_info = self._create_playbook_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_playbook_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -934,11 +1063,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -947,20 +1076,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_playbook_version_async(self, request):
         """创建剧本版本
@@ -974,9 +1099,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.CreatePlaybookVersionResponse`
         """
-        return self._create_playbook_version_with_http_info(request)
+        http_info = self._create_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_playbook_version_with_http_info(self, request):
+    def create_playbook_version_async_invoker(self, request):
+        http_info = self._create_playbook_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_playbook_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -997,11 +1134,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1010,20 +1147,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alert_async(self, request):
         """删除告警
@@ -1037,9 +1170,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAlertResponse`
         """
-        return self._delete_alert_with_http_info(request)
+        http_info = self._delete_alert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alert_with_http_info(self, request):
+    def delete_alert_async_invoker(self, request):
+        http_info = self._delete_alert_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_alert_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1058,11 +1203,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1071,20 +1216,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alert_rule_async(self, request):
         """删除告警规则
@@ -1098,9 +1239,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteAlertRuleResponse`
         """
-        return self._delete_alert_rule_with_http_info(request)
+        http_info = self._delete_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alert_rule_with_http_info(self, request):
+    def delete_alert_rule_async_invoker(self, request):
+        http_info = self._delete_alert_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_alert_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1119,11 +1272,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1132,20 +1285,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_dataobject_relations_async(self, request):
         """取消关联Dataobject
@@ -1159,9 +1308,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeleteDataobjectRelationsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteDataobjectRelationsResponse`
         """
-        return self._delete_dataobject_relations_with_http_info(request)
+        http_info = self._delete_dataobject_relations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_dataobject_relations_with_http_info(self, request):
+    def delete_dataobject_relations_async_invoker(self, request):
+        http_info = self._delete_dataobject_relations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dataobject_relations_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDataobjectRelationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1186,11 +1347,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1199,20 +1360,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDataobjectRelationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_incident_async(self, request):
         """删除事件
@@ -1226,9 +1383,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteIncidentResponse`
         """
-        return self._delete_incident_with_http_info(request)
+        http_info = self._delete_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_incident_with_http_info(self, request):
+    def delete_incident_async_invoker(self, request):
+        http_info = self._delete_incident_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_incident_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1247,11 +1416,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1260,20 +1429,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_indicator_async(self, request):
         """删除指标
@@ -1287,9 +1452,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeleteIndicatorRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeleteIndicatorResponse`
         """
-        return self._delete_indicator_with_http_info(request)
+        http_info = self._delete_indicator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_indicator_with_http_info(self, request):
+    def delete_indicator_async_invoker(self, request):
+        http_info = self._delete_indicator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_indicator_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIndicatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1308,11 +1485,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1321,20 +1498,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIndicatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_playbook_async(self, request):
         """删除剧本
@@ -1348,9 +1521,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookResponse`
         """
-        return self._delete_playbook_with_http_info(request)
+        http_info = self._delete_playbook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_playbook_with_http_info(self, request):
+    def delete_playbook_async_invoker(self, request):
+        http_info = self._delete_playbook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_playbook_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePlaybookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1371,9 +1556,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1382,20 +1567,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePlaybookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_playbook_action_async(self, request):
         """删除剧本动作
@@ -1409,9 +1590,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookActionResponse`
         """
-        return self._delete_playbook_action_with_http_info(request)
+        http_info = self._delete_playbook_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_playbook_action_with_http_info(self, request):
+    def delete_playbook_action_async_invoker(self, request):
+        http_info = self._delete_playbook_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_playbook_action_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePlaybookActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1434,9 +1627,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1445,20 +1638,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePlaybookActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_playbook_rule_async(self, request):
         """删除剧本规则
@@ -1472,9 +1661,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookRuleResponse`
         """
-        return self._delete_playbook_rule_with_http_info(request)
+        http_info = self._delete_playbook_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_playbook_rule_with_http_info(self, request):
+    def delete_playbook_rule_async_invoker(self, request):
+        http_info = self._delete_playbook_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_playbook_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePlaybookRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1497,9 +1698,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1508,20 +1709,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePlaybookRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_playbook_version_async(self, request):
         """删除剧本版本
@@ -1535,9 +1732,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DeletePlaybookVersionResponse`
         """
-        return self._delete_playbook_version_with_http_info(request)
+        http_info = self._delete_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_playbook_version_with_http_info(self, request):
+    def delete_playbook_version_async_invoker(self, request):
+        http_info = self._delete_playbook_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_playbook_version_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1558,9 +1767,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1569,20 +1778,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_alert_rule_async(self, request):
         """停用告警规则
@@ -1596,9 +1801,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.DisableAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.DisableAlertRuleResponse`
         """
-        return self._disable_alert_rule_with_http_info(request)
+        http_info = self._disable_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_alert_rule_with_http_info(self, request):
+    def disable_alert_rule_async_invoker(self, request):
+        http_info = self._disable_alert_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_alert_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1617,11 +1834,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1630,20 +1847,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_alert_rule_async(self, request):
         """启用告警规则
@@ -1657,9 +1870,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.EnableAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.EnableAlertRuleResponse`
         """
-        return self._enable_alert_rule_with_http_info(request)
+        http_info = self._enable_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_alert_rule_with_http_info(self, request):
+    def enable_alert_rule_async_invoker(self, request):
+        http_info = self._enable_alert_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_alert_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1678,11 +1903,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1691,20 +1916,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alert_rule_metrics_async(self, request):
         """告警规则总览
@@ -1718,9 +1939,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListAlertRuleMetricsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListAlertRuleMetricsResponse`
         """
-        return self._list_alert_rule_metrics_with_http_info(request)
+        http_info = self._list_alert_rule_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alert_rule_metrics_with_http_info(self, request):
+    def list_alert_rule_metrics_async_invoker(self, request):
+        http_info = self._list_alert_rule_metrics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alert_rule_metrics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertRuleMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1739,9 +1972,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1750,20 +1983,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/metrics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlertRuleMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alert_rule_templates_async(self, request):
         """列出告警规则模板
@@ -1777,9 +2006,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListAlertRuleTemplatesRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListAlertRuleTemplatesResponse`
         """
-        return self._list_alert_rule_templates_with_http_info(request)
+        http_info = self._list_alert_rule_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alert_rule_templates_with_http_info(self, request):
+    def list_alert_rule_templates_async_invoker(self, request):
+        http_info = self._list_alert_rule_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alert_rule_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertRuleTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1809,9 +2050,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1820,20 +2061,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlertRuleTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alert_rules_async(self, request):
         """列出告警规则
@@ -1847,9 +2084,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListAlertRulesRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListAlertRulesResponse`
         """
-        return self._list_alert_rules_with_http_info(request)
+        http_info = self._list_alert_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alert_rules_with_http_info(self, request):
+    def list_alert_rules_async_invoker(self, request):
+        http_info = self._list_alert_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alert_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1888,9 +2137,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1899,20 +2148,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlertRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alerts_async(self, request):
         """搜索告警列表
@@ -1926,9 +2171,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListAlertsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListAlertsResponse`
         """
-        return self._list_alerts_with_http_info(request)
+        http_info = self._list_alerts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alerts_with_http_info(self, request):
+    def list_alerts_async_invoker(self, request):
+        http_info = self._list_alerts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alerts_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1947,11 +2204,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1960,20 +2217,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dataobject_relations_async(self, request):
         """查询关联Dataobject列表
@@ -1987,9 +2240,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListDataobjectRelationsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListDataobjectRelationsResponse`
         """
-        return self._list_dataobject_relations_with_http_info(request)
+        http_info = self._list_dataobject_relations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dataobject_relations_with_http_info(self, request):
+    def list_dataobject_relations_async_invoker(self, request):
+        http_info = self._list_dataobject_relations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dataobject_relations_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataobjectRelationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2014,11 +2279,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2027,20 +2292,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/{dataclass_type}/{data_object_id}/{related_dataclass_type}/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataobjectRelationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_incidents_async(self, request):
         """搜索事件列表
@@ -2054,9 +2315,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListIncidentsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListIncidentsResponse`
         """
-        return self._list_incidents_with_http_info(request)
+        http_info = self._list_incidents_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_incidents_with_http_info(self, request):
+    def list_incidents_async_invoker(self, request):
+        http_info = self._list_incidents_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_incidents_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIncidentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2075,11 +2348,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2088,20 +2361,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIncidentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_indicators_async(self, request):
         """查询指标列表
@@ -2115,9 +2384,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListIndicatorsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListIndicatorsResponse`
         """
-        return self._list_indicators_with_http_info(request)
+        http_info = self._list_indicators_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_indicators_with_http_info(self, request):
+    def list_indicators_async_invoker(self, request):
+        http_info = self._list_indicators_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_indicators_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIndicatorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2136,11 +2417,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2149,20 +2430,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIndicatorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_actions_async(self, request):
         """查询剧本动作
@@ -2176,9 +2453,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookActionsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookActionsResponse`
         """
-        return self._list_playbook_actions_with_http_info(request)
+        http_info = self._list_playbook_actions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_actions_with_http_info(self, request):
+    def list_playbook_actions_async_invoker(self, request):
+        http_info = self._list_playbook_actions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_playbook_actions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookActionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2203,9 +2492,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2214,20 +2503,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookActionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_approves_async(self, request):
         """查询剧本审核结果
@@ -2241,9 +2526,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookApprovesRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookApprovesResponse`
         """
-        return self._list_playbook_approves_with_http_info(request)
+        http_info = self._list_playbook_approves_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_approves_with_http_info(self, request):
+    def list_playbook_approves_async_invoker(self, request):
+        http_info = self._list_playbook_approves_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_playbook_approves_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/approval",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookApprovesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2266,9 +2563,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2277,20 +2574,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/approval',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookApprovesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_audit_logs_async(self, request):
         """查询剧本实例审计日志
@@ -2304,9 +2597,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookAuditLogsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookAuditLogsResponse`
         """
-        return self._list_playbook_audit_logs_with_http_info(request)
+        http_info = self._list_playbook_audit_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_audit_logs_with_http_info(self, request):
+    def list_playbook_audit_logs_async_invoker(self, request):
+        http_info = self._list_playbook_audit_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_playbook_audit_logs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/auditlogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookAuditLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2333,11 +2638,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2346,20 +2651,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/auditlogs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookAuditLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_instances_async(self, request):
         """查询剧本实例列表
@@ -2373,9 +2674,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookInstancesRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookInstancesResponse`
         """
-        return self._list_playbook_instances_with_http_info(request)
+        http_info = self._list_playbook_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_instances_with_http_info(self, request):
+    def list_playbook_instances_async_invoker(self, request):
+        http_info = self._list_playbook_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_playbook_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2414,9 +2727,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2425,20 +2738,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbook_versions_async(self, request):
         """查询剧本版本列表
@@ -2452,9 +2761,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybookVersionsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybookVersionsResponse`
         """
-        return self._list_playbook_versions_with_http_info(request)
+        http_info = self._list_playbook_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbook_versions_with_http_info(self, request):
+    def list_playbook_versions_async_invoker(self, request):
+        http_info = self._list_playbook_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_playbook_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybookVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2485,9 +2806,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2496,20 +2817,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybookVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_playbooks_async(self, request):
         """查询剧本列表
@@ -2523,9 +2840,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ListPlaybooksRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ListPlaybooksResponse`
         """
-        return self._list_playbooks_with_http_info(request)
+        http_info = self._list_playbooks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_playbooks_with_http_info(self, request):
+    def list_playbooks_async_invoker(self, request):
+        http_info = self._list_playbooks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_playbooks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlaybooksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2558,9 +2887,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2569,20 +2898,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlaybooksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alert_async(self, request):
         """获取告警详情
@@ -2596,9 +2921,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowAlertRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertResponse`
         """
-        return self._show_alert_with_http_info(request)
+        http_info = self._show_alert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alert_with_http_info(self, request):
+    def show_alert_async_invoker(self, request):
+        http_info = self._show_alert_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_alert_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2619,9 +2956,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2630,20 +2967,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/alerts/{alert_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alert_rule_async(self, request):
         """查看告警规则
@@ -2657,9 +2990,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertRuleResponse`
         """
-        return self._show_alert_rule_with_http_info(request)
+        http_info = self._show_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alert_rule_with_http_info(self, request):
+    def show_alert_rule_async_invoker(self, request):
+        http_info = self._show_alert_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_alert_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2680,9 +3025,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2691,20 +3036,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alert_rule_template_async(self, request):
         """查看告警规则模板
@@ -2718,9 +3059,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowAlertRuleTemplateRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowAlertRuleTemplateResponse`
         """
-        return self._show_alert_rule_template_with_http_info(request)
+        http_info = self._show_alert_rule_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alert_rule_template_with_http_info(self, request):
+    def show_alert_rule_template_async_invoker(self, request):
+        http_info = self._show_alert_rule_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_alert_rule_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlertRuleTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2741,9 +3094,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2752,20 +3105,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/templates/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlertRuleTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_incident_async(self, request):
         """获取事件详情
@@ -2779,9 +3128,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowIncidentRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowIncidentResponse`
         """
-        return self._show_incident_with_http_info(request)
+        http_info = self._show_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_incident_with_http_info(self, request):
+    def show_incident_async_invoker(self, request):
+        http_info = self._show_incident_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_incident_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2802,9 +3163,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2813,20 +3174,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/incidents/{incident_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_indicator_detail_async(self, request):
         """查询指标详情
@@ -2840,9 +3197,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowIndicatorDetailRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowIndicatorDetailResponse`
         """
-        return self._show_indicator_detail_with_http_info(request)
+        http_info = self._show_indicator_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_indicator_detail_with_http_info(self, request):
+    def show_indicator_detail_async_invoker(self, request):
+        http_info = self._show_indicator_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_indicator_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIndicatorDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2863,9 +3232,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2874,20 +3243,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIndicatorDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_async(self, request):
         """查询剧本详情
@@ -2901,9 +3266,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookResponse`
         """
-        return self._show_playbook_with_http_info(request)
+        http_info = self._show_playbook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_with_http_info(self, request):
+    def show_playbook_async_invoker(self, request):
+        http_info = self._show_playbook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_playbook_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2924,9 +3301,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2935,20 +3312,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_instance_async(self, request):
         """查询剧本实例详情
@@ -2962,9 +3335,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookInstanceRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookInstanceResponse`
         """
-        return self._show_playbook_instance_with_http_info(request)
+        http_info = self._show_playbook_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_instance_with_http_info(self, request):
+    def show_playbook_instance_async_invoker(self, request):
+        http_info = self._show_playbook_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_playbook_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2985,9 +3370,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2996,20 +3381,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_monitors_async(self, request):
         """剧本运行监控
@@ -3023,9 +3404,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookMonitorsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookMonitorsResponse`
         """
-        return self._show_playbook_monitors_with_http_info(request)
+        http_info = self._show_playbook_monitors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_monitors_with_http_info(self, request):
+    def show_playbook_monitors_async_invoker(self, request):
+        http_info = self._show_playbook_monitors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_playbook_monitors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/monitor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookMonitorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3052,9 +3445,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3063,20 +3456,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}/monitor',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookMonitorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_rule_async(self, request):
         """查询剧本规则详情
@@ -3090,9 +3479,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookRuleResponse`
         """
-        return self._show_playbook_rule_with_http_info(request)
+        http_info = self._show_playbook_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_rule_with_http_info(self, request):
+    def show_playbook_rule_async_invoker(self, request):
+        http_info = self._show_playbook_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_playbook_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3115,9 +3516,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3126,20 +3527,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_statistics_async(self, request):
         """剧本数据统计
@@ -3153,9 +3550,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookStatisticsRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookStatisticsResponse`
         """
-        return self._show_playbook_statistics_with_http_info(request)
+        http_info = self._show_playbook_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_statistics_with_http_info(self, request):
+    def show_playbook_statistics_async_invoker(self, request):
+        http_info = self._show_playbook_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_playbook_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3174,9 +3583,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3185,20 +3594,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_topology_async(self, request):
         """查询剧本拓扑关系
@@ -3212,9 +3617,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookTopologyRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookTopologyResponse`
         """
-        return self._show_playbook_topology_with_http_info(request)
+        http_info = self._show_playbook_topology_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_topology_with_http_info(self, request):
+    def show_playbook_topology_async_invoker(self, request):
+        http_info = self._show_playbook_topology_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_playbook_topology_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/topology",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookTopologyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3235,9 +3652,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3246,20 +3663,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/instances/{instance_id}/topology',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookTopologyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_playbook_version_async(self, request):
         """查询剧本版本详情
@@ -3273,9 +3686,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.ShowPlaybookVersionResponse`
         """
-        return self._show_playbook_version_with_http_info(request)
+        http_info = self._show_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_playbook_version_with_http_info(self, request):
+    def show_playbook_version_async_invoker(self, request):
+        http_info = self._show_playbook_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_playbook_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3296,9 +3721,9 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3307,20 +3732,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alert_rule_async(self, request):
         """更新告警规则
@@ -3334,9 +3755,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.UpdateAlertRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateAlertRuleResponse`
         """
-        return self._update_alert_rule_with_http_info(request)
+        http_info = self._update_alert_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alert_rule_with_http_info(self, request):
+    def update_alert_rule_async_invoker(self, request):
+        http_info = self._update_alert_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_alert_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlertRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3357,11 +3790,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3370,20 +3803,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/siem/alert-rules/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlertRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_indicator_async(self, request):
         """更新指标
@@ -3397,9 +3826,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.UpdateIndicatorRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.UpdateIndicatorResponse`
         """
-        return self._update_indicator_with_http_info(request)
+        http_info = self._update_indicator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_indicator_with_http_info(self, request):
+    def update_indicator_async_invoker(self, request):
+        http_info = self._update_indicator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_indicator_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIndicatorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3420,11 +3861,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3433,20 +3874,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/indicators/{indicator_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIndicatorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_playbook_async(self, request):
         """修改剧本
@@ -3460,9 +3897,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookResponse`
         """
-        return self._update_playbook_with_http_info(request)
+        http_info = self._update_playbook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_playbook_with_http_info(self, request):
+    def update_playbook_async_invoker(self, request):
+        http_info = self._update_playbook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_playbook_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlaybookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3483,11 +3932,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3496,20 +3945,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/{playbook_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePlaybookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_playbook_action_async(self, request):
         """更新剧本动作
@@ -3523,9 +3968,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookActionRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookActionResponse`
         """
-        return self._update_playbook_action_with_http_info(request)
+        http_info = self._update_playbook_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_playbook_action_with_http_info(self, request):
+    def update_playbook_action_async_invoker(self, request):
+        http_info = self._update_playbook_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_playbook_action_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlaybookActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3548,11 +4005,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3561,20 +4018,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/actions/{action_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePlaybookActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_playbook_rule_async(self, request):
         """更新剧本规则
@@ -3588,9 +4041,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookRuleRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookRuleResponse`
         """
-        return self._update_playbook_rule_with_http_info(request)
+        http_info = self._update_playbook_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_playbook_rule_with_http_info(self, request):
+    def update_playbook_rule_async_invoker(self, request):
+        http_info = self._update_playbook_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_playbook_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlaybookRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3613,11 +4078,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3626,20 +4091,16 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}/rules/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePlaybookRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_playbook_version_async(self, request):
         """更新剧本版本
@@ -3653,9 +4114,21 @@ class SecMasterAsyncClient(Client):
         :type request: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookVersionRequest`
         :rtype: :class:`huaweicloudsdksecmaster.v2.UpdatePlaybookVersionResponse`
         """
-        return self._update_playbook_version_with_http_info(request)
+        http_info = self._update_playbook_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_playbook_version_with_http_info(self, request):
+    def update_playbook_version_async_invoker(self, request):
+        http_info = self._update_playbook_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_playbook_version_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePlaybookVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3676,11 +4149,11 @@ class SecMasterAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3689,20 +4162,26 @@ class SecMasterAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{workspace_id}/soc/playbooks/versions/{version_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePlaybookVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3741,4 +4220,4 @@ class SecMasterAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

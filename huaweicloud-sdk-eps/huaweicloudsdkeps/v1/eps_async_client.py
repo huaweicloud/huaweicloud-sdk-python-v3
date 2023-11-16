@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkeps'")
 
 
 class EpsAsyncClient(Client):
@@ -39,9 +44,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.CreateEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.CreateEnterpriseProjectResponse`
         """
-        return self._create_enterprise_project_with_http_info(request)
+        http_info = self._create_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_enterprise_project_with_http_info(self, request):
+    def create_enterprise_project_async_invoker(self, request):
+        http_info = self._create_enterprise_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_enterprise_project_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_enterprise_project_async(self, request):
         """停用企业项目
@@ -96,9 +109,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.DisableEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.DisableEnterpriseProjectResponse`
         """
-        return self._disable_enterprise_project_with_http_info(request)
+        http_info = self._disable_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_enterprise_project_with_http_info(self, request):
+    def disable_enterprise_project_async_invoker(self, request):
+        http_info = self._disable_enterprise_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_enterprise_project_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/enterprise-projects/{enterprise_project_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +140,11 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +153,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/{enterprise_project_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_enterprise_project_async(self, request):
         """启用企业项目
@@ -155,9 +176,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.EnableEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.EnableEnterpriseProjectResponse`
         """
-        return self._enable_enterprise_project_with_http_info(request)
+        http_info = self._enable_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_enterprise_project_with_http_info(self, request):
+    def enable_enterprise_project_async_invoker(self, request):
+        http_info = self._enable_enterprise_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_enterprise_project_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/enterprise-projects/{enterprise_project_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -174,11 +207,11 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -187,20 +220,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/{enterprise_project_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions_async(self, request):
         """查询API版本列表
@@ -214,9 +243,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_async_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,9 +272,9 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +283,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enterprise_project_async(self, request):
         """查询企业项目列表
@@ -269,9 +306,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ListEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ListEnterpriseProjectResponse`
         """
-        return self._list_enterprise_project_with_http_info(request)
+        http_info = self._list_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enterprise_project_with_http_info(self, request):
+    def list_enterprise_project_async_invoker(self, request):
+        http_info = self._list_enterprise_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enterprise_project_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -300,9 +349,9 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -311,20 +360,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_providers_async(self, request):
         """查询企业项目支持的服务
@@ -338,9 +383,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ListProvidersRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ListProvidersResponse`
         """
-        return self._list_providers_with_http_info(request)
+        http_info = self._list_providers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_providers_with_http_info(self, request):
+    def list_providers_async_invoker(self, request):
+        http_info = self._list_providers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_providers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/enterprise-projects/providers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProvidersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -363,9 +420,9 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -374,20 +431,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/providers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProvidersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_resource_async(self, request):
         """迁移资源
@@ -401,9 +454,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.MigrateResourceRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.MigrateResourceResponse`
         """
-        return self._migrate_resource_with_http_info(request)
+        http_info = self._migrate_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_resource_with_http_info(self, request):
+    def migrate_resource_async_invoker(self, request):
+        http_info = self._migrate_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _migrate_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/enterprise-projects/{enterprise_project_id}/resources-migrate",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -420,11 +485,11 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -433,20 +498,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/{enterprise_project_id}/resources-migrate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version_async(self, request):
         """查询API版本号详情
@@ -460,9 +521,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowApiVersionResponse`
         """
-        return self._show_api_version_with_http_info(request)
+        http_info = self._show_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_with_http_info(self, request):
+    def show_api_version_async_invoker(self, request):
+        http_info = self._show_api_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_api_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{api_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -479,9 +552,9 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -490,20 +563,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{api_version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_enterprise_project_async(self, request):
         """查询企业项目详情
@@ -517,9 +586,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectResponse`
         """
-        return self._show_enterprise_project_with_http_info(request)
+        http_info = self._show_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_enterprise_project_with_http_info(self, request):
+    def show_enterprise_project_async_invoker(self, request):
+        http_info = self._show_enterprise_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_enterprise_project_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/enterprise-projects/{enterprise_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -536,9 +617,9 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -547,20 +628,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/{enterprise_project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_enterprise_project_quota_async(self, request):
         """查询企业项目配额
@@ -574,9 +651,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectQuotaRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowEnterpriseProjectQuotaResponse`
         """
-        return self._show_enterprise_project_quota_with_http_info(request)
+        http_info = self._show_enterprise_project_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_enterprise_project_quota_with_http_info(self, request):
+    def show_enterprise_project_quota_async_invoker(self, request):
+        http_info = self._show_enterprise_project_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_enterprise_project_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/enterprise-projects/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnterpriseProjectQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -591,9 +680,9 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -602,20 +691,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnterpriseProjectQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_bind_enterprise_project_async(self, request):
         """查询企业项目绑定的资源列表
@@ -629,9 +714,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.ShowResourceBindEnterpriseProjectResponse`
         """
-        return self._show_resource_bind_enterprise_project_with_http_info(request)
+        http_info = self._show_resource_bind_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_bind_enterprise_project_with_http_info(self, request):
+    def show_resource_bind_enterprise_project_async_invoker(self, request):
+        http_info = self._show_resource_bind_enterprise_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_bind_enterprise_project_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/enterprise-projects/{enterprise_project_id}/resources/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceBindEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -648,11 +745,11 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -661,20 +758,16 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/{enterprise_project_id}/resources/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceBindEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_enterprise_project_async(self, request):
         """修改企业项目
@@ -688,9 +781,21 @@ class EpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeps.v1.UpdateEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkeps.v1.UpdateEnterpriseProjectResponse`
         """
-        return self._update_enterprise_project_with_http_info(request)
+        http_info = self._update_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_enterprise_project_with_http_info(self, request):
+    def update_enterprise_project_async_invoker(self, request):
+        http_info = self._update_enterprise_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_enterprise_project_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/enterprise-projects/{enterprise_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -707,11 +812,11 @@ class EpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -720,20 +825,26 @@ class EpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/enterprise-projects/{enterprise_project_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -772,4 +883,4 @@ class EpsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

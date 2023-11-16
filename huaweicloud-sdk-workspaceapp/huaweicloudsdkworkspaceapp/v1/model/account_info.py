@@ -17,27 +17,33 @@ class AccountInfo:
     sensitive_list = []
 
     openapi_types = {
+        'id': 'str',
         'account': 'str',
         'account_type': 'AccountTypeEnum',
         'domain': 'str',
         'email': 'str',
-        'telephone_number': 'str'
+        'telephone_number': 'str',
+        'platform_type': 'PlatformTypeEnum'
     }
 
     attribute_map = {
+        'id': 'id',
         'account': 'account',
         'account_type': 'account_type',
         'domain': 'domain',
         'email': 'email',
-        'telephone_number': 'telephone_number'
+        'telephone_number': 'telephone_number',
+        'platform_type': 'platform_type'
     }
 
-    def __init__(self, account=None, account_type=None, domain=None, email=None, telephone_number=None):
+    def __init__(self, id=None, account=None, account_type=None, domain=None, email=None, telephone_number=None, platform_type=None):
         """AccountInfo
 
         The model defined in huaweicloud sdk
 
-        :param account: 用户(组)
+        :param id: 用户ID(或用户组ID)，根据 account_type 参数决定值类型 对于用户组类型，必须传入用户组ID &#x60;USER&#x60; - 用户ID &#x60;USER_GROUP&#x60; - 用户组ID
+        :type id: str
+        :param account: 用户名(或用户组名)，根据 account_type 参数决定值类型 &#x60;USER&#x60; - 用户名 &#x60;USER_GROUP&#x60; - 用户组名
         :type account: str
         :param account_type: 
         :type account_type: :class:`huaweicloudsdkworkspaceapp.v1.AccountTypeEnum`
@@ -47,17 +53,23 @@ class AccountInfo:
         :type email: str
         :param telephone_number: 手机
         :type telephone_number: str
+        :param platform_type: 
+        :type platform_type: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
         """
         
         
 
+        self._id = None
         self._account = None
         self._account_type = None
         self._domain = None
         self._email = None
         self._telephone_number = None
+        self._platform_type = None
         self.discriminator = None
 
+        if id is not None:
+            self.id = id
         self.account = account
         self.account_type = account_type
         if domain is not None:
@@ -66,12 +78,36 @@ class AccountInfo:
             self.email = email
         if telephone_number is not None:
             self.telephone_number = telephone_number
+        if platform_type is not None:
+            self.platform_type = platform_type
+
+    @property
+    def id(self):
+        """Gets the id of this AccountInfo.
+
+        用户ID(或用户组ID)，根据 account_type 参数决定值类型 对于用户组类型，必须传入用户组ID `USER` - 用户ID `USER_GROUP` - 用户组ID
+
+        :return: The id of this AccountInfo.
+        :rtype: str
+        """
+        return self._id
+
+    @id.setter
+    def id(self, id):
+        """Sets the id of this AccountInfo.
+
+        用户ID(或用户组ID)，根据 account_type 参数决定值类型 对于用户组类型，必须传入用户组ID `USER` - 用户ID `USER_GROUP` - 用户组ID
+
+        :param id: The id of this AccountInfo.
+        :type id: str
+        """
+        self._id = id
 
     @property
     def account(self):
         """Gets the account of this AccountInfo.
 
-        用户(组)
+        用户名(或用户组名)，根据 account_type 参数决定值类型 `USER` - 用户名 `USER_GROUP` - 用户组名
 
         :return: The account of this AccountInfo.
         :rtype: str
@@ -82,7 +118,7 @@ class AccountInfo:
     def account(self, account):
         """Sets the account of this AccountInfo.
 
-        用户(组)
+        用户名(或用户组名)，根据 account_type 参数决定值类型 `USER` - 用户名 `USER_GROUP` - 用户组名
 
         :param account: The account of this AccountInfo.
         :type account: str
@@ -172,6 +208,24 @@ class AccountInfo:
         :type telephone_number: str
         """
         self._telephone_number = telephone_number
+
+    @property
+    def platform_type(self):
+        """Gets the platform_type of this AccountInfo.
+
+        :return: The platform_type of this AccountInfo.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
+        """
+        return self._platform_type
+
+    @platform_type.setter
+    def platform_type(self, platform_type):
+        """Sets the platform_type of this AccountInfo.
+
+        :param platform_type: The platform_type of this AccountInfo.
+        :type platform_type: :class:`huaweicloudsdkworkspaceapp.v1.PlatformTypeEnum`
+        """
+        self._platform_type = platform_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

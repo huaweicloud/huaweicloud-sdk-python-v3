@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkhss'")
 
 
 class HssAsyncClient(Client):
@@ -39,9 +44,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.AddHostsGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.AddHostsGroupResponse`
         """
-        return self._add_hosts_group_with_http_info(request)
+        http_info = self._add_hosts_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_hosts_group_with_http_info(self, request):
+    def add_hosts_group_async_invoker(self, request):
+        http_info = self._add_hosts_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_hosts_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/host-management/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddHostsGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/host-management/groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddHostsGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_policy_group_async(self, request):
         """部署策略
@@ -100,9 +113,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.AssociatePolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.AssociatePolicyGroupResponse`
         """
-        return self._associate_policy_group_with_http_info(request)
+        http_info = self._associate_policy_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_policy_group_with_http_info(self, request):
+    def associate_policy_group_async_invoker(self, request):
+        http_info = self._associate_policy_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_policy_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/policy/deploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociatePolicyGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,11 +146,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -134,20 +159,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/policy/deploy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociatePolicyGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_tags_async(self, request):
         """批量创建标签
@@ -161,9 +182,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.BatchCreateTagsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.BatchCreateTagsResponse`
         """
-        return self._batch_create_tags_with_http_info(request)
+        http_info = self._batch_create_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_tags_with_http_info(self, request):
+    def batch_create_tags_async_invoker(self, request):
+        http_info = self._batch_create_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -182,11 +215,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -195,20 +228,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/{resource_type}/{resource_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_scan_swr_image_async(self, request):
         """镜像仓库镜像批量扫描
@@ -222,9 +251,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.BatchScanSwrImageRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.BatchScanSwrImageResponse`
         """
-        return self._batch_scan_swr_image_with_http_info(request)
+        http_info = self._batch_scan_swr_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_scan_swr_image_with_http_info(self, request):
+    def batch_scan_swr_image_async_invoker(self, request):
+        http_info = self._batch_scan_swr_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_scan_swr_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/image/batch-scan",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchScanSwrImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -243,11 +284,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -256,20 +297,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/image/batch-scan',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchScanSwrImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_blocked_ip_async(self, request):
         """解除已拦截IP
@@ -283,9 +320,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeBlockedIpRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeBlockedIpResponse`
         """
-        return self._change_blocked_ip_with_http_info(request)
+        http_info = self._change_blocked_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_blocked_ip_with_http_info(self, request):
+    def change_blocked_ip_async_invoker(self, request):
+        http_info = self._change_blocked_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_blocked_ip_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/event/blocked-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeBlockedIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -304,11 +353,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -317,20 +366,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/event/blocked-ip',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeBlockedIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_event_async(self, request):
         """处理告警事件
@@ -344,9 +389,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeEventRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeEventResponse`
         """
-        return self._change_event_with_http_info(request)
+        http_info = self._change_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_event_with_http_info(self, request):
+    def change_event_async_invoker(self, request):
+        http_info = self._change_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_event_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/event/operate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -369,11 +426,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -382,20 +439,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/event/operate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_hosts_group_async(self, request):
         """编辑服务器组
@@ -409,9 +462,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeHostsGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeHostsGroupResponse`
         """
-        return self._change_hosts_group_with_http_info(request)
+        http_info = self._change_hosts_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_hosts_group_with_http_info(self, request):
+    def change_hosts_group_async_invoker(self, request):
+        http_info = self._change_hosts_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_hosts_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/host-management/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeHostsGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -430,11 +495,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -443,20 +508,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/host-management/groups',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeHostsGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_isolated_file_async(self, request):
         """恢复已隔离文件
@@ -470,9 +531,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeIsolatedFileRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeIsolatedFileResponse`
         """
-        return self._change_isolated_file_with_http_info(request)
+        http_info = self._change_isolated_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_isolated_file_with_http_info(self, request):
+    def change_isolated_file_async_invoker(self, request):
+        http_info = self._change_isolated_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_isolated_file_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/event/isolated-file",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeIsolatedFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -491,11 +564,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -504,20 +577,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/event/isolated-file',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeIsolatedFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_vul_scan_policy_async(self, request):
         """修改漏洞扫描策略
@@ -531,9 +600,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeVulScanPolicyRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeVulScanPolicyResponse`
         """
-        return self._change_vul_scan_policy_with_http_info(request)
+        http_info = self._change_vul_scan_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_vul_scan_policy_with_http_info(self, request):
+    def change_vul_scan_policy_async_invoker(self, request):
+        http_info = self._change_vul_scan_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_vul_scan_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/vulnerability/scan-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeVulScanPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -550,11 +631,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -563,20 +644,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vulnerability/scan-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeVulScanPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_vul_status_async(self, request):
         """修改漏洞的状态
@@ -590,9 +667,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ChangeVulStatusRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ChangeVulStatusResponse`
         """
-        return self._change_vul_status_with_http_info(request)
+        http_info = self._change_vul_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_vul_status_with_http_info(self, request):
+    def change_vul_status_async_invoker(self, request):
+        http_info = self._change_vul_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_vul_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/vulnerability/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeVulStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -609,11 +698,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -622,20 +711,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vulnerability/status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeVulStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_hosts_group_async(self, request):
         """删除服务器组
@@ -649,9 +734,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.DeleteHostsGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.DeleteHostsGroupResponse`
         """
-        return self._delete_hosts_group_with_http_info(request)
+        http_info = self._delete_hosts_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_hosts_group_with_http_info(self, request):
+    def delete_hosts_group_async_invoker(self, request):
+        http_info = self._delete_hosts_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_hosts_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/host-management/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHostsGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -672,9 +769,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -683,20 +780,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/host-management/groups',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteHostsGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_instance_tag_async(self, request):
         """删除资源标签
@@ -710,9 +803,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.DeleteResourceInstanceTagResponse`
         """
-        return self._delete_resource_instance_tag_with_http_info(request)
+        http_info = self._delete_resource_instance_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_instance_tag_with_http_info(self, request):
+    def delete_resource_instance_tag_async_invoker(self, request):
+        http_info = self._delete_resource_instance_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_instance_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/{resource_type}/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceInstanceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -733,9 +838,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -744,20 +849,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/{resource_type}/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceInstanceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_white_list_async(self, request):
         """查询告警白名单列表
@@ -771,9 +872,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAlarmWhiteListResponse`
         """
-        return self._list_alarm_white_list_with_http_info(request)
+        http_info = self._list_alarm_white_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_white_list_with_http_info(self, request):
+    def list_alarm_white_list_async_invoker(self, request):
+        http_info = self._list_alarm_white_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_white_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/event/white-list/alarm",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmWhiteListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -800,9 +913,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -811,20 +924,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/event/white-list/alarm',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmWhiteListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_change_histories_async(self, request):
         """获取软件信息的历史变动记录
@@ -838,9 +947,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAppChangeHistoriesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAppChangeHistoriesResponse`
         """
-        return self._list_app_change_histories_with_http_info(request)
+        http_info = self._list_app_change_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_change_histories_with_http_info(self, request):
+    def list_app_change_histories_async_invoker(self, request):
+        http_info = self._list_app_change_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_change_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/app/change-history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppChangeHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -879,9 +1000,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -890,20 +1011,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/app/change-history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppChangeHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_statistics_async(self, request):
         """查询软件列表
@@ -917,9 +1034,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAppStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAppStatisticsResponse`
         """
-        return self._list_app_statistics_with_http_info(request)
+        http_info = self._list_app_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_statistics_with_http_info(self, request):
+    def list_app_statistics_async_invoker(self, request):
+        http_info = self._list_app_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/app/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -942,9 +1071,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -953,20 +1082,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/app/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps_async(self, request):
         """查询软件的服务器列表
@@ -980,9 +1105,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAppsResponse`
         """
-        return self._list_apps_with_http_info(request)
+        http_info = self._list_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_with_http_info(self, request):
+    def list_apps_async_invoker(self, request):
+        http_info = self._list_apps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apps_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1015,9 +1152,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1026,20 +1163,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_auto_launch_change_histories_async(self, request):
         """获取自启动项的历史变动记录
@@ -1053,9 +1186,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAutoLaunchChangeHistoriesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAutoLaunchChangeHistoriesResponse`
         """
-        return self._list_auto_launch_change_histories_with_http_info(request)
+        http_info = self._list_auto_launch_change_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_auto_launch_change_histories_with_http_info(self, request):
+    def list_auto_launch_change_histories_async_invoker(self, request):
+        http_info = self._list_auto_launch_change_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_auto_launch_change_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/auto-launch/change-history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutoLaunchChangeHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1096,9 +1241,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1107,20 +1252,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/auto-launch/change-history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAutoLaunchChangeHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_auto_launch_statistics_async(self, request):
         """查询自启动项信息
@@ -1134,9 +1275,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAutoLaunchStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAutoLaunchStatisticsResponse`
         """
-        return self._list_auto_launch_statistics_with_http_info(request)
+        http_info = self._list_auto_launch_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_auto_launch_statistics_with_http_info(self, request):
+    def list_auto_launch_statistics_async_invoker(self, request):
+        http_info = self._list_auto_launch_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_auto_launch_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/auto-launch/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutoLaunchStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1161,9 +1314,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1172,20 +1325,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/auto-launch/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAutoLaunchStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_auto_launchs_async(self, request):
         """查询自启动项的服务列表
@@ -1199,9 +1348,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListAutoLaunchsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListAutoLaunchsResponse`
         """
-        return self._list_auto_launchs_with_http_info(request)
+        http_info = self._list_auto_launchs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_auto_launchs_with_http_info(self, request):
+    def list_auto_launchs_async_invoker(self, request):
+        http_info = self._list_auto_launchs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_auto_launchs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/auto-launchs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAutoLaunchsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1232,9 +1393,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1243,20 +1404,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/auto-launchs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAutoLaunchsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_blocked_ip_async(self, request):
         """查询已拦截IP列表
@@ -1270,9 +1427,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListBlockedIpRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListBlockedIpResponse`
         """
-        return self._list_blocked_ip_with_http_info(request)
+        http_info = self._list_blocked_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_blocked_ip_with_http_info(self, request):
+    def list_blocked_ip_async_invoker(self, request):
+        http_info = self._list_blocked_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_blocked_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/event/blocked-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBlockedIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1303,9 +1472,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1314,20 +1483,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/event/blocked-ip',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBlockedIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_container_nodes_async(self, request):
         """查询容器节点列表
@@ -1341,9 +1506,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListContainerNodesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListContainerNodesResponse`
         """
-        return self._list_container_nodes_with_http_info(request)
+        http_info = self._list_container_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_container_nodes_with_http_info(self, request):
+    def list_container_nodes_async_invoker(self, request):
+        http_info = self._list_container_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_container_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/container/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListContainerNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1372,9 +1549,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1383,20 +1560,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/container/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListContainerNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_groups_async(self, request):
         """查询服务器组列表
@@ -1410,9 +1583,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostGroupsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostGroupsResponse`
         """
-        return self._list_host_groups_with_http_info(request)
+        http_info = self._list_host_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_groups_with_http_info(self, request):
+    def list_host_groups_async_invoker(self, request):
+        http_info = self._list_host_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_host_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/host-management/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1437,9 +1622,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1448,20 +1633,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/host-management/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_protect_history_info_async(self, request):
         """查询主机静态网页防篡改防护动态
@@ -1475,9 +1656,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostProtectHistoryInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostProtectHistoryInfoResponse`
         """
-        return self._list_host_protect_history_info_with_http_info(request)
+        http_info = self._list_host_protect_history_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_protect_history_info_with_http_info(self, request):
+    def list_host_protect_history_info_async_invoker(self, request):
+        http_info = self._list_host_protect_history_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_host_protect_history_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/webtamper/static/protect-history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostProtectHistoryInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1514,9 +1707,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1525,20 +1718,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/webtamper/static/protect-history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostProtectHistoryInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_rasp_protect_history_info_async(self, request):
         """查询主机动态网页防篡改防护动态
@@ -1552,9 +1741,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostRaspProtectHistoryInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostRaspProtectHistoryInfoResponse`
         """
-        return self._list_host_rasp_protect_history_info_with_http_info(request)
+        http_info = self._list_host_rasp_protect_history_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_rasp_protect_history_info_with_http_info(self, request):
+    def list_host_rasp_protect_history_info_async_invoker(self, request):
+        http_info = self._list_host_rasp_protect_history_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_host_rasp_protect_history_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/webtamper/rasp/protect-history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostRaspProtectHistoryInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1589,9 +1790,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1600,20 +1801,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/webtamper/rasp/protect-history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostRaspProtectHistoryInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_status_async(self, request):
         """查询云服务器列表
@@ -1627,9 +1824,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostStatusRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostStatusResponse`
         """
-        return self._list_host_status_with_http_info(request)
+        http_info = self._list_host_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_status_with_http_info(self, request):
+    def list_host_status_async_invoker(self, request):
+        http_info = self._list_host_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_host_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/host-management/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1700,9 +1909,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1711,20 +1920,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/host-management/hosts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_vuls_async(self, request):
         """查询单台服务器漏洞信息
@@ -1738,9 +1943,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListHostVulsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListHostVulsResponse`
         """
-        return self._list_host_vuls_with_http_info(request)
+        http_info = self._list_host_vuls_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_vuls_with_http_info(self, request):
+    def list_host_vuls_async_invoker(self, request):
+        http_info = self._list_host_vuls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_host_vuls_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vulnerability/host/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostVulsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1771,9 +1988,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1782,20 +1999,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vulnerability/host/{host_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostVulsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_image_risk_config_rules_async(self, request):
         """查询镜像指定安全配置项的检查项列表
@@ -1809,9 +2022,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListImageRiskConfigRulesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListImageRiskConfigRulesResponse`
         """
-        return self._list_image_risk_config_rules_with_http_info(request)
+        http_info = self._list_image_risk_config_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_image_risk_config_rules_with_http_info(self, request):
+    def list_image_risk_config_rules_async_invoker(self, request):
+        http_info = self._list_image_risk_config_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_image_risk_config_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/image/baseline/risk-configs/{check_name}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageRiskConfigRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1852,9 +2077,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1863,20 +2088,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/image/baseline/risk-configs/{check_name}/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImageRiskConfigRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_image_risk_configs_async(self, request):
         """查询镜像安全配置检测结果列表
@@ -1890,9 +2111,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListImageRiskConfigsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListImageRiskConfigsResponse`
         """
-        return self._list_image_risk_configs_with_http_info(request)
+        http_info = self._list_image_risk_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_image_risk_configs_with_http_info(self, request):
+    def list_image_risk_configs_async_invoker(self, request):
+        http_info = self._list_image_risk_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_image_risk_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/image/baseline/risk-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageRiskConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1929,9 +2162,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1940,20 +2173,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/image/baseline/risk-configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImageRiskConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_image_vulnerabilities_async(self, request):
         """查询镜像的漏洞信息
@@ -1967,9 +2196,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListImageVulnerabilitiesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListImageVulnerabilitiesResponse`
         """
-        return self._list_image_vulnerabilities_with_http_info(request)
+        http_info = self._list_image_vulnerabilities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_image_vulnerabilities_with_http_info(self, request):
+    def list_image_vulnerabilities_async_invoker(self, request):
+        http_info = self._list_image_vulnerabilities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_image_vulnerabilities_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/image/{image_id}/vulnerabilities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageVulnerabilitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2010,9 +2251,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2021,20 +2262,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/image/{image_id}/vulnerabilities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImageVulnerabilitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_isolated_file_async(self, request):
         """查询已隔离文件列表
@@ -2048,9 +2285,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListIsolatedFileRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListIsolatedFileResponse`
         """
-        return self._list_isolated_file_with_http_info(request)
+        http_info = self._list_isolated_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_isolated_file_with_http_info(self, request):
+    def list_isolated_file_async_invoker(self, request):
+        http_info = self._list_isolated_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_isolated_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/event/isolated-file",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIsolatedFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2079,9 +2328,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2090,20 +2339,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/event/isolated-file',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIsolatedFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_jar_package_host_info_async(self, request):
         """查询指定中间件的服务器列表
@@ -2117,9 +2362,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListJarPackageHostInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListJarPackageHostInfoResponse`
         """
-        return self._list_jar_package_host_info_with_http_info(request)
+        http_info = self._list_jar_package_host_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_jar_package_host_info_with_http_info(self, request):
+    def list_jar_package_host_info_async_invoker(self, request):
+        http_info = self._list_jar_package_host_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_jar_package_host_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/midwares/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJarPackageHostInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2148,9 +2405,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2159,20 +2416,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/midwares/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJarPackageHostInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_jar_package_statistics_async(self, request):
         """查询中间件列表
@@ -2186,9 +2439,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListJarPackageStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListJarPackageStatisticsResponse`
         """
-        return self._list_jar_package_statistics_with_http_info(request)
+        http_info = self._list_jar_package_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_jar_package_statistics_with_http_info(self, request):
+    def list_jar_package_statistics_async_invoker(self, request):
+        http_info = self._list_jar_package_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_jar_package_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/midwares",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJarPackageStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2213,9 +2478,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2224,20 +2489,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/midwares',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJarPackageStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_password_complexity_async(self, request):
         """查询口令复杂度策略检测报告
@@ -2251,9 +2512,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListPasswordComplexityRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPasswordComplexityResponse`
         """
-        return self._list_password_complexity_with_http_info(request)
+        http_info = self._list_password_complexity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_password_complexity_with_http_info(self, request):
+    def list_password_complexity_async_invoker(self, request):
+        http_info = self._list_password_complexity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_password_complexity_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/baseline/password-complexity",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPasswordComplexityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2280,9 +2553,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2291,20 +2564,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/baseline/password-complexity',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPasswordComplexityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy_group_async(self, request):
         """查询策略组列表
@@ -2318,9 +2587,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListPolicyGroupRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPolicyGroupResponse`
         """
-        return self._list_policy_group_with_http_info(request)
+        http_info = self._list_policy_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_group_with_http_info(self, request):
+    def list_policy_group_async_invoker(self, request):
+        http_info = self._list_policy_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_policy_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/policy/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2345,9 +2626,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2356,20 +2637,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/policy/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_port_statistics_async(self, request):
         """查询开放端口列表
@@ -2383,9 +2660,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListPortStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPortStatisticsResponse`
         """
-        return self._list_port_statistics_with_http_info(request)
+        http_info = self._list_port_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_port_statistics_with_http_info(self, request):
+    def list_port_statistics_async_invoker(self, request):
+        http_info = self._list_port_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_port_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/port/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2416,9 +2705,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2427,20 +2716,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/port/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPortStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ports_async(self, request):
         """查询单服务器的开放端口列表
@@ -2454,9 +2739,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListPortsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListPortsResponse`
         """
-        return self._list_ports_with_http_info(request)
+        http_info = self._list_ports_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ports_with_http_info(self, request):
+    def list_ports_async_invoker(self, request):
+        http_info = self._list_ports_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ports_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2487,9 +2784,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2498,20 +2795,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/ports',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPortsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_process_statistics_async(self, request):
         """查询进程列表
@@ -2525,9 +2818,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListProcessStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListProcessStatisticsResponse`
         """
-        return self._list_process_statistics_with_http_info(request)
+        http_info = self._list_process_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_process_statistics_with_http_info(self, request):
+    def list_process_statistics_async_invoker(self, request):
+        http_info = self._list_process_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_process_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/process/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProcessStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2550,9 +2855,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2561,20 +2866,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/process/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProcessStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protection_policy_async(self, request):
         """查询防护策略列表
@@ -2588,9 +2889,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListProtectionPolicyRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListProtectionPolicyResponse`
         """
-        return self._list_protection_policy_with_http_info(request)
+        http_info = self._list_protection_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protection_policy_with_http_info(self, request):
+    def list_protection_policy_async_invoker(self, request):
+        http_info = self._list_protection_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_protection_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/ransomware/protection/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectionPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2619,9 +2932,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2630,20 +2943,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/ransomware/protection/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectionPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protection_server_async(self, request):
         """查询勒索防护服务器列表
@@ -2657,9 +2966,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListProtectionServerRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListProtectionServerResponse`
         """
-        return self._list_protection_server_with_http_info(request)
+        http_info = self._list_protection_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protection_server_with_http_info(self, request):
+    def list_protection_server_async_invoker(self, request):
+        http_info = self._list_protection_server_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_protection_server_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/ransomware/server",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectionServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2692,9 +3013,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2703,20 +3024,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/ransomware/server',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectionServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas_detail_async(self, request):
         """查询配额详情
@@ -2730,9 +3047,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListQuotasDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListQuotasDetailResponse`
         """
-        return self._list_quotas_detail_with_http_info(request)
+        http_info = self._list_quotas_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_detail_with_http_info(self, request):
+    def list_quotas_detail_async_invoker(self, request):
+        http_info = self._list_quotas_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quotas_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/billing/quotas-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2769,9 +3098,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2780,20 +3109,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/billing/quotas-detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_risk_config_check_rules_async(self, request):
         """查询指定安全配置项的检查项列表
@@ -2807,9 +3132,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigCheckRulesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigCheckRulesResponse`
         """
-        return self._list_risk_config_check_rules_with_http_info(request)
+        http_info = self._list_risk_config_check_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_risk_config_check_rules_with_http_info(self, request):
+    def list_risk_config_check_rules_async_invoker(self, request):
+        http_info = self._list_risk_config_check_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_risk_config_check_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/baseline/risk-config/{check_name}/check-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRiskConfigCheckRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2842,9 +3179,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2853,20 +3190,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/baseline/risk-config/{check_name}/check-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRiskConfigCheckRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_risk_config_hosts_async(self, request):
         """查询指定安全配置项的受影响服务器列表
@@ -2880,9 +3213,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigHostsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigHostsResponse`
         """
-        return self._list_risk_config_hosts_with_http_info(request)
+        http_info = self._list_risk_config_hosts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_risk_config_hosts_with_http_info(self, request):
+    def list_risk_config_hosts_async_invoker(self, request):
+        http_info = self._list_risk_config_hosts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_risk_config_hosts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/baseline/risk-config/{check_name}/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRiskConfigHostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2911,9 +3256,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2922,20 +3267,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/baseline/risk-config/{check_name}/hosts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRiskConfigHostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_risk_configs_async(self, request):
         """查询租户的服务器安全配置检测结果列表
@@ -2949,9 +3290,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListRiskConfigsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListRiskConfigsResponse`
         """
-        return self._list_risk_configs_with_http_info(request)
+        http_info = self._list_risk_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_risk_configs_with_http_info(self, request):
+    def list_risk_configs_async_invoker(self, request):
+        http_info = self._list_risk_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_risk_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/baseline/risk-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRiskConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2982,9 +3335,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2993,20 +3346,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/baseline/risk-configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRiskConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_security_events_async(self, request):
         """查入侵事件列表
@@ -3020,9 +3369,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListSecurityEventsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListSecurityEventsResponse`
         """
-        return self._list_security_events_with_http_info(request)
+        http_info = self._list_security_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_security_events_with_http_info(self, request):
+    def list_security_events_async_invoker(self, request):
+        http_info = self._list_security_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/event/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3083,9 +3444,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3094,20 +3455,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/event/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecurityEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_swr_image_repository_async(self, request):
         """查询swr镜像仓库镜像列表
@@ -3121,9 +3478,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListSwrImageRepositoryRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListSwrImageRepositoryResponse`
         """
-        return self._list_swr_image_repository_with_http_info(request)
+        http_info = self._list_swr_image_repository_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_swr_image_repository_with_http_info(self, request):
+    def list_swr_image_repository_async_invoker(self, request):
+        http_info = self._list_swr_image_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_swr_image_repository_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/image/swr-repository",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSwrImageRepositoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3158,9 +3527,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3169,20 +3538,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/image/swr-repository',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSwrImageRepositoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_change_histories_async(self, request):
         """获取账户变动历史信息
@@ -3196,9 +3561,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListUserChangeHistoriesResponse`
         """
-        return self._list_user_change_histories_with_http_info(request)
+        http_info = self._list_user_change_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_change_histories_with_http_info(self, request):
+    def list_user_change_histories_async_invoker(self, request):
+        http_info = self._list_user_change_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_change_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/user/change-history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserChangeHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3235,9 +3612,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3246,20 +3623,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/user/change-history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserChangeHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_statistics_async(self, request):
         """查询账号信息列表
@@ -3273,9 +3646,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListUserStatisticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListUserStatisticsResponse`
         """
-        return self._list_user_statistics_with_http_info(request)
+        http_info = self._list_user_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_statistics_with_http_info(self, request):
+    def list_user_statistics_async_invoker(self, request):
+        http_info = self._list_user_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/user/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3298,9 +3683,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3309,20 +3694,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/user/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_users_async(self, request):
         """查询账号的服务器列表
@@ -3336,9 +3717,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListUsersResponse`
         """
-        return self._list_users_with_http_info(request)
+        http_info = self._list_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_users_with_http_info(self, request):
+    def list_users_async_invoker(self, request):
+        http_info = self._list_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3373,9 +3766,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3384,20 +3777,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vul_hosts_async(self, request):
         """查询单个漏洞影响的云服务器信息
@@ -3411,9 +3800,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListVulHostsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListVulHostsResponse`
         """
-        return self._list_vul_hosts_with_http_info(request)
+        http_info = self._list_vul_hosts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vul_hosts_with_http_info(self, request):
+    def list_vul_hosts_async_invoker(self, request):
+        http_info = self._list_vul_hosts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vul_hosts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vulnerability/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVulHostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3454,9 +3855,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3465,20 +3866,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vulnerability/hosts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVulHostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vulnerabilities_async(self, request):
         """查询漏洞列表
@@ -3492,9 +3889,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListVulnerabilitiesRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListVulnerabilitiesResponse`
         """
-        return self._list_vulnerabilities_with_http_info(request)
+        http_info = self._list_vulnerabilities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vulnerabilities_with_http_info(self, request):
+    def list_vulnerabilities_async_invoker(self, request):
+        http_info = self._list_vulnerabilities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vulnerabilities_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vulnerability/vulnerabilities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVulnerabilitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3535,9 +3944,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3546,20 +3955,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vulnerability/vulnerabilities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVulnerabilitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vulnerability_cve_async(self, request):
         """漏洞对应cve信息
@@ -3573,9 +3978,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListVulnerabilityCveRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListVulnerabilityCveResponse`
         """
-        return self._list_vulnerability_cve_with_http_info(request)
+        http_info = self._list_vulnerability_cve_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vulnerability_cve_with_http_info(self, request):
+    def list_vulnerability_cve_async_invoker(self, request):
+        http_info = self._list_vulnerability_cve_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vulnerability_cve_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/image/vulnerability/{vul_id}/cve",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVulnerabilityCveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3600,9 +4017,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3611,20 +4028,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/image/vulnerability/{vul_id}/cve',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVulnerabilityCveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_weak_password_users_async(self, request):
         """查询弱口令检测结果列表
@@ -3638,9 +4051,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListWeakPasswordUsersRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListWeakPasswordUsersResponse`
         """
-        return self._list_weak_password_users_with_http_info(request)
+        http_info = self._list_weak_password_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_weak_password_users_with_http_info(self, request):
+    def list_weak_password_users_async_invoker(self, request):
+        http_info = self._list_weak_password_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_weak_password_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/baseline/weak-password-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWeakPasswordUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3669,9 +4094,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3680,20 +4105,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/baseline/weak-password-users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWeakPasswordUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_wtp_protect_host_async(self, request):
         """查询防护列表
@@ -3707,9 +4128,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ListWtpProtectHostRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ListWtpProtectHostResponse`
         """
-        return self._list_wtp_protect_host_with_http_info(request)
+        http_info = self._list_wtp_protect_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_wtp_protect_host_with_http_info(self, request):
+    def list_wtp_protect_host_async_invoker(self, request):
+        http_info = self._list_wtp_protect_host_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_wtp_protect_host_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/webtamper/hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWtpProtectHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3748,9 +4181,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3759,20 +4192,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/webtamper/hosts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWtpProtectHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_image_synchronize_async(self, request):
         """从SWR服务同步镜像列表
@@ -3786,9 +4215,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.RunImageSynchronizeRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.RunImageSynchronizeResponse`
         """
-        return self._run_image_synchronize_with_http_info(request)
+        http_info = self._run_image_synchronize_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_image_synchronize_with_http_info(self, request):
+    def run_image_synchronize_async_invoker(self, request):
+        http_info = self._run_image_synchronize_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_image_synchronize_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/image/synchronize",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunImageSynchronizeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3807,11 +4248,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3820,20 +4261,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/image/synchronize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunImageSynchronizeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_rasp_switch_async(self, request):
         """开启/关闭动态网页防篡改防护
@@ -3847,9 +4284,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.SetRaspSwitchRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.SetRaspSwitchResponse`
         """
-        return self._set_rasp_switch_with_http_info(request)
+        http_info = self._set_rasp_switch_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_rasp_switch_with_http_info(self, request):
+    def set_rasp_switch_async_invoker(self, request):
+        http_info = self._set_rasp_switch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_rasp_switch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/webtamper/rasp/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRaspSwitchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3868,11 +4317,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3881,20 +4330,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/webtamper/rasp/status',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetRaspSwitchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_wtp_protection_status_info_async(self, request):
         """开启关闭网页防篡改防护
@@ -3908,9 +4353,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.SetWtpProtectionStatusInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.SetWtpProtectionStatusInfoResponse`
         """
-        return self._set_wtp_protection_status_info_with_http_info(request)
+        http_info = self._set_wtp_protection_status_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_wtp_protection_status_info_with_http_info(self, request):
+    def set_wtp_protection_status_info_async_invoker(self, request):
+        http_info = self._set_wtp_protection_status_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_wtp_protection_status_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/webtamper/static/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetWtpProtectionStatusInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3929,11 +4386,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3942,20 +4399,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/webtamper/static/status',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetWtpProtectionStatusInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_statistic_async(self, request):
         """统计资产信息，账号、端口、进程等
@@ -3969,9 +4422,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowAssetStatisticRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowAssetStatisticResponse`
         """
-        return self._show_asset_statistic_with_http_info(request)
+        http_info = self._show_asset_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_statistic_with_http_info(self, request):
+    def show_asset_statistic_async_invoker(self, request):
+        http_info = self._show_asset_statistic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_asset_statistic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/asset/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3990,9 +4455,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4001,20 +4466,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/asset/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_backup_policy_info_async(self, request):
         """查询HSS存储库绑定的备份策略信息
@@ -4028,9 +4489,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowBackupPolicyInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowBackupPolicyInfoResponse`
         """
-        return self._show_backup_policy_info_with_http_info(request)
+        http_info = self._show_backup_policy_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_backup_policy_info_with_http_info(self, request):
+    def show_backup_policy_info_async_invoker(self, request):
+        http_info = self._show_backup_policy_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_backup_policy_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/backup/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupPolicyInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4049,9 +4522,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4060,20 +4533,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/backup/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBackupPolicyInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_check_rule_detail_async(self, request):
         """查询配置检查项检测报告
@@ -4087,9 +4556,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowCheckRuleDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowCheckRuleDetailResponse`
         """
-        return self._show_check_rule_detail_with_http_info(request)
+        http_info = self._show_check_rule_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_check_rule_detail_with_http_info(self, request):
+    def show_check_rule_detail_async_invoker(self, request):
+        http_info = self._show_check_rule_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_check_rule_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/baseline/check-rule/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCheckRuleDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4116,9 +4597,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4127,20 +4608,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/baseline/check-rule/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCheckRuleDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_image_check_rule_detail_async(self, request):
         """查询镜像配置检查项检测报告
@@ -4154,9 +4631,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowImageCheckRuleDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowImageCheckRuleDetailResponse`
         """
-        return self._show_image_check_rule_detail_with_http_info(request)
+        http_info = self._show_image_check_rule_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_image_check_rule_detail_with_http_info(self, request):
+    def show_image_check_rule_detail_async_invoker(self, request):
+        http_info = self._show_image_check_rule_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_image_check_rule_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/image/baseline/check-rule/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageCheckRuleDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4191,9 +4680,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4202,20 +4691,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/image/baseline/check-rule/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowImageCheckRuleDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_quotas_async(self, request):
         """查询配额信息
@@ -4229,9 +4714,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowResourceQuotasResponse`
         """
-        return self._show_resource_quotas_with_http_info(request)
+        http_info = self._show_resource_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_quotas_with_http_info(self, request):
+    def show_resource_quotas_async_invoker(self, request):
+        http_info = self._show_resource_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/billing/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4254,9 +4751,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4265,20 +4762,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/billing/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_risk_config_detail_async(self, request):
         """查询指定安全配置项的检查结果
@@ -4292,9 +4785,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowRiskConfigDetailRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowRiskConfigDetailResponse`
         """
-        return self._show_risk_config_detail_with_http_info(request)
+        http_info = self._show_risk_config_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_risk_config_detail_with_http_info(self, request):
+    def show_risk_config_detail_async_invoker(self, request):
+        http_info = self._show_risk_config_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_risk_config_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/baseline/risk-config/{check_name}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRiskConfigDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4321,9 +4826,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4332,20 +4837,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/baseline/risk-config/{check_name}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRiskConfigDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vul_scan_policy_async(self, request):
         """查询漏洞扫描策略
@@ -4359,9 +4860,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowVulScanPolicyRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowVulScanPolicyResponse`
         """
-        return self._show_vul_scan_policy_with_http_info(request)
+        http_info = self._show_vul_scan_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vul_scan_policy_with_http_info(self, request):
+    def show_vul_scan_policy_async_invoker(self, request):
+        http_info = self._show_vul_scan_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vul_scan_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vulnerability/scan-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVulScanPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4378,9 +4891,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4389,20 +4902,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vulnerability/scan-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVulScanPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vul_statics_async(self, request):
         """查询漏洞管理统计数据
@@ -4416,9 +4925,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.ShowVulStaticsRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.ShowVulStaticsResponse`
         """
-        return self._show_vul_statics_with_http_info(request)
+        http_info = self._show_vul_statics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vul_statics_with_http_info(self, request):
+    def show_vul_statics_async_invoker(self, request):
+        http_info = self._show_vul_statics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vul_statics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vulnerability/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVulStaticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4435,9 +4956,9 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4446,20 +4967,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vulnerability/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVulStaticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_protection_async(self, request):
         """开启勒索病毒防护
@@ -4473,9 +4990,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.StartProtectionRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.StartProtectionResponse`
         """
-        return self._start_protection_with_http_info(request)
+        http_info = self._start_protection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_protection_with_http_info(self, request):
+    def start_protection_async_invoker(self, request):
+        http_info = self._start_protection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_protection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/ransomware/protection/open",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartProtectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4494,11 +5023,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4507,20 +5036,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/ransomware/protection/open',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartProtectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_protection_async(self, request):
         """关闭勒索病毒防护
@@ -4534,9 +5059,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.StopProtectionRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.StopProtectionResponse`
         """
-        return self._stop_protection_with_http_info(request)
+        http_info = self._stop_protection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_protection_with_http_info(self, request):
+    def stop_protection_async_invoker(self, request):
+        http_info = self._stop_protection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_protection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/ransomware/protection/close",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopProtectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4555,11 +5092,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4568,20 +5105,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/ransomware/protection/close',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopProtectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_hosts_protect_status_async(self, request):
         """切换防护状态
@@ -4595,9 +5128,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.SwitchHostsProtectStatusResponse`
         """
-        return self._switch_hosts_protect_status_with_http_info(request)
+        http_info = self._switch_hosts_protect_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_hosts_protect_status_with_http_info(self, request):
+    def switch_hosts_protect_status_async_invoker(self, request):
+        http_info = self._switch_hosts_protect_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_hosts_protect_status_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/host-management/protection",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchHostsProtectStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4616,11 +5161,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4629,20 +5174,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/host-management/protection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchHostsProtectStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_backup_policy_info_async(self, request):
         """修改存储库绑定的备份策略
@@ -4656,9 +5197,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyInfoRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.UpdateBackupPolicyInfoResponse`
         """
-        return self._update_backup_policy_info_with_http_info(request)
+        http_info = self._update_backup_policy_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_backup_policy_info_with_http_info(self, request):
+    def update_backup_policy_info_async_invoker(self, request):
+        http_info = self._update_backup_policy_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_backup_policy_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/backup/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBackupPolicyInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4677,11 +5230,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4690,20 +5243,16 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/backup/policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBackupPolicyInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_protection_policy_async(self, request):
         """修改防护策略
@@ -4717,9 +5266,21 @@ class HssAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhss.v5.UpdateProtectionPolicyRequest`
         :rtype: :class:`huaweicloudsdkhss.v5.UpdateProtectionPolicyResponse`
         """
-        return self._update_protection_policy_with_http_info(request)
+        http_info = self._update_protection_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_protection_policy_with_http_info(self, request):
+    def update_protection_policy_async_invoker(self, request):
+        http_info = self._update_protection_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_protection_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/ransomware/protection/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProtectionPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4738,11 +5299,11 @@ class HssAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4751,20 +5312,26 @@ class HssAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/ransomware/protection/policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProtectionPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -4803,4 +5370,4 @@ class HssAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

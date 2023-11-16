@@ -49,7 +49,8 @@ class Compress:
         self.discriminator = None
 
         self.status = status
-        self.type = type
+        if type is not None:
+            self.type = type
         if file_type is not None:
             self.file_type = file_type
 

@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdrs'")
 
 
 class DrsClient(Client):
@@ -38,9 +43,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchCreateJobsAsyncRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchCreateJobsAsyncResponse`
         """
-        return self._batch_create_jobs_async_with_http_info(request)
+        http_info = self._batch_create_jobs_async_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_jobs_async_with_http_info(self, request):
+    def batch_create_jobs_async_invoker(self, request):
+        http_info = self._batch_create_jobs_async_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_jobs_async_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/batch-async-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateJobsAsyncResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/batch-async-create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateJobsAsyncResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_jobs_by_id(self, request):
         """批量删除任务
@@ -96,9 +110,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchDeleteJobsByIdRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchDeleteJobsByIdResponse`
         """
-        return self._batch_delete_jobs_by_id_with_http_info(request)
+        http_info = self._batch_delete_jobs_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_jobs_by_id_with_http_info(self, request):
+    def batch_delete_jobs_by_id_invoker(self, request):
+        http_info = self._batch_delete_jobs_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_jobs_by_id_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteJobsByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteJobsByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_execute_job_actions(self, request):
         """批量操作指定ID任务
@@ -154,9 +177,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchExecuteJobActionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchExecuteJobActionsResponse`
         """
-        return self._batch_execute_job_actions_with_http_info(request)
+        http_info = self._batch_execute_job_actions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_execute_job_actions_with_http_info(self, request):
+    def batch_execute_job_actions_invoker(self, request):
+        http_info = self._batch_execute_job_actions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_execute_job_actions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchExecuteJobActionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchExecuteJobActionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_stop_jobs_action(self, request):
         """批量结束任务
@@ -212,9 +244,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchStopJobsActionRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchStopJobsActionResponse`
         """
-        return self._batch_stop_jobs_action_with_http_info(request)
+        http_info = self._batch_stop_jobs_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_stop_jobs_action_with_http_info(self, request):
+    def batch_stop_jobs_action_invoker(self, request):
+        http_info = self._batch_stop_jobs_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_stop_jobs_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/batch-stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStopJobsActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/batch-stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStopJobsActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_tag_action(self, request):
         """批量添加或删除资源标签
@@ -270,9 +311,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.BatchTagActionRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.BatchTagActionResponse`
         """
-        return self._batch_tag_action_with_http_info(request)
+        http_info = self._batch_tag_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_tag_action_with_http_info(self, request):
+    def batch_tag_action_invoker(self, request):
+        http_info = self._batch_tag_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_tag_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{resource_type}/{job_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchTagActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -293,11 +347,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -306,20 +360,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{resource_type}/{job_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchTagActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_data_filter(self, request):
         """数据过滤规则校验
@@ -332,9 +382,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CheckDataFilterRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CheckDataFilterResponse`
         """
-        return self._check_data_filter_with_http_info(request)
+        http_info = self._check_data_filter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_data_filter_with_http_info(self, request):
+    def check_data_filter_invoker(self, request):
+        http_info = self._check_data_filter_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_data_filter_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/job/{job_id}/data-filtering/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDataFilterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,11 +416,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +429,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/job/{job_id}/data-filtering/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckDataFilterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_columns(self, request):
         """采集指定数据库表的列信息
@@ -392,9 +451,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CollectColumnsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CollectColumnsResponse`
         """
-        return self._collect_columns_with_http_info(request)
+        http_info = self._collect_columns_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_columns_with_http_info(self, request):
+    def collect_columns_invoker(self, request):
+        http_info = self._collect_columns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_columns_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/job/{job_id}/columns/collect",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectColumnsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -413,11 +485,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -426,20 +498,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/job/{job_id}/columns/collect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectColumnsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_db_objects_async(self, request):
         """提交查询数据库对象信息
@@ -455,9 +523,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsAsyncRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsAsyncResponse`
         """
-        return self._collect_db_objects_async_with_http_info(request)
+        http_info = self._collect_db_objects_async_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_db_objects_async_with_http_info(self, request):
+    def collect_db_objects_async_invoker(self, request):
+        http_info = self._collect_db_objects_async_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_db_objects_async_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-objects/collect",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectDbObjectsAsyncResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -487,9 +568,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -498,20 +579,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-objects/collect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectDbObjectsAsyncResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_db_objects_info(self, request):
         """提交查询数据库对象信息
@@ -527,9 +604,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsInfoRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CollectDbObjectsInfoResponse`
         """
-        return self._collect_db_objects_info_with_http_info(request)
+        http_info = self._collect_db_objects_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_db_objects_info_with_http_info(self, request):
+    def collect_db_objects_info_invoker(self, request):
+        http_info = self._collect_db_objects_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_db_objects_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5.1/{project_id}/jobs/{job_id}/db-objects/collect",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectDbObjectsInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -548,11 +638,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -561,20 +651,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5.1/{project_id}/jobs/{job_id}/db-objects/collect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectDbObjectsInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_position_async(self, request):
         """采集数据库位点信息
@@ -587,9 +673,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CollectPositionAsyncRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CollectPositionAsyncResponse`
         """
-        return self._collect_position_async_with_http_info(request)
+        http_info = self._collect_position_async_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_position_async_with_http_info(self, request):
+    def collect_position_async_invoker(self, request):
+        http_info = self._collect_position_async_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_position_async_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/collect-db-position",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectPositionAsyncResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -608,11 +707,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -621,20 +720,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/collect-db-position',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectPositionAsyncResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def commit_async_job(self, request):
         """提交批量创建异步任务
@@ -647,9 +742,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CommitAsyncJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CommitAsyncJobResponse`
         """
-        return self._commit_async_job_with_http_info(request)
+        http_info = self._commit_async_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _commit_async_job_with_http_info(self, request):
+    def commit_async_job_invoker(self, request):
+        http_info = self._commit_async_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _commit_async_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/batch-async-jobs/{async_job_id}/commit",
+            "request_type": request.__class__.__name__,
+            "response_type": "CommitAsyncJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -668,9 +776,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -679,20 +787,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/batch-async-jobs/{async_job_id}/commit',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CommitAsyncJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_job(self, request):
         """克隆任务
@@ -705,9 +809,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CopyJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CopyJobResponse`
         """
-        return self._copy_job_with_http_info(request)
+        http_info = self._copy_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_job_with_http_info(self, request):
+    def copy_job_invoker(self, request):
+        http_info = self._copy_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/clone",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -724,11 +841,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -737,20 +854,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/clone',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_job(self, request):
         """创建任务
@@ -763,9 +876,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.CreateJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.CreateJobResponse`
         """
-        return self._create_job_with_http_info(request)
+        http_info = self._create_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_job_with_http_info(self, request):
+    def create_job_invoker(self, request):
+        http_info = self._create_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -782,11 +908,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -795,20 +921,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_job(self, request):
         """删除指定ID任务
@@ -821,9 +943,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.DeleteJobResponse`
         """
-        return self._delete_job_with_http_info(request)
+        http_info = self._delete_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_job_with_http_info(self, request):
+    def delete_job_invoker(self, request):
+        http_info = self._delete_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -842,9 +977,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -853,20 +988,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_batch_create_template(self, request):
         """下载批量导入任务模板
@@ -879,9 +1010,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.DownloadBatchCreateTemplateRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.DownloadBatchCreateTemplateResponse`
         """
-        return self._download_batch_create_template_with_http_info(request)
+        http_info = self._download_batch_create_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_batch_create_template_with_http_info(self, request):
+    def download_batch_create_template_invoker(self, request):
+        http_info = self._download_batch_create_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_batch_create_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadBatchCreateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -898,9 +1042,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -909,20 +1053,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/template',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadBatchCreateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_db_object_template(self, request):
         """对象选择（文件导入 - 模板下载）
@@ -935,9 +1075,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.DownloadDbObjectTemplateRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.DownloadDbObjectTemplateResponse`
         """
-        return self._download_db_object_template_with_http_info(request)
+        http_info = self._download_db_object_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_db_object_template_with_http_info(self, request):
+    def download_db_object_template_invoker(self, request):
+        http_info = self._download_db_object_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_db_object_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-object/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadDbObjectTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -958,9 +1111,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -969,20 +1122,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-object/template',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadDbObjectTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_job_action(self, request):
         """操作指定ID任务
@@ -995,9 +1144,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ExecuteJobActionRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ExecuteJobActionResponse`
         """
-        return self._execute_job_action_with_http_info(request)
+        http_info = self._execute_job_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_job_action_with_http_info(self, request):
+    def execute_job_action_invoker(self, request):
+        http_info = self._execute_job_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_job_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteJobActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1016,11 +1178,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1029,20 +1191,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteJobActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_operation_info(self, request):
         """导出任务操作统计信息
@@ -1055,9 +1213,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ExportOperationInfoRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ExportOperationInfoResponse`
         """
-        return self._export_operation_info_with_http_info(request)
+        http_info = self._export_operation_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_operation_info_with_http_info(self, request):
+    def export_operation_info_invoker(self, request):
+        http_info = self._export_operation_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_operation_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/operation-statistics/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportOperationInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1076,9 +1247,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1087,20 +1258,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/operation-statistics/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportOperationInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_batch_create_jobs(self, request):
         """批量导入任务
@@ -1113,9 +1280,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ImportBatchCreateJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ImportBatchCreateJobsResponse`
         """
-        return self._import_batch_create_jobs_with_http_info(request)
+        http_info = self._import_batch_create_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_batch_create_jobs_with_http_info(self, request):
+    def import_batch_create_jobs_invoker(self, request):
+        http_info = self._import_batch_create_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_batch_create_jobs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportBatchCreateJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1134,11 +1314,11 @@ class DrsClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1147,20 +1327,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/template',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportBatchCreateJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_async_job_detail(self, request):
         """查询指定ID批量异步任务详情
@@ -1173,9 +1349,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListAsyncJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListAsyncJobDetailResponse`
         """
-        return self._list_async_job_detail_with_http_info(request)
+        http_info = self._list_async_job_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_async_job_detail_with_http_info(self, request):
+    def list_async_job_detail_invoker(self, request):
+        http_info = self._list_async_job_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_async_job_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/batch-async-jobs/{async_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAsyncJobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1198,9 +1387,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1209,20 +1398,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/batch-async-jobs/{async_job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAsyncJobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_async_jobs(self, request):
         """查询批量异步创建的任务列表
@@ -1235,9 +1420,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListAsyncJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListAsyncJobsResponse`
         """
-        return self._list_async_jobs_with_http_info(request)
+        http_info = self._list_async_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_async_jobs_with_http_info(self, request):
+    def list_async_jobs_invoker(self, request):
+        http_info = self._list_async_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_async_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/batch-async-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAsyncJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1270,9 +1468,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1281,20 +1479,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/batch-async-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAsyncJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_db_objects(self, request):
         """查询数据库对象信息
@@ -1307,9 +1501,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListDbObjectsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListDbObjectsResponse`
         """
-        return self._list_db_objects_with_http_info(request)
+        http_info = self._list_db_objects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_db_objects_with_http_info(self, request):
+    def list_db_objects_invoker(self, request):
+        http_info = self._list_db_objects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_db_objects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDbObjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1337,9 +1544,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1348,20 +1555,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-objects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDbObjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_jobs(self, request):
         """查询任务列表
@@ -1374,9 +1577,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListJobsResponse`
         """
-        return self._list_jobs_with_http_info(request)
+        http_info = self._list_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_jobs_with_http_info(self, request):
+    def list_jobs_invoker(self, request):
+        http_info = self._list_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1418,9 +1634,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1429,20 +1645,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_links(self, request):
         """查询可用链路信息
@@ -1455,9 +1667,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListLinksRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListLinksResponse`
         """
-        return self._list_links_with_http_info(request)
+        http_info = self._list_links_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_links_with_http_info(self, request):
+    def list_links_invoker(self, request):
+        http_info = self._list_links_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_links_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/links",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLinksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1480,9 +1705,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1491,20 +1716,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/links',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLinksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags(self, request):
         """查询项目标签
@@ -1517,9 +1738,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1538,9 +1772,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1549,20 +1783,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_actions(self, request):
         """获取指定任务操作信息
@@ -1575,9 +1805,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowActionsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowActionsResponse`
         """
-        return self._show_actions_with_http_info(request)
+        http_info = self._show_actions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_actions_with_http_info(self, request):
+    def show_actions_invoker(self, request):
+        http_info = self._show_actions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_actions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowActionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1596,9 +1839,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1607,20 +1850,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/actions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowActionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_column_info_result(self, request):
         """获取指定数据库表列信息
@@ -1633,9 +1872,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowColumnInfoResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowColumnInfoResultResponse`
         """
-        return self._show_column_info_result_with_http_info(request)
+        http_info = self._show_column_info_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_column_info_result_with_http_info(self, request):
+    def show_column_info_result_invoker(self, request):
+        http_info = self._show_column_info_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_column_info_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/job/{job_id}/columns",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowColumnInfoResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1660,9 +1912,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1671,20 +1923,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/job/{job_id}/columns',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowColumnInfoResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_compare_policy(self, request):
         """查询对比策略
@@ -1697,9 +1945,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowComparePolicyRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowComparePolicyResponse`
         """
-        return self._show_compare_policy_with_http_info(request)
+        http_info = self._show_compare_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_compare_policy_with_http_info(self, request):
+    def show_compare_policy_invoker(self, request):
+        http_info = self._show_compare_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_compare_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/compare-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowComparePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1718,9 +1979,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1729,20 +1990,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/compare-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowComparePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_filtering_result(self, request):
         """获取数据过滤校验结果
@@ -1755,9 +2012,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDataFilteringResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDataFilteringResultResponse`
         """
-        return self._show_data_filtering_result_with_http_info(request)
+        http_info = self._show_data_filtering_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_filtering_result_with_http_info(self, request):
+    def show_data_filtering_result_invoker(self, request):
+        http_info = self._show_data_filtering_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_data_filtering_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/job/{job_id}/data-filtering/result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataFilteringResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1778,9 +2048,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1789,20 +2059,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/job/{job_id}/data-filtering/result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataFilteringResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_processing_rules_result(self, request):
         """获取指定任务数据加工规则更新结果
@@ -1815,9 +2081,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDataProcessingRulesResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDataProcessingRulesResultResponse`
         """
-        return self._show_data_processing_rules_result_with_http_info(request)
+        http_info = self._show_data_processing_rules_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_processing_rules_result_with_http_info(self, request):
+    def show_data_processing_rules_result_invoker(self, request):
+        http_info = self._show_data_processing_rules_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_data_processing_rules_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/data-processing-rules/result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataProcessingRulesResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1838,9 +2117,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1849,20 +2128,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/data-processing-rules/result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataProcessingRulesResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_progress(self, request):
         """查询数据加工规则
@@ -1875,9 +2150,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDataProgressRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDataProgressResponse`
         """
-        return self._show_data_progress_with_http_info(request)
+        http_info = self._show_data_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_progress_with_http_info(self, request):
+    def show_data_progress_invoker(self, request):
+        http_info = self._show_data_progress_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_data_progress_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/data-processing-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1900,9 +2188,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1911,20 +2199,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/data-processing-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_db_object_collection_status(self, request):
         """获取提交查询数据库对象信息的结果
@@ -1937,9 +2221,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDbObjectCollectionStatusRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDbObjectCollectionStatusResponse`
         """
-        return self._show_db_object_collection_status_with_http_info(request)
+        http_info = self._show_db_object_collection_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_db_object_collection_status_with_http_info(self, request):
+    def show_db_object_collection_status_invoker(self, request):
+        http_info = self._show_db_object_collection_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_db_object_collection_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-objects/collection-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDbObjectCollectionStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1960,9 +2257,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1971,20 +2268,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-objects/collection-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDbObjectCollectionStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_db_object_template_progress(self, request):
         """对象选择（文件导入 - 进度查询）
@@ -1997,9 +2290,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDbObjectTemplateProgressRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDbObjectTemplateProgressResponse`
         """
-        return self._show_db_object_template_progress_with_http_info(request)
+        http_info = self._show_db_object_template_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_db_object_template_progress_with_http_info(self, request):
+    def show_db_object_template_progress_invoker(self, request):
+        http_info = self._show_db_object_template_progress_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_db_object_template_progress_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-object/template/progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDbObjectTemplateProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2022,9 +2328,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2033,20 +2339,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-object/template/progress',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDbObjectTemplateProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_db_object_template_result(self, request):
         """对象选择（文件导入 - 获取导入结果）
@@ -2059,9 +2361,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDbObjectTemplateResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDbObjectTemplateResultResponse`
         """
-        return self._show_db_object_template_result_with_http_info(request)
+        http_info = self._show_db_object_template_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_db_object_template_result_with_http_info(self, request):
+    def show_db_object_template_result_invoker(self, request):
+        http_info = self._show_db_object_template_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_db_object_template_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-object/template/result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDbObjectTemplateResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2082,9 +2397,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2093,20 +2408,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-object/template/result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDbObjectTemplateResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_db_objects_list(self, request):
         """查询数据库对象信息
@@ -2119,9 +2430,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDbObjectsListRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDbObjectsListResponse`
         """
-        return self._show_db_objects_list_with_http_info(request)
+        http_info = self._show_db_objects_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_db_objects_list_with_http_info(self, request):
+    def show_db_objects_list_invoker(self, request):
+        http_info = self._show_db_objects_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_db_objects_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5.1/{project_id}/jobs/{job_id}/db-object",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDbObjectsListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2142,9 +2466,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2153,20 +2477,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5.1/{project_id}/jobs/{job_id}/db-object',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDbObjectsListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dirty_data(self, request):
         """查询异常数据列表
@@ -2179,9 +2499,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowDirtyDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowDirtyDataResponse`
         """
-        return self._show_dirty_data_with_http_info(request)
+        http_info = self._show_dirty_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dirty_data_with_http_info(self, request):
+    def show_dirty_data_invoker(self, request):
+        http_info = self._show_dirty_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dirty_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/dirty-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDirtyDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2208,9 +2541,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2219,20 +2552,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/dirty-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDirtyDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_enterprise_project(self, request):
         """查询企业项目列表
@@ -2245,9 +2574,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowEnterpriseProjectRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowEnterpriseProjectResponse`
         """
-        return self._show_enterprise_project_with_http_info(request)
+        http_info = self._show_enterprise_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_enterprise_project_with_http_info(self, request):
+    def show_enterprise_project_invoker(self, request):
+        http_info = self._show_enterprise_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_enterprise_project_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnterpriseProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2272,9 +2614,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2283,20 +2625,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/enterprise-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnterpriseProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_health_compare_job_list(self, request):
         """查询健康对比列表
@@ -2309,9 +2647,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowHealthCompareJobListRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowHealthCompareJobListResponse`
         """
-        return self._show_health_compare_job_list_with_http_info(request)
+        http_info = self._show_health_compare_job_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_health_compare_job_list_with_http_info(self, request):
+    def show_health_compare_job_list_invoker(self, request):
+        http_info = self._show_health_compare_job_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_health_compare_job_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/health-compare-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHealthCompareJobListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2336,9 +2687,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2347,20 +2698,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/health-compare-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHealthCompareJobListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_increment_components_detail(self, request):
         """查询增量组件详情
@@ -2374,9 +2721,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowIncrementComponentsDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowIncrementComponentsDetailResponse`
         """
-        return self._show_increment_components_detail_with_http_info(request)
+        http_info = self._show_increment_components_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_increment_components_detail_with_http_info(self, request):
+    def show_increment_components_detail_invoker(self, request):
+        http_info = self._show_increment_components_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_increment_components_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/increment-components-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIncrementComponentsDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2395,9 +2755,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2406,20 +2766,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/increment-components-detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIncrementComponentsDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_tags(self, request):
         """查询资源标签
@@ -2432,9 +2788,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowInstanceTagsResponse`
         """
-        return self._show_instance_tags_with_http_info(request)
+        http_info = self._show_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_tags_with_http_info(self, request):
+    def show_instance_tags_invoker(self, request):
+        http_info = self._show_instance_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{resource_type}/{job_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2455,9 +2824,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2466,20 +2835,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{resource_type}/{job_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_detail(self, request):
         """查询任务详情
@@ -2492,9 +2857,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowJobDetailResponse`
         """
-        return self._show_job_detail_with_http_info(request)
+        http_info = self._show_job_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_detail_with_http_info(self, request):
+    def show_job_detail_invoker(self, request):
+        http_info = self._show_job_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2535,9 +2913,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2546,20 +2924,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metering(self, request):
         """获取任务价格信息
@@ -2572,9 +2946,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowMeteringRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowMeteringResponse`
         """
-        return self._show_metering_with_http_info(request)
+        http_info = self._show_metering_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metering_with_http_info(self, request):
+    def show_metering_invoker(self, request):
+        http_info = self._show_metering_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metering_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/metering",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMeteringResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2593,9 +2980,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2604,20 +2991,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/metering',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMeteringResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_monitor_data(self, request):
         """查询监控数据
@@ -2631,9 +3014,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowMonitorDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowMonitorDataResponse`
         """
-        return self._show_monitor_data_with_http_info(request)
+        http_info = self._show_monitor_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_monitor_data_with_http_info(self, request):
+    def show_monitor_data_invoker(self, request):
+        http_info = self._show_monitor_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_monitor_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/monitor-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMonitorDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2652,9 +3048,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2663,20 +3059,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/monitor-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMonitorDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_object_mapping(self, request):
         """查询同步映射列表
@@ -2689,9 +3081,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowObjectMappingRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowObjectMappingResponse`
         """
-        return self._show_object_mapping_with_http_info(request)
+        http_info = self._show_object_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_object_mapping_with_http_info(self, request):
+    def show_object_mapping_invoker(self, request):
+        http_info = self._show_object_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_object_mapping_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/object-mappings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowObjectMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2710,11 +3115,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2723,20 +3128,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/object-mappings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowObjectMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_position_result(self, request):
         """获取查询数据库位点的结果
@@ -2749,9 +3150,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowPositionResultRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowPositionResultResponse`
         """
-        return self._show_position_result_with_http_info(request)
+        http_info = self._show_position_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_position_result_with_http_info(self, request):
+    def show_position_result_invoker(self, request):
+        http_info = self._show_position_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_position_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-position",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPositionResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2772,9 +3186,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2783,20 +3197,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-position',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPositionResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_progress_data(self, request):
         """查询数据级流式对比列表
@@ -2813,9 +3223,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowProgressDataRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowProgressDataResponse`
         """
-        return self._show_progress_data_with_http_info(request)
+        http_info = self._show_progress_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_progress_data_with_http_info(self, request):
+    def show_progress_data_invoker(self, request):
+        http_info = self._show_progress_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_progress_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/progress-data/{type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProgressDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2840,9 +3263,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2851,20 +3274,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/progress-data/{type}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProgressDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_support_object_type(self, request):
         """查询是否支持对象选择和列映射
@@ -2877,9 +3296,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowSupportObjectTypeRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowSupportObjectTypeResponse`
         """
-        return self._show_support_object_type_with_http_info(request)
+        http_info = self._show_support_object_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_support_object_type_with_http_info(self, request):
+    def show_support_object_type_invoker(self, request):
+        http_info = self._show_support_object_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_support_object_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/object/support",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSupportObjectTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2898,9 +3330,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2909,20 +3341,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/object/support',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSupportObjectTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_update_object_saving_status(self, request):
         """获取对象保存进度
@@ -2935,9 +3363,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ShowUpdateObjectSavingStatusRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ShowUpdateObjectSavingStatusResponse`
         """
-        return self._show_update_object_saving_status_with_http_info(request)
+        http_info = self._show_update_object_saving_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_update_object_saving_status_with_http_info(self, request):
+    def show_update_object_saving_status_invoker(self, request):
+        http_info = self._show_update_object_saving_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_update_object_saving_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-objects/saving-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUpdateObjectSavingStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2958,9 +3399,9 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2969,20 +3410,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-objects/saving-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUpdateObjectSavingStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_job_action(self, request):
         """结束任务
@@ -2995,9 +3432,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.StopJobActionRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.StopJobActionResponse`
         """
-        return self._stop_job_action_with_http_info(request)
+        http_info = self._stop_job_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_job_action_with_http_info(self, request):
+    def stop_job_action_invoker(self, request):
+        http_info = self._stop_job_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_job_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopJobActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3016,11 +3466,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3029,20 +3479,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopJobActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_batch_async_jobs(self, request):
         """更新指定ID批量异步任务详情
@@ -3055,9 +3501,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.UpdateBatchAsyncJobsRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateBatchAsyncJobsResponse`
         """
-        return self._update_batch_async_jobs_with_http_info(request)
+        http_info = self._update_batch_async_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_batch_async_jobs_with_http_info(self, request):
+    def update_batch_async_jobs_invoker(self, request):
+        http_info = self._update_batch_async_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_batch_async_jobs_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/batch-async-jobs/{async_job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBatchAsyncJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3076,11 +3535,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3089,20 +3548,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/batch-async-jobs/{async_job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBatchAsyncJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_data_progress(self, request):
         """更新指定任务数据加工规则
@@ -3115,9 +3570,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.UpdateDataProgressRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateDataProgressResponse`
         """
-        return self._update_data_progress_with_http_info(request)
+        http_info = self._update_data_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_data_progress_with_http_info(self, request):
+    def update_data_progress_invoker(self, request):
+        http_info = self._update_data_progress_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_data_progress_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/data-processing-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3136,11 +3604,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3149,20 +3617,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/data-processing-rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_job(self, request):
         """更新指定ID任务详情
@@ -3176,9 +3640,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateJobResponse`
         """
-        return self._update_job_with_http_info(request)
+        http_info = self._update_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_job_with_http_info(self, request):
+    def update_job_invoker(self, request):
+        http_info = self._update_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3197,11 +3674,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3210,20 +3687,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_start_position(self, request):
         """更新增量任务启动位点
@@ -3237,9 +3710,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.UpdateStartPositionRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.UpdateStartPositionResponse`
         """
-        return self._update_start_position_with_http_info(request)
+        http_info = self._update_start_position_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_start_position_with_http_info(self, request):
+    def update_start_position_invoker(self, request):
+        http_info = self._update_start_position_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_start_position_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/start-position",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStartPositionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3258,11 +3744,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3271,20 +3757,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/start-position',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStartPositionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_db_object_template(self, request):
         """对象选择（文件导入 - 模板上传）
@@ -3297,9 +3779,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.UploadDbObjectTemplateRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.UploadDbObjectTemplateResponse`
         """
-        return self._upload_db_object_template_with_http_info(request)
+        http_info = self._upload_db_object_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_db_object_template_with_http_info(self, request):
+    def upload_db_object_template_invoker(self, request):
+        http_info = self._upload_db_object_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_db_object_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/{job_id}/db-object/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadDbObjectTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3322,11 +3817,11 @@ class DrsClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3335,20 +3830,16 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/{job_id}/db-object/template',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadDbObjectTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_job_name(self, request):
         """任务名称校验
@@ -3361,9 +3852,22 @@ class DrsClient(Client):
         :type request: :class:`huaweicloudsdkdrs.v5.ValidateJobNameRequest`
         :rtype: :class:`huaweicloudsdkdrs.v5.ValidateJobNameResponse`
         """
-        return self._validate_job_name_with_http_info(request)
+        http_info = self._validate_job_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_job_name_with_http_info(self, request):
+    def validate_job_name_invoker(self, request):
+        http_info = self._validate_job_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_job_name_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/jobs/name-validation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateJobNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3380,11 +3884,11 @@ class DrsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3393,20 +3897,25 @@ class DrsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/jobs/name-validation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateJobNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

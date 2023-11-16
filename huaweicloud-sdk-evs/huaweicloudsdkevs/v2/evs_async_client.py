@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkevs'")
 
 
 class EvsAsyncClient(Client):
@@ -42,9 +47,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.BatchCreateVolumeTagsResponse`
         """
-        return self._batch_create_volume_tags_with_http_info(request)
+        http_info = self._batch_create_volume_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_volume_tags_with_http_info(self, request):
+    def batch_create_volume_tags_async_invoker(self, request):
+        http_info = self._batch_create_volume_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_volume_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cloudvolumes/{volume_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateVolumeTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -61,11 +78,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -74,20 +91,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateVolumeTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_volume_tags_async(self, request):
         """为指定云硬盘批量删除标签
@@ -101,9 +114,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.BatchDeleteVolumeTagsResponse`
         """
-        return self._batch_delete_volume_tags_with_http_info(request)
+        http_info = self._batch_delete_volume_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_volume_tags_with_http_info(self, request):
+    def batch_delete_volume_tags_async_invoker(self, request):
+        http_info = self._batch_delete_volume_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_volume_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cloudvolumes/{volume_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteVolumeTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -120,11 +145,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -133,20 +158,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteVolumeTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cinder_accept_volume_transfer_async(self, request):
         """接受云硬盘过户
@@ -160,9 +181,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderAcceptVolumeTransferResponse`
         """
-        return self._cinder_accept_volume_transfer_with_http_info(request)
+        http_info = self._cinder_accept_volume_transfer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cinder_accept_volume_transfer_with_http_info(self, request):
+    def cinder_accept_volume_transfer_async_invoker(self, request):
+        http_info = self._cinder_accept_volume_transfer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cinder_accept_volume_transfer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/os-volume-transfer/{transfer_id}/accept",
+            "request_type": request.__class__.__name__,
+            "response_type": "CinderAcceptVolumeTransferResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -179,11 +212,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -192,20 +225,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/os-volume-transfer/{transfer_id}/accept',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CinderAcceptVolumeTransferResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cinder_create_volume_transfer_async(self, request):
         """创建云硬盘过户
@@ -220,9 +249,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderCreateVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderCreateVolumeTransferResponse`
         """
-        return self._cinder_create_volume_transfer_with_http_info(request)
+        http_info = self._cinder_create_volume_transfer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cinder_create_volume_transfer_with_http_info(self, request):
+    def cinder_create_volume_transfer_async_invoker(self, request):
+        http_info = self._cinder_create_volume_transfer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cinder_create_volume_transfer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/os-volume-transfer",
+            "request_type": request.__class__.__name__,
+            "response_type": "CinderCreateVolumeTransferResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,11 +278,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +291,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/os-volume-transfer',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CinderCreateVolumeTransferResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cinder_delete_volume_transfer_async(self, request):
         """删除云硬盘过户
@@ -277,9 +314,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderDeleteVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderDeleteVolumeTransferResponse`
         """
-        return self._cinder_delete_volume_transfer_with_http_info(request)
+        http_info = self._cinder_delete_volume_transfer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cinder_delete_volume_transfer_with_http_info(self, request):
+    def cinder_delete_volume_transfer_async_invoker(self, request):
+        http_info = self._cinder_delete_volume_transfer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cinder_delete_volume_transfer_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/os-volume-transfer/{transfer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CinderDeleteVolumeTransferResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -296,9 +345,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -307,20 +356,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/os-volume-transfer/{transfer_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CinderDeleteVolumeTransferResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cinder_list_availability_zones_async(self, request):
         """查询所有的可用分区信息
@@ -334,9 +379,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListAvailabilityZonesResponse`
         """
-        return self._cinder_list_availability_zones_with_http_info(request)
+        http_info = self._cinder_list_availability_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cinder_list_availability_zones_with_http_info(self, request):
+    def cinder_list_availability_zones_async_invoker(self, request):
+        http_info = self._cinder_list_availability_zones_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cinder_list_availability_zones_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/os-availability-zone",
+            "request_type": request.__class__.__name__,
+            "response_type": "CinderListAvailabilityZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -351,9 +408,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -362,20 +419,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/os-availability-zone',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CinderListAvailabilityZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cinder_list_quotas_async(self, request):
         """查询租户的详细配额
@@ -389,9 +442,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderListQuotasRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListQuotasResponse`
         """
-        return self._cinder_list_quotas_with_http_info(request)
+        http_info = self._cinder_list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cinder_list_quotas_with_http_info(self, request):
+    def cinder_list_quotas_async_invoker(self, request):
+        http_info = self._cinder_list_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cinder_list_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/os-quota-sets/{target_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CinderListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -410,9 +475,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -421,20 +486,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/os-quota-sets/{target_project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CinderListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cinder_list_volume_transfers_async(self, request):
         """查询云硬盘过户记录列表概要
@@ -448,9 +509,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderListVolumeTransfersRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListVolumeTransfersResponse`
         """
-        return self._cinder_list_volume_transfers_with_http_info(request)
+        http_info = self._cinder_list_volume_transfers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cinder_list_volume_transfers_with_http_info(self, request):
+    def cinder_list_volume_transfers_async_invoker(self, request):
+        http_info = self._cinder_list_volume_transfers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cinder_list_volume_transfers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/os-volume-transfer",
+            "request_type": request.__class__.__name__,
+            "response_type": "CinderListVolumeTransfersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -469,9 +542,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -480,20 +553,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/os-volume-transfer',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CinderListVolumeTransfersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cinder_list_volume_types_async(self, request):
         """查询云硬盘类型列表
@@ -507,9 +576,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderListVolumeTypesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderListVolumeTypesResponse`
         """
-        return self._cinder_list_volume_types_with_http_info(request)
+        http_info = self._cinder_list_volume_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cinder_list_volume_types_with_http_info(self, request):
+    def cinder_list_volume_types_async_invoker(self, request):
+        http_info = self._cinder_list_volume_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cinder_list_volume_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/types",
+            "request_type": request.__class__.__name__,
+            "response_type": "CinderListVolumeTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -524,9 +605,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -535,20 +616,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CinderListVolumeTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cinder_show_volume_transfer_async(self, request):
         """查询单个云硬盘过户记录详情
@@ -562,9 +639,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CinderShowVolumeTransferRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CinderShowVolumeTransferResponse`
         """
-        return self._cinder_show_volume_transfer_with_http_info(request)
+        http_info = self._cinder_show_volume_transfer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cinder_show_volume_transfer_with_http_info(self, request):
+    def cinder_show_volume_transfer_async_invoker(self, request):
+        http_info = self._cinder_show_volume_transfer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cinder_show_volume_transfer_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/os-volume-transfer/{transfer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CinderShowVolumeTransferResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -581,9 +670,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -592,20 +681,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/os-volume-transfer/{transfer_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CinderShowVolumeTransferResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_snapshot_async(self, request):
         """创建云硬盘快照
@@ -619,9 +704,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CreateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CreateSnapshotResponse`
         """
-        return self._create_snapshot_with_http_info(request)
+        http_info = self._create_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_snapshot_with_http_info(self, request):
+    def create_snapshot_async_invoker(self, request):
+        http_info = self._create_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_snapshot_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cloudsnapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -636,11 +733,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -649,20 +746,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudsnapshots',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_volume_async(self, request):
         """创建云硬盘
@@ -681,9 +774,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.CreateVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.CreateVolumeResponse`
         """
-        return self._create_volume_with_http_info(request)
+        http_info = self._create_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_volume_with_http_info(self, request):
+    def create_volume_async_invoker(self, request):
+        http_info = self._create_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_volume_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/{project_id}/cloudvolumes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -698,11 +803,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -711,20 +816,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/cloudvolumes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_snapshot_async(self, request):
         """删除云硬盘快照
@@ -738,9 +839,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.DeleteSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.DeleteSnapshotResponse`
         """
-        return self._delete_snapshot_with_http_info(request)
+        http_info = self._delete_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_snapshot_with_http_info(self, request):
+    def delete_snapshot_async_invoker(self, request):
+        http_info = self._delete_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_snapshot_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/cloudsnapshots/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -757,9 +870,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -768,20 +881,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudsnapshots/{snapshot_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_volume_async(self, request):
         """删除云硬盘
@@ -795,9 +904,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.DeleteVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.DeleteVolumeResponse`
         """
-        return self._delete_volume_with_http_info(request)
+        http_info = self._delete_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_volume_with_http_info(self, request):
+    def delete_volume_async_invoker(self, request):
+        http_info = self._delete_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_volume_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/cloudvolumes/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -814,9 +935,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -825,20 +946,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshots_async(self, request):
         """查询云硬盘快照详情列表
@@ -852,9 +969,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListSnapshotsResponse`
         """
-        return self._list_snapshots_with_http_info(request)
+        http_info = self._list_snapshots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshots_with_http_info(self, request):
+    def list_snapshots_async_invoker(self, request):
+        http_info = self._list_snapshots_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_snapshots_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cloudsnapshots/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -891,9 +1020,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -902,20 +1031,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudsnapshots/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_volume_tags_async(self, request):
         """获取云硬盘资源的所有标签
@@ -929,9 +1054,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumeTagsResponse`
         """
-        return self._list_volume_tags_with_http_info(request)
+        http_info = self._list_volume_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_volume_tags_with_http_info(self, request):
+    def list_volume_tags_async_invoker(self, request):
+        http_info = self._list_volume_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_volume_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cloudvolumes/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVolumeTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -946,9 +1083,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -957,20 +1094,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVolumeTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_volumes_async(self, request):
         """查询所有云硬盘详情
@@ -984,9 +1117,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumesRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumesResponse`
         """
-        return self._list_volumes_with_http_info(request)
+        http_info = self._list_volumes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_volumes_with_http_info(self, request):
+    def list_volumes_async_invoker(self, request):
+        http_info = self._list_volumes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_volumes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cloudvolumes/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVolumesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1037,9 +1182,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1048,20 +1193,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVolumesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_volumes_by_tags_async(self, request):
         """通过标签查询云硬盘资源实例详情
@@ -1075,9 +1216,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListVolumesByTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVolumesByTagsResponse`
         """
-        return self._list_volumes_by_tags_with_http_info(request)
+        http_info = self._list_volumes_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_volumes_by_tags_with_http_info(self, request):
+    def list_volumes_by_tags_async_invoker(self, request):
+        http_info = self._list_volumes_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_volumes_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cloudvolumes/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVolumesByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1092,11 +1245,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1105,20 +1258,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVolumesByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_volume_qo_s_async(self, request):
         """修改云硬盘QoS
@@ -1132,9 +1281,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ModifyVolumeQoSRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ModifyVolumeQoSResponse`
         """
-        return self._modify_volume_qo_s_with_http_info(request)
+        http_info = self._modify_volume_qo_s_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_volume_qo_s_with_http_info(self, request):
+    def modify_volume_qo_s_async_invoker(self, request):
+        http_info = self._modify_volume_qo_s_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_volume_qo_s_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/cloudvolumes/{volume_id}/qos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyVolumeQoSResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1151,11 +1312,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1164,20 +1325,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/cloudvolumes/{volume_id}/qos',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyVolumeQoSResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_volume_async(self, request):
         """扩容云硬盘
@@ -1196,9 +1353,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ResizeVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ResizeVolumeResponse`
         """
-        return self._resize_volume_with_http_info(request)
+        http_info = self._resize_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_volume_with_http_info(self, request):
+    def resize_volume_async_invoker(self, request):
+        http_info = self._resize_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_volume_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/{project_id}/cloudvolumes/{volume_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1215,11 +1384,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1228,20 +1397,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/{project_id}/cloudvolumes/{volume_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rollback_snapshot_async(self, request):
         """回滚快照到云硬盘
@@ -1255,9 +1420,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.RollbackSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.RollbackSnapshotResponse`
         """
-        return self._rollback_snapshot_with_http_info(request)
+        http_info = self._rollback_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rollback_snapshot_with_http_info(self, request):
+    def rollback_snapshot_async_invoker(self, request):
+        http_info = self._rollback_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _rollback_snapshot_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cloudsnapshots/{snapshot_id}/rollback",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollbackSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1274,11 +1451,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1287,20 +1464,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudsnapshots/{snapshot_id}/rollback',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RollbackSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_async(self, request):
         """查询job的状态
@@ -1315,9 +1488,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_async_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1334,9 +1519,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1345,20 +1530,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_snapshot_async(self, request):
         """查询单个云硬盘快照详情
@@ -1372,9 +1553,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowSnapshotResponse`
         """
-        return self._show_snapshot_with_http_info(request)
+        http_info = self._show_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_snapshot_with_http_info(self, request):
+    def show_snapshot_async_invoker(self, request):
+        http_info = self._show_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_snapshot_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cloudsnapshots/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1391,9 +1584,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1402,20 +1595,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudsnapshots/{snapshot_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_volume_async(self, request):
         """查询单个云硬盘详情
@@ -1429,9 +1618,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVolumeResponse`
         """
-        return self._show_volume_with_http_info(request)
+        http_info = self._show_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_volume_with_http_info(self, request):
+    def show_volume_async_invoker(self, request):
+        http_info = self._show_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_volume_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cloudvolumes/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1448,9 +1649,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1459,20 +1660,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_volume_tags_async(self, request):
         """查询云硬盘标签
@@ -1486,9 +1683,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowVolumeTagsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVolumeTagsResponse`
         """
-        return self._show_volume_tags_with_http_info(request)
+        http_info = self._show_volume_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_volume_tags_with_http_info(self, request):
+    def show_volume_tags_async_invoker(self, request):
+        http_info = self._show_volume_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_volume_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cloudvolumes/{volume_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVolumeTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1505,9 +1714,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1516,20 +1725,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVolumeTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_snapshot_async(self, request):
         """更新云硬盘快照
@@ -1543,9 +1748,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.UpdateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateSnapshotResponse`
         """
-        return self._update_snapshot_with_http_info(request)
+        http_info = self._update_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_snapshot_with_http_info(self, request):
+    def update_snapshot_async_invoker(self, request):
+        http_info = self._update_snapshot_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_snapshot_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cloudsnapshots/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1562,11 +1779,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1575,20 +1792,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudsnapshots/{snapshot_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_volume_async(self, request):
         """更新云硬盘
@@ -1602,9 +1815,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.UpdateVolumeRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.UpdateVolumeResponse`
         """
-        return self._update_volume_with_http_info(request)
+        http_info = self._update_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_volume_with_http_info(self, request):
+    def update_volume_async_invoker(self, request):
+        http_info = self._update_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_volume_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/cloudvolumes/{volume_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1621,11 +1846,11 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1634,20 +1859,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cloudvolumes/{volume_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_versions_async(self, request):
         """查询接口版本信息列表
@@ -1661,9 +1882,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ListVersionsRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ListVersionsResponse`
         """
-        return self._list_versions_with_http_info(request)
+        http_info = self._list_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_versions_with_http_info(self, request):
+    def list_versions_async_invoker(self, request):
+        http_info = self._list_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1678,9 +1911,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1689,20 +1922,16 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_version_async(self, request):
         """查询API接口的版本信息
@@ -1716,9 +1945,21 @@ class EvsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkevs.v2.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkevs.v2.ShowVersionResponse`
         """
-        return self._show_version_with_http_info(request)
+        http_info = self._show_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_version_with_http_info(self, request):
+    def show_version_async_invoker(self, request):
+        http_info = self._show_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1735,9 +1976,9 @@ class EvsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1746,20 +1987,26 @@ class EvsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1798,4 +2045,4 @@ class EvsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

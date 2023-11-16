@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkiotedge'")
 
 
 class IoTEdgeAsyncClient(Client):
@@ -39,9 +44,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeNodeResponse`
         """
-        return self._create_edge_node_with_http_info(request)
+        http_info = self._create_edge_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_node_with_http_info(self, request):
+    def create_edge_node_async_invoker(self, request):
+        http_info = self._create_edge_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_edge_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_install_cmd_async(self, request):
         """生成边缘节点安装命令
@@ -96,9 +109,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateInstallCmdResponse`
         """
-        return self._create_install_cmd_with_http_info(request)
+        http_info = self._create_install_cmd_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_install_cmd_with_http_info(self, request):
+    def create_install_cmd_async_invoker(self, request):
+        http_info = self._create_install_cmd_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_install_cmd_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/install",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstallCmdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/install',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstallCmdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_node_async(self, request):
         """删除边缘节点
@@ -157,9 +178,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeNodeResponse`
         """
-        return self._delete_edge_node_with_http_info(request)
+        http_info = self._delete_edge_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_node_with_http_info(self, request):
+    def delete_edge_node_async_invoker(self, request):
+        http_info = self._delete_edge_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_edge_node_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -178,9 +211,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_nodes_async(self, request):
         """查询边缘节点列表
@@ -216,9 +245,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListEdgeNodesResponse`
         """
-        return self._list_edge_nodes_with_http_info(request)
+        http_info = self._list_edge_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_nodes_with_http_info(self, request):
+    def list_edge_nodes_async_invoker(self, request):
+        http_info = self._list_edge_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_edge_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -250,9 +291,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -261,20 +302,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_node_async(self, request):
         """查询边缘节点详情
@@ -288,9 +325,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeNodeResponse`
         """
-        return self._show_edge_node_with_http_info(request)
+        http_info = self._show_edge_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_node_with_http_info(self, request):
+    def show_edge_node_async_invoker(self, request):
+        http_info = self._show_edge_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_edge_node_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -307,9 +356,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -318,20 +367,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_device_controls_release_async(self, request):
         """设备控制释放
@@ -345,9 +390,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ExecuteDeviceControlsReleaseRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ExecuteDeviceControlsReleaseResponse`
         """
-        return self._execute_device_controls_release_with_http_info(request)
+        http_info = self._execute_device_controls_release_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_device_controls_release_with_http_info(self, request):
+    def execute_device_controls_release_async_invoker(self, request):
+        http_info = self._execute_device_controls_release_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_device_controls_release_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}/controls/release",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteDeviceControlsReleaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -366,11 +423,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -379,20 +436,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}/controls/release',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteDeviceControlsReleaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_device_controls_set_async(self, request):
         """设备控制设置
@@ -406,9 +459,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ExecuteDeviceControlsSetRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ExecuteDeviceControlsSetResponse`
         """
-        return self._execute_device_controls_set_with_http_info(request)
+        http_info = self._execute_device_controls_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_device_controls_set_with_http_info(self, request):
+    def execute_device_controls_set_async_invoker(self, request):
+        http_info = self._execute_device_controls_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_device_controls_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}/controls/set",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteDeviceControlsSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -427,11 +492,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -440,20 +505,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}/controls/set',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteDeviceControlsSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_device_async(self, request):
         """添加设备
@@ -467,9 +528,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.AddDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddDeviceResponse`
         """
-        return self._add_device_with_http_info(request)
+        http_info = self._add_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_device_with_http_info(self, request):
+    def add_device_async_invoker(self, request):
+        http_info = self._add_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_device_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -486,11 +559,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -499,20 +572,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_device_async(self, request):
         """删除设备
@@ -526,9 +595,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDeviceResponse`
         """
-        return self._delete_device_with_http_info(request)
+        http_info = self._delete_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_device_with_http_info(self, request):
+    def delete_device_async_invoker(self, request):
+        http_info = self._delete_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_device_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -547,9 +628,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -558,20 +639,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_devices_async(self, request):
         """查询设备列表
@@ -585,9 +662,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListDevicesResponse`
         """
-        return self._list_devices_with_http_info(request)
+        http_info = self._list_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_devices_with_http_info(self, request):
+    def list_devices_async_invoker(self, request):
+        http_info = self._list_devices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_devices_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -612,9 +701,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -623,20 +712,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_product_config_async(self, request):
         """获取协议配置
@@ -650,9 +735,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowProductConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowProductConfigResponse`
         """
-        return self._show_product_config_with_http_info(request)
+        http_info = self._show_product_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_product_config_with_http_info(self, request):
+    def show_product_config_async_invoker(self, request):
+        http_info = self._show_product_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_product_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/protocol-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProductConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -669,9 +766,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -680,20 +777,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/protocol-configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProductConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_device_async(self, request):
         """修改设备
@@ -707,9 +800,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDeviceResponse`
         """
-        return self._update_device_with_http_info(request)
+        http_info = self._update_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_device_with_http_info(self, request):
+    def update_device_async_invoker(self, request):
+        http_info = self._update_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_device_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -728,11 +833,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -741,20 +846,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/devices/{device_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_app_configs_templates_async(self, request):
         """添加应用配置模板
@@ -768,9 +869,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.AddAppConfigsTemplatesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddAppConfigsTemplatesResponse`
         """
-        return self._add_app_configs_templates_with_http_info(request)
+        http_info = self._add_app_configs_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_app_configs_templates_with_http_info(self, request):
+    def add_app_configs_templates_async_invoker(self, request):
+        http_info = self._add_app_configs_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_app_configs_templates_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/templates/apps/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAppConfigsTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -785,11 +898,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -798,20 +911,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/apps/configs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddAppConfigsTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_general_app_configs_template_async(self, request):
         """导入标准应用配置模板
@@ -825,9 +934,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.AddGeneralAppConfigsTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddGeneralAppConfigsTemplateResponse`
         """
-        return self._add_general_app_configs_template_with_http_info(request)
+        http_info = self._add_general_app_configs_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_general_app_configs_template_with_http_info(self, request):
+    def add_general_app_configs_template_async_invoker(self, request):
+        http_info = self._add_general_app_configs_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_general_app_configs_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/templates/apps/configs/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddGeneralAppConfigsTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -842,9 +963,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -853,20 +974,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/apps/configs/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddGeneralAppConfigsTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_app_configs_templates_async(self, request):
         """查询应用配置模板列表
@@ -880,9 +997,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListAppConfigsTemplatesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListAppConfigsTemplatesResponse`
         """
-        return self._batch_list_app_configs_templates_with_http_info(request)
+        http_info = self._batch_list_app_configs_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_app_configs_templates_with_http_info(self, request):
+    def batch_list_app_configs_templates_async_invoker(self, request):
+        http_info = self._batch_list_app_configs_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_app_configs_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/templates/apps/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListAppConfigsTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -901,9 +1030,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -912,20 +1041,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/apps/configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListAppConfigsTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_configs_template_async(self, request):
         """删除应用配置模板
@@ -939,9 +1064,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteAppConfigsTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteAppConfigsTemplateResponse`
         """
-        return self._delete_app_configs_template_with_http_info(request)
+        http_info = self._delete_app_configs_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_configs_template_with_http_info(self, request):
+    def delete_app_configs_template_async_invoker(self, request):
+        http_info = self._delete_app_configs_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_app_configs_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/templates/apps/configs/{tpl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppConfigsTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -958,9 +1095,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -969,20 +1106,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/apps/configs/{tpl_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppConfigsTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_configs_template_async(self, request):
         """查询应用配置模板详情
@@ -996,9 +1129,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowAppConfigsTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowAppConfigsTemplateResponse`
         """
-        return self._show_app_configs_template_with_http_info(request)
+        http_info = self._show_app_configs_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_configs_template_with_http_info(self, request):
+    def show_app_configs_template_async_invoker(self, request):
+        http_info = self._show_app_configs_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_app_configs_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/templates/apps/configs/{tpl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppConfigsTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1015,9 +1160,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1026,20 +1171,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/apps/configs/{tpl_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppConfigsTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_edge_apps_async(self, request):
         """查询应用列表
@@ -1053,9 +1194,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppsResponse`
         """
-        return self._batch_list_edge_apps_with_http_info(request)
+        http_info = self._batch_list_edge_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_edge_apps_with_http_info(self, request):
+    def batch_list_edge_apps_async_invoker(self, request):
+        http_info = self._batch_list_edge_apps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_edge_apps_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListEdgeAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1080,9 +1233,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1091,20 +1244,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListEdgeAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_app_async(self, request):
         """创建应用
@@ -1118,9 +1267,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeAppResponse`
         """
-        return self._create_edge_app_with_http_info(request)
+        http_info = self._create_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_app_with_http_info(self, request):
+    def create_edge_app_async_invoker(self, request):
+        http_info = self._create_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_edge_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1135,11 +1296,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1148,20 +1309,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_app_async(self, request):
         """删除应用
@@ -1175,9 +1332,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeAppResponse`
         """
-        return self._delete_edge_app_with_http_info(request)
+        http_info = self._delete_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_app_with_http_info(self, request):
+    def delete_edge_app_async_invoker(self, request):
+        http_info = self._delete_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_edge_app_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-apps/{edge_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1194,9 +1363,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1205,20 +1374,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps/{edge_app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_app_async(self, request):
         """查询应用
@@ -1232,9 +1397,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeAppResponse`
         """
-        return self._show_edge_app_with_http_info(request)
+        http_info = self._show_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_app_with_http_info(self, request):
+    def show_edge_app_async_invoker(self, request):
+        http_info = self._show_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_edge_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-apps/{edge_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1251,9 +1428,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1262,20 +1439,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps/{edge_app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_edge_app_versions_async(self, request):
         """查询应用版本列表
@@ -1289,9 +1462,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListEdgeAppVersionsResponse`
         """
-        return self._batch_list_edge_app_versions_with_http_info(request)
+        http_info = self._batch_list_edge_app_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_edge_app_versions_with_http_info(self, request):
+    def batch_list_edge_app_versions_async_invoker(self, request):
+        http_info = self._batch_list_edge_app_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_edge_app_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-apps/{edge_app_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListEdgeAppVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1320,9 +1505,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1331,20 +1516,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps/{edge_app_id}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListEdgeAppVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_application_version_async(self, request):
         """创建应用版本
@@ -1358,9 +1539,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateEdgeApplicationVersionResponse`
         """
-        return self._create_edge_application_version_with_http_info(request)
+        http_info = self._create_edge_application_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_application_version_with_http_info(self, request):
+    def create_edge_application_version_async_invoker(self, request):
+        http_info = self._create_edge_application_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_edge_application_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-apps/{edge_app_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeApplicationVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1377,11 +1570,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1390,20 +1583,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps/{edge_app_id}/versions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeApplicationVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_application_version_async(self, request):
         """删除应用版本
@@ -1417,9 +1606,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteEdgeApplicationVersionResponse`
         """
-        return self._delete_edge_application_version_with_http_info(request)
+        http_info = self._delete_edge_application_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_application_version_with_http_info(self, request):
+    def delete_edge_application_version_async_invoker(self, request):
+        http_info = self._delete_edge_application_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_edge_application_version_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-apps/{edge_app_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeApplicationVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1438,9 +1639,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1449,20 +1650,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps/{edge_app_id}/versions/{version}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeApplicationVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_application_version_async(self, request):
         """查询应用版本详情
@@ -1476,9 +1673,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowEdgeApplicationVersionResponse`
         """
-        return self._show_edge_application_version_with_http_info(request)
+        http_info = self._show_edge_application_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_application_version_with_http_info(self, request):
+    def show_edge_application_version_async_invoker(self, request):
+        http_info = self._show_edge_application_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_edge_application_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-apps/{edge_app_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeApplicationVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1497,9 +1706,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1508,20 +1717,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps/{edge_app_id}/versions/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeApplicationVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_application_version_async(self, request):
         """修改应用版本
@@ -1535,9 +1740,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionResponse`
         """
-        return self._update_edge_application_version_with_http_info(request)
+        http_info = self._update_edge_application_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_application_version_with_http_info(self, request):
+    def update_edge_application_version_async_invoker(self, request):
+        http_info = self._update_edge_application_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_edge_application_version_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-apps/{edge_app_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeApplicationVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1556,11 +1773,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1569,20 +1786,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps/{edge_app_id}/versions/{version}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeApplicationVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_application_version_state_async(self, request):
         """更新应用版本状态
@@ -1596,9 +1809,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionStateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateEdgeApplicationVersionStateResponse`
         """
-        return self._update_edge_application_version_state_with_http_info(request)
+        http_info = self._update_edge_application_version_state_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_application_version_state_with_http_info(self, request):
+    def update_edge_application_version_state_async_invoker(self, request):
+        http_info = self._update_edge_application_version_state_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_edge_application_version_state_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-apps/{edge_app_id}/versions/{version}/state",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeApplicationVersionStateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1617,11 +1842,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1630,20 +1855,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-apps/{edge_app_id}/versions/{version}/state',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeApplicationVersionStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_dc_ds_async(self, request):
         """查询数据源配置列表
@@ -1657,9 +1878,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcDsResponse`
         """
-        return self._batch_list_dc_ds_with_http_info(request)
+        http_info = self._batch_list_dc_ds_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_dc_ds_with_http_info(self, request):
+    def batch_list_dc_ds_async_invoker(self, request):
+        http_info = self._batch_list_dc_ds_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_dc_ds_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListDcDsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1682,9 +1915,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1693,20 +1926,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListDcDsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ds_async(self, request):
         """创建数据源配置
@@ -1720,9 +1949,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateDsResponse`
         """
-        return self._create_ds_with_http_info(request)
+        http_info = self._create_ds_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ds_with_http_info(self, request):
+    def create_ds_async_invoker(self, request):
+        http_info = self._create_ds_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ds_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1739,11 +1980,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1752,20 +1993,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_dc_ds_async(self, request):
         """删除数据源配置
@@ -1779,9 +2016,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDcDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDcDsResponse`
         """
-        return self._delete_dc_ds_with_http_info(request)
+        http_info = self._delete_dc_ds_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_dc_ds_with_http_info(self, request):
+    def delete_dc_ds_async_invoker(self, request):
+        http_info = self._delete_dc_ds_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dc_ds_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDcDsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1800,9 +2049,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1811,20 +2060,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDcDsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dc_ds_async(self, request):
         """查询数据源配置
@@ -1838,9 +2083,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowDcDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowDcDsResponse`
         """
-        return self._show_dc_ds_with_http_info(request)
+        http_info = self._show_dc_ds_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dc_ds_with_http_info(self, request):
+    def show_dc_ds_async_invoker(self, request):
+        http_info = self._show_dc_ds_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dc_ds_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDcDsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1859,9 +2116,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1870,20 +2127,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDcDsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def synchronize_dc_configs_async(self, request):
         """下发数采配置
@@ -1897,9 +2150,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.SynchronizeDcConfigsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.SynchronizeDcConfigsResponse`
         """
-        return self._synchronize_dc_configs_with_http_info(request)
+        http_info = self._synchronize_dc_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _synchronize_dc_configs_with_http_info(self, request):
+    def synchronize_dc_configs_async_invoker(self, request):
+        http_info = self._synchronize_dc_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _synchronize_dc_configs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/synchronize",
+            "request_type": request.__class__.__name__,
+            "response_type": "SynchronizeDcConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1918,9 +2183,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1929,20 +2194,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/synchronize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SynchronizeDcConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_dc_ds_async(self, request):
         """修改数据源配置
@@ -1956,9 +2217,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDcDsResponse`
         """
-        return self._update_dc_ds_with_http_info(request)
+        http_info = self._update_dc_ds_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_dc_ds_with_http_info(self, request):
+    def update_dc_ds_async_invoker(self, request):
+        http_info = self._update_dc_ds_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_dc_ds_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDcDsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1977,11 +2250,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1990,20 +2263,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDcDsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_dc_devices_async(self, request):
         """查数采连接子设备列表
@@ -2017,9 +2286,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcDevicesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcDevicesResponse`
         """
-        return self._batch_list_dc_devices_with_http_info(request)
+        http_info = self._batch_list_dc_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_dc_devices_with_http_info(self, request):
+    def batch_list_dc_devices_async_invoker(self, request):
+        http_info = self._batch_list_dc_devices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_dc_devices_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListDcDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2044,9 +2325,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2055,20 +2336,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/devices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListDcDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_dc_points_async(self, request):
         """查询点位表配置列表
@@ -2082,9 +2359,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListDcPointsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListDcPointsResponse`
         """
-        return self._batch_list_dc_points_with_http_info(request)
+        http_info = self._batch_list_dc_points_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_dc_points_with_http_info(self, request):
+    def batch_list_dc_points_async_invoker(self, request):
+        http_info = self._batch_list_dc_points_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_dc_points_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListDcPointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2115,9 +2404,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2126,20 +2415,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListDcPointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_dc_point_async(self, request):
         """创建点位表配置
@@ -2153,9 +2438,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateDcPointRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateDcPointResponse`
         """
-        return self._create_dc_point_with_http_info(request)
+        http_info = self._create_dc_point_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_dc_point_with_http_info(self, request):
+    def create_dc_point_async_invoker(self, request):
+        http_info = self._create_dc_point_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_dc_point_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDcPointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2174,11 +2471,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2187,20 +2484,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDcPointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_dc_point_async(self, request):
         """删除点位表配置
@@ -2214,9 +2507,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteDcPointRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteDcPointResponse`
         """
-        return self._delete_dc_point_with_http_info(request)
+        http_info = self._delete_dc_point_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_dc_point_with_http_info(self, request):
+    def delete_dc_point_async_invoker(self, request):
+        http_info = self._delete_dc_point_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_dc_point_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDcPointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2241,9 +2546,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2252,20 +2557,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDcPointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dc_point_async(self, request):
         """查询点位表配置详情
@@ -2279,9 +2580,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowDcPointRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowDcPointResponse`
         """
-        return self._show_dc_point_with_http_info(request)
+        http_info = self._show_dc_point_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dc_point_with_http_info(self, request):
+    def show_dc_point_async_invoker(self, request):
+        http_info = self._show_dc_point_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dc_point_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDcPointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2306,9 +2619,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2317,20 +2630,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDcPointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_dc_point_async(self, request):
         """修改点位表配置
@@ -2344,9 +2653,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateDcPointRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateDcPointResponse`
         """
-        return self._update_dc_point_with_http_info(request)
+        http_info = self._update_dc_point_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_dc_point_with_http_info(self, request):
+    def update_dc_point_async_invoker(self, request):
+        http_info = self._update_dc_point_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_dc_point_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDcPointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2367,11 +2688,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2380,20 +2701,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/points/{point_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDcPointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_external_entity_async(self, request):
         """在指定节点上创建外部实体
@@ -2407,9 +2724,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateExternalEntityResponse`
         """
-        return self._create_external_entity_with_http_info(request)
+        http_info = self._create_external_entity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_external_entity_with_http_info(self, request):
+    def create_external_entity_async_invoker(self, request):
+        http_info = self._create_external_entity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_external_entity_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/externals",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExternalEntityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2426,11 +2755,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2439,20 +2768,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/externals',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateExternalEntityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_external_entity_async(self, request):
         """删除指定节点下外部实体
@@ -2466,9 +2791,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteExternalEntityResponse`
         """
-        return self._delete_external_entity_with_http_info(request)
+        http_info = self._delete_external_entity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_external_entity_with_http_info(self, request):
+    def delete_external_entity_async_invoker(self, request):
+        http_info = self._delete_external_entity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_external_entity_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/externals/{external_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteExternalEntityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2487,9 +2824,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2498,20 +2835,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/externals/{external_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteExternalEntityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_external_entity_async(self, request):
         """查询指定边缘节点下的外部实体
@@ -2525,9 +2858,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListExternalEntityResponse`
         """
-        return self._list_external_entity_with_http_info(request)
+        http_info = self._list_external_entity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_external_entity_with_http_info(self, request):
+    def list_external_entity_async_invoker(self, request):
+        http_info = self._list_external_entity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_external_entity_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/externals",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExternalEntityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2548,9 +2893,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2559,20 +2904,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/externals',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListExternalEntityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_external_entity_async(self, request):
         """修改节点下指定的外部实体信息
@@ -2586,9 +2927,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateExternalEntityResponse`
         """
-        return self._update_external_entity_with_http_info(request)
+        http_info = self._update_external_entity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_external_entity_with_http_info(self, request):
+    def update_external_entity_async_invoker(self, request):
+        http_info = self._update_external_entity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_external_entity_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/externals/{external_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateExternalEntityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2607,11 +2960,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2620,20 +2973,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/externals/{external_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateExternalEntityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_modules_async(self, request):
         """查询边缘模块列表
@@ -2647,9 +2996,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListModulesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListModulesResponse`
         """
-        return self._batch_list_modules_with_http_info(request)
+        http_info = self._batch_list_modules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_modules_with_http_info(self, request):
+    def batch_list_modules_async_invoker(self, request):
+        http_info = self._batch_list_modules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_modules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListModulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2674,9 +3035,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2685,20 +3046,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListModulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_module_async(self, request):
         """创建边缘模块
@@ -2712,9 +3069,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateModuleResponse`
         """
-        return self._create_module_with_http_info(request)
+        http_info = self._create_module_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_module_with_http_info(self, request):
+    def create_module_async_invoker(self, request):
+        http_info = self._create_module_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_module_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateModuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2731,11 +3100,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2744,20 +3113,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateModuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_module_async(self, request):
         """删除边缘模块
@@ -2771,9 +3136,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteModuleResponse`
         """
-        return self._delete_module_with_http_info(request)
+        http_info = self._delete_module_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_module_with_http_info(self, request):
+    def delete_module_async_invoker(self, request):
+        http_info = self._delete_module_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_module_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteModuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2792,9 +3169,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2803,20 +3180,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteModuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_module_async(self, request):
         """查询边缘模块
@@ -2830,9 +3203,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowModuleResponse`
         """
-        return self._show_module_with_http_info(request)
+        http_info = self._show_module_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_module_with_http_info(self, request):
+    def show_module_async_invoker(self, request):
+        http_info = self._show_module_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_module_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowModuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2851,9 +3236,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2862,20 +3247,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowModuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_module_async(self, request):
         """修改边缘模块
@@ -2889,9 +3270,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateModuleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateModuleResponse`
         """
-        return self._update_module_with_http_info(request)
+        http_info = self._update_module_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_module_with_http_info(self, request):
+    def update_module_async_invoker(self, request):
+        http_info = self._update_module_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_module_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateModuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2910,11 +3303,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2923,20 +3316,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateModuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_module_state_async(self, request):
         """修改边缘模块状态
@@ -2950,9 +3339,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateModuleStateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateModuleStateResponse`
         """
-        return self._update_module_state_with_http_info(request)
+        http_info = self._update_module_state_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_module_state_with_http_info(self, request):
+    def update_module_state_async_invoker(self, request):
+        http_info = self._update_module_state_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_module_state_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/state",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateModuleStateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2971,11 +3372,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2984,20 +3385,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/state',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateModuleStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_module_shadow_async(self, request):
         """获取模块影子
@@ -3011,9 +3408,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowModuleShadowRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowModuleShadowResponse`
         """
-        return self._show_module_shadow_with_http_info(request)
+        http_info = self._show_module_shadow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_module_shadow_with_http_info(self, request):
+    def show_module_shadow_async_invoker(self, request):
+        http_info = self._show_module_shadow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_module_shadow_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/shadow",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowModuleShadowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3032,9 +3441,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3043,20 +3452,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/shadow',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowModuleShadowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_module_shadow_async(self, request):
         """更新模块影子
@@ -3070,9 +3475,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateModuleShadowRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateModuleShadowResponse`
         """
-        return self._update_module_shadow_with_http_info(request)
+        http_info = self._update_module_shadow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_module_shadow_with_http_info(self, request):
+    def update_module_shadow_async_invoker(self, request):
+        http_info = self._update_module_shadow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_module_shadow_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/shadow",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateModuleShadowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3091,11 +3508,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3104,20 +3521,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/modules/{module_id}/shadow',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateModuleShadowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_routes_async(self, request):
         """查询边缘路由列表
@@ -3131,9 +3544,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListRoutesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListRoutesResponse`
         """
-        return self._list_routes_with_http_info(request)
+        http_info = self._list_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_routes_with_http_info(self, request):
+    def list_routes_async_invoker(self, request):
+        http_info = self._list_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_routes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3152,9 +3577,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3163,20 +3588,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/routes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_routes_async(self, request):
         """设置边缘路由
@@ -3190,9 +3611,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateRoutesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateRoutesResponse`
         """
-        return self._update_routes_with_http_info(request)
+        http_info = self._update_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_routes_with_http_info(self, request):
+    def update_routes_async_invoker(self, request):
+        http_info = self._update_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_routes_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3209,11 +3642,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3222,20 +3655,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/routes',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_general_ot_template_async(self, request):
         """导入标准数采模板
@@ -3249,9 +3678,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.AddGeneralOtTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddGeneralOtTemplateResponse`
         """
-        return self._add_general_ot_template_with_http_info(request)
+        http_info = self._add_general_ot_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_general_ot_template_with_http_info(self, request):
+    def add_general_ot_template_async_invoker(self, request):
+        http_info = self._add_general_ot_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_general_ot_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/templates/ots/data-sources/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddGeneralOtTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3266,9 +3707,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3277,20 +3718,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/ots/data-sources/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddGeneralOtTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_ot_templates_async(self, request):
         """添加数采模板
@@ -3304,9 +3741,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.AddOtTemplatesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.AddOtTemplatesResponse`
         """
-        return self._add_ot_templates_with_http_info(request)
+        http_info = self._add_ot_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_ot_templates_with_http_info(self, request):
+    def add_ot_templates_async_invoker(self, request):
+        http_info = self._add_ot_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_ot_templates_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/templates/ots/data-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddOtTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3321,11 +3770,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3334,20 +3783,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/ots/data-sources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddOtTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_ot_templates_async(self, request):
         """查询数采模板列表
@@ -3361,9 +3806,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchListOtTemplatesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchListOtTemplatesResponse`
         """
-        return self._batch_list_ot_templates_with_http_info(request)
+        http_info = self._batch_list_ot_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_ot_templates_with_http_info(self, request):
+    def batch_list_ot_templates_async_invoker(self, request):
+        http_info = self._batch_list_ot_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_ot_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/templates/ots/data-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListOtTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3382,9 +3839,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3393,20 +3850,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/ots/data-sources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListOtTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ot_template_async(self, request):
         """删除数采模板
@@ -3420,9 +3873,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteOtTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteOtTemplateResponse`
         """
-        return self._delete_ot_template_with_http_info(request)
+        http_info = self._delete_ot_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ot_template_with_http_info(self, request):
+    def delete_ot_template_async_invoker(self, request):
+        http_info = self._delete_ot_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ot_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/templates/ots/data-sources/{tpl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOtTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3439,9 +3904,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3450,20 +3915,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/ots/data-sources/{tpl_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteOtTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ot_template_async(self, request):
         """查询数采模板详情
@@ -3477,9 +3938,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowOtTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowOtTemplateResponse`
         """
-        return self._show_ot_template_with_http_info(request)
+        http_info = self._show_ot_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ot_template_with_http_info(self, request):
+    def show_ot_template_async_invoker(self, request):
+        http_info = self._show_ot_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ot_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/templates/ots/data-sources/{tpl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOtTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3496,9 +3969,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3507,20 +3980,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/templates/ots/data-sources/{tpl_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOtTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_points_async(self, request):
         """批量导入点位表
@@ -3534,9 +4003,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ImportPointsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ImportPointsResponse`
         """
-        return self._import_points_with_http_info(request)
+        http_info = self._import_points_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_points_with_http_info(self, request):
+    def import_points_async_invoker(self, request):
+        http_info = self._import_points_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_points_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/import-points",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportPointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3559,11 +4040,11 @@ class IoTEdgeAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3572,20 +4053,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/import-points',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportPointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_point_template_async(self, request):
         """查询点位表模板文件
@@ -3599,9 +4076,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowPointTemplateRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowPointTemplateResponse`
         """
-        return self._show_point_template_with_http_info(request)
+        http_info = self._show_point_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_point_template_with_http_info(self, request):
+    def show_point_template_async_invoker(self, request):
+        http_info = self._show_point_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_point_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/download-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPointTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3620,9 +4109,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3631,20 +4120,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/download-template',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPointTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_points_async(self, request):
         """查询点位表模板文件
@@ -3658,9 +4143,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowPointsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowPointsResponse`
         """
-        return self._show_points_with_http_info(request)
+        http_info = self._show_points_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_points_with_http_info(self, request):
+    def show_points_async_invoker(self, request):
+        http_info = self._show_points_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_points_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/export-points",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3679,9 +4176,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3690,20 +4187,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/ots/data-sources/{ds_id}/export-points',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_schedule_async(self, request):
         """创建调度计划
@@ -3717,9 +4210,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.CreateScheduleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.CreateScheduleResponse`
         """
-        return self._create_schedule_with_http_info(request)
+        http_info = self._create_schedule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_schedule_with_http_info(self, request):
+    def create_schedule_async_invoker(self, request):
+        http_info = self._create_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_schedule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/schedules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScheduleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3736,11 +4241,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3749,20 +4254,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/schedules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScheduleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_schedule_async(self, request):
         """删除调度计划
@@ -3776,9 +4277,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteScheduleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteScheduleResponse`
         """
-        return self._delete_schedule_with_http_info(request)
+        http_info = self._delete_schedule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_schedule_with_http_info(self, request):
+    def delete_schedule_async_invoker(self, request):
+        http_info = self._delete_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_schedule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/schedules/{schedule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScheduleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3797,9 +4310,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3808,20 +4321,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/schedules/{schedule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScheduleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_schedule_async(self, request):
         """更新调度计划，机机接口，全量更新字段
@@ -3835,9 +4344,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateScheduleRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateScheduleResponse`
         """
-        return self._update_schedule_with_http_info(request)
+        http_info = self._update_schedule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_schedule_with_http_info(self, request):
+    def update_schedule_async_invoker(self, request):
+        http_info = self._update_schedule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_schedule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{edge_node_id}/schedules/{schedule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScheduleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3856,11 +4377,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3869,20 +4390,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{edge_node_id}/schedules/{schedule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateScheduleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_confirm_configs_new_async(self, request):
         """批量确认南向3rdIA配置项
@@ -3896,9 +4413,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchConfirmConfigsNewRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchConfirmConfigsNewResponse`
         """
-        return self._batch_confirm_configs_new_with_http_info(request)
+        http_info = self._batch_confirm_configs_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_confirm_configs_new_with_http_info(self, request):
+    def batch_confirm_configs_new_async_invoker(self, request):
+        http_info = self._batch_confirm_configs_new_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_confirm_configs_new_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/batch-confirm",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchConfirmConfigsNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3917,11 +4446,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3930,20 +4459,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/batch-confirm',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchConfirmConfigsNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_import_configs_async(self, request):
         """批量导入南向3rdIA配置项
@@ -3957,9 +4482,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchImportConfigsResponse`
         """
-        return self._batch_import_configs_with_http_info(request)
+        http_info = self._batch_import_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_import_configs_with_http_info(self, request):
+    def batch_import_configs_async_invoker(self, request):
+        http_info = self._batch_import_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_import_configs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/batch-import",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchImportConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3978,11 +4515,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3991,20 +4528,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/batch-import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchImportConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ia_config_async(self, request):
         """删除南向3rdIA配置项
@@ -4018,9 +4551,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteIaConfigResponse`
         """
-        return self._delete_ia_config_with_http_info(request)
+        http_info = self._delete_ia_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ia_config_with_http_info(self, request):
+    def delete_ia_config_async_invoker(self, request):
+        http_info = self._delete_ia_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ia_config_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIaConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4041,9 +4586,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4052,20 +4597,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/{config_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIaConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ia_configs_async(self, request):
         """查询南向3rdIA配置项列表
@@ -4079,9 +4620,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListIaConfigsRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListIaConfigsResponse`
         """
-        return self._list_ia_configs_with_http_info(request)
+        http_info = self._list_ia_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ia_configs_with_http_info(self, request):
+    def list_ia_configs_async_invoker(self, request):
+        http_info = self._list_ia_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ia_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIaConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4104,9 +4657,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4115,20 +4668,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIaConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ia_config_async(self, request):
         """查询南向3rdIA配置项详情
@@ -4142,9 +4691,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowIaConfigResponse`
         """
-        return self._show_ia_config_with_http_info(request)
+        http_info = self._show_ia_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ia_config_with_http_info(self, request):
+    def show_ia_config_async_invoker(self, request):
+        http_info = self._show_ia_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ia_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIaConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4165,9 +4726,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4176,20 +4737,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/{config_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIaConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ia_config_async(self, request):
         """创建&更新南向3rdIA配置项信息
@@ -4203,9 +4760,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateIaConfigResponse`
         """
-        return self._update_ia_config_with_http_info(request)
+        http_info = self._update_ia_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ia_config_with_http_info(self, request):
+    def update_ia_config_async_invoker(self, request):
+        http_info = self._update_ia_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ia_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIaConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4226,11 +4795,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4239,20 +4808,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edge-nodes/{node_id}/ias/{ia_id}/configs/{config_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIaConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_associate_na_to_nodes_async(self, request):
         """授权北向NA信息到边缘节点
@@ -4267,9 +4832,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.BatchAssociateNaToNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.BatchAssociateNaToNodesResponse`
         """
-        return self._batch_associate_na_to_nodes_with_http_info(request)
+        http_info = self._batch_associate_na_to_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_associate_na_to_nodes_with_http_info(self, request):
+    def batch_associate_na_to_nodes_async_invoker(self, request):
+        http_info = self._batch_associate_na_to_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_associate_na_to_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/nas/{na_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAssociateNaToNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4288,11 +4865,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4301,20 +4878,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nas/{na_id}/nodes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAssociateNaToNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_na_async(self, request):
         """删除北向NA信息
@@ -4328,9 +4901,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.DeleteNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.DeleteNaResponse`
         """
-        return self._delete_na_with_http_info(request)
+        http_info = self._delete_na_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_na_with_http_info(self, request):
+    def delete_na_async_invoker(self, request):
+        http_info = self._delete_na_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_na_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/nas/{na_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4347,9 +4932,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4358,20 +4943,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nas/{na_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_na_authorized_nodes_async(self, request):
         """查询该北向NA信息的已分配节点
@@ -4385,9 +4966,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListNaAuthorizedNodesRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListNaAuthorizedNodesResponse`
         """
-        return self._list_na_authorized_nodes_with_http_info(request)
+        http_info = self._list_na_authorized_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_na_authorized_nodes_with_http_info(self, request):
+    def list_na_authorized_nodes_async_invoker(self, request):
+        http_info = self._list_na_authorized_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_na_authorized_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/nas/{na_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNaAuthorizedNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4408,9 +5001,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4419,20 +5012,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nas/{na_id}/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNaAuthorizedNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nas_async(self, request):
         """查询北向NA信息列表
@@ -4446,9 +5035,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ListNasRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ListNasResponse`
         """
-        return self._list_nas_with_http_info(request)
+        http_info = self._list_nas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nas_with_http_info(self, request):
+    def list_nas_async_invoker(self, request):
+        http_info = self._list_nas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/nas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4469,9 +5070,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4480,20 +5081,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_na_async(self, request):
         """查询北向NA信息详情
@@ -4507,9 +5104,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.ShowNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.ShowNaResponse`
         """
-        return self._show_na_with_http_info(request)
+        http_info = self._show_na_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_na_with_http_info(self, request):
+    def show_na_async_invoker(self, request):
+        http_info = self._show_na_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_na_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/nas/{na_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4526,9 +5135,9 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4537,20 +5146,16 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nas/{na_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_na_async(self, request):
         """创建&更新北向NA信息
@@ -4564,9 +5169,21 @@ class IoTEdgeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkiotedge.v2.UpdateNaRequest`
         :rtype: :class:`huaweicloudsdkiotedge.v2.UpdateNaResponse`
         """
-        return self._update_na_with_http_info(request)
+        http_info = self._update_na_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_na_with_http_info(self, request):
+    def update_na_async_invoker(self, request):
+        http_info = self._update_na_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_na_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/nas/{na_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4583,11 +5200,11 @@ class IoTEdgeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4596,20 +5213,26 @@ class IoTEdgeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nas/{na_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -4648,4 +5271,4 @@ class IoTEdgeAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

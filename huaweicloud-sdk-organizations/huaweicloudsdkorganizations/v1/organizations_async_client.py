@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkorganizations'")
 
 
 class OrganizationsAsyncClient(Client):
@@ -39,9 +44,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.InviteAccountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.InviteAccountResponse`
         """
-        return self._invite_account_with_http_info(request)
+        http_info = self._invite_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _invite_account_with_http_info(self, request):
+    def invite_account_async_invoker(self, request):
+        http_info = self._invite_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _invite_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/accounts/invite",
+            "request_type": request.__class__.__name__,
+            "response_type": "InviteAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/accounts/invite',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InviteAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_accounts_async(self, request):
         """列出组织中的帐号
@@ -96,9 +109,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListAccountsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListAccountsResponse`
         """
-        return self._list_accounts_with_http_info(request)
+        http_info = self._list_accounts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_accounts_with_http_info(self, request):
+    def list_accounts_async_invoker(self, request):
+        http_info = self._list_accounts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_accounts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/accounts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccountsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,9 +144,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/accounts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccountsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_create_account_statuses_async(self, request):
         """列出创建帐号的状态
@@ -157,9 +178,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListCreateAccountStatusesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListCreateAccountStatusesResponse`
         """
-        return self._list_create_account_statuses_with_http_info(request)
+        http_info = self._list_create_account_statuses_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_create_account_statuses_with_http_info(self, request):
+    def list_create_account_statuses_async_invoker(self, request):
+        http_info = self._list_create_account_statuses_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_create_account_statuses_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/create-account-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCreateAccountStatusesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -181,9 +214,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -192,20 +225,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/create-account-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCreateAccountStatusesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def move_account_async(self, request):
         """移动帐号
@@ -219,9 +248,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.MoveAccountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.MoveAccountResponse`
         """
-        return self._move_account_with_http_info(request)
+        http_info = self._move_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _move_account_with_http_info(self, request):
+    def move_account_async_invoker(self, request):
+        http_info = self._move_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _move_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/accounts/{account_id}/move",
+            "request_type": request.__class__.__name__,
+            "response_type": "MoveAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -238,11 +279,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -251,20 +292,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/accounts/{account_id}/move',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MoveAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_account_async(self, request):
         """移除指定的帐号
@@ -278,9 +315,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.RemoveAccountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.RemoveAccountResponse`
         """
-        return self._remove_account_with_http_info(request)
+        http_info = self._remove_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_account_with_http_info(self, request):
+    def remove_account_async_invoker(self, request):
+        http_info = self._remove_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_account_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/accounts/{account_id}/remove",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -297,9 +346,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -308,20 +357,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/accounts/{account_id}/remove',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_account_async(self, request):
         """查询帐号信息
@@ -335,9 +380,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowAccountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowAccountResponse`
         """
-        return self._show_account_with_http_info(request)
+        http_info = self._show_account_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_account_with_http_info(self, request):
+    def show_account_async_invoker(self, request):
+        http_info = self._show_account_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_account_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/accounts/{account_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAccountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -354,9 +411,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -365,20 +422,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/accounts/{account_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAccountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_create_account_status_async(self, request):
         """查询有关创建帐号状态的信息
@@ -392,9 +445,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowCreateAccountStatusRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowCreateAccountStatusResponse`
         """
-        return self._show_create_account_status_with_http_info(request)
+        http_info = self._show_create_account_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_create_account_status_with_http_info(self, request):
+    def show_create_account_status_async_invoker(self, request):
+        http_info = self._show_create_account_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_create_account_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/create-account-status/{create_account_status_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCreateAccountStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -411,9 +476,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -422,20 +487,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/create-account-status/{create_account_status_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCreateAccountStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def deregister_delegated_administrator_async(self, request):
         """注销服务的委托管理员
@@ -449,9 +510,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeregisterDelegatedAdministratorRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeregisterDelegatedAdministratorResponse`
         """
-        return self._deregister_delegated_administrator_with_http_info(request)
+        http_info = self._deregister_delegated_administrator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _deregister_delegated_administrator_with_http_info(self, request):
+    def deregister_delegated_administrator_async_invoker(self, request):
+        http_info = self._deregister_delegated_administrator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _deregister_delegated_administrator_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/delegated-administrators/deregister",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeregisterDelegatedAdministratorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -466,11 +539,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -479,20 +552,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/delegated-administrators/deregister',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeregisterDelegatedAdministratorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_delegated_administrators_async(self, request):
         """列出此组织中指定为委托管理员的帐号
@@ -506,9 +575,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListDelegatedAdministratorsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListDelegatedAdministratorsResponse`
         """
-        return self._list_delegated_administrators_with_http_info(request)
+        http_info = self._list_delegated_administrators_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_delegated_administrators_with_http_info(self, request):
+    def list_delegated_administrators_async_invoker(self, request):
+        http_info = self._list_delegated_administrators_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_delegated_administrators_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/delegated-administrators",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDelegatedAdministratorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -529,9 +610,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -540,20 +621,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/delegated-administrators',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDelegatedAdministratorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_delegated_services_async(self, request):
         """列出指定帐号是其委托管理员的服务
@@ -567,9 +644,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListDelegatedServicesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListDelegatedServicesResponse`
         """
-        return self._list_delegated_services_with_http_info(request)
+        http_info = self._list_delegated_services_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_delegated_services_with_http_info(self, request):
+    def list_delegated_services_async_invoker(self, request):
+        http_info = self._list_delegated_services_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_delegated_services_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/accounts/{account_id}/delegated-services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDelegatedServicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -590,9 +679,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -601,20 +690,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/accounts/{account_id}/delegated-services',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDelegatedServicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_delegated_administrator_async(self, request):
         """注册作为服务委托管理员
@@ -628,9 +713,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.RegisterDelegatedAdministratorRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.RegisterDelegatedAdministratorResponse`
         """
-        return self._register_delegated_administrator_with_http_info(request)
+        http_info = self._register_delegated_administrator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_delegated_administrator_with_http_info(self, request):
+    def register_delegated_administrator_async_invoker(self, request):
+        http_info = self._register_delegated_administrator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_delegated_administrator_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/delegated-administrators/register",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterDelegatedAdministratorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -645,11 +742,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -658,20 +755,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/delegated-administrators/register',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterDelegatedAdministratorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def accept_handshake_async(self, request):
         """接受邀请
@@ -685,9 +778,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.AcceptHandshakeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.AcceptHandshakeResponse`
         """
-        return self._accept_handshake_with_http_info(request)
+        http_info = self._accept_handshake_http_info(request)
+        return self._call_api(**http_info)
 
-    def _accept_handshake_with_http_info(self, request):
+    def accept_handshake_async_invoker(self, request):
+        http_info = self._accept_handshake_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _accept_handshake_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/received-handshakes/{handshake_id}/accept",
+            "request_type": request.__class__.__name__,
+            "response_type": "AcceptHandshakeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -704,9 +809,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -715,20 +820,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/received-handshakes/{handshake_id}/accept',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AcceptHandshakeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_handshake_async(self, request):
         """取消邀请
@@ -742,9 +843,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CancelHandshakeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CancelHandshakeResponse`
         """
-        return self._cancel_handshake_with_http_info(request)
+        http_info = self._cancel_handshake_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_handshake_with_http_info(self, request):
+    def cancel_handshake_async_invoker(self, request):
+        http_info = self._cancel_handshake_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_handshake_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/handshakes/{handshake_id}/cancel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelHandshakeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -761,9 +874,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -772,20 +885,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/handshakes/{handshake_id}/cancel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelHandshakeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def decline_handshake_async(self, request):
         """拒绝邀请
@@ -799,9 +908,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeclineHandshakeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeclineHandshakeResponse`
         """
-        return self._decline_handshake_with_http_info(request)
+        http_info = self._decline_handshake_http_info(request)
+        return self._call_api(**http_info)
 
-    def _decline_handshake_with_http_info(self, request):
+    def decline_handshake_async_invoker(self, request):
+        http_info = self._decline_handshake_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _decline_handshake_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/received-handshakes/{handshake_id}/decline",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeclineHandshakeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -818,9 +939,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -829,20 +950,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/received-handshakes/{handshake_id}/decline',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeclineHandshakeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_handshakes_async(self, request):
         """列出发送的邀请
@@ -856,9 +973,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListHandshakesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListHandshakesResponse`
         """
-        return self._list_handshakes_with_http_info(request)
+        http_info = self._list_handshakes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_handshakes_with_http_info(self, request):
+    def list_handshakes_async_invoker(self, request):
+        http_info = self._list_handshakes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_handshakes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/handshakes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHandshakesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -877,9 +1006,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -888,20 +1017,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/handshakes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHandshakesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_received_handshakes_async(self, request):
         """列出收到的邀请
@@ -915,9 +1040,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListReceivedHandshakesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListReceivedHandshakesResponse`
         """
-        return self._list_received_handshakes_with_http_info(request)
+        http_info = self._list_received_handshakes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_received_handshakes_with_http_info(self, request):
+    def list_received_handshakes_async_invoker(self, request):
+        http_info = self._list_received_handshakes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_received_handshakes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/received-handshakes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListReceivedHandshakesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -936,9 +1073,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -947,20 +1084,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/received-handshakes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListReceivedHandshakesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_handshake_async(self, request):
         """查询邀请相关信息
@@ -974,9 +1107,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowHandshakeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowHandshakeResponse`
         """
-        return self._show_handshake_with_http_info(request)
+        http_info = self._show_handshake_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_handshake_with_http_info(self, request):
+    def show_handshake_async_invoker(self, request):
+        http_info = self._show_handshake_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_handshake_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/handshakes/{handshake_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHandshakeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -993,9 +1138,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1004,20 +1149,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/handshakes/{handshake_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHandshakeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_entities_async(self, request):
         """列出组织中的根、组织单元和帐号
@@ -1031,9 +1172,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListEntitiesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListEntitiesResponse`
         """
-        return self._list_entities_with_http_info(request)
+        http_info = self._list_entities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_entities_with_http_info(self, request):
+    def list_entities_async_invoker(self, request):
+        http_info = self._list_entities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_entities_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/entities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEntitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1056,9 +1209,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1067,20 +1220,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/entities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEntitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas_async(self, request):
         """列出租户的组织配额
@@ -1094,9 +1243,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_async_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1111,9 +1272,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1122,20 +1283,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_services_async(self, request):
         """列出所有可以与组织服务集成的云服务
@@ -1149,9 +1306,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListServicesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListServicesResponse`
         """
-        return self._list_services_with_http_info(request)
+        http_info = self._list_services_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_services_with_http_info(self, request):
+    def list_services_async_invoker(self, request):
+        http_info = self._list_services_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_services_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1166,9 +1335,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1177,20 +1346,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/services',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tag_policy_services_async(self, request):
         """列出被添加到标签策略强制执行的资源类型
@@ -1204,9 +1369,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListTagPolicyServicesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListTagPolicyServicesResponse`
         """
-        return self._list_tag_policy_services_with_http_info(request)
+        http_info = self._list_tag_policy_services_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tag_policy_services_with_http_info(self, request):
+    def list_tag_policy_services_async_invoker(self, request):
+        http_info = self._list_tag_policy_services_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tag_policy_services_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/tag-policy-services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagPolicyServicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1221,9 +1398,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1232,20 +1409,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/tag-policy-services',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagPolicyServicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_effective_policies_async(self, request):
         """查询有效的策略
@@ -1259,9 +1432,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowEffectivePoliciesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowEffectivePoliciesResponse`
         """
-        return self._show_effective_policies_with_http_info(request)
+        http_info = self._show_effective_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_effective_policies_with_http_info(self, request):
+    def show_effective_policies_async_invoker(self, request):
+        http_info = self._show_effective_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_effective_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/entities/effective-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEffectivePoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1280,9 +1465,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1291,20 +1476,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/entities/effective-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEffectivePoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_organization_async(self, request):
         """创建组织
@@ -1318,9 +1499,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationResponse`
         """
-        return self._create_organization_with_http_info(request)
+        http_info = self._create_organization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_organization_with_http_info(self, request):
+    def create_organization_async_invoker(self, request):
+        http_info = self._create_organization_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_organization_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrganizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1335,9 +1528,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1346,20 +1539,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrganizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_organization_async(self, request):
         """删除组织
@@ -1373,9 +1562,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeleteOrganizationRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeleteOrganizationResponse`
         """
-        return self._delete_organization_with_http_info(request)
+        http_info = self._delete_organization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_organization_with_http_info(self, request):
+    def delete_organization_async_invoker(self, request):
+        http_info = self._delete_organization_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_organization_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/organizations",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOrganizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1390,9 +1591,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1401,20 +1602,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteOrganizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def leave_organization_async(self, request):
         """离开当前组织
@@ -1428,9 +1625,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.LeaveOrganizationRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.LeaveOrganizationResponse`
         """
-        return self._leave_organization_with_http_info(request)
+        http_info = self._leave_organization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _leave_organization_with_http_info(self, request):
+    def leave_organization_async_invoker(self, request):
+        http_info = self._leave_organization_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _leave_organization_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/leave",
+            "request_type": request.__class__.__name__,
+            "response_type": "LeaveOrganizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1445,9 +1654,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1456,20 +1665,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/leave',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='LeaveOrganizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_roots_async(self, request):
         """列出组织的根
@@ -1483,9 +1688,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListRootsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListRootsResponse`
         """
-        return self._list_roots_with_http_info(request)
+        http_info = self._list_roots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_roots_with_http_info(self, request):
+    def list_roots_async_invoker(self, request):
+        http_info = self._list_roots_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_roots_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/roots",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRootsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1504,9 +1721,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1515,20 +1732,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/roots',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRootsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_organization_async(self, request):
         """查询所属组织信息
@@ -1542,9 +1755,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowOrganizationRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowOrganizationResponse`
         """
-        return self._show_organization_with_http_info(request)
+        http_info = self._show_organization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_organization_with_http_info(self, request):
+    def show_organization_async_invoker(self, request):
+        http_info = self._show_organization_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_organization_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrganizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1559,9 +1784,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1570,20 +1795,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOrganizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_organizational_unit_async(self, request):
         """创建组织单元
@@ -1597,9 +1818,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationalUnitRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateOrganizationalUnitResponse`
         """
-        return self._create_organizational_unit_with_http_info(request)
+        http_info = self._create_organizational_unit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_organizational_unit_with_http_info(self, request):
+    def create_organizational_unit_async_invoker(self, request):
+        http_info = self._create_organizational_unit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_organizational_unit_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/organizational-units",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrganizationalUnitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1614,11 +1847,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1627,20 +1860,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/organizational-units',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrganizationalUnitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_organizational_unit_async(self, request):
         """删除组织单元
@@ -1654,9 +1883,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeleteOrganizationalUnitRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeleteOrganizationalUnitResponse`
         """
-        return self._delete_organizational_unit_with_http_info(request)
+        http_info = self._delete_organizational_unit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_organizational_unit_with_http_info(self, request):
+    def delete_organizational_unit_async_invoker(self, request):
+        http_info = self._delete_organizational_unit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_organizational_unit_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/organizations/organizational-units/{organizational_unit_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteOrganizationalUnitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1673,9 +1914,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1684,20 +1925,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/organizational-units/{organizational_unit_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteOrganizationalUnitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_organizational_units_async(self, request):
         """列出组织单元
@@ -1711,9 +1948,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListOrganizationalUnitsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListOrganizationalUnitsResponse`
         """
-        return self._list_organizational_units_with_http_info(request)
+        http_info = self._list_organizational_units_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_organizational_units_with_http_info(self, request):
+    def list_organizational_units_async_invoker(self, request):
+        http_info = self._list_organizational_units_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_organizational_units_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/organizational-units",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrganizationalUnitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1734,9 +1983,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1745,20 +1994,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/organizational-units',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOrganizationalUnitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_organizational_unit_async(self, request):
         """查询有关组织单元的信息
@@ -1772,9 +2017,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowOrganizationalUnitRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowOrganizationalUnitResponse`
         """
-        return self._show_organizational_unit_with_http_info(request)
+        http_info = self._show_organizational_unit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_organizational_unit_with_http_info(self, request):
+    def show_organizational_unit_async_invoker(self, request):
+        http_info = self._show_organizational_unit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_organizational_unit_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/organizational-units/{organizational_unit_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrganizationalUnitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1791,9 +2048,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1802,20 +2059,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/organizational-units/{organizational_unit_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOrganizationalUnitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_organizational_unit_async(self, request):
         """更改组织单元名称
@@ -1829,9 +2082,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.UpdateOrganizationalUnitRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.UpdateOrganizationalUnitResponse`
         """
-        return self._update_organizational_unit_with_http_info(request)
+        http_info = self._update_organizational_unit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_organizational_unit_with_http_info(self, request):
+    def update_organizational_unit_async_invoker(self, request):
+        http_info = self._update_organizational_unit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_organizational_unit_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/organizations/organizational-units/{organizational_unit_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateOrganizationalUnitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1848,11 +2113,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1861,20 +2126,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/organizational-units/{organizational_unit_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateOrganizationalUnitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_policy_async(self, request):
         """将策略跟实体绑定
@@ -1888,9 +2149,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.AttachPolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.AttachPolicyResponse`
         """
-        return self._attach_policy_with_http_info(request)
+        http_info = self._attach_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_policy_with_http_info(self, request):
+    def attach_policy_async_invoker(self, request):
+        http_info = self._attach_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/policies/{policy_id}/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1907,11 +2180,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1920,20 +2193,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies/{policy_id}/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_policy_async(self, request):
         """创建策略
@@ -1947,9 +2216,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreatePolicyResponse`
         """
-        return self._create_policy_with_http_info(request)
+        http_info = self._create_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_policy_with_http_info(self, request):
+    def create_policy_async_invoker(self, request):
+        http_info = self._create_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1966,11 +2247,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1979,20 +2260,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_policy_async(self, request):
         """删除策略
@@ -2006,9 +2283,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeletePolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeletePolicyResponse`
         """
-        return self._delete_policy_with_http_info(request)
+        http_info = self._delete_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_policy_with_http_info(self, request):
+    def delete_policy_async_invoker(self, request):
+        http_info = self._delete_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/organizations/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2025,9 +2314,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2036,20 +2325,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies/{policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_policy_async(self, request):
         """将策略跟实体解绑
@@ -2063,9 +2348,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DetachPolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DetachPolicyResponse`
         """
-        return self._detach_policy_with_http_info(request)
+        http_info = self._detach_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_policy_with_http_info(self, request):
+    def detach_policy_async_invoker(self, request):
+        http_info = self._detach_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detach_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/policies/{policy_id}/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2082,11 +2379,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2095,20 +2392,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies/{policy_id}/detach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_policy_type_async(self, request):
         """禁用根中的策略类型
@@ -2122,9 +2415,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DisablePolicyTypeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DisablePolicyTypeResponse`
         """
-        return self._disable_policy_type_with_http_info(request)
+        http_info = self._disable_policy_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_policy_type_with_http_info(self, request):
+    def disable_policy_type_async_invoker(self, request):
+        http_info = self._disable_policy_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_policy_type_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/policies/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisablePolicyTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2139,11 +2444,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2152,20 +2457,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisablePolicyTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_policy_type_async(self, request):
         """在根中启用策略类型
@@ -2179,9 +2480,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.EnablePolicyTypeRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.EnablePolicyTypeResponse`
         """
-        return self._enable_policy_type_with_http_info(request)
+        http_info = self._enable_policy_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_policy_type_with_http_info(self, request):
+    def enable_policy_type_async_invoker(self, request):
+        http_info = self._enable_policy_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_policy_type_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/policies/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnablePolicyTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2196,11 +2509,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2209,20 +2522,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnablePolicyTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_entities_for_policy_async(self, request):
         """列出跟指定策略绑定的所有实体
@@ -2236,9 +2545,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListEntitiesForPolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListEntitiesForPolicyResponse`
         """
-        return self._list_entities_for_policy_with_http_info(request)
+        http_info = self._list_entities_for_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_entities_for_policy_with_http_info(self, request):
+    def list_entities_for_policy_async_invoker(self, request):
+        http_info = self._list_entities_for_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_entities_for_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/policies/{policy_id}/attached-entities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEntitiesForPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2259,9 +2580,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2270,20 +2591,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies/{policy_id}/attached-entities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEntitiesForPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policies_async(self, request):
         """列出策略
@@ -2297,9 +2614,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListPoliciesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListPoliciesResponse`
         """
-        return self._list_policies_with_http_info(request)
+        http_info = self._list_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policies_with_http_info(self, request):
+    def list_policies_async_invoker(self, request):
+        http_info = self._list_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2322,9 +2651,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2333,20 +2662,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_policy_async(self, request):
         """查询策略相关信息
@@ -2360,9 +2685,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowPolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowPolicyResponse`
         """
-        return self._show_policy_with_http_info(request)
+        http_info = self._show_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_policy_with_http_info(self, request):
+    def show_policy_async_invoker(self, request):
+        http_info = self._show_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2381,9 +2718,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2392,20 +2729,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies/{policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy_async(self, request):
         """更新策略
@@ -2419,9 +2752,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.UpdatePolicyRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.UpdatePolicyResponse`
         """
-        return self._update_policy_with_http_info(request)
+        http_info = self._update_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_with_http_info(self, request):
+    def update_policy_async_invoker(self, request):
+        http_info = self._update_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_policy_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/organizations/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2440,11 +2785,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2453,20 +2798,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/policies/{policy_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tag_resource_async(self, request):
         """为指定资源添加标签
@@ -2480,9 +2821,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.CreateTagResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.CreateTagResourceResponse`
         """
-        return self._create_tag_resource_with_http_info(request)
+        http_info = self._create_tag_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tag_resource_with_http_info(self, request):
+    def create_tag_resource_async_invoker(self, request):
+        http_info = self._create_tag_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tag_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2501,11 +2854,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2514,20 +2867,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/{resource_type}/{resource_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tag_resource_async(self, request):
         """从指定资源中删除指定主键标签
@@ -2541,9 +2890,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DeleteTagResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DeleteTagResourceResponse`
         """
-        return self._delete_tag_resource_with_http_info(request)
+        http_info = self._delete_tag_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tag_resource_with_http_info(self, request):
+    def delete_tag_resource_async_invoker(self, request):
+        http_info = self._delete_tag_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tag_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2562,11 +2923,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2575,20 +2936,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/{resource_type}/{resource_id}/tags/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_instances_async(self, request):
         """根据资源类型及标签信息查询实例列表
@@ -2602,9 +2959,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListResourceInstancesResponse`
         """
-        return self._list_resource_instances_with_http_info(request)
+        http_info = self._list_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_instances_with_http_info(self, request):
+    def list_resource_instances_async_invoker(self, request):
+        http_info = self._list_resource_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/{resource_type}/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2625,11 +2994,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2638,20 +3007,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/{resource_type}/resource-instances/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_tags_async(self, request):
         """查询项目标签
@@ -2665,9 +3030,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListResourceTagsResponse`
         """
-        return self._list_resource_tags_with_http_info(request)
+        http_info = self._list_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_tags_with_http_info(self, request):
+    def list_resource_tags_async_invoker(self, request):
+        http_info = self._list_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2684,9 +3061,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2695,20 +3072,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tag_resources_async(self, request):
         """列出绑定到指定资源的标签
@@ -2722,9 +3095,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListTagResourcesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListTagResourcesResponse`
         """
-        return self._list_tag_resources_with_http_info(request)
+        http_info = self._list_tag_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tag_resources_with_http_info(self, request):
+    def list_tag_resources_async_invoker(self, request):
+        http_info = self._list_tag_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tag_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2747,9 +3132,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2758,20 +3143,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags_for_resource_async(self, request):
         """列出绑定到指定资源的标签
@@ -2785,9 +3166,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListTagsForResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListTagsForResourceResponse`
         """
-        return self._list_tags_for_resource_with_http_info(request)
+        http_info = self._list_tags_for_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_for_resource_with_http_info(self, request):
+    def list_tags_for_resource_async_invoker(self, request):
+        http_info = self._list_tags_for_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_for_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/resources/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsForResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2808,9 +3201,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2819,20 +3212,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/resources/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsForResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_instances_count_async(self, request):
         """根据资源类型及标签信息查询实例数量
@@ -2846,9 +3235,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ShowResourceInstancesCountRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ShowResourceInstancesCountResponse`
         """
-        return self._show_resource_instances_count_with_http_info(request)
+        http_info = self._show_resource_instances_count_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_instances_count_with_http_info(self, request):
+    def show_resource_instances_count_async_invoker(self, request):
+        http_info = self._show_resource_instances_count_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_instances_count_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/{resource_type}/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceInstancesCountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2865,11 +3266,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2878,20 +3279,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/{resource_type}/resource-instances/count',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceInstancesCountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def tag_resource_async(self, request):
         """为指定资源添加标签
@@ -2905,9 +3302,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.TagResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.TagResourceResponse`
         """
-        return self._tag_resource_with_http_info(request)
+        http_info = self._tag_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _tag_resource_with_http_info(self, request):
+    def tag_resource_async_invoker(self, request):
+        http_info = self._tag_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _tag_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/resources/{resource_id}/tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "TagResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2924,11 +3333,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2937,20 +3346,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/resources/{resource_id}/tag',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='TagResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def untag_resource_async(self, request):
         """从指定资源中删除指定主键标签
@@ -2964,9 +3369,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.UntagResourceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.UntagResourceResponse`
         """
-        return self._untag_resource_with_http_info(request)
+        http_info = self._untag_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _untag_resource_with_http_info(self, request):
+    def untag_resource_async_invoker(self, request):
+        http_info = self._untag_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _untag_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/resources/{resource_id}/untag",
+            "request_type": request.__class__.__name__,
+            "response_type": "UntagResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2983,11 +3400,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2996,20 +3413,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/resources/{resource_id}/untag',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UntagResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_trusted_service_async(self, request):
         """禁用受信任服务
@@ -3023,9 +3436,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.DisableTrustedServiceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.DisableTrustedServiceResponse`
         """
-        return self._disable_trusted_service_with_http_info(request)
+        http_info = self._disable_trusted_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_trusted_service_with_http_info(self, request):
+    def disable_trusted_service_async_invoker(self, request):
+        http_info = self._disable_trusted_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_trusted_service_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/trusted-services/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableTrustedServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3040,11 +3465,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3053,20 +3478,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/trusted-services/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableTrustedServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_trusted_service_async(self, request):
         """启用可信服务
@@ -3080,9 +3501,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.EnableTrustedServiceRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.EnableTrustedServiceResponse`
         """
-        return self._enable_trusted_service_with_http_info(request)
+        http_info = self._enable_trusted_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_trusted_service_with_http_info(self, request):
+    def enable_trusted_service_async_invoker(self, request):
+        http_info = self._enable_trusted_service_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_trusted_service_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organizations/trusted-services/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableTrustedServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3097,11 +3530,11 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3110,20 +3543,16 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/trusted-services/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableTrustedServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_trusted_services_async(self, request):
         """列出组织的可信服务列表
@@ -3137,9 +3566,21 @@ class OrganizationsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkorganizations.v1.ListTrustedServicesRequest`
         :rtype: :class:`huaweicloudsdkorganizations.v1.ListTrustedServicesResponse`
         """
-        return self._list_trusted_services_with_http_info(request)
+        http_info = self._list_trusted_services_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_trusted_services_with_http_info(self, request):
+    def list_trusted_services_async_invoker(self, request):
+        http_info = self._list_trusted_services_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_trusted_services_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organizations/trusted-services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrustedServicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3158,9 +3599,9 @@ class OrganizationsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3169,20 +3610,26 @@ class OrganizationsAsyncClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organizations/trusted-services',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTrustedServicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3221,4 +3668,4 @@ class OrganizationsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

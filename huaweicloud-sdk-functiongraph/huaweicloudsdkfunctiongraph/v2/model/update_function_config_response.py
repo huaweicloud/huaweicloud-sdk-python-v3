@@ -18,6 +18,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
+        'func_id': 'str',
+        'resource_id': 'str',
         'func_urn': 'str',
         'func_name': 'str',
         'domain_id': 'str',
@@ -63,6 +65,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
     }
 
     attribute_map = {
+        'func_id': 'func_id',
+        'resource_id': 'resource_id',
         'func_urn': 'func_urn',
         'func_name': 'func_name',
         'domain_id': 'domain_id',
@@ -107,11 +111,15 @@ class UpdateFunctionConfigResponse(SdkResponse):
         'custom_image': 'custom_image'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None, enable_auth_in_header=None, custom_image=None):
+    def __init__(self, func_id=None, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, ephemeral_storage=None, func_vpc=None, mount_config=None, strategy_config=None, dependencies=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, enable_dynamic_memory=None, is_stateful_function=None, domain_names=None, enable_auth_in_header=None, custom_image=None):
         """UpdateFunctionConfigResponse
 
         The model defined in huaweicloud sdk
 
+        :param func_id: 函数id，唯一标识函数。
+        :type func_id: str
+        :param resource_id: 函数资源id。
+        :type resource_id: str
         :param func_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
         :type func_urn: str
         :param func_name: 函数名称。
@@ -200,6 +208,8 @@ class UpdateFunctionConfigResponse(SdkResponse):
         
         super(UpdateFunctionConfigResponse, self).__init__()
 
+        self._func_id = None
+        self._resource_id = None
         self._func_urn = None
         self._func_name = None
         self._domain_id = None
@@ -244,6 +254,10 @@ class UpdateFunctionConfigResponse(SdkResponse):
         self._custom_image = None
         self.discriminator = None
 
+        if func_id is not None:
+            self.func_id = func_id
+        if resource_id is not None:
+            self.resource_id = resource_id
         if func_urn is not None:
             self.func_urn = func_urn
         if func_name is not None:
@@ -328,6 +342,50 @@ class UpdateFunctionConfigResponse(SdkResponse):
             self.enable_auth_in_header = enable_auth_in_header
         if custom_image is not None:
             self.custom_image = custom_image
+
+    @property
+    def func_id(self):
+        """Gets the func_id of this UpdateFunctionConfigResponse.
+
+        函数id，唯一标识函数。
+
+        :return: The func_id of this UpdateFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._func_id
+
+    @func_id.setter
+    def func_id(self, func_id):
+        """Sets the func_id of this UpdateFunctionConfigResponse.
+
+        函数id，唯一标识函数。
+
+        :param func_id: The func_id of this UpdateFunctionConfigResponse.
+        :type func_id: str
+        """
+        self._func_id = func_id
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this UpdateFunctionConfigResponse.
+
+        函数资源id。
+
+        :return: The resource_id of this UpdateFunctionConfigResponse.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this UpdateFunctionConfigResponse.
+
+        函数资源id。
+
+        :param resource_id: The resource_id of this UpdateFunctionConfigResponse.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
 
     @property
     def func_urn(self):

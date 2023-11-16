@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkmpc'")
 
 
 class MpcClient(Client):
@@ -39,9 +44,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateAnimatedGraphicsTaskResponse`
         """
-        return self._create_animated_graphics_task_with_http_info(request)
+        http_info = self._create_animated_graphics_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_animated_graphics_task_with_http_info(self, request):
+    def create_animated_graphics_task_invoker(self, request):
+        http_info = self._create_animated_graphics_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_animated_graphics_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/animated-graphics",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAnimatedGraphicsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +74,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +87,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/animated-graphics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAnimatedGraphicsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_animated_graphics_task(self, request):
         """取消转动图任务
@@ -95,9 +109,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteAnimatedGraphicsTaskResponse`
         """
-        return self._delete_animated_graphics_task_with_http_info(request)
+        http_info = self._delete_animated_graphics_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_animated_graphics_task_with_http_info(self, request):
+    def delete_animated_graphics_task_invoker(self, request):
+        http_info = self._delete_animated_graphics_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_animated_graphics_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/animated-graphics",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAnimatedGraphicsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -114,9 +141,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -125,20 +152,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/animated-graphics',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAnimatedGraphicsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_animated_graphics_task(self, request):
         """查询转动图任务
@@ -151,9 +174,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListAnimatedGraphicsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListAnimatedGraphicsTaskResponse`
         """
-        return self._list_animated_graphics_task_with_http_info(request)
+        http_info = self._list_animated_graphics_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_animated_graphics_task_with_http_info(self, request):
+    def list_animated_graphics_task_invoker(self, request):
+        http_info = self._list_animated_graphics_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_animated_graphics_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/animated-graphics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAnimatedGraphicsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -183,9 +219,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -194,20 +230,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/animated-graphics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAnimatedGraphicsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_agencies_task(self, request):
         """请求委托任务
@@ -220,9 +252,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateAgenciesTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateAgenciesTaskResponse`
         """
-        return self._create_agencies_task_with_http_info(request)
+        http_info = self._create_agencies_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_agencies_task_with_http_info(self, request):
+    def create_agencies_task_invoker(self, request):
+        http_info = self._create_agencies_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agencies_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgenciesTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,11 +282,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +295,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agencies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAgenciesTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_buckets(self, request):
         """查询桶列表
@@ -276,9 +317,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListAllBucketsRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListAllBucketsResponse`
         """
-        return self._list_all_buckets_with_http_info(request)
+        http_info = self._list_all_buckets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_buckets_with_http_info(self, request):
+    def list_all_buckets_invoker(self, request):
+        http_info = self._list_all_buckets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_buckets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllBucketsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -293,9 +347,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +358,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/buckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllBucketsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_obs_obj_list(self, request):
         """查询桶里的object
@@ -330,9 +380,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListAllObsObjListRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListAllObsObjListResponse`
         """
-        return self._list_all_obs_obj_list_with_http_info(request)
+        http_info = self._list_all_obs_obj_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_obs_obj_list_with_http_info(self, request):
+    def list_all_obs_obj_list_invoker(self, request):
+        http_info = self._list_all_obs_obj_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_obs_obj_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0-ext/{project_id}/objects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllObsObjListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,9 +416,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -364,20 +427,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0-ext/{project_id}/objects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllObsObjListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notify_event(self, request):
         """查询转码服务端所有事件
@@ -390,9 +449,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListNotifyEventRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListNotifyEventResponse`
         """
-        return self._list_notify_event_with_http_info(request)
+        http_info = self._list_notify_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notify_event_with_http_info(self, request):
+    def list_notify_event_invoker(self, request):
+        http_info = self._list_notify_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notify_event_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/notification/event",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotifyEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -407,9 +479,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -418,20 +490,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/notification/event',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotifyEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notify_smn_topic_config(self, request):
         """查询转码服务端事件通知
@@ -444,9 +512,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListNotifySmnTopicConfigRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListNotifySmnTopicConfigResponse`
         """
-        return self._list_notify_smn_topic_config_with_http_info(request)
+        http_info = self._list_notify_smn_topic_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notify_smn_topic_config_with_http_info(self, request):
+    def list_notify_smn_topic_config_invoker(self, request):
+        http_info = self._list_notify_smn_topic_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notify_smn_topic_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/notification",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotifySmnTopicConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,9 +542,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -472,20 +553,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/notification',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotifySmnTopicConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def notify_smn_topic_config(self, request):
         """配置转码服务端事件通知
@@ -498,9 +575,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.NotifySmnTopicConfigRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.NotifySmnTopicConfigResponse`
         """
-        return self._notify_smn_topic_config_with_http_info(request)
+        http_info = self._notify_smn_topic_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _notify_smn_topic_config_with_http_info(self, request):
+    def notify_smn_topic_config_invoker(self, request):
+        http_info = self._notify_smn_topic_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _notify_smn_topic_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/notification",
+            "request_type": request.__class__.__name__,
+            "response_type": "NotifySmnTopicConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -515,11 +605,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -528,20 +618,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/notification',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NotifySmnTopicConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agencies_task(self, request):
         """查询创建委托任务状态
@@ -554,9 +640,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ShowAgenciesTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ShowAgenciesTaskResponse`
         """
-        return self._show_agencies_task_with_http_info(request)
+        http_info = self._show_agencies_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agencies_task_with_http_info(self, request):
+    def show_agencies_task_invoker(self, request):
+        http_info = self._show_agencies_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agencies_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgenciesTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -571,9 +670,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -582,20 +681,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agencies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgenciesTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_bucket_authorized(self, request):
         """桶授权或取消授权
@@ -608,9 +703,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateBucketAuthorizedRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateBucketAuthorizedResponse`
         """
-        return self._update_bucket_authorized_with_http_info(request)
+        http_info = self._update_bucket_authorized_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_bucket_authorized_with_http_info(self, request):
+    def update_bucket_authorized_invoker(self, request):
+        http_info = self._update_bucket_authorized_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_bucket_authorized_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/authority",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBucketAuthorizedResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -625,11 +733,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -638,20 +746,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/authority',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBucketAuthorizedResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_editing_job(self, request):
         """新建剪辑任务
@@ -665,9 +769,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEditingJobResponse`
         """
-        return self._create_editing_job_with_http_info(request)
+        http_info = self._create_editing_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_editing_job_with_http_info(self, request):
+    def create_editing_job_invoker(self, request):
+        http_info = self._create_editing_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_editing_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/editing/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEditingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -682,11 +799,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -695,20 +812,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/editing/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEditingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_editing_job(self, request):
         """取消剪辑任务
@@ -721,9 +834,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteEditingJobResponse`
         """
-        return self._delete_editing_job_with_http_info(request)
+        http_info = self._delete_editing_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_editing_job_with_http_info(self, request):
+    def delete_editing_job_invoker(self, request):
+        http_info = self._delete_editing_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_editing_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/editing/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEditingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -740,9 +866,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -751,20 +877,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/editing/jobs',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEditingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_editing_job(self, request):
         """查询剪辑任务
@@ -777,9 +899,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListEditingJobRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListEditingJobResponse`
         """
-        return self._list_editing_job_with_http_info(request)
+        http_info = self._list_editing_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_editing_job_with_http_info(self, request):
+    def list_editing_job_invoker(self, request):
+        http_info = self._list_editing_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_editing_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/editing/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEditingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -809,9 +944,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -820,20 +955,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/editing/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEditingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_encrypt_task(self, request):
         """新建独立加密任务
@@ -850,9 +981,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateEncryptTaskResponse`
         """
-        return self._create_encrypt_task_with_http_info(request)
+        http_info = self._create_encrypt_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_encrypt_task_with_http_info(self, request):
+    def create_encrypt_task_invoker(self, request):
+        http_info = self._create_encrypt_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_encrypt_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/encryptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEncryptTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -867,11 +1011,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -880,20 +1024,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/encryptions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEncryptTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_encrypt_task(self, request):
         """取消独立加密任务
@@ -910,9 +1050,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteEncryptTaskResponse`
         """
-        return self._delete_encrypt_task_with_http_info(request)
+        http_info = self._delete_encrypt_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_encrypt_task_with_http_info(self, request):
+    def delete_encrypt_task_invoker(self, request):
+        http_info = self._delete_encrypt_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_encrypt_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/encryptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEncryptTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,9 +1082,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -940,20 +1093,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/encryptions',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEncryptTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_encrypt_task(self, request):
         """查询独立加密任务
@@ -966,9 +1115,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListEncryptTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListEncryptTaskResponse`
         """
-        return self._list_encrypt_task_with_http_info(request)
+        http_info = self._list_encrypt_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_encrypt_task_with_http_info(self, request):
+    def list_encrypt_task_invoker(self, request):
+        http_info = self._list_encrypt_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_encrypt_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/encryptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEncryptTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -996,9 +1158,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1007,20 +1169,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/encryptions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEncryptTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_extract_task(self, request):
         """新建视频解析任务
@@ -1033,9 +1191,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateExtractTaskResponse`
         """
-        return self._create_extract_task_with_http_info(request)
+        http_info = self._create_extract_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_extract_task_with_http_info(self, request):
+    def create_extract_task_invoker(self, request):
+        http_info = self._create_extract_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_extract_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/extract-metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExtractTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1050,11 +1221,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1063,20 +1234,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/extract-metadata',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateExtractTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_extract_task(self, request):
         """取消视频解析任务
@@ -1089,9 +1256,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteExtractTaskResponse`
         """
-        return self._delete_extract_task_with_http_info(request)
+        http_info = self._delete_extract_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_extract_task_with_http_info(self, request):
+    def delete_extract_task_invoker(self, request):
+        http_info = self._delete_extract_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_extract_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/extract-metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteExtractTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1108,9 +1288,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1119,20 +1299,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/extract-metadata',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteExtractTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_extract_task(self, request):
         """查询视频解析任务
@@ -1145,9 +1321,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListExtractTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListExtractTaskResponse`
         """
-        return self._list_extract_task_with_http_info(request)
+        http_info = self._list_extract_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_extract_task_with_http_info(self, request):
+    def list_extract_task_invoker(self, request):
+        http_info = self._list_extract_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_extract_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/extract-metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExtractTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1177,9 +1366,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1188,20 +1377,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/extract-metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListExtractTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_mb_tasks_report(self, request):
         """合并多声道任务、重置声轨任务上报接口
@@ -1219,9 +1404,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMbTasksReportRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMbTasksReportResponse`
         """
-        return self._create_mb_tasks_report_with_http_info(request)
+        http_info = self._create_mb_tasks_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_mb_tasks_report_with_http_info(self, request):
+    def create_mb_tasks_report_invoker(self, request):
+        http_info = self._create_mb_tasks_report_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_mb_tasks_report_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mediabox/tasks/report",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMbTasksReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1236,11 +1434,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1249,20 +1447,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mediabox/tasks/report',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMbTasksReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_merge_channels_task(self, request):
         """创建声道合并任务
@@ -1276,9 +1470,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMergeChannelsTaskResponse`
         """
-        return self._create_merge_channels_task_with_http_info(request)
+        http_info = self._create_merge_channels_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_merge_channels_task_with_http_info(self, request):
+    def create_merge_channels_task_invoker(self, request):
+        http_info = self._create_merge_channels_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_merge_channels_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/audio/services/merge_channels/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMergeChannelsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1293,11 +1500,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1306,20 +1513,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/audio/services/merge_channels/task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMergeChannelsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_reset_tracks_task(self, request):
         """创建音轨重置任务
@@ -1333,9 +1536,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateResetTracksTaskResponse`
         """
-        return self._create_reset_tracks_task_with_http_info(request)
+        http_info = self._create_reset_tracks_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_reset_tracks_task_with_http_info(self, request):
+    def create_reset_tracks_task_invoker(self, request):
+        http_info = self._create_reset_tracks_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_reset_tracks_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/audio/services/reset_tracks/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResetTracksTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1350,11 +1566,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1363,20 +1579,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/audio/services/reset_tracks/task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResetTracksTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_merge_channels_task(self, request):
         """取消声道合并任务
@@ -1389,9 +1601,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteMergeChannelsTaskResponse`
         """
-        return self._delete_merge_channels_task_with_http_info(request)
+        http_info = self._delete_merge_channels_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_merge_channels_task_with_http_info(self, request):
+    def delete_merge_channels_task_invoker(self, request):
+        http_info = self._delete_merge_channels_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_merge_channels_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/audio/services/merge_channels/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMergeChannelsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1408,9 +1633,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1419,20 +1644,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/audio/services/merge_channels/task',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMergeChannelsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_reset_tracks_task(self, request):
         """取消音轨重置任务
@@ -1445,9 +1666,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteResetTracksTaskResponse`
         """
-        return self._delete_reset_tracks_task_with_http_info(request)
+        http_info = self._delete_reset_tracks_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_reset_tracks_task_with_http_info(self, request):
+    def delete_reset_tracks_task_invoker(self, request):
+        http_info = self._delete_reset_tracks_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_reset_tracks_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/audio/services/reset_tracks/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResetTracksTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1464,9 +1698,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1475,20 +1709,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/audio/services/reset_tracks/task',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResetTracksTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_merge_channels_task(self, request):
         """查询声道合并任务
@@ -1501,9 +1731,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListMergeChannelsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListMergeChannelsTaskResponse`
         """
-        return self._list_merge_channels_task_with_http_info(request)
+        http_info = self._list_merge_channels_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_merge_channels_task_with_http_info(self, request):
+    def list_merge_channels_task_invoker(self, request):
+        http_info = self._list_merge_channels_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_merge_channels_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/audio/services/merge_channels/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeChannelsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1531,9 +1774,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1542,20 +1785,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/audio/services/merge_channels/task',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMergeChannelsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_reset_tracks_task(self, request):
         """查询音轨重置任务
@@ -1568,9 +1807,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListResetTracksTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListResetTracksTaskResponse`
         """
-        return self._list_reset_tracks_task_with_http_info(request)
+        http_info = self._list_reset_tracks_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_reset_tracks_task_with_http_info(self, request):
+    def list_reset_tracks_task_invoker(self, request):
+        http_info = self._list_reset_tracks_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_reset_tracks_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/audio/services/reset_tracks/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResetTracksTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1598,9 +1850,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1609,20 +1861,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/audio/services/reset_tracks/task',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResetTracksTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_media_process_task(self, request):
         """创建视频增强任务
@@ -1642,9 +1890,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMediaProcessTaskResponse`
         """
-        return self._create_media_process_task_with_http_info(request)
+        http_info = self._create_media_process_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_media_process_task_with_http_info(self, request):
+    def create_media_process_task_invoker(self, request):
+        http_info = self._create_media_process_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_media_process_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/enhancements",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMediaProcessTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1659,11 +1920,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1672,20 +1933,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/enhancements',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMediaProcessTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_media_process_task(self, request):
         """取消视频增强任务
@@ -1705,9 +1962,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteMediaProcessTaskResponse`
         """
-        return self._delete_media_process_task_with_http_info(request)
+        http_info = self._delete_media_process_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_media_process_task_with_http_info(self, request):
+    def delete_media_process_task_invoker(self, request):
+        http_info = self._delete_media_process_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_media_process_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/enhancements",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMediaProcessTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1724,9 +1994,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1735,20 +2005,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/enhancements',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMediaProcessTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_media_process_task(self, request):
         """查询视频增强任务
@@ -1768,9 +2034,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListMediaProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListMediaProcessTaskResponse`
         """
-        return self._list_media_process_task_with_http_info(request)
+        http_info = self._list_media_process_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_media_process_task_with_http_info(self, request):
+    def list_media_process_task_invoker(self, request):
+        http_info = self._list_media_process_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_media_process_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/enhancements",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMediaProcessTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1798,9 +2077,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1809,20 +2088,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/enhancements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMediaProcessTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_mpe_call_back(self, request):
         """mpe通知mpc
@@ -1840,9 +2115,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateMpeCallBackRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateMpeCallBackResponse`
         """
-        return self._create_mpe_call_back_with_http_info(request)
+        http_info = self._create_mpe_call_back_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_mpe_call_back_with_http_info(self, request):
+    def create_mpe_call_back_invoker(self, request):
+        http_info = self._create_mpe_call_back_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_mpe_call_back_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mpe/notification",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMpeCallBackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1857,11 +2145,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1870,20 +2158,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mpe/notification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMpeCallBackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_quality_enhance_template(self, request):
         """创建视频增强模板
@@ -1896,9 +2180,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateQualityEnhanceTemplateResponse`
         """
-        return self._create_quality_enhance_template_with_http_info(request)
+        http_info = self._create_quality_enhance_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_quality_enhance_template_with_http_info(self, request):
+    def create_quality_enhance_template_invoker(self, request):
+        http_info = self._create_quality_enhance_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_quality_enhance_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/template/qualityenhance",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQualityEnhanceTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1913,11 +2210,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1926,20 +2223,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/qualityenhance',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateQualityEnhanceTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_quality_enhance_template(self, request):
         """删除用户视频增强模板
@@ -1952,9 +2245,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteQualityEnhanceTemplateResponse`
         """
-        return self._delete_quality_enhance_template_with_http_info(request)
+        http_info = self._delete_quality_enhance_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_quality_enhance_template_with_http_info(self, request):
+    def delete_quality_enhance_template_invoker(self, request):
+        http_info = self._delete_quality_enhance_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_quality_enhance_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/template/qualityenhance",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteQualityEnhanceTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1971,9 +2277,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1982,20 +2288,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/qualityenhance',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteQualityEnhanceTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quality_enhance_default_template(self, request):
         """查询视频增强预置模板
@@ -2008,9 +2310,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListQualityEnhanceDefaultTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListQualityEnhanceDefaultTemplateResponse`
         """
-        return self._list_quality_enhance_default_template_with_http_info(request)
+        http_info = self._list_quality_enhance_default_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quality_enhance_default_template_with_http_info(self, request):
+    def list_quality_enhance_default_template_invoker(self, request):
+        http_info = self._list_quality_enhance_default_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quality_enhance_default_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/template/qualityenhance/default",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQualityEnhanceDefaultTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2025,9 +2340,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2036,20 +2351,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/qualityenhance/default',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQualityEnhanceDefaultTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_quality_enhance_template(self, request):
         """更新视频增强模板
@@ -2062,9 +2373,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateQualityEnhanceTemplateResponse`
         """
-        return self._update_quality_enhance_template_with_http_info(request)
+        http_info = self._update_quality_enhance_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_quality_enhance_template_with_http_info(self, request):
+    def update_quality_enhance_template_invoker(self, request):
+        http_info = self._update_quality_enhance_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_quality_enhance_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/template/qualityenhance",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateQualityEnhanceTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2079,11 +2403,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2092,20 +2416,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/qualityenhance',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateQualityEnhanceTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_transcode_detail(self, request):
         """查询媒资转码详情
@@ -2118,9 +2438,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListTranscodeDetailRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTranscodeDetailResponse`
         """
-        return self._list_transcode_detail_with_http_info(request)
+        http_info = self._list_transcode_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_transcode_detail_with_http_info(self, request):
+    def list_transcode_detail_invoker(self, request):
+        http_info = self._list_transcode_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_transcode_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/transcodings/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTranscodeDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2138,9 +2471,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2149,20 +2482,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/transcodings/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTranscodeDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_remux_task(self, request):
         """取消转封装任务
@@ -2175,9 +2504,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CancelRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CancelRemuxTaskResponse`
         """
-        return self._cancel_remux_task_with_http_info(request)
+        http_info = self._cancel_remux_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_remux_task_with_http_info(self, request):
+    def cancel_remux_task_invoker(self, request):
+        http_info = self._cancel_remux_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_remux_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/remux",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelRemuxTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2194,9 +2536,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2205,20 +2547,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/remux',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelRemuxTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_remux_task(self, request):
         """新建转封装任务
@@ -2232,9 +2570,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateRemuxTaskResponse`
         """
-        return self._create_remux_task_with_http_info(request)
+        http_info = self._create_remux_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_remux_task_with_http_info(self, request):
+    def create_remux_task_invoker(self, request):
+        http_info = self._create_remux_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_remux_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/remux",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRemuxTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2249,11 +2600,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2262,20 +2613,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/remux',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRemuxTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_retry_remux_task(self, request):
         """重试转封装任务
@@ -2288,9 +2635,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateRetryRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateRetryRemuxTaskResponse`
         """
-        return self._create_retry_remux_task_with_http_info(request)
+        http_info = self._create_retry_remux_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_retry_remux_task_with_http_info(self, request):
+    def create_retry_remux_task_invoker(self, request):
+        http_info = self._create_retry_remux_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_retry_remux_task_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/remux",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRetryRemuxTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2305,11 +2665,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2318,20 +2678,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/remux',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRetryRemuxTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_remux_task(self, request):
         """删除转封装任务记录
@@ -2344,9 +2700,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteRemuxTaskResponse`
         """
-        return self._delete_remux_task_with_http_info(request)
+        http_info = self._delete_remux_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_remux_task_with_http_info(self, request):
+    def delete_remux_task_invoker(self, request):
+        http_info = self._delete_remux_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_remux_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/remux/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRemuxTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2363,9 +2732,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2374,20 +2743,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/remux/task',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRemuxTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_remux_task(self, request):
         """查询转封装任务
@@ -2400,9 +2765,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListRemuxTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListRemuxTaskResponse`
         """
-        return self._list_remux_task_with_http_info(request)
+        http_info = self._list_remux_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_remux_task_with_http_info(self, request):
+    def list_remux_task_invoker(self, request):
+        http_info = self._list_remux_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_remux_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/remux",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRemuxTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2434,9 +2812,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2445,20 +2823,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/remux',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRemuxTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template_group(self, request):
         """新建转码模板组
@@ -2471,9 +2845,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTemplateGroupResponse`
         """
-        return self._create_template_group_with_http_info(request)
+        http_info = self._create_template_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_group_with_http_info(self, request):
+    def create_template_group_invoker(self, request):
+        http_info = self._create_template_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_template_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/template_group/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2488,11 +2875,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2501,20 +2888,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template_group/transcodings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_group(self, request):
         """删除转码模板组
@@ -2527,9 +2910,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTemplateGroupResponse`
         """
-        return self._delete_template_group_with_http_info(request)
+        http_info = self._delete_template_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_group_with_http_info(self, request):
+    def delete_template_group_invoker(self, request):
+        http_info = self._delete_template_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_template_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/template_group/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2546,9 +2942,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2557,20 +2953,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template_group/transcodings',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_group(self, request):
         """查询转码模板组
@@ -2583,9 +2975,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTemplateGroupResponse`
         """
-        return self._list_template_group_with_http_info(request)
+        http_info = self._list_template_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_group_with_http_info(self, request):
+    def list_template_group_invoker(self, request):
+        http_info = self._list_template_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_template_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/template_group/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2610,9 +3015,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2621,20 +3026,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template_group/transcodings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_template_group(self, request):
         """更新转码模板组
@@ -2647,9 +3048,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateTemplateGroupResponse`
         """
-        return self._update_template_group_with_http_info(request)
+        http_info = self._update_template_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_template_group_with_http_info(self, request):
+    def update_template_group_invoker(self, request):
+        http_info = self._update_template_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_template_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/template_group/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTemplateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2664,11 +3078,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2677,20 +3091,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template_group/transcodings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTemplateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_thumbnails_task(self, request):
         """新建截图任务
@@ -2707,9 +3117,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateThumbnailsTaskResponse`
         """
-        return self._create_thumbnails_task_with_http_info(request)
+        http_info = self._create_thumbnails_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_thumbnails_task_with_http_info(self, request):
+    def create_thumbnails_task_invoker(self, request):
+        http_info = self._create_thumbnails_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_thumbnails_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/thumbnails",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateThumbnailsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2724,11 +3147,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2737,20 +3160,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/thumbnails',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateThumbnailsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_thumbnails_task(self, request):
         """取消截图任务
@@ -2764,9 +3183,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteThumbnailsTaskResponse`
         """
-        return self._delete_thumbnails_task_with_http_info(request)
+        http_info = self._delete_thumbnails_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_thumbnails_task_with_http_info(self, request):
+    def delete_thumbnails_task_invoker(self, request):
+        http_info = self._delete_thumbnails_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_thumbnails_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/thumbnails",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteThumbnailsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2783,9 +3215,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2794,20 +3226,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/thumbnails',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteThumbnailsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_thumbnails_task(self, request):
         """查询截图任务
@@ -2820,9 +3248,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListThumbnailsTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListThumbnailsTaskResponse`
         """
-        return self._list_thumbnails_task_with_http_info(request)
+        http_info = self._list_thumbnails_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_thumbnails_task_with_http_info(self, request):
+    def list_thumbnails_task_invoker(self, request):
+        http_info = self._list_thumbnails_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_thumbnails_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/thumbnails",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListThumbnailsTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2852,9 +3293,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2863,20 +3304,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/thumbnails',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListThumbnailsTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_transcoding_task(self, request):
         """新建转码任务
@@ -2890,9 +3327,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTranscodingTaskResponse`
         """
-        return self._create_transcoding_task_with_http_info(request)
+        http_info = self._create_transcoding_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_transcoding_task_with_http_info(self, request):
+    def create_transcoding_task_invoker(self, request):
+        http_info = self._create_transcoding_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_transcoding_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTranscodingTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2907,11 +3357,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2920,20 +3370,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/transcodings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTranscodingTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_transcoding_task(self, request):
         """取消转码任务
@@ -2947,9 +3393,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskResponse`
         """
-        return self._delete_transcoding_task_with_http_info(request)
+        http_info = self._delete_transcoding_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_transcoding_task_with_http_info(self, request):
+    def delete_transcoding_task_invoker(self, request):
+        http_info = self._delete_transcoding_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_transcoding_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTranscodingTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2966,9 +3425,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2977,20 +3436,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/transcodings',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTranscodingTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_transcoding_task_by_console(self, request):
         """删除转码任务记录
@@ -3003,9 +3458,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskByConsoleRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTranscodingTaskByConsoleResponse`
         """
-        return self._delete_transcoding_task_by_console_with_http_info(request)
+        http_info = self._delete_transcoding_task_by_console_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_transcoding_task_by_console_with_http_info(self, request):
+    def delete_transcoding_task_by_console_invoker(self, request):
+        http_info = self._delete_transcoding_task_by_console_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_transcoding_task_by_console_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/transcodings/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTranscodingTaskByConsoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3022,9 +3490,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3033,20 +3501,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/transcodings/task',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTranscodingTaskByConsoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stat_summary(self, request):
         """查询点播概览信息
@@ -3059,9 +3523,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListStatSummaryRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListStatSummaryResponse`
         """
-        return self._list_stat_summary_with_http_info(request)
+        http_info = self._list_stat_summary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stat_summary_with_http_info(self, request):
+    def list_stat_summary_invoker(self, request):
+        http_info = self._list_stat_summary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_stat_summary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/transcodings/summaries",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStatSummaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3082,9 +3559,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3093,20 +3570,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/transcodings/summaries',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStatSummaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_transcoding_task(self, request):
         """查询转码任务
@@ -3119,9 +3592,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListTranscodingTaskRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTranscodingTaskResponse`
         """
-        return self._list_transcoding_task_with_http_info(request)
+        http_info = self._list_transcoding_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_transcoding_task_with_http_info(self, request):
+    def list_transcoding_task_invoker(self, request):
+        http_info = self._list_transcoding_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_transcoding_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTranscodingTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3151,9 +3637,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3162,20 +3648,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/transcodings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTranscodingTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_trans_template(self, request):
         """新建转码模板
@@ -3188,9 +3670,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateTransTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateTransTemplateResponse`
         """
-        return self._create_trans_template_with_http_info(request)
+        http_info = self._create_trans_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_trans_template_with_http_info(self, request):
+    def create_trans_template_invoker(self, request):
+        http_info = self._create_trans_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_trans_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTransTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3205,11 +3700,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3218,20 +3713,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/transcodings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTransTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template(self, request):
         """删除转码模板
@@ -3244,9 +3735,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteTemplateResponse`
         """
-        return self._delete_template_with_http_info(request)
+        http_info = self._delete_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_with_http_info(self, request):
+    def delete_template_invoker(self, request):
+        http_info = self._delete_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3263,9 +3767,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3274,20 +3778,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/transcodings',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template(self, request):
         """查询转码模板
@@ -3301,9 +3801,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListTemplateResponse`
         """
-        return self._list_template_with_http_info(request)
+        http_info = self._list_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_with_http_info(self, request):
+    def list_template_invoker(self, request):
+        http_info = self._list_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3325,9 +3838,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3336,20 +3849,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/transcodings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_trans_template(self, request):
         """更新转码模板
@@ -3362,9 +3871,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateTransTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateTransTemplateResponse`
         """
-        return self._update_trans_template_with_http_info(request)
+        http_info = self._update_trans_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_trans_template_with_http_info(self, request):
+    def update_trans_template_invoker(self, request):
+        http_info = self._update_trans_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_trans_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTransTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3379,11 +3901,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3392,20 +3914,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/transcodings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTransTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_watermark_template(self, request):
         """新建水印模板
@@ -3418,9 +3936,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.CreateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.CreateWatermarkTemplateResponse`
         """
-        return self._create_watermark_template_with_http_info(request)
+        http_info = self._create_watermark_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_watermark_template_with_http_info(self, request):
+    def create_watermark_template_invoker(self, request):
+        http_info = self._create_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/template/watermark",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWatermarkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3435,11 +3966,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3448,20 +3979,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/watermark',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWatermarkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_watermark_template(self, request):
         """删除水印模板
@@ -3474,9 +4001,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.DeleteWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.DeleteWatermarkTemplateResponse`
         """
-        return self._delete_watermark_template_with_http_info(request)
+        http_info = self._delete_watermark_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_watermark_template_with_http_info(self, request):
+    def delete_watermark_template_invoker(self, request):
+        http_info = self._delete_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/template/watermark",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWatermarkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3493,9 +4033,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3504,20 +4044,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/watermark',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWatermarkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_watermark_template(self, request):
         """查询水印模板
@@ -3530,9 +4066,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.ListWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.ListWatermarkTemplateResponse`
         """
-        return self._list_watermark_template_with_http_info(request)
+        http_info = self._list_watermark_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_watermark_template_with_http_info(self, request):
+    def list_watermark_template_invoker(self, request):
+        http_info = self._list_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/template/watermark",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWatermarkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3554,9 +4103,9 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3565,20 +4114,16 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/watermark',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWatermarkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_watermark_template(self, request):
         """更新水印模板
@@ -3591,9 +4136,22 @@ class MpcClient(Client):
         :type request: :class:`huaweicloudsdkmpc.v1.UpdateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkmpc.v1.UpdateWatermarkTemplateResponse`
         """
-        return self._update_watermark_template_with_http_info(request)
+        http_info = self._update_watermark_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_watermark_template_with_http_info(self, request):
+    def update_watermark_template_invoker(self, request):
+        http_info = self._update_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/template/watermark",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWatermarkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3608,11 +4166,11 @@ class MpcClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3621,20 +4179,25 @@ class MpcClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template/watermark',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWatermarkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

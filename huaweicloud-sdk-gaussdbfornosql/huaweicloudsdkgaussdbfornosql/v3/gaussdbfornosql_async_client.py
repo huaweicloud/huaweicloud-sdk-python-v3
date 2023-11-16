@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkgaussdbfornosql'")
 
 
 class GaussDBforNoSQLAsyncClient(Client):
@@ -39,9 +44,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ApplyConfigurationResponse`
         """
-        return self._apply_configuration_with_http_info(request)
+        http_info = self._apply_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_configuration_with_http_info(self, request):
+    def apply_configuration_async_invoker(self, request):
+        http_info = self._apply_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _apply_configuration_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/apply",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/apply',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_tag_action_async(self, request):
         """批量添加或删除资源标签
@@ -98,9 +111,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.BatchTagActionResponse`
         """
-        return self._batch_tag_action_with_http_info(request)
+        http_info = self._batch_tag_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_tag_action_with_http_info(self, request):
+    def batch_tag_action_async_invoker(self, request):
+        http_info = self._batch_tag_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_tag_action_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchTagActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchTagActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_disaster_recovery_operation_async(self, request):
         """校验实例是否可以与指定实例建立/解除容灾关系
@@ -158,9 +179,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CheckDisasterRecoveryOperationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CheckDisasterRecoveryOperationResponse`
         """
-        return self._check_disaster_recovery_operation_with_http_info(request)
+        http_info = self._check_disaster_recovery_operation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_disaster_recovery_operation_with_http_info(self, request):
+    def check_disaster_recovery_operation_async_invoker(self, request):
+        http_info = self._check_disaster_recovery_operation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_disaster_recovery_operation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disaster-recovery/precheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDisasterRecoveryOperationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -177,11 +210,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -190,20 +223,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/precheck',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckDisasterRecoveryOperationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_week_password_async(self, request):
         """判断弱密码
@@ -217,9 +246,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CheckWeekPasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CheckWeekPasswordResponse`
         """
-        return self._check_week_password_with_http_info(request)
+        http_info = self._check_week_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_week_password_with_http_info(self, request):
+    def check_week_password_async_invoker(self, request):
+        http_info = self._check_week_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_week_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/weak-password-verification",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckWeekPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -234,11 +275,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -247,20 +288,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/weak-password-verification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckWeekPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def compare_configuration_async(self, request):
         """参数模板比较
@@ -274,9 +311,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CompareConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CompareConfigurationResponse`
         """
-        return self._compare_configuration_with_http_info(request)
+        http_info = self._compare_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _compare_configuration_with_http_info(self, request):
+    def compare_configuration_async_invoker(self, request):
+        http_info = self._compare_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _compare_configuration_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/comparison",
+            "request_type": request.__class__.__name__,
+            "response_type": "CompareConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,11 +340,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +353,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/comparison',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CompareConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_configuration_async(self, request):
         """复制参数模板
@@ -331,9 +376,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CopyConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CopyConfigurationResponse`
         """
-        return self._copy_configuration_with_http_info(request)
+        http_info = self._copy_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_configuration_with_http_info(self, request):
+    def copy_configuration_async_invoker(self, request):
+        http_info = self._copy_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _copy_configuration_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -350,11 +407,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -363,20 +420,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/copy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_back_async(self, request):
         """创建手动备份
@@ -390,9 +443,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateBackRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateBackResponse`
         """
-        return self._create_back_with_http_info(request)
+        http_info = self._create_back_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_back_with_http_info(self, request):
+    def create_back_async_invoker(self, request):
+        http_info = self._create_back_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_back_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -409,11 +474,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -422,20 +487,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cold_volume_async(self, request):
         """‘创建冷数据存储’
@@ -449,9 +510,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateColdVolumeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateColdVolumeResponse`
         """
-        return self._create_cold_volume_with_http_info(request)
+        http_info = self._create_cold_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cold_volume_with_http_info(self, request):
+    def create_cold_volume_async_invoker(self, request):
+        http_info = self._create_cold_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_cold_volume_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/cold-volume",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateColdVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -468,11 +541,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -481,20 +554,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/cold-volume',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateColdVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_configuration_async(self, request):
         """创建参数模板
@@ -508,9 +577,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateConfigurationResponse`
         """
-        return self._create_configuration_with_http_info(request)
+        http_info = self._create_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_configuration_with_http_info(self, request):
+    def create_configuration_async_invoker(self, request):
+        http_info = self._create_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_configuration_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -525,11 +606,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -538,20 +619,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_db_user_async(self, request):
         """创建Redis数据库账号
@@ -565,9 +642,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDbUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDbUserResponse`
         """
-        return self._create_db_user_with_http_info(request)
+        http_info = self._create_db_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_db_user_with_http_info(self, request):
+    def create_db_user_async_invoker(self, request):
+        http_info = self._create_db_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_db_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/db-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDbUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -584,11 +673,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -597,20 +686,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDbUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_disaster_recovery_async(self, request):
         """搭建实例与特定实例的容灾关系
@@ -624,9 +709,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateDisasterRecoveryResponse`
         """
-        return self._create_disaster_recovery_with_http_info(request)
+        http_info = self._create_disaster_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_disaster_recovery_with_http_info(self, request):
+    def create_disaster_recovery_async_invoker(self, request):
+        http_info = self._create_disaster_recovery_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_disaster_recovery_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disaster-recovery/construction",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDisasterRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -643,11 +740,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -656,20 +753,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/construction',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDisasterRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance_async(self, request):
         """创建实例
@@ -683,9 +776,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.CreateInstanceResponse`
         """
-        return self._create_instance_with_http_info(request)
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_with_http_info(self, request):
+    def create_instance_async_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -700,11 +805,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -713,20 +818,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_backup_async(self, request):
         """删除手动备份
@@ -740,9 +841,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteBackupResponse`
         """
-        return self._delete_backup_with_http_info(request)
+        http_info = self._delete_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_backup_with_http_info(self, request):
+    def delete_backup_async_invoker(self, request):
+        http_info = self._delete_backup_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_backup_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -759,9 +872,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -770,20 +883,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_configuration_async(self, request):
         """删除参数模板
@@ -797,9 +906,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteConfigurationResponse`
         """
-        return self._delete_configuration_with_http_info(request)
+        http_info = self._delete_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_configuration_with_http_info(self, request):
+    def delete_configuration_async_invoker(self, request):
+        http_info = self._delete_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_configuration_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -816,9 +937,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -827,20 +948,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_db_user_async(self, request):
         """删除Redis数据库账号
@@ -854,9 +971,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDbUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDbUserResponse`
         """
-        return self._delete_db_user_with_http_info(request)
+        http_info = self._delete_db_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_db_user_with_http_info(self, request):
+    def delete_db_user_async_invoker(self, request):
+        http_info = self._delete_db_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_db_user_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/db-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDbUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -873,11 +1002,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -886,20 +1015,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDbUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_disaster_recovery_async(self, request):
         """解除实例与特定实例的容灾关系
@@ -913,9 +1038,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteDisasterRecoveryResponse`
         """
-        return self._delete_disaster_recovery_with_http_info(request)
+        http_info = self._delete_disaster_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_disaster_recovery_with_http_info(self, request):
+    def delete_disaster_recovery_async_invoker(self, request):
+        http_info = self._delete_disaster_recovery_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_disaster_recovery_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disaster-recovery/deconstruction",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDisasterRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -932,9 +1069,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -943,20 +1080,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/deconstruction',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDisasterRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_enlarge_fail_node_async(self, request):
         """删除扩容失败的节点
@@ -970,9 +1103,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteEnlargeFailNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteEnlargeFailNodeResponse`
         """
-        return self._delete_enlarge_fail_node_with_http_info(request)
+        http_info = self._delete_enlarge_fail_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_enlarge_fail_node_with_http_info(self, request):
+    def delete_enlarge_fail_node_async_invoker(self, request):
+        http_info = self._delete_enlarge_fail_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_enlarge_fail_node_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/enlarge-failed-nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnlargeFailNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -989,11 +1134,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1002,20 +1147,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/enlarge-failed-nodes',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnlargeFailNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance_async(self, request):
         """删除实例
@@ -1029,9 +1170,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.DeleteInstanceResponse`
         """
-        return self._delete_instance_with_http_info(request)
+        http_info = self._delete_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_with_http_info(self, request):
+    def delete_instance_async_invoker(self, request):
+        http_info = self._delete_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1048,9 +1201,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1059,20 +1212,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_instance_node_async(self, request):
         """扩容指定集群实例的节点数量
@@ -1086,9 +1235,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ExpandInstanceNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ExpandInstanceNodeResponse`
         """
-        return self._expand_instance_node_with_http_info(request)
+        http_info = self._expand_instance_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_instance_node_with_http_info(self, request):
+    def expand_instance_node_async_invoker(self, request):
+        http_info = self._expand_instance_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _expand_instance_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/enlarge-node",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandInstanceNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1105,11 +1266,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1118,20 +1279,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/enlarge-node',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandInstanceNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_available_flavor_infos_async(self, request):
         """查询实例可变更规格
@@ -1145,9 +1302,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListAvailableFlavorInfosRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListAvailableFlavorInfosResponse`
         """
-        return self._list_available_flavor_infos_with_http_info(request)
+        http_info = self._list_available_flavor_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_available_flavor_infos_with_http_info(self, request):
+    def list_available_flavor_infos_async_invoker(self, request):
+        http_info = self._list_available_flavor_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_flavor_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/available-flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableFlavorInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1168,9 +1337,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1179,20 +1348,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/available-flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailableFlavorInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configuration_datastores_async(self, request):
         """查询支持参数模板的引擎信息
@@ -1206,9 +1371,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationDatastoresRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationDatastoresResponse`
         """
-        return self._list_configuration_datastores_with_http_info(request)
+        http_info = self._list_configuration_datastores_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configuration_datastores_with_http_info(self, request):
+    def list_configuration_datastores_async_invoker(self, request):
+        http_info = self._list_configuration_datastores_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_configuration_datastores_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/datastores",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationDatastoresResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1223,9 +1400,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1234,20 +1411,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/datastores',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigurationDatastoresResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configuration_templates_async(self, request):
         """获取参数模板列表
@@ -1261,9 +1434,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationTemplatesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationTemplatesResponse`
         """
-        return self._list_configuration_templates_with_http_info(request)
+        http_info = self._list_configuration_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configuration_templates_with_http_info(self, request):
+    def list_configuration_templates_async_invoker(self, request):
+        http_info = self._list_configuration_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_configuration_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1282,9 +1467,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1293,20 +1478,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.1/{project_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigurationTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configurations_async(self, request):
         """获取参数模板列表
@@ -1320,9 +1501,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListConfigurationsResponse`
         """
-        return self._list_configurations_with_http_info(request)
+        http_info = self._list_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configurations_with_http_info(self, request):
+    def list_configurations_async_invoker(self, request):
+        http_info = self._list_configurations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_configurations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1337,9 +1530,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1348,20 +1541,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_datastores_async(self, request):
         """查询指定实例类型的数据库版本信息
@@ -1375,9 +1564,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDatastoresRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDatastoresResponse`
         """
-        return self._list_datastores_with_http_info(request)
+        http_info = self._list_datastores_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_datastores_with_http_info(self, request):
+    def list_datastores_async_invoker(self, request):
+        http_info = self._list_datastores_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_datastores_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/datastores/{datastore_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatastoresResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1394,9 +1595,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1405,20 +1606,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/datastores/{datastore_name}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatastoresResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_db_users_async(self, request):
         """获取Redis数据库账号列表和详情
@@ -1432,9 +1629,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDbUsersRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDbUsersResponse`
         """
-        return self._list_db_users_with_http_info(request)
+        http_info = self._list_db_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_db_users_with_http_info(self, request):
+    def list_db_users_async_invoker(self, request):
+        http_info = self._list_db_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_db_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/db-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDbUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1457,9 +1666,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1468,20 +1677,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDbUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dedicated_resources_async(self, request):
         """查询专属资源列表
@@ -1495,9 +1700,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDedicatedResourcesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListDedicatedResourcesResponse`
         """
-        return self._list_dedicated_resources_with_http_info(request)
+        http_info = self._list_dedicated_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dedicated_resources_with_http_info(self, request):
+    def list_dedicated_resources_async_invoker(self, request):
+        http_info = self._list_dedicated_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_dedicated_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dedicated-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDedicatedResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1516,9 +1733,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1527,20 +1744,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dedicated-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDedicatedResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_eps_quotas_async(self, request):
         """查询企业项目配额
@@ -1554,9 +1767,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListEpsQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListEpsQuotasResponse`
         """
-        return self._list_eps_quotas_with_http_info(request)
+        http_info = self._list_eps_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_eps_quotas_with_http_info(self, request):
+    def list_eps_quotas_async_invoker(self, request):
+        http_info = self._list_eps_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_eps_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-projects/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEpsQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1577,9 +1802,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1588,20 +1813,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-projects/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEpsQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavor_infos_async(self, request):
         """查询数据库规格
@@ -1615,9 +1836,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorInfosRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorInfosResponse`
         """
-        return self._list_flavor_infos_with_http_info(request)
+        http_info = self._list_flavor_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavor_infos_with_http_info(self, request):
+    def list_flavor_infos_async_invoker(self, request):
+        http_info = self._list_flavor_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flavor_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1638,9 +1871,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1649,20 +1882,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.1/{project_id}/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors_async(self, request):
         """查询指定条件下的所有实例规格信息
@@ -1676,9 +1905,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_async_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1697,9 +1938,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1708,20 +1949,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_databases_async(self, request):
         """获取Redis实例数据库列表
@@ -1735,9 +1972,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceDatabasesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceDatabasesResponse`
         """
-        return self._list_instance_databases_with_http_info(request)
+        http_info = self._list_instance_databases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_databases_with_http_info(self, request):
+    def list_instance_databases_async_invoker(self, request):
+        http_info = self._list_instance_databases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_databases_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceDatabasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1758,9 +2007,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1769,20 +2018,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/redis/instances/{instance_id}/databases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceDatabasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_tags_async(self, request):
         """查询资源标签
@@ -1796,9 +2041,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstanceTagsResponse`
         """
-        return self._list_instance_tags_with_http_info(request)
+        http_info = self._list_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_tags_with_http_info(self, request):
+    def list_instance_tags_async_invoker(self, request):
+        http_info = self._list_instance_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1815,9 +2072,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1826,20 +2083,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_async(self, request):
         """查询实例列表和详情
@@ -1853,9 +2106,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesResponse`
         """
-        return self._list_instances_with_http_info(request)
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_with_http_info(self, request):
+    def list_instances_async_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1886,9 +2151,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1897,20 +2162,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_by_resource_tags_async(self, request):
         """查询资源实例
@@ -1924,9 +2185,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByResourceTagsResponse`
         """
-        return self._list_instances_by_resource_tags_with_http_info(request)
+        http_info = self._list_instances_by_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_by_resource_tags_with_http_info(self, request):
+    def list_instances_by_resource_tags_async_invoker(self, request):
+        http_info = self._list_instances_by_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_by_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/resource-instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesByResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1941,11 +2214,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1954,20 +2227,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/resource-instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesByResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_by_tags_async(self, request):
         """查询资源实例
@@ -1981,9 +2250,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListInstancesByTagsResponse`
         """
-        return self._list_instances_by_tags_with_http_info(request)
+        http_info = self._list_instances_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_by_tags_with_http_info(self, request):
+    def list_instances_by_tags_async_invoker(self, request):
+        http_info = self._list_instances_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1998,11 +2279,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2011,20 +2292,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags_async(self, request):
         """查询项目标签
@@ -2038,9 +2315,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_async_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2059,9 +2348,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2070,20 +2359,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_recycle_instances_async(self, request):
         """查询回收站实例列表
@@ -2097,9 +2382,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRecycleInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRecycleInstancesResponse`
         """
-        return self._list_recycle_instances_with_http_info(request)
+        http_info = self._list_recycle_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_recycle_instances_with_http_info(self, request):
+    def list_recycle_instances_async_invoker(self, request):
+        http_info = self._list_recycle_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_recycle_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/recycle-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecycleInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2120,9 +2417,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2131,20 +2428,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/recycle-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecycleInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_restore_time_async(self, request):
         """查询实例可恢复的时间段
@@ -2158,9 +2451,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRestoreTimeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListRestoreTimeResponse`
         """
-        return self._list_restore_time_with_http_info(request)
+        http_info = self._list_restore_time_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_restore_time_with_http_info(self, request):
+    def list_restore_time_async_invoker(self, request):
+        http_info = self._list_restore_time_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_restore_time_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/restorable-time-periods",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRestoreTimeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2185,9 +2490,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2196,20 +2501,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/restorable-time-periods',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRestoreTimeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_slow_logs_async(self, request):
         """查询数据库慢日志
@@ -2223,9 +2524,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListSlowLogsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListSlowLogsResponse`
         """
-        return self._list_slow_logs_with_http_info(request)
+        http_info = self._list_slow_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_slow_logs_with_http_info(self, request):
+    def list_slow_logs_async_invoker(self, request):
+        http_info = self._list_slow_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_slow_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slowlog",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSlowLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2254,9 +2567,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2265,20 +2578,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSlowLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_db_user_privilege_async(self, request):
         """修改Redis数据库帐号权限
@@ -2292,9 +2601,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyDbUserPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyDbUserPrivilegeResponse`
         """
-        return self._modify_db_user_privilege_with_http_info(request)
+        http_info = self._modify_db_user_privilege_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_db_user_privilege_with_http_info(self, request):
+    def modify_db_user_privilege_async_invoker(self, request):
+        http_info = self._modify_db_user_privilege_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_db_user_privilege_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/db-users/privilege",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyDbUserPrivilegeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2311,11 +2632,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2324,20 +2645,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users/privilege',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyDbUserPrivilegeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_eps_quotas_async(self, request):
         """修改企业项目配额
@@ -2351,9 +2668,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyEpsQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyEpsQuotasResponse`
         """
-        return self._modify_eps_quotas_with_http_info(request)
+        http_info = self._modify_eps_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_eps_quotas_with_http_info(self, request):
+    def modify_eps_quotas_async_invoker(self, request):
+        http_info = self._modify_eps_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_eps_quotas_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/enterprise-projects/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyEpsQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2368,11 +2697,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2381,20 +2710,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-projects/quotas',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyEpsQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_port_async(self, request):
         """修改数据库端口
@@ -2408,9 +2733,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPortRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPortResponse`
         """
-        return self._modify_port_with_http_info(request)
+        http_info = self._modify_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_port_with_http_info(self, request):
+    def modify_port_async_invoker(self, request):
+        http_info = self._modify_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_port_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/port",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyPortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2427,11 +2764,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2440,20 +2777,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/port',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyPortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_public_ip_async(self, request):
         """绑定/解绑弹性公网IP
@@ -2467,9 +2800,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPublicIpRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyPublicIpResponse`
         """
-        return self._modify_public_ip_with_http_info(request)
+        http_info = self._modify_public_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_public_ip_with_http_info(self, request):
+    def modify_public_ip_async_invoker(self, request):
+        http_info = self._modify_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_public_ip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/public-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyPublicIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2488,11 +2833,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2501,20 +2846,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/public-ip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyPublicIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_volume_async(self, request):
         """变更实例存储容量
@@ -2528,9 +2869,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyVolumeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ModifyVolumeResponse`
         """
-        return self._modify_volume_with_http_info(request)
+        http_info = self._modify_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_volume_with_http_info(self, request):
+    def modify_volume_async_invoker(self, request):
+        http_info = self._modify_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_volume_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/volume",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2547,11 +2900,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2560,20 +2913,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/volume',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def pause_resume_data_synchronization_async(self, request):
         """暂停/恢复具备容灾关系的实例数据同步
@@ -2589,9 +2938,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.PauseResumeDataSynchronizationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.PauseResumeDataSynchronizationResponse`
         """
-        return self._pause_resume_data_synchronization_with_http_info(request)
+        http_info = self._pause_resume_data_synchronization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _pause_resume_data_synchronization_with_http_info(self, request):
+    def pause_resume_data_synchronization_async_invoker(self, request):
+        http_info = self._pause_resume_data_synchronization_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _pause_resume_data_synchronization_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disaster-recovery/data-synchronization",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseResumeDataSynchronizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2608,11 +2969,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2621,20 +2982,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/data-synchronization',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PauseResumeDataSynchronizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_db_user_password_async(self, request):
         """重置Redis数据库账号密码
@@ -2648,9 +3005,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetDbUserPasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetDbUserPasswordResponse`
         """
-        return self._reset_db_user_password_with_http_info(request)
+        http_info = self._reset_db_user_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_db_user_password_with_http_info(self, request):
+    def reset_db_user_password_async_invoker(self, request):
+        http_info = self._reset_db_user_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_db_user_password_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/redis/instances/{instance_id}/db-users/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetDbUserPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2667,11 +3036,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2680,20 +3049,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/redis/instances/{instance_id}/db-users/password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetDbUserPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_password_async(self, request):
         """修改实例的管理员密码
@@ -2707,9 +3072,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResetPasswordResponse`
         """
-        return self._reset_password_with_http_info(request)
+        http_info = self._reset_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_password_with_http_info(self, request):
+    def reset_password_async_invoker(self, request):
+        http_info = self._reset_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_password_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2726,11 +3103,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2739,20 +3116,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_cold_volume_async(self, request):
         """扩容冷数据存储
@@ -2766,9 +3139,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeColdVolumeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeColdVolumeResponse`
         """
-        return self._resize_cold_volume_with_http_info(request)
+        http_info = self._resize_cold_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_cold_volume_with_http_info(self, request):
+    def resize_cold_volume_async_invoker(self, request):
+        http_info = self._resize_cold_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_cold_volume_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/cold-volume",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeColdVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2785,11 +3170,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2798,20 +3183,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/cold-volume',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeColdVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_instance_async(self, request):
         """变更实例规格
@@ -2825,9 +3206,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceResponse`
         """
-        return self._resize_instance_with_http_info(request)
+        http_info = self._resize_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_instance_with_http_info(self, request):
+    def resize_instance_async_invoker(self, request):
+        http_info = self._resize_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_instance_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2844,11 +3237,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2857,20 +3250,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/resize',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_instance_volume_async(self, request):
         """扩容实例存储容量
@@ -2884,9 +3273,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceVolumeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ResizeInstanceVolumeResponse`
         """
-        return self._resize_instance_volume_with_http_info(request)
+        http_info = self._resize_instance_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_instance_volume_with_http_info(self, request):
+    def resize_instance_volume_async_invoker(self, request):
+        http_info = self._resize_instance_volume_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_instance_volume_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/extend-volume",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeInstanceVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2903,11 +3304,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2916,20 +3317,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/extend-volume',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeInstanceVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_instance_async(self, request):
         """重启实例的数据库服务
@@ -2943,9 +3340,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.RestartInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestartInstanceResponse`
         """
-        return self._restart_instance_with_http_info(request)
+        http_info = self._restart_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_instance_with_http_info(self, request):
+    def restart_instance_async_invoker(self, request):
+        http_info = self._restart_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2962,9 +3371,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2973,20 +3382,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_existing_instance_async(self, request):
         """恢复到已有实例
@@ -3000,9 +3405,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreExistingInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.RestoreExistingInstanceResponse`
         """
-        return self._restore_existing_instance_with_http_info(request)
+        http_info = self._restore_existing_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_existing_instance_with_http_info(self, request):
+    def restore_existing_instance_async_invoker(self, request):
+        http_info = self._restore_existing_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restore_existing_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/recovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreExistingInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3019,11 +3436,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3032,20 +3449,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/recovery',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreExistingInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_auto_enlarge_policy_async(self, request):
         """设置磁盘自动扩容策略
@@ -3059,9 +3472,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoEnlargePolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetAutoEnlargePolicyResponse`
         """
-        return self._set_auto_enlarge_policy_with_http_info(request)
+        http_info = self._set_auto_enlarge_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_auto_enlarge_policy_with_http_info(self, request):
+    def set_auto_enlarge_policy_async_invoker(self, request):
+        http_info = self._set_auto_enlarge_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_auto_enlarge_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/disk-auto-expansion",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAutoEnlargePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3076,11 +3501,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3089,20 +3514,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/disk-auto-expansion',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetAutoEnlargePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_backup_policy_async(self, request):
         """设置自动备份策略
@@ -3116,9 +3537,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SetBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetBackupPolicyResponse`
         """
-        return self._set_backup_policy_with_http_info(request)
+        http_info = self._set_backup_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_backup_policy_with_http_info(self, request):
+    def set_backup_policy_async_invoker(self, request):
+        http_info = self._set_backup_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_backup_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBackupPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3135,11 +3568,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3148,20 +3581,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetBackupPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_recycle_policy_async(self, request):
         """设置回收策略
@@ -3175,9 +3604,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SetRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SetRecyclePolicyResponse`
         """
-        return self._set_recycle_policy_with_http_info(request)
+        http_info = self._set_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_recycle_policy_with_http_info(self, request):
+    def set_recycle_policy_async_invoker(self, request):
+        http_info = self._set_recycle_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_recycle_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/recycle-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRecyclePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3192,11 +3633,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3205,20 +3646,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/recycle-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetRecyclePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_all_instances_backups_async(self, request):
         """查询备份列表
@@ -3232,9 +3669,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowAllInstancesBackupsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowAllInstancesBackupsResponse`
         """
-        return self._show_all_instances_backups_with_http_info(request)
+        http_info = self._show_all_instances_backups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_all_instances_backups_with_http_info(self, request):
+    def show_all_instances_backups_async_invoker(self, request):
+        http_info = self._show_all_instances_backups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_all_instances_backups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAllInstancesBackupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3265,9 +3714,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3276,20 +3725,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAllInstancesBackupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_all_instances_backups_new_async(self, request):
         """查询备份列表（推荐）
@@ -3303,9 +3748,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowAllInstancesBackupsNewRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowAllInstancesBackupsNewResponse`
         """
-        return self._show_all_instances_backups_new_with_http_info(request)
+        http_info = self._show_all_instances_backups_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_all_instances_backups_new_with_http_info(self, request):
+    def show_all_instances_backups_new_async_invoker(self, request):
+        http_info = self._show_all_instances_backups_new_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_all_instances_backups_new_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAllInstancesBackupsNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3338,9 +3795,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3349,20 +3806,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.1/{project_id}/backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAllInstancesBackupsNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_applicable_instances_async(self, request):
         """查询参数模板可应用的实例列表
@@ -3376,9 +3829,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApplicableInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApplicableInstancesResponse`
         """
-        return self._show_applicable_instances_with_http_info(request)
+        http_info = self._show_applicable_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_applicable_instances_with_http_info(self, request):
+    def show_applicable_instances_async_invoker(self, request):
+        http_info = self._show_applicable_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_applicable_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/applicable-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplicableInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3399,9 +3864,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3410,20 +3875,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/applicable-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplicableInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_apply_history_async(self, request):
         """查询参数模板应用历史
@@ -3436,9 +3897,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApplyHistoryRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApplyHistoryResponse`
         """
-        return self._show_apply_history_with_http_info(request)
+        http_info = self._show_apply_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_apply_history_with_http_info(self, request):
+    def show_apply_history_async_invoker(self, request):
+        http_info = self._show_apply_history_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_apply_history_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/applied-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplyHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3459,9 +3932,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3470,20 +3943,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/applied-histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplyHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_auto_enlarge_policy_async(self, request):
         """查询磁盘自动扩容策略
@@ -3497,9 +3966,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowAutoEnlargePolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowAutoEnlargePolicyResponse`
         """
-        return self._show_auto_enlarge_policy_with_http_info(request)
+        http_info = self._show_auto_enlarge_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_auto_enlarge_policy_with_http_info(self, request):
+    def show_auto_enlarge_policy_async_invoker(self, request):
+        http_info = self._show_auto_enlarge_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_auto_enlarge_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disk-auto-expansion",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoEnlargePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3516,9 +3997,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3527,20 +4008,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/disk-auto-expansion',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAutoEnlargePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_backup_policy_async(self, request):
         """查询自动备份策略
@@ -3554,9 +4031,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowBackupPolicyResponse`
         """
-        return self._show_backup_policy_with_http_info(request)
+        http_info = self._show_backup_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_backup_policy_with_http_info(self, request):
+    def show_backup_policy_async_invoker(self, request):
+        http_info = self._show_backup_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_backup_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3573,9 +4062,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3584,20 +4073,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBackupPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_configuration_detail_async(self, request):
         """获取指定参数模板的参数
@@ -3611,9 +4096,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowConfigurationDetailRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowConfigurationDetailResponse`
         """
-        return self._show_configuration_detail_with_http_info(request)
+        http_info = self._show_configuration_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_configuration_detail_with_http_info(self, request):
+    def show_configuration_detail_async_invoker(self, request):
+        http_info = self._show_configuration_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_configuration_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigurationDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3630,9 +4127,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3641,20 +4138,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigurationDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_error_log_async(self, request):
         """查询数据库错误日志信息
@@ -3668,9 +4161,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowErrorLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowErrorLogResponse`
         """
-        return self._show_error_log_with_http_info(request)
+        http_info = self._show_error_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_error_log_with_http_info(self, request):
+    def show_error_log_async_invoker(self, request):
+        http_info = self._show_error_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_error_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/error-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowErrorLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3699,9 +4204,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3710,20 +4215,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/error-log',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowErrorLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_high_risk_commands_async(self, request):
         """查询高危命令
@@ -3737,9 +4238,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowHighRiskCommandsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowHighRiskCommandsResponse`
         """
-        return self._show_high_risk_commands_with_http_info(request)
+        http_info = self._show_high_risk_commands_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_high_risk_commands_with_http_info(self, request):
+    def show_high_risk_commands_async_invoker(self, request):
+        http_info = self._show_high_risk_commands_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_high_risk_commands_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/high-risk-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHighRiskCommandsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3756,9 +4269,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3767,20 +4280,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/high-risk-commands',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHighRiskCommandsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_biactive_regions_async(self, request):
         """查询实例可搭建双活关系的Region
@@ -3794,9 +4303,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceBiactiveRegionsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceBiactiveRegionsResponse`
         """
-        return self._show_instance_biactive_regions_with_http_info(request)
+        http_info = self._show_instance_biactive_regions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_biactive_regions_with_http_info(self, request):
+    def show_instance_biactive_regions_async_invoker(self, request):
+        http_info = self._show_instance_biactive_regions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_biactive_regions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disaster-recovery/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceBiactiveRegionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3813,9 +4334,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3824,20 +4345,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/regions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceBiactiveRegionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_configuration_async(self, request):
         """获取指定实例的参数
@@ -3851,9 +4368,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceConfigurationResponse`
         """
-        return self._show_instance_configuration_with_http_info(request)
+        http_info = self._show_instance_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_configuration_with_http_info(self, request):
+    def show_instance_configuration_async_invoker(self, request):
+        http_info = self._show_instance_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_configuration_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3870,9 +4399,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3881,20 +4410,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_role_async(self, request):
         """获取容灾实例主/备角色信息
@@ -3908,9 +4433,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceRoleRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowInstanceRoleResponse`
         """
-        return self._show_instance_role_with_http_info(request)
+        http_info = self._show_instance_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_role_with_http_info(self, request):
+    def show_instance_role_async_invoker(self, request):
+        http_info = self._show_instance_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_role_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/instance-role",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3927,9 +4464,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3938,20 +4475,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/instance-role',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ip_num_requirement_async(self, request):
         """查询创建实例或扩容节点时需要的IP数量
@@ -3965,9 +4498,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowIpNumRequirementRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowIpNumRequirementResponse`
         """
-        return self._show_ip_num_requirement_with_http_info(request)
+        http_info = self._show_ip_num_requirement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ip_num_requirement_with_http_info(self, request):
+    def show_ip_num_requirement_async_invoker(self, request):
+        http_info = self._show_ip_num_requirement_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ip_num_requirement_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ip-num-requirement",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpNumRequirementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3990,9 +4535,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4001,20 +4546,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ip-num-requirement',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIpNumRequirementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_modify_history_async(self, request):
         """查询实例参数的修改历史
@@ -4028,9 +4569,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowModifyHistoryRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowModifyHistoryResponse`
         """
-        return self._show_modify_history_with_http_info(request)
+        http_info = self._show_modify_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_modify_history_with_http_info(self, request):
+    def show_modify_history_async_invoker(self, request):
+        http_info = self._show_modify_history_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_modify_history_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configuration-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowModifyHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4051,9 +4604,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4062,20 +4615,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configuration-histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowModifyHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_pause_resume_stutus_async(self, request):
         """获取容灾实例数据同步状态
@@ -4089,9 +4638,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowPauseResumeStutusRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowPauseResumeStutusResponse`
         """
-        return self._show_pause_resume_stutus_with_http_info(request)
+        http_info = self._show_pause_resume_stutus_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_pause_resume_stutus_with_http_info(self, request):
+    def show_pause_resume_stutus_async_invoker(self, request):
+        http_info = self._show_pause_resume_stutus_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_pause_resume_stutus_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disaster-recovery/data-synchronization",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPauseResumeStutusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4108,9 +4669,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4119,20 +4680,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/disaster-recovery/data-synchronization',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPauseResumeStutusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas_async(self, request):
         """查询配额
@@ -4146,9 +4703,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_async_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4167,9 +4736,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4178,20 +4747,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_recycle_policy_async(self, request):
         """查询回收策略
@@ -4205,9 +4770,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRecyclePolicyResponse`
         """
-        return self._show_recycle_policy_with_http_info(request)
+        http_info = self._show_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_recycle_policy_with_http_info(self, request):
+    def show_recycle_policy_async_invoker(self, request):
+        http_info = self._show_recycle_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recycle_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/recycle-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecyclePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4224,9 +4801,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4235,20 +4812,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/recycle-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecyclePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_restorable_list_async(self, request):
         """查询可恢复的实例列表
@@ -4262,9 +4835,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRestorableListRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowRestorableListResponse`
         """
-        return self._show_restorable_list_with_http_info(request)
+        http_info = self._show_restorable_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_restorable_list_with_http_info(self, request):
+    def show_restorable_list_async_invoker(self, request):
+        http_info = self._show_restorable_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_restorable_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}/restorable-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRestorableListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4285,9 +4870,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4296,20 +4881,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}/restorable-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRestorableListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_slow_log_desensitization_async(self, request):
         """查询慢日志脱敏状态
@@ -4323,9 +4904,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowSlowLogDesensitizationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowSlowLogDesensitizationResponse`
         """
-        return self._show_slow_log_desensitization_with_http_info(request)
+        http_info = self._show_slow_log_desensitization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_slow_log_desensitization_with_http_info(self, request):
+    def show_slow_log_desensitization_async_invoker(self, request):
+        http_info = self._show_slow_log_desensitization_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_slow_log_desensitization_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slowlog-desensitization",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSlowLogDesensitizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4342,9 +4935,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4353,20 +4946,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-desensitization',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSlowLogDesensitizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def shrink_instance_node_async(self, request):
         """缩容指定集群实例的节点数量
@@ -4380,9 +4969,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShrinkInstanceNodeResponse`
         """
-        return self._shrink_instance_node_with_http_info(request)
+        http_info = self._shrink_instance_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _shrink_instance_node_with_http_info(self, request):
+    def shrink_instance_node_async_invoker(self, request):
+        http_info = self._shrink_instance_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _shrink_instance_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/reduce-node",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShrinkInstanceNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4399,11 +5000,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4412,20 +5013,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/reduce-node',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShrinkInstanceNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_slowlog_desensitization_async(self, request):
         """设置慢日志脱敏状态
@@ -4439,9 +5036,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSlowlogDesensitizationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSlowlogDesensitizationResponse`
         """
-        return self._switch_slowlog_desensitization_with_http_info(request)
+        http_info = self._switch_slowlog_desensitization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_slowlog_desensitization_with_http_info(self, request):
+    def switch_slowlog_desensitization_async_invoker(self, request):
+        http_info = self._switch_slowlog_desensitization_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_slowlog_desensitization_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slowlog-desensitization",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchSlowlogDesensitizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4458,11 +5067,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4471,20 +5080,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-desensitization',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchSlowlogDesensitizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_ssl_async(self, request):
         """切换实例SSL开关
@@ -4498,9 +5103,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSslRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchSslResponse`
         """
-        return self._switch_ssl_with_http_info(request)
+        http_info = self._switch_ssl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_ssl_with_http_info(self, request):
+    def switch_ssl_async_invoker(self, request):
+        http_info = self._switch_ssl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_ssl_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ssl-option",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchSslResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4517,11 +5134,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4530,20 +5147,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/ssl-option',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchSslResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_to_master_async(self, request):
         """容灾实例备升主
@@ -4557,9 +5170,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToMasterResponse`
         """
-        return self._switch_to_master_with_http_info(request)
+        http_info = self._switch_to_master_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_to_master_with_http_info(self, request):
+    def switch_to_master_async_invoker(self, request):
+        http_info = self._switch_to_master_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_to_master_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/switchover-master",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchToMasterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4576,11 +5201,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4589,20 +5214,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/switchover-master',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchToMasterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_to_slave_async(self, request):
         """容灾实例主降备
@@ -4616,9 +5237,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToSlaveRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.SwitchToSlaveResponse`
         """
-        return self._switch_to_slave_with_http_info(request)
+        http_info = self._switch_to_slave_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_to_slave_with_http_info(self, request):
+    def switch_to_slave_async_invoker(self, request):
+        http_info = self._switch_to_slave_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_to_slave_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/switchover-slave",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchToSlaveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4635,9 +5268,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4646,20 +5279,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/switchover-slave',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchToSlaveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_client_network_async(self, request):
         """修改副本集跨网段访问配置
@@ -4673,9 +5302,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateClientNetworkRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateClientNetworkResponse`
         """
-        return self._update_client_network_with_http_info(request)
+        http_info = self._update_client_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_client_network_with_http_info(self, request):
+    def update_client_network_async_invoker(self, request):
+        http_info = self._update_client_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_client_network_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/client-network",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClientNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4692,11 +5333,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4705,20 +5346,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/client-network',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateClientNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_configuration_async(self, request):
         """修改参数模板参数
@@ -4732,9 +5369,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateConfigurationResponse`
         """
-        return self._update_configuration_with_http_info(request)
+        http_info = self._update_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_configuration_with_http_info(self, request):
+    def update_configuration_async_invoker(self, request):
+        http_info = self._update_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_configuration_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4751,11 +5400,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4764,20 +5413,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_high_risk_commands_async(self, request):
         """修改高危命令
@@ -4791,9 +5436,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateHighRiskCommandsRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateHighRiskCommandsResponse`
         """
-        return self._update_high_risk_commands_with_http_info(request)
+        http_info = self._update_high_risk_commands_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_high_risk_commands_with_http_info(self, request):
+    def update_high_risk_commands_async_invoker(self, request):
+        http_info = self._update_high_risk_commands_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_high_risk_commands_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/high-risk-commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHighRiskCommandsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4810,11 +5467,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4823,20 +5480,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/high-risk-commands',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHighRiskCommandsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_configuration_async(self, request):
         """修改指定实例的参数
@@ -4850,9 +5503,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceConfigurationResponse`
         """
-        return self._update_instance_configuration_with_http_info(request)
+        http_info = self._update_instance_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_configuration_with_http_info(self, request):
+    def update_instance_configuration_async_invoker(self, request):
+        http_info = self._update_instance_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_configuration_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4869,11 +5534,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4882,20 +5547,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_name_async(self, request):
         """修改实例名称
@@ -4909,9 +5570,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateInstanceNameResponse`
         """
-        return self._update_instance_name_with_http_info(request)
+        http_info = self._update_instance_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_name_with_http_info(self, request):
+    def update_instance_name_async_invoker(self, request):
+        http_info = self._update_instance_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_name_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4928,11 +5601,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4941,20 +5614,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_security_group_async(self, request):
         """变更实例安全组
@@ -4968,9 +5637,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpdateSecurityGroupResponse`
         """
-        return self._update_security_group_with_http_info(request)
+        http_info = self._update_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_security_group_with_http_info(self, request):
+    def update_security_group_async_invoker(self, request):
+        http_info = self._update_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_security_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/security-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4987,11 +5668,11 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5000,20 +5681,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/security-group',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_db_version_async(self, request):
         """数据库补丁升级
@@ -5027,9 +5704,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.UpgradeDbVersionRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.UpgradeDbVersionResponse`
         """
-        return self._upgrade_db_version_with_http_info(request)
+        http_info = self._upgrade_db_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_db_version_with_http_info(self, request):
+    def upgrade_db_version_async_invoker(self, request):
+        http_info = self._upgrade_db_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_db_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeDbVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5046,9 +5735,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5057,20 +5746,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeDbVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_version_async(self, request):
         """查询当前支持的API版本信息列表
@@ -5084,9 +5769,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ListApiVersionRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ListApiVersionResponse`
         """
-        return self._list_api_version_with_http_info(request)
+        http_info = self._list_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_version_with_http_info(self, request):
+    def list_api_version_async_invoker(self, request):
+        http_info = self._list_api_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5101,9 +5798,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5112,20 +5809,16 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version_async(self, request):
         """查询指定API版本信息
@@ -5139,9 +5832,21 @@ class GaussDBforNoSQLAsyncClient(Client):
         :type request: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkgaussdbfornosql.v3.ShowApiVersionResponse`
         """
-        return self._show_api_version_with_http_info(request)
+        http_info = self._show_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_with_http_info(self, request):
+    def show_api_version_async_invoker(self, request):
+        http_info = self._show_api_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_api_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5158,9 +5863,9 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5169,20 +5874,26 @@ class GaussDBforNoSQLAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -5221,4 +5932,4 @@ class GaussDBforNoSQLAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

@@ -280,6 +280,7 @@ from huaweicloudsdkdcs.v2.model.single_background_task import SingleBackgroundTa
 from huaweicloudsdkdcs.v2.model.slowlog_item import SlowlogItem
 from huaweicloudsdkdcs.v2.model.source_instance_body import SourceInstanceBody
 from huaweicloudsdkdcs.v2.model.start_instance_resize_check_job_request import StartInstanceResizeCheckJobRequest
+from huaweicloudsdkdcs.v2.model.start_instance_resize_check_job_request_body import StartInstanceResizeCheckJobRequestBody
 from huaweicloudsdkdcs.v2.model.start_instance_resize_check_job_response import StartInstanceResizeCheckJobResponse
 from huaweicloudsdkdcs.v2.model.status_statistic import StatusStatistic
 from huaweicloudsdkdcs.v2.model.step_detail import StepDetail

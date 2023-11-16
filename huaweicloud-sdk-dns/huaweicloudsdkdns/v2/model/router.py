@@ -18,15 +18,17 @@ class Router:
 
     openapi_types = {
         'router_id': 'str',
-        'router_region': 'str'
+        'router_region': 'str',
+        'status': 'str'
     }
 
     attribute_map = {
         'router_id': 'router_id',
-        'router_region': 'router_region'
+        'router_region': 'router_region',
+        'status': 'status'
     }
 
-    def __init__(self, router_id=None, router_region=None):
+    def __init__(self, router_id=None, router_region=None, status=None):
         """Router
 
         The model defined in huaweicloud sdk
@@ -35,17 +37,22 @@ class Router:
         :type router_id: str
         :param router_region: Router(VPC)所在的region。
         :type router_region: str
+        :param status: 资源状态。
+        :type status: str
         """
         
         
 
         self._router_id = None
         self._router_region = None
+        self._status = None
         self.discriminator = None
 
         self.router_id = router_id
         if router_region is not None:
             self.router_region = router_region
+        if status is not None:
+            self.status = status
 
     @property
     def router_id(self):
@@ -90,6 +97,28 @@ class Router:
         :type router_region: str
         """
         self._router_region = router_region
+
+    @property
+    def status(self):
+        """Gets the status of this Router.
+
+        资源状态。
+
+        :return: The status of this Router.
+        :rtype: str
+        """
+        return self._status
+
+    @status.setter
+    def status(self, status):
+        """Sets the status of this Router.
+
+        资源状态。
+
+        :param status: The status of this Router.
+        :type status: str
+        """
+        self._status = status
 
     def to_dict(self):
         """Returns the model properties as a dict"""

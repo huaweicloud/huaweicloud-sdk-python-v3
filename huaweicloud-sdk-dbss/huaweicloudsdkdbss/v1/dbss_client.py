@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdbss'")
 
 
 class DbssClient(Client):
@@ -38,9 +43,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.AddRdsNoAgentDatabaseRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.AddRdsNoAgentDatabaseResponse`
         """
-        return self._add_rds_no_agent_database_with_http_info(request)
+        http_info = self._add_rds_no_agent_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_rds_no_agent_database_with_http_info(self, request):
+    def add_rds_no_agent_database_invoker(self, request):
+        http_info = self._add_rds_no_agent_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_rds_no_agent_database_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/databases/rds",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddRdsNoAgentDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/dbss/audit/databases/rds',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddRdsNoAgentDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_resource_tag(self, request):
         """批量添加资源标签
@@ -96,9 +110,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.BatchAddResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.BatchAddResourceTagResponse`
         """
-        return self._batch_add_resource_tag_with_http_info(request)
+        http_info = self._batch_add_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_resource_tag_with_http_info(self, request):
+    def batch_add_resource_tag_invoker(self, request):
+        http_info = self._batch_add_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +144,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +157,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/{resource_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_resource_tag(self, request):
         """批量删除资源标签
@@ -156,9 +179,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.BatchDeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.BatchDeleteResourceTagResponse`
         """
-        return self._batch_delete_resource_tag_with_http_info(request)
+        http_info = self._batch_delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_resource_tag_with_http_info(self, request):
+    def batch_delete_resource_tag_invoker(self, request):
+        http_info = self._batch_delete_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -177,11 +213,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -190,20 +226,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/{resource_id}/tags/delete',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_resource_instance_by_tag(self, request):
         """根据标签查询资源实例数量
@@ -216,9 +248,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.CountResourceInstanceByTagRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.CountResourceInstanceByTagResponse`
         """
-        return self._count_resource_instance_by_tag_with_http_info(request)
+        http_info = self._count_resource_instance_by_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_resource_instance_by_tag_with_http_info(self, request):
+    def count_resource_instance_by_tag_invoker(self, request):
+        http_info = self._count_resource_instance_by_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_resource_instance_by_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountResourceInstanceByTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +280,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +293,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/resource-instances/count',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountResourceInstanceByTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instances_period_order(self, request):
         """包年包月计费模式创建审计实例
@@ -274,9 +315,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.CreateInstancesPeriodOrderRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.CreateInstancesPeriodOrderResponse`
         """
-        return self._create_instances_period_order_with_http_info(request)
+        http_info = self._create_instances_period_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instances_period_order_with_http_info(self, request):
+    def create_instances_period_order_invoker(self, request):
+        http_info = self._create_instances_period_order_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_instances_period_order_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/dbss/audit/charge/period/order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstancesPeriodOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,11 +345,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +358,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/dbss/audit/charge/period/order',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstancesPeriodOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_databases(self, request):
         """查询数据库列表
@@ -330,9 +380,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditDatabasesRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditDatabasesResponse`
         """
-        return self._list_audit_databases_with_http_info(request)
+        http_info = self._list_audit_databases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_databases_with_http_info(self, request):
+    def list_audit_databases_invoker(self, request):
+        http_info = self._list_audit_databases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_databases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditDatabasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -355,9 +418,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +429,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/dbss/audit/databases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditDatabasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_instance_jobs(self, request):
         """查询实例创建任务信息
@@ -392,9 +451,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditInstanceJobsRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditInstanceJobsResponse`
         """
-        return self._list_audit_instance_jobs_with_http_info(request)
+        http_info = self._list_audit_instance_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_instance_jobs_with_http_info(self, request):
+    def list_audit_instance_jobs_invoker(self, request):
+        http_info = self._list_audit_instance_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_instance_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dbss/audit/jobs/{resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditInstanceJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -411,9 +483,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -422,20 +494,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/dbss/audit/jobs/{resource_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditInstanceJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_instances(self, request):
         """查询审计实例列表
@@ -448,9 +516,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditInstancesRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditInstancesResponse`
         """
-        return self._list_audit_instances_with_http_info(request)
+        http_info = self._list_audit_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_instances_with_http_info(self, request):
+    def list_audit_instances_invoker(self, request):
+        http_info = self._list_audit_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dbss/audit/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -469,9 +550,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -480,20 +561,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/dbss/audit/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_operate_logs(self, request):
         """查询用户操作日志信息
@@ -506,9 +583,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditOperateLogsRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditOperateLogsResponse`
         """
-        return self._list_audit_operate_logs_with_http_info(request)
+        http_info = self._list_audit_operate_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_operate_logs_with_http_info(self, request):
+    def list_audit_operate_logs_invoker(self, request):
+        http_info = self._list_audit_operate_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_operate_logs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/operate-log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditOperateLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -525,11 +615,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -538,20 +628,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/dbss/audit/operate-log',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditOperateLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_rule_risks(self, request):
         """查询风险规则策略
@@ -564,9 +650,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditRuleRisksRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditRuleRisksResponse`
         """
-        return self._list_audit_rule_risks_with_http_info(request)
+        http_info = self._list_audit_rule_risks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_rule_risks_with_http_info(self, request):
+    def list_audit_rule_risks_invoker(self, request):
+        http_info = self._list_audit_rule_risks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_rule_risks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/rule/risk",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditRuleRisksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -587,9 +686,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -598,20 +697,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/dbss/audit/rule/risk',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditRuleRisksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_rule_scopes(self, request):
         """查询审计范围策略列表
@@ -624,9 +719,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditRuleScopesRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditRuleScopesResponse`
         """
-        return self._list_audit_rule_scopes_with_http_info(request)
+        http_info = self._list_audit_rule_scopes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_rule_scopes_with_http_info(self, request):
+    def list_audit_rule_scopes_invoker(self, request):
+        http_info = self._list_audit_rule_scopes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_rule_scopes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/rule/scopes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditRuleScopesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -647,9 +755,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -658,20 +766,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/dbss/audit/rule/scopes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditRuleScopesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_sensitive_masks(self, request):
         """查询隐私数据脱敏规则
@@ -684,9 +788,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAuditSensitiveMasksRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAuditSensitiveMasksResponse`
         """
-        return self._list_audit_sensitive_masks_with_http_info(request)
+        http_info = self._list_audit_sensitive_masks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_sensitive_masks_with_http_info(self, request):
+    def list_audit_sensitive_masks_invoker(self, request):
+        http_info = self._list_audit_sensitive_masks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_sensitive_masks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/sensitive/masks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditSensitiveMasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -707,9 +824,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -718,20 +835,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/dbss/audit/sensitive/masks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditSensitiveMasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_availability_zone_infos(self, request):
         """查询可用区信息
@@ -744,9 +857,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListAvailabilityZoneInfosRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListAvailabilityZoneInfosResponse`
         """
-        return self._list_availability_zone_infos_with_http_info(request)
+        http_info = self._list_availability_zone_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_availability_zone_infos_with_http_info(self, request):
+    def list_availability_zone_infos_invoker(self, request):
+        http_info = self._list_availability_zone_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_availability_zone_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/dbss/audit/availability-zone",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailabilityZoneInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -761,9 +887,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -772,20 +898,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/dbss/audit/availability-zone',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailabilityZoneInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ecs_specification(self, request):
         """查询ecs服务器规格信息
@@ -798,9 +920,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListEcsSpecificationRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListEcsSpecificationResponse`
         """
-        return self._list_ecs_specification_with_http_info(request)
+        http_info = self._list_ecs_specification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ecs_specification_with_http_info(self, request):
+    def list_ecs_specification_invoker(self, request):
+        http_info = self._list_ecs_specification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ecs_specification_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dbss/audit/specification",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEcsSpecificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -815,9 +950,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -826,20 +961,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/dbss/audit/specification',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEcsSpecificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_resource_tags(self, request):
         """查询项目标签
@@ -852,9 +983,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListProjectResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListProjectResourceTagsResponse`
         """
-        return self._list_project_resource_tags_with_http_info(request)
+        http_info = self._list_project_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_resource_tags_with_http_info(self, request):
+    def list_project_resource_tags_invoker(self, request):
+        http_info = self._list_project_resource_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_resource_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -871,9 +1015,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -882,20 +1026,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_instance_by_tag(self, request):
         """根据标签查询资源实例列表
@@ -908,9 +1048,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListResourceInstanceByTagRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListResourceInstanceByTagResponse`
         """
-        return self._list_resource_instance_by_tag_with_http_info(request)
+        http_info = self._list_resource_instance_by_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_instance_by_tag_with_http_info(self, request):
+    def list_resource_instance_by_tag_invoker(self, request):
+        http_info = self._list_resource_instance_by_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_instance_by_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{resource_type}/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceInstanceByTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -931,11 +1084,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -944,20 +1097,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{resource_type}/resource-instances/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceInstanceByTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sql_injection_rules(self, request):
         """查询SQL注入规则策略
@@ -970,9 +1119,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ListSqlInjectionRulesRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ListSqlInjectionRulesResponse`
         """
-        return self._list_sql_injection_rules_with_http_info(request)
+        http_info = self._list_sql_injection_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sql_injection_rules_with_http_info(self, request):
+    def list_sql_injection_rules_invoker(self, request):
+        http_info = self._list_sql_injection_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sql_injection_rules_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/rule/sql-injections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlInjectionRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -989,11 +1151,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1002,20 +1164,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/dbss/audit/rule/sql-injections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSqlInjectionRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_audit_quota(self, request):
         """查询账户配额信息
@@ -1028,9 +1186,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ShowAuditQuotaRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ShowAuditQuotaResponse`
         """
-        return self._show_audit_quota_with_http_info(request)
+        http_info = self._show_audit_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_audit_quota_with_http_info(self, request):
+    def show_audit_quota_invoker(self, request):
+        http_info = self._show_audit_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_audit_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dbss/audit/quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuditQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1045,9 +1216,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1056,20 +1227,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/dbss/audit/quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAuditQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_audit_rule_risk(self, request):
         """查询指定风险规则策略
@@ -1082,9 +1249,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.ShowAuditRuleRiskRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.ShowAuditRuleRiskResponse`
         """
-        return self._show_audit_rule_risk_with_http_info(request)
+        http_info = self._show_audit_rule_risk_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_audit_rule_risk_with_http_info(self, request):
+    def show_audit_rule_risk_invoker(self, request):
+        http_info = self._show_audit_rule_risk_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_audit_rule_risk_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/{instance_id}/dbss/audit/rule/risk/{risk_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuditRuleRiskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1103,9 +1283,9 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1114,20 +1294,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/dbss/audit/rule/risk/{risk_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAuditRuleRiskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_agent(self, request):
         """开启关闭Agent
@@ -1140,9 +1316,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.SwitchAgentRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.SwitchAgentResponse`
         """
-        return self._switch_agent_with_http_info(request)
+        http_info = self._switch_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_agent_with_http_info(self, request):
+    def switch_agent_invoker(self, request):
+        http_info = self._switch_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_agent_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/audit/agent/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1159,11 +1348,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1172,20 +1361,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/audit/agent/switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_risk_rule(self, request):
         """开启关闭风险规则
@@ -1198,9 +1383,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.SwitchRiskRuleRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.SwitchRiskRuleResponse`
         """
-        return self._switch_risk_rule_with_http_info(request)
+        http_info = self._switch_risk_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_risk_rule_with_http_info(self, request):
+    def switch_risk_rule_invoker(self, request):
+        http_info = self._switch_risk_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_risk_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/{instance_id}/audit/rule/risk/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchRiskRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1217,11 +1415,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1230,20 +1428,16 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/{instance_id}/audit/rule/risk/switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchRiskRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_audit_security_group(self, request):
         """修改安全组
@@ -1256,9 +1450,22 @@ class DbssClient(Client):
         :type request: :class:`huaweicloudsdkdbss.v1.UpdateAuditSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkdbss.v1.UpdateAuditSecurityGroupResponse`
         """
-        return self._update_audit_security_group_with_http_info(request)
+        http_info = self._update_audit_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_audit_security_group_with_http_info(self, request):
+    def update_audit_security_group_invoker(self, request):
+        http_info = self._update_audit_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_audit_security_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/dbss/audit/security-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAuditSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1273,11 +1480,11 @@ class DbssClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1286,20 +1493,25 @@ class DbssClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/dbss/audit/security-group',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAuditSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

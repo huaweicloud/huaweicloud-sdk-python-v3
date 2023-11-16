@@ -33,7 +33,8 @@ class VifPeer:
         'bgp_route_limit': 'int',
         'bgp_status': 'str',
         'status': 'str',
-        'vif_id': 'str'
+        'vif_id': 'str',
+        'receive_route_num': 'int'
     }
 
     attribute_map = {
@@ -53,10 +54,11 @@ class VifPeer:
         'bgp_route_limit': 'bgp_route_limit',
         'bgp_status': 'bgp_status',
         'status': 'status',
-        'vif_id': 'vif_id'
+        'vif_id': 'vif_id',
+        'receive_route_num': 'receive_route_num'
     }
 
-    def __init__(self, id=None, tenant_id=None, name=None, description=None, address_family=None, local_gateway_ip=None, remote_gateway_ip=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, device_id=None, bgp_route_limit=None, bgp_status=None, status=None, vif_id=None):
+    def __init__(self, id=None, tenant_id=None, name=None, description=None, address_family=None, local_gateway_ip=None, remote_gateway_ip=None, route_mode=None, bgp_asn=None, bgp_md5=None, remote_ep_group=None, service_ep_group=None, device_id=None, bgp_route_limit=None, bgp_status=None, status=None, vif_id=None, receive_route_num=None):
         """VifPeer
 
         The model defined in huaweicloud sdk
@@ -95,6 +97,8 @@ class VifPeer:
         :type status: str
         :param vif_id: vif对等体对应的虚拟接口ID
         :type vif_id: str
+        :param receive_route_num: 路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入华为云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
+        :type receive_route_num: int
         """
         
         
@@ -116,6 +120,7 @@ class VifPeer:
         self._bgp_status = None
         self._status = None
         self._vif_id = None
+        self._receive_route_num = None
         self.discriminator = None
 
         if id is not None:
@@ -152,6 +157,8 @@ class VifPeer:
             self.status = status
         if vif_id is not None:
             self.vif_id = vif_id
+        if receive_route_num is not None:
+            self.receive_route_num = receive_route_num
 
     @property
     def id(self):
@@ -526,6 +533,28 @@ class VifPeer:
         :type vif_id: str
         """
         self._vif_id = vif_id
+
+    @property
+    def receive_route_num(self):
+        """Gets the receive_route_num of this VifPeer.
+
+        路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入华为云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
+
+        :return: The receive_route_num of this VifPeer.
+        :rtype: int
+        """
+        return self._receive_route_num
+
+    @receive_route_num.setter
+    def receive_route_num(self, receive_route_num):
+        """Sets the receive_route_num of this VifPeer.
+
+        路由模式为bgp：receive_route_num值为接收搭配BGP的路由数目； 路由模式为static：该字段无意义，值为-1； 注：若早期接入华为云的部分用户无法获取该字段信息，如需要请联系客服迁移专线端口。
+
+        :param receive_route_num: The receive_route_num of this VifPeer.
+        :type receive_route_num: int
+        """
+        self._receive_route_num = receive_route_num
 
     def to_dict(self):
         """Returns the model properties as a dict"""

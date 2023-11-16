@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkwaf'")
 
 
 class WafClient(Client):
@@ -38,9 +43,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ApplyCertificateToHostResponse`
         """
-        return self._apply_certificate_to_host_with_http_info(request)
+        http_info = self._apply_certificate_to_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_certificate_to_host_with_http_info(self, request):
+    def apply_certificate_to_host_invoker(self, request):
+        http_info = self._apply_certificate_to_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _apply_certificate_to_host_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/certificate/{certificate_id}/apply-to-hosts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyCertificateToHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -59,11 +77,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +90,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/certificate/{certificate_id}/apply-to-hosts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyCertificateToHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_prepaid_cloud_waf(self, request):
         """变更包周期云模式waf规格
@@ -101,9 +115,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ChangePrepaidCloudWafRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ChangePrepaidCloudWafResponse`
         """
-        return self._change_prepaid_cloud_waf_with_http_info(request)
+        http_info = self._change_prepaid_cloud_waf_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_prepaid_cloud_waf_with_http_info(self, request):
+    def change_prepaid_cloud_waf_invoker(self, request):
+        http_info = self._change_prepaid_cloud_waf_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_prepaid_cloud_waf_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/subscription/batchalter/prepaid-cloud-waf",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangePrepaidCloudWafResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -120,11 +147,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -133,20 +160,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/subscription/batchalter/prepaid-cloud-waf',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangePrepaidCloudWafResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_anti_tamper_rule(self, request):
         """创建防篡改规则
@@ -159,9 +182,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntiTamperRuleResponse`
         """
-        return self._create_anti_tamper_rule_with_http_info(request)
+        http_info = self._create_anti_tamper_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_anti_tamper_rule_with_http_info(self, request):
+    def create_anti_tamper_rule_invoker(self, request):
+        http_info = self._create_anti_tamper_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_anti_tamper_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antitamper",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAntiTamperRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -180,11 +216,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -193,20 +229,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antitamper',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAntiTamperRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_anticrawler_rule(self, request):
         """创建JS脚本反爬虫规则
@@ -219,9 +251,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateAnticrawlerRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAnticrawlerRuleResponse`
         """
-        return self._create_anticrawler_rule_with_http_info(request)
+        http_info = self._create_anticrawler_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_anticrawler_rule_with_http_info(self, request):
+    def create_anticrawler_rule_invoker(self, request):
+        http_info = self._create_anticrawler_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_anticrawler_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/anticrawler",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAnticrawlerRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -240,11 +285,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -253,20 +298,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/anticrawler',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAnticrawlerRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_antileakage_rule(self, request):
         """创建防敏感信息泄露规则
@@ -279,9 +320,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateAntileakageRuleResponse`
         """
-        return self._create_antileakage_rule_with_http_info(request)
+        http_info = self._create_antileakage_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_antileakage_rule_with_http_info(self, request):
+    def create_antileakage_rule_invoker(self, request):
+        http_info = self._create_antileakage_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_antileakage_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antileakage",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAntileakageRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -300,11 +354,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -313,20 +367,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antileakage',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAntileakageRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cc_rule(self, request):
         """创建cc规则
@@ -339,9 +389,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCcRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCcRuleResponse`
         """
-        return self._create_cc_rule_with_http_info(request)
+        http_info = self._create_cc_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cc_rule_with_http_info(self, request):
+    def create_cc_rule_invoker(self, request):
+        http_info = self._create_cc_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cc_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/cc",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCcRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -360,11 +423,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -373,20 +436,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/cc',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCcRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate(self, request):
         """创建证书
@@ -399,9 +458,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCertificateResponse`
         """
-        return self._create_certificate_with_http_info(request)
+        http_info = self._create_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_with_http_info(self, request):
+    def create_certificate_invoker(self, request):
+        http_info = self._create_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -418,11 +490,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -431,20 +503,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/certificate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cloud_waf_post_paid_resource(self, request):
         """开通云模式按需计费接口
@@ -457,9 +525,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCloudWafPostPaidResourceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCloudWafPostPaidResourceResponse`
         """
-        return self._create_cloud_waf_post_paid_resource_with_http_info(request)
+        http_info = self._create_cloud_waf_post_paid_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cloud_waf_post_paid_resource_with_http_info(self, request):
+    def create_cloud_waf_post_paid_resource_invoker(self, request):
+        http_info = self._create_cloud_waf_post_paid_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cloud_waf_post_paid_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/postpaid",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCloudWafPostPaidResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -478,11 +559,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -491,20 +572,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/postpaid',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCloudWafPostPaidResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_custom_rule(self, request):
         """创建精准防护规则
@@ -517,9 +594,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateCustomRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateCustomRuleResponse`
         """
-        return self._create_custom_rule_with_http_info(request)
+        http_info = self._create_custom_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_custom_rule_with_http_info(self, request):
+    def create_custom_rule_invoker(self, request):
+        http_info = self._create_custom_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_custom_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/custom",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -538,11 +628,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -551,20 +641,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/custom',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCustomRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_geoip_rule(self, request):
         """创建地理位置控制规则
@@ -577,9 +663,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateGeoipRuleResponse`
         """
-        return self._create_geoip_rule_with_http_info(request)
+        http_info = self._create_geoip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_geoip_rule_with_http_info(self, request):
+    def create_geoip_rule_invoker(self, request):
+        http_info = self._create_geoip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_geoip_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/geoip",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGeoipRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -598,11 +697,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -611,20 +710,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/geoip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGeoipRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_host(self, request):
         """创建云模式防护域名
@@ -637,9 +732,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateHostResponse`
         """
-        return self._create_host_with_http_info(request)
+        http_info = self._create_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_host_with_http_info(self, request):
+    def create_host_invoker(self, request):
+        http_info = self._create_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_host_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/instance",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -656,11 +764,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -669,20 +777,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/instance',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ignore_rule(self, request):
         """创建全局白名单(原误报屏蔽)规则
@@ -695,9 +799,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateIgnoreRuleResponse`
         """
-        return self._create_ignore_rule_with_http_info(request)
+        http_info = self._create_ignore_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ignore_rule_with_http_info(self, request):
+    def create_ignore_rule_invoker(self, request):
+        http_info = self._create_ignore_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ignore_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ignore",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIgnoreRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -716,11 +833,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -729,20 +846,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/ignore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIgnoreRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance(self, request):
         """创建WAF独享引擎实例
@@ -755,9 +868,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateInstanceResponse`
         """
-        return self._create_instance_with_http_info(request)
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_with_http_info(self, request):
+    def create_instance_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/premium-waf/instance",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -774,11 +900,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -787,20 +913,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/instance',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ip_group(self, request):
         """创建ip地址组
@@ -813,9 +935,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateIpGroupResponse`
         """
-        return self._create_ip_group_with_http_info(request)
+        http_info = self._create_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ip_group_with_http_info(self, request):
+    def create_ip_group_invoker(self, request):
+        http_info = self._create_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/ip-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -832,11 +967,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -845,20 +980,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/ip-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_policy(self, request):
         """创建防护策略
@@ -871,9 +1002,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePolicyResponse`
         """
-        return self._create_policy_with_http_info(request)
+        http_info = self._create_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_policy_with_http_info(self, request):
+    def create_policy_invoker(self, request):
+        http_info = self._create_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -890,11 +1034,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -903,20 +1047,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_premium_host(self, request):
         """创建独享模式域名
@@ -929,9 +1069,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePremiumHostResponse`
         """
-        return self._create_premium_host_with_http_info(request)
+        http_info = self._create_premium_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_premium_host_with_http_info(self, request):
+    def create_premium_host_invoker(self, request):
+        http_info = self._create_premium_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_premium_host_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/premium-waf/host",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePremiumHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -948,11 +1101,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -961,20 +1114,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/host',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePremiumHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_prepaid_cloud_waf(self, request):
         """购买包周期云模式waf
@@ -987,9 +1136,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePrepaidCloudWafRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrepaidCloudWafResponse`
         """
-        return self._create_prepaid_cloud_waf_with_http_info(request)
+        http_info = self._create_prepaid_cloud_waf_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_prepaid_cloud_waf_with_http_info(self, request):
+    def create_prepaid_cloud_waf_invoker(self, request):
+        http_info = self._create_prepaid_cloud_waf_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_prepaid_cloud_waf_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/subscription/purchase/prepaid-cloud-waf",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrepaidCloudWafResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1006,11 +1168,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1019,20 +1181,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/subscription/purchase/prepaid-cloud-waf',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrepaidCloudWafResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_privacy_rule(self, request):
         """创建隐私屏蔽防护规则
@@ -1045,9 +1203,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePrivacyRuleResponse`
         """
-        return self._create_privacy_rule_with_http_info(request)
+        http_info = self._create_privacy_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_privacy_rule_with_http_info(self, request):
+    def create_privacy_rule_invoker(self, request):
+        http_info = self._create_privacy_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_privacy_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/privacy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivacyRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1066,11 +1237,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1079,20 +1250,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/privacy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivacyRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_punishment_rule(self, request):
         """创建攻击惩罚规则
@@ -1105,9 +1272,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreatePunishmentRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreatePunishmentRuleResponse`
         """
-        return self._create_punishment_rule_with_http_info(request)
+        http_info = self._create_punishment_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_punishment_rule_with_http_info(self, request):
+    def create_punishment_rule_invoker(self, request):
+        http_info = self._create_punishment_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_punishment_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/punishment",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePunishmentRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1126,11 +1306,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1139,20 +1319,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/punishment',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePunishmentRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_value_list(self, request):
         """创建引用表
@@ -1165,9 +1341,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateValueListResponse`
         """
-        return self._create_value_list_with_http_info(request)
+        http_info = self._create_value_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_value_list_with_http_info(self, request):
+    def create_value_list_invoker(self, request):
+        http_info = self._create_value_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_value_list_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/valuelist",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateValueListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1184,11 +1373,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1197,20 +1386,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/valuelist',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateValueListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_whiteblackip_rule(self, request):
         """创建黑白名单规则
@@ -1223,9 +1408,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.CreateWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.CreateWhiteblackipRuleResponse`
         """
-        return self._create_whiteblackip_rule_with_http_info(request)
+        http_info = self._create_whiteblackip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_whiteblackip_rule_with_http_info(self, request):
+    def create_whiteblackip_rule_invoker(self, request):
+        http_info = self._create_whiteblackip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_whiteblackip_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/whiteblackip",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWhiteblackipRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1244,11 +1442,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1257,20 +1455,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/whiteblackip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWhiteblackipRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_anticrawler_rule(self, request):
         """删除JS脚本反爬虫防护规则
@@ -1283,9 +1477,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteAnticrawlerRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAnticrawlerRuleResponse`
         """
-        return self._delete_anticrawler_rule_with_http_info(request)
+        http_info = self._delete_anticrawler_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_anticrawler_rule_with_http_info(self, request):
+    def delete_anticrawler_rule_invoker(self, request):
+        http_info = self._delete_anticrawler_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_anticrawler_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/anticrawler/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAnticrawlerRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1306,9 +1513,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1317,20 +1524,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/anticrawler/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAnticrawlerRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_antileakage_rule(self, request):
         """删除防敏感信息泄露防护规则
@@ -1343,9 +1546,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteAntileakageRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAntileakageRuleResponse`
         """
-        return self._delete_antileakage_rule_with_http_info(request)
+        http_info = self._delete_antileakage_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_antileakage_rule_with_http_info(self, request):
+    def delete_antileakage_rule_invoker(self, request):
+        http_info = self._delete_antileakage_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_antileakage_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antileakage/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAntileakageRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1366,9 +1582,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1377,20 +1593,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antileakage/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAntileakageRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_antitamper_rule(self, request):
         """删除防篡改防护规则
@@ -1403,9 +1615,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteAntitamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteAntitamperRuleResponse`
         """
-        return self._delete_antitamper_rule_with_http_info(request)
+        http_info = self._delete_antitamper_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_antitamper_rule_with_http_info(self, request):
+    def delete_antitamper_rule_invoker(self, request):
+        http_info = self._delete_antitamper_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_antitamper_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antitamper/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAntitamperRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1426,9 +1651,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1437,20 +1662,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antitamper/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAntitamperRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cc_rule(self, request):
         """删除cc防护规则
@@ -1463,9 +1684,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCcRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCcRuleResponse`
         """
-        return self._delete_cc_rule_with_http_info(request)
+        http_info = self._delete_cc_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cc_rule_with_http_info(self, request):
+    def delete_cc_rule_invoker(self, request):
+        http_info = self._delete_cc_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cc_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/cc/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCcRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1486,9 +1720,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1497,20 +1731,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/cc/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCcRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_certificate(self, request):
         """删除证书
@@ -1523,9 +1753,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCertificateResponse`
         """
-        return self._delete_certificate_with_http_info(request)
+        http_info = self._delete_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_certificate_with_http_info(self, request):
+    def delete_certificate_invoker(self, request):
+        http_info = self._delete_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_certificate_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1544,9 +1787,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1555,20 +1798,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/certificate/{certificate_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cloud_waf_post_paid_resource(self, request):
         """关闭云模式按需计费接口
@@ -1581,9 +1820,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCloudWafPostPaidResourceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCloudWafPostPaidResourceResponse`
         """
-        return self._delete_cloud_waf_post_paid_resource_with_http_info(request)
+        http_info = self._delete_cloud_waf_post_paid_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cloud_waf_post_paid_resource_with_http_info(self, request):
+    def delete_cloud_waf_post_paid_resource_invoker(self, request):
+        http_info = self._delete_cloud_waf_post_paid_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cloud_waf_post_paid_resource_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/postpaid",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCloudWafPostPaidResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1602,9 +1854,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1613,20 +1865,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/postpaid',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCloudWafPostPaidResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_custom_rule(self, request):
         """删除精准防护规则
@@ -1639,9 +1887,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteCustomRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteCustomRuleResponse`
         """
-        return self._delete_custom_rule_with_http_info(request)
+        http_info = self._delete_custom_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_custom_rule_with_http_info(self, request):
+    def delete_custom_rule_invoker(self, request):
+        http_info = self._delete_custom_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_custom_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/custom/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1662,9 +1923,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1673,20 +1934,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/custom/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCustomRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_geoip_rule(self, request):
         """删除地理位置控制防护规则
@@ -1699,9 +1956,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteGeoipRuleResponse`
         """
-        return self._delete_geoip_rule_with_http_info(request)
+        http_info = self._delete_geoip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_geoip_rule_with_http_info(self, request):
+    def delete_geoip_rule_invoker(self, request):
+        http_info = self._delete_geoip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_geoip_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/geoip/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGeoipRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1722,9 +1992,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1733,20 +2003,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/geoip/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGeoipRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_host(self, request):
         """删除云模式防护域名
@@ -1759,9 +2025,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteHostResponse`
         """
-        return self._delete_host_with_http_info(request)
+        http_info = self._delete_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_host_with_http_info(self, request):
+    def delete_host_invoker(self, request):
+        http_info = self._delete_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_host_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/instance/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1780,9 +2059,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1791,20 +2070,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/instance/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ignore_rule(self, request):
         """删除全局白名单(原误报屏蔽)防护规则
@@ -1817,9 +2092,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteIgnoreRuleResponse`
         """
-        return self._delete_ignore_rule_with_http_info(request)
+        http_info = self._delete_ignore_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ignore_rule_with_http_info(self, request):
+    def delete_ignore_rule_invoker(self, request):
+        http_info = self._delete_ignore_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ignore_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ignore/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIgnoreRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1840,9 +2128,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1851,20 +2139,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/ignore/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIgnoreRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance(self, request):
         """删除WAF独享引擎信息
@@ -1877,9 +2161,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteInstanceResponse`
         """
-        return self._delete_instance_with_http_info(request)
+        http_info = self._delete_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_with_http_info(self, request):
+    def delete_instance_invoker(self, request):
+        http_info = self._delete_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/premium-waf/instance/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1898,9 +2195,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1909,20 +2206,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/instance/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ip_group(self, request):
         """删除ip地址组
@@ -1935,9 +2228,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteIpGroupResponse`
         """
-        return self._delete_ip_group_with_http_info(request)
+        http_info = self._delete_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ip_group_with_http_info(self, request):
+    def delete_ip_group_invoker(self, request):
+        http_info = self._delete_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/ip-group/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1956,9 +2262,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1967,20 +2273,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/ip-group/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_policy(self, request):
         """删除防护策略
@@ -1993,9 +2295,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePolicyResponse`
         """
-        return self._delete_policy_with_http_info(request)
+        http_info = self._delete_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_policy_with_http_info(self, request):
+    def delete_policy_invoker(self, request):
+        http_info = self._delete_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2014,9 +2329,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2025,20 +2340,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_premium_host(self, request):
         """删除独享模式域名
@@ -2051,9 +2362,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePremiumHostResponse`
         """
-        return self._delete_premium_host_with_http_info(request)
+        http_info = self._delete_premium_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_premium_host_with_http_info(self, request):
+    def delete_premium_host_invoker(self, request):
+        http_info = self._delete_premium_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_premium_host_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/premium-waf/host/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePremiumHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2074,9 +2398,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2085,20 +2409,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/host/{host_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePremiumHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_privacy_rule(self, request):
         """删除隐私屏蔽防护规则
@@ -2111,9 +2431,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePrivacyRuleResponse`
         """
-        return self._delete_privacy_rule_with_http_info(request)
+        http_info = self._delete_privacy_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_privacy_rule_with_http_info(self, request):
+    def delete_privacy_rule_invoker(self, request):
+        http_info = self._delete_privacy_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_privacy_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/privacy/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivacyRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2134,9 +2467,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2145,20 +2478,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/privacy/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePrivacyRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_punishment_rule(self, request):
         """删除攻击惩罚规则
@@ -2171,9 +2500,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeletePunishmentRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeletePunishmentRuleResponse`
         """
-        return self._delete_punishment_rule_with_http_info(request)
+        http_info = self._delete_punishment_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_punishment_rule_with_http_info(self, request):
+    def delete_punishment_rule_invoker(self, request):
+        http_info = self._delete_punishment_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_punishment_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/punishment/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePunishmentRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2194,9 +2536,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2205,20 +2547,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/punishment/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePunishmentRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_value_list(self, request):
         """删除引用表
@@ -2231,9 +2569,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteValueListResponse`
         """
-        return self._delete_value_list_with_http_info(request)
+        http_info = self._delete_value_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_value_list_with_http_info(self, request):
+    def delete_value_list_invoker(self, request):
+        http_info = self._delete_value_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_value_list_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/valuelist/{valuelistid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteValueListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2252,9 +2603,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2263,20 +2614,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/valuelist/{valuelistid}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteValueListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_white_black_ip_rule(self, request):
         """删除黑白名单防护规则
@@ -2289,9 +2636,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.DeleteWhiteBlackIpRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.DeleteWhiteBlackIpRuleResponse`
         """
-        return self._delete_white_black_ip_rule_with_http_info(request)
+        http_info = self._delete_white_black_ip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_white_black_ip_rule_with_http_info(self, request):
+    def delete_white_black_ip_rule_invoker(self, request):
+        http_info = self._delete_white_black_ip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_white_black_ip_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/whiteblackip/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWhiteBlackIpRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2312,9 +2672,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2323,20 +2683,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/whiteblackip/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWhiteBlackIpRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_anticrawler_rules(self, request):
         """查询JS脚本反爬虫规则列表
@@ -2349,9 +2705,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListAnticrawlerRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListAnticrawlerRulesResponse`
         """
-        return self._list_anticrawler_rules_with_http_info(request)
+        http_info = self._list_anticrawler_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_anticrawler_rules_with_http_info(self, request):
+    def list_anticrawler_rules_invoker(self, request):
+        http_info = self._list_anticrawler_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_anticrawler_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/anticrawler",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAnticrawlerRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2376,9 +2745,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2387,20 +2756,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/anticrawler',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAnticrawlerRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_antileakage_rules(self, request):
         """查询防敏感信息泄露规则列表
@@ -2413,9 +2778,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListAntileakageRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListAntileakageRulesResponse`
         """
-        return self._list_antileakage_rules_with_http_info(request)
+        http_info = self._list_antileakage_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_antileakage_rules_with_http_info(self, request):
+    def list_antileakage_rules_invoker(self, request):
+        http_info = self._list_antileakage_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_antileakage_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antileakage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAntileakageRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2438,9 +2816,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2449,20 +2827,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antileakage',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAntileakageRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_antitamper_rule(self, request):
         """查询防篡改规则列表
@@ -2475,9 +2849,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListAntitamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListAntitamperRuleResponse`
         """
-        return self._list_antitamper_rule_with_http_info(request)
+        http_info = self._list_antitamper_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_antitamper_rule_with_http_info(self, request):
+    def list_antitamper_rule_invoker(self, request):
+        http_info = self._list_antitamper_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_antitamper_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antitamper",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAntitamperRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2500,9 +2887,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2511,20 +2898,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antitamper',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAntitamperRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bandwidth_timeline(self, request):
         """查询安全统计带宽数据
@@ -2537,9 +2920,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListBandwidthTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListBandwidthTimelineResponse`
         """
-        return self._list_bandwidth_timeline_with_http_info(request)
+        http_info = self._list_bandwidth_timeline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bandwidth_timeline_with_http_info(self, request):
+    def list_bandwidth_timeline_invoker(self, request):
+        http_info = self._list_bandwidth_timeline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bandwidth_timeline_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/bandwidth/timeline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthTimelineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2566,9 +2962,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2577,20 +2973,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/overviews/bandwidth/timeline',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBandwidthTimelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cc_rules(self, request):
         """查询cc规则列表
@@ -2603,9 +2995,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListCcRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCcRulesResponse`
         """
-        return self._list_cc_rules_with_http_info(request)
+        http_info = self._list_cc_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cc_rules_with_http_info(self, request):
+    def list_cc_rules_invoker(self, request):
+        http_info = self._list_cc_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cc_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/cc",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCcRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2628,9 +3033,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2639,20 +3044,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/cc',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCcRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certificates(self, request):
         """查询证书列表
@@ -2665,9 +3066,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListCertificatesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCertificatesResponse`
         """
-        return self._list_certificates_with_http_info(request)
+        http_info = self._list_certificates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certificates_with_http_info(self, request):
+    def list_certificates_invoker(self, request):
+        http_info = self._list_certificates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_certificates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2694,9 +3108,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2705,20 +3119,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/certificate',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertificatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_composite_hosts(self, request):
         """查询全部防护域名列表
@@ -2731,9 +3141,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListCompositeHostsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCompositeHostsResponse`
         """
-        return self._list_composite_hosts_with_http_info(request)
+        http_info = self._list_composite_hosts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_composite_hosts_with_http_info(self, request):
+    def list_composite_hosts_invoker(self, request):
+        http_info = self._list_composite_hosts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_composite_hosts_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/composite-waf/host",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCompositeHostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2764,9 +3187,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2775,20 +3198,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/composite-waf/host',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCompositeHostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_custom_rules(self, request):
         """查询精准防护规则列表
@@ -2801,9 +3220,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListCustomRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListCustomRulesResponse`
         """
-        return self._list_custom_rules_with_http_info(request)
+        http_info = self._list_custom_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_custom_rules_with_http_info(self, request):
+    def list_custom_rules_invoker(self, request):
+        http_info = self._list_custom_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/custom",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2826,9 +3258,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2837,20 +3269,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/custom',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_event(self, request):
         """查询攻击事件列表
@@ -2863,9 +3291,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListEventRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListEventResponse`
         """
-        return self._list_event_with_http_info(request)
+        http_info = self._list_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_event_with_http_info(self, request):
+    def list_event_invoker(self, request):
+        http_info = self._list_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_event_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/event",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2898,9 +3339,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2909,20 +3350,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/event',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_geoip_rule(self, request):
         """查询地理位置访问控制规则列表
@@ -2935,9 +3372,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListGeoipRuleResponse`
         """
-        return self._list_geoip_rule_with_http_info(request)
+        http_info = self._list_geoip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_geoip_rule_with_http_info(self, request):
+    def list_geoip_rule_invoker(self, request):
+        http_info = self._list_geoip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_geoip_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/geoip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGeoipRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2960,9 +3410,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2971,20 +3421,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/geoip',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGeoipRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host(self, request):
         """查询云模式防护域名列表
@@ -2997,9 +3443,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListHostResponse`
         """
-        return self._list_host_with_http_info(request)
+        http_info = self._list_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_with_http_info(self, request):
+    def list_host_invoker(self, request):
+        http_info = self._list_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_host_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/instance",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3024,9 +3483,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3035,20 +3494,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/instance',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_route(self, request):
         """获取云模式域名路由信息
@@ -3061,9 +3516,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListHostRouteRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListHostRouteResponse`
         """
-        return self._list_host_route_with_http_info(request)
+        http_info = self._list_host_route_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_route_with_http_info(self, request):
+    def list_host_route_invoker(self, request):
+        http_info = self._list_host_route_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_host_route_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/instance/{instance_id}/route",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostRouteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3082,9 +3550,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3093,20 +3561,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/instance/{instance_id}/route',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostRouteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ignore_rule(self, request):
         """查询全局白名单(原误报屏蔽)规则列表
@@ -3119,9 +3583,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListIgnoreRuleResponse`
         """
-        return self._list_ignore_rule_with_http_info(request)
+        http_info = self._list_ignore_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ignore_rule_with_http_info(self, request):
+    def list_ignore_rule_invoker(self, request):
+        http_info = self._list_ignore_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ignore_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ignore",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIgnoreRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3144,9 +3621,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3155,20 +3632,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/ignore',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIgnoreRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance(self, request):
         """查询WAF独享引擎列表
@@ -3181,9 +3654,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListInstanceResponse`
         """
-        return self._list_instance_with_http_info(request)
+        http_info = self._list_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_with_http_info(self, request):
+    def list_instance_invoker(self, request):
+        http_info = self._list_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/premium-waf/instance",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3206,9 +3692,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3217,20 +3703,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/instance',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ip_group(self, request):
         """查询地址组列表
@@ -3243,9 +3725,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListIpGroupResponse`
         """
-        return self._list_ip_group_with_http_info(request)
+        http_info = self._list_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ip_group_with_http_info(self, request):
+    def list_ip_group_invoker(self, request):
+        http_info = self._list_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/ip-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3270,9 +3765,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3281,20 +3776,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/ip-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notice_configs(self, request):
         """查询告警通知配置
@@ -3307,9 +3798,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListNoticeConfigsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListNoticeConfigsResponse`
         """
-        return self._list_notice_configs_with_http_info(request)
+        http_info = self._list_notice_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notice_configs_with_http_info(self, request):
+    def list_notice_configs_invoker(self, request):
+        http_info = self._list_notice_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notice_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/waf/alerts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNoticeConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3326,9 +3830,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3337,20 +3841,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/waf/alerts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNoticeConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_overviews_classification(self, request):
         """查询安全总览分类统计top信息
@@ -3363,9 +3863,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListOverviewsClassificationRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListOverviewsClassificationResponse`
         """
-        return self._list_overviews_classification_with_http_info(request)
+        http_info = self._list_overviews_classification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_overviews_classification_with_http_info(self, request):
+    def list_overviews_classification_invoker(self, request):
+        http_info = self._list_overviews_classification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_overviews_classification_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/classification",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOverviewsClassificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3392,9 +3905,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3403,20 +3916,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/overviews/classification',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOverviewsClassificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy(self, request):
         """查询防护策略列表
@@ -3429,9 +3938,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListPolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPolicyResponse`
         """
-        return self._list_policy_with_http_info(request)
+        http_info = self._list_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_with_http_info(self, request):
+    def list_policy_invoker(self, request):
+        http_info = self._list_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3454,9 +3976,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3465,20 +3987,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_premium_host(self, request):
         """独享模式域名列表
@@ -3491,9 +4009,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListPremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPremiumHostResponse`
         """
-        return self._list_premium_host_with_http_info(request)
+        http_info = self._list_premium_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_premium_host_with_http_info(self, request):
+    def list_premium_host_invoker(self, request):
+        http_info = self._list_premium_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_premium_host_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/premium-waf/host",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPremiumHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3520,9 +4051,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3531,20 +4062,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/host',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPremiumHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_privacy_rule(self, request):
         """查询隐私屏蔽防护规则列表
@@ -3557,9 +4084,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListPrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPrivacyRuleResponse`
         """
-        return self._list_privacy_rule_with_http_info(request)
+        http_info = self._list_privacy_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_privacy_rule_with_http_info(self, request):
+    def list_privacy_rule_invoker(self, request):
+        http_info = self._list_privacy_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_privacy_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/privacy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivacyRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3582,9 +4122,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3593,20 +4133,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/privacy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivacyRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_punishment_rules(self, request):
         """查询攻击惩罚规则列表
@@ -3619,9 +4155,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListPunishmentRulesRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListPunishmentRulesResponse`
         """
-        return self._list_punishment_rules_with_http_info(request)
+        http_info = self._list_punishment_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_punishment_rules_with_http_info(self, request):
+    def list_punishment_rules_invoker(self, request):
+        http_info = self._list_punishment_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_punishment_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/punishment",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPunishmentRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3644,9 +4193,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3655,20 +4204,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/punishment',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPunishmentRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_qps_timeline(self, request):
         """查询安全统计qps次数
@@ -3681,9 +4226,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListQpsTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListQpsTimelineResponse`
         """
-        return self._list_qps_timeline_with_http_info(request)
+        http_info = self._list_qps_timeline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_qps_timeline_with_http_info(self, request):
+    def list_qps_timeline_invoker(self, request):
+        http_info = self._list_qps_timeline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_qps_timeline_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/qps/timeline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQpsTimelineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3710,9 +4268,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3721,20 +4279,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/overviews/qps/timeline',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQpsTimelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_request_timeline(self, request):
         """查询安全总览中请求次数时间线统计数据
@@ -3747,9 +4301,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListRequestTimelineRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListRequestTimelineResponse`
         """
-        return self._list_request_timeline_with_http_info(request)
+        http_info = self._list_request_timeline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_request_timeline_with_http_info(self, request):
+    def list_request_timeline_invoker(self, request):
+        http_info = self._list_request_timeline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_request_timeline_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/request/timeline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRequestTimelineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3778,9 +4345,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3789,20 +4356,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/overviews/request/timeline',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRequestTimelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_statistics(self, request):
         """查询安全总览请求与攻击数量
@@ -3815,9 +4378,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListStatisticsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListStatisticsResponse`
         """
-        return self._list_statistics_with_http_info(request)
+        http_info = self._list_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_statistics_with_http_info(self, request):
+    def list_statistics_invoker(self, request):
+        http_info = self._list_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3842,9 +4418,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3853,20 +4429,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/overviews/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_top_abnormal(self, request):
         """查询业务异常数量
@@ -3879,9 +4451,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListTopAbnormalRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListTopAbnormalResponse`
         """
-        return self._list_top_abnormal_with_http_info(request)
+        http_info = self._list_top_abnormal_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_top_abnormal_with_http_info(self, request):
+    def list_top_abnormal_invoker(self, request):
+        http_info = self._list_top_abnormal_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_top_abnormal_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/overviews/abnormal",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopAbnormalResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3910,9 +4495,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3921,20 +4506,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/overviews/abnormal',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTopAbnormalResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_value_list(self, request):
         """查询引用表列表
@@ -3947,9 +4528,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListValueListResponse`
         """
-        return self._list_value_list_with_http_info(request)
+        http_info = self._list_value_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_value_list_with_http_info(self, request):
+    def list_value_list_invoker(self, request):
+        http_info = self._list_value_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_value_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/valuelist",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListValueListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3970,9 +4564,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3981,20 +4575,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/valuelist',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListValueListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_whiteblackip_rule(self, request):
         """查询黑白名单规则列表
@@ -4007,9 +4597,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ListWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ListWhiteblackipRuleResponse`
         """
-        return self._list_whiteblackip_rule_with_http_info(request)
+        http_info = self._list_whiteblackip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_whiteblackip_rule_with_http_info(self, request):
+    def list_whiteblackip_rule_invoker(self, request):
+        http_info = self._list_whiteblackip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_whiteblackip_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/whiteblackip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWhiteblackipRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4034,9 +4637,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4045,20 +4648,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/whiteblackip',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWhiteblackipRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_composite_hosts(self, request):
         """按企业项目迁移防护域名
@@ -4071,9 +4670,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.MigrateCompositeHostsResponse`
         """
-        return self._migrate_composite_hosts_with_http_info(request)
+        http_info = self._migrate_composite_hosts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_composite_hosts_with_http_info(self, request):
+    def migrate_composite_hosts_invoker(self, request):
+        http_info = self._migrate_composite_hosts_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_composite_hosts_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/composite-waf/hosts/migration",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateCompositeHostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4092,11 +4704,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4105,20 +4717,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/composite-waf/hosts/migration',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateCompositeHostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rename_instance(self, request):
         """重命名WAF独享引擎
@@ -4131,9 +4739,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.RenameInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.RenameInstanceResponse`
         """
-        return self._rename_instance_with_http_info(request)
+        http_info = self._rename_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rename_instance_with_http_info(self, request):
+    def rename_instance_invoker(self, request):
+        http_info = self._rename_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rename_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/premium-waf/instance/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RenameInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4152,11 +4773,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4165,20 +4786,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/instance/{instance_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RenameInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_anticrawler_rule(self, request):
         """查询JS脚本反爬虫防护规则
@@ -4191,9 +4808,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowAnticrawlerRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowAnticrawlerRuleResponse`
         """
-        return self._show_anticrawler_rule_with_http_info(request)
+        http_info = self._show_anticrawler_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_anticrawler_rule_with_http_info(self, request):
+    def show_anticrawler_rule_invoker(self, request):
+        http_info = self._show_anticrawler_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_anticrawler_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/anticrawler/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAnticrawlerRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4214,9 +4844,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4225,20 +4855,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/anticrawler/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAnticrawlerRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_antileakage_rule(self, request):
         """查询防敏感信息泄露防护规则
@@ -4251,9 +4877,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowAntileakageRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowAntileakageRuleResponse`
         """
-        return self._show_antileakage_rule_with_http_info(request)
+        http_info = self._show_antileakage_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_antileakage_rule_with_http_info(self, request):
+    def show_antileakage_rule_invoker(self, request):
+        http_info = self._show_antileakage_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_antileakage_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antileakage/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAntileakageRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4274,9 +4913,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4285,20 +4924,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antileakage/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAntileakageRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_antitamper_rule(self, request):
         """查询防篡改防护规则
@@ -4311,9 +4946,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowAntitamperRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowAntitamperRuleResponse`
         """
-        return self._show_antitamper_rule_with_http_info(request)
+        http_info = self._show_antitamper_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_antitamper_rule_with_http_info(self, request):
+    def show_antitamper_rule_invoker(self, request):
+        http_info = self._show_antitamper_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_antitamper_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antitamper/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAntitamperRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4334,9 +4982,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4345,20 +4993,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antitamper/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAntitamperRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cc_rule(self, request):
         """根据Id查询cc防护规则
@@ -4371,9 +5015,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCcRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCcRuleResponse`
         """
-        return self._show_cc_rule_with_http_info(request)
+        http_info = self._show_cc_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cc_rule_with_http_info(self, request):
+    def show_cc_rule_invoker(self, request):
+        http_info = self._show_cc_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cc_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/cc/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCcRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4394,9 +5051,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4405,20 +5062,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/cc/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCcRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_certificate(self, request):
         """查询证书
@@ -4431,9 +5084,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCertificateResponse`
         """
-        return self._show_certificate_with_http_info(request)
+        http_info = self._show_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_certificate_with_http_info(self, request):
+    def show_certificate_invoker(self, request):
+        http_info = self._show_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4452,9 +5118,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4463,20 +5129,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/certificate/{certificate_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_composite_host(self, request):
         """根据Id查询防护域名
@@ -4489,9 +5151,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCompositeHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCompositeHostResponse`
         """
-        return self._show_composite_host_with_http_info(request)
+        http_info = self._show_composite_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_composite_host_with_http_info(self, request):
+    def show_composite_host_invoker(self, request):
+        http_info = self._show_composite_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_composite_host_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/composite-waf/host/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCompositeHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4510,9 +5185,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4521,20 +5196,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/composite-waf/host/{host_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCompositeHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_console_config(self, request):
         """局点支持特性查询
@@ -4547,9 +5218,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowConsoleConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowConsoleConfigResponse`
         """
-        return self._show_console_config_with_http_info(request)
+        http_info = self._show_console_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_console_config_with_http_info(self, request):
+    def show_console_config_invoker(self, request):
+        http_info = self._show_console_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_console_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/config/console",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConsoleConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4564,9 +5248,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4575,20 +5259,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/config/console',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConsoleConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_custom_rule(self, request):
         """根据Id查询精准防护规则
@@ -4601,9 +5281,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowCustomRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowCustomRuleResponse`
         """
-        return self._show_custom_rule_with_http_info(request)
+        http_info = self._show_custom_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_custom_rule_with_http_info(self, request):
+    def show_custom_rule_invoker(self, request):
+        http_info = self._show_custom_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_custom_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/custom/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4624,9 +5317,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4635,20 +5328,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/custom/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_event(self, request):
         """查询指定事件id的防护事件详情
@@ -4661,9 +5350,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowEventRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowEventResponse`
         """
-        return self._show_event_with_http_info(request)
+        http_info = self._show_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_event_with_http_info(self, request):
+    def show_event_invoker(self, request):
+        http_info = self._show_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_event_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/event/{eventid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4682,9 +5384,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4693,20 +5395,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/event/{eventid}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_geoip_rule(self, request):
         """删除地理位置控制防护规则
@@ -4719,9 +5417,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowGeoipRuleResponse`
         """
-        return self._show_geoip_rule_with_http_info(request)
+        http_info = self._show_geoip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_geoip_rule_with_http_info(self, request):
+    def show_geoip_rule_invoker(self, request):
+        http_info = self._show_geoip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_geoip_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/geoip/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGeoipRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4742,9 +5453,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4753,20 +5464,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/geoip/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGeoipRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_host(self, request):
         """根据防护域名Id查询云模式防护域名详细信息
@@ -4779,9 +5486,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowHostResponse`
         """
-        return self._show_host_with_http_info(request)
+        http_info = self._show_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_host_with_http_info(self, request):
+    def show_host_invoker(self, request):
+        http_info = self._show_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_host_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/instance/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4800,9 +5520,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4811,20 +5531,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/instance/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ignore_rule(self, request):
         """查询全局白名单(原误报屏蔽)防护规则
@@ -4837,9 +5553,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowIgnoreRuleResponse`
         """
-        return self._show_ignore_rule_with_http_info(request)
+        http_info = self._show_ignore_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ignore_rule_with_http_info(self, request):
+    def show_ignore_rule_invoker(self, request):
+        http_info = self._show_ignore_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ignore_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ignore/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIgnoreRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4860,9 +5589,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4871,20 +5600,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/ignore/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIgnoreRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance(self, request):
         """查询WAF独享引擎信息
@@ -4897,9 +5622,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowInstanceResponse`
         """
-        return self._show_instance_with_http_info(request)
+        http_info = self._show_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_with_http_info(self, request):
+    def show_instance_invoker(self, request):
+        http_info = self._show_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/premium-waf/instance/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4918,9 +5656,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4929,20 +5667,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/instance/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ip_group(self, request):
         """查询ip地址组明细
@@ -4955,9 +5689,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowIpGroupResponse`
         """
-        return self._show_ip_group_with_http_info(request)
+        http_info = self._show_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ip_group_with_http_info(self, request):
+    def show_ip_group_invoker(self, request):
+        http_info = self._show_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/ip-group/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4976,9 +5723,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4987,20 +5734,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/ip-group/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_lts_info_config(self, request):
         """查询lts配置信息
@@ -5013,9 +5756,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowLtsInfoConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowLtsInfoConfigResponse`
         """
-        return self._show_lts_info_config_with_http_info(request)
+        http_info = self._show_lts_info_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_lts_info_config_with_http_info(self, request):
+    def show_lts_info_config_invoker(self, request):
+        http_info = self._show_lts_info_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_lts_info_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/config/lts",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLtsInfoConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5032,9 +5788,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5043,20 +5799,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/config/lts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLtsInfoConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_policy(self, request):
         """根据Id查询防护策略
@@ -5069,9 +5821,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPolicyResponse`
         """
-        return self._show_policy_with_http_info(request)
+        http_info = self._show_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_policy_with_http_info(self, request):
+    def show_policy_invoker(self, request):
+        http_info = self._show_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5090,9 +5855,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5101,20 +5866,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_premium_host(self, request):
         """查看独享模式域名配置
@@ -5127,9 +5888,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPremiumHostResponse`
         """
-        return self._show_premium_host_with_http_info(request)
+        http_info = self._show_premium_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_premium_host_with_http_info(self, request):
+    def show_premium_host_invoker(self, request):
+        http_info = self._show_premium_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_premium_host_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/premium-waf/host/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPremiumHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5148,9 +5922,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5159,20 +5933,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/host/{host_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPremiumHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_privacy_rule(self, request):
         """查询隐私屏蔽防护规则
@@ -5185,9 +5955,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPrivacyRuleResponse`
         """
-        return self._show_privacy_rule_with_http_info(request)
+        http_info = self._show_privacy_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_privacy_rule_with_http_info(self, request):
+    def show_privacy_rule_invoker(self, request):
+        http_info = self._show_privacy_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_privacy_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/privacy/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivacyRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5208,9 +5991,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5219,20 +6002,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/privacy/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivacyRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_punishment_rule(self, request):
         """根据Id查询攻击惩罚防护规则
@@ -5245,9 +6024,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowPunishmentRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowPunishmentRuleResponse`
         """
-        return self._show_punishment_rule_with_http_info(request)
+        http_info = self._show_punishment_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_punishment_rule_with_http_info(self, request):
+    def show_punishment_rule_invoker(self, request):
+        http_info = self._show_punishment_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_punishment_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/punishment/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPunishmentRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5268,9 +6060,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5279,20 +6071,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/punishment/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPunishmentRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_source_ip(self, request):
         """查询WAF回源Ip信息
@@ -5305,9 +6093,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowSourceIpRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowSourceIpResponse`
         """
-        return self._show_source_ip_with_http_info(request)
+        http_info = self._show_source_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_source_ip_with_http_info(self, request):
+    def show_source_ip_invoker(self, request):
+        http_info = self._show_source_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_source_ip_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/config/source-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSourceIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5322,9 +6123,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5333,20 +6134,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/config/source-ip',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSourceIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_subscription_info(self, request):
         """查询租户订购信息
@@ -5359,9 +6156,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowSubscriptionInfoRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowSubscriptionInfoResponse`
         """
-        return self._show_subscription_info_with_http_info(request)
+        http_info = self._show_subscription_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_subscription_info_with_http_info(self, request):
+    def show_subscription_info_invoker(self, request):
+        http_info = self._show_subscription_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_subscription_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/subscription",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubscriptionInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5376,9 +6186,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5387,20 +6197,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/subscription',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSubscriptionInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_value_list(self, request):
         """查询引用表
@@ -5413,9 +6219,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowValueListResponse`
         """
-        return self._show_value_list_with_http_info(request)
+        http_info = self._show_value_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_value_list_with_http_info(self, request):
+    def show_value_list_invoker(self, request):
+        http_info = self._show_value_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_value_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/valuelist/{valuelistid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowValueListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5434,9 +6253,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5445,20 +6264,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/valuelist/{valuelistid}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowValueListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_white_black_ip_rule(self, request):
         """查询黑白名单防护规则
@@ -5471,9 +6286,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.ShowWhiteBlackIpRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.ShowWhiteBlackIpRuleResponse`
         """
-        return self._show_white_black_ip_rule_with_http_info(request)
+        http_info = self._show_white_black_ip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_white_black_ip_rule_with_http_info(self, request):
+    def show_white_black_ip_rule_invoker(self, request):
+        http_info = self._show_white_black_ip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_white_black_ip_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/whiteblackip/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWhiteBlackIpRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5494,9 +6322,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5505,20 +6333,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/whiteblackip/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWhiteBlackIpRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alert_notice_config(self, request):
         """更新告警通知配置
@@ -5531,9 +6355,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAlertNoticeConfigResponse`
         """
-        return self._update_alert_notice_config_with_http_info(request)
+        http_info = self._update_alert_notice_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alert_notice_config_with_http_info(self, request):
+    def update_alert_notice_config_invoker(self, request):
+        http_info = self._update_alert_notice_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_alert_notice_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/waf/alert/{alert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlertNoticeConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5552,11 +6389,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5565,20 +6402,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/waf/alert/{alert_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlertNoticeConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_anti_tamper_rule_refresh(self, request):
         """网页防篡改规则更新缓存
@@ -5591,9 +6424,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAntiTamperRuleRefreshRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAntiTamperRuleRefreshResponse`
         """
-        return self._update_anti_tamper_rule_refresh_with_http_info(request)
+        http_info = self._update_anti_tamper_rule_refresh_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_anti_tamper_rule_refresh_with_http_info(self, request):
+    def update_anti_tamper_rule_refresh_invoker(self, request):
+        http_info = self._update_anti_tamper_rule_refresh_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_anti_tamper_rule_refresh_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antitamper/{rule_id}/refresh",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAntiTamperRuleRefreshResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5614,9 +6460,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5625,20 +6471,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antitamper/{rule_id}/refresh',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAntiTamperRuleRefreshResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_anticrawler_rule(self, request):
         """更新JS脚本反爬虫防护规则
@@ -5651,9 +6493,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleResponse`
         """
-        return self._update_anticrawler_rule_with_http_info(request)
+        http_info = self._update_anticrawler_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_anticrawler_rule_with_http_info(self, request):
+    def update_anticrawler_rule_invoker(self, request):
+        http_info = self._update_anticrawler_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_anticrawler_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/anticrawler/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAnticrawlerRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5674,11 +6529,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5687,20 +6542,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/anticrawler/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAnticrawlerRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_anticrawler_rule_type(self, request):
         """更新JS脚本反爬虫规则防护模式
@@ -5713,9 +6564,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleTypeRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAnticrawlerRuleTypeResponse`
         """
-        return self._update_anticrawler_rule_type_with_http_info(request)
+        http_info = self._update_anticrawler_rule_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_anticrawler_rule_type_with_http_info(self, request):
+    def update_anticrawler_rule_type_invoker(self, request):
+        http_info = self._update_anticrawler_rule_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_anticrawler_rule_type_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/anticrawler",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAnticrawlerRuleTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5734,11 +6598,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5747,20 +6611,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/anticrawler',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAnticrawlerRuleTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_antileakage_rule(self, request):
         """更新防敏感信息泄露防护规则
@@ -5773,9 +6633,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateAntileakageRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateAntileakageRuleResponse`
         """
-        return self._update_antileakage_rule_with_http_info(request)
+        http_info = self._update_antileakage_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_antileakage_rule_with_http_info(self, request):
+    def update_antileakage_rule_invoker(self, request):
+        http_info = self._update_antileakage_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_antileakage_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/antileakage/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAntileakageRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5796,11 +6669,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5809,20 +6682,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/antileakage/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAntileakageRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cc_rule(self, request):
         """更新cc防护规则
@@ -5835,9 +6704,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateCcRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCcRuleResponse`
         """
-        return self._update_cc_rule_with_http_info(request)
+        http_info = self._update_cc_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cc_rule_with_http_info(self, request):
+    def update_cc_rule_invoker(self, request):
+        http_info = self._update_cc_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cc_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/cc/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCcRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5858,11 +6740,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5871,20 +6753,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/cc/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCcRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_certificate(self, request):
         """修改证书
@@ -5897,9 +6775,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateCertificateRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCertificateResponse`
         """
-        return self._update_certificate_with_http_info(request)
+        http_info = self._update_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_certificate_with_http_info(self, request):
+    def update_certificate_invoker(self, request):
+        http_info = self._update_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_certificate_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5918,11 +6809,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5931,20 +6822,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/certificate/{certificate_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_custom_rule(self, request):
         """更新精准防护规则
@@ -5957,9 +6844,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateCustomRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateCustomRuleResponse`
         """
-        return self._update_custom_rule_with_http_info(request)
+        http_info = self._update_custom_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_custom_rule_with_http_info(self, request):
+    def update_custom_rule_invoker(self, request):
+        http_info = self._update_custom_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_custom_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/custom/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5980,11 +6880,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5993,20 +6893,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/custom/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCustomRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_geoip_rule(self, request):
         """更新地理位置控制防护规则
@@ -6019,9 +6915,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateGeoipRuleResponse`
         """
-        return self._update_geoip_rule_with_http_info(request)
+        http_info = self._update_geoip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_geoip_rule_with_http_info(self, request):
+    def update_geoip_rule_invoker(self, request):
+        http_info = self._update_geoip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_geoip_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/geoip/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGeoipRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6042,11 +6951,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6055,20 +6964,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/geoip/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGeoipRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_host(self, request):
         """更新云模式防护域名的配置
@@ -6081,9 +6986,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostResponse`
         """
-        return self._update_host_with_http_info(request)
+        http_info = self._update_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_host_with_http_info(self, request):
+    def update_host_invoker(self, request):
+        http_info = self._update_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_host_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/waf/instance/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6102,11 +7020,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6115,20 +7033,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/instance/{instance_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_host_protect_status(self, request):
         """修改域名防护状态
@@ -6141,9 +7055,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateHostProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateHostProtectStatusResponse`
         """
-        return self._update_host_protect_status_with_http_info(request)
+        http_info = self._update_host_protect_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_host_protect_status_with_http_info(self, request):
+    def update_host_protect_status_invoker(self, request):
+        http_info = self._update_host_protect_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_host_protect_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/instance/{instance_id}/protect-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHostProtectStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6162,11 +7089,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6175,20 +7102,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/instance/{instance_id}/protect-status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHostProtectStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ignore_rule(self, request):
         """更新全局白名单(原误报屏蔽)防护规则
@@ -6201,9 +7124,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateIgnoreRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIgnoreRuleResponse`
         """
-        return self._update_ignore_rule_with_http_info(request)
+        http_info = self._update_ignore_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ignore_rule_with_http_info(self, request):
+    def update_ignore_rule_invoker(self, request):
+        http_info = self._update_ignore_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ignore_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/ignore/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIgnoreRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6224,11 +7160,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6237,20 +7173,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/ignore/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIgnoreRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ip_group(self, request):
         """修改ip地址组
@@ -6263,9 +7195,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateIpGroupResponse`
         """
-        return self._update_ip_group_with_http_info(request)
+        http_info = self._update_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ip_group_with_http_info(self, request):
+    def update_ip_group_invoker(self, request):
+        http_info = self._update_ip_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ip_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/ip-group/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6284,11 +7229,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6297,20 +7242,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/ip-group/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_lts_info_config(self, request):
         """配置全量日志lts
@@ -6323,9 +7264,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateLtsInfoConfigRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateLtsInfoConfigResponse`
         """
-        return self._update_lts_info_config_with_http_info(request)
+        http_info = self._update_lts_info_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_lts_info_config_with_http_info(self, request):
+    def update_lts_info_config_invoker(self, request):
+        http_info = self._update_lts_info_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_lts_info_config_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/config/lts/{ltsconfig_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLtsInfoConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6344,11 +7298,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6357,20 +7311,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/config/lts/{ltsconfig_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLtsInfoConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy(self, request):
         """更新防护策略
@@ -6383,9 +7333,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyResponse`
         """
-        return self._update_policy_with_http_info(request)
+        http_info = self._update_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_with_http_info(self, request):
+    def update_policy_invoker(self, request):
+        http_info = self._update_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_policy_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6404,11 +7367,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6417,20 +7380,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy_protect_host(self, request):
         """更新防护策略的域名
@@ -6443,9 +7402,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyProtectHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyProtectHostResponse`
         """
-        return self._update_policy_protect_host_with_http_info(request)
+        http_info = self._update_policy_protect_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_protect_host_with_http_info(self, request):
+    def update_policy_protect_host_invoker(self, request):
+        http_info = self._update_policy_protect_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_policy_protect_host_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyProtectHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6466,9 +7438,9 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6477,20 +7449,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyProtectHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_policy_rule_status(self, request):
         """修改单条规则的状态
@@ -6503,9 +7471,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePolicyRuleStatusResponse`
         """
-        return self._update_policy_rule_status_with_http_info(request)
+        http_info = self._update_policy_rule_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_policy_rule_status_with_http_info(self, request):
+    def update_policy_rule_status_invoker(self, request):
+        http_info = self._update_policy_rule_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_policy_rule_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/{ruletype}/{rule_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePolicyRuleStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6528,11 +7509,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6541,20 +7522,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/{ruletype}/{rule_id}/status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePolicyRuleStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_premium_host(self, request):
         """修改独享模式域名配置
@@ -6567,9 +7544,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostResponse`
         """
-        return self._update_premium_host_with_http_info(request)
+        http_info = self._update_premium_host_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_premium_host_with_http_info(self, request):
+    def update_premium_host_invoker(self, request):
+        http_info = self._update_premium_host_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_premium_host_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/premium-waf/host/{host_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePremiumHostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6588,11 +7578,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6601,20 +7591,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/host/{host_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePremiumHostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_premium_host_protect_status(self, request):
         """修改独享模式域名防护状态
@@ -6627,9 +7613,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePremiumHostProtectStatusResponse`
         """
-        return self._update_premium_host_protect_status_with_http_info(request)
+        http_info = self._update_premium_host_protect_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_premium_host_protect_status_with_http_info(self, request):
+    def update_premium_host_protect_status_invoker(self, request):
+        http_info = self._update_premium_host_protect_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_premium_host_protect_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/premium-waf/host/{host_id}/protect-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePremiumHostProtectStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6648,11 +7647,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6661,20 +7660,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/premium-waf/host/{host_id}/protect-status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePremiumHostProtectStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_privacy_rule(self, request):
         """更新隐私屏蔽防护规则
@@ -6687,9 +7682,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePrivacyRuleResponse`
         """
-        return self._update_privacy_rule_with_http_info(request)
+        http_info = self._update_privacy_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_privacy_rule_with_http_info(self, request):
+    def update_privacy_rule_invoker(self, request):
+        http_info = self._update_privacy_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_privacy_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/privacy/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivacyRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6710,11 +7718,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6723,20 +7731,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/privacy/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePrivacyRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_punishment_rule(self, request):
         """更新攻击惩罚规则
@@ -6749,9 +7753,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdatePunishmentRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdatePunishmentRuleResponse`
         """
-        return self._update_punishment_rule_with_http_info(request)
+        http_info = self._update_punishment_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_punishment_rule_with_http_info(self, request):
+    def update_punishment_rule_invoker(self, request):
+        http_info = self._update_punishment_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_punishment_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/punishment/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePunishmentRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6772,11 +7789,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6785,20 +7802,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/punishment/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePunishmentRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_value_list(self, request):
         """修改引用表
@@ -6811,9 +7824,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateValueListRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateValueListResponse`
         """
-        return self._update_value_list_with_http_info(request)
+        http_info = self._update_value_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_value_list_with_http_info(self, request):
+    def update_value_list_invoker(self, request):
+        http_info = self._update_value_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_value_list_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/valuelist/{valuelistid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateValueListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6832,11 +7858,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6845,20 +7871,16 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/valuelist/{valuelistid}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateValueListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_whiteblackip_rule(self, request):
         """更新黑白名单防护规则
@@ -6871,9 +7893,22 @@ class WafClient(Client):
         :type request: :class:`huaweicloudsdkwaf.v1.UpdateWhiteblackipRuleRequest`
         :rtype: :class:`huaweicloudsdkwaf.v1.UpdateWhiteblackipRuleResponse`
         """
-        return self._update_whiteblackip_rule_with_http_info(request)
+        http_info = self._update_whiteblackip_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_whiteblackip_rule_with_http_info(self, request):
+    def update_whiteblackip_rule_invoker(self, request):
+        http_info = self._update_whiteblackip_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_whiteblackip_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/waf/policy/{policy_id}/whiteblackip/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWhiteblackipRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6894,11 +7929,11 @@ class WafClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6907,20 +7942,25 @@ class WafClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/waf/policy/{policy_id}/whiteblackip/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWhiteblackipRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

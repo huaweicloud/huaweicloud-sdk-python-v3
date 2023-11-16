@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcae'")
 
 
 class CaeClient(Client):
@@ -38,9 +43,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateAgencyRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateAgencyResponse`
         """
-        return self._create_agency_with_http_info(request)
+        http_info = self._create_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_agency_with_http_info(self, request):
+    def create_agency_invoker(self, request):
+        http_info = self._create_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/agencies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_agencies(self, request):
         """获取委托列表
@@ -94,9 +108,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListAgenciesResponse`
         """
-        return self._list_agencies_with_http_info(request)
+        http_info = self._list_agencies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_agencies_with_http_info(self, request):
+    def list_agencies_invoker(self, request):
+        http_info = self._list_agencies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_agencies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAgenciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,9 +138,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -122,20 +149,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/agencies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAgenciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_application(self, request):
         """创建应用
@@ -148,9 +171,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateApplicationResponse`
         """
-        return self._create_application_with_http_info(request)
+        http_info = self._create_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_application_with_http_info(self, request):
+    def create_application_invoker(self, request):
+        http_info = self._create_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_application_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -169,11 +205,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -182,20 +218,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_application(self, request):
         """删除应用
@@ -208,9 +240,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteApplicationResponse`
         """
-        return self._delete_application_with_http_info(request)
+        http_info = self._delete_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_application_with_http_info(self, request):
+    def delete_application_invoker(self, request):
+        http_info = self._delete_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_application_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,9 +276,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +287,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_applications(self, request):
         """获取应用列表
@@ -268,9 +309,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListApplicationsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListApplicationsResponse`
         """
-        return self._list_applications_with_http_info(request)
+        http_info = self._list_applications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_applications_with_http_info(self, request):
+    def list_applications_invoker(self, request):
+        http_info = self._list_applications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_applications_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -289,9 +343,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -300,20 +354,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApplicationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_application(self, request):
         """获取应用详情
@@ -326,9 +376,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ShowApplicationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowApplicationResponse`
         """
-        return self._show_application_with_http_info(request)
+        http_info = self._show_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_application_with_http_info(self, request):
+    def show_application_invoker(self, request):
+        http_info = self._show_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_application_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -349,9 +412,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +423,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate(self, request):
         """创建证书
@@ -386,9 +445,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateCertificateResponse`
         """
-        return self._create_certificate_with_http_info(request)
+        http_info = self._create_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_with_http_info(self, request):
+    def create_certificate_invoker(self, request):
+        http_info = self._create_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -407,11 +479,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -420,20 +492,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/certificates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_certificate(self, request):
         """删除证书
@@ -446,9 +514,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteCertificateResponse`
         """
-        return self._delete_certificate_with_http_info(request)
+        http_info = self._delete_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_certificate_with_http_info(self, request):
+    def delete_certificate_invoker(self, request):
+        http_info = self._delete_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_certificate_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -469,9 +550,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -480,20 +561,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/certificates/{certificate_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certificates(self, request):
         """获取证书列表
@@ -506,9 +583,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListCertificatesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListCertificatesResponse`
         """
-        return self._list_certificates_with_http_info(request)
+        http_info = self._list_certificates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certificates_with_http_info(self, request):
+    def list_certificates_invoker(self, request):
+        http_info = self._list_certificates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_certificates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -527,9 +617,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -538,20 +628,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/certificates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertificatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_certificate(self, request):
         """修改证书
@@ -564,9 +650,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.UpdateCertificateRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateCertificateResponse`
         """
-        return self._update_certificate_with_http_info(request)
+        http_info = self._update_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_certificate_with_http_info(self, request):
+    def update_certificate_invoker(self, request):
+        http_info = self._update_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_certificate_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cae/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -587,11 +686,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -600,20 +699,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/certificates/{certificate_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_component(self, request):
         """创建组件
@@ -626,9 +721,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentResponse`
         """
-        return self._create_component_with_http_info(request)
+        http_info = self._create_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_component_with_http_info(self, request):
+    def create_component_invoker(self, request):
+        http_info = self._create_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_component_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -649,11 +757,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -662,20 +770,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_component(self, request):
         """删除组件
@@ -688,9 +792,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteComponentResponse`
         """
-        return self._delete_component_with_http_info(request)
+        http_info = self._delete_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_component_with_http_info(self, request):
+    def delete_component_invoker(self, request):
+        http_info = self._delete_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_component_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -713,9 +830,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -724,20 +841,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_action(self, request):
         """操作组件
@@ -750,9 +863,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ExecuteActionRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ExecuteActionResponse`
         """
-        return self._execute_action_with_http_info(request)
+        http_info = self._execute_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_action_with_http_info(self, request):
+    def execute_action_invoker(self, request):
+        http_info = self._execute_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -775,11 +901,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -788,20 +914,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_component_events(self, request):
         """获取组件事件列表
@@ -814,9 +936,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentEventsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentEventsResponse`
         """
-        return self._list_component_events_with_http_info(request)
+        http_info = self._list_component_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_component_events_with_http_info(self, request):
+    def list_component_events_invoker(self, request):
+        http_info = self._list_component_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_component_events_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComponentEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -839,9 +974,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -850,20 +985,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComponentEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_component_instances(self, request):
         """获取组件实例列表
@@ -876,9 +1007,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentInstancesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentInstancesResponse`
         """
-        return self._list_component_instances_with_http_info(request)
+        http_info = self._list_component_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_component_instances_with_http_info(self, request):
+    def list_component_instances_invoker(self, request):
+        http_info = self._list_component_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_component_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComponentInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -901,9 +1045,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -912,20 +1056,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComponentInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_component_snapshots(self, request):
         """获取组件快照列表
@@ -938,9 +1078,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentSnapshotsResponse`
         """
-        return self._list_component_snapshots_with_http_info(request)
+        http_info = self._list_component_snapshots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_component_snapshots_with_http_info(self, request):
+    def list_component_snapshots_invoker(self, request):
+        http_info = self._list_component_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_component_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComponentSnapshotsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -963,9 +1116,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -974,20 +1127,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/snapshots',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComponentSnapshotsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_components(self, request):
         """获取组件列表
@@ -1000,9 +1149,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentsResponse`
         """
-        return self._list_components_with_http_info(request)
+        http_info = self._list_components_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_components_with_http_info(self, request):
+    def list_components_invoker(self, request):
+        http_info = self._list_components_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_components_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComponentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1027,9 +1189,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1038,20 +1200,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComponentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_component(self, request):
         """获取组件详情
@@ -1064,9 +1222,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ShowComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowComponentResponse`
         """
-        return self._show_component_with_http_info(request)
+        http_info = self._show_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_component_with_http_info(self, request):
+    def show_component_invoker(self, request):
+        http_info = self._show_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_component_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1089,9 +1260,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1100,20 +1271,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_component(self, request):
         """更新组件
@@ -1126,9 +1293,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.UpdateComponentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateComponentResponse`
         """
-        return self._update_component_with_http_info(request)
+        http_info = self._update_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_component_with_http_info(self, request):
+    def update_component_invoker(self, request):
+        http_info = self._update_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_component_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1151,11 +1331,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1164,20 +1344,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_component_configuration(self, request):
         """创建组件配置
@@ -1190,9 +1366,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateComponentConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateComponentConfigurationResponse`
         """
-        return self._create_component_configuration_with_http_info(request)
+        http_info = self._create_component_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_component_configuration_with_http_info(self, request):
+    def create_component_configuration_invoker(self, request):
+        http_info = self._create_component_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_component_configuration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateComponentConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1215,11 +1404,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1228,20 +1417,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/configurations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateComponentConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_component_configuration(self, request):
         """删除组件配置
@@ -1254,9 +1439,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteComponentConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteComponentConfigurationResponse`
         """
-        return self._delete_component_configuration_with_http_info(request)
+        http_info = self._delete_component_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_component_configuration_with_http_info(self, request):
+    def delete_component_configuration_invoker(self, request):
+        http_info = self._delete_component_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_component_configuration_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteComponentConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1279,9 +1477,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1290,20 +1488,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/configurations',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteComponentConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_component_configurations(self, request):
         """获取组件配置列表
@@ -1316,9 +1510,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListComponentConfigurationsResponse`
         """
-        return self._list_component_configurations_with_http_info(request)
+        http_info = self._list_component_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_component_configurations_with_http_info(self, request):
+    def list_component_configurations_invoker(self, request):
+        http_info = self._list_component_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_component_configurations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComponentConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1341,9 +1548,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1352,20 +1559,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/applications/{application_id}/components/{component_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComponentConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_domain(self, request):
         """创建域名
@@ -1378,9 +1581,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateDomainRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateDomainResponse`
         """
-        return self._create_domain_with_http_info(request)
+        http_info = self._create_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_domain_with_http_info(self, request):
+    def create_domain_invoker(self, request):
+        http_info = self._create_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_domain_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1399,11 +1615,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1412,20 +1628,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/domains',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domain(self, request):
         """删除域名
@@ -1438,9 +1650,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteDomainRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteDomainResponse`
         """
-        return self._delete_domain_with_http_info(request)
+        http_info = self._delete_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domain_with_http_info(self, request):
+    def delete_domain_invoker(self, request):
+        http_info = self._delete_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1461,9 +1686,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1472,20 +1697,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/domains/{domain_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domains(self, request):
         """获取域名列表
@@ -1498,9 +1719,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListDomainsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListDomainsResponse`
         """
-        return self._list_domains_with_http_info(request)
+        http_info = self._list_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domains_with_http_info(self, request):
+    def list_domains_invoker(self, request):
+        http_info = self._list_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1519,9 +1753,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1530,20 +1764,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_eips(self, request):
         """获取集群节点弹性公网IP列表
@@ -1556,9 +1786,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListEipsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListEipsResponse`
         """
-        return self._list_eips_with_http_info(request)
+        http_info = self._list_eips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_eips_with_http_info(self, request):
+    def list_eips_invoker(self, request):
+        http_info = self._list_eips_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_eips_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/eips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEipsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1577,9 +1820,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1588,20 +1831,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/eips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEipsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_eip(self, request):
         """修改带宽
@@ -1614,9 +1853,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.UpdateEipRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateEipResponse`
         """
-        return self._update_eip_with_http_info(request)
+        http_info = self._update_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_eip_with_http_info(self, request):
+    def update_eip_invoker(self, request):
+        http_info = self._update_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_eip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cae/eips",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1635,11 +1887,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1648,20 +1900,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/eips',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_environment(self, request):
         """创建环境
@@ -1674,9 +1922,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateEnvironmentResponse`
         """
-        return self._create_environment_with_http_info(request)
+        http_info = self._create_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_environment_with_http_info(self, request):
+    def create_environment_invoker(self, request):
+        http_info = self._create_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_environment_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/environments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1693,11 +1954,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1706,20 +1967,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/environments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_environment(self, request):
         """删除环境
@@ -1732,9 +1989,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteEnvironmentRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteEnvironmentResponse`
         """
-        return self._delete_environment_with_http_info(request)
+        http_info = self._delete_environment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_environment_with_http_info(self, request):
+    def delete_environment_invoker(self, request):
+        http_info = self._delete_environment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_environment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnvironmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1753,9 +2023,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1764,20 +2034,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/environments/{environment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvironmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_environments(self, request):
         """获取环境列表
@@ -1790,9 +2056,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListEnvironmentsRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListEnvironmentsResponse`
         """
-        return self._list_environments_with_http_info(request)
+        http_info = self._list_environments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_environments_with_http_info(self, request):
+    def list_environments_invoker(self, request):
+        http_info = self._list_environments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_environments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/environments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvironmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1809,9 +2088,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1820,20 +2099,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/environments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvironmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_job(self, request):
         """重试任务
@@ -1846,9 +2121,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.RetryJobRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.RetryJobResponse`
         """
-        return self._retry_job_with_http_info(request)
+        http_info = self._retry_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_job_with_http_info(self, request):
+    def retry_job_invoker(self, request):
+        http_info = self._retry_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _retry_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1869,9 +2157,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1880,20 +2168,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/jobs/{job_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job(self, request):
         """获取任务详情
@@ -1906,9 +2190,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1929,9 +2226,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1940,20 +2237,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_volume(self, request):
         """授权云存储
@@ -1966,9 +2259,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateVolumeRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateVolumeResponse`
         """
-        return self._create_volume_with_http_info(request)
+        http_info = self._create_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_volume_with_http_info(self, request):
+    def create_volume_invoker(self, request):
+        http_info = self._create_volume_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_volume_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/volumes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1987,11 +2293,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2000,20 +2306,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/volumes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_volume(self, request):
         """解绑云存储
@@ -2026,9 +2328,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteVolumeRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteVolumeResponse`
         """
-        return self._delete_volume_with_http_info(request)
+        http_info = self._delete_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_volume_with_http_info(self, request):
+    def delete_volume_invoker(self, request):
+        http_info = self._delete_volume_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_volume_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/volumes/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2049,9 +2364,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2060,20 +2375,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/volumes/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_volumes(self, request):
         """获取云存储列表
@@ -2086,9 +2397,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListVolumesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListVolumesResponse`
         """
-        return self._list_volumes_with_http_info(request)
+        http_info = self._list_volumes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_volumes_with_http_info(self, request):
+    def list_volumes_invoker(self, request):
+        http_info = self._list_volumes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_volumes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/volumes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVolumesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2109,9 +2433,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2120,20 +2444,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/volumes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVolumesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_timer_rule(self, request):
         """创建定时启停规则
@@ -2146,9 +2466,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.CreateTimerRuleRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.CreateTimerRuleResponse`
         """
-        return self._create_timer_rule_with_http_info(request)
+        http_info = self._create_timer_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_timer_rule_with_http_info(self, request):
+    def create_timer_rule_invoker(self, request):
+        http_info = self._create_timer_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_timer_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cae/timer-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTimerRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2167,11 +2500,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2180,20 +2513,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/timer-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTimerRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_timer_rule(self, request):
         """删除定时启停规则
@@ -2206,9 +2535,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.DeleteTimerRuleRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.DeleteTimerRuleResponse`
         """
-        return self._delete_timer_rule_with_http_info(request)
+        http_info = self._delete_timer_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_timer_rule_with_http_info(self, request):
+    def delete_timer_rule_invoker(self, request):
+        http_info = self._delete_timer_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_timer_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/cae/timer-rules/{timer_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTimerRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2229,9 +2571,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2240,20 +2582,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/timer-rules/{timer_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTimerRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_timer_rules(self, request):
         """获取定时启停规则列表
@@ -2266,9 +2604,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ListTimerRulesRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ListTimerRulesResponse`
         """
-        return self._list_timer_rules_with_http_info(request)
+        http_info = self._list_timer_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_timer_rules_with_http_info(self, request):
+    def list_timer_rules_invoker(self, request):
+        http_info = self._list_timer_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_timer_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/timer-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTimerRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2287,9 +2638,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2298,20 +2649,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/timer-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTimerRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_execution_result(self, request):
         """获取上次定时启停规则的执行情况
@@ -2324,9 +2671,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.ShowExecutionResultRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.ShowExecutionResultResponse`
         """
-        return self._show_execution_result_with_http_info(request)
+        http_info = self._show_execution_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_execution_result_with_http_info(self, request):
+    def show_execution_result_invoker(self, request):
+        http_info = self._show_execution_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_execution_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cae/timer-rules/{timer_rule_id}/execution-results",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExecutionResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2347,9 +2707,9 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2358,20 +2718,16 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/timer-rules/{timer_rule_id}/execution-results',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExecutionResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_timer_rule(self, request):
         """修改定时启停规则
@@ -2384,9 +2740,22 @@ class CaeClient(Client):
         :type request: :class:`huaweicloudsdkcae.v1.UpdateTimerRuleRequest`
         :rtype: :class:`huaweicloudsdkcae.v1.UpdateTimerRuleResponse`
         """
-        return self._update_timer_rule_with_http_info(request)
+        http_info = self._update_timer_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_timer_rule_with_http_info(self, request):
+    def update_timer_rule_invoker(self, request):
+        http_info = self._update_timer_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_timer_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cae/timer-rules/{timer_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTimerRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2407,11 +2776,11 @@ class CaeClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2420,20 +2789,25 @@ class CaeClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cae/timer-rules/{timer_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTimerRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

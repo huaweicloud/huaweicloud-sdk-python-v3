@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdevsecurity'")
 
 
 class DevSecurityAsyncClient(Client):
@@ -39,9 +44,21 @@ class DevSecurityAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdevsecurity.v1.CreateSecAppTaskRequest`
         :rtype: :class:`huaweicloudsdkdevsecurity.v1.CreateSecAppTaskResponse`
         """
-        return self._create_sec_app_task_with_http_info(request)
+        http_info = self._create_sec_app_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sec_app_task_with_http_info(self, request):
+    def create_sec_app_task_async_invoker(self, request):
+        http_info = self._create_sec_app_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sec_app_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/secapp/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecAppTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -64,11 +81,11 @@ class DevSecurityAsyncClient(Client):
         if 'personal_info_share_url' in local_var_params:
             form_params['personal_info_share_url'] = local_var_params['personal_info_share_url']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -77,20 +94,16 @@ class DevSecurityAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secapp/task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecAppTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_sec_app_task_async(self, request):
         """删除移动应用安全任务
@@ -104,9 +117,21 @@ class DevSecurityAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdevsecurity.v1.DeleteSecAppTaskRequest`
         :rtype: :class:`huaweicloudsdkdevsecurity.v1.DeleteSecAppTaskResponse`
         """
-        return self._delete_sec_app_task_with_http_info(request)
+        http_info = self._delete_sec_app_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_sec_app_task_with_http_info(self, request):
+    def delete_sec_app_task_async_invoker(self, request):
+        http_info = self._delete_sec_app_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_sec_app_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/secapp/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecAppTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -123,9 +148,9 @@ class DevSecurityAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -134,20 +159,16 @@ class DevSecurityAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secapp/task',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecAppTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sec_app_task_result_async(self, request):
         """获取移动应用安全任务结果
@@ -161,9 +182,21 @@ class DevSecurityAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdevsecurity.v1.ShowSecAppTaskResultRequest`
         :rtype: :class:`huaweicloudsdkdevsecurity.v1.ShowSecAppTaskResultResponse`
         """
-        return self._show_sec_app_task_result_with_http_info(request)
+        http_info = self._show_sec_app_task_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sec_app_task_result_with_http_info(self, request):
+    def show_sec_app_task_result_async_invoker(self, request):
+        http_info = self._show_sec_app_task_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sec_app_task_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/secapp/task-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecAppTaskResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -180,9 +213,9 @@ class DevSecurityAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -191,20 +224,16 @@ class DevSecurityAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secapp/task-result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecAppTaskResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sec_app_task_status_async(self, request):
         """查询移动应用安全任务状态
@@ -218,9 +247,21 @@ class DevSecurityAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdevsecurity.v1.ShowSecAppTaskStatusRequest`
         :rtype: :class:`huaweicloudsdkdevsecurity.v1.ShowSecAppTaskStatusResponse`
         """
-        return self._show_sec_app_task_status_with_http_info(request)
+        http_info = self._show_sec_app_task_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sec_app_task_status_with_http_info(self, request):
+    def show_sec_app_task_status_async_invoker(self, request):
+        http_info = self._show_sec_app_task_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sec_app_task_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/secapp/task-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecAppTaskStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,9 +278,9 @@ class DevSecurityAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,26 @@ class DevSecurityAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/secapp/task-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecAppTaskStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -300,4 +347,4 @@ class DevSecurityAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

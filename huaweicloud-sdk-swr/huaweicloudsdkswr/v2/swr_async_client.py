@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkswr'")
 
 
 class SwrAsyncClient(Client):
@@ -39,9 +44,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateImageSyncRepoResponse`
         """
-        return self._create_image_sync_repo_with_http_info(request)
+        http_info = self._create_image_sync_repo_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_image_sync_repo_with_http_info(self, request):
+    def create_image_sync_repo_async_invoker(self, request):
+        http_info = self._create_image_sync_repo_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_image_sync_repo_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/sync_repo",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateImageSyncRepoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/sync_repo',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateImageSyncRepoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_manual_image_sync_repo_async(self, request):
         """手动同步镜像
@@ -100,9 +113,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateManualImageSyncRepoResponse`
         """
-        return self._create_manual_image_sync_repo_with_http_info(request)
+        http_info = self._create_manual_image_sync_repo_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_manual_image_sync_repo_with_http_info(self, request):
+    def create_manual_image_sync_repo_async_invoker(self, request):
+        http_info = self._create_manual_image_sync_repo_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_manual_image_sync_repo_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/sync_images",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateManualImageSyncRepoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,11 +146,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -134,20 +159,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/sync_images',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateManualImageSyncRepoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_namespace_async(self, request):
         """创建组织
@@ -161,9 +182,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceResponse`
         """
-        return self._create_namespace_with_http_info(request)
+        http_info = self._create_namespace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_namespace_with_http_info(self, request):
+    def create_namespace_async_invoker(self, request):
+        http_info = self._create_namespace_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_namespace_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNamespaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -178,11 +211,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -191,20 +224,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNamespaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_namespace_auth_async(self, request):
         """创建组织权限
@@ -218,9 +247,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateNamespaceAuthResponse`
         """
-        return self._create_namespace_auth_with_http_info(request)
+        http_info = self._create_namespace_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_namespace_auth_with_http_info(self, request):
+    def create_namespace_auth_async_invoker(self, request):
+        http_info = self._create_namespace_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_namespace_auth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNamespaceAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,11 +278,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +291,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/access',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNamespaceAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_repo_async(self, request):
         """在组织下创建镜像仓库
@@ -277,9 +314,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoResponse`
         """
-        return self._create_repo_with_http_info(request)
+        http_info = self._create_repo_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_repo_with_http_info(self, request):
+    def create_repo_async_invoker(self, request):
+        http_info = self._create_repo_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_repo_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRepoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -296,11 +345,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -309,20 +358,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRepoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_repo_domains_async(self, request):
         """创建共享帐号
@@ -336,9 +381,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRepoDomainsResponse`
         """
-        return self._create_repo_domains_with_http_info(request)
+        http_info = self._create_repo_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_repo_domains_with_http_info(self, request):
+    def create_repo_domains_async_invoker(self, request):
+        http_info = self._create_repo_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_repo_domains_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRepoDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -357,11 +414,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -370,20 +427,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRepoDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_retention_async(self, request):
         """创建镜像老化规则
@@ -397,9 +450,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateRetentionResponse`
         """
-        return self._create_retention_with_http_info(request)
+        http_info = self._create_retention_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_retention_with_http_info(self, request):
+    def create_retention_async_invoker(self, request):
+        http_info = self._create_retention_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_retention_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/retentions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRetentionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -418,11 +483,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -431,20 +496,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/retentions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRetentionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_secret_async(self, request):
         """生成临时登录指令
@@ -458,9 +519,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateSecretResponse`
         """
-        return self._create_secret_with_http_info(request)
+        http_info = self._create_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_secret_with_http_info(self, request):
+    def create_secret_async_invoker(self, request):
+        http_info = self._create_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_secret_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/utils/secret",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -477,9 +550,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Swr-Dockerlogin", ]
 
@@ -488,20 +561,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/utils/secret',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_trigger_async(self, request):
         """创建触发器
@@ -515,9 +584,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateTriggerResponse`
         """
-        return self._create_trigger_with_http_info(request)
+        http_info = self._create_trigger_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_trigger_with_http_info(self, request):
+    def create_trigger_async_invoker(self, request):
+        http_info = self._create_trigger_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_trigger_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/triggers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTriggerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -536,11 +617,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -549,20 +630,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/triggers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTriggerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_user_repository_auth_async(self, request):
         """创建镜像权限
@@ -576,9 +653,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.CreateUserRepositoryAuthResponse`
         """
-        return self._create_user_repository_auth_with_http_info(request)
+        http_info = self._create_user_repository_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_user_repository_auth_with_http_info(self, request):
+    def create_user_repository_auth_async_invoker(self, request):
+        http_info = self._create_user_repository_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_user_repository_auth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUserRepositoryAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -597,11 +686,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -610,20 +699,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/access',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateUserRepositoryAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_image_sync_repo_async(self, request):
         """删除镜像自动同步任务
@@ -637,9 +722,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteImageSyncRepoResponse`
         """
-        return self._delete_image_sync_repo_with_http_info(request)
+        http_info = self._delete_image_sync_repo_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_image_sync_repo_with_http_info(self, request):
+    def delete_image_sync_repo_async_invoker(self, request):
+        http_info = self._delete_image_sync_repo_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_image_sync_repo_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/sync_repo",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteImageSyncRepoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -658,11 +755,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -671,20 +768,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/sync_repo',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteImageSyncRepoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_namespace_auth_async(self, request):
         """删除组织权限
@@ -698,9 +791,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteNamespaceAuthResponse`
         """
-        return self._delete_namespace_auth_with_http_info(request)
+        http_info = self._delete_namespace_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_namespace_auth_with_http_info(self, request):
+    def delete_namespace_auth_async_invoker(self, request):
+        http_info = self._delete_namespace_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_namespace_auth_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNamespaceAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -717,11 +822,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -730,20 +835,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/access',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNamespaceAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_namespaces_async(self, request):
         """删除组织
@@ -757,9 +858,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteNamespacesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteNamespacesResponse`
         """
-        return self._delete_namespaces_with_http_info(request)
+        http_info = self._delete_namespaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_namespaces_with_http_info(self, request):
+    def delete_namespaces_async_invoker(self, request):
+        http_info = self._delete_namespaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_namespaces_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNamespacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -776,9 +889,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -787,20 +900,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNamespacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_repo_async(self, request):
         """删除组织下的镜像仓库
@@ -814,9 +923,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoResponse`
         """
-        return self._delete_repo_with_http_info(request)
+        http_info = self._delete_repo_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_repo_with_http_info(self, request):
+    def delete_repo_async_invoker(self, request):
+        http_info = self._delete_repo_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_repo_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRepoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -835,9 +956,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -846,20 +967,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRepoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_repo_domains_async(self, request):
         """删除共享帐号
@@ -873,9 +990,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoDomainsResponse`
         """
-        return self._delete_repo_domains_with_http_info(request)
+        http_info = self._delete_repo_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_repo_domains_with_http_info(self, request):
+    def delete_repo_domains_async_invoker(self, request):
+        http_info = self._delete_repo_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_repo_domains_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains/{access_domain}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRepoDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -896,9 +1025,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -907,20 +1036,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains/{access_domain}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRepoDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_repo_tag_async(self, request):
         """删除指定tag的镜像
@@ -934,9 +1059,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRepoTagRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRepoTagResponse`
         """
-        return self._delete_repo_tag_with_http_info(request)
+        http_info = self._delete_repo_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_repo_tag_with_http_info(self, request):
+    def delete_repo_tag_async_invoker(self, request):
+        http_info = self._delete_repo_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_repo_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/tags/{tag}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRepoTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -957,9 +1094,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -968,20 +1105,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/tags/{tag}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRepoTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_retention_async(self, request):
         """删除镜像老化规则
@@ -995,9 +1128,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteRetentionResponse`
         """
-        return self._delete_retention_with_http_info(request)
+        http_info = self._delete_retention_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_retention_with_http_info(self, request):
+    def delete_retention_async_invoker(self, request):
+        http_info = self._delete_retention_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_retention_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/retentions/{retention_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRetentionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1018,9 +1163,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1029,20 +1174,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/retentions/{retention_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRetentionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_trigger_async(self, request):
         """删除触发器
@@ -1056,9 +1197,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteTriggerResponse`
         """
-        return self._delete_trigger_with_http_info(request)
+        http_info = self._delete_trigger_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_trigger_with_http_info(self, request):
+    def delete_trigger_async_invoker(self, request):
+        http_info = self._delete_trigger_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_trigger_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/triggers/{trigger}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTriggerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1079,9 +1232,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1090,20 +1243,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/triggers/{trigger}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTriggerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_user_repository_auth_async(self, request):
         """删除镜像权限
@@ -1117,9 +1266,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.DeleteUserRepositoryAuthResponse`
         """
-        return self._delete_user_repository_auth_with_http_info(request)
+        http_info = self._delete_user_repository_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_user_repository_auth_with_http_info(self, request):
+    def delete_user_repository_auth_async_invoker(self, request):
+        http_info = self._delete_user_repository_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_repository_auth_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserRepositoryAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1138,11 +1299,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1151,20 +1312,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/access',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteUserRepositoryAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_image_auto_sync_repos_details_async(self, request):
         """获取镜像自动同步任务列表
@@ -1178,9 +1335,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListImageAutoSyncReposDetailsResponse`
         """
-        return self._list_image_auto_sync_repos_details_with_http_info(request)
+        http_info = self._list_image_auto_sync_repos_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_image_auto_sync_repos_details_with_http_info(self, request):
+    def list_image_auto_sync_repos_details_async_invoker(self, request):
+        http_info = self._list_image_auto_sync_repos_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_image_auto_sync_repos_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/sync_repo",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageAutoSyncReposDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1199,9 +1368,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1210,20 +1379,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/sync_repo',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImageAutoSyncReposDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_namespaces_async(self, request):
         """查询组织列表
@@ -1237,9 +1402,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListNamespacesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListNamespacesResponse`
         """
-        return self._list_namespaces_with_http_info(request)
+        http_info = self._list_namespaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_namespaces_with_http_info(self, request):
+    def list_namespaces_async_invoker(self, request):
+        http_info = self._list_namespaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_namespaces_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNamespacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1258,9 +1435,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1269,20 +1446,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNamespacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas_async(self, request):
         """获取配额信息
@@ -1296,9 +1469,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_async_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/projects/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1313,9 +1498,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1324,20 +1509,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/projects/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_repo_domains_async(self, request):
         """获取共享帐号列表
@@ -1351,9 +1532,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRepoDomainsResponse`
         """
-        return self._list_repo_domains_with_http_info(request)
+        http_info = self._list_repo_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_repo_domains_with_http_info(self, request):
+    def list_repo_domains_async_invoker(self, request):
+        http_info = self._list_repo_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repo_domains_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepoDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1372,9 +1565,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1383,20 +1576,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRepoDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_repos_details_async(self, request):
         """查询镜像仓库列表
@@ -1410,9 +1599,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListReposDetailsResponse`
         """
-        return self._list_repos_details_with_http_info(request)
+        http_info = self._list_repos_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_repos_details_with_http_info(self, request):
+    def list_repos_details_async_invoker(self, request):
+        http_info = self._list_repos_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repos_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/repos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListReposDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1443,9 +1644,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Content-Range", ]
 
@@ -1454,20 +1655,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/repos',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListReposDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_repository_tags_async(self, request):
         """查询镜像tag列表
@@ -1481,9 +1678,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRepositoryTagsResponse`
         """
-        return self._list_repository_tags_with_http_info(request)
+        http_info = self._list_repository_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_repository_tags_with_http_info(self, request):
+    def list_repository_tags_async_invoker(self, request):
+        http_info = self._list_repository_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repository_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepositoryTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1514,9 +1723,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Content-Range", ]
 
@@ -1525,20 +1734,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRepositoryTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_retention_histories_async(self, request):
         """获取镜像老化记录
@@ -1552,9 +1757,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRetentionHistoriesResponse`
         """
-        return self._list_retention_histories_with_http_info(request)
+        http_info = self._list_retention_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_retention_histories_with_http_info(self, request):
+    def list_retention_histories_async_invoker(self, request):
+        http_info = self._list_retention_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_retention_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/retentions/histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRetentionHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1575,9 +1792,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Content-Range", ]
 
@@ -1586,20 +1803,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/retentions/histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRetentionHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_retentions_async(self, request):
         """获取镜像老化规则列表
@@ -1613,9 +1826,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListRetentionsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListRetentionsResponse`
         """
-        return self._list_retentions_with_http_info(request)
+        http_info = self._list_retentions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_retentions_with_http_info(self, request):
+    def list_retentions_async_invoker(self, request):
+        http_info = self._list_retentions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_retentions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/retentions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRetentionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1634,9 +1859,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1645,20 +1870,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/retentions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRetentionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_shared_repos_details_async(self, request):
         """查询共享镜像列表
@@ -1672,9 +1893,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListSharedReposDetailsResponse`
         """
-        return self._list_shared_repos_details_with_http_info(request)
+        http_info = self._list_shared_repos_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_shared_repos_details_with_http_info(self, request):
+    def list_shared_repos_details_async_invoker(self, request):
+        http_info = self._list_shared_repos_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_shared_repos_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/shared-repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSharedReposDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1705,9 +1938,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Content-Range", ]
 
@@ -1716,20 +1949,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/shared-repositories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSharedReposDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_triggers_details_async(self, request):
         """获取镜像仓库下的触发器列表
@@ -1743,9 +1972,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListTriggersDetailsResponse`
         """
-        return self._list_triggers_details_with_http_info(request)
+        http_info = self._list_triggers_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_triggers_details_with_http_info(self, request):
+    def list_triggers_details_async_invoker(self, request):
+        http_info = self._list_triggers_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_triggers_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/triggers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTriggersDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1764,9 +2005,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1775,20 +2016,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/triggers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTriggersDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_access_domain_async(self, request):
         """判断共享帐号是否存在
@@ -1802,9 +2039,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowAccessDomainRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowAccessDomainResponse`
         """
-        return self._show_access_domain_with_http_info(request)
+        http_info = self._show_access_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_access_domain_with_http_info(self, request):
+    def show_access_domain_async_invoker(self, request):
+        http_info = self._show_access_domain_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_access_domain_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains/{access_domain}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAccessDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1825,9 +2074,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1836,20 +2085,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains/{access_domain}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAccessDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_namespace_async(self, request):
         """获取组织详情
@@ -1863,9 +2108,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowNamespaceResponse`
         """
-        return self._show_namespace_with_http_info(request)
+        http_info = self._show_namespace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_namespace_with_http_info(self, request):
+    def show_namespace_async_invoker(self, request):
+        http_info = self._show_namespace_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_namespace_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNamespaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1882,9 +2139,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1893,20 +2150,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNamespaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_namespace_auth_async(self, request):
         """查询组织权限
@@ -1920,9 +2173,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowNamespaceAuthResponse`
         """
-        return self._show_namespace_auth_with_http_info(request)
+        http_info = self._show_namespace_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_namespace_auth_with_http_info(self, request):
+    def show_namespace_auth_async_invoker(self, request):
+        http_info = self._show_namespace_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_namespace_auth_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNamespaceAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1939,9 +2204,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1950,20 +2215,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/access',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNamespaceAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repository_async(self, request):
         """查询镜像仓库概要信息
@@ -1977,9 +2238,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowRepositoryRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowRepositoryResponse`
         """
-        return self._show_repository_with_http_info(request)
+        http_info = self._show_repository_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repository_with_http_info(self, request):
+    def show_repository_async_invoker(self, request):
+        http_info = self._show_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1998,9 +2271,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2009,20 +2282,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRepositoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_retention_async(self, request):
         """获取镜像老化规则记录
@@ -2036,9 +2305,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowRetentionResponse`
         """
-        return self._show_retention_with_http_info(request)
+        http_info = self._show_retention_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_retention_with_http_info(self, request):
+    def show_retention_async_invoker(self, request):
+        http_info = self._show_retention_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_retention_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/retentions/{retention_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRetentionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2059,9 +2340,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2070,20 +2351,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/retentions/{retention_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRetentionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sync_job_async(self, request):
         """获取镜像自动同步任务信息
@@ -2097,9 +2374,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowSyncJobRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowSyncJobResponse`
         """
-        return self._show_sync_job_with_http_info(request)
+        http_info = self._show_sync_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sync_job_with_http_info(self, request):
+    def show_sync_job_async_invoker(self, request):
+        http_info = self._show_sync_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sync_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/sync_job",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSyncJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2120,9 +2409,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Content-Range", ]
 
@@ -2131,20 +2420,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/sync_job',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSyncJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_trigger_async(self, request):
         """获取触发器详情
@@ -2158,9 +2443,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowTriggerResponse`
         """
-        return self._show_trigger_with_http_info(request)
+        http_info = self._show_trigger_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_trigger_with_http_info(self, request):
+    def show_trigger_async_invoker(self, request):
+        http_info = self._show_trigger_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_trigger_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/triggers/{trigger}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTriggerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2181,9 +2478,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2192,20 +2489,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/triggers/{trigger}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTriggerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user_repository_auth_async(self, request):
         """查询镜像权限
@@ -2219,9 +2512,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowUserRepositoryAuthResponse`
         """
-        return self._show_user_repository_auth_with_http_info(request)
+        http_info = self._show_user_repository_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_repository_auth_with_http_info(self, request):
+    def show_user_repository_auth_async_invoker(self, request):
+        http_info = self._show_user_repository_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_user_repository_auth_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserRepositoryAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2240,9 +2545,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2251,20 +2556,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/access',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserRepositoryAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_namespace_auth_async(self, request):
         """更新组织权限
@@ -2278,9 +2579,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateNamespaceAuthResponse`
         """
-        return self._update_namespace_auth_with_http_info(request)
+        http_info = self._update_namespace_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_namespace_auth_with_http_info(self, request):
+    def update_namespace_auth_async_invoker(self, request):
+        http_info = self._update_namespace_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_namespace_auth_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/manage/namespaces/{namespace}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNamespaceAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2297,11 +2610,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2310,20 +2623,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/access',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNamespaceAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_repo_async(self, request):
         """更新镜像仓库的概要信息
@@ -2337,9 +2646,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoResponse`
         """
-        return self._update_repo_with_http_info(request)
+        http_info = self._update_repo_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_repo_with_http_info(self, request):
+    def update_repo_async_invoker(self, request):
+        http_info = self._update_repo_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_repo_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRepoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2358,11 +2679,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2371,20 +2692,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRepoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_repo_domains_async(self, request):
         """更新共享帐号
@@ -2398,9 +2715,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRepoDomainsResponse`
         """
-        return self._update_repo_domains_with_http_info(request)
+        http_info = self._update_repo_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_repo_domains_with_http_info(self, request):
+    def update_repo_domains_async_invoker(self, request):
+        http_info = self._update_repo_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_repo_domains_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains/{access_domain}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRepoDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2421,11 +2750,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2434,20 +2763,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repositories/{repository}/access-domains/{access_domain}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRepoDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_retention_async(self, request):
         """修改镜像老化规则
@@ -2461,9 +2786,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateRetentionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateRetentionResponse`
         """
-        return self._update_retention_with_http_info(request)
+        http_info = self._update_retention_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_retention_with_http_info(self, request):
+    def update_retention_async_invoker(self, request):
+        http_info = self._update_retention_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_retention_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/retentions/{retention_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRetentionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2484,11 +2821,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2497,20 +2834,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/retentions/{retention_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRetentionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_trigger_async(self, request):
         """更新触发器配置
@@ -2524,9 +2857,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateTriggerRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateTriggerResponse`
         """
-        return self._update_trigger_with_http_info(request)
+        http_info = self._update_trigger_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_trigger_with_http_info(self, request):
+    def update_trigger_async_invoker(self, request):
+        http_info = self._update_trigger_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_trigger_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/triggers/{trigger}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTriggerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2547,11 +2892,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2560,20 +2905,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/triggers/{trigger}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTriggerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_repository_auth_async(self, request):
         """更新镜像权限
@@ -2587,9 +2928,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.UpdateUserRepositoryAuthResponse`
         """
-        return self._update_user_repository_auth_with_http_info(request)
+        http_info = self._update_user_repository_auth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_repository_auth_with_http_info(self, request):
+    def update_user_repository_auth_async_invoker(self, request):
+        http_info = self._update_user_repository_auth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_repository_auth_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/manage/namespaces/{namespace}/repos/{repository}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserRepositoryAuthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2608,11 +2961,11 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2621,20 +2974,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/manage/namespaces/{namespace}/repos/{repository}/access',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserRepositoryAuthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions_async(self, request):
         """查询所有API版本信息
@@ -2648,9 +2997,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_async_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2665,9 +3026,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2676,20 +3037,16 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version_async(self, request):
         """查询指定API版本信息
@@ -2703,9 +3060,21 @@ class SwrAsyncClient(Client):
         :type request: :class:`huaweicloudsdkswr.v2.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkswr.v2.ShowApiVersionResponse`
         """
-        return self._show_api_version_with_http_info(request)
+        http_info = self._show_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_with_http_info(self, request):
+    def show_api_version_async_invoker(self, request):
+        http_info = self._show_api_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_api_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{api_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2722,9 +3091,9 @@ class SwrAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2733,20 +3102,26 @@ class SwrAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{api_version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2785,4 +3160,4 @@ class SwrAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

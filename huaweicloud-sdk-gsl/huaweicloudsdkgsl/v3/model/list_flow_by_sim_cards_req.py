@@ -17,34 +17,42 @@ class ListFlowBySimCardsReq:
     sensitive_list = []
 
     openapi_types = {
-        'iccids': 'list[str]'
+        'iccids': 'list[str]',
+        'sim_card_ids': 'list[int]'
     }
 
     attribute_map = {
-        'iccids': 'iccids'
+        'iccids': 'iccids',
+        'sim_card_ids': 'sim_card_ids'
     }
 
-    def __init__(self, iccids=None):
+    def __init__(self, iccids=None, sim_card_ids=None):
         """ListFlowBySimCardsReq
 
         The model defined in huaweicloud sdk
 
-        :param iccids: ICCID列表,最大支持50
+        :param iccids: iccid列表（三网卡不支持），最大支持50，且iccid和sim_card_id列表二选一
         :type iccids: list[str]
+        :param sim_card_ids: sim_card_id列表，最大支持50，且iccid和sim_card_id列表二选一
+        :type sim_card_ids: list[int]
         """
         
         
 
         self._iccids = None
+        self._sim_card_ids = None
         self.discriminator = None
 
-        self.iccids = iccids
+        if iccids is not None:
+            self.iccids = iccids
+        if sim_card_ids is not None:
+            self.sim_card_ids = sim_card_ids
 
     @property
     def iccids(self):
         """Gets the iccids of this ListFlowBySimCardsReq.
 
-        ICCID列表,最大支持50
+        iccid列表（三网卡不支持），最大支持50，且iccid和sim_card_id列表二选一
 
         :return: The iccids of this ListFlowBySimCardsReq.
         :rtype: list[str]
@@ -55,12 +63,34 @@ class ListFlowBySimCardsReq:
     def iccids(self, iccids):
         """Sets the iccids of this ListFlowBySimCardsReq.
 
-        ICCID列表,最大支持50
+        iccid列表（三网卡不支持），最大支持50，且iccid和sim_card_id列表二选一
 
         :param iccids: The iccids of this ListFlowBySimCardsReq.
         :type iccids: list[str]
         """
         self._iccids = iccids
+
+    @property
+    def sim_card_ids(self):
+        """Gets the sim_card_ids of this ListFlowBySimCardsReq.
+
+        sim_card_id列表，最大支持50，且iccid和sim_card_id列表二选一
+
+        :return: The sim_card_ids of this ListFlowBySimCardsReq.
+        :rtype: list[int]
+        """
+        return self._sim_card_ids
+
+    @sim_card_ids.setter
+    def sim_card_ids(self, sim_card_ids):
+        """Sets the sim_card_ids of this ListFlowBySimCardsReq.
+
+        sim_card_id列表，最大支持50，且iccid和sim_card_id列表二选一
+
+        :param sim_card_ids: The sim_card_ids of this ListFlowBySimCardsReq.
+        :type sim_card_ids: list[int]
+        """
+        self._sim_card_ids = sim_card_ids
 
     def to_dict(self):
         """Returns the model properties as a dict"""

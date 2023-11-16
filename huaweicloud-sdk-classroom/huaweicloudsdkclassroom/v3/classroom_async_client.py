@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkclassroom'")
 
 
 class ClassroomAsyncClient(Client):
@@ -39,9 +44,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ApplyJudgementResponse`
         """
-        return self._apply_judgement_with_http_info(request)
+        http_info = self._apply_judgement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_judgement_with_http_info(self, request):
+    def apply_judgement_async_invoker(self, request):
+        http_info = self._apply_judgement_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _apply_judgement_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/enablement/judgements",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyJudgementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/enablement/judgements',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyJudgementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_judgement_detail_async(self, request):
         """获取判题结果详情
@@ -96,9 +109,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJudgementDetailResponse`
         """
-        return self._show_judgement_detail_with_http_info(request)
+        http_info = self._show_judgement_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_judgement_detail_with_http_info(self, request):
+    def show_judgement_detail_async_invoker(self, request):
+        http_info = self._show_judgement_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_judgement_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/enablement/judgements/{judgement_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJudgementDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,9 +140,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/enablement/judgements/{judgement_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJudgementDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_judgement_file_async(self, request):
         """下载判题结果文件
@@ -153,9 +174,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJudgementFileResponse`
         """
-        return self._show_judgement_file_with_http_info(request)
+        http_info = self._show_judgement_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_judgement_file_with_http_info(self, request):
+    def show_judgement_file_async_invoker(self, request):
+        http_info = self._show_judgement_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_judgement_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/enablement/judgement/files/{file_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJudgementFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,9 +205,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/enablement/judgement/files/{file_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJudgementFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_exercise_async(self, request):
         """习题判题
@@ -210,9 +239,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ExecuteExerciseRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ExecuteExerciseResponse`
         """
-        return self._execute_exercise_with_http_info(request)
+        http_info = self._execute_exercise_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_exercise_with_http_info(self, request):
+    def execute_exercise_async_invoker(self, request):
+        http_info = self._execute_exercise_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_exercise_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/assemble/exercise/{exercise_id}/judge",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteExerciseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +272,11 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +285,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/assemble/exercise/{exercise_id}/judge',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteExerciseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_exercises_async(self, request):
         """查询习题库下习题列表
@@ -271,9 +308,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListExercisesRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListExercisesResponse`
         """
-        return self._list_exercises_with_http_info(request)
+        http_info = self._list_exercises_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_exercises_with_http_info(self, request):
+    def list_exercises_async_invoker(self, request):
+        http_info = self._list_exercises_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_exercises_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/assemble/package/{package_id}/exercise/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExercisesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -290,11 +339,11 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -303,20 +352,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/assemble/package/{package_id}/exercise/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListExercisesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_packages_async(self, request):
         """查询当前租户的习题库列表
@@ -330,9 +375,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListPackagesRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListPackagesResponse`
         """
-        return self._list_packages_with_http_info(request)
+        http_info = self._list_packages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_packages_with_http_info(self, request):
+    def list_packages_async_invoker(self, request):
+        http_info = self._list_packages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_packages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/assemble/package/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPackagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,11 +404,11 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +417,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/assemble/package/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPackagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_exercise_detail_async(self, request):
         """查询单个习题详情
@@ -387,9 +440,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowExerciseDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowExerciseDetailResponse`
         """
-        return self._show_exercise_detail_with_http_info(request)
+        http_info = self._show_exercise_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_exercise_detail_with_http_info(self, request):
+    def show_exercise_detail_async_invoker(self, request):
+        http_info = self._show_exercise_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_exercise_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/assemble/exercise/{exercise_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExerciseDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -406,9 +471,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -417,20 +482,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/assemble/exercise/{exercise_id}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExerciseDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_package_detail_async(self, request):
         """查询单个习题库详情
@@ -444,9 +505,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowPackageDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowPackageDetailResponse`
         """
-        return self._show_package_detail_with_http_info(request)
+        http_info = self._show_package_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_package_detail_with_http_info(self, request):
+    def show_package_detail_async_invoker(self, request):
+        http_info = self._show_package_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_package_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/assemble/package/{package_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPackageDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -463,9 +536,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +547,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/assemble/package/{package_id}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPackageDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_difficults_async(self, request):
         """获取习题所有难度
@@ -501,9 +570,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListAllDifficultsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListAllDifficultsResponse`
         """
-        return self._list_all_difficults_with_http_info(request)
+        http_info = self._list_all_difficults_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_difficults_with_http_info(self, request):
+    def list_all_difficults_async_invoker(self, request):
+        http_info = self._list_all_difficults_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_difficults_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/baseresource/extend-resource/difficult/all",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllDifficultsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -518,9 +599,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -529,20 +610,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/baseresource/extend-resource/difficult/all',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllDifficultsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_my_knowledge_points_async(self, request):
         """获取自身习题知识点
@@ -556,9 +633,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListMyKnowledgePointsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListMyKnowledgePointsResponse`
         """
-        return self._list_my_knowledge_points_with_http_info(request)
+        http_info = self._list_my_knowledge_points_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_my_knowledge_points_with_http_info(self, request):
+    def list_my_knowledge_points_async_invoker(self, request):
+        http_info = self._list_my_knowledge_points_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_my_knowledge_points_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/baseresource/extend-resource/knowledge-point/mine",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMyKnowledgePointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -573,11 +662,11 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -586,20 +675,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/baseresource/extend-resource/knowledge-point/mine',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMyKnowledgePointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_classroom_members_async(self, request):
         """根据课堂ID获取指定课堂的课堂成员列表
@@ -613,9 +698,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomMembersResponse`
         """
-        return self._list_classroom_members_with_http_info(request)
+        http_info = self._list_classroom_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_classroom_members_with_http_info(self, request):
+    def list_classroom_members_async_invoker(self, request):
+        http_info = self._list_classroom_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_classroom_members_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/classrooms/{classroom_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClassroomMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -638,9 +735,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -649,20 +746,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/classrooms/{classroom_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClassroomMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_classrooms_async(self, request):
         """获取当前用户的课堂列表
@@ -676,9 +769,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomsResponse`
         """
-        return self._list_classrooms_with_http_info(request)
+        http_info = self._list_classrooms_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_classrooms_with_http_info(self, request):
+    def list_classrooms_async_invoker(self, request):
+        http_info = self._list_classrooms_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_classrooms_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/classrooms",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClassroomsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -699,9 +804,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +815,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/classrooms',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClassroomsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_classroom_detail_async(self, request):
         """根据课堂ID获取指定课堂的详细信息
@@ -737,9 +838,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowClassroomDetailResponse`
         """
-        return self._show_classroom_detail_with_http_info(request)
+        http_info = self._show_classroom_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_classroom_detail_with_http_info(self, request):
+    def show_classroom_detail_async_invoker(self, request):
+        http_info = self._show_classroom_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_classroom_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/classrooms/{classroom_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClassroomDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -756,9 +869,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -767,20 +880,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/classrooms/{classroom_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClassroomDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_classroom_member_jobs_async(self, request):
         """查询课堂下指定成员的作业信息
@@ -794,9 +903,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListClassroomMemberJobsResponse`
         """
-        return self._list_classroom_member_jobs_with_http_info(request)
+        http_info = self._list_classroom_member_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_classroom_member_jobs_with_http_info(self, request):
+    def list_classroom_member_jobs_async_invoker(self, request):
+        http_info = self._list_classroom_member_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_classroom_member_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/classrooms/{classroom_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClassroomMemberJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -819,9 +940,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -830,20 +951,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/classrooms/{classroom_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClassroomMemberJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_jobs_async(self, request):
         """查询指定课堂下的作业列表信息
@@ -857,9 +974,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListJobsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListJobsResponse`
         """
-        return self._list_jobs_with_http_info(request)
+        http_info = self._list_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_jobs_with_http_info(self, request):
+    def list_jobs_async_invoker(self, request):
+        http_info = self._list_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -882,9 +1011,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -893,20 +1022,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_member_job_records_async(self, request):
         """查询学生函数习题提交记录信息
@@ -920,9 +1045,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ListMemberJobRecordsResponse`
         """
-        return self._list_member_job_records_with_http_info(request)
+        http_info = self._list_member_job_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_member_job_records_with_http_info(self, request):
+    def list_member_job_records_async_invoker(self, request):
+        http_info = self._list_member_job_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_member_job_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/jobs/{job_id}/exercises/{exercise_id}/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMemberJobRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -947,9 +1084,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -958,20 +1095,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/jobs/{job_id}/exercises/{exercise_id}/records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMemberJobRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_detail_async(self, request):
         """根据作业ID，查询指定作业的信息
@@ -985,9 +1118,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJobDetailResponse`
         """
-        return self._show_job_detail_with_http_info(request)
+        http_info = self._show_job_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_detail_with_http_info(self, request):
+    def show_job_detail_async_invoker(self, request):
+        http_info = self._show_job_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1004,9 +1149,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1015,20 +1160,16 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_exercises_async(self, request):
         """查询指定作业下的习题信息
@@ -1042,9 +1183,21 @@ class ClassroomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesRequest`
         :rtype: :class:`huaweicloudsdkclassroom.v3.ShowJobExercisesResponse`
         """
-        return self._show_job_exercises_with_http_info(request)
+        http_info = self._show_job_exercises_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_exercises_with_http_info(self, request):
+    def show_job_exercises_async_invoker(self, request):
+        http_info = self._show_job_exercises_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job_exercises_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/jobs/{job_id}/exercises",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobExercisesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1069,9 +1222,9 @@ class ClassroomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1080,20 +1233,26 @@ class ClassroomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/jobs/{job_id}/exercises',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobExercisesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1132,4 +1291,4 @@ class ClassroomAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

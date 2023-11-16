@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcodehub'")
 
 
 class CodeHubAsyncClient(Client):
@@ -39,9 +44,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateCommitResponse`
         """
-        return self._create_commit_with_http_info(request)
+        http_info = self._create_commit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_commit_with_http_info(self, request):
+    def create_commit_async_invoker(self, request):
+        http_info = self._create_commit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_commit_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/projects/{repo_id}/repository/commits",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCommitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/{repo_id}/repository/commits',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCommitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_commits_async(self, request):
         """查询某个仓库的提交信息
@@ -98,9 +111,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListCommitsResponse`
         """
-        return self._list_commits_with_http_info(request)
+        http_info = self._list_commits_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_commits_with_http_info(self, request):
+    def list_commits_async_invoker(self, request):
+        http_info = self._list_commits_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_commits_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{repo_id}/repository/commits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -133,9 +158,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -144,20 +169,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/{repo_id}/repository/commits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCommitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_diff_commit_async(self, request):
         """查询某个仓库的提交差异信息
@@ -171,9 +192,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowDiffCommitResponse`
         """
-        return self._show_diff_commit_with_http_info(request)
+        http_info = self._show_diff_commit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_diff_commit_with_http_info(self, request):
+    def show_diff_commit_async_invoker(self, request):
+        http_info = self._show_diff_commit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_diff_commit_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{repo_id}/repository/commits/{sha}/diff",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiffCommitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -192,9 +225,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -203,20 +236,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/{repo_id}/repository/commits/{sha}/diff',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDiffCommitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_single_commit_async(self, request):
         """查询某个仓库的特定提交信息
@@ -230,9 +259,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowSingleCommitResponse`
         """
-        return self._show_single_commit_with_http_info(request)
+        http_info = self._show_single_commit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_single_commit_with_http_info(self, request):
+    def show_single_commit_async_invoker(self, request):
+        http_info = self._show_single_commit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_single_commit_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{repo_id}/repository/commits/{sha}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSingleCommitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -253,9 +294,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -264,20 +305,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/{repo_id}/repository/commits/{sha}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSingleCommitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_merge_request_discussion_async(self, request):
         """创建MR检视意见
@@ -291,9 +328,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionResponse`
         """
-        return self._create_merge_request_discussion_with_http_info(request)
+        http_info = self._create_merge_request_discussion_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_merge_request_discussion_with_http_info(self, request):
+    def create_merge_request_discussion_async_invoker(self, request):
+        http_info = self._create_merge_request_discussion_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_merge_request_discussion_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/repositories/{repository_id}/merge_requests/{merge_request_iid}/discussions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMergeRequestDiscussionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -312,11 +361,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -325,20 +374,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/merge_requests/{merge_request_iid}/discussions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMergeRequestDiscussionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_merge_request_discussion_note_async(self, request):
         """回复MR检视意见
@@ -352,9 +397,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionNoteRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateMergeRequestDiscussionNoteResponse`
         """
-        return self._create_merge_request_discussion_note_with_http_info(request)
+        http_info = self._create_merge_request_discussion_note_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_merge_request_discussion_note_with_http_info(self, request):
+    def create_merge_request_discussion_note_async_invoker(self, request):
+        http_info = self._create_merge_request_discussion_note_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_merge_request_discussion_note_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/repositories/{repository_id}/merge_requests/{merge_request_iid}/discussions/{discussion_id}/notes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMergeRequestDiscussionNoteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -375,11 +432,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -388,20 +445,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/merge_requests/{merge_request_iid}/discussions/{discussion_id}/notes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMergeRequestDiscussionNoteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_review_setting_async(self, request):
         """获取检视意见设置
@@ -415,9 +468,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowReviewSettingRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowReviewSettingResponse`
         """
-        return self._show_review_setting_with_http_info(request)
+        http_info = self._show_review_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_review_setting_with_http_info(self, request):
+    def show_review_setting_async_invoker(self, request):
+        http_info = self._show_review_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_review_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/review_setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReviewSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -434,9 +499,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -445,20 +510,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/review_setting',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowReviewSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_files_by_query_async(self, request):
         """查询某个仓库的文件信息
@@ -472,9 +533,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListFilesByQueryResponse`
         """
-        return self._list_files_by_query_with_http_info(request)
+        http_info = self._list_files_by_query_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_files_by_query_with_http_info(self, request):
+    def list_files_by_query_async_invoker(self, request):
+        http_info = self._list_files_by_query_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_files_by_query_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{repo_id}/repository/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFilesByQueryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -495,9 +568,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -506,20 +579,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/{repo_id}/repository/files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFilesByQueryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_file_async(self, request):
         """查询某个仓库的文件信息
@@ -533,9 +602,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowFileRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowFileResponse`
         """
-        return self._show_file_with_http_info(request)
+        http_info = self._show_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_file_with_http_info(self, request):
+    def show_file_async_invoker(self, request):
+        http_info = self._show_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{repo_id}/repository/files/{file_path}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -556,9 +637,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -567,20 +648,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/{repo_id}/repository/files/{file_path}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def get_all_repository_by_project_id_async(self, request):
         """获取项目下所有仓库信息
@@ -594,9 +671,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetAllRepositoryByProjectIdResponse`
         """
-        return self._get_all_repository_by_project_id_with_http_info(request)
+        http_info = self._get_all_repository_by_project_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _get_all_repository_by_project_id_with_http_info(self, request):
+    def get_all_repository_by_project_id_async_invoker(self, request):
+        http_info = self._get_all_repository_by_project_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_all_repository_by_project_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{project_uuid}/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetAllRepositoryByProjectIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -619,9 +708,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -630,20 +719,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/projects/{project_uuid}/repositories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GetAllRepositoryByProjectIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def get_product_templates_async(self, request):
         """获取一个项目下可以设置为公开状态的仓库列表
@@ -657,9 +742,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetProductTemplatesResponse`
         """
-        return self._get_product_templates_with_http_info(request)
+        http_info = self._get_product_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _get_product_templates_with_http_info(self, request):
+    def get_product_templates_async_invoker(self, request):
+        http_info = self._get_product_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_product_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{project_uuid}/repositories/template_status",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetProductTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -680,9 +777,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -691,20 +788,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/projects/{project_uuid}/repositories/template_status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GetProductTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_product_two_templates_async(self, request):
         """获取一个项目下可以设置为公开状态的仓库列表
@@ -718,9 +811,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListProductTwoTemplatesResponse`
         """
-        return self._list_product_two_templates_with_http_info(request)
+        http_info = self._list_product_two_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_product_two_templates_with_http_info(self, request):
+    def list_product_two_templates_async_invoker(self, request):
+        http_info = self._list_product_two_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_product_two_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{project_uuid}/repositories/template-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductTwoTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -741,9 +846,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -752,20 +857,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/{project_uuid}/repositories/template-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductTwoTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repository_name_exist_async(self, request):
         """校验指定项目下的仓库名
@@ -779,9 +880,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryNameExistResponse`
         """
-        return self._show_repository_name_exist_with_http_info(request)
+        http_info = self._show_repository_name_exist_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repository_name_exist_with_http_info(self, request):
+    def show_repository_name_exist_async_invoker(self, request):
+        http_info = self._show_repository_name_exist_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_name_exist_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/projects/{project_uuid}/repositories/validation/{repository_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryNameExistResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -800,9 +913,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -811,20 +924,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/projects/{project_uuid}/repositories/validation/{repository_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRepositoryNameExistResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_repo_members_async(self, request):
         """添加仓库成员
@@ -838,9 +947,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddRepoMembersResponse`
         """
-        return self._add_repo_members_with_http_info(request)
+        http_info = self._add_repo_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_repo_members_with_http_info(self, request):
+    def add_repo_members_async_invoker(self, request):
+        http_info = self._add_repo_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_repo_members_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/repositories/{repository_uuid}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddRepoMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -857,11 +978,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -870,20 +991,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/members',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddRepoMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_repo_member_async(self, request):
         """删除仓库成员
@@ -897,9 +1014,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteRepoMemberResponse`
         """
-        return self._delete_repo_member_with_http_info(request)
+        http_info = self._delete_repo_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_repo_member_with_http_info(self, request):
+    def delete_repo_member_async_invoker(self, request):
+        http_info = self._delete_repo_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_repo_member_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/repositories/{repository_uuid}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRepoMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -918,9 +1047,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -929,20 +1058,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/members/{member_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRepoMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_repo_members_async(self, request):
         """获取仓库所有成员记录
@@ -956,9 +1081,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListRepoMembersResponse`
         """
-        return self._list_repo_members_with_http_info(request)
+        http_info = self._list_repo_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_repo_members_with_http_info(self, request):
+    def list_repo_members_async_invoker(self, request):
+        http_info = self._list_repo_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repo_members_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_uuid}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepoMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -981,9 +1118,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -992,20 +1129,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRepoMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_repo_role_async(self, request):
         """设置成员在仓库中的角色
@@ -1019,9 +1152,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.SetRepoRoleResponse`
         """
-        return self._set_repo_role_with_http_info(request)
+        http_info = self._set_repo_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_repo_role_with_http_info(self, request):
+    def set_repo_role_async_invoker(self, request):
+        http_info = self._set_repo_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_repo_role_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/repositories/{repository_uuid}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRepoRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1040,11 +1185,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1053,20 +1198,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/members/{member_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetRepoRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_deploy_key_async(self, request):
         """添加部署密钥
@@ -1080,9 +1221,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyResponse`
         """
-        return self._add_deploy_key_with_http_info(request)
+        http_info = self._add_deploy_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_deploy_key_with_http_info(self, request):
+    def add_deploy_key_async_invoker(self, request):
+        http_info = self._add_deploy_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_deploy_key_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/repositories/{repository_id}/deploy_keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDeployKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1099,11 +1252,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1112,20 +1265,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_id}/deploy_keys',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDeployKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_deploy_key_v2_async(self, request):
         """添加部署密钥
@@ -1139,9 +1288,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddDeployKeyV2Response`
         """
-        return self._add_deploy_key_v2_with_http_info(request)
+        http_info = self._add_deploy_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_deploy_key_v2_with_http_info(self, request):
+    def add_deploy_key_v2_async_invoker(self, request):
+        http_info = self._add_deploy_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_deploy_key_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/repositories/{repository_id}/deploy-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDeployKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1158,11 +1319,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1171,20 +1332,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/deploy-keys',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDeployKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_protect_branch_v2_async(self, request):
         """新建保护分支
@@ -1198,9 +1355,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddProtectBranchV2Response`
         """
-        return self._add_protect_branch_v2_with_http_info(request)
+        http_info = self._add_protect_branch_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_protect_branch_v2_with_http_info(self, request):
+    def add_protect_branch_v2_async_invoker(self, request):
+        http_info = self._add_protect_branch_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_protect_branch_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/repositories/{repository_id}/branch/{branch_name}/protect",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddProtectBranchV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1219,11 +1388,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1232,20 +1401,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/branch/{branch_name}/protect',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddProtectBranchV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_tag_v2_async(self, request):
         """新建标签
@@ -1259,9 +1424,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddTagV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddTagV2Response`
         """
-        return self._add_tag_v2_with_http_info(request)
+        http_info = self._add_tag_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_tag_v2_with_http_info(self, request):
+    def add_tag_v2_async_invoker(self, request):
+        http_info = self._add_tag_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_tag_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/repositories/{repository_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddTagV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1278,11 +1455,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1291,20 +1468,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddTagV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_repository_async(self, request):
         """创建仓库
@@ -1318,9 +1491,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateRepositoryResponse`
         """
-        return self._create_repository_with_http_info(request)
+        http_info = self._create_repository_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_repository_with_http_info(self, request):
+    def create_repository_async_invoker(self, request):
+        http_info = self._create_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_repository_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRepositoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1335,11 +1520,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1348,20 +1533,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRepositoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_deploy_key_async(self, request):
         """删除仓库部署密钥
@@ -1375,9 +1556,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyResponse`
         """
-        return self._delete_deploy_key_with_http_info(request)
+        http_info = self._delete_deploy_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_deploy_key_with_http_info(self, request):
+    def delete_deploy_key_async_invoker(self, request):
+        http_info = self._delete_deploy_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_deploy_key_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/repositories/{repository_id}/deploy_keys/{key_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeployKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1396,9 +1589,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1407,20 +1600,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_id}/deploy_keys/{key_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeployKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_deploy_key_v2_async(self, request):
         """删除仓库部署密钥
@@ -1434,9 +1623,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteDeployKeyV2Response`
         """
-        return self._delete_deploy_key_v2_with_http_info(request)
+        http_info = self._delete_deploy_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_deploy_key_v2_with_http_info(self, request):
+    def delete_deploy_key_v2_async_invoker(self, request):
+        http_info = self._delete_deploy_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_deploy_key_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/repositories/{repository_id}/deploy-keys/{key_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeployKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1455,9 +1656,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1466,20 +1667,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/deploy-keys/{key_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeployKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_repository_async(self, request):
         """删除仓库
@@ -1493,9 +1690,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteRepositoryResponse`
         """
-        return self._delete_repository_with_http_info(request)
+        http_info = self._delete_repository_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_repository_with_http_info(self, request):
+    def delete_repository_async_invoker(self, request):
+        http_info = self._delete_repository_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_repository_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/repositories/{repository_uuid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRepositoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1512,9 +1721,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1523,20 +1732,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRepositoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def get_repository_by_project_id_async(self, request):
         """查询项目下的某个仓库
@@ -1550,9 +1755,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetRepositoryByProjectIdResponse`
         """
-        return self._get_repository_by_project_id_with_http_info(request)
+        http_info = self._get_repository_by_project_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _get_repository_by_project_id_with_http_info(self, request):
+    def get_repository_by_project_id_async_invoker(self, request):
+        http_info = self._get_repository_by_project_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_repository_by_project_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_uuid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetRepositoryByProjectIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1569,9 +1786,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1580,20 +1797,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GetRepositoryByProjectIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def get_templates_async(self, request):
         """获取公开示例模板列表
@@ -1607,9 +1820,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.GetTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.GetTemplatesResponse`
         """
-        return self._get_templates_with_http_info(request)
+        http_info = self._get_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _get_templates_with_http_info(self, request):
+    def get_templates_async_invoker(self, request):
+        http_info = self._get_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/repository_templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1646,9 +1871,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1657,20 +1882,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/repository_templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GetTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_branches_by_repository_id_async(self, request):
         """获取仓库分支列表
@@ -1684,9 +1905,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListBranchesByRepositoryIdResponse`
         """
-        return self._list_branches_by_repository_id_with_http_info(request)
+        http_info = self._list_branches_by_repository_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_branches_by_repository_id_with_http_info(self, request):
+    def list_branches_by_repository_id_async_invoker(self, request):
+        http_info = self._list_branches_by_repository_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_branches_by_repository_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBranchesByRepositoryIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1709,9 +1942,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1720,20 +1953,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/branches',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBranchesByRepositoryIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_commit_statistics_async(self, request):
         """获取仓库上一次的提交统计信息
@@ -1747,9 +1976,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListCommitStatisticsResponse`
         """
-        return self._list_commit_statistics_with_http_info(request)
+        http_info = self._list_commit_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_commit_statistics_with_http_info(self, request):
+    def list_commit_statistics_async_invoker(self, request):
+        http_info = self._list_commit_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_commit_statistics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_id}/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommitStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1768,9 +2009,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1779,20 +2020,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_id}/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCommitStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_files_async(self, request):
         """获取一个仓库下特定分支指定文件内容
@@ -1806,9 +2043,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListFilesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListFilesResponse`
         """
-        return self._list_files_with_http_info(request)
+        http_info = self._list_files_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_files_with_http_info(self, request):
+    def list_files_async_invoker(self, request):
+        http_info = self._list_files_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_files_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_uuid}/branch/{branch_name}/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFilesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1829,9 +2078,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1840,20 +2089,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam-none']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/branch/{branch_name}/file',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFilesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_merge_request_async(self, request):
         """获取仓库合并请求列表
@@ -1867,9 +2112,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListMergeRequestResponse`
         """
-        return self._list_merge_request_with_http_info(request)
+        http_info = self._list_merge_request_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_merge_request_with_http_info(self, request):
+    def list_merge_request_async_invoker(self, request):
+        http_info = self._list_merge_request_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_merge_request_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/merge_request",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMergeRequestResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1894,9 +2151,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1905,20 +2162,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/merge_request',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMergeRequestResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_repository_status_async(self, request):
         """查看仓库的创建状态
@@ -1932,9 +2185,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListRepositoryStatusResponse`
         """
-        return self._list_repository_status_with_http_info(request)
+        http_info = self._list_repository_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_repository_status_with_http_info(self, request):
+    def list_repository_status_async_invoker(self, request):
+        http_info = self._list_repository_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_repository_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_uuid}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRepositoryStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1951,9 +2216,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1962,20 +2227,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRepositoryStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subfiles_async(self, request):
         """获取分支目录下的文件
@@ -1989,9 +2250,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListSubfilesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListSubfilesResponse`
         """
-        return self._list_subfiles_with_http_info(request)
+        http_info = self._list_subfiles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subfiles_with_http_info(self, request):
+    def list_subfiles_async_invoker(self, request):
+        http_info = self._list_subfiles_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_subfiles_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_uuid}/branch/{branch_name}/sub-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubfilesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2016,9 +2289,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2027,20 +2300,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/branch/{branch_name}/sub-files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubfilesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_templates_two_async(self, request):
         """设置仓库是公开状态还是私有状态
@@ -2054,9 +2323,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListTemplatesTwoResponse`
         """
-        return self._list_templates_two_with_http_info(request)
+        http_info = self._list_templates_two_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_templates_two_with_http_info(self, request):
+    def list_templates_two_async_invoker(self, request):
+        http_info = self._list_templates_two_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_templates_two_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/repositories/{repository_uuid}/template-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesTwoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2073,11 +2354,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2086,20 +2367,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_uuid}/template-status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplatesTwoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_two_templates_async(self, request):
         """获取公开示例模板列表
@@ -2113,9 +2390,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListTwoTemplatesResponse`
         """
-        return self._list_two_templates_with_http_info(request)
+        http_info = self._list_two_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_two_templates_with_http_info(self, request):
+    def list_two_templates_async_invoker(self, request):
+        http_info = self._list_two_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_two_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/repository-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTwoTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2152,9 +2441,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2163,20 +2452,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/repository-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTwoTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def share_templates_async(self, request):
         """设置仓库是公开状态还是私有状态
@@ -2190,9 +2475,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShareTemplatesResponse`
         """
-        return self._share_templates_with_http_info(request)
+        http_info = self._share_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _share_templates_with_http_info(self, request):
+    def share_templates_async_invoker(self, request):
+        http_info = self._share_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _share_templates_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/repositories/{repository_uuid}/template_status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShareTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2209,11 +2506,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2222,20 +2519,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/template_status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShareTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_branches_by_repository_id_async(self, request):
         """查询某仓库对应的分支
@@ -2249,9 +2542,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByRepositoryIdResponse`
         """
-        return self._show_branches_by_repository_id_with_http_info(request)
+        http_info = self._show_branches_by_repository_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_branches_by_repository_id_with_http_info(self, request):
+    def show_branches_by_repository_id_async_invoker(self, request):
+        http_info = self._show_branches_by_repository_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_branches_by_repository_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_id}/branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBranchesByRepositoryIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2268,9 +2573,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2279,20 +2584,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_id}/branches',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBranchesByRepositoryIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_branches_by_two_repository_id_async(self, request):
         """查询某仓库的标签列表
@@ -2306,9 +2607,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowBranchesByTwoRepositoryIdResponse`
         """
-        return self._show_branches_by_two_repository_id_with_http_info(request)
+        http_info = self._show_branches_by_two_repository_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_branches_by_two_repository_id_with_http_info(self, request):
+    def show_branches_by_two_repository_id_async_invoker(self, request):
+        http_info = self._show_branches_by_two_repository_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_branches_by_two_repository_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBranchesByTwoRepositoryIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2325,9 +2638,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2336,20 +2649,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBranchesByTwoRepositoryIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_commits_by_branch_async(self, request):
         """根据组名和仓库名查询某仓库某分支对应的提交
@@ -2363,9 +2672,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByBranchResponse`
         """
-        return self._show_commits_by_branch_with_http_info(request)
+        http_info = self._show_commits_by_branch_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_commits_by_branch_with_http_info(self, request):
+    def show_commits_by_branch_async_invoker(self, request):
+        http_info = self._show_commits_by_branch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_commits_by_branch_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{group_name}/{repository_name}/commits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCommitsByBranchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2390,9 +2711,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2401,20 +2722,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{group_name}/{repository_name}/commits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCommitsByBranchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_commits_by_repo_id_async(self, request):
         """根据仓库id查询仓库某分支对应的提交，提供更多可选参数
@@ -2428,9 +2745,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowCommitsByRepoIdResponse`
         """
-        return self._show_commits_by_repo_id_with_http_info(request)
+        http_info = self._show_commits_by_repo_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_commits_by_repo_id_with_http_info(self, request):
+    def show_commits_by_repo_id_async_invoker(self, request):
+        http_info = self._show_commits_by_repo_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_commits_by_repo_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_id}/commits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCommitsByRepoIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2465,9 +2794,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2476,20 +2805,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_id}/commits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCommitsByRepoIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_has_pipeline_async(self, request):
         """修改被流水线引用的仓库状态
@@ -2503,9 +2828,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowHasPipelineResponse`
         """
-        return self._show_has_pipeline_with_http_info(request)
+        http_info = self._show_has_pipeline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_has_pipeline_with_http_info(self, request):
+    def show_has_pipeline_async_invoker(self, request):
+        http_info = self._show_has_pipeline_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_has_pipeline_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/repositories/{repository_uuid}/pipeline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHasPipelineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2522,9 +2859,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2533,20 +2870,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/pipeline',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHasPipelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_image_blob_async(self, request):
         """获取一个仓库下特定分支的图片文件
@@ -2560,9 +2893,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowImageBlobResponse`
         """
-        return self._show_image_blob_with_http_info(request)
+        http_info = self._show_image_blob_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_image_blob_with_http_info(self, request):
+    def show_image_blob_async_invoker(self, request):
+        http_info = self._show_image_blob_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_image_blob_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_uuid}/branch/{branch_name}/image",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageBlobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2583,9 +2928,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2594,20 +2939,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam-none']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/branch/{branch_name}/image',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowImageBlobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_master_async(self, request):
         """判断用户是否有仓库的管理员权限
@@ -2621,9 +2962,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowMasterRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowMasterResponse`
         """
-        return self._show_master_with_http_info(request)
+        http_info = self._show_master_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_master_with_http_info(self, request):
+    def show_master_async_invoker(self, request):
+        http_info = self._show_master_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_master_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_uuid}/master",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMasterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2640,9 +2993,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2651,20 +3004,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/master',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMasterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_merge_request_async(self, request):
         """获取仓库合并请求详情
@@ -2678,9 +3027,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowMergeRequestResponse`
         """
-        return self._show_merge_request_with_http_info(request)
+        http_info = self._show_merge_request_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_merge_request_with_http_info(self, request):
+    def show_merge_request_async_invoker(self, request):
+        http_info = self._show_merge_request_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_merge_request_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/merge_request/{merge_request_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMergeRequestResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2699,9 +3060,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2710,20 +3071,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/merge_request/{merge_request_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMergeRequestResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repo_id_async(self, request):
         """根据仓库名组名获取仓库短id，用以拼接与commitid对应提交详情页面url
@@ -2737,9 +3094,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepoIdResponse`
         """
-        return self._show_repo_id_with_http_info(request)
+        http_info = self._show_repo_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repo_id_with_http_info(self, request):
+    def show_repo_id_async_invoker(self, request):
+        http_info = self._show_repo_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repo_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/repoid",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepoIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2758,9 +3127,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2769,20 +3138,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/repoid',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRepoIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repository_archive_async(self, request):
         """下载仓库
@@ -2796,9 +3161,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryArchiveResponse`
         """
-        return self._show_repository_archive_with_http_info(request)
+        http_info = self._show_repository_archive_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repository_archive_with_http_info(self, request):
+    def show_repository_archive_async_invoker(self, request):
+        http_info = self._show_repository_archive_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_archive_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_uuid}/archive",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryArchiveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2819,9 +3196,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2830,20 +3207,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_uuid}/archive',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRepositoryArchiveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repository_by_uuid_async(self, request):
         """查询某个仓库的详细信息
@@ -2857,9 +3230,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryByUuidResponse`
         """
-        return self._show_repository_by_uuid_with_http_info(request)
+        http_info = self._show_repository_by_uuid_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repository_by_uuid_with_http_info(self, request):
+    def show_repository_by_uuid_async_invoker(self, request):
+        http_info = self._show_repository_by_uuid_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_by_uuid_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_uuid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryByUuidResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2876,9 +3261,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2887,20 +3272,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_uuid}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRepositoryByUuidResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repository_statistics_async(self, request):
         """仓库统计
@@ -2914,9 +3295,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowRepositoryStatisticsResponse`
         """
-        return self._show_repository_statistics_with_http_info(request)
+        http_info = self._show_repository_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repository_statistics_with_http_info(self, request):
+    def show_repository_statistics_async_invoker(self, request):
+        http_info = self._show_repository_statistics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_repository_statistics_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/repositories/{repository_id}/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2933,11 +3326,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2946,20 +3339,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_id}/statistics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRepositoryStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_statistic_commit_async(self, request):
         """获取代码提交行数
@@ -2973,9 +3362,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitResponse`
         """
-        return self._show_statistic_commit_with_http_info(request)
+        http_info = self._show_statistic_commit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_statistic_commit_with_http_info(self, request):
+    def show_statistic_commit_async_invoker(self, request):
+        http_info = self._show_statistic_commit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_statistic_commit_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/commit_lines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticCommitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2998,9 +3399,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3009,20 +3410,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/commit_lines',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStatisticCommitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_statistic_commit_v3_async(self, request):
         """获取代码提交行数
@@ -3036,9 +3433,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticCommitV3Response`
         """
-        return self._show_statistic_commit_v3_with_http_info(request)
+        http_info = self._show_statistic_commit_v3_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_statistic_commit_v3_with_http_info(self, request):
+    def show_statistic_commit_v3_async_invoker(self, request):
+        http_info = self._show_statistic_commit_v3_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_statistic_commit_v3_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/repositories/{repository_id}/commit-lines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticCommitV3Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3061,9 +3470,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3072,20 +3481,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v3/repositories/{repository_id}/commit-lines',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStatisticCommitV3Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_statistical_data_async(self, request):
         """获取仓库统计数据
@@ -3099,9 +3504,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowStatisticalDataResponse`
         """
-        return self._show_statistical_data_with_http_info(request)
+        http_info = self._show_statistical_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_statistical_data_with_http_info(self, request):
+    def show_statistical_data_async_invoker(self, request):
+        http_info = self._show_statistical_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_statistical_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_uuid}/statistic-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStatisticalDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3118,9 +3535,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3129,20 +3546,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_uuid}/statistic-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStatisticalDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_ssh_key_async(self, request):
         """添加ssh key
@@ -3156,9 +3569,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddSshKeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddSshKeyResponse`
         """
-        return self._add_ssh_key_with_http_info(request)
+        http_info = self._add_ssh_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_ssh_key_with_http_info(self, request):
+    def add_ssh_key_async_invoker(self, request):
+        http_info = self._add_ssh_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_ssh_key_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/users/sshkey",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddSshKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3173,11 +3598,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3186,20 +3611,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/users/sshkey',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddSshKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_s_shkey_async(self, request):
         """删除用户公钥
@@ -3213,9 +3634,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteSShkeyResponse`
         """
-        return self._delete_s_shkey_with_http_info(request)
+        http_info = self._delete_s_shkey_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_s_shkey_with_http_info(self, request):
+    def delete_s_shkey_async_invoker(self, request):
+        http_info = self._delete_s_shkey_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_s_shkey_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/users/sshkey/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSShkeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3232,9 +3665,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3243,20 +3676,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/users/sshkey/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSShkeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ssh_keys_async(self, request):
         """获取ssh key列表
@@ -3270,9 +3699,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListSshKeysRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListSshKeysResponse`
         """
-        return self._list_ssh_keys_with_http_info(request)
+        http_info = self._list_ssh_keys_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ssh_keys_with_http_info(self, request):
+    def list_ssh_keys_async_invoker(self, request):
+        http_info = self._list_ssh_keys_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ssh_keys_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/users/sshkey",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSshKeysResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3287,9 +3728,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3298,20 +3739,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/users/sshkey',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSshKeysResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_private_key_verify_async(self, request):
         """检验私钥是否有拉取代码的权限
@@ -3325,9 +3762,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowPrivateKeyVerifyResponse`
         """
-        return self._show_private_key_verify_with_http_info(request)
+        http_info = self._show_private_key_verify_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_private_key_verify_with_http_info(self, request):
+    def show_private_key_verify_async_invoker(self, request):
+        http_info = self._show_private_key_verify_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_private_key_verify_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/users/sshkey/privatekey/verify",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateKeyVerifyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3342,11 +3791,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3355,20 +3804,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/users/sshkey/privatekey/verify',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivateKeyVerifyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_https_info_async(self, request):
         """ https账号密码校验
@@ -3382,9 +3827,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoResponse`
         """
-        return self._validate_https_info_with_http_info(request)
+        http_info = self._validate_https_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_https_info_with_http_info(self, request):
+    def validate_https_info_async_invoker(self, request):
+        http_info = self._validate_https_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _validate_https_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/user/{iam_user_uuid}/validateHttpsInfo",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateHttpsInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3401,11 +3858,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3414,20 +3871,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/user/{iam_user_uuid}/validateHttpsInfo',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateHttpsInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_https_info_v2_async(self, request):
         """https账号密码校验
@@ -3441,9 +3894,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Request`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ValidateHttpsInfoV2Response`
         """
-        return self._validate_https_info_v2_with_http_info(request)
+        http_info = self._validate_https_info_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_https_info_v2_with_http_info(self, request):
+    def validate_https_info_v2_async_invoker(self, request):
+        http_info = self._validate_https_info_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _validate_https_info_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/user/{iam_user_uuid}/validate-https-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateHttpsInfoV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3460,11 +3925,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3473,20 +3938,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/user/{iam_user_uuid}/validate-https-info',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateHttpsInfoV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_issues_async(self, request):
         """分支关联工作项
@@ -3500,9 +3961,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AssociateIssuesResponse`
         """
-        return self._associate_issues_with_http_info(request)
+        http_info = self._associate_issues_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_issues_with_http_info(self, request):
+    def associate_issues_async_invoker(self, request):
+        http_info = self._associate_issues_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_issues_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/projects/issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateIssuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3517,11 +3990,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3530,20 +4003,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/issues',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateIssuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project_and_repositories_async(self, request):
         """创建项目、仓库
@@ -3557,9 +4026,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndRepositoriesResponse`
         """
-        return self._create_project_and_repositories_with_http_info(request)
+        http_info = self._create_project_and_repositories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_and_repositories_with_http_info(self, request):
+    def create_project_and_repositories_async_invoker(self, request):
+        http_info = self._create_project_and_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_project_and_repositories_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/projects/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectAndRepositoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3574,11 +4055,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3587,20 +4068,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/repositories',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectAndRepositoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project_andfork_repositories_async(self, request):
         """创建项目并fork仓库
@@ -3614,9 +4091,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateProjectAndforkRepositoriesResponse`
         """
-        return self._create_project_andfork_repositories_with_http_info(request)
+        http_info = self._create_project_andfork_repositories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_andfork_repositories_with_http_info(self, request):
+    def create_project_andfork_repositories_async_invoker(self, request):
+        http_info = self._create_project_andfork_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_project_andfork_repositories_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/projects/repositories/fork",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectAndforkRepositoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3631,11 +4120,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3644,20 +4133,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/repositories/fork',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectAndforkRepositoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_all_repositories_async(self, request):
         """查询用户的所有仓库
@@ -3671,9 +4156,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListUserAllRepositoriesResponse`
         """
-        return self._list_user_all_repositories_with_http_info(request)
+        http_info = self._list_user_all_repositories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_all_repositories_with_http_info(self, request):
+    def list_user_all_repositories_async_invoker(self, request):
+        http_info = self._list_user_all_repositories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_user_all_repositories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserAllRepositoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3694,9 +4191,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3705,20 +4202,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/repositories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserAllRepositoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_all_repository_by_two_project_id_async(self, request):
         """查询项目下的所有仓库
@@ -3732,9 +4225,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ShowAllRepositoryByTwoProjectIdResponse`
         """
-        return self._show_all_repository_by_two_project_id_with_http_info(request)
+        http_info = self._show_all_repository_by_two_project_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_all_repository_by_two_project_id_with_http_info(self, request):
+    def show_all_repository_by_two_project_id_async_invoker(self, request):
+        http_info = self._show_all_repository_by_two_project_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_all_repository_by_two_project_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/projects/{project_uuid}/repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAllRepositoryByTwoProjectIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3757,9 +4262,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3768,20 +4273,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/projects/{project_uuid}/repositories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAllRepositoryByTwoProjectIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_hooks_async(self, request):
         """为指定仓库添加hook
@@ -3795,9 +4296,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.AddHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.AddHooksResponse`
         """
-        return self._add_hooks_with_http_info(request)
+        http_info = self._add_hooks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_hooks_with_http_info(self, request):
+    def add_hooks_async_invoker(self, request):
+        http_info = self._add_hooks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_hooks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/repositories/{group_name}/{repository_name}/hooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddHooksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3816,11 +4329,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3829,20 +4342,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{group_name}/{repository_name}/hooks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddHooksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_hooks_async(self, request):
         """删除指定仓库的 hook
@@ -3856,9 +4365,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.DeleteHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.DeleteHooksResponse`
         """
-        return self._delete_hooks_with_http_info(request)
+        http_info = self._delete_hooks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_hooks_with_http_info(self, request):
+    def delete_hooks_async_invoker(self, request):
+        http_info = self._delete_hooks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_hooks_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/repositories/{group_name}/{repository_name}/hooks/{hook_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHooksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3879,9 +4400,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3890,20 +4411,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{group_name}/{repository_name}/hooks/{hook_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteHooksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_hooks_async(self, request):
         """查询指定仓库的webhook
@@ -3917,9 +4434,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.ListHooksRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.ListHooksResponse`
         """
-        return self._list_hooks_with_http_info(request)
+        http_info = self._list_hooks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_hooks_with_http_info(self, request):
+    def list_hooks_async_invoker(self, request):
+        http_info = self._list_hooks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hooks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{group_name}/{repository_name}/hooks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHooksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3940,9 +4469,9 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3951,20 +4480,16 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/repositories/{group_name}/{repository_name}/hooks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHooksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_new_branch_async(self, request):
         """创建分支
@@ -3978,9 +4503,21 @@ class CodeHubAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchRequest`
         :rtype: :class:`huaweicloudsdkcodehub.v3.CreateNewBranchResponse`
         """
-        return self._create_new_branch_with_http_info(request)
+        http_info = self._create_new_branch_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_new_branch_with_http_info(self, request):
+    def create_new_branch_async_invoker(self, request):
+        http_info = self._create_new_branch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_new_branch_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/repositories/{repository_id}/branches",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNewBranchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3997,11 +4534,11 @@ class CodeHubAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4010,20 +4547,26 @@ class CodeHubAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/branches',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNewBranchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -4062,4 +4605,4 @@ class CodeHubAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

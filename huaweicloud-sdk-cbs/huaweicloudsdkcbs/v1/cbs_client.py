@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcbs'")
 
 
 class CbsClient(Client):
@@ -39,9 +44,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CollectHotQuestionsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CollectHotQuestionsResponse`
         """
-        return self._collect_hot_questions_with_http_info(request)
+        http_info = self._collect_hot_questions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_hot_questions_with_http_info(self, request):
+    def collect_hot_questions_invoker(self, request):
+        http_info = self._collect_hot_questions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_hot_questions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/qa-pairs/hots",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectHotQuestionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -70,9 +88,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -81,20 +99,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/qa-pairs/hots',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectHotQuestionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_key_words(self, request):
         """关键词统计
@@ -107,9 +121,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CollectKeyWordsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CollectKeyWordsResponse`
         """
-        return self._collect_key_words_with_http_info(request)
+        http_info = self._collect_key_words_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_key_words_with_http_info(self, request):
+    def collect_key_words_invoker(self, request):
+        http_info = self._collect_key_words_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_key_words_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/requests/keywords",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectKeyWordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -132,9 +159,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -143,20 +170,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/requests/keywords',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectKeyWordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_reply_rates(self, request):
         """问答统计
@@ -170,9 +193,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CollectReplyRatesRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CollectReplyRatesResponse`
         """
-        return self._collect_reply_rates_with_http_info(request)
+        http_info = self._collect_reply_rates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_reply_rates_with_http_info(self, request):
+    def collect_reply_rates_invoker(self, request):
+        http_info = self._collect_reply_rates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_reply_rates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/requests/reply-rates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectReplyRatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -199,9 +235,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -210,20 +246,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/requests/reply-rates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectReplyRatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_session_stats(self, request):
         """访问统计
@@ -236,9 +268,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CollectSessionStatsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CollectSessionStatsResponse`
         """
-        return self._collect_session_stats_with_http_info(request)
+        http_info = self._collect_session_stats_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_session_stats_with_http_info(self, request):
+    def collect_session_stats_invoker(self, request):
+        http_info = self._collect_session_stats_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_session_stats_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/requests/session-stats",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectSessionStatsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -263,9 +308,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -274,20 +319,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/requests/session-stats',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectSessionStatsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_session(self, request):
         """开启会话
@@ -300,9 +341,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.CreateSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.CreateSessionResponse`
         """
-        return self._create_session_with_http_info(request)
+        http_info = self._create_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_session_with_http_info(self, request):
+    def create_session_invoker(self, request):
+        http_info = self._create_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_session_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -319,9 +373,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -330,20 +384,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/sessions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_session(self, request):
         """关闭会话
@@ -356,9 +406,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.DeleteSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.DeleteSessionResponse`
         """
-        return self._delete_session_with_http_info(request)
+        http_info = self._delete_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_session_with_http_info(self, request):
+    def delete_session_invoker(self, request):
+        http_info = self._delete_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_session_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/sessions/{session_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -377,9 +440,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -388,20 +451,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/sessions/{session_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_compose_video(self, request):
         """合成视频(按包周期收费)
@@ -413,9 +472,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoResponse`
         """
-        return self._execute_compose_video_with_http_info(request)
+        http_info = self._execute_compose_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_compose_video_with_http_info(self, request):
+    def execute_compose_video_invoker(self, request):
+        http_info = self._execute_compose_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_compose_video_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human/video/{video_id}/compose",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteComposeVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -432,9 +504,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -443,20 +515,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video/{video_id}/compose',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteComposeVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_compose_video_ondemand(self, request):
         """合成视频(按需收费)
@@ -468,9 +536,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoOndemandRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteComposeVideoOndemandResponse`
         """
-        return self._execute_compose_video_ondemand_with_http_info(request)
+        http_info = self._execute_compose_video_ondemand_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_compose_video_ondemand_with_http_info(self, request):
+    def execute_compose_video_ondemand_invoker(self, request):
+        http_info = self._execute_compose_video_ondemand_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_compose_video_ondemand_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human/video/{video_id}/compose/on-demand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteComposeVideoOndemandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -487,9 +568,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -498,20 +579,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video/{video_id}/compose/on-demand',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteComposeVideoOndemandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_create_video(self, request):
         """创建视频
@@ -523,9 +600,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteCreateVideoRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteCreateVideoResponse`
         """
-        return self._execute_create_video_with_http_info(request)
+        http_info = self._execute_create_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_create_video_with_http_info(self, request):
+    def execute_create_video_invoker(self, request):
+        http_info = self._execute_create_video_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_create_video_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human/video",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteCreateVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -540,11 +630,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -553,20 +643,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteCreateVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_delete_video_by_id(self, request):
         """删除视频
@@ -578,9 +664,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteVideoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteVideoByIdResponse`
         """
-        return self._execute_delete_video_by_id_with_http_info(request)
+        http_info = self._execute_delete_video_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_delete_video_by_id_with_http_info(self, request):
+    def execute_delete_video_by_id_invoker(self, request):
+        http_info = self._execute_delete_video_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_delete_video_by_id_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-human/video/{video_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteDeleteVideoByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -597,9 +696,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -608,20 +707,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video/{video_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteDeleteVideoByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_deleteimage_by_id(self, request):
         """删除图片
@@ -633,9 +728,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteimageByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteDeleteimageByIdResponse`
         """
-        return self._execute_deleteimage_by_id_with_http_info(request)
+        http_info = self._execute_deleteimage_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_deleteimage_by_id_with_http_info(self, request):
+    def execute_deleteimage_by_id_invoker(self, request):
+        http_info = self._execute_deleteimage_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_deleteimage_by_id_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/digital-human/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteDeleteimageByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -652,9 +760,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -663,20 +771,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/images/{image_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteDeleteimageByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_get_character_info_by_id(self, request):
         """获取形象详情
@@ -688,9 +792,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharacterInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharacterInfoByIdResponse`
         """
-        return self._execute_get_character_info_by_id_with_http_info(request)
+        http_info = self._execute_get_character_info_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_get_character_info_by_id_with_http_info(self, request):
+    def execute_get_character_info_by_id_invoker(self, request):
+        http_info = self._execute_get_character_info_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_get_character_info_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human/characters/{character_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteGetCharacterInfoByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -707,9 +824,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -718,20 +835,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/characters/{character_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteGetCharacterInfoByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_get_characters(self, request):
         """获取形象列表
@@ -746,9 +859,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharactersRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetCharactersResponse`
         """
-        return self._execute_get_characters_with_http_info(request)
+        http_info = self._execute_get_characters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_get_characters_with_http_info(self, request):
+    def execute_get_characters_invoker(self, request):
+        http_info = self._execute_get_characters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_get_characters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human/characters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteGetCharactersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -777,9 +903,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -788,20 +914,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/characters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteGetCharactersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_get_frams_list_by_images_id(self, request):
         """获取播报框
@@ -814,9 +936,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetFramsListByImagesIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetFramsListByImagesIdResponse`
         """
-        return self._execute_get_frams_list_by_images_id_with_http_info(request)
+        http_info = self._execute_get_frams_list_by_images_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_get_frams_list_by_images_id_with_http_info(self, request):
+    def execute_get_frams_list_by_images_id_invoker(self, request):
+        http_info = self._execute_get_frams_list_by_images_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_get_frams_list_by_images_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human/image-frames",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteGetFramsListByImagesIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -837,9 +972,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -848,20 +983,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/image-frames',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteGetFramsListByImagesIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_get_images_list(self, request):
         """获取图片列表
@@ -873,9 +1004,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetImagesListRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetImagesListResponse`
         """
-        return self._execute_get_images_list_with_http_info(request)
+        http_info = self._execute_get_images_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_get_images_list_with_http_info(self, request):
+    def execute_get_images_list_invoker(self, request):
+        http_info = self._execute_get_images_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_get_images_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteGetImagesListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -898,9 +1042,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -909,20 +1053,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/images',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteGetImagesListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_get_video_info_by_id(self, request):
         """获取视频详情
@@ -934,9 +1074,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideoInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideoInfoByIdResponse`
         """
-        return self._execute_get_video_info_by_id_with_http_info(request)
+        http_info = self._execute_get_video_info_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_get_video_info_by_id_with_http_info(self, request):
+    def execute_get_video_info_by_id_invoker(self, request):
+        http_info = self._execute_get_video_info_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_get_video_info_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human/video/{video_id}/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteGetVideoInfoByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -953,9 +1106,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -964,20 +1117,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video/{video_id}/info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteGetVideoInfoByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_get_videos_list(self, request):
         """获取视频列表
@@ -990,9 +1139,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideosListRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteGetVideosListResponse`
         """
-        return self._execute_get_videos_list_with_http_info(request)
+        http_info = self._execute_get_videos_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_get_videos_list_with_http_info(self, request):
+    def execute_get_videos_list_invoker(self, request):
+        http_info = self._execute_get_videos_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_get_videos_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/digital-human/video",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteGetVideosListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1013,9 +1175,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1024,20 +1186,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteGetVideosListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_post_create_images(self, request):
         """创建图片
@@ -1049,9 +1207,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecutePostCreateImagesRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecutePostCreateImagesResponse`
         """
-        return self._execute_post_create_images_with_http_info(request)
+        http_info = self._execute_post_create_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_post_create_images_with_http_info(self, request):
+    def execute_post_create_images_invoker(self, request):
+        http_info = self._execute_post_create_images_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_post_create_images_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecutePostCreateImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1074,11 +1245,11 @@ class CbsClient(Client):
         if 'resolution_type' in local_var_params:
             form_params['resolution_type'] = local_var_params['resolution_type']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1087,20 +1258,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/images',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecutePostCreateImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_qa_chat(self, request):
         """问答机器人会话
@@ -1113,9 +1280,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteQaChatRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteQaChatResponse`
         """
-        return self._execute_qa_chat_with_http_info(request)
+        http_info = self._execute_qa_chat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_qa_chat_with_http_info(self, request):
+    def execute_qa_chat_invoker(self, request):
+        http_info = self._execute_qa_chat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_qa_chat_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/chat",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteQaChatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1132,11 +1312,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1145,20 +1325,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/chat',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteQaChatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_session(self, request):
         """处理会话
@@ -1171,9 +1347,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteSessionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteSessionResponse`
         """
-        return self._execute_session_with_http_info(request)
+        http_info = self._execute_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_session_with_http_info(self, request):
+    def execute_session_invoker(self, request):
+        http_info = self._execute_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_session_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/sessions/{session_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1192,11 +1381,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1205,20 +1394,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/sessions/{session_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_update_image_name(self, request):
         """修改图片名
@@ -1230,9 +1415,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateImageNameRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateImageNameResponse`
         """
-        return self._execute_update_image_name_with_http_info(request)
+        http_info = self._execute_update_image_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_update_image_name_with_http_info(self, request):
+    def execute_update_image_name_invoker(self, request):
+        http_info = self._execute_update_image_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_update_image_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteUpdateImageNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1249,11 +1447,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1262,20 +1460,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/images/{image_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteUpdateImageNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_update_video_by_id(self, request):
         """更新视频名
@@ -1287,9 +1481,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoByIdResponse`
         """
-        return self._execute_update_video_by_id_with_http_info(request)
+        http_info = self._execute_update_video_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_update_video_by_id_with_http_info(self, request):
+    def execute_update_video_by_id_invoker(self, request):
+        http_info = self._execute_update_video_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_update_video_by_id_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human/video/{video_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteUpdateVideoByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1306,11 +1513,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1319,20 +1526,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video/{video_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteUpdateVideoByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_update_video_info_by_id(self, request):
         """配置视频
@@ -1345,9 +1548,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUpdateVideoInfoByIdResponse`
         """
-        return self._execute_update_video_info_by_id_with_http_info(request)
+        http_info = self._execute_update_video_info_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_update_video_info_by_id_with_http_info(self, request):
+    def execute_update_video_info_by_id_invoker(self, request):
+        http_info = self._execute_update_video_info_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_update_video_info_by_id_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/digital-human/video/{video_id}/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteUpdateVideoInfoByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1364,11 +1580,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1377,20 +1593,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video/{video_id}/info',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteUpdateVideoInfoByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_upload_image(self, request):
         """上传播报插图
@@ -1404,9 +1616,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUploadImageRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUploadImageResponse`
         """
-        return self._execute_upload_image_with_http_info(request)
+        http_info = self._execute_upload_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_upload_image_with_http_info(self, request):
+    def execute_upload_image_invoker(self, request):
+        http_info = self._execute_upload_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_upload_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human/video/{video_id}/upload/image",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteUploadImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1427,11 +1652,11 @@ class CbsClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1440,20 +1665,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video/{video_id}/upload/image',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteUploadImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_upload_ppt(self, request):
         """通过pdf上传多张插图
@@ -1468,9 +1689,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ExecuteUploadPptRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ExecuteUploadPptResponse`
         """
-        return self._execute_upload_ppt_with_http_info(request)
+        http_info = self._execute_upload_ppt_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_upload_ppt_with_http_info(self, request):
+    def execute_upload_ppt_invoker(self, request):
+        http_info = self._execute_upload_ppt_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_upload_ppt_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/digital-human/video/{video_id}/upload/ppt",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteUploadPptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1489,11 +1723,11 @@ class CbsClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1502,20 +1736,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/digital-human/video/{video_id}/upload/ppt',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteUploadPptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_suggestions(self, request):
         """获取问题提示
@@ -1528,9 +1758,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.ListSuggestionsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.ListSuggestionsResponse`
         """
-        return self._list_suggestions_with_http_info(request)
+        http_info = self._list_suggestions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_suggestions_with_http_info(self, request):
+    def list_suggestions_invoker(self, request):
+        http_info = self._list_suggestions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_suggestions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/suggestions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSuggestionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1547,11 +1790,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1560,20 +1803,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/suggestions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSuggestionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def tag_labor(self, request):
         """标记为转人工
@@ -1586,9 +1825,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.TagLaborRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.TagLaborResponse`
         """
-        return self._tag_labor_with_http_info(request)
+        http_info = self._tag_labor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _tag_labor_with_http_info(self, request):
+    def tag_labor_invoker(self, request):
+        http_info = self._tag_labor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _tag_labor_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/requests/{request_id}/labor",
+            "request_type": request.__class__.__name__,
+            "response_type": "TagLaborResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1607,9 +1859,9 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1618,20 +1870,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/requests/{request_id}/labor',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='TagLaborResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def tag_satisfaction(self, request):
         """问答满意评价
@@ -1644,9 +1892,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.TagSatisfactionRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.TagSatisfactionResponse`
         """
-        return self._tag_satisfaction_with_http_info(request)
+        http_info = self._tag_satisfaction_http_info(request)
+        return self._call_api(**http_info)
 
-    def _tag_satisfaction_with_http_info(self, request):
+    def tag_satisfaction_invoker(self, request):
+        http_info = self._tag_satisfaction_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _tag_satisfaction_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/requests/{request_id}/satisfaction",
+            "request_type": request.__class__.__name__,
+            "response_type": "TagSatisfactionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1665,11 +1926,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1678,20 +1939,16 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/requests/{request_id}/satisfaction',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='TagSatisfactionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def post_requests(self, request):
         """PostRequests
@@ -1707,9 +1964,22 @@ class CbsClient(Client):
         :type request: :class:`huaweicloudsdkcbs.v1.PostRequestsRequest`
         :rtype: :class:`huaweicloudsdkcbs.v1.PostRequestsResponse`
         """
-        return self._post_requests_with_http_info(request)
+        http_info = self._post_requests_http_info(request)
+        return self._call_api(**http_info)
 
-    def _post_requests_with_http_info(self, request):
+    def post_requests_invoker(self, request):
+        http_info = self._post_requests_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _post_requests_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/qabots/{qabot_id}/requests",
+            "request_type": request.__class__.__name__,
+            "response_type": "PostRequestsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1726,11 +1996,11 @@ class CbsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1739,20 +2009,25 @@ class CbsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/qabots/{qabot_id}/requests',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PostRequestsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

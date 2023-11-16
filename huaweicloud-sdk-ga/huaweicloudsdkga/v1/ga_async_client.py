@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkga'")
 
 
 class GaAsyncClient(Client):
@@ -39,9 +44,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateAcceleratorResponse`
         """
-        return self._create_accelerator_with_http_info(request)
+        http_info = self._create_accelerator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_accelerator_with_http_info(self, request):
+    def create_accelerator_async_invoker(self, request):
+        http_info = self._create_accelerator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_accelerator_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/accelerators",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAcceleratorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/accelerators',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAcceleratorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_accelerator_async(self, request):
         """删除全球加速器
@@ -96,9 +109,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteAcceleratorResponse`
         """
-        return self._delete_accelerator_with_http_info(request)
+        http_info = self._delete_accelerator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_accelerator_with_http_info(self, request):
+    def delete_accelerator_async_invoker(self, request):
+        http_info = self._delete_accelerator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_accelerator_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/accelerators/{accelerator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAcceleratorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,9 +140,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/accelerators/{accelerator_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAcceleratorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_accelerators_async(self, request):
         """查询全球加速器列表
@@ -153,9 +174,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListAcceleratorsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListAcceleratorsResponse`
         """
-        return self._list_accelerators_with_http_info(request)
+        http_info = self._list_accelerators_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_accelerators_with_http_info(self, request):
+    def list_accelerators_async_invoker(self, request):
+        http_info = self._list_accelerators_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_accelerators_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/accelerators",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAcceleratorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -184,9 +217,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -195,20 +228,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/accelerators',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAcceleratorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_accelerator_async(self, request):
         """查询全球加速器详情
@@ -222,9 +251,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowAcceleratorResponse`
         """
-        return self._show_accelerator_with_http_info(request)
+        http_info = self._show_accelerator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_accelerator_with_http_info(self, request):
+    def show_accelerator_async_invoker(self, request):
+        http_info = self._show_accelerator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_accelerator_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/accelerators/{accelerator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAcceleratorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -241,9 +282,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -252,20 +293,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/accelerators/{accelerator_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAcceleratorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_accelerator_async(self, request):
         """更新全球加速器
@@ -279,9 +316,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateAcceleratorRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateAcceleratorResponse`
         """
-        return self._update_accelerator_with_http_info(request)
+        http_info = self._update_accelerator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_accelerator_with_http_info(self, request):
+    def update_accelerator_async_invoker(self, request):
+        http_info = self._update_accelerator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_accelerator_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/accelerators/{accelerator_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAcceleratorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -298,11 +347,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -311,20 +360,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/accelerators/{accelerator_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAcceleratorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_endpoint_async(self, request):
         """创建终端节点
@@ -338,9 +383,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointResponse`
         """
-        return self._create_endpoint_with_http_info(request)
+        http_info = self._create_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_endpoint_with_http_info(self, request):
+    def create_endpoint_async_invoker(self, request):
+        http_info = self._create_endpoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_endpoint_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/endpoint-groups/{endpoint_group_id}/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -357,11 +414,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -370,20 +427,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups/{endpoint_group_id}/endpoints',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_endpoint_async(self, request):
         """删除终端节点
@@ -397,9 +450,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteEndpointResponse`
         """
-        return self._delete_endpoint_with_http_info(request)
+        http_info = self._delete_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_endpoint_with_http_info(self, request):
+    def delete_endpoint_async_invoker(self, request):
+        http_info = self._delete_endpoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_endpoint_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/endpoint-groups/{endpoint_group_id}/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -418,9 +483,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -429,20 +494,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups/{endpoint_group_id}/endpoints/{endpoint_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_endpoints_async(self, request):
         """查询终端节点组下终端节点列表
@@ -456,9 +517,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListEndpointsResponse`
         """
-        return self._list_endpoints_with_http_info(request)
+        http_info = self._list_endpoints_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_endpoints_with_http_info(self, request):
+    def list_endpoints_async_invoker(self, request):
+        http_info = self._list_endpoints_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_endpoints_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/endpoint-groups/{endpoint_group_id}/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEndpointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -485,9 +558,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -496,20 +569,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups/{endpoint_group_id}/endpoints',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEndpointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_endpoint_async(self, request):
         """查询终端节点详情
@@ -523,9 +592,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowEndpointResponse`
         """
-        return self._show_endpoint_with_http_info(request)
+        http_info = self._show_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_endpoint_with_http_info(self, request):
+    def show_endpoint_async_invoker(self, request):
+        http_info = self._show_endpoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_endpoint_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/endpoint-groups/{endpoint_group_id}/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -544,9 +625,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -555,20 +636,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups/{endpoint_group_id}/endpoints/{endpoint_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_endpoint_async(self, request):
         """更新终端节点
@@ -582,9 +659,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateEndpointRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateEndpointResponse`
         """
-        return self._update_endpoint_with_http_info(request)
+        http_info = self._update_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_endpoint_with_http_info(self, request):
+    def update_endpoint_async_invoker(self, request):
+        http_info = self._update_endpoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_endpoint_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/endpoint-groups/{endpoint_group_id}/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -603,11 +692,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -616,20 +705,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups/{endpoint_group_id}/endpoints/{endpoint_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_endpoint_group_async(self, request):
         """创建终端节点组
@@ -643,9 +728,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateEndpointGroupResponse`
         """
-        return self._create_endpoint_group_with_http_info(request)
+        http_info = self._create_endpoint_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_endpoint_group_with_http_info(self, request):
+    def create_endpoint_group_async_invoker(self, request):
+        http_info = self._create_endpoint_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_endpoint_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/endpoint-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEndpointGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -660,11 +757,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -673,20 +770,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEndpointGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_endpoint_group_async(self, request):
         """删除终端节点组
@@ -700,9 +793,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteEndpointGroupResponse`
         """
-        return self._delete_endpoint_group_with_http_info(request)
+        http_info = self._delete_endpoint_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_endpoint_group_with_http_info(self, request):
+    def delete_endpoint_group_async_invoker(self, request):
+        http_info = self._delete_endpoint_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_endpoint_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/endpoint-groups/{endpoint_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEndpointGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -719,9 +824,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -730,20 +835,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups/{endpoint_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEndpointGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_endpoint_groups_async(self, request):
         """查询终端节点组列表
@@ -757,9 +858,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListEndpointGroupsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListEndpointGroupsResponse`
         """
-        return self._list_endpoint_groups_with_http_info(request)
+        http_info = self._list_endpoint_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_endpoint_groups_with_http_info(self, request):
+    def list_endpoint_groups_async_invoker(self, request):
+        http_info = self._list_endpoint_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_endpoint_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/endpoint-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEndpointGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -788,9 +901,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -799,20 +912,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEndpointGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_endpoint_group_async(self, request):
         """查询终端节点组详情
@@ -826,9 +935,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowEndpointGroupResponse`
         """
-        return self._show_endpoint_group_with_http_info(request)
+        http_info = self._show_endpoint_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_endpoint_group_with_http_info(self, request):
+    def show_endpoint_group_async_invoker(self, request):
+        http_info = self._show_endpoint_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_endpoint_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/endpoint-groups/{endpoint_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEndpointGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -845,9 +966,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -856,20 +977,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups/{endpoint_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEndpointGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_endpoint_group_async(self, request):
         """更新终端节点组
@@ -883,9 +1000,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateEndpointGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateEndpointGroupResponse`
         """
-        return self._update_endpoint_group_with_http_info(request)
+        http_info = self._update_endpoint_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_endpoint_group_with_http_info(self, request):
+    def update_endpoint_group_async_invoker(self, request):
+        http_info = self._update_endpoint_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_endpoint_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/endpoint-groups/{endpoint_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEndpointGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -902,11 +1031,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -915,20 +1044,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/endpoint-groups/{endpoint_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEndpointGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_health_check_async(self, request):
         """创建健康检查
@@ -942,9 +1067,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateHealthCheckResponse`
         """
-        return self._create_health_check_with_http_info(request)
+        http_info = self._create_health_check_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_health_check_with_http_info(self, request):
+    def create_health_check_async_invoker(self, request):
+        http_info = self._create_health_check_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_health_check_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/health-checks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHealthCheckResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -959,11 +1096,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -972,20 +1109,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/health-checks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateHealthCheckResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_health_check_async(self, request):
         """删除健康检查
@@ -999,9 +1132,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteHealthCheckResponse`
         """
-        return self._delete_health_check_with_http_info(request)
+        http_info = self._delete_health_check_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_health_check_with_http_info(self, request):
+    def delete_health_check_async_invoker(self, request):
+        http_info = self._delete_health_check_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_health_check_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/health-checks/{health_check_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHealthCheckResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1018,9 +1163,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1029,20 +1174,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/health-checks/{health_check_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteHealthCheckResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_health_checks_async(self, request):
         """查询健康检查列表
@@ -1056,9 +1197,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListHealthChecksRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListHealthChecksResponse`
         """
-        return self._list_health_checks_with_http_info(request)
+        http_info = self._list_health_checks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_health_checks_with_http_info(self, request):
+    def list_health_checks_async_invoker(self, request):
+        http_info = self._list_health_checks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_health_checks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/health-checks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHealthChecksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1085,9 +1238,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1096,20 +1249,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/health-checks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHealthChecksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_health_check_async(self, request):
         """查询健康检查详情
@@ -1123,9 +1272,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowHealthCheckResponse`
         """
-        return self._show_health_check_with_http_info(request)
+        http_info = self._show_health_check_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_health_check_with_http_info(self, request):
+    def show_health_check_async_invoker(self, request):
+        http_info = self._show_health_check_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_health_check_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/health-checks/{health_check_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHealthCheckResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1142,9 +1303,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1153,20 +1314,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/health-checks/{health_check_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHealthCheckResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_health_check_async(self, request):
         """更新健康检查
@@ -1180,9 +1337,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateHealthCheckResponse`
         """
-        return self._update_health_check_with_http_info(request)
+        http_info = self._update_health_check_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_health_check_with_http_info(self, request):
+    def update_health_check_async_invoker(self, request):
+        http_info = self._update_health_check_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_health_check_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/health-checks/{health_check_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHealthCheckResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1199,11 +1368,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1212,20 +1381,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/health-checks/{health_check_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHealthCheckResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_ip_group_ip_async(self, request):
         """添加IP地址组中的IP网段
@@ -1240,9 +1405,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.AddIpGroupIpRequest`
         :rtype: :class:`huaweicloudsdkga.v1.AddIpGroupIpResponse`
         """
-        return self._add_ip_group_ip_with_http_info(request)
+        http_info = self._add_ip_group_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_ip_group_ip_with_http_info(self, request):
+    def add_ip_group_ip_async_invoker(self, request):
+        http_info = self._add_ip_group_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_ip_group_ip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ip-groups/{ip_group_id}/add-ips",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddIpGroupIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1259,11 +1436,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1272,20 +1449,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups/{ip_group_id}/add-ips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddIpGroupIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_listener_async(self, request):
         """绑定IP地址组与监听器
@@ -1300,9 +1473,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.AssociateListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.AssociateListenerResponse`
         """
-        return self._associate_listener_with_http_info(request)
+        http_info = self._associate_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_listener_with_http_info(self, request):
+    def associate_listener_async_invoker(self, request):
+        http_info = self._associate_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_listener_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ip-groups/{ip_group_id}/associate-listener",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1319,11 +1504,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1332,20 +1517,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups/{ip_group_id}/associate-listener',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ip_group_async(self, request):
         """创建IP地址组
@@ -1360,9 +1541,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateIpGroupResponse`
         """
-        return self._create_ip_group_with_http_info(request)
+        http_info = self._create_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ip_group_with_http_info(self, request):
+    def create_ip_group_async_invoker(self, request):
+        http_info = self._create_ip_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ip_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ip-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1377,11 +1570,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1390,20 +1583,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ip_group_async(self, request):
         """删除IP地址组
@@ -1418,9 +1607,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteIpGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteIpGroupResponse`
         """
-        return self._delete_ip_group_with_http_info(request)
+        http_info = self._delete_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ip_group_with_http_info(self, request):
+    def delete_ip_group_async_invoker(self, request):
+        http_info = self._delete_ip_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ip_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/ip-groups/{ip_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1437,9 +1638,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1448,20 +1649,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups/{ip_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_listener_async(self, request):
         """解绑IP地址组与监听器
@@ -1476,9 +1673,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DisassociateListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DisassociateListenerResponse`
         """
-        return self._disassociate_listener_with_http_info(request)
+        http_info = self._disassociate_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_listener_with_http_info(self, request):
+    def disassociate_listener_async_invoker(self, request):
+        http_info = self._disassociate_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_listener_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ip-groups/{ip_group_id}/disassociate-listener",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1495,11 +1704,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1508,20 +1717,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups/{ip_group_id}/disassociate-listener',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ip_groups_async(self, request):
         """查询IP地址组列表
@@ -1535,9 +1740,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListIpGroupsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListIpGroupsResponse`
         """
-        return self._list_ip_groups_with_http_info(request)
+        http_info = self._list_ip_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ip_groups_with_http_info(self, request):
+    def list_ip_groups_async_invoker(self, request):
+        http_info = self._list_ip_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ip_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ip-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1558,9 +1775,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1569,20 +1786,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIpGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_ip_group_ip_async(self, request):
         """删除IP地址组中的IP网段
@@ -1597,9 +1810,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.RemoveIpGroupIpRequest`
         :rtype: :class:`huaweicloudsdkga.v1.RemoveIpGroupIpResponse`
         """
-        return self._remove_ip_group_ip_with_http_info(request)
+        http_info = self._remove_ip_group_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_ip_group_ip_with_http_info(self, request):
+    def remove_ip_group_ip_async_invoker(self, request):
+        http_info = self._remove_ip_group_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_ip_group_ip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/ip-groups/{ip_group_id}/remove-ips",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveIpGroupIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1616,11 +1841,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1629,20 +1854,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups/{ip_group_id}/remove-ips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveIpGroupIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ip_group_async(self, request):
         """查询IP地址组详情
@@ -1656,9 +1877,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowIpGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowIpGroupResponse`
         """
-        return self._show_ip_group_with_http_info(request)
+        http_info = self._show_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ip_group_with_http_info(self, request):
+    def show_ip_group_async_invoker(self, request):
+        http_info = self._show_ip_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ip_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/ip-groups/{ip_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1675,9 +1908,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1686,20 +1919,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups/{ip_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ip_group_async(self, request):
         """更新IP地址组
@@ -1713,9 +1942,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateIpGroupResponse`
         """
-        return self._update_ip_group_with_http_info(request)
+        http_info = self._update_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ip_group_with_http_info(self, request):
+    def update_ip_group_async_invoker(self, request):
+        http_info = self._update_ip_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ip_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/ip-groups/{ip_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1732,11 +1973,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1745,20 +1986,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/ip-groups/{ip_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_listener_async(self, request):
         """创建监听器
@@ -1772,9 +2009,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateListenerResponse`
         """
-        return self._create_listener_with_http_info(request)
+        http_info = self._create_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_listener_with_http_info(self, request):
+    def create_listener_async_invoker(self, request):
+        http_info = self._create_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_listener_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/listeners",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1789,11 +2038,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1802,20 +2051,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/listeners',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_listener_async(self, request):
         """删除监听器
@@ -1829,9 +2074,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteListenerResponse`
         """
-        return self._delete_listener_with_http_info(request)
+        http_info = self._delete_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_listener_with_http_info(self, request):
+    def delete_listener_async_invoker(self, request):
+        http_info = self._delete_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_listener_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/listeners/{listener_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1848,9 +2105,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1859,20 +2116,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/listeners/{listener_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_listeners_async(self, request):
         """查询监听器列表
@@ -1886,9 +2139,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListListenersRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListListenersResponse`
         """
-        return self._list_listeners_with_http_info(request)
+        http_info = self._list_listeners_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_listeners_with_http_info(self, request):
+    def list_listeners_async_invoker(self, request):
+        http_info = self._list_listeners_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_listeners_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/listeners",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListListenersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1917,9 +2182,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1928,20 +2193,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/listeners',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListListenersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_listener_async(self, request):
         """查询监听器详情
@@ -1955,9 +2216,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowListenerResponse`
         """
-        return self._show_listener_with_http_info(request)
+        http_info = self._show_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_listener_with_http_info(self, request):
+    def show_listener_async_invoker(self, request):
+        http_info = self._show_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_listener_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/listeners/{listener_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1974,9 +2247,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1985,20 +2258,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/listeners/{listener_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_listener_async(self, request):
         """更新监听器
@@ -2012,9 +2281,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.UpdateListenerRequest`
         :rtype: :class:`huaweicloudsdkga.v1.UpdateListenerResponse`
         """
-        return self._update_listener_with_http_info(request)
+        http_info = self._update_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_listener_with_http_info(self, request):
+    def update_listener_async_invoker(self, request):
+        http_info = self._update_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_listener_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/listeners/{listener_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2031,11 +2312,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2044,20 +2325,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/listeners/{listener_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_regions_async(self, request):
         """查询区域列表
@@ -2071,9 +2348,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ListRegionsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ListRegionsResponse`
         """
-        return self._list_regions_with_http_info(request)
+        http_info = self._list_regions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_regions_with_http_info(self, request):
+    def list_regions_async_invoker(self, request):
+        http_info = self._list_regions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_regions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRegionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2088,9 +2377,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2099,20 +2388,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/regions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRegionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tags_async(self, request):
         """创建资源标签
@@ -2126,9 +2411,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.CreateTagsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.CreateTagsResponse`
         """
-        return self._create_tags_with_http_info(request)
+        http_info = self._create_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tags_with_http_info(self, request):
+    def create_tags_async_invoker(self, request):
+        http_info = self._create_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2147,11 +2444,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2160,20 +2457,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{resource_type}/{resource_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tags_async(self, request):
         """删除资源标签
@@ -2187,9 +2480,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.DeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.DeleteTagsResponse`
         """
-        return self._delete_tags_with_http_info(request)
+        http_info = self._delete_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tags_with_http_info(self, request):
+    def delete_tags_async_invoker(self, request):
+        http_info = self._delete_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_tags_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2208,11 +2513,11 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2221,20 +2526,16 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{resource_type}/{resource_id}/tags/delete',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_tags_async(self, request):
         """查询特定资源标签
@@ -2248,9 +2549,21 @@ class GaAsyncClient(Client):
         :type request: :class:`huaweicloudsdkga.v1.ShowResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkga.v1.ShowResourceTagsResponse`
         """
-        return self._show_resource_tags_with_http_info(request)
+        http_info = self._show_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_tags_with_http_info(self, request):
+    def show_resource_tags_async_invoker(self, request):
+        http_info = self._show_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2269,9 +2582,9 @@ class GaAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2280,20 +2593,26 @@ class GaAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2332,4 +2651,4 @@ class GaAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

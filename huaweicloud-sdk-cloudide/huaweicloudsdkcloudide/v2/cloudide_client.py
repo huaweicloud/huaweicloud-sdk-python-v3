@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcloudide'")
 
 
 class CloudIDEClient(Client):
@@ -38,9 +43,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationResponse`
         """
-        return self._add_extension_evaluation_with_http_info(request)
+        http_info = self._add_extension_evaluation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_extension_evaluation_with_http_info(self, request):
+    def add_extension_evaluation_invoker(self, request):
+        http_info = self._add_extension_evaluation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_extension_evaluation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/marketplace/extension/evaluation",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddExtensionEvaluationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/extension/evaluation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddExtensionEvaluationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_extension_evaluation_reply(self, request):
         """添加评论回复、回复评论回复
@@ -94,9 +108,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionEvaluationReplyResponse`
         """
-        return self._add_extension_evaluation_reply_with_http_info(request)
+        http_info = self._add_extension_evaluation_reply_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_extension_evaluation_reply_with_http_info(self, request):
+    def add_extension_evaluation_reply_invoker(self, request):
+        http_info = self._add_extension_evaluation_reply_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_extension_evaluation_reply_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/marketplace/extension/evaluation/reply",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddExtensionEvaluationReplyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/extension/evaluation/reply',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddExtensionEvaluationReplyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_extension_star(self, request):
         """添加新评星
@@ -150,9 +173,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.AddExtensionStarResponse`
         """
-        return self._add_extension_star_with_http_info(request)
+        http_info = self._add_extension_star_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_extension_star_with_http_info(self, request):
+    def add_extension_star_invoker(self, request):
+        http_info = self._add_extension_star_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_extension_star_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/marketplace/star",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddExtensionStarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,11 +203,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/star',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddExtensionStarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_malicious_extension_evaluation(self, request):
         """举报评论,举报回复
@@ -206,9 +238,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckMaliciousExtensionEvaluationResponse`
         """
-        return self._check_malicious_extension_evaluation_with_http_info(request)
+        http_info = self._check_malicious_extension_evaluation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_malicious_extension_evaluation_with_http_info(self, request):
+    def check_malicious_extension_evaluation_invoker(self, request):
+        http_info = self._check_malicious_extension_evaluation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_malicious_extension_evaluation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/marketplace/extension/evaluation/accusation",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckMaliciousExtensionEvaluationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -223,11 +268,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +281,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/extension/evaluation/accusation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckMaliciousExtensionEvaluationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_extension_authorization(self, request):
         """设置ide实例对插件的授权
@@ -262,9 +303,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateExtensionAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateExtensionAuthorizationResponse`
         """
-        return self._create_extension_authorization_with_http_info(request)
+        http_info = self._create_extension_authorization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_extension_authorization_with_http_info(self, request):
+    def create_extension_authorization_invoker(self, request):
+        http_info = self._create_extension_authorization_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_extension_authorization_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/extension/authorization/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExtensionAuthorizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -281,11 +335,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -294,20 +348,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/extension/authorization/{instance_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateExtensionAuthorizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_evaluation(self, request):
         """删除评论
@@ -320,9 +370,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationResponse`
         """
-        return self._delete_evaluation_with_http_info(request)
+        http_info = self._delete_evaluation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_evaluation_with_http_info(self, request):
+    def delete_evaluation_invoker(self, request):
+        http_info = self._delete_evaluation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_evaluation_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/marketplace/evaluation/{evaluation_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEvaluationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -339,9 +402,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -350,20 +413,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/evaluation/{evaluation_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEvaluationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_evaluation_reply(self, request):
         """删除回复
@@ -376,9 +435,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteEvaluationReplyResponse`
         """
-        return self._delete_evaluation_reply_with_http_info(request)
+        http_info = self._delete_evaluation_reply_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_evaluation_reply_with_http_info(self, request):
+    def delete_evaluation_reply_invoker(self, request):
+        http_info = self._delete_evaluation_reply_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_evaluation_reply_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/marketplace/evaluation/reply/{reply_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEvaluationReplyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -395,9 +467,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -406,20 +478,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/evaluation/reply/{reply_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEvaluationReplyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_extensions(self, request):
         """查询插件列表
@@ -432,9 +500,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListExtensionsRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListExtensionsResponse`
         """
-        return self._list_extensions_with_http_info(request)
+        http_info = self._list_extensions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_extensions_with_http_info(self, request):
+    def list_extensions_invoker(self, request):
+        http_info = self._list_extensions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_extensions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/marketplace/extension/extensionquery",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExtensionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -449,11 +530,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -462,20 +543,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/extension/extensionquery',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListExtensionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_templates(self, request):
         """查询技术栈模板工程
@@ -488,9 +565,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListProjectTemplatesResponse`
         """
-        return self._list_project_templates_with_http_info(request)
+        http_info = self._list_project_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_templates_with_http_info(self, request):
+    def list_project_templates_invoker(self, request):
+        http_info = self._list_project_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -509,9 +599,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -520,20 +610,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_publisher(self, request):
         """获取当前用户下的发布商列表
@@ -546,9 +632,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListPublisherRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListPublisherResponse`
         """
-        return self._list_publisher_with_http_info(request)
+        http_info = self._list_publisher_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_publisher_with_http_info(self, request):
+    def list_publisher_invoker(self, request):
+        http_info = self._list_publisher_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_publisher_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/marketplace/publishers/mine",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublisherResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -565,9 +664,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -576,20 +675,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/publishers/mine',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPublisherResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stacks(self, request):
         """按region获取标签所有技术栈
@@ -602,9 +697,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListStacksRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListStacksResponse`
         """
-        return self._list_stacks_with_http_info(request)
+        http_info = self._list_stacks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stacks_with_http_info(self, request):
+    def list_stacks_invoker(self, request):
+        http_info = self._list_stacks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_stacks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/stacks/tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStacksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -621,9 +729,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -632,20 +740,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/stacks/tag',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStacksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_extension(self, request):
         """插件发布
@@ -658,9 +762,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.PublishExtensionRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.PublishExtensionResponse`
         """
-        return self._publish_extension_with_http_info(request)
+        http_info = self._publish_extension_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_extension_with_http_info(self, request):
+    def publish_extension_invoker(self, request):
+        http_info = self._publish_extension_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_extension_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/marketplace/extension/{task_id}/archiving",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishExtensionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -679,11 +796,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -692,20 +809,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/extension/{task_id}/archiving',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishExtensionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_account_status(self, request):
         """查询当前帐号访问权限
@@ -718,9 +831,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowAccountStatusResponse`
         """
-        return self._show_account_status_with_http_info(request)
+        http_info = self._show_account_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_account_status_with_http_info(self, request):
+    def show_account_status_invoker(self, request):
+        http_info = self._show_account_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_account_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/permission/account/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAccountStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -735,9 +861,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -746,20 +872,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/permission/account/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAccountStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_category_list(self, request):
         """查询插件分类
@@ -772,9 +894,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowCategoryListRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowCategoryListResponse`
         """
-        return self._show_category_list_with_http_info(request)
+        http_info = self._show_category_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_category_list_with_http_info(self, request):
+    def show_category_list_invoker(self, request):
+        http_info = self._show_category_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_category_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/marketplace/extension/category",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCategoryListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -799,9 +934,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -810,20 +945,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/extension/category',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCategoryListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_extension_authorization(self, request):
         """查询ide实例对插件的授权情况
@@ -836,9 +967,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionAuthorizationResponse`
         """
-        return self._show_extension_authorization_with_http_info(request)
+        http_info = self._show_extension_authorization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_extension_authorization_with_http_info(self, request):
+    def show_extension_authorization_invoker(self, request):
+        http_info = self._show_extension_authorization_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_extension_authorization_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/extension/authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExtensionAuthorizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -859,9 +1003,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -870,20 +1014,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/extension/authorization',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExtensionAuthorizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_extension_detail(self, request):
         """查询插件详细信息
@@ -896,9 +1036,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionDetailResponse`
         """
-        return self._show_extension_detail_with_http_info(request)
+        http_info = self._show_extension_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_extension_detail_with_http_info(self, request):
+    def show_extension_detail_invoker(self, request):
+        http_info = self._show_extension_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_extension_detail_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/marketplace/extension/public/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExtensionDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -913,11 +1066,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -926,20 +1079,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/extension/public/detail',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExtensionDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_extension_evaluation(self, request):
         """查询插件评价
@@ -952,9 +1101,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationResponse`
         """
-        return self._show_extension_evaluation_with_http_info(request)
+        http_info = self._show_extension_evaluation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_extension_evaluation_with_http_info(self, request):
+    def show_extension_evaluation_invoker(self, request):
+        http_info = self._show_extension_evaluation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_extension_evaluation_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/marketplace/feedback/evaluation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExtensionEvaluationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -975,9 +1137,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -986,20 +1148,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/feedback/evaluation',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExtensionEvaluationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_extension_evaluation_star(self, request):
         """查询插件评星
@@ -1012,9 +1170,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionEvaluationStarResponse`
         """
-        return self._show_extension_evaluation_star_with_http_info(request)
+        http_info = self._show_extension_evaluation_star_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_extension_evaluation_star_with_http_info(self, request):
+    def show_extension_evaluation_star_invoker(self, request):
+        http_info = self._show_extension_evaluation_star_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_extension_evaluation_star_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/marketplace/feedback/star",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExtensionEvaluationStarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1035,9 +1206,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1046,20 +1217,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/feedback/star',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExtensionEvaluationStarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_extension_testing_result(self, request):
         """获取插件检测结果
@@ -1072,9 +1239,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowExtensionTestingResultRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowExtensionTestingResultResponse`
         """
-        return self._show_extension_testing_result_with_http_info(request)
+        http_info = self._show_extension_testing_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_extension_testing_result_with_http_info(self, request):
+    def show_extension_testing_result_invoker(self, request):
+        http_info = self._show_extension_testing_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_extension_testing_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/marketplace/extension/{task_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowExtensionTestingResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1093,9 +1273,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1104,20 +1284,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/extension/{task_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowExtensionTestingResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_price(self, request):
         """获取技术栈计费信息
@@ -1130,9 +1306,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowPriceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowPriceResponse`
         """
-        return self._show_price_with_http_info(request)
+        http_info = self._show_price_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_price_with_http_info(self, request):
+    def show_price_invoker(self, request):
+        http_info = self._show_price_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_price_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/stacks/price",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPriceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1147,9 +1336,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1158,20 +1347,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/stacks/price',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPriceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_extension_file(self, request):
         """上传插件
@@ -1184,9 +1369,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UploadExtensionFileResponse`
         """
-        return self._upload_extension_file_with_http_info(request)
+        http_info = self._upload_extension_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_extension_file_with_http_info(self, request):
+    def upload_extension_file_invoker(self, request):
+        http_info = self._upload_extension_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_extension_file_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/marketplace/file/plugin",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadExtensionFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1205,11 +1403,11 @@ class CloudIDEClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1218,20 +1416,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/marketplace/file/plugin',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadExtensionFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_file_publisher(self, request):
         """文件上传归一化
@@ -1244,9 +1438,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.UploadFilePublisherRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UploadFilePublisherResponse`
         """
-        return self._upload_file_publisher_with_http_info(request)
+        http_info = self._upload_file_publisher_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_file_publisher_with_http_info(self, request):
+    def upload_file_publisher_invoker(self, request):
+        http_info = self._upload_file_publisher_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_file_publisher_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/fileservice/file/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadFilePublisherResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1285,11 +1492,11 @@ class CloudIDEClient(Client):
         if 'task_id' in local_var_params:
             form_params['task_id'] = local_var_params['task_id']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1298,20 +1505,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/fileservice/file/upload',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadFilePublisherResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_instance_access(self, request):
         """查询用户是否有权限访问某个IDE实例
@@ -1324,9 +1527,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckInstanceAccessResponse`
         """
-        return self._check_instance_access_with_http_info(request)
+        http_info = self._check_instance_access_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_instance_access_with_http_info(self, request):
+    def check_instance_access_invoker(self, request):
+        http_info = self._check_instance_access_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_instance_access_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/instances/{instance_id}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckInstanceAccessResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1343,9 +1559,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1354,20 +1570,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/{instance_id}/access',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckInstanceAccessResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_name(self, request):
         """查询IDE实例名是否重复
@@ -1380,9 +1592,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CheckNameRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CheckNameResponse`
         """
-        return self._check_name_with_http_info(request)
+        http_info = self._check_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_name_with_http_info(self, request):
+    def check_name_invoker(self, request):
+        http_info = self._check_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/instances/duplicate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1399,9 +1624,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1410,20 +1635,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/duplicate',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance(self, request):
         """创建IDE实例
@@ -1436,9 +1657,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateInstanceResponse`
         """
-        return self._create_instance_with_http_info(request)
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_with_http_info(self, request):
+    def create_instance_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{org_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1455,11 +1689,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1468,20 +1702,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{org_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance_by3rd(self, request):
         """外部第三方集成商创建IDE实例
@@ -1494,9 +1724,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateInstanceBy3rdResponse`
         """
-        return self._create_instance_by3rd_with_http_info(request)
+        http_info = self._create_instance_by3rd_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_by3rd_with_http_info(self, request):
+    def create_instance_by3rd_invoker(self, request):
+        http_info = self._create_instance_by3rd_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_instance_by3rd_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceBy3rdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1513,11 +1756,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1526,20 +1769,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceBy3rdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance(self, request):
         """删除IDE实例
@@ -1552,9 +1791,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.DeleteInstanceResponse`
         """
-        return self._delete_instance_with_http_info(request)
+        http_info = self._delete_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_with_http_info(self, request):
+    def delete_instance_invoker(self, request):
+        http_info = self._delete_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1571,9 +1823,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1582,20 +1834,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances(self, request):
         """查询IDE实例列表
@@ -1608,9 +1856,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListInstancesResponse`
         """
-        return self._list_instances_with_http_info(request)
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_with_http_info(self, request):
+    def list_instances_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1639,9 +1900,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1650,20 +1911,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_org_instances(self, request):
         """查询某个租户下的IDE实例列表
@@ -1676,9 +1933,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ListOrgInstancesResponse`
         """
-        return self._list_org_instances_with_http_info(request)
+        http_info = self._list_org_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_org_instances_with_http_info(self, request):
+    def list_org_instances_invoker(self, request):
+        http_info = self._list_org_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_org_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{org_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrgInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1703,9 +1973,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1714,20 +1984,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{org_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOrgInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance(self, request):
         """查询某个IDE实例
@@ -1740,9 +2006,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowInstanceResponse`
         """
-        return self._show_instance_with_http_info(request)
+        http_info = self._show_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_with_http_info(self, request):
+    def show_instance_invoker(self, request):
+        http_info = self._show_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1759,9 +2038,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1770,20 +2049,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_status_info(self, request):
         """查询某个IDE实例的状态
@@ -1796,9 +2071,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowInstanceStatusInfoRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowInstanceStatusInfoResponse`
         """
-        return self._show_instance_status_info_with_http_info(request)
+        http_info = self._show_instance_status_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_status_info_with_http_info(self, request):
+    def show_instance_status_info_invoker(self, request):
+        http_info = self._show_instance_status_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_status_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/instances/{instance_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceStatusInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1815,9 +2103,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1826,20 +2114,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/{instance_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceStatusInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_instance(self, request):
         """启动IDE实例
@@ -1852,9 +2136,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.StartInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.StartInstanceResponse`
         """
-        return self._start_instance_with_http_info(request)
+        http_info = self._start_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_instance_with_http_info(self, request):
+    def start_instance_invoker(self, request):
+        http_info = self._start_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/instances/{instance_id}/runtime",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1871,11 +2168,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1884,20 +2181,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/{instance_id}/runtime',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_instance(self, request):
         """停止IDE实例
@@ -1910,9 +2203,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.StopInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.StopInstanceResponse`
         """
-        return self._stop_instance_with_http_info(request)
+        http_info = self._stop_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_instance_with_http_info(self, request):
+    def stop_instance_invoker(self, request):
+        http_info = self._stop_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/instances/{instance_id}/runtime",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1929,9 +2235,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1940,20 +2246,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/{instance_id}/runtime',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance(self, request):
         """修改IDE实例
@@ -1966,9 +2268,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceResponse`
         """
-        return self._update_instance_with_http_info(request)
+        http_info = self._update_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_with_http_info(self, request):
+    def update_instance_invoker(self, request):
+        http_info = self._update_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1985,11 +2300,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1998,20 +2313,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/{instance_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_activity(self, request):
         """刷新IDE实例活跃状态
@@ -2024,9 +2335,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.UpdateInstanceActivityResponse`
         """
-        return self._update_instance_activity_with_http_info(request)
+        http_info = self._update_instance_activity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_activity_with_http_info(self, request):
+    def update_instance_activity_invoker(self, request):
+        http_info = self._update_instance_activity_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_activity_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/instances/{instance_id}/activity",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceActivityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2043,9 +2367,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2054,20 +2378,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/instances/{instance_id}/activity',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceActivityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_acceptance(self, request):
         """CreateAcceptance接口
@@ -2080,9 +2400,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateAcceptanceRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateAcceptanceResponse`
         """
-        return self._create_acceptance_with_http_info(request)
+        http_info = self._create_acceptance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_acceptance_with_http_info(self, request):
+    def create_acceptance_invoker(self, request):
+        http_info = self._create_acceptance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_acceptance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/aims/codemodelserver/code-generation/acceptance",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAcceptanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2097,11 +2430,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2110,20 +2443,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/aims/codemodelserver/code-generation/acceptance',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAcceptanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_apply(self, request):
         """CreateJoinRequest接口
@@ -2136,9 +2465,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateApplyRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateApplyResponse`
         """
-        return self._create_apply_with_http_info(request)
+        http_info = self._create_apply_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_apply_with_http_info(self, request):
+    def create_apply_invoker(self, request):
+        http_info = self._create_apply_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_apply_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/aims/codemodelserver/join-request",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApplyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2153,11 +2495,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2166,20 +2508,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/aims/codemodelserver/join-request',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApplyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_event(self, request):
         """CreateEvent接口
@@ -2192,9 +2530,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateEventRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateEventResponse`
         """
-        return self._create_event_with_http_info(request)
+        http_info = self._create_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_event_with_http_info(self, request):
+    def create_event_invoker(self, request):
+        http_info = self._create_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_event_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/aims/codemodelserver/management/event",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2209,11 +2560,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2222,20 +2573,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/aims/codemodelserver/management/event',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_login(self, request):
         """CreateLogin接口
@@ -2248,9 +2595,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateLoginRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateLoginResponse`
         """
-        return self._create_login_with_http_info(request)
+        http_info = self._create_login_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_login_with_http_info(self, request):
+    def create_login_invoker(self, request):
+        http_info = self._create_login_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_login_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/aims/codemodelserver/code-generation/login",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLoginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2265,11 +2625,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2278,20 +2638,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/aims/codemodelserver/code-generation/login',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLoginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_request(self, request):
         """Create Request接口
@@ -2311,9 +2667,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.CreateRequestRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.CreateRequestResponse`
         """
-        return self._create_request_with_http_info(request)
+        http_info = self._create_request_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_request_with_http_info(self, request):
+    def create_request_invoker(self, request):
+        http_info = self._create_request_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_request_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/aims/codemodelserver/code-generation/request",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRequestResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2338,11 +2707,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2351,20 +2720,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/aims/codemodelserver/code-generation/request',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRequestResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_result(self, request):
         """Show Result接口
@@ -2377,9 +2742,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.ShowResultRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.ShowResultResponse`
         """
-        return self._show_result_with_http_info(request)
+        http_info = self._show_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_result_with_http_info(self, request):
+    def show_result_invoker(self, request):
+        http_info = self._show_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/aims/codemodelserver/code-generation/results",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2396,9 +2774,9 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2407,20 +2785,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/aims/codemodelserver/code-generation/results',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_chat(self, request):
         """start_chat_codebreezetsbot_v1_devmind_tsbot_start_chat_post接口
@@ -2435,9 +2809,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.StartChatRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.StartChatResponse`
         """
-        return self._start_chat_with_http_info(request)
+        http_info = self._start_chat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_chat_with_http_info(self, request):
+    def start_chat_invoker(self, request):
+        http_info = self._start_chat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_chat_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/codebreezetsbot/devmind/tsbot/start-chat",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartChatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2452,11 +2839,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2465,20 +2852,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/codebreezetsbot/devmind/tsbot/start-chat',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartChatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def sync_chat(self, request):
         """async_chat_codebreezetsbot_v1_devmind_tsbot_async_chat_post接口
@@ -2493,9 +2876,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.SyncChatRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.SyncChatResponse`
         """
-        return self._sync_chat_with_http_info(request)
+        http_info = self._sync_chat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _sync_chat_with_http_info(self, request):
+    def sync_chat_invoker(self, request):
+        http_info = self._sync_chat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _sync_chat_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/codebreezetsbot/devmind/tsbot/async-chat",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncChatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2512,11 +2908,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2525,20 +2921,16 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/codebreezetsbot/devmind/tsbot/async-chat',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SyncChatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def sync_get_chat_result(self, request):
         """async_get_chat_result_codebreezetsbot_v1_devmind_tsbot_async_get_chat_result_post接口
@@ -2551,9 +2943,22 @@ class CloudIDEClient(Client):
         :type request: :class:`huaweicloudsdkcloudide.v2.SyncGetChatResultRequest`
         :rtype: :class:`huaweicloudsdkcloudide.v2.SyncGetChatResultResponse`
         """
-        return self._sync_get_chat_result_with_http_info(request)
+        http_info = self._sync_get_chat_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _sync_get_chat_result_with_http_info(self, request):
+    def sync_get_chat_result_invoker(self, request):
+        http_info = self._sync_get_chat_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _sync_get_chat_result_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/codebreezetsbot/devmind/tsbot/async-get-chat-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncGetChatResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2570,11 +2975,11 @@ class CloudIDEClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2583,20 +2988,25 @@ class CloudIDEClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/codebreezetsbot/devmind/tsbot/async-get-chat-result',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SyncGetChatResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

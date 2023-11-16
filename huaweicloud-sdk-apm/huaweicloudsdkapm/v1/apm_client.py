@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkapm'")
 
 
 class ApmClient(Client):
@@ -38,9 +43,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.CreateAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.CreateAkSkResponse`
         """
-        return self._create_ak_sk_with_http_info(request)
+        http_info = self._create_ak_sk_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ak_sk_with_http_info(self, request):
+    def create_ak_sk_invoker(self, request):
+        http_info = self._create_ak_sk_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ak_sk_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/access-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAkSkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/access-keys',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAkSkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ak_sk(self, request):
         """删除aksk
@@ -94,9 +108,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteAkSkResponse`
         """
-        return self._delete_ak_sk_with_http_info(request)
+        http_info = self._delete_ak_sk_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ak_sk_with_http_info(self, request):
+    def delete_ak_sk_invoker(self, request):
+        http_info = self._delete_ak_sk_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ak_sk_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/apm2/access-keys/{ak}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAkSkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,9 +140,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/access-keys/{ak}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAkSkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ak_sks(self, request):
         """查询租户的aksk
@@ -150,9 +173,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowAkSksRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowAkSksResponse`
         """
-        return self._show_ak_sks_with_http_info(request)
+        http_info = self._show_ak_sks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ak_sks_with_http_info(self, request):
+    def show_ak_sks_invoker(self, request):
+        http_info = self._show_ak_sks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ak_sks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/access-keys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAkSksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,9 +203,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -178,20 +214,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/access-keys',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAkSksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_data(self, request):
         """查询告警列表
@@ -204,9 +236,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAlarmDataRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAlarmDataResponse`
         """
-        return self._list_alarm_data_with_http_info(request)
+        http_info = self._list_alarm_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_data_with_http_info(self, request):
+    def list_alarm_data_invoker(self, request):
+        http_info = self._list_alarm_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alarm_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/alarm/data/get-alarm-data-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -223,11 +268,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +281,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/alarm/data/get-alarm-data-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_notify(self, request):
         """查询告警消息列表
@@ -262,9 +303,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAlarmNotifyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAlarmNotifyResponse`
         """
-        return self._list_alarm_notify_with_http_info(request)
+        http_info = self._list_alarm_notify_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_notify_with_http_info(self, request):
+    def list_alarm_notify_invoker(self, request):
+        http_info = self._list_alarm_notify_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alarm_notify_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/alarm/data/get-alarm-notify-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmNotifyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -281,11 +335,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -294,20 +348,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/alarm/data/get-alarm-notify-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmNotifyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_agent_status(self, request):
         """更改实例的采集状态
@@ -320,9 +370,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ChangeAgentStatusRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ChangeAgentStatusResponse`
         """
-        return self._change_agent_status_with_http_info(request)
+        http_info = self._change_agent_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_agent_status_with_http_info(self, request):
+    def change_agent_status_invoker(self, request):
+        http_info = self._change_agent_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_agent_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/apm-service/agent-mgr/change-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeAgentStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -339,11 +402,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -352,20 +415,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/apm-service/agent-mgr/change-status',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeAgentStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_agent(self, request):
         """删除agent
@@ -378,9 +437,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAgentRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteAgentResponse`
         """
-        return self._delete_agent_with_http_info(request)
+        http_info = self._delete_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_agent_with_http_info(self, request):
+    def delete_agent_invoker(self, request):
+        http_info = self._delete_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_agent_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/apm-service/agent-mgr/delete-agent",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -397,11 +469,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -410,20 +482,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/apm-service/agent-mgr/delete-agent',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ak_sk(self, request):
         """获取ak/sk
@@ -436,9 +504,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAkSkRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAkSkResponse`
         """
-        return self._list_ak_sk_with_http_info(request)
+        http_info = self._list_ak_sk_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ak_sk_with_http_info(self, request):
+    def list_ak_sk_invoker(self, request):
+        http_info = self._list_ak_sk_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ak_sk_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/systemmng/get-ak-sk-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAkSkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -453,9 +534,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -464,20 +545,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/systemmng/get-ak-sk-list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAkSkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_business(self, request):
         """查询应用列表
@@ -490,9 +567,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListBusinessRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListBusinessResponse`
         """
-        return self._list_business_with_http_info(request)
+        http_info = self._list_business_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_business_with_http_info(self, request):
+    def list_business_invoker(self, request):
+        http_info = self._list_business_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_business_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/cmdb/business/get-business-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBusinessResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -507,9 +597,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -518,20 +608,16 @@ class ApmClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/business/get-business-list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBusinessResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_env_monitor_item(self, request):
         """查询监控项列表
@@ -544,9 +630,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvMonitorItemResponse`
         """
-        return self._list_env_monitor_item_with_http_info(request)
+        http_info = self._list_env_monitor_item_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_env_monitor_item_with_http_info(self, request):
+    def list_env_monitor_item_invoker(self, request):
+        http_info = self._list_env_monitor_item_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_env_monitor_item_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/apm-service/monitor-item-mgr/get-env-monitor-item-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvMonitorItemResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -563,11 +662,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -576,20 +675,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/apm-service/monitor-item-mgr/get-env-monitor-item-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvMonitorItemResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def save_monitor_item_config(self, request):
         """保存监控项
@@ -602,9 +697,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SaveMonitorItemConfigResponse`
         """
-        return self._save_monitor_item_config_with_http_info(request)
+        http_info = self._save_monitor_item_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _save_monitor_item_config_with_http_info(self, request):
+    def save_monitor_item_config_invoker(self, request):
+        http_info = self._save_monitor_item_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _save_monitor_item_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/apm-service/monitor-item-mgr/save-monitor-item-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveMonitorItemConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -621,11 +729,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -634,20 +742,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/apm-service/monitor-item-mgr/save-monitor-item-config',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SaveMonitorItemConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_agent(self, request):
         """查询应用下所有探针
@@ -660,9 +764,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchAgentRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchAgentResponse`
         """
-        return self._search_agent_with_http_info(request)
+        http_info = self._search_agent_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_agent_with_http_info(self, request):
+    def search_agent_invoker(self, request):
+        http_info = self._search_agent_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_agent_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/apm-service/agent-mgr/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchAgentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -679,11 +796,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -692,20 +809,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/apm-service/agent-mgr/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchAgentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_application(self, request):
         """对指定区域下的组件和环境及其探针情况进行搜索
@@ -718,9 +831,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchApplicationRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchApplicationResponse`
         """
-        return self._search_application_with_http_info(request)
+        http_info = self._search_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_application_with_http_info(self, request):
+    def search_application_invoker(self, request):
+        http_info = self._search_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_application_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/apm-service/app-mgr/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -737,11 +863,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -750,20 +876,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/apm-service/app-mgr/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_master_address(self, request):
         """查询master地址
@@ -776,9 +898,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowMasterAddressRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowMasterAddressResponse`
         """
-        return self._show_master_address_with_http_info(request)
+        http_info = self._show_master_address_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_master_address_with_http_info(self, request):
+    def show_master_address_invoker(self, request):
+        http_info = self._show_master_address_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_master_address_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/systemmng/get-master-address",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMasterAddressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -795,9 +930,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -806,20 +941,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/systemmng/get-master-address',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMasterAddressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app(self, request):
         """根据组件id删除指定的组件
@@ -832,9 +963,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.DeleteAppResponse`
         """
-        return self._delete_app_with_http_info(request)
+        http_info = self._delete_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_with_http_info(self, request):
+    def delete_app_invoker(self, request):
+        http_info = self._delete_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/apm2/openapi/cmdb/apps/delete-app/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -853,9 +997,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -864,20 +1008,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/apps/delete-app/{application_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_envs(self, request):
         """获取组件下的环境列表
@@ -890,9 +1030,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAppEnvsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAppEnvsResponse`
         """
-        return self._list_app_envs_with_http_info(request)
+        http_info = self._list_app_envs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_envs_with_http_info(self, request):
+    def list_app_envs_invoker(self, request):
+        http_info = self._list_app_envs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_envs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/cmdb/envs/get-app-envs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppEnvsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -911,9 +1064,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -922,20 +1075,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/envs/get-app-envs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppEnvsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps(self, request):
         """获取组件列表
@@ -948,9 +1097,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListAppsResponse`
         """
-        return self._list_apps_with_http_info(request)
+        http_info = self._list_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_with_http_info(self, request):
+    def list_apps_invoker(self, request):
+        http_info = self._list_apps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/cmdb/apps/get-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -969,9 +1131,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -980,20 +1142,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/apps/get-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_env_tags(self, request):
         """查询环境标签
@@ -1006,9 +1164,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvTagsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvTagsResponse`
         """
-        return self._list_env_tags_with_http_info(request)
+        http_info = self._list_env_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_env_tags_with_http_info(self, request):
+    def list_env_tags_invoker(self, request):
+        http_info = self._list_env_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_env_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/cmdb/tag/get-env-tag-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1025,11 +1196,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1038,20 +1209,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/tag/get-env-tag-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_business_detail(self, request):
         """查询单个应用的详情
@@ -1064,9 +1231,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowBusinessDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowBusinessDetailResponse`
         """
-        return self._show_business_detail_with_http_info(request)
+        http_info = self._show_business_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_business_detail_with_http_info(self, request):
+    def show_business_detail_invoker(self, request):
+        http_info = self._show_business_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_business_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/cmdb/business/get-business-detail/{business_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBusinessDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1085,9 +1265,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1096,20 +1276,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/business/get-business-detail/{business_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBusinessDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sub_business_detail(self, request):
         """查询子应用详情
@@ -1122,9 +1298,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowSubBusinessDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowSubBusinessDetailResponse`
         """
-        return self._show_sub_business_detail_with_http_info(request)
+        http_info = self._show_sub_business_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sub_business_detail_with_http_info(self, request):
+    def show_sub_business_detail_invoker(self, request):
+        http_info = self._show_sub_business_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sub_business_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/cmdb/sub-business/get-sub-business-detail/{sub_business_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubBusinessDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1143,9 +1332,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1154,20 +1343,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/sub-business/get-sub-business-detail/{sub_business_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSubBusinessDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_topology_tree(self, request):
         """获取应用树
@@ -1180,9 +1365,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTopologyTreeRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTopologyTreeResponse`
         """
-        return self._show_topology_tree_with_http_info(request)
+        http_info = self._show_topology_tree_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_topology_tree_with_http_info(self, request):
+    def show_topology_tree_invoker(self, request):
+        http_info = self._show_topology_tree_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_topology_tree_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/cmdb/topology-trees/get-topology-trees",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTopologyTreeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1207,9 +1405,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1218,20 +1416,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/cmdb/topology-trees/get-topology-trees',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTopologyTreeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_open_region(self, request):
         """查询开通的region
@@ -1244,9 +1438,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListOpenRegionRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListOpenRegionResponse`
         """
-        return self._list_open_region_with_http_info(request)
+        http_info = self._list_open_region_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_open_region_with_http_info(self, request):
+    def list_open_region_invoker(self, request):
+        http_info = self._list_open_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_open_region_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/region/get-opened-region",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpenRegionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1261,9 +1468,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1272,20 +1479,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/region/get-opened-region',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOpenRegionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_supported_region(self, request):
         """查询所有的支持的region
@@ -1298,9 +1501,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListSupportedRegionRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListSupportedRegionResponse`
         """
-        return self._list_supported_region_with_http_info(request)
+        http_info = self._list_supported_region_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_supported_region_with_http_info(self, request):
+    def list_supported_region_invoker(self, request):
+        http_info = self._list_supported_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_supported_region_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/region/get-all-supported-region",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSupportedRegionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1315,9 +1531,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1326,20 +1542,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/region/get-all-supported-region',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSupportedRegionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_business_topology(self, request):
         """查询应用全局拓扑图
@@ -1352,9 +1564,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchBusinessTopologyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchBusinessTopologyResponse`
         """
-        return self._search_business_topology_with_http_info(request)
+        http_info = self._search_business_topology_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_business_topology_with_http_info(self, request):
+    def search_business_topology_invoker(self, request):
+        http_info = self._search_business_topology_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_business_topology_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/topology/business-search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchBusinessTopologyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1371,11 +1596,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1384,20 +1609,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/topology/business-search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchBusinessTopologyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_env_topology(self, request):
         """查询组件环境拓扑图
@@ -1410,9 +1631,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchEnvTopologyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchEnvTopologyResponse`
         """
-        return self._search_env_topology_with_http_info(request)
+        http_info = self._search_env_topology_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_env_topology_with_http_info(self, request):
+    def search_env_topology_invoker(self, request):
+        http_info = self._search_env_topology_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_env_topology_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/topology/env-search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchEnvTopologyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1429,11 +1663,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1442,20 +1676,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/topology/env-search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchEnvTopologyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_business_env(self, request):
         """查询URL跟踪Region环境列表
@@ -1468,9 +1698,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListBusinessEnvRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListBusinessEnvResponse`
         """
-        return self._list_business_env_with_http_info(request)
+        http_info = self._list_business_env_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_business_env_with_http_info(self, request):
+    def list_business_env_invoker(self, request):
+        http_info = self._list_business_env_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_business_env_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/transaction/business-env",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBusinessEnvResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1487,11 +1730,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1500,20 +1743,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/transaction/business-env',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBusinessEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_transaction(self, request):
         """查询URL跟踪视图列表
@@ -1526,9 +1765,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchTransactionRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchTransactionResponse`
         """
-        return self._search_transaction_with_http_info(request)
+        http_info = self._search_transaction_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_transaction_with_http_info(self, request):
+    def search_transaction_invoker(self, request):
+        http_info = self._search_transaction_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_transaction_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/transaction/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchTransactionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1545,11 +1797,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1558,20 +1810,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/transaction/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchTransactionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_transaction_config(self, request):
         """查询URL跟踪配置列表
@@ -1584,9 +1832,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.SearchTransactionConfigRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.SearchTransactionConfigResponse`
         """
-        return self._search_transaction_config_with_http_info(request)
+        http_info = self._search_transaction_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_transaction_config_with_http_info(self, request):
+    def search_transaction_config_invoker(self, request):
+        http_info = self._search_transaction_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_transaction_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/transaction/transaction-config-search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchTransactionConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1603,11 +1864,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1616,20 +1877,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/transaction/transaction-config-search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchTransactionConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_transaction_detail(self, request):
         """查询URL跟踪视图详情
@@ -1642,9 +1899,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTransactionDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTransactionDetailResponse`
         """
-        return self._show_transaction_detail_with_http_info(request)
+        http_info = self._show_transaction_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_transaction_detail_with_http_info(self, request):
+    def show_transaction_detail_invoker(self, request):
+        http_info = self._show_transaction_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_transaction_detail_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/transaction/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTransactionDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1661,11 +1931,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1674,20 +1944,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/transaction/detail',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTransactionDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_env_instances(self, request):
         """获取实例信息列表
@@ -1700,9 +1966,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ListEnvInstancesRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ListEnvInstancesResponse`
         """
-        return self._list_env_instances_with_http_info(request)
+        http_info = self._list_env_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_env_instances_with_http_info(self, request):
+    def list_env_instances_invoker(self, request):
+        http_info = self._list_env_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_env_instances_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/view/mainview/get-env-instance-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1719,11 +1998,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1732,20 +2011,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/mainview/get-env-instance-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_clob_detail(self, request):
         """获取原始数据详情
@@ -1758,9 +2033,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowClobDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowClobDetailResponse`
         """
-        return self._show_clob_detail_with_http_info(request)
+        http_info = self._show_clob_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_clob_detail_with_http_info(self, request):
+    def show_clob_detail_invoker(self, request):
+        http_info = self._show_clob_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_clob_detail_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/view/metric/get-clob-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1777,11 +2065,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1790,20 +2078,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/metric/get-clob-detail',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_env_monitor_items(self, request):
         """获取监控项信息
@@ -1816,9 +2100,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowEnvMonitorItemsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowEnvMonitorItemsResponse`
         """
-        return self._show_env_monitor_items_with_http_info(request)
+        http_info = self._show_env_monitor_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_env_monitor_items_with_http_info(self, request):
+    def show_env_monitor_items_invoker(self, request):
+        http_info = self._show_env_monitor_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_env_monitor_items_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/view/mainview/get-env-monitor-item-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnvMonitorItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1837,9 +2134,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1848,20 +2145,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/mainview/get-env-monitor-item-list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnvMonitorItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_event_detail(self, request):
         """获取event的详情
@@ -1874,9 +2167,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowEventDetailRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowEventDetailResponse`
         """
-        return self._show_event_detail_with_http_info(request)
+        http_info = self._show_event_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_event_detail_with_http_info(self, request):
+    def show_event_detail_invoker(self, request):
+        http_info = self._show_event_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_event_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/view/trace/get-event-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEventDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1899,9 +2205,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1910,20 +2216,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/trace/get-event-detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEventDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_monitor_item_view_config(self, request):
         """查询监控项配置信息
@@ -1936,9 +2238,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowMonitorItemViewConfigRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowMonitorItemViewConfigResponse`
         """
-        return self._show_monitor_item_view_config_with_http_info(request)
+        http_info = self._show_monitor_item_view_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_monitor_item_view_config_with_http_info(self, request):
+    def show_monitor_item_view_config_invoker(self, request):
+        http_info = self._show_monitor_item_view_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_monitor_item_view_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/view/config/get-monitor-item-view-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMonitorItemViewConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1959,9 +2274,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1970,20 +2285,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/config/get-monitor-item-view-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMonitorItemViewConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_raw_table(self, request):
         """获取原始数据表格
@@ -1996,9 +2307,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowRawTableRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowRawTableResponse`
         """
-        return self._show_raw_table_with_http_info(request)
+        http_info = self._show_raw_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_raw_table_with_http_info(self, request):
+    def show_raw_table_invoker(self, request):
+        http_info = self._show_raw_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_raw_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/view/metric/raw-table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRawTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2015,11 +2339,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2028,20 +2352,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/metric/raw-table',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRawTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_span_search(self, request):
         """查询span数据
@@ -2054,9 +2374,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowSpanSearchRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowSpanSearchResponse`
         """
-        return self._show_span_search_with_http_info(request)
+        http_info = self._show_span_search_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_span_search_with_http_info(self, request):
+    def show_span_search_invoker(self, request):
+        http_info = self._show_span_search_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_span_search_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/view/trace/span-search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSpanSearchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2073,11 +2406,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2086,20 +2419,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/trace/span-search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSpanSearchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sum_table(self, request):
         """获取汇总表格数据
@@ -2112,9 +2441,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowSumTableRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowSumTableResponse`
         """
-        return self._show_sum_table_with_http_info(request)
+        http_info = self._show_sum_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sum_table_with_http_info(self, request):
+    def show_sum_table_invoker(self, request):
+        http_info = self._show_sum_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sum_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/view/metric/sum-table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSumTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2131,11 +2473,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2144,20 +2486,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/metric/sum-table',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSumTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_topology(self, request):
         """调用链拓扑图
@@ -2170,9 +2508,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTopologyRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTopologyResponse`
         """
-        return self._show_topology_with_http_info(request)
+        http_info = self._show_topology_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_topology_with_http_info(self, request):
+    def show_topology_invoker(self, request):
+        http_info = self._show_topology_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_topology_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/view/trace/topology",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTopologyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2189,9 +2540,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2200,20 +2551,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/trace/topology',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTopologyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_trace_events(self, request):
         """获取一个trace的所有调用链数据
@@ -2226,9 +2573,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTraceEventsRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTraceEventsResponse`
         """
-        return self._show_trace_events_with_http_info(request)
+        http_info = self._show_trace_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_trace_events_with_http_info(self, request):
+    def show_trace_events_invoker(self, request):
+        http_info = self._show_trace_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_trace_events_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/apm2/openapi/view/trace/get-trace-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTraceEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2245,9 +2605,9 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2256,20 +2616,16 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/trace/get-trace-events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTraceEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_trend(self, request):
         """获取趋势图
@@ -2282,9 +2638,22 @@ class ApmClient(Client):
         :type request: :class:`huaweicloudsdkapm.v1.ShowTrendRequest`
         :rtype: :class:`huaweicloudsdkapm.v1.ShowTrendResponse`
         """
-        return self._show_trend_with_http_info(request)
+        http_info = self._show_trend_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_trend_with_http_info(self, request):
+    def show_trend_invoker(self, request):
+        http_info = self._show_trend_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_trend_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/apm2/openapi/view/metric/trend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrendResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2301,11 +2670,11 @@ class ApmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2314,20 +2683,25 @@ class ApmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/apm2/openapi/view/metric/trend',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTrendResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

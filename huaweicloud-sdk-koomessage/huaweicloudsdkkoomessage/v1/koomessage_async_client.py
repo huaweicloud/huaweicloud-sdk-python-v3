@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkkoomessage'")
 
 
 class KooMessageAsyncClient(Client):
@@ -39,9 +44,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.AddCallBackRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AddCallBackResponse`
         """
-        return self._add_call_back_with_http_info(request)
+        http_info = self._add_call_back_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_call_back_with_http_info(self, request):
+    def add_call_back_async_invoker(self, request):
+        http_info = self._add_call_back_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_call_back_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/callbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddCallBackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/callbacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddCallBackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_callbacks_async(self, request):
         """查询用户已注册回执接口
@@ -96,9 +109,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimCallbacksRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimCallbacksResponse`
         """
-        return self._list_aim_callbacks_with_http_info(request)
+        http_info = self._list_aim_callbacks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_callbacks_with_http_info(self, request):
+    def list_aim_callbacks_async_invoker(self, request):
+        http_info = self._list_aim_callbacks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_callbacks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim/callbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimCallbacksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,9 +138,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +149,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/callbacks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimCallbacksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_mobile_capability_async(self, request):
         """查询手机号智能信息解析能力
@@ -151,9 +172,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CheckMobileCapabilityRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CheckMobileCapabilityResponse`
         """
-        return self._check_mobile_capability_with_http_info(request)
+        http_info = self._check_mobile_capability_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_mobile_capability_with_http_info(self, request):
+    def check_mobile_capability_async_invoker(self, request):
+        http_info = self._check_mobile_capability_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_mobile_capability_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/mobile-capabilities/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckMobileCapabilityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -168,11 +201,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -181,20 +214,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/mobile-capabilities/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckMobileCapabilityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resolve_task_async(self, request):
         """生成解析任务
@@ -208,9 +237,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateResolveTaskResponse`
         """
-        return self._create_resolve_task_with_http_info(request)
+        http_info = self._create_resolve_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resolve_task_with_http_info(self, request):
+    def create_resolve_task_async_invoker(self, request):
+        http_info = self._create_resolve_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resolve_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/resolve-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResolveTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -225,11 +266,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -238,20 +279,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/resolve-tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResolveTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_resolve_details_async(self, request):
         """查询解析明细
@@ -265,9 +302,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimResolveDetailsRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimResolveDetailsResponse`
         """
-        return self._list_aim_resolve_details_with_http_info(request)
+        http_info = self._list_aim_resolve_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_resolve_details_with_http_info(self, request):
+    def list_aim_resolve_details_async_invoker(self, request):
+        http_info = self._list_aim_resolve_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_resolve_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim/resolve-details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimResolveDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -306,9 +355,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -317,20 +366,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/resolve-details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimResolveDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resolve_tasks_async(self, request):
         """查询解析任务
@@ -348,9 +393,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListResolveTasksRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListResolveTasksResponse`
         """
-        return self._list_resolve_tasks_with_http_info(request)
+        http_info = self._list_resolve_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resolve_tasks_with_http_info(self, request):
+    def list_resolve_tasks_async_invoker(self, request):
+        http_info = self._list_resolve_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resolve_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim/resolve-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResolveTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -385,9 +442,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -396,20 +453,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/resolve-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResolveTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_aim_send_task_async(self, request):
         """发送智能信息
@@ -423,9 +476,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CreateAimSendTaskRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateAimSendTaskResponse`
         """
-        return self._create_aim_send_task_with_http_info(request)
+        http_info = self._create_aim_send_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_aim_send_task_with_http_info(self, request):
+    def create_aim_send_task_async_invoker(self, request):
+        http_info = self._create_aim_send_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_aim_send_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/send-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAimSendTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -440,11 +505,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -453,20 +518,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/send-tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAimSendTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_send_details_async(self, request):
         """查询智能信息发送明细
@@ -480,9 +541,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimSendDetailsRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimSendDetailsResponse`
         """
-        return self._list_aim_send_details_with_http_info(request)
+        http_info = self._list_aim_send_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_send_details_with_http_info(self, request):
+    def list_aim_send_details_async_invoker(self, request):
+        http_info = self._list_aim_send_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_send_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim/send-details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimSendDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -513,9 +586,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -524,20 +597,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/send-details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimSendDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_send_reports_async(self, request):
         """查询智能信息发送报表
@@ -551,9 +620,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimSendReportsRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimSendReportsResponse`
         """
-        return self._list_aim_send_reports_with_http_info(request)
+        http_info = self._list_aim_send_reports_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_send_reports_with_http_info(self, request):
+    def list_aim_send_reports_async_invoker(self, request):
+        http_info = self._list_aim_send_reports_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_send_reports_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/send-reports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimSendReportsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -568,11 +649,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -581,20 +662,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/send-reports',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimSendReportsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_send_tasks_async(self, request):
         """查询智能信息发送任务
@@ -609,9 +686,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimSendTasksRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimSendTasksResponse`
         """
-        return self._list_aim_send_tasks_with_http_info(request)
+        http_info = self._list_aim_send_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_send_tasks_with_http_info(self, request):
+    def list_aim_send_tasks_async_invoker(self, request):
+        http_info = self._list_aim_send_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_send_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim/send-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimSendTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -644,9 +733,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -655,20 +744,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/send-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimSendTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_aim_personal_template_async(self, request):
         """创建个人模板
@@ -684,9 +769,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CreateAimPersonalTemplateRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateAimPersonalTemplateResponse`
         """
-        return self._create_aim_personal_template_with_http_info(request)
+        http_info = self._create_aim_personal_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_aim_personal_template_with_http_info(self, request):
+    def create_aim_personal_template_async_invoker(self, request):
+        http_info = self._create_aim_personal_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_aim_personal_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAimPersonalTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,11 +798,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -714,20 +811,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAimPersonalTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_aim_personal_template_async(self, request):
         """删除模板实例
@@ -741,9 +834,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.DeleteAimPersonalTemplateRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.DeleteAimPersonalTemplateResponse`
         """
-        return self._delete_aim_personal_template_with_http_info(request)
+        http_info = self._delete_aim_personal_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_aim_personal_template_with_http_info(self, request):
+    def delete_aim_personal_template_async_invoker(self, request):
+        http_info = self._delete_aim_personal_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_aim_personal_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/aim/template/{tpl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAimPersonalTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -760,9 +865,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -771,20 +876,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/template/{tpl_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAimPersonalTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_material_async(self, request):
         """删除模板素材
@@ -798,9 +899,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.DeleteTemplateMaterialRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.DeleteTemplateMaterialResponse`
         """
-        return self._delete_template_material_with_http_info(request)
+        http_info = self._delete_template_material_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_material_with_http_info(self, request):
+    def delete_template_material_async_invoker(self, request):
+        http_info = self._delete_template_material_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_template_material_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/template-materials/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateMaterialResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -815,11 +928,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -828,20 +941,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/template-materials/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateMaterialResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_template_materials_async(self, request):
         """查询智能消息模板素材列表
@@ -855,9 +964,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimTemplateMaterialsRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimTemplateMaterialsResponse`
         """
-        return self._list_aim_template_materials_with_http_info(request)
+        http_info = self._list_aim_template_materials_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_template_materials_with_http_info(self, request):
+    def list_aim_template_materials_async_invoker(self, request):
+        http_info = self._list_aim_template_materials_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_template_materials_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim/template-materials",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimTemplateMaterialsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -884,9 +1005,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -895,20 +1016,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/template-materials',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimTemplateMaterialsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_template_reports_async(self, request):
         """查询模板报表
@@ -922,9 +1039,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimTemplateReportsRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimTemplateReportsResponse`
         """
-        return self._list_aim_template_reports_with_http_info(request)
+        http_info = self._list_aim_template_reports_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_template_reports_with_http_info(self, request):
+    def list_aim_template_reports_async_invoker(self, request):
+        http_info = self._list_aim_template_reports_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_template_reports_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/tempalte-reports/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimTemplateReportsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -939,11 +1068,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -952,20 +1081,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/tempalte-reports/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimTemplateReportsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_templates_async(self, request):
         """查询模板
@@ -980,9 +1105,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimTemplatesRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimTemplatesResponse`
         """
-        return self._list_aim_templates_with_http_info(request)
+        http_info = self._list_aim_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_templates_with_http_info(self, request):
+    def list_aim_templates_async_invoker(self, request):
+        http_info = self._list_aim_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1018,9 +1155,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1029,20 +1166,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_primary_video_thumbnail_async(self, request):
         """设置视频模板封面图
@@ -1056,9 +1189,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.SetPrimaryVideoThumbnailRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SetPrimaryVideoThumbnailResponse`
         """
-        return self._set_primary_video_thumbnail_with_http_info(request)
+        http_info = self._set_primary_video_thumbnail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_primary_video_thumbnail_with_http_info(self, request):
+    def set_primary_video_thumbnail_async_invoker(self, request):
+        http_info = self._set_primary_video_thumbnail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_primary_video_thumbnail_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/template-material-thumbnails",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetPrimaryVideoThumbnailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1073,11 +1218,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1086,20 +1231,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/template-material-thumbnails',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetPrimaryVideoThumbnailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_video_thumbnail_async(self, request):
         """查询视频模板封面图
@@ -1113,9 +1254,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ShowTemplateVideoThumbnailRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ShowTemplateVideoThumbnailResponse`
         """
-        return self._show_template_video_thumbnail_with_http_info(request)
+        http_info = self._show_template_video_thumbnail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_video_thumbnail_with_http_info(self, request):
+    def show_template_video_thumbnail_async_invoker(self, request):
+        http_info = self._show_template_video_thumbnail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_template_video_thumbnail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim/template-material-thumbnails",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateVideoThumbnailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1132,9 +1285,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1143,20 +1296,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/template-material-thumbnails',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateVideoThumbnailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_personal_template_state_async(self, request):
         """启用或禁用模板实例
@@ -1170,9 +1319,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UpdatePersonalTemplateStateRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdatePersonalTemplateStateResponse`
         """
-        return self._update_personal_template_state_with_http_info(request)
+        http_info = self._update_personal_template_state_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_personal_template_state_with_http_info(self, request):
+    def update_personal_template_state_async_invoker(self, request):
+        http_info = self._update_personal_template_state_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_personal_template_state_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/aim/template-state/{tpl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePersonalTemplateStateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1189,11 +1350,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1202,20 +1363,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/template-state/{tpl_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePersonalTemplateStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_aim_template_material_async(self, request):
         """上传智能信息模板素材
@@ -1232,9 +1389,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UploadAimTemplateMaterialRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadAimTemplateMaterialResponse`
         """
-        return self._upload_aim_template_material_with_http_info(request)
+        http_info = self._upload_aim_template_material_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_aim_template_material_with_http_info(self, request):
+    def upload_aim_template_material_async_invoker(self, request):
+        http_info = self._upload_aim_template_material_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_aim_template_material_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/template-materials",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadAimTemplateMaterialResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1249,11 +1418,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1262,20 +1431,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/template-materials',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadAimTemplateMaterialResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_menus_async(self, request):
         """查询智能信息服务号菜单
@@ -1289,9 +1454,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListMenusRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListMenusResponse`
         """
-        return self._list_menus_with_http_info(request)
+        http_info = self._list_menus_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_menus_with_http_info(self, request):
+    def list_menus_async_invoker(self, request):
+        http_info = self._list_menus_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_menus_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim-sa/menus",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMenusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1324,9 +1501,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1335,20 +1512,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/menus',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMenusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_menu_async(self, request):
         """修改智能信息服务号菜单
@@ -1363,9 +1536,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UpdateMenuRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateMenuResponse`
         """
-        return self._update_menu_with_http_info(request)
+        http_info = self._update_menu_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_menu_with_http_info(self, request):
+    def update_menu_async_invoker(self, request):
+        http_info = self._update_menu_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_menu_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/aim-sa/menus/{menu_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMenuResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1382,11 +1567,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1395,20 +1580,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/menus/{menu_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMenuResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_port_info_async(self, request):
         """删除通道号
@@ -1422,9 +1603,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.DeletePortInfoRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.DeletePortInfoResponse`
         """
-        return self._delete_port_info_with_http_info(request)
+        http_info = self._delete_port_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_port_info_with_http_info(self, request):
+    def delete_port_info_async_invoker(self, request):
+        http_info = self._delete_port_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_port_info_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/aim-sa/ports/{port_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePortInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1441,9 +1634,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1452,20 +1645,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/ports/{port_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePortInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_port_infos_async(self, request):
         """查询通道号列表
@@ -1479,9 +1668,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListPortInfosRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListPortInfosResponse`
         """
-        return self._list_port_infos_with_http_info(request)
+        http_info = self._list_port_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_port_infos_with_http_info(self, request):
+    def list_port_infos_async_invoker(self, request):
+        http_info = self._list_port_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_port_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim-sa/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1514,9 +1715,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1525,20 +1726,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/ports',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPortInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def lock_port_async(self, request):
         """通道号绑定服务号
@@ -1552,9 +1749,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.LockPortRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.LockPortResponse`
         """
-        return self._lock_port_with_http_info(request)
+        http_info = self._lock_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _lock_port_with_http_info(self, request):
+    def lock_port_async_invoker(self, request):
+        http_info = self._lock_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _lock_port_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/ports/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "LockPortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1569,11 +1778,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1582,20 +1791,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/ports/associate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='LockPortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_port_async(self, request):
         """注册通道号
@@ -1609,9 +1814,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.RegisterPortRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.RegisterPortResponse`
         """
-        return self._register_port_with_http_info(request)
+        http_info = self._register_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_port_with_http_info(self, request):
+    def register_port_async_invoker(self, request):
+        http_info = self._register_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_port_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterPortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1626,11 +1843,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1639,20 +1856,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/ports',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterPortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unlock_port_async(self, request):
         """通道号解绑服务号
@@ -1666,9 +1879,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UnlockPortRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UnlockPortResponse`
         """
-        return self._unlock_port_with_http_info(request)
+        http_info = self._unlock_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unlock_port_with_http_info(self, request):
+    def unlock_port_async_invoker(self, request):
+        http_info = self._unlock_port_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unlock_port_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/ports/disassociate",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnlockPortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1683,11 +1908,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1696,20 +1921,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/ports/disassociate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnlockPortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_portal_infos_async(self, request):
         """查询主页列表
@@ -1724,9 +1945,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListPortalInfosRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListPortalInfosResponse`
         """
-        return self._list_portal_infos_with_http_info(request)
+        http_info = self._list_portal_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_portal_infos_with_http_info(self, request):
+    def list_portal_infos_async_invoker(self, request):
+        http_info = self._list_portal_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_portal_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim-sa/portals",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortalInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1753,9 +1986,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1764,20 +1997,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/portals',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPortalInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_portal_info_async(self, request):
         """修改主页信息
@@ -1792,9 +2021,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UpdatePortalInfoRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdatePortalInfoResponse`
         """
-        return self._update_portal_info_with_http_info(request)
+        http_info = self._update_portal_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_portal_info_with_http_info(self, request):
+    def update_portal_info_async_invoker(self, request):
+        http_info = self._update_portal_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_portal_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/aim-sa/portals/{portal_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePortalInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1811,11 +2052,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1824,20 +2065,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/portals/{portal_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePortalInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def freeze_pub_async(self, request):
         """冻结服务号
@@ -1851,9 +2088,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.FreezePubRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.FreezePubResponse`
         """
-        return self._freeze_pub_with_http_info(request)
+        http_info = self._freeze_pub_http_info(request)
+        return self._call_api(**http_info)
 
-    def _freeze_pub_with_http_info(self, request):
+    def freeze_pub_async_invoker(self, request):
+        http_info = self._freeze_pub_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _freeze_pub_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/pubs/{pub_id}/freeze",
+            "request_type": request.__class__.__name__,
+            "response_type": "FreezePubResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1870,11 +2119,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1883,20 +2132,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/pubs/{pub_id}/freeze',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='FreezePubResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pub_infos_async(self, request):
         """查询服务号列表
@@ -1911,9 +2156,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListPubInfosRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListPubInfosResponse`
         """
-        return self._list_pub_infos_with_http_info(request)
+        http_info = self._list_pub_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pub_infos_with_http_info(self, request):
+    def list_pub_infos_async_invoker(self, request):
+        http_info = self._list_pub_infos_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_pub_infos_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim-sa/pubs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPubInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1944,9 +2201,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1955,20 +2212,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/pubs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPubInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unfreeze_pub_async(self, request):
         """解冻服务号
@@ -1982,9 +2235,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UnfreezePubRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UnfreezePubResponse`
         """
-        return self._unfreeze_pub_with_http_info(request)
+        http_info = self._unfreeze_pub_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unfreeze_pub_with_http_info(self, request):
+    def unfreeze_pub_async_invoker(self, request):
+        http_info = self._unfreeze_pub_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unfreeze_pub_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/pubs/{pub_id}/unfreeze",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnfreezePubResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2001,11 +2266,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2014,20 +2279,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/pubs/{pub_id}/unfreeze',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnfreezePubResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_pub_info_async(self, request):
         """更新服务号信息
@@ -2041,9 +2302,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UpdatePubInfoRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdatePubInfoResponse`
         """
-        return self._update_pub_info_with_http_info(request)
+        http_info = self._update_pub_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_pub_info_with_http_info(self, request):
+    def update_pub_info_async_invoker(self, request):
+        http_info = self._update_pub_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_pub_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/pubs/{pub_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePubInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2060,11 +2333,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2073,20 +2346,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/pubs/{pub_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePubInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_pub_info_async(self, request):
         """一站式服务号创建
@@ -2100,9 +2369,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CreatePubInfoRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreatePubInfoResponse`
         """
-        return self._create_pub_info_with_http_info(request)
+        http_info = self._create_pub_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_pub_info_with_http_info(self, request):
+    def create_pub_info_async_invoker(self, request):
+        http_info = self._create_pub_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_pub_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/unify/pubs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePubInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2117,11 +2398,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2130,20 +2411,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/unify/pubs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePubInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def push_menu_info_async(self, request):
         """催审菜单
@@ -2157,9 +2434,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.PushMenuInfoRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PushMenuInfoResponse`
         """
-        return self._push_menu_info_with_http_info(request)
+        http_info = self._push_menu_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _push_menu_info_with_http_info(self, request):
+    def push_menu_info_async_invoker(self, request):
+        http_info = self._push_menu_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _push_menu_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/menus/{menu_id}/push",
+            "request_type": request.__class__.__name__,
+            "response_type": "PushMenuInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2176,9 +2465,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2187,20 +2476,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/menus/{menu_id}/push',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PushMenuInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def push_portal_info_async(self, request):
         """催审主页
@@ -2214,9 +2499,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.PushPortalInfoRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.PushPortalInfoResponse`
         """
-        return self._push_portal_info_with_http_info(request)
+        http_info = self._push_portal_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _push_portal_info_with_http_info(self, request):
+    def push_portal_info_async_invoker(self, request):
+        http_info = self._push_portal_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _push_portal_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/portals/{portal_id}/push",
+            "request_type": request.__class__.__name__,
+            "response_type": "PushPortalInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2233,9 +2530,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2244,20 +2541,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/portals/{portal_id}/push',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PushPortalInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_media_async(self, request):
         """上传智能信息服务号图片资源
@@ -2271,9 +2564,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UploadMediaRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadMediaResponse`
         """
-        return self._upload_media_with_http_info(request)
+        http_info = self._upload_media_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_media_with_http_info(self, request):
+    def upload_media_async_invoker(self, request):
+        http_info = self._upload_media_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_media_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-sa/media/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadMediaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2292,11 +2597,11 @@ class KooMessageAsyncClient(Client):
         if 'file_type' in local_var_params:
             form_params['file_type'] = local_var_params['file_type']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2305,20 +2610,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim-sa/media/upload',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadMediaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_sms_app_async(self, request):
         """创建短信应用
@@ -2332,9 +2633,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CreateSmsAppRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateSmsAppResponse`
         """
-        return self._create_sms_app_with_http_info(request)
+        http_info = self._create_sms_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sms_app_with_http_info(self, request):
+    def create_sms_app_async_invoker(self, request):
+        http_info = self._create_sms_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sms_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sms/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSmsAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2349,11 +2662,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2362,20 +2675,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSmsAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_msg_app_async(self, request):
         """查询短信应用
@@ -2389,9 +2698,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgAppRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgAppResponse`
         """
-        return self._list_aim_msg_app_with_http_info(request)
+        http_info = self._list_aim_msg_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_msg_app_with_http_info(self, request):
+    def list_aim_msg_app_async_invoker(self, request):
+        http_info = self._list_aim_msg_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_msg_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimMsgAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2418,9 +2739,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2429,20 +2750,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimMsgAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_msg_app_detail_async(self, request):
         """获取短信应用详情
@@ -2456,9 +2773,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgAppDetailRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgAppDetailResponse`
         """
-        return self._list_aim_msg_app_detail_with_http_info(request)
+        http_info = self._list_aim_msg_app_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_msg_app_detail_with_http_info(self, request):
+    def list_aim_msg_app_detail_async_invoker(self, request):
+        http_info = self._list_aim_msg_app_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_msg_app_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimMsgAppDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2475,9 +2804,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2486,20 +2815,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimMsgAppDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_aim_msg_app_async(self, request):
         """修改短信应用
@@ -2513,9 +2838,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgAppRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgAppResponse`
         """
-        return self._update_aim_msg_app_with_http_info(request)
+        http_info = self._update_aim_msg_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_aim_msg_app_with_http_info(self, request):
+    def update_aim_msg_app_async_invoker(self, request):
+        http_info = self._update_aim_msg_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_aim_msg_app_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/sms/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAimMsgAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2532,11 +2869,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2545,20 +2882,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/apps/{app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAimMsgAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_aim_batch_different_messages_async(self, request):
         """发送分批短信
@@ -2582,9 +2915,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.SendAimBatchDifferentMessagesRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SendAimBatchDifferentMessagesResponse`
         """
-        return self._send_aim_batch_different_messages_with_http_info(request)
+        http_info = self._send_aim_batch_different_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_aim_batch_different_messages_with_http_info(self, request):
+    def send_aim_batch_different_messages_async_invoker(self, request):
+        http_info = self._send_aim_batch_different_messages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_aim_batch_different_messages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/sms/diff-messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendAimBatchDifferentMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2599,11 +2944,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2612,20 +2957,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/sms/diff-messages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendAimBatchDifferentMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_aim_batch_messages_async(self, request):
         """发送短信
@@ -2649,9 +2990,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.SendAimBatchMessagesRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.SendAimBatchMessagesResponse`
         """
-        return self._send_aim_batch_messages_with_http_info(request)
+        http_info = self._send_aim_batch_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_aim_batch_messages_with_http_info(self, request):
+    def send_aim_batch_messages_async_invoker(self, request):
+        http_info = self._send_aim_batch_messages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_aim_batch_messages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim/sms/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendAimBatchMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2666,11 +3019,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2679,20 +3032,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/sms/messages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendAimBatchMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_aim_msg_signature_async(self, request):
         """创建短信签名
@@ -2706,9 +3055,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.AddAimMsgSignatureRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AddAimMsgSignatureResponse`
         """
-        return self._add_aim_msg_signature_with_http_info(request)
+        http_info = self._add_aim_msg_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_aim_msg_signature_with_http_info(self, request):
+    def add_aim_msg_signature_async_invoker(self, request):
+        http_info = self._add_aim_msg_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_aim_msg_signature_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sms/signatures",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAimMsgSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2723,11 +3084,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2736,20 +3097,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/signatures',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddAimMsgSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_aim_msg_signature_async(self, request):
         """删除短信签名
@@ -2763,9 +3120,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.DeleteAimMsgSignatureRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.DeleteAimMsgSignatureResponse`
         """
-        return self._delete_aim_msg_signature_with_http_info(request)
+        http_info = self._delete_aim_msg_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_aim_msg_signature_with_http_info(self, request):
+    def delete_aim_msg_signature_async_invoker(self, request):
+        http_info = self._delete_aim_msg_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_aim_msg_signature_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/aim/sms/signatures/{signature_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAimMsgSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2782,9 +3151,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2793,20 +3162,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim/sms/signatures/{signature_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAimMsgSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_msg_signature_async(self, request):
         """查询短信签名
@@ -2820,9 +3185,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgSignatureRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgSignatureResponse`
         """
-        return self._list_aim_msg_signature_with_http_info(request)
+        http_info = self._list_aim_msg_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_msg_signature_with_http_info(self, request):
+    def list_aim_msg_signature_async_invoker(self, request):
+        http_info = self._list_aim_msg_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_msg_signature_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms/signatures",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimMsgSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2855,9 +3232,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2866,20 +3243,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/signatures',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimMsgSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_msg_signature_detail_async(self, request):
         """获取短信签名详情
@@ -2893,9 +3266,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgSignatureDetailRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgSignatureDetailResponse`
         """
-        return self._list_aim_msg_signature_detail_with_http_info(request)
+        http_info = self._list_aim_msg_signature_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_msg_signature_detail_with_http_info(self, request):
+    def list_aim_msg_signature_detail_async_invoker(self, request):
+        http_info = self._list_aim_msg_signature_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_msg_signature_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms/signatures/{signature_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimMsgSignatureDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2912,9 +3297,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2923,20 +3308,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/signatures/{signature_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimMsgSignatureDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aim_msg_signature_file_info_async(self, request):
         """查询申请文件
@@ -2950,9 +3331,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgSignatureFileInfoRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgSignatureFileInfoResponse`
         """
-        return self._show_aim_msg_signature_file_info_with_http_info(request)
+        http_info = self._show_aim_msg_signature_file_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aim_msg_signature_file_info_with_http_info(self, request):
+    def show_aim_msg_signature_file_info_async_invoker(self, request):
+        http_info = self._show_aim_msg_signature_file_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_aim_msg_signature_file_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms/signatures/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAimMsgSignatureFileInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2973,9 +3366,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2984,20 +3377,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/signatures/files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAimMsgSignatureFileInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_aim_msg_signature_async(self, request):
         """修改短信签名
@@ -3011,9 +3400,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgSignatureRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgSignatureResponse`
         """
-        return self._update_aim_msg_signature_with_http_info(request)
+        http_info = self._update_aim_msg_signature_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_aim_msg_signature_with_http_info(self, request):
+    def update_aim_msg_signature_async_invoker(self, request):
+        http_info = self._update_aim_msg_signature_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_aim_msg_signature_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/sms/signatures/{signature_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAimMsgSignatureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3030,11 +3431,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3043,20 +3444,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/signatures/{signature_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAimMsgSignatureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_aim_msg_signature_file_async(self, request):
         """上传申请文件
@@ -3070,9 +3467,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UploadAimMsgSignatureFileRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UploadAimMsgSignatureFileResponse`
         """
-        return self._upload_aim_msg_signature_file_with_http_info(request)
+        http_info = self._upload_aim_msg_signature_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_aim_msg_signature_file_with_http_info(self, request):
+    def upload_aim_msg_signature_file_async_invoker(self, request):
+        http_info = self._upload_aim_msg_signature_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_aim_msg_signature_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sms/signatures/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadAimMsgSignatureFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3091,11 +3500,11 @@ class KooMessageAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3104,20 +3513,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/signatures/files',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadAimMsgSignatureFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_aim_msg_template_async(self, request):
         """创建短信模板
@@ -3131,9 +3536,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CreateAimMsgTemplateRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateAimMsgTemplateResponse`
         """
-        return self._create_aim_msg_template_with_http_info(request)
+        http_info = self._create_aim_msg_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_aim_msg_template_with_http_info(self, request):
+    def create_aim_msg_template_async_invoker(self, request):
+        http_info = self._create_aim_msg_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_aim_msg_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sms/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAimMsgTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3148,11 +3565,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3161,20 +3578,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAimMsgTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_aim_msg_template_async(self, request):
         """删除短信模板
@@ -3188,9 +3601,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.DeleteAimMsgTemplateRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.DeleteAimMsgTemplateResponse`
         """
-        return self._delete_aim_msg_template_with_http_info(request)
+        http_info = self._delete_aim_msg_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_aim_msg_template_with_http_info(self, request):
+    def delete_aim_msg_template_async_invoker(self, request):
+        http_info = self._delete_aim_msg_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_aim_msg_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/sms/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAimMsgTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3207,9 +3632,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3218,20 +3643,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/templates/{template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAimMsgTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aim_msg_template_async(self, request):
         """查询短信模板
@@ -3245,9 +3666,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgTemplateRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListAimMsgTemplateResponse`
         """
-        return self._list_aim_msg_template_with_http_info(request)
+        http_info = self._list_aim_msg_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aim_msg_template_with_http_info(self, request):
+    def list_aim_msg_template_async_invoker(self, request):
+        http_info = self._list_aim_msg_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_aim_msg_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAimMsgTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3280,9 +3713,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3291,20 +3724,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAimMsgTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aim_msg_template_detail_async(self, request):
         """获取短信模板详情
@@ -3318,9 +3747,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgTemplateDetailResponse`
         """
-        return self._show_aim_msg_template_detail_with_http_info(request)
+        http_info = self._show_aim_msg_template_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aim_msg_template_detail_with_http_info(self, request):
+    def show_aim_msg_template_detail_async_invoker(self, request):
+        http_info = self._show_aim_msg_template_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_aim_msg_template_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAimMsgTemplateDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3337,9 +3778,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3348,20 +3789,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/templates/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAimMsgTemplateDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aim_msg_template_variable_async(self, request):
         """查询短信模板变量
@@ -3375,9 +3812,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgTemplateVariableRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ShowAimMsgTemplateVariableResponse`
         """
-        return self._show_aim_msg_template_variable_with_http_info(request)
+        http_info = self._show_aim_msg_template_variable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aim_msg_template_variable_with_http_info(self, request):
+    def show_aim_msg_template_variable_async_invoker(self, request):
+        http_info = self._show_aim_msg_template_variable_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_aim_msg_template_variable_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/sms/templates/{template_id}/variable",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAimMsgTemplateVariableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3394,9 +3843,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3405,20 +3854,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/templates/{template_id}/variable',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAimMsgTemplateVariableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_aim_msg_template_async(self, request):
         """修改短信模板
@@ -3432,9 +3877,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgTemplateRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.UpdateAimMsgTemplateResponse`
         """
-        return self._update_aim_msg_template_with_http_info(request)
+        http_info = self._update_aim_msg_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_aim_msg_template_with_http_info(self, request):
+    def update_aim_msg_template_async_invoker(self, request):
+        http_info = self._update_aim_msg_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_aim_msg_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/sms/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAimMsgTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3451,11 +3908,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3464,20 +3921,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sms/templates/{template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAimMsgTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_vms_call_back_async(self, request):
         """注册智能信息基础版回执URL
@@ -3491,9 +3944,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.AddVmsCallBackRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.AddVmsCallBackResponse`
         """
-        return self._add_vms_call_back_with_http_info(request)
+        http_info = self._add_vms_call_back_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_vms_call_back_with_http_info(self, request):
+    def add_vms_call_back_async_invoker(self, request):
+        http_info = self._add_vms_call_back_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_vms_call_back_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-basic/callbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddVmsCallBackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3508,11 +3973,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3521,20 +3986,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-basic/callbacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddVmsCallBackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vms_send_task_async(self, request):
         """发送智能信息基础版任务
@@ -3548,9 +4009,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CreateVmsSendTaskRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateVmsSendTaskResponse`
         """
-        return self._create_vms_send_task_with_http_info(request)
+        http_info = self._create_vms_send_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vms_send_task_with_http_info(self, request):
+    def create_vms_send_task_async_invoker(self, request):
+        http_info = self._create_vms_send_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vms_send_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-basic/send-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVmsSendTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3565,11 +4038,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3578,20 +4051,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-basic/send-tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVmsSendTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vms_callbacks_async(self, request):
         """查询用户已注册智能信息基础版回执接口
@@ -3605,9 +4074,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListVmsCallbacksRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListVmsCallbacksResponse`
         """
-        return self._list_vms_callbacks_with_http_info(request)
+        http_info = self._list_vms_callbacks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vms_callbacks_with_http_info(self, request):
+    def list_vms_callbacks_async_invoker(self, request):
+        http_info = self._list_vms_callbacks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vms_callbacks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim-basic/callbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVmsCallbacksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3622,9 +4103,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3633,20 +4114,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-basic/callbacks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVmsCallbacksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vms_send_tasks_async(self, request):
         """查询智能信息基础版发送任务
@@ -3660,9 +4137,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListVmsSendTasksRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListVmsSendTasksResponse`
         """
-        return self._list_vms_send_tasks_with_http_info(request)
+        http_info = self._list_vms_send_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vms_send_tasks_with_http_info(self, request):
+    def list_vms_send_tasks_async_invoker(self, request):
+        http_info = self._list_vms_send_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vms_send_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim-basic/send-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVmsSendTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3701,9 +4190,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3712,20 +4201,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/aim-basic/send-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVmsSendTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vms_template_async(self, request):
         """新建智能信息基础版模板
@@ -3739,9 +4224,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.CreateVmsTemplateRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.CreateVmsTemplateResponse`
         """
-        return self._create_vms_template_with_http_info(request)
+        http_info = self._create_vms_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vms_template_with_http_info(self, request):
+    def create_vms_template_async_invoker(self, request):
+        http_info = self._create_vms_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vms_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/aim-basic/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVmsTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3756,11 +4253,11 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3769,20 +4266,16 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim-basic/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVmsTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vms_template_status_async(self, request):
         """查询智能信息基础版模板状态
@@ -3797,9 +4290,21 @@ class KooMessageAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkoomessage.v1.ListVmsTemplateStatusRequest`
         :rtype: :class:`huaweicloudsdkkoomessage.v1.ListVmsTemplateStatusResponse`
         """
-        return self._list_vms_template_status_with_http_info(request)
+        http_info = self._list_vms_template_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vms_template_status_with_http_info(self, request):
+    def list_vms_template_status_async_invoker(self, request):
+        http_info = self._list_vms_template_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vms_template_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/aim-basic/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVmsTemplateStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3830,9 +4335,9 @@ class KooMessageAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3841,20 +4346,26 @@ class KooMessageAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/aim-basic/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVmsTemplateStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3893,4 +4404,4 @@ class KooMessageAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

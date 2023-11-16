@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkvpn'")
 
 
 class VpnClient(Client):
@@ -38,9 +43,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.CreateCgwRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateCgwResponse`
         """
-        return self._create_cgw_with_http_info(request)
+        http_info = self._create_cgw_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cgw_with_http_info(self, request):
+    def create_cgw_invoker(self, request):
+        http_info = self._create_cgw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cgw_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/customer-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCgwResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -68,20 +86,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/customer-gateways',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCgwResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cgw(self, request):
         """删除对端网关
@@ -94,9 +108,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.DeleteCgwRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.DeleteCgwResponse`
         """
-        return self._delete_cgw_with_http_info(request)
+        http_info = self._delete_cgw_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cgw_with_http_info(self, request):
+    def delete_cgw_invoker(self, request):
+        http_info = self._delete_cgw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cgw_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/customer-gateways/{customer_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCgwResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,9 +140,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/customer-gateways/{customer_gateway_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCgwResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cgws(self, request):
         """查询对端网关列表
@@ -150,9 +173,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ListCgwsRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ListCgwsResponse`
         """
-        return self._list_cgws_with_http_info(request)
+        http_info = self._list_cgws_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cgws_with_http_info(self, request):
+    def list_cgws_invoker(self, request):
+        http_info = self._list_cgws_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cgws_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/customer-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCgwsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,9 +209,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -184,20 +220,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/customer-gateways',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCgwsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cgw(self, request):
         """查询对端网关
@@ -210,9 +242,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ShowCgwRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowCgwResponse`
         """
-        return self._show_cgw_with_http_info(request)
+        http_info = self._show_cgw_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cgw_with_http_info(self, request):
+    def show_cgw_invoker(self, request):
+        http_info = self._show_cgw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cgw_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/customer-gateways/{customer_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCgwResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -229,9 +274,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +285,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/customer-gateways/{customer_gateway_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCgwResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cgw(self, request):
         """更新对端网关
@@ -266,9 +307,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.UpdateCgwRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateCgwResponse`
         """
-        return self._update_cgw_with_http_info(request)
+        http_info = self._update_cgw_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cgw_with_http_info(self, request):
+    def update_cgw_invoker(self, request):
+        http_info = self._update_cgw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cgw_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/customer-gateways/{customer_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCgwResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -285,11 +339,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -298,20 +352,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/customer-gateways/{customer_gateway_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCgwResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpn_connection(self, request):
         """创建VPN连接
@@ -324,9 +374,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.CreateVpnConnectionRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVpnConnectionResponse`
         """
-        return self._create_vpn_connection_with_http_info(request)
+        http_info = self._create_vpn_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpn_connection_with_http_info(self, request):
+    def create_vpn_connection_invoker(self, request):
+        http_info = self._create_vpn_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vpn_connection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/vpn-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpnConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +404,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -354,20 +417,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-connection',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpnConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpn_connection(self, request):
         """删除VPN连接
@@ -380,9 +439,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.DeleteVpnConnectionRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.DeleteVpnConnectionResponse`
         """
-        return self._delete_vpn_connection_with_http_info(request)
+        http_info = self._delete_vpn_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpn_connection_with_http_info(self, request):
+    def delete_vpn_connection_invoker(self, request):
+        http_info = self._delete_vpn_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vpn_connection_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/vpn-connection/{vpn_connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpnConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -399,9 +471,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -410,20 +482,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-connection/{vpn_connection_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpnConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpn_connections(self, request):
         """查询VPN连接列表
@@ -436,9 +504,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ListVpnConnectionsRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ListVpnConnectionsResponse`
         """
-        return self._list_vpn_connections_with_http_info(request)
+        http_info = self._list_vpn_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpn_connections_with_http_info(self, request):
+    def list_vpn_connections_invoker(self, request):
+        http_info = self._list_vpn_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpn_connections_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-connection",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpnConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -468,9 +549,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -479,20 +560,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-connection',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpnConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpn_connection(self, request):
         """查询VPN连接
@@ -505,9 +582,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ShowVpnConnectionRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowVpnConnectionResponse`
         """
-        return self._show_vpn_connection_with_http_info(request)
+        http_info = self._show_vpn_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpn_connection_with_http_info(self, request):
+    def show_vpn_connection_invoker(self, request):
+        http_info = self._show_vpn_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vpn_connection_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-connection/{vpn_connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpnConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -524,9 +614,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -535,20 +625,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-connection/{vpn_connection_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpnConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpn_connection(self, request):
         """更新VPN连接
@@ -561,9 +647,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.UpdateVpnConnectionRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVpnConnectionResponse`
         """
-        return self._update_vpn_connection_with_http_info(request)
+        http_info = self._update_vpn_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpn_connection_with_http_info(self, request):
+    def update_vpn_connection_invoker(self, request):
+        http_info = self._update_vpn_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vpn_connection_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/vpn-connection/{vpn_connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpnConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -580,11 +679,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -593,20 +692,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-connection/{vpn_connection_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpnConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vgw(self, request):
         """创建VPN网关
@@ -619,9 +714,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.CreateVgwRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVgwResponse`
         """
-        return self._create_vgw_with_http_info(request)
+        http_info = self._create_vgw_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vgw_with_http_info(self, request):
+    def create_vgw_invoker(self, request):
+        http_info = self._create_vgw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vgw_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/vpn-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVgwResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -636,11 +744,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -649,20 +757,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVgwResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vgw(self, request):
         """删除VPN网关
@@ -675,9 +779,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.DeleteVgwRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.DeleteVgwResponse`
         """
-        return self._delete_vgw_with_http_info(request)
+        http_info = self._delete_vgw_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vgw_with_http_info(self, request):
+    def delete_vgw_invoker(self, request):
+        http_info = self._delete_vgw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vgw_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/vpn-gateways/{vgw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVgwResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -694,9 +811,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -705,20 +822,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways/{vgw_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVgwResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_availability_zones(self, request):
         """查询VPN网关可用区
@@ -731,9 +844,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ListAvailabilityZonesResponse`
         """
-        return self._list_availability_zones_with_http_info(request)
+        http_info = self._list_availability_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_availability_zones_with_http_info(self, request):
+    def list_availability_zones_invoker(self, request):
+        http_info = self._list_availability_zones_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_availability_zones_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-gateways/availability-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailabilityZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -748,9 +874,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -759,20 +885,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways/availability-zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailabilityZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vgws(self, request):
         """查询VPN网关列表
@@ -785,9 +907,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ListVgwsRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ListVgwsResponse`
         """
-        return self._list_vgws_with_http_info(request)
+        http_info = self._list_vgws_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vgws_with_http_info(self, request):
+    def list_vgws_invoker(self, request):
+        http_info = self._list_vgws_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vgws_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVgwsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -807,9 +942,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -818,20 +953,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVgwsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vgw(self, request):
         """查询VPN网关
@@ -844,9 +975,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ShowVgwRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowVgwResponse`
         """
-        return self._show_vgw_with_http_info(request)
+        http_info = self._show_vgw_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vgw_with_http_info(self, request):
+    def show_vgw_invoker(self, request):
+        http_info = self._show_vgw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vgw_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-gateways/{vgw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVgwResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -863,9 +1007,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -874,20 +1018,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways/{vgw_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVgwResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vgw(self, request):
         """更新VPN网关
@@ -900,9 +1040,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.UpdateVgwRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVgwResponse`
         """
-        return self._update_vgw_with_http_info(request)
+        http_info = self._update_vgw_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vgw_with_http_info(self, request):
+    def update_vgw_invoker(self, request):
+        http_info = self._update_vgw_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vgw_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/vpn-gateways/{vgw_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVgwResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -919,11 +1072,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -932,20 +1085,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways/{vgw_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVgwResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vgw_certificate(self, request):
         """导入VPN网关证书
@@ -958,9 +1107,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.CreateVgwCertificateRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateVgwCertificateResponse`
         """
-        return self._create_vgw_certificate_with_http_info(request)
+        http_info = self._create_vgw_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vgw_certificate_with_http_info(self, request):
+    def create_vgw_certificate_invoker(self, request):
+        http_info = self._create_vgw_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vgw_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/vpn-gateways/{vgw_id}/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVgwCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -977,11 +1139,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -990,20 +1152,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways/{vgw_id}/certificate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVgwCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpn_gateway_certificate(self, request):
         """查询VPN网关证书
@@ -1016,9 +1174,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ShowVpnGatewayCertificateRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowVpnGatewayCertificateResponse`
         """
-        return self._show_vpn_gateway_certificate_with_http_info(request)
+        http_info = self._show_vpn_gateway_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpn_gateway_certificate_with_http_info(self, request):
+    def show_vpn_gateway_certificate_invoker(self, request):
+        http_info = self._show_vpn_gateway_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vpn_gateway_certificate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn-gateways/{vgw_id}/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpnGatewayCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1035,9 +1206,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1046,20 +1217,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways/{vgw_id}/certificate',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpnGatewayCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vgw_certificate(self, request):
         """更新VPN网关证书
@@ -1072,9 +1239,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.UpdateVgwCertificateRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.UpdateVgwCertificateResponse`
         """
-        return self._update_vgw_certificate_with_http_info(request)
+        http_info = self._update_vgw_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vgw_certificate_with_http_info(self, request):
+    def update_vgw_certificate_invoker(self, request):
+        http_info = self._update_vgw_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vgw_certificate_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v5/{project_id}/vpn-gateways/{vgw_id}/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVgwCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1093,11 +1273,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -1106,20 +1286,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn-gateways/{vgw_id}/certificate/{certificate_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVgwCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas_info(self, request):
         """查询指定租户配额
@@ -1132,9 +1308,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ShowQuotasInfoRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowQuotasInfoResponse`
         """
-        return self._show_quotas_info_with_http_info(request)
+        http_info = self._show_quotas_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_info_with_http_info(self, request):
+    def show_quotas_info_invoker(self, request):
+        http_info = self._show_quotas_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quotas_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/vpn/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1149,9 +1338,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1160,20 +1349,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/vpn/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_connection_monitor(self, request):
         """创建VPN连接监控
@@ -1186,9 +1371,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.CreateConnectionMonitorResponse`
         """
-        return self._create_connection_monitor_with_http_info(request)
+        http_info = self._create_connection_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_connection_monitor_with_http_info(self, request):
+    def create_connection_monitor_invoker(self, request):
+        http_info = self._create_connection_monitor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_connection_monitor_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v5/{project_id}/connection-monitors",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConnectionMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1203,11 +1401,11 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["header-response-token", ]
 
@@ -1216,20 +1414,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/connection-monitors',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConnectionMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_connection_monitor(self, request):
         """删除VPN连接监控
@@ -1242,9 +1436,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.DeleteConnectionMonitorRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.DeleteConnectionMonitorResponse`
         """
-        return self._delete_connection_monitor_with_http_info(request)
+        http_info = self._delete_connection_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_connection_monitor_with_http_info(self, request):
+    def delete_connection_monitor_invoker(self, request):
+        http_info = self._delete_connection_monitor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_connection_monitor_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v5/{project_id}/connection-monitors/{connection_monitor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConnectionMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1261,9 +1468,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1272,20 +1479,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/connection-monitors/{connection_monitor_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConnectionMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_connection_monitors(self, request):
         """查询VPN连接监控列表
@@ -1298,9 +1501,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ListConnectionMonitorsRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ListConnectionMonitorsResponse`
         """
-        return self._list_connection_monitors_with_http_info(request)
+        http_info = self._list_connection_monitors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_connection_monitors_with_http_info(self, request):
+    def list_connection_monitors_invoker(self, request):
+        http_info = self._list_connection_monitors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_connection_monitors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/connection-monitors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConnectionMonitorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1320,9 +1536,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1331,20 +1547,16 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/connection-monitors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConnectionMonitorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_connection_monitor(self, request):
         """查询VPN连接监控
@@ -1357,9 +1569,22 @@ class VpnClient(Client):
         :type request: :class:`huaweicloudsdkvpn.v5.ShowConnectionMonitorRequest`
         :rtype: :class:`huaweicloudsdkvpn.v5.ShowConnectionMonitorResponse`
         """
-        return self._show_connection_monitor_with_http_info(request)
+        http_info = self._show_connection_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_connection_monitor_with_http_info(self, request):
+    def show_connection_monitor_invoker(self, request):
+        http_info = self._show_connection_monitor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_connection_monitor_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v5/{project_id}/connection-monitors/{connection_monitor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConnectionMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1376,9 +1601,9 @@ class VpnClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1387,20 +1612,25 @@ class VpnClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v5/{project_id}/connection-monitors/{connection_monitor_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConnectionMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

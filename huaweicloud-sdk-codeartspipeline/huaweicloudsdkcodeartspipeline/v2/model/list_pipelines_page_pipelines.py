@@ -20,6 +20,7 @@ class ListPipelinesPagePipelines:
         'pipeline_id': 'str',
         'name': 'str',
         'project_id': 'str',
+        'project_name': 'str',
         'component_id': 'str',
         'is_publish': 'bool',
         'is_collect': 'bool',
@@ -33,6 +34,7 @@ class ListPipelinesPagePipelines:
         'pipeline_id': 'pipeline_id',
         'name': 'name',
         'project_id': 'project_id',
+        'project_name': 'project_name',
         'component_id': 'component_id',
         'is_publish': 'is_publish',
         'is_collect': 'is_collect',
@@ -42,7 +44,7 @@ class ListPipelinesPagePipelines:
         'convert_sign': 'convert_sign'
     }
 
-    def __init__(self, pipeline_id=None, name=None, project_id=None, component_id=None, is_publish=None, is_collect=None, manifest_version=None, create_time=None, latest_run=None, convert_sign=None):
+    def __init__(self, pipeline_id=None, name=None, project_id=None, project_name=None, component_id=None, is_publish=None, is_collect=None, manifest_version=None, create_time=None, latest_run=None, convert_sign=None):
         """ListPipelinesPagePipelines
 
         The model defined in huaweicloud sdk
@@ -53,6 +55,8 @@ class ListPipelinesPagePipelines:
         :type name: str
         :param project_id: 项目ID
         :type project_id: str
+        :param project_name: 项目名称
+        :type project_name: str
         :param component_id: 组件ID
         :type component_id: str
         :param is_publish: 是否为变更流水线
@@ -74,6 +78,7 @@ class ListPipelinesPagePipelines:
         self._pipeline_id = None
         self._name = None
         self._project_id = None
+        self._project_name = None
         self._component_id = None
         self._is_publish = None
         self._is_collect = None
@@ -89,6 +94,8 @@ class ListPipelinesPagePipelines:
             self.name = name
         if project_id is not None:
             self.project_id = project_id
+        if project_name is not None:
+            self.project_name = project_name
         if component_id is not None:
             self.component_id = component_id
         if is_publish is not None:
@@ -169,6 +176,28 @@ class ListPipelinesPagePipelines:
         :type project_id: str
         """
         self._project_id = project_id
+
+    @property
+    def project_name(self):
+        """Gets the project_name of this ListPipelinesPagePipelines.
+
+        项目名称
+
+        :return: The project_name of this ListPipelinesPagePipelines.
+        :rtype: str
+        """
+        return self._project_name
+
+    @project_name.setter
+    def project_name(self, project_name):
+        """Sets the project_name of this ListPipelinesPagePipelines.
+
+        项目名称
+
+        :param project_name: The project_name of this ListPipelinesPagePipelines.
+        :type project_name: str
+        """
+        self._project_name = project_name
 
     @property
     def component_id(self):

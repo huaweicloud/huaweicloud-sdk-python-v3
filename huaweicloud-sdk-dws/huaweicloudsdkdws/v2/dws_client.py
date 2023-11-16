@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdws'")
 
 
 class DwsClient(Client):
@@ -38,9 +43,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.AddSnapshotCrossRegionPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.AddSnapshotCrossRegionPolicyResponse`
         """
-        return self._add_snapshot_cross_region_policy_with_http_info(request)
+        http_info = self._add_snapshot_cross_region_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_snapshot_cross_region_policy_with_http_info(self, request):
+    def add_snapshot_cross_region_policy_invoker(self, request):
+        http_info = self._add_snapshot_cross_region_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_snapshot_cross_region_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/snapshots/cross-region-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddSnapshotCrossRegionPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/snapshots/cross-region-policies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddSnapshotCrossRegionPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_workload_queue(self, request):
         """添加工作负载队列
@@ -94,9 +108,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.AddWorkloadQueueRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.AddWorkloadQueueResponse`
         """
-        return self._add_workload_queue_with_http_info(request)
+        http_info = self._add_workload_queue_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_workload_queue_with_http_info(self, request):
+    def add_workload_queue_invoker(self, request):
+        http_info = self._add_workload_queue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_workload_queue_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddWorkloadQueueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +140,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +153,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload/queues',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddWorkloadQueueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_eip(self, request):
         """集群绑定EIP
@@ -152,9 +175,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.AssociateEipRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.AssociateEipResponse`
         """
-        return self._associate_eip_with_http_info(request)
+        http_info = self._associate_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_eip_with_http_info(self, request):
+    def associate_eip_invoker(self, request):
+        http_info = self._associate_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_eip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/eips/{eip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,9 +209,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -184,20 +220,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/eips/{eip_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_elb(self, request):
         """集群绑定ELB
@@ -210,9 +242,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.AssociateElbRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.AssociateElbResponse`
         """
-        return self._associate_elb_with_http_info(request)
+        http_info = self._associate_elb_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_elb_with_http_info(self, request):
+    def associate_elb_invoker(self, request):
+        http_info = self._associate_elb_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_elb_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/elbs/{elb_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateElbResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,9 +276,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +287,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/elbs/{elb_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateElbResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_cluster_cn(self, request):
         """批量增加CN节点
@@ -271,9 +312,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.BatchCreateClusterCnRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.BatchCreateClusterCnResponse`
         """
-        return self._batch_create_cluster_cn_with_http_info(request)
+        http_info = self._batch_create_cluster_cn_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_cluster_cn_with_http_info(self, request):
+    def batch_create_cluster_cn_invoker(self, request):
+        http_info = self._batch_create_cluster_cn_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_cluster_cn_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/cns/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateClusterCnResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -290,11 +344,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -303,20 +357,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/cns/batch-create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateClusterCnResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_resource_tag(self, request):
         """批量添加标签
@@ -329,9 +379,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.BatchCreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.BatchCreateResourceTagResponse`
         """
-        return self._batch_create_resource_tag_with_http_info(request)
+        http_info = self._batch_create_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_resource_tag_with_http_info(self, request):
+    def batch_create_resource_tag_invoker(self, request):
+        http_info = self._batch_create_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/tags/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -348,11 +411,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -361,20 +424,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/tags/batch-create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_cluster_cn(self, request):
         """批量删除CN节点
@@ -390,9 +449,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.BatchDeleteClusterCnRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.BatchDeleteClusterCnResponse`
         """
-        return self._batch_delete_cluster_cn_with_http_info(request)
+        http_info = self._batch_delete_cluster_cn_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_cluster_cn_with_http_info(self, request):
+    def batch_delete_cluster_cn_invoker(self, request):
+        http_info = self._batch_delete_cluster_cn_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_cluster_cn_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/cns/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteClusterCnResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -409,11 +481,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -422,20 +494,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/cns/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteClusterCnResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_resource_tag(self, request):
         """批量删除标签
@@ -448,9 +516,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.BatchDeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.BatchDeleteResourceTagResponse`
         """
-        return self._batch_delete_resource_tag_with_http_info(request)
+        http_info = self._batch_delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_resource_tag_with_http_info(self, request):
+    def batch_delete_resource_tag_invoker(self, request):
+        http_info = self._batch_delete_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/tags/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -467,11 +548,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -480,20 +561,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/tags/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_readonly_cluster(self, request):
         """解除只读
@@ -507,9 +584,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CancelReadonlyClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CancelReadonlyClusterResponse`
         """
-        return self._cancel_readonly_cluster_with_http_info(request)
+        http_info = self._cancel_readonly_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_readonly_cluster_with_http_info(self, request):
+    def cancel_readonly_cluster_invoker(self, request):
+        http_info = self._cancel_readonly_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_readonly_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/cancel-readonly",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelReadonlyClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -526,9 +616,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -537,20 +627,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/cancel-readonly',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelReadonlyClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_cluster(self, request):
         """创建集群前检查
@@ -563,9 +649,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CheckClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CheckClusterResponse`
         """
-        return self._check_cluster_with_http_info(request)
+        http_info = self._check_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_cluster_with_http_info(self, request):
+    def check_cluster_invoker(self, request):
+        http_info = self._check_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/cluster-precheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -580,11 +679,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -593,20 +692,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cluster-precheck',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_disaster_name(self, request):
         """检查容灾名称
@@ -619,9 +714,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CheckDisasterNameRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CheckDisasterNameResponse`
         """
-        return self._check_disaster_name_with_http_info(request)
+        http_info = self._check_disaster_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_disaster_name_with_http_info(self, request):
+    def check_disaster_name_invoker(self, request):
+        http_info = self._check_disaster_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_disaster_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/disaster-recovery/check-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDisasterNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -644,9 +752,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -655,20 +763,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/check-name',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckDisasterNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_table_restore(self, request):
         """用户恢复表名检测
@@ -681,9 +785,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CheckTableRestoreRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CheckTableRestoreResponse`
         """
-        return self._check_table_restore_with_http_info(request)
+        http_info = self._check_table_restore_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_table_restore_with_http_info(self, request):
+    def check_table_restore_invoker(self, request):
+        http_info = self._check_table_restore_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_table_restore_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/snapshots/{snapshot_id}/table-restore-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckTableRestoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -700,11 +817,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -713,20 +830,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/snapshots/{snapshot_id}/table-restore-check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckTableRestoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_snapshot(self, request):
         """复制快照
@@ -739,9 +852,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CopySnapshotRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CopySnapshotResponse`
         """
-        return self._copy_snapshot_with_http_info(request)
+        http_info = self._copy_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_snapshot_with_http_info(self, request):
+    def copy_snapshot_invoker(self, request):
+        http_info = self._copy_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/snapshots/{snapshot_id}/linked-copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopySnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -758,11 +884,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -771,20 +897,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/snapshots/{snapshot_id}/linked-copy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopySnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_alarm_sub(self, request):
         """创建告警订阅
@@ -797,9 +919,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateAlarmSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateAlarmSubResponse`
         """
-        return self._create_alarm_sub_with_http_info(request)
+        http_info = self._create_alarm_sub_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alarm_sub_with_http_info(self, request):
+    def create_alarm_sub_invoker(self, request):
+        http_info = self._create_alarm_sub_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_alarm_sub_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/alarm-subs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlarmSubResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -814,11 +949,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -827,20 +962,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-subs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlarmSubResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cluster(self, request):
         """创建集群
@@ -855,9 +986,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterResponse`
         """
-        return self._create_cluster_with_http_info(request)
+        http_info = self._create_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_with_http_info(self, request):
+    def create_cluster_invoker(self, request):
+        http_info = self._create_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -872,11 +1016,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -885,20 +1029,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cluster_dns(self, request):
         """申请域名
@@ -911,9 +1051,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateClusterDnsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterDnsResponse`
         """
-        return self._create_cluster_dns_with_http_info(request)
+        http_info = self._create_cluster_dns_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_dns_with_http_info(self, request):
+    def create_cluster_dns_invoker(self, request):
+        http_info = self._create_cluster_dns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_dns_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterDnsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -930,11 +1083,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -943,20 +1096,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/dns',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterDnsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cluster_v2(self, request):
         """V2创建集群
@@ -971,9 +1120,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateClusterV2Request`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterV2Response`
         """
-        return self._create_cluster_v2_with_http_info(request)
+        http_info = self._create_cluster_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_v2_with_http_info(self, request):
+    def create_cluster_v2_invoker(self, request):
+        http_info = self._create_cluster_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -988,11 +1150,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1001,20 +1163,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cluster_workload(self, request):
         """设置资源管理
@@ -1027,9 +1185,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateClusterWorkloadRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateClusterWorkloadResponse`
         """
-        return self._create_cluster_workload_with_http_info(request)
+        http_info = self._create_cluster_workload_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_workload_with_http_info(self, request):
+    def create_cluster_workload_invoker(self, request):
+        http_info = self._create_cluster_workload_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_workload_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterWorkloadResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1046,11 +1217,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1059,20 +1230,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterWorkloadResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_data_source(self, request):
         """创建数据源
@@ -1085,9 +1252,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateDataSourceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateDataSourceResponse`
         """
-        return self._create_data_source_with_http_info(request)
+        http_info = self._create_data_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_data_source_with_http_info(self, request):
+    def create_data_source_invoker(self, request):
+        http_info = self._create_data_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_data_source_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1104,11 +1284,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1117,20 +1297,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDataSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_disaster_recovery(self, request):
         """创建容灾
@@ -1143,9 +1319,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateDisasterRecoveryResponse`
         """
-        return self._create_disaster_recovery_with_http_info(request)
+        http_info = self._create_disaster_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_disaster_recovery_with_http_info(self, request):
+    def create_disaster_recovery_invoker(self, request):
+        http_info = self._create_disaster_recovery_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_disaster_recovery_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/disaster-recoveries",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDisasterRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1160,11 +1349,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1173,20 +1362,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recoveries',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDisasterRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_event_sub(self, request):
         """创建订阅事件
@@ -1199,9 +1384,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateEventSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateEventSubResponse`
         """
-        return self._create_event_sub_with_http_info(request)
+        http_info = self._create_event_sub_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_event_sub_with_http_info(self, request):
+    def create_event_sub_invoker(self, request):
+        http_info = self._create_event_sub_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_event_sub_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/event-subs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEventSubResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1216,11 +1414,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1229,20 +1427,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event-subs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEventSubResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_snapshot(self, request):
         """创建快照
@@ -1255,9 +1449,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateSnapshotRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateSnapshotResponse`
         """
-        return self._create_snapshot_with_http_info(request)
+        http_info = self._create_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_snapshot_with_http_info(self, request):
+    def create_snapshot_invoker(self, request):
+        http_info = self._create_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1272,11 +1479,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1285,20 +1492,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/snapshots',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_snapshot_policy(self, request):
         """添加快照策略
@@ -1311,9 +1514,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateSnapshotPolicyResponse`
         """
-        return self._create_snapshot_policy_with_http_info(request)
+        http_info = self._create_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_snapshot_policy_with_http_info(self, request):
+    def create_snapshot_policy_invoker(self, request):
+        http_info = self._create_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/snapshot-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSnapshotPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1330,11 +1546,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1343,20 +1559,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/snapshot-policies',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSnapshotPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_workload_plan(self, request):
         """添加工作负载计划
@@ -1369,9 +1581,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.CreateWorkloadPlanRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.CreateWorkloadPlanResponse`
         """
-        return self._create_workload_plan_with_http_info(request)
+        http_info = self._create_workload_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_workload_plan_with_http_info(self, request):
+    def create_workload_plan_invoker(self, request):
+        http_info = self._create_workload_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_workload_plan_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWorkloadPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1388,11 +1613,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1401,20 +1626,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload/plans',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWorkloadPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alarm_sub(self, request):
         """删除告警订阅
@@ -1427,9 +1648,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteAlarmSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteAlarmSubResponse`
         """
-        return self._delete_alarm_sub_with_http_info(request)
+        http_info = self._delete_alarm_sub_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alarm_sub_with_http_info(self, request):
+    def delete_alarm_sub_invoker(self, request):
+        http_info = self._delete_alarm_sub_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_alarm_sub_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/alarm-subs/{alarm_sub_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlarmSubResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1446,9 +1680,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1457,20 +1691,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-subs/{alarm_sub_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlarmSubResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cluster(self, request):
         """删除集群
@@ -1483,9 +1713,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteClusterResponse`
         """
-        return self._delete_cluster_with_http_info(request)
+        http_info = self._delete_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cluster_with_http_info(self, request):
+    def delete_cluster_invoker(self, request):
+        http_info = self._delete_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cluster_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1502,11 +1745,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1515,20 +1758,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cluster_dns(self, request):
         """删除集群域名
@@ -1541,9 +1780,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteClusterDnsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteClusterDnsResponse`
         """
-        return self._delete_cluster_dns_with_http_info(request)
+        http_info = self._delete_cluster_dns_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cluster_dns_with_http_info(self, request):
+    def delete_cluster_dns_invoker(self, request):
+        http_info = self._delete_cluster_dns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cluster_dns_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClusterDnsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1562,9 +1814,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1573,20 +1825,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/dns',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteClusterDnsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_data_source(self, request):
         """删除数据源
@@ -1599,9 +1847,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteDataSourceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteDataSourceResponse`
         """
-        return self._delete_data_source_with_http_info(request)
+        http_info = self._delete_data_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_data_source_with_http_info(self, request):
+    def delete_data_source_invoker(self, request):
+        http_info = self._delete_data_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_data_source_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources/{ext_data_source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDataSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1620,9 +1881,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1631,20 +1892,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources/{ext_data_source_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDataSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_disaster_recovery(self, request):
         """删除容灾
@@ -1657,9 +1914,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteDisasterRecoveryResponse`
         """
-        return self._delete_disaster_recovery_with_http_info(request)
+        http_info = self._delete_disaster_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_disaster_recovery_with_http_info(self, request):
+    def delete_disaster_recovery_invoker(self, request):
+        http_info = self._delete_disaster_recovery_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_disaster_recovery_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/disaster-recovery/{disaster_recovery_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDisasterRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1676,9 +1946,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1687,20 +1957,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDisasterRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_event_sub(self, request):
         """删除订阅事件
@@ -1713,9 +1979,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteEventSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteEventSubResponse`
         """
-        return self._delete_event_sub_with_http_info(request)
+        http_info = self._delete_event_sub_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_event_sub_with_http_info(self, request):
+    def delete_event_sub_invoker(self, request):
+        http_info = self._delete_event_sub_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_event_sub_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/event-subs/{event_sub_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEventSubResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1732,9 +2011,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1743,20 +2022,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event-subs/{event_sub_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEventSubResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_snapshot(self, request):
         """删除快照
@@ -1769,9 +2044,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteSnapshotRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteSnapshotResponse`
         """
-        return self._delete_snapshot_with_http_info(request)
+        http_info = self._delete_snapshot_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_snapshot_with_http_info(self, request):
+    def delete_snapshot_invoker(self, request):
+        http_info = self._delete_snapshot_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_snapshot_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/snapshots/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSnapshotResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1788,9 +2076,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1799,20 +2087,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/snapshots/{snapshot_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSnapshotResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_snapshot_cross_region_policy(self, request):
         """删除跨区域备份配置
@@ -1825,9 +2109,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteSnapshotCrossRegionPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteSnapshotCrossRegionPolicyResponse`
         """
-        return self._delete_snapshot_cross_region_policy_with_http_info(request)
+        http_info = self._delete_snapshot_cross_region_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_snapshot_cross_region_policy_with_http_info(self, request):
+    def delete_snapshot_cross_region_policy_invoker(self, request):
+        http_info = self._delete_snapshot_cross_region_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_snapshot_cross_region_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/snapshots/cross-region-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSnapshotCrossRegionPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1844,9 +2141,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1855,20 +2152,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/snapshots/cross-region-policies',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSnapshotCrossRegionPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_snapshot_policy(self, request):
         """删除快照策略
@@ -1881,9 +2174,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteSnapshotPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteSnapshotPolicyResponse`
         """
-        return self._delete_snapshot_policy_with_http_info(request)
+        http_info = self._delete_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_snapshot_policy_with_http_info(self, request):
+    def delete_snapshot_policy_invoker(self, request):
+        http_info = self._delete_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/snapshot-policies/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSnapshotPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1902,9 +2208,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1913,20 +2219,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/snapshot-policies/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSnapshotPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_workload_plan(self, request):
         """删除工作负载计划
@@ -1939,9 +2241,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteWorkloadPlanRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteWorkloadPlanResponse`
         """
-        return self._delete_workload_plan_with_http_info(request)
+        http_info = self._delete_workload_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_workload_plan_with_http_info(self, request):
+    def delete_workload_plan_invoker(self, request):
+        http_info = self._delete_workload_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_workload_plan_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkloadPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1960,9 +2275,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1971,20 +2286,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWorkloadPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_workload_queue(self, request):
         """删除工作负载队列
@@ -1997,9 +2308,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DeleteWorkloadQueueRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DeleteWorkloadQueueResponse`
         """
-        return self._delete_workload_queue_with_http_info(request)
+        http_info = self._delete_workload_queue_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_workload_queue_with_http_info(self, request):
+    def delete_workload_queue_invoker(self, request):
+        http_info = self._delete_workload_queue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_workload_queue_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkloadQueueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2020,9 +2344,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2031,20 +2355,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload/queues',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWorkloadQueueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_eip(self, request):
         """集群解绑EIP
@@ -2057,9 +2377,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DisassociateEipRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DisassociateEipResponse`
         """
-        return self._disassociate_eip_with_http_info(request)
+        http_info = self._disassociate_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_eip_with_http_info(self, request):
+    def disassociate_eip_invoker(self, request):
+        http_info = self._disassociate_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_eip_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/eips/{eip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2078,9 +2411,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2089,20 +2422,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/eips/{eip_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_elb(self, request):
         """集群解绑ELB
@@ -2115,9 +2444,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.DisassociateElbRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.DisassociateElbResponse`
         """
-        return self._disassociate_elb_with_http_info(request)
+        http_info = self._disassociate_elb_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_elb_with_http_info(self, request):
+    def disassociate_elb_invoker(self, request):
+        http_info = self._disassociate_elb_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_elb_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/elbs/{elb_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateElbResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2136,9 +2478,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2147,20 +2489,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/elbs/{elb_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateElbResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_cluster_upgrade_action(self, request):
         """下发集群升级相关操作
@@ -2173,9 +2511,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ExecuteClusterUpgradeActionRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ExecuteClusterUpgradeActionResponse`
         """
-        return self._execute_cluster_upgrade_action_with_http_info(request)
+        http_info = self._execute_cluster_upgrade_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_cluster_upgrade_action_with_http_info(self, request):
+    def execute_cluster_upgrade_action_invoker(self, request):
+        http_info = self._execute_cluster_upgrade_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_cluster_upgrade_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/upgrade-management/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteClusterUpgradeActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2192,11 +2543,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2205,20 +2556,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/upgrade-management/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteClusterUpgradeActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_database_om_user_action(self, request):
         """执行运维用户操作
@@ -2231,9 +2578,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ExecuteDatabaseOmUserActionRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ExecuteDatabaseOmUserActionResponse`
         """
-        return self._execute_database_om_user_action_with_http_info(request)
+        http_info = self._execute_database_om_user_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_database_om_user_action_with_http_info(self, request):
+    def execute_database_om_user_action_invoker(self, request):
+        http_info = self._execute_database_om_user_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_database_om_user_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/om-user/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteDatabaseOmUserActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2250,11 +2610,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2263,20 +2623,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/om-user/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteDatabaseOmUserActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_redistribution_cluster(self, request):
         """下发重分布
@@ -2289,9 +2645,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ExecuteRedistributionClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ExecuteRedistributionClusterResponse`
         """
-        return self._execute_redistribution_cluster_with_http_info(request)
+        http_info = self._execute_redistribution_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_redistribution_cluster_with_http_info(self, request):
+    def execute_redistribution_cluster_invoker(self, request):
+        http_info = self._execute_redistribution_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_redistribution_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/redistribution",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteRedistributionClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2308,11 +2677,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2321,20 +2690,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/redistribution',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteRedistributionClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_instance_storage(self, request):
         """磁盘扩容
@@ -2349,9 +2714,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ExpandInstanceStorageRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ExpandInstanceStorageResponse`
         """
-        return self._expand_instance_storage_with_http_info(request)
+        http_info = self._expand_instance_storage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_instance_storage_with_http_info(self, request):
+    def expand_instance_storage_invoker(self, request):
+        http_info = self._expand_instance_storage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_instance_storage_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/expand-instance-storage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandInstanceStorageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2368,11 +2746,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2381,20 +2759,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/expand-instance-storage',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandInstanceStorageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_configs(self, request):
         """查询告警配置
@@ -2407,9 +2781,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAlarmConfigsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAlarmConfigsResponse`
         """
-        return self._list_alarm_configs_with_http_info(request)
+        http_info = self._list_alarm_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_configs_with_http_info(self, request):
+    def list_alarm_configs_invoker(self, request):
+        http_info = self._list_alarm_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alarm_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alarm-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2428,9 +2815,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2439,20 +2826,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_detail(self, request):
         """查询告警详情列表
@@ -2465,9 +2848,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAlarmDetailRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAlarmDetailResponse`
         """
-        return self._list_alarm_detail_with_http_info(request)
+        http_info = self._list_alarm_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_detail_with_http_info(self, request):
+    def list_alarm_detail_invoker(self, request):
+        http_info = self._list_alarm_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alarm_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alarms",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2488,9 +2884,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2499,20 +2895,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarms',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_statistic(self, request):
         """查询告警统计列表
@@ -2525,9 +2917,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAlarmStatisticRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAlarmStatisticResponse`
         """
-        return self._list_alarm_statistic_with_http_info(request)
+        http_info = self._list_alarm_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_statistic_with_http_info(self, request):
+    def list_alarm_statistic_invoker(self, request):
+        http_info = self._list_alarm_statistic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alarm_statistic_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alarm-statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2544,9 +2949,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2555,20 +2960,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_subs(self, request):
         """查询告警订阅列表
@@ -2581,9 +2982,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAlarmSubsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAlarmSubsResponse`
         """
-        return self._list_alarm_subs_with_http_info(request)
+        http_info = self._list_alarm_subs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_subs_with_http_info(self, request):
+    def list_alarm_subs_invoker(self, request):
+        http_info = self._list_alarm_subs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alarm_subs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alarm-subs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmSubsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2602,9 +3016,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2613,20 +3027,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-subs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmSubsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_log(self, request):
         """查询日志记录
@@ -2639,9 +3049,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAuditLogRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAuditLogResponse`
         """
-        return self._list_audit_log_with_http_info(request)
+        http_info = self._list_audit_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_log_with_http_info(self, request):
+    def list_audit_log_invoker(self, request):
+        http_info = self._list_audit_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/audit-log-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2658,9 +3081,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2669,20 +3092,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/audit-log-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_availability_zones(self, request):
         """查询可用区列表
@@ -2695,9 +3114,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAvailabilityZonesResponse`
         """
-        return self._list_availability_zones_with_http_info(request)
+        http_info = self._list_availability_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_availability_zones_with_http_info(self, request):
+    def list_availability_zones_invoker(self, request):
+        http_info = self._list_availability_zones_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_availability_zones_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/availability-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailabilityZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2712,9 +3144,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2723,20 +3155,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/availability-zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailabilityZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_available_disaster_clusters(self, request):
         """查询可用容灾集群列表
@@ -2749,9 +3177,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListAvailableDisasterClustersRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListAvailableDisasterClustersResponse`
         """
-        return self._list_available_disaster_clusters_with_http_info(request)
+        http_info = self._list_available_disaster_clusters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_available_disaster_clusters_with_http_info(self, request):
+    def list_available_disaster_clusters_invoker(self, request):
+        http_info = self._list_available_disaster_clusters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_available_disaster_clusters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/disaster-recovery-clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableDisasterClustersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2784,9 +3225,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2795,20 +3236,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery-clusters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailableDisasterClustersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_cn(self, request):
         """查询集群CN节点
@@ -2821,9 +3258,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterCnRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterCnResponse`
         """
-        return self._list_cluster_cn_with_http_info(request)
+        http_info = self._list_cluster_cn_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_cn_with_http_info(self, request):
+    def list_cluster_cn_invoker(self, request):
+        http_info = self._list_cluster_cn_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_cn_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/cns",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterCnResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2840,9 +3290,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2851,20 +3301,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/cns',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterCnResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_configurations(self, request):
         """查询集群参数组
@@ -2877,9 +3323,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterConfigurationsResponse`
         """
-        return self._list_cluster_configurations_with_http_info(request)
+        http_info = self._list_cluster_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_configurations_with_http_info(self, request):
+    def list_cluster_configurations_invoker(self, request):
+        http_info = self._list_cluster_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_configurations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2896,9 +3355,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2907,20 +3366,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_configurations_parameter(self, request):
         """查询集群参数配置
@@ -2933,9 +3388,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterConfigurationsParameterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterConfigurationsParameterResponse`
         """
-        return self._list_cluster_configurations_parameter_with_http_info(request)
+        http_info = self._list_cluster_configurations_parameter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_configurations_parameter_with_http_info(self, request):
+    def list_cluster_configurations_parameter_invoker(self, request):
+        http_info = self._list_cluster_configurations_parameter_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_configurations_parameter_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/configurations/{configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterConfigurationsParameterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2954,9 +3422,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2965,20 +3433,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/configurations/{configuration_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterConfigurationsParameterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_details(self, request):
         """查询集群详情
@@ -2991,9 +3455,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterDetailsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterDetailsResponse`
         """
-        return self._list_cluster_details_with_http_info(request)
+        http_info = self._list_cluster_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_details_with_http_info(self, request):
+    def list_cluster_details_invoker(self, request):
+        http_info = self._list_cluster_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3010,9 +3487,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3021,20 +3498,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_scale_in_numbers(self, request):
         """查询合适的缩容数
@@ -3047,9 +3520,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterScaleInNumbersRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterScaleInNumbersResponse`
         """
-        return self._list_cluster_scale_in_numbers_with_http_info(request)
+        http_info = self._list_cluster_scale_in_numbers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_scale_in_numbers_with_http_info(self, request):
+    def list_cluster_scale_in_numbers_invoker(self, request):
+        http_info = self._list_cluster_scale_in_numbers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_scale_in_numbers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/shrink-numbers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterScaleInNumbersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3066,9 +3552,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3077,20 +3563,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/shrink-numbers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterScaleInNumbersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_snapshots(self, request):
         """查询集群快照列表
@@ -3103,9 +3585,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterSnapshotsResponse`
         """
-        return self._list_cluster_snapshots_with_http_info(request)
+        http_info = self._list_cluster_snapshots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_snapshots_with_http_info(self, request):
+    def list_cluster_snapshots_invoker(self, request):
+        http_info = self._list_cluster_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterSnapshotsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3130,9 +3625,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3141,20 +3636,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/snapshots',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterSnapshotsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_tags(self, request):
         """查询集群标签
@@ -3167,9 +3658,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterTagsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterTagsResponse`
         """
-        return self._list_cluster_tags_with_http_info(request)
+        http_info = self._list_cluster_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_tags_with_http_info(self, request):
+    def list_cluster_tags_invoker(self, request):
+        http_info = self._list_cluster_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3186,9 +3690,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3197,20 +3701,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cluster_workload(self, request):
         """查询资源管理
@@ -3223,9 +3723,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClusterWorkloadRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClusterWorkloadResponse`
         """
-        return self._list_cluster_workload_with_http_info(request)
+        http_info = self._list_cluster_workload_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cluster_workload_with_http_info(self, request):
+    def list_cluster_workload_invoker(self, request):
+        http_info = self._list_cluster_workload_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cluster_workload_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClusterWorkloadResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3242,9 +3755,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3253,20 +3766,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClusterWorkloadResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_clusters(self, request):
         """查询集群列表
@@ -3279,9 +3788,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListClustersResponse`
         """
-        return self._list_clusters_with_http_info(request)
+        http_info = self._list_clusters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_clusters_with_http_info(self, request):
+    def list_clusters_invoker(self, request):
+        http_info = self._list_clusters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_clusters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClustersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3296,9 +3818,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3307,20 +3829,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClustersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configurations_audit_records(self, request):
         """查询参数修改审计记录
@@ -3333,9 +3851,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListConfigurationsAuditRecordsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListConfigurationsAuditRecordsResponse`
         """
-        return self._list_configurations_audit_records_with_http_info(request)
+        http_info = self._list_configurations_audit_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configurations_audit_records_with_http_info(self, request):
+    def list_configurations_audit_records_invoker(self, request):
+        http_info = self._list_configurations_audit_records_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_configurations_audit_records_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/configurations/audit-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationsAuditRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3362,9 +3893,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3373,20 +3904,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/configurations/audit-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigurationsAuditRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_data_source(self, request):
         """查询数据源
@@ -3399,9 +3926,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListDataSourceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListDataSourceResponse`
         """
-        return self._list_data_source_with_http_info(request)
+        http_info = self._list_data_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_data_source_with_http_info(self, request):
+    def list_data_source_invoker(self, request):
+        http_info = self._list_data_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_data_source_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3418,9 +3958,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3429,20 +3969,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_database_users(self, request):
         """查询所有数据库用户/角色
@@ -3455,9 +3991,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListDatabaseUsersRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListDatabaseUsersResponse`
         """
-        return self._list_database_users_with_http_info(request)
+        http_info = self._list_database_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_database_users_with_http_info(self, request):
+    def list_database_users_invoker(self, request):
+        http_info = self._list_database_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_database_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3474,9 +4023,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3485,20 +4034,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabaseUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_disaster_recover(self, request):
         """查询容灾列表
@@ -3511,9 +4056,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListDisasterRecoverRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListDisasterRecoverResponse`
         """
-        return self._list_disaster_recover_with_http_info(request)
+        http_info = self._list_disaster_recover_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_disaster_recover_with_http_info(self, request):
+    def list_disaster_recover_invoker(self, request):
+        http_info = self._list_disaster_recover_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_disaster_recover_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/disaster-recoveries",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDisasterRecoverResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3528,9 +4086,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3539,20 +4097,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recoveries',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDisasterRecoverResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dss_pools(self, request):
         """查询专属分布式存储池列表
@@ -3565,9 +4119,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListDssPoolsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListDssPoolsResponse`
         """
-        return self._list_dss_pools_with_http_info(request)
+        http_info = self._list_dss_pools_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dss_pools_with_http_info(self, request):
+    def list_dss_pools_invoker(self, request):
+        http_info = self._list_dss_pools_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dss_pools_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dss-pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDssPoolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3582,9 +4149,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3593,20 +4160,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dss-pools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDssPoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_elbs(self, request):
         """获取集群可绑定的ELB列表
@@ -3619,9 +4182,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListElbsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListElbsResponse`
         """
-        return self._list_elbs_with_http_info(request)
+        http_info = self._list_elbs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_elbs_with_http_info(self, request):
+    def list_elbs_invoker(self, request):
+        http_info = self._list_elbs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_elbs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/elbs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListElbsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3638,9 +4214,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3649,20 +4225,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/elbs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListElbsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_event_specs(self, request):
         """查询事件配置
@@ -3675,9 +4247,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListEventSpecsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListEventSpecsResponse`
         """
-        return self._list_event_specs_with_http_info(request)
+        http_info = self._list_event_specs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_event_specs_with_http_info(self, request):
+    def list_event_specs_invoker(self, request):
+        http_info = self._list_event_specs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_event_specs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/event-specs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventSpecsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3706,9 +4291,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3717,20 +4302,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event-specs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventSpecsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_event_subs(self, request):
         """查询订阅事件
@@ -3743,9 +4324,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListEventSubsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListEventSubsResponse`
         """
-        return self._list_event_subs_with_http_info(request)
+        http_info = self._list_event_subs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_event_subs_with_http_info(self, request):
+    def list_event_subs_invoker(self, request):
+        http_info = self._list_event_subs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_event_subs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/event-subs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventSubsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3764,9 +4358,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3775,20 +4369,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event-subs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventSubsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_events(self, request):
         """查询事件列表
@@ -3801,9 +4391,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListEventsResponse`
         """
-        return self._list_events_with_http_info(request)
+        http_info = self._list_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_events_with_http_info(self, request):
+    def list_events_invoker(self, request):
+        http_info = self._list_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_events_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3822,9 +4425,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3833,20 +4436,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_disk(self, request):
         """openApi查询磁盘信息
@@ -3859,9 +4458,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListHostDiskRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListHostDiskResponse`
         """
-        return self._list_host_disk_with_http_info(request)
+        http_info = self._list_host_disk_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_disk_with_http_info(self, request):
+    def list_host_disk_invoker(self, request):
+        http_info = self._list_host_disk_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_host_disk_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dms/disk",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostDiskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3884,9 +4496,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3895,20 +4507,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dms/disk',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostDiskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_net(self, request):
         """openapi获取网卡状态
@@ -3921,9 +4529,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListHostNetRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListHostNetResponse`
         """
-        return self._list_host_net_with_http_info(request)
+        http_info = self._list_host_net_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_net_with_http_info(self, request):
+    def list_host_net_invoker(self, request):
+        http_info = self._list_host_net_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_host_net_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dms/net",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostNetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3946,9 +4567,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3957,20 +4578,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dms/net',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostNetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_host_overview(self, request):
         """openApi查询主机概览
@@ -3983,9 +4600,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListHostOverviewRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListHostOverviewResponse`
         """
-        return self._list_host_overview_with_http_info(request)
+        http_info = self._list_host_overview_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_host_overview_with_http_info(self, request):
+    def list_host_overview_invoker(self, request):
+        http_info = self._list_host_overview_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_host_overview_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dms/host-overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostOverviewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4008,9 +4638,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4019,20 +4649,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dms/host-overview',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostOverviewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_job_details(self, request):
         """查询job进度
@@ -4045,9 +4671,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListJobDetailsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListJobDetailsResponse`
         """
-        return self._list_job_details_with_http_info(request)
+        http_info = self._list_job_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_job_details_with_http_info(self, request):
+    def list_job_details_invoker(self, request):
+        http_info = self._list_job_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_job_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/job/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4064,9 +4703,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4075,20 +4714,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/job/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_monitor_indicator_data(self, request):
         """openApi查询历史监控数据
@@ -4101,9 +4736,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorDataRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorDataResponse`
         """
-        return self._list_monitor_indicator_data_with_http_info(request)
+        http_info = self._list_monitor_indicator_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_monitor_indicator_data_with_http_info(self, request):
+    def list_monitor_indicator_data_invoker(self, request):
+        http_info = self._list_monitor_indicator_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_monitor_indicator_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dms/metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMonitorIndicatorDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4132,9 +4780,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4143,20 +4791,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dms/metric-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMonitorIndicatorDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_monitor_indicators(self, request):
         """openApi查询性能监控指标
@@ -4169,9 +4813,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListMonitorIndicatorsResponse`
         """
-        return self._list_monitor_indicators_with_http_info(request)
+        http_info = self._list_monitor_indicators_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_monitor_indicators_with_http_info(self, request):
+    def list_monitor_indicators_invoker(self, request):
+        http_info = self._list_monitor_indicators_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_monitor_indicators_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/dms/metric-data/indicators",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMonitorIndicatorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4186,9 +4843,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4197,20 +4854,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/dms/metric-data/indicators',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMonitorIndicatorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_node_types(self, request):
         """查询节点类型
@@ -4223,9 +4876,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListNodeTypesRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListNodeTypesResponse`
         """
-        return self._list_node_types_with_http_info(request)
+        http_info = self._list_node_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_node_types_with_http_info(self, request):
+    def list_node_types_invoker(self, request):
+        http_info = self._list_node_types_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_node_types_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/node-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodeTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4240,9 +4906,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4251,20 +4917,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/node-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNodeTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas(self, request):
         """查询配额
@@ -4277,9 +4939,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4294,9 +4969,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4305,20 +4980,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshot_cross_region(self, request):
         """获取跨区域快照可用region
@@ -4331,9 +5002,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotCrossRegionRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotCrossRegionResponse`
         """
-        return self._list_snapshot_cross_region_with_http_info(request)
+        http_info = self._list_snapshot_cross_region_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshot_cross_region_with_http_info(self, request):
+    def list_snapshot_cross_region_invoker(self, request):
+        http_info = self._list_snapshot_cross_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_cross_region_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/snapshots/cross-regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotCrossRegionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4352,9 +5036,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4363,20 +5047,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/snapshots/cross-regions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotCrossRegionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshot_cross_region_policy(self, request):
         """查询所有跨区域快照配置
@@ -4389,9 +5069,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotCrossRegionPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotCrossRegionPolicyResponse`
         """
-        return self._list_snapshot_cross_region_policy_with_http_info(request)
+        http_info = self._list_snapshot_cross_region_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshot_cross_region_policy_with_http_info(self, request):
+    def list_snapshot_cross_region_policy_invoker(self, request):
+        http_info = self._list_snapshot_cross_region_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_cross_region_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/snapshots/cross-region-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotCrossRegionPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4412,9 +5105,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4423,20 +5116,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/snapshots/cross-region-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotCrossRegionPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshot_details(self, request):
         """查询快照详情
@@ -4449,9 +5138,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotDetailsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotDetailsResponse`
         """
-        return self._list_snapshot_details_with_http_info(request)
+        http_info = self._list_snapshot_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshot_details_with_http_info(self, request):
+    def list_snapshot_details_invoker(self, request):
+        http_info = self._list_snapshot_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/snapshots/{snapshot_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4468,9 +5170,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4479,20 +5181,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/snapshots/{snapshot_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshot_policy(self, request):
         """查询快照策略
@@ -4505,9 +5203,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotPolicyRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotPolicyResponse`
         """
-        return self._list_snapshot_policy_with_http_info(request)
+        http_info = self._list_snapshot_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshot_policy_with_http_info(self, request):
+    def list_snapshot_policy_invoker(self, request):
+        http_info = self._list_snapshot_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/snapshot-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4524,9 +5235,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4535,20 +5246,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/snapshot-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshot_statistics(self, request):
         """快照统计信息
@@ -4561,9 +5268,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotStatisticsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotStatisticsResponse`
         """
-        return self._list_snapshot_statistics_with_http_info(request)
+        http_info = self._list_snapshot_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshot_statistics_with_http_info(self, request):
+    def list_snapshot_statistics_invoker(self, request):
+        http_info = self._list_snapshot_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshot_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/snapshots/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4580,9 +5300,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4591,20 +5311,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/snapshots/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_snapshots(self, request):
         """查询快照列表
@@ -4617,9 +5333,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListSnapshotsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListSnapshotsResponse`
         """
-        return self._list_snapshots_with_http_info(request)
+        http_info = self._list_snapshots_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_snapshots_with_http_info(self, request):
+    def list_snapshots_invoker(self, request):
+        http_info = self._list_snapshots_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_snapshots_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/snapshots",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSnapshotsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4634,9 +5363,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4645,20 +5374,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/snapshots',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSnapshotsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_statistics(self, request):
         """查询资源统计信息列表
@@ -4671,9 +5396,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListStatisticsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListStatisticsResponse`
         """
-        return self._list_statistics_with_http_info(request)
+        http_info = self._list_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_statistics_with_http_info(self, request):
+    def list_statistics_invoker(self, request):
+        http_info = self._list_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4688,9 +5426,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4699,20 +5437,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags(self, request):
         """查询项目标签
@@ -4725,9 +5459,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListTagsResponse`
         """
-        return self._list_tags_with_http_info(request)
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_with_http_info(self, request):
+    def list_tags_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4742,9 +5489,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4753,20 +5500,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_updatable_version(self, request):
         """获取集群可升级的目标版本
@@ -4779,9 +5522,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListUpdatableVersionRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListUpdatableVersionResponse`
         """
-        return self._list_updatable_version_with_http_info(request)
+        http_info = self._list_updatable_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_updatable_version_with_http_info(self, request):
+    def list_updatable_version_invoker(self, request):
+        http_info = self._list_updatable_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_updatable_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/upgrade-management/avail-versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUpdatableVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4802,9 +5558,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4813,20 +5569,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/upgrade-management/avail-versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUpdatableVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_update_record(self, request):
         """获取集群升级记录
@@ -4839,9 +5591,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListUpdateRecordRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListUpdateRecordResponse`
         """
-        return self._list_update_record_with_http_info(request)
+        http_info = self._list_update_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_update_record_with_http_info(self, request):
+    def list_update_record_invoker(self, request):
+        http_info = self._list_update_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_update_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/upgrade-management/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUpdateRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4862,9 +5627,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4873,20 +5638,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/upgrade-management/records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUpdateRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workload_queue(self, request):
         """查询工作负载队列
@@ -4899,9 +5660,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ListWorkloadQueueRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ListWorkloadQueueResponse`
         """
-        return self._list_workload_queue_with_http_info(request)
+        http_info = self._list_workload_queue_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workload_queue_with_http_info(self, request):
+    def list_workload_queue_invoker(self, request):
+        http_info = self._list_workload_queue_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workload_queue_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/queues",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkloadQueueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4918,9 +5692,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4929,20 +5703,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload/queues',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkloadQueueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def pause_disaster_recovery(self, request):
         """停止容灾
@@ -4955,9 +5725,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.PauseDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.PauseDisasterRecoveryResponse`
         """
-        return self._pause_disaster_recovery_with_http_info(request)
+        http_info = self._pause_disaster_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _pause_disaster_recovery_with_http_info(self, request):
+    def pause_disaster_recovery_invoker(self, request):
+        http_info = self._pause_disaster_recovery_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _pause_disaster_recovery_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/pause",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseDisasterRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4974,9 +5757,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4985,20 +5768,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/pause',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PauseDisasterRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_password(self, request):
         """重置密码
@@ -5011,9 +5790,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ResetPasswordResponse`
         """
-        return self._reset_password_with_http_info(request)
+        http_info = self._reset_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_password_with_http_info(self, request):
+    def reset_password_invoker(self, request):
+        http_info = self._reset_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_password_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/reset-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5030,11 +5822,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5043,20 +5835,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/reset-password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_cluster(self, request):
         """扩容集群调整集群大小
@@ -5069,9 +5857,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ResizeClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ResizeClusterResponse`
         """
-        return self._resize_cluster_with_http_info(request)
+        http_info = self._resize_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_cluster_with_http_info(self, request):
+    def resize_cluster_invoker(self, request):
+        http_info = self._resize_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5088,11 +5889,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5101,20 +5902,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_cluster(self, request):
         """重启集群
@@ -5127,9 +5924,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.RestartClusterResponse`
         """
-        return self._restart_cluster_with_http_info(request)
+        http_info = self._restart_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_cluster_with_http_info(self, request):
+    def restart_cluster_invoker(self, request):
+        http_info = self._restart_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5146,11 +5956,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5159,20 +5969,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_cluster(self, request):
         """恢复集群
@@ -5185,9 +5991,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.RestoreClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.RestoreClusterResponse`
         """
-        return self._restore_cluster_with_http_info(request)
+        http_info = self._restore_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_cluster_with_http_info(self, request):
+    def restore_cluster_invoker(self, request):
+        http_info = self._restore_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/snapshots/{snapshot_id}/actions",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5204,11 +6023,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5217,20 +6036,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/snapshots/{snapshot_id}/actions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_disaster(self, request):
         """恢复容灾
@@ -5243,9 +6058,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.RestoreDisasterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.RestoreDisasterResponse`
         """
-        return self._restore_disaster_with_http_info(request)
+        http_info = self._restore_disaster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_disaster_with_http_info(self, request):
+    def restore_disaster_invoker(self, request):
+        http_info = self._restore_disaster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_disaster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/recovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreDisasterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5262,9 +6090,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5273,20 +6101,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/recovery',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreDisasterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_table(self, request):
         """恢复表
@@ -5299,9 +6123,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.RestoreTableRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.RestoreTableResponse`
         """
-        return self._restore_table_with_http_info(request)
+        http_info = self._restore_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_table_with_http_info(self, request):
+    def restore_table_invoker(self, request):
+        http_info = self._restore_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/snapshots/{snapshot_id}/table-restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5318,11 +6155,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5331,20 +6168,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/snapshots/{snapshot_id}/table-restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def save_cluster_description_info(self, request):
         """保存集群描述信息
@@ -5357,9 +6190,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.SaveClusterDescriptionInfoRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.SaveClusterDescriptionInfoResponse`
         """
-        return self._save_cluster_description_info_with_http_info(request)
+        http_info = self._save_cluster_description_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _save_cluster_description_info_with_http_info(self, request):
+    def save_cluster_description_info_invoker(self, request):
+        http_info = self._save_cluster_description_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _save_cluster_description_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/description",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveClusterDescriptionInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5378,11 +6224,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5391,20 +6237,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/description',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SaveClusterDescriptionInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cluster_redistribution(self, request):
         """查询重分布详情
@@ -5417,9 +6259,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShowClusterRedistributionRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShowClusterRedistributionResponse`
         """
-        return self._show_cluster_redistribution_with_http_info(request)
+        http_info = self._show_cluster_redistribution_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cluster_redistribution_with_http_info(self, request):
+    def show_cluster_redistribution_invoker(self, request):
+        http_info = self._show_cluster_redistribution_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cluster_redistribution_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/redistribution",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterRedistributionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5446,9 +6301,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5457,20 +6312,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/redistribution',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClusterRedistributionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_database_authority(self, request):
         """查询数据库对象权限
@@ -5483,9 +6334,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShowDatabaseAuthorityRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShowDatabaseAuthorityResponse`
         """
-        return self._show_database_authority_with_http_info(request)
+        http_info = self._show_database_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_database_authority_with_http_info(self, request):
+    def show_database_authority_invoker(self, request):
+        http_info = self._show_database_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_database_authority_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/authority",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatabaseAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5513,9 +6377,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5524,20 +6388,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/authority',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatabaseAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_database_om_user_status(self, request):
         """获得集群运维账户状态
@@ -5550,9 +6410,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShowDatabaseOmUserStatusRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShowDatabaseOmUserStatusResponse`
         """
-        return self._show_database_om_user_status_with_http_info(request)
+        http_info = self._show_database_om_user_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_database_om_user_status_with_http_info(self, request):
+    def show_database_om_user_status_invoker(self, request):
+        http_info = self._show_database_om_user_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_database_om_user_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/om-user/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatabaseOmUserStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5569,9 +6442,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5580,20 +6453,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/om-user/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatabaseOmUserStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_database_user(self, request):
         """查询指定用户信息
@@ -5606,9 +6475,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShowDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShowDatabaseUserResponse`
         """
-        return self._show_database_user_with_http_info(request)
+        http_info = self._show_database_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_database_user_with_http_info(self, request):
+    def show_database_user_invoker(self, request):
+        http_info = self._show_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_database_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/users/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatabaseUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5627,9 +6509,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5638,20 +6520,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/users/{name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatabaseUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_disaster_detail(self, request):
         """查询容灾详情
@@ -5664,9 +6542,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShowDisasterDetailRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShowDisasterDetailResponse`
         """
-        return self._show_disaster_detail_with_http_info(request)
+        http_info = self._show_disaster_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_disaster_detail_with_http_info(self, request):
+    def show_disaster_detail_invoker(self, request):
+        http_info = self._show_disaster_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_disaster_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/disaster-recovery/{disaster_recovery_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDisasterDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5683,9 +6574,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5694,20 +6585,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDisasterDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_disaster_progress(self, request):
         """容灾-查询容灾进度详情
@@ -5720,9 +6607,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShowDisasterProgressRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShowDisasterProgressResponse`
         """
-        return self._show_disaster_progress_with_http_info(request)
+        http_info = self._show_disaster_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_disaster_progress_with_http_info(self, request):
+    def show_disaster_progress_invoker(self, request):
+        http_info = self._show_disaster_progress_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_disaster_progress_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/disaster-recovery/{disaster_recovery_id}/show-progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDisasterProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5739,9 +6639,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5750,20 +6650,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/disaster-recovery/{disaster_recovery_id}/show-progress',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDisasterProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance(self, request):
         """查询单个实例
@@ -5776,9 +6672,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShowInstanceResponse`
         """
-        return self._show_instance_with_http_info(request)
+        http_info = self._show_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_with_http_info(self, request):
+    def show_instance_invoker(self, request):
+        http_info = self._show_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5795,9 +6704,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5806,20 +6715,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_workload_plan(self, request):
         """查询某个工作负载计划详细信息
@@ -5832,9 +6737,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShowWorkloadPlanRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShowWorkloadPlanResponse`
         """
-        return self._show_workload_plan_with_http_info(request)
+        http_info = self._show_workload_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_workload_plan_with_http_info(self, request):
+    def show_workload_plan_invoker(self, request):
+        http_info = self._show_workload_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_workload_plan_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkloadPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5853,9 +6771,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5864,20 +6782,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkloadPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def shrink_cluster(self, request):
         """集群缩容
@@ -5890,9 +6804,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.ShrinkClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.ShrinkClusterResponse`
         """
-        return self._shrink_cluster_with_http_info(request)
+        http_info = self._shrink_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _shrink_cluster_with_http_info(self, request):
+    def shrink_cluster_invoker(self, request):
+        http_info = self._shrink_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _shrink_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/cluster-shrink",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShrinkClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5909,11 +6836,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5922,20 +6849,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/cluster-shrink',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShrinkClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_disaster_recovery(self, request):
         """启动容灾
@@ -5948,9 +6871,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.StartDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.StartDisasterRecoveryResponse`
         """
-        return self._start_disaster_recovery_with_http_info(request)
+        http_info = self._start_disaster_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_disaster_recovery_with_http_info(self, request):
+    def start_disaster_recovery_invoker(self, request):
+        http_info = self._start_disaster_recovery_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_disaster_recovery_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartDisasterRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5967,9 +6903,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5978,20 +6914,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartDisasterRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_workload_plan(self, request):
         """启动工作负载计划
@@ -6004,9 +6936,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.StartWorkloadPlanRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.StartWorkloadPlanResponse`
         """
-        return self._start_workload_plan_with_http_info(request)
+        http_info = self._start_workload_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_workload_plan_with_http_info(self, request):
+    def start_workload_plan_invoker(self, request):
+        http_info = self._start_workload_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_workload_plan_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartWorkloadPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6025,9 +6970,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6036,20 +6981,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartWorkloadPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_workload_plan(self, request):
         """停止工作负载计划
@@ -6062,9 +7003,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.StopWorkloadPlanRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.StopWorkloadPlanResponse`
         """
-        return self._stop_workload_plan_with_http_info(request)
+        http_info = self._stop_workload_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_workload_plan_with_http_info(self, request):
+    def stop_workload_plan_invoker(self, request):
+        http_info = self._stop_workload_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_workload_plan_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopWorkloadPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6083,9 +7037,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6094,20 +7048,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/workload/plans/{plan_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopWorkloadPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_failover_disaster(self, request):
         """容灾异常切换
@@ -6120,9 +7070,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.SwitchFailoverDisasterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.SwitchFailoverDisasterResponse`
         """
-        return self._switch_failover_disaster_with_http_info(request)
+        http_info = self._switch_failover_disaster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_failover_disaster_with_http_info(self, request):
+    def switch_failover_disaster_invoker(self, request):
+        http_info = self._switch_failover_disaster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_failover_disaster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/failover",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchFailoverDisasterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6139,9 +7102,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6150,20 +7113,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/failover',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchFailoverDisasterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_over_cluster(self, request):
         """主备恢复
@@ -6178,9 +7137,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.SwitchOverClusterRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.SwitchOverClusterResponse`
         """
-        return self._switch_over_cluster_with_http_info(request)
+        http_info = self._switch_over_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_over_cluster_with_http_info(self, request):
+    def switch_over_cluster_invoker(self, request):
+        http_info = self._switch_over_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_over_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/switchover",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchOverClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6197,9 +7169,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6208,20 +7180,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/switchover',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchOverClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switchover_disaster_recovery(self, request):
         """灾备切换
@@ -6234,9 +7202,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.SwitchoverDisasterRecoveryRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.SwitchoverDisasterRecoveryResponse`
         """
-        return self._switchover_disaster_recovery_with_http_info(request)
+        http_info = self._switchover_disaster_recovery_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switchover_disaster_recovery_with_http_info(self, request):
+    def switchover_disaster_recovery_invoker(self, request):
+        http_info = self._switchover_disaster_recovery_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switchover_disaster_recovery_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/switchover",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchoverDisasterRecoveryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6253,9 +7234,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6264,20 +7245,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}/switchover',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchoverDisasterRecoveryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def sync_iam_users(self, request):
         """同步IAM用户到数据库
@@ -6290,9 +7267,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.SyncIamUsersRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.SyncIamUsersResponse`
         """
-        return self._sync_iam_users_with_http_info(request)
+        http_info = self._sync_iam_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _sync_iam_users_with_http_info(self, request):
+    def sync_iam_users_invoker(self, request):
+        http_info = self._sync_iam_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _sync_iam_users_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/sync-iam-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "SyncIamUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6309,9 +7299,9 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6320,20 +7310,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/sync-iam-user',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SyncIamUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alarm_sub(self, request):
         """更新告警订阅
@@ -6346,9 +7332,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateAlarmSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateAlarmSubResponse`
         """
-        return self._update_alarm_sub_with_http_info(request)
+        http_info = self._update_alarm_sub_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alarm_sub_with_http_info(self, request):
+    def update_alarm_sub_invoker(self, request):
+        http_info = self._update_alarm_sub_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_alarm_sub_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/alarm-subs/{alarm_sub_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlarmSubResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6365,11 +7364,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6378,20 +7377,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-subs/{alarm_sub_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlarmSubResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cluster_dns(self, request):
         """修改集群域名
@@ -6404,9 +7399,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateClusterDnsRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateClusterDnsResponse`
         """
-        return self._update_cluster_dns_with_http_info(request)
+        http_info = self._update_cluster_dns_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cluster_dns_with_http_info(self, request):
+    def update_cluster_dns_invoker(self, request):
+        http_info = self._update_cluster_dns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cluster_dns_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClusterDnsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6423,11 +7431,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6436,20 +7444,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/dns',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateClusterDnsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_configuration(self, request):
         """修改集群参数配置
@@ -6462,9 +7466,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateConfigurationResponse`
         """
-        return self._update_configuration_with_http_info(request)
+        http_info = self._update_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_configuration_with_http_info(self, request):
+    def update_configuration_invoker(self, request):
+        http_info = self._update_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_configuration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/configurations/{configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6483,11 +7500,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6496,20 +7513,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/configurations/{configuration_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_data_source(self, request):
         """更新数据源
@@ -6522,9 +7535,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateDataSourceRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateDataSourceResponse`
         """
-        return self._update_data_source_with_http_info(request)
+        http_info = self._update_data_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_data_source_with_http_info(self, request):
+    def update_data_source_invoker(self, request):
+        http_info = self._update_data_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_data_source_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources/{ext_data_source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6543,11 +7569,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6556,20 +7582,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/ext-data-sources/{ext_data_source_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_database_authority(self, request):
         """修改数据库对象权限
@@ -6582,9 +7604,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateDatabaseAuthorityRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateDatabaseAuthorityResponse`
         """
-        return self._update_database_authority_with_http_info(request)
+        http_info = self._update_database_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_database_authority_with_http_info(self, request):
+    def update_database_authority_invoker(self, request):
+        http_info = self._update_database_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_database_authority_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/authority",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatabaseAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6601,11 +7636,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6614,20 +7649,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/authority',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDatabaseAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_database_user_info(self, request):
         """修改指定用户信息
@@ -6640,9 +7671,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateDatabaseUserInfoRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateDatabaseUserInfoResponse`
         """
-        return self._update_database_user_info_with_http_info(request)
+        http_info = self._update_database_user_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_database_user_info_with_http_info(self, request):
+    def update_database_user_info_invoker(self, request):
+        http_info = self._update_database_user_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_database_user_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/clusters/{cluster_id}/db-manager/users/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatabaseUserInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6661,11 +7705,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6674,20 +7718,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/clusters/{cluster_id}/db-manager/users/{name}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDatabaseUserInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_disaster_info(self, request):
         """更新容灾配置
@@ -6700,9 +7740,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateDisasterInfoRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateDisasterInfoResponse`
         """
-        return self._update_disaster_info_with_http_info(request)
+        http_info = self._update_disaster_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_disaster_info_with_http_info(self, request):
+    def update_disaster_info_invoker(self, request):
+        http_info = self._update_disaster_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_disaster_info_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/disaster-recovery/{disaster_recovery_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDisasterInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6719,11 +7772,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6732,20 +7785,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/disaster-recovery/{disaster_recovery_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDisasterInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_event_sub(self, request):
         """更新订阅事件
@@ -6758,9 +7807,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateEventSubRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateEventSubResponse`
         """
-        return self._update_event_sub_with_http_info(request)
+        http_info = self._update_event_sub_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_event_sub_with_http_info(self, request):
+    def update_event_sub_invoker(self, request):
+        http_info = self._update_event_sub_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_event_sub_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/event-subs/{event_sub_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEventSubResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6777,11 +7839,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6790,20 +7852,16 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event-subs/{event_sub_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEventSubResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_maintenance_window(self, request):
         """修改运维时间窗
@@ -6816,9 +7874,22 @@ class DwsClient(Client):
         :type request: :class:`huaweicloudsdkdws.v2.UpdateMaintenanceWindowRequest`
         :rtype: :class:`huaweicloudsdkdws.v2.UpdateMaintenanceWindowResponse`
         """
-        return self._update_maintenance_window_with_http_info(request)
+        http_info = self._update_maintenance_window_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_maintenance_window_with_http_info(self, request):
+    def update_maintenance_window_invoker(self, request):
+        http_info = self._update_maintenance_window_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_maintenance_window_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/clusters/{cluster_id}/maintenance-window",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMaintenanceWindowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6835,11 +7906,11 @@ class DwsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6848,20 +7919,25 @@ class DwsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/clusters/{cluster_id}/maintenance-window',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMaintenanceWindowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

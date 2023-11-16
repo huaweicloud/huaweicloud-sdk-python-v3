@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkasm'")
 
 
 class AsmClient(Client):
@@ -38,9 +43,22 @@ class AsmClient(Client):
         :type request: :class:`huaweicloudsdkasm.v1.CreateMeshRequest`
         :rtype: :class:`huaweicloudsdkasm.v1.CreateMeshResponse`
         """
-        return self._create_mesh_with_http_info(request)
+        http_info = self._create_mesh_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_mesh_with_http_info(self, request):
+    def create_mesh_invoker(self, request):
+        http_info = self._create_mesh_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_mesh_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/meshes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMeshResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -59,11 +77,11 @@ class AsmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +90,16 @@ class AsmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/meshes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMeshResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_mesh(self, request):
         """删除网格
@@ -98,9 +112,22 @@ class AsmClient(Client):
         :type request: :class:`huaweicloudsdkasm.v1.DeleteMeshRequest`
         :rtype: :class:`huaweicloudsdkasm.v1.DeleteMeshResponse`
         """
-        return self._delete_mesh_with_http_info(request)
+        http_info = self._delete_mesh_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_mesh_with_http_info(self, request):
+    def delete_mesh_invoker(self, request):
+        http_info = self._delete_mesh_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_mesh_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/meshes/{mesh_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMeshResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,9 +148,9 @@ class AsmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +159,16 @@ class AsmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/meshes/{mesh_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMeshResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_meshes(self, request):
         """查询网格列表
@@ -158,9 +181,22 @@ class AsmClient(Client):
         :type request: :class:`huaweicloudsdkasm.v1.ListMeshesRequest`
         :rtype: :class:`huaweicloudsdkasm.v1.ListMeshesResponse`
         """
-        return self._list_meshes_with_http_info(request)
+        http_info = self._list_meshes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_meshes_with_http_info(self, request):
+    def list_meshes_invoker(self, request):
+        http_info = self._list_meshes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_meshes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/meshes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMeshesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -179,9 +215,9 @@ class AsmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -190,20 +226,16 @@ class AsmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/meshes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMeshesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_mesh(self, request):
         """查询网格
@@ -216,9 +248,22 @@ class AsmClient(Client):
         :type request: :class:`huaweicloudsdkasm.v1.ShowMeshRequest`
         :rtype: :class:`huaweicloudsdkasm.v1.ShowMeshResponse`
         """
-        return self._show_mesh_with_http_info(request)
+        http_info = self._show_mesh_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_mesh_with_http_info(self, request):
+    def show_mesh_invoker(self, request):
+        http_info = self._show_mesh_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_mesh_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/meshes/{mesh_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMeshResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -239,9 +284,9 @@ class AsmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +295,25 @@ class AsmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/meshes/{mesh_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMeshResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

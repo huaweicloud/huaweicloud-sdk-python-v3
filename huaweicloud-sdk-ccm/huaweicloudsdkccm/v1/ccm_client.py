@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkccm'")
 
 
 class CcmClient(Client):
@@ -38,9 +43,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.BatchCreateCaTagsRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.BatchCreateCaTagsResponse`
         """
-        return self._batch_create_ca_tags_with_http_info(request)
+        http_info = self._batch_create_ca_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_ca_tags_with_http_info(self, request):
+    def batch_create_ca_tags_invoker(self, request):
+        http_info = self._batch_create_ca_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_ca_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateCaTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateCaTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_cert_tags(self, request):
         """批量创建证书标签
@@ -96,9 +110,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.BatchCreateCertTagsRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.BatchCreateCertTagsResponse`
         """
-        return self._batch_create_cert_tags_with_http_info(request)
+        http_info = self._batch_create_cert_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_cert_tags_with_http_info(self, request):
+    def batch_create_cert_tags_invoker(self, request):
+        http_info = self._batch_create_cert_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_cert_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates/{certificate_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateCertTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/{certificate_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateCertTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_ca_tags(self, request):
         """批量删除CA标签
@@ -154,9 +177,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.BatchDeleteCaTagsRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.BatchDeleteCaTagsResponse`
         """
-        return self._batch_delete_ca_tags_with_http_info(request)
+        http_info = self._batch_delete_ca_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_ca_tags_with_http_info(self, request):
+    def batch_delete_ca_tags_invoker(self, request):
+        http_info = self._batch_delete_ca_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_ca_tags_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteCaTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/tags/delete',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteCaTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_cert_tags(self, request):
         """批量删除证书标签
@@ -212,9 +244,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.BatchDeleteCertTagsRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.BatchDeleteCertTagsResponse`
         """
-        return self._batch_delete_cert_tags_with_http_info(request)
+        http_info = self._batch_delete_cert_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_cert_tags_with_http_info(self, request):
+    def batch_delete_cert_tags_invoker(self, request):
+        http_info = self._batch_delete_cert_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_cert_tags_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/private-certificates/{certificate_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteCertTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/{certificate_id}/tags/delete',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteCertTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_ca_resource_instances(self, request):
         """根据标签查询CA数量
@@ -270,9 +311,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CountCaResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CountCaResourceInstancesResponse`
         """
-        return self._count_ca_resource_instances_with_http_info(request)
+        http_info = self._count_ca_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_ca_resource_instances_with_http_info(self, request):
+    def count_ca_resource_instances_invoker(self, request):
+        http_info = self._count_ca_resource_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_ca_resource_instances_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountCaResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -287,11 +341,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -300,20 +354,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/resource-instances/count',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountCaResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_cert_resource_instances(self, request):
         """根据标签查询证书数量
@@ -326,9 +376,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CountCertResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CountCertResourceInstancesResponse`
         """
-        return self._count_cert_resource_instances_with_http_info(request)
+        http_info = self._count_cert_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_cert_resource_instances_with_http_info(self, request):
+    def count_cert_resource_instances_invoker(self, request):
+        http_info = self._count_cert_resource_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_cert_resource_instances_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountCertResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -343,11 +406,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -356,20 +419,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/resource-instances/count',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountCertResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ca_tag(self, request):
         """创建CA标签
@@ -382,9 +441,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCaTagRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCaTagResponse`
         """
-        return self._create_ca_tag_with_http_info(request)
+        http_info = self._create_ca_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ca_tag_with_http_info(self, request):
+    def create_ca_tag_invoker(self, request):
+        http_info = self._create_ca_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ca_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCaTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -401,11 +473,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -414,20 +486,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCaTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cert_tag(self, request):
         """创建证书标签
@@ -440,9 +508,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertTagRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertTagResponse`
         """
-        return self._create_cert_tag_with_http_info(request)
+        http_info = self._create_cert_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cert_tag_with_http_info(self, request):
+    def create_cert_tag_invoker(self, request):
+        http_info = self._create_cert_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cert_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates/{certificate_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -459,11 +540,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -472,20 +553,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/{certificate_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate(self, request):
         """申请证书
@@ -498,9 +575,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateResponse`
         """
-        return self._create_certificate_with_http_info(request)
+        http_info = self._create_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_with_http_info(self, request):
+    def create_certificate_invoker(self, request):
+        http_info = self._create_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -515,11 +605,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -528,20 +618,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate_authority_obs_agency(self, request):
         """创建委托
@@ -555,9 +641,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityObsAgencyRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityObsAgencyResponse`
         """
-        return self._create_certificate_authority_obs_agency_with_http_info(request)
+        http_info = self._create_certificate_authority_obs_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_authority_obs_agency_with_http_info(self, request):
+    def create_certificate_authority_obs_agency_invoker(self, request):
+        http_info = self._create_certificate_authority_obs_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_certificate_authority_obs_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/obs/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateAuthorityObsAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -572,9 +671,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -583,20 +682,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/obs/agencies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateAuthorityObsAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate_authority_order(self, request):
         """购买CA
@@ -609,9 +704,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityOrderRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityOrderResponse`
         """
-        return self._create_certificate_authority_order_with_http_info(request)
+        http_info = self._create_certificate_authority_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_authority_order_with_http_info(self, request):
+    def create_certificate_authority_order_invoker(self, request):
+        http_info = self._create_certificate_authority_order_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_certificate_authority_order_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateAuthorityOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -626,11 +734,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -639,20 +747,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/order',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateAuthorityOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate_by_csr(self, request):
         """通过CSR签发证书
@@ -684,9 +788,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateByCsrRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateByCsrResponse`
         """
-        return self._create_certificate_by_csr_with_http_info(request)
+        http_info = self._create_certificate_by_csr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_by_csr_with_http_info(self, request):
+    def create_certificate_by_csr_invoker(self, request):
+        http_info = self._create_certificate_by_csr_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_certificate_by_csr_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates/csr",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateByCsrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,11 +818,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -714,20 +831,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/csr',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateByCsrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_certificate(self, request):
         """删除证书
@@ -740,9 +853,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DeleteCertificateResponse`
         """
-        return self._delete_certificate_with_http_info(request)
+        http_info = self._delete_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_certificate_with_http_info(self, request):
+    def delete_certificate_invoker(self, request):
+        http_info = self._delete_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_certificate_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/private-certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -759,9 +885,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -770,20 +896,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/{certificate_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_certificate_authority_crl(self, request):
         """禁用CRL
@@ -796,9 +918,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityCrlRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityCrlResponse`
         """
-        return self._disable_certificate_authority_crl_with_http_info(request)
+        http_info = self._disable_certificate_authority_crl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_certificate_authority_crl_with_http_info(self, request):
+    def disable_certificate_authority_crl_invoker(self, request):
+        http_info = self._disable_certificate_authority_crl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_certificate_authority_crl_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/crl/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableCertificateAuthorityCrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -815,9 +950,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -826,20 +961,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/crl/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableCertificateAuthorityCrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_certificate_authority_crl(self, request):
         """启用CRL
@@ -852,9 +983,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityCrlRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityCrlResponse`
         """
-        return self._enable_certificate_authority_crl_with_http_info(request)
+        http_info = self._enable_certificate_authority_crl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_certificate_authority_crl_with_http_info(self, request):
+    def enable_certificate_authority_crl_invoker(self, request):
+        http_info = self._enable_certificate_authority_crl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_certificate_authority_crl_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/crl/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableCertificateAuthorityCrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -871,11 +1015,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -884,20 +1028,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/crl/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableCertificateAuthorityCrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_certificate(self, request):
         """导出证书
@@ -985,9 +1125,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateResponse`
         """
-        return self._export_certificate_with_http_info(request)
+        http_info = self._export_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_certificate_with_http_info(self, request):
+    def export_certificate_invoker(self, request):
+        http_info = self._export_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates/{certificate_id}/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1004,11 +1157,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1017,20 +1170,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/{certificate_id}/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ca_resource_instances(self, request):
         """根据标签查询CA列表
@@ -1043,9 +1192,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCaResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCaResourceInstancesResponse`
         """
-        return self._list_ca_resource_instances_with_http_info(request)
+        http_info = self._list_ca_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ca_resource_instances_with_http_info(self, request):
+    def list_ca_resource_instances_invoker(self, request):
+        http_info = self._list_ca_resource_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ca_resource_instances_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1060,11 +1222,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1073,20 +1235,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/resource-instances/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ca_tags(self, request):
         """根据CA查询标签列表
@@ -1099,9 +1257,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCaTagsRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCaTagsResponse`
         """
-        return self._list_ca_tags_with_http_info(request)
+        http_info = self._list_ca_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ca_tags_with_http_info(self, request):
+    def list_ca_tags_invoker(self, request):
+        http_info = self._list_ca_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ca_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1118,9 +1289,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1129,20 +1300,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cert_resource_instances(self, request):
         """根据标签查询证书列表
@@ -1155,9 +1322,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCertResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertResourceInstancesResponse`
         """
-        return self._list_cert_resource_instances_with_http_info(request)
+        http_info = self._list_cert_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cert_resource_instances_with_http_info(self, request):
+    def list_cert_resource_instances_invoker(self, request):
+        http_info = self._list_cert_resource_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cert_resource_instances_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1172,11 +1352,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1185,20 +1365,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/resource-instances/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cert_tags(self, request):
         """根据证书查询标签列表
@@ -1211,9 +1387,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCertTagsRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertTagsResponse`
         """
-        return self._list_cert_tags_with_http_info(request)
+        http_info = self._list_cert_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cert_tags_with_http_info(self, request):
+    def list_cert_tags_invoker(self, request):
+        http_info = self._list_cert_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_cert_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificates/{certificate_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1230,9 +1419,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1241,20 +1430,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/{certificate_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certificate(self, request):
         """查询私有证书列表
@@ -1267,9 +1452,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateResponse`
         """
-        return self._list_certificate_with_http_info(request)
+        http_info = self._list_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certificate_with_http_info(self, request):
+    def list_certificate_invoker(self, request):
+        http_info = self._list_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_certificate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1296,9 +1494,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1307,20 +1505,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certificate_authority_obs_bucket(self, request):
         """查询OBS桶列表
@@ -1334,9 +1528,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityObsBucketRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityObsBucketResponse`
         """
-        return self._list_certificate_authority_obs_bucket_with_http_info(request)
+        http_info = self._list_certificate_authority_obs_bucket_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certificate_authority_obs_bucket_with_http_info(self, request):
+    def list_certificate_authority_obs_bucket_invoker(self, request):
+        http_info = self._list_certificate_authority_obs_bucket_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_certificate_authority_obs_bucket_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities/obs/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificateAuthorityObsBucketResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1351,9 +1558,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1362,20 +1569,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/obs/buckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertificateAuthorityObsBucketResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_ca_tags(self, request):
         """查询所有CA标签列表
@@ -1388,9 +1591,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListDomainCaTagsRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListDomainCaTagsResponse`
         """
-        return self._list_domain_ca_tags_with_http_info(request)
+        http_info = self._list_domain_ca_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_ca_tags_with_http_info(self, request):
+    def list_domain_ca_tags_invoker(self, request):
+        http_info = self._list_domain_ca_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_ca_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainCaTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1405,9 +1621,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1416,20 +1632,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainCaTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_cert_tags(self, request):
         """查询所有证书标签列表
@@ -1442,9 +1654,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListDomainCertTagsRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListDomainCertTagsResponse`
         """
-        return self._list_domain_cert_tags_with_http_info(request)
+        http_info = self._list_domain_cert_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_cert_tags_with_http_info(self, request):
+    def list_domain_cert_tags_invoker(self, request):
+        http_info = self._list_domain_cert_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_cert_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificates/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainCertTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1459,9 +1684,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1470,20 +1695,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainCertTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def parse_certificate_signing_request(self, request):
         """解析CSR
@@ -1496,9 +1717,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ParseCertificateSigningRequestResponse`
         """
-        return self._parse_certificate_signing_request_with_http_info(request)
+        http_info = self._parse_certificate_signing_request_http_info(request)
+        return self._call_api(**http_info)
 
-    def _parse_certificate_signing_request_with_http_info(self, request):
+    def parse_certificate_signing_request_invoker(self, request):
+        http_info = self._parse_certificate_signing_request_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _parse_certificate_signing_request_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates/csr/parse",
+            "request_type": request.__class__.__name__,
+            "response_type": "ParseCertificateSigningRequestResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1513,11 +1747,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1526,20 +1760,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/csr/parse',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ParseCertificateSigningRequestResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def revoke_certificate(self, request):
         """吊销证书
@@ -1553,9 +1783,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.RevokeCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateResponse`
         """
-        return self._revoke_certificate_with_http_info(request)
+        http_info = self._revoke_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _revoke_certificate_with_http_info(self, request):
+    def revoke_certificate_invoker(self, request):
+        http_info = self._revoke_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _revoke_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificates/{certificate_id}/revoke",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokeCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1572,11 +1815,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1585,20 +1828,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/{certificate_id}/revoke',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RevokeCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_certificate(self, request):
         """查询证书详情
@@ -1611,9 +1850,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateResponse`
         """
-        return self._show_certificate_with_http_info(request)
+        http_info = self._show_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_certificate_with_http_info(self, request):
+    def show_certificate_invoker(self, request):
+        http_info = self._show_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1630,9 +1882,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1641,20 +1893,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/{certificate_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_certificate_authority_obs_agency(self, request):
         """查看是否具有委托权限
@@ -1668,9 +1916,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityObsAgencyRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityObsAgencyResponse`
         """
-        return self._show_certificate_authority_obs_agency_with_http_info(request)
+        http_info = self._show_certificate_authority_obs_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_certificate_authority_obs_agency_with_http_info(self, request):
+    def show_certificate_authority_obs_agency_invoker(self, request):
+        http_info = self._show_certificate_authority_obs_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificate_authority_obs_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities/obs/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateAuthorityObsAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1685,9 +1946,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1696,20 +1957,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/obs/agencies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCertificateAuthorityObsAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_certificate_quota(self, request):
         """查询私有证书配额
@@ -1722,9 +1979,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateQuotaRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateQuotaResponse`
         """
-        return self._show_certificate_quota_with_http_info(request)
+        http_info = self._show_certificate_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_certificate_quota_with_http_info(self, request):
+    def show_certificate_quota_invoker(self, request):
+        http_info = self._show_certificate_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificate_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificates/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1739,9 +2009,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1750,20 +2020,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificates/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCertificateQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate_authority(self, request):
         """创建CA
@@ -1779,9 +2045,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.CreateCertificateAuthorityResponse`
         """
-        return self._create_certificate_authority_with_http_info(request)
+        http_info = self._create_certificate_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_authority_with_http_info(self, request):
+    def create_certificate_authority_invoker(self, request):
+        http_info = self._create_certificate_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_certificate_authority_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1796,11 +2075,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1809,20 +2088,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_certificate_authority(self, request):
         """删除CA
@@ -1836,9 +2111,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.DeleteCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DeleteCertificateAuthorityResponse`
         """
-        return self._delete_certificate_authority_with_http_info(request)
+        http_info = self._delete_certificate_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_certificate_authority_with_http_info(self, request):
+    def delete_certificate_authority_invoker(self, request):
+        http_info = self._delete_certificate_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_certificate_authority_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertificateAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1857,9 +2145,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1868,20 +2156,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCertificateAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_certificate_authority(self, request):
         """禁用CA
@@ -1895,9 +2179,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.DisableCertificateAuthorityResponse`
         """
-        return self._disable_certificate_authority_with_http_info(request)
+        http_info = self._disable_certificate_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_certificate_authority_with_http_info(self, request):
+    def disable_certificate_authority_invoker(self, request):
+        http_info = self._disable_certificate_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_certificate_authority_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableCertificateAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1914,9 +2211,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1925,20 +2222,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableCertificateAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_certificate_authority(self, request):
         """启用CA
@@ -1952,9 +2245,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.EnableCertificateAuthorityResponse`
         """
-        return self._enable_certificate_authority_with_http_info(request)
+        http_info = self._enable_certificate_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_certificate_authority_with_http_info(self, request):
+    def enable_certificate_authority_invoker(self, request):
+        http_info = self._enable_certificate_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_certificate_authority_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableCertificateAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1971,9 +2277,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1982,20 +2288,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableCertificateAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_certificate_authority_certificate(self, request):
         """导出CA证书
@@ -2009,9 +2311,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCertificateResponse`
         """
-        return self._export_certificate_authority_certificate_with_http_info(request)
+        http_info = self._export_certificate_authority_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_certificate_authority_certificate_with_http_info(self, request):
+    def export_certificate_authority_certificate_invoker(self, request):
+        http_info = self._export_certificate_authority_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_certificate_authority_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportCertificateAuthorityCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2028,9 +2343,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2039,20 +2354,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportCertificateAuthorityCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_certificate_authority_csr(self, request):
         """导出CA的证书签名请求（CSR）
@@ -2066,9 +2377,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCsrRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ExportCertificateAuthorityCsrResponse`
         """
-        return self._export_certificate_authority_csr_with_http_info(request)
+        http_info = self._export_certificate_authority_csr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_certificate_authority_csr_with_http_info(self, request):
+    def export_certificate_authority_csr_invoker(self, request):
+        http_info = self._export_certificate_authority_csr_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_certificate_authority_csr_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/csr",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportCertificateAuthorityCsrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2085,9 +2409,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2096,20 +2420,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/csr',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportCertificateAuthorityCsrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_certificate_authority_certificate(self, request):
         """导入CA证书
@@ -2127,9 +2447,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ImportCertificateAuthorityCertificateResponse`
         """
-        return self._import_certificate_authority_certificate_with_http_info(request)
+        http_info = self._import_certificate_authority_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_certificate_authority_certificate_with_http_info(self, request):
+    def import_certificate_authority_certificate_invoker(self, request):
+        http_info = self._import_certificate_authority_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_certificate_authority_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportCertificateAuthorityCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2146,11 +2479,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2159,20 +2492,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportCertificateAuthorityCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def issue_certificate_authority_certificate(self, request):
         """激活CA
@@ -2186,9 +2515,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.IssueCertificateAuthorityCertificateResponse`
         """
-        return self._issue_certificate_authority_certificate_with_http_info(request)
+        http_info = self._issue_certificate_authority_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _issue_certificate_authority_certificate_with_http_info(self, request):
+    def issue_certificate_authority_certificate_invoker(self, request):
+        http_info = self._issue_certificate_authority_certificate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _issue_certificate_authority_certificate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/activate",
+            "request_type": request.__class__.__name__,
+            "response_type": "IssueCertificateAuthorityCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2205,11 +2547,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2218,20 +2560,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/activate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='IssueCertificateAuthorityCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certificate_authority(self, request):
         """查询CA列表
@@ -2244,9 +2582,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ListCertificateAuthorityResponse`
         """
-        return self._list_certificate_authority_with_http_info(request)
+        http_info = self._list_certificate_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certificate_authority_with_http_info(self, request):
+    def list_certificate_authority_invoker(self, request):
+        http_info = self._list_certificate_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_certificate_authority_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificateAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2275,9 +2626,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2286,20 +2637,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertificateAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_certificate_authority(self, request):
         """恢复CA
@@ -2313,9 +2660,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.RestoreCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RestoreCertificateAuthorityResponse`
         """
-        return self._restore_certificate_authority_with_http_info(request)
+        http_info = self._restore_certificate_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_certificate_authority_with_http_info(self, request):
+    def restore_certificate_authority_invoker(self, request):
+        http_info = self._restore_certificate_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_certificate_authority_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreCertificateAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2332,9 +2692,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2343,20 +2703,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreCertificateAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def revoke_certificate_authority(self, request):
         """吊销CA
@@ -2370,9 +2726,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.RevokeCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.RevokeCertificateAuthorityResponse`
         """
-        return self._revoke_certificate_authority_with_http_info(request)
+        http_info = self._revoke_certificate_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _revoke_certificate_authority_with_http_info(self, request):
+    def revoke_certificate_authority_invoker(self, request):
+        http_info = self._revoke_certificate_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _revoke_certificate_authority_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}/revoke",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokeCertificateAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2389,11 +2758,11 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2402,20 +2771,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}/revoke',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RevokeCertificateAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_certificate_authority(self, request):
         """查询CA详情
@@ -2428,9 +2793,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityResponse`
         """
-        return self._show_certificate_authority_with_http_info(request)
+        http_info = self._show_certificate_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_certificate_authority_with_http_info(self, request):
+    def show_certificate_authority_invoker(self, request):
+        http_info = self._show_certificate_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificate_authority_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities/{ca_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2447,9 +2825,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2458,20 +2836,16 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/{ca_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCertificateAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_certificate_authority_quota(self, request):
         """查询CA配额
@@ -2484,9 +2858,22 @@ class CcmClient(Client):
         :type request: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityQuotaRequest`
         :rtype: :class:`huaweicloudsdkccm.v1.ShowCertificateAuthorityQuotaResponse`
         """
-        return self._show_certificate_authority_quota_with_http_info(request)
+        http_info = self._show_certificate_authority_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_certificate_authority_quota_with_http_info(self, request):
+    def show_certificate_authority_quota_invoker(self, request):
+        http_info = self._show_certificate_authority_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_certificate_authority_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/private-certificate-authorities/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateAuthorityQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2501,9 +2888,9 @@ class CcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2512,20 +2899,25 @@ class CcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/private-certificate-authorities/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCertificateAuthorityQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

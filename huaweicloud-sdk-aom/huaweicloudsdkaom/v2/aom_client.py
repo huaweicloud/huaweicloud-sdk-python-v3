@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkaom'")
 
 
 class AomClient(Client):
@@ -38,9 +43,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddActionRuleResponse`
         """
-        return self._add_action_rule_with_http_info(request)
+        http_info = self._add_action_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_action_rule_with_http_info(self, request):
+    def add_action_rule_invoker(self, request):
+        http_info = self._add_action_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_action_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/alert/action-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddActionRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/action-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddActionRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_alarm_rule(self, request):
         """添加阈值规则
@@ -94,9 +108,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddAlarmRuleResponse`
         """
-        return self._add_alarm_rule_with_http_info(request)
+        http_info = self._add_alarm_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_alarm_rule_with_http_info(self, request):
+    def add_alarm_rule_invoker(self, request):
+        http_info = self._add_alarm_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_alarm_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/alarm-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAlarmRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddAlarmRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_event2alarm_rule(self, request):
         """新增一条事件类告警规则
@@ -150,9 +173,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddEvent2alarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddEvent2alarmRuleResponse`
         """
-        return self._add_event2alarm_rule_with_http_info(request)
+        http_info = self._add_event2alarm_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_event2alarm_rule_with_http_info(self, request):
+    def add_event2alarm_rule_invoker(self, request):
+        http_info = self._add_event2alarm_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_event2alarm_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/event2alarm-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddEvent2alarmRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,11 +203,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event2alarm-rule',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddEvent2alarmRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_metric_data(self, request):
         """添加监控数据
@@ -206,9 +238,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddMetricDataRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddMetricDataResponse`
         """
-        return self._add_metric_data_with_http_info(request)
+        http_info = self._add_metric_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_metric_data_with_http_info(self, request):
+    def add_metric_data_invoker(self, request):
+        http_info = self._add_metric_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_metric_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ams/report/metricdata",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddMetricDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -223,11 +268,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +281,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ams/report/metricdata',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddMetricDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_mute_rules(self, request):
         """新增静默规则
@@ -262,9 +303,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddMuteRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddMuteRulesResponse`
         """
-        return self._add_mute_rules_with_http_info(request)
+        http_info = self._add_mute_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_mute_rules_with_http_info(self, request):
+    def add_mute_rules_invoker(self, request):
+        http_info = self._add_mute_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_mute_rules_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/alert/mute-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddMuteRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -279,11 +333,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -292,20 +346,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/mute-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddMuteRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_or_update_service_discovery_rules(self, request):
         """添加或修改服务发现规则
@@ -318,9 +368,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.AddOrUpdateServiceDiscoveryRulesResponse`
         """
-        return self._add_or_update_service_discovery_rules_with_http_info(request)
+        http_info = self._add_or_update_service_discovery_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_or_update_service_discovery_rules_with_http_info(self, request):
+    def add_or_update_service_discovery_rules_invoker(self, request):
+        http_info = self._add_or_update_service_discovery_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_or_update_service_discovery_rules_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/inv/servicediscoveryrules",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddOrUpdateServiceDiscoveryRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -335,11 +398,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -348,20 +411,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/inv/servicediscoveryrules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddOrUpdateServiceDiscoveryRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_events(self, request):
         """统计事件告警信息
@@ -374,9 +433,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.CountEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.CountEventsResponse`
         """
-        return self._count_events_with_http_info(request)
+        http_info = self._count_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_events_with_http_info(self, request):
+    def count_events_invoker(self, request):
+        http_info = self._count_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_events_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/events/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -393,11 +465,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -406,20 +478,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/events/statistic',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_action_rule(self, request):
         """删除告警行动规则
@@ -432,9 +500,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteActionRuleResponse`
         """
-        return self._delete_action_rule_with_http_info(request)
+        http_info = self._delete_action_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_action_rule_with_http_info(self, request):
+    def delete_action_rule_invoker(self, request):
+        http_info = self._delete_action_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_action_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/alert/action-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteActionRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -449,11 +530,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -462,20 +543,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/action-rules',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteActionRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alarm_rule(self, request):
         """删除阈值规则
@@ -488,9 +565,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRuleResponse`
         """
-        return self._delete_alarm_rule_with_http_info(request)
+        http_info = self._delete_alarm_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alarm_rule_with_http_info(self, request):
+    def delete_alarm_rule_invoker(self, request):
+        http_info = self._delete_alarm_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_alarm_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/alarm-rules/{alarm_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlarmRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -507,9 +597,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -518,20 +608,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-rules/{alarm_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlarmRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alarm_rules(self, request):
         """批量删除阈值规则
@@ -544,9 +630,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteAlarmRulesResponse`
         """
-        return self._delete_alarm_rules_with_http_info(request)
+        http_info = self._delete_alarm_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alarm_rules_with_http_info(self, request):
+    def delete_alarm_rules_invoker(self, request):
+        http_info = self._delete_alarm_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_alarm_rules_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/alarm-rules/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlarmRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -561,11 +660,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -574,20 +673,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-rules/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlarmRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_event2alarm_rule(self, request):
         """删除事件类告警规则
@@ -600,9 +695,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteEvent2alarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteEvent2alarmRuleResponse`
         """
-        return self._delete_event2alarm_rule_with_http_info(request)
+        http_info = self._delete_event2alarm_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_event2alarm_rule_with_http_info(self, request):
+    def delete_event2alarm_rule_invoker(self, request):
+        http_info = self._delete_event2alarm_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_event2alarm_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/event2alarm-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEvent2alarmRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -617,11 +725,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -630,20 +738,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event2alarm-rule',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEvent2alarmRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_mute_rules(self, request):
         """删除静默规则
@@ -656,9 +760,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteMuteRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteMuteRulesResponse`
         """
-        return self._delete_mute_rules_with_http_info(request)
+        http_info = self._delete_mute_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_mute_rules_with_http_info(self, request):
+    def delete_mute_rules_invoker(self, request):
+        http_info = self._delete_mute_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_mute_rules_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/alert/mute-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMuteRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -673,11 +790,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -686,20 +803,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/mute-rules',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMuteRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def deleteservice_discovery_rules(self, request):
         """删除服务发现规则
@@ -712,9 +825,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.DeleteserviceDiscoveryRulesResponse`
         """
-        return self._deleteservice_discovery_rules_with_http_info(request)
+        http_info = self._deleteservice_discovery_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _deleteservice_discovery_rules_with_http_info(self, request):
+    def deleteservice_discovery_rules_invoker(self, request):
+        http_info = self._deleteservice_discovery_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _deleteservice_discovery_rules_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/inv/servicediscoveryrules",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteserviceDiscoveryRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -732,9 +858,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -743,20 +869,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/inv/servicediscoveryrules',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteserviceDiscoveryRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_action_rule(self, request):
         """获取告警行动规则列表
@@ -769,9 +891,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListActionRuleResponse`
         """
-        return self._list_action_rule_with_http_info(request)
+        http_info = self._list_action_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_action_rule_with_http_info(self, request):
+    def list_action_rule_invoker(self, request):
+        http_info = self._list_action_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_action_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alert/action-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListActionRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -786,9 +921,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -797,20 +932,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/action-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListActionRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_rule(self, request):
         """查询阈值规则列表
@@ -823,9 +954,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListAlarmRuleResponse`
         """
-        return self._list_alarm_rule_with_http_info(request)
+        http_info = self._list_alarm_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_rule_with_http_info(self, request):
+    def list_alarm_rule_invoker(self, request):
+        http_info = self._list_alarm_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_alarm_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alarm-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -844,9 +988,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -855,20 +999,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_event2alarm_rule(self, request):
         """查询事件类告警规则列表
@@ -881,9 +1021,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListEvent2alarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListEvent2alarmRuleResponse`
         """
-        return self._list_event2alarm_rule_with_http_info(request)
+        http_info = self._list_event2alarm_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_event2alarm_rule_with_http_info(self, request):
+    def list_event2alarm_rule_invoker(self, request):
+        http_info = self._list_event2alarm_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_event2alarm_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/event2alarm-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEvent2alarmRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -898,9 +1051,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -909,20 +1062,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event2alarm-rule',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEvent2alarmRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_events(self, request):
         """查询事件告警信息
@@ -935,9 +1084,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListEventsResponse`
         """
-        return self._list_events_with_http_info(request)
+        http_info = self._list_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_events_with_http_info(self, request):
+    def list_events_invoker(self, request):
+        http_info = self._list_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_events_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -954,11 +1116,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -967,20 +1129,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_log_items(self, request):
         """查询日志
@@ -993,9 +1151,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListLogItemsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLogItemsResponse`
         """
-        return self._list_log_items_with_http_info(request)
+        http_info = self._list_log_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_log_items_with_http_info(self, request):
+    def list_log_items_invoker(self, request):
+        http_info = self._list_log_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_log_items_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/als/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1012,11 +1183,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1025,20 +1196,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/als/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLogItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_metric_items(self, request):
         """查询指标
@@ -1051,9 +1218,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListMetricItemsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListMetricItemsResponse`
         """
-        return self._list_metric_items_with_http_info(request)
+        http_info = self._list_metric_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_metric_items_with_http_info(self, request):
+    def list_metric_items_invoker(self, request):
+        http_info = self._list_metric_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_metric_items_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ams/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1074,11 +1254,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1087,20 +1267,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ams/metrics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMetricItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_mute_rule(self, request):
         """获取静默规则列表
@@ -1113,9 +1289,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListMuteRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListMuteRuleResponse`
         """
-        return self._list_mute_rule_with_http_info(request)
+        http_info = self._list_mute_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_mute_rule_with_http_info(self, request):
+    def list_mute_rule_invoker(self, request):
+        http_info = self._list_mute_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_mute_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alert/mute-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMuteRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1130,9 +1319,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1141,20 +1330,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/mute-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMuteRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notified_histories(self, request):
         """获取告警发送结果
@@ -1167,9 +1352,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListNotifiedHistoriesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListNotifiedHistoriesResponse`
         """
-        return self._list_notified_histories_with_http_info(request)
+        http_info = self._list_notified_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notified_histories_with_http_info(self, request):
+    def list_notified_histories_invoker(self, request):
+        http_info = self._list_notified_histories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notified_histories_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alarm-notified-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotifiedHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1186,9 +1384,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1197,20 +1395,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-notified-histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotifiedHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sample(self, request):
         """查询时序数据
@@ -1223,9 +1417,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListSampleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListSampleResponse`
         """
-        return self._list_sample_with_http_info(request)
+        http_info = self._list_sample_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sample_with_http_info(self, request):
+    def list_sample_invoker(self, request):
+        http_info = self._list_sample_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sample_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/samples",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSampleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1242,11 +1449,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1255,20 +1462,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/samples',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSampleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_series(self, request):
         """查询时间序列
@@ -1281,9 +1484,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListSeriesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListSeriesResponse`
         """
-        return self._list_series_with_http_info(request)
+        http_info = self._list_series_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_series_with_http_info(self, request):
+    def list_series_invoker(self, request):
+        http_info = self._list_series_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_series_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/series",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSeriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1302,11 +1518,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1315,20 +1531,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/series',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSeriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_service_discovery_rules(self, request):
         """查询系统中已有服务发现规则
@@ -1341,9 +1553,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListServiceDiscoveryRulesResponse`
         """
-        return self._list_service_discovery_rules_with_http_info(request)
+        http_info = self._list_service_discovery_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_service_discovery_rules_with_http_info(self, request):
+    def list_service_discovery_rules_invoker(self, request):
+        http_info = self._list_service_discovery_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_service_discovery_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/inv/servicediscoveryrules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceDiscoveryRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1360,9 +1585,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1371,20 +1596,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/inv/servicediscoveryrules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServiceDiscoveryRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def push_events(self, request):
         """上报事件告警信息
@@ -1397,9 +1618,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.PushEventsRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.PushEventsResponse`
         """
-        return self._push_events_with_http_info(request)
+        http_info = self._push_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _push_events_with_http_info(self, request):
+    def push_events_invoker(self, request):
+        http_info = self._push_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _push_events_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/push/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "PushEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1418,11 +1652,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1431,20 +1665,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/push/events',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PushEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_action_rule(self, request):
         """通过规则名称获取告警行动规则
@@ -1457,9 +1687,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ShowActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ShowActionRuleResponse`
         """
-        return self._show_action_rule_with_http_info(request)
+        http_info = self._show_action_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_action_rule_with_http_info(self, request):
+    def show_action_rule_invoker(self, request):
+        http_info = self._show_action_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_action_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alert/action-rules/{rule_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowActionRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1476,9 +1719,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1487,20 +1730,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/action-rules/{rule_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowActionRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alarm_rule(self, request):
         """查询单条阈值规则
@@ -1513,9 +1752,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ShowAlarmRuleResponse`
         """
-        return self._show_alarm_rule_with_http_info(request)
+        http_info = self._show_alarm_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alarm_rule_with_http_info(self, request):
+    def show_alarm_rule_invoker(self, request):
+        http_info = self._show_alarm_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_alarm_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/alarm-rules/{alarm_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlarmRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1532,9 +1784,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1543,20 +1795,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-rules/{alarm_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlarmRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metrics_data(self, request):
         """查询监控数据
@@ -1569,9 +1817,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ShowMetricsDataRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ShowMetricsDataResponse`
         """
-        return self._show_metrics_data_with_http_info(request)
+        http_info = self._show_metrics_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metrics_data_with_http_info(self, request):
+    def show_metrics_data_invoker(self, request):
+        http_info = self._show_metrics_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metrics_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ams/metricdata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetricsDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1588,11 +1849,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1601,20 +1862,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ams/metricdata',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMetricsDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_action_rule(self, request):
         """修改告警行动规则
@@ -1627,9 +1884,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.UpdateActionRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateActionRuleResponse`
         """
-        return self._update_action_rule_with_http_info(request)
+        http_info = self._update_action_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_action_rule_with_http_info(self, request):
+    def update_action_rule_invoker(self, request):
+        http_info = self._update_action_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_action_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/alert/action-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateActionRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1644,11 +1914,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1657,20 +1927,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/action-rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateActionRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alarm_rule(self, request):
         """修改阈值规则
@@ -1683,9 +1949,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateAlarmRuleResponse`
         """
-        return self._update_alarm_rule_with_http_info(request)
+        http_info = self._update_alarm_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alarm_rule_with_http_info(self, request):
+    def update_alarm_rule_invoker(self, request):
+        http_info = self._update_alarm_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_alarm_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/alarm-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlarmRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1700,11 +1979,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1713,20 +1992,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alarm-rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlarmRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_event_rule(self, request):
         """更新事件类告警规则
@@ -1739,9 +2014,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.UpdateEventRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateEventRuleResponse`
         """
-        return self._update_event_rule_with_http_info(request)
+        http_info = self._update_event_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_event_rule_with_http_info(self, request):
+    def update_event_rule_invoker(self, request):
+        http_info = self._update_event_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_event_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/event2alarm-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEventRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1756,11 +2044,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1769,20 +2057,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/event2alarm-rule',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEventRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_mute_rule(self, request):
         """修改静默规则
@@ -1795,9 +2079,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.UpdateMuteRuleRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.UpdateMuteRuleResponse`
         """
-        return self._update_mute_rule_with_http_info(request)
+        http_info = self._update_mute_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_mute_rule_with_http_info(self, request):
+    def update_mute_rule_invoker(self, request):
+        http_info = self._update_mute_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_mute_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/alert/mute-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMuteRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1812,11 +2109,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1825,20 +2122,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/alert/mute-rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMuteRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instant_query_aom_prom_get(self, request):
         """瞬时数据查询
@@ -1851,9 +2144,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromGetResponse`
         """
-        return self._list_instant_query_aom_prom_get_with_http_info(request)
+        http_info = self._list_instant_query_aom_prom_get_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instant_query_aom_prom_get_with_http_info(self, request):
+    def list_instant_query_aom_prom_get_invoker(self, request):
+        http_info = self._list_instant_query_aom_prom_get_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instant_query_aom_prom_get_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aom/api/v1/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstantQueryAomPromGetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1872,9 +2178,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1883,20 +2189,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/aom/api/v1/query',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstantQueryAomPromGetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instant_query_aom_prom_post(self, request):
         """瞬时数据查询
@@ -1909,9 +2211,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListInstantQueryAomPromPostResponse`
         """
-        return self._list_instant_query_aom_prom_post_with_http_info(request)
+        http_info = self._list_instant_query_aom_prom_post_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instant_query_aom_prom_post_with_http_info(self, request):
+    def list_instant_query_aom_prom_post_invoker(self, request):
+        http_info = self._list_instant_query_aom_prom_post_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instant_query_aom_prom_post_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aom/api/v1/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstantQueryAomPromPostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1930,9 +2245,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1941,20 +2256,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/aom/api/v1/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstantQueryAomPromPostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_label_values_aom_prom_get(self, request):
         """查询标签值
@@ -1967,9 +2278,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelValuesAomPromGetResponse`
         """
-        return self._list_label_values_aom_prom_get_with_http_info(request)
+        http_info = self._list_label_values_aom_prom_get_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_label_values_aom_prom_get_with_http_info(self, request):
+    def list_label_values_aom_prom_get_invoker(self, request):
+        http_info = self._list_label_values_aom_prom_get_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_label_values_aom_prom_get_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aom/api/v1/label/{label_name}/values",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLabelValuesAomPromGetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1986,9 +2310,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1997,20 +2321,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/aom/api/v1/label/{label_name}/values',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLabelValuesAomPromGetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_labels_aom_prom_get(self, request):
         """获取标签名列表
@@ -2023,9 +2343,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromGetResponse`
         """
-        return self._list_labels_aom_prom_get_with_http_info(request)
+        http_info = self._list_labels_aom_prom_get_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_labels_aom_prom_get_with_http_info(self, request):
+    def list_labels_aom_prom_get_invoker(self, request):
+        http_info = self._list_labels_aom_prom_get_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_labels_aom_prom_get_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aom/api/v1/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLabelsAomPromGetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2040,9 +2373,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2051,20 +2384,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/aom/api/v1/labels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLabelsAomPromGetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_labels_aom_prom_post(self, request):
         """获取标签名列表
@@ -2077,9 +2406,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListLabelsAomPromPostResponse`
         """
-        return self._list_labels_aom_prom_post_with_http_info(request)
+        http_info = self._list_labels_aom_prom_post_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_labels_aom_prom_post_with_http_info(self, request):
+    def list_labels_aom_prom_post_invoker(self, request):
+        http_info = self._list_labels_aom_prom_post_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_labels_aom_prom_post_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aom/api/v1/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLabelsAomPromPostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2094,9 +2436,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2105,20 +2447,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/aom/api/v1/labels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLabelsAomPromPostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_metadata_aom_prom_get(self, request):
         """元数据查询
@@ -2131,9 +2469,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListMetadataAomPromGetResponse`
         """
-        return self._list_metadata_aom_prom_get_with_http_info(request)
+        http_info = self._list_metadata_aom_prom_get_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_metadata_aom_prom_get_with_http_info(self, request):
+    def list_metadata_aom_prom_get_invoker(self, request):
+        http_info = self._list_metadata_aom_prom_get_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_metadata_aom_prom_get_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aom/api/v1/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetadataAomPromGetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2148,9 +2499,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2159,20 +2510,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/aom/api/v1/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMetadataAomPromGetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_range_query_aom_prom_get(self, request):
         """区间数据查询
@@ -2185,9 +2532,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromGetResponse`
         """
-        return self._list_range_query_aom_prom_get_with_http_info(request)
+        http_info = self._list_range_query_aom_prom_get_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_range_query_aom_prom_get_with_http_info(self, request):
+    def list_range_query_aom_prom_get_invoker(self, request):
+        http_info = self._list_range_query_aom_prom_get_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_range_query_aom_prom_get_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/aom/api/v1/query_range",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRangeQueryAomPromGetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2210,9 +2570,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2221,20 +2581,16 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/aom/api/v1/query_range',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRangeQueryAomPromGetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_range_query_aom_prom_post(self, request):
         """区间数据查询
@@ -2247,9 +2603,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostRequest`
         :rtype: :class:`huaweicloudsdkaom.v2.ListRangeQueryAomPromPostResponse`
         """
-        return self._list_range_query_aom_prom_post_with_http_info(request)
+        http_info = self._list_range_query_aom_prom_post_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_range_query_aom_prom_post_with_http_info(self, request):
+    def list_range_query_aom_prom_post_invoker(self, request):
+        http_info = self._list_range_query_aom_prom_post_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_range_query_aom_prom_post_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/aom/api/v1/query_range",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRangeQueryAomPromPostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2272,9 +2641,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2283,20 +2652,25 @@ class AomClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/aom/api/v1/query_range',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRangeQueryAomPromPostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

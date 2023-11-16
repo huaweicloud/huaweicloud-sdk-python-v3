@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkugo'")
 
 
 class UgoAsyncClient(Client):
@@ -39,9 +44,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CheckPermissionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CheckPermissionResponse`
         """
-        return self._check_permission_with_http_info(request)
+        http_info = self._check_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_permission_with_http_info(self, request):
+    def check_permission_async_invoker(self, request):
+        http_info = self._check_permission_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_permission_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/permission-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,9 +75,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/permission-check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def commit_syntax_conversion_async(self, request):
         """提交语法转换
@@ -96,9 +109,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CommitSyntaxConversionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CommitSyntaxConversionResponse`
         """
-        return self._commit_syntax_conversion_with_http_info(request)
+        http_info = self._commit_syntax_conversion_http_info(request)
+        return self._call_api(**http_info)
 
-    def _commit_syntax_conversion_with_http_info(self, request):
+    def commit_syntax_conversion_async_invoker(self, request):
+        http_info = self._commit_syntax_conversion_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _commit_syntax_conversion_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/syntax-conversion",
+            "request_type": request.__class__.__name__,
+            "response_type": "CommitSyntaxConversionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,9 +140,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/syntax-conversion',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CommitSyntaxConversionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def commit_verification_async(self, request):
         """提交验证。
@@ -153,9 +174,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CommitVerificationRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CommitVerificationResponse`
         """
-        return self._commit_verification_with_http_info(request)
+        http_info = self._commit_verification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _commit_verification_with_http_info(self, request):
+    def commit_verification_async_invoker(self, request):
+        http_info = self._commit_verification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _commit_verification_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/verification",
+            "request_type": request.__class__.__name__,
+            "response_type": "CommitVerificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,9 +205,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/verification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CommitVerificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def confirm_target_db_type_async(self, request):
         """评估项目确认目标数据库类型。
@@ -210,9 +239,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ConfirmTargetDbTypeRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ConfirmTargetDbTypeResponse`
         """
-        return self._confirm_target_db_type_with_http_info(request)
+        http_info = self._confirm_target_db_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _confirm_target_db_type_with_http_info(self, request):
+    def confirm_target_db_type_async_invoker(self, request):
+        http_info = self._confirm_target_db_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _confirm_target_db_type_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/evaluation-projects/target-confirmation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmTargetDbTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -227,11 +268,11 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +281,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/evaluation-projects/target-confirmation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ConfirmTargetDbTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_evaluation_project_async(self, request):
         """创建评估项目。
@@ -267,9 +304,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CreateEvaluationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CreateEvaluationProjectResponse`
         """
-        return self._create_evaluation_project_with_http_info(request)
+        http_info = self._create_evaluation_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_evaluation_project_with_http_info(self, request):
+    def create_evaluation_project_async_invoker(self, request):
+        http_info = self._create_evaluation_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_evaluation_project_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/evaluation-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEvaluationProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -284,11 +333,11 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -297,20 +346,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/evaluation-projects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEvaluationProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_migration_project_async(self, request):
         """创建迁移项目。
@@ -324,9 +369,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.CreateMigrationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.CreateMigrationProjectResponse`
         """
-        return self._create_migration_project_with_http_info(request)
+        http_info = self._create_migration_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_migration_project_with_http_info(self, request):
+    def create_migration_project_async_invoker(self, request):
+        http_info = self._create_migration_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_migration_project_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/migration-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMigrationProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +398,11 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +411,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMigrationProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_evaluation_project_async(self, request):
         """删除评估项目。
@@ -381,9 +434,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.DeleteEvaluationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DeleteEvaluationProjectResponse`
         """
-        return self._delete_evaluation_project_with_http_info(request)
+        http_info = self._delete_evaluation_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_evaluation_project_with_http_info(self, request):
+    def delete_evaluation_project_async_invoker(self, request):
+        http_info = self._delete_evaluation_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_evaluation_project_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/evaluation-projects/{evaluation_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEvaluationProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -400,9 +465,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -411,20 +476,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/evaluation-projects/{evaluation_project_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEvaluationProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_migration_project_async(self, request):
         """删除迁移项目
@@ -438,9 +499,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.DeleteMigrationProjectRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DeleteMigrationProjectResponse`
         """
-        return self._delete_migration_project_with_http_info(request)
+        http_info = self._delete_migration_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_migration_project_with_http_info(self, request):
+    def delete_migration_project_async_invoker(self, request):
+        http_info = self._delete_migration_project_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_migration_project_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMigrationProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -457,9 +530,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -468,20 +541,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMigrationProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_failure_report_async(self, request):
         """下载迁移错误报告。
@@ -495,9 +564,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.DownloadFailureReportRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.DownloadFailureReportResponse`
         """
-        return self._download_failure_report_with_http_info(request)
+        http_info = self._download_failure_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_failure_report_with_http_info(self, request):
+    def download_failure_report_async_invoker(self, request):
+        http_info = self._download_failure_report_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_failure_report_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/download-failure-report",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadFailureReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -514,9 +595,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -525,20 +606,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/download-failure-report',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadFailureReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_evaluation_projects_async(self, request):
         """查询评估项目列表。
@@ -552,9 +629,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListEvaluationProjectsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListEvaluationProjectsResponse`
         """
-        return self._list_evaluation_projects_with_http_info(request)
+        http_info = self._list_evaluation_projects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_evaluation_projects_with_http_info(self, request):
+    def list_evaluation_projects_async_invoker(self, request):
+        http_info = self._list_evaluation_projects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_evaluation_projects_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/evaluation-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEvaluationProjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -577,9 +666,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -588,20 +677,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/evaluation-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEvaluationProjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_migration_projects_async(self, request):
         """查询迁移项目列表。
@@ -615,9 +700,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListMigrationProjectsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListMigrationProjectsResponse`
         """
-        return self._list_migration_projects_with_http_info(request)
+        http_info = self._list_migration_projects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_migration_projects_with_http_info(self, request):
+    def list_migration_projects_async_invoker(self, request):
+        http_info = self._list_migration_projects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_migration_projects_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMigrationProjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -636,9 +733,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -647,20 +744,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMigrationProjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_permission_check_result_async(self, request):
         """查询权限检查结果。
@@ -674,9 +767,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListPermissionCheckResultRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListPermissionCheckResultResponse`
         """
-        return self._list_permission_check_result_with_http_info(request)
+        http_info = self._list_permission_check_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_permission_check_result_with_http_info(self, request):
+    def list_permission_check_result_async_invoker(self, request):
+        http_info = self._list_permission_check_result_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_permission_check_result_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/permission-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermissionCheckResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -697,9 +802,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -708,20 +813,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/permission-result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPermissionCheckResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas_async(self, request):
         """查询配额。
@@ -735,9 +836,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_async_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -752,9 +865,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -763,20 +876,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_syntax_conversion_progress_async(self, request):
         """查询语法转换的进度。
@@ -790,9 +899,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListSyntaxConversionProgressRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListSyntaxConversionProgressResponse`
         """
-        return self._list_syntax_conversion_progress_with_http_info(request)
+        http_info = self._list_syntax_conversion_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_syntax_conversion_progress_with_http_info(self, request):
+    def list_syntax_conversion_progress_async_invoker(self, request):
+        http_info = self._list_syntax_conversion_progress_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_syntax_conversion_progress_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/syntax-conversion-progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSyntaxConversionProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -809,9 +930,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -820,20 +941,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/syntax-conversion-progress',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSyntaxConversionProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_verification_progress_async(self, request):
         """查询验证进度。
@@ -847,9 +964,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListVerificationProgressRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListVerificationProgressResponse`
         """
-        return self._list_verification_progress_with_http_info(request)
+        http_info = self._list_verification_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_verification_progress_with_http_info(self, request):
+    def list_verification_progress_async_invoker(self, request):
+        http_info = self._list_verification_progress_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_verification_progress_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/verification-progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVerificationProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -866,9 +995,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -877,20 +1006,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/verification-progress',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVerificationProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_evaluation_project_detail_async(self, request):
         """查询评估项目详情。
@@ -904,9 +1029,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectDetailRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectDetailResponse`
         """
-        return self._show_evaluation_project_detail_with_http_info(request)
+        http_info = self._show_evaluation_project_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_evaluation_project_detail_with_http_info(self, request):
+    def show_evaluation_project_detail_async_invoker(self, request):
+        http_info = self._show_evaluation_project_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_evaluation_project_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/evaluation-projects/{evaluation_project_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEvaluationProjectDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -923,9 +1060,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -934,20 +1071,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/evaluation-projects/{evaluation_project_id}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEvaluationProjectDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_evaluation_project_status_async(self, request):
         """查询评估项目状态。
@@ -961,9 +1094,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowEvaluationProjectStatusResponse`
         """
-        return self._show_evaluation_project_status_with_http_info(request)
+        http_info = self._show_evaluation_project_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_evaluation_project_status_with_http_info(self, request):
+    def show_evaluation_project_status_async_invoker(self, request):
+        http_info = self._show_evaluation_project_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_evaluation_project_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/evaluation-projects/{evaluation_project_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEvaluationProjectStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -980,9 +1125,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -991,20 +1136,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/evaluation-projects/{evaluation_project_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEvaluationProjectStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_migration_project_detail_async(self, request):
         """查询迁移项目详情。
@@ -1018,9 +1159,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectDetailRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectDetailResponse`
         """
-        return self._show_migration_project_detail_with_http_info(request)
+        http_info = self._show_migration_project_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_migration_project_detail_with_http_info(self, request):
+    def show_migration_project_detail_async_invoker(self, request):
+        http_info = self._show_migration_project_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_migration_project_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMigrationProjectDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1037,9 +1190,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1048,20 +1201,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMigrationProjectDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_migration_project_status_async(self, request):
         """查询迁移项目状态。
@@ -1075,9 +1224,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectStatusRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowMigrationProjectStatusResponse`
         """
-        return self._show_migration_project_status_with_http_info(request)
+        http_info = self._show_migration_project_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_migration_project_status_with_http_info(self, request):
+    def show_migration_project_status_async_invoker(self, request):
+        http_info = self._show_migration_project_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_migration_project_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/migration-projects/{migration_project_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMigrationProjectStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1094,9 +1255,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1105,20 +1266,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/migration-projects/{migration_project_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMigrationProjectStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions_async(self, request):
         """查询API版本信息列表。
@@ -1132,9 +1289,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_async_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1149,9 +1318,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1160,20 +1329,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version_info_async(self, request):
         """查询指定版本号的API版本信息。
@@ -1187,9 +1352,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.ShowApiVersionInfoRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.ShowApiVersionInfoResponse`
         """
-        return self._show_api_version_info_with_http_info(request)
+        http_info = self._show_api_version_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_info_with_http_info(self, request):
+    def show_api_version_info_async_invoker(self, request):
+        http_info = self._show_api_version_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_api_version_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{api_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1206,9 +1383,9 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1217,20 +1394,16 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{api_version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_sql_conversion_async(self, request):
         """SQL语句转换。
@@ -1244,9 +1417,21 @@ class UgoAsyncClient(Client):
         :type request: :class:`huaweicloudsdkugo.v1.RunSqlConversionRequest`
         :rtype: :class:`huaweicloudsdkugo.v1.RunSqlConversionResponse`
         """
-        return self._run_sql_conversion_with_http_info(request)
+        http_info = self._run_sql_conversion_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_sql_conversion_with_http_info(self, request):
+    def run_sql_conversion_async_invoker(self, request):
+        http_info = self._run_sql_conversion_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_sql_conversion_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sql-conversion",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSqlConversionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1261,11 +1446,11 @@ class UgoAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1274,20 +1459,26 @@ class UgoAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sql-conversion',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSqlConversionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1326,4 +1517,4 @@ class UgoAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

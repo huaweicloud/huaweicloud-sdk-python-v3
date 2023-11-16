@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkges'")
 
 
 class GesAsyncClient(Client):
@@ -39,9 +44,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.AttachEip2Request`
         :rtype: :class:`huaweicloudsdkges.v2.AttachEip2Response`
         """
-        return self._attach_eip2_with_http_info(request)
+        http_info = self._attach_eip2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_eip2_with_http_info(self, request):
+    def attach_eip2_async_invoker(self, request):
+        http_info = self._attach_eip2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_eip2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/bind-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachEip2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/bind-eip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachEip2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def clear_graph2_async(self, request):
         """清空图
@@ -98,9 +111,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ClearGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ClearGraph2Response`
         """
-        return self._clear_graph2_with_http_info(request)
+        http_info = self._clear_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _clear_graph2_with_http_info(self, request):
+    def clear_graph2_async_invoker(self, request):
+        http_info = self._clear_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _clear_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/clear-graph",
+            "request_type": request.__class__.__name__,
+            "response_type": "ClearGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,9 +144,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/clear-graph',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ClearGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_backup2_async(self, request):
         """新增备份
@@ -157,9 +178,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.CreateBackup2Request`
         :rtype: :class:`huaweicloudsdkges.v2.CreateBackup2Response`
         """
-        return self._create_backup2_with_http_info(request)
+        http_info = self._create_backup2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_backup2_with_http_info(self, request):
+    def create_backup2_async_invoker(self, request):
+        http_info = self._create_backup2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_backup2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBackup2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,9 +209,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -187,20 +220,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/backups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBackup2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_graph2_async(self, request):
         """创建图
@@ -214,9 +243,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.CreateGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.CreateGraph2Response`
         """
-        return self._create_graph2_with_http_info(request)
+        http_info = self._create_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_graph2_with_http_info(self, request):
+    def create_graph2_async_invoker(self, request):
+        http_info = self._create_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +272,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +285,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_metadata2_async(self, request):
         """新增元数据
@@ -271,9 +308,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.CreateMetadata2Request`
         :rtype: :class:`huaweicloudsdkges.v2.CreateMetadata2Response`
         """
-        return self._create_metadata2_with_http_info(request)
+        http_info = self._create_metadata2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_metadata2_with_http_info(self, request):
+    def create_metadata2_async_invoker(self, request):
+        http_info = self._create_metadata2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_metadata2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/metadatas",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMetadata2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -288,11 +337,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -301,20 +350,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/metadatas',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMetadata2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_backup2_async(self, request):
         """删除备份
@@ -328,9 +373,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.DeleteBackup2Request`
         :rtype: :class:`huaweicloudsdkges.v2.DeleteBackup2Response`
         """
-        return self._delete_backup2_with_http_info(request)
+        http_info = self._delete_backup2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_backup2_with_http_info(self, request):
+    def delete_backup2_async_invoker(self, request):
+        http_info = self._delete_backup2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_backup2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBackup2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -349,9 +406,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +417,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/backups/{backup_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBackup2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_graph2_async(self, request):
         """删除图
@@ -387,9 +440,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.DeleteGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.DeleteGraph2Response`
         """
-        return self._delete_graph2_with_http_info(request)
+        http_info = self._delete_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_graph2_with_http_info(self, request):
+    def delete_graph2_async_invoker(self, request):
+        http_info = self._delete_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_graph2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -408,9 +473,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -419,20 +484,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_metadata2_async(self, request):
         """删除元数据
@@ -446,9 +507,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.DeleteMetadata2Request`
         :rtype: :class:`huaweicloudsdkges.v2.DeleteMetadata2Response`
         """
-        return self._delete_metadata2_with_http_info(request)
+        http_info = self._delete_metadata2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_metadata2_with_http_info(self, request):
+    def delete_metadata2_async_invoker(self, request):
+        http_info = self._delete_metadata2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_metadata2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/graphs/metadatas/{metadata_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMetadata2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -465,9 +538,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -476,20 +549,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/metadatas/{metadata_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMetadata2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_eip2_async(self, request):
         """解绑EIP
@@ -503,9 +572,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.DetachEip2Request`
         :rtype: :class:`huaweicloudsdkges.v2.DetachEip2Response`
         """
-        return self._detach_eip2_with_http_info(request)
+        http_info = self._detach_eip2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_eip2_with_http_info(self, request):
+    def detach_eip2_async_invoker(self, request):
+        http_info = self._detach_eip2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detach_eip2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/unbind-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachEip2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -522,11 +603,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -535,20 +616,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/unbind-eip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachEip2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_graph2_async(self, request):
         """扩副本
@@ -565,9 +642,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ExpandGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ExpandGraph2Response`
         """
-        return self._expand_graph2_with_http_info(request)
+        http_info = self._expand_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_graph2_with_http_info(self, request):
+    def expand_graph2_async_invoker(self, request):
+        http_info = self._expand_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _expand_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/expand",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -584,11 +673,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -597,20 +686,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/expand',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_graph2_async(self, request):
         """导出图
@@ -624,9 +709,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ExportGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ExportGraph2Response`
         """
-        return self._export_graph2_with_http_info(request)
+        http_info = self._export_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_graph2_with_http_info(self, request):
+    def export_graph2_async_invoker(self, request):
+        http_info = self._export_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/export-graph",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -643,11 +740,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -656,20 +753,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/export-graph',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_graph2_async(self, request):
         """增量导入图
@@ -684,9 +777,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ImportGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ImportGraph2Response`
         """
-        return self._import_graph2_with_http_info(request)
+        http_info = self._import_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_graph2_with_http_info(self, request):
+    def import_graph2_async_invoker(self, request):
+        http_info = self._import_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/import-graph",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -703,11 +808,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -716,20 +821,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/import-graph',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_backups2_async(self, request):
         """查看所有备份列表
@@ -743,9 +844,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ListBackups2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ListBackups2Response`
         """
-        return self._list_backups2_with_http_info(request)
+        http_info = self._list_backups2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_backups2_with_http_info(self, request):
+    def list_backups2_async_invoker(self, request):
+        http_info = self._list_backups2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_backups2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackups2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -764,9 +877,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -775,20 +888,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackups2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_graph_backups2_async(self, request):
         """查看某个图的备份列表
@@ -802,9 +911,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ListGraphBackups2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ListGraphBackups2Response`
         """
-        return self._list_graph_backups2_with_http_info(request)
+        http_info = self._list_graph_backups2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_graph_backups2_with_http_info(self, request):
+    def list_graph_backups2_async_invoker(self, request):
+        http_info = self._list_graph_backups2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_graph_backups2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGraphBackups2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -825,9 +946,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -836,20 +957,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGraphBackups2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_graphs2_async(self, request):
         """查询图列表
@@ -863,9 +980,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ListGraphs2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ListGraphs2Response`
         """
-        return self._list_graphs2_with_http_info(request)
+        http_info = self._list_graphs2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_graphs2_with_http_info(self, request):
+    def list_graphs2_async_invoker(self, request):
+        http_info = self._list_graphs2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_graphs2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGraphs2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -884,9 +1013,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -895,20 +1024,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGraphs2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_jobs2_async(self, request):
         """查询任务中心
@@ -922,9 +1047,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ListJobs2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ListJobs2Response`
         """
-        return self._list_jobs2_with_http_info(request)
+        http_info = self._list_jobs2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_jobs2_with_http_info(self, request):
+    def list_jobs2_async_invoker(self, request):
+        http_info = self._list_jobs2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_jobs2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListJobs2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -951,9 +1088,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -962,20 +1099,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListJobs2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_metadatas2_async(self, request):
         """查询元数据列表
@@ -989,9 +1122,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ListMetadatas2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ListMetadatas2Response`
         """
-        return self._list_metadatas2_with_http_info(request)
+        http_info = self._list_metadatas2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_metadatas2_with_http_info(self, request):
+    def list_metadatas2_async_invoker(self, request):
+        http_info = self._list_metadatas2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_metadatas2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/metadatas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetadatas2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1010,9 +1155,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1021,20 +1166,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/metadatas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMetadatas2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas2_async(self, request):
         """查询配额
@@ -1048,9 +1189,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ListQuotas2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ListQuotas2Response`
         """
-        return self._list_quotas2_with_http_info(request)
+        http_info = self._list_quotas2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas2_with_http_info(self, request):
+    def list_quotas2_async_invoker(self, request):
+        http_info = self._list_quotas2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quotas2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotas2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1065,9 +1218,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1076,20 +1229,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotas2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_graph2_async(self, request):
         """扩容图
@@ -1104,9 +1253,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ResizeGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ResizeGraph2Response`
         """
-        return self._resize_graph2_with_http_info(request)
+        http_info = self._resize_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_graph2_with_http_info(self, request):
+    def resize_graph2_async_invoker(self, request):
+        http_info = self._resize_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1123,11 +1284,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1136,20 +1297,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_graph2_async(self, request):
         """强制重启图
@@ -1163,9 +1320,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.RestartGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.RestartGraph2Response`
         """
-        return self._restart_graph2_with_http_info(request)
+        http_info = self._restart_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_graph2_with_http_info(self, request):
+    def restart_graph2_async_invoker(self, request):
+        http_info = self._restart_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1182,9 +1351,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1193,20 +1362,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_graph2_async(self, request):
         """查询图详情
@@ -1220,9 +1385,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ShowGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ShowGraph2Response`
         """
-        return self._show_graph2_with_http_info(request)
+        http_info = self._show_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_graph2_with_http_info(self, request):
+    def show_graph2_async_invoker(self, request):
+        http_info = self._show_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_graph2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1239,9 +1416,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1250,20 +1427,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job2_async(self, request):
         """查询Job状态-管理面
@@ -1277,9 +1450,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ShowJob2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ShowJob2Response`
         """
-        return self._show_job2_with_http_info(request)
+        http_info = self._show_job2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job2_with_http_info(self, request):
+    def show_job2_async_invoker(self, request):
+        http_info = self._show_job2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_job2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/jobs/{job_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJob2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1298,9 +1483,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1309,20 +1494,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/jobs/{job_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJob2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metadata2_async(self, request):
         """查询元数据
@@ -1336,9 +1517,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ShowMetadata2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ShowMetadata2Response`
         """
-        return self._show_metadata2_with_http_info(request)
+        http_info = self._show_metadata2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metadata2_with_http_info(self, request):
+    def show_metadata2_async_invoker(self, request):
+        http_info = self._show_metadata2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_metadata2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/metadatas/{metadata_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetadata2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1355,9 +1548,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1366,20 +1559,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/metadatas/{metadata_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMetadata2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_graph2_async(self, request):
         """启动图
@@ -1393,9 +1582,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.StartGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.StartGraph2Response`
         """
-        return self._start_graph2_with_http_info(request)
+        http_info = self._start_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_graph2_with_http_info(self, request):
+    def start_graph2_async_invoker(self, request):
+        http_info = self._start_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1412,11 +1613,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1425,20 +1626,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_graph2_async(self, request):
         """关闭图
@@ -1453,9 +1650,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.StopGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.StopGraph2Response`
         """
-        return self._stop_graph2_with_http_info(request)
+        http_info = self._stop_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_graph2_with_http_info(self, request):
+    def stop_graph2_async_invoker(self, request):
+        http_info = self._stop_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1472,9 +1681,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1483,20 +1692,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_graph2_async(self, request):
         """升级图
@@ -1510,9 +1715,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.UpgradeGraph2Request`
         :rtype: :class:`huaweicloudsdkges.v2.UpgradeGraph2Response`
         """
-        return self._upgrade_graph2_with_http_info(request)
+        http_info = self._upgrade_graph2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_graph2_with_http_info(self, request):
+    def upgrade_graph2_async_invoker(self, request):
+        http_info = self._upgrade_graph2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_graph2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeGraph2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1529,11 +1746,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1542,20 +1759,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeGraph2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_from_obs2_async(self, request):
         """从OBS导入元数据
@@ -1569,9 +1782,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.UploadFromObs2Request`
         :rtype: :class:`huaweicloudsdkges.v2.UploadFromObs2Response`
         """
-        return self._upload_from_obs2_with_http_info(request)
+        http_info = self._upload_from_obs2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_from_obs2_with_http_info(self, request):
+    def upload_from_obs2_async_invoker(self, request):
+        http_info = self._upload_from_obs2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_from_obs2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/metadata/upload-from-obs",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadFromObs2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1586,11 +1811,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1599,20 +1824,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/metadata/upload-from-obs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadFromObs2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def deregister_scenes2_async(self, request):
         """取消订阅场景分析插件
@@ -1626,9 +1847,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.DeregisterScenes2Request`
         :rtype: :class:`huaweicloudsdkges.v2.DeregisterScenes2Response`
         """
-        return self._deregister_scenes2_with_http_info(request)
+        http_info = self._deregister_scenes2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _deregister_scenes2_with_http_info(self, request):
+    def deregister_scenes2_async_invoker(self, request):
+        http_info = self._deregister_scenes2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _deregister_scenes2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/scenes/unregister",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeregisterScenes2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1645,11 +1878,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1658,20 +1891,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/scenes/unregister',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeregisterScenes2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scenes2_async(self, request):
         """查询获取场景应用分析插件
@@ -1685,9 +1914,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.ListScenes2Request`
         :rtype: :class:`huaweicloudsdkges.v2.ListScenes2Response`
         """
-        return self._list_scenes2_with_http_info(request)
+        http_info = self._list_scenes2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scenes2_with_http_info(self, request):
+    def list_scenes2_async_invoker(self, request):
+        http_info = self._list_scenes2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scenes2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/graphs/scenes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScenes2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1708,9 +1949,9 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1719,20 +1960,16 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/scenes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScenes2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_scenes2_async(self, request):
         """订阅场景分析插件
@@ -1747,9 +1984,21 @@ class GesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkges.v2.RegisterScenes2Request`
         :rtype: :class:`huaweicloudsdkges.v2.RegisterScenes2Response`
         """
-        return self._register_scenes2_with_http_info(request)
+        http_info = self._register_scenes2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_scenes2_with_http_info(self, request):
+    def register_scenes2_async_invoker(self, request):
+        http_info = self._register_scenes2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _register_scenes2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/graphs/{graph_id}/scenes/register",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterScenes2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1766,11 +2015,11 @@ class GesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1779,20 +2028,26 @@ class GesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/graphs/{graph_id}/scenes/register',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterScenes2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1831,4 +2086,4 @@ class GesAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

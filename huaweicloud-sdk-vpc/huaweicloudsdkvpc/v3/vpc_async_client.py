@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkvpc'")
 
 
 class VpcAsyncClient(Client):
@@ -39,9 +44,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.AddSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.AddSecurityGroupsResponse`
         """
-        return self._add_security_groups_with_http_info(request)
+        http_info = self._add_security_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_security_groups_with_http_info(self, request):
+    def add_security_groups_async_invoker(self, request):
+        http_info = self._add_security_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_security_groups_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ports/{port_id}/insert-security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddSecurityGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ports/{port_id}/insert-security-groups',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddSecurityGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_sources_to_traffic_mirror_session_async(self, request):
         """流量镜像会话添加镜像源
@@ -98,9 +111,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.AddSourcesToTrafficMirrorSessionRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.AddSourcesToTrafficMirrorSessionResponse`
         """
-        return self._add_sources_to_traffic_mirror_session_with_http_info(request)
+        http_info = self._add_sources_to_traffic_mirror_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_sources_to_traffic_mirror_session_with_http_info(self, request):
+    def add_sources_to_traffic_mirror_session_async_invoker(self, request):
+        http_info = self._add_sources_to_traffic_mirror_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_sources_to_traffic_mirror_session_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}/add-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddSourcesToTrafficMirrorSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}/add-sources',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddSourcesToTrafficMirrorSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_security_group_rules_async(self, request):
         """批量创建安全组规则
@@ -157,9 +178,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateSecurityGroupRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSecurityGroupRulesResponse`
         """
-        return self._batch_create_security_group_rules_with_http_info(request)
+        http_info = self._batch_create_security_group_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_security_group_rules_with_http_info(self, request):
+    def batch_create_security_group_rules_async_invoker(self, request):
+        http_info = self._batch_create_security_group_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_security_group_rules_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/security-groups/{security_group_id}/security-group-rules/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSecurityGroupRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-groups/{security_group_id}/security-group-rules/batch-create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateSecurityGroupRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_sub_network_interface_async(self, request):
         """批量创建辅助弹性网卡
@@ -216,9 +245,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.BatchCreateSubNetworkInterfaceResponse`
         """
-        return self._batch_create_sub_network_interface_with_http_info(request)
+        http_info = self._batch_create_sub_network_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_sub_network_interface_with_http_info(self, request):
+    def batch_create_sub_network_interface_async_invoker(self, request):
+        http_info = self._batch_create_sub_network_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_sub_network_interface_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSubNetworkInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,11 +274,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +287,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/sub-network-interfaces/batch-create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateSubNetworkInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_security_group_async(self, request):
         """创建安全组
@@ -273,9 +310,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupResponse`
         """
-        return self._create_security_group_with_http_info(request)
+        http_info = self._create_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_security_group_with_http_info(self, request):
+    def create_security_group_async_invoker(self, request):
+        http_info = self._create_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_security_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -290,11 +339,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -303,20 +352,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_security_group_rule_async(self, request):
         """创建安全组规则
@@ -330,9 +375,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSecurityGroupRuleResponse`
         """
-        return self._create_security_group_rule_with_http_info(request)
+        http_info = self._create_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_security_group_rule_with_http_info(self, request):
+    def create_security_group_rule_async_invoker(self, request):
+        http_info = self._create_security_group_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_security_group_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/security-group-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,11 +404,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +417,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-group-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_sub_network_interface_async(self, request):
         """创建辅助弹性网卡
@@ -387,9 +440,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateSubNetworkInterfaceResponse`
         """
-        return self._create_sub_network_interface_with_http_info(request)
+        http_info = self._create_sub_network_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sub_network_interface_with_http_info(self, request):
+    def create_sub_network_interface_async_invoker(self, request):
+        http_info = self._create_sub_network_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_sub_network_interface_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubNetworkInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -404,11 +469,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -417,20 +482,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/sub-network-interfaces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubNetworkInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_traffic_mirror_filter_async(self, request):
         """创建流量镜像筛选条件
@@ -444,9 +505,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterResponse`
         """
-        return self._create_traffic_mirror_filter_with_http_info(request)
+        http_info = self._create_traffic_mirror_filter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_traffic_mirror_filter_with_http_info(self, request):
+    def create_traffic_mirror_filter_async_invoker(self, request):
+        http_info = self._create_traffic_mirror_filter_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_traffic_mirror_filter_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTrafficMirrorFilterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,11 +534,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +547,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTrafficMirrorFilterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_traffic_mirror_filter_rule_async(self, request):
         """创建流量镜像筛选规则
@@ -501,9 +570,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorFilterRuleResponse`
         """
-        return self._create_traffic_mirror_filter_rule_with_http_info(request)
+        http_info = self._create_traffic_mirror_filter_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_traffic_mirror_filter_rule_with_http_info(self, request):
+    def create_traffic_mirror_filter_rule_async_invoker(self, request):
+        http_info = self._create_traffic_mirror_filter_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_traffic_mirror_filter_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filter-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTrafficMirrorFilterRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -518,11 +599,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -531,20 +612,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTrafficMirrorFilterRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_traffic_mirror_session_async(self, request):
         """创建流量镜像会话
@@ -558,9 +635,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorSessionRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateTrafficMirrorSessionResponse`
         """
-        return self._create_traffic_mirror_session_with_http_info(request)
+        http_info = self._create_traffic_mirror_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_traffic_mirror_session_with_http_info(self, request):
+    def create_traffic_mirror_session_async_invoker(self, request):
+        http_info = self._create_traffic_mirror_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_traffic_mirror_session_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTrafficMirrorSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -575,11 +664,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -588,20 +677,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTrafficMirrorSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_security_group_async(self, request):
         """删除安全组
@@ -615,9 +700,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupResponse`
         """
-        return self._delete_security_group_with_http_info(request)
+        http_info = self._delete_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_security_group_with_http_info(self, request):
+    def delete_security_group_async_invoker(self, request):
+        http_info = self._delete_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_security_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -634,9 +731,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -645,20 +742,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-groups/{security_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_security_group_rule_async(self, request):
         """删除安全组规则
@@ -672,9 +765,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSecurityGroupRuleResponse`
         """
-        return self._delete_security_group_rule_with_http_info(request)
+        http_info = self._delete_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_security_group_rule_with_http_info(self, request):
+    def delete_security_group_rule_async_invoker(self, request):
+        http_info = self._delete_security_group_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_security_group_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/security-group-rules/{security_group_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -691,9 +796,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -702,20 +807,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-group-rules/{security_group_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_sub_network_interface_async(self, request):
         """删除辅助弹性网卡
@@ -729,9 +830,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteSubNetworkInterfaceResponse`
         """
-        return self._delete_sub_network_interface_with_http_info(request)
+        http_info = self._delete_sub_network_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_sub_network_interface_with_http_info(self, request):
+    def delete_sub_network_interface_async_invoker(self, request):
+        http_info = self._delete_sub_network_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_sub_network_interface_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubNetworkInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -748,9 +861,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -759,20 +872,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubNetworkInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_traffic_mirror_filter_async(self, request):
         """删除流量镜像筛选条件
@@ -786,9 +895,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorFilterRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorFilterResponse`
         """
-        return self._delete_traffic_mirror_filter_with_http_info(request)
+        http_info = self._delete_traffic_mirror_filter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_traffic_mirror_filter_with_http_info(self, request):
+    def delete_traffic_mirror_filter_async_invoker(self, request):
+        http_info = self._delete_traffic_mirror_filter_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_traffic_mirror_filter_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTrafficMirrorFilterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -805,9 +926,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -816,20 +937,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTrafficMirrorFilterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_traffic_mirror_filter_rule_async(self, request):
         """删除流量镜像筛选规则
@@ -843,9 +960,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorFilterRuleResponse`
         """
-        return self._delete_traffic_mirror_filter_rule_with_http_info(request)
+        http_info = self._delete_traffic_mirror_filter_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_traffic_mirror_filter_rule_with_http_info(self, request):
+    def delete_traffic_mirror_filter_rule_async_invoker(self, request):
+        http_info = self._delete_traffic_mirror_filter_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_traffic_mirror_filter_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTrafficMirrorFilterRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -862,9 +991,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -873,20 +1002,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTrafficMirrorFilterRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_traffic_mirror_session_async(self, request):
         """删除流量镜像会话
@@ -900,9 +1025,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorSessionRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteTrafficMirrorSessionResponse`
         """
-        return self._delete_traffic_mirror_session_with_http_info(request)
+        http_info = self._delete_traffic_mirror_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_traffic_mirror_session_with_http_info(self, request):
+    def delete_traffic_mirror_session_async_invoker(self, request):
+        http_info = self._delete_traffic_mirror_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_traffic_mirror_session_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTrafficMirrorSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -919,9 +1056,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -930,20 +1067,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTrafficMirrorSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_security_group_rules_async(self, request):
         """查询安全组规则列表
@@ -957,9 +1090,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupRulesResponse`
         """
-        return self._list_security_group_rules_with_http_info(request)
+        http_info = self._list_security_group_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_security_group_rules_with_http_info(self, request):
+    def list_security_group_rules_async_invoker(self, request):
+        http_info = self._list_security_group_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_group_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/security-group-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -999,9 +1144,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1010,20 +1155,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-group-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecurityGroupRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_security_groups_async(self, request):
         """查询安全组列表
@@ -1037,9 +1178,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSecurityGroupsResponse`
         """
-        return self._list_security_groups_with_http_info(request)
+        http_info = self._list_security_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_security_groups_with_http_info(self, request):
+    def list_security_groups_async_invoker(self, request):
+        http_info = self._list_security_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1069,9 +1222,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1080,20 +1233,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecurityGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sub_network_interfaces_async(self, request):
         """查询租户下辅助弹性网卡列表
@@ -1107,9 +1256,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListSubNetworkInterfacesResponse`
         """
-        return self._list_sub_network_interfaces_with_http_info(request)
+        http_info = self._list_sub_network_interfaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sub_network_interfaces_with_http_info(self, request):
+    def list_sub_network_interfaces_async_invoker(self, request):
+        http_info = self._list_sub_network_interfaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_network_interfaces_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubNetworkInterfacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1149,9 +1310,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1160,20 +1321,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/sub-network-interfaces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubNetworkInterfacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_traffic_mirror_filter_rules_async(self, request):
         """查询流量镜像筛选规则列表
@@ -1187,9 +1344,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorFilterRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorFilterRulesResponse`
         """
-        return self._list_traffic_mirror_filter_rules_with_http_info(request)
+        http_info = self._list_traffic_mirror_filter_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_traffic_mirror_filter_rules_with_http_info(self, request):
+    def list_traffic_mirror_filter_rules_async_invoker(self, request):
+        http_info = self._list_traffic_mirror_filter_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_traffic_mirror_filter_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filter-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrafficMirrorFilterRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1226,9 +1395,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1237,20 +1406,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTrafficMirrorFilterRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_traffic_mirror_filters_async(self, request):
         """查询流量镜像筛选条件列表
@@ -1264,9 +1429,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorFiltersRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorFiltersResponse`
         """
-        return self._list_traffic_mirror_filters_with_http_info(request)
+        http_info = self._list_traffic_mirror_filters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_traffic_mirror_filters_with_http_info(self, request):
+    def list_traffic_mirror_filters_async_invoker(self, request):
+        http_info = self._list_traffic_mirror_filters_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_traffic_mirror_filters_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrafficMirrorFiltersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1291,9 +1468,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1302,20 +1479,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTrafficMirrorFiltersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_traffic_mirror_sessions_async(self, request):
         """查询流量镜像会话列表
@@ -1329,9 +1502,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorSessionsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListTrafficMirrorSessionsResponse`
         """
-        return self._list_traffic_mirror_sessions_with_http_info(request)
+        http_info = self._list_traffic_mirror_sessions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_traffic_mirror_sessions_with_http_info(self, request):
+    def list_traffic_mirror_sessions_async_invoker(self, request):
+        http_info = self._list_traffic_mirror_sessions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_traffic_mirror_sessions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrafficMirrorSessionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1372,9 +1557,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1383,20 +1568,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTrafficMirrorSessionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_sub_network_interface_async(self, request):
         """迁移辅助弹性网卡
@@ -1410,9 +1591,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.MigrateSubNetworkInterfaceResponse`
         """
-        return self._migrate_sub_network_interface_with_http_info(request)
+        http_info = self._migrate_sub_network_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_sub_network_interface_with_http_info(self, request):
+    def migrate_sub_network_interface_async_invoker(self, request):
+        http_info = self._migrate_sub_network_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _migrate_sub_network_interface_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/migrate",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateSubNetworkInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1427,11 +1620,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1440,20 +1633,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/sub-network-interfaces/migrate',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateSubNetworkInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_security_groups_async(self, request):
         """端口移除安全组
@@ -1467,9 +1656,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.RemoveSecurityGroupsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveSecurityGroupsResponse`
         """
-        return self._remove_security_groups_with_http_info(request)
+        http_info = self._remove_security_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_security_groups_with_http_info(self, request):
+    def remove_security_groups_async_invoker(self, request):
+        http_info = self._remove_security_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_security_groups_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ports/{port_id}/remove-security-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveSecurityGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1486,11 +1687,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1499,20 +1700,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ports/{port_id}/remove-security-groups',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveSecurityGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_sources_from_traffic_mirror_session_async(self, request):
         """流量镜像会话移除镜像源
@@ -1526,9 +1723,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.RemoveSourcesFromTrafficMirrorSessionRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveSourcesFromTrafficMirrorSessionResponse`
         """
-        return self._remove_sources_from_traffic_mirror_session_with_http_info(request)
+        http_info = self._remove_sources_from_traffic_mirror_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_sources_from_traffic_mirror_session_with_http_info(self, request):
+    def remove_sources_from_traffic_mirror_session_async_invoker(self, request):
+        http_info = self._remove_sources_from_traffic_mirror_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_sources_from_traffic_mirror_session_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}/remove-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveSourcesFromTrafficMirrorSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1545,11 +1754,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1558,20 +1767,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}/remove-sources',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveSourcesFromTrafficMirrorSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_security_group_async(self, request):
         """查询安全组
@@ -1585,9 +1790,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupResponse`
         """
-        return self._show_security_group_with_http_info(request)
+        http_info = self._show_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_security_group_with_http_info(self, request):
+    def show_security_group_async_invoker(self, request):
+        http_info = self._show_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_security_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1604,9 +1821,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1615,20 +1832,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-groups/{security_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_security_group_rule_async(self, request):
         """查询安全组规则
@@ -1642,9 +1855,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSecurityGroupRuleResponse`
         """
-        return self._show_security_group_rule_with_http_info(request)
+        http_info = self._show_security_group_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_security_group_rule_with_http_info(self, request):
+    def show_security_group_rule_async_invoker(self, request):
+        http_info = self._show_security_group_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_security_group_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/security-group-rules/{security_group_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityGroupRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1661,9 +1886,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1672,20 +1897,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-group-rules/{security_group_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecurityGroupRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sub_network_interface_async(self, request):
         """查询租户下辅助弹性网卡
@@ -1699,9 +1920,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfaceResponse`
         """
-        return self._show_sub_network_interface_with_http_info(request)
+        http_info = self._show_sub_network_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sub_network_interface_with_http_info(self, request):
+    def show_sub_network_interface_async_invoker(self, request):
+        http_info = self._show_sub_network_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sub_network_interface_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubNetworkInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1718,9 +1951,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1729,20 +1962,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSubNetworkInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sub_network_interfaces_quantity_async(self, request):
         """查询租户下辅助弹性网卡数目
@@ -1756,9 +1985,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowSubNetworkInterfacesQuantityResponse`
         """
-        return self._show_sub_network_interfaces_quantity_with_http_info(request)
+        http_info = self._show_sub_network_interfaces_quantity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sub_network_interfaces_quantity_with_http_info(self, request):
+    def show_sub_network_interfaces_quantity_async_invoker(self, request):
+        http_info = self._show_sub_network_interfaces_quantity_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sub_network_interfaces_quantity_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubNetworkInterfacesQuantityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1773,9 +2014,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1784,20 +2025,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/sub-network-interfaces/count',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSubNetworkInterfacesQuantityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_traffic_mirror_filter_async(self, request):
         """查询流量镜像筛选条件详情
@@ -1811,9 +2048,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorFilterRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorFilterResponse`
         """
-        return self._show_traffic_mirror_filter_with_http_info(request)
+        http_info = self._show_traffic_mirror_filter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_traffic_mirror_filter_with_http_info(self, request):
+    def show_traffic_mirror_filter_async_invoker(self, request):
+        http_info = self._show_traffic_mirror_filter_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_traffic_mirror_filter_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrafficMirrorFilterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1830,9 +2079,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1841,20 +2090,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTrafficMirrorFilterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_traffic_mirror_filter_rule_async(self, request):
         """查询流量镜像筛选规则详情
@@ -1868,9 +2113,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorFilterRuleResponse`
         """
-        return self._show_traffic_mirror_filter_rule_with_http_info(request)
+        http_info = self._show_traffic_mirror_filter_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_traffic_mirror_filter_rule_with_http_info(self, request):
+    def show_traffic_mirror_filter_rule_async_invoker(self, request):
+        http_info = self._show_traffic_mirror_filter_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_traffic_mirror_filter_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrafficMirrorFilterRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1887,9 +2144,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1898,20 +2155,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTrafficMirrorFilterRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_traffic_mirror_session_async(self, request):
         """查询流量镜像会话详情
@@ -1925,9 +2178,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorSessionRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowTrafficMirrorSessionResponse`
         """
-        return self._show_traffic_mirror_session_with_http_info(request)
+        http_info = self._show_traffic_mirror_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_traffic_mirror_session_with_http_info(self, request):
+    def show_traffic_mirror_session_async_invoker(self, request):
+        http_info = self._show_traffic_mirror_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_traffic_mirror_session_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrafficMirrorSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1944,9 +2209,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1955,20 +2220,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTrafficMirrorSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_security_group_async(self, request):
         """更新安全组
@@ -1982,9 +2243,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSecurityGroupResponse`
         """
-        return self._update_security_group_with_http_info(request)
+        http_info = self._update_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_security_group_with_http_info(self, request):
+    def update_security_group_async_invoker(self, request):
+        http_info = self._update_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_security_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/security-groups/{security_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2001,11 +2274,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2014,20 +2287,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/security-groups/{security_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_sub_network_interface_async(self, request):
         """更新辅助弹性网卡
@@ -2041,9 +2310,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateSubNetworkInterfaceResponse`
         """
-        return self._update_sub_network_interface_with_http_info(request)
+        http_info = self._update_sub_network_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_sub_network_interface_with_http_info(self, request):
+    def update_sub_network_interface_async_invoker(self, request):
+        http_info = self._update_sub_network_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_sub_network_interface_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubNetworkInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2060,11 +2341,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2073,20 +2354,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/sub-network-interfaces/{sub_network_interface_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubNetworkInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_traffic_mirror_filter_async(self, request):
         """更新流量镜像筛选条件
@@ -2100,9 +2377,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterResponse`
         """
-        return self._update_traffic_mirror_filter_with_http_info(request)
+        http_info = self._update_traffic_mirror_filter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_traffic_mirror_filter_with_http_info(self, request):
+    def update_traffic_mirror_filter_async_invoker(self, request):
+        http_info = self._update_traffic_mirror_filter_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_traffic_mirror_filter_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTrafficMirrorFilterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2119,11 +2408,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2132,20 +2421,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filters/{traffic_mirror_filter_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTrafficMirrorFilterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_traffic_mirror_filter_rule_async(self, request):
         """更新流量镜像筛选规则
@@ -2159,9 +2444,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorFilterRuleResponse`
         """
-        return self._update_traffic_mirror_filter_rule_with_http_info(request)
+        http_info = self._update_traffic_mirror_filter_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_traffic_mirror_filter_rule_with_http_info(self, request):
+    def update_traffic_mirror_filter_rule_async_invoker(self, request):
+        http_info = self._update_traffic_mirror_filter_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_traffic_mirror_filter_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTrafficMirrorFilterRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2178,11 +2475,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2191,20 +2488,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-filter-rules/{traffic_mirror_filter_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTrafficMirrorFilterRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_traffic_mirror_session_async(self, request):
         """更新流量镜像会话
@@ -2218,9 +2511,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorSessionRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateTrafficMirrorSessionResponse`
         """
-        return self._update_traffic_mirror_session_with_http_info(request)
+        http_info = self._update_traffic_mirror_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_traffic_mirror_session_with_http_info(self, request):
+    def update_traffic_mirror_session_async_invoker(self, request):
+        http_info = self._update_traffic_mirror_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_traffic_mirror_session_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTrafficMirrorSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2237,11 +2542,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2250,20 +2555,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/traffic-mirror-sessions/{traffic_mirror_session_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTrafficMirrorSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_firewall_rules_async(self, request):
         """网络ACL插入规则
@@ -2277,9 +2578,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.AddFirewallRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.AddFirewallRulesResponse`
         """
-        return self._add_firewall_rules_with_http_info(request)
+        http_info = self._add_firewall_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_firewall_rules_with_http_info(self, request):
+    def add_firewall_rules_async_invoker(self, request):
+        http_info = self._add_firewall_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_firewall_rules_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}/insert-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFirewallRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2296,11 +2609,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2309,20 +2622,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/insert-rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddFirewallRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_subnet_firewall_async(self, request):
         """网络ACL绑定子网
@@ -2336,9 +2645,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.AssociateSubnetFirewallRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.AssociateSubnetFirewallResponse`
         """
-        return self._associate_subnet_firewall_with_http_info(request)
+        http_info = self._associate_subnet_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_subnet_firewall_with_http_info(self, request):
+    def associate_subnet_firewall_async_invoker(self, request):
+        http_info = self._associate_subnet_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_subnet_firewall_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}/associate-subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateSubnetFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2355,11 +2676,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2368,20 +2689,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/associate-subnets',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateSubnetFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_firewall_async(self, request):
         """创建网络ACL
@@ -2395,9 +2712,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateFirewallRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateFirewallResponse`
         """
-        return self._create_firewall_with_http_info(request)
+        http_info = self._create_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_firewall_with_http_info(self, request):
+    def create_firewall_async_invoker(self, request):
+        http_info = self._create_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_firewall_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/firewalls",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2412,11 +2741,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2425,20 +2754,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_firewall_async(self, request):
         """删除网络ACL
@@ -2452,9 +2777,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteFirewallRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteFirewallResponse`
         """
-        return self._delete_firewall_with_http_info(request)
+        http_info = self._delete_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_firewall_with_http_info(self, request):
+    def delete_firewall_async_invoker(self, request):
+        http_info = self._delete_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_firewall_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2471,9 +2808,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2482,20 +2819,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_subnet_firewall_async(self, request):
         """网络ACL解绑子网
@@ -2509,9 +2842,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DisassociateSubnetFirewallRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DisassociateSubnetFirewallResponse`
         """
-        return self._disassociate_subnet_firewall_with_http_info(request)
+        http_info = self._disassociate_subnet_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_subnet_firewall_with_http_info(self, request):
+    def disassociate_subnet_firewall_async_invoker(self, request):
+        http_info = self._disassociate_subnet_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_subnet_firewall_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}/disassociate-subnets",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateSubnetFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2528,11 +2873,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2541,20 +2886,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/disassociate-subnets',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateSubnetFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_firewall_async(self, request):
         """查询网络ACL列表
@@ -2568,9 +2909,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListFirewallRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListFirewallResponse`
         """
-        return self._list_firewall_with_http_info(request)
+        http_info = self._list_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_firewall_with_http_info(self, request):
+    def list_firewall_async_invoker(self, request):
+        http_info = self._list_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_firewall_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/firewalls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2602,9 +2955,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2613,20 +2966,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_firewall_rules_async(self, request):
         """网络ACL移除规则
@@ -2640,9 +2989,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.RemoveFirewallRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveFirewallRulesResponse`
         """
-        return self._remove_firewall_rules_with_http_info(request)
+        http_info = self._remove_firewall_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_firewall_rules_with_http_info(self, request):
+    def remove_firewall_rules_async_invoker(self, request):
+        http_info = self._remove_firewall_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_firewall_rules_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}/remove-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveFirewallRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2659,11 +3020,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2672,20 +3033,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/remove-rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveFirewallRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_firewall_async(self, request):
         """查询网络ACL详情
@@ -2699,9 +3056,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowFirewallRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowFirewallResponse`
         """
-        return self._show_firewall_with_http_info(request)
+        http_info = self._show_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_firewall_with_http_info(self, request):
+    def show_firewall_async_invoker(self, request):
+        http_info = self._show_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_firewall_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2718,9 +3087,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2729,20 +3098,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_firewall_async(self, request):
         """更新网络ACL
@@ -2756,9 +3121,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateFirewallRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateFirewallResponse`
         """
-        return self._update_firewall_with_http_info(request)
+        http_info = self._update_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_firewall_with_http_info(self, request):
+    def update_firewall_async_invoker(self, request):
+        http_info = self._update_firewall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_firewall_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2775,11 +3152,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2788,20 +3165,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_firewall_rules_async(self, request):
         """网络ACL更新规则
@@ -2815,9 +3188,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateFirewallRulesRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateFirewallRulesResponse`
         """
-        return self._update_firewall_rules_with_http_info(request)
+        http_info = self._update_firewall_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_firewall_rules_with_http_info(self, request):
+    def update_firewall_rules_async_invoker(self, request):
+        http_info = self._update_firewall_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_firewall_rules_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/firewalls/{firewall_id}/update-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFirewallRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2834,11 +3219,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2847,20 +3232,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/firewalls/{firewall_id}/update-rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFirewallRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_address_group_async(self, request):
         """创建地址组
@@ -2874,9 +3255,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateAddressGroupResponse`
         """
-        return self._create_address_group_with_http_info(request)
+        http_info = self._create_address_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_address_group_with_http_info(self, request):
+    def create_address_group_async_invoker(self, request):
+        http_info = self._create_address_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_address_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/address-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAddressGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2891,11 +3284,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2904,20 +3297,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAddressGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_address_group_async(self, request):
         """删除地址组
@@ -2931,9 +3320,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteAddressGroupResponse`
         """
-        return self._delete_address_group_with_http_info(request)
+        http_info = self._delete_address_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_address_group_with_http_info(self, request):
+    def delete_address_group_async_invoker(self, request):
+        http_info = self._delete_address_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_address_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/address-groups/{address_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAddressGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2950,9 +3351,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2961,20 +3362,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address-groups/{address_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAddressGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ip_address_group_force_async(self, request):
         """强制删除地址组
@@ -2988,9 +3385,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteIpAddressGroupForceResponse`
         """
-        return self._delete_ip_address_group_force_with_http_info(request)
+        http_info = self._delete_ip_address_group_force_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ip_address_group_force_with_http_info(self, request):
+    def delete_ip_address_group_force_async_invoker(self, request):
+        http_info = self._delete_ip_address_group_force_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ip_address_group_force_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/address-groups/{address_group_id}/force",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIpAddressGroupForceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3007,9 +3416,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3018,20 +3427,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address-groups/{address_group_id}/force',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIpAddressGroupForceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_address_group_async(self, request):
         """查询地址组列表
@@ -3045,9 +3450,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListAddressGroupResponse`
         """
-        return self._list_address_group_with_http_info(request)
+        http_info = self._list_address_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_address_group_with_http_info(self, request):
+    def list_address_group_async_invoker(self, request):
+        http_info = self._list_address_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_address_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/address-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAddressGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3079,9 +3496,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3090,20 +3507,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAddressGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_address_group_async(self, request):
         """查询地址组
@@ -3117,9 +3530,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowAddressGroupResponse`
         """
-        return self._show_address_group_with_http_info(request)
+        http_info = self._show_address_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_address_group_with_http_info(self, request):
+    def show_address_group_async_invoker(self, request):
+        http_info = self._show_address_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_address_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/address-groups/{address_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAddressGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3136,9 +3561,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3147,20 +3572,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address-groups/{address_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAddressGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_address_group_async(self, request):
         """更新地址组
@@ -3174,9 +3595,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateAddressGroupResponse`
         """
-        return self._update_address_group_with_http_info(request)
+        http_info = self._update_address_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_address_group_with_http_info(self, request):
+    def update_address_group_async_invoker(self, request):
+        http_info = self._update_address_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_address_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/address-groups/{address_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAddressGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3193,11 +3626,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3206,20 +3639,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/address-groups/{address_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAddressGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_vpc_extend_cidr_async(self, request):
         """添加VPC扩展网段
@@ -3233,9 +3662,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.AddVpcExtendCidrResponse`
         """
-        return self._add_vpc_extend_cidr_with_http_info(request)
+        http_info = self._add_vpc_extend_cidr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_vpc_extend_cidr_with_http_info(self, request):
+    def add_vpc_extend_cidr_async_invoker(self, request):
+        http_info = self._add_vpc_extend_cidr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_vpc_extend_cidr_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/vpcs/{vpc_id}/add-extend-cidr",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddVpcExtendCidrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3252,11 +3693,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3265,20 +3706,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}/add-extend-cidr',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddVpcExtendCidrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc_async(self, request):
         """创建VPC
@@ -3292,9 +3729,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.CreateVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.CreateVpcResponse`
         """
-        return self._create_vpc_with_http_info(request)
+        http_info = self._create_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_with_http_info(self, request):
+    def create_vpc_async_invoker(self, request):
+        http_info = self._create_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vpc_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/vpc/vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3309,11 +3758,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3322,20 +3771,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/vpcs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc_async(self, request):
         """删除VPC
@@ -3349,9 +3794,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.DeleteVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.DeleteVpcResponse`
         """
-        return self._delete_vpc_with_http_info(request)
+        http_info = self._delete_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_with_http_info(self, request):
+    def delete_vpc_async_invoker(self, request):
+        http_info = self._delete_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vpc_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/vpc/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3368,9 +3825,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3379,20 +3836,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpcs_async(self, request):
         """查询VPC列表
@@ -3406,9 +3859,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ListVpcsRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ListVpcsResponse`
         """
-        return self._list_vpcs_with_http_info(request)
+        http_info = self._list_vpcs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpcs_with_http_info(self, request):
+    def list_vpcs_async_invoker(self, request):
+        http_info = self._list_vpcs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpcs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/vpcs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3439,9 +3904,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3450,20 +3915,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/vpcs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_vpc_extend_cidr_async(self, request):
         """移除VPC扩展网段
@@ -3477,9 +3938,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.RemoveVpcExtendCidrResponse`
         """
-        return self._remove_vpc_extend_cidr_with_http_info(request)
+        http_info = self._remove_vpc_extend_cidr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_vpc_extend_cidr_with_http_info(self, request):
+    def remove_vpc_extend_cidr_async_invoker(self, request):
+        http_info = self._remove_vpc_extend_cidr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_vpc_extend_cidr_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/vpcs/{vpc_id}/remove-extend-cidr",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveVpcExtendCidrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3496,11 +3969,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3509,20 +3982,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}/remove-extend-cidr',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveVpcExtendCidrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpc_async(self, request):
         """查询VPC详情
@@ -3536,9 +4005,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.ShowVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.ShowVpcResponse`
         """
-        return self._show_vpc_with_http_info(request)
+        http_info = self._show_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpc_with_http_info(self, request):
+    def show_vpc_async_invoker(self, request):
+        http_info = self._show_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vpc_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/vpc/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3555,9 +4036,9 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3566,20 +4047,16 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpc_async(self, request):
         """更新VPC
@@ -3593,9 +4070,21 @@ class VpcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkvpc.v3.UpdateVpcRequest`
         :rtype: :class:`huaweicloudsdkvpc.v3.UpdateVpcResponse`
         """
-        return self._update_vpc_with_http_info(request)
+        http_info = self._update_vpc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpc_with_http_info(self, request):
+    def update_vpc_async_invoker(self, request):
+        http_info = self._update_vpc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpc_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/vpc/vpcs/{vpc_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3612,11 +4101,11 @@ class VpcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3625,20 +4114,26 @@ class VpcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/vpc/vpcs/{vpc_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3677,4 +4172,4 @@ class VpcAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

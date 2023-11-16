@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkelb'")
 
 
 class ElbAsyncClient(Client):
@@ -39,9 +44,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.BatchCreateMembersRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.BatchCreateMembersResponse`
         """
-        return self._batch_create_members_with_http_info(request)
+        http_info = self._batch_create_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_members_with_http_info(self, request):
+    def batch_create_members_async_invoker(self, request):
+        http_info = self._batch_create_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_members_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}/members/batch-add",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/batch-add',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_members_async(self, request):
         """批量删除后端服务器
@@ -98,9 +111,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteMembersResponse`
         """
-        return self._batch_delete_members_with_http_info(request)
+        http_info = self._batch_delete_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_members_with_http_info(self, request):
+    def batch_delete_members_async_invoker(self, request):
+        http_info = self._batch_delete_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_members_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}/members/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_members_async(self, request):
         """批量更新后端服务器
@@ -157,9 +178,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.BatchUpdateMembersRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.BatchUpdateMembersResponse`
         """
-        return self._batch_update_members_with_http_info(request)
+        http_info = self._batch_update_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_members_with_http_info(self, request):
+    def batch_update_members_async_invoker(self, request):
+        http_info = self._batch_update_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_members_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}/members/batch-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/batch-update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_policies_priority_async(self, request):
         """批量更新转发策略优先级
@@ -216,9 +245,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.BatchUpdatePoliciesPriorityRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.BatchUpdatePoliciesPriorityResponse`
         """
-        return self._batch_update_policies_priority_with_http_info(request)
+        http_info = self._batch_update_policies_priority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_policies_priority_with_http_info(self, request):
+    def batch_update_policies_priority_async_invoker(self, request):
+        http_info = self._batch_update_policies_priority_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_policies_priority_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/l7policies/batch-update-priority",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdatePoliciesPriorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,11 +274,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +287,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/batch-update-priority',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdatePoliciesPriorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_loadbalancer_charge_mode_async(self, request):
         """变更负载均衡器计费模式
@@ -276,9 +313,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ChangeLoadbalancerChargeModeRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ChangeLoadbalancerChargeModeResponse`
         """
-        return self._change_loadbalancer_charge_mode_with_http_info(request)
+        http_info = self._change_loadbalancer_charge_mode_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_loadbalancer_charge_mode_with_http_info(self, request):
+    def change_loadbalancer_charge_mode_async_invoker(self, request):
+        http_info = self._change_loadbalancer_charge_mode_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_loadbalancer_charge_mode_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/change-charge-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeLoadbalancerChargeModeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -293,11 +342,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -306,20 +355,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/loadbalancers/change-charge-mode',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeLoadbalancerChargeModeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate_async(self, request):
         """创建证书
@@ -333,9 +378,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateCertificateRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateCertificateResponse`
         """
-        return self._create_certificate_with_http_info(request)
+        http_info = self._create_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_with_http_info(self, request):
+    def create_certificate_async_invoker(self, request):
+        http_info = self._create_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_certificate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -350,11 +407,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -363,20 +420,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/certificates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_health_monitor_async(self, request):
         """创建健康检查
@@ -390,9 +443,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateHealthMonitorRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateHealthMonitorResponse`
         """
-        return self._create_health_monitor_with_http_info(request)
+        http_info = self._create_health_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_health_monitor_with_http_info(self, request):
+    def create_health_monitor_async_invoker(self, request):
+        http_info = self._create_health_monitor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_health_monitor_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/healthmonitors",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHealthMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -407,11 +472,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -420,20 +485,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/healthmonitors',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateHealthMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_l7_policy_async(self, request):
         """创建转发策略
@@ -447,9 +508,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateL7PolicyRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateL7PolicyResponse`
         """
-        return self._create_l7_policy_with_http_info(request)
+        http_info = self._create_l7_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_l7_policy_with_http_info(self, request):
+    def create_l7_policy_async_invoker(self, request):
+        http_info = self._create_l7_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_l7_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/l7policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateL7PolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -464,11 +537,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -477,20 +550,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateL7PolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_l7_rule_async(self, request):
         """创建转发规则
@@ -504,9 +573,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateL7RuleRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateL7RuleResponse`
         """
-        return self._create_l7_rule_with_http_info(request)
+        http_info = self._create_l7_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_l7_rule_with_http_info(self, request):
+    def create_l7_rule_async_invoker(self, request):
+        http_info = self._create_l7_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_l7_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/l7policies/{l7policy_id}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateL7RuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -523,11 +604,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -536,20 +617,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/{l7policy_id}/rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateL7RuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_listener_async(self, request):
         """创建监听器
@@ -563,9 +640,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateListenerRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateListenerResponse`
         """
-        return self._create_listener_with_http_info(request)
+        http_info = self._create_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_listener_with_http_info(self, request):
+    def create_listener_async_invoker(self, request):
+        http_info = self._create_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_listener_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/listeners",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -580,11 +669,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -593,20 +682,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/listeners',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_load_balancer_async(self, request):
         """创建负载均衡器
@@ -629,9 +714,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateLoadBalancerResponse`
         """
-        return self._create_load_balancer_with_http_info(request)
+        http_info = self._create_load_balancer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_load_balancer_with_http_info(self, request):
+    def create_load_balancer_async_invoker(self, request):
+        http_info = self._create_load_balancer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_load_balancer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLoadBalancerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -646,11 +743,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -659,20 +756,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/loadbalancers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLoadBalancerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_logtank_async(self, request):
         """创建云日志
@@ -686,9 +779,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateLogtankRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateLogtankResponse`
         """
-        return self._create_logtank_with_http_info(request)
+        http_info = self._create_logtank_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_logtank_with_http_info(self, request):
+    def create_logtank_async_invoker(self, request):
+        http_info = self._create_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_logtank_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/logtanks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLogtankResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -703,11 +808,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -716,20 +821,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/logtanks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_member_async(self, request):
         """创建后端服务器
@@ -743,9 +844,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateMemberRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateMemberResponse`
         """
-        return self._create_member_with_http_info(request)
+        http_info = self._create_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_member_with_http_info(self, request):
+    def create_member_async_invoker(self, request):
+        http_info = self._create_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_member_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -762,11 +875,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -775,20 +888,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_pool_async(self, request):
         """创建后端服务器组
@@ -802,9 +911,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreatePoolRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreatePoolResponse`
         """
-        return self._create_pool_with_http_info(request)
+        http_info = self._create_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_pool_with_http_info(self, request):
+    def create_pool_async_invoker(self, request):
+        http_info = self._create_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_pool_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -819,11 +940,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -832,20 +953,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_security_policy_async(self, request):
         """创建自定义安全策略
@@ -859,9 +976,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateSecurityPolicyRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateSecurityPolicyResponse`
         """
-        return self._create_security_policy_with_http_info(request)
+        http_info = self._create_security_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_security_policy_with_http_info(self, request):
+    def create_security_policy_async_invoker(self, request):
+        http_info = self._create_security_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_security_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/security-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecurityPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -876,11 +1005,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -889,20 +1018,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/security-policies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecurityPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_certificate_async(self, request):
         """删除证书
@@ -916,9 +1041,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteCertificateRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteCertificateResponse`
         """
-        return self._delete_certificate_with_http_info(request)
+        http_info = self._delete_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_certificate_with_http_info(self, request):
+    def delete_certificate_async_invoker(self, request):
+        http_info = self._delete_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_certificate_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -935,9 +1072,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -946,20 +1083,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/certificates/{certificate_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_health_monitor_async(self, request):
         """删除健康检查
@@ -973,9 +1106,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteHealthMonitorRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteHealthMonitorResponse`
         """
-        return self._delete_health_monitor_with_http_info(request)
+        http_info = self._delete_health_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_health_monitor_with_http_info(self, request):
+    def delete_health_monitor_async_invoker(self, request):
+        http_info = self._delete_health_monitor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_health_monitor_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/healthmonitors/{healthmonitor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHealthMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -992,9 +1137,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1003,20 +1148,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/healthmonitors/{healthmonitor_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteHealthMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_l7_policy_async(self, request):
         """删除转发策略
@@ -1030,9 +1171,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteL7PolicyRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteL7PolicyResponse`
         """
-        return self._delete_l7_policy_with_http_info(request)
+        http_info = self._delete_l7_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_l7_policy_with_http_info(self, request):
+    def delete_l7_policy_async_invoker(self, request):
+        http_info = self._delete_l7_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_l7_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/l7policies/{l7policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteL7PolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1049,9 +1202,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1060,20 +1213,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/{l7policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteL7PolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_l7_rule_async(self, request):
         """删除转发规则
@@ -1087,9 +1236,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteL7RuleRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteL7RuleResponse`
         """
-        return self._delete_l7_rule_with_http_info(request)
+        http_info = self._delete_l7_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_l7_rule_with_http_info(self, request):
+    def delete_l7_rule_async_invoker(self, request):
+        http_info = self._delete_l7_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_l7_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/l7policies/{l7policy_id}/rules/{l7rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteL7RuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1108,9 +1269,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1119,20 +1280,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/{l7policy_id}/rules/{l7rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteL7RuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_listener_async(self, request):
         """删除监听器
@@ -1146,9 +1303,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteListenerRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteListenerResponse`
         """
-        return self._delete_listener_with_http_info(request)
+        http_info = self._delete_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_listener_with_http_info(self, request):
+    def delete_listener_async_invoker(self, request):
+        http_info = self._delete_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_listener_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/listeners/{listener_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1165,9 +1334,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1176,20 +1345,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/listeners/{listener_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_listener_force_async(self, request):
         """级联删除监听器
@@ -1203,9 +1368,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteListenerForceRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteListenerForceResponse`
         """
-        return self._delete_listener_force_with_http_info(request)
+        http_info = self._delete_listener_force_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_listener_force_with_http_info(self, request):
+    def delete_listener_force_async_invoker(self, request):
+        http_info = self._delete_listener_force_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_listener_force_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/listeners/{listener_id}/force",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteListenerForceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1222,9 +1399,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1233,20 +1410,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/listeners/{listener_id}/force',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteListenerForceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_load_balancer_async(self, request):
         """删除负载均衡器
@@ -1260,9 +1433,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerResponse`
         """
-        return self._delete_load_balancer_with_http_info(request)
+        http_info = self._delete_load_balancer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_load_balancer_with_http_info(self, request):
+    def delete_load_balancer_async_invoker(self, request):
+        http_info = self._delete_load_balancer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_load_balancer_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLoadBalancerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1279,9 +1464,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1290,20 +1475,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLoadBalancerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_load_balancer_force_async(self, request):
         """级联删除负载均衡器
@@ -1317,9 +1498,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerForceRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteLoadBalancerForceResponse`
         """
-        return self._delete_load_balancer_force_with_http_info(request)
+        http_info = self._delete_load_balancer_force_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_load_balancer_force_with_http_info(self, request):
+    def delete_load_balancer_force_async_invoker(self, request):
+        http_info = self._delete_load_balancer_force_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_load_balancer_force_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/force-elb",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLoadBalancerForceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1336,9 +1529,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1347,20 +1540,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/force-elb',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLoadBalancerForceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_logtank_async(self, request):
         """删除云日志
@@ -1374,9 +1563,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteLogtankRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteLogtankResponse`
         """
-        return self._delete_logtank_with_http_info(request)
+        http_info = self._delete_logtank_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_logtank_with_http_info(self, request):
+    def delete_logtank_async_invoker(self, request):
+        http_info = self._delete_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_logtank_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/logtanks/{logtank_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLogtankResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1393,9 +1594,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1404,20 +1605,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/logtanks/{logtank_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_member_async(self, request):
         """删除后端服务器
@@ -1431,9 +1628,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteMemberRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteMemberResponse`
         """
-        return self._delete_member_with_http_info(request)
+        http_info = self._delete_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_member_with_http_info(self, request):
+    def delete_member_async_invoker(self, request):
+        http_info = self._delete_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_member_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1452,9 +1661,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1463,20 +1672,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/{member_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_pool_async(self, request):
         """删除后端服务器组
@@ -1490,9 +1695,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeletePoolRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeletePoolResponse`
         """
-        return self._delete_pool_with_http_info(request)
+        http_info = self._delete_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_pool_with_http_info(self, request):
+    def delete_pool_async_invoker(self, request):
+        http_info = self._delete_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_pool_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1509,9 +1726,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1520,20 +1737,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_security_policy_async(self, request):
         """删除自定义安全策略
@@ -1547,9 +1760,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteSecurityPolicyRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteSecurityPolicyResponse`
         """
-        return self._delete_security_policy_with_http_info(request)
+        http_info = self._delete_security_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_security_policy_with_http_info(self, request):
+    def delete_security_policy_async_invoker(self, request):
+        http_info = self._delete_security_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_security_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/security-policies/{security_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1566,9 +1791,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1577,20 +1802,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/security-policies/{security_policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecurityPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_members_async(self, request):
         """后端服务器全局列表
@@ -1604,9 +1825,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListAllMembersRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListAllMembersResponse`
         """
-        return self._list_all_members_with_http_info(request)
+        http_info = self._list_all_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_members_with_http_info(self, request):
+    def list_all_members_async_invoker(self, request):
+        http_info = self._list_all_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_members_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1662,9 +1895,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1673,20 +1906,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_availability_zones_async(self, request):
         """查询可用区列表
@@ -1708,9 +1937,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListAvailabilityZonesRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListAvailabilityZonesResponse`
         """
-        return self._list_availability_zones_with_http_info(request)
+        http_info = self._list_availability_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_availability_zones_with_http_info(self, request):
+    def list_availability_zones_async_invoker(self, request):
+        http_info = self._list_availability_zones_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_availability_zones_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/availability-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailabilityZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1727,9 +1968,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1738,20 +1979,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/availability-zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailabilityZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certificates_async(self, request):
         """查询证书列表
@@ -1765,9 +2002,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListCertificatesRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListCertificatesResponse`
         """
-        return self._list_certificates_with_http_info(request)
+        http_info = self._list_certificates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certificates_with_http_info(self, request):
+    def list_certificates_async_invoker(self, request):
+        http_info = self._list_certificates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_certificates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1805,9 +2054,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1816,20 +2065,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/certificates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertificatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors_async(self, request):
         """查询规格列表
@@ -1843,9 +2088,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_async_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1877,9 +2134,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1888,20 +2145,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_health_monitors_async(self, request):
         """查询健康检查列表
@@ -1915,9 +2168,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListHealthMonitorsRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListHealthMonitorsResponse`
         """
-        return self._list_health_monitors_with_http_info(request)
+        http_info = self._list_health_monitors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_health_monitors_with_http_info(self, request):
+    def list_health_monitors_async_invoker(self, request):
+        http_info = self._list_health_monitors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_health_monitors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/healthmonitors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHealthMonitorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1978,9 +2243,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1989,20 +2254,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/healthmonitors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHealthMonitorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_l7_policies_async(self, request):
         """查询转发策略列表
@@ -2016,9 +2277,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListL7PoliciesRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListL7PoliciesResponse`
         """
-        return self._list_l7_policies_with_http_info(request)
+        http_info = self._list_l7_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_l7_policies_with_http_info(self, request):
+    def list_l7_policies_async_invoker(self, request):
+        http_info = self._list_l7_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_l7_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/l7policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListL7PoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2079,9 +2352,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2090,20 +2363,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListL7PoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_l7_rules_async(self, request):
         """查询转发规则列表
@@ -2117,9 +2386,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListL7RulesRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListL7RulesResponse`
         """
-        return self._list_l7_rules_with_http_info(request)
+        http_info = self._list_l7_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_l7_rules_with_http_info(self, request):
+    def list_l7_rules_async_invoker(self, request):
+        http_info = self._list_l7_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_l7_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/l7policies/{l7policy_id}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListL7RulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2167,9 +2448,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2178,20 +2459,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/{l7policy_id}/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListL7RulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_listeners_async(self, request):
         """查询监听器列表
@@ -2205,9 +2482,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListListenersRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListListenersResponse`
         """
-        return self._list_listeners_with_http_info(request)
+        http_info = self._list_listeners_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_listeners_with_http_info(self, request):
+    def list_listeners_async_invoker(self, request):
+        http_info = self._list_listeners_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_listeners_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/listeners",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListListenersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2297,9 +2586,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2308,20 +2597,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/listeners',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListListenersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_load_balancers_async(self, request):
         """查询负载均衡器列表
@@ -2335,9 +2620,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListLoadBalancersRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListLoadBalancersResponse`
         """
-        return self._list_load_balancers_with_http_info(request)
+        http_info = self._list_load_balancers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_load_balancers_with_http_info(self, request):
+    def list_load_balancers_async_invoker(self, request):
+        http_info = self._list_load_balancers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_load_balancers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLoadBalancersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2448,9 +2745,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2459,20 +2756,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/loadbalancers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLoadBalancersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_logtanks_async(self, request):
         """查询云日志列表
@@ -2486,9 +2779,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListLogtanksRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListLogtanksResponse`
         """
-        return self._list_logtanks_with_http_info(request)
+        http_info = self._list_logtanks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_logtanks_with_http_info(self, request):
+    def list_logtanks_async_invoker(self, request):
+        http_info = self._list_logtanks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logtanks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/logtanks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogtanksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2524,9 +2829,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2535,20 +2840,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/logtanks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLogtanksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_members_async(self, request):
         """查询后端服务器列表
@@ -2562,9 +2863,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListMembersRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListMembersResponse`
         """
-        return self._list_members_with_http_info(request)
+        http_info = self._list_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_members_with_http_info(self, request):
+    def list_members_async_invoker(self, request):
+        http_info = self._list_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_members_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2622,9 +2935,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2633,20 +2946,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pools_async(self, request):
         """查询后端服务器组列表
@@ -2660,9 +2969,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListPoolsRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListPoolsResponse`
         """
-        return self._list_pools_with_http_info(request)
+        http_info = self._list_pools_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pools_with_http_info(self, request):
+    def list_pools_async_invoker(self, request):
+        http_info = self._list_pools_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_pools_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/pools",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPoolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2735,9 +3056,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2746,20 +3067,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPoolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quota_details_async(self, request):
         """查询配额使用详情
@@ -2773,9 +3090,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListQuotaDetailsRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListQuotaDetailsResponse`
         """
-        return self._list_quota_details_with_http_info(request)
+        http_info = self._list_quota_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quota_details_with_http_info(self, request):
+    def list_quota_details_async_invoker(self, request):
+        http_info = self._list_quota_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quota_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/quotas/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotaDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2793,9 +3122,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2804,20 +3133,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/quotas/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotaDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_security_policies_async(self, request):
         """查询自定义安全策略列表
@@ -2831,9 +3156,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListSecurityPoliciesRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListSecurityPoliciesResponse`
         """
-        return self._list_security_policies_with_http_info(request)
+        http_info = self._list_security_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_security_policies_with_http_info(self, request):
+    def list_security_policies_async_invoker(self, request):
+        http_info = self._list_security_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_security_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/security-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecurityPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2869,9 +3206,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2880,20 +3217,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/security-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecurityPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_system_security_policies_async(self, request):
         """查询系统安全策略列表
@@ -2909,9 +3242,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListSystemSecurityPoliciesRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListSystemSecurityPoliciesResponse`
         """
-        return self._list_system_security_policies_with_http_info(request)
+        http_info = self._list_system_security_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_system_security_policies_with_http_info(self, request):
+    def list_system_security_policies_async_invoker(self, request):
+        http_info = self._list_system_security_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_system_security_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/system-security-policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSystemSecurityPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2926,9 +3271,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2937,20 +3282,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/system-security-policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSystemSecurityPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_certificate_async(self, request):
         """查询证书详情
@@ -2964,9 +3305,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowCertificateRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowCertificateResponse`
         """
-        return self._show_certificate_with_http_info(request)
+        http_info = self._show_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_certificate_with_http_info(self, request):
+    def show_certificate_async_invoker(self, request):
+        http_info = self._show_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_certificate_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2983,9 +3336,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2994,20 +3347,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/certificates/{certificate_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_flavor_async(self, request):
         """查询规格详情
@@ -3021,9 +3370,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowFlavorRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowFlavorResponse`
         """
-        return self._show_flavor_with_http_info(request)
+        http_info = self._show_flavor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_flavor_with_http_info(self, request):
+    def show_flavor_async_invoker(self, request):
+        http_info = self._show_flavor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flavor_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/flavors/{flavor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlavorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3040,9 +3401,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3051,20 +3412,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/flavors/{flavor_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFlavorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_health_monitor_async(self, request):
         """查询健康检查详情
@@ -3078,9 +3435,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowHealthMonitorRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowHealthMonitorResponse`
         """
-        return self._show_health_monitor_with_http_info(request)
+        http_info = self._show_health_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_health_monitor_with_http_info(self, request):
+    def show_health_monitor_async_invoker(self, request):
+        http_info = self._show_health_monitor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_health_monitor_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/healthmonitors/{healthmonitor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHealthMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3097,9 +3466,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3108,20 +3477,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/healthmonitors/{healthmonitor_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHealthMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_l7_policy_async(self, request):
         """查询转发策略详情
@@ -3135,9 +3500,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowL7PolicyRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowL7PolicyResponse`
         """
-        return self._show_l7_policy_with_http_info(request)
+        http_info = self._show_l7_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_l7_policy_with_http_info(self, request):
+    def show_l7_policy_async_invoker(self, request):
+        http_info = self._show_l7_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_l7_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/l7policies/{l7policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowL7PolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3154,9 +3531,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3165,20 +3542,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/{l7policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowL7PolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_l7_rule_async(self, request):
         """查询转发规则详情
@@ -3192,9 +3565,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowL7RuleRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowL7RuleResponse`
         """
-        return self._show_l7_rule_with_http_info(request)
+        http_info = self._show_l7_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_l7_rule_with_http_info(self, request):
+    def show_l7_rule_async_invoker(self, request):
+        http_info = self._show_l7_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_l7_rule_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/l7policies/{l7policy_id}/rules/{l7rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowL7RuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3213,9 +3598,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3224,20 +3609,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/{l7policy_id}/rules/{l7rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowL7RuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_listener_async(self, request):
         """查询监听器详情
@@ -3251,9 +3632,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowListenerRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowListenerResponse`
         """
-        return self._show_listener_with_http_info(request)
+        http_info = self._show_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_listener_with_http_info(self, request):
+    def show_listener_async_invoker(self, request):
+        http_info = self._show_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_listener_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/listeners/{listener_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3270,9 +3663,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3281,20 +3674,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/listeners/{listener_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_load_balancer_async(self, request):
         """查询负载均衡器详情
@@ -3308,9 +3697,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerResponse`
         """
-        return self._show_load_balancer_with_http_info(request)
+        http_info = self._show_load_balancer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_load_balancer_with_http_info(self, request):
+    def show_load_balancer_async_invoker(self, request):
+        http_info = self._show_load_balancer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_load_balancer_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLoadBalancerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3327,9 +3728,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3338,20 +3739,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLoadBalancerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_load_balancer_status_async(self, request):
         """查询负载均衡器状态树
@@ -3368,9 +3765,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerStatusRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowLoadBalancerStatusResponse`
         """
-        return self._show_load_balancer_status_with_http_info(request)
+        http_info = self._show_load_balancer_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_load_balancer_status_with_http_info(self, request):
+    def show_load_balancer_status_async_invoker(self, request):
+        http_info = self._show_load_balancer_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_load_balancer_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLoadBalancerStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3387,9 +3796,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3398,20 +3807,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}/statuses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLoadBalancerStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_logtank_async(self, request):
         """查询云日志详情
@@ -3425,9 +3830,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowLogtankRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowLogtankResponse`
         """
-        return self._show_logtank_with_http_info(request)
+        http_info = self._show_logtank_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_logtank_with_http_info(self, request):
+    def show_logtank_async_invoker(self, request):
+        http_info = self._show_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_logtank_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/logtanks/{logtank_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLogtankResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3444,9 +3861,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3455,20 +3872,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/logtanks/{logtank_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_member_async(self, request):
         """查询后端服务器详情
@@ -3482,9 +3895,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowMemberRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowMemberResponse`
         """
-        return self._show_member_with_http_info(request)
+        http_info = self._show_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_member_with_http_info(self, request):
+    def show_member_async_invoker(self, request):
+        http_info = self._show_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_member_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3503,9 +3928,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3514,20 +3939,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/{member_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_pool_async(self, request):
         """查询后端服务器组详情
@@ -3541,9 +3962,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowPoolRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowPoolResponse`
         """
-        return self._show_pool_with_http_info(request)
+        http_info = self._show_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_pool_with_http_info(self, request):
+    def show_pool_async_invoker(self, request):
+        http_info = self._show_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_pool_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3560,9 +3993,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3571,20 +4004,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quota_async(self, request):
         """查询配额详情
@@ -3598,9 +4027,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowQuotaRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowQuotaResponse`
         """
-        return self._show_quota_with_http_info(request)
+        http_info = self._show_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quota_with_http_info(self, request):
+    def show_quota_async_invoker(self, request):
+        http_info = self._show_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3615,9 +4056,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3626,20 +4067,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_security_policy_async(self, request):
         """查询自定义安全策略详情
@@ -3653,9 +4090,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowSecurityPolicyRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowSecurityPolicyResponse`
         """
-        return self._show_security_policy_with_http_info(request)
+        http_info = self._show_security_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_security_policy_with_http_info(self, request):
+    def show_security_policy_async_invoker(self, request):
+        http_info = self._show_security_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_security_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/security-policies/{security_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecurityPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3672,9 +4121,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3683,20 +4132,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/security-policies/{security_policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecurityPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_certificate_async(self, request):
         """更新证书
@@ -3710,9 +4155,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateCertificateRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateCertificateResponse`
         """
-        return self._update_certificate_with_http_info(request)
+        http_info = self._update_certificate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_certificate_with_http_info(self, request):
+    def update_certificate_async_invoker(self, request):
+        http_info = self._update_certificate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_certificate_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCertificateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3729,11 +4186,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3742,20 +4199,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/certificates/{certificate_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCertificateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_health_monitor_async(self, request):
         """更新健康检查
@@ -3769,9 +4222,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateHealthMonitorRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateHealthMonitorResponse`
         """
-        return self._update_health_monitor_with_http_info(request)
+        http_info = self._update_health_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_health_monitor_with_http_info(self, request):
+    def update_health_monitor_async_invoker(self, request):
+        http_info = self._update_health_monitor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_health_monitor_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/healthmonitors/{healthmonitor_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHealthMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3788,11 +4253,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3801,20 +4266,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/healthmonitors/{healthmonitor_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHealthMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_l7_policy_async(self, request):
         """更新转发策略
@@ -3828,9 +4289,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateL7PolicyResponse`
         """
-        return self._update_l7_policy_with_http_info(request)
+        http_info = self._update_l7_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_l7_policy_with_http_info(self, request):
+    def update_l7_policy_async_invoker(self, request):
+        http_info = self._update_l7_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_l7_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/l7policies/{l7policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateL7PolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3847,11 +4320,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3860,20 +4333,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/{l7policy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateL7PolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_l7_rule_async(self, request):
         """更新转发规则
@@ -3887,9 +4356,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateL7RuleRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateL7RuleResponse`
         """
-        return self._update_l7_rule_with_http_info(request)
+        http_info = self._update_l7_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_l7_rule_with_http_info(self, request):
+    def update_l7_rule_async_invoker(self, request):
+        http_info = self._update_l7_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_l7_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/l7policies/{l7policy_id}/rules/{l7rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateL7RuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3908,11 +4389,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3921,20 +4402,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/l7policies/{l7policy_id}/rules/{l7rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateL7RuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_listener_async(self, request):
         """更新监听器
@@ -3948,9 +4425,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateListenerRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateListenerResponse`
         """
-        return self._update_listener_with_http_info(request)
+        http_info = self._update_listener_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_listener_with_http_info(self, request):
+    def update_listener_async_invoker(self, request):
+        http_info = self._update_listener_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_listener_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/listeners/{listener_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateListenerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3967,11 +4456,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3980,20 +4469,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/listeners/{listener_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateListenerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_load_balancer_async(self, request):
         """更新负载均衡器
@@ -4007,9 +4492,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateLoadBalancerRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateLoadBalancerResponse`
         """
-        return self._update_load_balancer_with_http_info(request)
+        http_info = self._update_load_balancer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_load_balancer_with_http_info(self, request):
+    def update_load_balancer_async_invoker(self, request):
+        http_info = self._update_load_balancer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_load_balancer_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLoadBalancerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4026,11 +4523,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4039,20 +4536,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/loadbalancers/{loadbalancer_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLoadBalancerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_logtank_async(self, request):
         """更新云日志
@@ -4066,9 +4559,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateLogtankRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateLogtankResponse`
         """
-        return self._update_logtank_with_http_info(request)
+        http_info = self._update_logtank_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_logtank_with_http_info(self, request):
+    def update_logtank_async_invoker(self, request):
+        http_info = self._update_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_logtank_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/logtanks/{logtank_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogtankResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4085,11 +4590,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4098,20 +4603,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/logtanks/{logtank_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_member_async(self, request):
         """更新后端服务器
@@ -4125,9 +4626,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateMemberRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateMemberResponse`
         """
-        return self._update_member_with_http_info(request)
+        http_info = self._update_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_member_with_http_info(self, request):
+    def update_member_async_invoker(self, request):
+        http_info = self._update_member_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_member_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4146,11 +4659,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4159,20 +4672,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}/members/{member_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_pool_async(self, request):
         """更新后端服务器组
@@ -4186,9 +4695,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdatePoolRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdatePoolResponse`
         """
-        return self._update_pool_with_http_info(request)
+        http_info = self._update_pool_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_pool_with_http_info(self, request):
+    def update_pool_async_invoker(self, request):
+        http_info = self._update_pool_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_pool_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/pools/{pool_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePoolResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4205,11 +4726,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4218,20 +4739,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/pools/{pool_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePoolResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_security_policy_async(self, request):
         """更新自定义安全策略
@@ -4245,9 +4762,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateSecurityPolicyResponse`
         """
-        return self._update_security_policy_with_http_info(request)
+        http_info = self._update_security_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_security_policy_with_http_info(self, request):
+    def update_security_policy_async_invoker(self, request):
+        http_info = self._update_security_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_security_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/security-policies/{security_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4264,11 +4793,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4277,20 +4806,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/security-policies/{security_policy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecurityPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions_async(self, request):
         """查询API版本列表信息
@@ -4304,9 +4829,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_async_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4321,9 +4858,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4332,20 +4869,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_ip_list_async(self, request):
         """批量删除IP地址组的IP地址
@@ -4359,9 +4892,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.BatchDeleteIpListResponse`
         """
-        return self._batch_delete_ip_list_with_http_info(request)
+        http_info = self._batch_delete_ip_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_ip_list_with_http_info(self, request):
+    def batch_delete_ip_list_async_invoker(self, request):
+        http_info = self._batch_delete_ip_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_ip_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/ipgroups/{ipgroup_id}/iplist/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteIpListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4378,11 +4923,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4391,20 +4936,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/ipgroups/{ipgroup_id}/iplist/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteIpListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_preoccupy_ip_num_async(self, request):
         """计算预占IP数
@@ -4433,9 +4974,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CountPreoccupyIpNumRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CountPreoccupyIpNumResponse`
         """
-        return self._count_preoccupy_ip_num_with_http_info(request)
+        http_info = self._count_preoccupy_ip_num_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_preoccupy_ip_num_with_http_info(self, request):
+    def count_preoccupy_ip_num_async_invoker(self, request):
+        http_info = self._count_preoccupy_ip_num_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_preoccupy_ip_num_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/preoccupy-ip-num",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountPreoccupyIpNumResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4461,9 +5014,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4472,20 +5025,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/preoccupy-ip-num',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountPreoccupyIpNumResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ip_group_async(self, request):
         """创建IP地址组
@@ -4503,9 +5052,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.CreateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.CreateIpGroupResponse`
         """
-        return self._create_ip_group_with_http_info(request)
+        http_info = self._create_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ip_group_with_http_info(self, request):
+    def create_ip_group_async_invoker(self, request):
+        http_info = self._create_ip_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ip_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/ipgroups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4520,11 +5081,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4533,20 +5094,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/ipgroups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ip_group_async(self, request):
         """删除IP地址组
@@ -4560,9 +5117,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.DeleteIpGroupRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.DeleteIpGroupResponse`
         """
-        return self._delete_ip_group_with_http_info(request)
+        http_info = self._delete_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ip_group_with_http_info(self, request):
+    def delete_ip_group_async_invoker(self, request):
+        http_info = self._delete_ip_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_ip_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/elb/ipgroups/{ipgroup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4579,9 +5148,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4590,20 +5159,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/ipgroups/{ipgroup_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ip_groups_async(self, request):
         """查询IP地址组列表
@@ -4617,9 +5182,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ListIpGroupsRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ListIpGroupsResponse`
         """
-        return self._list_ip_groups_with_http_info(request)
+        http_info = self._list_ip_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ip_groups_with_http_info(self, request):
+    def list_ip_groups_async_invoker(self, request):
+        http_info = self._list_ip_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ip_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/ipgroups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4652,9 +5229,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4663,20 +5240,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/ipgroups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIpGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ip_group_async(self, request):
         """查询IP地址组详情
@@ -4690,9 +5263,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.ShowIpGroupRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.ShowIpGroupResponse`
         """
-        return self._show_ip_group_with_http_info(request)
+        http_info = self._show_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ip_group_with_http_info(self, request):
+    def show_ip_group_async_invoker(self, request):
+        http_info = self._show_ip_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ip_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/elb/ipgroups/{ipgroup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4709,9 +5294,9 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4720,20 +5305,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/ipgroups/{ipgroup_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ip_group_async(self, request):
         """更新IP地址组
@@ -4752,9 +5333,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateIpGroupRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpGroupResponse`
         """
-        return self._update_ip_group_with_http_info(request)
+        http_info = self._update_ip_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ip_group_with_http_info(self, request):
+    def update_ip_group_async_invoker(self, request):
+        http_info = self._update_ip_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ip_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/elb/ipgroups/{ipgroup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIpGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4771,11 +5364,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4784,20 +5377,16 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/ipgroups/{ipgroup_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIpGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ip_list_async(self, request):
         """更新IP地址组的IP列表
@@ -4811,9 +5400,21 @@ class ElbAsyncClient(Client):
         :type request: :class:`huaweicloudsdkelb.v3.UpdateIpListRequest`
         :rtype: :class:`huaweicloudsdkelb.v3.UpdateIpListResponse`
         """
-        return self._update_ip_list_with_http_info(request)
+        http_info = self._update_ip_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ip_list_with_http_info(self, request):
+    def update_ip_list_async_invoker(self, request):
+        http_info = self._update_ip_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ip_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/elb/ipgroups/{ipgroup_id}/iplist/create-or-update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIpListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4830,11 +5431,11 @@ class ElbAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4843,20 +5444,26 @@ class ElbAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/elb/ipgroups/{ipgroup_id}/iplist/create-or-update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIpListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -4895,4 +5502,4 @@ class ElbAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

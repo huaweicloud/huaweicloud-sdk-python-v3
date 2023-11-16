@@ -25,9 +25,9 @@ from requests import HTTPError, Timeout, TooManyRedirects
 from requests.adapters import HTTPAdapter
 from requests.exceptions import ConnectionError
 from requests.packages.urllib3.util import Retry
-from urllib3.exceptions import SSLError, NewConnectionError
 
 from huaweicloudsdkcore.exceptions import exceptions
+from huaweicloudsdkcore.exceptions.exception_handler import process_connection_error
 from huaweicloudsdkcore.http.future_session import FutureSession
 
 
@@ -80,9 +80,8 @@ class HttpClient(object):
         try:
             if self._http_handler is not None:
                 self._http_handler.process_request(request=request, logger=self._logger)
-            url = "%s://%s%s" % (request.schema, request.host, request.uri)
             response = invoke(
-                url,
+                request.url,
                 timeout=self._config.timeout,
                 headers=request.header_params,
                 proxies=self._proxy,
@@ -92,19 +91,8 @@ class HttpClient(object):
                 stream=request.stream,
                 allow_redirects=self._config.allow_redirects
             )
-        except ConnectionError as connectionError:
-            for each in connectionError.args:
-                reason_str = str(each.reason)
-                if isinstance(each.reason, SSLError):
-                    self._logger.error("SslHandShakeException occurred. %s", reason_str)
-                    raise exceptions.SslHandShakeException(reason_str)
-                if isinstance(each.reason, NewConnectionError):
-                    if reason_str.endswith("getaddrinfo failed") or reason_str.endswith("Name or service not known"):
-                        raise exceptions.HostUnreachableException(reason_str)
-                    self._logger.error("ConnectionException occurred. %s", reason_str)
-                    raise exceptions.ConnectionException(reason_str)
-            self._logger.error("ConnectionException occurred. %s", connectionError)
-            raise exceptions.ConnectionException(str(connectionError))
+        except ConnectionError as conn_err:
+            raise process_connection_error(conn_err, self._logger)
 
         self.response_error_hook_factory()(response)
         return response
@@ -113,9 +101,8 @@ class HttpClient(object):
         fun = getattr(FutureSession(self._session, self._executor), request.method.lower())
         hooks.append(self.response_error_hook_factory())
 
-        url = "%s://%s%s" % (request.schema, request.host, request.uri)
         future = fun(
-            url,
+            request.url,
             timeout=self._config.timeout,
             headers=request.header_params,
             proxies=self._proxy,

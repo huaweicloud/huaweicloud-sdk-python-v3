@@ -17,57 +17,28 @@ class PublishAppReq:
     sensitive_list = []
 
     openapi_types = {
-        'accounts': 'list[AccountInfo]',
         'items': 'list[PublishApp]'
     }
 
     attribute_map = {
-        'accounts': 'accounts',
         'items': 'items'
     }
 
-    def __init__(self, accounts=None, items=None):
+    def __init__(self, items=None):
         """PublishAppReq
 
         The model defined in huaweicloud sdk
 
-        :param accounts: 用户(组),单次最多允许操作100个用户(组)
-        :type accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]
         :param items: 发布应用列表(单次最多20个应用)
         :type items: list[:class:`huaweicloudsdkworkspaceapp.v1.PublishApp`]
         """
         
         
 
-        self._accounts = None
         self._items = None
         self.discriminator = None
 
-        if accounts is not None:
-            self.accounts = accounts
         self.items = items
-
-    @property
-    def accounts(self):
-        """Gets the accounts of this PublishAppReq.
-
-        用户(组),单次最多允许操作100个用户(组)
-
-        :return: The accounts of this PublishAppReq.
-        :rtype: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]
-        """
-        return self._accounts
-
-    @accounts.setter
-    def accounts(self, accounts):
-        """Sets the accounts of this PublishAppReq.
-
-        用户(组),单次最多允许操作100个用户(组)
-
-        :param accounts: The accounts of this PublishAppReq.
-        :type accounts: list[:class:`huaweicloudsdkworkspaceapp.v1.AccountInfo`]
-        """
-        self._accounts = accounts
 
     @property
     def items(self):

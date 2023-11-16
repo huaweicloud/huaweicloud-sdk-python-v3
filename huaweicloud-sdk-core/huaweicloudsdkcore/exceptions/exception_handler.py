@@ -22,9 +22,10 @@ import json
 from abc import abstractmethod
 
 import six
+from urllib3.exceptions import SSLError, NewConnectionError
 from requests import Request, Response
 
-from huaweicloudsdkcore.exceptions.exceptions import SdkError, ServerResponseException, ClientRequestException
+from huaweicloudsdkcore.exceptions import exceptions
 from huaweicloudsdkcore.utils import six_utils
 
 
@@ -48,7 +49,7 @@ class DefaultExceptionHandler(ExceptionHandler):
             return
 
         request_id = response.headers.get(self._X_REQUEST_ID)
-        sdk_error = SdkError(request_id=request_id)
+        sdk_error = exceptions.SdkError(request_id=request_id)
         try:
             sdk_error_dict = json.loads(response.text)
             if isinstance(sdk_error_dict, dict):
@@ -59,15 +60,15 @@ class DefaultExceptionHandler(ExceptionHandler):
             sdk_error.error_msg = response.text
         except Exception:
             sdk_error.error_msg = six.ensure_str(response.text)
-            raise ServerResponseException(response.status_code, sdk_error)
+            raise exceptions.ServerResponseException(response.status_code, sdk_error)
         finally:
             if not sdk_error.error_code:
                 sdk_error.error_code = str(response.status_code)
             if not sdk_error.error_msg:
                 sdk_error.error_msg = response.text
 
-        raise ClientRequestException(response.status_code, sdk_error) if response.status_code < 500 \
-            else ServerResponseException(response.status_code, sdk_error)
+        raise exceptions.ClientRequestException(response.status_code, sdk_error) if response.status_code < 500 \
+            else exceptions.ServerResponseException(response.status_code, sdk_error)
 
     @classmethod
     def _process_sdk_error(cls, sdk_error, sdk_error_dict):
@@ -88,3 +89,24 @@ class DefaultExceptionHandler(ExceptionHandler):
             if not isinstance(value, dict):
                 continue
             cls._process_sdk_error(sdk_error, value)
+
+
+def process_connection_error(connection_error, logger):
+    for each in connection_error.args:
+        if not hasattr(each, "reason"):
+            continue
+
+        reason_str = str(each.reason)
+        if isinstance(each.reason, SSLError):
+            logger.error("SslHandShakeException occurred. %s", reason_str)
+            raise exceptions.SslHandShakeException(reason_str)
+
+        if isinstance(each.reason, NewConnectionError):
+            if reason_str.endswith("getaddrinfo failed") or reason_str.endswith("Name or service not known"):
+                logger.error("HostUnreachableException occurred. %s", reason_str)
+                raise exceptions.HostUnreachableException(reason_str)
+
+            logger.error("ConnectionException occurred. %s", reason_str)
+            raise exceptions.ConnectionException(reason_str)
+    logger.error("ConnectionException occurred. %s", connection_error)
+    raise exceptions.ConnectionException(str(connection_error))

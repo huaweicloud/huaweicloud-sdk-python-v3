@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdksmn'")
 
 
 class SmnAsyncClient(Client):
@@ -39,9 +44,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.AddSubscriptionRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.AddSubscriptionResponse`
         """
-        return self._add_subscription_with_http_info(request)
+        http_info = self._add_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_subscription_with_http_info(self, request):
+    def add_subscription_async_invoker(self, request):
+        http_info = self._add_subscription_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_subscription_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_or_delete_resource_tags_async(self, request):
         """批量添加删除资源标签
@@ -101,9 +114,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.BatchCreateOrDeleteResourceTagsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.BatchCreateOrDeleteResourceTagsResponse`
         """
-        return self._batch_create_or_delete_resource_tags_with_http_info(request)
+        http_info = self._batch_create_or_delete_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_or_delete_resource_tags_with_http_info(self, request):
+    def batch_create_or_delete_resource_tags_async_invoker(self, request):
+        http_info = self._batch_create_or_delete_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_or_delete_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOrDeleteResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -122,11 +147,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -135,20 +160,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateOrDeleteResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_subscription_async(self, request):
         """取消订阅
@@ -162,9 +183,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CancelSubscriptionRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CancelSubscriptionResponse`
         """
-        return self._cancel_subscription_with_http_info(request)
+        http_info = self._cancel_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_subscription_with_http_info(self, request):
+    def cancel_subscription_async_invoker(self, request):
+        http_info = self._cancel_subscription_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_subscription_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/subscriptions/{subscription_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -181,9 +214,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -192,20 +225,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/subscriptions/{subscription_urn}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_logtank_async(self, request):
         """绑定云日志
@@ -219,9 +248,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CreateLogtankRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateLogtankResponse`
         """
-        return self._create_logtank_with_http_info(request)
+        http_info = self._create_logtank_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_logtank_with_http_info(self, request):
+    def create_logtank_async_invoker(self, request):
+        http_info = self._create_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_logtank_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/logtanks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLogtankResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -238,11 +279,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -251,20 +292,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/logtanks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_message_template_async(self, request):
         """创建消息模板
@@ -279,9 +316,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CreateMessageTemplateRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateMessageTemplateResponse`
         """
-        return self._create_message_template_with_http_info(request)
+        http_info = self._create_message_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_message_template_with_http_info(self, request):
+    def create_message_template_async_invoker(self, request):
+        http_info = self._create_message_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_message_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/message_template",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMessageTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -296,11 +345,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -309,20 +358,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/message_template',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMessageTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resource_tag_async(self, request):
         """添加资源标签
@@ -336,9 +381,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateResourceTagResponse`
         """
-        return self._create_resource_tag_with_http_info(request)
+        http_info = self._create_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resource_tag_with_http_info(self, request):
+    def create_resource_tag_async_invoker(self, request):
+        http_info = self._create_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -357,11 +414,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -370,20 +427,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_topic_async(self, request):
         """创建主题
@@ -398,9 +451,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CreateTopicRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateTopicResponse`
         """
-        return self._create_topic_with_http_info(request)
+        http_info = self._create_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_topic_with_http_info(self, request):
+    def create_topic_async_invoker(self, request):
+        http_info = self._create_topic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_topic_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -415,11 +480,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -428,20 +493,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_logtank_async(self, request):
         """解绑云日志
@@ -455,9 +516,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteLogtankRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteLogtankResponse`
         """
-        return self._delete_logtank_with_http_info(request)
+        http_info = self._delete_logtank_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_logtank_with_http_info(self, request):
+    def delete_logtank_async_invoker(self, request):
+        http_info = self._delete_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_logtank_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/logtanks/{logtank_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLogtankResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -476,9 +549,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -487,20 +560,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/logtanks/{logtank_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_message_template_async(self, request):
         """删除消息模板
@@ -514,9 +583,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteMessageTemplateRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteMessageTemplateResponse`
         """
-        return self._delete_message_template_with_http_info(request)
+        http_info = self._delete_message_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_message_template_with_http_info(self, request):
+    def delete_message_template_async_invoker(self, request):
+        http_info = self._delete_message_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_message_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/message_template/{message_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMessageTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -533,9 +614,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -544,20 +625,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/message_template/{message_template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMessageTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_tag_async(self, request):
         """删除资源标签
@@ -571,9 +648,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteResourceTagResponse`
         """
-        return self._delete_resource_tag_with_http_info(request)
+        http_info = self._delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_tag_with_http_info(self, request):
+    def delete_resource_tag_async_invoker(self, request):
+        http_info = self._delete_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -594,9 +683,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -605,20 +694,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_topic_async(self, request):
         """删除主题
@@ -632,9 +717,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteTopicRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteTopicResponse`
         """
-        return self._delete_topic_with_http_info(request)
+        http_info = self._delete_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_topic_with_http_info(self, request):
+    def delete_topic_async_invoker(self, request):
+        http_info = self._delete_topic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_topic_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -651,9 +748,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -662,20 +759,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_topic_attribute_by_name_async(self, request):
         """删除指定名称的主题策略
@@ -689,9 +782,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteTopicAttributeByNameRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteTopicAttributeByNameResponse`
         """
-        return self._delete_topic_attribute_by_name_with_http_info(request)
+        http_info = self._delete_topic_attribute_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_topic_attribute_by_name_with_http_info(self, request):
+    def delete_topic_attribute_by_name_async_invoker(self, request):
+        http_info = self._delete_topic_attribute_by_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_topic_attribute_by_name_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/attributes/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTopicAttributeByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -710,9 +815,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -721,20 +826,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/attributes/{name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTopicAttributeByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_topic_attributes_async(self, request):
         """删除所有主题策略
@@ -748,9 +849,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteTopicAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteTopicAttributesResponse`
         """
-        return self._delete_topic_attributes_with_http_info(request)
+        http_info = self._delete_topic_attributes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_topic_attributes_with_http_info(self, request):
+    def delete_topic_attributes_async_invoker(self, request):
+        http_info = self._delete_topic_attributes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_topic_attributes_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/attributes",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTopicAttributesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -767,9 +880,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -778,20 +891,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/attributes',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTopicAttributesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_logtank_async(self, request):
         """查询云日志
@@ -805,9 +914,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListLogtankRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListLogtankResponse`
         """
-        return self._list_logtank_with_http_info(request)
+        http_info = self._list_logtank_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_logtank_with_http_info(self, request):
+    def list_logtank_async_invoker(self, request):
+        http_info = self._list_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_logtank_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/logtanks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLogtankResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -824,9 +945,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -835,20 +956,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/logtanks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_message_template_details_async(self, request):
         """查询消息模板详情
@@ -862,9 +979,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListMessageTemplateDetailsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListMessageTemplateDetailsResponse`
         """
-        return self._list_message_template_details_with_http_info(request)
+        http_info = self._list_message_template_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_message_template_details_with_http_info(self, request):
+    def list_message_template_details_async_invoker(self, request):
+        http_info = self._list_message_template_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_message_template_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/message_template/{message_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessageTemplateDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -881,9 +1010,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -892,20 +1021,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/message_template/{message_template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMessageTemplateDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_message_templates_async(self, request):
         """查询消息模板列表
@@ -919,9 +1044,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListMessageTemplatesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListMessageTemplatesResponse`
         """
-        return self._list_message_templates_with_http_info(request)
+        http_info = self._list_message_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_message_templates_with_http_info(self, request):
+    def list_message_templates_async_invoker(self, request):
+        http_info = self._list_message_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_message_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/message_template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessageTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -944,9 +1081,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -955,20 +1092,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/message_template',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMessageTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags_async(self, request):
         """查询项目标签
@@ -982,9 +1115,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_async_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1001,9 +1146,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1012,20 +1157,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_instances_async(self, request):
         """查询资源实例
@@ -1039,9 +1180,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListResourceInstancesResponse`
         """
-        return self._list_resource_instances_with_http_info(request)
+        http_info = self._list_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_instances_with_http_info(self, request):
+    def list_resource_instances_async_invoker(self, request):
+        http_info = self._list_resource_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1058,11 +1211,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1071,20 +1224,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_tags_async(self, request):
         """查询资源标签
@@ -1098,9 +1247,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListResourceTagsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListResourceTagsResponse`
         """
-        return self._list_resource_tags_with_http_info(request)
+        http_info = self._list_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_tags_with_http_info(self, request):
+    def list_resource_tags_async_invoker(self, request):
+        http_info = self._list_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1119,9 +1280,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1130,20 +1291,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subscriptions_async(self, request):
         """查询订阅者列表
@@ -1157,9 +1314,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListSubscriptionsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListSubscriptionsResponse`
         """
-        return self._list_subscriptions_with_http_info(request)
+        http_info = self._list_subscriptions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subscriptions_with_http_info(self, request):
+    def list_subscriptions_async_invoker(self, request):
+        http_info = self._list_subscriptions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_subscriptions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubscriptionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1184,9 +1353,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1195,20 +1364,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/subscriptions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubscriptionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subscriptions_by_topic_async(self, request):
         """查询指定Topic的订阅者列表
@@ -1222,9 +1387,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListSubscriptionsByTopicRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListSubscriptionsByTopicResponse`
         """
-        return self._list_subscriptions_by_topic_with_http_info(request)
+        http_info = self._list_subscriptions_by_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subscriptions_by_topic_with_http_info(self, request):
+    def list_subscriptions_by_topic_async_invoker(self, request):
+        http_info = self._list_subscriptions_by_topic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_subscriptions_by_topic_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubscriptionsByTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1245,9 +1422,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1256,20 +1433,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubscriptionsByTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_topic_attributes_async(self, request):
         """查询主题策略
@@ -1283,9 +1456,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListTopicAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListTopicAttributesResponse`
         """
-        return self._list_topic_attributes_with_http_info(request)
+        http_info = self._list_topic_attributes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_topic_attributes_with_http_info(self, request):
+    def list_topic_attributes_async_invoker(self, request):
+        http_info = self._list_topic_attributes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_topic_attributes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/attributes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopicAttributesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1304,9 +1489,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1315,20 +1500,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/attributes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTopicAttributesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_topic_details_async(self, request):
         """查询主题详情
@@ -1342,9 +1523,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListTopicDetailsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListTopicDetailsResponse`
         """
-        return self._list_topic_details_with_http_info(request)
+        http_info = self._list_topic_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_topic_details_with_http_info(self, request):
+    def list_topic_details_async_invoker(self, request):
+        http_info = self._list_topic_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_topic_details_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopicDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1361,9 +1554,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1372,20 +1565,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTopicDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_topics_async(self, request):
         """查询主题列表
@@ -1399,9 +1588,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListTopicsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListTopicsResponse`
         """
-        return self._list_topics_with_http_info(request)
+        http_info = self._list_topics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_topics_with_http_info(self, request):
+    def list_topics_async_invoker(self, request):
+        http_info = self._list_topics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_topics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1428,9 +1629,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1439,20 +1640,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTopicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_version_async(self, request):
         """查询SMN API V2版本信息
@@ -1466,9 +1663,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListVersionRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListVersionResponse`
         """
-        return self._list_version_with_http_info(request)
+        http_info = self._list_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_version_with_http_info(self, request):
+    def list_version_async_invoker(self, request):
+        http_info = self._list_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1483,9 +1692,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1494,20 +1703,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_versions_async(self, request):
         """查询SMN支持的API版本号信息
@@ -1521,9 +1726,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListVersionsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListVersionsResponse`
         """
-        return self._list_versions_with_http_info(request)
+        http_info = self._list_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_versions_with_http_info(self, request):
+    def list_versions_async_invoker(self, request):
+        http_info = self._list_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1538,9 +1755,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1549,20 +1766,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_message_async(self, request):
         """消息发布
@@ -1585,9 +1798,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.PublishMessageRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.PublishMessageResponse`
         """
-        return self._publish_message_with_http_info(request)
+        http_info = self._publish_message_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_message_with_http_info(self, request):
+    def publish_message_async_invoker(self, request):
+        http_info = self._publish_message_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_message_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishMessageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1604,11 +1829,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1617,20 +1842,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishMessageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_logtank_async(self, request):
         """更新云日志
@@ -1644,9 +1865,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateLogtankRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateLogtankResponse`
         """
-        return self._update_logtank_with_http_info(request)
+        http_info = self._update_logtank_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_logtank_with_http_info(self, request):
+    def update_logtank_async_invoker(self, request):
+        http_info = self._update_logtank_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_logtank_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/logtanks/{logtank_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLogtankResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1665,11 +1898,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1678,20 +1911,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/logtanks/{logtank_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLogtankResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_message_template_async(self, request):
         """更新消息模板
@@ -1705,9 +1934,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateMessageTemplateResponse`
         """
-        return self._update_message_template_with_http_info(request)
+        http_info = self._update_message_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_message_template_with_http_info(self, request):
+    def update_message_template_async_invoker(self, request):
+        http_info = self._update_message_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_message_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/message_template/{message_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMessageTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1724,11 +1965,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1737,20 +1978,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/message_template/{message_template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMessageTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_subscription_async(self, request):
         """更新订阅者
@@ -1764,9 +2001,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateSubscriptionResponse`
         """
-        return self._update_subscription_with_http_info(request)
+        http_info = self._update_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_subscription_with_http_info(self, request):
+    def update_subscription_async_invoker(self, request):
+        http_info = self._update_subscription_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_subscription_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions/{subscription_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1785,11 +2034,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1798,20 +2047,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/subscriptions/{subscription_urn}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_topic_async(self, request):
         """更新主题
@@ -1825,9 +2070,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateTopicRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateTopicResponse`
         """
-        return self._update_topic_with_http_info(request)
+        http_info = self._update_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_topic_with_http_info(self, request):
+    def update_topic_async_invoker(self, request):
+        http_info = self._update_topic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_topic_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1844,11 +2101,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1857,20 +2114,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_topic_attribute_async(self, request):
         """更新主题策略
@@ -1884,9 +2137,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateTopicAttributeResponse`
         """
-        return self._update_topic_attribute_with_http_info(request)
+        http_info = self._update_topic_attribute_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_topic_attribute_with_http_info(self, request):
+    def update_topic_attribute_async_invoker(self, request):
+        http_info = self._update_topic_attribute_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_topic_attribute_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/topics/{topic_urn}/attributes/{name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTopicAttributeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1905,11 +2170,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1918,20 +2183,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/topics/{topic_urn}/attributes/{name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTopicAttributeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_application_async(self, request):
         """创建Application
@@ -1945,9 +2206,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CreateApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateApplicationResponse`
         """
-        return self._create_application_with_http_info(request)
+        http_info = self._create_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_application_with_http_info(self, request):
+    def create_application_async_invoker(self, request):
+        http_info = self._create_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_application_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1962,11 +2235,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1975,20 +2248,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/applications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_application_async(self, request):
         """删除Application
@@ -2002,9 +2271,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteApplicationResponse`
         """
-        return self._delete_application_with_http_info(request)
+        http_info = self._delete_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_application_with_http_info(self, request):
+    def delete_application_async_invoker(self, request):
+        http_info = self._delete_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_application_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/applications/{application_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2021,9 +2302,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2032,20 +2313,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/applications/{application_urn}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_application_attributes_async(self, request):
         """查询Application属性
@@ -2059,9 +2336,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationAttributesResponse`
         """
-        return self._list_application_attributes_with_http_info(request)
+        http_info = self._list_application_attributes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_application_attributes_with_http_info(self, request):
+    def list_application_attributes_async_invoker(self, request):
+        http_info = self._list_application_attributes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_application_attributes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/applications/{application_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationAttributesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2078,9 +2367,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2089,20 +2378,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/applications/{application_urn}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApplicationAttributesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_applications_async(self, request):
         """查询Application
@@ -2116,9 +2401,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationsResponse`
         """
-        return self._list_applications_with_http_info(request)
+        http_info = self._list_applications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_applications_with_http_info(self, request):
+    def list_applications_async_invoker(self, request):
+        http_info = self._list_applications_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_applications_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2141,9 +2438,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2152,20 +2449,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/applications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApplicationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_app_message_async(self, request):
         """App消息发布
@@ -2179,9 +2472,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.PublishAppMessageRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.PublishAppMessageResponse`
         """
-        return self._publish_app_message_with_http_info(request)
+        http_info = self._publish_app_message_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_app_message_with_http_info(self, request):
+    def publish_app_message_async_invoker(self, request):
+        http_info = self._publish_app_message_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _publish_app_message_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/endpoints/{endpoint_urn}/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishAppMessageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2198,11 +2503,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2211,20 +2516,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/endpoints/{endpoint_urn}/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishAppMessageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_application_async(self, request):
         """更新Application
@@ -2238,9 +2539,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateApplicationRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationResponse`
         """
-        return self._update_application_with_http_info(request)
+        http_info = self._update_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_application_with_http_info(self, request):
+    def update_application_async_invoker(self, request):
+        http_info = self._update_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_application_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/applications/{application_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2257,11 +2570,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2270,20 +2583,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/applications/{application_urn}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_application_endpoint_async(self, request):
         """创建Application endpoint
@@ -2297,9 +2606,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.CreateApplicationEndpointResponse`
         """
-        return self._create_application_endpoint_with_http_info(request)
+        http_info = self._create_application_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_application_endpoint_with_http_info(self, request):
+    def create_application_endpoint_async_invoker(self, request):
+        http_info = self._create_application_endpoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_application_endpoint_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notifications/applications/{application_urn}/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApplicationEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2316,11 +2637,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2329,20 +2650,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/applications/{application_urn}/endpoints',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApplicationEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_application_endpoint_async(self, request):
         """删除Application endpoint
@@ -2356,9 +2673,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.DeleteApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.DeleteApplicationEndpointResponse`
         """
-        return self._delete_application_endpoint_with_http_info(request)
+        http_info = self._delete_application_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_application_endpoint_with_http_info(self, request):
+    def delete_application_endpoint_async_invoker(self, request):
+        http_info = self._delete_application_endpoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_application_endpoint_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/notifications/endpoints/{endpoint_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2375,9 +2704,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2386,20 +2715,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/endpoints/{endpoint_urn}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApplicationEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_application_endpoint_attributes_async(self, request):
         """查询Application的Endpoint属性
@@ -2413,9 +2738,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointAttributesRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointAttributesResponse`
         """
-        return self._list_application_endpoint_attributes_with_http_info(request)
+        http_info = self._list_application_endpoint_attributes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_application_endpoint_attributes_with_http_info(self, request):
+    def list_application_endpoint_attributes_async_invoker(self, request):
+        http_info = self._list_application_endpoint_attributes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_application_endpoint_attributes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/endpoints/{endpoint_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationEndpointAttributesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2432,9 +2769,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2443,20 +2780,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/endpoints/{endpoint_urn}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApplicationEndpointAttributesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_application_endpoints_async(self, request):
         """查询Application的Endpoint列表
@@ -2470,9 +2803,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointsRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.ListApplicationEndpointsResponse`
         """
-        return self._list_application_endpoints_with_http_info(request)
+        http_info = self._list_application_endpoints_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_application_endpoints_with_http_info(self, request):
+    def list_application_endpoints_async_invoker(self, request):
+        http_info = self._list_application_endpoints_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_application_endpoints_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications/applications/{application_urn}/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationEndpointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2499,9 +2844,9 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2510,20 +2855,16 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/applications/{application_urn}/endpoints',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApplicationEndpointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_application_endpoint_async(self, request):
         """更新Application endpoint
@@ -2537,9 +2878,21 @@ class SmnAsyncClient(Client):
         :type request: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointRequest`
         :rtype: :class:`huaweicloudsdksmn.v2.UpdateApplicationEndpointResponse`
         """
-        return self._update_application_endpoint_with_http_info(request)
+        http_info = self._update_application_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_application_endpoint_with_http_info(self, request):
+    def update_application_endpoint_async_invoker(self, request):
+        http_info = self._update_application_endpoint_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_application_endpoint_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/notifications/endpoints/{endpoint_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApplicationEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2556,11 +2909,11 @@ class SmnAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2569,20 +2922,26 @@ class SmnAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications/endpoints/{endpoint_urn}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateApplicationEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2621,4 +2980,4 @@ class SmnAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

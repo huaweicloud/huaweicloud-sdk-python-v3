@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdksms'")
 
 
 class SmsClient(Client):
@@ -38,9 +43,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CheckNetAclRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CheckNetAclResponse`
         """
-        return self._check_net_acl_with_http_info(request)
+        http_info = self._check_net_acl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_net_acl_with_http_info(self, request):
+    def check_net_acl_invoker(self, request):
+        http_info = self._check_net_acl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_net_acl_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks/{t_project_id}/networkacl/{t_network_id}/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckNetAclResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -63,9 +81,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -74,20 +92,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{t_project_id}/networkacl/{t_network_id}/check',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckNetAclResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def collect_log(self, request):
         """上传迁移任务的日志
@@ -100,9 +114,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CollectLogRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CollectLogResponse`
         """
-        return self._collect_log_with_http_info(request)
+        http_info = self._collect_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _collect_log_with_http_info(self, request):
+    def collect_log_invoker(self, request):
+        http_info = self._collect_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _collect_log_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/{task_id}/log",
+            "request_type": request.__class__.__name__,
+            "response_type": "CollectLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +146,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +159,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/log',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CollectLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_migproject(self, request):
         """新建迁移项目
@@ -158,9 +181,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CreateMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateMigprojectResponse`
         """
-        return self._create_migproject_with_http_info(request)
+        http_info = self._create_migproject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_migproject_with_http_info(self, request):
+    def create_migproject_invoker(self, request):
+        http_info = self._create_migproject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_migproject_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/migprojects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMigprojectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -175,11 +211,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -188,20 +224,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/migprojects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMigprojectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_privacy_agreements(self, request):
         """同意隐私协议
@@ -214,9 +246,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CreatePrivacyAgreementsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreatePrivacyAgreementsResponse`
         """
-        return self._create_privacy_agreements_with_http_info(request)
+        http_info = self._create_privacy_agreements_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_privacy_agreements_with_http_info(self, request):
+    def create_privacy_agreements_invoker(self, request):
+        http_info = self._create_privacy_agreements_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_privacy_agreements_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/privacy-agreements",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivacyAgreementsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,9 +276,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +287,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/privacy-agreements',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivacyAgreementsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_task(self, request):
         """创建迁移任务
@@ -268,9 +309,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateTaskResponse`
         """
-        return self._create_task_with_http_info(request)
+        http_info = self._create_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_task_with_http_info(self, request):
+    def create_task_invoker(self, request):
+        http_info = self._create_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -285,11 +339,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -298,20 +352,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template(self, request):
         """新增模板信息
@@ -324,9 +374,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.CreateTemplateResponse`
         """
-        return self._create_template_with_http_info(request)
+        http_info = self._create_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_with_http_info(self, request):
+    def create_template_invoker(self, request):
+        http_info = self._create_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/vm/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +404,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +417,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/vm/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_migproject(self, request):
         """删除迁移项目
@@ -380,9 +439,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteMigprojectResponse`
         """
-        return self._delete_migproject_with_http_info(request)
+        http_info = self._delete_migproject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_migproject_with_http_info(self, request):
+    def delete_migproject_invoker(self, request):
+        http_info = self._delete_migproject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_migproject_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/migprojects/{mig_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMigprojectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -399,9 +471,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -410,20 +482,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/migprojects/{mig_project_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMigprojectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_server(self, request):
         """删除指定ID的源端服务器信息
@@ -436,9 +504,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteServerResponse`
         """
-        return self._delete_server_with_http_info(request)
+        http_info = self._delete_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_server_with_http_info(self, request):
+    def delete_server_invoker(self, request):
+        http_info = self._delete_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_server_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/sources/{source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -455,9 +536,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -466,20 +547,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/{source_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_servers(self, request):
         """批量删除源端服务器信息
@@ -492,9 +569,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteServersResponse`
         """
-        return self._delete_servers_with_http_info(request)
+        http_info = self._delete_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_servers_with_http_info(self, request):
+    def delete_servers_invoker(self, request):
+        http_info = self._delete_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_servers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/sources/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -509,11 +599,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -522,20 +612,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task(self, request):
         """删除指定ID的迁移任务
@@ -548,9 +634,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTaskResponse`
         """
-        return self._delete_task_with_http_info(request)
+        http_info = self._delete_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_with_http_info(self, request):
+    def delete_task_invoker(self, request):
+        http_info = self._delete_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -567,9 +666,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -578,20 +677,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tasks(self, request):
         """批量删除迁移任务
@@ -604,9 +699,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteTasksRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTasksResponse`
         """
-        return self._delete_tasks_with_http_info(request)
+        http_info = self._delete_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tasks_with_http_info(self, request):
+    def delete_tasks_invoker(self, request):
+        http_info = self._delete_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_tasks_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -621,11 +729,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -634,20 +742,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template(self, request):
         """删除指定ID的模板
@@ -660,9 +764,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTemplateResponse`
         """
-        return self._delete_template_with_http_info(request)
+        http_info = self._delete_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_with_http_info(self, request):
+    def delete_template_invoker(self, request):
+        http_info = self._delete_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/vm/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -679,9 +796,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -690,20 +807,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/vm/templates/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_templates(self, request):
         """批量删除指定ID的模板
@@ -716,9 +829,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.DeleteTemplatesRequest`
         :rtype: :class:`huaweicloudsdksms.v3.DeleteTemplatesResponse`
         """
-        return self._delete_templates_with_http_info(request)
+        http_info = self._delete_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_templates_with_http_info(self, request):
+    def delete_templates_invoker(self, request):
+        http_info = self._delete_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_templates_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/vm/templates/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -733,11 +859,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -746,20 +872,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/vm/templates/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_error_servers(self, request):
         """查询待迁移源端的所有错误
@@ -772,9 +894,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListErrorServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListErrorServersResponse`
         """
-        return self._list_error_servers_with_http_info(request)
+        http_info = self._list_error_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_error_servers_with_http_info(self, request):
+    def list_error_servers_invoker(self, request):
+        http_info = self._list_error_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_error_servers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/errors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListErrorServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -797,9 +932,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -808,20 +943,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/errors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListErrorServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_migprojects(self, request):
         """获取项目列表
@@ -834,9 +965,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListMigprojectsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListMigprojectsResponse`
         """
-        return self._list_migprojects_with_http_info(request)
+        http_info = self._list_migprojects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_migprojects_with_http_info(self, request):
+    def list_migprojects_invoker(self, request):
+        http_info = self._list_migprojects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_migprojects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/migprojects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMigprojectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -855,9 +999,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -866,20 +1010,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/migprojects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMigprojectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_servers(self, request):
         """查询源端服务器列表
@@ -892,9 +1032,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListServersRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListServersResponse`
         """
-        return self._list_servers_with_http_info(request)
+        http_info = self._list_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_servers_with_http_info(self, request):
+    def list_servers_invoker(self, request):
+        http_info = self._list_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_servers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,9 +1082,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -940,20 +1093,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tasks(self, request):
         """查询迁移任务列表
@@ -966,9 +1115,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListTasksRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListTasksResponse`
         """
-        return self._list_tasks_with_http_info(request)
+        http_info = self._list_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tasks_with_http_info(self, request):
+    def list_tasks_invoker(self, request):
+        http_info = self._list_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -997,9 +1159,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1008,20 +1170,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_templates(self, request):
         """查询模板列表
@@ -1034,9 +1192,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListTemplatesResponse`
         """
-        return self._list_templates_with_http_info(request)
+        http_info = self._list_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_templates_with_http_info(self, request):
+    def list_templates_invoker(self, request):
+        http_info = self._list_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/vm/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1061,9 +1232,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1072,20 +1243,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/vm/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_server(self, request):
         """上报源端服务器基本信息
@@ -1098,9 +1265,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.RegisterServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.RegisterServerResponse`
         """
-        return self._register_server_with_http_info(request)
+        http_info = self._register_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_server_with_http_info(self, request):
+    def register_server_invoker(self, request):
+        http_info = self._register_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _register_server_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1115,11 +1295,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1128,20 +1308,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cert_key(self, request):
         """获取SSL目的端证书和私钥
@@ -1154,9 +1330,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowCertKeyRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowCertKeyResponse`
         """
-        return self._show_cert_key_with_http_info(request)
+        http_info = self._show_cert_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cert_key_with_http_info(self, request):
+    def show_cert_key_invoker(self, request):
+        http_info = self._show_cert_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cert_key_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks/{task_id}/certkey",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCertKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1175,9 +1364,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1186,20 +1375,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/certkey',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCertKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_command(self, request):
         """获取服务端命令
@@ -1212,9 +1397,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowCommandRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowCommandResponse`
         """
-        return self._show_command_with_http_info(request)
+        http_info = self._show_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_command_with_http_info(self, request):
+    def show_command_invoker(self, request):
+        http_info = self._show_command_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_command_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/sources/{server_id}/command",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1231,9 +1429,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1242,20 +1440,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/{server_id}/command',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_config_setting(self, request):
         """查询配置资源
@@ -1268,9 +1462,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowConfigSettingRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowConfigSettingResponse`
         """
-        return self._show_config_setting_with_http_info(request)
+        http_info = self._show_config_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_config_setting_with_http_info(self, request):
+    def show_config_setting_invoker(self, request):
+        http_info = self._show_config_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_config_setting_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks/{task_id}/configuration-setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1289,9 +1496,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1300,20 +1507,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/configuration-setting',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_migproject(self, request):
         """查询指定ID迁移项目详情
@@ -1326,9 +1529,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowMigprojectResponse`
         """
-        return self._show_migproject_with_http_info(request)
+        http_info = self._show_migproject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_migproject_with_http_info(self, request):
+    def show_migproject_invoker(self, request):
+        http_info = self._show_migproject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_migproject_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/migprojects/{mig_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMigprojectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1345,9 +1561,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1356,20 +1572,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/migprojects/{mig_project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMigprojectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_overview(self, request):
         """获取服务器总览
@@ -1382,9 +1594,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowOverviewRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowOverviewResponse`
         """
-        return self._show_overview_with_http_info(request)
+        http_info = self._show_overview_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_overview_with_http_info(self, request):
+    def show_overview_invoker(self, request):
+        http_info = self._show_overview_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_overview_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/sources/overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOverviewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1399,9 +1624,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1410,20 +1635,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/overview',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOverviewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_passphrase(self, request):
         """查询指定任务ID的安全传输通道的证书passphrase
@@ -1436,9 +1657,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowPassphraseRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowPassphraseResponse`
         """
-        return self._show_passphrase_with_http_info(request)
+        http_info = self._show_passphrase_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_passphrase_with_http_info(self, request):
+    def show_passphrase_invoker(self, request):
+        http_info = self._show_passphrase_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_passphrase_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks/{task_id}/passphrase",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPassphraseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1455,9 +1689,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1466,20 +1700,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/passphrase',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPassphraseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_privacy_agreements(self, request):
         """查询用户是否同意隐私协议
@@ -1492,9 +1722,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowPrivacyAgreementsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowPrivacyAgreementsResponse`
         """
-        return self._show_privacy_agreements_with_http_info(request)
+        http_info = self._show_privacy_agreements_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_privacy_agreements_with_http_info(self, request):
+    def show_privacy_agreements_invoker(self, request):
+        http_info = self._show_privacy_agreements_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_privacy_agreements_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/privacy-agreements",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivacyAgreementsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1509,9 +1752,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1520,20 +1763,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/privacy-agreements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivacyAgreementsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_server(self, request):
         """查询指定ID的源端服务器
@@ -1546,9 +1785,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowServerRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowServerResponse`
         """
-        return self._show_server_with_http_info(request)
+        http_info = self._show_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_server_with_http_info(self, request):
+    def show_server_invoker(self, request):
+        http_info = self._show_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_server_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/sources/{source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1565,9 +1817,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1576,20 +1828,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/{source_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sha256(self, request):
         """计算sha256
@@ -1602,9 +1850,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowSha256Request`
         :rtype: :class:`huaweicloudsdksms.v3.ShowSha256Response`
         """
-        return self._show_sha256_with_http_info(request)
+        http_info = self._show_sha256_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sha256_with_http_info(self, request):
+    def show_sha256_invoker(self, request):
+        http_info = self._show_sha256_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sha256_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/sha256/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSha256Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1621,9 +1882,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1632,20 +1893,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sha256/{key}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSha256Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_target_password(self, request):
         """查询指定ID的模板中的目的端服务器的密码
@@ -1658,9 +1915,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowTargetPasswordRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTargetPasswordResponse`
         """
-        return self._show_target_password_with_http_info(request)
+        http_info = self._show_target_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_target_password_with_http_info(self, request):
+    def show_target_password_invoker(self, request):
+        http_info = self._show_target_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_target_password_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/vm/templates/{id}/target-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTargetPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1677,9 +1947,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1688,20 +1958,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/vm/templates/{id}/target-password',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTargetPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task(self, request):
         """查询指定ID的迁移任务
@@ -1714,9 +1980,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTaskResponse`
         """
-        return self._show_task_with_http_info(request)
+        http_info = self._show_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_with_http_info(self, request):
+    def show_task_invoker(self, request):
+        http_info = self._show_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1733,9 +2012,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1744,20 +2023,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template(self, request):
         """查询指定ID模板信息
@@ -1770,9 +2045,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowTemplateResponse`
         """
-        return self._show_template_with_http_info(request)
+        http_info = self._show_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_with_http_info(self, request):
+    def show_template_invoker(self, request):
+        http_info = self._show_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/vm/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1789,9 +2077,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1800,20 +2088,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/vm/templates/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def shows_speed_limits(self, request):
         """查询任务限速规则
@@ -1826,9 +2110,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowsSpeedLimitsResponse`
         """
-        return self._shows_speed_limits_with_http_info(request)
+        http_info = self._shows_speed_limits_http_info(request)
+        return self._call_api(**http_info)
 
-    def _shows_speed_limits_with_http_info(self, request):
+    def shows_speed_limits_invoker(self, request):
+        http_info = self._shows_speed_limits_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _shows_speed_limits_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/tasks/{task_id}/speed-limit",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowsSpeedLimitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1845,9 +2142,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1856,20 +2153,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/speed-limit',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowsSpeedLimitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unlock_target_ecs(self, request):
         """解锁指定任务的目的端服务器
@@ -1882,9 +2175,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UnlockTargetEcsRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UnlockTargetEcsResponse`
         """
-        return self._unlock_target_ecs_with_http_info(request)
+        http_info = self._unlock_target_ecs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unlock_target_ecs_with_http_info(self, request):
+    def unlock_target_ecs_invoker(self, request):
+        http_info = self._unlock_target_ecs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _unlock_target_ecs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/{task_id}/unlock",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnlockTargetEcsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1901,9 +2207,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1912,20 +2218,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/unlock',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnlockTargetEcsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_command_result(self, request):
         """上报服务端命令执行结果
@@ -1938,9 +2240,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateCommandResultRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateCommandResultResponse`
         """
-        return self._update_command_result_with_http_info(request)
+        http_info = self._update_command_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_command_result_with_http_info(self, request):
+    def update_command_result_invoker(self, request):
+        http_info = self._update_command_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_command_result_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/sources/{server_id}/command_result",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCommandResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1957,11 +2272,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1970,20 +2285,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/{server_id}/command_result',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCommandResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_copy_state(self, request):
         """更新任务对应源端复制状态
@@ -1996,9 +2307,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateCopyStateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateCopyStateResponse`
         """
-        return self._update_copy_state_with_http_info(request)
+        http_info = self._update_copy_state_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_copy_state_with_http_info(self, request):
+    def update_copy_state_invoker(self, request):
+        http_info = self._update_copy_state_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_copy_state_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/sources/{source_id}/changestate",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCopyStateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2015,11 +2339,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2028,20 +2352,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/{source_id}/changestate',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCopyStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_default_migproject(self, request):
         """更新默认迁移项目
@@ -2054,9 +2374,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateDefaultMigprojectResponse`
         """
-        return self._update_default_migproject_with_http_info(request)
+        http_info = self._update_default_migproject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_default_migproject_with_http_info(self, request):
+    def update_default_migproject_invoker(self, request):
+        http_info = self._update_default_migproject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_default_migproject_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/migprojects/{mig_project_id}/default",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDefaultMigprojectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2073,9 +2406,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2084,20 +2417,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/migprojects/{mig_project_id}/default',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDefaultMigprojectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_disk_info(self, request):
         """更新磁盘信息
@@ -2110,9 +2439,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateDiskInfoRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateDiskInfoResponse`
         """
-        return self._update_disk_info_with_http_info(request)
+        http_info = self._update_disk_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_disk_info_with_http_info(self, request):
+    def update_disk_info_invoker(self, request):
+        http_info = self._update_disk_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_disk_info_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/sources/{source_id}/diskinfo",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDiskInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2129,11 +2471,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2142,20 +2484,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/{source_id}/diskinfo',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDiskInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_migproject(self, request):
         """更新迁移项目信息
@@ -2168,9 +2506,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateMigprojectRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateMigprojectResponse`
         """
-        return self._update_migproject_with_http_info(request)
+        http_info = self._update_migproject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_migproject_with_http_info(self, request):
+    def update_migproject_invoker(self, request):
+        http_info = self._update_migproject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_migproject_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/migprojects/{mig_project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMigprojectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2187,11 +2538,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2200,20 +2551,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/migprojects/{mig_project_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMigprojectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_network_check_info(self, request):
         """更新网络检测相关的信息
@@ -2226,9 +2573,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateNetworkCheckInfoRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateNetworkCheckInfoResponse`
         """
-        return self._update_network_check_info_with_http_info(request)
+        http_info = self._update_network_check_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_network_check_info_with_http_info(self, request):
+    def update_network_check_info_invoker(self, request):
+        http_info = self._update_network_check_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_network_check_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{task_id}/update-network-check-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNetworkCheckInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2245,11 +2605,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2258,20 +2618,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{task_id}/update-network-check-info',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNetworkCheckInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_server_name(self, request):
         """修改指定ID的源端服务器名称
@@ -2284,9 +2640,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateServerNameRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateServerNameResponse`
         """
-        return self._update_server_name_with_http_info(request)
+        http_info = self._update_server_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_server_name_with_http_info(self, request):
+    def update_server_name_invoker(self, request):
+        http_info = self._update_server_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_server_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/sources/{source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServerNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2303,11 +2672,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2316,20 +2685,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/sources/{source_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServerNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_speed(self, request):
         """设置迁移限速规则
@@ -2342,9 +2707,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateSpeedRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateSpeedResponse`
         """
-        return self._update_speed_with_http_info(request)
+        http_info = self._update_speed_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_speed_with_http_info(self, request):
+    def update_speed_invoker(self, request):
+        http_info = self._update_speed_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_speed_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/{task_id}/speed-limit",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSpeedResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2361,11 +2739,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2374,20 +2752,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/speed-limit',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSpeedResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task(self, request):
         """更新指定ID的迁移任务
@@ -2400,9 +2774,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskResponse`
         """
-        return self._update_task_with_http_info(request)
+        http_info = self._update_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_with_http_info(self, request):
+    def update_task_invoker(self, request):
+        http_info = self._update_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2419,11 +2806,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2432,20 +2819,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_speed(self, request):
         """上报数据迁移进度和速率
@@ -2460,9 +2843,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskSpeedResponse`
         """
-        return self._update_task_speed_with_http_info(request)
+        http_info = self._update_task_speed_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_speed_with_http_info(self, request):
+    def update_task_speed_invoker(self, request):
+        http_info = self._update_task_speed_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_speed_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/tasks/{task_id}/progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskSpeedResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2479,11 +2875,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2492,20 +2888,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/progress',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskSpeedResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_status(self, request):
         """管理迁移任务
@@ -2518,9 +2910,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateTaskStatusRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTaskStatusResponse`
         """
-        return self._update_task_status_with_http_info(request)
+        http_info = self._update_task_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_status_with_http_info(self, request):
+    def update_task_status_invoker(self, request):
+        http_info = self._update_task_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/{task_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2537,11 +2942,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2550,20 +2955,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_template(self, request):
         """修改模板信息
@@ -2576,9 +2977,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UpdateTemplateRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UpdateTemplateResponse`
         """
-        return self._update_template_with_http_info(request)
+        http_info = self._update_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_template_with_http_info(self, request):
+    def update_template_invoker(self, request):
+        http_info = self._update_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/vm/templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2595,11 +3009,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2608,20 +3022,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/vm/templates/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_special_configuration_setting(self, request):
         """迁移任务配置设置
@@ -2634,9 +3044,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.UploadSpecialConfigurationSettingRequest`
         :rtype: :class:`huaweicloudsdksms.v3.UploadSpecialConfigurationSettingResponse`
         """
-        return self._upload_special_configuration_setting_with_http_info(request)
+        http_info = self._upload_special_configuration_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_special_configuration_setting_with_http_info(self, request):
+    def upload_special_configuration_setting_invoker(self, request):
+        http_info = self._upload_special_configuration_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_special_configuration_setting_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/tasks/{task_id}/configuration-setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadSpecialConfigurationSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2653,11 +3076,11 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2666,20 +3089,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/tasks/{task_id}/configuration-setting',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadSpecialConfigurationSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_version(self, request):
         """查询主机迁移服务的API版本信息
@@ -2692,9 +3111,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ListApiVersionRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ListApiVersionResponse`
         """
-        return self._list_api_version_with_http_info(request)
+        http_info = self._list_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_version_with_http_info(self, request):
+    def list_api_version_invoker(self, request):
+        http_info = self._list_api_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2709,9 +3141,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2720,20 +3152,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version(self, request):
         """查询主机迁移服务指定API版本信息
@@ -2746,9 +3174,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowApiVersionResponse`
         """
-        return self._show_api_version_with_http_info(request)
+        http_info = self._show_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_with_http_info(self, request):
+    def show_api_version_invoker(self, request):
+        http_info = self._show_api_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_api_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2765,9 +3206,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2776,20 +3217,16 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_config(self, request):
         """获取Agent配置信息
@@ -2802,9 +3239,22 @@ class SmsClient(Client):
         :type request: :class:`huaweicloudsdksms.v3.ShowConfigRequest`
         :rtype: :class:`huaweicloudsdksms.v3.ShowConfigResponse`
         """
-        return self._show_config_with_http_info(request)
+        http_info = self._show_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_config_with_http_info(self, request):
+    def show_config_invoker(self, request):
+        http_info = self._show_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2819,9 +3269,9 @@ class SmsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2830,20 +3280,25 @@ class SmsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

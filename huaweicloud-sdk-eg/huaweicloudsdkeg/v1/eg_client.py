@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkeg'")
 
 
 class EgClient(Client):
@@ -38,9 +43,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CheckPutEventsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CheckPutEventsResponse`
         """
-        return self._check_put_events_with_http_info(request)
+        http_info = self._check_put_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_put_events_with_http_info(self, request):
+    def check_put_events_invoker(self, request):
+        http_info = self._check_put_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_put_events_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/events/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckPutEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -68,20 +86,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/events/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckPutEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_agencies(self, request):
         """创建服务委托
@@ -94,9 +108,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateAgenciesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateAgenciesResponse`
         """
-        return self._create_agencies_with_http_info(request)
+        http_info = self._create_agencies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_agencies_with_http_info(self, request):
+    def create_agencies_invoker(self, request):
+        http_info = self._create_agencies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agencies_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service-agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgenciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-agencies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAgenciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_channel(self, request):
         """创建自定义事件通道
@@ -150,9 +173,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateChannelResponse`
         """
-        return self._create_channel_with_http_info(request)
+        http_info = self._create_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_channel_with_http_info(self, request):
+    def create_channel_invoker(self, request):
+        http_info = self._create_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_channel_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,11 +203,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -180,20 +216,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/channels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_connection(self, request):
         """创建目标连接
@@ -206,9 +238,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateConnectionResponse`
         """
-        return self._create_connection_with_http_info(request)
+        http_info = self._create_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_connection_with_http_info(self, request):
+    def create_connection_invoker(self, request):
+        http_info = self._create_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_connection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -223,11 +268,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -236,20 +281,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_endpoint(self, request):
         """创建访问端点
@@ -262,9 +303,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEndpointResponse`
         """
-        return self._create_endpoint_with_http_info(request)
+        http_info = self._create_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_endpoint_with_http_info(self, request):
+    def create_endpoint_invoker(self, request):
+        http_info = self._create_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -279,11 +333,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -292,20 +346,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/endpoints',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_event_source(self, request):
         """创建自定义事件源
@@ -318,9 +368,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEventSourceResponse`
         """
-        return self._create_event_source_with_http_info(request)
+        http_info = self._create_event_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_event_source_with_http_info(self, request):
+    def create_event_source_invoker(self, request):
+        http_info = self._create_event_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_event_source_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEventSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -335,11 +398,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -348,20 +411,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEventSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_event_streaming(self, request):
         """创建事件流
@@ -374,9 +433,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateEventStreamingRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateEventStreamingResponse`
         """
-        return self._create_event_streaming_with_http_info(request)
+        http_info = self._create_event_streaming_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_event_streaming_with_http_info(self, request):
+    def create_event_streaming_invoker(self, request):
+        http_info = self._create_event_streaming_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_event_streaming_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eventstreamings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEventStreamingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -391,11 +463,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -404,20 +476,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eventstreamings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEventStreamingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_subscription(self, request):
         """创建事件订阅
@@ -430,9 +498,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateSubscriptionResponse`
         """
-        return self._create_subscription_with_http_info(request)
+        http_info = self._create_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_subscription_with_http_info(self, request):
+    def create_subscription_invoker(self, request):
+        http_info = self._create_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_subscription_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -447,11 +528,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -460,20 +541,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_subscription_target(self, request):
         """创建事件订阅目标
@@ -486,9 +563,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.CreateSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.CreateSubscriptionTargetResponse`
         """
-        return self._create_subscription_target_with_http_info(request)
+        http_info = self._create_subscription_target_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_subscription_target_with_http_info(self, request):
+    def create_subscription_target_invoker(self, request):
+        http_info = self._create_subscription_target_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_subscription_target_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/subscriptions/{subscription_id}/targets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubscriptionTargetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -505,11 +595,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -518,20 +608,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/{subscription_id}/targets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubscriptionTargetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_channel(self, request):
         """删除自定义事件通道
@@ -544,9 +630,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteChannelResponse`
         """
-        return self._delete_channel_with_http_info(request)
+        http_info = self._delete_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_channel_with_http_info(self, request):
+    def delete_channel_invoker(self, request):
+        http_info = self._delete_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_channel_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/channels/{channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -563,9 +662,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -574,20 +673,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/channels/{channel_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_connection(self, request):
         """删除目标连接
@@ -600,9 +695,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteConnectionResponse`
         """
-        return self._delete_connection_with_http_info(request)
+        http_info = self._delete_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_connection_with_http_info(self, request):
+    def delete_connection_invoker(self, request):
+        http_info = self._delete_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_connection_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -619,9 +727,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -630,20 +738,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connection_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_endpoint(self, request):
         """删除访问端点
@@ -656,9 +760,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEndpointResponse`
         """
-        return self._delete_endpoint_with_http_info(request)
+        http_info = self._delete_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_endpoint_with_http_info(self, request):
+    def delete_endpoint_invoker(self, request):
+        http_info = self._delete_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -675,9 +792,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -686,20 +803,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/endpoints/{endpoint_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_event_source(self, request):
         """删除自定义事件源
@@ -712,9 +825,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventSourceResponse`
         """
-        return self._delete_event_source_with_http_info(request)
+        http_info = self._delete_event_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_event_source_with_http_info(self, request):
+    def delete_event_source_invoker(self, request):
+        http_info = self._delete_event_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_event_source_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/sources/{source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEventSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -731,9 +857,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -742,20 +868,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sources/{source_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEventSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_event_streaming(self, request):
         """删除事件流
@@ -768,9 +890,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteEventStreamingRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteEventStreamingResponse`
         """
-        return self._delete_event_streaming_with_http_info(request)
+        http_info = self._delete_event_streaming_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_event_streaming_with_http_info(self, request):
+    def delete_event_streaming_invoker(self, request):
+        http_info = self._delete_event_streaming_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_event_streaming_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/eventstreamings/{eventstreaming_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEventStreamingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -787,9 +922,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -798,20 +933,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eventstreamings/{eventstreaming_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEventStreamingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_subscription(self, request):
         """删除事件订阅
@@ -824,9 +955,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionResponse`
         """
-        return self._delete_subscription_with_http_info(request)
+        http_info = self._delete_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_subscription_with_http_info(self, request):
+    def delete_subscription_invoker(self, request):
+        http_info = self._delete_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_subscription_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/subscriptions/{subscription_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -843,9 +987,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -854,20 +998,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/{subscription_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_subscription_target(self, request):
         """删除事件订阅目标
@@ -880,9 +1020,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.DeleteSubscriptionTargetResponse`
         """
-        return self._delete_subscription_target_with_http_info(request)
+        http_info = self._delete_subscription_target_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_subscription_target_with_http_info(self, request):
+    def delete_subscription_target_invoker(self, request):
+        http_info = self._delete_subscription_target_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_subscription_target_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/subscriptions/{subscription_id}/targets/{target_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubscriptionTargetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -901,9 +1054,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -912,20 +1065,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/{subscription_id}/targets/{target_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubscriptionTargetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_agencies(self, request):
         """查询服务委托
@@ -938,9 +1087,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListAgenciesResponse`
         """
-        return self._list_agencies_with_http_info(request)
+        http_info = self._list_agencies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_agencies_with_http_info(self, request):
+    def list_agencies_invoker(self, request):
+        http_info = self._list_agencies_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_agencies_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service-agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAgenciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -957,9 +1119,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -968,20 +1130,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-agencies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAgenciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_channels(self, request):
         """查询事件通道列表
@@ -994,9 +1152,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListChannelsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListChannelsResponse`
         """
-        return self._list_channels_with_http_info(request)
+        http_info = self._list_channels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_channels_with_http_info(self, request):
+    def list_channels_invoker(self, request):
+        http_info = self._list_channels_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_channels_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListChannelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1023,9 +1194,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1034,20 +1205,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/channels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListChannelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_connections(self, request):
         """查询目标连接列表
@@ -1060,9 +1227,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListConnectionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListConnectionsResponse`
         """
-        return self._list_connections_with_http_info(request)
+        http_info = self._list_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_connections_with_http_info(self, request):
+    def list_connections_invoker(self, request):
+        http_info = self._list_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_connections_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1089,9 +1269,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1100,20 +1280,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_endpoints(self, request):
         """查询访问端点
@@ -1126,9 +1302,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEndpointsResponse`
         """
-        return self._list_endpoints_with_http_info(request)
+        http_info = self._list_endpoints_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_endpoints_with_http_info(self, request):
+    def list_endpoints_invoker(self, request):
+        http_info = self._list_endpoints_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_endpoints_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEndpointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1159,9 +1348,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1170,20 +1359,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/endpoints',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEndpointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_event_sources(self, request):
         """查询事件源列表
@@ -1196,9 +1381,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEventSourcesRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventSourcesResponse`
         """
-        return self._list_event_sources_with_http_info(request)
+        http_info = self._list_event_sources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_event_sources_with_http_info(self, request):
+    def list_event_sources_invoker(self, request):
+        http_info = self._list_event_sources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_event_sources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventSourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1229,9 +1427,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1240,20 +1438,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventSourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_event_streaming(self, request):
         """查询事件流列表
@@ -1266,9 +1460,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEventStreamingRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventStreamingResponse`
         """
-        return self._list_event_streaming_with_http_info(request)
+        http_info = self._list_event_streaming_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_event_streaming_with_http_info(self, request):
+    def list_event_streaming_invoker(self, request):
+        http_info = self._list_event_streaming_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_event_streaming_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eventstreamings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventStreamingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1287,9 +1494,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1298,20 +1505,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eventstreamings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventStreamingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_event_target(self, request):
         """查询事件目标分类
@@ -1324,9 +1527,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListEventTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListEventTargetResponse`
         """
-        return self._list_event_target_with_http_info(request)
+        http_info = self._list_event_target_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_event_target_with_http_info(self, request):
+    def list_event_target_invoker(self, request):
+        http_info = self._list_event_target_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_event_target_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/target-catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventTargetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1352,9 +1568,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1363,20 +1579,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/target-catalogs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventTargetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pub_metrics(self, request):
         """查询事件通道监控指标数据
@@ -1389,9 +1601,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListPubMetricsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListPubMetricsResponse`
         """
-        return self._list_pub_metrics_with_http_info(request)
+        http_info = self._list_pub_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pub_metrics_with_http_info(self, request):
+    def list_pub_metrics_invoker(self, request):
+        http_info = self._list_pub_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pub_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/metrics/pub",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPubMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1420,9 +1645,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1431,20 +1656,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/metrics/pub',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPubMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas(self, request):
         """查询配额
@@ -1457,9 +1678,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1476,9 +1710,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1487,20 +1721,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sub_metrics(self, request):
         """查询事件订阅监控指标数据
@@ -1513,9 +1743,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListSubMetricsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListSubMetricsResponse`
         """
-        return self._list_sub_metrics_with_http_info(request)
+        http_info = self._list_sub_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sub_metrics_with_http_info(self, request):
+    def list_sub_metrics_invoker(self, request):
+        http_info = self._list_sub_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sub_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/metrics/sub",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1544,9 +1787,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1555,20 +1798,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/metrics/sub',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subscriptions(self, request):
         """查询事件订阅列表
@@ -1581,9 +1820,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListSubscriptionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListSubscriptionsResponse`
         """
-        return self._list_subscriptions_with_http_info(request)
+        http_info = self._list_subscriptions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subscriptions_with_http_info(self, request):
+    def list_subscriptions_invoker(self, request):
+        http_info = self._list_subscriptions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_subscriptions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subscriptions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubscriptionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1612,9 +1864,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1623,20 +1875,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubscriptionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_traced_events(self, request):
         """查询事件追踪列表
@@ -1649,9 +1897,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListTracedEventsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListTracedEventsResponse`
         """
-        return self._list_traced_events_with_http_info(request)
+        http_info = self._list_traced_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_traced_events_with_http_info(self, request):
+    def list_traced_events_invoker(self, request):
+        http_info = self._list_traced_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_traced_events_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/traced-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTracedEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1684,9 +1945,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1695,20 +1956,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traced-events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTracedEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_triggers(self, request):
         """查询单个函数的EG触发器
@@ -1721,9 +1978,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListTriggersRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListTriggersResponse`
         """
-        return self._list_triggers_with_http_info(request)
+        http_info = self._list_triggers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_triggers_with_http_info(self, request):
+    def list_triggers_invoker(self, request):
+        http_info = self._list_triggers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_triggers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subscription-triggers/{func_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTriggersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1746,9 +2016,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1757,20 +2027,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscription-triggers/{func_urn}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTriggersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workflow_triggers(self, request):
         """查询单个函数流的EG触发器
@@ -1783,9 +2049,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListWorkflowTriggersRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListWorkflowTriggersResponse`
         """
-        return self._list_workflow_triggers_with_http_info(request)
+        http_info = self._list_workflow_triggers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workflow_triggers_with_http_info(self, request):
+    def list_workflow_triggers_invoker(self, request):
+        http_info = self._list_workflow_triggers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workflow_triggers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subscription-triggers/workflow/{workflow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkflowTriggersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1808,9 +2087,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1819,20 +2098,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscription-triggers/workflow/{workflow_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkflowTriggersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def operate_subscription(self, request):
         """操作事件订阅
@@ -1845,9 +2120,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.OperateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.OperateSubscriptionResponse`
         """
-        return self._operate_subscription_with_http_info(request)
+        http_info = self._operate_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _operate_subscription_with_http_info(self, request):
+    def operate_subscription_invoker(self, request):
+        http_info = self._operate_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _operate_subscription_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/subscriptions/operation",
+            "request_type": request.__class__.__name__,
+            "response_type": "OperateSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1862,11 +2150,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1875,20 +2163,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/operation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='OperateSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def put_events(self, request):
         """发布事件到事件通道
@@ -1901,9 +2185,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.PutEventsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.PutEventsResponse`
         """
-        return self._put_events_with_http_info(request)
+        http_info = self._put_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _put_events_with_http_info(self, request):
+    def put_events_invoker(self, request):
+        http_info = self._put_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _put_events_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/channels/{channel_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "PutEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1920,11 +2217,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1933,20 +2230,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/channels/{channel_id}/events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PutEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def put_official_events(self, request):
         """发布官方事件到事件通道
@@ -1959,9 +2252,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.PutOfficialEventsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.PutOfficialEventsResponse`
         """
-        return self._put_official_events_with_http_info(request)
+        http_info = self._put_official_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _put_official_events_with_http_info(self, request):
+    def put_official_events_invoker(self, request):
+        http_info = self._put_official_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _put_official_events_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/official/sources/{source_name}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "PutOfficialEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1978,11 +2284,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1991,20 +2297,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/official/sources/{source_name}/events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PutOfficialEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resume_event_streaming(self, request):
         """操作事件流
@@ -2017,9 +2319,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ResumeEventStreamingRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ResumeEventStreamingResponse`
         """
-        return self._resume_event_streaming_with_http_info(request)
+        http_info = self._resume_event_streaming_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resume_event_streaming_with_http_info(self, request):
+    def resume_event_streaming_invoker(self, request):
+        http_info = self._resume_event_streaming_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resume_event_streaming_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eventstreamings/operate/{eventstreaming_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumeEventStreamingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2036,11 +2351,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2049,20 +2364,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eventstreamings/operate/{eventstreaming_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResumeEventStreamingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_detail_of_channel(self, request):
         """查询事件通道详情
@@ -2075,9 +2386,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfChannelResponse`
         """
-        return self._show_detail_of_channel_with_http_info(request)
+        http_info = self._show_detail_of_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_detail_of_channel_with_http_info(self, request):
+    def show_detail_of_channel_invoker(self, request):
+        http_info = self._show_detail_of_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_detail_of_channel_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/channels/{channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailOfChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2094,9 +2418,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2105,20 +2429,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/channels/{channel_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailOfChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_detail_of_connection(self, request):
         """查询目标连接详情
@@ -2131,9 +2451,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfConnectionResponse`
         """
-        return self._show_detail_of_connection_with_http_info(request)
+        http_info = self._show_detail_of_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_detail_of_connection_with_http_info(self, request):
+    def show_detail_of_connection_invoker(self, request):
+        http_info = self._show_detail_of_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_detail_of_connection_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailOfConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2150,9 +2483,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2161,20 +2494,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connection_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailOfConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_detail_of_event(self, request):
         """查询发送事件的内容
@@ -2187,9 +2516,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventResponse`
         """
-        return self._show_detail_of_event_with_http_info(request)
+        http_info = self._show_detail_of_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_detail_of_event_with_http_info(self, request):
+    def show_detail_of_event_invoker(self, request):
+        http_info = self._show_detail_of_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_detail_of_event_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/events/detail/{trace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailOfEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2206,9 +2548,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2217,20 +2559,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/events/detail/{trace_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailOfEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_detail_of_event_source(self, request):
         """查询事件源详情
@@ -2243,9 +2581,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventSourceResponse`
         """
-        return self._show_detail_of_event_source_with_http_info(request)
+        http_info = self._show_detail_of_event_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_detail_of_event_source_with_http_info(self, request):
+    def show_detail_of_event_source_invoker(self, request):
+        http_info = self._show_detail_of_event_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_detail_of_event_source_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sources/{source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailOfEventSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2262,9 +2613,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2273,20 +2624,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sources/{source_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailOfEventSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_detail_of_event_trace(self, request):
         """事件轨迹详情
@@ -2299,9 +2646,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventTraceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfEventTraceResponse`
         """
-        return self._show_detail_of_event_trace_with_http_info(request)
+        http_info = self._show_detail_of_event_trace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_detail_of_event_trace_with_http_info(self, request):
+    def show_detail_of_event_trace_invoker(self, request):
+        http_info = self._show_detail_of_event_trace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_detail_of_event_trace_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/events/trace/detail/{trace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailOfEventTraceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2320,9 +2680,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2331,20 +2691,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/events/trace/detail/{trace_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailOfEventTraceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_detail_of_subscription(self, request):
         """查询事件订阅详情
@@ -2357,9 +2713,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionResponse`
         """
-        return self._show_detail_of_subscription_with_http_info(request)
+        http_info = self._show_detail_of_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_detail_of_subscription_with_http_info(self, request):
+    def show_detail_of_subscription_invoker(self, request):
+        http_info = self._show_detail_of_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_detail_of_subscription_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subscriptions/{subscription_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailOfSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2376,9 +2745,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2387,20 +2756,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/{subscription_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailOfSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_detail_of_subscription_target(self, request):
         """查询事件订阅目标详情
@@ -2413,9 +2778,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowDetailOfSubscriptionTargetResponse`
         """
-        return self._show_detail_of_subscription_target_with_http_info(request)
+        http_info = self._show_detail_of_subscription_target_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_detail_of_subscription_target_with_http_info(self, request):
+    def show_detail_of_subscription_target_invoker(self, request):
+        http_info = self._show_detail_of_subscription_target_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_detail_of_subscription_target_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subscriptions/{subscription_id}/targets/{target_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailOfSubscriptionTargetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2434,9 +2812,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2445,20 +2823,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/{subscription_id}/targets/{target_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailOfSubscriptionTargetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_event_streaming(self, request):
         """查询事件流详情
@@ -2471,9 +2845,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ShowEventStreamingRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ShowEventStreamingResponse`
         """
-        return self._show_event_streaming_with_http_info(request)
+        http_info = self._show_event_streaming_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_event_streaming_with_http_info(self, request):
+    def show_event_streaming_invoker(self, request):
+        http_info = self._show_event_streaming_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_event_streaming_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eventstreamings/{eventstreaming_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEventStreamingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2490,9 +2877,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2501,20 +2888,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eventstreamings/{eventstreaming_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEventStreamingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_channel(self, request):
         """更新自定义事件通道
@@ -2527,9 +2910,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateChannelRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateChannelResponse`
         """
-        return self._update_channel_with_http_info(request)
+        http_info = self._update_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_channel_with_http_info(self, request):
+    def update_channel_invoker(self, request):
+        http_info = self._update_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_channel_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/channels/{channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2546,11 +2942,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2559,20 +2955,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/channels/{channel_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_connection(self, request):
         """更新目标连接
@@ -2585,9 +2977,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateConnectionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateConnectionResponse`
         """
-        return self._update_connection_with_http_info(request)
+        http_info = self._update_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_connection_with_http_info(self, request):
+    def update_connection_invoker(self, request):
+        http_info = self._update_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_connection_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2604,11 +3009,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2617,20 +3022,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connection_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_endpoint(self, request):
         """更新访问端点
@@ -2643,9 +3044,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEndpointRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEndpointResponse`
         """
-        return self._update_endpoint_with_http_info(request)
+        http_info = self._update_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_endpoint_with_http_info(self, request):
+    def update_endpoint_invoker(self, request):
+        http_info = self._update_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2662,11 +3076,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2675,20 +3089,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/endpoints/{endpoint_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_event_source(self, request):
         """更新自定义事件源
@@ -2701,9 +3111,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEventSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventSourceResponse`
         """
-        return self._update_event_source_with_http_info(request)
+        http_info = self._update_event_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_event_source_with_http_info(self, request):
+    def update_event_source_invoker(self, request):
+        http_info = self._update_event_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_event_source_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/sources/{source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEventSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2720,11 +3143,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2733,20 +3156,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sources/{source_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEventSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_event_streaming(self, request):
         """更新事件流
@@ -2759,9 +3178,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateEventStreamingRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateEventStreamingResponse`
         """
-        return self._update_event_streaming_with_http_info(request)
+        http_info = self._update_event_streaming_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_event_streaming_with_http_info(self, request):
+    def update_event_streaming_invoker(self, request):
+        http_info = self._update_event_streaming_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_event_streaming_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/eventstreamings/{eventstreaming_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEventStreamingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2778,11 +3210,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2791,20 +3223,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eventstreamings/{eventstreaming_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEventStreamingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_subscription(self, request):
         """更新事件订阅
@@ -2817,9 +3245,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionResponse`
         """
-        return self._update_subscription_with_http_info(request)
+        http_info = self._update_subscription_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_subscription_with_http_info(self, request):
+    def update_subscription_invoker(self, request):
+        http_info = self._update_subscription_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_subscription_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/subscriptions/{subscription_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubscriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2836,11 +3277,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2849,20 +3290,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/{subscription_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubscriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_subscription_source(self, request):
         """更新事件订阅源
@@ -2875,9 +3312,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionSourceRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionSourceResponse`
         """
-        return self._update_subscription_source_with_http_info(request)
+        http_info = self._update_subscription_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_subscription_source_with_http_info(self, request):
+    def update_subscription_source_invoker(self, request):
+        http_info = self._update_subscription_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_subscription_source_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/subscriptions/{subscription_id}/sources/{source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubscriptionSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2896,11 +3346,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2909,20 +3359,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/{subscription_id}/sources/{source_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubscriptionSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_subscription_target(self, request):
         """更新事件订阅目标
@@ -2935,9 +3381,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionTargetRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.UpdateSubscriptionTargetResponse`
         """
-        return self._update_subscription_target_with_http_info(request)
+        http_info = self._update_subscription_target_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_subscription_target_with_http_info(self, request):
+    def update_subscription_target_invoker(self, request):
+        http_info = self._update_subscription_target_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_subscription_target_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/subscriptions/{subscription_id}/targets/{target_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubscriptionTargetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2956,11 +3415,11 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2969,20 +3428,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/{subscription_id}/targets/{target_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubscriptionTargetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions(self, request):
         """获取API版本列表
@@ -2995,9 +3450,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3012,9 +3480,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3023,20 +3491,16 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_obs_buckets(self, request):
         """获取obs桶列表
@@ -3049,9 +3513,22 @@ class EgClient(Client):
         :type request: :class:`huaweicloudsdkeg.v1.ListObsBucketsRequest`
         :rtype: :class:`huaweicloudsdkeg.v1.ListObsBucketsResponse`
         """
-        return self._list_obs_buckets_with_http_info(request)
+        http_info = self._list_obs_buckets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_obs_buckets_with_http_info(self, request):
+    def list_obs_buckets_invoker(self, request):
+        http_info = self._list_obs_buckets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_obs_buckets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/subscriptions/obsbuckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObsBucketsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3072,9 +3549,9 @@ class EgClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3083,20 +3560,25 @@ class EgClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/subscriptions/obsbuckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListObsBucketsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

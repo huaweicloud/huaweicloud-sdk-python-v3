@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdataartsstudio'")
 
 
 class DataArtsStudioClient(Client):
@@ -38,9 +43,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.AddTagToAssetRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AddTagToAssetResponse`
         """
-        return self._add_tag_to_asset_with_http_info(request)
+        http_info = self._add_tag_to_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_tag_to_asset_with_http_info(self, request):
+    def add_tag_to_asset_invoker(self, request):
+        http_info = self._add_tag_to_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_tag_to_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/tags/{term_guid}/assignedentities",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddTagToAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -59,11 +77,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +90,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tags/{term_guid}/assignedentities',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddTagToAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_work_space_users(self, request):
         """添加工作空间用户
@@ -98,9 +112,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.AddWorkSpaceUsersRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AddWorkSpaceUsersResponse`
         """
-        return self._add_work_space_users_with_http_info(request)
+        http_info = self._add_work_space_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_work_space_users_with_http_info(self, request):
+    def add_work_space_users_invoker(self, request):
+        http_info = self._add_work_space_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_work_space_users_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{workspace_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddWorkSpaceUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +144,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +157,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{workspace_id}/users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddWorkSpaceUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_classification_to_entity(self, request):
         """资产关联分类
@@ -156,9 +179,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.AssociateClassificationToEntityRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AssociateClassificationToEntityResponse`
         """
-        return self._associate_classification_to_entity_with_http_info(request)
+        http_info = self._associate_classification_to_entity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_classification_to_entity_with_http_info(self, request):
+    def associate_classification_to_entity_invoker(self, request):
+        http_info = self._associate_classification_to_entity_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_classification_to_entity_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/asset/entities/guid/{guid}/classification",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateClassificationToEntityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -177,11 +213,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -190,20 +226,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/entities/guid/{guid}/classification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateClassificationToEntityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_security_level_to_entitie(self, request):
         """资产关联密级
@@ -216,9 +248,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.AssociateSecurityLevelToEntitieRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AssociateSecurityLevelToEntitieResponse`
         """
-        return self._associate_security_level_to_entitie_with_http_info(request)
+        http_info = self._associate_security_level_to_entitie_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_security_level_to_entitie_with_http_info(self, request):
+    def associate_security_level_to_entitie_invoker(self, request):
+        http_info = self._associate_security_level_to_entitie_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_security_level_to_entitie_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/asset/entities/guid/{guid}/security-level",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateSecurityLevelToEntitieResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -239,9 +284,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +295,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/entities/guid/{guid}/security-level',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateSecurityLevelToEntitieResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_approve_apply(self, request):
         """审核申请
@@ -276,9 +317,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchApproveApplyRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchApproveApplyResponse`
         """
-        return self._batch_approve_apply_with_http_info(request)
+        http_info = self._batch_approve_apply_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_approve_apply_with_http_info(self, request):
+    def batch_approve_apply_invoker(self, request):
+        http_info = self._batch_approve_apply_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_approve_apply_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/applys",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchApproveApplyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -297,11 +351,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -310,20 +364,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/applys',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchApproveApplyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_associate_classification_to_entities(self, request):
         """批量资产关联分类
@@ -336,9 +386,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchAssociateClassificationToEntitiesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchAssociateClassificationToEntitiesResponse`
         """
-        return self._batch_associate_classification_to_entities_with_http_info(request)
+        http_info = self._batch_associate_classification_to_entities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_associate_classification_to_entities_with_http_info(self, request):
+    def batch_associate_classification_to_entities_invoker(self, request):
+        http_info = self._batch_associate_classification_to_entities_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_associate_classification_to_entities_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/asset/entities/classification",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAssociateClassificationToEntitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -355,11 +418,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -368,20 +431,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/entities/classification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAssociateClassificationToEntitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_associate_security_level_to_entities(self, request):
         """批量资产关联密级
@@ -394,9 +453,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchAssociateSecurityLevelToEntitiesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchAssociateSecurityLevelToEntitiesResponse`
         """
-        return self._batch_associate_security_level_to_entities_with_http_info(request)
+        http_info = self._batch_associate_security_level_to_entities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_associate_security_level_to_entities_with_http_info(self, request):
+    def batch_associate_security_level_to_entities_invoker(self, request):
+        http_info = self._batch_associate_security_level_to_entities_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_associate_security_level_to_entities_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/asset/entities/security-level",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAssociateSecurityLevelToEntitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -413,11 +485,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -426,20 +498,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/entities/security-level',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAssociateSecurityLevelToEntitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_templates(self, request):
         """批量删除规则模板
@@ -452,9 +520,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchDeleteTemplatesResponse`
         """
-        return self._batch_delete_templates_with_http_info(request)
+        http_info = self._batch_delete_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_templates_with_http_info(self, request):
+    def batch_delete_templates_invoker(self, request):
+        http_info = self._batch_delete_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_templates_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/quality/rule-templates/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -471,11 +552,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -484,20 +565,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/rule-templates/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_offline(self, request):
         """批量下线
@@ -510,9 +587,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchOfflineRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchOfflineResponse`
         """
-        return self._batch_offline_with_http_info(request)
+        http_info = self._batch_offline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_offline_with_http_info(self, request):
+    def batch_offline_invoker(self, request):
+        http_info = self._batch_offline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_offline_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/approvals/batch-offline",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchOfflineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -529,11 +619,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -542,20 +632,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/approvals/batch-offline',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchOfflineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_publish(self, request):
         """批量发布
@@ -568,9 +654,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchPublishRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchPublishResponse`
         """
-        return self._batch_publish_with_http_info(request)
+        http_info = self._batch_publish_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_publish_with_http_info(self, request):
+    def batch_publish_invoker(self, request):
+        http_info = self._batch_publish_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_publish_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/approvals/batch-publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchPublishResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -587,11 +686,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -600,20 +699,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/approvals/batch-publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchPublishResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_sync_metadata(self, request):
         """元数据实时同步接口(邀测)
@@ -626,9 +721,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.BatchSyncMetadataRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.BatchSyncMetadataResponse`
         """
-        return self._batch_sync_metadata_with_http_info(request)
+        http_info = self._batch_sync_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_sync_metadata_with_http_info(self, request):
+    def batch_sync_metadata_invoker(self, request):
+        http_info = self._batch_sync_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_sync_metadata_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/metadata/async-bulk",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSyncMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -643,11 +751,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -656,20 +764,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/metadata/async-bulk',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSyncMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_catalog(self, request):
         """修改流程架构
@@ -682,9 +786,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ChangeCatalogRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ChangeCatalogResponse`
         """
-        return self._change_catalog_with_http_info(request)
+        http_info = self._change_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_catalog_with_http_info(self, request):
+    def change_catalog_invoker(self, request):
+        http_info = self._change_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_catalog_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/biz/catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,11 +818,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -714,20 +831,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz/catalogs',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_resource(self, request):
         """规格变更接口
@@ -740,9 +853,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ChangeResourceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ChangeResourceResponse`
         """
-        return self._change_resource_with_http_info(request)
+        http_info = self._change_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_resource_with_http_info(self, request):
+    def change_resource_invoker(self, request):
+        http_info = self._change_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/change-resource",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -757,11 +883,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -770,20 +896,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/change-resource',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_subjects(self, request):
         """修改或删除主题层级
@@ -796,9 +918,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ChangeSubjectsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ChangeSubjectsResponse`
         """
-        return self._change_subjects_with_http_info(request)
+        http_info = self._change_subjects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_subjects_with_http_info(self, request):
+    def change_subjects_invoker(self, request):
+        http_info = self._change_subjects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_subjects_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/subject-levels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeSubjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -815,11 +950,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -828,20 +963,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/subject-levels',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeSubjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_dimension_status(self, request):
         """查看逆向维度表任务
@@ -854,9 +985,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CheckDimensionStatusResponse`
         """
-        return self._check_dimension_status_with_http_info(request)
+        http_info = self._check_dimension_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_dimension_status_with_http_info(self, request):
+    def check_dimension_status_invoker(self, request):
+        http_info = self._check_dimension_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_dimension_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/dimension/database",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDimensionStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -873,9 +1017,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -884,20 +1028,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/dimension/database',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckDimensionStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_fact_logic_table_status(self, request):
         """查看逆向事实表任务
@@ -910,9 +1050,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CheckFactLogicTableStatusRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CheckFactLogicTableStatusResponse`
         """
-        return self._check_fact_logic_table_status_with_http_info(request)
+        http_info = self._check_fact_logic_table_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_fact_logic_table_status_with_http_info(self, request):
+    def check_fact_logic_table_status_invoker(self, request):
+        http_info = self._check_fact_logic_table_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_fact_logic_table_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/fact-logic-tables/database",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckFactLogicTableStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,9 +1082,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -940,20 +1093,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/fact-logic-tables/database',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckFactLogicTableStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def confirm_approvals(self, request):
         """审批单处理
@@ -966,9 +1115,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ConfirmApprovalsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ConfirmApprovalsResponse`
         """
-        return self._confirm_approvals_with_http_info(request)
+        http_info = self._confirm_approvals_http_info(request)
+        return self._call_api(**http_info)
 
-    def _confirm_approvals_with_http_info(self, request):
+    def confirm_approvals_invoker(self, request):
+        http_info = self._confirm_approvals_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _confirm_approvals_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/approvals/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmApprovalsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -987,11 +1149,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1000,20 +1162,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/approvals/action',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ConfirmApprovalsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def confirm_message(self, request):
         """处理消息
@@ -1026,9 +1184,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ConfirmMessageRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ConfirmMessageResponse`
         """
-        return self._confirm_message_with_http_info(request)
+        http_info = self._confirm_message_http_info(request)
+        return self._call_api(**http_info)
 
-    def _confirm_message_with_http_info(self, request):
+    def confirm_message_invoker(self, request):
+        http_info = self._confirm_message_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _confirm_message_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmMessageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1047,11 +1218,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1060,20 +1231,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/messages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ConfirmMessageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_all_models(self, request):
         """关系建模统计信息
@@ -1086,9 +1253,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CountAllModelsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CountAllModelsResponse`
         """
-        return self._count_all_models_with_http_info(request)
+        http_info = self._count_all_models_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_all_models_with_http_info(self, request):
+    def count_all_models_invoker(self, request):
+        http_info = self._count_all_models_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_all_models_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/models/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountAllModelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1105,9 +1285,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1116,20 +1296,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/models/statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountAllModelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_overviews(self, request):
         """总览统计信息
@@ -1142,9 +1318,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CountOverviewsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CountOverviewsResponse`
         """
-        return self._count_overviews_with_http_info(request)
+        http_info = self._count_overviews_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_overviews_with_http_info(self, request):
+    def count_overviews_invoker(self, request):
+        http_info = self._count_overviews_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_overviews_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/definitions/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountOverviewsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1161,9 +1350,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1172,20 +1361,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/definitions/statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountOverviewsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_standards(self, request):
         """标准覆盖率统计信息
@@ -1198,9 +1383,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CountStandardsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CountStandardsResponse`
         """
-        return self._count_standards_with_http_info(request)
+        http_info = self._count_standards_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_standards_with_http_info(self, request):
+    def count_standards_invoker(self, request):
+        http_info = self._count_standards_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_standards_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/definitions/statistic/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountStandardsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1221,9 +1419,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1232,20 +1430,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/definitions/statistic/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountStandardsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_table_models(self, request):
         """模型统计信息
@@ -1258,9 +1452,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CountTableModelsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CountTableModelsResponse`
         """
-        return self._count_table_models_with_http_info(request)
+        http_info = self._count_table_models_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_table_models_with_http_info(self, request):
+    def count_table_models_invoker(self, request):
+        http_info = self._count_table_models_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_table_models_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/table-models/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountTableModelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1279,9 +1486,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1290,20 +1497,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/table-models/statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountTableModelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app(self, request):
         """创建应用
@@ -1316,9 +1519,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateAppResponse`
         """
-        return self._create_app_with_http_info(request)
+        http_info = self._create_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_with_http_info(self, request):
+    def create_app_invoker(self, request):
+        http_info = self._create_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1337,11 +1553,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1350,20 +1566,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_approver(self, request):
         """创建审批人
@@ -1376,9 +1588,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateApproverRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateApproverResponse`
         """
-        return self._create_approver_with_http_info(request)
+        http_info = self._create_approver_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_approver_with_http_info(self, request):
+    def create_approver_invoker(self, request):
+        http_info = self._create_approver_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_approver_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/approvals/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApproverResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1395,11 +1620,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1408,20 +1633,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/approvals/users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApproverResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_biz_metric(self, request):
         """创建业务指标
@@ -1434,9 +1655,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateBizMetricRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateBizMetricResponse`
         """
-        return self._create_biz_metric_with_http_info(request)
+        http_info = self._create_biz_metric_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_biz_metric_with_http_info(self, request):
+    def create_biz_metric_invoker(self, request):
+        http_info = self._create_biz_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_biz_metric_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/biz-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBizMetricResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1453,11 +1687,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1466,20 +1700,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz-metrics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBizMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_catalog(self, request):
         """创建流程架构
@@ -1492,9 +1722,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateCatalogRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateCatalogResponse`
         """
-        return self._create_catalog_with_http_info(request)
+        http_info = self._create_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_catalog_with_http_info(self, request):
+    def create_catalog_invoker(self, request):
+        http_info = self._create_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_catalog_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/biz/catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1511,11 +1754,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1524,20 +1767,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz/catalogs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_code_table(self, request):
         """创建码表
@@ -1550,9 +1789,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateCodeTableRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateCodeTableResponse`
         """
-        return self._create_code_table_with_http_info(request)
+        http_info = self._create_code_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_code_table_with_http_info(self, request):
+    def create_code_table_invoker(self, request):
+        http_info = self._create_code_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_code_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/code-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCodeTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1569,11 +1821,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1582,20 +1834,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/code-tables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCodeTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_connections(self, request):
         """创建数据连接
@@ -1608,9 +1856,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateConnectionsResponse`
         """
-        return self._create_connections_with_http_info(request)
+        http_info = self._create_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_connections_with_http_info(self, request):
+    def create_connections_invoker(self, request):
+        http_info = self._create_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_connections_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data-connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1627,11 +1888,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1640,20 +1901,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-connections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_directory(self, request):
         """创建目录
@@ -1666,9 +1923,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateDirectoryRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateDirectoryResponse`
         """
-        return self._create_directory_with_http_info(request)
+        http_info = self._create_directory_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_directory_with_http_info(self, request):
+    def create_directory_invoker(self, request):
+        http_info = self._create_directory_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_directory_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/directorys",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDirectoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1685,11 +1955,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1698,20 +1968,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/directorys',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDirectoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_factory_env(self, request):
         """创建环境变量
@@ -1724,9 +1990,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryEnvRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactoryEnvResponse`
         """
-        return self._create_factory_env_with_http_info(request)
+        http_info = self._create_factory_env_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_factory_env_with_http_info(self, request):
+    def create_factory_env_invoker(self, request):
+        http_info = self._create_factory_env_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_factory_env_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/factory/env",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFactoryEnvResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1743,11 +2022,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["status_code", "is_success", ]
 
@@ -1756,20 +2035,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/factory/env',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFactoryEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_factory_supplement_data_instance(self, request):
         """创建补数据实例的接口
@@ -1782,9 +2057,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactorySupplementDataInstanceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateFactorySupplementDataInstanceResponse`
         """
-        return self._create_factory_supplement_data_instance_with_http_info(request)
+        http_info = self._create_factory_supplement_data_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_factory_supplement_data_instance_with_http_info(self, request):
+    def create_factory_supplement_data_instance_invoker(self, request):
+        http_info = self._create_factory_supplement_data_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_factory_supplement_data_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/supplement-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFactorySupplementDataInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1801,11 +2089,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1814,20 +2102,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/factory/supplement-data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFactorySupplementDataInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_manager_work_space(self, request):
         """创建工作空间
@@ -1840,9 +2124,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateManagerWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateManagerWorkSpaceResponse`
         """
-        return self._create_manager_work_space_with_http_info(request)
+        http_info = self._create_manager_work_space_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_manager_work_space_with_http_info(self, request):
+    def create_manager_work_space_invoker(self, request):
+        http_info = self._create_manager_work_space_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_manager_work_space_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/workspaces/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateManagerWorkSpaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1859,11 +2156,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1872,20 +2169,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{instance_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateManagerWorkSpaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_or_update_asset(self, request):
         """添加或修改资产
@@ -1898,9 +2191,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateOrUpdateAssetRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateOrUpdateAssetResponse`
         """
-        return self._create_or_update_asset_with_http_info(request)
+        http_info = self._create_or_update_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_or_update_asset_with_http_info(self, request):
+    def create_or_update_asset_invoker(self, request):
+        http_info = self._create_or_update_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_or_update_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/asset",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrUpdateAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1917,11 +2223,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1930,20 +2236,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrUpdateAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_service_catalog(self, request):
         """创建服务目录
@@ -1956,9 +2258,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateServiceCatalogRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateServiceCatalogResponse`
         """
-        return self._create_service_catalog_with_http_info(request)
+        http_info = self._create_service_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_service_catalog_with_http_info(self, request):
+    def create_service_catalog_invoker(self, request):
+        http_info = self._create_service_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_service_catalog_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateServiceCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1977,11 +2292,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1990,20 +2305,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateServiceCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_standard(self, request):
         """创建数据标准
@@ -2016,9 +2327,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateStandardRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateStandardResponse`
         """
-        return self._create_standard_with_http_info(request)
+        http_info = self._create_standard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_standard_with_http_info(self, request):
+    def create_standard_invoker(self, request):
+        http_info = self._create_standard_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_standard_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/standards",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStandardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2035,11 +2359,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2048,20 +2372,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStandardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_standard_template(self, request):
         """创建数据标准模板
@@ -2074,9 +2394,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateStandardTemplateRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateStandardTemplateResponse`
         """
-        return self._create_standard_template_with_http_info(request)
+        http_info = self._create_standard_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_standard_template_with_http_info(self, request):
+    def create_standard_template_invoker(self, request):
+        http_info = self._create_standard_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_standard_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/standards/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStandardTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2093,11 +2426,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2106,20 +2439,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStandardTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_subject(self, request):
         """创建主题
@@ -2132,9 +2461,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectResponse`
         """
-        return self._create_subject_with_http_info(request)
+        http_info = self._create_subject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_subject_with_http_info(self, request):
+    def create_subject_invoker(self, request):
+        http_info = self._create_subject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_subject_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/subjects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2151,11 +2493,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2164,20 +2506,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/subjects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_subject_new(self, request):
         """创建主题(新)
@@ -2190,9 +2528,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectNewRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateSubjectNewResponse`
         """
-        return self._create_subject_new_with_http_info(request)
+        http_info = self._create_subject_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_subject_new_with_http_info(self, request):
+    def create_subject_new_invoker(self, request):
+        http_info = self._create_subject_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_subject_new_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/design/subjects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubjectNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2209,11 +2560,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2222,20 +2573,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/design/subjects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubjectNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_table_model(self, request):
         """创建模型实体
@@ -2248,9 +2595,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateTableModelRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateTableModelResponse`
         """
-        return self._create_table_model_with_http_info(request)
+        http_info = self._create_table_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_table_model_with_http_info(self, request):
+    def create_table_model_invoker(self, request):
+        http_info = self._create_table_model_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_table_model_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/table-model",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTableModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2267,11 +2627,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2280,20 +2640,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/table-model',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTableModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_task(self, request):
         """创建采集任务
@@ -2306,9 +2662,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateTaskResponse`
         """
-        return self._create_task_with_http_info(request)
+        http_info = self._create_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_task_with_http_info(self, request):
+    def create_task_invoker(self, request):
+        http_info = self._create_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/metadata/tasks/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2325,11 +2694,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2338,20 +2707,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/metadata/tasks/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template(self, request):
         """创建规则模板
@@ -2364,9 +2729,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateTemplateRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateTemplateResponse`
         """
-        return self._create_template_with_http_info(request)
+        http_info = self._create_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_with_http_info(self, request):
+    def create_template_invoker(self, request):
+        http_info = self._create_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/quality/rule-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2383,11 +2761,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2396,20 +2774,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/rule-templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_workspace(self, request):
         """新建模型工作区
@@ -2422,9 +2796,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateWorkspaceResponse`
         """
-        return self._create_workspace_with_http_info(request)
+        http_info = self._create_workspace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_workspace_with_http_info(self, request):
+    def create_workspace_invoker(self, request):
+        http_info = self._create_workspace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_workspace_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWorkspaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2441,11 +2828,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2454,20 +2841,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/workspaces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWorkspaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def debug_dataconnection(self, request):
         """测试创建数据连接
@@ -2480,9 +2863,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DebugDataconnectionRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DebugDataconnectionResponse`
         """
-        return self._debug_dataconnection_with_http_info(request)
+        http_info = self._debug_dataconnection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _debug_dataconnection_with_http_info(self, request):
+    def debug_dataconnection_invoker(self, request):
+        http_info = self._debug_dataconnection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _debug_dataconnection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data-connections/validation",
+            "request_type": request.__class__.__name__,
+            "response_type": "DebugDataconnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2499,11 +2895,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2512,20 +2908,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-connections/validation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DebugDataconnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app(self, request):
         """删除应用
@@ -2538,9 +2930,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteAppResponse`
         """
-        return self._delete_app_with_http_info(request)
+        http_info = self._delete_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_with_http_info(self, request):
+    def delete_app_invoker(self, request):
+        http_info = self._delete_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/service/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2561,9 +2966,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2572,20 +2977,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_approver(self, request):
         """删除审批人
@@ -2598,9 +2999,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteApproverRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteApproverResponse`
         """
-        return self._delete_approver_with_http_info(request)
+        http_info = self._delete_approver_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_approver_with_http_info(self, request):
+    def delete_approver_invoker(self, request):
+        http_info = self._delete_approver_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_approver_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/approvals/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApproverResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2619,9 +3033,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2630,20 +3044,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/approvals/users',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApproverResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_asset(self, request):
         """删除资产
@@ -2656,9 +3066,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteAssetRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteAssetResponse`
         """
-        return self._delete_asset_with_http_info(request)
+        http_info = self._delete_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_asset_with_http_info(self, request):
+    def delete_asset_invoker(self, request):
+        http_info = self._delete_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_asset_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/asset/{guid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2677,9 +3100,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2688,20 +3111,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/{guid}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_biz_metric(self, request):
         """删除业务指标
@@ -2714,9 +3133,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteBizMetricRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteBizMetricResponse`
         """
-        return self._delete_biz_metric_with_http_info(request)
+        http_info = self._delete_biz_metric_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_biz_metric_with_http_info(self, request):
+    def delete_biz_metric_invoker(self, request):
+        http_info = self._delete_biz_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_biz_metric_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/biz-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBizMetricResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2733,11 +3165,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2746,20 +3178,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz-metrics',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBizMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_catalog(self, request):
         """删除流程架构
@@ -2772,9 +3200,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteCatalogRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteCatalogResponse`
         """
-        return self._delete_catalog_with_http_info(request)
+        http_info = self._delete_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_catalog_with_http_info(self, request):
+    def delete_catalog_invoker(self, request):
+        http_info = self._delete_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_catalog_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/biz/catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2791,11 +3232,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2804,20 +3245,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz/catalogs',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_classification_from_entities(self, request):
         """移除资产关联的分类
@@ -2830,9 +3267,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteClassificationFromEntitiesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteClassificationFromEntitiesResponse`
         """
-        return self._delete_classification_from_entities_with_http_info(request)
+        http_info = self._delete_classification_from_entities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_classification_from_entities_with_http_info(self, request):
+    def delete_classification_from_entities_invoker(self, request):
+        http_info = self._delete_classification_from_entities_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_classification_from_entities_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/asset/entities/guid/{guid}/classification",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClassificationFromEntitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2851,11 +3301,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2864,20 +3314,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/entities/guid/{guid}/classification',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteClassificationFromEntitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_code_table(self, request):
         """删除码表
@@ -2890,9 +3336,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteCodeTableRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteCodeTableResponse`
         """
-        return self._delete_code_table_with_http_info(request)
+        http_info = self._delete_code_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_code_table_with_http_info(self, request):
+    def delete_code_table_invoker(self, request):
+        http_info = self._delete_code_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_code_table_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/code-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCodeTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2909,11 +3368,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2922,20 +3381,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/code-tables',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCodeTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_dataconnection(self, request):
         """删除数据连接
@@ -2948,9 +3403,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDataconnectionRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDataconnectionResponse`
         """
-        return self._delete_dataconnection_with_http_info(request)
+        http_info = self._delete_dataconnection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_dataconnection_with_http_info(self, request):
+    def delete_dataconnection_invoker(self, request):
+        http_info = self._delete_dataconnection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_dataconnection_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/data-connections/{data_connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDataconnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2969,9 +3437,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2980,20 +3448,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-connections/{data_connection_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDataconnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_directory(self, request):
         """删除目录
@@ -3006,9 +3470,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDirectoryRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteDirectoryResponse`
         """
-        return self._delete_directory_with_http_info(request)
+        http_info = self._delete_directory_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_directory_with_http_info(self, request):
+    def delete_directory_invoker(self, request):
+        http_info = self._delete_directory_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_directory_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/directorys",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDirectoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3028,9 +3505,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3039,20 +3516,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/directorys',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDirectoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_security_level_from_entity(self, request):
         """移除资产关联密级
@@ -3065,9 +3538,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecurityLevelFromEntityRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSecurityLevelFromEntityResponse`
         """
-        return self._delete_security_level_from_entity_with_http_info(request)
+        http_info = self._delete_security_level_from_entity_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_security_level_from_entity_with_http_info(self, request):
+    def delete_security_level_from_entity_invoker(self, request):
+        http_info = self._delete_security_level_from_entity_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_security_level_from_entity_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/asset/entities/guid/{guid}/security-level",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecurityLevelFromEntityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3086,9 +3572,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3097,20 +3583,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/entities/guid/{guid}/security-level',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecurityLevelFromEntityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_service_catalog(self, request):
         """批量删除目录
@@ -3123,9 +3605,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteServiceCatalogRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteServiceCatalogResponse`
         """
-        return self._delete_service_catalog_with_http_info(request)
+        http_info = self._delete_service_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_service_catalog_with_http_info(self, request):
+    def delete_service_catalog_invoker(self, request):
+        http_info = self._delete_service_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_service_catalog_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServiceCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3144,11 +3639,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3157,20 +3652,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServiceCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_standard(self, request):
         """删除数据标准
@@ -3183,9 +3674,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteStandardRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteStandardResponse`
         """
-        return self._delete_standard_with_http_info(request)
+        http_info = self._delete_standard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_standard_with_http_info(self, request):
+    def delete_standard_invoker(self, request):
+        http_info = self._delete_standard_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_standard_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/standards",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStandardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3202,11 +3706,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3215,20 +3719,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStandardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_standard_template(self, request):
         """删除数据标准模板
@@ -3241,9 +3741,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteStandardTemplateRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteStandardTemplateResponse`
         """
-        return self._delete_standard_template_with_http_info(request)
+        http_info = self._delete_standard_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_standard_template_with_http_info(self, request):
+    def delete_standard_template_invoker(self, request):
+        http_info = self._delete_standard_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_standard_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/standards/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStandardTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3262,9 +3775,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3273,20 +3786,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards/templates',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStandardTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_subject(self, request):
         """删除主题
@@ -3299,9 +3808,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSubjectRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSubjectResponse`
         """
-        return self._delete_subject_with_http_info(request)
+        http_info = self._delete_subject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_subject_with_http_info(self, request):
+    def delete_subject_invoker(self, request):
+        http_info = self._delete_subject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_subject_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/subjects",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3318,11 +3840,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3331,20 +3853,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/subjects',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_subject_new(self, request):
         """删除主题(新)
@@ -3357,9 +3875,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSubjectNewRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteSubjectNewResponse`
         """
-        return self._delete_subject_new_with_http_info(request)
+        http_info = self._delete_subject_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_subject_new_with_http_info(self, request):
+    def delete_subject_new_invoker(self, request):
+        http_info = self._delete_subject_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_subject_new_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/design/subjects",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubjectNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3376,11 +3907,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3389,20 +3920,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/design/subjects',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubjectNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_table_model(self, request):
         """删除模型实体
@@ -3415,9 +3942,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteTableModelRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteTableModelResponse`
         """
-        return self._delete_table_model_with_http_info(request)
+        http_info = self._delete_table_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_table_model_with_http_info(self, request):
+    def delete_table_model_invoker(self, request):
+        http_info = self._delete_table_model_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_table_model_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/table-model",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTableModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3434,11 +3974,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3447,20 +3987,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/table-model',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTableModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task_info(self, request):
         """删除单个采集任务
@@ -3473,9 +4009,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteTaskInfoRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteTaskInfoResponse`
         """
-        return self._delete_task_info_with_http_info(request)
+        http_info = self._delete_task_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_info_with_http_info(self, request):
+    def delete_task_info_invoker(self, request):
+        http_info = self._delete_task_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_task_info_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/metadata/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3494,9 +4043,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3505,20 +4054,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/metadata/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_workspaces(self, request):
         """删除模型工作区
@@ -3531,9 +4076,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteWorkspacesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteWorkspacesResponse`
         """
-        return self._delete_workspaces_with_http_info(request)
+        http_info = self._delete_workspaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_workspaces_with_http_info(self, request):
+    def delete_workspaces_invoker(self, request):
+        http_info = self._delete_workspaces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_workspaces_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/design/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkspacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3553,9 +4111,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3564,20 +4122,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/workspaces',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWorkspacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_workspaceusers(self, request):
         """删除工作空间用户
@@ -3590,9 +4144,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteWorkspaceusersRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteWorkspaceusersResponse`
         """
-        return self._delete_workspaceusers_with_http_info(request)
+        http_info = self._delete_workspaceusers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_workspaceusers_with_http_info(self, request):
+    def delete_workspaceusers_invoker(self, request):
+        http_info = self._delete_workspaceusers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_workspaceusers_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{workspace_id}/delete-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkspaceusersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3609,11 +4176,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3622,20 +4189,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{workspace_id}/delete-users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWorkspaceusersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_task_action(self, request):
         """启动、调度、停止采集任务
@@ -3648,9 +4211,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ExecuteTaskActionRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExecuteTaskActionResponse`
         """
-        return self._execute_task_action_with_http_info(request)
+        http_info = self._execute_task_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_task_action_with_http_info(self, request):
+    def execute_task_action_invoker(self, request):
+        http_info = self._execute_task_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_task_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/metadata/tasks/{task_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteTaskActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3671,9 +4247,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3682,20 +4258,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/metadata/tasks/{task_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteTaskActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_result(self, request):
         """查询导入结果
@@ -3708,9 +4280,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ImportResultRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ImportResultResponse`
         """
-        return self._import_result_with_http_info(request)
+        http_info = self._import_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_result_with_http_info(self, request):
+    def import_result_invoker(self, request):
+        http_info = self._import_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/catelogs/process-import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3729,9 +4314,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3740,20 +4325,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/catelogs/process-import',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def initialize_standard_template(self, request):
         """初始化数据标准模板
@@ -3766,9 +4347,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.InitializeStandardTemplateRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.InitializeStandardTemplateResponse`
         """
-        return self._initialize_standard_template_with_http_info(request)
+        http_info = self._initialize_standard_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _initialize_standard_template_with_http_info(self, request):
+    def initialize_standard_template_invoker(self, request):
+        http_info = self._initialize_standard_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _initialize_standard_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/design/standards/templates/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "InitializeStandardTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3787,11 +4381,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3800,20 +4394,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards/templates/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InitializeStandardTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_aggregation_logic_tables(self, request):
         """查找汇总表
@@ -3826,9 +4416,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListAggregationLogicTablesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListAggregationLogicTablesResponse`
         """
-        return self._list_aggregation_logic_tables_with_http_info(request)
+        http_info = self._list_aggregation_logic_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_aggregation_logic_tables_with_http_info(self, request):
+    def list_aggregation_logic_tables_invoker(self, request):
+        http_info = self._list_aggregation_logic_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_aggregation_logic_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/aggregation-logic-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAggregationLogicTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3874,9 +4477,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3885,20 +4488,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/aggregation-logic-tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAggregationLogicTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_catalog_list(self, request):
         """获取当前目录下的所有类型列表
@@ -3911,9 +4510,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListAllCatalogListRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListAllCatalogListResponse`
         """
-        return self._list_all_catalog_list_with_http_info(request)
+        http_info = self._list_all_catalog_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_catalog_list_with_http_info(self, request):
+    def list_all_catalog_list_invoker(self, request):
+        http_info = self._list_all_catalog_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_catalog_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/{catalog_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllCatalogListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3938,9 +4550,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3949,20 +4561,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/{catalog_id}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllCatalogListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_standards(self, request):
         """获取数据标准
@@ -3975,9 +4583,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListAllStandardsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListAllStandardsResponse`
         """
-        return self._list_all_standards_with_http_info(request)
+        http_info = self._list_all_standards_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_standards_with_http_info(self, request):
+    def list_all_standards_invoker(self, request):
+        http_info = self._list_all_standards_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_standards_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/standards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllStandardsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4004,9 +4625,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4015,20 +4636,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllStandardsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_catalog_list(self, request):
         """获取当前目录下的api列表
@@ -4041,9 +4658,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListApiCatalogListRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApiCatalogListResponse`
         """
-        return self._list_api_catalog_list_with_http_info(request)
+        http_info = self._list_api_catalog_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_catalog_list_with_http_info(self, request):
+    def list_api_catalog_list_invoker(self, request):
+        http_info = self._list_api_catalog_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_catalog_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/{catalog_id}/apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiCatalogListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4068,9 +4698,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4079,20 +4709,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/{catalog_id}/apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiCatalogListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_top_n(self, request):
         """查询指定api 应用调用topN
@@ -4105,9 +4731,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListApiTopNRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApiTopNResponse`
         """
-        return self._list_api_top_n_with_http_info(request)
+        http_info = self._list_api_top_n_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_top_n_with_http_info(self, request):
+    def list_api_top_n_invoker(self, request):
+        http_info = self._list_api_top_n_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_top_n_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apis-top-n/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiTopNResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4140,9 +4779,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4151,20 +4790,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apis-top-n/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiTopNResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apic_groups(self, request):
         """获取网关分组
@@ -4177,9 +4812,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListApicGroupsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApicGroupsResponse`
         """
-        return self._list_apic_groups_with_http_info(request)
+        http_info = self._list_apic_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apic_groups_with_http_info(self, request):
+    def list_apic_groups_invoker(self, request):
+        http_info = self._list_apic_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apic_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apigw/instances/{apig_instance_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApicGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4206,9 +4854,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4217,20 +4865,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apigw/instances/{apig_instance_id}/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApicGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apic_instances(self, request):
         """获取网关实例
@@ -4243,9 +4887,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListApicInstancesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApicInstancesResponse`
         """
-        return self._list_apic_instances_with_http_info(request)
+        http_info = self._list_apic_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apic_instances_with_http_info(self, request):
+    def list_apic_instances_invoker(self, request):
+        http_info = self._list_apic_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apic_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apigw/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApicInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4270,9 +4927,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4281,20 +4938,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apigw/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApicInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_top(self, request):
         """查询api 服务调用topN
@@ -4307,9 +4960,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListApisTopRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApisTopResponse`
         """
-        return self._list_apis_top_with_http_info(request)
+        http_info = self._list_apis_top_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_top_with_http_info(self, request):
+    def list_apis_top_invoker(self, request):
+        http_info = self._list_apis_top_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_top_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apis-top-n",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisTopResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4340,9 +5006,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4351,20 +5017,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apis-top-n',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisTopResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apply(self, request):
         """查询申请列表
@@ -4377,9 +5039,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListApplyRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApplyResponse`
         """
-        return self._list_apply_with_http_info(request)
+        http_info = self._list_apply_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apply_with_http_info(self, request):
+    def list_apply_invoker(self, request):
+        http_info = self._list_apply_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apply_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/applys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4406,9 +5081,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4417,20 +5092,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/applys',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApplyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_approvers(self, request):
         """查询审批人列表
@@ -4443,9 +5114,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListApproversRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApproversResponse`
         """
-        return self._list_approvers_with_http_info(request)
+        http_info = self._list_approvers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_approvers_with_http_info(self, request):
+    def list_approvers_invoker(self, request):
+        http_info = self._list_approvers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_approvers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/approvals/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApproversResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4468,9 +5152,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4479,20 +5163,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/approvals/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApproversResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps(self, request):
         """查询应用列表
@@ -4505,9 +5185,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListAppsResponse`
         """
-        return self._list_apps_with_http_info(request)
+        http_info = self._list_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_with_http_info(self, request):
+    def list_apps_invoker(self, request):
+        http_info = self._list_apps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4534,9 +5227,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4545,20 +5238,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps_top(self, request):
         """查询app 服务使用topN
@@ -4571,9 +5260,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListAppsTopRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListAppsTopResponse`
         """
-        return self._list_apps_top_with_http_info(request)
+        http_info = self._list_apps_top_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_top_with_http_info(self, request):
+    def list_apps_top_invoker(self, request):
+        http_info = self._list_apps_top_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apps_top_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apps-top-n",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsTopResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4602,9 +5304,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4613,20 +5315,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apps-top-n',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsTopResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_biz_metric_dimensions(self, request):
         """查看指标维度信息
@@ -4639,9 +5337,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricDimensionsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricDimensionsResponse`
         """
-        return self._list_biz_metric_dimensions_with_http_info(request)
+        http_info = self._list_biz_metric_dimensions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_biz_metric_dimensions_with_http_info(self, request):
+    def list_biz_metric_dimensions_invoker(self, request):
+        http_info = self._list_biz_metric_dimensions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_biz_metric_dimensions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/biz-metrics/dimensions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBizMetricDimensionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4662,9 +5373,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4673,20 +5384,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz-metrics/dimensions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBizMetricDimensionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_biz_metric_owners(self, request):
         """查看指标指标责任人信息
@@ -4699,9 +5406,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricOwnersRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricOwnersResponse`
         """
-        return self._list_biz_metric_owners_with_http_info(request)
+        http_info = self._list_biz_metric_owners_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_biz_metric_owners_with_http_info(self, request):
+    def list_biz_metric_owners_invoker(self, request):
+        http_info = self._list_biz_metric_owners_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_biz_metric_owners_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/biz-metrics/owners",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBizMetricOwnersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4722,9 +5442,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4733,20 +5453,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz-metrics/owners',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBizMetricOwnersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_biz_metrics(self, request):
         """查询业务指标信息
@@ -4759,9 +5475,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListBizMetricsResponse`
         """
-        return self._list_biz_metrics_with_http_info(request)
+        http_info = self._list_biz_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_biz_metrics_with_http_info(self, request):
+    def list_biz_metrics_invoker(self, request):
+        http_info = self._list_biz_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_biz_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/biz-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBizMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4801,9 +5530,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4812,20 +5541,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz-metrics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBizMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_business(self, request):
         """获取主题树信息
@@ -4838,9 +5563,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListBusinessRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListBusinessResponse`
         """
-        return self._list_business_with_http_info(request)
+        http_info = self._list_business_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_business_with_http_info(self, request):
+    def list_business_invoker(self, request):
+        http_info = self._list_business_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_business_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/subjects/business",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBusinessResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4861,9 +5599,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4872,20 +5610,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/subjects/business',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBusinessResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_catalog_list(self, request):
         """获取当前目录下的目录列表（全量）
@@ -4898,9 +5632,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListCatalogListRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListCatalogListResponse`
         """
-        return self._list_catalog_list_with_http_info(request)
+        http_info = self._list_catalog_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_catalog_list_with_http_info(self, request):
+    def list_catalog_list_invoker(self, request):
+        http_info = self._list_catalog_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_catalog_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/{catalog_id}/catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCatalogListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4925,9 +5672,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4936,20 +5683,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/{catalog_id}/catalogs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCatalogListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_catalog_tree(self, request):
         """获取所有流程架构目录树
@@ -4962,9 +5705,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListCatalogTreeRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListCatalogTreeResponse`
         """
-        return self._list_catalog_tree_with_http_info(request)
+        http_info = self._list_catalog_tree_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_catalog_tree_with_http_info(self, request):
+    def list_catalog_tree_invoker(self, request):
+        http_info = self._list_catalog_tree_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_catalog_tree_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/biz/catalogs/tree",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCatalogTreeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4981,9 +5737,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4992,20 +5748,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz/catalogs/tree',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCatalogTreeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_category(self, request):
         """获取作业目录
@@ -5018,9 +5770,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListCategoryRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListCategoryResponse`
         """
-        return self._list_category_with_http_info(request)
+        http_info = self._list_category_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_category_with_http_info(self, request):
+    def list_category_invoker(self, request):
+        http_info = self._list_category_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_category_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/categories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCategoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5043,9 +5808,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5054,20 +5819,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/categories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCategoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_columns(self, request):
         """获取数据源中表的字段
@@ -5080,9 +5841,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListColumnsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListColumnsResponse`
         """
-        return self._list_columns_with_http_info(request)
+        http_info = self._list_columns_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_columns_with_http_info(self, request):
+    def list_columns_invoker(self, request):
+        http_info = self._list_columns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_columns_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{connection_id}/datatables/{table_id}/columns",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListColumnsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5107,9 +5881,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5118,20 +5892,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{connection_id}/datatables/{table_id}/columns',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListColumnsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_compound_metrics(self, request):
         """查找复合指标
@@ -5144,9 +5914,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListCompoundMetricsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListCompoundMetricsResponse`
         """
-        return self._list_compound_metrics_with_http_info(request)
+        http_info = self._list_compound_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_compound_metrics_with_http_info(self, request):
+    def list_compound_metrics_invoker(self, request):
+        http_info = self._list_compound_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_compound_metrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/compound-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCompoundMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5185,9 +5968,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5196,20 +5979,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/compound-metrics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCompoundMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_condition(self, request):
         """查找业务限定
@@ -5222,9 +6001,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListConditionRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListConditionResponse`
         """
-        return self._list_condition_with_http_info(request)
+        http_info = self._list_condition_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_condition_with_http_info(self, request):
+    def list_condition_invoker(self, request):
+        http_info = self._list_condition_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_condition_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/conditions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConditionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5257,9 +6049,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5268,20 +6060,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/conditions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConditionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_consistency_task(self, request):
         """获取对账作业列表
@@ -5294,9 +6082,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListConsistencyTaskRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListConsistencyTaskResponse`
         """
-        return self._list_consistency_task_with_http_info(request)
+        http_info = self._list_consistency_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_consistency_task_with_http_info(self, request):
+    def list_consistency_task_invoker(self, request):
+        http_info = self._list_consistency_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_consistency_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/consistency-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConsistencyTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5329,9 +6130,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5340,20 +6141,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/consistency-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConsistencyTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_data_arts_studio_instances(self, request):
         """获取实例列表
@@ -5366,9 +6163,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDataArtsStudioInstancesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDataArtsStudioInstancesResponse`
         """
-        return self._list_data_arts_studio_instances_with_http_info(request)
+        http_info = self._list_data_arts_studio_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_data_arts_studio_instances_with_http_info(self, request):
+    def list_data_arts_studio_instances_invoker(self, request):
+        http_info = self._list_data_arts_studio_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_data_arts_studio_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataArtsStudioInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5387,9 +6197,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5398,20 +6208,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataArtsStudioInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_data_tables(self, request):
         """获取数据源中的表
@@ -5424,9 +6230,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDataTablesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDataTablesResponse`
         """
-        return self._list_data_tables_with_http_info(request)
+        http_info = self._list_data_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_data_tables_with_http_info(self, request):
+    def list_data_tables_invoker(self, request):
+        http_info = self._list_data_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_data_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{connection_id}/datatables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5453,9 +6272,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5464,20 +6283,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{connection_id}/datatables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_databases(self, request):
         """获取数据库列表
@@ -5490,9 +6305,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDatabasesResponse`
         """
-        return self._list_databases_with_http_info(request)
+        http_info = self._list_databases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_databases_with_http_info(self, request):
+    def list_databases_invoker(self, request):
+        http_info = self._list_databases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_databases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{connection_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5515,9 +6343,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5526,20 +6354,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{connection_id}/databases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dataconnections(self, request):
         """查询数据连接列表
@@ -5552,9 +6376,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDataconnectionsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDataconnectionsResponse`
         """
-        return self._list_dataconnections_with_http_info(request)
+        http_info = self._list_dataconnections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dataconnections_with_http_info(self, request):
+    def list_dataconnections_invoker(self, request):
+        http_info = self._list_dataconnections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dataconnections_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/data-connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataconnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5579,9 +6416,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5590,20 +6427,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataconnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_derivative_indexes(self, request):
         """查找衍生指标
@@ -5616,9 +6449,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDerivativeIndexesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDerivativeIndexesResponse`
         """
-        return self._list_derivative_indexes_with_http_info(request)
+        http_info = self._list_derivative_indexes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_derivative_indexes_with_http_info(self, request):
+    def list_derivative_indexes_invoker(self, request):
+        http_info = self._list_derivative_indexes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_derivative_indexes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/derivative-indexs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDerivativeIndexesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5663,9 +6509,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5674,20 +6520,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/derivative-indexs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDerivativeIndexesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dimension_groups(self, request):
         """查看维度颗粒度
@@ -5700,9 +6542,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionGroupsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionGroupsResponse`
         """
-        return self._list_dimension_groups_with_http_info(request)
+        http_info = self._list_dimension_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dimension_groups_with_http_info(self, request):
+    def list_dimension_groups_invoker(self, request):
+        http_info = self._list_dimension_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dimension_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/dimension/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDimensionGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5727,9 +6582,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5738,20 +6593,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/dimension/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDimensionGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dimension_logic_tables(self, request):
         """查找维度表
@@ -5764,9 +6615,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionLogicTablesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionLogicTablesResponse`
         """
-        return self._list_dimension_logic_tables_with_http_info(request)
+        http_info = self._list_dimension_logic_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dimension_logic_tables_with_http_info(self, request):
+    def list_dimension_logic_tables_invoker(self, request):
+        http_info = self._list_dimension_logic_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dimension_logic_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/dimension-logic-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDimensionLogicTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5814,9 +6678,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5825,20 +6689,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/dimension-logic-tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDimensionLogicTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dimensions(self, request):
         """查找维度
@@ -5851,9 +6711,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDimensionsResponse`
         """
-        return self._list_dimensions_with_http_info(request)
+        http_info = self._list_dimensions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dimensions_with_http_info(self, request):
+    def list_dimensions_invoker(self, request):
+        http_info = self._list_dimensions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dimensions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/dimensions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDimensionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5897,9 +6770,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5908,20 +6781,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/dimensions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDimensionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_directories(self, request):
         """获取所有目录
@@ -5934,9 +6803,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListDirectoriesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListDirectoriesResponse`
         """
-        return self._list_directories_with_http_info(request)
+        http_info = self._list_directories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_directories_with_http_info(self, request):
+    def list_directories_invoker(self, request):
+        http_info = self._list_directories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_directories_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/directorys",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDirectoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5959,9 +6841,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5970,20 +6852,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/directorys',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDirectoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_fact_logic_tables(self, request):
         """查找事实表
@@ -5996,9 +6874,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListFactLogicTablesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListFactLogicTablesResponse`
         """
-        return self._list_fact_logic_tables_with_http_info(request)
+        http_info = self._list_fact_logic_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_fact_logic_tables_with_http_info(self, request):
+    def list_fact_logic_tables_invoker(self, request):
+        http_info = self._list_fact_logic_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_fact_logic_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/fact-logic-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFactLogicTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6042,9 +6933,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6053,20 +6944,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/fact-logic-tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFactLogicTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances(self, request):
         """获取任务执行结果列表
@@ -6079,9 +6966,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListInstancesResponse`
         """
-        return self._list_instances_with_http_info(request)
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_with_http_info(self, request):
+    def list_instances_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6114,9 +7014,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6125,20 +7025,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_manager_work_spaces(self, request):
         """获取工作空间列表
@@ -6151,9 +7047,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListManagerWorkSpacesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListManagerWorkSpacesResponse`
         """
-        return self._list_manager_work_spaces_with_http_info(request)
+        http_info = self._list_manager_work_spaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_manager_work_spaces_with_http_info(self, request):
+    def list_manager_work_spaces_invoker(self, request):
+        http_info = self._list_manager_work_spaces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_manager_work_spaces_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListManagerWorkSpacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6174,9 +7083,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6185,20 +7094,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListManagerWorkSpacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_message(self, request):
         """查询消息列表
@@ -6211,9 +7116,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListMessageRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListMessageResponse`
         """
-        return self._list_message_with_http_info(request)
+        http_info = self._list_message_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_message_with_http_info(self, request):
+    def list_message_invoker(self, request):
+        http_info = self._list_message_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_message_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6238,9 +7156,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6249,20 +7167,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/messages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMessageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_metric_relations(self, request):
         """获取指标关联信息
@@ -6275,9 +7189,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListMetricRelationsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListMetricRelationsResponse`
         """
-        return self._list_metric_relations_with_http_info(request)
+        http_info = self._list_metric_relations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_metric_relations_with_http_info(self, request):
+    def list_metric_relations_invoker(self, request):
+        http_info = self._list_metric_relations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_metric_relations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/metric-relations/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricRelationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6298,9 +7225,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6309,20 +7236,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/metric-relations/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMetricRelationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quality_task(self, request):
         """获取质量作业列表
@@ -6335,9 +7258,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListQualityTaskRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListQualityTaskResponse`
         """
-        return self._list_quality_task_with_http_info(request)
+        http_info = self._list_quality_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quality_task_with_http_info(self, request):
+    def list_quality_task_invoker(self, request):
+        http_info = self._list_quality_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quality_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/quality-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQualityTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6370,9 +7306,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6381,20 +7317,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/quality-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQualityTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quality_task_lists(self, request):
         """获取质量作业列表V1
@@ -6406,9 +7338,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListQualityTaskListsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListQualityTaskListsResponse`
         """
-        return self._list_quality_task_lists_with_http_info(request)
+        http_info = self._list_quality_task_lists_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quality_task_lists_with_http_info(self, request):
+    def list_quality_task_lists_invoker(self, request):
+        http_info = self._list_quality_task_lists_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quality_task_lists_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/quality/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQualityTaskListsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6449,9 +7394,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6460,20 +7405,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/quality/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQualityTaskListsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quality_templates(self, request):
         """获取规则模板列表
@@ -6486,9 +7427,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListQualityTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListQualityTemplatesResponse`
         """
-        return self._list_quality_templates_with_http_info(request)
+        http_info = self._list_quality_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quality_templates_with_http_info(self, request):
+    def list_quality_templates_invoker(self, request):
+        http_info = self._list_quality_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quality_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/rule-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQualityTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6517,9 +7471,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6528,20 +7482,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/rule-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQualityTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_relations(self, request):
         """关系
@@ -6554,9 +7504,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListRelationsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListRelationsResponse`
         """
-        return self._list_relations_with_http_info(request)
+        http_info = self._list_relations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_relations_with_http_info(self, request):
+    def list_relations_invoker(self, request):
+        http_info = self._list_relations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_relations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/relation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6585,9 +7548,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6596,20 +7559,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/relation',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRelationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_schemas(self, request):
         """获取schemas
@@ -6622,9 +7581,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSchemasRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSchemasResponse`
         """
-        return self._list_schemas_with_http_info(request)
+        http_info = self._list_schemas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_schemas_with_http_info(self, request):
+    def list_schemas_invoker(self, request):
+        http_info = self._list_schemas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_schemas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{connection_id}/schemas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSchemasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6649,9 +7621,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6660,20 +7632,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{connection_id}/schemas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSchemasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subject_levels(self, request):
         """获取主题层级
@@ -6686,9 +7654,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListSubjectLevelsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListSubjectLevelsResponse`
         """
-        return self._list_subject_levels_with_http_info(request)
+        http_info = self._list_subject_levels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subject_levels_with_http_info(self, request):
+    def list_subject_levels_invoker(self, request):
+        http_info = self._list_subject_levels_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_subject_levels_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/subject-levels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubjectLevelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6709,9 +7690,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6720,20 +7701,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/subject-levels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubjectLevelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_table_model_relations(self, request):
         """查询模型下所有关系
@@ -6746,9 +7723,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListTableModelRelationsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListTableModelRelationsResponse`
         """
-        return self._list_table_model_relations_with_http_info(request)
+        http_info = self._list_table_model_relations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_table_model_relations_with_http_info(self, request):
+    def list_table_model_relations_invoker(self, request):
+        http_info = self._list_table_model_relations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_table_model_relations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/{model_id}/table-model/relation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableModelRelationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6775,9 +7765,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6786,20 +7776,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/{model_id}/table-model/relation',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTableModelRelationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_table_models(self, request):
         """查找模型实体列表
@@ -6812,9 +7798,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListTableModelsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListTableModelsResponse`
         """
-        return self._list_table_models_with_http_info(request)
+        http_info = self._list_table_models_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_table_models_with_http_info(self, request):
+    def list_table_models_invoker(self, request):
+        http_info = self._list_table_models_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_table_models_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/table-model",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableModelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6856,9 +7855,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6867,20 +7866,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/table-model',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTableModelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workspace_roles(self, request):
         """获取工作空间用户角色
@@ -6893,9 +7888,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListWorkspaceRolesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListWorkspaceRolesResponse`
         """
-        return self._list_workspace_roles_with_http_info(request)
+        http_info = self._list_workspace_roles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workspace_roles_with_http_info(self, request):
+    def list_workspace_roles_invoker(self, request):
+        http_info = self._list_workspace_roles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workspace_roles_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/users/role",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkspaceRolesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6914,9 +7922,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6925,20 +7933,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/users/role',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkspaceRolesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workspaces(self, request):
         """获取模型
@@ -6951,9 +7955,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListWorkspacesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListWorkspacesResponse`
         """
-        return self._list_workspaces_with_http_info(request)
+        http_info = self._list_workspaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workspaces_with_http_info(self, request):
+    def list_workspaces_invoker(self, request):
+        http_info = self._list_workspaces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workspaces_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkspacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6978,9 +7995,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6989,20 +8006,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/workspaces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkspacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workspaceusers(self, request):
         """获取工作空间用户信息
@@ -7015,9 +8028,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListWorkspaceusersRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListWorkspaceusersResponse`
         """
-        return self._list_workspaceusers_with_http_info(request)
+        http_info = self._list_workspaceusers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workspaceusers_with_http_info(self, request):
+    def list_workspaceusers_invoker(self, request):
+        http_info = self._list_workspaceusers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workspaceusers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{workspace_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkspaceusersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7038,9 +8064,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7049,20 +8075,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{workspace_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkspaceusersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_api(self, request):
         """批量移动api至新目录
@@ -7075,9 +8097,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.MigrateApiRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.MigrateApiResponse`
         """
-        return self._migrate_api_with_http_info(request)
+        http_info = self._migrate_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_api_with_http_info(self, request):
+    def migrate_api_invoker(self, request):
+        http_info = self._migrate_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_api_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/apis/batch-move",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7096,11 +8131,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7109,20 +8144,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/apis/batch-move',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_catalog(self, request):
         """移动当前目录至新目录
@@ -7135,9 +8166,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.MigrateCatalogRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.MigrateCatalogResponse`
         """
-        return self._migrate_catalog_with_http_info(request)
+        http_info = self._migrate_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_catalog_with_http_info(self, request):
+    def migrate_catalog_invoker(self, request):
+        http_info = self._migrate_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_catalog_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/{catalog_id}/move",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7158,11 +8202,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7171,20 +8215,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/{catalog_id}/move',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_customized_fields(self, request):
         """修改自定义项
@@ -7197,9 +8237,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ModifyCustomizedFieldsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ModifyCustomizedFieldsResponse`
         """
-        return self._modify_customized_fields_with_http_info(request)
+        http_info = self._modify_customized_fields_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_customized_fields_with_http_info(self, request):
+    def modify_customized_fields_invoker(self, request):
+        http_info = self._modify_customized_fields_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_customized_fields_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/customized-fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyCustomizedFieldsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7216,11 +8269,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7229,20 +8282,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/customized-fields',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyCustomizedFieldsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def parse_user_behavior(self, request):
         """用户行为分析
@@ -7255,9 +8304,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ParseUserBehaviorRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ParseUserBehaviorResponse`
         """
-        return self._parse_user_behavior_with_http_info(request)
+        http_info = self._parse_user_behavior_http_info(request)
+        return self._call_api(**http_info)
 
-    def _parse_user_behavior_with_http_info(self, request):
+    def parse_user_behavior_invoker(self, request):
+        http_info = self._parse_user_behavior_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _parse_user_behavior_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/datamap/uba",
+            "request_type": request.__class__.__name__,
+            "response_type": "ParseUserBehaviorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7274,11 +8336,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7287,20 +8349,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/datamap/uba',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ParseUserBehaviorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def pay_for_dgc_one_key(self, request):
         """DataArtsStudio实例一键购买接口
@@ -7313,9 +8371,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.PayForDgcOneKeyRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PayForDgcOneKeyResponse`
         """
-        return self._pay_for_dgc_one_key_with_http_info(request)
+        http_info = self._pay_for_dgc_one_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _pay_for_dgc_one_key_with_http_info(self, request):
+    def pay_for_dgc_one_key_invoker(self, request):
+        http_info = self._pay_for_dgc_one_key_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _pay_for_dgc_one_key_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/onekey-purchase",
+            "request_type": request.__class__.__name__,
+            "response_type": "PayForDgcOneKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7330,11 +8401,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7343,20 +8414,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/onekey-purchase',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PayForDgcOneKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_link_attribute_and_standard(self, request):
         """关联属性与数据标准
@@ -7369,9 +8436,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ResetLinkAttributeAndStandardRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ResetLinkAttributeAndStandardResponse`
         """
-        return self._reset_link_attribute_and_standard_with_http_info(request)
+        http_info = self._reset_link_attribute_and_standard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_link_attribute_and_standard_with_http_info(self, request):
+    def reset_link_attribute_and_standard_invoker(self, request):
+        http_info = self._reset_link_attribute_and_standard_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_link_attribute_and_standard_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/standards/attribute",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetLinkAttributeAndStandardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7388,11 +8468,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7401,20 +8481,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards/attribute',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetLinkAttributeAndStandardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rollback_approval(self, request):
         """撤回审批单
@@ -7427,9 +8503,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.RollbackApprovalRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.RollbackApprovalResponse`
         """
-        return self._rollback_approval_with_http_info(request)
+        http_info = self._rollback_approval_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rollback_approval_with_http_info(self, request):
+    def rollback_approval_invoker(self, request):
+        http_info = self._rollback_approval_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _rollback_approval_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/approvals",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollbackApprovalResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7448,9 +8537,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7459,20 +8548,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/approvals',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RollbackApprovalResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_approvals(self, request):
         """获取审批单
@@ -7485,9 +8570,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchApprovalsResponse`
         """
-        return self._search_approvals_with_http_info(request)
+        http_info = self._search_approvals_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_approvals_with_http_info(self, request):
+    def search_approvals_invoker(self, request):
+        http_info = self._search_approvals_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_approvals_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/approvals",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchApprovalsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7528,9 +8626,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7539,20 +8637,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/approvals',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchApprovalsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_atomic_indexes(self, request):
         """查找原子指标
@@ -7565,9 +8659,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchAtomicIndexesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchAtomicIndexesResponse`
         """
-        return self._search_atomic_indexes_with_http_info(request)
+        http_info = self._search_atomic_indexes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_atomic_indexes_with_http_info(self, request):
+    def search_atomic_indexes_invoker(self, request):
+        http_info = self._search_atomic_indexes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_atomic_indexes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/atomic-indexs",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchAtomicIndexesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7604,9 +8711,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7615,20 +8722,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/atomic-indexs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchAtomicIndexesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_authorize_app(self, request):
         """查询API已授权的APP
@@ -7641,9 +8744,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchAuthorizeAppRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchAuthorizeAppResponse`
         """
-        return self._search_authorize_app_with_http_info(request)
+        http_info = self._search_authorize_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_authorize_app_with_http_info(self, request):
+    def search_authorize_app_invoker(self, request):
+        http_info = self._search_authorize_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_authorize_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/authorize/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchAuthorizeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7668,9 +8784,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7679,20 +8795,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/authorize/apis/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchAuthorizeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_bind_api(self, request):
         """查询APP已拥有授权的API
@@ -7705,9 +8817,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchBindApiRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchBindApiResponse`
         """
-        return self._search_bind_api_with_http_info(request)
+        http_info = self._search_bind_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_bind_api_with_http_info(self, request):
+    def search_bind_api_invoker(self, request):
+        http_info = self._search_bind_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_bind_api_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/authorize/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchBindApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7732,9 +8857,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7743,20 +8868,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/authorize/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchBindApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_catalogs(self, request):
         """查询流程架构列表
@@ -7769,9 +8890,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchCatalogsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchCatalogsResponse`
         """
-        return self._search_catalogs_with_http_info(request)
+        http_info = self._search_catalogs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_catalogs_with_http_info(self, request):
+    def search_catalogs_invoker(self, request):
+        http_info = self._search_catalogs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_catalogs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/biz/catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCatalogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7802,9 +8936,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7813,20 +8947,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz/catalogs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCatalogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_code_table_values(self, request):
         """查看码表字段值
@@ -7839,9 +8969,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchCodeTableValuesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchCodeTableValuesResponse`
         """
-        return self._search_code_table_values_with_http_info(request)
+        http_info = self._search_code_table_values_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_code_table_values_with_http_info(self, request):
+    def search_code_table_values_invoker(self, request):
+        http_info = self._search_code_table_values_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_code_table_values_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/code-tables/{id}/values",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCodeTableValuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7864,9 +9007,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7875,20 +9018,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/code-tables/{id}/values',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCodeTableValuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_code_tables(self, request):
         """查询码表列表
@@ -7901,9 +9040,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchCodeTablesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchCodeTablesResponse`
         """
-        return self._search_code_tables_with_http_info(request)
+        http_info = self._search_code_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_code_tables_with_http_info(self, request):
+    def search_code_tables_invoker(self, request):
+        http_info = self._search_code_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_code_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/code-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCodeTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7938,9 +9090,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7949,20 +9101,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/code-tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCodeTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_customized_fields(self, request):
         """查询自定义项
@@ -7975,9 +9123,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchCustomizedFieldsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchCustomizedFieldsResponse`
         """
-        return self._search_customized_fields_with_http_info(request)
+        http_info = self._search_customized_fields_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_customized_fields_with_http_info(self, request):
+    def search_customized_fields_invoker(self, request):
+        http_info = self._search_customized_fields_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_customized_fields_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/customized-fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCustomizedFieldsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8000,9 +9161,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8011,20 +9172,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/customized-fields',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCustomizedFieldsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_dw_by_type(self, request):
         """获取数据连接信息
@@ -8037,9 +9194,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchDwByTypeRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchDwByTypeResponse`
         """
-        return self._search_dw_by_type_with_http_info(request)
+        http_info = self._search_dw_by_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_dw_by_type_with_http_info(self, request):
+    def search_dw_by_type_invoker(self, request):
+        http_info = self._search_dw_by_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_dw_by_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/atlas/data-warehouses",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchDwByTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8064,9 +9234,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8075,20 +9245,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/atlas/data-warehouses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchDwByTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_id_by_path(self, request):
         """通过路径获取id
@@ -8101,9 +9267,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchIdByPathRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchIdByPathResponse`
         """
-        return self._search_id_by_path_with_http_info(request)
+        http_info = self._search_id_by_path_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_id_by_path_with_http_info(self, request):
+    def search_id_by_path_invoker(self, request):
+        http_info = self._search_id_by_path_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_id_by_path_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/ids",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchIdByPathResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8128,9 +9307,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8139,20 +9318,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/ids',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchIdByPathResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_subject(self, request):
         """查找主题列表
@@ -8165,9 +9340,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchSubjectRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchSubjectResponse`
         """
-        return self._search_subject_with_http_info(request)
+        http_info = self._search_subject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_subject_with_http_info(self, request):
+    def search_subject_invoker(self, request):
+        http_info = self._search_subject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_subject_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/subjects",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchSubjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8202,9 +9390,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8213,20 +9401,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/subjects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchSubjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_subject_new(self, request):
         """查找主题列表(新)
@@ -8239,9 +9423,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchSubjectNewRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchSubjectNewResponse`
         """
-        return self._search_subject_new_with_http_info(request)
+        http_info = self._search_subject_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_subject_new_with_http_info(self, request):
+    def search_subject_new_invoker(self, request):
+        http_info = self._search_subject_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_subject_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/design/subjects",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchSubjectNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8276,9 +9473,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8287,20 +9484,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/design/subjects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchSubjectNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_versions(self, request):
         """查找版本信息
@@ -8313,9 +9506,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchVersionsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchVersionsResponse`
         """
-        return self._search_versions_with_http_info(request)
+        http_info = self._search_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_versions_with_http_info(self, request):
+    def search_versions_invoker(self, request):
+        http_info = self._search_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8348,9 +9554,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8359,20 +9565,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_aggregation_logic_table_by_id(self, request):
         """查看汇总表详情
@@ -8385,9 +9587,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowAggregationLogicTableByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowAggregationLogicTableByIdResponse`
         """
-        return self._show_aggregation_logic_table_by_id_with_http_info(request)
+        http_info = self._show_aggregation_logic_table_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_aggregation_logic_table_by_id_with_http_info(self, request):
+    def show_aggregation_logic_table_by_id_invoker(self, request):
+        http_info = self._show_aggregation_logic_table_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_aggregation_logic_table_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/aggregation-logic-tables/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAggregationLogicTableByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8408,9 +9623,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8419,20 +9634,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/aggregation-logic-tables/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAggregationLogicTableByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_dashboard(self, request):
         """查询指定api 仪表板数据详情
@@ -8445,9 +9656,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowApiDashboardRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowApiDashboardResponse`
         """
-        return self._show_api_dashboard_with_http_info(request)
+        http_info = self._show_api_dashboard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_dashboard_with_http_info(self, request):
+    def show_api_dashboard_invoker(self, request):
+        http_info = self._show_api_dashboard_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_api_dashboard_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apis-dashboards/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiDashboardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8476,9 +9700,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8487,20 +9711,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apis-dashboards/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiDashboardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_apis_dashboard(self, request):
         """查询api 仪表板数据详情
@@ -8513,9 +9733,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowApisDashboardRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowApisDashboardResponse`
         """
-        return self._show_apis_dashboard_with_http_info(request)
+        http_info = self._show_apis_dashboard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_apis_dashboard_with_http_info(self, request):
+    def show_apis_dashboard_invoker(self, request):
+        http_info = self._show_apis_dashboard_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_apis_dashboard_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apis-dashboards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApisDashboardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8546,9 +9779,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8557,20 +9790,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apis-dashboards',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApisDashboardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_apis_detail(self, request):
         """查询api 统计数据详情
@@ -8583,9 +9812,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowApisDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowApisDetailResponse`
         """
-        return self._show_apis_detail_with_http_info(request)
+        http_info = self._show_apis_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_apis_detail_with_http_info(self, request):
+    def show_apis_detail_invoker(self, request):
+        http_info = self._show_apis_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_apis_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apis-detail/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApisDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8614,9 +9856,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8625,20 +9867,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apis-detail/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApisDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_apis_overview(self, request):
         """查询统计用户相关的总览开发指标
@@ -8651,9 +9889,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowApisOverviewRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowApisOverviewResponse`
         """
-        return self._show_apis_overview_with_http_info(request)
+        http_info = self._show_apis_overview_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_apis_overview_with_http_info(self, request):
+    def show_apis_overview_invoker(self, request):
+        http_info = self._show_apis_overview_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_apis_overview_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apis-overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApisOverviewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8678,9 +9929,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8689,20 +9940,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apis-overview',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApisOverviewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_info(self, request):
         """查询应用详情
@@ -8715,9 +9962,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowAppInfoRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowAppInfoResponse`
         """
-        return self._show_app_info_with_http_info(request)
+        http_info = self._show_app_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_info_with_http_info(self, request):
+    def show_app_info_invoker(self, request):
+        http_info = self._show_app_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8738,9 +9998,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8749,20 +10009,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_apply_detail(self, request):
         """获取申请详情
@@ -8775,9 +10031,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowApplyDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowApplyDetailResponse`
         """
-        return self._show_apply_detail_with_http_info(request)
+        http_info = self._show_apply_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_apply_detail_with_http_info(self, request):
+    def show_apply_detail_invoker(self, request):
+        http_info = self._show_apply_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_apply_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/applys/{apply_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplyDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8798,9 +10067,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8809,20 +10078,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/applys/{apply_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplyDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_apps_dashboard(self, request):
         """查询app 仪表板数据详情
@@ -8835,9 +10100,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowAppsDashboardRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowAppsDashboardResponse`
         """
-        return self._show_apps_dashboard_with_http_info(request)
+        http_info = self._show_apps_dashboard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_apps_dashboard_with_http_info(self, request):
+    def show_apps_dashboard_invoker(self, request):
+        http_info = self._show_apps_dashboard_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_apps_dashboard_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apps-dashboards",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppsDashboardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8866,9 +10144,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8877,20 +10155,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apps-dashboards',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppsDashboardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_apps_detail(self, request):
         """查询app 统计数据详情
@@ -8903,9 +10177,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowAppsDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowAppsDetailResponse`
         """
-        return self._show_apps_detail_with_http_info(request)
+        http_info = self._show_apps_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_apps_detail_with_http_info(self, request):
+    def show_apps_detail_invoker(self, request):
+        http_info = self._show_apps_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_apps_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apps-detail/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppsDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8932,9 +10219,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8943,20 +10230,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apps-detail/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppsDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_apps_overview(self, request):
         """查询统计用户相关的总览调用指标
@@ -8969,9 +10252,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowAppsOverviewRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowAppsOverviewResponse`
         """
-        return self._show_apps_overview_with_http_info(request)
+        http_info = self._show_apps_overview_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_apps_overview_with_http_info(self, request):
+    def show_apps_overview_invoker(self, request):
+        http_info = self._show_apps_overview_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_apps_overview_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/statistic/apps-overview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppsOverviewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8996,9 +10292,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9007,20 +10303,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/statistic/apps-overview',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppsOverviewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_atomic_index_by_id(self, request):
         """查看原子指标详情
@@ -9033,9 +10325,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowAtomicIndexByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowAtomicIndexByIdResponse`
         """
-        return self._show_atomic_index_by_id_with_http_info(request)
+        http_info = self._show_atomic_index_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_atomic_index_by_id_with_http_info(self, request):
+    def show_atomic_index_by_id_invoker(self, request):
+        http_info = self._show_atomic_index_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_atomic_index_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/atomic-indexs/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAtomicIndexByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9056,9 +10361,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9067,20 +10372,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/atomic-indexs/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAtomicIndexByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_biz_catalog_detail(self, request):
         """查找流程架构详情
@@ -9093,9 +10394,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowBizCatalogDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowBizCatalogDetailResponse`
         """
-        return self._show_biz_catalog_detail_with_http_info(request)
+        http_info = self._show_biz_catalog_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_biz_catalog_detail_with_http_info(self, request):
+    def show_biz_catalog_detail_invoker(self, request):
+        http_info = self._show_biz_catalog_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_biz_catalog_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/biz/catalogs/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBizCatalogDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9114,9 +10428,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9125,20 +10439,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz/catalogs/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBizCatalogDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_biz_metric_by_id(self, request):
         """查看指标详情
@@ -9151,9 +10461,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowBizMetricByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowBizMetricByIdResponse`
         """
-        return self._show_biz_metric_by_id_with_http_info(request)
+        http_info = self._show_biz_metric_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_biz_metric_by_id_with_http_info(self, request):
+    def show_biz_metric_by_id_invoker(self, request):
+        http_info = self._show_biz_metric_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_biz_metric_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/biz-metrics/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBizMetricByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9174,9 +10497,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9185,20 +10508,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz-metrics/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBizMetricByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_business_assets(self, request):
         """查询业务资产
@@ -9211,9 +10530,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowBusinessAssetsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowBusinessAssetsResponse`
         """
-        return self._show_business_assets_with_http_info(request)
+        http_info = self._show_business_assets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_business_assets_with_http_info(self, request):
+    def show_business_assets_invoker(self, request):
+        http_info = self._show_business_assets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_business_assets_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/asset/business-assets/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBusinessAssetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9230,11 +10562,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9243,20 +10575,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/business-assets/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBusinessAssetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_business_assets_statistic(self, request):
         """获取业务资产统计信息
@@ -9269,9 +10597,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowBusinessAssetsStatisticRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowBusinessAssetsStatisticResponse`
         """
-        return self._show_business_assets_statistic_with_http_info(request)
+        http_info = self._show_business_assets_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_business_assets_statistic_with_http_info(self, request):
+    def show_business_assets_statistic_invoker(self, request):
+        http_info = self._show_business_assets_statistic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_business_assets_statistic_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/asset/statistic/assets/business-assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBusinessAssetsStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9292,9 +10633,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9303,20 +10644,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/statistic/assets/business-assets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBusinessAssetsStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_catalog_detail(self, request):
         """查询服务目录
@@ -9329,9 +10666,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowCatalogDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowCatalogDetailResponse`
         """
-        return self._show_catalog_detail_with_http_info(request)
+        http_info = self._show_catalog_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_catalog_detail_with_http_info(self, request):
+    def show_catalog_detail_invoker(self, request):
+        http_info = self._show_catalog_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_catalog_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/{catalog_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCatalogDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9352,9 +10702,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9363,20 +10713,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/{catalog_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCatalogDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_code_table_by_id(self, request):
         """查看码表详情
@@ -9389,9 +10735,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowCodeTableByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowCodeTableByIdResponse`
         """
-        return self._show_code_table_by_id_with_http_info(request)
+        http_info = self._show_code_table_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_code_table_by_id_with_http_info(self, request):
+    def show_code_table_by_id_invoker(self, request):
+        http_info = self._show_code_table_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_code_table_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/code-tables/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCodeTableByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9410,9 +10769,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9421,20 +10780,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/code-tables/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCodeTableByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_compound_metric_by_id(self, request):
         """查看复合指标详情
@@ -9447,9 +10802,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowCompoundMetricByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowCompoundMetricByIdResponse`
         """
-        return self._show_compound_metric_by_id_with_http_info(request)
+        http_info = self._show_compound_metric_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_compound_metric_by_id_with_http_info(self, request):
+    def show_compound_metric_by_id_invoker(self, request):
+        http_info = self._show_compound_metric_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_compound_metric_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/compound-metrics/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCompoundMetricByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9470,9 +10838,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9481,20 +10849,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/compound-metrics/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCompoundMetricByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_condition_by_id(self, request):
         """查看限定详情
@@ -9507,9 +10871,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowConditionByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowConditionByIdResponse`
         """
-        return self._show_condition_by_id_with_http_info(request)
+        http_info = self._show_condition_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_condition_by_id_with_http_info(self, request):
+    def show_condition_by_id_invoker(self, request):
+        http_info = self._show_condition_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_condition_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/conditions/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConditionByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9530,9 +10907,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9541,20 +10918,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/conditions/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConditionByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_consistency_task_detail(self, request):
         """获取对账作业详情
@@ -9567,9 +10940,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowConsistencyTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowConsistencyTaskDetailResponse`
         """
-        return self._show_consistency_task_detail_with_http_info(request)
+        http_info = self._show_consistency_task_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_consistency_task_detail_with_http_info(self, request):
+    def show_consistency_task_detail_invoker(self, request):
+        http_info = self._show_consistency_task_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_consistency_task_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/consistency-tasks/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConsistencyTaskDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9588,9 +10974,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9599,20 +10985,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/consistency-tasks/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConsistencyTaskDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_profile(self, request):
         """资产信息
@@ -9625,9 +11007,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataProfileRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataProfileResponse`
         """
-        return self._show_data_profile_with_http_info(request)
+        http_info = self._show_data_profile_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_profile_with_http_info(self, request):
+    def show_data_profile_invoker(self, request):
+        http_info = self._show_data_profile_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_data_profile_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/asset/profile",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataProfileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9652,9 +11047,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9663,20 +11058,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/profile',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataProfileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_sets(self, request):
         """资产搜索
@@ -9689,9 +11080,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataSetsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataSetsResponse`
         """
-        return self._show_data_sets_with_http_info(request)
+        http_info = self._show_data_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_sets_with_http_info(self, request):
+    def show_data_sets_invoker(self, request):
+        http_info = self._show_data_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_data_sets_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/datamap/entities/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9708,11 +11112,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9721,20 +11125,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/datamap/entities/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dataconnection(self, request):
         """查询单个数据连接信息
@@ -9747,9 +11147,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataconnectionRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDataconnectionResponse`
         """
-        return self._show_dataconnection_with_http_info(request)
+        http_info = self._show_dataconnection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dataconnection_with_http_info(self, request):
+    def show_dataconnection_invoker(self, request):
+        http_info = self._show_dataconnection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dataconnection_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/data-connections/{data_connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataconnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9768,9 +11181,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9779,20 +11192,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-connections/{data_connection_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataconnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_derivative_index_by_id(self, request):
         """查看衍生指标详情
@@ -9805,9 +11214,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDerivativeIndexByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDerivativeIndexByIdResponse`
         """
-        return self._show_derivative_index_by_id_with_http_info(request)
+        http_info = self._show_derivative_index_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_derivative_index_by_id_with_http_info(self, request):
+    def show_derivative_index_by_id_invoker(self, request):
+        http_info = self._show_derivative_index_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_derivative_index_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/derivative-indexs/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDerivativeIndexByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9828,9 +11250,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9839,20 +11261,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/derivative-indexs/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDerivativeIndexByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dimension_by_id(self, request):
         """查看维度详情
@@ -9865,9 +11283,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDimensionByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDimensionByIdResponse`
         """
-        return self._show_dimension_by_id_with_http_info(request)
+        http_info = self._show_dimension_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dimension_by_id_with_http_info(self, request):
+    def show_dimension_by_id_invoker(self, request):
+        http_info = self._show_dimension_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dimension_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/dimensions/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDimensionByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9888,9 +11319,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9899,20 +11330,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/dimensions/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDimensionByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dimension_logic_table_by_id(self, request):
         """查看维度表详情
@@ -9925,9 +11352,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowDimensionLogicTableByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowDimensionLogicTableByIdResponse`
         """
-        return self._show_dimension_logic_table_by_id_with_http_info(request)
+        http_info = self._show_dimension_logic_table_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dimension_logic_table_by_id_with_http_info(self, request):
+    def show_dimension_logic_table_by_id_invoker(self, request):
+        http_info = self._show_dimension_logic_table_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dimension_logic_table_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/dimension-logic-tables/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDimensionLogicTableByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9948,9 +11388,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9959,20 +11399,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/dimension-logic-tables/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDimensionLogicTableByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_entities(self, request):
         """查询技术资产
@@ -9985,9 +11421,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowEntitiesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowEntitiesResponse`
         """
-        return self._show_entities_with_http_info(request)
+        http_info = self._show_entities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_entities_with_http_info(self, request):
+    def show_entities_invoker(self, request):
+        http_info = self._show_entities_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_entities_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/asset/entities/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEntitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10004,11 +11453,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10017,20 +11466,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/entities/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEntitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_entity_info_by_guid(self, request):
         """根据guid获取资产详情
@@ -10043,9 +11488,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowEntityInfoByGuidRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowEntityInfoByGuidResponse`
         """
-        return self._show_entity_info_by_guid_with_http_info(request)
+        http_info = self._show_entity_info_by_guid_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_entity_info_by_guid_with_http_info(self, request):
+    def show_entity_info_by_guid_invoker(self, request):
+        http_info = self._show_entity_info_by_guid_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_entity_info_by_guid_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/asset/entities/{guid}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEntityInfoByGuidResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10064,9 +11522,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10075,20 +11533,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/entities/{guid}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEntityInfoByGuidResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_fact_logic_table_by_id(self, request):
         """查看事实表详情
@@ -10101,9 +11555,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactLogicTableByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactLogicTableByIdResponse`
         """
-        return self._show_fact_logic_table_by_id_with_http_info(request)
+        http_info = self._show_fact_logic_table_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_fact_logic_table_by_id_with_http_info(self, request):
+    def show_fact_logic_table_by_id_invoker(self, request):
+        http_info = self._show_fact_logic_table_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_fact_logic_table_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/fact-logic-tables/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactLogicTableByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10124,9 +11591,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10135,20 +11602,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/fact-logic-tables/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFactLogicTableByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_factory_env(self, request):
         """查询环境变量信息
@@ -10161,9 +11624,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryEnvRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactoryEnvResponse`
         """
-        return self._show_factory_env_with_http_info(request)
+        http_info = self._show_factory_env_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_factory_env_with_http_info(self, request):
+    def show_factory_env_invoker(self, request):
+        http_info = self._show_factory_env_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_factory_env_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/env",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactoryEnvResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10180,9 +11656,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10191,20 +11667,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/factory/env',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFactoryEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_factory_supplement_data(self, request):
         """查询所有的补数据实例
@@ -10217,9 +11689,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactorySupplementDataRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowFactorySupplementDataResponse`
         """
-        return self._show_factory_supplement_data_with_http_info(request)
+        http_info = self._show_factory_supplement_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_factory_supplement_data_with_http_info(self, request):
+    def show_factory_supplement_data_invoker(self, request):
+        http_info = self._show_factory_supplement_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_factory_supplement_data_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/factory/supplement-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFactorySupplementDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10252,9 +11737,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -10263,20 +11748,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/factory/supplement-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFactorySupplementDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_glossary_list(self, request):
         """查询标签列表
@@ -10289,9 +11770,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowGlossaryListRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowGlossaryListResponse`
         """
-        return self._show_glossary_list_with_http_info(request)
+        http_info = self._show_glossary_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_glossary_list_with_http_info(self, request):
+    def show_glossary_list_invoker(self, request):
+        http_info = self._show_glossary_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_glossary_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGlossaryListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10326,9 +11820,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10337,20 +11831,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGlossaryListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_log(self, request):
         """获取任务日志
@@ -10363,9 +11853,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowInstanceLogRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowInstanceLogResponse`
         """
-        return self._show_instance_log_with_http_info(request)
+        http_info = self._show_instance_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_log_with_http_info(self, request):
+    def show_instance_log_invoker(self, request):
+        http_info = self._show_instance_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_log_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/metadata/tasks/{task_id}/{instance_id}/log",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10386,11 +11889,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10399,20 +11902,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/metadata/tasks/{task_id}/{instance_id}/log',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_result(self, request):
         """获取实例结果
@@ -10425,9 +11924,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowInstanceResultRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowInstanceResultResponse`
         """
-        return self._show_instance_result_with_http_info(request)
+        http_info = self._show_instance_result_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_result_with_http_info(self, request):
+    def show_instance_result_invoker(self, request):
+        http_info = self._show_instance_result_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_result_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/instances/{instance_id}/result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceResultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10446,9 +11958,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10457,20 +11969,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/instances/{instance_id}/result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceResultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_message_detail(self, request):
         """获取消息详情
@@ -10483,9 +11991,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowMessageDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowMessageDetailResponse`
         """
-        return self._show_message_detail_with_http_info(request)
+        http_info = self._show_message_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_message_detail_with_http_info(self, request):
+    def show_message_detail_invoker(self, request):
+        http_info = self._show_message_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_message_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/messages/{message_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMessageDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10506,9 +12027,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10517,20 +12038,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/messages/{message_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMessageDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metric_assets(self, request):
         """查询指标资产
@@ -10543,9 +12060,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowMetricAssetsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowMetricAssetsResponse`
         """
-        return self._show_metric_assets_with_http_info(request)
+        http_info = self._show_metric_assets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metric_assets_with_http_info(self, request):
+    def show_metric_assets_invoker(self, request):
+        http_info = self._show_metric_assets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metric_assets_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/asset/metric-assets/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetricAssetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10562,11 +12092,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10575,20 +12105,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/metric-assets/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMetricAssetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metric_tree(self, request):
         """查询指标资产目录树
@@ -10601,9 +12127,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowMetricTreeRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowMetricTreeResponse`
         """
-        return self._show_metric_tree_with_http_info(request)
+        http_info = self._show_metric_tree_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metric_tree_with_http_info(self, request):
+    def show_metric_tree_invoker(self, request):
+        http_info = self._show_metric_tree_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metric_tree_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/asset/metric-tree",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetricTreeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10620,9 +12159,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10631,20 +12170,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/metric-tree',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMetricTreeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_path_by_id(self, request):
         """通过id获取路径
@@ -10657,9 +12192,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowPathByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowPathByIdResponse`
         """
-        return self._show_path_by_id_with_http_info(request)
+        http_info = self._show_path_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_path_by_id_with_http_info(self, request):
+    def show_path_by_id_invoker(self, request):
+        http_info = self._show_path_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_path_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/{catalog_id}/paths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPathByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10684,9 +12232,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10695,20 +12243,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/{catalog_id}/paths',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPathByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_path_object_by_id(self, request):
         """通过id获取路径对象
@@ -10721,9 +12265,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowPathObjectByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowPathObjectByIdResponse`
         """
-        return self._show_path_object_by_id_with_http_info(request)
+        http_info = self._show_path_object_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_path_object_by_id_with_http_info(self, request):
+    def show_path_object_by_id_invoker(self, request):
+        http_info = self._show_path_object_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_path_object_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/{catalog_id}/layerpaths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPathObjectByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10748,9 +12305,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10759,20 +12316,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/{catalog_id}/layerpaths',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPathObjectByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quality_task_detail(self, request):
         """获取质量作业详情
@@ -10785,9 +12338,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowQualityTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowQualityTaskDetailResponse`
         """
-        return self._show_quality_task_detail_with_http_info(request)
+        http_info = self._show_quality_task_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quality_task_detail_with_http_info(self, request):
+    def show_quality_task_detail_invoker(self, request):
+        http_info = self._show_quality_task_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quality_task_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/quality-tasks/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQualityTaskDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10806,9 +12372,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10817,20 +12383,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/quality-tasks/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQualityTaskDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_relation_by_id(self, request):
         """查看关系详情
@@ -10843,9 +12405,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowRelationByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowRelationByIdResponse`
         """
-        return self._show_relation_by_id_with_http_info(request)
+        http_info = self._show_relation_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_relation_by_id_with_http_info(self, request):
+    def show_relation_by_id_invoker(self, request):
+        http_info = self._show_relation_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_relation_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/relation/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRelationByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10866,9 +12441,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10877,20 +12452,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/relation/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRelationByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_standard_by_id(self, request):
         """查看数据标准详情
@@ -10903,9 +12474,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardByIdResponse`
         """
-        return self._show_standard_by_id_with_http_info(request)
+        http_info = self._show_standard_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_standard_by_id_with_http_info(self, request):
+    def show_standard_by_id_invoker(self, request):
+        http_info = self._show_standard_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_standard_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/standards/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStandardByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10924,9 +12508,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10935,20 +12519,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStandardByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_standard_template(self, request):
         """查询数据标准模板
@@ -10961,9 +12541,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardTemplateRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowStandardTemplateResponse`
         """
-        return self._show_standard_template_with_http_info(request)
+        http_info = self._show_standard_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_standard_template_with_http_info(self, request):
+    def show_standard_template_invoker(self, request):
+        http_info = self._show_standard_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_standard_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/standards/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStandardTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10984,9 +12577,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10995,20 +12588,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStandardTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_table_model_by_id(self, request):
         """查看表模型详情
@@ -11021,9 +12610,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowTableModelByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowTableModelByIdResponse`
         """
-        return self._show_table_model_by_id_with_http_info(request)
+        http_info = self._show_table_model_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_table_model_by_id_with_http_info(self, request):
+    def show_table_model_by_id_invoker(self, request):
+        http_info = self._show_table_model_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_table_model_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/table-model/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTableModelByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11044,9 +12646,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11055,20 +12657,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/table-model/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTableModelByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tags(self, request):
         """搜索查询标签分页展示
@@ -11081,9 +12679,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowTagsRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowTagsResponse`
         """
-        return self._show_tags_with_http_info(request)
+        http_info = self._show_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tags_with_http_info(self, request):
+    def show_tags_invoker(self, request):
+        http_info = self._show_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/datamap/tags/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11100,11 +12711,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11113,20 +12724,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/datamap/tags/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_info(self, request):
         """查询采集任务详情
@@ -11139,9 +12746,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowTaskInfoRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowTaskInfoResponse`
         """
-        return self._show_task_info_with_http_info(request)
+        http_info = self._show_task_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_info_with_http_info(self, request):
+    def show_task_info_invoker(self, request):
+        http_info = self._show_task_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/metadata/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11160,9 +12780,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11171,20 +12791,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/metadata/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_list(self, request):
         """查询采集任务列表
@@ -11197,9 +12813,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowTaskListRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowTaskListResponse`
         """
-        return self._show_task_list_with_http_info(request)
+        http_info = self._show_task_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_list_with_http_info(self, request):
+    def show_task_list_invoker(self, request):
+        http_info = self._show_task_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_list_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/metadata/tasks/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11216,11 +12845,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11229,20 +12858,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/metadata/tasks/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_technical_assets_statistic(self, request):
         """获取技术资产统计信息
@@ -11255,9 +12880,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowTechnicalAssetsStatisticRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowTechnicalAssetsStatisticResponse`
         """
-        return self._show_technical_assets_statistic_with_http_info(request)
+        http_info = self._show_technical_assets_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_technical_assets_statistic_with_http_info(self, request):
+    def show_technical_assets_statistic_invoker(self, request):
+        http_info = self._show_technical_assets_statistic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_technical_assets_statistic_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/asset/statistic/assets/technical-assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTechnicalAssetsStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11280,9 +12918,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11291,20 +12929,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/asset/statistic/assets/technical-assets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTechnicalAssetsStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_templates_detail(self, request):
         """获取规则模板详情
@@ -11317,9 +12951,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowTemplatesDetailRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowTemplatesDetailResponse`
         """
-        return self._show_templates_detail_with_http_info(request)
+        http_info = self._show_templates_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_templates_detail_with_http_info(self, request):
+    def show_templates_detail_invoker(self, request):
+        http_info = self._show_templates_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_templates_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quality/rule-templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplatesDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11338,9 +12985,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11349,20 +12996,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/rule-templates/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplatesDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_unrelated_table(self, request):
         """无血缘关系表查询
@@ -11375,9 +13018,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowUnrelatedTableRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowUnrelatedTableResponse`
         """
-        return self._show_unrelated_table_with_http_info(request)
+        http_info = self._show_unrelated_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_unrelated_table_with_http_info(self, request):
+    def show_unrelated_table_invoker(self, request):
+        http_info = self._show_unrelated_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_unrelated_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/lineage/search/unrelated/table",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUnrelatedTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11394,11 +13050,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11407,20 +13063,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/lineage/search/unrelated/table',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUnrelatedTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_work_space(self, request):
         """获取单个工作空间信息
@@ -11433,9 +13085,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowWorkSpaceResponse`
         """
-        return self._show_work_space_with_http_info(request)
+        http_info = self._show_work_space_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_work_space_with_http_info(self, request):
+    def show_work_space_invoker(self, request):
+        http_info = self._show_work_space_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_work_space_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/workspaces/{instance_id}/{workspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkSpaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11454,9 +13119,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11465,20 +13130,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/workspaces/{instance_id}/{workspace_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkSpaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_workspace_detail_by_id(self, request):
         """查询模型详情
@@ -11491,9 +13152,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowWorkspaceDetailByIdRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowWorkspaceDetailByIdResponse`
         """
-        return self._show_workspace_detail_by_id_with_http_info(request)
+        http_info = self._show_workspace_detail_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_workspace_detail_by_id_with_http_info(self, request):
+    def show_workspace_detail_by_id_invoker(self, request):
+        http_info = self._show_workspace_detail_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_workspace_detail_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/design/workspaces/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkspaceDetailByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11512,9 +13186,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11523,20 +13197,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/workspaces/{model_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkspaceDetailByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_factory_supplement_data_instance(self, request):
         """停止一个补数据实例
@@ -11549,9 +13219,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.StopFactorySupplementDataInstanceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.StopFactorySupplementDataInstanceResponse`
         """
-        return self._stop_factory_supplement_data_instance_with_http_info(request)
+        http_info = self._stop_factory_supplement_data_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_factory_supplement_data_instance_with_http_info(self, request):
+    def stop_factory_supplement_data_instance_invoker(self, request):
+        http_info = self._stop_factory_supplement_data_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_factory_supplement_data_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/factory/supplement-data/{instance_name}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopFactorySupplementDataInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11570,9 +13253,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -11581,20 +13264,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/factory/supplement-data/{instance_name}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopFactorySupplementDataInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app(self, request):
         """更新应用
@@ -11607,9 +13286,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateAppResponse`
         """
-        return self._update_app_with_http_info(request)
+        http_info = self._update_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_with_http_info(self, request):
+    def update_app_invoker(self, request):
+        http_info = self._update_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/service/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11630,11 +13322,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11643,20 +13335,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apps/{app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_biz_metric(self, request):
         """更新业务指标
@@ -11669,9 +13357,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateBizMetricRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateBizMetricResponse`
         """
-        return self._update_biz_metric_with_http_info(request)
+        http_info = self._update_biz_metric_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_biz_metric_with_http_info(self, request):
+    def update_biz_metric_invoker(self, request):
+        http_info = self._update_biz_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_biz_metric_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/biz-metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBizMetricResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11688,11 +13389,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11701,20 +13402,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/biz-metrics',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBizMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_catalog(self, request):
         """更新服务目录
@@ -11727,9 +13424,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateCatalogRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateCatalogResponse`
         """
-        return self._update_catalog_with_http_info(request)
+        http_info = self._update_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_catalog_with_http_info(self, request):
+    def update_catalog_invoker(self, request):
+        http_info = self._update_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_catalog_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/service/servicecatalogs/{catalog_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11750,11 +13460,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11763,20 +13473,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/servicecatalogs/{catalog_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_code_table(self, request):
         """修改码表
@@ -11789,9 +13495,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateCodeTableRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateCodeTableResponse`
         """
-        return self._update_code_table_with_http_info(request)
+        http_info = self._update_code_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_code_table_with_http_info(self, request):
+    def update_code_table_invoker(self, request):
+        http_info = self._update_code_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_code_table_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/code-tables/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCodeTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11810,11 +13529,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11823,20 +13542,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/code-tables/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCodeTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_code_table_values(self, request):
         """编辑码表字段值
@@ -11849,9 +13564,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateCodeTableValuesRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateCodeTableValuesResponse`
         """
-        return self._update_code_table_values_with_http_info(request)
+        http_info = self._update_code_table_values_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_code_table_values_with_http_info(self, request):
+    def update_code_table_values_invoker(self, request):
+        http_info = self._update_code_table_values_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_code_table_values_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/code-tables/{id}/values",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCodeTableValuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11870,11 +13598,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11883,20 +13611,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/code-tables/{id}/values',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCodeTableValuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_dataconnection(self, request):
         """更新数据连接信息
@@ -11909,9 +13633,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDataconnectionRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDataconnectionResponse`
         """
-        return self._update_dataconnection_with_http_info(request)
+        http_info = self._update_dataconnection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_dataconnection_with_http_info(self, request):
+    def update_dataconnection_invoker(self, request):
+        http_info = self._update_dataconnection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_dataconnection_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/data-connections/{data_connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataconnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11930,11 +13667,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11943,20 +13680,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-connections/{data_connection_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataconnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_directory(self, request):
         """修改目录
@@ -11969,9 +13702,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDirectoryRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateDirectoryResponse`
         """
-        return self._update_directory_with_http_info(request)
+        http_info = self._update_directory_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_directory_with_http_info(self, request):
+    def update_directory_invoker(self, request):
+        http_info = self._update_directory_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_directory_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/directorys",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDirectoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11988,11 +13734,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12001,20 +13747,89 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/directorys',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDirectoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def update_factory_job_name(self, request):
+        """修改作业名称
+
+        修改作业名称
+        
+        Please refer to HUAWEI cloud API Explorer for details.
+
+        :param request: Request instance for UpdateFactoryJobName
+        :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateFactoryJobNameRequest`
+        :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateFactoryJobNameResponse`
+        """
+        http_info = self._update_factory_job_name_http_info(request)
+        return self._call_api(**http_info)
+
+    def update_factory_job_name_invoker(self, request):
+        http_info = self._update_factory_job_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_factory_job_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/factory/jobs/{job_name}/rename",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFactoryJobNameResponse"
+            }
+
+        local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
+
+        cname = None
+
+        collection_formats = {}
+
+        path_params = {}
+        if 'job_name' in local_var_params:
+            path_params['job_name'] = local_var_params['job_name']
+
+        query_params = []
+
+        header_params = {}
+        if 'workspace' in local_var_params:
+            header_params['workspace'] = local_var_params['workspace']
+        if 'authorization' in local_var_params:
+            header_params['Authorization'] = local_var_params['authorization']
+        if 'host' in local_var_params:
+            header_params['Host'] = local_var_params['host']
+
+        form_params = {}
+
+        body = None
+        if 'body' in local_var_params:
+            body = local_var_params['body']
+        if isinstance(request, SdkStreamRequest):
+            body = request.get_file_stream()
+
+        response_headers = []
+
+        header_params['Content-Type'] = http_utils.select_header_content_type(
+            ['application/json;charset=UTF-8'])
+
+        auth_settings = []
+
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_standard(self, request):
         """修改数据标准
@@ -12027,9 +13842,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateStandardRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateStandardResponse`
         """
-        return self._update_standard_with_http_info(request)
+        http_info = self._update_standard_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_standard_with_http_info(self, request):
+    def update_standard_invoker(self, request):
+        http_info = self._update_standard_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_standard_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/standards/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStandardResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12048,11 +13876,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12061,20 +13889,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStandardResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_standard_template(self, request):
         """修改数据标准模板
@@ -12087,9 +13911,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateStandardTemplateRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateStandardTemplateResponse`
         """
-        return self._update_standard_template_with_http_info(request)
+        http_info = self._update_standard_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_standard_template_with_http_info(self, request):
+    def update_standard_template_invoker(self, request):
+        http_info = self._update_standard_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_standard_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/standards/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStandardTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12106,11 +13943,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12119,20 +13956,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/standards/templates',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStandardTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_subject(self, request):
         """修改主题
@@ -12145,9 +13978,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSubjectRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSubjectResponse`
         """
-        return self._update_subject_with_http_info(request)
+        http_info = self._update_subject_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_subject_with_http_info(self, request):
+    def update_subject_invoker(self, request):
+        http_info = self._update_subject_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_subject_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/subjects",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12164,11 +14010,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12177,20 +14023,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/subjects',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_subject_new(self, request):
         """修改主题(新)
@@ -12203,9 +14045,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSubjectNewRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateSubjectNewResponse`
         """
-        return self._update_subject_new_with_http_info(request)
+        http_info = self._update_subject_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_subject_new_with_http_info(self, request):
+    def update_subject_new_invoker(self, request):
+        http_info = self._update_subject_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_subject_new_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/design/subjects",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubjectNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12222,11 +14077,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12235,20 +14090,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/design/subjects',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubjectNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_table_model(self, request):
         """更新模型实体
@@ -12261,9 +14112,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateTableModelRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateTableModelResponse`
         """
-        return self._update_table_model_with_http_info(request)
+        http_info = self._update_table_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_table_model_with_http_info(self, request):
+    def update_table_model_invoker(self, request):
+        http_info = self._update_table_model_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_table_model_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/table-model",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTableModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12280,11 +14144,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12293,20 +14157,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/table-model',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTableModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_info(self, request):
         """编辑采集任务
@@ -12319,9 +14179,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateTaskInfoRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateTaskInfoResponse`
         """
-        return self._update_task_info_with_http_info(request)
+        http_info = self._update_task_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_info_with_http_info(self, request):
+    def update_task_info_invoker(self, request):
+        http_info = self._update_task_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_info_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/metadata/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12340,11 +14213,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12353,20 +14226,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/metadata/tasks/{task_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_template(self, request):
         """更新规则模板
@@ -12379,9 +14248,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateTemplateRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateTemplateResponse`
         """
-        return self._update_template_with_http_info(request)
+        http_info = self._update_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_template_with_http_info(self, request):
+    def update_template_invoker(self, request):
+        http_info = self._update_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/quality/rule-templates/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12400,11 +14282,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12413,20 +14295,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quality/rule-templates/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_work_space_user_or_group(self, request):
         """编辑工作空间用户或用户组
@@ -12439,9 +14317,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateWorkSpaceUserOrGroupRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateWorkSpaceUserOrGroupResponse`
         """
-        return self._update_work_space_user_or_group_with_http_info(request)
+        http_info = self._update_work_space_user_or_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_work_space_user_or_group_with_http_info(self, request):
+    def update_work_space_user_or_group_invoker(self, request):
+        http_info = self._update_work_space_user_or_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_work_space_user_or_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/{workspace_id}/users/{user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkSpaceUserOrGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12460,11 +14351,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12473,20 +14364,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{workspace_id}/users/{user_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWorkSpaceUserOrGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_workspace(self, request):
         """更新模型工作区
@@ -12499,9 +14386,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateWorkspaceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateWorkspaceResponse`
         """
-        return self._update_workspace_with_http_info(request)
+        http_info = self._update_workspace_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_workspace_with_http_info(self, request):
+    def update_workspace_invoker(self, request):
+        http_info = self._update_workspace_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_workspace_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/design/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkspaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12518,11 +14418,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12531,20 +14431,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/design/workspaces',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWorkspaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def authorize_action_api_to_instance(self, request):
         """API授权操作(授权/取消授权/申请/续约)
@@ -12557,9 +14453,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.AuthorizeActionApiToInstanceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AuthorizeActionApiToInstanceResponse`
         """
-        return self._authorize_action_api_to_instance_with_http_info(request)
+        http_info = self._authorize_action_api_to_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _authorize_action_api_to_instance_with_http_info(self, request):
+    def authorize_action_api_to_instance_invoker(self, request):
+        http_info = self._authorize_action_api_to_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _authorize_action_api_to_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apis/authorize/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "AuthorizeActionApiToInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12578,11 +14487,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12591,20 +14500,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/authorize/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AuthorizeActionApiToInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def authorize_api_to_instance(self, request):
         """批量授权API
@@ -12617,9 +14522,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.AuthorizeApiToInstanceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.AuthorizeApiToInstanceResponse`
         """
-        return self._authorize_api_to_instance_with_http_info(request)
+        http_info = self._authorize_api_to_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _authorize_api_to_instance_with_http_info(self, request):
+    def authorize_api_to_instance_invoker(self, request):
+        http_info = self._authorize_api_to_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _authorize_api_to_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}/instances/{instance_id}/authorize",
+            "request_type": request.__class__.__name__,
+            "response_type": "AuthorizeApiToInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12642,11 +14560,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12655,20 +14573,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}/instances/{instance_id}/authorize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AuthorizeApiToInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_api(self, request):
         """创建API
@@ -12681,9 +14595,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.CreateApiRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.CreateApiResponse`
         """
-        return self._create_api_with_http_info(request)
+        http_info = self._create_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_api_with_http_info(self, request):
+    def create_api_invoker(self, request):
+        http_info = self._create_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_api_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12702,11 +14629,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12715,20 +14642,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def debug_api(self, request):
         """调试API
@@ -12741,9 +14664,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DebugApiRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DebugApiResponse`
         """
-        return self._debug_api_with_http_info(request)
+        http_info = self._debug_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _debug_api_with_http_info(self, request):
+    def debug_api_invoker(self, request):
+        http_info = self._debug_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _debug_api_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}/instances/{instance_id}/test",
+            "request_type": request.__class__.__name__,
+            "response_type": "DebugApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12766,11 +14702,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12779,20 +14715,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}/instances/{instance_id}/test',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DebugApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api(self, request):
         """批量删除API
@@ -12805,9 +14737,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.DeleteApiRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.DeleteApiResponse`
         """
-        return self._delete_api_with_http_info(request)
+        http_info = self._delete_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_with_http_info(self, request):
+    def delete_api_invoker(self, request):
+        http_info = self._delete_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_api_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apis/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12826,11 +14771,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12839,20 +14784,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_api_to_instance(self, request):
         """API操作(下线/停用/恢复)
@@ -12865,9 +14806,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ExecuteApiToInstanceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ExecuteApiToInstanceResponse`
         """
-        return self._execute_api_to_instance_with_http_info(request)
+        http_info = self._execute_api_to_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_api_to_instance_with_http_info(self, request):
+    def execute_api_to_instance_invoker(self, request):
+        http_info = self._execute_api_to_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _execute_api_to_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}/instances/{instance_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteApiToInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12890,11 +14844,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12903,20 +14857,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}/instances/{instance_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteApiToInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis(self, request):
         """查询API列表
@@ -12929,9 +14879,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListApisRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListApisResponse`
         """
-        return self._list_apis_with_http_info(request)
+        http_info = self._list_apis_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_with_http_info(self, request):
+    def list_apis_invoker(self, request):
+        http_info = self._list_apis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12954,9 +14917,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12965,20 +14928,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_list(self, request):
         """查看API不同操作对应的实例信息
@@ -12991,9 +14950,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ListInstanceListRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ListInstanceListResponse`
         """
-        return self._list_instance_list_with_http_info(request)
+        http_info = self._list_instance_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_list_with_http_info(self, request):
+    def list_instance_list_invoker(self, request):
+        http_info = self._list_instance_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13028,9 +15000,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13039,20 +15011,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_api(self, request):
         """发布/下线/停用/恢复API
@@ -13065,9 +15033,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.PublishApiRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublishApiResponse`
         """
-        return self._publish_api_with_http_info(request)
+        http_info = self._publish_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_api_with_http_info(self, request):
+    def publish_api_invoker(self, request):
+        http_info = self._publish_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_api_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apis/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13086,11 +15067,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13099,20 +15080,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_api_to_instance(self, request):
         """发布API
@@ -13125,9 +15102,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.PublishApiToInstanceRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.PublishApiToInstanceResponse`
         """
-        return self._publish_api_to_instance_with_http_info(request)
+        http_info = self._publish_api_to_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_api_to_instance_with_http_info(self, request):
+    def publish_api_to_instance_invoker(self, request):
+        http_info = self._publish_api_to_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_api_to_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}/instances/{instance_id}/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishApiToInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13150,11 +15140,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13163,20 +15153,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}/instances/{instance_id}/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishApiToInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_debug_info(self, request):
         """查看API调试信息
@@ -13189,9 +15175,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchDebugInfoRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchDebugInfoResponse`
         """
-        return self._search_debug_info_with_http_info(request)
+        http_info = self._search_debug_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_debug_info_with_http_info(self, request):
+    def search_debug_info_invoker(self, request):
+        http_info = self._search_debug_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_debug_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}/debug-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchDebugInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13216,9 +15215,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13227,20 +15226,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}/debug-info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchDebugInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_publish_info(self, request):
         """查看API发布信息
@@ -13253,9 +15248,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.SearchPublishInfoRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.SearchPublishInfoResponse`
         """
-        return self._search_publish_info_with_http_info(request)
+        http_info = self._search_publish_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_publish_info_with_http_info(self, request):
+    def search_publish_info_invoker(self, request):
+        http_info = self._search_publish_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_publish_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}/publish-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchPublishInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13280,9 +15288,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13291,20 +15299,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}/publish-info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchPublishInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api(self, request):
         """查询API信息
@@ -13317,9 +15321,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.ShowApiRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.ShowApiResponse`
         """
-        return self._show_api_with_http_info(request)
+        http_info = self._show_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_with_http_info(self, request):
+    def show_api_invoker(self, request):
+        http_info = self._show_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_api_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13340,9 +15357,9 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13351,20 +15368,16 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_api(self, request):
         """更新API
@@ -13377,9 +15390,22 @@ class DataArtsStudioClient(Client):
         :type request: :class:`huaweicloudsdkdataartsstudio.v1.UpdateApiRequest`
         :rtype: :class:`huaweicloudsdkdataartsstudio.v1.UpdateApiResponse`
         """
-        return self._update_api_with_http_info(request)
+        http_info = self._update_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_api_with_http_info(self, request):
+    def update_api_invoker(self, request):
+        http_info = self._update_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_api_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/service/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13400,11 +15426,11 @@ class DataArtsStudioClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13413,20 +15439,25 @@ class DataArtsStudioClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service/apis/{api_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

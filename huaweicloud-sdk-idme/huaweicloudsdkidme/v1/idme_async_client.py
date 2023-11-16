@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkidme'")
 
 
 class IdmeAsyncClient(Client):
@@ -39,9 +44,21 @@ class IdmeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidme.v1.CreateXdmApplicationRequest`
         :rtype: :class:`huaweicloudsdkidme.v1.CreateXdmApplicationResponse`
         """
-        return self._create_xdm_application_with_http_info(request)
+        http_info = self._create_xdm_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_xdm_application_with_http_info(self, request):
+    def create_xdm_application_async_invoker(self, request):
+        http_info = self._create_xdm_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_xdm_application_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateXdmApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class IdmeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class IdmeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateXdmApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_xdm_application_async(self, request):
         """删除应用
@@ -96,9 +109,21 @@ class IdmeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidme.v1.DeleteXdmApplicationRequest`
         :rtype: :class:`huaweicloudsdkidme.v1.DeleteXdmApplicationResponse`
         """
-        return self._delete_xdm_application_with_http_info(request)
+        http_info = self._delete_xdm_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_xdm_application_with_http_info(self, request):
+    def delete_xdm_application_async_invoker(self, request):
+        http_info = self._delete_xdm_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_xdm_application_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteXdmApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,9 +140,9 @@ class IdmeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class IdmeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteXdmApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def deploy_application_async(self, request):
         """部署应用
@@ -153,9 +174,21 @@ class IdmeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidme.v1.DeployApplicationRequest`
         :rtype: :class:`huaweicloudsdkidme.v1.DeployApplicationResponse`
         """
-        return self._deploy_application_with_http_info(request)
+        http_info = self._deploy_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _deploy_application_with_http_info(self, request):
+    def deploy_application_async_invoker(self, request):
+        http_info = self._deploy_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _deploy_application_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/envs/{env_id}/apps/{app_id}/deploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeployApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -174,11 +207,11 @@ class IdmeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -187,20 +220,16 @@ class IdmeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/envs/{env_id}/apps/{app_id}/deploy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeployApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps_async(self, request):
         """获取租户下的应用清单
@@ -214,9 +243,21 @@ class IdmeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidme.v1.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkidme.v1.ListAppsResponse`
         """
-        return self._list_apps_with_http_info(request)
+        http_info = self._list_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_with_http_info(self, request):
+    def list_apps_async_invoker(self, request):
+        http_info = self._list_apps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apps_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,9 +272,9 @@ class IdmeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +283,16 @@ class IdmeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_envs_async(self, request):
         """获取运行服务清单
@@ -269,9 +306,21 @@ class IdmeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidme.v1.ListEnvsRequest`
         :rtype: :class:`huaweicloudsdkidme.v1.ListEnvsResponse`
         """
-        return self._list_envs_with_http_info(request)
+        http_info = self._list_envs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_envs_with_http_info(self, request):
+    def list_envs_async_invoker(self, request):
+        http_info = self._list_envs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_envs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/envs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -286,9 +335,9 @@ class IdmeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -297,20 +346,16 @@ class IdmeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/envs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_application_async(self, request):
         """编辑应用
@@ -324,9 +369,21 @@ class IdmeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidme.v1.ModifyApplicationRequest`
         :rtype: :class:`huaweicloudsdkidme.v1.ModifyApplicationResponse`
         """
-        return self._modify_application_with_http_info(request)
+        http_info = self._modify_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_application_with_http_info(self, request):
+    def modify_application_async_invoker(self, request):
+        http_info = self._modify_application_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _modify_application_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -343,11 +400,11 @@ class IdmeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -356,20 +413,16 @@ class IdmeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/apps/{app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def uninstall_async(self, request):
         """卸载应用
@@ -383,9 +436,21 @@ class IdmeAsyncClient(Client):
         :type request: :class:`huaweicloudsdkidme.v1.UninstallRequest`
         :rtype: :class:`huaweicloudsdkidme.v1.UninstallResponse`
         """
-        return self._uninstall_with_http_info(request)
+        http_info = self._uninstall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _uninstall_with_http_info(self, request):
+    def uninstall_async_invoker(self, request):
+        http_info = self._uninstall_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _uninstall_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/envs/{env_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UninstallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -404,9 +469,9 @@ class IdmeAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -415,20 +480,26 @@ class IdmeAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/envs/{env_id}/apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UninstallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -467,4 +538,4 @@ class IdmeAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

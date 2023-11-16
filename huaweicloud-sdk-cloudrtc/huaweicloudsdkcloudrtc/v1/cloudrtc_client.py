@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcloudrtc'")
 
 
 class CloudRTCClient(Client):
@@ -38,9 +43,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventResponse`
         """
-        return self._list_rtc_abnormal_event_with_http_info(request)
+        http_info = self._list_rtc_abnormal_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_abnormal_event_with_http_info(self, request):
+    def list_rtc_abnormal_event_invoker(self, request):
+        http_info = self._list_rtc_abnormal_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_abnormal_event_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/client/abnormalevent",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcAbnormalEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -65,9 +83,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -76,20 +94,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/client/abnormalevent',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcAbnormalEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_event(self, request):
         """查询详情事件接口
@@ -102,9 +116,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcEventRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcEventResponse`
         """
-        return self._list_rtc_event_with_http_info(request)
+        http_info = self._list_rtc_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_event_with_http_info(self, request):
+    def list_rtc_event_invoker(self, request):
+        http_info = self._list_rtc_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_event_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/client/event",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -129,9 +156,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -140,20 +167,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/client/event',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_abnormal_event_dimension(self, request):
         """查询异常事件用户分布
@@ -168,9 +191,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventDimensionRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventDimensionResponse`
         """
-        return self._list_rtc_abnormal_event_dimension_with_http_info(request)
+        http_info = self._list_rtc_abnormal_event_dimension_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_abnormal_event_dimension_with_http_info(self, request):
+    def list_rtc_abnormal_event_dimension_invoker(self, request):
+        http_info = self._list_rtc_abnormal_event_dimension_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_abnormal_event_dimension_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/rtc/data/abnormal-event/dimension",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcAbnormalEventDimensionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -195,9 +231,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -206,20 +242,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/rtc/data/abnormal-event/dimension',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcAbnormalEventDimensionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_abnormal_events(self, request):
         """查询用户异常体验事件
@@ -234,9 +266,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcAbnormalEventsResponse`
         """
-        return self._list_rtc_abnormal_events_with_http_info(request)
+        http_info = self._list_rtc_abnormal_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_abnormal_events_with_http_info(self, request):
+    def list_rtc_abnormal_events_invoker(self, request):
+        http_info = self._list_rtc_abnormal_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_abnormal_events_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/rtc/data/abnormal-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcAbnormalEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -265,9 +310,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -276,20 +321,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/rtc/data/abnormal-events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcAbnormalEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_client_qos_details(self, request):
         """查询用户通话指标
@@ -304,9 +345,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcClientQosDetailsRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcClientQosDetailsResponse`
         """
-        return self._list_rtc_client_qos_details_with_http_info(request)
+        http_info = self._list_rtc_client_qos_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_client_qos_details_with_http_info(self, request):
+    def list_rtc_client_qos_details_invoker(self, request):
+        http_info = self._list_rtc_client_qos_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_client_qos_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/client/qos/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcClientQosDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -355,9 +409,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -366,20 +420,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/client/qos/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcClientQosDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_history_quality(self, request):
         """查询历史质量
@@ -394,9 +444,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryQualityRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryQualityResponse`
         """
-        return self._list_rtc_history_quality_with_http_info(request)
+        http_info = self._list_rtc_history_quality_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_history_quality_with_http_info(self, request):
+    def list_rtc_history_quality_invoker(self, request):
+        http_info = self._list_rtc_history_quality_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_history_quality_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/history/quality",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcHistoryQualityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -428,9 +491,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -439,20 +502,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/history/quality',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcHistoryQualityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_history_scale(self, request):
         """查询历史规模
@@ -467,9 +526,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryScaleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryScaleResponse`
         """
-        return self._list_rtc_history_scale_with_http_info(request)
+        http_info = self._list_rtc_history_scale_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_history_scale_with_http_info(self, request):
+    def list_rtc_history_scale_invoker(self, request):
+        http_info = self._list_rtc_history_scale_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_history_scale_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/history/scale",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcHistoryScaleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -501,9 +573,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -512,20 +584,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/history/scale',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcHistoryScaleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_history_usage(self, request):
         """查询用量
@@ -538,9 +606,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryUsageRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcHistoryUsageResponse`
         """
-        return self._list_rtc_history_usage_with_http_info(request)
+        http_info = self._list_rtc_history_usage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_history_usage_with_http_info(self, request):
+    def list_rtc_history_usage_invoker(self, request):
+        http_info = self._list_rtc_history_usage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_history_usage_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/history/usage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcHistoryUsageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -571,9 +652,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -582,20 +663,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/history/usage',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcHistoryUsageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_realtime_network(self, request):
         """查询实时网络
@@ -610,9 +687,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeNetworkRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeNetworkResponse`
         """
-        return self._list_rtc_realtime_network_with_http_info(request)
+        http_info = self._list_rtc_realtime_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_realtime_network_with_http_info(self, request):
+    def list_rtc_realtime_network_invoker(self, request):
+        http_info = self._list_rtc_realtime_network_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_realtime_network_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/realtime/network",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcRealtimeNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -647,9 +737,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -658,20 +748,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/realtime/network',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcRealtimeNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_realtime_quality(self, request):
         """查询实时质量数据
@@ -686,9 +772,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeQualityRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeQualityResponse`
         """
-        return self._list_rtc_realtime_quality_with_http_info(request)
+        http_info = self._list_rtc_realtime_quality_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_realtime_quality_with_http_info(self, request):
+    def list_rtc_realtime_quality_invoker(self, request):
+        http_info = self._list_rtc_realtime_quality_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_realtime_quality_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/realtime/quality",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcRealtimeQualityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -723,9 +822,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -734,20 +833,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/realtime/quality',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcRealtimeQualityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_realtime_scale(self, request):
         """查询实时规模
@@ -762,9 +857,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleResponse`
         """
-        return self._list_rtc_realtime_scale_with_http_info(request)
+        http_info = self._list_rtc_realtime_scale_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_realtime_scale_with_http_info(self, request):
+    def list_rtc_realtime_scale_invoker(self, request):
+        http_info = self._list_rtc_realtime_scale_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_realtime_scale_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/realtime/scale",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcRealtimeScaleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -797,9 +905,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -808,20 +916,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/realtime/scale',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcRealtimeScaleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_realtime_scale_dimension(self, request):
         """查询实时规模分布
@@ -834,9 +938,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleDimensionRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRealtimeScaleDimensionResponse`
         """
-        return self._list_rtc_realtime_scale_dimension_with_http_info(request)
+        http_info = self._list_rtc_realtime_scale_dimension_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_realtime_scale_dimension_with_http_info(self, request):
+    def list_rtc_realtime_scale_dimension_invoker(self, request):
+        http_info = self._list_rtc_realtime_scale_dimension_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_realtime_scale_dimension_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/realtime/scale/dimension",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcRealtimeScaleDimensionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -869,9 +986,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -880,20 +997,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/realtime/scale/dimension',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcRealtimeScaleDimensionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_room_list(self, request):
         """查询房间列表
@@ -908,9 +1021,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRoomListRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcRoomListResponse`
         """
-        return self._list_rtc_room_list_with_http_info(request)
+        http_info = self._list_rtc_room_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_room_list_with_http_info(self, request):
+    def list_rtc_room_list_invoker(self, request):
+        http_info = self._list_rtc_room_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_room_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/rooms",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcRoomListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -947,9 +1073,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -958,20 +1084,16 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/rooms',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcRoomListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rtc_user_list(self, request):
         """查询用户列表
@@ -986,9 +1108,22 @@ class CloudRTCClient(Client):
         :type request: :class:`huaweicloudsdkcloudrtc.v1.ListRtcUserListRequest`
         :rtype: :class:`huaweicloudsdkcloudrtc.v1.ListRtcUserListResponse`
         """
-        return self._list_rtc_user_list_with_http_info(request)
+        http_info = self._list_rtc_user_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rtc_user_list_with_http_info(self, request):
+    def list_rtc_user_list_invoker(self, request):
+        http_info = self._list_rtc_user_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rtc_user_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rtc/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRtcUserListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1038,9 +1173,9 @@ class CloudRTCClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -1049,20 +1184,25 @@ class CloudRTCClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rtc/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRtcUserListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

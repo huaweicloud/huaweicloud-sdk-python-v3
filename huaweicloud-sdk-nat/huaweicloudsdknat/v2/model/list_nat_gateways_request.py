@@ -53,7 +53,7 @@ class ListNatGatewaysRequest:
         :type id: str
         :param enterprise_project_id: 企业项目ID。创建公网NAT网关实例时，关联的企业项目ID。
         :type enterprise_project_id: str
-        :param description: 公网NAT网关实例的描述，长度限制为255。
+        :param description: 公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         :param created_at: 公网NAT网关实例的创建时间，格式是yyyy-mm-dd hh:mm:ss.SSSSSS。
         :type created_at: str
@@ -159,7 +159,7 @@ class ListNatGatewaysRequest:
     def description(self):
         """Gets the description of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的描述，长度限制为255。
+        公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this ListNatGatewaysRequest.
         :rtype: str
@@ -170,7 +170,7 @@ class ListNatGatewaysRequest:
     def description(self, description):
         """Sets the description of this ListNatGatewaysRequest.
 
-        公网NAT网关实例的描述，长度限制为255。
+        公网NAT网关实例的描述，长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this ListNatGatewaysRequest.
         :type description: str

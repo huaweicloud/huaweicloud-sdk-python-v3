@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkosm'")
 
 
 class OsmAsyncClient(Client):
@@ -39,9 +44,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CheckHostsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckHostsResponse`
         """
-        return self._check_hosts_with_http_info(request)
+        http_info = self._check_hosts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_hosts_with_http_info(self, request):
+    def check_hosts_async_invoker(self, request):
+        http_info = self._check_hosts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_hosts_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/authorizations/authorization-details/{authorization_detail_id}/verify-host",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckHostsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -64,11 +81,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -77,20 +94,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations/authorization-details/{authorization_detail_id}/verify-host',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckHostsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_need_verify_async(self, request):
         """是否需要验证
@@ -104,9 +117,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckNeedVerifyResponse`
         """
-        return self._check_need_verify_with_http_info(request)
+        http_info = self._check_need_verify_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_need_verify_with_http_info(self, request):
+    def check_need_verify_async_invoker(self, request):
+        http_info = self._check_need_verify_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_need_verify_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/verifycodes/need-verify",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckNeedVerifyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -133,9 +158,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -144,20 +169,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/verifycodes/need-verify',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckNeedVerifyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_verify_codes_async(self, request):
         """验证联系方式
@@ -171,9 +192,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CheckVerifyCodesResponse`
         """
-        return self._check_verify_codes_with_http_info(request)
+        http_info = self._check_verify_codes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_verify_codes_with_http_info(self, request):
+    def check_verify_codes_async_invoker(self, request):
+        http_info = self._check_verify_codes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_verify_codes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/verifycodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckVerifyCodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -194,11 +227,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -207,20 +240,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/verifycodes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckVerifyCodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def confirm_authorizations_async(self, request):
         """租户确认授权
@@ -234,9 +263,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ConfirmAuthorizationsResponse`
         """
-        return self._confirm_authorizations_with_http_info(request)
+        http_info = self._confirm_authorizations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _confirm_authorizations_with_http_info(self, request):
+    def confirm_authorizations_async_invoker(self, request):
+        http_info = self._confirm_authorizations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _confirm_authorizations_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/servicerequest/authorizations/{authorization_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmAuthorizationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -259,11 +300,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -272,20 +313,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations/{authorization_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ConfirmAuthorizationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ask_question_async(self, request):
         """语料提问
@@ -299,9 +336,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateAskQuestionRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateAskQuestionResponse`
         """
-        return self._create_ask_question_with_http_info(request)
+        http_info = self._create_ask_question_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ask_question_with_http_info(self, request):
+    def create_ask_question_async_invoker(self, request):
+        http_info = self._create_ask_question_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_ask_question_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/qapairs/ask",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAskQuestionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -322,11 +371,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -335,20 +384,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/qapairs/ask',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAskQuestionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_case_extends_param_async(self, request):
         """提交工单扩展参数
@@ -362,9 +407,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCaseExtendsParamResponse`
         """
-        return self._create_case_extends_param_with_http_info(request)
+        http_info = self._create_case_extends_param_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_case_extends_param_with_http_info(self, request):
+    def create_case_extends_param_async_invoker(self, request):
+        http_info = self._create_case_extends_param_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_case_extends_param_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/extends-param",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCaseExtendsParamResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -387,11 +444,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -400,20 +457,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/extends-param',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCaseExtendsParamResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_case_labels_async(self, request):
         """添加工单关联标签接口
@@ -427,9 +480,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCaseLabelsResponse`
         """
-        return self._create_case_labels_with_http_info(request)
+        http_info = self._create_case_labels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_case_labels_with_http_info(self, request):
+    def create_case_labels_async_invoker(self, request):
+        http_info = self._create_case_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_case_labels_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCaseLabelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -455,9 +520,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -466,20 +531,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/labels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCaseLabelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cases_async(self, request):
         """创建工单
@@ -493,9 +554,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateCasesResponse`
         """
-        return self._create_cases_with_http_info(request)
+        http_info = self._create_cases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cases_with_http_info(self, request):
+    def create_cases_async_invoker(self, request):
+        http_info = self._create_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_cases_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -520,11 +593,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -533,20 +606,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_diagnose_feedback_async(self, request):
         """用户反馈是否有帮助
@@ -560,9 +629,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateDiagnoseFeedbackRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateDiagnoseFeedbackResponse`
         """
-        return self._create_diagnose_feedback_with_http_info(request)
+        http_info = self._create_diagnose_feedback_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_diagnose_feedback_with_http_info(self, request):
+    def create_diagnose_feedback_async_invoker(self, request):
+        http_info = self._create_diagnose_feedback_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_diagnose_feedback_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/servicerequest/diagnose/feedback",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDiagnoseFeedbackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -577,11 +658,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -590,20 +671,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/servicerequest/diagnose/feedback',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDiagnoseFeedbackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_diagnose_job_async(self, request):
         """开始一键诊断
@@ -617,9 +694,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateDiagnoseJobRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateDiagnoseJobResponse`
         """
-        return self._create_diagnose_job_with_http_info(request)
+        http_info = self._create_diagnose_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_diagnose_job_with_http_info(self, request):
+    def create_diagnose_job_async_invoker(self, request):
+        http_info = self._create_diagnose_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_diagnose_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/servicerequest/diagnose/job/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDiagnoseJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -634,11 +723,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -647,20 +736,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/servicerequest/diagnose/job/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDiagnoseJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_evaluate_async(self, request):
         """问答满意度评价
@@ -674,9 +759,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateEvaluateRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateEvaluateResponse`
         """
-        return self._create_evaluate_with_http_info(request)
+        http_info = self._create_evaluate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_evaluate_with_http_info(self, request):
+    def create_evaluate_async_invoker(self, request):
+        http_info = self._create_evaluate_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_evaluate_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/sessions/{session_id}/{request_id}/evaluate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEvaluateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,11 +798,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -714,20 +811,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/sessions/{session_id}/{request_id}/evaluate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEvaluateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_feedback_async(self, request):
         """创建举报反馈
@@ -741,9 +834,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateFeedbackRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateFeedbackResponse`
         """
-        return self._create_feedback_with_http_info(request)
+        http_info = self._create_feedback_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_feedback_with_http_info(self, request):
+    def create_feedback_async_invoker(self, request):
+        http_info = self._create_feedback_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_feedback_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/feedbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFeedbackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -758,11 +863,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -771,20 +876,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/feedbacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFeedbackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_labels_async(self, request):
         """创建标签
@@ -798,9 +899,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateLabelsResponse`
         """
-        return self._create_labels_with_http_info(request)
+        http_info = self._create_labels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_labels_with_http_info(self, request):
+    def create_labels_async_invoker(self, request):
+        http_info = self._create_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_labels_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLabelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -821,11 +934,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -834,20 +947,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/labels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLabelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_messages_async(self, request):
         """提交留言
@@ -861,9 +970,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateMessagesResponse`
         """
-        return self._create_messages_with_http_info(request)
+        http_info = self._create_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_messages_with_http_info(self, request):
+    def create_messages_async_invoker(self, request):
+        http_info = self._create_messages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_messages_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/message",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -886,11 +1007,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -899,20 +1020,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/message',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_privileges_async(self, request):
         """创建授权
@@ -926,9 +1043,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreatePrivilegesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreatePrivilegesResponse`
         """
-        return self._create_privileges_with_http_info(request)
+        http_info = self._create_privileges_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_privileges_with_http_info(self, request):
+    def create_privileges_async_invoker(self, request):
+        http_info = self._create_privileges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_privileges_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/privileges",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivilegesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -949,11 +1078,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -962,20 +1091,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/privileges',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivilegesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_qa_ask_async(self, request):
         """新问答接口
@@ -989,9 +1114,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateQaAskRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateQaAskResponse`
         """
-        return self._create_qa_ask_with_http_info(request)
+        http_info = self._create_qa_ask_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_qa_ask_with_http_info(self, request):
+    def create_qa_ask_async_invoker(self, request):
+        http_info = self._create_qa_ask_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_qa_ask_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/ask",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQaAskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1012,11 +1149,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1025,20 +1162,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/ask',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateQaAskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_qa_feedbacks_async(self, request):
         """反馈评价
@@ -1052,9 +1185,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateQaFeedbacksRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateQaFeedbacksResponse`
         """
-        return self._create_qa_feedbacks_with_http_info(request)
+        http_info = self._create_qa_feedbacks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_qa_feedbacks_with_http_info(self, request):
+    def create_qa_feedbacks_async_invoker(self, request):
+        http_info = self._create_qa_feedbacks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_qa_feedbacks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/feedbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQaFeedbacksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1077,11 +1222,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1090,20 +1235,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/feedbacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateQaFeedbacksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_question_in_session_async(self, request):
         """提问（在制定的会话中）
@@ -1117,9 +1258,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateQuestionInSessionRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateQuestionInSessionResponse`
         """
-        return self._create_question_in_session_with_http_info(request)
+        http_info = self._create_question_in_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_question_in_session_with_http_info(self, request):
+    def create_question_in_session_async_invoker(self, request):
+        http_info = self._create_question_in_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_question_in_session_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/sessions/{session_id}/ask",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateQuestionInSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1142,11 +1295,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1155,20 +1308,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/sessions/{session_id}/ask',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateQuestionInSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_relations_async(self, request):
         """创建关联
@@ -1182,9 +1331,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateRelationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateRelationsResponse`
         """
-        return self._create_relations_with_http_info(request)
+        http_info = self._create_relations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_relations_with_http_info(self, request):
+    def create_relations_async_invoker(self, request):
+        http_info = self._create_relations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_relations_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRelationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1207,11 +1368,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1220,20 +1381,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/relations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRelationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_scores_async(self, request):
         """提交评分
@@ -1247,9 +1404,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateScoresRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateScoresResponse`
         """
-        return self._create_scores_with_http_info(request)
+        http_info = self._create_scores_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_scores_with_http_info(self, request):
+    def create_scores_async_invoker(self, request):
+        http_info = self._create_scores_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_scores_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/score",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScoresResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1272,11 +1441,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1285,20 +1454,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/score',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScoresResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_session_async(self, request):
         """创建问答会话
@@ -1312,9 +1477,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.CreateSessionRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.CreateSessionResponse`
         """
-        return self._create_session_with_http_info(request)
+        http_info = self._create_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_session_with_http_info(self, request):
+    def create_session_async_invoker(self, request):
+        http_info = self._create_session_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_session_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1335,9 +1512,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1346,20 +1523,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/sessions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_accessories_async(self, request):
         """删除附件
@@ -1373,9 +1546,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteAccessoriesResponse`
         """
-        return self._delete_accessories_with_http_info(request)
+        http_info = self._delete_accessories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_accessories_with_http_info(self, request):
+    def delete_accessories_async_invoker(self, request):
+        http_info = self._delete_accessories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_accessories_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/servicerequest/accessorys/{accessory_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAccessoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1398,9 +1583,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1409,20 +1594,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/accessorys/{accessory_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAccessoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_case_labels_async(self, request):
         """删除工单关联标签接口
@@ -1436,9 +1617,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteCaseLabelsResponse`
         """
-        return self._delete_case_labels_with_http_info(request)
+        http_info = self._delete_case_labels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_case_labels_with_http_info(self, request):
+    def delete_case_labels_async_invoker(self, request):
+        http_info = self._delete_case_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_case_labels_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCaseLabelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1464,9 +1657,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1475,20 +1668,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/labels',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCaseLabelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_labels_async(self, request):
         """删除标签
@@ -1502,9 +1691,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DeleteLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteLabelsResponse`
         """
-        return self._delete_labels_with_http_info(request)
+        http_info = self._delete_labels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_labels_with_http_info(self, request):
+    def delete_labels_async_invoker(self, request):
+        http_info = self._delete_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_labels_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/servicerequest/labels/{label_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLabelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1527,9 +1728,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1538,20 +1739,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/labels/{label_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLabelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_relation_async(self, request):
         """删除关联
@@ -1565,9 +1762,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DeleteRelationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DeleteRelationResponse`
         """
-        return self._delete_relation_with_http_info(request)
+        http_info = self._delete_relation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_relation_with_http_info(self, request):
+    def delete_relation_async_invoker(self, request):
+        http_info = self._delete_relation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_relation_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRelationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1590,11 +1799,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1603,20 +1812,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/relations',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRelationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_accessories_async(self, request):
         """下载附件
@@ -1630,9 +1835,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadAccessoriesResponse`
         """
-        return self._download_accessories_with_http_info(request)
+        http_info = self._download_accessories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_accessories_with_http_info(self, request):
+    def download_accessories_async_invoker(self, request):
+        http_info = self._download_accessories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_accessories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/accessorys/{accessory_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadAccessoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1657,9 +1874,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1668,20 +1885,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/accessorys/{accessory_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadAccessoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_cases_async(self, request):
         """工单导出
@@ -1695,9 +1908,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DownloadCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadCasesResponse`
         """
-        return self._download_cases_with_http_info(request)
+        http_info = self._download_cases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_cases_with_http_info(self, request):
+    def download_cases_async_invoker(self, request):
+        http_info = self._download_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_cases_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadCasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1745,9 +1970,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1756,20 +1981,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/export',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadCasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_images_async(self, request):
         """图片展示
@@ -1783,9 +2004,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.DownloadImagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.DownloadImagesResponse`
         """
-        return self._download_images_with_http_info(request)
+        http_info = self._download_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_images_with_http_info(self, request):
+    def download_images_async_invoker(self, request):
+        http_info = self._download_images_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_images_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/accessorys/{accessory_id}/image",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1810,9 +2043,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1821,20 +2054,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/accessorys/{accessory_id}/image',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_accessory_access_urls_async(self, request):
         """租户批量获取下载链接
@@ -1848,9 +2077,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAccessoryAccessUrlsResponse`
         """
-        return self._list_accessory_access_urls_with_http_info(request)
+        http_info = self._list_accessory_access_urls_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_accessory_access_urls_with_http_info(self, request):
+    def list_accessory_access_urls_async_invoker(self, request):
+        http_info = self._list_accessory_access_urls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_accessory_access_urls_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/accessorys/access-urls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessoryAccessUrlsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1876,9 +2117,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1887,20 +2128,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/accessorys/access-urls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccessoryAccessUrlsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_agencies_async(self, request):
         """查询委托
@@ -1914,9 +2151,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListAgenciesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAgenciesResponse`
         """
-        return self._list_agencies_with_http_info(request)
+        http_info = self._list_agencies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_agencies_with_http_info(self, request):
+    def list_agencies_async_invoker(self, request):
+        http_info = self._list_agencies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_agencies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/agencies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAgenciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1937,9 +2186,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1948,20 +2197,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/agencies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAgenciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_area_codes_async(self, request):
         """查询国家码
@@ -1975,9 +2220,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListAreaCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAreaCodesResponse`
         """
-        return self._list_area_codes_with_http_info(request)
+        http_info = self._list_area_codes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_area_codes_with_http_info(self, request):
+    def list_area_codes_async_invoker(self, request):
+        http_info = self._list_area_codes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_area_codes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/area-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAreaCodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1998,9 +2255,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2009,20 +2266,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/area-codes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAreaCodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_articles_async(self, request):
         """查询案例
@@ -2036,9 +2289,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListArticlesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListArticlesResponse`
         """
-        return self._list_articles_with_http_info(request)
+        http_info = self._list_articles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_articles_with_http_info(self, request):
+    def list_articles_async_invoker(self, request):
+        http_info = self._list_articles_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_articles_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/articles/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListArticlesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2061,11 +2326,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2074,20 +2339,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/articles/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListArticlesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_authorizations_async(self, request):
         """查看授权列表
@@ -2101,9 +2362,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListAuthorizationsResponse`
         """
-        return self._list_authorizations_with_http_info(request)
+        http_info = self._list_authorizations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_authorizations_with_http_info(self, request):
+    def list_authorizations_async_invoker(self, request):
+        http_info = self._list_authorizations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_authorizations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/authorizations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuthorizationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2138,9 +2411,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2149,20 +2422,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuthorizationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_case_categories_async(self, request):
         """查询工单类目列表
@@ -2176,9 +2445,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCategoriesResponse`
         """
-        return self._list_case_categories_with_http_info(request)
+        http_info = self._list_case_categories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_case_categories_with_http_info(self, request):
+    def list_case_categories_async_invoker(self, request):
+        http_info = self._list_case_categories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_case_categories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/categories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaseCategoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2199,9 +2480,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2210,20 +2491,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/categories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaseCategoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_case_cc_emails_async(self, request):
         """查询工单抄送邮箱
@@ -2237,9 +2514,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCcEmailsResponse`
         """
-        return self._list_case_cc_emails_with_http_info(request)
+        http_info = self._list_case_cc_emails_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_case_cc_emails_with_http_info(self, request):
+    def list_case_cc_emails_async_invoker(self, request):
+        http_info = self._list_case_cc_emails_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_case_cc_emails_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/carbon-copy-emails",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaseCcEmailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2260,9 +2549,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2271,20 +2560,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/carbon-copy-emails',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaseCcEmailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_case_counts_async(self, request):
         """统计各状态工单数量
@@ -2298,9 +2583,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseCountsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseCountsResponse`
         """
-        return self._list_case_counts_with_http_info(request)
+        http_info = self._list_case_counts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_case_counts_with_http_info(self, request):
+    def list_case_counts_async_invoker(self, request):
+        http_info = self._list_case_counts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_case_counts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaseCountsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2323,9 +2620,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2334,20 +2631,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/count',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaseCountsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_case_labels_async(self, request):
         """查询工单关联标签接口
@@ -2361,9 +2654,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseLabelsResponse`
         """
-        return self._list_case_labels_with_http_info(request)
+        http_info = self._list_case_labels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_case_labels_with_http_info(self, request):
+    def list_case_labels_async_invoker(self, request):
+        http_info = self._list_case_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_case_labels_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaseLabelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2386,9 +2691,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2397,20 +2702,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/labels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaseLabelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_case_limits_async(self, request):
         """查询工单限制，比如抄送邮箱个数等
@@ -2424,9 +2725,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseLimitsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseLimitsResponse`
         """
-        return self._list_case_limits_with_http_info(request)
+        http_info = self._list_case_limits_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_case_limits_with_http_info(self, request):
+    def list_case_limits_async_invoker(self, request):
+        http_info = self._list_case_limits_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_case_limits_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/limits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaseLimitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2447,9 +2760,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2458,20 +2771,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/limits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaseLimitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_case_operate_logs_async(self, request):
         """查询工单操作日志
@@ -2485,9 +2794,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseOperateLogsResponse`
         """
-        return self._list_case_operate_logs_with_http_info(request)
+        http_info = self._list_case_operate_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_case_operate_logs_with_http_info(self, request):
+    def list_case_operate_logs_async_invoker(self, request):
+        http_info = self._list_case_operate_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_case_operate_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/operate-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaseOperateLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2516,9 +2837,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2527,20 +2848,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/operate-logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaseOperateLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_case_quotas_async(self, request):
         """查询工单配额
@@ -2554,9 +2871,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseQuotasRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseQuotasResponse`
         """
-        return self._list_case_quotas_with_http_info(request)
+        http_info = self._list_case_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_case_quotas_with_http_info(self, request):
+    def list_case_quotas_async_invoker(self, request):
+        http_info = self._list_case_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_case_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaseQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2581,9 +2910,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2592,20 +2921,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaseQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_case_templates_async(self, request):
         """查询问题类型对应模板
@@ -2619,9 +2944,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCaseTemplatesResponse`
         """
-        return self._list_case_templates_with_http_info(request)
+        http_info = self._list_case_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_case_templates_with_http_info(self, request):
+    def list_case_templates_async_invoker(self, request):
+        http_info = self._list_case_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_case_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCaseTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2644,9 +2981,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2655,20 +2992,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCaseTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cases_async(self, request):
         """查询工单列表接口
@@ -2682,9 +3015,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCasesResponse`
         """
-        return self._list_cases_with_http_info(request)
+        http_info = self._list_cases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cases_with_http_info(self, request):
+    def list_cases_async_invoker(self, request):
+        http_info = self._list_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cases_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2733,9 +3078,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2744,20 +3089,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_customers_regions_async(self, request):
         """查询用户关联的region
@@ -2771,9 +3112,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListCustomersRegionsResponse`
         """
-        return self._list_customers_regions_with_http_info(request)
+        http_info = self._list_customers_regions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_customers_regions_with_http_info(self, request):
+    def list_customers_regions_async_invoker(self, request):
+        http_info = self._list_customers_regions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_customers_regions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/customers/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomersRegionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2794,9 +3147,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2805,20 +3158,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/customers/regions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomersRegionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_diagnose_items_async(self, request):
         """根据itemIds查询指定的诊断检查项执行结果
@@ -2832,9 +3181,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseItemsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseItemsResponse`
         """
-        return self._list_diagnose_items_with_http_info(request)
+        http_info = self._list_diagnose_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_diagnose_items_with_http_info(self, request):
+    def list_diagnose_items_async_invoker(self, request):
+        http_info = self._list_diagnose_items_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_diagnose_items_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/servicerequest/diagnose/job/show-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDiagnoseItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2849,11 +3210,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2862,20 +3223,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/servicerequest/diagnose/job/show-items',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDiagnoseItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_diagnose_job_async(self, request):
         """查询诊断任务执行结果
@@ -2889,9 +3246,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseJobRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseJobResponse`
         """
-        return self._list_diagnose_job_with_http_info(request)
+        http_info = self._list_diagnose_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_diagnose_job_with_http_info(self, request):
+    def list_diagnose_job_async_invoker(self, request):
+        http_info = self._list_diagnose_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_diagnose_job_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/servicerequest/diagnose/job",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDiagnoseJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2908,9 +3277,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2919,20 +3288,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/servicerequest/diagnose/job',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDiagnoseJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_diagnose_records_async(self, request):
         """查询诊断历史记录列表
@@ -2946,9 +3311,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseRecordsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseRecordsResponse`
         """
-        return self._list_diagnose_records_with_http_info(request)
+        http_info = self._list_diagnose_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_diagnose_records_with_http_info(self, request):
+    def list_diagnose_records_async_invoker(self, request):
+        http_info = self._list_diagnose_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_diagnose_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/servicerequest/diagnose/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDiagnoseRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2969,9 +3346,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2980,20 +3357,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/servicerequest/diagnose/records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDiagnoseRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_diagnose_resources_async(self, request):
         """获取资源信息
@@ -3007,9 +3380,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListDiagnoseResourcesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListDiagnoseResourcesResponse`
         """
-        return self._list_diagnose_resources_with_http_info(request)
+        http_info = self._list_diagnose_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_diagnose_resources_with_http_info(self, request):
+    def list_diagnose_resources_async_invoker(self, request):
+        http_info = self._list_diagnose_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_diagnose_resources_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/servicerequest/diagnose/job/vm/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDiagnoseResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3024,11 +3409,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3037,20 +3422,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/servicerequest/diagnose/job/vm/resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDiagnoseResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_extends_params_async(self, request):
         """查询附加参数
@@ -3064,9 +3445,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListExtendsParamsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListExtendsParamsResponse`
         """
-        return self._list_extends_params_with_http_info(request)
+        http_info = self._list_extends_params_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_extends_params_with_http_info(self, request):
+    def list_extends_params_async_invoker(self, request):
+        http_info = self._list_extends_params_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_extends_params_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/extends-map",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExtendsParamsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3093,9 +3486,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3104,20 +3497,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/extends-map',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListExtendsParamsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_feedback_option_async(self, request):
         """查询反馈选项
@@ -3131,9 +3520,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListFeedbackOptionRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListFeedbackOptionResponse`
         """
-        return self._list_feedback_option_with_http_info(request)
+        http_info = self._list_feedback_option_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_feedback_option_with_http_info(self, request):
+    def list_feedback_option_async_invoker(self, request):
+        http_info = self._list_feedback_option_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_feedback_option_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/irobot/feedbacks/options",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFeedbackOptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3158,9 +3559,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3169,20 +3570,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/feedbacks/options',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFeedbackOptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_has_verified_contacts_async(self, request):
         """查询已验证的列表
@@ -3196,9 +3593,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHasVerifiedContactsResponse`
         """
-        return self._list_has_verified_contacts_with_http_info(request)
+        http_info = self._list_has_verified_contacts_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_has_verified_contacts_with_http_info(self, request):
+    def list_has_verified_contacts_async_invoker(self, request):
+        http_info = self._list_has_verified_contacts_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_has_verified_contacts_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/verifycodes/has-verified",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHasVerifiedContactsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3237,9 +3646,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3248,20 +3657,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/verifycodes/has-verified',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHasVerifiedContactsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_history_operate_logs_async(self, request):
         """查询堡垒机历史操作记录
@@ -3275,9 +3680,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHistoryOperateLogsResponse`
         """
-        return self._list_history_operate_logs_with_http_info(request)
+        http_info = self._list_history_operate_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_history_operate_logs_with_http_info(self, request):
+    def list_history_operate_logs_async_invoker(self, request):
+        http_info = self._list_history_operate_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_history_operate_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/authorizations/{authorization_id}/authorization-details/{authorization_detail_id}/sessions/{session_id}/operation-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHistoryOperateLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3312,9 +3729,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3323,20 +3740,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations/{authorization_id}/authorization-details/{authorization_detail_id}/sessions/{session_id}/operation-logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHistoryOperateLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_history_sessions_async(self, request):
         """查询堡垒机历史会话列表
@@ -3350,9 +3763,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListHistorySessionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListHistorySessionsResponse`
         """
-        return self._list_history_sessions_with_http_info(request)
+        http_info = self._list_history_sessions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_history_sessions_with_http_info(self, request):
+    def list_history_sessions_async_invoker(self, request):
+        http_info = self._list_history_sessions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_history_sessions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/authorizations/{authorization_id}/authorization-details/{authorization_detail_id}/history-sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHistorySessionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3383,9 +3808,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3394,20 +3819,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations/{authorization_id}/authorization-details/{authorization_detail_id}/history-sessions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHistorySessionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_labels_async(self, request):
         """查询标签
@@ -3421,9 +3842,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListLabelsResponse`
         """
-        return self._list_labels_with_http_info(request)
+        http_info = self._list_labels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_labels_with_http_info(self, request):
+    def list_labels_async_invoker(self, request):
+        http_info = self._list_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_labels_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/labels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLabelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3452,9 +3885,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3463,20 +3896,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/labels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLabelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_messages_async(self, request):
         """查询留言
@@ -3490,9 +3919,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListMessagesResponse`
         """
-        return self._list_messages_with_http_info(request)
+        http_info = self._list_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_messages_with_http_info(self, request):
+    def list_messages_async_invoker(self, request):
+        http_info = self._list_messages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_messages_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3521,9 +3962,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3532,20 +3973,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/messages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_more_instant_messages_async(self, request):
         """查询更多留言
@@ -3559,9 +3996,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListMoreInstantMessagesResponse`
         """
-        return self._list_more_instant_messages_with_http_info(request)
+        http_info = self._list_more_instant_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_more_instant_messages_with_http_info(self, request):
+    def list_more_instant_messages_async_invoker(self, request):
+        http_info = self._list_more_instant_messages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_more_instant_messages_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/instant-messages/more",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMoreInstantMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3592,9 +4041,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3603,20 +4052,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/instant-messages/more',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMoreInstantMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_new_instant_messages_async(self, request):
         """轮询查询即时消息
@@ -3630,9 +4075,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListNewInstantMessagesResponse`
         """
-        return self._list_new_instant_messages_with_http_info(request)
+        http_info = self._list_new_instant_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_new_instant_messages_with_http_info(self, request):
+    def list_new_instant_messages_async_invoker(self, request):
+        http_info = self._list_new_instant_messages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_new_instant_messages_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/instant-messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNewInstantMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3660,9 +4117,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3671,20 +4128,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/instant-messages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNewInstantMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notices_async(self, request):
         """查询公告
@@ -3698,9 +4151,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListNoticesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListNoticesResponse`
         """
-        return self._list_notices_with_http_info(request)
+        http_info = self._list_notices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notices_with_http_info(self, request):
+    def list_notices_async_invoker(self, request):
+        http_info = self._list_notices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_notices_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/notices/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNoticesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3721,11 +4186,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3734,20 +4199,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/notices/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNoticesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_order_incident_async(self, request):
         """工单列表
@@ -3761,9 +4222,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListOrderIncidentRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListOrderIncidentResponse`
         """
-        return self._list_order_incident_with_http_info(request)
+        http_info = self._list_order_incident_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_order_incident_with_http_info(self, request):
+    def list_order_incident_async_invoker(self, request):
+        http_info = self._list_order_incident_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_order_incident_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/osm/incidentservice/api/v1/queryincident",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOrderIncidentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3812,9 +4285,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3823,20 +4296,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/osm/incidentservice/api/v1/queryincident',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOrderIncidentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_privileges_async(self, request):
         """查询工单权限
@@ -3850,9 +4319,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListPrivilegesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListPrivilegesResponse`
         """
-        return self._list_privileges_with_http_info(request)
+        http_info = self._list_privileges_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_privileges_with_http_info(self, request):
+    def list_privileges_async_invoker(self, request):
+        http_info = self._list_privileges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_privileges_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/privileges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivilegesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3875,9 +4356,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3886,20 +4367,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/privileges',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivilegesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_problem_types_async(self, request):
         """查询问题类型列表
@@ -3913,9 +4390,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListProblemTypesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListProblemTypesResponse`
         """
-        return self._list_problem_types_with_http_info(request)
+        http_info = self._list_problem_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_problem_types_with_http_info(self, request):
+    def list_problem_types_async_invoker(self, request):
+        http_info = self._list_problem_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_problem_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/problems",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProblemTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3938,9 +4427,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3949,20 +4438,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/problems',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProblemTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_product_categories_async(self, request):
         """查询产品类型列表
@@ -3976,9 +4461,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListProductCategoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListProductCategoriesResponse`
         """
-        return self._list_product_categories_with_http_info(request)
+        http_info = self._list_product_categories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_product_categories_with_http_info(self, request):
+    def list_product_categories_async_invoker(self, request):
+        http_info = self._list_product_categories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_product_categories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/product-categories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductCategoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4001,9 +4498,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4012,20 +4509,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/product-categories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductCategoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_recommend_words_async(self, request):
         """查询推荐热词
@@ -4039,9 +4532,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListRecommendWordsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListRecommendWordsResponse`
         """
-        return self._list_recommend_words_with_http_info(request)
+        http_info = self._list_recommend_words_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_recommend_words_with_http_info(self, request):
+    def list_recommend_words_async_invoker(self, request):
+        http_info = self._list_recommend_words_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_recommend_words_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/irobot/recommend-words",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecommendWordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4068,9 +4573,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4079,20 +4584,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/recommend-words',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecommendWordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_regions_async(self, request):
         """查询区域列表
@@ -4106,9 +4607,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListRegionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListRegionsResponse`
         """
-        return self._list_regions_with_http_info(request)
+        http_info = self._list_regions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_regions_with_http_info(self, request):
+    def list_regions_async_invoker(self, request):
+        http_info = self._list_regions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_regions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/regions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRegionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4129,9 +4642,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4140,20 +4653,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/regions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRegionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_relation_async(self, request):
         """查询关联工单
@@ -4167,9 +4676,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListRelationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListRelationResponse`
         """
-        return self._list_relation_with_http_info(request)
+        http_info = self._list_relation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_relation_with_http_info(self, request):
+    def list_relation_async_invoker(self, request):
+        http_info = self._list_relation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_relation_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/relations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4192,9 +4713,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4203,20 +4724,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/relations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRelationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_satisfaction_dimensions_async(self, request):
         """工单满意度分类列表
@@ -4230,9 +4747,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSatisfactionDimensionsResponse`
         """
-        return self._list_satisfaction_dimensions_with_http_info(request)
+        http_info = self._list_satisfaction_dimensions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_satisfaction_dimensions_with_http_info(self, request):
+    def list_satisfaction_dimensions_async_invoker(self, request):
+        http_info = self._list_satisfaction_dimensions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_satisfaction_dimensions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/satisfaction-dimensions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSatisfactionDimensionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4253,9 +4782,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4264,20 +4793,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/satisfaction-dimensions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSatisfactionDimensionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_severities_async(self, request):
         """查询问题严重性列表
@@ -4291,9 +4816,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListSeveritiesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSeveritiesResponse`
         """
-        return self._list_severities_with_http_info(request)
+        http_info = self._list_severities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_severities_with_http_info(self, request):
+    def list_severities_async_invoker(self, request):
+        http_info = self._list_severities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_severities_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/config/severities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSeveritiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4318,9 +4855,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4329,20 +4866,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/config/severities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSeveritiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sub_customers_async(self, request):
         """查询子用户信息
@@ -4356,9 +4889,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListSubCustomersRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListSubCustomersResponse`
         """
-        return self._list_sub_customers_with_http_info(request)
+        http_info = self._list_sub_customers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sub_customers_with_http_info(self, request):
+    def list_sub_customers_async_invoker(self, request):
+        http_info = self._list_sub_customers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_sub_customers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/customers/sub-customers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubCustomersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4383,9 +4928,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4394,20 +4939,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/customers/sub-customers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubCustomersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tools_async(self, request):
         """查询工具
@@ -4421,9 +4962,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListToolsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListToolsResponse`
         """
-        return self._list_tools_with_http_info(request)
+        http_info = self._list_tools_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tools_with_http_info(self, request):
+    def list_tools_async_invoker(self, request):
+        http_info = self._list_tools_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tools_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/tools/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListToolsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4444,11 +4997,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4457,20 +5010,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/tools/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListToolsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_transport_histories_async(self, request):
         """查询堡垒机文件传输记录
@@ -4484,9 +5033,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListTransportHistoriesResponse`
         """
-        return self._list_transport_histories_with_http_info(request)
+        http_info = self._list_transport_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_transport_histories_with_http_info(self, request):
+    def list_transport_histories_async_invoker(self, request):
+        http_info = self._list_transport_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_transport_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/authorizations/{authorization_id}/authorization-details/{authorization_detail_id}/sessions/{session_id}/operation-file-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransportHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4521,9 +5082,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4532,20 +5093,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations/{authorization_id}/authorization-details/{authorization_detail_id}/sessions/{session_id}/operation-file-logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTransportHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_unread_new_instant_messages_async(self, request):
         """查询未读消息
@@ -4559,9 +5116,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ListUnreadNewInstantMessagesResponse`
         """
-        return self._list_unread_new_instant_messages_with_http_info(request)
+        http_info = self._list_unread_new_instant_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_unread_new_instant_messages_with_http_info(self, request):
+    def list_unread_new_instant_messages_async_invoker(self, request):
+        http_info = self._list_unread_new_instant_messages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_unread_new_instant_messages_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/instant-messages/unread",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUnreadNewInstantMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4587,9 +5156,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4598,20 +5167,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/instant-messages/unread',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUnreadNewInstantMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def revoke_message_async(self, request):
         """撤回留言
@@ -4625,9 +5190,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.RevokeMessageRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.RevokeMessageResponse`
         """
-        return self._revoke_message_with_http_info(request)
+        http_info = self._revoke_message_http_info(request)
+        return self._call_api(**http_info)
 
-    def _revoke_message_with_http_info(self, request):
+    def revoke_message_async_invoker(self, request):
+        http_info = self._revoke_message_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _revoke_message_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/instant-messages/{message_id}/withdraw",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokeMessageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4652,9 +5229,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4663,20 +5240,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/instant-messages/{message_id}/withdraw',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RevokeMessageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_verify_codes_async(self, request):
         """获取验证码
@@ -4690,9 +5263,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.SendVerifyCodesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.SendVerifyCodesResponse`
         """
-        return self._send_verify_codes_with_http_info(request)
+        http_info = self._send_verify_codes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_verify_codes_with_http_info(self, request):
+    def send_verify_codes_async_invoker(self, request):
+        http_info = self._send_verify_codes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_verify_codes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/verifycodes/send",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendVerifyCodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4713,11 +5298,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4726,20 +5311,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/verifycodes/send',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendVerifyCodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_accessory_limits_async(self, request):
         """附件限制
@@ -4753,9 +5334,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowAccessoryLimitsResponse`
         """
-        return self._show_accessory_limits_with_http_info(request)
+        http_info = self._show_accessory_limits_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_accessory_limits_with_http_info(self, request):
+    def show_accessory_limits_async_invoker(self, request):
+        http_info = self._show_accessory_limits_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_accessory_limits_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/accessorys/limits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAccessoryLimitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4776,9 +5369,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4787,20 +5380,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/accessorys/limits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAccessoryLimitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_associated_questions_async(self, request):
         """查询联想问题
@@ -4814,9 +5403,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowAssociatedQuestionsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowAssociatedQuestionsResponse`
         """
-        return self._show_associated_questions_with_http_info(request)
+        http_info = self._show_associated_questions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_associated_questions_with_http_info(self, request):
+    def show_associated_questions_async_invoker(self, request):
+        http_info = self._show_associated_questions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_associated_questions_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/qapairs/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssociatedQuestionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4837,11 +5438,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4850,20 +5451,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/qapairs/associate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssociatedQuestionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_authorization_detail_async(self, request):
         """查询授权详情
@@ -4877,9 +5474,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowAuthorizationDetailResponse`
         """
-        return self._show_authorization_detail_with_http_info(request)
+        http_info = self._show_authorization_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_authorization_detail_with_http_info(self, request):
+    def show_authorization_detail_async_invoker(self, request):
+        http_info = self._show_authorization_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_authorization_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/authorizations/{authorization_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuthorizationDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4904,9 +5513,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4915,20 +5524,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations/{authorization_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAuthorizationDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_case_detail_async(self, request):
         """查询工单详情
@@ -4942,9 +5547,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseDetailRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseDetailResponse`
         """
-        return self._show_case_detail_with_http_info(request)
+        http_info = self._show_case_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_case_detail_with_http_info(self, request):
+    def show_case_detail_async_invoker(self, request):
+        http_info = self._show_case_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_case_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/{case_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCaseDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4969,9 +5586,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4980,20 +5597,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCaseDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_case_extends_param_async(self, request):
         """查询工单扩展参数
@@ -5007,9 +5620,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseExtendsParamResponse`
         """
-        return self._show_case_extends_param_with_http_info(request)
+        http_info = self._show_case_extends_param_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_case_extends_param_with_http_info(self, request):
+    def show_case_extends_param_async_invoker(self, request):
+        http_info = self._show_case_extends_param_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_case_extends_param_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/extends-param",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCaseExtendsParamResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5034,9 +5659,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5045,20 +5670,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/extends-param',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCaseExtendsParamResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_case_status_async(self, request):
         """查询某个工单状态
@@ -5072,9 +5693,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowCaseStatusRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCaseStatusResponse`
         """
-        return self._show_case_status_with_http_info(request)
+        http_info = self._show_case_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_case_status_with_http_info(self, request):
+    def show_case_status_async_invoker(self, request):
+        http_info = self._show_case_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_case_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCaseStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5097,9 +5730,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5108,20 +5741,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCaseStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_configuration_async(self, request):
         """查询配置
@@ -5135,9 +5764,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowConfigurationRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowConfigurationResponse`
         """
-        return self._show_configuration_with_http_info(request)
+        http_info = self._show_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_configuration_with_http_info(self, request):
+    def show_configuration_async_invoker(self, request):
+        http_info = self._show_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_configuration_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/configurations/{config_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5154,9 +5795,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5165,20 +5806,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/configurations/{config_key}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_customer_privilege_policy_async(self, request):
         """查询提单权限
@@ -5192,9 +5829,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowCustomerPrivilegePolicyResponse`
         """
-        return self._show_customer_privilege_policy_with_http_info(request)
+        http_info = self._show_customer_privilege_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_customer_privilege_policy_with_http_info(self, request):
+    def show_customer_privilege_policy_async_invoker(self, request):
+        http_info = self._show_customer_privilege_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_customer_privilege_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/privileges/privilege-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomerPrivilegePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5215,9 +5864,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5226,20 +5875,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/privileges/privilege-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomerPrivilegePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_download_accessory_url_async(self, request):
         """附件下载地址
@@ -5253,9 +5898,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowDownloadAccessoryUrlRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowDownloadAccessoryUrlResponse`
         """
-        return self._show_download_accessory_url_with_http_info(request)
+        http_info = self._show_download_accessory_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_download_accessory_url_with_http_info(self, request):
+    def show_download_accessory_url_async_invoker(self, request):
+        http_info = self._show_download_accessory_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_download_accessory_url_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/accessorys/{accessory_id}/access-url",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDownloadAccessoryUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5278,9 +5935,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5289,20 +5946,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/accessorys/{accessory_id}/access-url',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDownloadAccessoryUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_latest_published_agreement_async(self, request):
         """查看最新发布版本协议详情
@@ -5316,9 +5969,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowLatestPublishedAgreementResponse`
         """
-        return self._show_latest_published_agreement_with_http_info(request)
+        http_info = self._show_latest_published_agreement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_latest_published_agreement_with_http_info(self, request):
+    def show_latest_published_agreement_async_invoker(self, request):
+        http_info = self._show_latest_published_agreement_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_latest_published_agreement_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/agreements/published-agreement",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLatestPublishedAgreementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5341,9 +6006,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5352,20 +6017,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/agreements/published-agreement',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLatestPublishedAgreementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_login_type_async(self, request):
         """查询登录类型
@@ -5379,9 +6040,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowLoginTypeRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowLoginTypeResponse`
         """
-        return self._show_login_type_with_http_info(request)
+        http_info = self._show_login_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_login_type_with_http_info(self, request):
+    def show_login_type_async_invoker(self, request):
+        http_info = self._show_login_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_login_type_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/authorizations/login-type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLoginTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5400,9 +6073,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5411,20 +6084,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations/login-type',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLoginTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_partners_cases_privilege_async(self, request):
         """查询伙伴工单权限
@@ -5438,9 +6107,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowPartnersCasesPrivilegeResponse`
         """
-        return self._show_partners_cases_privilege_with_http_info(request)
+        http_info = self._show_partners_cases_privilege_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_partners_cases_privilege_with_http_info(self, request):
+    def show_partners_cases_privilege_async_invoker(self, request):
+        http_info = self._show_partners_cases_privilege_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_partners_cases_privilege_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/partners/privilege/cases-processing",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPartnersCasesPrivilegeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5461,9 +6142,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5472,20 +6153,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/partners/privilege/cases-processing',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPartnersCasesPrivilegeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_partners_service_info_async(self, request):
         """查询关联伙伴服务信息
@@ -5499,9 +6176,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowPartnersServiceInfoResponse`
         """
-        return self._show_partners_service_info_with_http_info(request)
+        http_info = self._show_partners_service_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_partners_service_info_with_http_info(self, request):
+    def show_partners_service_info_async_invoker(self, request):
+        http_info = self._show_partners_service_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_partners_service_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/cases/partners/service-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPartnersServiceInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5526,9 +6215,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5537,20 +6226,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/partners/service-info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPartnersServiceInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_qa_pair_detail_async(self, request):
         """查询语料详情
@@ -5564,9 +6249,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowQaPairDetailRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowQaPairDetailResponse`
         """
-        return self._show_qa_pair_detail_with_http_info(request)
+        http_info = self._show_qa_pair_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_qa_pair_detail_with_http_info(self, request):
+    def show_qa_pair_detail_async_invoker(self, request):
+        http_info = self._show_qa_pair_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_qa_pair_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/irobot/qapairs/{qa_pair_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQaPairDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5589,9 +6286,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5600,20 +6297,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/qapairs/{qa_pair_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQaPairDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_qa_pairs_async(self, request):
         """查询语料
@@ -5627,9 +6320,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowQaPairsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowQaPairsResponse`
         """
-        return self._show_qa_pairs_with_http_info(request)
+        http_info = self._show_qa_pairs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_qa_pairs_with_http_info(self, request):
+    def show_qa_pairs_async_invoker(self, request):
+        http_info = self._show_qa_pairs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_qa_pairs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/irobot/qapairs/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQaPairsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5652,11 +6357,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5665,20 +6370,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/qapairs/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQaPairsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_signed_latest_published_agreement_async(self, request):
         """查询用户是否签署最新协议
@@ -5692,9 +6393,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowSignedLatestPublishedAgreementResponse`
         """
-        return self._show_signed_latest_published_agreement_with_http_info(request)
+        http_info = self._show_signed_latest_published_agreement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_signed_latest_published_agreement_with_http_info(self, request):
+    def show_signed_latest_published_agreement_async_invoker(self, request):
+        http_info = self._show_signed_latest_published_agreement_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_signed_latest_published_agreement_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/servicerequest/agreements/signed-latest",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSignedLatestPublishedAgreementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5717,9 +6430,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5728,20 +6441,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/agreements/signed-latest',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSignedLatestPublishedAgreementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_theme_async(self, request):
         """产品类型转为主题
@@ -5755,9 +6464,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.ShowThemeRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.ShowThemeResponse`
         """
-        return self._show_theme_with_http_info(request)
+        http_info = self._show_theme_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_theme_with_http_info(self, request):
+    def show_theme_async_invoker(self, request):
+        http_info = self._show_theme_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_theme_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/irobot/themes/convert",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowThemeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5784,9 +6505,9 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5795,20 +6516,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/irobot/themes/convert',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowThemeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def sign_published_agreement_async(self, request):
         """签署协议
@@ -5822,9 +6539,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.SignPublishedAgreementResponse`
         """
-        return self._sign_published_agreement_with_http_info(request)
+        http_info = self._sign_published_agreement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _sign_published_agreement_with_http_info(self, request):
+    def sign_published_agreement_async_invoker(self, request):
+        http_info = self._sign_published_agreement_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _sign_published_agreement_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/agreements/{id}/signed",
+            "request_type": request.__class__.__name__,
+            "response_type": "SignPublishedAgreementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5847,11 +6576,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5860,20 +6589,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/agreements/{id}/signed',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SignPublishedAgreementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_authorizations_async(self, request):
         """拒绝|撤销授权
@@ -5887,9 +6612,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateAuthorizationsResponse`
         """
-        return self._update_authorizations_with_http_info(request)
+        http_info = self._update_authorizations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_authorizations_with_http_info(self, request):
+    def update_authorizations_async_invoker(self, request):
+        http_info = self._update_authorizations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_authorizations_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/servicerequest/authorizations/{authorization_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAuthorizationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5914,11 +6651,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5927,20 +6664,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/authorizations/{authorization_id}/action',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAuthorizationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_case_contact_info_async(self, request):
         """修改联系方式
@@ -5954,9 +6687,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateCaseContactInfoResponse`
         """
-        return self._update_case_contact_info_with_http_info(request)
+        http_info = self._update_case_contact_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_case_contact_info_with_http_info(self, request):
+    def update_case_contact_info_async_invoker(self, request):
+        http_info = self._update_case_contact_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_case_contact_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/contact-info",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCaseContactInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5979,11 +6724,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5992,20 +6737,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/contact-info',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCaseContactInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cases_async(self, request):
         """工单操作
@@ -6019,9 +6760,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateCasesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateCasesResponse`
         """
-        return self._update_cases_with_http_info(request)
+        http_info = self._update_cases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cases_with_http_info(self, request):
+    def update_cases_async_invoker(self, request):
+        http_info = self._update_cases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_cases_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6046,11 +6799,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6059,20 +6812,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_labels_async(self, request):
         """修改标签
@@ -6086,9 +6835,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateLabelsRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateLabelsResponse`
         """
-        return self._update_labels_with_http_info(request)
+        http_info = self._update_labels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_labels_with_http_info(self, request):
+    def update_labels_async_invoker(self, request):
+        http_info = self._update_labels_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_labels_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/servicerequest/labels/{label_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLabelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6111,11 +6872,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6124,20 +6885,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/labels/{label_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLabelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_new_instant_messages_read_async(self, request):
         """设置消息已读
@@ -6151,9 +6908,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UpdateNewInstantMessagesReadResponse`
         """
-        return self._update_new_instant_messages_read_with_http_info(request)
+        http_info = self._update_new_instant_messages_read_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_new_instant_messages_read_with_http_info(self, request):
+    def update_new_instant_messages_read_async_invoker(self, request):
+        http_info = self._update_new_instant_messages_read_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_new_instant_messages_read_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/cases/{case_id}/instant-messages/unread",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNewInstantMessagesReadResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6176,11 +6945,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6189,20 +6958,16 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/cases/{case_id}/instant-messages/unread',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNewInstantMessagesReadResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_json_accessories_async(self, request):
         """上传附件
@@ -6216,9 +6981,21 @@ class OsmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesRequest`
         :rtype: :class:`huaweicloudsdkosm.v2.UploadJsonAccessoriesResponse`
         """
-        return self._upload_json_accessories_with_http_info(request)
+        http_info = self._upload_json_accessories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_json_accessories_with_http_info(self, request):
+    def upload_json_accessories_async_invoker(self, request):
+        http_info = self._upload_json_accessories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_json_accessories_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/servicerequest/accessorys/json-format-content",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadJsonAccessoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6239,11 +7016,11 @@ class OsmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6252,20 +7029,26 @@ class OsmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/servicerequest/accessorys/json-format-content',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadJsonAccessoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -6304,4 +7087,4 @@ class OsmAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdklakeformation'")
 
 
 class LakeFormationClient(Client):
@@ -38,9 +43,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ApplyForAccessRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ApplyForAccessResponse`
         """
-        return self._apply_for_access_with_http_info(request)
+        http_info = self._apply_for_access_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_for_access_with_http_info(self, request):
+    def apply_for_access_invoker(self, request):
+        http_info = self._apply_for_access_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _apply_for_access_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyForAccessResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/access',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyForAccessResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_authorize_interface(self, request):
         """批量授权
@@ -96,9 +110,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchAuthorizeInterfaceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchAuthorizeInterfaceResponse`
         """
-        return self._batch_authorize_interface_with_http_info(request)
+        http_info = self._batch_authorize_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_authorize_interface_with_http_info(self, request):
+    def batch_authorize_interface_invoker(self, request):
+        http_info = self._batch_authorize_interface_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_authorize_interface_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/policies/grant",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAuthorizeInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/policies/grant',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAuthorizeInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_cancel_authorization_interface(self, request):
         """取消批量授权
@@ -154,9 +177,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchCancelAuthorizationInterfaceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchCancelAuthorizationInterfaceResponse`
         """
-        return self._batch_cancel_authorization_interface_with_http_info(request)
+        http_info = self._batch_cancel_authorization_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_cancel_authorization_interface_with_http_info(self, request):
+    def batch_cancel_authorization_interface_invoker(self, request):
+        http_info = self._batch_cancel_authorization_interface_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_cancel_authorization_interface_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/policies/revoke",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCancelAuthorizationInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/policies/revoke',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCancelAuthorizationInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_check_permission(self, request):
         """批量鉴权
@@ -212,9 +244,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchCheckPermissionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchCheckPermissionResponse`
         """
-        return self._batch_check_permission_with_http_info(request)
+        http_info = self._batch_check_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_check_permission_with_http_info(self, request):
+    def batch_check_permission_invoker(self, request):
+        http_info = self._batch_check_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_check_permission_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/policies/check-permission",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCheckPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/policies/check-permission',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCheckPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_access_client(self, request):
         """创建服务接入客户端
@@ -272,9 +313,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateAccessClientRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateAccessClientResponse`
         """
-        return self._create_access_client_with_http_info(request)
+        http_info = self._create_access_client_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_access_client_with_http_info(self, request):
+    def create_access_client_invoker(self, request):
+        http_info = self._create_access_client_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_access_client_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/access-clients",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccessClientResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,11 +345,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +358,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAccessClientResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_access_client(self, request):
         """删除服务接入客户端
@@ -330,9 +380,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteAccessClientRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteAccessClientResponse`
         """
-        return self._delete_access_client_with_http_info(request)
+        http_info = self._delete_access_client_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_access_client_with_http_info(self, request):
+    def delete_access_client_invoker(self, request):
+        http_info = self._delete_access_client_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_access_client_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAccessClientResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -351,9 +414,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -362,20 +425,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAccessClientResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_access_client_infos(self, request):
         """获取服务接入客户端信息列表
@@ -388,9 +447,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListAccessClientInfosRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListAccessClientInfosResponse`
         """
-        return self._list_access_client_infos_with_http_info(request)
+        http_info = self._list_access_client_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_access_client_infos_with_http_info(self, request):
+    def list_access_client_infos_invoker(self, request):
+        http_info = self._list_access_client_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_access_client_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/access-clients",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessClientInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -415,9 +487,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -426,20 +498,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccessClientInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_access_infos(self, request):
         """获取服务接入信息
@@ -452,9 +520,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListAccessInfosRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListAccessInfosResponse`
         """
-        return self._list_access_infos_with_http_info(request)
+        http_info = self._list_access_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_access_infos_with_http_info(self, request):
+    def list_access_infos_invoker(self, request):
+        http_info = self._list_access_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_access_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/access",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -475,9 +556,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -486,20 +567,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/access',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccessInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_interfaces(self, request):
         """查询策略
@@ -512,9 +589,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListInterfacesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListInterfacesResponse`
         """
-        return self._list_interfaces_with_http_info(request)
+        http_info = self._list_interfaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_interfaces_with_http_info(self, request):
+    def list_interfaces_invoker(self, request):
+        http_info = self._list_interfaces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_interfaces_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/policies/show",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInterfacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -547,9 +637,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -558,20 +648,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/policies/show',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInterfacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_policy(self, request):
         """获取同步权限策略
@@ -584,9 +670,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListPolicyRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListPolicyResponse`
         """
-        return self._list_policy_with_http_info(request)
+        http_info = self._list_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_policy_with_http_info(self, request):
+    def list_policy_invoker(self, request):
+        http_info = self._list_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -609,9 +708,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -620,20 +719,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_access_client(self, request):
         """获取服务接入客户端详情
@@ -646,9 +741,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowAccessClientRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAccessClientResponse`
         """
-        return self._show_access_client_with_http_info(request)
+        http_info = self._show_access_client_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_access_client_with_http_info(self, request):
+    def show_access_client_invoker(self, request):
+        http_info = self._show_access_client_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_access_client_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAccessClientResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -667,9 +775,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -678,20 +786,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAccessClientResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sync_policy(self, request):
         """获取同步权限策略
@@ -704,9 +808,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowSyncPolicyRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowSyncPolicyResponse`
         """
-        return self._show_sync_policy_with_http_info(request)
+        http_info = self._show_sync_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sync_policy_with_http_info(self, request):
+    def show_sync_policy_invoker(self, request):
+        http_info = self._show_sync_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sync_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/policies/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSyncPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -729,9 +846,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -740,20 +857,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/policies/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSyncPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_access_client(self, request):
         """更新服务接入客户端
@@ -766,9 +879,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateAccessClientRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateAccessClientResponse`
         """
-        return self._update_access_client_with_http_info(request)
+        http_info = self._update_access_client_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_access_client_with_http_info(self, request):
+    def update_access_client_invoker(self, request):
+        http_info = self._update_access_client_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_access_client_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAccessClientResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -787,11 +913,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -800,20 +926,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/access-clients/{client_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAccessClientResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_agency(self, request):
         """创建委托
@@ -826,9 +948,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateAgencyRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateAgencyResponse`
         """
-        return self._create_agency_with_http_info(request)
+        http_info = self._create_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_agency_with_http_info(self, request):
+    def create_agency_invoker(self, request):
+        http_info = self._create_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agency_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -843,11 +978,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -856,20 +991,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agency',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_agency(self, request):
         """删除委托
@@ -882,9 +1013,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteAgencyRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteAgencyResponse`
         """
-        return self._delete_agency_with_http_info(request)
+        http_info = self._delete_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_agency_with_http_info(self, request):
+    def delete_agency_invoker(self, request):
+        http_info = self._delete_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_agency_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -899,11 +1043,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -912,20 +1056,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agency',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agency(self, request):
         """委托查询
@@ -938,9 +1078,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowAgencyRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAgencyResponse`
         """
-        return self._show_agency_with_http_info(request)
+        http_info = self._show_agency_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agency_with_http_info(self, request):
+    def show_agency_invoker(self, request):
+        http_info = self._show_agency_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agency_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/agency",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgencyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -957,9 +1110,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -968,20 +1121,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agency',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgencyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_catalog(self, request):
         """创建catalog
@@ -994,9 +1143,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateCatalogRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateCatalogResponse`
         """
-        return self._create_catalog_with_http_info(request)
+        http_info = self._create_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_catalog_with_http_info(self, request):
+    def create_catalog_invoker(self, request):
+        http_info = self._create_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_catalog_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1013,11 +1175,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1026,20 +1188,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_catalog(self, request):
         """删除catalog对象
@@ -1053,9 +1211,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteCatalogRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteCatalogResponse`
         """
-        return self._delete_catalog_with_http_info(request)
+        http_info = self._delete_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_catalog_with_http_info(self, request):
+    def delete_catalog_invoker(self, request):
+        http_info = self._delete_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_catalog_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1074,9 +1245,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1085,20 +1256,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_catalogs(self, request):
         """列举catalog信息
@@ -1111,9 +1278,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListCatalogsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListCatalogsResponse`
         """
-        return self._list_catalogs_with_http_info(request)
+        http_info = self._list_catalogs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_catalogs_with_http_info(self, request):
+    def list_catalogs_invoker(self, request):
+        http_info = self._list_catalogs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_catalogs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCatalogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1130,9 +1310,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1141,20 +1321,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCatalogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_catalog(self, request):
         """获取catalog信息
@@ -1167,9 +1343,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowCatalogRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowCatalogResponse`
         """
-        return self._show_catalog_with_http_info(request)
+        http_info = self._show_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_catalog_with_http_info(self, request):
+    def show_catalog_invoker(self, request):
+        http_info = self._show_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_catalog_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1188,9 +1377,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1199,20 +1388,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_catalog(self, request):
         """修改catalog信息
@@ -1225,9 +1410,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateCatalogRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateCatalogResponse`
         """
-        return self._update_catalog_with_http_info(request)
+        http_info = self._update_catalog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_catalog_with_http_info(self, request):
+    def update_catalog_invoker(self, request):
+        http_info = self._update_catalog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_catalog_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCatalogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1246,11 +1444,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1259,20 +1457,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCatalogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configs(self, request):
         """获取所有用户可见的租户面配置
@@ -1285,9 +1479,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListConfigsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListConfigsResponse`
         """
-        return self._list_configs_with_http_info(request)
+        http_info = self._list_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configs_with_http_info(self, request):
+    def list_configs_invoker(self, request):
+        http_info = self._list_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1308,9 +1515,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1319,20 +1526,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_credential(self, request):
         """获取临时密钥和securityToken
@@ -1345,9 +1548,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowCredentialRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowCredentialResponse`
         """
-        return self._show_credential_with_http_info(request)
+        http_info = self._show_credential_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_credential_with_http_info(self, request):
+    def show_credential_invoker(self, request):
+        http_info = self._show_credential_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_credential_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/credential",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCredentialResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1364,11 +1580,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1377,20 +1593,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/credential',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCredentialResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_database(self, request):
         """创建数据库
@@ -1403,9 +1615,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateDatabaseResponse`
         """
-        return self._create_database_with_http_info(request)
+        http_info = self._create_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_database_with_http_info(self, request):
+    def create_database_invoker(self, request):
+        http_info = self._create_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_database_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1424,11 +1649,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1437,20 +1662,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_database(self, request):
         """删除数据库
@@ -1466,9 +1687,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteDatabaseResponse`
         """
-        return self._delete_database_with_http_info(request)
+        http_info = self._delete_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_database_with_http_info(self, request):
+    def delete_database_invoker(self, request):
+        http_info = self._delete_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_database_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1493,9 +1727,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1504,20 +1738,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_database_names(self, request):
         """列举数据库名称信息
@@ -1530,9 +1760,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListDatabaseNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListDatabaseNamesResponse`
         """
-        return self._list_database_names_with_http_info(request)
+        http_info = self._list_database_names_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_database_names_with_http_info(self, request):
+    def list_database_names_invoker(self, request):
+        http_info = self._list_database_names_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_database_names_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseNamesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1553,9 +1796,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1564,20 +1807,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/names',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabaseNamesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_databases(self, request):
         """列举数据库信息
@@ -1590,9 +1829,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListDatabasesResponse`
         """
-        return self._list_databases_with_http_info(request)
+        http_info = self._list_databases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_databases_with_http_info(self, request):
+    def list_databases_invoker(self, request):
+        http_info = self._list_databases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_databases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1619,9 +1871,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1630,20 +1882,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_database(self, request):
         """获取数据库
@@ -1656,9 +1904,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowDatabaseRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowDatabaseResponse`
         """
-        return self._show_database_with_http_info(request)
+        http_info = self._show_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_database_with_http_info(self, request):
+    def show_database_invoker(self, request):
+        http_info = self._show_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_database_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1679,9 +1940,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1690,20 +1951,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_database(self, request):
         """修改数据库属性
@@ -1716,9 +1973,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateDatabaseRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateDatabaseResponse`
         """
-        return self._update_database_with_http_info(request)
+        http_info = self._update_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_database_with_http_info(self, request):
+    def update_database_invoker(self, request):
+        http_info = self._update_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_database_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1739,11 +2009,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1752,20 +2022,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_function(self, request):
         """创建函数
@@ -1778,9 +2044,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateFunctionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateFunctionResponse`
         """
-        return self._create_function_with_http_info(request)
+        http_info = self._create_function_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_function_with_http_info(self, request):
+    def create_function_invoker(self, request):
+        http_info = self._create_function_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_function_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFunctionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1801,11 +2080,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1814,20 +2093,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFunctionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_function(self, request):
         """删除函数
@@ -1840,9 +2115,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteFunctionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteFunctionResponse`
         """
-        return self._delete_function_with_http_info(request)
+        http_info = self._delete_function_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_function_with_http_info(self, request):
+    def delete_function_invoker(self, request):
+        http_info = self._delete_function_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_function_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/{function_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFunctionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1865,9 +2153,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1876,20 +2164,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/{function_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFunctionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_functions(self, request):
         """列举catalog下所有的函数
@@ -1902,9 +2186,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListAllFunctionsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListAllFunctionsResponse`
         """
-        return self._list_all_functions_with_http_info(request)
+        http_info = self._list_all_functions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_functions_with_http_info(self, request):
+    def list_all_functions_invoker(self, request):
+        http_info = self._list_all_functions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_all_functions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/functions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllFunctionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1929,9 +2226,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1940,20 +2237,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/functions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllFunctionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_function_names(self, request):
         """列举库下所有函数名称
@@ -1966,9 +2259,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListFunctionNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListFunctionNamesResponse`
         """
-        return self._list_function_names_with_http_info(request)
+        http_info = self._list_function_names_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_function_names_with_http_info(self, request):
+    def list_function_names_invoker(self, request):
+        http_info = self._list_function_names_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_function_names_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFunctionNamesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1991,9 +2297,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2002,20 +2308,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/names',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFunctionNamesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_functions(self, request):
         """列举函数
@@ -2028,9 +2330,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListFunctionsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListFunctionsResponse`
         """
-        return self._list_functions_with_http_info(request)
+        http_info = self._list_functions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_functions_with_http_info(self, request):
+    def list_functions_invoker(self, request):
+        http_info = self._list_functions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_functions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFunctionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2059,9 +2374,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2070,20 +2385,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFunctionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_function(self, request):
         """查询函数
@@ -2096,9 +2407,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowFunctionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowFunctionResponse`
         """
-        return self._show_function_with_http_info(request)
+        http_info = self._show_function_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_function_with_http_info(self, request):
+    def show_function_invoker(self, request):
+        http_info = self._show_function_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_function_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/{function_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFunctionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2121,9 +2445,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2132,20 +2456,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/{function_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFunctionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_function(self, request):
         """修改函数属性
@@ -2158,9 +2478,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateFunctionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateFunctionResponse`
         """
-        return self._update_function_with_http_info(request)
+        http_info = self._update_function_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_function_with_http_info(self, request):
+    def update_function_invoker(self, request):
+        http_info = self._update_function_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_function_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/{function_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFunctionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2183,11 +2516,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2196,20 +2529,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/functions/{function_name}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFunctionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def authorize_access_service(self, request):
         """接入服务授权
@@ -2222,9 +2551,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.AuthorizeAccessServiceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.AuthorizeAccessServiceResponse`
         """
-        return self._authorize_access_service_with_http_info(request)
+        http_info = self._authorize_access_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _authorize_access_service_with_http_info(self, request):
+    def authorize_access_service_invoker(self, request):
+        http_info = self._authorize_access_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _authorize_access_service_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/access-service",
+            "request_type": request.__class__.__name__,
+            "response_type": "AuthorizeAccessServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2239,11 +2581,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2252,20 +2594,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/access-service',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AuthorizeAccessServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_agreement(self, request):
         """注册租户协议
@@ -2278,9 +2616,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateAgreementRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateAgreementResponse`
         """
-        return self._create_agreement_with_http_info(request)
+        http_info = self._create_agreement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_agreement_with_http_info(self, request):
+    def create_agreement_invoker(self, request):
+        http_info = self._create_agreement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_agreement_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/agreement",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAgreementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2295,11 +2646,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2308,20 +2659,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agreement',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAgreementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_agreement(self, request):
         """删除租户协议
@@ -2334,9 +2681,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteAgreementRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteAgreementResponse`
         """
-        return self._delete_agreement_with_http_info(request)
+        http_info = self._delete_agreement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_agreement_with_http_info(self, request):
+    def delete_agreement_invoker(self, request):
+        http_info = self._delete_agreement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_agreement_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/agreement",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAgreementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2351,9 +2711,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2362,20 +2722,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agreement',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAgreementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_access_service(self, request):
         """查询租户当前的接入服务授权
@@ -2388,9 +2744,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowAccessServiceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAccessServiceResponse`
         """
-        return self._show_access_service_with_http_info(request)
+        http_info = self._show_access_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_access_service_with_http_info(self, request):
+    def show_access_service_invoker(self, request):
+        http_info = self._show_access_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_access_service_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/access-service",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAccessServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2405,9 +2774,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2416,20 +2785,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/access-service',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAccessServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agreement(self, request):
         """查询租户是否注册协议
@@ -2442,9 +2807,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowAgreementRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAgreementResponse`
         """
-        return self._show_agreement_with_http_info(request)
+        http_info = self._show_agreement_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agreement_with_http_info(self, request):
+    def show_agreement_invoker(self, request):
+        http_info = self._show_agreement_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agreement_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/agreement",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgreementResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2459,9 +2837,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2470,20 +2848,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agreement',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgreementResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agreement_rule(self, request):
         """查询当前系统协议
@@ -2496,9 +2870,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowAgreementRuleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowAgreementRuleResponse`
         """
-        return self._show_agreement_rule_with_http_info(request)
+        http_info = self._show_agreement_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agreement_rule_with_http_info(self, request):
+    def show_agreement_rule_invoker(self, request):
+        http_info = self._show_agreement_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agreement_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/agreement-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgreementRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2513,9 +2900,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2524,20 +2911,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/agreement-rule',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgreementRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_meta_obj(self, request):
         """元数据数量统计
@@ -2550,9 +2933,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CountMetaObjRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CountMetaObjResponse`
         """
-        return self._count_meta_obj_with_http_info(request)
+        http_info = self._count_meta_obj_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_meta_obj_with_http_info(self, request):
+    def count_meta_obj_invoker(self, request):
+        http_info = self._count_meta_obj_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_meta_obj_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/metaobj/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountMetaObjResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2569,9 +2965,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2580,20 +2976,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/metaobj/count',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountMetaObjResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_lake_formation_instance(self, request):
         """创建实例
@@ -2606,9 +2998,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateLakeFormationInstanceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateLakeFormationInstanceResponse`
         """
-        return self._create_lake_formation_instance_with_http_info(request)
+        http_info = self._create_lake_formation_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_lake_formation_instance_with_http_info(self, request):
+    def create_lake_formation_instance_invoker(self, request):
+        http_info = self._create_lake_formation_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_lake_formation_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLakeFormationInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2623,11 +3028,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2636,20 +3041,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLakeFormationInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_lake_formation_instance(self, request):
         """删除实例
@@ -2662,9 +3063,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteLakeFormationInstanceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteLakeFormationInstanceResponse`
         """
-        return self._delete_lake_formation_instance_with_http_info(request)
+        http_info = self._delete_lake_formation_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_lake_formation_instance_with_http_info(self, request):
+    def delete_lake_formation_instance_invoker(self, request):
+        http_info = self._delete_lake_formation_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_lake_formation_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLakeFormationInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2683,9 +3097,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2694,20 +3108,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLakeFormationInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_lake_formation_instances(self, request):
         """查询实例列表
@@ -2720,9 +3130,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListLakeFormationInstancesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListLakeFormationInstancesResponse`
         """
-        return self._list_lake_formation_instances_with_http_info(request)
+        http_info = self._list_lake_formation_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_lake_formation_instances_with_http_info(self, request):
+    def list_lake_formation_instances_invoker(self, request):
+        http_info = self._list_lake_formation_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lake_formation_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLakeFormationInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2749,9 +3172,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2760,20 +3183,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLakeFormationInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def move_lake_formation_instance_out_recycle_bin(self, request):
         """恢复实例
@@ -2786,9 +3205,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.MoveLakeFormationInstanceOutRecycleBinRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.MoveLakeFormationInstanceOutRecycleBinResponse`
         """
-        return self._move_lake_formation_instance_out_recycle_bin_with_http_info(request)
+        http_info = self._move_lake_formation_instance_out_recycle_bin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _move_lake_formation_instance_out_recycle_bin_with_http_info(self, request):
+    def move_lake_formation_instance_out_recycle_bin_invoker(self, request):
+        http_info = self._move_lake_formation_instance_out_recycle_bin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _move_lake_formation_instance_out_recycle_bin_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/recover",
+            "request_type": request.__class__.__name__,
+            "response_type": "MoveLakeFormationInstanceOutRecycleBinResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2805,9 +3237,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2816,20 +3248,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/recover',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MoveLakeFormationInstanceOutRecycleBinResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_lake_formation_instance(self, request):
         """查询实例详情
@@ -2842,9 +3270,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowLakeFormationInstanceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowLakeFormationInstanceResponse`
         """
-        return self._show_lake_formation_instance_with_http_info(request)
+        http_info = self._show_lake_formation_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_lake_formation_instance_with_http_info(self, request):
+    def show_lake_formation_instance_invoker(self, request):
+        http_info = self._show_lake_formation_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_lake_formation_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLakeFormationInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2861,9 +3302,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2872,20 +3313,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLakeFormationInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_lake_formation_instance(self, request):
         """更新实例
@@ -2898,9 +3335,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceResponse`
         """
-        return self._update_lake_formation_instance_with_http_info(request)
+        http_info = self._update_lake_formation_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_lake_formation_instance_with_http_info(self, request):
+    def update_lake_formation_instance_invoker(self, request):
+        http_info = self._update_lake_formation_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_lake_formation_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLakeFormationInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2917,11 +3367,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2930,20 +3380,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLakeFormationInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_lake_formation_instance_default(self, request):
         """设为默认实例
@@ -2956,9 +3402,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceDefaultRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceDefaultResponse`
         """
-        return self._update_lake_formation_instance_default_with_http_info(request)
+        http_info = self._update_lake_formation_instance_default_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_lake_formation_instance_default_with_http_info(self, request):
+    def update_lake_formation_instance_default_invoker(self, request):
+        http_info = self._update_lake_formation_instance_default_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_lake_formation_instance_default_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/default",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLakeFormationInstanceDefaultResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2975,9 +3434,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2986,20 +3445,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/default',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLakeFormationInstanceDefaultResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_lake_formation_instance_scale(self, request):
         """变更实例规格
@@ -3012,9 +3467,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceScaleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateLakeFormationInstanceScaleResponse`
         """
-        return self._update_lake_formation_instance_scale_with_http_info(request)
+        http_info = self._update_lake_formation_instance_scale_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_lake_formation_instance_scale_with_http_info(self, request):
+    def update_lake_formation_instance_scale_invoker(self, request):
+        http_info = self._update_lake_formation_instance_scale_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_lake_formation_instance_scale_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/scale",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLakeFormationInstanceScaleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3031,11 +3499,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3044,20 +3512,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/scale',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLakeFormationInstanceScaleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_obs_buckets(self, request):
         """查询OBS桶列表
@@ -3070,9 +3534,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListObsBucketsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListObsBucketsResponse`
         """
-        return self._list_obs_buckets_with_http_info(request)
+        http_info = self._list_obs_buckets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_obs_buckets_with_http_info(self, request):
+    def list_obs_buckets_invoker(self, request):
+        http_info = self._list_obs_buckets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_obs_buckets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/obs/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObsBucketsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3091,9 +3568,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3102,20 +3579,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/obs/buckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListObsBucketsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_obs_object(self, request):
         """查询obs桶对象列表
@@ -3128,9 +3601,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListObsObjectRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListObsObjectResponse`
         """
-        return self._list_obs_object_with_http_info(request)
+        http_info = self._list_obs_object_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_obs_object_with_http_info(self, request):
+    def list_obs_object_invoker(self, request):
+        http_info = self._list_obs_object_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_obs_object_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/obs/buckets/{bucket_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListObsObjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3153,9 +3639,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3164,20 +3650,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/obs/buckets/{bucket_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListObsObjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_partitions(self, request):
         """批量添加分区信息
@@ -3190,9 +3672,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.AddPartitionsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.AddPartitionsResponse`
         """
-        return self._add_partitions_with_http_info(request)
+        http_info = self._add_partitions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_partitions_with_http_info(self, request):
+    def add_partitions_invoker(self, request):
+        http_info = self._add_partitions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_partitions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-create",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddPartitionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3215,11 +3710,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3228,20 +3723,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddPartitionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_partition(self, request):
         """批量删除分区信息
@@ -3255,9 +3746,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchDeletePartitionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchDeletePartitionResponse`
         """
-        return self._batch_delete_partition_with_http_info(request)
+        http_info = self._batch_delete_partition_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_partition_with_http_info(self, request):
+    def batch_delete_partition_invoker(self, request):
+        http_info = self._batch_delete_partition_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_partition_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-drop",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePartitionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3280,11 +3784,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3293,20 +3797,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-drop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeletePartitionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_partitioned_statistics(self, request):
         """批量清空列表信息
@@ -3321,9 +3821,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchDeletePartitionedStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchDeletePartitionedStatisticsResponse`
         """
-        return self._batch_delete_partitioned_statistics_with_http_info(request)
+        http_info = self._batch_delete_partitioned_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_partitioned_statistics_with_http_info(self, request):
+    def batch_delete_partitioned_statistics_invoker(self, request):
+        http_info = self._batch_delete_partitioned_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_partitioned_statistics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-truncate",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePartitionedStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3346,11 +3859,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3359,20 +3872,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-truncate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeletePartitionedStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_list_partition_by_values(self, request):
         """批量获取分区信息
@@ -3385,9 +3894,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchListPartitionByValuesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchListPartitionByValuesResponse`
         """
-        return self._batch_list_partition_by_values_with_http_info(request)
+        http_info = self._batch_list_partition_by_values_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_partition_by_values_with_http_info(self, request):
+    def batch_list_partition_by_values_invoker(self, request):
+        http_info = self._batch_list_partition_by_values_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_list_partition_by_values_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-get",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListPartitionByValuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3410,11 +3932,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3423,20 +3945,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-get',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListPartitionByValuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_partition(self, request):
         """批量修改分区信息
@@ -3449,9 +3967,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchUpdatePartitionRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchUpdatePartitionResponse`
         """
-        return self._batch_update_partition_with_http_info(request)
+        http_info = self._batch_update_partition_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_partition_with_http_info(self, request):
+    def batch_update_partition_invoker(self, request):
+        http_info = self._batch_update_partition_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_partition_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-alter",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdatePartitionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3474,11 +4005,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3487,20 +4018,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/batch-alter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdatePartitionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_partition_names(self, request):
         """列举分区值列表
@@ -3514,9 +4041,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListPartitionNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListPartitionNamesResponse`
         """
-        return self._list_partition_names_with_http_info(request)
+        http_info = self._list_partition_names_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_partition_names_with_http_info(self, request):
+    def list_partition_names_invoker(self, request):
+        http_info = self._list_partition_names_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_partition_names_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/partition-names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartitionNamesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3547,9 +4087,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3558,20 +4098,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/partition-names',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPartitionNamesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_partition_names_without_limit(self, request):
         """列举全量分区值列表
@@ -3585,9 +4121,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListPartitionNamesWithoutLimitRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListPartitionNamesWithoutLimitResponse`
         """
-        return self._list_partition_names_without_limit_with_http_info(request)
+        http_info = self._list_partition_names_without_limit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_partition_names_without_limit_with_http_info(self, request):
+    def list_partition_names_without_limit_invoker(self, request):
+        http_info = self._list_partition_names_without_limit_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_partition_names_without_limit_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartitionNamesWithoutLimitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3612,9 +4161,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3623,20 +4172,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/names',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPartitionNamesWithoutLimitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_partitions(self, request):
         """列举分区信息
@@ -3652,9 +4197,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListPartitionsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListPartitionsResponse`
         """
-        return self._list_partitions_with_http_info(request)
+        http_info = self._list_partitions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_partitions_with_http_info(self, request):
+    def list_partitions_invoker(self, request):
+        http_info = self._list_partitions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_partitions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPartitionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3688,9 +4246,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3699,20 +4257,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPartitionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_partition_column_statistics(self, request):
         """批量获取分区的列统计信息
@@ -3725,9 +4279,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchShowPartitionColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchShowPartitionColumnStatisticsResponse`
         """
-        return self._batch_show_partition_column_statistics_with_http_info(request)
+        http_info = self._batch_show_partition_column_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_partition_column_statistics_with_http_info(self, request):
+    def batch_show_partition_column_statistics_invoker(self, request):
+        http_info = self._batch_show_partition_column_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_show_partition_column_statistics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/column-statistics/batch-get",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowPartitionColumnStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3750,11 +4317,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3763,20 +4330,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/column-statistics/batch-get',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowPartitionColumnStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_partition_column_statistics(self, request):
         """删除分区列的统计信息
@@ -3789,9 +4352,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeletePartitionColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeletePartitionColumnStatisticsResponse`
         """
-        return self._delete_partition_column_statistics_with_http_info(request)
+        http_info = self._delete_partition_column_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_partition_column_statistics_with_http_info(self, request):
+    def delete_partition_column_statistics_invoker(self, request):
+        http_info = self._delete_partition_column_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_partition_column_statistics_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/column-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePartitionColumnStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3819,9 +4395,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3830,20 +4406,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/column-statistics',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePartitionColumnStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_partition_column_statistics(self, request):
         """批量设置分区的统计信息
@@ -3856,9 +4428,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.SetPartitionColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.SetPartitionColumnStatisticsResponse`
         """
-        return self._set_partition_column_statistics_with_http_info(request)
+        http_info = self._set_partition_column_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_partition_column_statistics_with_http_info(self, request):
+    def set_partition_column_statistics_invoker(self, request):
+        http_info = self._set_partition_column_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_partition_column_statistics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/column-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetPartitionColumnStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3881,11 +4466,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3894,20 +4479,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/partitions/column-statistics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetPartitionColumnStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas(self, request):
         """查询配额
@@ -3920,9 +4501,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3937,9 +4531,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -3948,20 +4542,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_principals(self, request):
         """将一个或者多个用户/用户组加入角色
@@ -3974,9 +4564,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.AssociatePrincipalsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.AssociatePrincipalsResponse`
         """
-        return self._associate_principals_with_http_info(request)
+        http_info = self._associate_principals_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_principals_with_http_info(self, request):
+    def associate_principals_invoker(self, request):
+        http_info = self._associate_principals_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_principals_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles/{role_name}/grant-principals",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociatePrincipalsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3995,11 +4598,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4008,20 +4611,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}/grant-principals',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociatePrincipalsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_role(self, request):
         """创建role
@@ -4034,9 +4633,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateRoleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateRoleResponse`
         """
-        return self._create_role_with_http_info(request)
+        http_info = self._create_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_role_with_http_info(self, request):
+    def create_role_invoker(self, request):
+        http_info = self._create_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_role_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4053,11 +4665,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4066,20 +4678,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_role(self, request):
         """删除角色
@@ -4092,9 +4700,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteRoleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteRoleResponse`
         """
-        return self._delete_role_with_http_info(request)
+        http_info = self._delete_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_role_with_http_info(self, request):
+    def delete_role_invoker(self, request):
+        http_info = self._delete_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_role_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles/{role_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4113,9 +4734,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4124,20 +4745,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_principals(self, request):
         """查询角色下的用户/用户组
@@ -4150,9 +4767,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListPrincipalsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListPrincipalsResponse`
         """
-        return self._list_principals_with_http_info(request)
+        http_info = self._list_principals_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_principals_with_http_info(self, request):
+    def list_principals_invoker(self, request):
+        http_info = self._list_principals_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_principals_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles/{role_name}/principals",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrincipalsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4179,9 +4809,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4190,20 +4820,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}/principals',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrincipalsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_role_names(self, request):
         """列举所有角色名
@@ -4216,9 +4842,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListRoleNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListRoleNamesResponse`
         """
-        return self._list_role_names_with_http_info(request)
+        http_info = self._list_role_names_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_role_names_with_http_info(self, request):
+    def list_role_names_invoker(self, request):
+        http_info = self._list_role_names_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_role_names_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles/names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRoleNamesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4235,9 +4874,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4246,20 +4885,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles/names',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRoleNamesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_roles(self, request):
         """根据条件分页列举角色
@@ -4272,9 +4907,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListRolesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListRolesResponse`
         """
-        return self._list_roles_with_http_info(request)
+        http_info = self._list_roles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_roles_with_http_info(self, request):
+    def list_roles_invoker(self, request):
+        http_info = self._list_roles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_roles_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRolesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4299,9 +4947,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4310,20 +4958,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRolesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def revoke_principals(self, request):
         """将一个或者多个用户/用户组从角色移除
@@ -4336,9 +4980,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.RevokePrincipalsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.RevokePrincipalsResponse`
         """
-        return self._revoke_principals_with_http_info(request)
+        http_info = self._revoke_principals_http_info(request)
+        return self._call_api(**http_info)
 
-    def _revoke_principals_with_http_info(self, request):
+    def revoke_principals_invoker(self, request):
+        http_info = self._revoke_principals_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _revoke_principals_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles/{role_name}/revoke-principals",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokePrincipalsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4357,11 +5014,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4370,20 +5027,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}/revoke-principals',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RevokePrincipalsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_role(self, request):
         """获取角色
@@ -4396,9 +5049,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowRoleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowRoleResponse`
         """
-        return self._show_role_with_http_info(request)
+        http_info = self._show_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_role_with_http_info(self, request):
+    def show_role_invoker(self, request):
+        http_info = self._show_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_role_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles/{role_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4417,9 +5083,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4428,20 +5094,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_principals(self, request):
         """更新角色中的principals
@@ -4454,9 +5116,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdatePrincipalsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdatePrincipalsResponse`
         """
-        return self._update_principals_with_http_info(request)
+        http_info = self._update_principals_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_principals_with_http_info(self, request):
+    def update_principals_invoker(self, request):
+        http_info = self._update_principals_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_principals_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles/{role_name}/update-principals",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrincipalsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4475,11 +5150,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4488,20 +5163,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}/update-principals',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePrincipalsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_role(self, request):
         """修改角色信息
@@ -4514,9 +5185,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateRoleRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateRoleResponse`
         """
-        return self._update_role_with_http_info(request)
+        http_info = self._update_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_role_with_http_info(self, request):
+    def update_role_invoker(self, request):
+        http_info = self._update_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_role_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/roles/{role_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4535,11 +5219,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4548,20 +5232,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/roles/{role_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_specs(self, request):
         """list_specs
@@ -4574,9 +5254,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListSpecsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListSpecsResponse`
         """
-        return self._list_specs_with_http_info(request)
+        http_info = self._list_specs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_specs_with_http_info(self, request):
+    def list_specs_invoker(self, request):
+        http_info = self._list_specs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_specs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/specs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSpecsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4597,9 +5290,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4608,20 +5301,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/specs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSpecsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_lake_formation_instance_tags(self, request):
         """批量更新标签
@@ -4634,9 +5323,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchUpdateLakeFormationInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchUpdateLakeFormationInstanceTagsResponse`
         """
-        return self._batch_update_lake_formation_instance_tags_with_http_info(request)
+        http_info = self._batch_update_lake_formation_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_lake_formation_instance_tags_with_http_info(self, request):
+    def batch_update_lake_formation_instance_tags_invoker(self, request):
+        http_info = self._batch_update_lake_formation_instance_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_lake_formation_instance_tags_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateLakeFormationInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4653,11 +5355,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4666,20 +5368,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/tags',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateLakeFormationInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_lake_formation_instance_tags(self, request):
         """查询资源标签集合
@@ -4692,9 +5390,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListLakeFormationInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListLakeFormationInstanceTagsResponse`
         """
-        return self._list_lake_formation_instance_tags_with_http_info(request)
+        http_info = self._list_lake_formation_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_lake_formation_instance_tags_with_http_info(self, request):
+    def list_lake_formation_instance_tags_invoker(self, request):
+        http_info = self._list_lake_formation_instance_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lake_formation_instance_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/lakeformation-instance/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLakeFormationInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4711,9 +5422,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -4722,20 +5433,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/lakeformation-instance/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLakeFormationInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_table(self, request):
         """创建表
@@ -4748,9 +5455,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.CreateTableRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.CreateTableResponse`
         """
-        return self._create_table_with_http_info(request)
+        http_info = self._create_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_table_with_http_info(self, request):
+    def create_table_invoker(self, request):
+        http_info = self._create_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4771,11 +5491,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4784,20 +5504,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_all_tables(self, request):
         """清空表的数据
@@ -4810,9 +5526,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteAllTablesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteAllTablesResponse`
         """
-        return self._delete_all_tables_with_http_info(request)
+        http_info = self._delete_all_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_all_tables_with_http_info(self, request):
+    def delete_all_tables_invoker(self, request):
+        http_info = self._delete_all_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_all_tables_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/truncate",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAllTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4835,9 +5564,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4846,20 +5575,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/truncate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAllTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_table(self, request):
         """删除表
@@ -4872,9 +5597,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteTableRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteTableResponse`
         """
-        return self._delete_table_with_http_info(request)
+        http_info = self._delete_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_table_with_http_info(self, request):
+    def delete_table_invoker(self, request):
+        http_info = self._delete_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_table_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4899,9 +5637,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4910,20 +5648,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_table_meta(self, request):
         """分页获取表的描述信息
@@ -4936,9 +5670,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTableMetaRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTableMetaResponse`
         """
-        return self._list_table_meta_with_http_info(request)
+        http_info = self._list_table_meta_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_table_meta_with_http_info(self, request):
+    def list_table_meta_invoker(self, request):
+        http_info = self._list_table_meta_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_table_meta_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableMetaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4970,9 +5717,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4981,20 +5728,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTableMetaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_table_names(self, request):
         """列举库下所有表名
@@ -5007,9 +5750,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTableNamesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTableNamesResponse`
         """
-        return self._list_table_names_with_http_info(request)
+        http_info = self._list_table_names_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_table_names_with_http_info(self, request):
+    def list_table_names_invoker(self, request):
+        http_info = self._list_table_names_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_table_names_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableNamesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5034,9 +5790,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5045,20 +5801,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/names',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTableNamesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tables(self, request):
         """根据条件分页列举表信息
@@ -5073,9 +5825,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTablesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTablesResponse`
         """
-        return self._list_tables_with_http_info(request)
+        http_info = self._list_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tables_with_http_info(self, request):
+    def list_tables_invoker(self, request):
+        http_info = self._list_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5108,9 +5873,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5119,20 +5884,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tables_by_name(self, request):
         """根据表名列举表信息
@@ -5145,9 +5906,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTablesByNameRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTablesByNameResponse`
         """
-        return self._list_tables_by_name_with_http_info(request)
+        http_info = self._list_tables_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tables_by_name_with_http_info(self, request):
+    def list_tables_by_name_invoker(self, request):
+        http_info = self._list_tables_by_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tables_by_name_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/list-by-names",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTablesByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5168,11 +5942,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5181,20 +5955,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/list-by-names',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTablesByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_table(self, request):
         """获取表信息
@@ -5207,9 +5977,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ShowTableRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ShowTableResponse`
         """
-        return self._show_table_with_http_info(request)
+        http_info = self._show_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_table_with_http_info(self, request):
+    def show_table_invoker(self, request):
+        http_info = self._show_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_table_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5232,9 +6015,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5243,20 +6026,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_table(self, request):
         """修改表信息
@@ -5269,9 +6048,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateTableRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateTableResponse`
         """
-        return self._update_table_with_http_info(request)
+        http_info = self._update_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_table_with_http_info(self, request):
+    def update_table_invoker(self, request):
+        http_info = self._update_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_table_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5294,11 +6086,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5307,20 +6099,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_table_column_statistics(self, request):
         """删除表的指定列统计信息
@@ -5333,9 +6121,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteTableColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteTableColumnStatisticsResponse`
         """
-        return self._delete_table_column_statistics_with_http_info(request)
+        http_info = self._delete_table_column_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_table_column_statistics_with_http_info(self, request):
+    def delete_table_column_statistics_invoker(self, request):
+        http_info = self._delete_table_column_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_table_column_statistics_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/column-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTableColumnStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5360,9 +6161,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5371,20 +6172,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/column-statistics',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTableColumnStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_table_column_statistics(self, request):
         """获取表的列统计信息
@@ -5397,9 +6194,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListTableColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListTableColumnStatisticsResponse`
         """
-        return self._list_table_column_statistics_with_http_info(request)
+        http_info = self._list_table_column_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_table_column_statistics_with_http_info(self, request):
+    def list_table_column_statistics_invoker(self, request):
+        http_info = self._list_table_column_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_table_column_statistics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/column-statistics/batch-get",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTableColumnStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5422,11 +6232,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5435,20 +6245,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/column-statistics/batch-get',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTableColumnStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_table_column_statistics(self, request):
         """更新表的列统计信息
@@ -5461,9 +6267,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.SetTableColumnStatisticsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.SetTableColumnStatisticsResponse`
         """
-        return self._set_table_column_statistics_with_http_info(request)
+        http_info = self._set_table_column_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_table_column_statistics_with_http_info(self, request):
+    def set_table_column_statistics_invoker(self, request):
+        http_info = self._set_table_column_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_table_column_statistics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/column-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetTableColumnStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5486,11 +6305,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5499,20 +6318,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/column-statistics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetTableColumnStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_constraint(self, request):
         """批量创建列限制条件
@@ -5525,9 +6340,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.BatchCreateConstraintRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.BatchCreateConstraintResponse`
         """
-        return self._batch_create_constraint_with_http_info(request)
+        http_info = self._batch_create_constraint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_constraint_with_http_info(self, request):
+    def batch_create_constraint_invoker(self, request):
+        http_info = self._batch_create_constraint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_constraint_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/constraints",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateConstraintResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5550,11 +6378,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5563,20 +6391,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/constraints',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateConstraintResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_constraint(self, request):
         """删除列限制条件
@@ -5589,9 +6413,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.DeleteConstraintRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.DeleteConstraintResponse`
         """
-        return self._delete_constraint_with_http_info(request)
+        http_info = self._delete_constraint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_constraint_with_http_info(self, request):
+    def delete_constraint_invoker(self, request):
+        http_info = self._delete_constraint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_constraint_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/constraints/{constraint_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConstraintResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5616,9 +6453,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5627,20 +6464,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/constraints/{constraint_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConstraintResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_constraints(self, request):
         """获取列限制条件
@@ -5653,9 +6486,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListConstraintsRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListConstraintsResponse`
         """
-        return self._list_constraints_with_http_info(request)
+        http_info = self._list_constraints_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_constraints_with_http_info(self, request):
+    def list_constraints_invoker(self, request):
+        http_info = self._list_constraints_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_constraints_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/constraints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConstraintsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5684,9 +6530,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5695,20 +6541,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/catalogs/{catalog_name}/databases/{database_name}/tables/{table_name}/constraints',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConstraintsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_roles(self, request):
         """将多个角色授予User
@@ -5721,9 +6563,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.AssociateRolesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.AssociateRolesResponse`
         """
-        return self._associate_roles_with_http_info(request)
+        http_info = self._associate_roles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_roles_with_http_info(self, request):
+    def associate_roles_invoker(self, request):
+        http_info = self._associate_roles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_roles_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users/{user_name}/grant-roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRolesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5742,11 +6597,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5755,20 +6610,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users/{user_name}/grant-roles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRolesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_roles(self, request):
         """查询用户的角色列表
@@ -5781,9 +6632,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListUserRolesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListUserRolesResponse`
         """
-        return self._list_user_roles_with_http_info(request)
+        http_info = self._list_user_roles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_roles_with_http_info(self, request):
+    def list_user_roles_invoker(self, request):
+        http_info = self._list_user_roles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_user_roles_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users/{user_name}/roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserRolesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5810,9 +6674,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5821,20 +6685,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users/{user_name}/roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserRolesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_users(self, request):
         """获取用户列表
@@ -5847,9 +6707,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListUsersRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListUsersResponse`
         """
-        return self._list_users_with_http_info(request)
+        http_info = self._list_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_users_with_http_info(self, request):
+    def list_users_invoker(self, request):
+        http_info = self._list_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5876,9 +6749,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5887,20 +6760,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def revoke_roles(self, request):
         """将一个或者多个角色从用户移除
@@ -5913,9 +6782,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.RevokeRolesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.RevokeRolesResponse`
         """
-        return self._revoke_roles_with_http_info(request)
+        http_info = self._revoke_roles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _revoke_roles_with_http_info(self, request):
+    def revoke_roles_invoker(self, request):
+        http_info = self._revoke_roles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _revoke_roles_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users/{user_name}/revoke-roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "RevokeRolesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5934,11 +6816,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5947,20 +6829,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users/{user_name}/revoke-roles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RevokeRolesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_roles(self, request):
         """更新用户中的角色
@@ -5973,9 +6851,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.UpdateRolesRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.UpdateRolesResponse`
         """
-        return self._update_roles_with_http_info(request)
+        http_info = self._update_roles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_roles_with_http_info(self, request):
+    def update_roles_invoker(self, request):
+        http_info = self._update_roles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_roles_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users/{user_name}/update-roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRolesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5994,11 +6885,11 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6007,20 +6898,16 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users/{user_name}/update-roles',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRolesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_groups_for_domain(self, request):
         """获取租户的用户组
@@ -6033,9 +6920,22 @@ class LakeFormationClient(Client):
         :type request: :class:`huaweicloudsdklakeformation.v1.ListGroupsForDomainRequest`
         :rtype: :class:`huaweicloudsdklakeformation.v1.ListGroupsForDomainResponse`
         """
-        return self._list_groups_for_domain_with_http_info(request)
+        http_info = self._list_groups_for_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_groups_for_domain_with_http_info(self, request):
+    def list_groups_for_domain_invoker(self, request):
+        http_info = self._list_groups_for_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_groups_for_domain_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupsForDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6060,9 +6960,9 @@ class LakeFormationClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6071,20 +6971,25 @@ class LakeFormationClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGroupsForDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

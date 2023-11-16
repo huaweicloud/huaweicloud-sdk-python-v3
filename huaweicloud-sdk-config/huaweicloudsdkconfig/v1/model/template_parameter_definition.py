@@ -20,6 +20,7 @@ class TemplateParameterDefinition:
         'name': 'str',
         'description': 'str',
         'default_value': 'object',
+        'allowed_values': 'list[object]',
         'type': 'str'
     }
 
@@ -27,10 +28,11 @@ class TemplateParameterDefinition:
         'name': 'name',
         'description': 'description',
         'default_value': 'default_value',
+        'allowed_values': 'allowed_values',
         'type': 'type'
     }
 
-    def __init__(self, name=None, description=None, default_value=None, type=None):
+    def __init__(self, name=None, description=None, default_value=None, allowed_values=None, type=None):
         """TemplateParameterDefinition
 
         The model defined in huaweicloud sdk
@@ -41,6 +43,8 @@ class TemplateParameterDefinition:
         :type description: str
         :param default_value: 预定义合规包模板参数默认值。
         :type default_value: object
+        :param allowed_values: 预定义合规包模板参数允许值列表
+        :type allowed_values: list[object]
         :param type: 预定义合规包模板参数类型。
         :type type: str
         """
@@ -50,6 +54,7 @@ class TemplateParameterDefinition:
         self._name = None
         self._description = None
         self._default_value = None
+        self._allowed_values = None
         self._type = None
         self.discriminator = None
 
@@ -59,6 +64,8 @@ class TemplateParameterDefinition:
             self.description = description
         if default_value is not None:
             self.default_value = default_value
+        if allowed_values is not None:
+            self.allowed_values = allowed_values
         if type is not None:
             self.type = type
 
@@ -127,6 +134,28 @@ class TemplateParameterDefinition:
         :type default_value: object
         """
         self._default_value = default_value
+
+    @property
+    def allowed_values(self):
+        """Gets the allowed_values of this TemplateParameterDefinition.
+
+        预定义合规包模板参数允许值列表
+
+        :return: The allowed_values of this TemplateParameterDefinition.
+        :rtype: list[object]
+        """
+        return self._allowed_values
+
+    @allowed_values.setter
+    def allowed_values(self, allowed_values):
+        """Sets the allowed_values of this TemplateParameterDefinition.
+
+        预定义合规包模板参数允许值列表
+
+        :param allowed_values: The allowed_values of this TemplateParameterDefinition.
+        :type allowed_values: list[object]
+        """
+        self._allowed_values = allowed_values
 
     @property
     def type(self):

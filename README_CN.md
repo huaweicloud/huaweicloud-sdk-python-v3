@@ -84,7 +84,7 @@ if __name__ == "__main__":
     # 配置认证信息
     # 请勿将认证信息硬编码到代码中，有安全风险
     # 可通过环境变量等方式配置认证信息，参考2.4认证信息管理章节
-    credentials = BasicCredentials(os.environ.get("HUAWEICLOUD_SDK_AK"), os.environ.get("HUAWEICLOUD_SDK_SK"))
+    credentials = BasicCredentials(os.getenv("HUAWEICLOUD_SDK_AK"), os.getenv("HUAWEICLOUD_SDK_SK"))
 
     # 创建服务客户端
     client = VpcClient.new_builder() \
@@ -124,7 +124,7 @@ if __name__ == "__main__":
     # 请勿将认证信息硬编码到代码中，有安全风险
     # 可通过环境变量等方式配置认证信息，参考2.4认证信息管理章节
     # 如果未填写project_id，SDK会自动调用IAM服务查询所在region对应的项目id
-    credentials = BasicCredentials(os.environ.get("HUAWEICLOUD_SDK_AK"), os.environ.get("HUAWEICLOUD_SDK_SK"), project_id="{your projectId string}") \
+    credentials = BasicCredentials(os.getenv("HUAWEICLOUD_SDK_AK"), os.getenv("HUAWEICLOUD_SDK_SK"), project_id="{your projectId string}") \
         .with_iam_endpoint("https://iam.cn-north-4.myhuaweicloud.com") # 配置SDK内置的IAM服务地址，默认为https://iam.myhuaweicloud.com
 
     # 使用默认配置
@@ -141,8 +141,8 @@ if __name__ == "__main__":
     http_config.proxy_host = 'proxy.huaweicloud.com'
     http_config.proxy_port = 80
     # 如果代理需要认证，请配置用户名和密码
-    http_config.proxy_user = os.environ.get("PROXY_USERNAME")
-    http_config.proxy_password = os.environ.get("PROXY_PASSWORD")
+    http_config.proxy_user = os.getenv("PROXY_USERNAME")
+    http_config.proxy_password = os.getenv("PROXY_PASSWORD")
 
     # 注册监听器用于打印原始的请求和响应信息, 请勿用于生产环境
     def response_handler(**kwargs):
@@ -226,7 +226,9 @@ if __name__ == "__main__":
 * [6. 故障处理](#6-故障处理-top)
     * [6.1 访问日志](#61-访问日志-top)
     * [6.2 HTTP 监听器](#62-http-监听器-top)
-* [7. 文件上传与下载](#7-文件上传与下载-top)
+* [7. 接口调用器](#7-接口调用器-top)
+    * [7.1 自定义请求头](71-自定义请求头-top)
+* [8. 文件上传与下载](#8-文件上传与下载-top)
 
 ### 1. 客户端连接参数 [:top:](#用户手册-top)
 
@@ -253,8 +255,8 @@ http_config.proxy_protocol = 'http'
 http_config.proxy_host = 'proxy.huaweicloud.com'
 http_config.proxy_port = 80
 # 如果代理需要认证，请配置用户名和密码
-http_config.proxy_user = os.environ.get("PROXY_USERNAME")
-http_config.proxy_password = os.environ.get("PROXY_PASSWORD")
+http_config.proxy_user = os.getenv("PROXY_USERNAME")
+http_config.proxy_password = os.getenv("PROXY_PASSWORD")
 
 client = VpcClient.new_builder() \
     .with_http_config(http_config) \
@@ -317,15 +319,15 @@ Global 级服务使用 GlobalCredentials 初始化，需要提供 domainId 。
 
 ```python
 # Region级服务
-ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
 project_id = "{your projectId string}"
 
 basic_credentials = BasicCredentials(ak, sk, project_id)
 
 # Global级服务
-ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
 domain_id = "{your domainId string}"
 
 global_credentials = GlobalCredentials(ak, sk, domain_id)
@@ -360,17 +362,17 @@ import os
 from huaweicloudsdkcore.auth.credentials import BasicCredentials, GlobalCredentials
 
 # Region级服务
-ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-sk = os.environ.get("HUAWEICLOUD_SDK_SK")
-security_token = os.environ.get("HUAWEICLOUD_SDK_SECURITY_TOKEN")
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+security_token = os.getenv("HUAWEICLOUD_SDK_SECURITY_TOKEN")
 project_id = "{your projectId string}"
 
 basic_credentials = BasicCredentials(ak, sk, project_id).with_security_token(security_token)
 
 # Global级服务
-ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-sk = os.environ.get("HUAWEICLOUD_SDK_SK")
-security_token = os.environ.get("HUAWEICLOUD_SDK_SECURITY_TOKEN")
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+security_token = os.getenv("HUAWEICLOUD_SDK_SECURITY_TOKEN")
 domain_id = "{your domainId string}"
 
 global_credentials = GlobalCredentials(ak, sk, domain_id).with_security_token(security_token)
@@ -628,8 +630,8 @@ credentials = chain.get_credentials()
 endpoint = "https://vpc.cn-north-4.myhuaweicloud.com"
 
 # 初始化客户端认证信息，需要填写相应 project_id/domain_id，以初始化 BasicCredentials 为例
-ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
 project_id = "{your projectId string}"
 basic_credentials = BasicCredentials(ak, sk, project_id)
 
@@ -656,8 +658,8 @@ from huaweicloudsdkiam.v3.region.iam_region import IamRegion
 
 # 初始化客户端认证信息，使用当前客户端初始化方式可不填 project_id/domain_id
 # 以初始化 GlobalCredentials 为例
-ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
 global_credentials = GlobalCredentials(ak, sk)
 
 # 初始化指定云服务的客户端 {Service}Client
@@ -717,8 +719,8 @@ import os
 from huaweicloudsdkcore.auth.credentials import BasicCredentials
 
 iam_endpoint = "https://iam.cn-north-4.myhuaweicloud.com"
-ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
 credentials = BasicCredentials(ak, sk).with_iam_endpoint(iam_endpoint)
 ```
 
@@ -935,7 +937,38 @@ if __name__ == "__main__":
 **说明:**
 HttpHandler 支持如下方法 `add_request_handler`、`add_response_handler` 。
 
-### 7. 文件上传与下载 [:top:](#用户手册-top)
+### 7. 接口调用器 [:top:](#用户手册-top)
+
+#### 7.1 自定义请求头 [:top:](#用户手册-top)
+
+可以根据需要灵活地配置请求头域参数，非必要**请勿**指定诸如`Host`、`Authorization`、`User-Agent`、`Content-Type`等通用请求头，可能会导致接口调用错误。
+
+```python
+ak = os.getenv("HUAWEICLOUD_SDK_AK")
+sk = os.getenv("HUAWEICLOUD_SDK_SK")
+credentials = BasicCredentials(ak, sk)
+
+client = VpcClient.new_builder() \
+    .with_credentials(credentials) \
+    .with_region(VpcRegion.value_of("cn-north-4")) \
+    .build()
+
+try:
+    request = ListVpcsRequest()
+    response = client.list_vpcs_invoker(list_request) \
+        # 自定义请求头
+        .add_header("key1", "value1") \
+        .add_header("key2", "value2") \
+        .invoke()
+    print(response)
+except exceptions.ClientRequestException as e:
+    print(e.status_code)
+    print(e.request_id)
+    print(e.error_code)
+    print(e.error_msg)
+```
+
+### 8. 文件上传与下载 [:top:](#用户手册-top)
 
 以数据安全中心服务的嵌入图片水印接口为例，该接口需要上传一个图片文件，并返回加过水印的图片文件流：
 
@@ -976,8 +1009,8 @@ def create_image_watermark(client):
 
 
 if __name__ == "__main__":
-    ak = os.environ.get("HUAWEICLOUD_SDK_AK")
-    sk = os.environ.get("HUAWEICLOUD_SDK_SK")
+    ak = os.getenv("HUAWEICLOUD_SDK_AK")
+    sk = os.getenv("HUAWEICLOUD_SDK_SK")
     endpoint = "{your endpoint}"
     project_id = "{your project id}"
     config = HttpConfig.get_default_config()

@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkkps'")
 
 
 class KpsAsyncClient(Client):
@@ -39,9 +44,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.AssociateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.AssociateKeypairResponse`
         """
-        return self._associate_keypair_with_http_info(request)
+        http_info = self._associate_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_keypair_with_http_info(self, request):
+    def associate_keypair_async_invoker(self, request):
+        http_info = self._associate_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_keypair_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/keypairs/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/associate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_associate_keypair_async(self, request):
         """批量绑定SSH密钥对
@@ -96,9 +109,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.BatchAssociateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.BatchAssociateKeypairResponse`
         """
-        return self._batch_associate_keypair_with_http_info(request)
+        http_info = self._batch_associate_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_associate_keypair_with_http_info(self, request):
+    def batch_associate_keypair_async_invoker(self, request):
+        http_info = self._batch_associate_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_associate_keypair_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/keypairs/batch-associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAssociateKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +138,11 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/batch-associate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAssociateKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def clear_private_key_async(self, request):
         """清除私钥
@@ -153,9 +174,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ClearPrivateKeyRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ClearPrivateKeyResponse`
         """
-        return self._clear_private_key_with_http_info(request)
+        http_info = self._clear_private_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _clear_private_key_with_http_info(self, request):
+    def clear_private_key_async_invoker(self, request):
+        http_info = self._clear_private_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _clear_private_key_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/keypairs/{keypair_name}/private-key",
+            "request_type": request.__class__.__name__,
+            "response_type": "ClearPrivateKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,9 +205,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/{keypair_name}/private-key',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ClearPrivateKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_keypair_async(self, request):
         """创建和导入SSH密钥对
@@ -210,9 +239,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.CreateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.CreateKeypairResponse`
         """
-        return self._create_keypair_with_http_info(request)
+        http_info = self._create_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_keypair_with_http_info(self, request):
+    def create_keypair_async_invoker(self, request):
+        http_info = self._create_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_keypair_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/keypairs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -227,11 +268,11 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +281,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_all_failed_task_async(self, request):
         """删除所有失败的任务
@@ -267,9 +304,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.DeleteAllFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteAllFailedTaskResponse`
         """
-        return self._delete_all_failed_task_with_http_info(request)
+        http_info = self._delete_all_failed_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_all_failed_task_with_http_info(self, request):
+    def delete_all_failed_task_async_invoker(self, request):
+        http_info = self._delete_all_failed_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_all_failed_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/failed-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAllFailedTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -284,9 +333,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -295,20 +344,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/failed-tasks',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAllFailedTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_failed_task_async(self, request):
         """删除失败的任务
@@ -322,9 +367,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.DeleteFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteFailedTaskResponse`
         """
-        return self._delete_failed_task_with_http_info(request)
+        http_info = self._delete_failed_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_failed_task_with_http_info(self, request):
+    def delete_failed_task_async_invoker(self, request):
+        http_info = self._delete_failed_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_failed_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/failed-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFailedTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,9 +398,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -352,20 +409,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/failed-tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFailedTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_keypair_async(self, request):
         """删除SSH密钥对
@@ -379,9 +432,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.DeleteKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DeleteKeypairResponse`
         """
-        return self._delete_keypair_with_http_info(request)
+        http_info = self._delete_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_keypair_with_http_info(self, request):
+    def delete_keypair_async_invoker(self, request):
+        http_info = self._delete_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_keypair_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/keypairs/{keypair_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -398,9 +463,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -409,20 +474,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/{keypair_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_keypair_async(self, request):
         """解绑SSH密钥对
@@ -436,9 +497,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.DisassociateKeypairRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.DisassociateKeypairResponse`
         """
-        return self._disassociate_keypair_with_http_info(request)
+        http_info = self._disassociate_keypair_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_keypair_with_http_info(self, request):
+    def disassociate_keypair_async_invoker(self, request):
+        http_info = self._disassociate_keypair_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_keypair_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/keypairs/disassociate",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateKeypairResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -453,11 +526,11 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -466,20 +539,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/disassociate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateKeypairResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_private_key_async(self, request):
         """导出私钥
@@ -493,9 +562,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ExportPrivateKeyRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ExportPrivateKeyResponse`
         """
-        return self._export_private_key_with_http_info(request)
+        http_info = self._export_private_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_private_key_with_http_info(self, request):
+    def export_private_key_async_invoker(self, request):
+        http_info = self._export_private_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_private_key_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/keypairs/private-key/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportPrivateKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -510,11 +591,11 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -523,20 +604,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/private-key/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportPrivateKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_private_key_async(self, request):
         """导入私钥
@@ -550,9 +627,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ImportPrivateKeyResponse`
         """
-        return self._import_private_key_with_http_info(request)
+        http_info = self._import_private_key_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_private_key_with_http_info(self, request):
+    def import_private_key_async_invoker(self, request):
+        http_info = self._import_private_key_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_private_key_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/keypairs/private-key/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportPrivateKeyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -567,11 +656,11 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -580,20 +669,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/private-key/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportPrivateKeyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_failed_task_async(self, request):
         """查询失败的任务信息
@@ -607,9 +692,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListFailedTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListFailedTaskResponse`
         """
-        return self._list_failed_task_with_http_info(request)
+        http_info = self._list_failed_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_failed_task_with_http_info(self, request):
+    def list_failed_task_async_invoker(self, request):
+        http_info = self._list_failed_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_failed_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/failed-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFailedTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -628,9 +725,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -639,20 +736,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/failed-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFailedTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_keypair_detail_async(self, request):
         """查询SSH密钥对详细信息
@@ -666,9 +759,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairDetailRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairDetailResponse`
         """
-        return self._list_keypair_detail_with_http_info(request)
+        http_info = self._list_keypair_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_keypair_detail_with_http_info(self, request):
+    def list_keypair_detail_async_invoker(self, request):
+        http_info = self._list_keypair_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_keypair_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/keypairs/{keypair_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKeypairDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -685,9 +790,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -696,20 +801,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/{keypair_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKeypairDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_keypair_task_async(self, request):
         """查询任务信息
@@ -723,9 +824,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairTaskResponse`
         """
-        return self._list_keypair_task_with_http_info(request)
+        http_info = self._list_keypair_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_keypair_task_with_http_info(self, request):
+    def list_keypair_task_async_invoker(self, request):
+        http_info = self._list_keypair_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_keypair_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKeypairTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -742,9 +855,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -753,20 +866,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKeypairTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_keypairs_async(self, request):
         """查询SSH密钥对列表
@@ -780,9 +889,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListKeypairsRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListKeypairsResponse`
         """
-        return self._list_keypairs_with_http_info(request)
+        http_info = self._list_keypairs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_keypairs_with_http_info(self, request):
+    def list_keypairs_async_invoker(self, request):
+        http_info = self._list_keypairs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_keypairs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/keypairs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListKeypairsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -801,9 +922,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -812,20 +933,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListKeypairsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_running_task_async(self, request):
         """查询正在处理的任务信息
@@ -839,9 +956,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.ListRunningTaskRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.ListRunningTaskResponse`
         """
-        return self._list_running_task_with_http_info(request)
+        http_info = self._list_running_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_running_task_with_http_info(self, request):
+    def list_running_task_async_invoker(self, request):
+        http_info = self._list_running_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_running_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/running-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRunningTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -860,9 +989,9 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -871,20 +1000,16 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/running-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRunningTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_keypair_description_async(self, request):
         """更新SSH密钥对描述
@@ -898,9 +1023,21 @@ class KpsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionRequest`
         :rtype: :class:`huaweicloudsdkkps.v3.UpdateKeypairDescriptionResponse`
         """
-        return self._update_keypair_description_with_http_info(request)
+        http_info = self._update_keypair_description_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_keypair_description_with_http_info(self, request):
+    def update_keypair_description_async_invoker(self, request):
+        http_info = self._update_keypair_description_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_keypair_description_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/keypairs/{keypair_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateKeypairDescriptionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -917,11 +1054,11 @@ class KpsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -930,20 +1067,26 @@ class KpsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/keypairs/{keypair_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateKeypairDescriptionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -982,4 +1125,4 @@ class KpsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

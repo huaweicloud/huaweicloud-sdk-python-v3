@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkief'")
 
 
 class IefClient(Client):
@@ -44,9 +49,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.BatchAddDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.BatchAddDeleteTagsResponse`
         """
-        return self._batch_add_delete_tags_with_http_info(request)
+        http_info = self._batch_add_delete_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_delete_tags_with_http_info(self, request):
+    def batch_add_delete_tags_invoker(self, request):
+        http_info = self._batch_add_delete_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_delete_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddDeleteTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -67,11 +85,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -80,20 +98,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddDeleteTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app(self, request):
         """创建应用模板
@@ -106,9 +120,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateAppResponse`
         """
-        return self._create_app_with_http_info(request)
+        http_info = self._create_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_with_http_info(self, request):
+    def create_app_invoker(self, request):
+        http_info = self._create_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -125,11 +152,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -138,20 +165,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_versions(self, request):
         """创建应用模板版本
@@ -164,9 +187,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateAppVersionsResponse`
         """
-        return self._create_app_versions_with_http_info(request)
+        http_info = self._create_app_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_versions_with_http_info(self, request):
+    def create_app_versions_invoker(self, request):
+        http_info = self._create_app_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_versions_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/apps/{app_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -185,11 +221,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -198,20 +234,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps/{app_id}/versions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_batch_job(self, request):
         """创建批量处理任务
@@ -224,9 +256,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateBatchJobResponse`
         """
-        return self._create_batch_job_with_http_info(request)
+        http_info = self._create_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_batch_job_with_http_info(self, request):
+    def create_batch_job_invoker(self, request):
+        http_info = self._create_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/productmgr/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -243,11 +288,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -256,20 +301,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_config_map(self, request):
         """创建配置项
@@ -282,9 +323,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateConfigMapResponse`
         """
-        return self._create_config_map_with_http_info(request)
+        http_info = self._create_config_map_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_config_map_with_http_info(self, request):
+    def create_config_map_invoker(self, request):
+        http_info = self._create_config_map_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_config_map_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/configmaps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConfigMapResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -301,11 +355,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -314,20 +368,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/configmaps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConfigMapResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_deployments(self, request):
         """创建部署
@@ -340,9 +390,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeploymentsResponse`
         """
-        return self._create_deployments_with_http_info(request)
+        http_info = self._create_deployments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_deployments_with_http_info(self, request):
+    def create_deployments_invoker(self, request):
+        http_info = self._create_deployments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_deployments_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/edgemgr/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeploymentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -359,11 +422,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -372,20 +435,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/edgemgr/deployments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeploymentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_device(self, request):
         """注册终端设备
@@ -398,9 +457,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeviceResponse`
         """
-        return self._create_device_with_http_info(request)
+        http_info = self._create_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_device_with_http_info(self, request):
+    def create_device_invoker(self, request):
+        http_info = self._create_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_device_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -417,11 +489,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -430,20 +502,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/devices',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_device_template(self, request):
         """创建终端设备模板
@@ -456,9 +524,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateDeviceTemplateResponse`
         """
-        return self._create_device_template_with_http_info(request)
+        http_info = self._create_device_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_device_template_with_http_info(self, request):
+    def create_device_template_invoker(self, request):
+        http_info = self._create_device_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_device_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/device-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeviceTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -475,11 +556,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -488,20 +569,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/device-templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeviceTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_group(self, request):
         """边缘节点组管理
@@ -514,9 +591,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeGroupRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeGroupResponse`
         """
-        return self._create_edge_group_with_http_info(request)
+        http_info = self._create_edge_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_group_with_http_info(self, request):
+    def create_edge_group_invoker(self, request):
+        http_info = self._create_edge_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_edge_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -533,11 +623,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -546,20 +636,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_group_cert(self, request):
         """创建边缘节点组证书
@@ -572,9 +658,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeGroupCertRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeGroupCertResponse`
         """
-        return self._create_edge_group_cert_with_http_info(request)
+        http_info = self._create_edge_group_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_group_cert_with_http_info(self, request):
+    def create_edge_group_cert_invoker(self, request):
+        http_info = self._create_edge_group_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_edge_group_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/groups/{group_id}/certs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeGroupCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -593,11 +692,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -606,20 +705,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/certs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeGroupCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_node(self, request):
         """注册边缘节点
@@ -632,9 +727,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeNodeResponse`
         """
-        return self._create_edge_node_with_http_info(request)
+        http_info = self._create_edge_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_node_with_http_info(self, request):
+    def create_edge_node_invoker(self, request):
+        http_info = self._create_edge_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_edge_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -651,11 +759,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -664,20 +772,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_node_certs(self, request):
         """创建节点证书
@@ -690,9 +794,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEdgeNodeCertsResponse`
         """
-        return self._create_edge_node_certs_with_http_info(request)
+        http_info = self._create_edge_node_certs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_node_certs_with_http_info(self, request):
+    def create_edge_node_certs_invoker(self, request):
+        http_info = self._create_edge_node_certs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_edge_node_certs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}/certs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeNodeCertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -711,11 +828,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -724,20 +841,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/certs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeNodeCertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_encryptdatas(self, request):
         """新增加密数据
@@ -750,9 +863,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEncryptdatasResponse`
         """
-        return self._create_encryptdatas_with_http_info(request)
+        http_info = self._create_encryptdatas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_encryptdatas_with_http_info(self, request):
+    def create_encryptdatas_invoker(self, request):
+        http_info = self._create_encryptdatas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_encryptdatas_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edm/encryptdatas",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEncryptdatasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -769,11 +895,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -782,20 +908,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/encryptdatas',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEncryptdatasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_endpoint(self, request):
         """创建端点
@@ -808,9 +930,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateEndpointRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateEndpointResponse`
         """
-        return self._create_endpoint_with_http_info(request)
+        http_info = self._create_endpoint_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_endpoint_with_http_info(self, request):
+    def create_endpoint_invoker(self, request):
+        http_info = self._create_endpoint_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_endpoint_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/routemgr/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEndpointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -827,11 +962,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -840,20 +975,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/endpoints',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEndpointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_node_encryptdatas(self, request):
         """加密数据绑定边缘节点
@@ -866,9 +997,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateNodeEncryptdatasResponse`
         """
-        return self._create_node_encryptdatas_with_http_info(request)
+        http_info = self._create_node_encryptdatas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_node_encryptdatas_with_http_info(self, request):
+    def create_node_encryptdatas_invoker(self, request):
+        http_info = self._create_node_encryptdatas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_node_encryptdatas_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edm/nodes/{node_id}/encryptdatas",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNodeEncryptdatasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -887,11 +1031,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -900,20 +1044,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/nodes/{node_id}/encryptdatas',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNodeEncryptdatasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_product(self, request):
         """创建批量节点注册作业
@@ -926,9 +1066,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateProductRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateProductResponse`
         """
-        return self._create_product_with_http_info(request)
+        http_info = self._create_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_product_with_http_info(self, request):
+    def create_product_invoker(self, request):
+        http_info = self._create_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_product_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/productmgr/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -945,11 +1098,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -958,20 +1111,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/products',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_rule(self, request):
         """创建规则
@@ -984,9 +1133,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateRuleResponse`
         """
-        return self._create_rule_with_http_info(request)
+        http_info = self._create_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_rule_with_http_info(self, request):
+    def create_rule_invoker(self, request):
+        http_info = self._create_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/routemgr/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1003,11 +1165,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1016,20 +1178,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_secret(self, request):
         """创建密钥
@@ -1042,9 +1200,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateSecretResponse`
         """
-        return self._create_secret_with_http_info(request)
+        http_info = self._create_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_secret_with_http_info(self, request):
+    def create_secret_invoker(self, request):
+        http_info = self._create_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_secret_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/secrets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1061,11 +1232,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1074,20 +1245,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/secrets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_service(self, request):
         """创建服务
@@ -1100,9 +1267,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateServiceResponse`
         """
-        return self._create_service_with_http_info(request)
+        http_info = self._create_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_service_with_http_info(self, request):
+    def create_service_invoker(self, request):
+        http_info = self._create_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_service_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/services",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1119,11 +1299,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1132,20 +1312,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/services',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_system_event(self, request):
         """创建系统订阅
@@ -1158,9 +1334,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateSystemEventRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateSystemEventResponse`
         """
-        return self._create_system_event_with_http_info(request)
+        http_info = self._create_system_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_system_event_with_http_info(self, request):
+    def create_system_event_invoker(self, request):
+        http_info = self._create_system_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_system_event_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/routemgr/exchanger/systemevents",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSystemEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1177,11 +1366,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1190,20 +1379,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSystemEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tag(self, request):
         """添加资源标签
@@ -1218,9 +1403,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkief.v1.CreateTagResponse`
         """
-        return self._create_tag_with_http_info(request)
+        http_info = self._create_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tag_with_http_info(self, request):
+    def create_tag_invoker(self, request):
+        http_info = self._create_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1241,11 +1439,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1254,20 +1452,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app(self, request):
         """删除应用模板
@@ -1280,9 +1474,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteAppResponse`
         """
-        return self._delete_app_with_http_info(request)
+        http_info = self._delete_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_with_http_info(self, request):
+    def delete_app_invoker(self, request):
+        http_info = self._delete_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1301,9 +1508,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1312,20 +1519,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_version(self, request):
         """删除应用版本
@@ -1338,9 +1541,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteAppVersionRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteAppVersionResponse`
         """
-        return self._delete_app_version_with_http_info(request)
+        http_info = self._delete_app_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_version_with_http_info(self, request):
+    def delete_app_version_invoker(self, request):
+        http_info = self._delete_app_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_version_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/apps/{app_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1361,9 +1577,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1372,20 +1588,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps/{app_id}/versions/{version_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_batch_job(self, request):
         """删除批量处理作业
@@ -1398,9 +1610,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteBatchJobResponse`
         """
-        return self._delete_batch_job_with_http_info(request)
+        http_info = self._delete_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_batch_job_with_http_info(self, request):
+    def delete_batch_job_invoker(self, request):
+        http_info = self._delete_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/productmgr/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1419,9 +1644,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1430,20 +1655,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_config_map(self, request):
         """删除配置项
@@ -1456,9 +1677,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteConfigMapResponse`
         """
-        return self._delete_config_map_with_http_info(request)
+        http_info = self._delete_config_map_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_config_map_with_http_info(self, request):
+    def delete_config_map_invoker(self, request):
+        http_info = self._delete_config_map_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_config_map_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/configmaps/{configmap_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConfigMapResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1477,9 +1711,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1488,20 +1722,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/configmaps/{configmap_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConfigMapResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_deployment(self, request):
         """删除部署
@@ -1514,9 +1744,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeploymentResponse`
         """
-        return self._delete_deployment_with_http_info(request)
+        http_info = self._delete_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_deployment_with_http_info(self, request):
+    def delete_deployment_invoker(self, request):
+        http_info = self._delete_deployment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_deployment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/edgemgr/deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1537,9 +1780,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1548,20 +1791,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/edgemgr/deployments/{deployment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_device(self, request):
         """删除终端设备
@@ -1574,9 +1813,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeviceResponse`
         """
-        return self._delete_device_with_http_info(request)
+        http_info = self._delete_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_device_with_http_info(self, request):
+    def delete_device_invoker(self, request):
+        http_info = self._delete_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_device_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1595,9 +1847,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1606,20 +1858,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/devices/{device_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_device_template(self, request):
         """删除终端设备模板
@@ -1632,9 +1880,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteDeviceTemplateResponse`
         """
-        return self._delete_device_template_with_http_info(request)
+        http_info = self._delete_device_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_device_template_with_http_info(self, request):
+    def delete_device_template_invoker(self, request):
+        http_info = self._delete_device_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_device_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/device-templates/{device_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1653,9 +1914,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1664,20 +1925,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/device-templates/{device_template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeviceTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_group(self, request):
         """删除边缘节点组
@@ -1690,9 +1947,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupResponse`
         """
-        return self._delete_edge_group_with_http_info(request)
+        http_info = self._delete_edge_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_group_with_http_info(self, request):
+    def delete_edge_group_invoker(self, request):
+        http_info = self._delete_edge_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_edge_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1711,9 +1981,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1722,20 +1992,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_group_cert(self, request):
         """删除边缘节点组证书
@@ -1748,9 +2014,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupCertRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeGroupCertResponse`
         """
-        return self._delete_edge_group_cert_with_http_info(request)
+        http_info = self._delete_edge_group_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_group_cert_with_http_info(self, request):
+    def delete_edge_group_cert_invoker(self, request):
+        http_info = self._delete_edge_group_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_edge_group_cert_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/groups/{group_id}/certs/{group_cert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeGroupCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1771,9 +2050,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1782,20 +2061,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/certs/{group_cert_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeGroupCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_node(self, request):
         """删除边缘节点
@@ -1808,9 +2083,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeResponse`
         """
-        return self._delete_edge_node_with_http_info(request)
+        http_info = self._delete_edge_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_node_with_http_info(self, request):
+    def delete_edge_node_invoker(self, request):
+        http_info = self._delete_edge_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_edge_node_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1829,9 +2117,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1840,20 +2128,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_node_certs(self, request):
         """删除节点证书
@@ -1866,9 +2150,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEdgeNodeCertsResponse`
         """
-        return self._delete_edge_node_certs_with_http_info(request)
+        http_info = self._delete_edge_node_certs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_node_certs_with_http_info(self, request):
+    def delete_edge_node_certs_invoker(self, request):
+        http_info = self._delete_edge_node_certs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_edge_node_certs_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}/certs/{cert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeNodeCertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1889,9 +2186,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1900,20 +2197,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/certs/{cert_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeNodeCertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_encryptdatas(self, request):
         """删除加密数据
@@ -1926,9 +2219,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEncryptdatasResponse`
         """
-        return self._delete_encryptdatas_with_http_info(request)
+        http_info = self._delete_encryptdatas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_encryptdatas_with_http_info(self, request):
+    def delete_encryptdatas_invoker(self, request):
+        http_info = self._delete_encryptdatas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_encryptdatas_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edm/encryptdatas/{encryptdata_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEncryptdatasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1947,9 +2253,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1958,20 +2264,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/encryptdatas/{encryptdata_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEncryptdatasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_end_point(self, request):
         """删除一个端点
@@ -1984,9 +2286,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteEndPointRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteEndPointResponse`
         """
-        return self._delete_end_point_with_http_info(request)
+        http_info = self._delete_end_point_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_end_point_with_http_info(self, request):
+    def delete_end_point_invoker(self, request):
+        http_info = self._delete_end_point_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_end_point_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/routemgr/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEndPointResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2005,9 +2320,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2016,20 +2331,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/endpoints/{endpoint_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEndPointResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_node_encryptdatas(self, request):
         """解绑边缘节点的加密数据
@@ -2042,9 +2353,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteNodeEncryptdatasResponse`
         """
-        return self._delete_node_encryptdatas_with_http_info(request)
+        http_info = self._delete_node_encryptdatas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_node_encryptdatas_with_http_info(self, request):
+    def delete_node_encryptdatas_invoker(self, request):
+        http_info = self._delete_node_encryptdatas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_node_encryptdatas_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edm/nodes/{node_id}/encryptdatas/{encryptdata_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNodeEncryptdatasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2065,9 +2389,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2076,20 +2400,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/nodes/{node_id}/encryptdatas/{encryptdata_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNodeEncryptdatasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_product(self, request):
         """删除批量节点注册作业
@@ -2102,9 +2422,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteProductRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteProductResponse`
         """
-        return self._delete_product_with_http_info(request)
+        http_info = self._delete_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_product_with_http_info(self, request):
+    def delete_product_invoker(self, request):
+        http_info = self._delete_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_product_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/productmgr/products/{product_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2123,9 +2456,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2134,20 +2467,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/products/{product_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_tag(self, request):
         """删除资源标签
@@ -2160,9 +2489,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteResourceTagResponse`
         """
-        return self._delete_resource_tag_with_http_info(request)
+        http_info = self._delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_tag_with_http_info(self, request):
+    def delete_resource_tag_invoker(self, request):
+        http_info = self._delete_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2185,9 +2527,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2196,20 +2538,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_rule(self, request):
         """删除规则
@@ -2222,9 +2560,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteRuleResponse`
         """
-        return self._delete_rule_with_http_info(request)
+        http_info = self._delete_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_rule_with_http_info(self, request):
+    def delete_rule_invoker(self, request):
+        http_info = self._delete_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/routemgr/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2243,9 +2594,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2254,20 +2605,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/rules/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_secret(self, request):
         """删除密钥
@@ -2280,9 +2627,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteSecretResponse`
         """
-        return self._delete_secret_with_http_info(request)
+        http_info = self._delete_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_secret_with_http_info(self, request):
+    def delete_secret_invoker(self, request):
+        http_info = self._delete_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_secret_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/secrets/{secret_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2301,9 +2661,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2312,20 +2672,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/secrets/{secret_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_service(self, request):
         """删除服务
@@ -2338,9 +2694,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteServiceResponse`
         """
-        return self._delete_service_with_http_info(request)
+        http_info = self._delete_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_service_with_http_info(self, request):
+    def delete_service_invoker(self, request):
+        http_info = self._delete_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_service_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/edgemgr/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2359,9 +2728,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2370,20 +2739,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/services/{service_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_system_event(self, request):
         """删除系统订阅列表
@@ -2396,9 +2761,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.DeleteSystemEventRequest`
         :rtype: :class:`huaweicloudsdkief.v1.DeleteSystemEventResponse`
         """
-        return self._delete_system_event_with_http_info(request)
+        http_info = self._delete_system_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_system_event_with_http_info(self, request):
+    def delete_system_event_invoker(self, request):
+        http_info = self._delete_system_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_system_event_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSystemEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2417,9 +2795,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2428,20 +2806,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSystemEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_disable_edge_nodes(self, request):
         """启用停用边缘节点
@@ -2454,9 +2828,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.EnableDisableEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.EnableDisableEdgeNodesResponse`
         """
-        return self._enable_disable_edge_nodes_with_http_info(request)
+        http_info = self._enable_disable_edge_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_disable_edge_nodes_with_http_info(self, request):
+    def enable_disable_edge_nodes_invoker(self, request):
+        http_info = self._enable_disable_edge_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_disable_edge_nodes_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableDisableEdgeNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2475,11 +2862,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2488,20 +2875,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableDisableEdgeNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_versions(self, request):
         """查询应用模板版本列表
@@ -2514,9 +2897,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListAppVersionsResponse`
         """
-        return self._list_app_versions_with_http_info(request)
+        http_info = self._list_app_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_versions_with_http_info(self, request):
+    def list_app_versions_invoker(self, request):
+        http_info = self._list_app_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/apps/{app_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2539,9 +2935,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2550,20 +2946,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps/{app_id}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps(self, request):
         """查询应用模板列表
@@ -2576,9 +2968,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListAppsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListAppsResponse`
         """
-        return self._list_apps_with_http_info(request)
+        http_info = self._list_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_with_http_info(self, request):
+    def list_apps_invoker(self, request):
+        http_info = self._list_apps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2605,9 +3010,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2616,20 +3021,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_batch_job(self, request):
         """查询批量处理作业列表
@@ -2642,9 +3043,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListBatchJobResponse`
         """
-        return self._list_batch_job_with_http_info(request)
+        http_info = self._list_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_batch_job_with_http_info(self, request):
+    def list_batch_job_invoker(self, request):
+        http_info = self._list_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/productmgr/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2669,9 +3083,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2680,20 +3094,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_config_maps(self, request):
         """查询配置项列表
@@ -2706,9 +3116,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListConfigMapsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListConfigMapsResponse`
         """
-        return self._list_config_maps_with_http_info(request)
+        http_info = self._list_config_maps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_config_maps_with_http_info(self, request):
+    def list_config_maps_invoker(self, request):
+        http_info = self._list_config_maps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_config_maps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/configmaps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigMapsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2731,9 +3154,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2742,20 +3165,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/configmaps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigMapsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_deployments(self, request):
         """查询部署列表
@@ -2768,9 +3187,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDeploymentsResponse`
         """
-        return self._list_deployments_with_http_info(request)
+        http_info = self._list_deployments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_deployments_with_http_info(self, request):
+    def list_deployments_invoker(self, request):
+        http_info = self._list_deployments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_deployments_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/edgemgr/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDeploymentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2799,9 +3231,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2810,20 +3242,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/edgemgr/deployments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDeploymentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_device_templates(self, request):
         """查询终端设备模板列表
@@ -2836,9 +3264,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListDeviceTemplatesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDeviceTemplatesResponse`
         """
-        return self._list_device_templates_with_http_info(request)
+        http_info = self._list_device_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_device_templates_with_http_info(self, request):
+    def list_device_templates_invoker(self, request):
+        http_info = self._list_device_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_device_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/device-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDeviceTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2861,9 +3302,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2872,20 +3313,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/device-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDeviceTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_devices(self, request):
         """查询终端设备列表
@@ -2898,9 +3335,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListDevicesResponse`
         """
-        return self._list_devices_with_http_info(request)
+        http_info = self._list_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_devices_with_http_info(self, request):
+    def list_devices_invoker(self, request):
+        http_info = self._list_devices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_devices_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2929,9 +3379,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2940,20 +3390,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/devices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_group_certs(self, request):
         """查询边缘节点组证书列表
@@ -2966,9 +3412,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeGroupCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeGroupCertsResponse`
         """
-        return self._list_edge_group_certs_with_http_info(request)
+        http_info = self._list_edge_group_certs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_group_certs_with_http_info(self, request):
+    def list_edge_group_certs_invoker(self, request):
+        http_info = self._list_edge_group_certs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_group_certs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/groups/{group_id}/certs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeGroupCertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2991,9 +3450,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3002,20 +3461,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/certs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeGroupCertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_groups(self, request):
         """查询边缘节点组列表
@@ -3028,9 +3483,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeGroupsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeGroupsResponse`
         """
-        return self._list_edge_groups_with_http_info(request)
+        http_info = self._list_edge_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_groups_with_http_info(self, request):
+    def list_edge_groups_invoker(self, request):
+        http_info = self._list_edge_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3055,9 +3523,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3066,20 +3534,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_node_certs(self, request):
         """查询节点证书
@@ -3092,9 +3556,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeNodeCertsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeNodeCertsResponse`
         """
-        return self._list_edge_node_certs_with_http_info(request)
+        http_info = self._list_edge_node_certs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_node_certs_with_http_info(self, request):
+    def list_edge_node_certs_invoker(self, request):
+        http_info = self._list_edge_node_certs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_node_certs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}/certs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeNodeCertsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3117,9 +3594,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3128,20 +3605,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/certs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeNodeCertsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_nodes(self, request):
         """查询边缘节点列表
@@ -3156,9 +3629,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEdgeNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEdgeNodesResponse`
         """
-        return self._list_edge_nodes_with_http_info(request)
+        http_info = self._list_edge_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_nodes_with_http_info(self, request):
+    def list_edge_nodes_invoker(self, request):
+        http_info = self._list_edge_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_edge_nodes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3195,9 +3681,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3206,20 +3692,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_encryptdata_nodes(self, request):
         """获取加密数据绑定的边缘节点
@@ -3232,9 +3714,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEncryptdataNodesResponse`
         """
-        return self._list_encryptdata_nodes_with_http_info(request)
+        http_info = self._list_encryptdata_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_encryptdata_nodes_with_http_info(self, request):
+    def list_encryptdata_nodes_invoker(self, request):
+        http_info = self._list_encryptdata_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_encryptdata_nodes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edm/encryptdatas/{encryptdata_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEncryptdataNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3257,9 +3752,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3268,20 +3763,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/encryptdatas/{encryptdata_id}/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEncryptdataNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_encryptdatas(self, request):
         """获取加密数据列表
@@ -3294,9 +3785,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEncryptdatasResponse`
         """
-        return self._list_encryptdatas_with_http_info(request)
+        http_info = self._list_encryptdatas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_encryptdatas_with_http_info(self, request):
+    def list_encryptdatas_invoker(self, request):
+        http_info = self._list_encryptdatas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_encryptdatas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edm/encryptdatas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEncryptdatasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3319,9 +3823,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3330,20 +3834,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/encryptdatas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEncryptdatasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_endpoints(self, request):
         """查询端点列表
@@ -3358,9 +3858,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListEndpointsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListEndpointsResponse`
         """
-        return self._list_endpoints_with_http_info(request)
+        http_info = self._list_endpoints_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_endpoints_with_http_info(self, request):
+    def list_endpoints_invoker(self, request):
+        http_info = self._list_endpoints_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_endpoints_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/routemgr/endpoints",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEndpointsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3387,9 +3900,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3398,20 +3911,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/endpoints',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEndpointsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_node_encryptdatas(self, request):
         """获取边缘节点绑定的加密数据
@@ -3424,9 +3933,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListNodeEncryptdatasResponse`
         """
-        return self._list_node_encryptdatas_with_http_info(request)
+        http_info = self._list_node_encryptdatas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_node_encryptdatas_with_http_info(self, request):
+    def list_node_encryptdatas_invoker(self, request):
+        http_info = self._list_node_encryptdatas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_node_encryptdatas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edm/nodes/{node_id}/encryptdatas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodeEncryptdatasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3449,9 +3971,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3460,20 +3982,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/nodes/{node_id}/encryptdatas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNodeEncryptdatasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pods(self, request):
         """查询应用实例列表
@@ -3486,9 +4004,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListPodsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListPodsResponse`
         """
-        return self._list_pods_with_http_info(request)
+        http_info = self._list_pods_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pods_with_http_info(self, request):
+    def list_pods_invoker(self, request):
+        http_info = self._list_pods_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pods_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/edgemgr/pods",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPodsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3519,9 +4050,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3530,20 +4061,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/edgemgr/pods',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPodsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_products(self, request):
         """查询批量节点注册作业列表
@@ -3556,9 +4083,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListProductsResponse`
         """
-        return self._list_products_with_http_info(request)
+        http_info = self._list_products_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_products_with_http_info(self, request):
+    def list_products_invoker(self, request):
+        http_info = self._list_products_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_products_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/productmgr/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3581,9 +4121,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3592,20 +4132,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/products',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_by_tags(self, request):
         """查询资源实例
@@ -3618,9 +4154,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListResourceByTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListResourceByTagsResponse`
         """
-        return self._list_resource_by_tags_with_http_info(request)
+        http_info = self._list_resource_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_by_tags_with_http_info(self, request):
+    def list_resource_by_tags_invoker(self, request):
+        http_info = self._list_resource_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3639,11 +4188,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3652,20 +4201,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rule_errors(self, request):
         """查询规则错误列表
@@ -3678,9 +4223,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListRuleErrorsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListRuleErrorsResponse`
         """
-        return self._list_rule_errors_with_http_info(request)
+        http_info = self._list_rule_errors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rule_errors_with_http_info(self, request):
+    def list_rule_errors_invoker(self, request):
+        http_info = self._list_rule_errors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rule_errors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/routemgr/rules/{rule_id}/errors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRuleErrorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3703,9 +4261,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3714,20 +4272,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/rules/{rule_id}/errors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRuleErrorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rules(self, request):
         """查询规则列表
@@ -3740,9 +4294,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListRulesResponse`
         """
-        return self._list_rules_with_http_info(request)
+        http_info = self._list_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rules_with_http_info(self, request):
+    def list_rules_invoker(self, request):
+        http_info = self._list_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/routemgr/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3765,9 +4332,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3776,20 +4343,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_secrets(self, request):
         """查询密钥列表
@@ -3802,9 +4365,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListSecretsResponse`
         """
-        return self._list_secrets_with_http_info(request)
+        http_info = self._list_secrets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_secrets_with_http_info(self, request):
+    def list_secrets_invoker(self, request):
+        http_info = self._list_secrets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_secrets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/secrets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecretsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3829,9 +4405,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3840,20 +4416,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/secrets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecretsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_services(self, request):
         """查询服务列表
@@ -3866,9 +4438,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListServicesRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListServicesResponse`
         """
-        return self._list_services_with_http_info(request)
+        http_info = self._list_services_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_services_with_http_info(self, request):
+    def list_services_invoker(self, request):
+        http_info = self._list_services_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_services_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3895,9 +4480,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3906,20 +4491,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/services',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_system_events(self, request):
         """查询系统订阅列表
@@ -3932,9 +4513,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListSystemEventsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListSystemEventsResponse`
         """
-        return self._list_system_events_with_http_info(request)
+        http_info = self._list_system_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_system_events_with_http_info(self, request):
+    def list_system_events_invoker(self, request):
+        http_info = self._list_system_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_system_events_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/routemgr/exchanger/systemevents",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSystemEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3957,9 +4551,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3968,20 +4562,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSystemEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags(self, request):
         """查询资源标签
@@ -3994,9 +4584,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListTagsResponse`
         """
-        return self._list_tags_with_http_info(request)
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_with_http_info(self, request):
+    def list_tags_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4017,9 +4620,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4028,20 +4631,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags_by_resource_type(self, request):
         """查询项目标签
@@ -4054,9 +4653,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ListTagsByResourceTypeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ListTagsByResourceTypeResponse`
         """
-        return self._list_tags_by_resource_type_with_http_info(request)
+        http_info = self._list_tags_by_resource_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_by_resource_type_with_http_info(self, request):
+    def list_tags_by_resource_type_invoker(self, request):
+        http_info = self._list_tags_by_resource_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tags_by_resource_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsByResourceTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4075,9 +4687,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4086,20 +4698,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsByResourceTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_deployments_pod(self, request):
         """容器应用实例重启
@@ -4112,9 +4720,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodRequest`
         :rtype: :class:`huaweicloudsdkief.v1.RestartDeploymentsPodResponse`
         """
-        return self._restart_deployments_pod_with_http_info(request)
+        http_info = self._restart_deployments_pod_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_deployments_pod_with_http_info(self, request):
+    def restart_deployments_pod_invoker(self, request):
+        http_info = self._restart_deployments_pod_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_deployments_pod_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/edgemgr/deployments/{deployment_id}/pods/{pod_name}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartDeploymentsPodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4135,9 +4756,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4146,20 +4767,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/edgemgr/deployments/{deployment_id}/pods/{pod_name}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartDeploymentsPodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_batch_job(self, request):
         """继续批量处理作业
@@ -4172,9 +4789,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.RestoreBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.RestoreBatchJobResponse`
         """
-        return self._restore_batch_job_with_http_info(request)
+        http_info = self._restore_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_batch_job_with_http_info(self, request):
+    def restore_batch_job_invoker(self, request):
+        http_info = self._restore_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/productmgr/jobs/{job_id}/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4193,9 +4823,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4204,20 +4834,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}/restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def retry_batch_job(self, request):
         """重试批量处理作业
@@ -4230,9 +4856,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.RetryBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.RetryBatchJobResponse`
         """
-        return self._retry_batch_job_with_http_info(request)
+        http_info = self._retry_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _retry_batch_job_with_http_info(self, request):
+    def retry_batch_job_invoker(self, request):
+        http_info = self._retry_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _retry_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/productmgr/jobs/{job_id}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RetryBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4251,9 +4890,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4262,20 +4901,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}/retry',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RetryBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_detail(self, request):
         """查询应用模板详情
@@ -4288,9 +4923,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowAppDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowAppDetailResponse`
         """
-        return self._show_app_detail_with_http_info(request)
+        http_info = self._show_app_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_detail_with_http_info(self, request):
+    def show_app_detail_invoker(self, request):
+        http_info = self._show_app_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4309,9 +4957,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4320,20 +4968,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_version_detail(self, request):
         """查询应用模板版本详情
@@ -4346,9 +4990,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowAppVersionDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowAppVersionDetailResponse`
         """
-        return self._show_app_version_detail_with_http_info(request)
+        http_info = self._show_app_version_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_version_detail_with_http_info(self, request):
+    def show_app_version_detail_invoker(self, request):
+        http_info = self._show_app_version_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_version_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/apps/{app_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppVersionDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4369,9 +5026,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4380,20 +5037,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps/{app_id}/versions/{version_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppVersionDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_batch_job(self, request):
         """查询批量处理作业详情
@@ -4406,9 +5059,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowBatchJobResponse`
         """
-        return self._show_batch_job_with_http_info(request)
+        http_info = self._show_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_batch_job_with_http_info(self, request):
+    def show_batch_job_invoker(self, request):
+        http_info = self._show_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/productmgr/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4427,9 +5093,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4438,20 +5104,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_config_map(self, request):
         """查询配置项详情
@@ -4464,9 +5126,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowConfigMapResponse`
         """
-        return self._show_config_map_with_http_info(request)
+        http_info = self._show_config_map_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_config_map_with_http_info(self, request):
+    def show_config_map_invoker(self, request):
+        http_info = self._show_config_map_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_config_map_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/configmaps/{configmap_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigMapResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4485,9 +5160,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4496,20 +5171,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/configmaps/{configmap_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigMapResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deployment(self, request):
         """查询应用部署
@@ -4522,9 +5193,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeploymentResponse`
         """
-        return self._show_deployment_with_http_info(request)
+        http_info = self._show_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deployment_with_http_info(self, request):
+    def show_deployment_invoker(self, request):
+        http_info = self._show_deployment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_deployment_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/edgemgr/deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4543,9 +5227,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4554,20 +5238,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/edgemgr/deployments/{deployment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device(self, request):
         """查询终端设备详情
@@ -4580,9 +5260,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceResponse`
         """
-        return self._show_device_with_http_info(request)
+        http_info = self._show_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_with_http_info(self, request):
+    def show_device_invoker(self, request):
+        http_info = self._show_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_device_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4601,9 +5294,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4612,20 +5305,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/devices/{device_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device_template(self, request):
         """查询终端设备模板
@@ -4638,9 +5327,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceTemplateRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceTemplateResponse`
         """
-        return self._show_device_template_with_http_info(request)
+        http_info = self._show_device_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_template_with_http_info(self, request):
+    def show_device_template_invoker(self, request):
+        http_info = self._show_device_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_device_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/device-templates/{device_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4659,9 +5361,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4670,20 +5372,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/device-templates/{device_template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device_twin(self, request):
         """查询终端设备孪生
@@ -4696,9 +5394,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowDeviceTwinRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowDeviceTwinResponse`
         """
-        return self._show_device_twin_with_http_info(request)
+        http_info = self._show_device_twin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_twin_with_http_info(self, request):
+    def show_device_twin_invoker(self, request):
+        http_info = self._show_device_twin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_device_twin_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/devices/{device_id}/twin",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceTwinResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4717,9 +5428,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4728,20 +5439,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/devices/{device_id}/twin',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceTwinResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_group_cert_detail(self, request):
         """查询边缘节点组证书详情
@@ -4754,9 +5461,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEdgeGroupCertDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeGroupCertDetailResponse`
         """
-        return self._show_edge_group_cert_detail_with_http_info(request)
+        http_info = self._show_edge_group_cert_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_group_cert_detail_with_http_info(self, request):
+    def show_edge_group_cert_detail_invoker(self, request):
+        http_info = self._show_edge_group_cert_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_edge_group_cert_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/groups/{group_id}/certs/{group_cert_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeGroupCertDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4777,9 +5497,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4788,20 +5508,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/certs/{group_cert_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeGroupCertDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_group_detail(self, request):
         """查询边缘节点组详情
@@ -4814,9 +5530,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEdgeGroupDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeGroupDetailResponse`
         """
-        return self._show_edge_group_detail_with_http_info(request)
+        http_info = self._show_edge_group_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_group_detail_with_http_info(self, request):
+    def show_edge_group_detail_invoker(self, request):
+        http_info = self._show_edge_group_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_edge_group_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeGroupDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4835,9 +5564,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4846,20 +5575,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeGroupDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_node_detail(self, request):
         """查询边缘节点详情
@@ -4872,9 +5597,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEdgeNodeDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEdgeNodeDetailResponse`
         """
-        return self._show_edge_node_detail_with_http_info(request)
+        http_info = self._show_edge_node_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_node_detail_with_http_info(self, request):
+    def show_edge_node_detail_invoker(self, request):
+        http_info = self._show_edge_node_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_edge_node_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeNodeDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4893,9 +5631,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4904,20 +5642,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeNodeDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_encryptdatas(self, request):
         """查询加密数据详情
@@ -4930,9 +5664,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEncryptdatasResponse`
         """
-        return self._show_encryptdatas_with_http_info(request)
+        http_info = self._show_encryptdatas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_encryptdatas_with_http_info(self, request):
+    def show_encryptdatas_invoker(self, request):
+        http_info = self._show_encryptdatas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_encryptdatas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edm/encryptdatas/{encryptdata_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEncryptdatasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4951,9 +5698,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4962,20 +5709,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/encryptdatas/{encryptdata_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEncryptdatasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_end_point_detail(self, request):
         """查询端点详情
@@ -4988,9 +5731,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowEndPointDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowEndPointDetailResponse`
         """
-        return self._show_end_point_detail_with_http_info(request)
+        http_info = self._show_end_point_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_end_point_detail_with_http_info(self, request):
+    def show_end_point_detail_invoker(self, request):
+        http_info = self._show_end_point_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_end_point_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/routemgr/endpoints/{endpoint_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEndPointDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5009,9 +5765,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5020,20 +5776,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/endpoints/{endpoint_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEndPointDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_product_detail(self, request):
         """查询批量节点注册作业详情
@@ -5046,9 +5798,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowProductDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowProductDetailResponse`
         """
-        return self._show_product_detail_with_http_info(request)
+        http_info = self._show_product_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_product_detail_with_http_info(self, request):
+    def show_product_detail_invoker(self, request):
+        http_info = self._show_product_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_product_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/productmgr/products/{product_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProductDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5067,9 +5832,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5078,20 +5843,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/products/{product_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProductDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quota(self, request):
         """查询IEF服务下的资源配额
@@ -5104,9 +5865,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowQuotaRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowQuotaResponse`
         """
-        return self._show_quota_with_http_info(request)
+        http_info = self._show_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quota_with_http_info(self, request):
+    def show_quota_invoker(self, request):
+        http_info = self._show_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5123,9 +5897,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5134,20 +5908,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_rule_detail(self, request):
         """查询规则详情
@@ -5160,9 +5930,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowRuleDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowRuleDetailResponse`
         """
-        return self._show_rule_detail_with_http_info(request)
+        http_info = self._show_rule_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_rule_detail_with_http_info(self, request):
+    def show_rule_detail_invoker(self, request):
+        http_info = self._show_rule_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_rule_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/routemgr/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRuleDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5181,9 +5964,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5192,20 +5975,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/rules/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRuleDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_secret(self, request):
         """查询密钥详情
@@ -5218,9 +5997,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowSecretResponse`
         """
-        return self._show_secret_with_http_info(request)
+        http_info = self._show_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_secret_with_http_info(self, request):
+    def show_secret_invoker(self, request):
+        http_info = self._show_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_secret_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/secrets/{secret_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5239,9 +6031,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5250,20 +6042,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/secrets/{secret_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_service_detail(self, request):
         """查询服务详情
@@ -5276,9 +6064,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowServiceDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowServiceDetailResponse`
         """
-        return self._show_service_detail_with_http_info(request)
+        http_info = self._show_service_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_service_detail_with_http_info(self, request):
+    def show_service_detail_invoker(self, request):
+        http_info = self._show_service_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_service_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/edgemgr/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServiceDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5297,9 +6098,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5308,20 +6109,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/services/{service_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServiceDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_system_event_detail(self, request):
         """查询系统订阅列表
@@ -5334,9 +6131,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.ShowSystemEventDetailRequest`
         :rtype: :class:`huaweicloudsdkief.v1.ShowSystemEventDetailResponse`
         """
-        return self._show_system_event_detail_with_http_info(request)
+        http_info = self._show_system_event_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_system_event_detail_with_http_info(self, request):
+    def show_system_event_detail_invoker(self, request):
+        http_info = self._show_system_event_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_system_event_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSystemEventDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5355,9 +6165,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5366,20 +6176,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSystemEventDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_rule(self, request):
         """启用规则
@@ -5392,9 +6198,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StartRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StartRuleResponse`
         """
-        return self._start_rule_with_http_info(request)
+        http_info = self._start_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_rule_with_http_info(self, request):
+    def start_rule_invoker(self, request):
+        http_info = self._start_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/routemgr/rules/{rule_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5413,9 +6232,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5424,20 +6243,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/rules/{rule_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_system_event(self, request):
         """启用系统订阅
@@ -5450,9 +6265,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StartSystemEventRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StartSystemEventResponse`
         """
-        return self._start_system_event_with_http_info(request)
+        http_info = self._start_system_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_system_event_with_http_info(self, request):
+    def start_system_event_invoker(self, request):
+        http_info = self._start_system_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_system_event_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartSystemEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5471,9 +6299,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5482,20 +6310,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartSystemEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_batch_job(self, request):
         """停止批量处理作业
@@ -5508,9 +6332,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StopBatchJobRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StopBatchJobResponse`
         """
-        return self._stop_batch_job_with_http_info(request)
+        http_info = self._stop_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_batch_job_with_http_info(self, request):
+    def stop_batch_job_invoker(self, request):
+        http_info = self._stop_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/productmgr/jobs/{job_id}/pause",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5529,9 +6366,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5540,20 +6377,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/productmgr/jobs/{job_id}/pause',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_rule(self, request):
         """停用规则
@@ -5566,9 +6399,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StopRuleRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StopRuleResponse`
         """
-        return self._stop_rule_with_http_info(request)
+        http_info = self._stop_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_rule_with_http_info(self, request):
+    def stop_rule_invoker(self, request):
+        http_info = self._stop_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/routemgr/rules/{rule_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5587,9 +6433,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5598,20 +6444,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/rules/{rule_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_system_event(self, request):
         """停用系统订阅
@@ -5624,9 +6466,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.StopSystemEventRequest`
         :rtype: :class:`huaweicloudsdkief.v1.StopSystemEventResponse`
         """
-        return self._stop_system_event_with_http_info(request)
+        http_info = self._stop_system_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_system_event_with_http_info(self, request):
+    def stop_system_event_invoker(self, request):
+        http_info = self._stop_system_event_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_system_event_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopSystemEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5645,9 +6500,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5656,20 +6511,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/routemgr/exchanger/systemevents/{event_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopSystemEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app(self, request):
         """更新应用模板
@@ -5682,9 +6533,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateAppResponse`
         """
-        return self._update_app_with_http_info(request)
+        http_info = self._update_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_with_http_info(self, request):
+    def update_app_invoker(self, request):
+        http_info = self._update_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5703,11 +6567,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5716,20 +6580,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps/{app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_version(self, request):
         """更新应用模板版本
@@ -5742,9 +6602,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateAppVersionRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateAppVersionResponse`
         """
-        return self._update_app_version_with_http_info(request)
+        http_info = self._update_app_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_version_with_http_info(self, request):
+    def update_app_version_invoker(self, request):
+        http_info = self._update_app_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_version_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/apps/{app_id}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5765,11 +6638,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5778,20 +6651,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/apps/{app_id}/versions/{version_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_config_map(self, request):
         """更新配置项
@@ -5804,9 +6673,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateConfigMapResponse`
         """
-        return self._update_config_map_with_http_info(request)
+        http_info = self._update_config_map_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_config_map_with_http_info(self, request):
+    def update_config_map_invoker(self, request):
+        http_info = self._update_config_map_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_config_map_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/configmaps/{configmap_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConfigMapResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5825,11 +6707,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5838,20 +6720,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/configmaps/{configmap_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConfigMapResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_deployment(self, request):
         """更新应用部署
@@ -5864,9 +6742,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeploymentResponse`
         """
-        return self._update_deployment_with_http_info(request)
+        http_info = self._update_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_deployment_with_http_info(self, request):
+    def update_deployment_invoker(self, request):
+        http_info = self._update_deployment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_deployment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/edgemgr/deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5885,11 +6776,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5898,20 +6789,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/edgemgr/deployments/{deployment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_device(self, request):
         """更新终端设备
@@ -5924,9 +6811,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceResponse`
         """
-        return self._update_device_with_http_info(request)
+        http_info = self._update_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_device_with_http_info(self, request):
+    def update_device_invoker(self, request):
+        http_info = self._update_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_device_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5945,11 +6845,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5958,20 +6858,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/devices/{device_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_device_template_by_id(self, request):
         """更新终端设备模板
@@ -5984,9 +6880,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceTemplateByIdRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceTemplateByIdResponse`
         """
-        return self._update_device_template_by_id_with_http_info(request)
+        http_info = self._update_device_template_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_device_template_by_id_with_http_info(self, request):
+    def update_device_template_by_id_invoker(self, request):
+        http_info = self._update_device_template_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_device_template_by_id_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/device-templates/{device_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceTemplateByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6005,11 +6914,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6018,20 +6927,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/device-templates/{device_template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeviceTemplateByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_device_twin(self, request):
         """更新终端设备孪生
@@ -6044,9 +6949,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateDeviceTwinRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateDeviceTwinResponse`
         """
-        return self._update_device_twin_with_http_info(request)
+        http_info = self._update_device_twin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_device_twin_with_http_info(self, request):
+    def update_device_twin_invoker(self, request):
+        http_info = self._update_device_twin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_device_twin_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/devices/{device_id}/twin",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceTwinResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6065,11 +6983,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6078,20 +6996,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/devices/{device_id}/twin',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeviceTwinResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_group(self, request):
         """更新边缘节点组
@@ -6104,9 +7018,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupResponse`
         """
-        return self._update_edge_group_with_http_info(request)
+        http_info = self._update_edge_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_group_with_http_info(self, request):
+    def update_edge_group_invoker(self, request):
+        http_info = self._update_edge_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_edge_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6125,11 +7052,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6138,20 +7065,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_group_node_binding(self, request):
         """绑定或解绑边缘节点
@@ -6164,9 +7087,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupNodeBindingRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeGroupNodeBindingResponse`
         """
-        return self._update_edge_group_node_binding_with_http_info(request)
+        http_info = self._update_edge_group_node_binding_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_group_node_binding_with_http_info(self, request):
+    def update_edge_group_node_binding_invoker(self, request):
+        http_info = self._update_edge_group_node_binding_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_edge_group_node_binding_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/groups/{group_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeGroupNodeBindingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6185,11 +7121,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6198,20 +7134,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/groups/{group_id}/nodes',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeGroupNodeBindingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_node(self, request):
         """更新边缘节点
@@ -6224,9 +7156,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeResponse`
         """
-        return self._update_edge_node_with_http_info(request)
+        http_info = self._update_edge_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_node_with_http_info(self, request):
+    def update_edge_node_invoker(self, request):
+        http_info = self._update_edge_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_edge_node_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6245,11 +7190,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6258,20 +7203,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_node_device(self, request):
         """更新边缘节点的终端设备
@@ -6284,9 +7225,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeDeviceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEdgeNodeDeviceResponse`
         """
-        return self._update_edge_node_device_with_http_info(request)
+        http_info = self._update_edge_node_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_node_device_with_http_info(self, request):
+    def update_edge_node_device_invoker(self, request):
+        http_info = self._update_edge_node_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_edge_node_device_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeNodeDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6305,11 +7259,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6318,20 +7272,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/devices',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeNodeDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_encryptdatas(self, request):
         """更新加密数据
@@ -6344,9 +7294,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateEncryptdatasResponse`
         """
-        return self._update_encryptdatas_with_http_info(request)
+        http_info = self._update_encryptdatas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_encryptdatas_with_http_info(self, request):
+    def update_encryptdatas_invoker(self, request):
+        http_info = self._update_encryptdatas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_encryptdatas_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edm/encryptdatas/{encryptdata_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEncryptdatasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6365,11 +7328,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6378,20 +7341,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edm/encryptdatas/{encryptdata_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEncryptdatasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_node_by_device_id(self, request):
         """更新终端设备的边缘节点
@@ -6404,9 +7363,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateNodeByDeviceIdRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateNodeByDeviceIdResponse`
         """
-        return self._update_node_by_device_id_with_http_info(request)
+        http_info = self._update_node_by_device_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_node_by_device_id_with_http_info(self, request):
+    def update_node_by_device_id_invoker(self, request):
+        http_info = self._update_node_by_device_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_node_by_device_id_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/devices/{device_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNodeByDeviceIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6425,11 +7397,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6438,20 +7410,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/devices/{device_id}/nodes',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNodeByDeviceIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_secret(self, request):
         """更新密钥
@@ -6464,9 +7432,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateSecretResponse`
         """
-        return self._update_secret_with_http_info(request)
+        http_info = self._update_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_secret_with_http_info(self, request):
+    def update_secret_invoker(self, request):
+        http_info = self._update_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_secret_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/secrets/{secret_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6485,11 +7466,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6498,20 +7479,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/secrets/{secret_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_service(self, request):
         """更新服务
@@ -6524,9 +7501,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpdateServiceRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpdateServiceResponse`
         """
-        return self._update_service_with_http_info(request)
+        http_info = self._update_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_service_with_http_info(self, request):
+    def update_service_invoker(self, request):
+        http_info = self._update_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_service_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/edgemgr/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6545,11 +7535,11 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6558,20 +7548,16 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/services/{service_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_edge_node(self, request):
         """升级边缘节点
@@ -6584,9 +7570,22 @@ class IefClient(Client):
         :type request: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeRequest`
         :rtype: :class:`huaweicloudsdkief.v1.UpgradeEdgeNodeResponse`
         """
-        return self._upgrade_edge_node_with_http_info(request)
+        http_info = self._upgrade_edge_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_edge_node_with_http_info(self, request):
+    def upgrade_edge_node_invoker(self, request):
+        http_info = self._upgrade_edge_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_edge_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/edgemgr/nodes/{node_id}/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeEdgeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6605,9 +7604,9 @@ class IefClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6616,20 +7615,25 @@ class IefClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/edgemgr/nodes/{node_id}/upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeEdgeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

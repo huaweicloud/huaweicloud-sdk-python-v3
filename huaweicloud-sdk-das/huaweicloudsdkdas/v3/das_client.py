@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdas'")
 
 
 class DasClient(Client):
@@ -38,9 +43,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/das",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,9 +73,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -66,20 +84,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/das',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version(self, request):
         """查询指定的API版本信息
@@ -92,9 +106,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowApiVersionResponse`
         """
-        return self._show_api_version_with_http_info(request)
+        http_info = self._show_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_with_http_info(self, request):
+    def show_api_version_invoker(self, request):
+        http_info = self._show_api_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_api_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/das/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,9 +138,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -122,20 +149,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/das/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_share_connections(self, request):
         """删除共享链接
@@ -149,9 +172,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.CancelShareConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.CancelShareConnectionsResponse`
         """
-        return self._cancel_share_connections_with_http_info(request)
+        http_info = self._cancel_share_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_share_connections_with_http_info(self, request):
+    def cancel_share_connections_invoker(self, request):
+        http_info = self._cancel_share_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_share_connections_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/connections/share",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelShareConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -168,11 +204,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -181,20 +217,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/connections/share',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelShareConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_sql_limit_switch_status(self, request):
         """设置SQL限流开关状态
@@ -207,9 +239,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ChangeSqlLimitSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlLimitSwitchStatusResponse`
         """
-        return self._change_sql_limit_switch_status_with_http_info(request)
+        http_info = self._change_sql_limit_switch_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_sql_limit_switch_status_with_http_info(self, request):
+    def change_sql_limit_switch_status_invoker(self, request):
+        http_info = self._change_sql_limit_switch_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_sql_limit_switch_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeSqlLimitSwitchStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -228,11 +273,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -241,20 +286,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-limit/switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeSqlLimitSwitchStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_sql_switch(self, request):
         """开启/关闭全量SQL、慢SQL开关
@@ -268,9 +309,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ChangeSqlSwitchResponse`
         """
-        return self._change_sql_switch_with_http_info(request)
+        http_info = self._change_sql_switch_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_sql_switch_with_http_info(self, request):
+    def change_sql_switch_invoker(self, request):
+        http_info = self._change_sql_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_sql_switch_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeSqlSwitchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -289,11 +343,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -302,20 +356,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql/switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeSqlSwitchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_share_connections(self, request):
         """设置共享链接
@@ -329,9 +379,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.CreateShareConnectionsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.CreateShareConnectionsResponse`
         """
-        return self._create_share_connections_with_http_info(request)
+        http_info = self._create_share_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_share_connections_with_http_info(self, request):
+    def create_share_connections_invoker(self, request):
+        http_info = self._create_share_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_share_connections_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/connections/share",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateShareConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -348,11 +411,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -361,20 +424,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/connections/share',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateShareConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_space_analysis_task(self, request):
         """创建空间分析任务
@@ -387,9 +446,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.CreateSpaceAnalysisTaskResponse`
         """
-        return self._create_space_analysis_task_with_http_info(request)
+        http_info = self._create_space_analysis_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_space_analysis_task_with_http_info(self, request):
+    def create_space_analysis_task_invoker(self, request):
+        http_info = self._create_space_analysis_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_space_analysis_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/space-analysis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSpaceAnalysisTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -408,11 +480,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -421,20 +493,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/space-analysis',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSpaceAnalysisTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_sql_limit_rules(self, request):
         """创建SQL限流规则
@@ -454,9 +522,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.CreateSqlLimitRulesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.CreateSqlLimitRulesResponse`
         """
-        return self._create_sql_limit_rules_with_http_info(request)
+        http_info = self._create_sql_limit_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sql_limit_rules_with_http_info(self, request):
+    def create_sql_limit_rules_invoker(self, request):
+        http_info = self._create_sql_limit_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_sql_limit_rules_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSqlLimitRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -475,11 +556,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -488,20 +569,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-limit/rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSqlLimitRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tuning(self, request):
         """执行SQL诊断
@@ -515,9 +592,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.CreateTuningRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.CreateTuningResponse`
         """
-        return self._create_tuning_with_http_info(request)
+        http_info = self._create_tuning_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tuning_with_http_info(self, request):
+    def create_tuning_invoker(self, request):
+        http_info = self._create_tuning_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_tuning_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/connections/{connection_id}/tuning/create-tuning",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTuningResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -536,11 +626,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -549,20 +639,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/connections/{connection_id}/tuning/create-tuning',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTuningResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_db_user(self, request):
         """删除数据库用户
@@ -576,9 +662,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.DeleteDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteDbUserResponse`
         """
-        return self._delete_db_user_with_http_info(request)
+        http_info = self._delete_db_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_db_user_with_http_info(self, request):
+    def delete_db_user_invoker(self, request):
+        http_info = self._delete_db_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_db_user_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users/{db_user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDbUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -599,9 +698,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -610,20 +709,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/{db_user_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDbUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_process(self, request):
         """查杀会话
@@ -637,9 +732,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.DeleteProcessRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteProcessResponse`
         """
-        return self._delete_process_with_http_info(request)
+        http_info = self._delete_process_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_process_with_http_info(self, request):
+    def delete_process_invoker(self, request):
+        http_info = self._delete_process_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_process_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/process",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProcessResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -658,11 +766,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -671,20 +779,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/process',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProcessResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_sql_limit_rules(self, request):
         """删除SQL限流规则
@@ -697,9 +801,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.DeleteSqlLimitRulesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.DeleteSqlLimitRulesResponse`
         """
-        return self._delete_sql_limit_rules_with_http_info(request)
+        http_info = self._delete_sql_limit_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_sql_limit_rules_with_http_info(self, request):
+    def delete_sql_limit_rules_invoker(self, request):
+        http_info = self._delete_sql_limit_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_sql_limit_rules_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSqlLimitRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -718,11 +835,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -731,20 +848,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-limit/rules',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSqlLimitRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_slow_query_logs(self, request):
         """导出慢SQL数据
@@ -757,9 +870,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportSlowQueryLogsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowQueryLogsResponse`
         """
-        return self._export_slow_query_logs_with_http_info(request)
+        http_info = self._export_slow_query_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_slow_query_logs_with_http_info(self, request):
+    def export_slow_query_logs_invoker(self, request):
+        http_info = self._export_slow_query_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_slow_query_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slow-query-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportSlowQueryLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -788,9 +914,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -799,20 +925,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slow-query-logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportSlowQueryLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_slow_sql_templates_details(self, request):
         """导出慢SQL模板列表。
@@ -825,9 +947,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportSlowSqlTemplatesDetailsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSlowSqlTemplatesDetailsResponse`
         """
-        return self._export_slow_sql_templates_details_with_http_info(request)
+        http_info = self._export_slow_sql_templates_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_slow_sql_templates_details_with_http_info(self, request):
+    def export_slow_sql_templates_details_invoker(self, request):
+        http_info = self._export_slow_sql_templates_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_slow_sql_templates_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slow-sql-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportSlowSqlTemplatesDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -858,9 +993,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -869,20 +1004,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slow-sql-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportSlowSqlTemplatesDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_sql_statements(self, request):
         """导出全量SQL
@@ -895,9 +1026,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportSqlStatementsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportSqlStatementsResponse`
         """
-        return self._export_sql_statements_with_http_info(request)
+        http_info = self._export_sql_statements_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_sql_statements_with_http_info(self, request):
+    def export_sql_statements_invoker(self, request):
+        http_info = self._export_sql_statements_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_sql_statements_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-statements",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportSqlStatementsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -926,9 +1070,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -937,20 +1081,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-statements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportSqlStatementsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_top_sql_templates_details(self, request):
         """导出TopSQL模板列表。
@@ -963,9 +1103,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportTopSqlTemplatesDetailsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportTopSqlTemplatesDetailsResponse`
         """
-        return self._export_top_sql_templates_details_with_http_info(request)
+        http_info = self._export_top_sql_templates_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_top_sql_templates_details_with_http_info(self, request):
+    def export_top_sql_templates_details_invoker(self, request):
+        http_info = self._export_top_sql_templates_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_top_sql_templates_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/top-sql-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportTopSqlTemplatesDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1000,9 +1153,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1011,20 +1164,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/top-sql-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportTopSqlTemplatesDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_top_sql_trend_details(self, request):
         """导出SQL执行耗时区间数据。
@@ -1037,9 +1186,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ExportTopSqlTrendDetailsRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ExportTopSqlTrendDetailsResponse`
         """
-        return self._export_top_sql_trend_details_with_http_info(request)
+        http_info = self._export_top_sql_trend_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_top_sql_trend_details_with_http_info(self, request):
+    def export_top_sql_trend_details_invoker(self, request):
+        http_info = self._export_top_sql_trend_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_top_sql_trend_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/top-sql-trend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportTopSqlTrendDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1066,9 +1228,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1077,20 +1239,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/top-sql-trend',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportTopSqlTrendDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_db_users(self, request):
         """查询数据库用户列表
@@ -1104,9 +1262,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListDbUsersRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListDbUsersResponse`
         """
-        return self._list_db_users_with_http_info(request)
+        http_info = self._list_db_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_db_users_with_http_info(self, request):
+    def list_db_users_invoker(self, request):
+        http_info = self._list_db_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_db_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDbUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1133,9 +1304,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1144,20 +1315,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDbUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_innodb_locks(self, request):
         """查询InnoDB锁等待列表
@@ -1171,9 +1338,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListInnodbLocksRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListInnodbLocksResponse`
         """
-        return self._list_innodb_locks_with_http_info(request)
+        http_info = self._list_innodb_locks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_innodb_locks_with_http_info(self, request):
+    def list_innodb_locks_invoker(self, request):
+        http_info = self._list_innodb_locks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_innodb_locks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/innodb-locks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInnodbLocksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1194,9 +1374,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1205,20 +1385,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/innodb-locks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInnodbLocksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_metadata_locks(self, request):
         """查询元数据锁列表
@@ -1232,9 +1408,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListMetadataLocksRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListMetadataLocksResponse`
         """
-        return self._list_metadata_locks_with_http_info(request)
+        http_info = self._list_metadata_locks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_metadata_locks_with_http_info(self, request):
+    def list_metadata_locks_invoker(self, request):
+        http_info = self._list_metadata_locks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_metadata_locks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/metadata-locks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetadataLocksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1261,9 +1450,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1272,20 +1461,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/metadata-locks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMetadataLocksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_processes(self, request):
         """查询实例会话列表
@@ -1299,9 +1484,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListProcessesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListProcessesResponse`
         """
-        return self._list_processes_with_http_info(request)
+        http_info = self._list_processes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_processes_with_http_info(self, request):
+    def list_processes_invoker(self, request):
+        http_info = self._list_processes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_processes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/processes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProcessesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1330,9 +1528,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1341,20 +1539,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/processes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProcessesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_space_analysis(self, request):
         """获取空间分析数据列表
@@ -1367,9 +1561,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListSpaceAnalysisRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListSpaceAnalysisResponse`
         """
-        return self._list_space_analysis_with_http_info(request)
+        http_info = self._list_space_analysis_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_space_analysis_with_http_info(self, request):
+    def list_space_analysis_invoker(self, request):
+        http_info = self._list_space_analysis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_space_analysis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/space-analysis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSpaceAnalysisResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1400,9 +1607,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1411,20 +1618,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/space-analysis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSpaceAnalysisResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sql_limit_rules(self, request):
         """查询SQL限流规则列表
@@ -1437,9 +1640,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ListSqlLimitRulesRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ListSqlLimitRulesResponse`
         """
-        return self._list_sql_limit_rules_with_http_info(request)
+        http_info = self._list_sql_limit_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sql_limit_rules_with_http_info(self, request):
+    def list_sql_limit_rules_invoker(self, request):
+        http_info = self._list_sql_limit_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sql_limit_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSqlLimitRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1464,9 +1680,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1475,20 +1691,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-limit/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSqlLimitRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_db_user(self, request):
         """注册数据库用户
@@ -1502,9 +1714,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.RegisterDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.RegisterDbUserResponse`
         """
-        return self._register_db_user_with_http_info(request)
+        http_info = self._register_db_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_db_user_with_http_info(self, request):
+    def register_db_user_invoker(self, request):
+        http_info = self._register_db_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _register_db_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterDbUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1523,11 +1748,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1536,20 +1761,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterDbUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_db_user(self, request):
         """查询数据库用户信息
@@ -1563,9 +1784,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowDbUserResponse`
         """
-        return self._show_db_user_with_http_info(request)
+        http_info = self._show_db_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_db_user_with_http_info(self, request):
+    def show_db_user_invoker(self, request):
+        http_info = self._show_db_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_db_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users/{db_user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDbUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1586,9 +1820,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1597,20 +1831,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/{db_user_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDbUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas(self, request):
         """查询云DBA配额
@@ -1623,9 +1853,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1642,9 +1885,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1653,20 +1896,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_execution_plan(self, request):
         """查询SQL执行计划
@@ -1680,9 +1919,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlExecutionPlanResponse`
         """
-        return self._show_sql_execution_plan_with_http_info(request)
+        http_info = self._show_sql_execution_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_execution_plan_with_http_info(self, request):
+    def show_sql_execution_plan_invoker(self, request):
+        http_info = self._show_sql_execution_plan_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_execution_plan_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql/explain",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlExecutionPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1707,9 +1959,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1718,20 +1970,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql/explain',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlExecutionPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_explain(self, request):
         """查询SQL执行计划
@@ -1746,9 +1994,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlExplainRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlExplainResponse`
         """
-        return self._show_sql_explain_with_http_info(request)
+        http_info = self._show_sql_explain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_explain_with_http_info(self, request):
+    def show_sql_explain_invoker(self, request):
+        http_info = self._show_sql_explain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_explain_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql/explain",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlExplainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1767,11 +2028,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1780,20 +2041,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql/explain',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlExplainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_limit_job_info(self, request):
         """查询SQL限流任务
@@ -1806,9 +2063,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlLimitJobInfoRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlLimitJobInfoResponse`
         """
-        return self._show_sql_limit_job_info_with_http_info(request)
+        http_info = self._show_sql_limit_job_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_limit_job_info_with_http_info(self, request):
+    def show_sql_limit_job_info_invoker(self, request):
+        http_info = self._show_sql_limit_job_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_limit_job_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/job",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlLimitJobInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1829,9 +2099,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1840,20 +2110,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-limit/job',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlLimitJobInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_limit_switch_status(self, request):
         """查看SQL限流开关状态
@@ -1866,9 +2132,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlLimitSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlLimitSwitchStatusResponse`
         """
-        return self._show_sql_limit_switch_status_with_http_info(request)
+        http_info = self._show_sql_limit_switch_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_limit_switch_status_with_http_info(self, request):
+    def show_sql_limit_switch_status_invoker(self, request):
+        http_info = self._show_sql_limit_switch_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_limit_switch_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-limit/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlLimitSwitchStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1889,9 +2168,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1900,20 +2179,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-limit/switch',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlLimitSwitchStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_switch_status(self, request):
         """查询全量SQL和慢SQL的开关状态。
@@ -1926,9 +2201,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowSqlSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowSqlSwitchStatusResponse`
         """
-        return self._show_sql_switch_status_with_http_info(request)
+        http_info = self._show_sql_switch_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_switch_status_with_http_info(self, request):
+    def show_sql_switch_status_invoker(self, request):
+        http_info = self._show_sql_switch_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_switch_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlSwitchStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1951,9 +2239,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1962,20 +2250,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql/switch',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlSwitchStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tuning(self, request):
         """获取诊断结果
@@ -1988,9 +2272,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.ShowTuningRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.ShowTuningResponse`
         """
-        return self._show_tuning_with_http_info(request)
+        http_info = self._show_tuning_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tuning_with_http_info(self, request):
+    def show_tuning_invoker(self, request):
+        http_info = self._show_tuning_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tuning_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/connections/{connection_id}/tuning/{message_id}/show-tuning-result",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTuningResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2011,9 +2308,9 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2022,20 +2319,16 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/connections/{connection_id}/tuning/{message_id}/show-tuning-result',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTuningResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_db_user(self, request):
         """修改数据库用户
@@ -2049,9 +2342,22 @@ class DasClient(Client):
         :type request: :class:`huaweicloudsdkdas.v3.UpdateDbUserRequest`
         :rtype: :class:`huaweicloudsdkdas.v3.UpdateDbUserResponse`
         """
-        return self._update_db_user_with_http_info(request)
+        http_info = self._update_db_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_db_user_with_http_info(self, request):
+    def update_db_user_invoker(self, request):
+        http_info = self._update_db_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_db_user_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users/{db_user_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDbUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2072,11 +2378,11 @@ class DasClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2085,20 +2391,25 @@ class DasClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/{db_user_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDbUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

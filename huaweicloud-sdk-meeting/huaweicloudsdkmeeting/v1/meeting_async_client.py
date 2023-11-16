@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkmeeting'")
 
 
 class MeetingAsyncClient(Client):
@@ -39,9 +44,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpResponse`
         """
-        return self._add_corp_with_http_info(request)
+        http_info = self._add_corp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_corp_with_http_info(self, request):
+    def add_corp_async_invoker(self, request):
+        http_info = self._add_corp_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_corp_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/sp/corp",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddCorpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddCorpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_corp_admin_async(self, request):
         """添加企业管理员
@@ -100,9 +113,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddCorpAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddCorpAdminResponse`
         """
-        return self._add_corp_admin_with_http_info(request)
+        http_info = self._add_corp_admin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_corp_admin_with_http_info(self, request):
+    def add_corp_admin_async_invoker(self, request):
+        http_info = self._add_corp_admin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_corp_admin_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/admin",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddCorpAdminResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -123,11 +148,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -136,20 +161,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/admin',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddCorpAdminResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_department_async(self, request):
         """添加部门
@@ -163,9 +184,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddDepartmentResponse`
         """
-        return self._add_department_with_http_info(request)
+        http_info = self._add_department_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_department_with_http_info(self, request):
+    def add_department_async_invoker(self, request):
+        http_info = self._add_department_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_department_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/dept",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDepartmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -184,11 +217,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -197,20 +230,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/dept',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDepartmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_device_async(self, request):
         """增加终端
@@ -224,9 +253,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddDeviceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddDeviceResponse`
         """
-        return self._add_device_with_http_info(request)
+        http_info = self._add_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_device_with_http_info(self, request):
+    def add_device_async_invoker(self, request):
+        http_info = self._add_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_device_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/device",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -245,11 +286,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -258,20 +299,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/device',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_material_async(self, request):
         """新增信息窗素材
@@ -285,9 +322,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddMaterialRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddMaterialResponse`
         """
-        return self._add_material_with_http_info(request)
+        http_info = self._add_material_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_material_with_http_info(self, request):
+    def add_material_async_invoker(self, request):
+        http_info = self._add_material_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_material_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/sss/materials",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddMaterialResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -308,11 +357,11 @@ class MeetingAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -321,20 +370,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/materials',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddMaterialResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_program_async(self, request):
         """新增信息窗节目
@@ -348,9 +393,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddProgramResponse`
         """
-        return self._add_program_with_http_info(request)
+        http_info = self._add_program_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_program_with_http_info(self, request):
+    def add_program_async_invoker(self, request):
+        http_info = self._add_program_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_program_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/sss/programs",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddProgramResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -369,11 +426,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -382,20 +439,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/programs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddProgramResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_publication_async(self, request):
         """新增信息窗发布
@@ -409,9 +462,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddPublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddPublicationResponse`
         """
-        return self._add_publication_with_http_info(request)
+        http_info = self._add_publication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_publication_with_http_info(self, request):
+    def add_publication_async_invoker(self, request):
+        http_info = self._add_publication_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_publication_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/sss/publications",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddPublicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -430,11 +495,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -443,20 +508,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/publications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddPublicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_resource_async(self, request):
         """SP管理员分配企业资源
@@ -470,9 +531,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddResourceResponse`
         """
-        return self._add_resource_with_http_info(request)
+        http_info = self._add_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_resource_with_http_info(self, request):
+    def add_resource_async_invoker(self, request):
+        http_info = self._add_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/sp/corp/{corp_id}/resource",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -493,11 +566,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -506,20 +579,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_to_personal_space_async(self, request):
         """保存会议纪要到个人云空间
@@ -533,9 +602,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddToPersonalSpaceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddToPersonalSpaceResponse`
         """
-        return self._add_to_personal_space_with_http_info(request)
+        http_info = self._add_to_personal_space_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_to_personal_space_with_http_info(self, request):
+    def add_to_personal_space_async_invoker(self, request):
+        http_info = self._add_to_personal_space_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_to_personal_space_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/sss/meeting-files/save-to-personal-space",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddToPersonalSpaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -554,11 +635,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -567,20 +648,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/meeting-files/save-to-personal-space',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddToPersonalSpaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_user_async(self, request):
         """添加用户
@@ -595,9 +672,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AddUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AddUserResponse`
         """
-        return self._add_user_with_http_info(request)
+        http_info = self._add_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_user_with_http_info(self, request):
+    def add_user_async_invoker(self, request):
+        http_info = self._add_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/member",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -616,11 +705,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -629,20 +718,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/member',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def allow_client_record_async(self, request):
         """允许客户端录制
@@ -656,9 +741,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowClientRecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowClientRecordResponse`
         """
-        return self._allow_client_record_with_http_info(request)
+        http_info = self._allow_client_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _allow_client_record_with_http_info(self, request):
+    def allow_client_record_async_invoker(self, request):
+        http_info = self._allow_client_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _allow_client_record_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/allowClientRecord",
+            "request_type": request.__class__.__name__,
+            "response_type": "AllowClientRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -679,11 +776,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -692,20 +789,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/allowClientRecord',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AllowClientRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def allow_guest_unmute_async(self, request):
         """与会者自己解除静音
@@ -719,9 +812,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowGuestUnmuteRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowGuestUnmuteResponse`
         """
-        return self._allow_guest_unmute_with_http_info(request)
+        http_info = self._allow_guest_unmute_http_info(request)
+        return self._call_api(**http_info)
 
-    def _allow_guest_unmute_with_http_info(self, request):
+    def allow_guest_unmute_async_invoker(self, request):
+        http_info = self._allow_guest_unmute_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _allow_guest_unmute_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/mute/guestUnMute",
+            "request_type": request.__class__.__name__,
+            "response_type": "AllowGuestUnmuteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -740,11 +845,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -753,20 +858,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/mute/guestUnMute',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AllowGuestUnmuteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def allow_waiting_participant_async(self, request):
         """准入等候者
@@ -780,9 +881,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AllowWaitingParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AllowWaitingParticipantResponse`
         """
-        return self._allow_waiting_participant_with_http_info(request)
+        http_info = self._allow_waiting_participant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _allow_waiting_participant_with_http_info(self, request):
+    def allow_waiting_participant_async_invoker(self, request):
+        http_info = self._allow_waiting_participant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _allow_waiting_participant_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/allowWaitingParticipant",
+            "request_type": request.__class__.__name__,
+            "response_type": "AllowWaitingParticipantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -801,11 +914,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -814,20 +927,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/allowWaitingParticipant',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AllowWaitingParticipantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_vmr_async(self, request):
         """分配云会议室
@@ -841,9 +950,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.AssociateVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.AssociateVmrResponse`
         """
-        return self._associate_vmr_with_http_info(request)
+        http_info = self._associate_vmr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_vmr_with_http_info(self, request):
+    def associate_vmr_async_invoker(self, request):
+        http_info = self._associate_vmr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_vmr_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/vmr/assign-to-member/{account}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateVmrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -866,11 +987,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -879,20 +1000,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/vmr/assign-to-member/{account}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateVmrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_corp_admins_async(self, request):
         """批量删除企业管理员
@@ -906,9 +1023,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteCorpAdminsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteCorpAdminsResponse`
         """
-        return self._batch_delete_corp_admins_with_http_info(request)
+        http_info = self._batch_delete_corp_admins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_corp_admins_with_http_info(self, request):
+    def batch_delete_corp_admins_async_invoker(self, request):
+        http_info = self._batch_delete_corp_admins_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_corp_admins_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/admin/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteCorpAdminsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,11 +1058,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -942,20 +1071,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/admin/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteCorpAdminsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_devices_async(self, request):
         """批量删除终端
@@ -970,9 +1095,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteDevicesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteDevicesResponse`
         """
-        return self._batch_delete_devices_with_http_info(request)
+        http_info = self._batch_delete_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_devices_with_http_info(self, request):
+    def batch_delete_devices_async_invoker(self, request):
+        http_info = self._batch_delete_devices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_devices_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/device/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -991,11 +1128,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1004,20 +1141,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/device/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_materials_async(self, request):
         """删除信息窗素材
@@ -1031,9 +1164,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteMaterialsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteMaterialsResponse`
         """
-        return self._batch_delete_materials_with_http_info(request)
+        http_info = self._batch_delete_materials_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_materials_with_http_info(self, request):
+    def batch_delete_materials_async_invoker(self, request):
+        http_info = self._batch_delete_materials_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_materials_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/sss/materials/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteMaterialsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1052,11 +1197,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1065,20 +1210,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/materials/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteMaterialsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_programs_async(self, request):
         """删除信息窗节目
@@ -1092,9 +1233,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteProgramsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteProgramsResponse`
         """
-        return self._batch_delete_programs_with_http_info(request)
+        http_info = self._batch_delete_programs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_programs_with_http_info(self, request):
+    def batch_delete_programs_async_invoker(self, request):
+        http_info = self._batch_delete_programs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_programs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/sss/programs/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteProgramsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1113,11 +1266,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1126,20 +1279,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/programs/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteProgramsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_publications_async(self, request):
         """删除信息窗发布
@@ -1153,9 +1302,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeletePublicationsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeletePublicationsResponse`
         """
-        return self._batch_delete_publications_with_http_info(request)
+        http_info = self._batch_delete_publications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_publications_with_http_info(self, request):
+    def batch_delete_publications_async_invoker(self, request):
+        http_info = self._batch_delete_publications_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_publications_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/sss/publications/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePublicationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1174,11 +1335,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1187,20 +1348,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/publications/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeletePublicationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_users_async(self, request):
         """批量删除用户
@@ -1214,9 +1371,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchDeleteUsersRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchDeleteUsersResponse`
         """
-        return self._batch_delete_users_with_http_info(request)
+        http_info = self._batch_delete_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_users_with_http_info(self, request):
+    def batch_delete_users_async_invoker(self, request):
+        http_info = self._batch_delete_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_users_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/member/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1237,11 +1406,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1250,20 +1419,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/member/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_hand_async(self, request):
         """批量举手
@@ -1277,9 +1442,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchHandRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchHandResponse`
         """
-        return self._batch_hand_with_http_info(request)
+        http_info = self._batch_hand_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_hand_with_http_info(self, request):
+    def batch_hand_async_invoker(self, request):
+        http_info = self._batch_hand_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_hand_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/batch/hands",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchHandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1298,11 +1475,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1311,20 +1488,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/batch/hands',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchHandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_user_details_async(self, request):
         """批量查询用户详情
@@ -1338,9 +1511,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchShowUserDetailsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchShowUserDetailsResponse`
         """
-        return self._batch_show_user_details_with_http_info(request)
+        http_info = self._batch_show_user_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_user_details_with_http_info(self, request):
+    def batch_show_user_details_async_invoker(self, request):
+        http_info = self._batch_show_user_details_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_user_details_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/abs/users/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowUserDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1361,11 +1546,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1374,20 +1559,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/abs/users/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowUserDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_devices_status_async(self, request):
         """批量修改终端状态
@@ -1401,9 +1582,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchUpdateDevicesStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchUpdateDevicesStatusResponse`
         """
-        return self._batch_update_devices_status_with_http_info(request)
+        http_info = self._batch_update_devices_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_devices_status_with_http_info(self, request):
+    def batch_update_devices_status_async_invoker(self, request):
+        http_info = self._batch_update_devices_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_devices_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/corp/device/status/{value}",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateDevicesStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1424,11 +1617,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1437,20 +1630,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/device/status/{value}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateDevicesStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_user_status_async(self, request):
         """批量修改用户状态
@@ -1464,9 +1653,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BatchUpdateUserStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BatchUpdateUserStatusResponse`
         """
-        return self._batch_update_user_status_with_http_info(request)
+        http_info = self._batch_update_user_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_user_status_with_http_info(self, request):
+    def batch_update_user_status_async_invoker(self, request):
+        http_info = self._batch_update_user_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_update_user_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/corp/member/status/{value}",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateUserStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1489,11 +1690,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1502,20 +1703,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/member/status/{value}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateUserStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def broadcast_participant_async(self, request):
         """广播会场
@@ -1529,9 +1726,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.BroadcastParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.BroadcastParticipantResponse`
         """
-        return self._broadcast_participant_with_http_info(request)
+        http_info = self._broadcast_participant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _broadcast_participant_with_http_info(self, request):
+    def broadcast_participant_async_invoker(self, request):
+        http_info = self._broadcast_participant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _broadcast_participant_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/broadcast",
+            "request_type": request.__class__.__name__,
+            "response_type": "BroadcastParticipantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1552,9 +1761,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1563,20 +1772,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/broadcast',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BroadcastParticipantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_broadcast_async(self, request):
         """取消广播
@@ -1590,9 +1795,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelBroadcastRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelBroadcastResponse`
         """
-        return self._cancel_broadcast_with_http_info(request)
+        http_info = self._cancel_broadcast_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_broadcast_with_http_info(self, request):
+    def cancel_broadcast_async_invoker(self, request):
+        http_info = self._cancel_broadcast_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_broadcast_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/cancelBroadcast",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelBroadcastResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1611,9 +1828,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1622,20 +1839,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/cancelBroadcast',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelBroadcastResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_meeting_async(self, request):
         """取消预约会议
@@ -1649,9 +1862,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelMeetingResponse`
         """
-        return self._cancel_meeting_with_http_info(request)
+        http_info = self._cancel_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_meeting_with_http_info(self, request):
+    def cancel_meeting_async_invoker(self, request):
+        http_info = self._cancel_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_meeting_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/mmc/management/conferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1676,9 +1901,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1687,20 +1912,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_recurring_meeting_async(self, request):
         """取消周期性会议
@@ -1714,9 +1935,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelRecurringMeetingResponse`
         """
-        return self._cancel_recurring_meeting_with_http_info(request)
+        http_info = self._cancel_recurring_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_recurring_meeting_with_http_info(self, request):
+    def cancel_recurring_meeting_async_invoker(self, request):
+        http_info = self._cancel_recurring_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_recurring_meeting_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/mmc/management/cycleconferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelRecurringMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1741,9 +1974,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1752,20 +1985,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/cycleconferences',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelRecurringMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_recurring_sub_meeting_async(self, request):
         """取消周期性会议的子会议
@@ -1779,9 +2008,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CancelRecurringSubMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CancelRecurringSubMeetingResponse`
         """
-        return self._cancel_recurring_sub_meeting_with_http_info(request)
+        http_info = self._cancel_recurring_sub_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_recurring_sub_meeting_with_http_info(self, request):
+    def cancel_recurring_sub_meeting_async_invoker(self, request):
+        http_info = self._cancel_recurring_sub_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_recurring_sub_meeting_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/mmc/management/conferences/cyclesubconf",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelRecurringSubMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1806,11 +2047,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1819,20 +2060,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/cyclesubconf',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelRecurringSubMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_slide_verify_code_async(self, request):
         """校验滑块验证码
@@ -1846,9 +2083,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckSlideVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckSlideVerifyCodeResponse`
         """
-        return self._check_slide_verify_code_with_http_info(request)
+        http_info = self._check_slide_verify_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_slide_verify_code_with_http_info(self, request):
+    def check_slide_verify_code_async_invoker(self, request):
+        http_info = self._check_slide_verify_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_slide_verify_code_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/acs/auth/slideverifycode/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckSlideVerifyCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1867,11 +2116,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1880,20 +2129,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/auth/slideverifycode/check',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckSlideVerifyCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_token_async(self, request):
         """校验Token
@@ -1907,9 +2152,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckTokenResponse`
         """
-        return self._check_token_with_http_info(request)
+        http_info = self._check_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_token_with_http_info(self, request):
+    def check_token_async_invoker(self, request):
+        http_info = self._check_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_token_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/acs/token/validate",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1928,11 +2185,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1941,20 +2198,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/token/validate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_veri_code_for_update_user_info_async(self, request):
         """校验手机和邮箱对应的验证码
@@ -1968,9 +2221,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckVeriCodeForUpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckVeriCodeForUpdateUserInfoResponse`
         """
-        return self._check_veri_code_for_update_user_info_with_http_info(request)
+        http_info = self._check_veri_code_for_update_user_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_veri_code_for_update_user_info_with_http_info(self, request):
+    def check_veri_code_for_update_user_info_async_invoker(self, request):
+        http_info = self._check_veri_code_for_update_user_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_veri_code_for_update_user_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/member/verification-code/verify",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckVeriCodeForUpdateUserInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1989,11 +2254,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2002,20 +2267,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member/verification-code/verify',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckVeriCodeForUpdateUserInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_verify_code_async(self, request):
         """校验验证码
@@ -2029,9 +2290,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CheckVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CheckVerifyCodeResponse`
         """
-        return self._check_verify_code_with_http_info(request)
+        http_info = self._check_verify_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_verify_code_with_http_info(self, request):
+    def check_verify_code_async_invoker(self, request):
+        http_info = self._check_verify_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_verify_code_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/acs/verifycode/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckVerifyCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2050,11 +2323,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2063,20 +2336,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/verifycode/check',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckVerifyCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_anonymous_auth_random_async(self, request):
         """匿名用户会议鉴权
@@ -2090,9 +2359,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateAnonymousAuthRandomRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateAnonymousAuthRandomResponse`
         """
-        return self._create_anonymous_auth_random_with_http_info(request)
+        http_info = self._create_anonymous_auth_random_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_anonymous_auth_random_with_http_info(self, request):
+    def create_anonymous_auth_random_async_invoker(self, request):
+        http_info = self._create_anonymous_auth_random_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_anonymous_auth_random_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/anonymous/auth",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAnonymousAuthRandomResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2111,9 +2392,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2122,20 +2403,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/anonymous/auth',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAnonymousAuthRandomResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_conf_token_async(self, request):
         """获取会控Token
@@ -2149,9 +2426,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateConfTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateConfTokenResponse`
         """
-        return self._create_conf_token_with_http_info(request)
+        http_info = self._create_conf_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_conf_token_with_http_info(self, request):
+    def create_conf_token_async_invoker(self, request):
+        http_info = self._create_conf_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_conf_token_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/control/conferences/token",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConfTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2176,9 +2465,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2187,20 +2476,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/token',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConfTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_meeting_async(self, request):
         """创建会议
@@ -2214,9 +2499,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateMeetingResponse`
         """
-        return self._create_meeting_with_http_info(request)
+        http_info = self._create_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_meeting_with_http_info(self, request):
+    def create_meeting_async_invoker(self, request):
+        http_info = self._create_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_meeting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/management/conferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2237,11 +2534,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2250,20 +2547,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_portal_ref_nonce_async(self, request):
         """获取页面免登陆跳转的nonce信息
@@ -2277,9 +2570,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreatePortalRefNonceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreatePortalRefNonceResponse`
         """
-        return self._create_portal_ref_nonce_with_http_info(request)
+        http_info = self._create_portal_ref_nonce_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_portal_ref_nonce_with_http_info(self, request):
+    def create_portal_ref_nonce_async_invoker(self, request):
+        http_info = self._create_portal_ref_nonce_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_portal_ref_nonce_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/acs/auth/portal-ref-nonce",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePortalRefNonceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2298,9 +2603,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2309,20 +2614,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/auth/portal-ref-nonce',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePortalRefNonceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_recurring_meeting_async(self, request):
         """创建周期性会议
@@ -2336,9 +2637,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateRecurringMeetingResponse`
         """
-        return self._create_recurring_meeting_with_http_info(request)
+        http_info = self._create_recurring_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_recurring_meeting_with_http_info(self, request):
+    def create_recurring_meeting_async_invoker(self, request):
+        http_info = self._create_recurring_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_recurring_meeting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/management/cycleconferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecurringMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2359,11 +2672,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2372,20 +2685,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/cycleconferences',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRecurringMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vision_active_code_async(self, request):
         """企业管理员生成激活码
@@ -2399,9 +2708,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateVisionActiveCodeResponse`
         """
-        return self._create_vision_active_code_with_http_info(request)
+        http_info = self._create_vision_active_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vision_active_code_with_http_info(self, request):
+    def create_vision_active_code_async_invoker(self, request):
+        http_info = self._create_vision_active_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vision_active_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/vision/activecode",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVisionActiveCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2420,11 +2741,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2433,20 +2754,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/vision/activecode',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVisionActiveCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_web_socket_token_async(self, request):
         """获取websocket建链Token
@@ -2460,9 +2777,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateWebSocketTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateWebSocketTokenResponse`
         """
-        return self._create_web_socket_token_with_http_info(request)
+        http_info = self._create_web_socket_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_web_socket_token_with_http_info(self, request):
+    def create_web_socket_token_async_invoker(self, request):
+        http_info = self._create_web_socket_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_web_socket_token_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/control/conferences/wsToken",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWebSocketTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2481,9 +2810,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2492,20 +2821,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/wsToken',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWebSocketTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_webinar_async(self, request):
         """预约网络研讨会
@@ -2519,9 +2844,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.CreateWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.CreateWebinarResponse`
         """
-        return self._create_webinar_with_http_info(request)
+        http_info = self._create_webinar_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_webinar_with_http_info(self, request):
+    def create_webinar_async_invoker(self, request):
+        http_info = self._create_webinar_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_webinar_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/wss/webinar/open/conferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWebinarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2540,11 +2877,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2553,20 +2890,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWebinarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_attendees_async(self, request):
         """删除与会者
@@ -2580,9 +2913,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteAttendeesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteAttendeesResponse`
         """
-        return self._delete_attendees_with_http_info(request)
+        http_info = self._delete_attendees_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_attendees_with_http_info(self, request):
+    def delete_attendees_async_invoker(self, request):
+        http_info = self._delete_attendees_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_attendees_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/control/conferences/attendees/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAttendeesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2601,11 +2946,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2614,20 +2959,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/attendees/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAttendeesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_corp_async(self, request):
         """SP管理员删除企业
@@ -2641,9 +2982,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteCorpResponse`
         """
-        return self._delete_corp_with_http_info(request)
+        http_info = self._delete_corp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_corp_with_http_info(self, request):
+    def delete_corp_async_invoker(self, request):
+        http_info = self._delete_corp_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_corp_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/usg/dcs/sp/corp/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCorpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2664,9 +3017,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2675,20 +3028,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCorpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_corp_vmr_async(self, request):
         """删除云会议室
@@ -2702,9 +3051,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteCorpVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteCorpVmrResponse`
         """
-        return self._delete_corp_vmr_with_http_info(request)
+        http_info = self._delete_corp_vmr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_corp_vmr_with_http_info(self, request):
+    def delete_corp_vmr_async_invoker(self, request):
+        http_info = self._delete_corp_vmr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_corp_vmr_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/vmr/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCorpVmrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2723,11 +3084,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2736,20 +3097,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/vmr/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCorpVmrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_department_async(self, request):
         """删除部门
@@ -2763,9 +3120,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteDepartmentResponse`
         """
-        return self._delete_department_with_http_info(request)
+        http_info = self._delete_department_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_department_with_http_info(self, request):
+    def delete_department_async_invoker(self, request):
+        http_info = self._delete_department_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_department_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/usg/dcs/corp/dept/{dept_code}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDepartmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2786,9 +3155,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2797,20 +3166,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/dept/{dept_code}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDepartmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_layout_async(self, request):
         """删除多画面布局
@@ -2824,9 +3189,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteLayoutResponse`
         """
-        return self._delete_layout_with_http_info(request)
+        http_info = self._delete_layout_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_layout_with_http_info(self, request):
+    def delete_layout_async_invoker(self, request):
+        http_info = self._delete_layout_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_layout_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/mmc/control/conferences/layOut",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLayoutResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2847,9 +3224,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2858,20 +3235,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/layOut',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLayoutResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_recordings_async(self, request):
         """批量删除录制
@@ -2885,9 +3258,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteRecordingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteRecordingsResponse`
         """
-        return self._delete_recordings_with_http_info(request)
+        http_info = self._delete_recordings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_recordings_with_http_info(self, request):
+    def delete_recordings_async_invoker(self, request):
+        http_info = self._delete_recordings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_recordings_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/mmc/management/record/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecordingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2910,9 +3295,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2921,20 +3306,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/record/files',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRecordingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_async(self, request):
         """SP管理员根据删除企业资源
@@ -2948,9 +3329,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteResourceResponse`
         """
-        return self._delete_resource_with_http_info(request)
+        http_info = self._delete_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_with_http_info(self, request):
+    def delete_resource_async_invoker(self, request):
+        http_info = self._delete_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/sp/corp/{corp_id}/resource/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2971,11 +3364,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2984,20 +3377,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_token_async(self, request):
         """注销登录
@@ -3011,9 +3400,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteTokenResponse`
         """
-        return self._delete_token_with_http_info(request)
+        http_info = self._delete_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_token_with_http_info(self, request):
+    def delete_token_async_invoker(self, request):
+        http_info = self._delete_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_token_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/usg/acs/token",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3032,9 +3433,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3043,20 +3444,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/token',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vision_active_code_async(self, request):
         """企业管理员删除激活码
@@ -3070,9 +3467,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteVisionActiveCodeResponse`
         """
-        return self._delete_vision_active_code_with_http_info(request)
+        http_info = self._delete_vision_active_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vision_active_code_with_http_info(self, request):
+    def delete_vision_active_code_async_invoker(self, request):
+        http_info = self._delete_vision_active_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vision_active_code_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/usg/dcs/corp/vision/activecode",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVisionActiveCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3091,11 +3500,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3104,20 +3513,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/vision/activecode',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVisionActiveCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_web_hook_config_async(self, request):
         """删除事件推送
@@ -3131,9 +3536,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteWebHookConfigResponse`
         """
-        return self._delete_web_hook_config_with_http_info(request)
+        http_info = self._delete_web_hook_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_web_hook_config_with_http_info(self, request):
+    def delete_web_hook_config_async_invoker(self, request):
+        http_info = self._delete_web_hook_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_web_hook_config_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/mmc/management/webhook/link-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWebHookConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3150,9 +3567,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3161,20 +3578,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/webhook/link-config',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWebHookConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_webinar_async(self, request):
         """取消网络研讨会
@@ -3188,9 +3601,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DeleteWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DeleteWebinarResponse`
         """
-        return self._delete_webinar_with_http_info(request)
+        http_info = self._delete_webinar_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_webinar_with_http_info(self, request):
+    def delete_webinar_async_invoker(self, request):
+        http_info = self._delete_webinar_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_webinar_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/wss/webinar/open/conferences/{conference_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWebinarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3211,9 +3636,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3222,20 +3647,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences/{conference_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWebinarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_vmr_async(self, request):
         """回收云会议室
@@ -3249,9 +3670,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.DisassociateVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.DisassociateVmrResponse`
         """
-        return self._disassociate_vmr_with_http_info(request)
+        http_info = self._disassociate_vmr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_vmr_with_http_info(self, request):
+    def disassociate_vmr_async_invoker(self, request):
+        http_info = self._disassociate_vmr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_vmr_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/vmr/recycle-from-member/{account}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateVmrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3274,11 +3707,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3287,20 +3720,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/vmr/recycle-from-member/{account}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateVmrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def hand_async(self, request):
         """举手
@@ -3314,9 +3743,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.HandRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.HandResponse`
         """
-        return self._hand_with_http_info(request)
+        http_info = self._hand_http_info(request)
+        return self._call_api(**http_info)
 
-    def _hand_with_http_info(self, request):
+    def hand_async_invoker(self, request):
+        http_info = self._hand_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _hand_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/hands",
+            "request_type": request.__class__.__name__,
+            "response_type": "HandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3337,11 +3778,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3350,20 +3791,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/hands',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='HandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def hang_up_async(self, request):
         """挂断与会者
@@ -3377,9 +3814,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.HangUpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.HangUpResponse`
         """
-        return self._hang_up_with_http_info(request)
+        http_info = self._hang_up_http_info(request)
+        return self._call_api(**http_info)
 
-    def _hang_up_with_http_info(self, request):
+    def hang_up_async_invoker(self, request):
+        http_info = self._hang_up_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _hang_up_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/control/conferences/participants/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "HangUpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3398,11 +3847,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3411,20 +3860,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='HangUpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def invite_operate_video_async(self, request):
         """主持人邀请与会者开启/关闭摄像头
@@ -3438,9 +3883,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteOperateVideoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteOperateVideoResponse`
         """
-        return self._invite_operate_video_with_http_info(request)
+        http_info = self._invite_operate_video_http_info(request)
+        return self._call_api(**http_info)
 
-    def _invite_operate_video_with_http_info(self, request):
+    def invite_operate_video_async_invoker(self, request):
+        http_info = self._invite_operate_video_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _invite_operate_video_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/video",
+            "request_type": request.__class__.__name__,
+            "response_type": "InviteOperateVideoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3461,11 +3918,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3474,20 +3931,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/video',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InviteOperateVideoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def invite_participant_async(self, request):
         """邀请与会者
@@ -3501,9 +3954,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteParticipantResponse`
         """
-        return self._invite_participant_with_http_info(request)
+        http_info = self._invite_participant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _invite_participant_with_http_info(self, request):
+    def invite_participant_async_invoker(self, request):
+        http_info = self._invite_participant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _invite_participant_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/control/conferences/participants",
+            "request_type": request.__class__.__name__,
+            "response_type": "InviteParticipantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3522,11 +3987,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3535,20 +4000,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InviteParticipantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def invite_share_async(self, request):
         """邀请共享
@@ -3562,9 +4023,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteShareRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteShareResponse`
         """
-        return self._invite_share_with_http_info(request)
+        http_info = self._invite_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _invite_share_with_http_info(self, request):
+    def invite_share_async_invoker(self, request):
+        http_info = self._invite_share_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _invite_share_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/share/invite",
+            "request_type": request.__class__.__name__,
+            "response_type": "InviteShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3585,11 +4058,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3598,20 +4071,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/share/invite',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InviteShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def invite_user_async(self, request):
         """邀请用户
@@ -3629,9 +4098,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteUserResponse`
         """
-        return self._invite_user_with_http_info(request)
+        http_info = self._invite_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _invite_user_with_http_info(self, request):
+    def invite_user_async_invoker(self, request):
+        http_info = self._invite_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _invite_user_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/member/add",
+            "request_type": request.__class__.__name__,
+            "response_type": "InviteUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3650,11 +4131,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3663,20 +4144,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/member/add',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InviteUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def invite_with_pwd_async(self, request):
         """通过会议ID和密码邀请与会者
@@ -3691,9 +4168,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.InviteWithPwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.InviteWithPwdResponse`
         """
-        return self._invite_with_pwd_with_http_info(request)
+        http_info = self._invite_with_pwd_http_info(request)
+        return self._call_api(**http_info)
 
-    def _invite_with_pwd_with_http_info(self, request):
+    def invite_with_pwd_async_invoker(self, request):
+        http_info = self._invite_with_pwd_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _invite_with_pwd_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/control/conferences/inviteWithPwd",
+            "request_type": request.__class__.__name__,
+            "response_type": "InviteWithPwdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3710,11 +4199,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3723,20 +4212,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/inviteWithPwd',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InviteWithPwdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_history_webinars_async(self, request):
         """查询历史召开的网络研讨会列表
@@ -3750,9 +4235,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ListHistoryWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListHistoryWebinarsResponse`
         """
-        return self._list_history_webinars_with_http_info(request)
+        http_info = self._list_history_webinars_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_history_webinars_with_http_info(self, request):
+    def list_history_webinars_async_invoker(self, request):
+        http_info = self._list_history_webinars_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_history_webinars_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/wss/webinar/open/conferences/history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHistoryWebinarsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3783,9 +4280,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3794,20 +4291,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences/history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHistoryWebinarsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ongoing_webinars_async(self, request):
         """查询正在召开的网络研讨会列表
@@ -3821,9 +4314,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ListOngoingWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListOngoingWebinarsResponse`
         """
-        return self._list_ongoing_webinars_with_http_info(request)
+        http_info = self._list_ongoing_webinars_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ongoing_webinars_with_http_info(self, request):
+    def list_ongoing_webinars_async_invoker(self, request):
+        http_info = self._list_ongoing_webinars_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_ongoing_webinars_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/wss/webinar/open/conferences/ongoing",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOngoingWebinarsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3850,9 +4355,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3861,20 +4366,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences/ongoing',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOngoingWebinarsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_up_coming_webinars_async(self, request):
         """查询即将召开的网络研讨会列表
@@ -3888,9 +4389,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ListUpComingWebinarsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ListUpComingWebinarsResponse`
         """
-        return self._list_up_coming_webinars_with_http_info(request)
+        http_info = self._list_up_coming_webinars_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_up_coming_webinars_with_http_info(self, request):
+    def list_up_coming_webinars_async_invoker(self, request):
+        http_info = self._list_up_coming_webinars_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_up_coming_webinars_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/wss/webinar/open/conferences/upcoming",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUpComingWebinarsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3917,9 +4430,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3928,20 +4441,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences/upcoming',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUpComingWebinarsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def live_async(self, request):
         """启停会议直播
@@ -3955,9 +4464,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.LiveRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LiveResponse`
         """
-        return self._live_with_http_info(request)
+        http_info = self._live_http_info(request)
+        return self._call_api(**http_info)
 
-    def _live_with_http_info(self, request):
+    def live_async_invoker(self, request):
+        http_info = self._live_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _live_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/live",
+            "request_type": request.__class__.__name__,
+            "response_type": "LiveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3976,11 +4497,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3989,20 +4510,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/live',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='LiveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def lock_meeting_async(self, request):
         """锁定会议
@@ -4016,9 +4533,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.LockMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LockMeetingResponse`
         """
-        return self._lock_meeting_with_http_info(request)
+        http_info = self._lock_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _lock_meeting_with_http_info(self, request):
+    def lock_meeting_async_invoker(self, request):
+        http_info = self._lock_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _lock_meeting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/lock",
+            "request_type": request.__class__.__name__,
+            "response_type": "LockMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4037,11 +4566,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4050,20 +4579,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/lock',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='LockMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def lock_view_async(self, request):
         """锁定会场视频源
@@ -4077,9 +4602,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.LockViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.LockViewResponse`
         """
-        return self._lock_view_with_http_info(request)
+        http_info = self._lock_view_http_info(request)
+        return self._call_api(**http_info)
 
-    def _lock_view_with_http_info(self, request):
+    def lock_view_async_invoker(self, request):
+        http_info = self._lock_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _lock_view_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/lockView",
+            "request_type": request.__class__.__name__,
+            "response_type": "LockViewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4100,11 +4637,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4113,20 +4650,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/lockView',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='LockViewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def move_to_waiting_room_async(self, request):
         """移入等候室
@@ -4140,9 +4673,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.MoveToWaitingRoomRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MoveToWaitingRoomResponse`
         """
-        return self._move_to_waiting_room_with_http_info(request)
+        http_info = self._move_to_waiting_room_http_info(request)
+        return self._call_api(**http_info)
 
-    def _move_to_waiting_room_with_http_info(self, request):
+    def move_to_waiting_room_async_invoker(self, request):
+        http_info = self._move_to_waiting_room_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _move_to_waiting_room_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/moveToWaitingRoom",
+            "request_type": request.__class__.__name__,
+            "response_type": "MoveToWaitingRoomResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4161,11 +4706,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4174,20 +4719,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/moveToWaitingRoom',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MoveToWaitingRoomResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def mute_meeting_async(self, request):
         """全场静音
@@ -4201,9 +4742,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.MuteMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MuteMeetingResponse`
         """
-        return self._mute_meeting_with_http_info(request)
+        http_info = self._mute_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _mute_meeting_with_http_info(self, request):
+    def mute_meeting_async_invoker(self, request):
+        http_info = self._mute_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _mute_meeting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/mute",
+            "request_type": request.__class__.__name__,
+            "response_type": "MuteMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4222,11 +4775,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4235,20 +4788,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/mute',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MuteMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def mute_participant_async(self, request):
         """静音与会者
@@ -4262,9 +4811,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.MuteParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.MuteParticipantResponse`
         """
-        return self._mute_participant_with_http_info(request)
+        http_info = self._mute_participant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _mute_participant_with_http_info(self, request):
+    def mute_participant_async_invoker(self, request):
+        http_info = self._mute_participant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _mute_participant_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/mute",
+            "request_type": request.__class__.__name__,
+            "response_type": "MuteParticipantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4285,11 +4846,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4298,20 +4859,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/mute',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MuteParticipantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def prolong_meeting_async(self, request):
         """延长会议
@@ -4325,9 +4882,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ProlongMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ProlongMeetingResponse`
         """
-        return self._prolong_meeting_with_http_info(request)
+        http_info = self._prolong_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _prolong_meeting_with_http_info(self, request):
+    def prolong_meeting_async_invoker(self, request):
+        http_info = self._prolong_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _prolong_meeting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/duration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ProlongMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4346,11 +4915,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4359,20 +4928,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/duration',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ProlongMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def record_async(self, request):
         """启停会议录制
@@ -4386,9 +4951,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.RecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RecordResponse`
         """
-        return self._record_with_http_info(request)
+        http_info = self._record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _record_with_http_info(self, request):
+    def record_async_invoker(self, request):
+        http_info = self._record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _record_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/record",
+            "request_type": request.__class__.__name__,
+            "response_type": "RecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4407,11 +4984,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4420,20 +4997,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/record',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rename_participant_async(self, request):
         """重命名与会者
@@ -4447,9 +5020,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.RenameParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RenameParticipantResponse`
         """
-        return self._rename_participant_with_http_info(request)
+        http_info = self._rename_participant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rename_participant_with_http_info(self, request):
+    def rename_participant_async_invoker(self, request):
+        http_info = self._rename_participant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _rename_participant_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "RenameParticipantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4468,11 +5053,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4481,20 +5066,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RenameParticipantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_activecode_async(self, request):
         """企业管理员通过sn重置激活码
@@ -4508,9 +5089,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetActivecodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetActivecodeResponse`
         """
-        return self._reset_activecode_with_http_info(request)
+        http_info = self._reset_activecode_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_activecode_with_http_info(self, request):
+    def reset_activecode_async_invoker(self, request):
+        http_info = self._reset_activecode_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_activecode_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/corp/device/{sn}/activecode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetActivecodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4531,11 +5124,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4544,20 +5137,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/device/{sn}/activecode',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetActivecodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_pwd_async(self, request):
         """用户重置密码
@@ -4571,9 +5160,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetPwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetPwdResponse`
         """
-        return self._reset_pwd_with_http_info(request)
+        http_info = self._reset_pwd_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_pwd_with_http_info(self, request):
+    def reset_pwd_async_invoker(self, request):
+        http_info = self._reset_pwd_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_pwd_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/acs/password/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPwdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4592,11 +5193,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4605,20 +5206,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/password/reset',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPwdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_pwd_by_admin_async(self, request):
         """企业管理员重置企业成员密码
@@ -4632,9 +5229,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetPwdByAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetPwdByAdminResponse`
         """
-        return self._reset_pwd_by_admin_with_http_info(request)
+        http_info = self._reset_pwd_by_admin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_pwd_by_admin_with_http_info(self, request):
+    def reset_pwd_by_admin_async_invoker(self, request):
+        http_info = self._reset_pwd_by_admin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_pwd_by_admin_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/acs/password/admin/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPwdByAdminResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4653,11 +5262,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4666,20 +5275,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/password/admin/reset',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPwdByAdminResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_vision_active_code_async(self, request):
         """企业管理员重置帐号的激活码
@@ -4693,9 +5298,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ResetVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ResetVisionActiveCodeResponse`
         """
-        return self._reset_vision_active_code_with_http_info(request)
+        http_info = self._reset_vision_active_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_vision_active_code_with_http_info(self, request):
+    def reset_vision_active_code_async_invoker(self, request):
+        http_info = self._reset_vision_active_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_vision_active_code_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/corp/vision/activecode/{account}/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetVisionActiveCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4716,11 +5333,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4729,20 +5346,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/vision/activecode/{account}/reset',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetVisionActiveCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rollcall_participant_async(self, request):
         """点名会场
@@ -4756,9 +5369,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.RollcallParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.RollcallParticipantResponse`
         """
-        return self._rollcall_participant_with_http_info(request)
+        http_info = self._rollcall_participant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rollcall_participant_with_http_info(self, request):
+    def rollcall_participant_async_invoker(self, request):
+        http_info = self._rollcall_participant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _rollcall_participant_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/rollCall",
+            "request_type": request.__class__.__name__,
+            "response_type": "RollcallParticipantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4779,9 +5404,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4790,20 +5415,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/rollCall',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RollcallParticipantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def save_layout_async(self, request):
         """保存多画面布局
@@ -4817,9 +5438,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SaveLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SaveLayoutResponse`
         """
-        return self._save_layout_with_http_info(request)
+        http_info = self._save_layout_http_info(request)
+        return self._call_api(**http_info)
 
-    def _save_layout_with_http_info(self, request):
+    def save_layout_async_invoker(self, request):
+        http_info = self._save_layout_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _save_layout_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/layOut",
+            "request_type": request.__class__.__name__,
+            "response_type": "SaveLayoutResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4838,11 +5471,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4851,20 +5484,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/layOut',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SaveLayoutResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_attendance_records_of_his_meeting_async(self, request):
         """查询历史会议的与会者记录
@@ -4878,9 +5507,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchAttendanceRecordsOfHisMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchAttendanceRecordsOfHisMeetingResponse`
         """
-        return self._search_attendance_records_of_his_meeting_with_http_info(request)
+        http_info = self._search_attendance_records_of_his_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_attendance_records_of_his_meeting_with_http_info(self, request):
+    def search_attendance_records_of_his_meeting_async_invoker(self, request):
+        http_info = self._search_attendance_records_of_his_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_attendance_records_of_his_meeting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/history/confAttendeeRecord",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchAttendanceRecordsOfHisMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4911,9 +5552,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4922,20 +5563,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/history/confAttendeeRecord',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchAttendanceRecordsOfHisMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_corp_async(self, request):
         """SP管理员分页搜索企业
@@ -4949,9 +5586,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpResponse`
         """
-        return self._search_corp_with_http_info(request)
+        http_info = self._search_corp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_corp_with_http_info(self, request):
+    def search_corp_async_invoker(self, request):
+        http_info = self._search_corp_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_corp_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/sp/corp",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCorpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4976,9 +5625,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4987,20 +5636,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCorpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_corp_admins_async(self, request):
         """分页查询企业管理员
@@ -5014,9 +5659,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpAdminsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpAdminsResponse`
         """
-        return self._search_corp_admins_with_http_info(request)
+        http_info = self._search_corp_admins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_corp_admins_with_http_info(self, request):
+    def search_corp_admins_async_invoker(self, request):
+        http_info = self._search_corp_admins_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_corp_admins_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/admin",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCorpAdminsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5041,9 +5698,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5052,20 +5709,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/admin',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCorpAdminsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_corp_dir_async(self, request):
         """查询企业通讯录
@@ -5079,9 +5732,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpDirRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpDirResponse`
         """
-        return self._search_corp_dir_with_http_info(request)
+        http_info = self._search_corp_dir_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_corp_dir_with_http_info(self, request):
+    def search_corp_dir_async_invoker(self, request):
+        http_info = self._search_corp_dir_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_corp_dir_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/abs/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCorpDirResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5112,9 +5777,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5123,20 +5788,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/abs/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCorpDirResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_corp_external_dir_async(self, request):
         """查询企业外部联系人
@@ -5150,9 +5811,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpExternalDirRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpExternalDirResponse`
         """
-        return self._search_corp_external_dir_with_http_info(request)
+        http_info = self._search_corp_external_dir_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_corp_external_dir_with_http_info(self, request):
+    def search_corp_external_dir_async_invoker(self, request):
+        http_info = self._search_corp_external_dir_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_corp_external_dir_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/abs/external-contacts",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCorpExternalDirResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5179,9 +5852,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5190,20 +5863,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/abs/external-contacts',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCorpExternalDirResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_corp_resources_async(self, request):
         """企业管理员分页查询企业资源订单列表
@@ -5217,9 +5886,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpResourcesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpResourcesResponse`
         """
-        return self._search_corp_resources_with_http_info(request)
+        http_info = self._search_corp_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_corp_resources_with_http_info(self, request):
+    def search_corp_resources_async_invoker(self, request):
+        http_info = self._search_corp_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_corp_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/resource-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCorpResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5258,9 +5939,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5269,20 +5950,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/resource-list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCorpResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_corp_vmr_async(self, request):
         """企业管理员分页查询企业云会议室
@@ -5296,9 +5973,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCorpVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCorpVmrResponse`
         """
-        return self._search_corp_vmr_with_http_info(request)
+        http_info = self._search_corp_vmr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_corp_vmr_with_http_info(self, request):
+    def search_corp_vmr_async_invoker(self, request):
+        http_info = self._search_corp_vmr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_corp_vmr_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/vmr",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCorpVmrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5327,9 +6016,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5338,20 +6027,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/vmr',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCorpVmrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_ctl_records_of_his_meeting_async(self, request):
         """查询历史会议的会控记录
@@ -5365,9 +6050,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchCtlRecordsOfHisMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchCtlRecordsOfHisMeetingResponse`
         """
-        return self._search_ctl_records_of_his_meeting_with_http_info(request)
+        http_info = self._search_ctl_records_of_his_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_ctl_records_of_his_meeting_with_http_info(self, request):
+    def search_ctl_records_of_his_meeting_async_invoker(self, request):
+        http_info = self._search_ctl_records_of_his_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_ctl_records_of_his_meeting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/history/confCtlRecord",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchCtlRecordsOfHisMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5396,9 +6093,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5407,20 +6104,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/history/confCtlRecord',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchCtlRecordsOfHisMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_department_by_name_async(self, request):
         """按名称查询所有的部门
@@ -5434,9 +6127,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchDepartmentByNameRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchDepartmentByNameResponse`
         """
-        return self._search_department_by_name_with_http_info(request)
+        http_info = self._search_department_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_department_by_name_with_http_info(self, request):
+    def search_department_by_name_async_invoker(self, request):
+        http_info = self._search_department_by_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_department_by_name_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/member/dept",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchDepartmentByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5457,9 +6162,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5468,20 +6173,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member/dept',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchDepartmentByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_devices_async(self, request):
         """分页查询终端
@@ -5496,9 +6197,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchDevicesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchDevicesResponse`
         """
-        return self._search_devices_with_http_info(request)
+        http_info = self._search_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_devices_with_http_info(self, request):
+    def search_devices_async_invoker(self, request):
+        http_info = self._search_devices_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_devices_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/device",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5529,9 +6242,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5540,20 +6253,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/device',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_his_meetings_async(self, request):
         """查询历史会议列表
@@ -5570,9 +6279,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchHisMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchHisMeetingsResponse`
         """
-        return self._search_his_meetings_with_http_info(request)
+        http_info = self._search_his_meetings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_his_meetings_with_http_info(self, request):
+    def search_his_meetings_async_invoker(self, request):
+        http_info = self._search_his_meetings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_his_meetings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/history",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchHisMeetingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5607,9 +6328,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5618,20 +6339,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchHisMeetingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_materials_async(self, request):
         """分页查询信息窗素材
@@ -5645,9 +6362,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMaterialsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMaterialsResponse`
         """
-        return self._search_materials_with_http_info(request)
+        http_info = self._search_materials_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_materials_with_http_info(self, request):
+    def search_materials_async_invoker(self, request):
+        http_info = self._search_materials_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_materials_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/sss/materials",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchMaterialsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5672,9 +6401,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5683,20 +6412,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/materials',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchMaterialsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_meeting_file_list_async(self, request):
         """查询会议纪要列表
@@ -5710,9 +6435,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMeetingFileListRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMeetingFileListResponse`
         """
-        return self._search_meeting_file_list_with_http_info(request)
+        http_info = self._search_meeting_file_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_meeting_file_list_with_http_info(self, request):
+    def search_meeting_file_list_async_invoker(self, request):
+        http_info = self._search_meeting_file_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_meeting_file_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/sss/meeting-files",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchMeetingFileListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5737,9 +6474,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5748,20 +6485,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/meeting-files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchMeetingFileListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_meetings_async(self, request):
         """查询会议列表
@@ -5777,9 +6510,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMeetingsResponse`
         """
-        return self._search_meetings_with_http_info(request)
+        http_info = self._search_meetings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_meetings_with_http_info(self, request):
+    def search_meetings_async_invoker(self, request):
+        http_info = self._search_meetings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_meetings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchMeetingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5812,9 +6557,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5823,20 +6568,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchMeetingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_member_vmr_async(self, request):
         """普通用户分页查询云会议室及个人会议ID
@@ -5850,9 +6591,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchMemberVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchMemberVmrResponse`
         """
-        return self._search_member_vmr_with_http_info(request)
+        http_info = self._search_member_vmr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_member_vmr_with_http_info(self, request):
+    def search_member_vmr_async_invoker(self, request):
+        http_info = self._search_member_vmr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_member_vmr_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/member/vmr",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchMemberVmrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5879,9 +6632,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5890,20 +6643,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member/vmr',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchMemberVmrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_online_meetings_async(self, request):
         """查询在线会议列表
@@ -5917,9 +6666,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchOnlineMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchOnlineMeetingsResponse`
         """
-        return self._search_online_meetings_with_http_info(request)
+        http_info = self._search_online_meetings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_online_meetings_with_http_info(self, request):
+    def search_online_meetings_async_invoker(self, request):
+        http_info = self._search_online_meetings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_online_meetings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/online",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchOnlineMeetingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5948,9 +6709,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5959,20 +6720,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/online',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchOnlineMeetingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_programs_async(self, request):
         """查询信息窗节目
@@ -5986,9 +6743,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchProgramsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchProgramsResponse`
         """
-        return self._search_programs_with_http_info(request)
+        http_info = self._search_programs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_programs_with_http_info(self, request):
+    def search_programs_async_invoker(self, request):
+        http_info = self._search_programs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_programs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/sss/programs",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchProgramsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6013,9 +6782,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6024,20 +6793,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/programs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchProgramsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_publications_async(self, request):
         """查询信息窗发布
@@ -6051,9 +6816,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchPublicationsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchPublicationsResponse`
         """
-        return self._search_publications_with_http_info(request)
+        http_info = self._search_publications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_publications_with_http_info(self, request):
+    def search_publications_async_invoker(self, request):
+        http_info = self._search_publications_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_publications_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/sss/publications",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchPublicationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6078,9 +6855,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6089,20 +6866,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/publications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchPublicationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_recordings_async(self, request):
         """查询录制列表
@@ -6116,9 +6889,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchRecordingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchRecordingsResponse`
         """
-        return self._search_recordings_with_http_info(request)
+        http_info = self._search_recordings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_recordings_with_http_info(self, request):
+    def search_recordings_async_invoker(self, request):
+        http_info = self._search_recordings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_recordings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/record/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchRecordingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6153,9 +6938,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6164,20 +6949,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/record/files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchRecordingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_resource_async(self, request):
         """SP管理员根据分页查询企业资源
@@ -6191,9 +6972,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchResourceResponse`
         """
-        return self._search_resource_with_http_info(request)
+        http_info = self._search_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_resource_with_http_info(self, request):
+    def search_resource_async_invoker(self, request):
+        http_info = self._search_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/sp/corp/{corp_id}/resource",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6230,9 +7023,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6241,20 +7034,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_resource_op_record_async(self, request):
         """SP管理员分页查询企业资源操作记录
@@ -6268,9 +7057,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchResourceOpRecordRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchResourceOpRecordResponse`
         """
-        return self._search_resource_op_record_with_http_info(request)
+        http_info = self._search_resource_op_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_resource_op_record_with_http_info(self, request):
+    def search_resource_op_record_async_invoker(self, request):
+        http_info = self._search_resource_op_record_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_resource_op_record_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/sp/corp/{corp_id}/resource-record",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchResourceOpRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6311,9 +7112,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6322,20 +7123,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource-record',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchResourceOpRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_users_async(self, request):
         """分页查询用户
@@ -6349,9 +7146,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchUsersRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchUsersResponse`
         """
-        return self._search_users_with_http_info(request)
+        http_info = self._search_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_users_with_http_info(self, request):
+    def search_users_async_invoker(self, request):
+        http_info = self._search_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/member",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6395,9 +7204,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6406,20 +7215,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/member',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_vision_active_code_async(self, request):
         """企业管理员分页查询激活码
@@ -6433,9 +7238,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchVisionActiveCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchVisionActiveCodeResponse`
         """
-        return self._search_vision_active_code_with_http_info(request)
+        http_info = self._search_vision_active_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_vision_active_code_with_http_info(self, request):
+    def search_vision_active_code_async_invoker(self, request):
+        http_info = self._search_vision_active_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_vision_active_code_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/vision/activecode",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchVisionActiveCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6462,9 +7279,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6473,20 +7290,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/vision/activecode',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchVisionActiveCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_slide_verify_code_async(self, request):
         """发送滑块验证码
@@ -6500,9 +7313,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SendSlideVerifyCodeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendSlideVerifyCodeResponse`
         """
-        return self._send_slide_verify_code_with_http_info(request)
+        http_info = self._send_slide_verify_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_slide_verify_code_with_http_info(self, request):
+    def send_slide_verify_code_async_invoker(self, request):
+        http_info = self._send_slide_verify_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_slide_verify_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/acs/auth/slideverifycode/send",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendSlideVerifyCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6521,11 +7346,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6534,20 +7359,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/auth/slideverifycode/send',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendSlideVerifyCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_veri_code_for_change_pwd_async(self, request):
         """发送验证码
@@ -6561,9 +7382,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForChangePwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForChangePwdResponse`
         """
-        return self._send_veri_code_for_change_pwd_with_http_info(request)
+        http_info = self._send_veri_code_for_change_pwd_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_veri_code_for_change_pwd_with_http_info(self, request):
+    def send_veri_code_for_change_pwd_async_invoker(self, request):
+        http_info = self._send_veri_code_for_change_pwd_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_veri_code_for_change_pwd_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/acs/verifycode/send",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendVeriCodeForChangePwdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6582,11 +7415,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6595,20 +7428,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/verifycode/send',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendVeriCodeForChangePwdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_veri_code_for_update_user_info_async(self, request):
         """获取验证码
@@ -6622,9 +7451,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForUpdateUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SendVeriCodeForUpdateUserInfoResponse`
         """
-        return self._send_veri_code_for_update_user_info_with_http_info(request)
+        http_info = self._send_veri_code_for_update_user_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_veri_code_for_update_user_info_with_http_info(self, request):
+    def send_veri_code_for_update_user_info_async_invoker(self, request):
+        http_info = self._send_veri_code_for_update_user_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_veri_code_for_update_user_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/dcs/member/verification-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendVeriCodeForUpdateUserInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6643,11 +7484,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6656,20 +7497,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member/verification-code',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendVeriCodeForUpdateUserInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_cohost_async(self, request):
         """申请联席主持人
@@ -6683,9 +7520,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetCohostRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetCohostResponse`
         """
-        return self._set_cohost_with_http_info(request)
+        http_info = self._set_cohost_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_cohost_with_http_info(self, request):
+    def set_cohost_async_invoker(self, request):
+        http_info = self._set_cohost_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_cohost_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/cohost",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetCohostResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6706,11 +7555,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6719,20 +7568,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/cohost',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetCohostResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_custom_multi_picture_async(self, request):
         """设置自定义多画面
@@ -6746,9 +7591,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetCustomMultiPictureRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetCustomMultiPictureResponse`
         """
-        return self._set_custom_multi_picture_with_http_info(request)
+        http_info = self._set_custom_multi_picture_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_custom_multi_picture_with_http_info(self, request):
+    def set_custom_multi_picture_async_invoker(self, request):
+        http_info = self._set_custom_multi_picture_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_custom_multi_picture_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/display/customMultiPicture",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetCustomMultiPictureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6767,11 +7624,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6780,20 +7637,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/display/customMultiPicture',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetCustomMultiPictureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_host_view_async(self, request):
         """主持人选看
@@ -6807,9 +7660,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetHostViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetHostViewResponse`
         """
-        return self._set_host_view_with_http_info(request)
+        http_info = self._set_host_view_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_host_view_with_http_info(self, request):
+    def set_host_view_async_invoker(self, request):
+        http_info = self._set_host_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_host_view_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/chairView",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetHostViewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6828,11 +7693,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6841,20 +7706,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/chairView',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetHostViewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_multi_picture_async(self, request):
         """设置多画面
@@ -6868,9 +7729,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetMultiPictureRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetMultiPictureResponse`
         """
-        return self._set_multi_picture_with_http_info(request)
+        http_info = self._set_multi_picture_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_multi_picture_with_http_info(self, request):
+    def set_multi_picture_async_invoker(self, request):
+        http_info = self._set_multi_picture_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_multi_picture_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/display/multiPicture",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetMultiPictureResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6889,11 +7762,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6902,20 +7775,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/display/multiPicture',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetMultiPictureResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_participant_view_async(self, request):
         """会场选看
@@ -6929,9 +7798,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetParticipantViewRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetParticipantViewResponse`
         """
-        return self._set_participant_view_with_http_info(request)
+        http_info = self._set_participant_view_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_participant_view_with_http_info(self, request):
+    def set_participant_view_async_invoker(self, request):
+        http_info = self._set_participant_view_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_participant_view_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/partView",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetParticipantViewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6952,11 +7833,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6965,20 +7846,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/partView',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetParticipantViewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_role_async(self, request):
         """申请主持人
@@ -6992,9 +7869,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetRoleRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetRoleResponse`
         """
-        return self._set_role_with_http_info(request)
+        http_info = self._set_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_role_with_http_info(self, request):
+    def set_role_async_invoker(self, request):
+        http_info = self._set_role_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_role_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/participants/role",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7015,11 +7904,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7028,20 +7917,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/participants/role',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_sso_config_async(self, request):
         """设置SSO登录配置
@@ -7055,9 +7940,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetSsoConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetSsoConfigResponse`
         """
-        return self._set_sso_config_with_http_info(request)
+        http_info = self._set_sso_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_sso_config_with_http_info(self, request):
+    def set_sso_config_async_invoker(self, request):
+        http_info = self._set_sso_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_sso_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/acs/authorizeconfig",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetSsoConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7076,11 +7973,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7089,20 +7986,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/authorizeconfig',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetSsoConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_web_hook_config_async(self, request):
         """设置事件推送
@@ -7116,9 +8009,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetWebHookConfigResponse`
         """
-        return self._set_web_hook_config_with_http_info(request)
+        http_info = self._set_web_hook_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_web_hook_config_with_http_info(self, request):
+    def set_web_hook_config_async_invoker(self, request):
+        http_info = self._set_web_hook_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_web_hook_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/management/webhook/link-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetWebHookConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7133,11 +8038,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7146,20 +8051,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/webhook/link-config',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetWebHookConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_conf_org_async(self, request):
         """SP管理员查询会议归属企业
@@ -7173,9 +8074,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowConfOrgRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowConfOrgResponse`
         """
-        return self._show_conf_org_with_http_info(request)
+        http_info = self._show_conf_org_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_conf_org_with_http_info(self, request):
+    def show_conf_org_async_invoker(self, request):
+        http_info = self._show_conf_org_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_conf_org_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/confOrg",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfOrgResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7192,9 +8105,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7203,20 +8116,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/confOrg',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfOrgResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_corp_async(self, request):
         """SP管理员查询企业
@@ -7230,9 +8139,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpResponse`
         """
-        return self._show_corp_with_http_info(request)
+        http_info = self._show_corp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_corp_with_http_info(self, request):
+    def show_corp_async_invoker(self, request):
+        http_info = self._show_corp_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_corp_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/sp/corp/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCorpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7253,9 +8174,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7264,20 +8185,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCorpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_corp_admin_async(self, request):
         """查询企业管理员
@@ -7291,9 +8208,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpAdminRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpAdminResponse`
         """
-        return self._show_corp_admin_with_http_info(request)
+        http_info = self._show_corp_admin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_corp_admin_with_http_info(self, request):
+    def show_corp_admin_async_invoker(self, request):
+        http_info = self._show_corp_admin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_corp_admin_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/admin/{account}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCorpAdminResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7316,9 +8245,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7327,20 +8256,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/admin/{account}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCorpAdminResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_corp_basic_info_async(self, request):
         """企业管理员查询企业注册信息
@@ -7354,9 +8279,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpBasicInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpBasicInfoResponse`
         """
-        return self._show_corp_basic_info_with_http_info(request)
+        http_info = self._show_corp_basic_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_corp_basic_info_with_http_info(self, request):
+    def show_corp_basic_info_async_invoker(self, request):
+        http_info = self._show_corp_basic_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_corp_basic_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCorpBasicInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7375,9 +8312,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7386,20 +8323,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCorpBasicInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_corp_resource_async(self, request):
         """企业管理员查询企业内资源及业务权限
@@ -7413,9 +8346,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowCorpResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowCorpResourceResponse`
         """
-        return self._show_corp_resource_with_http_info(request)
+        http_info = self._show_corp_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_corp_resource_with_http_info(self, request):
+    def show_corp_resource_async_invoker(self, request):
+        http_info = self._show_corp_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_corp_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/resource",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCorpResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7434,9 +8379,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7445,20 +8390,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/resource',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCorpResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_department_async(self, request):
         """通过部门编码查询部门信息
@@ -7472,9 +8413,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDepartmentResponse`
         """
-        return self._show_department_with_http_info(request)
+        http_info = self._show_department_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_department_with_http_info(self, request):
+    def show_department_async_invoker(self, request):
+        http_info = self._show_department_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_department_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/abs/departments/{dept_code}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDepartmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7495,9 +8448,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7506,20 +8459,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/abs/departments/{dept_code}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDepartmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dept_and_child_dept_async(self, request):
         """查询部门及其一级子部门列表
@@ -7533,9 +8482,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeptAndChildDeptRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeptAndChildDeptResponse`
         """
-        return self._show_dept_and_child_dept_with_http_info(request)
+        http_info = self._show_dept_and_child_dept_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dept_and_child_dept_with_http_info(self, request):
+    def show_dept_and_child_dept_async_invoker(self, request):
+        http_info = self._show_dept_and_child_dept_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_dept_and_child_dept_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/member/dept/{dept_code}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeptAndChildDeptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7556,9 +8517,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7567,20 +8528,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member/dept/{dept_code}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeptAndChildDeptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device_detail_async(self, request):
         """查询终端详情
@@ -7595,9 +8552,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceDetailResponse`
         """
-        return self._show_device_detail_with_http_info(request)
+        http_info = self._show_device_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_detail_with_http_info(self, request):
+    def show_device_detail_async_invoker(self, request):
+        http_info = self._show_device_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_device_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/device/{sn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7618,9 +8587,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7629,20 +8598,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/device/{sn}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device_status_async(self, request):
         """查询设备状态
@@ -7657,9 +8622,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceStatusResponse`
         """
-        return self._show_device_status_with_http_info(request)
+        http_info = self._show_device_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_status_with_http_info(self, request):
+    def show_device_status_async_invoker(self, request):
+        http_info = self._show_device_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_device_status_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/acs/ap/userstatus",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7678,11 +8655,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7691,20 +8668,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/ap/userstatus',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device_types_async(self, request):
         """获取所有终端类型
@@ -7718,9 +8691,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowDeviceTypesRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowDeviceTypesResponse`
         """
-        return self._show_device_types_with_http_info(request)
+        http_info = self._show_device_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_types_with_http_info(self, request):
+    def show_device_types_async_invoker(self, request):
+        http_info = self._show_device_types_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_device_types_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/termdevtype",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7739,9 +8724,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7750,20 +8735,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/termdevtype',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_his_meeting_detail_async(self, request):
         """查询历史会议详情
@@ -7777,9 +8758,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowHisMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowHisMeetingDetailResponse`
         """
-        return self._show_his_meeting_detail_with_http_info(request)
+        http_info = self._show_his_meeting_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_his_meeting_detail_with_http_info(self, request):
+    def show_his_meeting_detail_async_invoker(self, request):
+        http_info = self._show_his_meeting_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_his_meeting_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/history/confDetail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHisMeetingDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7812,9 +8805,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7823,20 +8816,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/history/confDetail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHisMeetingDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_layout_async(self, request):
         """查询多画面布局
@@ -7850,9 +8839,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowLayoutRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowLayoutResponse`
         """
-        return self._show_layout_with_http_info(request)
+        http_info = self._show_layout_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_layout_with_http_info(self, request):
+    def show_layout_async_invoker(self, request):
+        http_info = self._show_layout_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_layout_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/control/conferences/layOut",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLayoutResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7871,9 +8872,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7882,20 +8883,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/layOut',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLayoutResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_meeting_detail_async(self, request):
         """查询会议详情
@@ -7911,9 +8908,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingDetailResponse`
         """
-        return self._show_meeting_detail_with_http_info(request)
+        http_info = self._show_meeting_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_meeting_detail_with_http_info(self, request):
+    def show_meeting_detail_async_invoker(self, request):
+        http_info = self._show_meeting_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_meeting_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/confDetail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMeetingDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7946,9 +8955,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7957,20 +8966,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/confDetail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMeetingDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_meeting_file_async(self, request):
         """查询会议纪要详情
@@ -7984,9 +8989,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileResponse`
         """
-        return self._show_meeting_file_with_http_info(request)
+        http_info = self._show_meeting_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_meeting_file_with_http_info(self, request):
+    def show_meeting_file_async_invoker(self, request):
+        http_info = self._show_meeting_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_meeting_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/sss/meeting-files/{file_code}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMeetingFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8007,9 +9024,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8018,20 +9035,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/meeting-files/{file_code}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMeetingFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_meeting_file_list_async(self, request):
         """打开会议纪要文件列表
@@ -8045,9 +9058,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileListRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMeetingFileListResponse`
         """
-        return self._show_meeting_file_list_with_http_info(request)
+        http_info = self._show_meeting_file_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_meeting_file_list_with_http_info(self, request):
+    def show_meeting_file_list_async_invoker(self, request):
+        http_info = self._show_meeting_file_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_meeting_file_list_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/usg/sss/meeting-files/open-meeting-file-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMeetingFileListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8066,11 +9091,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8079,20 +9104,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/meeting-files/open-meeting-file-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMeetingFileListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_my_info_async(self, request):
         """用户查询自己的信息
@@ -8106,9 +9127,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowMyInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowMyInfoResponse`
         """
-        return self._show_my_info_with_http_info(request)
+        http_info = self._show_my_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_my_info_with_http_info(self, request):
+    def show_my_info_async_invoker(self, request):
+        http_info = self._show_my_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_my_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/member",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMyInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8127,9 +9160,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8138,20 +9171,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMyInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_online_meeting_detail_async(self, request):
         """查询在线会议详情
@@ -8165,9 +9194,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowOnlineMeetingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowOnlineMeetingDetailResponse`
         """
-        return self._show_online_meeting_detail_with_http_info(request)
+        http_info = self._show_online_meeting_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_online_meeting_detail_with_http_info(self, request):
+    def show_online_meeting_detail_async_invoker(self, request):
+        http_info = self._show_online_meeting_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_online_meeting_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/online/confDetail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOnlineMeetingDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8200,9 +9241,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8211,20 +9252,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/online/confDetail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOnlineMeetingDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_org_res_async(self, request):
         """企业管理员查询企业资源使用信息
@@ -8238,9 +9275,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowOrgResRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowOrgResResponse`
         """
-        return self._show_org_res_with_http_info(request)
+        http_info = self._show_org_res_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_org_res_with_http_info(self, request):
+    def show_org_res_async_invoker(self, request):
+        http_info = self._show_org_res_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_org_res_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/orgRes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrgResResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8255,9 +9304,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8266,20 +9315,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/orgRes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOrgResResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_program_async(self, request):
         """根据ID查询节目详情
@@ -8293,9 +9338,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowProgramResponse`
         """
-        return self._show_program_with_http_info(request)
+        http_info = self._show_program_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_program_with_http_info(self, request):
+    def show_program_async_invoker(self, request):
+        http_info = self._show_program_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_program_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/sss/programs/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProgramResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8316,9 +9373,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8327,20 +9384,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/programs/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProgramResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_publication_async(self, request):
         """根据ID查询信息窗发布详情
@@ -8354,9 +9407,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowPublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowPublicationResponse`
         """
-        return self._show_publication_with_http_info(request)
+        http_info = self._show_publication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_publication_with_http_info(self, request):
+    def show_publication_async_invoker(self, request):
+        http_info = self._show_publication_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_publication_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/sss/publications/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8377,9 +9442,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8388,20 +9453,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/publications/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_real_time_info_of_meeting_async(self, request):
         """查询会议实时信息
@@ -8415,9 +9476,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRealTimeInfoOfMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRealTimeInfoOfMeetingResponse`
         """
-        return self._show_real_time_info_of_meeting_with_http_info(request)
+        http_info = self._show_real_time_info_of_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_real_time_info_of_meeting_with_http_info(self, request):
+    def show_real_time_info_of_meeting_async_invoker(self, request):
+        http_info = self._show_real_time_info_of_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_real_time_info_of_meeting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/control/conferences/realTimeInfo",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRealTimeInfoOfMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8436,9 +9509,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8447,20 +9520,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/realTimeInfo',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRealTimeInfoOfMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_recording_detail_async(self, request):
         """查询录制详情
@@ -8474,9 +9543,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRecordingDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRecordingDetailResponse`
         """
-        return self._show_recording_detail_with_http_info(request)
+        http_info = self._show_recording_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_recording_detail_with_http_info(self, request):
+    def show_recording_detail_async_invoker(self, request):
+        http_info = self._show_recording_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recording_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/record/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordingDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8499,9 +9580,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8510,20 +9591,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/record/files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordingDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_recording_file_download_urls_async(self, request):
         """查询录制文件下载链接
@@ -8539,9 +9616,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRecordingFileDownloadUrlsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRecordingFileDownloadUrlsResponse`
         """
-        return self._show_recording_file_download_urls_with_http_info(request)
+        http_info = self._show_recording_file_download_urls_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_recording_file_download_urls_with_http_info(self, request):
+    def show_recording_file_download_urls_async_invoker(self, request):
+        http_info = self._show_recording_file_download_urls_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_recording_file_download_urls_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/record/downloadurls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordingFileDownloadUrlsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8566,9 +9655,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8577,20 +9666,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/record/downloadurls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordingFileDownloadUrlsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_region_info_of_meeting_async(self, request):
         """查询会议所在区域信息
@@ -8604,9 +9689,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRegionInfoOfMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRegionInfoOfMeetingResponse`
         """
-        return self._show_region_info_of_meeting_with_http_info(request)
+        http_info = self._show_region_info_of_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_region_info_of_meeting_with_http_info(self, request):
+    def show_region_info_of_meeting_async_invoker(self, request):
+        http_info = self._show_region_info_of_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_region_info_of_meeting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/conferences/region/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRegionInfoOfMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8623,9 +9720,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8634,20 +9731,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/region/info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRegionInfoOfMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_room_setting_async(self, request):
         """查询网络研讨会高级设置
@@ -8661,9 +9754,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowRoomSettingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowRoomSettingResponse`
         """
-        return self._show_room_setting_with_http_info(request)
+        http_info = self._show_room_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_room_setting_with_http_info(self, request):
+    def show_room_setting_async_invoker(self, request):
+        http_info = self._show_room_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_room_setting_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/wss/webinar/open/room-setting/{conference_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRoomSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8684,9 +9789,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8695,20 +9800,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/room-setting/{conference_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRoomSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sp_res_async(self, request):
         """SP管理员查询SP下资源使用信息
@@ -8722,9 +9823,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSpResRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSpResResponse`
         """
-        return self._show_sp_res_with_http_info(request)
+        http_info = self._show_sp_res_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sp_res_with_http_info(self, request):
+    def show_sp_res_async_invoker(self, request):
+        http_info = self._show_sp_res_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sp_res_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/spRes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSpResResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8739,9 +9852,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8750,20 +9863,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/spRes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSpResResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sp_resource_async(self, request):
         """SP管理员查询资源信息
@@ -8777,9 +9886,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSpResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSpResourceResponse`
         """
-        return self._show_sp_resource_with_http_info(request)
+        http_info = self._show_sp_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sp_resource_with_http_info(self, request):
+    def show_sp_resource_async_invoker(self, request):
+        http_info = self._show_sp_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sp_resource_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/sp/resource",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSpResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8800,9 +9921,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8811,20 +9932,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/resource',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSpResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sso_config_async(self, request):
         """查询SSO登录配置
@@ -8838,9 +9955,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowSsoConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowSsoConfigResponse`
         """
-        return self._show_sso_config_with_http_info(request)
+        http_info = self._show_sso_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sso_config_with_http_info(self, request):
+    def show_sso_config_async_invoker(self, request):
+        http_info = self._show_sso_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_sso_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/acs/authorizeconfig",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSsoConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8859,9 +9988,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8870,20 +9999,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/authorizeconfig',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSsoConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_user_detail_async(self, request):
         """查询用户详情
@@ -8897,9 +10022,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowUserDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowUserDetailResponse`
         """
-        return self._show_user_detail_with_http_info(request)
+        http_info = self._show_user_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_user_detail_with_http_info(self, request):
+    def show_user_detail_async_invoker(self, request):
+        http_info = self._show_user_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_user_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/usg/dcs/corp/member/{account}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUserDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8922,9 +10059,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8933,20 +10070,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/member/{account}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUserDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_web_hook_config_async(self, request):
         """查询事件推送
@@ -8960,9 +10093,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowWebHookConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowWebHookConfigResponse`
         """
-        return self._show_web_hook_config_with_http_info(request)
+        http_info = self._show_web_hook_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_web_hook_config_with_http_info(self, request):
+    def show_web_hook_config_async_invoker(self, request):
+        http_info = self._show_web_hook_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_web_hook_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/mmc/management/webhook/link-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWebHookConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8981,9 +10126,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8992,20 +10137,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/webhook/link-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWebHookConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_webinar_async(self, request):
         """查询网络研讨会详情
@@ -9019,9 +10160,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowWebinarResponse`
         """
-        return self._show_webinar_with_http_info(request)
+        http_info = self._show_webinar_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_webinar_with_http_info(self, request):
+    def show_webinar_async_invoker(self, request):
+        http_info = self._show_webinar_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_webinar_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/wss/webinar/open/conferences/{conference_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWebinarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9042,9 +10195,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9053,20 +10206,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences/{conference_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWebinarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_meeting_async(self, request):
         """激活会议
@@ -9081,9 +10230,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.StartMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.StartMeetingResponse`
         """
-        return self._start_meeting_with_http_info(request)
+        http_info = self._start_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_meeting_with_http_info(self, request):
+    def start_meeting_async_invoker(self, request):
+        http_info = self._start_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_meeting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/mmc/management/conferences/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9098,11 +10259,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9111,20 +10272,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_meeting_async(self, request):
         """结束会议
@@ -9140,9 +10297,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.StopMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.StopMeetingResponse`
         """
-        return self._stop_meeting_with_http_info(request)
+        http_info = self._stop_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_meeting_with_http_info(self, request):
+    def stop_meeting_async_invoker(self, request):
+        http_info = self._stop_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_meeting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9161,9 +10330,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9172,20 +10341,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/stop',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_mode_async(self, request):
         """切换视频显示策略
@@ -9199,9 +10364,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SwitchModeRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SwitchModeResponse`
         """
-        return self._switch_mode_with_http_info(request)
+        http_info = self._switch_mode_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_mode_with_http_info(self, request):
+    def switch_mode_async_invoker(self, request):
+        http_info = self._switch_mode_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_mode_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/display/mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchModeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9220,11 +10397,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9233,20 +10410,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/display/mode',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchModeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_contact_async(self, request):
         """修改手机或邮箱
@@ -9260,9 +10433,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateContactRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateContactResponse`
         """
-        return self._update_contact_with_http_info(request)
+        http_info = self._update_contact_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_contact_with_http_info(self, request):
+    def update_contact_async_invoker(self, request):
+        http_info = self._update_contact_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_contact_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/member/contact",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateContactResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9281,11 +10466,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9294,20 +10479,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member/contact',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateContactResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_corp_async(self, request):
         """SP管理员修改企业
@@ -9321,9 +10502,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateCorpRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateCorpResponse`
         """
-        return self._update_corp_with_http_info(request)
+        http_info = self._update_corp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_corp_with_http_info(self, request):
+    def update_corp_async_invoker(self, request):
+        http_info = self._update_corp_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_corp_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/sp/corp/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCorpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9344,11 +10537,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9357,20 +10550,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCorpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_corp_basic_info_async(self, request):
         """企业管理员修改企业注册信息
@@ -9384,9 +10573,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateCorpBasicInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateCorpBasicInfoResponse`
         """
-        return self._update_corp_basic_info_with_http_info(request)
+        http_info = self._update_corp_basic_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_corp_basic_info_with_http_info(self, request):
+    def update_corp_basic_info_async_invoker(self, request):
+        http_info = self._update_corp_basic_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_corp_basic_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/corp",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCorpBasicInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9405,11 +10606,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9418,20 +10619,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCorpBasicInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_department_async(self, request):
         """修改部门
@@ -9445,9 +10642,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateDepartmentRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateDepartmentResponse`
         """
-        return self._update_department_with_http_info(request)
+        http_info = self._update_department_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_department_with_http_info(self, request):
+    def update_department_async_invoker(self, request):
+        http_info = self._update_department_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_department_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/corp/dept/{dept_code}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDepartmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9468,11 +10677,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9481,20 +10690,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/dept/{dept_code}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDepartmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_device_async(self, request):
         """修改终端
@@ -9509,9 +10714,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateDeviceResponse`
         """
-        return self._update_device_with_http_info(request)
+        http_info = self._update_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_device_with_http_info(self, request):
+    def update_device_async_invoker(self, request):
+        http_info = self._update_device_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_device_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/corp/device/{sn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9532,11 +10749,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9545,20 +10762,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/device/{sn}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_material_async(self, request):
         """更新信息窗素材
@@ -9572,9 +10785,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMaterialRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMaterialResponse`
         """
-        return self._update_material_with_http_info(request)
+        http_info = self._update_material_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_material_with_http_info(self, request):
+    def update_material_async_invoker(self, request):
+        http_info = self._update_material_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_material_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/sss/materials/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMaterialResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9595,11 +10820,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9608,20 +10833,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/materials/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMaterialResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_meeting_async(self, request):
         """编辑预约会议
@@ -9635,9 +10856,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMeetingResponse`
         """
-        return self._update_meeting_with_http_info(request)
+        http_info = self._update_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_meeting_with_http_info(self, request):
+    def update_meeting_async_invoker(self, request):
+        http_info = self._update_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_meeting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/management/conferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9660,11 +10893,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9673,20 +10906,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_member_vmr_async(self, request):
         """修改用会议室及个人会议ID信息
@@ -9700,9 +10929,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMemberVmrRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMemberVmrResponse`
         """
-        return self._update_member_vmr_with_http_info(request)
+        http_info = self._update_member_vmr_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_member_vmr_with_http_info(self, request):
+    def update_member_vmr_async_invoker(self, request):
+        http_info = self._update_member_vmr_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_member_vmr_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/member/vmr/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMemberVmrResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9723,11 +10964,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9736,20 +10977,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member/vmr/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMemberVmrResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_my_info_async(self, request):
         """用户修改自己的信息
@@ -9763,9 +11000,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateMyInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateMyInfoResponse`
         """
-        return self._update_my_info_with_http_info(request)
+        http_info = self._update_my_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_my_info_with_http_info(self, request):
+    def update_my_info_async_invoker(self, request):
+        http_info = self._update_my_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_my_info_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/member",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMyInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9784,11 +11033,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9797,20 +11046,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/member',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMyInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_program_async(self, request):
         """更新信息窗节目
@@ -9824,9 +11069,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateProgramRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateProgramResponse`
         """
-        return self._update_program_with_http_info(request)
+        http_info = self._update_program_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_program_with_http_info(self, request):
+    def update_program_async_invoker(self, request):
+        http_info = self._update_program_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_program_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/sss/programs/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProgramResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9847,11 +11104,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9860,20 +11117,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/programs/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProgramResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_publication_async(self, request):
         """修改信息窗发布
@@ -9887,9 +11140,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdatePublicationRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdatePublicationResponse`
         """
-        return self._update_publication_with_http_info(request)
+        http_info = self._update_publication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_publication_with_http_info(self, request):
+    def update_publication_async_invoker(self, request):
+        http_info = self._update_publication_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_publication_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/sss/publications/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9910,11 +11175,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9923,20 +11188,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/sss/publications/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePublicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_pwd_async(self, request):
         """修改密码
@@ -9950,9 +11211,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdatePwdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdatePwdResponse`
         """
-        return self._update_pwd_with_http_info(request)
+        http_info = self._update_pwd_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_pwd_with_http_info(self, request):
+    def update_pwd_async_invoker(self, request):
+        http_info = self._update_pwd_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_pwd_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/acs/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePwdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9971,11 +11244,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9984,20 +11257,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePwdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_recurring_meeting_async(self, request):
         """编辑周期性会议
@@ -10011,9 +11280,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringMeetingResponse`
         """
-        return self._update_recurring_meeting_with_http_info(request)
+        http_info = self._update_recurring_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_recurring_meeting_with_http_info(self, request):
+    def update_recurring_meeting_async_invoker(self, request):
+        http_info = self._update_recurring_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_recurring_meeting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/management/cycleconferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecurringMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10036,11 +11317,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10049,20 +11330,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/cycleconferences',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRecurringMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_recurring_sub_meeting_async(self, request):
         """编辑周期性会议的子会议
@@ -10076,9 +11353,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringSubMeetingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRecurringSubMeetingResponse`
         """
-        return self._update_recurring_sub_meeting_with_http_info(request)
+        http_info = self._update_recurring_sub_meeting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_recurring_sub_meeting_with_http_info(self, request):
+    def update_recurring_sub_meeting_async_invoker(self, request):
+        http_info = self._update_recurring_sub_meeting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_recurring_sub_meeting_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/management/conferences/cyclesubconf",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecurringSubMeetingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10101,11 +11390,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10114,20 +11403,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/conferences/cyclesubconf',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRecurringSubMeetingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_resource_async(self, request):
         """SP管理员根据修改企业资源
@@ -10141,9 +11426,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateResourceRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateResourceResponse`
         """
-        return self._update_resource_with_http_info(request)
+        http_info = self._update_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_resource_with_http_info(self, request):
+    def update_resource_async_invoker(self, request):
+        http_info = self._update_resource_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_resource_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/sp/corp/{corp_id}/resource",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10164,11 +11461,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10177,20 +11474,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/sp/corp/{corp_id}/resource',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_room_setting_async(self, request):
         """修改网络研讨会高级设置
@@ -10204,9 +11497,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateRoomSettingRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateRoomSettingResponse`
         """
-        return self._update_room_setting_with_http_info(request)
+        http_info = self._update_room_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_room_setting_with_http_info(self, request):
+    def update_room_setting_async_invoker(self, request):
+        http_info = self._update_room_setting_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_room_setting_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/wss/webinar/open/room-setting/{conference_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRoomSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10227,11 +11532,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10240,20 +11545,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/room-setting/{conference_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRoomSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_started_conf_config_async(self, request):
         """会中修改配置
@@ -10267,9 +11568,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfConfigRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateStartedConfConfigResponse`
         """
-        return self._update_started_conf_config_with_http_info(request)
+        http_info = self._update_started_conf_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_started_conf_config_with_http_info(self, request):
+    def update_started_conf_config_async_invoker(self, request):
+        http_info = self._update_started_conf_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_started_conf_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/control/conferences/updateStartedConfConfig",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStartedConfConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10288,11 +11601,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10301,20 +11614,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/control/conferences/updateStartedConfConfig',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStartedConfConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_token_async(self, request):
         """刷新Token
@@ -10328,9 +11637,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateTokenRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateTokenResponse`
         """
-        return self._update_token_with_http_info(request)
+        http_info = self._update_token_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_token_with_http_info(self, request):
+    def update_token_async_invoker(self, request):
+        http_info = self._update_token_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_token_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/acs/token",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTokenResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10349,9 +11670,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10360,20 +11681,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/acs/token',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTokenResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_async(self, request):
         """修改用户
@@ -10387,9 +11704,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateUserResponse`
         """
-        return self._update_user_with_http_info(request)
+        http_info = self._update_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_with_http_info(self, request):
+    def update_user_async_invoker(self, request):
+        http_info = self._update_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/usg/dcs/corp/member/{account}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10412,11 +11741,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10425,20 +11754,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/usg/dcs/corp/member/{account}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_web_hook_config_status_async(self, request):
         """开启事件推送
@@ -10452,9 +11777,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateWebHookConfigStatusRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateWebHookConfigStatusResponse`
         """
-        return self._update_web_hook_config_status_with_http_info(request)
+        http_info = self._update_web_hook_config_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_web_hook_config_status_with_http_info(self, request):
+    def update_web_hook_config_status_async_invoker(self, request):
+        http_info = self._update_web_hook_config_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_web_hook_config_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/mmc/management/webhook/change-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWebHookConfigStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10473,9 +11810,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10484,20 +11821,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/mmc/management/webhook/change-status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWebHookConfigStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_webinar_async(self, request):
         """编辑网络研讨会
@@ -10511,9 +11844,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UpdateWebinarRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UpdateWebinarResponse`
         """
-        return self._update_webinar_with_http_info(request)
+        http_info = self._update_webinar_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_webinar_with_http_info(self, request):
+    def update_webinar_async_invoker(self, request):
+        http_info = self._update_webinar_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_webinar_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/wss/webinar/open/conferences",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWebinarResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10532,11 +11877,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10545,20 +11890,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/conferences',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWebinarResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_file_async(self, request):
         """上传图片
@@ -10572,9 +11913,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.UploadFileRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.UploadFileResponse`
         """
-        return self._upload_file_with_http_info(request)
+        http_info = self._upload_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_file_with_http_info(self, request):
+    def upload_file_async_invoker(self, request):
+        http_info = self._upload_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upload_file_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/wss/webinar/open/res/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10595,11 +11948,11 @@ class MeetingAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10608,20 +11961,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/wss/webinar/open/res/file',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_qos_history_meetings_async(self, request):
         """查询QoS历史会议列表
@@ -10636,9 +11985,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosHistoryMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosHistoryMeetingsResponse`
         """
-        return self._search_qos_history_meetings_with_http_info(request)
+        http_info = self._search_qos_history_meetings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_qos_history_meetings_with_http_info(self, request):
+    def search_qos_history_meetings_async_invoker(self, request):
+        http_info = self._search_qos_history_meetings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_qos_history_meetings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/conferences/history",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchQosHistoryMeetingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10663,9 +12024,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10674,20 +12035,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/conferences/history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchQosHistoryMeetingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_qos_online_meetings_async(self, request):
         """查询QoS在线会议列表
@@ -10702,9 +12059,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosOnlineMeetingsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosOnlineMeetingsResponse`
         """
-        return self._search_qos_online_meetings_with_http_info(request)
+        http_info = self._search_qos_online_meetings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_qos_online_meetings_with_http_info(self, request):
+    def search_qos_online_meetings_async_invoker(self, request):
+        http_info = self._search_qos_online_meetings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_qos_online_meetings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/conferences/online",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchQosOnlineMeetingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10725,9 +12094,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10736,20 +12105,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/conferences/online',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchQosOnlineMeetingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_qos_participant_detail_async(self, request):
         """查询与会者的QoS数据
@@ -10764,9 +12129,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantDetailRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantDetailResponse`
         """
-        return self._search_qos_participant_detail_with_http_info(request)
+        http_info = self._search_qos_participant_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_qos_participant_detail_with_http_info(self, request):
+    def search_qos_participant_detail_async_invoker(self, request):
+        http_info = self._search_qos_participant_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_qos_participant_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/conference/participant/qos",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchQosParticipantDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10789,9 +12166,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10800,20 +12177,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/conference/participant/qos',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchQosParticipantDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_qos_participants_async(self, request):
         """查询QoS会议与会者列表
@@ -10828,9 +12201,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantsRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchQosParticipantsResponse`
         """
-        return self._search_qos_participants_with_http_info(request)
+        http_info = self._search_qos_participants_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_qos_participants_with_http_info(self, request):
+    def search_qos_participants_async_invoker(self, request):
+        http_info = self._search_qos_participants_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_qos_participants_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/conference/participants",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchQosParticipantsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10855,9 +12240,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10866,20 +12251,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/conference/participants',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchQosParticipantsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_qos_threshold_async(self, request):
         """设置QoS告警阈值
@@ -10894,9 +12275,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SetQosThresholdResponse`
         """
-        return self._set_qos_threshold_with_http_info(request)
+        http_info = self._set_qos_threshold_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_qos_threshold_with_http_info(self, request):
+    def set_qos_threshold_async_invoker(self, request):
+        http_info = self._set_qos_threshold_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_qos_threshold_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/metrics/conference/threshold",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetQosThresholdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10913,11 +12306,11 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10926,20 +12319,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/conference/threshold',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetQosThresholdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_qos_threshold_async(self, request):
         """查询QoS告警阈值
@@ -10954,9 +12343,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.ShowQosThresholdRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.ShowQosThresholdResponse`
         """
-        return self._show_qos_threshold_with_http_info(request)
+        http_info = self._show_qos_threshold_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_qos_threshold_with_http_info(self, request):
+    def show_qos_threshold_async_invoker(self, request):
+        http_info = self._show_qos_threshold_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_qos_threshold_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/conference/threshold",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQosThresholdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10973,9 +12374,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10984,20 +12385,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/conference/threshold',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQosThresholdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_statistic_conference_info_async(self, request):
         """查询企业级会议总体统计数据
@@ -11014,9 +12411,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceInfoResponse`
         """
-        return self._search_statistic_conference_info_with_http_info(request)
+        http_info = self._search_statistic_conference_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_statistic_conference_info_with_http_info(self, request):
+    def search_statistic_conference_info_async_invoker(self, request):
+        http_info = self._search_statistic_conference_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_statistic_conference_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/dashboard/statistic/conference/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchStatisticConferenceInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11043,9 +12452,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11054,20 +12463,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/dashboard/statistic/conference/info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchStatisticConferenceInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_statistic_conference_participant_async(self, request):
         """查询企业级会议与会统计数据
@@ -11085,9 +12490,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceParticipantRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticConferenceParticipantResponse`
         """
-        return self._search_statistic_conference_participant_with_http_info(request)
+        http_info = self._search_statistic_conference_participant_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_statistic_conference_participant_with_http_info(self, request):
+    def search_statistic_conference_participant_async_invoker(self, request):
+        http_info = self._search_statistic_conference_participant_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_statistic_conference_participant_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/dashboard/statistic/conference/participant",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchStatisticConferenceParticipantResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11114,9 +12531,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11125,20 +12542,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/dashboard/statistic/conference/participant',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchStatisticConferenceParticipantResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_statistic_resource_info_async(self, request):
         """查询企业级会议已购资源使用统计数据
@@ -11154,9 +12567,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticResourceInfoResponse`
         """
-        return self._search_statistic_resource_info_with_http_info(request)
+        http_info = self._search_statistic_resource_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_statistic_resource_info_with_http_info(self, request):
+    def search_statistic_resource_info_async_invoker(self, request):
+        http_info = self._search_statistic_resource_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_statistic_resource_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/dashboard/statistic/resource/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchStatisticResourceInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11183,9 +12608,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11194,20 +12619,16 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/dashboard/statistic/resource/info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchStatisticResourceInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_statistic_user_info_async(self, request):
         """查询企业级会议的用户统计数据
@@ -11225,9 +12646,21 @@ class MeetingAsyncClient(Client):
         :type request: :class:`huaweicloudsdkmeeting.v1.SearchStatisticUserInfoRequest`
         :rtype: :class:`huaweicloudsdkmeeting.v1.SearchStatisticUserInfoResponse`
         """
-        return self._search_statistic_user_info_with_http_info(request)
+        http_info = self._search_statistic_user_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_statistic_user_info_with_http_info(self, request):
+    def search_statistic_user_info_async_invoker(self, request):
+        http_info = self._search_statistic_user_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_statistic_user_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/metrics/dashboard/statistic/user/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchStatisticUserInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11254,9 +12687,9 @@ class MeetingAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11265,20 +12698,26 @@ class MeetingAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/metrics/dashboard/statistic/user/info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchStatisticUserInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -11317,4 +12756,4 @@ class MeetingAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

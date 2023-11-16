@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkas'")
 
 
 class AsAsyncClient(Client):
@@ -39,9 +44,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.AttachCallbackInstanceLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.AttachCallbackInstanceLifeCycleHookResponse`
         """
-        return self._attach_callback_instance_life_cycle_hook_with_http_info(request)
+        http_info = self._attach_callback_instance_life_cycle_hook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_callback_instance_life_cycle_hook_with_http_info(self, request):
+    def attach_callback_instance_life_cycle_hook_async_invoker(self, request):
+        http_info = self._attach_callback_instance_life_cycle_hook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_callback_instance_life_cycle_hook_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/callback",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachCallbackInstanceLifeCycleHookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/callback',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachCallbackInstanceLifeCycleHookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_scaling_instances_async(self, request):
         """批量添加实例
@@ -98,9 +111,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchAddScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchAddScalingInstancesResponse`
         """
-        return self._batch_add_scaling_instances_with_http_info(request)
+        http_info = self._batch_add_scaling_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_scaling_instances_with_http_info(self, request):
+    def batch_add_scaling_instances_async_invoker(self, request):
+        http_info = self._batch_add_scaling_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_add_scaling_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddScalingInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddScalingInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_scaling_configs_async(self, request):
         """批量删除弹性伸缩配置
@@ -157,9 +178,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchDeleteScalingConfigsResponse`
         """
-        return self._batch_delete_scaling_configs_with_http_info(request)
+        http_info = self._batch_delete_scaling_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_scaling_configs_with_http_info(self, request):
+    def batch_delete_scaling_configs_async_invoker(self, request):
+        http_info = self._batch_delete_scaling_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_scaling_configs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteScalingConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -174,11 +207,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -187,20 +220,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_configurations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteScalingConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_scaling_policies_async(self, request):
         """批量删除弹性伸缩策略。
@@ -214,9 +243,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchDeleteScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchDeleteScalingPoliciesResponse`
         """
-        return self._batch_delete_scaling_policies_with_http_info(request)
+        http_info = self._batch_delete_scaling_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_scaling_policies_with_http_info(self, request):
+    def batch_delete_scaling_policies_async_invoker(self, request):
+        http_info = self._batch_delete_scaling_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_scaling_policies_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policies/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteScalingPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +272,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +285,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policies/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteScalingPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_pause_scaling_policies_async(self, request):
         """批量停用弹性伸缩策略。
@@ -271,9 +308,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchPauseScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchPauseScalingPoliciesResponse`
         """
-        return self._batch_pause_scaling_policies_with_http_info(request)
+        http_info = self._batch_pause_scaling_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_pause_scaling_policies_with_http_info(self, request):
+    def batch_pause_scaling_policies_async_invoker(self, request):
+        http_info = self._batch_pause_scaling_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_pause_scaling_policies_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policies/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchPauseScalingPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -288,11 +337,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -301,20 +350,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policies/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchPauseScalingPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_protect_scaling_instances_async(self, request):
         """批量设置实例保护
@@ -328,9 +373,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchProtectScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchProtectScalingInstancesResponse`
         """
-        return self._batch_protect_scaling_instances_with_http_info(request)
+        http_info = self._batch_protect_scaling_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_protect_scaling_instances_with_http_info(self, request):
+    def batch_protect_scaling_instances_async_invoker(self, request):
+        http_info = self._batch_protect_scaling_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_protect_scaling_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchProtectScalingInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,11 +404,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +417,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchProtectScalingInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_remove_scaling_instances_async(self, request):
         """批量移除实例
@@ -387,9 +440,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchRemoveScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchRemoveScalingInstancesResponse`
         """
-        return self._batch_remove_scaling_instances_with_http_info(request)
+        http_info = self._batch_remove_scaling_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_remove_scaling_instances_with_http_info(self, request):
+    def batch_remove_scaling_instances_async_invoker(self, request):
+        http_info = self._batch_remove_scaling_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_remove_scaling_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRemoveScalingInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -406,11 +471,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -419,20 +484,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRemoveScalingInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_resume_scaling_policies_async(self, request):
         """批量启用弹性伸缩策略。
@@ -446,9 +507,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchResumeScalingPoliciesResponse`
         """
-        return self._batch_resume_scaling_policies_with_http_info(request)
+        http_info = self._batch_resume_scaling_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_resume_scaling_policies_with_http_info(self, request):
+    def batch_resume_scaling_policies_async_invoker(self, request):
+        http_info = self._batch_resume_scaling_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_resume_scaling_policies_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policies/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchResumeScalingPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -463,11 +536,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -476,20 +549,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policies/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchResumeScalingPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_set_scaling_instances_standby_async(self, request):
         """批量将实例转为备用状态
@@ -503,9 +572,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchSetScalingInstancesStandbyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchSetScalingInstancesStandbyResponse`
         """
-        return self._batch_set_scaling_instances_standby_with_http_info(request)
+        http_info = self._batch_set_scaling_instances_standby_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_set_scaling_instances_standby_with_http_info(self, request):
+    def batch_set_scaling_instances_standby_async_invoker(self, request):
+        http_info = self._batch_set_scaling_instances_standby_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_set_scaling_instances_standby_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchSetScalingInstancesStandbyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -522,11 +603,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -535,20 +616,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchSetScalingInstancesStandbyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_unprotect_scaling_instances_async(self, request):
         """批量取消实例保护
@@ -562,9 +639,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchUnprotectScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchUnprotectScalingInstancesResponse`
         """
-        return self._batch_unprotect_scaling_instances_with_http_info(request)
+        http_info = self._batch_unprotect_scaling_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_unprotect_scaling_instances_with_http_info(self, request):
+    def batch_unprotect_scaling_instances_async_invoker(self, request):
+        http_info = self._batch_unprotect_scaling_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_unprotect_scaling_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUnprotectScalingInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -581,11 +670,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -594,20 +683,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUnprotectScalingInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_unset_scaling_instances_stantby_async(self, request):
         """批量将实例移出备用状态
@@ -621,9 +706,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.BatchUnsetScalingInstancesStantbyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.BatchUnsetScalingInstancesStantbyResponse`
         """
-        return self._batch_unset_scaling_instances_stantby_with_http_info(request)
+        http_info = self._batch_unset_scaling_instances_stantby_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_unset_scaling_instances_stantby_with_http_info(self, request):
+    def batch_unset_scaling_instances_stantby_async_invoker(self, request):
+        http_info = self._batch_unset_scaling_instances_stantby_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_unset_scaling_instances_stantby_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUnsetScalingInstancesStantbyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -640,11 +737,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -653,20 +750,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUnsetScalingInstancesStantbyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_group_scheduled_task_async(self, request):
         """创建计划任务
@@ -680,9 +773,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateGroupScheduledTaskRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateGroupScheduledTaskResponse`
         """
-        return self._create_group_scheduled_task_with_http_info(request)
+        http_info = self._create_group_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_group_scheduled_task_with_http_info(self, request):
+    def create_group_scheduled_task_async_invoker(self, request):
+        http_info = self._create_group_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_group_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGroupScheduledTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -699,11 +804,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -712,20 +817,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGroupScheduledTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_lify_cycle_hook_async(self, request):
         """创建生命周期挂钩
@@ -739,9 +840,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateLifyCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateLifyCycleHookResponse`
         """
-        return self._create_lify_cycle_hook_with_http_info(request)
+        http_info = self._create_lify_cycle_hook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_lify_cycle_hook_with_http_info(self, request):
+    def create_lify_cycle_hook_async_invoker(self, request):
+        http_info = self._create_lify_cycle_hook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_lify_cycle_hook_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLifyCycleHookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -758,11 +871,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -771,20 +884,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLifyCycleHookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_scaling_config_async(self, request):
         """创建弹性伸缩配置
@@ -798,9 +907,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingConfigResponse`
         """
-        return self._create_scaling_config_with_http_info(request)
+        http_info = self._create_scaling_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_scaling_config_with_http_info(self, request):
+    def create_scaling_config_async_invoker(self, request):
+        http_info = self._create_scaling_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_scaling_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScalingConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -815,11 +936,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -828,20 +949,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_configuration',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScalingConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_scaling_group_async(self, request):
         """创建弹性伸缩组
@@ -855,9 +972,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingGroupResponse`
         """
-        return self._create_scaling_group_with_http_info(request)
+        http_info = self._create_scaling_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_scaling_group_with_http_info(self, request):
+    def create_scaling_group_async_invoker(self, request):
+        http_info = self._create_scaling_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_scaling_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScalingGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -872,11 +1001,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -885,20 +1014,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScalingGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_scaling_notification_async(self, request):
         """配置伸缩组通知
@@ -912,9 +1037,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingNotificationRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingNotificationResponse`
         """
-        return self._create_scaling_notification_with_http_info(request)
+        http_info = self._create_scaling_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_scaling_notification_with_http_info(self, request):
+    def create_scaling_notification_async_invoker(self, request):
+        http_info = self._create_scaling_notification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_scaling_notification_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScalingNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -931,11 +1068,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -944,20 +1081,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScalingNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_scaling_policy_async(self, request):
         """创建弹性伸缩策略
@@ -971,9 +1104,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingPolicyResponse`
         """
-        return self._create_scaling_policy_with_http_info(request)
+        http_info = self._create_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_scaling_policy_with_http_info(self, request):
+    def create_scaling_policy_async_invoker(self, request):
+        http_info = self._create_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -988,11 +1133,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1001,20 +1146,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_scaling_tag_info_async(self, request):
         """创建标签
@@ -1028,9 +1169,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingTagInfoRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingTagInfoResponse`
         """
-        return self._create_scaling_tag_info_with_http_info(request)
+        http_info = self._create_scaling_tag_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_scaling_tag_info_with_http_info(self, request):
+    def create_scaling_tag_info_async_invoker(self, request):
+        http_info = self._create_scaling_tag_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_scaling_tag_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScalingTagInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1049,11 +1202,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1062,20 +1215,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScalingTagInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_group_scheduled_task_async(self, request):
         """删除计划任务
@@ -1089,9 +1238,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteGroupScheduledTaskRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteGroupScheduledTaskResponse`
         """
-        return self._delete_group_scheduled_task_with_http_info(request)
+        http_info = self._delete_group_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_group_scheduled_task_with_http_info(self, request):
+    def delete_group_scheduled_task_async_invoker(self, request):
+        http_info = self._delete_group_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_group_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks/{scheduled_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGroupScheduledTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1110,9 +1271,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1121,20 +1282,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks/{scheduled_task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGroupScheduledTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_lifecycle_hook_async(self, request):
         """删除生命周期挂钩
@@ -1148,9 +1305,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteLifecycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteLifecycleHookResponse`
         """
-        return self._delete_lifecycle_hook_with_http_info(request)
+        http_info = self._delete_lifecycle_hook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_lifecycle_hook_with_http_info(self, request):
+    def delete_lifecycle_hook_async_invoker(self, request):
+        http_info = self._delete_lifecycle_hook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_lifecycle_hook_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLifecycleHookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1169,9 +1338,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1180,20 +1349,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLifecycleHookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_scaling_config_async(self, request):
         """删除弹性伸缩配置
@@ -1207,9 +1372,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingConfigResponse`
         """
-        return self._delete_scaling_config_with_http_info(request)
+        http_info = self._delete_scaling_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_scaling_config_with_http_info(self, request):
+    def delete_scaling_config_async_invoker(self, request):
+        http_info = self._delete_scaling_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scaling_config_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_configuration/{scaling_configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScalingConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1226,9 +1403,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1237,20 +1414,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_configuration/{scaling_configuration_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScalingConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_scaling_group_async(self, request):
         """删除弹性伸缩组
@@ -1264,9 +1437,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingGroupResponse`
         """
-        return self._delete_scaling_group_with_http_info(request)
+        http_info = self._delete_scaling_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_scaling_group_with_http_info(self, request):
+    def delete_scaling_group_async_invoker(self, request):
+        http_info = self._delete_scaling_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scaling_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScalingGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1285,9 +1470,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1296,20 +1481,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScalingGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_scaling_instance_async(self, request):
         """移出弹性伸缩组实例
@@ -1323,9 +1504,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingInstanceRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingInstanceResponse`
         """
-        return self._delete_scaling_instance_with_http_info(request)
+        http_info = self._delete_scaling_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_scaling_instance_with_http_info(self, request):
+    def delete_scaling_instance_async_invoker(self, request):
+        http_info = self._delete_scaling_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scaling_instance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group_instance/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScalingInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1344,9 +1537,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1355,20 +1548,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScalingInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_scaling_notification_async(self, request):
         """删除伸缩组通知
@@ -1382,9 +1571,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingNotificationRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingNotificationResponse`
         """
-        return self._delete_scaling_notification_with_http_info(request)
+        http_info = self._delete_scaling_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_scaling_notification_with_http_info(self, request):
+    def delete_scaling_notification_async_invoker(self, request):
+        http_info = self._delete_scaling_notification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scaling_notification_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}/{topic_urn}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScalingNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1403,9 +1604,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1414,20 +1615,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}/{topic_urn}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScalingNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_scaling_policy_async(self, request):
         """删除弹性伸缩策略
@@ -1441,9 +1638,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingPolicyResponse`
         """
-        return self._delete_scaling_policy_with_http_info(request)
+        http_info = self._delete_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_scaling_policy_with_http_info(self, request):
+    def delete_scaling_policy_async_invoker(self, request):
+        http_info = self._delete_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1460,9 +1669,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1471,20 +1680,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_scaling_tag_info_async(self, request):
         """删除标签
@@ -1498,9 +1703,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.DeleteScalingTagInfoRequest`
         :rtype: :class:`huaweicloudsdkas.v1.DeleteScalingTagInfoResponse`
         """
-        return self._delete_scaling_tag_info_with_http_info(request)
+        http_info = self._delete_scaling_tag_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_scaling_tag_info_with_http_info(self, request):
+    def delete_scaling_tag_info_async_invoker(self, request):
+        http_info = self._delete_scaling_tag_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_scaling_tag_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScalingTagInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1519,11 +1736,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1532,20 +1749,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScalingTagInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_scaling_policy_async(self, request):
         """执行弹性伸缩策略。
@@ -1559,9 +1772,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ExecuteScalingPolicyResponse`
         """
-        return self._execute_scaling_policy_with_http_info(request)
+        http_info = self._execute_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_scaling_policy_with_http_info(self, request):
+    def execute_scaling_policy_async_invoker(self, request):
+        http_info = self._execute_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1578,11 +1803,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1591,20 +1816,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_group_scheduled_tasks_async(self, request):
         """查询计划任务列表
@@ -1618,9 +1839,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListGroupScheduledTasksRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListGroupScheduledTasksResponse`
         """
-        return self._list_group_scheduled_tasks_with_http_info(request)
+        http_info = self._list_group_scheduled_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_group_scheduled_tasks_with_http_info(self, request):
+    def list_group_scheduled_tasks_async_invoker(self, request):
+        http_info = self._list_group_scheduled_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_group_scheduled_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupScheduledTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1641,9 +1874,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1652,20 +1885,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGroupScheduledTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_hook_instances_async(self, request):
         """查询伸缩实例挂起信息
@@ -1679,9 +1908,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListHookInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListHookInstancesResponse`
         """
-        return self._list_hook_instances_with_http_info(request)
+        http_info = self._list_hook_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_hook_instances_with_http_info(self, request):
+    def list_hook_instances_async_invoker(self, request):
+        http_info = self._list_hook_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hook_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHookInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1700,9 +1941,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1711,20 +1952,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_instance_hook/{scaling_group_id}/list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHookInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_life_cycle_hooks_async(self, request):
         """查询生命周期挂钩列表
@@ -1738,9 +1975,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListLifeCycleHooksRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListLifeCycleHooksResponse`
         """
-        return self._list_life_cycle_hooks_with_http_info(request)
+        http_info = self._list_life_cycle_hooks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_life_cycle_hooks_with_http_info(self, request):
+    def list_life_cycle_hooks_async_invoker(self, request):
+        http_info = self._list_life_cycle_hooks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_life_cycle_hooks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLifeCycleHooksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1757,9 +2006,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1768,20 +2017,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLifeCycleHooksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_instances_async(self, request):
         """查询资源实例
@@ -1795,9 +2040,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListResourceInstancesResponse`
         """
-        return self._list_resource_instances_with_http_info(request)
+        http_info = self._list_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_instances_with_http_info(self, request):
+    def list_resource_instances_async_invoker(self, request):
+        http_info = self._list_resource_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/{resource_type}/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1814,11 +2071,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1827,20 +2084,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_activity_logs_async(self, request):
         """查询伸缩活动日志
@@ -1854,9 +2107,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingActivityLogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingActivityLogsResponse`
         """
-        return self._list_scaling_activity_logs_with_http_info(request)
+        http_info = self._list_scaling_activity_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_activity_logs_with_http_info(self, request):
+    def list_scaling_activity_logs_async_invoker(self, request):
+        http_info = self._list_scaling_activity_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_activity_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_activity_log/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingActivityLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1881,9 +2146,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1892,20 +2157,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_activity_log/{scaling_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingActivityLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_activity_v2_logs_async(self, request):
         """查询伸缩活动日志v2版本
@@ -1919,9 +2180,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingActivityV2LogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingActivityV2LogsResponse`
         """
-        return self._list_scaling_activity_v2_logs_with_http_info(request)
+        http_info = self._list_scaling_activity_v2_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_activity_v2_logs_with_http_info(self, request):
+    def list_scaling_activity_v2_logs_async_invoker(self, request):
+        http_info = self._list_scaling_activity_v2_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_activity_v2_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v2/{project_id}/scaling_activity_log/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingActivityV2LogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1952,9 +2225,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1963,20 +2236,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v2/{project_id}/scaling_activity_log/{scaling_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingActivityV2LogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_configs_async(self, request):
         """查询弹性伸缩配置列表
@@ -1990,9 +2259,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingConfigsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingConfigsResponse`
         """
-        return self._list_scaling_configs_with_http_info(request)
+        http_info = self._list_scaling_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_configs_with_http_info(self, request):
+    def list_scaling_configs_async_invoker(self, request):
+        http_info = self._list_scaling_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2015,9 +2296,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2026,20 +2307,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_configuration',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_groups_async(self, request):
         """查询弹性伸缩组列表
@@ -2053,9 +2330,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingGroupsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingGroupsResponse`
         """
-        return self._list_scaling_groups_with_http_info(request)
+        http_info = self._list_scaling_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_groups_with_http_info(self, request):
+    def list_scaling_groups_async_invoker(self, request):
+        http_info = self._list_scaling_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2082,9 +2371,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2093,20 +2382,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_instances_async(self, request):
         """查询弹性伸缩组中的实例列表
@@ -2120,9 +2405,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingInstancesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingInstancesResponse`
         """
-        return self._list_scaling_instances_with_http_info(request)
+        http_info = self._list_scaling_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_instances_with_http_info(self, request):
+    def list_scaling_instances_async_invoker(self, request):
+        http_info = self._list_scaling_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2149,9 +2446,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2160,20 +2457,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group_instance/{scaling_group_id}/list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_notifications_async(self, request):
         """查询伸缩组通知列表
@@ -2187,9 +2480,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingNotificationsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingNotificationsResponse`
         """
-        return self._list_scaling_notifications_with_http_info(request)
+        http_info = self._list_scaling_notifications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_notifications_with_http_info(self, request):
+    def list_scaling_notifications_async_invoker(self, request):
+        http_info = self._list_scaling_notifications_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_notifications_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingNotificationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2206,9 +2511,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2217,20 +2522,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_notification/{scaling_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingNotificationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_policies_async(self, request):
         """查询弹性伸缩策略列表
@@ -2244,9 +2545,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingPoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingPoliciesResponse`
         """
-        return self._list_scaling_policies_with_http_info(request)
+        http_info = self._list_scaling_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_policies_with_http_info(self, request):
+    def list_scaling_policies_async_invoker(self, request):
+        http_info = self._list_scaling_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_group_id}/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2273,9 +2586,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2284,20 +2597,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_group_id}/list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_policy_execute_logs_async(self, request):
         """查询策略执行日志
@@ -2311,9 +2620,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingPolicyExecuteLogsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingPolicyExecuteLogsResponse`
         """
-        return self._list_scaling_policy_execute_logs_with_http_info(request)
+        http_info = self._list_scaling_policy_execute_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_policy_execute_logs_with_http_info(self, request):
+    def list_scaling_policy_execute_logs_async_invoker(self, request):
+        http_info = self._list_scaling_policy_execute_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_policy_execute_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy_execute_log/{scaling_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingPolicyExecuteLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2346,9 +2667,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2357,20 +2678,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy_execute_log/{scaling_policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingPolicyExecuteLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_tag_infos_by_resource_id_async(self, request):
         """查询资源标签
@@ -2384,9 +2701,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByResourceIdRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByResourceIdResponse`
         """
-        return self._list_scaling_tag_infos_by_resource_id_with_http_info(request)
+        http_info = self._list_scaling_tag_infos_by_resource_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_tag_infos_by_resource_id_with_http_info(self, request):
+    def list_scaling_tag_infos_by_resource_id_async_invoker(self, request):
+        http_info = self._list_scaling_tag_infos_by_resource_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_tag_infos_by_resource_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingTagInfosByResourceIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2405,9 +2734,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2416,20 +2745,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingTagInfosByResourceIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_tag_infos_by_tenant_id_async(self, request):
         """查询标签
@@ -2443,9 +2768,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByTenantIdRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingTagInfosByTenantIdResponse`
         """
-        return self._list_scaling_tag_infos_by_tenant_id_with_http_info(request)
+        http_info = self._list_scaling_tag_infos_by_tenant_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_tag_infos_by_tenant_id_with_http_info(self, request):
+    def list_scaling_tag_infos_by_tenant_id_async_invoker(self, request):
+        http_info = self._list_scaling_tag_infos_by_tenant_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_tag_infos_by_tenant_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingTagInfosByTenantIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2462,9 +2799,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2473,20 +2810,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingTagInfosByTenantIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def pause_scaling_group_async(self, request):
         """停止弹性伸缩组
@@ -2500,9 +2833,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.PauseScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.PauseScalingGroupResponse`
         """
-        return self._pause_scaling_group_with_http_info(request)
+        http_info = self._pause_scaling_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _pause_scaling_group_with_http_info(self, request):
+    def pause_scaling_group_async_invoker(self, request):
+        http_info = self._pause_scaling_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _pause_scaling_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseScalingGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2519,11 +2864,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2532,20 +2877,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PauseScalingGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def pause_scaling_policy_async(self, request):
         """停止弹性伸缩策略。
@@ -2559,9 +2900,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.PauseScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.PauseScalingPolicyResponse`
         """
-        return self._pause_scaling_policy_with_http_info(request)
+        http_info = self._pause_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _pause_scaling_policy_with_http_info(self, request):
+    def pause_scaling_policy_async_invoker(self, request):
+        http_info = self._pause_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _pause_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "PauseScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2578,11 +2931,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2591,20 +2944,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PauseScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resume_scaling_group_async(self, request):
         """启用弹性伸缩组
@@ -2618,9 +2967,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ResumeScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingGroupResponse`
         """
-        return self._resume_scaling_group_with_http_info(request)
+        http_info = self._resume_scaling_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resume_scaling_group_with_http_info(self, request):
+    def resume_scaling_group_async_invoker(self, request):
+        http_info = self._resume_scaling_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resume_scaling_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumeScalingGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2637,11 +2998,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2650,20 +3011,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResumeScalingGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resume_scaling_policy_async(self, request):
         """启用弹性伸缩策略。
@@ -2677,9 +3034,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ResumeScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ResumeScalingPolicyResponse`
         """
-        return self._resume_scaling_policy_with_http_info(request)
+        http_info = self._resume_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resume_scaling_policy_with_http_info(self, request):
+    def resume_scaling_policy_async_invoker(self, request):
+        http_info = self._resume_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resume_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResumeScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2696,11 +3065,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2709,20 +3078,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResumeScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_life_cycle_hook_async(self, request):
         """查询生命周期挂钩详情
@@ -2736,9 +3101,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowLifeCycleHookResponse`
         """
-        return self._show_life_cycle_hook_with_http_info(request)
+        http_info = self._show_life_cycle_hook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_life_cycle_hook_with_http_info(self, request):
+    def show_life_cycle_hook_async_invoker(self, request):
+        http_info = self._show_life_cycle_hook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_life_cycle_hook_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLifeCycleHookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2757,9 +3134,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2768,20 +3145,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLifeCycleHookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_policy_and_instance_quota_async(self, request):
         """查询弹性伸缩策略和伸缩实例配额
@@ -2795,9 +3168,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowPolicyAndInstanceQuotaRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowPolicyAndInstanceQuotaResponse`
         """
-        return self._show_policy_and_instance_quota_with_http_info(request)
+        http_info = self._show_policy_and_instance_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_policy_and_instance_quota_with_http_info(self, request):
+    def show_policy_and_instance_quota_async_invoker(self, request):
+        http_info = self._show_policy_and_instance_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_policy_and_instance_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/quotas/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPolicyAndInstanceQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2814,9 +3199,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2825,20 +3210,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/quotas/{scaling_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPolicyAndInstanceQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_quota_async(self, request):
         """查询配额
@@ -2852,9 +3233,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowResourceQuotaRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowResourceQuotaResponse`
         """
-        return self._show_resource_quota_with_http_info(request)
+        http_info = self._show_resource_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_quota_with_http_info(self, request):
+    def show_resource_quota_async_invoker(self, request):
+        http_info = self._show_resource_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2869,9 +3262,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2880,20 +3273,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_scaling_config_async(self, request):
         """查询弹性伸缩配置详情
@@ -2907,9 +3296,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingConfigRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingConfigResponse`
         """
-        return self._show_scaling_config_with_http_info(request)
+        http_info = self._show_scaling_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_scaling_config_with_http_info(self, request):
+    def show_scaling_config_async_invoker(self, request):
+        http_info = self._show_scaling_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scaling_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_configuration/{scaling_configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScalingConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2926,9 +3327,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2937,20 +3338,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_configuration/{scaling_configuration_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScalingConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_scaling_group_async(self, request):
         """查询弹性伸缩组详情
@@ -2964,9 +3361,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingGroupResponse`
         """
-        return self._show_scaling_group_with_http_info(request)
+        http_info = self._show_scaling_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_scaling_group_with_http_info(self, request):
+    def show_scaling_group_async_invoker(self, request):
+        http_info = self._show_scaling_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scaling_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScalingGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2983,9 +3392,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2994,20 +3403,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScalingGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_scaling_policy_async(self, request):
         """查询弹性伸缩策略详情
@@ -3021,9 +3426,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingPolicyResponse`
         """
-        return self._show_scaling_policy_with_http_info(request)
+        http_info = self._show_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_scaling_policy_with_http_info(self, request):
+    def show_scaling_policy_async_invoker(self, request):
+        http_info = self._show_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3040,9 +3457,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3051,20 +3468,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_group_scheduled_task_async(self, request):
         """更新计划任务
@@ -3078,9 +3491,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateGroupScheduledTaskRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateGroupScheduledTaskResponse`
         """
-        return self._update_group_scheduled_task_with_http_info(request)
+        http_info = self._update_group_scheduled_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_group_scheduled_task_with_http_info(self, request):
+    def update_group_scheduled_task_async_invoker(self, request):
+        http_info = self._update_group_scheduled_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_group_scheduled_task_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks/{scheduled_task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGroupScheduledTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3099,11 +3524,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3112,20 +3537,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling-groups/{scaling_group_id}/scheduled-tasks/{scheduled_task_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGroupScheduledTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_life_cycle_hook_async(self, request):
         """修改生命周期挂钩
@@ -3139,9 +3560,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateLifeCycleHookResponse`
         """
-        return self._update_life_cycle_hook_with_http_info(request)
+        http_info = self._update_life_cycle_hook_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_life_cycle_hook_with_http_info(self, request):
+    def update_life_cycle_hook_async_invoker(self, request):
+        http_info = self._update_life_cycle_hook_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_life_cycle_hook_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLifeCycleHookResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3160,11 +3593,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3173,20 +3606,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_lifecycle_hook/{scaling_group_id}/{lifecycle_hook_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLifeCycleHookResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_scaling_group_async(self, request):
         """修改弹性伸缩组
@@ -3200,9 +3629,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingGroupRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingGroupResponse`
         """
-        return self._update_scaling_group_with_http_info(request)
+        http_info = self._update_scaling_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_scaling_group_with_http_info(self, request):
+    def update_scaling_group_async_invoker(self, request):
+        http_info = self._update_scaling_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_scaling_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScalingGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3219,11 +3660,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3232,20 +3673,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_group/{scaling_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateScalingGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_scaling_policy_async(self, request):
         """修改弹性伸缩策略
@@ -3259,9 +3696,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingPolicyResponse`
         """
-        return self._update_scaling_policy_with_http_info(request)
+        http_info = self._update_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_scaling_policy_with_http_info(self, request):
+    def update_scaling_policy_async_invoker(self, request):
+        http_info = self._update_scaling_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_scaling_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3278,11 +3727,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3291,20 +3740,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v1/{project_id}/scaling_policy/{scaling_policy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions_async(self, request):
         """查询弹性伸缩API所有版本信息
@@ -3318,9 +3763,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_async_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3335,9 +3792,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3346,20 +3803,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version_async(self, request):
         """查询弹性伸缩API指定版本信息
@@ -3373,9 +3826,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowApiVersionResponse`
         """
-        return self._show_api_version_with_http_info(request)
+        http_info = self._show_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_with_http_info(self, request):
+    def show_api_version_async_invoker(self, request):
+        http_info = self._show_api_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_api_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{api_version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3392,9 +3857,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3403,20 +3868,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{api_version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_scaling_v2_policy_async(self, request):
         """创建弹性伸缩策略（V2版本）
@@ -3430,9 +3891,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.CreateScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.CreateScalingV2PolicyResponse`
         """
-        return self._create_scaling_v2_policy_with_http_info(request)
+        http_info = self._create_scaling_v2_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_scaling_v2_policy_with_http_info(self, request):
+    def create_scaling_v2_policy_async_invoker(self, request):
+        http_info = self._create_scaling_v2_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_scaling_v2_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/autoscaling-api/v2/{project_id}/scaling_policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateScalingV2PolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3447,11 +3920,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3460,20 +3933,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateScalingV2PolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_scaling_v2_policies_async(self, request):
         """查询弹性伸缩策略全量列表（V2版本）
@@ -3487,9 +3956,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListAllScalingV2PoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListAllScalingV2PoliciesResponse`
         """
-        return self._list_all_scaling_v2_policies_with_http_info(request)
+        http_info = self._list_all_scaling_v2_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_scaling_v2_policies_with_http_info(self, request):
+    def list_all_scaling_v2_policies_async_invoker(self, request):
+        http_info = self._list_all_scaling_v2_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_scaling_v2_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v2/{project_id}/scaling_policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllScalingV2PoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3526,9 +4007,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3537,20 +4018,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllScalingV2PoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scaling_v2_policies_async(self, request):
         """查询弹性伸缩策略列表（V2版本）
@@ -3564,9 +4041,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ListScalingV2PoliciesRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ListScalingV2PoliciesResponse`
         """
-        return self._list_scaling_v2_policies_with_http_info(request)
+        http_info = self._list_scaling_v2_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scaling_v2_policies_with_http_info(self, request):
+    def list_scaling_v2_policies_async_invoker(self, request):
+        http_info = self._list_scaling_v2_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_scaling_v2_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_resource_id}/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScalingV2PoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3593,9 +4082,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3604,20 +4093,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_resource_id}/list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScalingV2PoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_scaling_v2_policy_async(self, request):
         """查询指定弹性伸缩策略详情（V2版本）
@@ -3631,9 +4116,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.ShowScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.ShowScalingV2PolicyResponse`
         """
-        return self._show_scaling_v2_policy_with_http_info(request)
+        http_info = self._show_scaling_v2_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_scaling_v2_policy_with_http_info(self, request):
+    def show_scaling_v2_policy_async_invoker(self, request):
+        http_info = self._show_scaling_v2_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scaling_v2_policy_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScalingV2PolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3650,9 +4147,9 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3661,20 +4158,16 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_policy_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScalingV2PolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_scaling_v2_policy_async(self, request):
         """修改弹性伸缩策略（V2版本）
@@ -3688,9 +4181,21 @@ class AsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkas.v1.UpdateScalingV2PolicyRequest`
         :rtype: :class:`huaweicloudsdkas.v1.UpdateScalingV2PolicyResponse`
         """
-        return self._update_scaling_v2_policy_with_http_info(request)
+        http_info = self._update_scaling_v2_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_scaling_v2_policy_with_http_info(self, request):
+    def update_scaling_v2_policy_async_invoker(self, request):
+        http_info = self._update_scaling_v2_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_scaling_v2_policy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateScalingV2PolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3707,11 +4212,11 @@ class AsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3720,20 +4225,26 @@ class AsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/autoscaling-api/v2/{project_id}/scaling_policy/{scaling_policy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateScalingV2PolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3772,4 +4283,4 @@ class AsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

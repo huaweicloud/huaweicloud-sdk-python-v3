@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkddm'")
 
 
 class DdmAsyncClient(Client):
@@ -39,9 +44,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.CreateDatabaseRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.CreateDatabaseResponse`
         """
-        return self._create_database_with_http_info(request)
+        http_info = self._create_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_database_with_http_info(self, request):
+    def create_database_async_invoker(self, request):
+        http_info = self._create_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_database_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/databases',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance_async(self, request):
         """购买DDM实例
@@ -100,9 +113,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.CreateInstanceResponse`
         """
-        return self._create_instance_with_http_info(request)
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_with_http_info(self, request):
+    def create_instance_async_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_users_async(self, request):
         """创建DDM帐号
@@ -157,9 +178,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.CreateUsersRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.CreateUsersResponse`
         """
-        return self._create_users_with_http_info(request)
+        http_info = self._create_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_users_with_http_info(self, request):
+    def create_users_async_invoker(self, request):
+        http_info = self._create_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_users_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_database_async(self, request):
         """删除DDM逻辑库
@@ -216,9 +245,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.DeleteDatabaseRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.DeleteDatabaseResponse`
         """
-        return self._delete_database_with_http_info(request)
+        http_info = self._delete_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_database_with_http_info(self, request):
+    def delete_database_async_invoker(self, request):
+        http_info = self._delete_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_database_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/databases/{ddm_dbname}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -239,9 +280,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +291,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/databases/{ddm_dbname}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance_async(self, request):
         """删除DDM实例
@@ -277,9 +314,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.DeleteInstanceResponse`
         """
-        return self._delete_instance_with_http_info(request)
+        http_info = self._delete_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_with_http_info(self, request):
+    def delete_instance_async_invoker(self, request):
+        http_info = self._delete_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -298,9 +347,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -309,20 +358,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_user_async(self, request):
         """删除DDM帐号
@@ -336,9 +381,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.DeleteUserRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.DeleteUserResponse`
         """
-        return self._delete_user_with_http_info(request)
+        http_info = self._delete_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_user_with_http_info(self, request):
+    def delete_user_async_invoker(self, request):
+        http_info = self._delete_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_user_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users/{username}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -357,9 +414,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -368,20 +425,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users/{username}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_instance_nodes_async(self, request):
         """DDM实例节点扩容
@@ -395,9 +448,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ExpandInstanceNodesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ExpandInstanceNodesResponse`
         """
-        return self._expand_instance_nodes_with_http_info(request)
+        http_info = self._expand_instance_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_instance_nodes_with_http_info(self, request):
+    def expand_instance_nodes_async_invoker(self, request):
+        http_info = self._expand_instance_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _expand_instance_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/action/enlarge",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandInstanceNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -414,11 +479,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -427,20 +492,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/action/enlarge',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandInstanceNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_available_rds_list_async(self, request):
         """查询创建逻辑库可选取的数据库实例列表
@@ -454,9 +515,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListAvailableRdsListRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListAvailableRdsListResponse`
         """
-        return self._list_available_rds_list_with_http_info(request)
+        http_info = self._list_available_rds_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_available_rds_list_with_http_info(self, request):
+    def list_available_rds_list_async_invoker(self, request):
+        http_info = self._list_available_rds_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_rds_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/rds",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableRdsListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -477,9 +550,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -488,20 +561,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/rds',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailableRdsListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_databases_async(self, request):
         """查询DDM逻辑库列表
@@ -515,9 +584,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListDatabasesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListDatabasesResponse`
         """
-        return self._list_databases_with_http_info(request)
+        http_info = self._list_databases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_databases_with_http_info(self, request):
+    def list_databases_async_invoker(self, request):
+        http_info = self._list_databases_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_databases_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -538,9 +619,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -549,20 +630,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/databases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_engines_async(self, request):
         """查询DDM引擎信息
@@ -576,9 +653,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListEnginesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListEnginesResponse`
         """
-        return self._list_engines_with_http_info(request)
+        http_info = self._list_engines_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_engines_with_http_info(self, request):
+    def list_engines_async_invoker(self, request):
+        http_info = self._list_engines_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_engines_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/engines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnginesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -597,9 +686,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -608,20 +697,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/engines',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnginesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors_async(self, request):
         """查询DDM可用区规格信息
@@ -635,9 +720,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_async_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flavors_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -658,9 +755,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -669,20 +766,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_async(self, request):
         """查询DDM实例列表
@@ -696,9 +789,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListInstancesResponse`
         """
-        return self._list_instances_with_http_info(request)
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_with_http_info(self, request):
+    def list_instances_async_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -717,9 +822,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -728,20 +833,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nodes_async(self, request):
         """查询DDM实例节点列表
@@ -755,9 +856,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListNodesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListNodesResponse`
         """
-        return self._list_nodes_with_http_info(request)
+        http_info = self._list_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nodes_with_http_info(self, request):
+    def list_nodes_async_invoker(self, request):
+        http_info = self._list_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -778,9 +891,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -789,20 +902,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_read_write_ratio_async(self, request):
         """读写比例监控
@@ -816,9 +925,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListReadWriteRatioRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListReadWriteRatioResponse`
         """
-        return self._list_read_write_ratio_with_http_info(request)
+        http_info = self._list_read_write_ratio_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_read_write_ratio_with_http_info(self, request):
+    def list_read_write_ratio_async_invoker(self, request):
+        http_info = self._list_read_write_ratio_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_read_write_ratio_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/read-write-ratio",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListReadWriteRatioResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -843,9 +964,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -854,20 +975,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/read-write-ratio',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListReadWriteRatioResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_slow_log_async(self, request):
         """慢日志监控
@@ -881,9 +998,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListSlowLogRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListSlowLogResponse`
         """
-        return self._list_slow_log_with_http_info(request)
+        http_info = self._list_slow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_slow_log_with_http_info(self, request):
+    def list_slow_log_async_invoker(self, request):
+        http_info = self._list_slow_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_slow_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/slowlog",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -908,9 +1037,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -919,20 +1048,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/slowlog',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_users_async(self, request):
         """查询DDM帐号列表
@@ -946,9 +1071,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ListUsersRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ListUsersResponse`
         """
-        return self._list_users_with_http_info(request)
+        http_info = self._list_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_users_with_http_info(self, request):
+    def list_users_async_invoker(self, request):
+        http_info = self._list_users_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_users_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -969,9 +1106,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -980,20 +1117,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def rebuild_config_async(self, request):
         """DDM表数据重载
@@ -1007,9 +1140,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.RebuildConfigRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.RebuildConfigResponse`
         """
-        return self._rebuild_config_with_http_info(request)
+        http_info = self._rebuild_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _rebuild_config_with_http_info(self, request):
+    def rebuild_config_async_invoker(self, request):
+        http_info = self._rebuild_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _rebuild_config_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/reload-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebuildConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1026,9 +1171,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1037,20 +1182,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/reload-config',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RebuildConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_administrator_async(self, request):
         """DDM管理员账号密码管理
@@ -1064,9 +1205,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ResetAdministratorRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ResetAdministratorResponse`
         """
-        return self._reset_administrator_with_http_info(request)
+        http_info = self._reset_administrator_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_administrator_with_http_info(self, request):
+    def reset_administrator_async_invoker(self, request):
+        http_info = self._reset_administrator_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_administrator_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/admin-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetAdministratorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1083,11 +1236,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1096,20 +1249,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/admin-user',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetAdministratorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_user_password_async(self, request):
         """重置DDM账号密码
@@ -1123,9 +1272,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ResetUserPasswordRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ResetUserPasswordResponse`
         """
-        return self._reset_user_password_with_http_info(request)
+        http_info = self._reset_user_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_user_password_with_http_info(self, request):
+    def reset_user_password_async_invoker(self, request):
+        http_info = self._reset_user_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_user_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/users/{username}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetUserPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1144,11 +1305,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1157,20 +1318,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/users/{username}/password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetUserPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_flavor_async(self, request):
         """变更DDM实例规格
@@ -1184,9 +1341,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ResizeFlavorRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ResizeFlavorResponse`
         """
-        return self._resize_flavor_with_http_info(request)
+        http_info = self._resize_flavor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_flavor_with_http_info(self, request):
+    def resize_flavor_async_invoker(self, request):
+        http_info = self._resize_flavor_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resize_flavor_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/flavor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeFlavorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1203,11 +1372,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1216,20 +1385,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/flavor',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeFlavorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_instance_async(self, request):
         """重启DDM实例
@@ -1243,9 +1408,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.RestartInstanceRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.RestartInstanceResponse`
         """
-        return self._restart_instance_with_http_info(request)
+        http_info = self._restart_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_instance_with_http_info(self, request):
+    def restart_instance_async_invoker(self, request):
+        http_info = self._restart_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1262,11 +1439,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1275,20 +1452,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_database_async(self, request):
         """查询DDM逻辑库详细信息
@@ -1302,9 +1475,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ShowDatabaseRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShowDatabaseResponse`
         """
-        return self._show_database_with_http_info(request)
+        http_info = self._show_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_database_with_http_info(self, request):
+    def show_database_async_invoker(self, request):
+        http_info = self._show_database_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_database_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/databases/{ddm_dbname}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1323,9 +1508,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1334,20 +1519,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/databases/{ddm_dbname}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_async(self, request):
         """查询DDM实例详情
@@ -1361,9 +1542,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShowInstanceResponse`
         """
-        return self._show_instance_with_http_info(request)
+        http_info = self._show_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_with_http_info(self, request):
+    def show_instance_async_invoker(self, request):
+        http_info = self._show_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1380,9 +1573,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1391,20 +1584,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_param_async(self, request):
         """查询DDM指定实例的参数详情
@@ -1418,9 +1607,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ShowInstanceParamRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShowInstanceParamResponse`
         """
-        return self._show_instance_param_with_http_info(request)
+        http_info = self._show_instance_param_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_param_with_http_info(self, request):
+    def show_instance_param_async_invoker(self, request):
+        http_info = self._show_instance_param_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_instance_param_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceParamResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1443,9 +1644,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1454,20 +1655,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceParamResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_node_async(self, request):
         """查询DDM实例节点详情
@@ -1481,9 +1678,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ShowNodeRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShowNodeResponse`
         """
-        return self._show_node_with_http_info(request)
+        http_info = self._show_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_node_with_http_info(self, request):
+    def show_node_async_invoker(self, request):
+        http_info = self._show_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_node_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1502,9 +1711,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1513,20 +1722,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/nodes/{node_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def shrink_instance_nodes_async(self, request):
         """DDM实例节点缩容
@@ -1540,9 +1745,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ShrinkInstanceNodesRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ShrinkInstanceNodesResponse`
         """
-        return self._shrink_instance_nodes_with_http_info(request)
+        http_info = self._shrink_instance_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _shrink_instance_nodes_with_http_info(self, request):
+    def shrink_instance_nodes_async_invoker(self, request):
+        http_info = self._shrink_instance_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _shrink_instance_nodes_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/action/reduce",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShrinkInstanceNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1559,11 +1776,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1572,20 +1789,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/action/reduce',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShrinkInstanceNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_database_info_async(self, request):
         """同步DN信息
@@ -1599,9 +1812,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.UpdateDatabaseInfoRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateDatabaseInfoResponse`
         """
-        return self._update_database_info_with_http_info(request)
+        http_info = self._update_database_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_database_info_with_http_info(self, request):
+    def update_database_info_async_invoker(self, request):
+        http_info = self._update_database_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_database_info_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/rds/sync",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatabaseInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1618,9 +1843,9 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1629,20 +1854,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/rds/sync',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDatabaseInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_name_async(self, request):
         """修改DDM实例名称
@@ -1656,9 +1877,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceNameResponse`
         """
-        return self._update_instance_name_with_http_info(request)
+        http_info = self._update_instance_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_name_with_http_info(self, request):
+    def update_instance_name_async_invoker(self, request):
+        http_info = self._update_instance_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_name_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/modify-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1675,11 +1908,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1688,20 +1921,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/modify-name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_param_async(self, request):
         """修改DDM实例参数
@@ -1715,9 +1944,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceParamRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceParamResponse`
         """
-        return self._update_instance_param_with_http_info(request)
+        http_info = self._update_instance_param_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_param_with_http_info(self, request):
+    def update_instance_param_async_invoker(self, request):
+        http_info = self._update_instance_param_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_param_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceParamResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1736,11 +1977,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1749,20 +1990,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceParamResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_security_group_async(self, request):
         """修改DDM实例安全组
@@ -1776,9 +2013,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.UpdateInstanceSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateInstanceSecurityGroupResponse`
         """
-        return self._update_instance_security_group_with_http_info(request)
+        http_info = self._update_instance_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_security_group_with_http_info(self, request):
+    def update_instance_security_group_async_invoker(self, request):
+        http_info = self._update_instance_security_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_security_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/modify-security-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1795,11 +2044,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1808,20 +2057,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/modify-security-group',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_read_and_write_strategy_async(self, request):
         """修改DDM已关联的数据库实例的读策略
@@ -1835,9 +2080,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.UpdateReadAndWriteStrategyRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateReadAndWriteStrategyResponse`
         """
-        return self._update_read_and_write_strategy_with_http_info(request)
+        http_info = self._update_read_and_write_strategy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_read_and_write_strategy_with_http_info(self, request):
+    def update_read_and_write_strategy_async_invoker(self, request):
+        http_info = self._update_read_and_write_strategy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_read_and_write_strategy_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/action/read-write-strategy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateReadAndWriteStrategyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1854,11 +2111,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1867,20 +2124,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/action/read-write-strategy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateReadAndWriteStrategyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_user_async(self, request):
         """修改DDM帐号
@@ -1894,9 +2147,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.UpdateUserRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.UpdateUserResponse`
         """
-        return self._update_user_with_http_info(request)
+        http_info = self._update_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_user_with_http_info(self, request):
+    def update_user_async_invoker(self, request):
+        http_info = self._update_user_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_user_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/instances/{instance_id}/users/{username}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1915,11 +2180,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1928,20 +2193,16 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/instances/{instance_id}/users/{username}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_weak_password_async(self, request):
         """弱密码校验
@@ -1955,9 +2216,21 @@ class DdmAsyncClient(Client):
         :type request: :class:`huaweicloudsdkddm.v1.ValidateWeakPasswordRequest`
         :rtype: :class:`huaweicloudsdkddm.v1.ValidateWeakPasswordResponse`
         """
-        return self._validate_weak_password_with_http_info(request)
+        http_info = self._validate_weak_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_weak_password_with_http_info(self, request):
+    def validate_weak_password_async_invoker(self, request):
+        http_info = self._validate_weak_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _validate_weak_password_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/weak-password-verification",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateWeakPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1972,11 +2245,11 @@ class DdmAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1985,20 +2258,26 @@ class DdmAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/weak-password-verification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateWeakPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2037,4 +2316,4 @@ class DdmAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

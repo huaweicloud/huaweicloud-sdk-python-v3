@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcodeartsinspector'")
 
 
 class CodeArtsInspectorAsyncClient(Client):
@@ -39,9 +44,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.DownloadTaskReportRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.DownloadTaskReportResponse`
         """
-        return self._download_task_report_with_http_info(request)
+        http_info = self._download_task_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_task_report_with_http_info(self, request):
+    def download_task_report_async_invoker(self, request):
+        http_info = self._download_task_report_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _download_task_report_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/report",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadTaskReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,9 +75,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/report',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadTaskReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_generate_report_async(self, request):
         """生成网站扫描报告
@@ -96,9 +109,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ExecuteGenerateReportRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ExecuteGenerateReportResponse`
         """
-        return self._execute_generate_report_with_http_info(request)
+        http_info = self._execute_generate_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_generate_report_with_http_info(self, request):
+    def execute_generate_report_async_invoker(self, request):
+        http_info = self._execute_generate_report_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_generate_report_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/webscan/report",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteGenerateReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +138,11 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/report',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteGenerateReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_business_risks_async(self, request):
         """获取网站业务风险扫描结果
@@ -153,9 +174,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ListBusinessRisksRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ListBusinessRisksResponse`
         """
-        return self._list_business_risks_with_http_info(request)
+        http_info = self._list_business_risks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_business_risks_with_http_info(self, request):
+    def list_business_risks_async_invoker(self, request):
+        http_info = self._list_business_risks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_business_risks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/results/business-risk",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBusinessRisksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,9 +209,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -187,20 +220,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/results/business-risk',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBusinessRisksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_port_results_async(self, request):
         """获取网站端口扫描结果
@@ -214,9 +243,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ListPortResultsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ListPortResultsResponse`
         """
-        return self._list_port_results_with_http_info(request)
+        http_info = self._list_port_results_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_port_results_with_http_info(self, request):
+    def list_port_results_async_invoker(self, request):
+        http_info = self._list_port_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_port_results_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/results/ports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPortResultsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,9 +278,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/results/ports',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPortResultsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_report_status_async(self, request):
         """获取网站扫描报告状态
@@ -275,9 +312,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ShowReportStatusRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ShowReportStatusResponse`
         """
-        return self._show_report_status_with_http_info(request)
+        http_info = self._show_report_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_report_status_with_http_info(self, request):
+    def show_report_status_async_invoker(self, request):
+        http_info = self._show_report_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_report_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/report/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReportStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -294,9 +343,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -305,20 +354,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/report/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowReportStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_results_async(self, request):
         """获取网站扫描结果
@@ -332,9 +377,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ShowResultsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ShowResultsResponse`
         """
-        return self._show_results_with_http_info(request)
+        http_info = self._show_results_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_results_with_http_info(self, request):
+    def show_results_async_invoker(self, request):
+        http_info = self._show_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_results_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/results",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResultsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -355,9 +412,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +423,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/results',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResultsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_false_positive_async(self, request):
         """更新网站漏洞的误报状态
@@ -393,9 +446,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.UpdateFalsePositiveRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.UpdateFalsePositiveResponse`
         """
-        return self._update_false_positive_with_http_info(request)
+        http_info = self._update_false_positive_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_false_positive_with_http_info(self, request):
+    def update_false_positive_async_invoker(self, request):
+        http_info = self._update_false_positive_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_false_positive_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/webscan/vulnerability/false-positive",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFalsePositiveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -410,11 +475,11 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -423,20 +488,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/vulnerability/false-positive',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFalsePositiveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_tasks_async(self, request):
         """取消或重启网站扫描任务
@@ -450,9 +511,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.CancelTasksRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.CancelTasksResponse`
         """
-        return self._cancel_tasks_with_http_info(request)
+        http_info = self._cancel_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_tasks_with_http_info(self, request):
+    def cancel_tasks_async_invoker(self, request):
+        http_info = self._cancel_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _cancel_tasks_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/webscan/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -467,11 +540,11 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -480,20 +553,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/tasks',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tasks_async(self, request):
         """创建网站扫描任务并启动
@@ -507,9 +576,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.CreateTasksRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.CreateTasksResponse`
         """
-        return self._create_tasks_with_http_info(request)
+        http_info = self._create_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tasks_with_http_info(self, request):
+    def create_tasks_async_invoker(self, request):
+        http_info = self._create_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_tasks_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/webscan/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -526,11 +607,11 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -539,20 +620,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_task_histories_async(self, request):
         """获取网站的历史扫描任务
@@ -566,9 +643,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ListTaskHistoriesRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ListTaskHistoriesResponse`
         """
-        return self._list_task_histories_with_http_info(request)
+        http_info = self._list_task_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_task_histories_with_http_info(self, request):
+    def list_task_histories_async_invoker(self, request):
+        http_info = self._list_task_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_task_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/tasks/histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -589,9 +678,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -600,20 +689,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/tasks/histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTaskHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tasks_async(self, request):
         """获取网站扫描任务详情
@@ -627,9 +712,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ShowTasksRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ShowTasksResponse`
         """
-        return self._show_tasks_with_http_info(request)
+        http_info = self._show_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tasks_with_http_info(self, request):
+    def show_tasks_async_invoker(self, request):
+        http_info = self._show_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -646,9 +743,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -657,20 +754,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def authorize_domains_async(self, request):
         """认证网站资产
@@ -684,9 +777,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.AuthorizeDomainsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.AuthorizeDomainsResponse`
         """
-        return self._authorize_domains_with_http_info(request)
+        http_info = self._authorize_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _authorize_domains_with_http_info(self, request):
+    def authorize_domains_async_invoker(self, request):
+        http_info = self._authorize_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _authorize_domains_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/webscan/domains/authenticate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AuthorizeDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,11 +806,11 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -714,20 +819,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/domains/authenticate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AuthorizeDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_domains_async(self, request):
         """创建网站资产
@@ -741,9 +842,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.CreateDomainsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.CreateDomainsResponse`
         """
-        return self._create_domains_with_http_info(request)
+        http_info = self._create_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_domains_with_http_info(self, request):
+    def create_domains_async_invoker(self, request):
+        http_info = self._create_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_domains_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/webscan/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -758,11 +871,11 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -771,20 +884,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/domains',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domains_async(self, request):
         """删除网站资产
@@ -798,9 +907,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.DeleteDomainsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.DeleteDomainsResponse`
         """
-        return self._delete_domains_with_http_info(request)
+        http_info = self._delete_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domains_with_http_info(self, request):
+    def delete_domains_async_invoker(self, request):
+        http_info = self._delete_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_domains_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/webscan/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -817,9 +938,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -828,20 +949,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/domains',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domains_async(self, request):
         """获取网站资产
@@ -855,9 +972,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ListDomainsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ListDomainsResponse`
         """
-        return self._list_domains_with_http_info(request)
+        http_info = self._list_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domains_with_http_info(self, request):
+    def list_domains_async_invoker(self, request):
+        http_info = self._list_domains_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_domains_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -880,9 +1009,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -891,20 +1020,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_settings_async(self, request):
         """获取网站配置
@@ -918,9 +1043,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.ShowDomainSettingsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.ShowDomainSettingsResponse`
         """
-        return self._show_domain_settings_with_http_info(request)
+        http_info = self._show_domain_settings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_settings_with_http_info(self, request):
+    def show_domain_settings_async_invoker(self, request):
+        http_info = self._show_domain_settings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_domain_settings_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/webscan/domains/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainSettingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -937,9 +1074,9 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -948,20 +1085,16 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/domains/settings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainSettingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_settings_async(self, request):
         """更新网站配置
@@ -975,9 +1108,21 @@ class CodeArtsInspectorAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcodeartsinspector.v3.UpdateDomainSettingsRequest`
         :rtype: :class:`huaweicloudsdkcodeartsinspector.v3.UpdateDomainSettingsResponse`
         """
-        return self._update_domain_settings_with_http_info(request)
+        http_info = self._update_domain_settings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_settings_with_http_info(self, request):
+    def update_domain_settings_async_invoker(self, request):
+        http_info = self._update_domain_settings_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_domain_settings_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/webscan/domains/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainSettingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -992,11 +1137,11 @@ class CodeArtsInspectorAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1005,20 +1150,26 @@ class CodeArtsInspectorAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/webscan/domains/settings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainSettingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1057,4 +1208,4 @@ class CodeArtsInspectorAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

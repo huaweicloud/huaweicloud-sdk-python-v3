@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkfrs'")
 
 
 class FrsAsyncClient(Client):
@@ -39,9 +44,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByBase64Response`
         """
-        return self._add_faces_by_base64_with_http_info(request)
+        http_info = self._add_faces_by_base64_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_faces_by_base64_with_http_info(self, request):
+    def add_faces_by_base64_async_invoker(self, request):
+        http_info = self._add_faces_by_base64_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_faces_by_base64_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFacesByBase64Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -73,20 +90,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddFacesByBase64Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_faces_by_file_async(self, request):
         """添加人脸
@@ -100,9 +113,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByFileResponse`
         """
-        return self._add_faces_by_file_with_http_info(request)
+        http_info = self._add_faces_by_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_faces_by_file_with_http_info(self, request):
+    def add_faces_by_file_async_invoker(self, request):
+        http_info = self._add_faces_by_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_faces_by_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFacesByFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -129,11 +154,11 @@ class FrsAsyncClient(Client):
         if 'single' in local_var_params:
             form_params['single'] = local_var_params['single']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -142,20 +167,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddFacesByFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_faces_by_url_async(self, request):
         """添加人脸
@@ -169,9 +190,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.AddFacesByUrlResponse`
         """
-        return self._add_faces_by_url_with_http_info(request)
+        http_info = self._add_faces_by_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_faces_by_url_with_http_info(self, request):
+    def add_faces_by_url_async_invoker(self, request):
+        http_info = self._add_faces_by_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_faces_by_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddFacesByUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -190,11 +223,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -203,20 +236,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddFacesByUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_faces_async(self, request):
         """批量删除人脸
@@ -230,9 +259,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.BatchDeleteFacesResponse`
         """
-        return self._batch_delete_faces_with_http_info(request)
+        http_info = self._batch_delete_faces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_faces_with_http_info(self, request):
+    def batch_delete_faces_async_invoker(self, request):
+        http_info = self._batch_delete_faces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_faces_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteFacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -251,11 +292,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -264,20 +305,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces/batch',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteFacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def compare_face_by_base64_async(self, request):
         """人脸比对
@@ -291,9 +328,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByBase64Response`
         """
-        return self._compare_face_by_base64_with_http_info(request)
+        http_info = self._compare_face_by_base64_http_info(request)
+        return self._call_api(**http_info)
 
-    def _compare_face_by_base64_with_http_info(self, request):
+    def compare_face_by_base64_async_invoker(self, request):
+        http_info = self._compare_face_by_base64_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _compare_face_by_base64_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-compare",
+            "request_type": request.__class__.__name__,
+            "response_type": "CompareFaceByBase64Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -310,11 +359,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -323,20 +372,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-compare',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CompareFaceByBase64Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def compare_face_by_file_async(self, request):
         """人脸比对
@@ -350,9 +395,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByFileResponse`
         """
-        return self._compare_face_by_file_with_http_info(request)
+        http_info = self._compare_face_by_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _compare_face_by_file_with_http_info(self, request):
+    def compare_face_by_file_async_invoker(self, request):
+        http_info = self._compare_face_by_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _compare_face_by_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-compare",
+            "request_type": request.__class__.__name__,
+            "response_type": "CompareFaceByFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -373,11 +430,11 @@ class FrsAsyncClient(Client):
         if 'image2_file' in local_var_params:
             form_params['image2_file'] = local_var_params['image2_file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -386,20 +443,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-compare',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CompareFaceByFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def compare_face_by_url_async(self, request):
         """人脸比对
@@ -413,9 +466,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CompareFaceByUrlResponse`
         """
-        return self._compare_face_by_url_with_http_info(request)
+        http_info = self._compare_face_by_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _compare_face_by_url_with_http_info(self, request):
+    def compare_face_by_url_async_invoker(self, request):
+        http_info = self._compare_face_by_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _compare_face_by_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-compare",
+            "request_type": request.__class__.__name__,
+            "response_type": "CompareFaceByUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -432,11 +497,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -445,20 +510,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-compare',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CompareFaceByUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_face_set_async(self, request):
         """创建人脸库
@@ -472,9 +533,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.CreateFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.CreateFaceSetResponse`
         """
-        return self._create_face_set_with_http_info(request)
+        http_info = self._create_face_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_face_set_with_http_info(self, request):
+    def create_face_set_async_invoker(self, request):
+        http_info = self._create_face_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_face_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFaceSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -491,11 +564,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -504,20 +577,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFaceSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_face_by_external_image_id_async(self, request):
         """删除人脸
@@ -531,9 +600,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceByExternalImageIdResponse`
         """
-        return self._delete_face_by_external_image_id_with_http_info(request)
+        http_info = self._delete_face_by_external_image_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_face_by_external_image_id_with_http_info(self, request):
+    def delete_face_by_external_image_id_async_invoker(self, request):
+        http_info = self._delete_face_by_external_image_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_face_by_external_image_id_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFaceByExternalImageIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -554,9 +635,9 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -565,20 +646,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFaceByExternalImageIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_face_by_face_id_async(self, request):
         """删除人脸
@@ -592,9 +669,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceByFaceIdResponse`
         """
-        return self._delete_face_by_face_id_with_http_info(request)
+        http_info = self._delete_face_by_face_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_face_by_face_id_with_http_info(self, request):
+    def delete_face_by_face_id_async_invoker(self, request):
+        http_info = self._delete_face_by_face_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_face_by_face_id_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFaceByFaceIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -615,9 +704,9 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -626,20 +715,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFaceByFaceIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_face_set_async(self, request):
         """删除人脸库
@@ -653,9 +738,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DeleteFaceSetResponse`
         """
-        return self._delete_face_set_with_http_info(request)
+        http_info = self._delete_face_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_face_set_with_http_info(self, request):
+    def delete_face_set_async_invoker(self, request):
+        http_info = self._delete_face_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_face_set_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFaceSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -674,9 +771,9 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -685,20 +782,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFaceSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_face_by_base64_async(self, request):
         """人脸检测
@@ -712,9 +805,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64Response`
         """
-        return self._detect_face_by_base64_with_http_info(request)
+        http_info = self._detect_face_by_base64_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_face_by_base64_with_http_info(self, request):
+    def detect_face_by_base64_async_invoker(self, request):
+        http_info = self._detect_face_by_base64_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_face_by_base64_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectFaceByBase64Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -731,11 +836,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -744,20 +849,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectFaceByBase64Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_face_by_base64_intl_async(self, request):
         """人脸检测
@@ -771,9 +872,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByBase64IntlResponse`
         """
-        return self._detect_face_by_base64_intl_with_http_info(request)
+        http_info = self._detect_face_by_base64_intl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_face_by_base64_intl_with_http_info(self, request):
+    def detect_face_by_base64_intl_async_invoker(self, request):
+        http_info = self._detect_face_by_base64_intl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_face_by_base64_intl_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectFaceByBase64IntlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -790,11 +903,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -803,20 +916,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectFaceByBase64IntlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_face_by_file_async(self, request):
         """人脸检测
@@ -830,9 +939,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileResponse`
         """
-        return self._detect_face_by_file_with_http_info(request)
+        http_info = self._detect_face_by_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_face_by_file_with_http_info(self, request):
+    def detect_face_by_file_async_invoker(self, request):
+        http_info = self._detect_face_by_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_face_by_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectFaceByFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -853,11 +974,11 @@ class FrsAsyncClient(Client):
         if 'attributes' in local_var_params:
             form_params['attributes'] = local_var_params['attributes']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -866,20 +987,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectFaceByFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_face_by_file_intl_async(self, request):
         """人脸检测
@@ -893,9 +1010,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByFileIntlResponse`
         """
-        return self._detect_face_by_file_intl_with_http_info(request)
+        http_info = self._detect_face_by_file_intl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_face_by_file_intl_with_http_info(self, request):
+    def detect_face_by_file_intl_async_invoker(self, request):
+        http_info = self._detect_face_by_file_intl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_face_by_file_intl_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectFaceByFileIntlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -914,11 +1043,11 @@ class FrsAsyncClient(Client):
         if 'image_file' in local_var_params:
             form_params['image_file'] = local_var_params['image_file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -927,20 +1056,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectFaceByFileIntlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_face_by_url_async(self, request):
         """人脸检测
@@ -954,9 +1079,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlResponse`
         """
-        return self._detect_face_by_url_with_http_info(request)
+        http_info = self._detect_face_by_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_face_by_url_with_http_info(self, request):
+    def detect_face_by_url_async_invoker(self, request):
+        http_info = self._detect_face_by_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_face_by_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectFaceByUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -973,11 +1110,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -986,20 +1123,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectFaceByUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_face_by_url_intl_async(self, request):
         """人脸检测
@@ -1013,9 +1146,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectFaceByUrlIntlResponse`
         """
-        return self._detect_face_by_url_intl_with_http_info(request)
+        http_info = self._detect_face_by_url_intl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_face_by_url_intl_with_http_info(self, request):
+    def detect_face_by_url_intl_async_invoker(self, request):
+        http_info = self._detect_face_by_url_intl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_face_by_url_intl_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectFaceByUrlIntlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1032,11 +1177,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1045,20 +1190,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectFaceByUrlIntlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_by_base64_async(self, request):
         """动作活体检测
@@ -1072,9 +1213,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64Response`
         """
-        return self._detect_live_by_base64_with_http_info(request)
+        http_info = self._detect_live_by_base64_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_by_base64_with_http_info(self, request):
+    def detect_live_by_base64_async_invoker(self, request):
+        http_info = self._detect_live_by_base64_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_by_base64_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/live-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveByBase64Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1091,11 +1244,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1104,20 +1257,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/live-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveByBase64Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_by_base64_intl_async(self, request):
         """动作活体检测
@@ -1131,9 +1280,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByBase64IntlResponse`
         """
-        return self._detect_live_by_base64_intl_with_http_info(request)
+        http_info = self._detect_live_by_base64_intl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_by_base64_intl_with_http_info(self, request):
+    def detect_live_by_base64_intl_async_invoker(self, request):
+        http_info = self._detect_live_by_base64_intl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_by_base64_intl_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/live-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveByBase64IntlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1150,11 +1311,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1163,20 +1324,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/live-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveByBase64IntlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_by_file_async(self, request):
         """动作活体检测
@@ -1190,9 +1347,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileResponse`
         """
-        return self._detect_live_by_file_with_http_info(request)
+        http_info = self._detect_live_by_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_by_file_with_http_info(self, request):
+    def detect_live_by_file_async_invoker(self, request):
+        http_info = self._detect_live_by_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_by_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/live-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveByFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1217,11 +1386,11 @@ class FrsAsyncClient(Client):
         if 'nod_threshold' in local_var_params:
             form_params['nod_threshold'] = local_var_params['nod_threshold']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1230,20 +1399,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/live-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveByFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_by_file_intl_async(self, request):
         """动作活体检测
@@ -1257,9 +1422,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByFileIntlResponse`
         """
-        return self._detect_live_by_file_intl_with_http_info(request)
+        http_info = self._detect_live_by_file_intl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_by_file_intl_with_http_info(self, request):
+    def detect_live_by_file_intl_async_invoker(self, request):
+        http_info = self._detect_live_by_file_intl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_by_file_intl_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/live-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveByFileIntlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1284,11 +1461,11 @@ class FrsAsyncClient(Client):
         if 'nod_threshold' in local_var_params:
             form_params['nod_threshold'] = local_var_params['nod_threshold']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1297,20 +1474,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/live-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveByFileIntlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_by_url_async(self, request):
         """动作活体检测
@@ -1324,9 +1497,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlResponse`
         """
-        return self._detect_live_by_url_with_http_info(request)
+        http_info = self._detect_live_by_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_by_url_with_http_info(self, request):
+    def detect_live_by_url_async_invoker(self, request):
+        http_info = self._detect_live_by_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_by_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/live-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveByUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1343,11 +1528,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1356,20 +1541,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/live-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveByUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_by_url_intl_async(self, request):
         """动作活体检测
@@ -1383,9 +1564,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveByUrlIntlResponse`
         """
-        return self._detect_live_by_url_intl_with_http_info(request)
+        http_info = self._detect_live_by_url_intl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_by_url_intl_with_http_info(self, request):
+    def detect_live_by_url_intl_async_invoker(self, request):
+        http_info = self._detect_live_by_url_intl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_by_url_intl_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/live-detect",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveByUrlIntlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1402,11 +1595,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1415,20 +1608,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/live-detect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveByUrlIntlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_face_by_base64_async(self, request):
         """静默活体检测
@@ -1442,9 +1631,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByBase64Response`
         """
-        return self._detect_live_face_by_base64_with_http_info(request)
+        http_info = self._detect_live_face_by_base64_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_face_by_base64_with_http_info(self, request):
+    def detect_live_face_by_base64_async_invoker(self, request):
+        http_info = self._detect_live_face_by_base64_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_face_by_base64_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/live-detect-face",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveFaceByBase64Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1461,11 +1662,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1474,20 +1675,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/live-detect-face',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveFaceByBase64Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_face_by_file_async(self, request):
         """静默活体检测
@@ -1501,9 +1698,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByFileResponse`
         """
-        return self._detect_live_face_by_file_with_http_info(request)
+        http_info = self._detect_live_face_by_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_face_by_file_with_http_info(self, request):
+    def detect_live_face_by_file_async_invoker(self, request):
+        http_info = self._detect_live_face_by_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_face_by_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/live-detect-face",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveFaceByFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1522,11 +1731,11 @@ class FrsAsyncClient(Client):
         if 'image_file' in local_var_params:
             form_params['image_file'] = local_var_params['image_file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1535,20 +1744,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/live-detect-face',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveFaceByFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detect_live_face_by_url_async(self, request):
         """静默活体检测
@@ -1562,9 +1767,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.DetectLiveFaceByUrlResponse`
         """
-        return self._detect_live_face_by_url_with_http_info(request)
+        http_info = self._detect_live_face_by_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detect_live_face_by_url_with_http_info(self, request):
+    def detect_live_face_by_url_async_invoker(self, request):
+        http_info = self._detect_live_face_by_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detect_live_face_by_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/live-detect-face",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetectLiveFaceByUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1581,11 +1798,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1594,20 +1811,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/live-detect-face',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetectLiveFaceByUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_face_by_base64_async(self, request):
         """人脸搜索
@@ -1622,9 +1835,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Request`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByBase64Response`
         """
-        return self._search_face_by_base64_with_http_info(request)
+        http_info = self._search_face_by_base64_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_face_by_base64_with_http_info(self, request):
+    def search_face_by_base64_async_invoker(self, request):
+        http_info = self._search_face_by_base64_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_face_by_base64_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchFaceByBase64Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1643,11 +1868,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1656,20 +1881,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchFaceByBase64Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_face_by_face_id_async(self, request):
         """人脸搜索
@@ -1684,9 +1905,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFaceIdResponse`
         """
-        return self._search_face_by_face_id_with_http_info(request)
+        http_info = self._search_face_by_face_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_face_by_face_id_with_http_info(self, request):
+    def search_face_by_face_id_async_invoker(self, request):
+        http_info = self._search_face_by_face_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_face_by_face_id_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchFaceByFaceIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1705,11 +1938,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1718,20 +1951,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchFaceByFaceIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_face_by_file_async(self, request):
         """人脸搜索
@@ -1746,9 +1975,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByFileResponse`
         """
-        return self._search_face_by_file_with_http_info(request)
+        http_info = self._search_face_by_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_face_by_file_with_http_info(self, request):
+    def search_face_by_file_async_invoker(self, request):
+        http_info = self._search_face_by_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_face_by_file_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchFaceByFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1779,11 +2020,11 @@ class FrsAsyncClient(Client):
         if 'return_fields' in local_var_params:
             form_params['return_fields'] = local_var_params['return_fields']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1792,20 +2033,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchFaceByFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_face_by_url_async(self, request):
         """人脸搜索
@@ -1820,9 +2057,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.SearchFaceByUrlResponse`
         """
-        return self._search_face_by_url_with_http_info(request)
+        http_info = self._search_face_by_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_face_by_url_with_http_info(self, request):
+    def search_face_by_url_async_invoker(self, request):
+        http_info = self._search_face_by_url_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_face_by_url_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchFaceByUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1841,11 +2090,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1854,20 +2103,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchFaceByUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_all_face_sets_async(self, request):
         """查询所有人脸库
@@ -1881,9 +2126,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowAllFaceSetsResponse`
         """
-        return self._show_all_face_sets_with_http_info(request)
+        http_info = self._show_all_face_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_all_face_sets_with_http_info(self, request):
+    def show_all_face_sets_async_invoker(self, request):
+        http_info = self._show_all_face_sets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_all_face_sets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/face-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAllFaceSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1900,9 +2157,9 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1911,20 +2168,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAllFaceSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_face_set_async(self, request):
         """查询人脸库
@@ -1938,9 +2191,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFaceSetRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFaceSetResponse`
         """
-        return self._show_face_set_with_http_info(request)
+        http_info = self._show_face_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_face_set_with_http_info(self, request):
+    def show_face_set_async_invoker(self, request):
+        http_info = self._show_face_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_face_set_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFaceSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1959,9 +2224,9 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -1970,20 +2235,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFaceSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_faces_by_face_id_async(self, request):
         """查询人脸
@@ -1997,9 +2258,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFacesByFaceIdResponse`
         """
-        return self._show_faces_by_face_id_with_http_info(request)
+        http_info = self._show_faces_by_face_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_faces_by_face_id_with_http_info(self, request):
+    def show_faces_by_face_id_async_invoker(self, request):
+        http_info = self._show_faces_by_face_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_faces_by_face_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFacesByFaceIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2020,9 +2293,9 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2031,20 +2304,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFacesByFaceIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_faces_by_limit_async(self, request):
         """查询人脸
@@ -2058,9 +2327,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.ShowFacesByLimitResponse`
         """
-        return self._show_faces_by_limit_with_http_info(request)
+        http_info = self._show_faces_by_limit_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_faces_by_limit_with_http_info(self, request):
+    def show_faces_by_limit_async_invoker(self, request):
+        http_info = self._show_faces_by_limit_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_faces_by_limit_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFacesByLimitResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2083,9 +2364,9 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2094,20 +2375,16 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFacesByLimitResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_face_async(self, request):
         """更新人脸
@@ -2121,9 +2398,21 @@ class FrsAsyncClient(Client):
         :type request: :class:`huaweicloudsdkfrs.v2.UpdateFaceRequest`
         :rtype: :class:`huaweicloudsdkfrs.v2.UpdateFaceResponse`
         """
-        return self._update_face_with_http_info(request)
+        http_info = self._update_face_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_face_with_http_info(self, request):
+    def update_face_async_invoker(self, request):
+        http_info = self._update_face_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_face_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/face-sets/{face_set_name}/faces",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2142,11 +2431,11 @@ class FrsAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", ]
 
@@ -2155,20 +2444,26 @@ class FrsAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/face-sets/{face_set_name}/faces',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2207,4 +2502,4 @@ class FrsAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

@@ -18,35 +18,35 @@ class SysTag:
 
     openapi_types = {
         'key': 'str',
-        'values': 'str'
+        'value': 'str'
     }
 
     attribute_map = {
         'key': 'key',
-        'values': 'values'
+        'value': 'value'
     }
 
-    def __init__(self, key=None, values=None):
+    def __init__(self, key=None, value=None):
         """SysTag
 
         The model defined in huaweicloud sdk
 
         :param key: 标签键。
         :type key: str
-        :param values: 标签值。
-        :type values: str
+        :param value: 标签值。
+        :type value: str
         """
         
         
 
         self._key = None
-        self._values = None
+        self._value = None
         self.discriminator = None
 
         if key is not None:
             self.key = key
-        if values is not None:
-            self.values = values
+        if value is not None:
+            self.value = value
 
     @property
     def key(self):
@@ -71,26 +71,26 @@ class SysTag:
         self._key = key
 
     @property
-    def values(self):
-        """Gets the values of this SysTag.
+    def value(self):
+        """Gets the value of this SysTag.
 
         标签值。
 
-        :return: The values of this SysTag.
+        :return: The value of this SysTag.
         :rtype: str
         """
-        return self._values
+        return self._value
 
-    @values.setter
-    def values(self, values):
-        """Sets the values of this SysTag.
+    @value.setter
+    def value(self, value):
+        """Sets the value of this SysTag.
 
         标签值。
 
-        :param values: The values of this SysTag.
-        :type values: str
+        :param value: The value of this SysTag.
+        :type value: str
         """
-        self._values = values
+        self._value = value
 
     def to_dict(self):
         """Returns the model properties as a dict"""

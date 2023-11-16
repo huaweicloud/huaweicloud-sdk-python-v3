@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkprojectman'")
 
 
 class ProjectManClient(Client):
@@ -38,9 +43,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.AddApplyJoinProjectForAgcResponse`
         """
-        return self._add_apply_join_project_for_agc_with_http_info(request)
+        http_info = self._add_apply_join_project_for_agc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_apply_join_project_for_agc_with_http_info(self, request):
+    def add_apply_join_project_for_agc_invoker(self, request):
+        http_info = self._add_apply_join_project_for_agc_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_apply_join_project_for_agc_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/members/agc-join",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddApplyJoinProjectForAgcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -61,9 +79,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +90,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/members/agc-join',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddApplyJoinProjectForAgcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_member_v4(self, request):
         """添加项目成员
@@ -98,9 +112,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.AddMemberV4Response`
         """
-        return self._add_member_v4_with_http_info(request)
+        http_info = self._add_member_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_member_v4_with_http_info(self, request):
+    def add_member_v4_invoker(self, request):
+        http_info = self._add_member_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_member_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/member",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddMemberV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +144,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +157,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/member',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddMemberV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_members_v4(self, request):
         """批量添加项目成员
@@ -156,9 +179,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchAddMembersV4Response`
         """
-        return self._batch_add_members_v4_with_http_info(request)
+        http_info = self._batch_add_members_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_members_v4_with_http_info(self, request):
+    def batch_add_members_v4_invoker(self, request):
+        http_info = self._batch_add_members_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_members_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddMembersV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -175,11 +211,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -188,20 +224,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/members',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddMembersV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_members_v4(self, request):
         """批量删除项目成员
@@ -214,9 +246,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteMembersV4Response`
         """
-        return self._batch_delete_members_v4_with_http_info(request)
+        http_info = self._batch_delete_members_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_members_v4_with_http_info(self, request):
+    def batch_delete_members_v4_invoker(self, request):
+        http_info = self._batch_delete_members_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_members_v4_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteMembersV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,11 +278,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +291,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/members',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteMembersV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_child_nick_names(self, request):
         """更新子用户昵称
@@ -272,9 +313,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchUpdateChildNickNamesResponse`
         """
-        return self._batch_update_child_nick_names_with_http_info(request)
+        http_info = self._batch_update_child_nick_names_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_child_nick_names_with_http_info(self, request):
+    def batch_update_child_nick_names_invoker(self, request):
+        http_info = self._batch_update_child_nick_names_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_child_nick_names_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/domain/child-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateChildNickNamesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -289,11 +343,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -302,20 +356,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/domain/child-users',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateChildNickNamesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_project_name_v4(self, request):
         """检查项目名称是否存在
@@ -328,9 +378,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CheckProjectNameV4Response`
         """
-        return self._check_project_name_v4_with_http_info(request)
+        http_info = self._check_project_name_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_project_name_v4_with_http_info(self, request):
+    def check_project_name_v4_invoker(self, request):
+        http_info = self._check_project_name_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_project_name_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/check-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckProjectNameV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -345,11 +408,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -358,20 +421,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/check-name',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckProjectNameV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project_v4(self, request):
         """创建项目
@@ -384,9 +443,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectV4Response`
         """
-        return self._create_project_v4_with_http_info(request)
+        http_info = self._create_project_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_v4_with_http_info(self, request):
+    def create_project_v4_invoker(self, request):
+        http_info = self._create_project_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_project_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/project",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -401,11 +473,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -414,20 +486,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/project',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_project_v4(self, request):
         """删除项目
@@ -440,9 +508,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteProjectV4Response`
         """
-        return self._delete_project_v4_with_http_info(request)
+        http_info = self._delete_project_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_project_v4_with_http_info(self, request):
+    def delete_project_v4_invoker(self, request):
+        http_info = self._delete_project_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_project_v4_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProjectV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -459,9 +540,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -470,20 +551,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProjectV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_not_added_projects_v4(self, request):
         """获取租户没有加入的项目
@@ -496,9 +573,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListDomainNotAddedProjectsV4Response`
         """
-        return self._list_domain_not_added_projects_v4_with_http_info(request)
+        http_info = self._list_domain_not_added_projects_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_not_added_projects_v4_with_http_info(self, request):
+    def list_domain_not_added_projects_v4_invoker(self, request):
+        http_info = self._list_domain_not_added_projects_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_not_added_projects_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/domain/not-added",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainNotAddedProjectsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -517,9 +607,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -528,20 +618,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/domain/not-added',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainNotAddedProjectsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_bug_statics_v4(self, request):
         """获取bug统计信息
@@ -554,9 +640,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectBugStaticsV4Response`
         """
-        return self._list_project_bug_statics_v4_with_http_info(request)
+        http_info = self._list_project_bug_statics_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_bug_statics_v4_with_http_info(self, request):
+    def list_project_bug_statics_v4_invoker(self, request):
+        http_info = self._list_project_bug_statics_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_bug_statics_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/bug-statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectBugStaticsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -573,9 +672,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -584,20 +683,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/bug-statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectBugStaticsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_demand_static_v4(self, request):
         """获取需求统计信息
@@ -610,9 +705,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectDemandStaticV4Response`
         """
-        return self._list_project_demand_static_v4_with_http_info(request)
+        http_info = self._list_project_demand_static_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_demand_static_v4_with_http_info(self, request):
+    def list_project_demand_static_v4_invoker(self, request):
+        http_info = self._list_project_demand_static_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_demand_static_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/demand-statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectDemandStaticV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -629,9 +737,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -640,20 +748,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/demand-statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectDemandStaticV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_members_v4(self, request):
         """获取指定项目的成员用户列表
@@ -666,9 +770,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectMembersV4Response`
         """
-        return self._list_project_members_v4_with_http_info(request)
+        http_info = self._list_project_members_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_members_v4_with_http_info(self, request):
+    def list_project_members_v4_invoker(self, request):
+        http_info = self._list_project_members_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_members_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectMembersV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -689,9 +806,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -700,20 +817,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectMembersV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_projects_v4(self, request):
         """查询项目列表
@@ -726,9 +839,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectsV4Response`
         """
-        return self._list_projects_v4_with_http_info(request)
+        http_info = self._list_projects_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_projects_v4_with_http_info(self, request):
+    def list_projects_v4_invoker(self, request):
+        http_info = self._list_projects_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_projects_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -757,9 +883,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -768,20 +894,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_templates(self, request):
         """查询项目模板
@@ -794,9 +916,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListTemplatesResponse`
         """
-        return self._list_templates_with_http_info(request)
+        http_info = self._list_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_templates_with_http_info(self, request):
+    def list_templates_invoker(self, request):
+        http_info = self._list_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -815,9 +950,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -826,20 +961,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workitem_status_records_v4(self, request):
         """查询看板项目下工作项的状态历史记录
@@ -852,9 +983,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemStatusRecordsV4Response`
         """
-        return self._list_workitem_status_records_v4_with_http_info(request)
+        http_info = self._list_workitem_status_records_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workitem_status_records_v4_with_http_info(self, request):
+    def list_workitem_status_records_v4_invoker(self, request):
+        http_info = self._list_workitem_status_records_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workitem_status_records_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/work-items/status-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkitemStatusRecordsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -875,9 +1019,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -886,20 +1030,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/work-items/status-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkitemStatusRecordsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workitems(self, request):
         """查询看板项目下的工作项
@@ -912,9 +1052,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListWorkitemsResponse`
         """
-        return self._list_workitems_with_http_info(request)
+        http_info = self._list_workitems_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workitems_with_http_info(self, request):
+    def list_workitems_invoker(self, request):
+        http_info = self._list_workitems_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workitems_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/work-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkitemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -937,9 +1090,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -948,20 +1101,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/work-items',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkitemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_project(self, request):
         """主动退出项目
@@ -974,9 +1123,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.RemoveProjectRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.RemoveProjectResponse`
         """
-        return self._remove_project_with_http_info(request)
+        http_info = self._remove_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_project_with_http_info(self, request):
+    def remove_project_invoker(self, request):
+        http_info = self._remove_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _remove_project_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/quit",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -993,9 +1155,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1004,20 +1166,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/quit',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bug_density_v2(self, request):
         """查询缺陷密度
@@ -1030,9 +1188,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBugDensityV2Response`
         """
-        return self._show_bug_density_v2_with_http_info(request)
+        http_info = self._show_bug_density_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bug_density_v2_with_http_info(self, request):
+    def show_bug_density_v2_invoker(self, request):
+        http_info = self._show_bug_density_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_bug_density_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/bug-density/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBugDensityV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1049,11 +1220,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1062,20 +1233,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/bug-density/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBugDensityV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bugs_per_developer(self, request):
         """查询人均bug
@@ -1088,9 +1255,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowBugsPerDeveloperResponse`
         """
-        return self._show_bugs_per_developer_with_http_info(request)
+        http_info = self._show_bugs_per_developer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bugs_per_developer_with_http_info(self, request):
+    def show_bugs_per_developer_invoker(self, request):
+        http_info = self._show_bugs_per_developer_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_bugs_per_developer_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/bugs-per-developer/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBugsPerDeveloperResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1107,11 +1287,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1120,20 +1300,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/bugs-per-developer/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBugsPerDeveloperResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_completion_rate(self, request):
         """查询需求按时完成率
@@ -1146,9 +1322,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCompletionRateResponse`
         """
-        return self._show_completion_rate_with_http_info(request)
+        http_info = self._show_completion_rate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_completion_rate_with_http_info(self, request):
+    def show_completion_rate_invoker(self, request):
+        http_info = self._show_completion_rate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_completion_rate_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/completion-rate/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCompletionRateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1165,11 +1354,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1178,20 +1367,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/completion-rate/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCompletionRateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cur_user_info(self, request):
         """获取当前用户信息
@@ -1204,9 +1389,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCurUserInfoResponse`
         """
-        return self._show_cur_user_info_with_http_info(request)
+        http_info = self._show_cur_user_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cur_user_info_with_http_info(self, request):
+    def show_cur_user_info_invoker(self, request):
+        http_info = self._show_cur_user_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cur_user_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/user",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCurUserInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1221,9 +1419,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1232,20 +1430,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/user',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCurUserInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cur_user_role(self, request):
         """获取当前用户角色
@@ -1258,9 +1452,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowCurUserRoleResponse`
         """
-        return self._show_cur_user_role_with_http_info(request)
+        http_info = self._show_cur_user_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cur_user_role_with_http_info(self, request):
+    def show_cur_user_role_invoker(self, request):
+        http_info = self._show_cur_user_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cur_user_role_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/user-role",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCurUserRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1277,9 +1484,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1288,20 +1495,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/user-role',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCurUserRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_info_v4(self, request):
         """获取项目详情
@@ -1314,9 +1517,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectInfoV4Response`
         """
-        return self._show_project_info_v4_with_http_info(request)
+        http_info = self._show_project_info_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_info_v4_with_http_info(self, request):
+    def show_project_info_v4_invoker(self, request):
+        http_info = self._show_project_info_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_info_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectInfoV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1333,9 +1549,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1344,20 +1560,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectInfoV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_summary_v4(self, request):
         """获取项目概览
@@ -1370,9 +1582,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectSummaryV4Response`
         """
-        return self._show_project_summary_v4_with_http_info(request)
+        http_info = self._show_project_summary_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_summary_v4_with_http_info(self, request):
+    def show_project_summary_v4_invoker(self, request):
+        http_info = self._show_project_summary_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_summary_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectSummaryV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1389,9 +1614,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1400,20 +1625,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/summary',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectSummaryV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_work_item_wrokflow_config(self, request):
         """查询看板项目的工作项流转配置
@@ -1426,9 +1647,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowWorkItemWrokflowConfigResponse`
         """
-        return self._show_work_item_wrokflow_config_with_http_info(request)
+        http_info = self._show_work_item_wrokflow_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_work_item_wrokflow_config_with_http_info(self, request):
+    def show_work_item_wrokflow_config_invoker(self, request):
+        http_info = self._show_work_item_wrokflow_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_work_item_wrokflow_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/work-items/workflow/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkItemWrokflowConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1447,9 +1681,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1458,20 +1692,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/work-items/workflow/config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkItemWrokflowConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_membes_role_v4(self, request):
         """更新成员在项目中的角色
@@ -1484,9 +1714,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateMembesRoleV4Response`
         """
-        return self._update_membes_role_v4_with_http_info(request)
+        http_info = self._update_membes_role_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_membes_role_v4_with_http_info(self, request):
+    def update_membes_role_v4_invoker(self, request):
+        http_info = self._update_membes_role_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_membes_role_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/members/role",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMembesRoleV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1503,11 +1746,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1516,20 +1759,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/members/role',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMembesRoleV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_nick_name_v4(self, request):
         """更新用户昵称
@@ -1542,9 +1781,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateNickNameV4Response`
         """
-        return self._update_nick_name_v4_with_http_info(request)
+        http_info = self._update_nick_name_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_nick_name_v4_with_http_info(self, request):
+    def update_nick_name_v4_invoker(self, request):
+        http_info = self._update_nick_name_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_nick_name_v4_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/user",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNickNameV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1559,11 +1811,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1572,20 +1824,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/user',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNickNameV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_project_v4(self, request):
         """更新项目
@@ -1598,9 +1846,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectV4Response`
         """
-        return self._update_project_v4_with_http_info(request)
+        http_info = self._update_project_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_project_v4_with_http_info(self, request):
+    def update_project_v4_invoker(self, request):
+        http_info = self._update_project_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_project_v4_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/projects/{project_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1617,11 +1878,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1630,20 +1891,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProjectV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_issue_work_hours(self, request):
         """添加指定工作项工时
@@ -1656,9 +1913,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.AddIssueWorkHoursRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.AddIssueWorkHoursResponse`
         """
-        return self._add_issue_work_hours_with_http_info(request)
+        http_info = self._add_issue_work_hours_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_issue_work_hours_with_http_info(self, request):
+    def add_issue_work_hours_invoker(self, request):
+        http_info = self._add_issue_work_hours_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_issue_work_hours_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/work-hours",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddIssueWorkHoursResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1677,11 +1947,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1690,20 +1960,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/work-hours',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddIssueWorkHoursResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_issues_v4(self, request):
         """批量删除工作项
@@ -1716,9 +1982,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIssuesV4Response`
         """
-        return self._batch_delete_issues_v4_with_http_info(request)
+        http_info = self._batch_delete_issues_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_issues_v4_with_http_info(self, request):
+    def batch_delete_issues_v4_invoker(self, request):
+        http_info = self._batch_delete_issues_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_issues_v4_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteIssuesV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1735,11 +2014,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1748,20 +2027,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteIssuesV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_iterations_v4(self, request):
         """批量删除项目的迭代
@@ -1774,9 +2049,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.BatchDeleteIterationsV4Response`
         """
-        return self._batch_delete_iterations_v4_with_http_info(request)
+        http_info = self._batch_delete_iterations_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_iterations_v4_with_http_info(self, request):
+    def batch_delete_iterations_v4_invoker(self, request):
+        http_info = self._batch_delete_iterations_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_iterations_v4_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/iterations",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteIterationsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1793,11 +2081,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1806,20 +2094,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iterations',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteIterationsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_project_domain(self, request):
         """取消领域与项目的关联关系
@@ -1832,9 +2116,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CancelProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CancelProjectDomainResponse`
         """
-        return self._cancel_project_domain_with_http_info(request)
+        http_info = self._cancel_project_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_project_domain_with_http_info(self, request):
+    def cancel_project_domain_invoker(self, request):
+        http_info = self._cancel_project_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_project_domain_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelProjectDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1853,9 +2150,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1864,20 +2161,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/domains/{domain_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelProjectDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_customfields(self, request):
         """创建工作项类型自定义字段
@@ -1890,9 +2183,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateCustomfieldsResponse`
         """
-        return self._create_customfields_with_http_info(request)
+        http_info = self._create_customfields_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_customfields_with_http_info(self, request):
+    def create_customfields_invoker(self, request):
+        http_info = self._create_customfields_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_customfields_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/custom-fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomfieldsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1909,11 +2215,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1922,20 +2228,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/custom-fields',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCustomfieldsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_issue_v4(self, request):
         """创建工作项
@@ -1948,9 +2250,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIssueV4Response`
         """
-        return self._create_issue_v4_with_http_info(request)
+        http_info = self._create_issue_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_issue_v4_with_http_info(self, request):
+    def create_issue_v4_invoker(self, request):
+        http_info = self._create_issue_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_issue_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/issue",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIssueV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1967,11 +2282,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1980,20 +2295,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issue',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIssueV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_iteration_v4(self, request):
         """创建Scrum项目迭代
@@ -2006,9 +2317,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateIterationV4Response`
         """
-        return self._create_iteration_v4_with_http_info(request)
+        http_info = self._create_iteration_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_iteration_v4_with_http_info(self, request):
+    def create_iteration_v4_invoker(self, request):
+        http_info = self._create_iteration_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_iteration_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/iteration",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIterationV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2025,11 +2349,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2038,20 +2362,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iteration',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIterationV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project_domain(self, request):
         """创建项目的领域
@@ -2064,9 +2384,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectDomainResponse`
         """
-        return self._create_project_domain_with_http_info(request)
+        http_info = self._create_project_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_domain_with_http_info(self, request):
+    def create_project_domain_invoker(self, request):
+        http_info = self._create_project_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_project_domain_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/domain",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2083,11 +2416,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2096,20 +2429,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/domain',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project_module(self, request):
         """创建项目的模块
@@ -2122,9 +2451,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateProjectModuleResponse`
         """
-        return self._create_project_module_with_http_info(request)
+        http_info = self._create_project_module_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_module_with_http_info(self, request):
+    def create_project_module_invoker(self, request):
+        http_info = self._create_project_module_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_project_module_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/module",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectModuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2141,11 +2483,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2154,20 +2496,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/module',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectModuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_system_issue_v4(self, request):
         """细粒度权限用户创建工作项
@@ -2180,9 +2518,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.CreateSystemIssueV4Response`
         """
-        return self._create_system_issue_v4_with_http_info(request)
+        http_info = self._create_system_issue_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_system_issue_v4_with_http_info(self, request):
+    def create_system_issue_v4_invoker(self, request):
+        http_info = self._create_system_issue_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_system_issue_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/system/issue",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSystemIssueV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2199,11 +2550,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2212,20 +2563,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/system/issue',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSystemIssueV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_attachment(self, request):
         """删除附件
@@ -2238,9 +2585,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteAttachmentRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteAttachmentResponse`
         """
-        return self._delete_attachment_with_http_info(request)
+        http_info = self._delete_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_attachment_with_http_info(self, request):
+    def delete_attachment_invoker(self, request):
+        http_info = self._delete_attachment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_attachment_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/attachments/{attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2261,9 +2621,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2272,20 +2632,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/attachments/{attachment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_issue_v4(self, request):
         """删除工作项
@@ -2298,9 +2654,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIssueV4Response`
         """
-        return self._delete_issue_v4_with_http_info(request)
+        http_info = self._delete_issue_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_issue_v4_with_http_info(self, request):
+    def delete_issue_v4_invoker(self, request):
+        http_info = self._delete_issue_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_issue_v4_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIssueV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2319,9 +2688,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2330,20 +2699,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIssueV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_iteration_v4(self, request):
         """删除项目迭代
@@ -2356,9 +2721,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteIterationV4Response`
         """
-        return self._delete_iteration_v4_with_http_info(request)
+        http_info = self._delete_iteration_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_iteration_v4_with_http_info(self, request):
+    def delete_iteration_v4_invoker(self, request):
+        http_info = self._delete_iteration_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_iteration_v4_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/iterations/{iteration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteIterationV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2377,9 +2755,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2388,20 +2766,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iterations/{iteration_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteIterationV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_project_module(self, request):
         """删除项目的模块
@@ -2414,9 +2788,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DeleteProjectModuleResponse`
         """
-        return self._delete_project_module_with_http_info(request)
+        http_info = self._delete_project_module_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_project_module_with_http_info(self, request):
+    def delete_project_module_invoker(self, request):
+        http_info = self._delete_project_module_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_project_module_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/projects/{project_id}/modules/{module_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProjectModuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2435,9 +2822,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2446,20 +2833,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/modules/{module_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProjectModuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_attachment(self, request):
         """下载工作项附件
@@ -2472,9 +2855,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DownloadAttachmentRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadAttachmentResponse`
         """
-        return self._download_attachment_with_http_info(request)
+        http_info = self._download_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_attachment_with_http_info(self, request):
+    def download_attachment_invoker(self, request):
+        http_info = self._download_attachment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_attachment_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/attachments/{attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2495,9 +2891,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2506,20 +2902,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/attachments/{attachment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_image_file(self, request):
         """下载图片
@@ -2532,9 +2924,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.DownloadImageFileResponse`
         """
-        return self._download_image_file_with_http_info(request)
+        http_info = self._download_image_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_image_file_with_http_info(self, request):
+    def download_image_file_invoker(self, request):
+        http_info = self._download_image_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_image_file_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/image-file",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadImageFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2553,9 +2958,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2564,20 +2969,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/image-file',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadImageFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_associated_issues(self, request):
         """查询当前工作项已经关联的工作项
@@ -2590,9 +2991,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedIssuesResponse`
         """
-        return self._list_associated_issues_with_http_info(request)
+        http_info = self._list_associated_issues_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_associated_issues_with_http_info(self, request):
+    def list_associated_issues_invoker(self, request):
+        http_info = self._list_associated_issues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_associated_issues_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/associated-issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssociatedIssuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2615,9 +3029,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2626,20 +3040,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/associated-issues',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssociatedIssuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_associated_test_cases(self, request):
         """查询关联用例
@@ -2652,9 +3062,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedTestCasesResponse`
         """
-        return self._list_associated_test_cases_with_http_info(request)
+        http_info = self._list_associated_test_cases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_associated_test_cases_with_http_info(self, request):
+    def list_associated_test_cases_invoker(self, request):
+        http_info = self._list_associated_test_cases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_associated_test_cases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/associate-test-cases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssociatedTestCasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2677,9 +3100,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2688,20 +3111,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/associate-test-cases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssociatedTestCasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_associated_wikis(self, request):
         """查询当前工作项已经关联的关联Wiki
@@ -2714,9 +3133,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListAssociatedWikisResponse`
         """
-        return self._list_associated_wikis_with_http_info(request)
+        http_info = self._list_associated_wikis_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_associated_wikis_with_http_info(self, request):
+    def list_associated_wikis_invoker(self, request):
+        http_info = self._list_associated_wikis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_associated_wikis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/associated-wikis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssociatedWikisResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2739,9 +3171,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2750,20 +3182,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/associated-wikis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssociatedWikisResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_child_issues_v4(self, request):
         """获取子工作项
@@ -2776,9 +3204,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListChildIssuesV4Response`
         """
-        return self._list_child_issues_v4_with_http_info(request)
+        http_info = self._list_child_issues_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_child_issues_v4_with_http_info(self, request):
+    def list_child_issues_v4_invoker(self, request):
+        http_info = self._list_child_issues_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_child_issues_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/child",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListChildIssuesV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2797,9 +3238,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2808,20 +3249,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/child',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListChildIssuesV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_issue_associated_commits(self, request):
         """查询当前工作项已经关联的代码提交记录 / 分支创建记录
@@ -2834,9 +3271,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueAssociatedCommitsResponse`
         """
-        return self._list_issue_associated_commits_with_http_info(request)
+        http_info = self._list_issue_associated_commits_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_issue_associated_commits_with_http_info(self, request):
+    def list_issue_associated_commits_invoker(self, request):
+        http_info = self._list_issue_associated_commits_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_issue_associated_commits_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/associated-commits",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssueAssociatedCommitsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2861,9 +3311,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2872,20 +3322,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/associated-commits',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIssueAssociatedCommitsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_issue_comments_v4(self, request):
         """获取指定工作项的评论列表
@@ -2898,9 +3344,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCommentsV4Response`
         """
-        return self._list_issue_comments_v4_with_http_info(request)
+        http_info = self._list_issue_comments_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_issue_comments_v4_with_http_info(self, request):
+    def list_issue_comments_v4_invoker(self, request):
+        http_info = self._list_issue_comments_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_issue_comments_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/comments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssueCommentsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2923,9 +3382,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2934,20 +3393,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/comments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIssueCommentsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_issue_custom_fields(self, request):
         """查询Scrum工作项自定义字段
@@ -2960,9 +3415,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueCustomFieldsResponse`
         """
-        return self._list_issue_custom_fields_with_http_info(request)
+        http_info = self._list_issue_custom_fields_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_issue_custom_fields_with_http_info(self, request):
+    def list_issue_custom_fields_invoker(self, request):
+        http_info = self._list_issue_custom_fields_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_issue_custom_fields_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/issues/custom-fields",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssueCustomFieldsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2979,11 +3447,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2992,20 +3460,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/custom-fields',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIssueCustomFieldsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_issue_records_v4(self, request):
         """获取工作项历史记录
@@ -3018,9 +3482,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssueRecordsV4Response`
         """
-        return self._list_issue_records_v4_with_http_info(request)
+        http_info = self._list_issue_records_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_issue_records_v4_with_http_info(self, request):
+    def list_issue_records_v4_invoker(self, request):
+        http_info = self._list_issue_records_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_issue_records_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issue/{issue_id}/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssueRecordsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3043,9 +3520,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3054,20 +3531,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issue/{issue_id}/records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIssueRecordsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_issues_sf_v4(self, request):
         """查询项目的工作项
@@ -3080,9 +3553,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssuesSfV4Response`
         """
-        return self._list_issues_sf_v4_with_http_info(request)
+        http_info = self._list_issues_sf_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_issues_sf_v4_with_http_info(self, request):
+    def list_issues_sf_v4_invoker(self, request):
+        http_info = self._list_issues_sf_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_issues_sf_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssuesSfV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3109,9 +3595,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3120,20 +3606,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIssuesSfV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_issues_v4(self, request):
         """高级查询工作项
@@ -3146,9 +3628,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIssuesV4Response`
         """
-        return self._list_issues_v4_with_http_info(request)
+        http_info = self._list_issues_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_issues_v4_with_http_info(self, request):
+    def list_issues_v4_invoker(self, request):
+        http_info = self._list_issues_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_issues_v4_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIssuesV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3165,11 +3660,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3178,20 +3673,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIssuesV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_iteration_histories(self, request):
         """查看迭代历史记录
@@ -3204,9 +3695,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListIterationHistoriesResponse`
         """
-        return self._list_iteration_histories_with_http_info(request)
+        http_info = self._list_iteration_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_iteration_histories_with_http_info(self, request):
+    def list_iteration_histories_invoker(self, request):
+        http_info = self._list_iteration_histories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_iteration_histories_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/iterations/{iteration_id}/histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIterationHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3227,9 +3731,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3238,20 +3742,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/iterations/{iteration_id}/histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIterationHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_domains(self, request):
         """查询项目的领域列表
@@ -3264,9 +3764,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectDomainsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectDomainsResponse`
         """
-        return self._list_project_domains_with_http_info(request)
+        http_info = self._list_project_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_domains_with_http_info(self, request):
+    def list_project_domains_invoker(self, request):
+        http_info = self._list_project_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3287,9 +3800,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3298,20 +3811,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_issues_records_v4(self, request):
         """查询项目下所有工作项的历史记录
@@ -3324,9 +3833,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectIssuesRecordsV4Response`
         """
-        return self._list_project_issues_records_v4_with_http_info(request)
+        http_info = self._list_project_issues_records_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_issues_records_v4_with_http_info(self, request):
+    def list_project_issues_records_v4_invoker(self, request):
+        http_info = self._list_project_issues_records_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_issues_records_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectIssuesRecordsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3349,9 +3871,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3360,20 +3882,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectIssuesRecordsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_iterations_v4(self, request):
         """获取指定项目的迭代列表
@@ -3386,9 +3904,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectIterationsV4Response`
         """
-        return self._list_project_iterations_v4_with_http_info(request)
+        http_info = self._list_project_iterations_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_iterations_v4_with_http_info(self, request):
+    def list_project_iterations_v4_invoker(self, request):
+        http_info = self._list_project_iterations_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_iterations_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/iterations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectIterationsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3409,9 +3940,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3420,20 +3951,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iterations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectIterationsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_modules(self, request):
         """查询项目的模块列表
@@ -3446,9 +3973,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectModulesResponse`
         """
-        return self._list_project_modules_with_http_info(request)
+        http_info = self._list_project_modules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_modules_with_http_info(self, request):
+    def list_project_modules_invoker(self, request):
+        http_info = self._list_project_modules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_modules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/modules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectModulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3469,9 +4009,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3480,20 +4020,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/modules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectModulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_work_hours(self, request):
         """按用户查询工时（多项目）
@@ -3506,9 +4042,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursResponse`
         """
-        return self._list_project_work_hours_with_http_info(request)
+        http_info = self._list_project_work_hours_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_work_hours_with_http_info(self, request):
+    def list_project_work_hours_invoker(self, request):
+        http_info = self._list_project_work_hours_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_work_hours_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/work-hours",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectWorkHoursResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3523,11 +4072,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3536,20 +4085,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/work-hours',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectWorkHoursResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_work_hours_type(self, request):
         """查询项目下的工时类型
@@ -3562,9 +4107,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursTypeRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListProjectWorkHoursTypeResponse`
         """
-        return self._list_project_work_hours_type_with_http_info(request)
+        http_info = self._list_project_work_hours_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_work_hours_type_with_http_info(self, request):
+    def list_project_work_hours_type_invoker(self, request):
+        http_info = self._list_project_work_hours_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_work_hours_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/work-hours-type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectWorkHoursTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3587,9 +4145,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3598,20 +4156,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/work-hours-type',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectWorkHoursTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_scrum_project_statuses(self, request):
         """查询项目的状态列表
@@ -3624,9 +4178,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListScrumProjectStatusesResponse`
         """
-        return self._list_scrum_project_statuses_with_http_info(request)
+        http_info = self._list_scrum_project_statuses_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_scrum_project_statuses_with_http_info(self, request):
+    def list_scrum_project_statuses_invoker(self, request):
+        http_info = self._list_scrum_project_statuses_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_scrum_project_statuses_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScrumProjectStatusesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3649,9 +4216,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3660,20 +4227,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/statuses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScrumProjectStatusesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_spec_issue_stay_times(self, request):
         """获取指定工作项停留时间
@@ -3686,9 +4249,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListSpecIssueStayTimesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListSpecIssueStayTimesResponse`
         """
-        return self._list_spec_issue_stay_times_with_http_info(request)
+        http_info = self._list_spec_issue_stay_times_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_spec_issue_stay_times_with_http_info(self, request):
+    def list_spec_issue_stay_times_invoker(self, request):
+        http_info = self._list_spec_issue_stay_times_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_spec_issue_stay_times_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/issues/duration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSpecIssueStayTimesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3703,11 +4279,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3716,20 +4292,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/issues/duration',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSpecIssueStayTimesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_status_statistic(self, request):
         """查询迭代下工作项状态的统计数据（处理人维度）
@@ -3742,9 +4314,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ListStatusStatisticRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ListStatusStatisticResponse`
         """
-        return self._list_status_statistic_with_http_info(request)
+        http_info = self._list_status_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_status_statistic_with_http_info(self, request):
+    def list_status_statistic_invoker(self, request):
+        http_info = self._list_status_statistic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_status_statistic_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/status-statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStatusStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3767,9 +4352,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3778,20 +4363,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/status-statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStatusStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_issues(self, request):
         """高级查询我的待办工作项
@@ -3804,9 +4385,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.SearchIssuesRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.SearchIssuesResponse`
         """
-        return self._search_issues_with_http_info(request)
+        http_info = self._search_issues_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_issues_with_http_info(self, request):
+    def search_issues_invoker(self, request):
+        http_info = self._search_issues_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_issues_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/issues",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchIssuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3821,11 +4415,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3834,20 +4428,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/issues',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchIssuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_issue_completion_rate(self, request):
         """获取工作项完成率
@@ -3860,9 +4450,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueCompletionRateResponse`
         """
-        return self._show_issue_completion_rate_with_http_info(request)
+        http_info = self._show_issue_completion_rate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_issue_completion_rate_with_http_info(self, request):
+    def show_issue_completion_rate_invoker(self, request):
+        http_info = self._show_issue_completion_rate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_issue_completion_rate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issue-completion-rate",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIssueCompletionRateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3879,9 +4482,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3890,20 +4493,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issue-completion-rate',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIssueCompletionRateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_issue_v4(self, request):
         """查询工作项详情
@@ -3916,9 +4515,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssueV4Response`
         """
-        return self._show_issue_v4_with_http_info(request)
+        http_info = self._show_issue_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_issue_v4_with_http_info(self, request):
+    def show_issue_v4_invoker(self, request):
+        http_info = self._show_issue_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_issue_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIssueV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3937,9 +4549,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3948,20 +4560,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIssueV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_issues_wrok_flow_config(self, request):
         """查询Scrum项目的工作项流转配置
@@ -3974,9 +4582,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIssuesWrokFlowConfigResponse`
         """
-        return self._show_issues_wrok_flow_config_with_http_info(request)
+        http_info = self._show_issues_wrok_flow_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_issues_wrok_flow_config_with_http_info(self, request):
+    def show_issues_wrok_flow_config_invoker(self, request):
+        http_info = self._show_issues_wrok_flow_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_issues_wrok_flow_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects/{project_id}/issues/workflow/config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIssuesWrokFlowConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3995,9 +4616,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4006,20 +4627,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/workflow/config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIssuesWrokFlowConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_iteration_v4(self, request):
         """查看迭代详情
@@ -4032,9 +4649,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowIterationV4Response`
         """
-        return self._show_iteration_v4_with_http_info(request)
+        http_info = self._show_iteration_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_iteration_v4_with_http_info(self, request):
+    def show_iteration_v4_invoker(self, request):
+        http_info = self._show_iteration_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_iteration_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/iterations/{iteration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIterationV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4051,9 +4681,9 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4062,20 +4692,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/iterations/{iteration_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIterationV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project_work_hours(self, request):
         """按用户查询工时（单项目）
@@ -4088,9 +4714,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.ShowProjectWorkHoursResponse`
         """
-        return self._show_project_work_hours_with_http_info(request)
+        http_info = self._show_project_work_hours_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_work_hours_with_http_info(self, request):
+    def show_project_work_hours_invoker(self, request):
+        http_info = self._show_project_work_hours_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_work_hours_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/work-hours",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectWorkHoursResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4107,11 +4746,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4120,20 +4759,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/work-hours',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectWorkHoursResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_issue_v4(self, request):
         """更新工作项
@@ -4146,9 +4781,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIssueV4Response`
         """
-        return self._update_issue_v4_with_http_info(request)
+        http_info = self._update_issue_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_issue_v4_with_http_info(self, request):
+    def update_issue_v4_invoker(self, request):
+        http_info = self._update_issue_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_issue_v4_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIssueV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4167,11 +4815,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4180,20 +4828,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIssueV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_iteration_v4(self, request):
         """更新Scrum项目迭代
@@ -4206,9 +4850,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Request`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateIterationV4Response`
         """
-        return self._update_iteration_v4_with_http_info(request)
+        http_info = self._update_iteration_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_iteration_v4_with_http_info(self, request):
+    def update_iteration_v4_invoker(self, request):
+        http_info = self._update_iteration_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_iteration_v4_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/projects/{project_id}/iterations/{iteration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIterationV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4227,11 +4884,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4240,20 +4897,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/iterations/{iteration_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIterationV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_project_domain(self, request):
         """更新项目的领域
@@ -4266,9 +4919,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectDomainRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectDomainResponse`
         """
-        return self._update_project_domain_with_http_info(request)
+        http_info = self._update_project_domain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_project_domain_with_http_info(self, request):
+    def update_project_domain_invoker(self, request):
+        http_info = self._update_project_domain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_project_domain_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/projects/{project_id}/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectDomainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4287,11 +4953,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4300,20 +4966,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/domains/{domain_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProjectDomainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_project_module(self, request):
         """更新项目的模块
@@ -4326,9 +4988,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UpdateProjectModuleResponse`
         """
-        return self._update_project_module_with_http_info(request)
+        http_info = self._update_project_module_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_project_module_with_http_info(self, request):
+    def update_project_module_invoker(self, request):
+        http_info = self._update_project_module_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_project_module_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v4/projects/{project_id}/modules/{module_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectModuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4347,11 +5022,11 @@ class ProjectManClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4360,20 +5035,16 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/modules/{module_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProjectModuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_attachments(self, request):
         """上传工作项附件
@@ -4386,9 +5057,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadAttachmentsResponse`
         """
-        return self._upload_attachments_with_http_info(request)
+        http_info = self._upload_attachments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_attachments_with_http_info(self, request):
+    def upload_attachments_invoker(self, request):
+        http_info = self._upload_attachments_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_attachments_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v4/projects/{project_id}/issues/{issue_id}/attachments/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadAttachmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4409,11 +5093,11 @@ class ProjectManClient(Client):
         if 'attachment' in local_var_params:
             form_params['attachment'] = local_var_params['attachment']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4422,20 +5106,16 @@ class ProjectManClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v4/projects/{project_id}/issues/{issue_id}/attachments/upload',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadAttachmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_issue_img(self, request):
         """上传图片
@@ -4448,9 +5128,22 @@ class ProjectManClient(Client):
         :type request: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgRequest`
         :rtype: :class:`huaweicloudsdkprojectman.v4.UploadIssueImgResponse`
         """
-        return self._upload_issue_img_with_http_info(request)
+        http_info = self._upload_issue_img_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_issue_img_with_http_info(self, request):
+    def upload_issue_img_invoker(self, request):
+        http_info = self._upload_issue_img_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_issue_img_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/img",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadIssueImgResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4469,11 +5162,11 @@ class ProjectManClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4482,20 +5175,25 @@ class ProjectManClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/img',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadIssueImgResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

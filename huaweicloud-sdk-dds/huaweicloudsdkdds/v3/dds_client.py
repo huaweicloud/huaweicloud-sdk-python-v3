@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdds'")
 
 
 class DdsClient(Client):
@@ -38,9 +43,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.AddReadonlyNodeResponse`
         """
-        return self._add_readonly_node_with_http_info(request)
+        http_info = self._add_readonly_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_readonly_node_with_http_info(self, request):
+    def add_readonly_node_invoker(self, request):
+        http_info = self._add_readonly_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_readonly_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/readonly-node",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddReadonlyNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/readonly-node',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddReadonlyNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_sharding_node(self, request):
         """扩容集群实例的节点数量
@@ -96,9 +110,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.AddShardingNodeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.AddShardingNodeResponse`
         """
-        return self._add_sharding_node_with_http_info(request)
+        http_info = self._add_sharding_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_sharding_node_with_http_info(self, request):
+    def add_sharding_node_invoker(self, request):
+        http_info = self._add_sharding_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_sharding_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/enlarge",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddShardingNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/enlarge',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddShardingNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_eip(self, request):
         """绑定弹性公网IP
@@ -154,9 +177,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.AttachEipRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.AttachEipResponse`
         """
-        return self._attach_eip_with_http_info(request)
+        http_info = self._attach_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_eip_with_http_info(self, request):
+    def attach_eip_invoker(self, request):
+        http_info = self._attach_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_eip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/nodes/{node_id}/bind-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/nodes/{node_id}/bind-eip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_internal_ip(self, request):
         """修改实例内网地址
@@ -212,9 +244,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.AttachInternalIpRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.AttachInternalIpResponse`
         """
-        return self._attach_internal_ip_with_http_info(request)
+        http_info = self._attach_internal_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_internal_ip_with_http_info(self, request):
+    def attach_internal_ip_invoker(self, request):
+        http_info = self._attach_internal_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_internal_ip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/modify-internal-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachInternalIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/modify-internal-ip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachInternalIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_tag_action(self, request):
         """批量添加或删除资源标签
@@ -270,9 +311,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.BatchTagActionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.BatchTagActionResponse`
         """
-        return self._batch_tag_action_with_http_info(request)
+        http_info = self._batch_tag_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_tag_action_with_http_info(self, request):
+    def batch_tag_action_invoker(self, request):
+        http_info = self._batch_tag_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_tag_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchTagActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -289,11 +343,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -302,20 +356,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchTagActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_eip(self, request):
         """解绑弹性公网IP
@@ -328,9 +378,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CancelEipRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CancelEipResponse`
         """
-        return self._cancel_eip_with_http_info(request)
+        http_info = self._cancel_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_eip_with_http_info(self, request):
+    def cancel_eip_invoker(self, request):
+        http_info = self._cancel_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_eip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/nodes/{node_id}/unbind-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,9 +410,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -358,20 +421,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/nodes/{node_id}/unbind-eip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_ops_window(self, request):
         """设置可维护时间段
@@ -384,9 +443,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ChangeOpsWindowRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ChangeOpsWindowResponse`
         """
-        return self._change_ops_window_with_http_info(request)
+        http_info = self._change_ops_window_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_ops_window_with_http_info(self, request):
+    def change_ops_window_invoker(self, request):
+        http_info = self._change_ops_window_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_ops_window_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/maintenance-window",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeOpsWindowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -403,11 +475,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -416,20 +488,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/maintenance-window',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeOpsWindowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_password(self, request):
         """检查数据库密码
@@ -442,9 +510,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CheckPasswordRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CheckPasswordResponse`
         """
-        return self._check_password_with_http_info(request)
+        http_info = self._check_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_password_with_http_info(self, request):
+    def check_password_invoker(self, request):
+        http_info = self._check_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_password_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/check-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,11 +542,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +555,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/check-password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_weak_password(self, request):
         """检查弱密码
@@ -500,9 +577,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CheckWeakPasswordRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CheckWeakPasswordResponse`
         """
-        return self._check_weak_password_with_http_info(request)
+        http_info = self._check_weak_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_weak_password_with_http_info(self, request):
+    def check_weak_password_invoker(self, request):
+        http_info = self._check_weak_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_weak_password_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/weak-password-verification",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckWeakPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -519,11 +609,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -532,20 +622,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/weak-password-verification',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckWeakPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def compare_configuration(self, request):
         """参数模板比较
@@ -558,9 +644,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CompareConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CompareConfigurationResponse`
         """
-        return self._compare_configuration_with_http_info(request)
+        http_info = self._compare_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _compare_configuration_with_http_info(self, request):
+    def compare_configuration_invoker(self, request):
+        http_info = self._compare_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _compare_configuration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/comparison",
+            "request_type": request.__class__.__name__,
+            "response_type": "CompareConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -575,11 +674,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -588,20 +687,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/comparison',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CompareConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_configuration(self, request):
         """复制参数模板
@@ -614,9 +709,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CopyConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CopyConfigurationResponse`
         """
-        return self._copy_configuration_with_http_info(request)
+        http_info = self._copy_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_configuration_with_http_info(self, request):
+    def copy_configuration_invoker(self, request):
+        http_info = self._copy_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_configuration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -633,11 +741,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -646,20 +754,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/copy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_configuration(self, request):
         """创建参数模板
@@ -672,9 +776,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CreateConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateConfigurationResponse`
         """
-        return self._create_configuration_with_http_info(request)
+        http_info = self._create_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_configuration_with_http_info(self, request):
+    def create_configuration_invoker(self, request):
+        http_info = self._create_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_configuration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -689,11 +806,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -702,20 +819,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_database_role(self, request):
         """创建数据库角色
@@ -728,9 +841,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CreateDatabaseRoleRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateDatabaseRoleResponse`
         """
-        return self._create_database_role_with_http_info(request)
+        http_info = self._create_database_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_database_role_with_http_info(self, request):
+    def create_database_role_invoker(self, request):
+        http_info = self._create_database_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_database_role_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-role",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -747,11 +873,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -760,20 +886,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-role',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatabaseRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_database_user(self, request):
         """创建数据库用户
@@ -786,9 +908,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CreateDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateDatabaseUserResponse`
         """
-        return self._create_database_user_with_http_info(request)
+        http_info = self._create_database_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_database_user_with_http_info(self, request):
+    def create_database_user_invoker(self, request):
+        http_info = self._create_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_database_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -805,11 +940,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -818,20 +953,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-user',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatabaseUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance(self, request):
         """创建实例
@@ -844,9 +975,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateInstanceResponse`
         """
-        return self._create_instance_with_http_info(request)
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_with_http_info(self, request):
+    def create_instance_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -861,11 +1005,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -874,20 +1018,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ip(self, request):
         """创建集群的Shard/Config IP
@@ -900,9 +1040,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CreateIpRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateIpResponse`
         """
-        return self._create_ip_with_http_info(request)
+        http_info = self._create_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ip_with_http_info(self, request):
+    def create_ip_invoker(self, request):
+        http_info = self._create_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/create-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -919,11 +1072,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -932,20 +1085,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/create-ip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_manual_backup(self, request):
         """创建手动备份
@@ -958,9 +1107,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.CreateManualBackupRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.CreateManualBackupResponse`
         """
-        return self._create_manual_backup_with_http_info(request)
+        http_info = self._create_manual_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_manual_backup_with_http_info(self, request):
+    def create_manual_backup_invoker(self, request):
+        http_info = self._create_manual_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_manual_backup_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateManualBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -975,11 +1137,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -988,20 +1150,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateManualBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_audit_log(self, request):
         """删除审计日志
@@ -1014,9 +1172,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DeleteAuditLogRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteAuditLogResponse`
         """
-        return self._delete_audit_log_with_http_info(request)
+        http_info = self._delete_audit_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_audit_log_with_http_info(self, request):
+    def delete_audit_log_invoker(self, request):
+        http_info = self._delete_audit_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_audit_log_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auditlog",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAuditLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1035,11 +1206,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1048,20 +1219,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/auditlog',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAuditLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_configuration(self, request):
         """删除参数模板
@@ -1074,9 +1241,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DeleteConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteConfigurationResponse`
         """
-        return self._delete_configuration_with_http_info(request)
+        http_info = self._delete_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_configuration_with_http_info(self, request):
+    def delete_configuration_invoker(self, request):
+        http_info = self._delete_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_configuration_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1093,9 +1273,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1104,20 +1284,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_database_role(self, request):
         """删除数据库角色
@@ -1130,9 +1306,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DeleteDatabaseRoleRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteDatabaseRoleResponse`
         """
-        return self._delete_database_role_with_http_info(request)
+        http_info = self._delete_database_role_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_database_role_with_http_info(self, request):
+    def delete_database_role_invoker(self, request):
+        http_info = self._delete_database_role_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_database_role_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-role",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabaseRoleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1149,11 +1338,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1162,20 +1351,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-role',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatabaseRoleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_database_user(self, request):
         """删除数据库用户
@@ -1188,9 +1373,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DeleteDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteDatabaseUserResponse`
         """
-        return self._delete_database_user_with_http_info(request)
+        http_info = self._delete_database_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_database_user_with_http_info(self, request):
+    def delete_database_user_invoker(self, request):
+        http_info = self._delete_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_database_user_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-user",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabaseUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1207,11 +1405,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1220,20 +1418,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-user',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatabaseUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instance(self, request):
         """删除实例
@@ -1246,9 +1440,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DeleteInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteInstanceResponse`
         """
-        return self._delete_instance_with_http_info(request)
+        http_info = self._delete_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instance_with_http_info(self, request):
+    def delete_instance_invoker(self, request):
+        http_info = self._delete_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1265,9 +1472,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1276,20 +1483,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_manual_backup(self, request):
         """删除手动备份
@@ -1302,9 +1505,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DeleteManualBackupRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteManualBackupResponse`
         """
-        return self._delete_manual_backup_with_http_info(request)
+        http_info = self._delete_manual_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_manual_backup_with_http_info(self, request):
+    def delete_manual_backup_invoker(self, request):
+        http_info = self._delete_manual_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_manual_backup_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteManualBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1321,9 +1537,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1332,20 +1548,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteManualBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_session(self, request):
         """终结实例节点会话
@@ -1358,9 +1570,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DeleteSessionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DeleteSessionResponse`
         """
-        return self._delete_session_with_http_info(request)
+        http_info = self._delete_session_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_session_with_http_info(self, request):
+    def delete_session_invoker(self, request):
+        http_info = self._delete_session_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_session_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/nodes/{node_id}/session",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSessionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1377,11 +1602,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1390,20 +1615,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/nodes/{node_id}/session',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSessionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_errorlog(self, request):
         """获取错误日志下载链接
@@ -1416,9 +1637,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DownloadErrorlogRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DownloadErrorlogResponse`
         """
-        return self._download_errorlog_with_http_info(request)
+        http_info = self._download_errorlog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_errorlog_with_http_info(self, request):
+    def download_errorlog_invoker(self, request):
+        http_info = self._download_errorlog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_errorlog_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/errorlog-download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadErrorlogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1435,11 +1669,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1448,20 +1682,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/errorlog-download',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadErrorlogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_slowlog(self, request):
         """获取慢日志下载链接
@@ -1474,9 +1704,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.DownloadSlowlogRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.DownloadSlowlogResponse`
         """
-        return self._download_slowlog_with_http_info(request)
+        http_info = self._download_slowlog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_slowlog_with_http_info(self, request):
+    def download_slowlog_invoker(self, request):
+        http_info = self._download_slowlog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_slowlog_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slowlog-download",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadSlowlogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1493,11 +1736,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1506,20 +1749,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-download',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadSlowlogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_replicaset_node(self, request):
         """扩容副本集实例的节点数量
@@ -1532,9 +1771,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ExpandReplicasetNodeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ExpandReplicasetNodeResponse`
         """
-        return self._expand_replicaset_node_with_http_info(request)
+        http_info = self._expand_replicaset_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_replicaset_node_with_http_info(self, request):
+    def expand_replicaset_node_invoker(self, request):
+        http_info = self._expand_replicaset_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_replicaset_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replicaset-node",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandReplicasetNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1551,11 +1803,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1564,20 +1816,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/replicaset-node',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandReplicasetNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_applied_instances(self, request):
         """查询可应用的实例
@@ -1590,9 +1838,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListAppliedInstancesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListAppliedInstancesResponse`
         """
-        return self._list_applied_instances_with_http_info(request)
+        http_info = self._list_applied_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_applied_instances_with_http_info(self, request):
+    def list_applied_instances_invoker(self, request):
+        http_info = self._list_applied_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_applied_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/applicable-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppliedInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1613,9 +1874,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1624,20 +1885,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/applicable-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppliedInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_auditlog_links(self, request):
         """获取审计日志下载链接
@@ -1650,9 +1907,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListAuditlogLinksRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListAuditlogLinksResponse`
         """
-        return self._list_auditlog_links_with_http_info(request)
+        http_info = self._list_auditlog_links_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_auditlog_links_with_http_info(self, request):
+    def list_auditlog_links_invoker(self, request):
+        http_info = self._list_auditlog_links_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_auditlog_links_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auditlog-links",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditlogLinksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1669,11 +1939,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1682,20 +1952,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/auditlog-links',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditlogLinksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_auditlogs(self, request):
         """获取审计日志列表
@@ -1708,9 +1974,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListAuditlogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListAuditlogsResponse`
         """
-        return self._list_auditlogs_with_http_info(request)
+        http_info = self._list_auditlogs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_auditlogs_with_http_info(self, request):
+    def list_auditlogs_invoker(self, request):
+        http_info = self._list_auditlogs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_auditlogs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auditlog",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditlogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1739,9 +2018,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1750,20 +2029,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/auditlog',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditlogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_az2_migrate(self, request):
         """查询实例可迁移到的可用区
@@ -1776,9 +2051,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListAz2MigrateRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListAz2MigrateResponse`
         """
-        return self._list_az2_migrate_with_http_info(request)
+        http_info = self._list_az2_migrate_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_az2_migrate_with_http_info(self, request):
+    def list_az2_migrate_invoker(self, request):
+        http_info = self._list_az2_migrate_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_az2_migrate_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/migrate/az",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAz2MigrateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1795,9 +2083,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1806,20 +2094,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/migrate/az',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAz2MigrateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_backups(self, request):
         """查询备份列表
@@ -1832,9 +2116,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListBackupsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListBackupsResponse`
         """
-        return self._list_backups_with_http_info(request)
+        http_info = self._list_backups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_backups_with_http_info(self, request):
+    def list_backups_invoker(self, request):
+        http_info = self._list_backups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_backups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1865,9 +2162,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1876,20 +2173,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configurations(self, request):
         """获取参数模板列表
@@ -1902,9 +2195,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListConfigurationsResponse`
         """
-        return self._list_configurations_with_http_info(request)
+        http_info = self._list_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configurations_with_http_info(self, request):
+    def list_configurations_invoker(self, request):
+        http_info = self._list_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_configurations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1923,9 +2229,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1934,20 +2240,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_database_roles(self, request):
         """查询数据库角色列表
@@ -1960,9 +2262,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListDatabaseRolesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListDatabaseRolesResponse`
         """
-        return self._list_database_roles_with_http_info(request)
+        http_info = self._list_database_roles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_database_roles_with_http_info(self, request):
+    def list_database_roles_invoker(self, request):
+        http_info = self._list_database_roles_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_database_roles_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-roles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseRolesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1987,9 +2302,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1998,20 +2313,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-roles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabaseRolesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_database_users(self, request):
         """查询数据库用户列表
@@ -2024,9 +2335,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListDatabaseUsersRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListDatabaseUsersResponse`
         """
-        return self._list_database_users_with_http_info(request)
+        http_info = self._list_database_users_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_database_users_with_http_info(self, request):
+    def list_database_users_invoker(self, request):
+        http_info = self._list_database_users_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_database_users_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-user/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatabaseUsersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2051,9 +2375,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2062,20 +2386,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-user/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatabaseUsersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_datastore_versions(self, request):
         """查询数据库版本信息
@@ -2088,9 +2408,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListDatastoreVersionsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListDatastoreVersionsResponse`
         """
-        return self._list_datastore_versions_with_http_info(request)
+        http_info = self._list_datastore_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_datastore_versions_with_http_info(self, request):
+    def list_datastore_versions_invoker(self, request):
+        http_info = self._list_datastore_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_datastore_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/datastores/{datastore_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatastoreVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2107,9 +2440,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2118,20 +2451,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/datastores/{datastore_name}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatastoreVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_error_logs(self, request):
         """查询数据库错误日志
@@ -2144,9 +2473,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListErrorLogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListErrorLogsResponse`
         """
-        return self._list_error_logs_with_http_info(request)
+        http_info = self._list_error_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_error_logs_with_http_info(self, request):
+    def list_error_logs_invoker(self, request):
+        http_info = self._list_error_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_error_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/errorlog",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListErrorLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2175,9 +2517,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2186,20 +2528,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/errorlog',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListErrorLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavor_infos(self, request):
         """查询数据库规格
@@ -2212,9 +2550,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListFlavorInfosRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListFlavorInfosResponse`
         """
-        return self._list_flavor_infos_with_http_info(request)
+        http_info = self._list_flavor_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavor_infos_with_http_info(self, request):
+    def list_flavor_infos_invoker(self, request):
+        http_info = self._list_flavor_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_flavor_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2237,9 +2588,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2248,20 +2599,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.1/{project_id}/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flavors(self, request):
         """查询所有实例规格信息
@@ -2274,9 +2621,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListFlavorsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListFlavorsResponse`
         """
-        return self._list_flavors_with_http_info(request)
+        http_info = self._list_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flavors_with_http_info(self, request):
+    def list_flavors_invoker(self, request):
+        http_info = self._list_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2295,9 +2655,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2306,20 +2666,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_tags(self, request):
         """查询资源标签
@@ -2332,9 +2688,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListInstanceTagsResponse`
         """
-        return self._list_instance_tags_with_http_info(request)
+        http_info = self._list_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_tags_with_http_info(self, request):
+    def list_instance_tags_invoker(self, request):
+        http_info = self._list_instance_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2351,9 +2720,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2362,20 +2731,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances(self, request):
         """查询实例列表和详情
@@ -2388,9 +2753,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListInstancesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListInstancesResponse`
         """
-        return self._list_instances_with_http_info(request)
+        http_info = self._list_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_with_http_info(self, request):
+    def list_instances_invoker(self, request):
+        http_info = self._list_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2423,9 +2801,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2434,20 +2812,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_by_tags(self, request):
         """查询资源实例
@@ -2460,9 +2834,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListInstancesByTagsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListInstancesByTagsResponse`
         """
-        return self._list_instances_by_tags_with_http_info(request)
+        http_info = self._list_instances_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_by_tags_with_http_info(self, request):
+    def list_instances_by_tags_invoker(self, request):
+        http_info = self._list_instances_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instances_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2477,11 +2864,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2490,20 +2877,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_lts_slow_logs(self, request):
         """查询数据库慢日志
@@ -2516,9 +2899,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListLtsSlowLogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListLtsSlowLogsResponse`
         """
-        return self._list_lts_slow_logs_with_http_info(request)
+        http_info = self._list_lts_slow_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_lts_slow_logs_with_http_info(self, request):
+    def list_lts_slow_logs_invoker(self, request):
+        http_info = self._list_lts_slow_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lts_slow_logs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/slow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLtsSlowLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2535,11 +2931,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2548,20 +2944,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.1/{project_id}/instances/{instance_id}/slow-logs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLtsSlowLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags(self, request):
         """查询项目标签
@@ -2574,9 +2966,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2591,9 +2996,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2602,20 +3007,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_recycle_instances(self, request):
         """查询回收站实例列表
@@ -2628,9 +3029,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListRecycleInstancesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListRecycleInstancesResponse`
         """
-        return self._list_recycle_instances_with_http_info(request)
+        http_info = self._list_recycle_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_recycle_instances_with_http_info(self, request):
+    def list_recycle_instances_invoker(self, request):
+        http_info = self._list_recycle_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_recycle_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/recycle-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecycleInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2651,9 +3065,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2662,20 +3076,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/recycle-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecycleInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_restore_collections(self, request):
         """获取可恢复的数据库集合列表
@@ -2688,9 +3098,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListRestoreCollectionsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListRestoreCollectionsResponse`
         """
-        return self._list_restore_collections_with_http_info(request)
+        http_info = self._list_restore_collections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_restore_collections_with_http_info(self, request):
+    def list_restore_collections_invoker(self, request):
+        http_info = self._list_restore_collections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_restore_collections_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restore-collection",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRestoreCollectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2717,9 +3140,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2728,20 +3151,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/restore-collection',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRestoreCollectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_restore_databases(self, request):
         """获取可恢复的数据库列表
@@ -2754,9 +3173,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListRestoreDatabasesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListRestoreDatabasesResponse`
         """
-        return self._list_restore_databases_with_http_info(request)
+        http_info = self._list_restore_databases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_restore_databases_with_http_info(self, request):
+    def list_restore_databases_invoker(self, request):
+        http_info = self._list_restore_databases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_restore_databases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restore-database",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRestoreDatabasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2781,9 +3213,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2792,20 +3224,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/restore-database',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRestoreDatabasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_restore_times(self, request):
         """查询可恢复的时间段
@@ -2818,9 +3246,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListRestoreTimesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListRestoreTimesResponse`
         """
-        return self._list_restore_times_with_http_info(request)
+        http_info = self._list_restore_times_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_restore_times_with_http_info(self, request):
+    def list_restore_times_invoker(self, request):
+        http_info = self._list_restore_times_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_restore_times_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restore-time",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRestoreTimesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2841,9 +3282,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2852,20 +3293,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/restore-time',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRestoreTimesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sessions(self, request):
         """查询实例节点会话
@@ -2878,9 +3315,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListSessionsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListSessionsResponse`
         """
-        return self._list_sessions_with_http_info(request)
+        http_info = self._list_sessions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sessions_with_http_info(self, request):
+    def list_sessions_invoker(self, request):
+        http_info = self._list_sessions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sessions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/nodes/{node_id}/sessions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSessionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2909,9 +3359,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2920,20 +3370,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/nodes/{node_id}/sessions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSessionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_slow_logs(self, request):
         """查询数据库慢日志
@@ -2946,9 +3392,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListSlowLogsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListSlowLogsResponse`
         """
-        return self._list_slow_logs_with_http_info(request)
+        http_info = self._list_slow_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_slow_logs_with_http_info(self, request):
+    def list_slow_logs_invoker(self, request):
+        http_info = self._list_slow_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_slow_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slowlog",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSlowLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2977,9 +3436,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2988,20 +3447,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSlowLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ssl_cert_download_address(self, request):
         """获取SSL证书下载地址
@@ -3014,9 +3469,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListSslCertDownloadAddressRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListSslCertDownloadAddressResponse`
         """
-        return self._list_ssl_cert_download_address_with_http_info(request)
+        http_info = self._list_ssl_cert_download_address_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ssl_cert_download_address_with_http_info(self, request):
+    def list_ssl_cert_download_address_invoker(self, request):
+        http_info = self._list_ssl_cert_download_address_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ssl_cert_download_address_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ssl-cert/download-link",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSslCertDownloadAddressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3035,9 +3503,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3046,20 +3514,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/ssl-cert/download-link',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSslCertDownloadAddressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_storage_type(self, request):
         """查询数据库磁盘类型
@@ -3072,9 +3536,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListStorageTypeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListStorageTypeResponse`
         """
-        return self._list_storage_type_with_http_info(request)
+        http_info = self._list_storage_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_storage_type_with_http_info(self, request):
+    def list_storage_type_invoker(self, request):
+        http_info = self._list_storage_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_storage_type_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/storage-type",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStorageTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3091,9 +3568,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3102,20 +3579,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/storage-type',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStorageTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tasks(self, request):
         """查询任务列表和详情
@@ -3128,9 +3601,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListTasksResponse`
         """
-        return self._list_tasks_with_http_info(request)
+        http_info = self._list_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tasks_with_http_info(self, request):
+    def list_tasks_invoker(self, request):
+        http_info = self._list_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3.1/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3157,9 +3643,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3168,20 +3654,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.1/{project_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def migrate_az(self, request):
         """实例可用区迁移
@@ -3194,9 +3676,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.MigrateAzRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.MigrateAzResponse`
         """
-        return self._migrate_az_with_http_info(request)
+        http_info = self._migrate_az_http_info(request)
+        return self._call_api(**http_info)
 
-    def _migrate_az_with_http_info(self, request):
+    def migrate_az_invoker(self, request):
+        http_info = self._migrate_az_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _migrate_az_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/migrate",
+            "request_type": request.__class__.__name__,
+            "response_type": "MigrateAzResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3213,11 +3708,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3226,20 +3721,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/migrate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='MigrateAzResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_configuration(self, request):
         """重置参数模板
@@ -3252,9 +3743,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ResetConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ResetConfigurationResponse`
         """
-        return self._reset_configuration_with_http_info(request)
+        http_info = self._reset_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_configuration_with_http_info(self, request):
+    def reset_configuration_invoker(self, request):
+        http_info = self._reset_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_configuration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3271,9 +3775,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3282,20 +3786,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/reset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_password(self, request):
         """修改数据库用户密码
@@ -3308,9 +3808,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ResetPasswordResponse`
         """
-        return self._reset_password_with_http_info(request)
+        http_info = self._reset_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_password_with_http_info(self, request):
+    def reset_password_invoker(self, request):
+        http_info = self._reset_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_password_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/reset-password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3327,11 +3840,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3340,20 +3853,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/reset-password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_instance(self, request):
         """变更实例规格
@@ -3366,9 +3875,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ResizeInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ResizeInstanceResponse`
         """
-        return self._resize_instance_with_http_info(request)
+        http_info = self._resize_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_instance_with_http_info(self, request):
+    def resize_instance_invoker(self, request):
+        http_info = self._resize_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3385,11 +3907,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3398,20 +3920,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resize_instance_volume(self, request):
         """扩容实例存储容量
@@ -3424,9 +3942,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ResizeInstanceVolumeRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ResizeInstanceVolumeResponse`
         """
-        return self._resize_instance_volume_with_http_info(request)
+        http_info = self._resize_instance_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resize_instance_volume_with_http_info(self, request):
+    def resize_instance_volume_invoker(self, request):
+        http_info = self._resize_instance_volume_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _resize_instance_volume_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/enlarge-volume",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResizeInstanceVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3443,11 +3974,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3456,20 +3987,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/enlarge-volume',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResizeInstanceVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_instance(self, request):
         """重启实例
@@ -3482,9 +4009,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.RestartInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.RestartInstanceResponse`
         """
-        return self._restart_instance_with_http_info(request)
+        http_info = self._restart_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_instance_with_http_info(self, request):
+    def restart_instance_invoker(self, request):
+        http_info = self._restart_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3501,11 +4041,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3514,20 +4054,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_instance(self, request):
         """恢复到当前实例
@@ -3540,9 +4076,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.RestoreInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.RestoreInstanceResponse`
         """
-        return self._restore_instance_with_http_info(request)
+        http_info = self._restore_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_instance_with_http_info(self, request):
+    def restore_instance_invoker(self, request):
+        http_info = self._restore_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/recovery",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3559,11 +4108,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3572,20 +4121,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/recovery',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_instance_from_collection(self, request):
         """库表级时间点恢复
@@ -3598,9 +4143,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.RestoreInstanceFromCollectionResponse`
         """
-        return self._restore_instance_from_collection_with_http_info(request)
+        http_info = self._restore_instance_from_collection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_instance_from_collection_with_http_info(self, request):
+    def restore_instance_from_collection_invoker(self, request):
+        http_info = self._restore_instance_from_collection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_instance_from_collection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restore/collections",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreInstanceFromCollectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3619,11 +4177,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3632,20 +4190,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/restore/collections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreInstanceFromCollectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_new_instance(self, request):
         """恢复到新实例
@@ -3658,9 +4212,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.RestoreNewInstanceRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.RestoreNewInstanceResponse`
         """
-        return self._restore_new_instance_with_http_info(request)
+        http_info = self._restore_new_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_new_instance_with_http_info(self, request):
+    def restore_new_instance_invoker(self, request):
+        http_info = self._restore_new_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_new_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreNewInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3675,11 +4242,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3688,20 +4255,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreNewInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_auditlog_policy(self, request):
         """设置审计日志策略
@@ -3714,9 +4277,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SetAuditlogPolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetAuditlogPolicyResponse`
         """
-        return self._set_auditlog_policy_with_http_info(request)
+        http_info = self._set_auditlog_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_auditlog_policy_with_http_info(self, request):
+    def set_auditlog_policy_invoker(self, request):
+        http_info = self._set_auditlog_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_auditlog_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auditlog-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetAuditlogPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3733,11 +4309,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3746,20 +4322,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/auditlog-policy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetAuditlogPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_backup_policy(self, request):
         """设置自动备份策略
@@ -3772,9 +4344,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SetBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetBackupPolicyResponse`
         """
-        return self._set_backup_policy_with_http_info(request)
+        http_info = self._set_backup_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_backup_policy_with_http_info(self, request):
+    def set_backup_policy_invoker(self, request):
+        http_info = self._set_backup_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_backup_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBackupPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3791,11 +4376,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3804,20 +4389,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetBackupPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_balancer_switch(self, request):
         """设置集群均衡开关
@@ -3830,9 +4411,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SetBalancerSwitchRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetBalancerSwitchResponse`
         """
-        return self._set_balancer_switch_with_http_info(request)
+        http_info = self._set_balancer_switch_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_balancer_switch_with_http_info(self, request):
+    def set_balancer_switch_invoker(self, request):
+        http_info = self._set_balancer_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_balancer_switch_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/balancer/{action}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBalancerSwitchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3851,9 +4445,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3862,20 +4456,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/balancer/{action}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetBalancerSwitchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_balancer_window(self, request):
         """设置集群均衡活动时间窗
@@ -3888,9 +4478,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SetBalancerWindowRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetBalancerWindowResponse`
         """
-        return self._set_balancer_window_with_http_info(request)
+        http_info = self._set_balancer_window_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_balancer_window_with_http_info(self, request):
+    def set_balancer_window_invoker(self, request):
+        http_info = self._set_balancer_window_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_balancer_window_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/balancer/active-window",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetBalancerWindowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3907,11 +4510,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3920,20 +4523,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/balancer/active-window',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetBalancerWindowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_recycle_policy(self, request):
         """设置实例回收站策略
@@ -3946,9 +4545,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SetRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SetRecyclePolicyResponse`
         """
-        return self._set_recycle_policy_with_http_info(request)
+        http_info = self._set_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_recycle_policy_with_http_info(self, request):
+    def set_recycle_policy_invoker(self, request):
+        http_info = self._set_recycle_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_recycle_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/recycle-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRecyclePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3963,11 +4575,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3976,20 +4588,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/recycle-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetRecyclePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_auditlog_policy(self, request):
         """查询审计日志策略
@@ -4002,9 +4610,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowAuditlogPolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowAuditlogPolicyResponse`
         """
-        return self._show_auditlog_policy_with_http_info(request)
+        http_info = self._show_auditlog_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_auditlog_policy_with_http_info(self, request):
+    def show_auditlog_policy_invoker(self, request):
+        http_info = self._show_auditlog_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auditlog_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auditlog-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuditlogPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4023,9 +4644,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4034,20 +4655,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/auditlog-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAuditlogPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_backup_download_link(self, request):
         """获取备份下载链接
@@ -4060,9 +4677,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowBackupDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowBackupDownloadLinkResponse`
         """
-        return self._show_backup_download_link_with_http_info(request)
+        http_info = self._show_backup_download_link_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_backup_download_link_with_http_info(self, request):
+    def show_backup_download_link_invoker(self, request):
+        http_info = self._show_backup_download_link_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_backup_download_link_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups/download-file",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupDownloadLinkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4083,9 +4713,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4094,20 +4724,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/download-file',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBackupDownloadLinkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_backup_policy(self, request):
         """查询自动备份策略
@@ -4120,9 +4746,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowBackupPolicyResponse`
         """
-        return self._show_backup_policy_with_http_info(request)
+        http_info = self._show_backup_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_backup_policy_with_http_info(self, request):
+    def show_backup_policy_invoker(self, request):
+        http_info = self._show_backup_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_backup_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4139,9 +4778,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4150,20 +4789,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBackupPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_configuration_applied_history(self, request):
         """查询参数模板被应用历史
@@ -4176,9 +4811,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowConfigurationAppliedHistoryRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowConfigurationAppliedHistoryResponse`
         """
-        return self._show_configuration_applied_history_with_http_info(request)
+        http_info = self._show_configuration_applied_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_configuration_applied_history_with_http_info(self, request):
+    def show_configuration_applied_history_invoker(self, request):
+        http_info = self._show_configuration_applied_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_configuration_applied_history_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/applied-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigurationAppliedHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4199,9 +4847,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4210,20 +4858,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/applied-histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigurationAppliedHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_configuration_modify_history(self, request):
         """查询参数模板修改历史
@@ -4236,9 +4880,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowConfigurationModifyHistoryRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowConfigurationModifyHistoryResponse`
         """
-        return self._show_configuration_modify_history_with_http_info(request)
+        http_info = self._show_configuration_modify_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_configuration_modify_history_with_http_info(self, request):
+    def show_configuration_modify_history_invoker(self, request):
+        http_info = self._show_configuration_modify_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_configuration_modify_history_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigurationModifyHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4259,9 +4916,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4270,20 +4927,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigurationModifyHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_configuration_parameter(self, request):
         """获取参数模板的详情
@@ -4296,9 +4949,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowConfigurationParameterRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowConfigurationParameterResponse`
         """
-        return self._show_configuration_parameter_with_http_info(request)
+        http_info = self._show_configuration_parameter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_configuration_parameter_with_http_info(self, request):
+    def show_configuration_parameter_invoker(self, request):
+        http_info = self._show_configuration_parameter_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_configuration_parameter_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigurationParameterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4315,9 +4981,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4326,20 +4992,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigurationParameterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_connection_statistics(self, request):
         """查询实例连接数统计信息
@@ -4352,9 +5014,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowConnectionStatisticsRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowConnectionStatisticsResponse`
         """
-        return self._show_connection_statistics_with_http_info(request)
+        http_info = self._show_connection_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_connection_statistics_with_http_info(self, request):
+    def show_connection_statistics_invoker(self, request):
+        http_info = self._show_connection_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_connection_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/conn-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConnectionStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4373,9 +5048,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4384,20 +5059,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/conn-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConnectionStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_disk_usage(self, request):
         """查询实例磁盘信息
@@ -4410,9 +5081,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowDiskUsageRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowDiskUsageResponse`
         """
-        return self._show_disk_usage_with_http_info(request)
+        http_info = self._show_disk_usage_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_disk_usage_with_http_info(self, request):
+    def show_disk_usage_invoker(self, request):
+        http_info = self._show_disk_usage_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_disk_usage_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/disk-usage",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDiskUsageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4431,9 +5115,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4442,20 +5126,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/disk-usage',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDiskUsageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_entity_configuration(self, request):
         """获取指定实例的参数信息
@@ -4468,9 +5148,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowEntityConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowEntityConfigurationResponse`
         """
-        return self._show_entity_configuration_with_http_info(request)
+        http_info = self._show_entity_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_entity_configuration_with_http_info(self, request):
+    def show_entity_configuration_invoker(self, request):
+        http_info = self._show_entity_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_entity_configuration_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEntityConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4489,9 +5182,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4500,20 +5193,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEntityConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_detail(self, request):
         """获取DDS任务中心指定ID的任务信息。
@@ -4526,9 +5215,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowJobDetailResponse`
         """
-        return self._show_job_detail_with_http_info(request)
+        http_info = self._show_job_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_detail_with_http_info(self, request):
+    def show_job_detail_invoker(self, request):
+        http_info = self._show_job_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4545,9 +5247,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4556,20 +5258,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas(self, request):
         """查询配额
@@ -4582,9 +5280,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4599,9 +5310,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4610,20 +5321,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_recycle_policy(self, request):
         """查询实例回收站策略
@@ -4636,9 +5343,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowRecyclePolicyRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowRecyclePolicyResponse`
         """
-        return self._show_recycle_policy_with_http_info(request)
+        http_info = self._show_recycle_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_recycle_policy_with_http_info(self, request):
+    def show_recycle_policy_invoker(self, request):
+        http_info = self._show_recycle_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_recycle_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/recycle-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecyclePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4655,9 +5375,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4666,20 +5386,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/recycle-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecyclePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repl_set_name(self, request):
         """查询数据库复制集名称
@@ -4692,9 +5408,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowReplSetNameRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowReplSetNameResponse`
         """
-        return self._show_repl_set_name_with_http_info(request)
+        http_info = self._show_repl_set_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repl_set_name_with_http_info(self, request):
+    def show_repl_set_name_invoker(self, request):
+        http_info = self._show_repl_set_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_repl_set_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replica-set/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReplSetNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4711,9 +5440,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4722,20 +5451,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/replica-set/name',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowReplSetNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_second_level_monitoring_status(self, request):
         """查询秒级监控配置
@@ -4748,9 +5473,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowSecondLevelMonitoringStatusRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowSecondLevelMonitoringStatusResponse`
         """
-        return self._show_second_level_monitoring_status_with_http_info(request)
+        http_info = self._show_second_level_monitoring_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_second_level_monitoring_status_with_http_info(self, request):
+    def show_second_level_monitoring_status_invoker(self, request):
+        http_info = self._show_second_level_monitoring_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_second_level_monitoring_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/monitoring-by-seconds/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecondLevelMonitoringStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4767,9 +5505,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4778,20 +5516,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/monitoring-by-seconds/switch',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecondLevelMonitoringStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sharding_balancer(self, request):
         """查询集群均衡设置
@@ -4804,9 +5538,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowShardingBalancerRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowShardingBalancerResponse`
         """
-        return self._show_sharding_balancer_with_http_info(request)
+        http_info = self._show_sharding_balancer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sharding_balancer_with_http_info(self, request):
+    def show_sharding_balancer_invoker(self, request):
+        http_info = self._show_sharding_balancer_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sharding_balancer_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/balancer",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowShardingBalancerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4823,9 +5570,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4834,20 +5581,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/balancer',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowShardingBalancerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_slowlog_desensitization_switch(self, request):
         """查询慢日志明文开关
@@ -4860,9 +5603,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowSlowlogDesensitizationSwitchRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowSlowlogDesensitizationSwitchResponse`
         """
-        return self._show_slowlog_desensitization_switch_with_http_info(request)
+        http_info = self._show_slowlog_desensitization_switch_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_slowlog_desensitization_switch_with_http_info(self, request):
+    def show_slowlog_desensitization_switch_invoker(self, request):
+        http_info = self._show_slowlog_desensitization_switch_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_slowlog_desensitization_switch_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slowlog-desensitization/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSlowlogDesensitizationSwitchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4881,9 +5637,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4892,20 +5648,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-desensitization/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSlowlogDesensitizationSwitchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_upgrade_duration(self, request):
         """查询数据库补丁升级预估时长
@@ -4918,9 +5670,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowUpgradeDurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowUpgradeDurationResponse`
         """
-        return self._show_upgrade_duration_with_http_info(request)
+        http_info = self._show_upgrade_duration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_upgrade_duration_with_http_info(self, request):
+    def show_upgrade_duration_invoker(self, request):
+        http_info = self._show_upgrade_duration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_upgrade_duration_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-upgrade-duration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUpgradeDurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4939,9 +5704,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4950,20 +5715,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-upgrade-duration',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUpgradeDurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def shrink_instance_nodes(self, request):
         """删除实例的节点
@@ -4976,9 +5737,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShrinkInstanceNodesRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShrinkInstanceNodesResponse`
         """
-        return self._shrink_instance_nodes_with_http_info(request)
+        http_info = self._shrink_instance_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _shrink_instance_nodes_with_http_info(self, request):
+    def shrink_instance_nodes_invoker(self, request):
+        http_info = self._shrink_instance_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _shrink_instance_nodes_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShrinkInstanceNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4995,11 +5769,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5008,20 +5782,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/nodes',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShrinkInstanceNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_configuration(self, request):
         """应用参数模板
@@ -5034,9 +5804,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SwitchConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchConfigurationResponse`
         """
-        return self._switch_configuration_with_http_info(request)
+        http_info = self._switch_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_configuration_with_http_info(self, request):
+    def switch_configuration_invoker(self, request):
+        http_info = self._switch_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_configuration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}/apply",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5053,11 +5836,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5066,20 +5849,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}/apply',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_second_level_monitoring(self, request):
         """开启/关闭秒级监控
@@ -5092,9 +5871,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchSecondLevelMonitoringResponse`
         """
-        return self._switch_second_level_monitoring_with_http_info(request)
+        http_info = self._switch_second_level_monitoring_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_second_level_monitoring_with_http_info(self, request):
+    def switch_second_level_monitoring_invoker(self, request):
+        http_info = self._switch_second_level_monitoring_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_second_level_monitoring_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/monitoring-by-seconds/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchSecondLevelMonitoringResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5111,11 +5903,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5124,20 +5916,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/monitoring-by-seconds/switch',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchSecondLevelMonitoringResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_slowlog_desensitization(self, request):
         """设置慢日志明文开关
@@ -5150,9 +5938,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SwitchSlowlogDesensitizationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchSlowlogDesensitizationResponse`
         """
-        return self._switch_slowlog_desensitization_with_http_info(request)
+        http_info = self._switch_slowlog_desensitization_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_slowlog_desensitization_with_http_info(self, request):
+    def switch_slowlog_desensitization_invoker(self, request):
+        http_info = self._switch_slowlog_desensitization_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_slowlog_desensitization_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/slowlog-desensitization/{status}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchSlowlogDesensitizationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5173,9 +5974,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5184,20 +5985,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/slowlog-desensitization/{status}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchSlowlogDesensitizationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_ssl(self, request):
         """切换SSL开关
@@ -5210,9 +6007,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SwitchSslRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchSslResponse`
         """
-        return self._switch_ssl_with_http_info(request)
+        http_info = self._switch_ssl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_ssl_with_http_info(self, request):
+    def switch_ssl_invoker(self, request):
+        http_info = self._switch_ssl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_ssl_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/switch-ssl",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchSslResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5229,11 +6039,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5242,20 +6052,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/switch-ssl',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchSslResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switchover_replica_set(self, request):
         """切换副本集实例的主备节点
@@ -5268,9 +6074,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.SwitchoverReplicaSetRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.SwitchoverReplicaSetResponse`
         """
-        return self._switchover_replica_set_with_http_info(request)
+        http_info = self._switchover_replica_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switchover_replica_set_with_http_info(self, request):
+    def switchover_replica_set_invoker(self, request):
+        http_info = self._switchover_replica_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switchover_replica_set_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/switchover",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchoverReplicaSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5287,9 +6106,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5298,20 +6117,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/switchover',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchoverReplicaSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_client_network(self, request):
         """副本集跨网段访问配置。
@@ -5324,9 +6139,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpdateClientNetworkRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateClientNetworkResponse`
         """
-        return self._update_client_network_with_http_info(request)
+        http_info = self._update_client_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_client_network_with_http_info(self, request):
+    def update_client_network_invoker(self, request):
+        http_info = self._update_client_network_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_client_network_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/client-network",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClientNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5343,11 +6171,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5356,20 +6184,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/client-network',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateClientNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_configuration_parameter(self, request):
         """修改参数模板
@@ -5382,9 +6206,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateConfigurationParameterResponse`
         """
-        return self._update_configuration_parameter_with_http_info(request)
+        http_info = self._update_configuration_parameter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_configuration_parameter_with_http_info(self, request):
+    def update_configuration_parameter_invoker(self, request):
+        http_info = self._update_configuration_parameter_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_configuration_parameter_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/configurations/{config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConfigurationParameterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5401,11 +6238,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5414,20 +6251,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{config_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConfigurationParameterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_entity_configuration(self, request):
         """修改指定实例的参数
@@ -5440,9 +6273,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpdateEntityConfigurationRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateEntityConfigurationResponse`
         """
-        return self._update_entity_configuration_with_http_info(request)
+        http_info = self._update_entity_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_entity_configuration_with_http_info(self, request):
+    def update_entity_configuration_invoker(self, request):
+        http_info = self._update_entity_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_entity_configuration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEntityConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5459,11 +6305,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5472,20 +6318,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEntityConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_name(self, request):
         """修改实例名称
@@ -5498,9 +6340,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpdateInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateInstanceNameResponse`
         """
-        return self._update_instance_name_with_http_info(request)
+        http_info = self._update_instance_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_name_with_http_info(self, request):
+    def update_instance_name_invoker(self, request):
+        http_info = self._update_instance_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/modify-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5517,11 +6372,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5530,20 +6385,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/modify-name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_port(self, request):
         """修改数据库端口
@@ -5556,9 +6407,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpdateInstancePortRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateInstancePortResponse`
         """
-        return self._update_instance_port_with_http_info(request)
+        http_info = self._update_instance_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_port_with_http_info(self, request):
+    def update_instance_port_invoker(self, request):
+        http_info = self._update_instance_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_port_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/modify-port",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstancePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5575,11 +6439,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5588,20 +6452,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/modify-port',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstancePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_remark(self, request):
         """修改实例备注
@@ -5614,9 +6474,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpdateInstanceRemarkRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateInstanceRemarkResponse`
         """
-        return self._update_instance_remark_with_http_info(request)
+        http_info = self._update_instance_remark_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_remark_with_http_info(self, request):
+    def update_instance_remark_invoker(self, request):
+        http_info = self._update_instance_remark_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_remark_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/remark",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceRemarkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5633,11 +6506,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5646,20 +6519,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/remark',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceRemarkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_repl_set_name(self, request):
         """修改数据库复制集名称
@@ -5672,9 +6541,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpdateReplSetNameRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateReplSetNameResponse`
         """
-        return self._update_repl_set_name_with_http_info(request)
+        http_info = self._update_repl_set_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_repl_set_name_with_http_info(self, request):
+    def update_repl_set_name_invoker(self, request):
+        http_info = self._update_repl_set_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_repl_set_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/replica-set/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateReplSetNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5691,11 +6573,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5704,20 +6586,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/replica-set/name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateReplSetNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_security_group(self, request):
         """变更实例安全组
@@ -5730,9 +6608,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpdateSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpdateSecurityGroupResponse`
         """
-        return self._update_security_group_with_http_info(request)
+        http_info = self._update_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_security_group_with_http_info(self, request):
+    def update_security_group_invoker(self, request):
+        http_info = self._update_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_security_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/modify-security-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5749,11 +6640,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5762,20 +6653,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/modify-security-group',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_database_version(self, request):
         """数据库补丁升级
@@ -5788,9 +6675,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.UpgradeDatabaseVersionResponse`
         """
-        return self._upgrade_database_version_with_http_info(request)
+        http_info = self._upgrade_database_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_database_version_with_http_info(self, request):
+    def upgrade_database_version_invoker(self, request):
+        http_info = self._upgrade_database_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_database_version_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeDatabaseVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5807,11 +6707,11 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5820,20 +6720,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeDatabaseVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_version(self, request):
         """查询当前支持的API版本信息列表
@@ -5846,9 +6742,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ListApiVersionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ListApiVersionResponse`
         """
-        return self._list_api_version_with_http_info(request)
+        http_info = self._list_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_version_with_http_info(self, request):
+    def list_api_version_invoker(self, request):
+        http_info = self._list_api_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5863,9 +6772,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5874,20 +6783,16 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_version(self, request):
         """查询指定API版本信息
@@ -5900,9 +6805,22 @@ class DdsClient(Client):
         :type request: :class:`huaweicloudsdkdds.v3.ShowApiVersionRequest`
         :rtype: :class:`huaweicloudsdkdds.v3.ShowApiVersionResponse`
         """
-        return self._show_api_version_with_http_info(request)
+        http_info = self._show_api_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_version_with_http_info(self, request):
+    def show_api_version_invoker(self, request):
+        http_info = self._show_api_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_api_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5919,9 +6837,9 @@ class DdsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5930,20 +6848,25 @@ class DdsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

@@ -17,16 +17,19 @@ class ConfigsGetBody:
     sensitive_list = []
 
     openapi_types = {
+        'business_type': 'str',
+        'service_area': 'str',
+        'remark': 'str',
         'origin_request_header': 'list[OriginRequestHeader]',
         'http_response_header': 'list[HttpResponseHeader]',
         'url_auth': 'UrlAuthGetBody',
         'https': 'HttpGetBody',
         'sources': 'list[SourcesConfig]',
+        'origin_protocol': 'str',
         'origin_follow302_status': 'str',
         'cache_rules': 'list[CacheRules]',
         'ip_filter': 'IpFilter',
         'referer': 'RefererConfig',
-        'origin_protocol': 'str',
         'force_redirect': 'ForceRedirectConfig',
         'compress': 'Compress',
         'cache_url_parameter_filter': 'CacheUrlParameterFilter',
@@ -35,20 +38,33 @@ class ConfigsGetBody:
         'origin_range_status': 'str',
         'user_agent_filter': 'UserAgentFilter',
         'origin_request_url_rewrite': 'list[OriginRequestUrlRewrite]',
+        'flexible_origin': 'list[FlexibleOrigins]',
+        'slice_etag_status': 'str',
+        'origin_receive_timeout': 'int',
+        'remote_auth': 'CommonRemoteAuth',
+        'websocket': 'WebSocketSeek',
+        'video_seek': 'VideoSeek',
+        'request_limit_rules': 'list[RequestLimitRules]',
+        'ip_frequency_limit': 'IpFrequencyLimitQuery',
+        'hsts': 'HstsQuery',
+        'quic': 'Quic',
         'error_code_redirect_rules': 'list[ErrorCodeRedirectRules]'
     }
 
     attribute_map = {
+        'business_type': 'business_type',
+        'service_area': 'service_area',
+        'remark': 'remark',
         'origin_request_header': 'origin_request_header',
         'http_response_header': 'http_response_header',
         'url_auth': 'url_auth',
         'https': 'https',
         'sources': 'sources',
+        'origin_protocol': 'origin_protocol',
         'origin_follow302_status': 'origin_follow302_status',
         'cache_rules': 'cache_rules',
         'ip_filter': 'ip_filter',
         'referer': 'referer',
-        'origin_protocol': 'origin_protocol',
         'force_redirect': 'force_redirect',
         'compress': 'compress',
         'cache_url_parameter_filter': 'cache_url_parameter_filter',
@@ -57,14 +73,30 @@ class ConfigsGetBody:
         'origin_range_status': 'origin_range_status',
         'user_agent_filter': 'user_agent_filter',
         'origin_request_url_rewrite': 'origin_request_url_rewrite',
+        'flexible_origin': 'flexible_origin',
+        'slice_etag_status': 'slice_etag_status',
+        'origin_receive_timeout': 'origin_receive_timeout',
+        'remote_auth': 'remote_auth',
+        'websocket': 'websocket',
+        'video_seek': 'video_seek',
+        'request_limit_rules': 'request_limit_rules',
+        'ip_frequency_limit': 'ip_frequency_limit',
+        'hsts': 'hsts',
+        'quic': 'quic',
         'error_code_redirect_rules': 'error_code_redirect_rules'
     }
 
-    def __init__(self, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, origin_protocol=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, error_code_redirect_rules=None):
+    def __init__(self, business_type=None, service_area=None, remark=None, origin_request_header=None, http_response_header=None, url_auth=None, https=None, sources=None, origin_protocol=None, origin_follow302_status=None, cache_rules=None, ip_filter=None, referer=None, force_redirect=None, compress=None, cache_url_parameter_filter=None, ipv6_accelerate=None, error_code_cache=None, origin_range_status=None, user_agent_filter=None, origin_request_url_rewrite=None, flexible_origin=None, slice_etag_status=None, origin_receive_timeout=None, remote_auth=None, websocket=None, video_seek=None, request_limit_rules=None, ip_frequency_limit=None, hsts=None, quic=None, error_code_redirect_rules=None):
         """ConfigsGetBody
 
         The model defined in huaweicloud sdk
 
+        :param business_type: 业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速； - wholesite：全站加速。
+        :type business_type: str
+        :param service_area: 服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
+        :type service_area: str
+        :param remark: 域名备注。
+        :type remark: str
         :param origin_request_header: 回源请求头配置。
         :type origin_request_header: list[:class:`huaweicloudsdkcdn.v1.OriginRequestHeader`]
         :param http_response_header: http header配置
@@ -75,6 +107,8 @@ class ConfigsGetBody:
         :type https: :class:`huaweicloudsdkcdn.v1.HttpGetBody`
         :param sources: 源站配置。
         :type sources: list[:class:`huaweicloudsdkcdn.v1.SourcesConfig`]
+        :param origin_protocol: 回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
+        :type origin_protocol: str
         :param origin_follow302_status: 回源跟随，on：开启，off：关闭。
         :type origin_follow302_status: str
         :param cache_rules: 缓存规则。
@@ -83,8 +117,6 @@ class ConfigsGetBody:
         :type ip_filter: :class:`huaweicloudsdkcdn.v1.IpFilter`
         :param referer: 
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererConfig`
-        :param origin_protocol: 回源协议。
-        :type origin_protocol: str
         :param force_redirect: 
         :type force_redirect: :class:`huaweicloudsdkcdn.v1.ForceRedirectConfig`
         :param compress: 
@@ -95,28 +127,51 @@ class ConfigsGetBody:
         :type ipv6_accelerate: int
         :param error_code_cache: 状态码缓存时间。
         :type error_code_cache: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeCache`]
-        :param origin_range_status: Range回源。
+        :param origin_range_status: Range回源，开启: on，off:关闭。
         :type origin_range_status: str
         :param user_agent_filter: 
         :type user_agent_filter: :class:`huaweicloudsdkcdn.v1.UserAgentFilter`
         :param origin_request_url_rewrite: 改写回源URL。
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v1.OriginRequestUrlRewrite`]
+        :param flexible_origin: 高级回源。
+        :type flexible_origin: list[:class:`huaweicloudsdkcdn.v1.FlexibleOrigins`]
+        :param slice_etag_status: 回源是否校验ETag，on：开启，off：关闭。
+        :type slice_etag_status: str
+        :param origin_receive_timeout: 回源超时时间，单位：秒。
+        :type origin_receive_timeout: int
+        :param remote_auth: 
+        :type remote_auth: :class:`huaweicloudsdkcdn.v1.CommonRemoteAuth`
+        :param websocket: 
+        :type websocket: :class:`huaweicloudsdkcdn.v1.WebSocketSeek`
+        :param video_seek: 
+        :type video_seek: :class:`huaweicloudsdkcdn.v1.VideoSeek`
+        :param request_limit_rules: 请求限速。
+        :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v1.RequestLimitRules`]
+        :param ip_frequency_limit: 
+        :type ip_frequency_limit: :class:`huaweicloudsdkcdn.v1.IpFrequencyLimitQuery`
+        :param hsts: 
+        :type hsts: :class:`huaweicloudsdkcdn.v1.HstsQuery`
+        :param quic: 
+        :type quic: :class:`huaweicloudsdkcdn.v1.Quic`
         :param error_code_redirect_rules: 自定义错误页面。
         :type error_code_redirect_rules: list[:class:`huaweicloudsdkcdn.v1.ErrorCodeRedirectRules`]
         """
         
         
 
+        self._business_type = None
+        self._service_area = None
+        self._remark = None
         self._origin_request_header = None
         self._http_response_header = None
         self._url_auth = None
         self._https = None
         self._sources = None
+        self._origin_protocol = None
         self._origin_follow302_status = None
         self._cache_rules = None
         self._ip_filter = None
         self._referer = None
-        self._origin_protocol = None
         self._force_redirect = None
         self._compress = None
         self._cache_url_parameter_filter = None
@@ -125,9 +180,25 @@ class ConfigsGetBody:
         self._origin_range_status = None
         self._user_agent_filter = None
         self._origin_request_url_rewrite = None
+        self._flexible_origin = None
+        self._slice_etag_status = None
+        self._origin_receive_timeout = None
+        self._remote_auth = None
+        self._websocket = None
+        self._video_seek = None
+        self._request_limit_rules = None
+        self._ip_frequency_limit = None
+        self._hsts = None
+        self._quic = None
         self._error_code_redirect_rules = None
         self.discriminator = None
 
+        if business_type is not None:
+            self.business_type = business_type
+        if service_area is not None:
+            self.service_area = service_area
+        if remark is not None:
+            self.remark = remark
         if origin_request_header is not None:
             self.origin_request_header = origin_request_header
         if http_response_header is not None:
@@ -138,6 +209,8 @@ class ConfigsGetBody:
             self.https = https
         if sources is not None:
             self.sources = sources
+        if origin_protocol is not None:
+            self.origin_protocol = origin_protocol
         if origin_follow302_status is not None:
             self.origin_follow302_status = origin_follow302_status
         if cache_rules is not None:
@@ -146,8 +219,6 @@ class ConfigsGetBody:
             self.ip_filter = ip_filter
         if referer is not None:
             self.referer = referer
-        if origin_protocol is not None:
-            self.origin_protocol = origin_protocol
         if force_redirect is not None:
             self.force_redirect = force_redirect
         if compress is not None:
@@ -164,8 +235,94 @@ class ConfigsGetBody:
             self.user_agent_filter = user_agent_filter
         if origin_request_url_rewrite is not None:
             self.origin_request_url_rewrite = origin_request_url_rewrite
+        if flexible_origin is not None:
+            self.flexible_origin = flexible_origin
+        if slice_etag_status is not None:
+            self.slice_etag_status = slice_etag_status
+        if origin_receive_timeout is not None:
+            self.origin_receive_timeout = origin_receive_timeout
+        if remote_auth is not None:
+            self.remote_auth = remote_auth
+        if websocket is not None:
+            self.websocket = websocket
+        if video_seek is not None:
+            self.video_seek = video_seek
+        if request_limit_rules is not None:
+            self.request_limit_rules = request_limit_rules
+        if ip_frequency_limit is not None:
+            self.ip_frequency_limit = ip_frequency_limit
+        if hsts is not None:
+            self.hsts = hsts
+        if quic is not None:
+            self.quic = quic
         if error_code_redirect_rules is not None:
             self.error_code_redirect_rules = error_code_redirect_rules
+
+    @property
+    def business_type(self):
+        """Gets the business_type of this ConfigsGetBody.
+
+        业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速； - wholesite：全站加速。
+
+        :return: The business_type of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._business_type
+
+    @business_type.setter
+    def business_type(self, business_type):
+        """Sets the business_type of this ConfigsGetBody.
+
+        业务类型： - web：网站加速； - download：文件下载加速； - video：点播加速； - wholesite：全站加速。
+
+        :param business_type: The business_type of this ConfigsGetBody.
+        :type business_type: str
+        """
+        self._business_type = business_type
+
+    @property
+    def service_area(self):
+        """Gets the service_area of this ConfigsGetBody.
+
+        服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
+
+        :return: The service_area of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._service_area
+
+    @service_area.setter
+    def service_area(self, service_area):
+        """Sets the service_area of this ConfigsGetBody.
+
+        服务区域： - mainland_china：中国大陆； - global：全球； - outside_mainland_china：中国大陆境外。
+
+        :param service_area: The service_area of this ConfigsGetBody.
+        :type service_area: str
+        """
+        self._service_area = service_area
+
+    @property
+    def remark(self):
+        """Gets the remark of this ConfigsGetBody.
+
+        域名备注。
+
+        :return: The remark of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._remark
+
+    @remark.setter
+    def remark(self, remark):
+        """Sets the remark of this ConfigsGetBody.
+
+        域名备注。
+
+        :param remark: The remark of this ConfigsGetBody.
+        :type remark: str
+        """
+        self._remark = remark
 
     @property
     def origin_request_header(self):
@@ -270,6 +427,28 @@ class ConfigsGetBody:
         self._sources = sources
 
     @property
+    def origin_protocol(self):
+        """Gets the origin_protocol of this ConfigsGetBody.
+
+        回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
+
+        :return: The origin_protocol of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._origin_protocol
+
+    @origin_protocol.setter
+    def origin_protocol(self, origin_protocol):
+        """Sets the origin_protocol of this ConfigsGetBody.
+
+        回源协议，follow：协议跟随回源，http：HTTP回源(默认)，https：https回源。
+
+        :param origin_protocol: The origin_protocol of this ConfigsGetBody.
+        :type origin_protocol: str
+        """
+        self._origin_protocol = origin_protocol
+
+    @property
     def origin_follow302_status(self):
         """Gets the origin_follow302_status of this ConfigsGetBody.
 
@@ -348,28 +527,6 @@ class ConfigsGetBody:
         :type referer: :class:`huaweicloudsdkcdn.v1.RefererConfig`
         """
         self._referer = referer
-
-    @property
-    def origin_protocol(self):
-        """Gets the origin_protocol of this ConfigsGetBody.
-
-        回源协议。
-
-        :return: The origin_protocol of this ConfigsGetBody.
-        :rtype: str
-        """
-        return self._origin_protocol
-
-    @origin_protocol.setter
-    def origin_protocol(self, origin_protocol):
-        """Sets the origin_protocol of this ConfigsGetBody.
-
-        回源协议。
-
-        :param origin_protocol: The origin_protocol of this ConfigsGetBody.
-        :type origin_protocol: str
-        """
-        self._origin_protocol = origin_protocol
 
     @property
     def force_redirect(self):
@@ -473,7 +630,7 @@ class ConfigsGetBody:
     def origin_range_status(self):
         """Gets the origin_range_status of this ConfigsGetBody.
 
-        Range回源。
+        Range回源，开启: on，off:关闭。
 
         :return: The origin_range_status of this ConfigsGetBody.
         :rtype: str
@@ -484,7 +641,7 @@ class ConfigsGetBody:
     def origin_range_status(self, origin_range_status):
         """Sets the origin_range_status of this ConfigsGetBody.
 
-        Range回源。
+        Range回源，开启: on，off:关闭。
 
         :param origin_range_status: The origin_range_status of this ConfigsGetBody.
         :type origin_range_status: str
@@ -530,6 +687,202 @@ class ConfigsGetBody:
         :type origin_request_url_rewrite: list[:class:`huaweicloudsdkcdn.v1.OriginRequestUrlRewrite`]
         """
         self._origin_request_url_rewrite = origin_request_url_rewrite
+
+    @property
+    def flexible_origin(self):
+        """Gets the flexible_origin of this ConfigsGetBody.
+
+        高级回源。
+
+        :return: The flexible_origin of this ConfigsGetBody.
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.FlexibleOrigins`]
+        """
+        return self._flexible_origin
+
+    @flexible_origin.setter
+    def flexible_origin(self, flexible_origin):
+        """Sets the flexible_origin of this ConfigsGetBody.
+
+        高级回源。
+
+        :param flexible_origin: The flexible_origin of this ConfigsGetBody.
+        :type flexible_origin: list[:class:`huaweicloudsdkcdn.v1.FlexibleOrigins`]
+        """
+        self._flexible_origin = flexible_origin
+
+    @property
+    def slice_etag_status(self):
+        """Gets the slice_etag_status of this ConfigsGetBody.
+
+        回源是否校验ETag，on：开启，off：关闭。
+
+        :return: The slice_etag_status of this ConfigsGetBody.
+        :rtype: str
+        """
+        return self._slice_etag_status
+
+    @slice_etag_status.setter
+    def slice_etag_status(self, slice_etag_status):
+        """Sets the slice_etag_status of this ConfigsGetBody.
+
+        回源是否校验ETag，on：开启，off：关闭。
+
+        :param slice_etag_status: The slice_etag_status of this ConfigsGetBody.
+        :type slice_etag_status: str
+        """
+        self._slice_etag_status = slice_etag_status
+
+    @property
+    def origin_receive_timeout(self):
+        """Gets the origin_receive_timeout of this ConfigsGetBody.
+
+        回源超时时间，单位：秒。
+
+        :return: The origin_receive_timeout of this ConfigsGetBody.
+        :rtype: int
+        """
+        return self._origin_receive_timeout
+
+    @origin_receive_timeout.setter
+    def origin_receive_timeout(self, origin_receive_timeout):
+        """Sets the origin_receive_timeout of this ConfigsGetBody.
+
+        回源超时时间，单位：秒。
+
+        :param origin_receive_timeout: The origin_receive_timeout of this ConfigsGetBody.
+        :type origin_receive_timeout: int
+        """
+        self._origin_receive_timeout = origin_receive_timeout
+
+    @property
+    def remote_auth(self):
+        """Gets the remote_auth of this ConfigsGetBody.
+
+        :return: The remote_auth of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.CommonRemoteAuth`
+        """
+        return self._remote_auth
+
+    @remote_auth.setter
+    def remote_auth(self, remote_auth):
+        """Sets the remote_auth of this ConfigsGetBody.
+
+        :param remote_auth: The remote_auth of this ConfigsGetBody.
+        :type remote_auth: :class:`huaweicloudsdkcdn.v1.CommonRemoteAuth`
+        """
+        self._remote_auth = remote_auth
+
+    @property
+    def websocket(self):
+        """Gets the websocket of this ConfigsGetBody.
+
+        :return: The websocket of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.WebSocketSeek`
+        """
+        return self._websocket
+
+    @websocket.setter
+    def websocket(self, websocket):
+        """Sets the websocket of this ConfigsGetBody.
+
+        :param websocket: The websocket of this ConfigsGetBody.
+        :type websocket: :class:`huaweicloudsdkcdn.v1.WebSocketSeek`
+        """
+        self._websocket = websocket
+
+    @property
+    def video_seek(self):
+        """Gets the video_seek of this ConfigsGetBody.
+
+        :return: The video_seek of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.VideoSeek`
+        """
+        return self._video_seek
+
+    @video_seek.setter
+    def video_seek(self, video_seek):
+        """Sets the video_seek of this ConfigsGetBody.
+
+        :param video_seek: The video_seek of this ConfigsGetBody.
+        :type video_seek: :class:`huaweicloudsdkcdn.v1.VideoSeek`
+        """
+        self._video_seek = video_seek
+
+    @property
+    def request_limit_rules(self):
+        """Gets the request_limit_rules of this ConfigsGetBody.
+
+        请求限速。
+
+        :return: The request_limit_rules of this ConfigsGetBody.
+        :rtype: list[:class:`huaweicloudsdkcdn.v1.RequestLimitRules`]
+        """
+        return self._request_limit_rules
+
+    @request_limit_rules.setter
+    def request_limit_rules(self, request_limit_rules):
+        """Sets the request_limit_rules of this ConfigsGetBody.
+
+        请求限速。
+
+        :param request_limit_rules: The request_limit_rules of this ConfigsGetBody.
+        :type request_limit_rules: list[:class:`huaweicloudsdkcdn.v1.RequestLimitRules`]
+        """
+        self._request_limit_rules = request_limit_rules
+
+    @property
+    def ip_frequency_limit(self):
+        """Gets the ip_frequency_limit of this ConfigsGetBody.
+
+        :return: The ip_frequency_limit of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.IpFrequencyLimitQuery`
+        """
+        return self._ip_frequency_limit
+
+    @ip_frequency_limit.setter
+    def ip_frequency_limit(self, ip_frequency_limit):
+        """Sets the ip_frequency_limit of this ConfigsGetBody.
+
+        :param ip_frequency_limit: The ip_frequency_limit of this ConfigsGetBody.
+        :type ip_frequency_limit: :class:`huaweicloudsdkcdn.v1.IpFrequencyLimitQuery`
+        """
+        self._ip_frequency_limit = ip_frequency_limit
+
+    @property
+    def hsts(self):
+        """Gets the hsts of this ConfigsGetBody.
+
+        :return: The hsts of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.HstsQuery`
+        """
+        return self._hsts
+
+    @hsts.setter
+    def hsts(self, hsts):
+        """Sets the hsts of this ConfigsGetBody.
+
+        :param hsts: The hsts of this ConfigsGetBody.
+        :type hsts: :class:`huaweicloudsdkcdn.v1.HstsQuery`
+        """
+        self._hsts = hsts
+
+    @property
+    def quic(self):
+        """Gets the quic of this ConfigsGetBody.
+
+        :return: The quic of this ConfigsGetBody.
+        :rtype: :class:`huaweicloudsdkcdn.v1.Quic`
+        """
+        return self._quic
+
+    @quic.setter
+    def quic(self, quic):
+        """Sets the quic of this ConfigsGetBody.
+
+        :param quic: The quic of this ConfigsGetBody.
+        :type quic: :class:`huaweicloudsdkcdn.v1.Quic`
+        """
+        self._quic = quic
 
     @property
     def error_code_redirect_rules(self):

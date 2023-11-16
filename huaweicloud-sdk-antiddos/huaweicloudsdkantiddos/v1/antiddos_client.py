@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkantiddos'")
 
 
 class AntiDDoSClient(Client):
@@ -38,9 +43,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.CreateDefaultConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.CreateDefaultConfigResponse`
         """
-        return self._create_default_config_with_http_info(request)
+        http_info = self._create_default_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_default_config_with_http_info(self, request):
+    def create_default_config_invoker(self, request):
+        http_info = self._create_default_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_default_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/antiddos/default-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDefaultConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/default-config',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDefaultConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_default_config(self, request):
         """删除Ani-DDoS默认防护策略
@@ -94,9 +108,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.DeleteDefaultConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.DeleteDefaultConfigResponse`
         """
-        return self._delete_default_config_with_http_info(request)
+        http_info = self._delete_default_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_default_config_with_http_info(self, request):
+    def delete_default_config_invoker(self, request):
+        http_info = self._delete_default_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_default_config_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/antiddos/default-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDefaultConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,9 +138,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -122,20 +149,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/default-config',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDefaultConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alert_config(self, request):
         """查询告警配置信息
@@ -148,9 +171,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowAlertConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowAlertConfigResponse`
         """
-        return self._show_alert_config_with_http_info(request)
+        http_info = self._show_alert_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alert_config_with_http_info(self, request):
+    def show_alert_config_invoker(self, request):
+        http_info = self._show_alert_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_alert_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/warnalert/alertconfig/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlertConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -165,9 +201,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -176,20 +212,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/warnalert/alertconfig/query',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlertConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_default_config(self, request):
         """查询Ani-DDoS默认防护策略
@@ -202,9 +234,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowDefaultConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDefaultConfigResponse`
         """
-        return self._show_default_config_with_http_info(request)
+        http_info = self._show_default_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_default_config_with_http_info(self, request):
+    def show_default_config_invoker(self, request):
+        http_info = self._show_default_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_default_config_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/antiddos/default-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDefaultConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -219,9 +264,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -230,20 +275,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/default-config',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDefaultConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alert_config(self, request):
         """更新告警配置信息
@@ -256,9 +297,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateAlertConfigResponse`
         """
-        return self._update_alert_config_with_http_info(request)
+        http_info = self._update_alert_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alert_config_with_http_info(self, request):
+    def update_alert_config_invoker(self, request):
+        http_info = self._update_alert_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_alert_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/warnalert/alertconfig/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlertConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -273,11 +327,11 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -286,20 +340,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/warnalert/alertconfig/update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlertConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_d_dos_status(self, request):
         """查询EIP防护状态列表
@@ -312,9 +362,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListDDosStatusRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListDDosStatusResponse`
         """
-        return self._list_d_dos_status_with_http_info(request)
+        http_info = self._list_d_dos_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_d_dos_status_with_http_info(self, request):
+    def list_d_dos_status_invoker(self, request):
+        http_info = self._list_d_dos_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_d_dos_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/antiddos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDDosStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -337,9 +400,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -348,20 +411,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDDosStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_daily_log(self, request):
         """查询指定EIP异常事件
@@ -374,9 +433,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListDailyLogRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListDailyLogResponse`
         """
-        return self._list_daily_log_with_http_info(request)
+        http_info = self._list_daily_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_daily_log_with_http_info(self, request):
+    def list_daily_log_invoker(self, request):
+        http_info = self._list_daily_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_daily_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/antiddos/{floating_ip_id}/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDailyLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -401,9 +473,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -412,20 +484,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/{floating_ip_id}/logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDailyLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_daily_report(self, request):
         """查询指定EIP防护流量
@@ -438,9 +506,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListDailyReportRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListDailyReportResponse`
         """
-        return self._list_daily_report_with_http_info(request)
+        http_info = self._list_daily_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_daily_report_with_http_info(self, request):
+    def list_daily_report_invoker(self, request):
+        http_info = self._list_daily_report_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_daily_report_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/antiddos/{floating_ip_id}/daily",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDailyReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -459,9 +540,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -470,20 +551,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/{floating_ip_id}/daily',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDailyReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_new_configs(self, request):
         """查询Anti-DDoS配置可选范围
@@ -496,9 +573,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListNewConfigsRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListNewConfigsResponse`
         """
-        return self._list_new_configs_with_http_info(request)
+        http_info = self._list_new_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_new_configs_with_http_info(self, request):
+    def list_new_configs_invoker(self, request):
+        http_info = self._list_new_configs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_new_configs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/antiddos/query-config-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNewConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -513,9 +603,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -524,20 +614,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/antiddos/query-config-list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNewConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_weekly_reports(self, request):
         """查询周防护统计情况
@@ -550,9 +636,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ListWeeklyReportsRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ListWeeklyReportsResponse`
         """
-        return self._list_weekly_reports_with_http_info(request)
+        http_info = self._list_weekly_reports_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_weekly_reports_with_http_info(self, request):
+    def list_weekly_reports_invoker(self, request):
+        http_info = self._list_weekly_reports_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_weekly_reports_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/antiddos/weekly",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWeeklyReportsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -569,9 +668,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -580,20 +679,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/weekly',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWeeklyReportsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_d_dos(self, request):
         """查询Anti-DDoS服务
@@ -606,9 +701,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowDDosRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDDosResponse`
         """
-        return self._show_d_dos_with_http_info(request)
+        http_info = self._show_d_dos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_d_dos_with_http_info(self, request):
+    def show_d_dos_invoker(self, request):
+        http_info = self._show_d_dos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_d_dos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/antiddos/{floating_ip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDDosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -627,9 +735,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -638,20 +746,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/{floating_ip_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDDosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_d_dos_status(self, request):
         """查询指定EIP防护状态
@@ -664,9 +768,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowDDosStatusRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowDDosStatusResponse`
         """
-        return self._show_d_dos_status_with_http_info(request)
+        http_info = self._show_d_dos_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_d_dos_status_with_http_info(self, request):
+    def show_d_dos_status_invoker(self, request):
+        http_info = self._show_d_dos_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_d_dos_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/antiddos/{floating_ip_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDDosStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -685,9 +802,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -696,20 +813,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/{floating_ip_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDDosStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_new_task_status(self, request):
         """查询Anti-DDoS任务
@@ -722,9 +835,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.ShowNewTaskStatusRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.ShowNewTaskStatusResponse`
         """
-        return self._show_new_task_status_with_http_info(request)
+        http_info = self._show_new_task_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_new_task_status_with_http_info(self, request):
+    def show_new_task_status_invoker(self, request):
+        http_info = self._show_new_task_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_new_task_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/query-task-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNewTaskStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -741,9 +867,9 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -752,20 +878,16 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/query-task-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNewTaskStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_d_dos(self, request):
         """更新Anti-DDoS服务
@@ -778,9 +900,22 @@ class AntiDDoSClient(Client):
         :type request: :class:`huaweicloudsdkantiddos.v1.UpdateDDosRequest`
         :rtype: :class:`huaweicloudsdkantiddos.v1.UpdateDDosResponse`
         """
-        return self._update_d_dos_with_http_info(request)
+        http_info = self._update_d_dos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_d_dos_with_http_info(self, request):
+    def update_d_dos_invoker(self, request):
+        http_info = self._update_d_dos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_d_dos_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/antiddos/{floating_ip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDDosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -799,11 +934,11 @@ class AntiDDoSClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -812,20 +947,25 @@ class AntiDDoSClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/antiddos/{floating_ip_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDDosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

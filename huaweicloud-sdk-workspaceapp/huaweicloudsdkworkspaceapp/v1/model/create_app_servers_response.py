@@ -18,35 +18,42 @@ class CreateAppServersResponse(SdkResponse):
     sensitive_list = []
 
     openapi_types = {
-        'job_id': 'str'
+        'job_id': 'str',
+        'order_id': 'str'
     }
 
     attribute_map = {
-        'job_id': 'job_id'
+        'job_id': 'job_id',
+        'order_id': 'order_id'
     }
 
-    def __init__(self, job_id=None):
+    def __init__(self, job_id=None, order_id=None):
         """CreateAppServersResponse
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态。
+        :param job_id: 对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。
         :type job_id: str
+        :param order_id: 订单号，创建包年包月的弹性云服务器时返回该参数。
+        :type order_id: str
         """
         
         super(CreateAppServersResponse, self).__init__()
 
         self._job_id = None
+        self._order_id = None
         self.discriminator = None
 
         if job_id is not None:
             self.job_id = job_id
+        if order_id is not None:
+            self.order_id = order_id
 
     @property
     def job_id(self):
         """Gets the job_id of this CreateAppServersResponse.
 
-        对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态。
+        对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。
 
         :return: The job_id of this CreateAppServersResponse.
         :rtype: str
@@ -57,12 +64,34 @@ class CreateAppServersResponse(SdkResponse):
     def job_id(self, job_id):
         """Sets the job_id of this CreateAppServersResponse.
 
-        对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态。
+        对于创建云应用服务器命令下发后会返回job_id，通过job_id可以查询任务的执行状态,按需购买返回该参数。
 
         :param job_id: The job_id of this CreateAppServersResponse.
         :type job_id: str
         """
         self._job_id = job_id
+
+    @property
+    def order_id(self):
+        """Gets the order_id of this CreateAppServersResponse.
+
+        订单号，创建包年包月的弹性云服务器时返回该参数。
+
+        :return: The order_id of this CreateAppServersResponse.
+        :rtype: str
+        """
+        return self._order_id
+
+    @order_id.setter
+    def order_id(self, order_id):
+        """Sets the order_id of this CreateAppServersResponse.
+
+        订单号，创建包年包月的弹性云服务器时返回该参数。
+
+        :param order_id: The order_id of this CreateAppServersResponse.
+        :type order_id: str
+        """
+        self._order_id = order_id
 
     def to_dict(self):
         """Returns the model properties as a dict"""

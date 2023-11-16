@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdknat'")
 
 
 class NatClient(Client):
@@ -38,9 +43,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateNatGatewayDnatRulesResponse`
         """
-        return self._batch_create_nat_gateway_dnat_rules_with_http_info(request)
+        http_info = self._batch_create_nat_gateway_dnat_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_nat_gateway_dnat_rules_with_http_info(self, request):
+    def batch_create_nat_gateway_dnat_rules_invoker(self, request):
+        http_info = self._batch_create_nat_gateway_dnat_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_nat_gateway_dnat_rules_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/dnat_rules/batch",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateNatGatewayDnatRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/dnat_rules/batch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateNatGatewayDnatRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_nat_gateway_dnat_rule(self, request):
         """创建DNAT规则
@@ -94,9 +108,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayDnatRuleResponse`
         """
-        return self._create_nat_gateway_dnat_rule_with_http_info(request)
+        http_info = self._create_nat_gateway_dnat_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_nat_gateway_dnat_rule_with_http_info(self, request):
+    def create_nat_gateway_dnat_rule_invoker(self, request):
+        http_info = self._create_nat_gateway_dnat_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_nat_gateway_dnat_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/dnat_rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNatGatewayDnatRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/dnat_rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNatGatewayDnatRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_private_dnat(self, request):
         """创建DNAT规则
@@ -150,9 +173,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreatePrivateDnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateDnatResponse`
         """
-        return self._create_private_dnat_with_http_info(request)
+        http_info = self._create_private_dnat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_private_dnat_with_http_info(self, request):
+    def create_private_dnat_invoker(self, request):
+        http_info = self._create_private_dnat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_private_dnat_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/private-nat/dnat-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateDnatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,11 +203,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/dnat-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivateDnatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_nat_gateway_dnat_rule(self, request):
         """删除DNAT规则
@@ -206,9 +238,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayDnatRuleResponse`
         """
-        return self._delete_nat_gateway_dnat_rule_with_http_info(request)
+        http_info = self._delete_nat_gateway_dnat_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_nat_gateway_dnat_rule_with_http_info(self, request):
+    def delete_nat_gateway_dnat_rule_invoker(self, request):
+        http_info = self._delete_nat_gateway_dnat_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_nat_gateway_dnat_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/nat_gateways/{nat_gateway_id}/dnat_rules/{dnat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNatGatewayDnatRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -227,9 +272,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -238,20 +283,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nat_gateways/{nat_gateway_id}/dnat_rules/{dnat_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNatGatewayDnatRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_private_dnat(self, request):
         """删除DNAT规则
@@ -264,9 +305,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeletePrivateDnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeletePrivateDnatResponse`
         """
-        return self._delete_private_dnat_with_http_info(request)
+        http_info = self._delete_private_dnat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_private_dnat_with_http_info(self, request):
+    def delete_private_dnat_invoker(self, request):
+        http_info = self._delete_private_dnat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_private_dnat_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/private-nat/dnat-rules/{dnat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateDnatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -283,9 +337,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -294,20 +348,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/dnat-rules/{dnat_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePrivateDnatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nat_gateway_dnat_rules(self, request):
         """查询DNAT规则列表
@@ -320,9 +370,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewayDnatRulesResponse`
         """
-        return self._list_nat_gateway_dnat_rules_with_http_info(request)
+        http_info = self._list_nat_gateway_dnat_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nat_gateway_dnat_rules_with_http_info(self, request):
+    def list_nat_gateway_dnat_rules_invoker(self, request):
+        http_info = self._list_nat_gateway_dnat_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_nat_gateway_dnat_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/dnat_rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNatGatewayDnatRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -368,9 +431,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -379,20 +442,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/dnat_rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNatGatewayDnatRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_private_dnats(self, request):
         """查询DNAT规则列表
@@ -405,9 +464,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateDnatsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateDnatsResponse`
         """
-        return self._list_private_dnats_with_http_info(request)
+        http_info = self._list_private_dnats_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_private_dnats_with_http_info(self, request):
+    def list_private_dnats_invoker(self, request):
+        http_info = self._list_private_dnats_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_dnats_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/dnat-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateDnatsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -455,9 +527,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -466,20 +538,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/dnat-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivateDnatsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nat_gateway_dnat_rule(self, request):
         """查询指定的DNAT规则详情
@@ -492,9 +560,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayDnatRuleResponse`
         """
-        return self._show_nat_gateway_dnat_rule_with_http_info(request)
+        http_info = self._show_nat_gateway_dnat_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nat_gateway_dnat_rule_with_http_info(self, request):
+    def show_nat_gateway_dnat_rule_invoker(self, request):
+        http_info = self._show_nat_gateway_dnat_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_nat_gateway_dnat_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/dnat_rules/{dnat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNatGatewayDnatRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -511,9 +592,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -522,20 +603,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/dnat_rules/{dnat_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNatGatewayDnatRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_private_dnat(self, request):
         """查询指定的DNAT规则详情
@@ -548,9 +625,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowPrivateDnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowPrivateDnatResponse`
         """
-        return self._show_private_dnat_with_http_info(request)
+        http_info = self._show_private_dnat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_private_dnat_with_http_info(self, request):
+    def show_private_dnat_invoker(self, request):
+        http_info = self._show_private_dnat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_dnat_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/dnat-rules/{dnat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateDnatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -567,9 +657,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -578,20 +668,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/dnat-rules/{dnat_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivateDnatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_nat_gateway_dnat_rule(self, request):
         """更新DNAT规则
@@ -604,9 +690,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayDnatRuleResponse`
         """
-        return self._update_nat_gateway_dnat_rule_with_http_info(request)
+        http_info = self._update_nat_gateway_dnat_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_nat_gateway_dnat_rule_with_http_info(self, request):
+    def update_nat_gateway_dnat_rule_invoker(self, request):
+        http_info = self._update_nat_gateway_dnat_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_nat_gateway_dnat_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/dnat_rules/{dnat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNatGatewayDnatRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -623,11 +722,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -636,20 +735,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/dnat_rules/{dnat_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNatGatewayDnatRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_private_dnat(self, request):
         """更新DNAT规则
@@ -662,9 +757,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdatePrivateDnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateDnatResponse`
         """
-        return self._update_private_dnat_with_http_info(request)
+        http_info = self._update_private_dnat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_private_dnat_with_http_info(self, request):
+    def update_private_dnat_invoker(self, request):
+        http_info = self._update_private_dnat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_private_dnat_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/private-nat/dnat-rules/{dnat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivateDnatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -681,11 +789,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -694,20 +802,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/dnat-rules/{dnat_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePrivateDnatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_delete_transit_ip_tags(self, request):
         """批量添加删除中转IP标签
@@ -722,9 +826,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.BatchCreateDeleteTransitIpTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateDeleteTransitIpTagsResponse`
         """
-        return self._batch_create_delete_transit_ip_tags_with_http_info(request)
+        http_info = self._batch_create_delete_transit_ip_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_delete_transit_ip_tags_with_http_info(self, request):
+    def batch_create_delete_transit_ip_tags_invoker(self, request):
+        http_info = self._batch_create_delete_transit_ip_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_delete_transit_ip_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/transit-ips/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateDeleteTransitIpTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -741,11 +858,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -754,20 +871,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/transit-ips/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateDeleteTransitIpTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_transit_ip_tag(self, request):
         """添加中转IP标签
@@ -782,9 +895,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateTransitIpTagRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateTransitIpTagResponse`
         """
-        return self._create_transit_ip_tag_with_http_info(request)
+        http_info = self._create_transit_ip_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_transit_ip_tag_with_http_info(self, request):
+    def create_transit_ip_tag_invoker(self, request):
+        http_info = self._create_transit_ip_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_transit_ip_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/transit-ips/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTransitIpTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -801,11 +927,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -814,20 +940,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/transit-ips/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTransitIpTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_transit_ip_tag(self, request):
         """删除中转IP标签
@@ -841,9 +963,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteTransitIpTagRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteTransitIpTagResponse`
         """
-        return self._delete_transit_ip_tag_with_http_info(request)
+        http_info = self._delete_transit_ip_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_transit_ip_tag_with_http_info(self, request):
+    def delete_transit_ip_tag_invoker(self, request):
+        http_info = self._delete_transit_ip_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_transit_ip_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/transit-ips/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTransitIpTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -862,9 +997,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -873,20 +1008,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/transit-ips/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTransitIpTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_transit_ip_tags(self, request):
         """查询中转IP项目标签
@@ -900,9 +1031,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListTransitIpTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListTransitIpTagsResponse`
         """
-        return self._list_transit_ip_tags_with_http_info(request)
+        http_info = self._list_transit_ip_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_transit_ip_tags_with_http_info(self, request):
+    def list_transit_ip_tags_invoker(self, request):
+        http_info = self._list_transit_ip_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_transit_ip_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/transit-ips/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransitIpTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -917,9 +1061,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -928,20 +1072,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/transit-ips/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTransitIpTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_transit_ips_by_tags(self, request):
         """查询中转IP实例
@@ -955,9 +1095,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListTransitIpsByTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListTransitIpsByTagsResponse`
         """
-        return self._list_transit_ips_by_tags_with_http_info(request)
+        http_info = self._list_transit_ips_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_transit_ips_by_tags_with_http_info(self, request):
+    def list_transit_ips_by_tags_invoker(self, request):
+        http_info = self._list_transit_ips_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_transit_ips_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/transit-ips/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransitIpsByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -972,11 +1125,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -985,20 +1138,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/transit-ips/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTransitIpsByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_transit_ip_tags(self, request):
         """查询中转IP标签
@@ -1012,9 +1161,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowTransitIpTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowTransitIpTagsResponse`
         """
-        return self._show_transit_ip_tags_with_http_info(request)
+        http_info = self._show_transit_ip_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_transit_ip_tags_with_http_info(self, request):
+    def show_transit_ip_tags_invoker(self, request):
+        http_info = self._show_transit_ip_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_transit_ip_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/transit-ips/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTransitIpTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1031,9 +1193,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1042,20 +1204,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/transit-ips/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTransitIpTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_delete_private_nat_tags(self, request):
         """批量添加删除私网NAT网关标签
@@ -1070,9 +1228,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.BatchCreateDeletePrivateNatTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.BatchCreateDeletePrivateNatTagsResponse`
         """
-        return self._batch_create_delete_private_nat_tags_with_http_info(request)
+        http_info = self._batch_create_delete_private_nat_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_delete_private_nat_tags_with_http_info(self, request):
+    def batch_create_delete_private_nat_tags_invoker(self, request):
+        http_info = self._batch_create_delete_private_nat_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_delete_private_nat_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/private-nat-gateways/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateDeletePrivateNatTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1089,11 +1260,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1102,20 +1273,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat-gateways/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateDeletePrivateNatTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_nat_gateway(self, request):
         """创建公网NAT网关
@@ -1128,9 +1295,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewayResponse`
         """
-        return self._create_nat_gateway_with_http_info(request)
+        http_info = self._create_nat_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_nat_gateway_with_http_info(self, request):
+    def create_nat_gateway_invoker(self, request):
+        http_info = self._create_nat_gateway_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_nat_gateway_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/nat_gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNatGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1145,11 +1325,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1158,20 +1338,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nat_gateways',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNatGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_private_nat(self, request):
         """创建私网NAT网关
@@ -1184,9 +1360,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreatePrivateNatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateNatResponse`
         """
-        return self._create_private_nat_with_http_info(request)
+        http_info = self._create_private_nat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_private_nat_with_http_info(self, request):
+    def create_private_nat_invoker(self, request):
+        http_info = self._create_private_nat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_private_nat_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/private-nat/gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateNatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1201,11 +1390,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1214,20 +1403,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/gateways',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivateNatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_private_nat_tag(self, request):
         """添加私网NAT网关标签
@@ -1242,9 +1427,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreatePrivateNatTagRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateNatTagResponse`
         """
-        return self._create_private_nat_tag_with_http_info(request)
+        http_info = self._create_private_nat_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_private_nat_tag_with_http_info(self, request):
+    def create_private_nat_tag_invoker(self, request):
+        http_info = self._create_private_nat_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_private_nat_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/private-nat-gateways/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateNatTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1261,11 +1459,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1274,20 +1472,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat-gateways/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivateNatTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_nat_gateway(self, request):
         """删除公网NAT网关
@@ -1300,9 +1494,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewayResponse`
         """
-        return self._delete_nat_gateway_with_http_info(request)
+        http_info = self._delete_nat_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_nat_gateway_with_http_info(self, request):
+    def delete_nat_gateway_invoker(self, request):
+        http_info = self._delete_nat_gateway_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_nat_gateway_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/nat_gateways/{nat_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNatGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1319,9 +1526,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1330,20 +1537,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nat_gateways/{nat_gateway_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNatGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_private_nat(self, request):
         """删除私网NAT网关
@@ -1356,9 +1559,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeletePrivateNatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeletePrivateNatResponse`
         """
-        return self._delete_private_nat_with_http_info(request)
+        http_info = self._delete_private_nat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_private_nat_with_http_info(self, request):
+    def delete_private_nat_invoker(self, request):
+        http_info = self._delete_private_nat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_private_nat_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/private-nat/gateways/{gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateNatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1375,9 +1591,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1386,20 +1602,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/gateways/{gateway_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePrivateNatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_private_nat_tag(self, request):
         """删除私网NAT网关标签
@@ -1413,9 +1625,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeletePrivateNatTagRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeletePrivateNatTagResponse`
         """
-        return self._delete_private_nat_tag_with_http_info(request)
+        http_info = self._delete_private_nat_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_private_nat_tag_with_http_info(self, request):
+    def delete_private_nat_tag_invoker(self, request):
+        http_info = self._delete_private_nat_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_private_nat_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/private-nat-gateways/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateNatTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1434,9 +1659,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1445,20 +1670,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat-gateways/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePrivateNatTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nat_gateways(self, request):
         """查询公网NAT网关列表
@@ -1471,9 +1692,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaysRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaysResponse`
         """
-        return self._list_nat_gateways_with_http_info(request)
+        http_info = self._list_nat_gateways_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nat_gateways_with_http_info(self, request):
+    def list_nat_gateways_invoker(self, request):
+        http_info = self._list_nat_gateways_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_nat_gateways_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/nat_gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNatGatewaysResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1512,9 +1746,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1523,20 +1757,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nat_gateways',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNatGatewaysResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_private_nat_tags(self, request):
         """查询私网NAT网关项目标签
@@ -1550,9 +1780,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateNatTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateNatTagsResponse`
         """
-        return self._list_private_nat_tags_with_http_info(request)
+        http_info = self._list_private_nat_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_private_nat_tags_with_http_info(self, request):
+    def list_private_nat_tags_invoker(self, request):
+        http_info = self._list_private_nat_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_nat_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat-gateways/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateNatTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1567,9 +1810,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1578,20 +1821,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat-gateways/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivateNatTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_private_nats(self, request):
         """查询私网NAT网关列表
@@ -1604,9 +1843,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateNatsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateNatsResponse`
         """
-        return self._list_private_nats_with_http_info(request)
+        http_info = self._list_private_nats_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_private_nats_with_http_info(self, request):
+    def list_private_nats_invoker(self, request):
+        http_info = self._list_private_nats_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_nats_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateNatsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1651,9 +1903,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1662,20 +1914,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/gateways',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivateNatsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_private_nats_by_tags(self, request):
         """查询私网NAT网关实例
@@ -1689,9 +1937,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateNatsByTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateNatsByTagsResponse`
         """
-        return self._list_private_nats_by_tags_with_http_info(request)
+        http_info = self._list_private_nats_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_private_nats_by_tags_with_http_info(self, request):
+    def list_private_nats_by_tags_invoker(self, request):
+        http_info = self._list_private_nats_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_nats_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/private-nat-gateways/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateNatsByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1706,11 +1967,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1719,20 +1980,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat-gateways/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivateNatsByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nat_gateway(self, request):
         """查询指定的公网NAT网关详情
@@ -1745,9 +2002,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewayResponse`
         """
-        return self._show_nat_gateway_with_http_info(request)
+        http_info = self._show_nat_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nat_gateway_with_http_info(self, request):
+    def show_nat_gateway_invoker(self, request):
+        http_info = self._show_nat_gateway_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_nat_gateway_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/nat_gateways/{nat_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNatGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1764,9 +2034,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1775,20 +2045,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nat_gateways/{nat_gateway_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNatGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_private_nat(self, request):
         """查询指定的私网NAT网关详情
@@ -1801,9 +2067,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowPrivateNatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowPrivateNatResponse`
         """
-        return self._show_private_nat_with_http_info(request)
+        http_info = self._show_private_nat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_private_nat_with_http_info(self, request):
+    def show_private_nat_invoker(self, request):
+        http_info = self._show_private_nat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_nat_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/gateways/{gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateNatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1820,9 +2099,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1831,20 +2110,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/gateways/{gateway_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivateNatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_private_nat_tags(self, request):
         """查询私网NAT网关标签
@@ -1858,9 +2133,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowPrivateNatTagsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowPrivateNatTagsResponse`
         """
-        return self._show_private_nat_tags_with_http_info(request)
+        http_info = self._show_private_nat_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_private_nat_tags_with_http_info(self, request):
+    def show_private_nat_tags_invoker(self, request):
+        http_info = self._show_private_nat_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_nat_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat-gateways/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateNatTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1877,9 +2165,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1888,20 +2176,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat-gateways/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivateNatTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_nat_gateway(self, request):
         """更新公网NAT网关
@@ -1914,9 +2198,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewayRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewayResponse`
         """
-        return self._update_nat_gateway_with_http_info(request)
+        http_info = self._update_nat_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_nat_gateway_with_http_info(self, request):
+    def update_nat_gateway_invoker(self, request):
+        http_info = self._update_nat_gateway_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_nat_gateway_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/nat_gateways/{nat_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNatGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1933,11 +2230,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1946,20 +2243,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nat_gateways/{nat_gateway_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNatGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_private_nat(self, request):
         """更新私网NAT网关
@@ -1972,9 +2265,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdatePrivateNatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateNatResponse`
         """
-        return self._update_private_nat_with_http_info(request)
+        http_info = self._update_private_nat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_private_nat_with_http_info(self, request):
+    def update_private_nat_invoker(self, request):
+        http_info = self._update_private_nat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_private_nat_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/private-nat/gateways/{gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivateNatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1991,11 +2297,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2004,20 +2310,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/gateways/{gateway_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePrivateNatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_transit_ip(self, request):
         """创建中转IP
@@ -2030,9 +2332,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateTransitIpRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateTransitIpResponse`
         """
-        return self._create_transit_ip_with_http_info(request)
+        http_info = self._create_transit_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_transit_ip_with_http_info(self, request):
+    def create_transit_ip_invoker(self, request):
+        http_info = self._create_transit_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_transit_ip_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/private-nat/transit-ips",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTransitIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2047,11 +2362,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2060,20 +2375,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/transit-ips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTransitIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_transit_ip(self, request):
         """删除中转IP
@@ -2086,9 +2397,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteTransitIpRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteTransitIpResponse`
         """
-        return self._delete_transit_ip_with_http_info(request)
+        http_info = self._delete_transit_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_transit_ip_with_http_info(self, request):
+    def delete_transit_ip_invoker(self, request):
+        http_info = self._delete_transit_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_transit_ip_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/private-nat/transit-ips/{transit_ip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTransitIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2105,9 +2429,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2116,20 +2440,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/transit-ips/{transit_ip_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTransitIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_transit_ips(self, request):
         """查询中转IP列表
@@ -2142,9 +2462,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListTransitIpsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListTransitIpsResponse`
         """
-        return self._list_transit_ips_with_http_info(request)
+        http_info = self._list_transit_ips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_transit_ips_with_http_info(self, request):
+    def list_transit_ips_invoker(self, request):
+        http_info = self._list_transit_ips_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_transit_ips_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/transit-ips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTransitIpsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2183,9 +2516,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2194,20 +2527,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/transit-ips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTransitIpsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_transit_ip(self, request):
         """查询指定的中转IP详情
@@ -2220,9 +2549,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowTransitIpRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowTransitIpResponse`
         """
-        return self._show_transit_ip_with_http_info(request)
+        http_info = self._show_transit_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_transit_ip_with_http_info(self, request):
+    def show_transit_ip_invoker(self, request):
+        http_info = self._show_transit_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_transit_ip_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/transit-ips/{transit_ip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTransitIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2239,9 +2581,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2250,20 +2592,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/transit-ips/{transit_ip_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTransitIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_nat_gateway_snat_rule(self, request):
         """创建SNAT规则
@@ -2276,9 +2614,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreateNatGatewaySnatRuleResponse`
         """
-        return self._create_nat_gateway_snat_rule_with_http_info(request)
+        http_info = self._create_nat_gateway_snat_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_nat_gateway_snat_rule_with_http_info(self, request):
+    def create_nat_gateway_snat_rule_invoker(self, request):
+        http_info = self._create_nat_gateway_snat_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_nat_gateway_snat_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/snat_rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNatGatewaySnatRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2293,11 +2644,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2306,20 +2657,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/snat_rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNatGatewaySnatRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_private_snat(self, request):
         """创建SNAT规则
@@ -2332,9 +2679,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.CreatePrivateSnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.CreatePrivateSnatResponse`
         """
-        return self._create_private_snat_with_http_info(request)
+        http_info = self._create_private_snat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_private_snat_with_http_info(self, request):
+    def create_private_snat_invoker(self, request):
+        http_info = self._create_private_snat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_private_snat_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/private-nat/snat-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateSnatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2349,11 +2709,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2362,20 +2722,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/snat-rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivateSnatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_nat_gateway_snat_rule(self, request):
         """删除SNAT规则
@@ -2388,9 +2744,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeleteNatGatewaySnatRuleResponse`
         """
-        return self._delete_nat_gateway_snat_rule_with_http_info(request)
+        http_info = self._delete_nat_gateway_snat_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_nat_gateway_snat_rule_with_http_info(self, request):
+    def delete_nat_gateway_snat_rule_invoker(self, request):
+        http_info = self._delete_nat_gateway_snat_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_nat_gateway_snat_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/nat_gateways/{nat_gateway_id}/snat_rules/{snat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNatGatewaySnatRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2409,9 +2778,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2420,20 +2789,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/nat_gateways/{nat_gateway_id}/snat_rules/{snat_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNatGatewaySnatRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_private_snat(self, request):
         """删除SNAT规则
@@ -2446,9 +2811,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.DeletePrivateSnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.DeletePrivateSnatResponse`
         """
-        return self._delete_private_snat_with_http_info(request)
+        http_info = self._delete_private_snat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_private_snat_with_http_info(self, request):
+    def delete_private_snat_invoker(self, request):
+        http_info = self._delete_private_snat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_private_snat_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/private-nat/snat-rules/{snat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateSnatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2465,9 +2843,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2476,20 +2854,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/snat-rules/{snat_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePrivateSnatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_nat_gateway_snat_rules(self, request):
         """查询SNAT规则列表
@@ -2502,9 +2876,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListNatGatewaySnatRulesResponse`
         """
-        return self._list_nat_gateway_snat_rules_with_http_info(request)
+        http_info = self._list_nat_gateway_snat_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_nat_gateway_snat_rules_with_http_info(self, request):
+    def list_nat_gateway_snat_rules_invoker(self, request):
+        http_info = self._list_nat_gateway_snat_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_nat_gateway_snat_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/snat_rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNatGatewaySnatRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2544,9 +2931,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2555,20 +2942,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/snat_rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNatGatewaySnatRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_private_snats(self, request):
         """查询SNAT规则列表
@@ -2581,9 +2964,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ListPrivateSnatsRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ListPrivateSnatsResponse`
         """
-        return self._list_private_snats_with_http_info(request)
+        http_info = self._list_private_snats_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_private_snats_with_http_info(self, request):
+    def list_private_snats_invoker(self, request):
+        http_info = self._list_private_snats_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_snats_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/snat-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateSnatsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2628,9 +3024,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2639,20 +3035,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/snat-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivateSnatsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nat_gateway_snat_rule(self, request):
         """查询指定的SNAT规则详情
@@ -2665,9 +3057,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowNatGatewaySnatRuleResponse`
         """
-        return self._show_nat_gateway_snat_rule_with_http_info(request)
+        http_info = self._show_nat_gateway_snat_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nat_gateway_snat_rule_with_http_info(self, request):
+    def show_nat_gateway_snat_rule_invoker(self, request):
+        http_info = self._show_nat_gateway_snat_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_nat_gateway_snat_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/snat_rules/{snat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNatGatewaySnatRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2684,9 +3089,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2695,20 +3100,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/snat_rules/{snat_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNatGatewaySnatRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_private_snat(self, request):
         """查询指定的SNAT规则详情
@@ -2721,9 +3122,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.ShowPrivateSnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.ShowPrivateSnatResponse`
         """
-        return self._show_private_snat_with_http_info(request)
+        http_info = self._show_private_snat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_private_snat_with_http_info(self, request):
+    def show_private_snat_invoker(self, request):
+        http_info = self._show_private_snat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_snat_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/private-nat/snat-rules/{snat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateSnatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2740,9 +3154,9 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2751,20 +3165,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/snat-rules/{snat_rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivateSnatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_nat_gateway_snat_rule(self, request):
         """更新SNAT规则
@@ -2777,9 +3187,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdateNatGatewaySnatRuleResponse`
         """
-        return self._update_nat_gateway_snat_rule_with_http_info(request)
+        http_info = self._update_nat_gateway_snat_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_nat_gateway_snat_rule_with_http_info(self, request):
+    def update_nat_gateway_snat_rule_invoker(self, request):
+        http_info = self._update_nat_gateway_snat_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_nat_gateway_snat_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/snat_rules/{snat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNatGatewaySnatRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2796,11 +3219,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2809,20 +3232,16 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/snat_rules/{snat_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNatGatewaySnatRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_private_snat(self, request):
         """更新SNAT规则
@@ -2835,9 +3254,22 @@ class NatClient(Client):
         :type request: :class:`huaweicloudsdknat.v2.UpdatePrivateSnatRequest`
         :rtype: :class:`huaweicloudsdknat.v2.UpdatePrivateSnatResponse`
         """
-        return self._update_private_snat_with_http_info(request)
+        http_info = self._update_private_snat_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_private_snat_with_http_info(self, request):
+    def update_private_snat_invoker(self, request):
+        http_info = self._update_private_snat_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_private_snat_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/private-nat/snat-rules/{snat_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivateSnatResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2854,11 +3286,11 @@ class NatClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2867,20 +3299,25 @@ class NatClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/private-nat/snat-rules/{snat_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePrivateSnatResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

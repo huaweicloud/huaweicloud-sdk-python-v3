@@ -31,7 +31,7 @@ class ShowLastHistoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: CodeArts项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
+        :param project_id: CodeArts项目ID，32位数字、小写字母组合。
         :type project_id: str
         :param repository_name: 代码仓库名，不支持中文
         :type repository_name: str
@@ -50,7 +50,7 @@ class ShowLastHistoryRequest:
     def project_id(self):
         """Gets the project_id of this ShowLastHistoryRequest.
 
-        CodeArts项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
+        CodeArts项目ID，32位数字、小写字母组合。
 
         :return: The project_id of this ShowLastHistoryRequest.
         :rtype: str
@@ -61,7 +61,7 @@ class ShowLastHistoryRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowLastHistoryRequest.
 
-        CodeArts项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
+        CodeArts项目ID，32位数字、小写字母组合。
 
         :param project_id: The project_id of this ShowLastHistoryRequest.
         :type project_id: str

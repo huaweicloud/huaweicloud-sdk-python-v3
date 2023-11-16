@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkvcm'")
 
 
 class VcmClient(Client):
@@ -38,9 +43,22 @@ class VcmClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.CheckAudioJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.CheckAudioJobResponse`
         """
-        return self._check_audio_job_with_http_info(request)
+        http_info = self._check_audio_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_audio_job_with_http_info(self, request):
+    def check_audio_job_invoker(self, request):
+        http_info = self._check_audio_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_audio_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/services/audio-moderation/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckAudioJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,9 +75,9 @@ class VcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class VcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/services/audio-moderation/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckAudioJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_video_job(self, request):
         """查询单个作业
@@ -94,9 +108,22 @@ class VcmClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.CheckVideoJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.CheckVideoJobResponse`
         """
-        return self._check_video_job_with_http_info(request)
+        http_info = self._check_video_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_video_job_with_http_info(self, request):
+    def check_video_job_invoker(self, request):
+        http_info = self._check_video_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_video_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/services/video-moderation/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckVideoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,9 +140,9 @@ class VcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class VcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/services/video-moderation/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckVideoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_audio_job(self, request):
         """创建作业
@@ -150,9 +173,22 @@ class VcmClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.CreateAudioJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateAudioJobResponse`
         """
-        return self._create_audio_job_with_http_info(request)
+        http_info = self._create_audio_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_audio_job_with_http_info(self, request):
+    def create_audio_job_invoker(self, request):
+        http_info = self._create_audio_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_audio_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/services/audio-moderation/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAudioJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,11 +203,11 @@ class VcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class VcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/services/audio-moderation/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAudioJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_video_job(self, request):
         """创建作业
@@ -206,9 +238,22 @@ class VcmClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.CreateVideoJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.CreateVideoJobResponse`
         """
-        return self._create_video_job_with_http_info(request)
+        http_info = self._create_video_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_video_job_with_http_info(self, request):
+    def create_video_job_invoker(self, request):
+        http_info = self._create_video_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_video_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/services/video-moderation/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVideoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -223,11 +268,11 @@ class VcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +281,16 @@ class VcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/services/video-moderation/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVideoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_demo_info(self, request):
         """删除语音作业
@@ -262,9 +303,22 @@ class VcmClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.DeleteDemoInfoRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.DeleteDemoInfoResponse`
         """
-        return self._delete_demo_info_with_http_info(request)
+        http_info = self._delete_demo_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_demo_info_with_http_info(self, request):
+    def delete_demo_info_invoker(self, request):
+        http_info = self._delete_demo_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_demo_info_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/services/audio-moderation/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDemoInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -281,9 +335,9 @@ class VcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -292,20 +346,16 @@ class VcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/services/audio-moderation/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDemoInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_video_job(self, request):
         """删除作业
@@ -318,9 +368,22 @@ class VcmClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.DeleteVideoJobRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.DeleteVideoJobResponse`
         """
-        return self._delete_video_job_with_http_info(request)
+        http_info = self._delete_video_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_video_job_with_http_info(self, request):
+    def delete_video_job_invoker(self, request):
+        http_info = self._delete_video_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_video_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/services/video-moderation/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVideoJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -337,9 +400,9 @@ class VcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -348,20 +411,16 @@ class VcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/services/video-moderation/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVideoJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audio_jobs(self, request):
         """查询作业列表
@@ -374,9 +433,22 @@ class VcmClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.ListAudioJobsRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.ListAudioJobsResponse`
         """
-        return self._list_audio_jobs_with_http_info(request)
+        http_info = self._list_audio_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audio_jobs_with_http_info(self, request):
+    def list_audio_jobs_invoker(self, request):
+        http_info = self._list_audio_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audio_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/services/audio-moderation/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAudioJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -391,9 +463,9 @@ class VcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -402,20 +474,16 @@ class VcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/services/audio-moderation/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAudioJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_video_jobs(self, request):
         """查询作业列表
@@ -428,9 +496,22 @@ class VcmClient(Client):
         :type request: :class:`huaweicloudsdkvcm.v2.ListVideoJobsRequest`
         :rtype: :class:`huaweicloudsdkvcm.v2.ListVideoJobsResponse`
         """
-        return self._list_video_jobs_with_http_info(request)
+        http_info = self._list_video_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_video_jobs_with_http_info(self, request):
+    def list_video_jobs_invoker(self, request):
+        http_info = self._list_video_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_video_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/services/video-moderation/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVideoJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -445,9 +526,9 @@ class VcmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -456,20 +537,25 @@ class VcmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/services/video-moderation/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVideoJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

@@ -59,7 +59,7 @@ class PrivateDnat:
         :type id: str
         :param project_id: 项目的ID。
         :type project_id: str
-        :param description: DNAT规则的描述。
+        :param description: DNAT规则的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         :param transit_ip_id: 中转IP的ID。
         :type transit_ip_id: str
@@ -180,7 +180,7 @@ class PrivateDnat:
     def description(self):
         """Gets the description of this PrivateDnat.
 
-        DNAT规则的描述。
+        DNAT规则的描述。长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this PrivateDnat.
         :rtype: str
@@ -191,7 +191,7 @@ class PrivateDnat:
     def description(self, description):
         """Sets the description of this PrivateDnat.
 
-        DNAT规则的描述。
+        DNAT规则的描述。长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this PrivateDnat.
         :type description: str

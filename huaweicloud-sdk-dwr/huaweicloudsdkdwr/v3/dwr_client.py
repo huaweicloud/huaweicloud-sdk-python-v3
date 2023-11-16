@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdwr'")
 
 
 class DwrClient(Client):
@@ -38,9 +43,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.AcceptServiceContractRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.AcceptServiceContractResponse`
         """
-        return self._accept_service_contract_with_http_info(request)
+        http_info = self._accept_service_contract_http_info(request)
+        return self._call_api(**http_info)
 
-    def _accept_service_contract_with_http_info(self, request):
+    def accept_service_contract_invoker(self, request):
+        http_info = self._accept_service_contract_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _accept_service_contract_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/workflow-agreements",
+            "request_type": request.__class__.__name__,
+            "response_type": "AcceptServiceContractResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,9 +75,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Content-Length", ]
 
@@ -68,20 +86,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflow-agreements',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AcceptServiceContractResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def async_invoke_api_start_workflow(self, request):
         """API异步启动工作流
@@ -94,9 +108,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.AsyncInvokeApiStartWorkflowRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.AsyncInvokeApiStartWorkflowResponse`
         """
-        return self._async_invoke_api_start_workflow_with_http_info(request)
+        http_info = self._async_invoke_api_start_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _async_invoke_api_start_workflow_with_http_info(self, request):
+    def async_invoke_api_start_workflow_invoker(self, request):
+        http_info = self._async_invoke_api_start_workflow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _async_invoke_api_start_workflow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/workflows/{graph_name}/execute",
+            "request_type": request.__class__.__name__,
+            "response_type": "AsyncInvokeApiStartWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +140,11 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -126,20 +153,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflows/{graph_name}/execute',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AsyncInvokeApiStartWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_workflow_authentication(self, request):
         """查询授权
@@ -152,9 +175,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.CheckWorkflowAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.CheckWorkflowAuthenticationResponse`
         """
-        return self._check_workflow_authentication_with_http_info(request)
+        http_info = self._check_workflow_authentication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_workflow_authentication_with_http_info(self, request):
+    def check_workflow_authentication_invoker(self, request):
+        http_info = self._check_workflow_authentication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_workflow_authentication_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/workflow-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckWorkflowAuthenticationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -169,9 +205,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -180,20 +216,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflow-authorization',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckWorkflowAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_my_action_template(self, request):
         """创建第三方算子模板
@@ -206,9 +238,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.CreateMyActionTemplateRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.CreateMyActionTemplateResponse`
         """
-        return self._create_my_action_template_with_http_info(request)
+        http_info = self._create_my_action_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_my_action_template_with_http_info(self, request):
+    def create_my_action_template_invoker(self, request):
+        http_info = self._create_my_action_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_my_action_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/myactiontemplates/{template_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMyActionTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -225,11 +270,11 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -238,20 +283,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/myactiontemplates/{template_name}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMyActionTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_workflow_authentication(self, request):
         """开通授权
@@ -264,9 +305,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.CreateWorkflowAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.CreateWorkflowAuthenticationResponse`
         """
-        return self._create_workflow_authentication_with_http_info(request)
+        http_info = self._create_workflow_authentication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_workflow_authentication_with_http_info(self, request):
+    def create_workflow_authentication_invoker(self, request):
+        http_info = self._create_workflow_authentication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_workflow_authentication_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/workflow-authorization",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWorkflowAuthenticationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -281,9 +335,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Content-Length", ]
 
@@ -292,20 +346,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflow-authorization',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWorkflowAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_my_action_template(self, request):
         """删除第三方算子模板
@@ -318,9 +368,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.DeleteMyActionTemplateRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.DeleteMyActionTemplateResponse`
         """
-        return self._delete_my_action_template_with_http_info(request)
+        http_info = self._delete_my_action_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_my_action_template_with_http_info(self, request):
+    def delete_my_action_template_invoker(self, request):
+        http_info = self._delete_my_action_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_my_action_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/myactiontemplates/{template_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMyActionTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -337,9 +400,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Content-Length", ]
 
@@ -348,20 +411,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/myactiontemplates/{template_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMyActionTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_my_action_template(self, request):
         """查询第三方算子列表
@@ -374,9 +433,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ListMyActionTemplateRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ListMyActionTemplateResponse`
         """
-        return self._list_my_action_template_with_http_info(request)
+        http_info = self._list_my_action_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_my_action_template_with_http_info(self, request):
+    def list_my_action_template_invoker(self, request):
+        http_info = self._list_my_action_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_my_action_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/myactiontemplates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMyActionTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -401,9 +473,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -412,20 +484,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/myactiontemplates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMyActionTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_system_templates(self, request):
         """查询华为云内置算子列表
@@ -438,9 +506,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ListSystemTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ListSystemTemplatesResponse`
         """
-        return self._list_system_templates_with_http_info(request)
+        http_info = self._list_system_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_system_templates_with_http_info(self, request):
+    def list_system_templates_invoker(self, request):
+        http_info = self._list_system_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_system_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/actiontemplates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSystemTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -463,9 +544,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -474,20 +555,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/actiontemplates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSystemTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workflow_instance(self, request):
         """本接口用于查询用户工作流的实例列表
@@ -500,9 +577,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ListWorkflowInstanceRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ListWorkflowInstanceResponse`
         """
-        return self._list_workflow_instance_with_http_info(request)
+        http_info = self._list_workflow_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workflow_instance_with_http_info(self, request):
+    def list_workflow_instance_invoker(self, request):
+        http_info = self._list_workflow_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workflow_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/workflowexecutions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkflowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -529,9 +619,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Request-Id", "Content-Length", "Date", "Content-Type", ]
 
@@ -540,20 +630,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflowexecutions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkflowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_workflow_execution(self, request):
         """恢复一个执行失败状态的工作流实例
@@ -566,9 +652,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.RestoreWorkflowExecutionRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.RestoreWorkflowExecutionResponse`
         """
-        return self._restore_workflow_execution_with_http_info(request)
+        http_info = self._restore_workflow_execution_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_workflow_execution_with_http_info(self, request):
+    def restore_workflow_execution_invoker(self, request):
+        http_info = self._restore_workflow_execution_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_workflow_execution_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/workflows/{graph_name}/workflowexecution/{execution_name}/retry",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreWorkflowExecutionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -587,9 +686,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -598,20 +697,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflows/{graph_name}/workflowexecution/{execution_name}/retry',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreWorkflowExecutionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_public_action_list(self, request):
         """查询已发布算子列表
@@ -624,9 +719,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowPublicActionListRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowPublicActionListResponse`
         """
-        return self._show_public_action_list_with_http_info(request)
+        http_info = self._show_public_action_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_public_action_list_with_http_info(self, request):
+    def show_public_action_list_invoker(self, request):
+        http_info = self._show_public_action_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_public_action_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/publicactiontemplates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicActionListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -649,9 +757,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -660,20 +768,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/publicactiontemplates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicActionListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_public_template_info(self, request):
         """查询已发布算子模板详情
@@ -686,9 +790,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowPublicTemplateInfoRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowPublicTemplateInfoResponse`
         """
-        return self._show_public_template_info_with_http_info(request)
+        http_info = self._show_public_template_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_public_template_info_with_http_info(self, request):
+    def show_public_template_info_invoker(self, request):
+        http_info = self._show_public_template_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_public_template_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/publicactiontemplate/{template_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicTemplateInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -705,9 +822,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -716,20 +833,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/publicactiontemplate/{template_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicTemplateInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_service_contract(self, request):
         """查询服务协议
@@ -742,9 +855,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowServiceContractRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowServiceContractResponse`
         """
-        return self._show_service_contract_with_http_info(request)
+        http_info = self._show_service_contract_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_service_contract_with_http_info(self, request):
+    def show_service_contract_invoker(self, request):
+        http_info = self._show_service_contract_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_service_contract_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/workflow-agreements",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServiceContractResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -761,9 +887,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -772,20 +898,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflow-agreements',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServiceContractResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_system_template_detail(self, request):
         """查询华为云内置算子模板信息
@@ -798,9 +920,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowSystemTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowSystemTemplateDetailResponse`
         """
-        return self._show_system_template_detail_with_http_info(request)
+        http_info = self._show_system_template_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_system_template_detail_with_http_info(self, request):
+    def show_system_template_detail_invoker(self, request):
+        http_info = self._show_system_template_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_system_template_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/actiontemplate/{template_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSystemTemplateDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -817,9 +952,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -828,20 +963,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/actiontemplate/{template_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSystemTemplateDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_third_template_info(self, request):
         """查询公共Action模板详情
@@ -854,9 +985,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowThirdTemplateInfoRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowThirdTemplateInfoResponse`
         """
-        return self._show_third_template_info_with_http_info(request)
+        http_info = self._show_third_template_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_third_template_info_with_http_info(self, request):
+    def show_third_template_info_invoker(self, request):
+        http_info = self._show_third_template_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_third_template_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/myactiontemplate/{template_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowThirdTemplateInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -873,9 +1017,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -884,20 +1028,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/myactiontemplate/{template_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowThirdTemplateInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_workflow_instance(self, request):
         """本接口用于查询指定工作流实例详细
@@ -910,9 +1050,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowWorkflowInstanceRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowWorkflowInstanceResponse`
         """
-        return self._show_workflow_instance_with_http_info(request)
+        http_info = self._show_workflow_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_workflow_instance_with_http_info(self, request):
+    def show_workflow_instance_invoker(self, request):
+        http_info = self._show_workflow_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_workflow_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/workflows/{graph_name}/workflowexecution/{execution_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkflowInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -931,9 +1084,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -942,20 +1095,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflows/{graph_name}/workflowexecution/{execution_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkflowInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_my_action_template(self, request):
         """更新第三方算子模板
@@ -968,9 +1117,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.UpdateMyActionTemplateRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.UpdateMyActionTemplateResponse`
         """
-        return self._update_my_action_template_with_http_info(request)
+        http_info = self._update_my_action_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_my_action_template_with_http_info(self, request):
+    def update_my_action_template_invoker(self, request):
+        http_info = self._update_my_action_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_my_action_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/myactiontemplates/{template_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMyActionTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -987,11 +1149,11 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -1000,20 +1162,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/myactiontemplates/{template_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMyActionTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_my_action_template_to_deprecated(self, request):
         """禁用第三方算子模板
@@ -1026,9 +1184,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.UpdateMyActionTemplateToDeprecatedRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.UpdateMyActionTemplateToDeprecatedResponse`
         """
-        return self._update_my_action_template_to_deprecated_with_http_info(request)
+        http_info = self._update_my_action_template_to_deprecated_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_my_action_template_to_deprecated_with_http_info(self, request):
+    def update_my_action_template_to_deprecated_invoker(self, request):
+        http_info = self._update_my_action_template_to_deprecated_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_my_action_template_to_deprecated_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/myactiontemplates/{template_name}/forbid",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMyActionTemplateToDeprecatedResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1045,9 +1216,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Content-Length", ]
 
@@ -1056,20 +1227,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/myactiontemplates/{template_name}/forbid',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMyActionTemplateToDeprecatedResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_workflow(self, request):
         """创建工作流
@@ -1082,9 +1249,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.CreateWorkflowResponse`
         """
-        return self._create_workflow_with_http_info(request)
+        http_info = self._create_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_workflow_with_http_info(self, request):
+    def create_workflow_invoker(self, request):
+        http_info = self._create_workflow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_workflow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/workflows/{graph_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1101,11 +1281,11 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -1114,20 +1294,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflows/{graph_name}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_workflow(self, request):
         """删除工作流
@@ -1140,9 +1316,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.DeleteWorkflowRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.DeleteWorkflowResponse`
         """
-        return self._delete_workflow_with_http_info(request)
+        http_info = self._delete_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_workflow_with_http_info(self, request):
+    def delete_workflow_invoker(self, request):
+        http_info = self._delete_workflow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_workflow_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/workflows/{graph_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1159,9 +1348,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Content-Length", ]
 
@@ -1170,20 +1359,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflows/{graph_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workflows(self, request):
         """查询工作流列表
@@ -1196,9 +1381,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ListWorkflowsRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ListWorkflowsResponse`
         """
-        return self._list_workflows_with_http_info(request)
+        http_info = self._list_workflows_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workflows_with_http_info(self, request):
+    def list_workflows_invoker(self, request):
+        http_info = self._list_workflows_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_workflows_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/workflows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkflowsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1219,9 +1417,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -1230,20 +1428,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflows',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkflowsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_workflow_info(self, request):
         """查询工作流信息
@@ -1256,9 +1450,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.ShowWorkflowInfoRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.ShowWorkflowInfoResponse`
         """
-        return self._show_workflow_info_with_http_info(request)
+        http_info = self._show_workflow_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_workflow_info_with_http_info(self, request):
+    def show_workflow_info_invoker(self, request):
+        http_info = self._show_workflow_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_workflow_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/workflows/{graph_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkflowInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1275,9 +1482,9 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -1286,20 +1493,16 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflows/{graph_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkflowInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_workflow(self, request):
         """更新工作流
@@ -1312,9 +1515,22 @@ class DwrClient(Client):
         :type request: :class:`huaweicloudsdkdwr.v3.UpdateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkdwr.v3.UpdateWorkflowResponse`
         """
-        return self._update_workflow_with_http_info(request)
+        http_info = self._update_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_workflow_with_http_info(self, request):
+    def update_workflow_invoker(self, request):
+        http_info = self._update_workflow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_workflow_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/workflows/{graph_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1331,11 +1547,11 @@ class DwrClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", "Connection", "Content-Length", "Date", ]
 
@@ -1344,20 +1560,25 @@ class DwrClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/workflows/{graph_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

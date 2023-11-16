@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcc'")
 
 
 class CcAsyncClient(Client):
@@ -39,9 +44,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateAuthorisationRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateAuthorisationResponse`
         """
-        return self._create_authorisation_with_http_info(request)
+        http_info = self._create_authorisation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_authorisation_with_http_info(self, request):
+    def create_authorisation_async_invoker(self, request):
+        http_info = self._create_authorisation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_authorisation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/authorisations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthorisationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/authorisations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAuthorisationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_authorisation_async(self, request):
         """删除授权
@@ -96,9 +109,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteAuthorisationRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteAuthorisationResponse`
         """
-        return self._delete_authorisation_with_http_info(request)
+        http_info = self._delete_authorisation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_authorisation_with_http_info(self, request):
+    def delete_authorisation_async_invoker(self, request):
+        http_info = self._delete_authorisation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_authorisation_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/ccaas/authorisations/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAuthorisationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,9 +140,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/authorisations/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAuthorisationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_authorisations_async(self, request):
         """查询授权列表
@@ -154,9 +175,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListAuthorisationsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListAuthorisationsResponse`
         """
-        return self._list_authorisations_with_http_info(request)
+        http_info = self._list_authorisations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_authorisations_with_http_info(self, request):
+    def list_authorisations_async_invoker(self, request):
+        http_info = self._list_authorisations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_authorisations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/authorisations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuthorisationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -190,9 +223,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -201,20 +234,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/authorisations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuthorisationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_permissions_async(self, request):
         """查询权限列表
@@ -229,9 +258,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListPermissionsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListPermissionsResponse`
         """
-        return self._list_permissions_with_http_info(request)
+        http_info = self._list_permissions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_permissions_with_http_info(self, request):
+    def list_permissions_async_invoker(self, request):
+        http_info = self._list_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_permissions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermissionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -265,9 +306,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -276,20 +317,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/permissions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPermissionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_authorisation_async(self, request):
         """更新授权
@@ -303,9 +340,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateAuthorisationResponse`
         """
-        return self._update_authorisation_with_http_info(request)
+        http_info = self._update_authorisation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_authorisation_with_http_info(self, request):
+    def update_authorisation_async_invoker(self, request):
+        http_info = self._update_authorisation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_authorisation_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/ccaas/authorisations/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAuthorisationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -322,11 +371,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -335,20 +384,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/authorisations/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAuthorisationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_bandwidth_package_async(self, request):
         """将带宽包实例绑定到云连接实例
@@ -362,9 +407,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.AssociateBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.AssociateBandwidthPackageResponse`
         """
-        return self._associate_bandwidth_package_with_http_info(request)
+        http_info = self._associate_bandwidth_package_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_bandwidth_package_with_http_info(self, request):
+    def associate_bandwidth_package_async_invoker(self, request):
+        http_info = self._associate_bandwidth_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_bandwidth_package_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/{id}/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateBandwidthPackageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -381,11 +438,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -394,20 +451,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}/associate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_bandwidth_package_async(self, request):
         """创建带宽包实例
@@ -421,9 +474,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateBandwidthPackageResponse`
         """
-        return self._create_bandwidth_package_with_http_info(request)
+        http_info = self._create_bandwidth_package_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_bandwidth_package_with_http_info(self, request):
+    def create_bandwidth_package_async_invoker(self, request):
+        http_info = self._create_bandwidth_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_bandwidth_package_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBandwidthPackageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -438,11 +503,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -451,20 +516,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_bandwidth_package_async(self, request):
         """删除带宽包实例
@@ -478,9 +539,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteBandwidthPackageResponse`
         """
-        return self._delete_bandwidth_package_with_http_info(request)
+        http_info = self._delete_bandwidth_package_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_bandwidth_package_with_http_info(self, request):
+    def delete_bandwidth_package_async_invoker(self, request):
+        http_info = self._delete_bandwidth_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_bandwidth_package_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBandwidthPackageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -497,9 +570,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -508,20 +581,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_bandwidth_package_async(self, request):
         """解除带宽包实例与云连接实例的绑定
@@ -535,9 +604,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DisassociateBandwidthPackageResponse`
         """
-        return self._disassociate_bandwidth_package_with_http_info(request)
+        http_info = self._disassociate_bandwidth_package_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_bandwidth_package_with_http_info(self, request):
+    def disassociate_bandwidth_package_async_invoker(self, request):
+        http_info = self._disassociate_bandwidth_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_bandwidth_package_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/{id}/disassociate",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateBandwidthPackageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -554,11 +635,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -567,20 +648,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}/disassociate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bandwidth_package_tags_async(self, request):
         """查询带宽包的标签信息
@@ -594,9 +671,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListBandwidthPackageTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListBandwidthPackageTagsResponse`
         """
-        return self._list_bandwidth_package_tags_with_http_info(request)
+        http_info = self._list_bandwidth_package_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bandwidth_package_tags_with_http_info(self, request):
+    def list_bandwidth_package_tags_async_invoker(self, request):
+        http_info = self._list_bandwidth_package_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidth_package_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthPackageTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -611,9 +700,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -622,20 +711,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBandwidthPackageTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bandwidth_packages_async(self, request):
         """查询带宽包列表
@@ -650,9 +735,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListBandwidthPackagesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListBandwidthPackagesResponse`
         """
-        return self._list_bandwidth_packages_with_http_info(request)
+        http_info = self._list_bandwidth_packages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bandwidth_packages_with_http_info(self, request):
+    def list_bandwidth_packages_async_invoker(self, request):
+        http_info = self._list_bandwidth_packages_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidth_packages_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthPackagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -692,9 +789,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -703,20 +800,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBandwidthPackagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bandwidth_packages_by_tags_async(self, request):
         """通过标签过滤带宽包实例
@@ -730,9 +823,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListBandwidthPackagesByTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListBandwidthPackagesByTagsResponse`
         """
-        return self._list_bandwidth_packages_by_tags_with_http_info(request)
+        http_info = self._list_bandwidth_packages_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bandwidth_packages_by_tags_with_http_info(self, request):
+    def list_bandwidth_packages_by_tags_async_invoker(self, request):
+        http_info = self._list_bandwidth_packages_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidth_packages_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthPackagesByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -747,11 +852,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -760,20 +865,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBandwidthPackagesByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bandwidth_package_async(self, request):
         """查询带宽包实例
@@ -787,9 +888,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowBandwidthPackageResponse`
         """
-        return self._show_bandwidth_package_with_http_info(request)
+        http_info = self._show_bandwidth_package_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bandwidth_package_with_http_info(self, request):
+    def show_bandwidth_package_async_invoker(self, request):
+        http_info = self._show_bandwidth_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_bandwidth_package_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBandwidthPackageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -806,9 +919,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -817,20 +930,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def tag_bandwidth_package_async(self, request):
         """创建带宽包标签
@@ -844,9 +953,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.TagBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.TagBandwidthPackageResponse`
         """
-        return self._tag_bandwidth_package_with_http_info(request)
+        http_info = self._tag_bandwidth_package_http_info(request)
+        return self._call_api(**http_info)
 
-    def _tag_bandwidth_package_with_http_info(self, request):
+    def tag_bandwidth_package_async_invoker(self, request):
+        http_info = self._tag_bandwidth_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _tag_bandwidth_package_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/{id}/tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "TagBandwidthPackageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -863,11 +984,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -876,20 +997,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}/tag',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='TagBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def untag_bandwidth_package_async(self, request):
         """删除带宽包标签
@@ -903,9 +1020,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UntagBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UntagBandwidthPackageResponse`
         """
-        return self._untag_bandwidth_package_with_http_info(request)
+        http_info = self._untag_bandwidth_package_http_info(request)
+        return self._call_api(**http_info)
 
-    def _untag_bandwidth_package_with_http_info(self, request):
+    def untag_bandwidth_package_async_invoker(self, request):
+        http_info = self._untag_bandwidth_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _untag_bandwidth_package_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/{id}/untag",
+            "request_type": request.__class__.__name__,
+            "response_type": "UntagBandwidthPackageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -922,11 +1051,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -935,20 +1064,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}/untag',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UntagBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_bandwidth_package_async(self, request):
         """更新带宽包实例
@@ -962,9 +1087,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateBandwidthPackageResponse`
         """
-        return self._update_bandwidth_package_with_http_info(request)
+        http_info = self._update_bandwidth_package_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_bandwidth_package_with_http_info(self, request):
+    def update_bandwidth_package_async_invoker(self, request):
+        http_info = self._update_bandwidth_package_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_bandwidth_package_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/ccaas/bandwidth-packages/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBandwidthPackageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -981,11 +1118,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -994,20 +1131,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/bandwidth-packages/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBandwidthPackageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def apply_central_network_policy_async(self, request):
         """应用中心网络策略
@@ -1021,9 +1154,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ApplyCentralNetworkPolicyRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ApplyCentralNetworkPolicyResponse`
         """
-        return self._apply_central_network_policy_with_http_info(request)
+        http_info = self._apply_central_network_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_central_network_policy_with_http_info(self, request):
+    def apply_central_network_policy_async_invoker(self, request):
+        http_info = self._apply_central_network_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _apply_central_network_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/policies/{policy_id}/apply",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyCentralNetworkPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1042,9 +1187,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1053,20 +1198,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/policies/{policy_id}/apply',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyCentralNetworkPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_central_network_async(self, request):
         """创建中心网络
@@ -1080,9 +1221,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkResponse`
         """
-        return self._create_central_network_with_http_info(request)
+        http_info = self._create_central_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_central_network_with_http_info(self, request):
+    def create_central_network_async_invoker(self, request):
+        http_info = self._create_central_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_central_network_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCentralNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1097,11 +1250,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1110,20 +1263,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-networks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCentralNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_central_network_policy_async(self, request):
         """创建一个新版本的中心网络策略
@@ -1137,9 +1286,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkPolicyRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkPolicyResponse`
         """
-        return self._create_central_network_policy_with_http_info(request)
+        http_info = self._create_central_network_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_central_network_policy_with_http_info(self, request):
+    def create_central_network_policy_async_invoker(self, request):
+        http_info = self._create_central_network_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_central_network_policy_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCentralNetworkPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1156,11 +1317,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1169,20 +1330,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/policies',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCentralNetworkPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_central_network_async(self, request):
         """删除中心网络
@@ -1196,9 +1353,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteCentralNetworkRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteCentralNetworkResponse`
         """
-        return self._delete_central_network_with_http_info(request)
+        http_info = self._delete_central_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_central_network_with_http_info(self, request):
+    def delete_central_network_async_invoker(self, request):
+        http_info = self._delete_central_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_central_network_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks/{central_network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCentralNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1215,9 +1384,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1226,20 +1395,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-networks/{central_network_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCentralNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_central_network_policy_async(self, request):
         """删除中心网络策略版本
@@ -1253,9 +1418,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteCentralNetworkPolicyRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteCentralNetworkPolicyResponse`
         """
-        return self._delete_central_network_policy_with_http_info(request)
+        http_info = self._delete_central_network_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_central_network_policy_with_http_info(self, request):
+    def delete_central_network_policy_async_invoker(self, request):
+        http_info = self._delete_central_network_policy_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_central_network_policy_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/policies/{policy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCentralNetworkPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1274,9 +1451,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -1285,20 +1462,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/policies/{policy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCentralNetworkPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_network_policies_async(self, request):
         """查询所有版本的中心网络策略列表
@@ -1313,9 +1486,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkPoliciesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkPoliciesResponse`
         """
-        return self._list_central_network_policies_with_http_info(request)
+        http_info = self._list_central_network_policies_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_network_policies_with_http_info(self, request):
+    def list_central_network_policies_async_invoker(self, request):
+        http_info = self._list_central_network_policies_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_network_policies_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/policies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkPoliciesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1351,9 +1536,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1362,20 +1547,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/policies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworkPoliciesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_network_policy_change_set_async(self, request):
         """查询中心网络策略变化集
@@ -1389,9 +1570,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkPolicyChangeSetRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkPolicyChangeSetResponse`
         """
-        return self._list_central_network_policy_change_set_with_http_info(request)
+        http_info = self._list_central_network_policy_change_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_network_policy_change_set_with_http_info(self, request):
+    def list_central_network_policy_change_set_async_invoker(self, request):
+        http_info = self._list_central_network_policy_change_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_network_policy_change_set_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/policies/{policy_id}/change-set",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkPolicyChangeSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1410,9 +1603,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1421,20 +1614,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/policies/{policy_id}/change-set',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworkPolicyChangeSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_network_tags_async(self, request):
         """查询中心网络的标签信息
@@ -1448,9 +1637,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkTagsResponse`
         """
-        return self._list_central_network_tags_with_http_info(request)
+        http_info = self._list_central_network_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_network_tags_with_http_info(self, request):
+    def list_central_network_tags_async_invoker(self, request):
+        http_info = self._list_central_network_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_network_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1465,9 +1666,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1476,20 +1677,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-networks/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworkTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_networks_async(self, request):
         """查询中心网络列表
@@ -1504,9 +1701,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworksRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworksResponse`
         """
-        return self._list_central_networks_with_http_info(request)
+        http_info = self._list_central_networks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_networks_with_http_info(self, request):
+    def list_central_networks_async_invoker(self, request):
+        http_info = self._list_central_networks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_networks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1553,9 +1762,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1564,20 +1773,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-networks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_central_network_async(self, request):
         """查询中心网络详情
@@ -1591,9 +1796,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowCentralNetworkRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowCentralNetworkResponse`
         """
-        return self._show_central_network_with_http_info(request)
+        http_info = self._show_central_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_central_network_with_http_info(self, request):
+    def show_central_network_async_invoker(self, request):
+        http_info = self._show_central_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_central_network_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks/{central_network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCentralNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1610,9 +1827,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1621,20 +1838,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-networks/{central_network_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCentralNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def tag_central_network_async(self, request):
         """创建中心网络标签
@@ -1648,9 +1861,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.TagCentralNetworkRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.TagCentralNetworkResponse`
         """
-        return self._tag_central_network_with_http_info(request)
+        http_info = self._tag_central_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _tag_central_network_with_http_info(self, request):
+    def tag_central_network_async_invoker(self, request):
+        http_info = self._tag_central_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _tag_central_network_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks/{central_network_id}/tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "TagCentralNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1667,11 +1892,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -1680,20 +1905,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-networks/{central_network_id}/tag',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='TagCentralNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def untag_central_network_async(self, request):
         """删除中心网络标签
@@ -1707,9 +1928,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UntagCentralNetworkRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UntagCentralNetworkResponse`
         """
-        return self._untag_central_network_with_http_info(request)
+        http_info = self._untag_central_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _untag_central_network_with_http_info(self, request):
+    def untag_central_network_async_invoker(self, request):
+        http_info = self._untag_central_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _untag_central_network_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks/{central_network_id}/untag",
+            "request_type": request.__class__.__name__,
+            "response_type": "UntagCentralNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1726,11 +1959,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -1739,20 +1972,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-networks/{central_network_id}/untag',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UntagCentralNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_central_network_async(self, request):
         """更新中心网络详情
@@ -1766,9 +1995,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkResponse`
         """
-        return self._update_central_network_with_http_info(request)
+        http_info = self._update_central_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_central_network_with_http_info(self, request):
+    def update_central_network_async_invoker(self, request):
+        http_info = self._update_central_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_central_network_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/gcn/central-networks/{central_network_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCentralNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1785,11 +2026,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1798,20 +2039,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-networks/{central_network_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCentralNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_central_network_gdgw_attachment_async(self, request):
         """创建中心网络GDGW附件
@@ -1825,9 +2062,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkGdgwAttachmentRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCentralNetworkGdgwAttachmentResponse`
         """
-        return self._create_central_network_gdgw_attachment_with_http_info(request)
+        http_info = self._create_central_network_gdgw_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_central_network_gdgw_attachment_with_http_info(self, request):
+    def create_central_network_gdgw_attachment_async_invoker(self, request):
+        http_info = self._create_central_network_gdgw_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_central_network_gdgw_attachment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/gdgw-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCentralNetworkGdgwAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1844,11 +2093,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1857,20 +2106,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/gdgw-attachments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCentralNetworkGdgwAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_central_network_attachment_async(self, request):
         """删除中心网络附件
@@ -1884,9 +2129,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteCentralNetworkAttachmentRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteCentralNetworkAttachmentResponse`
         """
-        return self._delete_central_network_attachment_with_http_info(request)
+        http_info = self._delete_central_network_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_central_network_attachment_with_http_info(self, request):
+    def delete_central_network_attachment_async_invoker(self, request):
+        http_info = self._delete_central_network_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_central_network_attachment_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/attachments/{attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCentralNetworkAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1905,9 +2162,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1916,20 +2173,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/attachments/{attachment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCentralNetworkAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_network_attachments_async(self, request):
         """查询中心网络附件列表
@@ -1943,9 +2196,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkAttachmentsResponse`
         """
-        return self._list_central_network_attachments_with_http_info(request)
+        http_info = self._list_central_network_attachments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_network_attachments_with_http_info(self, request):
+    def list_central_network_attachments_async_invoker(self, request):
+        http_info = self._list_central_network_attachments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_network_attachments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkAttachmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1985,9 +2250,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1996,20 +2261,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/attachments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworkAttachmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_network_gdgw_attachments_async(self, request):
         """查询中心网络GDGW附件列表
@@ -2024,9 +2285,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkGdgwAttachmentsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkGdgwAttachmentsResponse`
         """
-        return self._list_central_network_gdgw_attachments_with_http_info(request)
+        http_info = self._list_central_network_gdgw_attachments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_network_gdgw_attachments_with_http_info(self, request):
+    def list_central_network_gdgw_attachments_async_invoker(self, request):
+        http_info = self._list_central_network_gdgw_attachments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_network_gdgw_attachments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/gdgw-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkGdgwAttachmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2063,9 +2336,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2074,20 +2347,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/gdgw-attachments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworkGdgwAttachmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_central_network_gdgw_attachment_async(self, request):
         """查询中心网络GDGW附件详情
@@ -2101,9 +2370,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowCentralNetworkGdgwAttachmentRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowCentralNetworkGdgwAttachmentResponse`
         """
-        return self._show_central_network_gdgw_attachment_with_http_info(request)
+        http_info = self._show_central_network_gdgw_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_central_network_gdgw_attachment_with_http_info(self, request):
+    def show_central_network_gdgw_attachment_async_invoker(self, request):
+        http_info = self._show_central_network_gdgw_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_central_network_gdgw_attachment_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/gdgw-attachments/{gdgw_attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCentralNetworkGdgwAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2122,9 +2403,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2133,20 +2414,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/gdgw-attachments/{gdgw_attachment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCentralNetworkGdgwAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_central_network_gdgw_attachment_async(self, request):
         """更新中心网络GDGW附件
@@ -2160,9 +2437,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkGdgwAttachmentRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkGdgwAttachmentResponse`
         """
-        return self._update_central_network_gdgw_attachment_with_http_info(request)
+        http_info = self._update_central_network_gdgw_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_central_network_gdgw_attachment_with_http_info(self, request):
+    def update_central_network_gdgw_attachment_async_invoker(self, request):
+        http_info = self._update_central_network_gdgw_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_central_network_gdgw_attachment_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/gdgw-attachments/{gdgw_attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCentralNetworkGdgwAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2181,11 +2470,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2194,20 +2483,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/gdgw-attachments/{gdgw_attachment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCentralNetworkGdgwAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_network_capabilities_async(self, request):
         """查询中心网络能力列表
@@ -2221,9 +2506,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkCapabilitiesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkCapabilitiesResponse`
         """
-        return self._list_central_network_capabilities_with_http_info(request)
+        http_info = self._list_central_network_capabilities_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_network_capabilities_with_http_info(self, request):
+    def list_central_network_capabilities_async_invoker(self, request):
+        http_info = self._list_central_network_capabilities_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_network_capabilities_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/capabilities",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkCapabilitiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2241,9 +2538,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2252,20 +2549,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/capabilities',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworkCapabilitiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_network_connections_async(self, request):
         """查询中心网络连接列表
@@ -2280,9 +2573,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkConnectionsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkConnectionsResponse`
         """
-        return self._list_central_network_connections_with_http_info(request)
+        http_info = self._list_central_network_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_network_connections_with_http_info(self, request):
+    def list_central_network_connections_async_invoker(self, request):
+        http_info = self._list_central_network_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_network_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2325,9 +2630,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2336,20 +2641,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworkConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_central_network_connection_async(self, request):
         """更新中心网络连接接口
@@ -2363,9 +2664,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCentralNetworkConnectionResponse`
         """
-        return self._update_central_network_connection_with_http_info(request)
+        http_info = self._update_central_network_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_central_network_connection_with_http_info(self, request):
+    def update_central_network_connection_async_invoker(self, request):
+        http_info = self._update_central_network_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_central_network_connection_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/gcn/central-network/{central_network_id}/connections/{connection_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCentralNetworkConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2384,11 +2697,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2397,20 +2710,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/central-network/{central_network_id}/connections/{connection_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCentralNetworkConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_central_network_quotas_async(self, request):
         """查询中心网络配额
@@ -2424,9 +2733,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCentralNetworkQuotasRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCentralNetworkQuotasResponse`
         """
-        return self._list_central_network_quotas_with_http_info(request)
+        http_info = self._list_central_network_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_central_network_quotas_with_http_info(self, request):
+    def list_central_network_quotas_async_invoker(self, request):
+        http_info = self._list_central_network_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_central_network_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/gcn/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCentralNetworkQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2448,9 +2769,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2459,20 +2780,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/gcn/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCentralNetworkQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cloud_connection_async(self, request):
         """创建云连接实例
@@ -2486,9 +2803,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateCloudConnectionResponse`
         """
-        return self._create_cloud_connection_with_http_info(request)
+        http_info = self._create_cloud_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cloud_connection_with_http_info(self, request):
+    def create_cloud_connection_async_invoker(self, request):
+        http_info = self._create_cloud_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_cloud_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCloudConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2503,11 +2832,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2516,20 +2845,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cloud_connection_async(self, request):
         """删除云连接实例
@@ -2543,9 +2868,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteCloudConnectionResponse`
         """
-        return self._delete_cloud_connection_with_http_info(request)
+        http_info = self._delete_cloud_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cloud_connection_with_http_info(self, request):
+    def delete_cloud_connection_async_invoker(self, request):
+        http_info = self._delete_cloud_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_cloud_connection_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCloudConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2562,9 +2899,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2573,20 +2910,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_connection_tags_async(self, request):
         """查询云连接实例的标签信息
@@ -2600,9 +2933,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionTagsResponse`
         """
-        return self._list_cloud_connection_tags_with_http_info(request)
+        http_info = self._list_cloud_connection_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_connection_tags_with_http_info(self, request):
+    def list_cloud_connection_tags_async_invoker(self, request):
+        http_info = self._list_cloud_connection_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_connection_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudConnectionTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2617,9 +2962,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2628,20 +2973,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudConnectionTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_connections_async(self, request):
         """查询云连接列表
@@ -2656,9 +2997,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsResponse`
         """
-        return self._list_cloud_connections_with_http_info(request)
+        http_info = self._list_cloud_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_connections_with_http_info(self, request):
+    def list_cloud_connections_async_invoker(self, request):
+        http_info = self._list_cloud_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2698,9 +3051,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2709,20 +3062,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_connections_by_tags_async(self, request):
         """通过标签过滤云连接实例
@@ -2736,9 +3085,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsByTagsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionsByTagsResponse`
         """
-        return self._list_cloud_connections_by_tags_with_http_info(request)
+        http_info = self._list_cloud_connections_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_connections_by_tags_with_http_info(self, request):
+    def list_cloud_connections_by_tags_async_invoker(self, request):
+        http_info = self._list_cloud_connections_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_connections_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudConnectionsByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2753,11 +3114,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2766,20 +3127,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudConnectionsByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cloud_connection_async(self, request):
         """查询云连接实例
@@ -2793,9 +3150,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionResponse`
         """
-        return self._show_cloud_connection_with_http_info(request)
+        http_info = self._show_cloud_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cloud_connection_with_http_info(self, request):
+    def show_cloud_connection_async_invoker(self, request):
+        http_info = self._show_cloud_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cloud_connection_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCloudConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2812,9 +3181,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2823,20 +3192,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def tag_cloud_connection_async(self, request):
         """创建云连接实例标签
@@ -2850,9 +3215,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.TagCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.TagCloudConnectionResponse`
         """
-        return self._tag_cloud_connection_with_http_info(request)
+        http_info = self._tag_cloud_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _tag_cloud_connection_with_http_info(self, request):
+    def tag_cloud_connection_async_invoker(self, request):
+        http_info = self._tag_cloud_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _tag_cloud_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections/{id}/tag",
+            "request_type": request.__class__.__name__,
+            "response_type": "TagCloudConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2869,11 +3246,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -2882,20 +3259,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}/tag',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='TagCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def untag_cloud_connection_async(self, request):
         """删除云连接实例标签
@@ -2909,9 +3282,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UntagCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UntagCloudConnectionResponse`
         """
-        return self._untag_cloud_connection_with_http_info(request)
+        http_info = self._untag_cloud_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _untag_cloud_connection_with_http_info(self, request):
+    def untag_cloud_connection_async_invoker(self, request):
+        http_info = self._untag_cloud_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _untag_cloud_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections/{id}/untag",
+            "request_type": request.__class__.__name__,
+            "response_type": "UntagCloudConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2928,11 +3313,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -2941,20 +3326,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}/untag',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UntagCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cloud_connection_async(self, request):
         """更新云连接实例
@@ -2968,9 +3349,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateCloudConnectionResponse`
         """
-        return self._update_cloud_connection_with_http_info(request)
+        http_info = self._update_cloud_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cloud_connection_with_http_info(self, request):
+    def update_cloud_connection_async_invoker(self, request):
+        http_info = self._update_cloud_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_cloud_connection_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connections/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCloudConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2987,11 +3380,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3000,20 +3393,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connections/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCloudConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_connection_quotas_async(self, request):
         """查询云连接配额
@@ -3027,9 +3416,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionQuotasRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionQuotasResponse`
         """
-        return self._list_cloud_connection_quotas_with_http_info(request)
+        http_info = self._list_cloud_connection_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_connection_quotas_with_http_info(self, request):
+    def list_cloud_connection_quotas_async_invoker(self, request):
+        http_info = self._list_cloud_connection_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_connection_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudConnectionQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3054,9 +3455,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3065,20 +3466,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudConnectionQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cloud_connection_routes_async(self, request):
         """查询云连接路由条目列表
@@ -3093,9 +3490,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListCloudConnectionRoutesResponse`
         """
-        return self._list_cloud_connection_routes_with_http_info(request)
+        http_info = self._list_cloud_connection_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cloud_connection_routes_with_http_info(self, request):
+    def list_cloud_connection_routes_async_invoker(self, request):
+        http_info = self._list_cloud_connection_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cloud_connection_routes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connection-routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCloudConnectionRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3124,9 +3533,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3135,20 +3544,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connection-routes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCloudConnectionRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cloud_connection_routes_async(self, request):
         """查询云连接路由条目详情
@@ -3163,9 +3568,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowCloudConnectionRoutesResponse`
         """
-        return self._show_cloud_connection_routes_with_http_info(request)
+        http_info = self._show_cloud_connection_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cloud_connection_routes_with_http_info(self, request):
+    def show_cloud_connection_routes_async_invoker(self, request):
+        http_info = self._show_cloud_connection_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_cloud_connection_routes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/cloud-connection-routes/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCloudConnectionRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3182,9 +3599,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3193,20 +3610,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/cloud-connection-routes/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCloudConnectionRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_inter_region_bandwidth_async(self, request):
         """创建域间带宽实例
@@ -3220,9 +3633,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateInterRegionBandwidthResponse`
         """
-        return self._create_inter_region_bandwidth_with_http_info(request)
+        http_info = self._create_inter_region_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_inter_region_bandwidth_with_http_info(self, request):
+    def create_inter_region_bandwidth_async_invoker(self, request):
+        http_info = self._create_inter_region_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_inter_region_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/inter-region-bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInterRegionBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3237,11 +3662,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3250,20 +3675,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInterRegionBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_inter_region_bandwidth_async(self, request):
         """删除域间带宽实例
@@ -3277,9 +3698,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteInterRegionBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteInterRegionBandwidthResponse`
         """
-        return self._delete_inter_region_bandwidth_with_http_info(request)
+        http_info = self._delete_inter_region_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_inter_region_bandwidth_with_http_info(self, request):
+    def delete_inter_region_bandwidth_async_invoker(self, request):
+        http_info = self._delete_inter_region_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_inter_region_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInterRegionBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3296,9 +3729,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3307,20 +3740,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInterRegionBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_inter_region_bandwidths_async(self, request):
         """查询域间带宽列表
@@ -3335,9 +3764,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListInterRegionBandwidthsRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListInterRegionBandwidthsResponse`
         """
-        return self._list_inter_region_bandwidths_with_http_info(request)
+        http_info = self._list_inter_region_bandwidths_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_inter_region_bandwidths_with_http_info(self, request):
+    def list_inter_region_bandwidths_async_invoker(self, request):
+        http_info = self._list_inter_region_bandwidths_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_inter_region_bandwidths_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/inter-region-bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInterRegionBandwidthsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3368,9 +3809,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3379,20 +3820,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInterRegionBandwidthsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_inter_region_bandwidth_async(self, request):
         """查询域间带宽实例
@@ -3406,9 +3843,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowInterRegionBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowInterRegionBandwidthResponse`
         """
-        return self._show_inter_region_bandwidth_with_http_info(request)
+        http_info = self._show_inter_region_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_inter_region_bandwidth_with_http_info(self, request):
+    def show_inter_region_bandwidth_async_invoker(self, request):
+        http_info = self._show_inter_region_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_inter_region_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInterRegionBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3425,9 +3874,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3436,20 +3885,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInterRegionBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_inter_region_bandwidth_async(self, request):
         """更新域间带宽实例
@@ -3463,9 +3908,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateInterRegionBandwidthResponse`
         """
-        return self._update_inter_region_bandwidth_with_http_info(request)
+        http_info = self._update_inter_region_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_inter_region_bandwidth_with_http_info(self, request):
+    def update_inter_region_bandwidth_async_invoker(self, request):
+        http_info = self._update_inter_region_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_inter_region_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInterRegionBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3482,11 +3939,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3495,20 +3952,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/inter-region-bandwidths/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInterRegionBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_network_instance_async(self, request):
         """创建网络实例
@@ -3522,9 +3975,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.CreateNetworkInstanceResponse`
         """
-        return self._create_network_instance_with_http_info(request)
+        http_info = self._create_network_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_network_instance_with_http_info(self, request):
+    def create_network_instance_async_invoker(self, request):
+        http_info = self._create_network_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_network_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/ccaas/network-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNetworkInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3539,11 +4004,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3552,20 +4017,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNetworkInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_network_instance_async(self, request):
         """删除网络实例
@@ -3579,9 +4040,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.DeleteNetworkInstanceResponse`
         """
-        return self._delete_network_instance_with_http_info(request)
+        http_info = self._delete_network_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_network_instance_with_http_info(self, request):
+    def delete_network_instance_async_invoker(self, request):
+        http_info = self._delete_network_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_network_instance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{domain_id}/ccaas/network-instances/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNetworkInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3598,9 +4071,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3609,20 +4082,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNetworkInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_network_instances_async(self, request):
         """查询网络实例列表
@@ -3637,9 +4106,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ListNetworkInstancesResponse`
         """
-        return self._list_network_instances_with_http_info(request)
+        http_info = self._list_network_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_network_instances_with_http_info(self, request):
+    def list_network_instances_async_invoker(self, request):
+        http_info = self._list_network_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_network_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/network-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNetworkInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3682,9 +4163,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3693,20 +4174,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNetworkInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_network_instance_async(self, request):
         """查询网络实例
@@ -3720,9 +4197,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.ShowNetworkInstanceResponse`
         """
-        return self._show_network_instance_with_http_info(request)
+        http_info = self._show_network_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_network_instance_with_http_info(self, request):
+    def show_network_instance_async_invoker(self, request):
+        http_info = self._show_network_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_network_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/ccaas/network-instances/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNetworkInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3739,9 +4228,9 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3750,20 +4239,16 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNetworkInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_network_instance_async(self, request):
         """更新网络实例
@@ -3777,9 +4262,21 @@ class CcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceRequest`
         :rtype: :class:`huaweicloudsdkcc.v3.UpdateNetworkInstanceResponse`
         """
-        return self._update_network_instance_with_http_info(request)
+        http_info = self._update_network_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_network_instance_with_http_info(self, request):
+    def update_network_instance_async_invoker(self, request):
+        http_info = self._update_network_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_network_instance_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{domain_id}/ccaas/network-instances/{id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNetworkInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3796,11 +4293,11 @@ class CcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3809,20 +4306,26 @@ class CcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/ccaas/network-instances/{id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNetworkInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3861,4 +4364,4 @@ class CcAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

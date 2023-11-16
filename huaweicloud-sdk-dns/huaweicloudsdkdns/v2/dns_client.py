@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdns'")
 
 
 class DnsClient(Client):
@@ -38,9 +43,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateCustomLineResponse`
         """
-        return self._create_custom_line_with_http_info(request)
+        http_info = self._create_custom_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_custom_line_with_http_info(self, request):
+    def create_custom_line_invoker(self, request):
+        http_info = self._create_custom_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_custom_line_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/customlines",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/customlines',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCustomLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_line_group(self, request):
         """创建线路分组
@@ -94,9 +108,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateLineGroupRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateLineGroupResponse`
         """
-        return self._create_line_group_with_http_info(request)
+        http_info = self._create_line_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_line_group_with_http_info(self, request):
+    def create_line_group_invoker(self, request):
+        http_info = self._create_line_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_line_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/linegroups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLineGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/linegroups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLineGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_custom_line(self, request):
         """删除单个自定义线路
@@ -150,9 +173,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteCustomLineResponse`
         """
-        return self._delete_custom_line_with_http_info(request)
+        http_info = self._delete_custom_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_custom_line_with_http_info(self, request):
+    def delete_custom_line_invoker(self, request):
+        http_info = self._delete_custom_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_custom_line_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/customlines/{line_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -169,9 +205,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/customlines/{line_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCustomLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_line_group(self, request):
         """删除线路分组
@@ -206,9 +238,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteLineGroupRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteLineGroupResponse`
         """
-        return self._delete_line_group_with_http_info(request)
+        http_info = self._delete_line_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_line_group_with_http_info(self, request):
+    def delete_line_group_invoker(self, request):
+        http_info = self._delete_line_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_line_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/linegroups/{linegroup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLineGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -225,9 +270,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +281,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/linegroups/{linegroup_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLineGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions(self, request):
         """查询所有的云解析服务API版本号
@@ -262,9 +303,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListApiVersionsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListApiVersionsResponse`
         """
-        return self._list_api_versions_with_http_info(request)
+        http_info = self._list_api_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_with_http_info(self, request):
+    def list_api_versions_invoker(self, request):
+        http_info = self._list_api_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -279,9 +333,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -290,20 +344,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_custom_line(self, request):
         """查询自定义线路
@@ -316,9 +366,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListCustomLineResponse`
         """
-        return self._list_custom_line_with_http_info(request)
+        http_info = self._list_custom_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_custom_line_with_http_info(self, request):
+    def list_custom_line_invoker(self, request):
+        http_info = self._list_custom_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_line_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/customlines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -343,9 +406,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +417,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/customlines',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_line_groups(self, request):
         """查询线路分组列表
@@ -380,9 +439,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListLineGroupsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListLineGroupsResponse`
         """
-        return self._list_line_groups_with_http_info(request)
+        http_info = self._list_line_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_line_groups_with_http_info(self, request):
+    def list_line_groups_invoker(self, request):
+        http_info = self._list_line_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_line_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/linegroups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLineGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -405,9 +477,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -416,20 +488,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/linegroups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLineGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_name_servers(self, request):
         """查询名称服务器列表
@@ -442,9 +510,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListNameServersRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListNameServersResponse`
         """
-        return self._list_name_servers_with_http_info(request)
+        http_info = self._list_name_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_name_servers_with_http_info(self, request):
+    def list_name_servers_invoker(self, request):
+        http_info = self._list_name_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_name_servers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/nameservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNameServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -463,9 +544,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +555,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/nameservers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNameServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_api_info(self, request):
         """查询指定的云解析服务API版本号
@@ -500,9 +577,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowApiInfoRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowApiInfoResponse`
         """
-        return self._show_api_info_with_http_info(request)
+        http_info = self._show_api_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_api_info_with_http_info(self, request):
+    def show_api_info_invoker(self, request):
+        http_info = self._show_api_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_api_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApiInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -519,9 +609,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -530,20 +620,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApiInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_domain_quota(self, request):
         """查询租户配额
@@ -556,9 +642,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowDomainQuotaRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowDomainQuotaResponse`
         """
-        return self._show_domain_quota_with_http_info(request)
+        http_info = self._show_domain_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_domain_quota_with_http_info(self, request):
+    def show_domain_quota_invoker(self, request):
+        http_info = self._show_domain_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_domain_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/quotamg/dns/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDomainQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -575,9 +674,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -586,20 +685,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/quotamg/dns/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDomainQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_line_group(self, request):
         """查询线路分组
@@ -612,9 +707,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowLineGroupRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowLineGroupResponse`
         """
-        return self._show_line_group_with_http_info(request)
+        http_info = self._show_line_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_line_group_with_http_info(self, request):
+    def show_line_group_invoker(self, request):
+        http_info = self._show_line_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_line_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/linegroups/{linegroup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLineGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -631,9 +739,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -642,20 +750,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/linegroups/{linegroup_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLineGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_custom_line(self, request):
         """更新单个自定义线路
@@ -668,9 +772,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdateCustomLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateCustomLineResponse`
         """
-        return self._update_custom_line_with_http_info(request)
+        http_info = self._update_custom_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_custom_line_with_http_info(self, request):
+    def update_custom_line_invoker(self, request):
+        http_info = self._update_custom_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_custom_line_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/customlines/{line_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -687,11 +804,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -700,20 +817,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/customlines/{line_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCustomLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_line_groups(self, request):
         """更新线路分组
@@ -726,9 +839,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateLineGroupsResponse`
         """
-        return self._update_line_groups_with_http_info(request)
+        http_info = self._update_line_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_line_groups_with_http_info(self, request):
+    def update_line_groups_invoker(self, request):
+        http_info = self._update_line_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_line_groups_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/linegroups/{linegroup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLineGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -745,11 +871,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -758,20 +884,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/linegroups/{linegroup_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLineGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_eip_record_set(self, request):
         """设置弹性IP的PTR记录
@@ -784,9 +906,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateEipRecordSetResponse`
         """
-        return self._create_eip_record_set_with_http_info(request)
+        http_info = self._create_eip_record_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_eip_record_set_with_http_info(self, request):
+    def create_eip_record_set_invoker(self, request):
+        http_info = self._create_eip_record_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_eip_record_set_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEipRecordSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -805,11 +940,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -818,20 +953,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/reverse/floatingips/{region}:{floatingip_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEipRecordSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ptr_records(self, request):
         """查询租户弹性IP的PTR记录列表
@@ -844,9 +975,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListPtrRecordsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPtrRecordsResponse`
         """
-        return self._list_ptr_records_with_http_info(request)
+        http_info = self._list_ptr_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ptr_records_with_http_info(self, request):
+    def list_ptr_records_invoker(self, request):
+        http_info = self._list_ptr_records_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ptr_records_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/reverse/floatingips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPtrRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -873,9 +1017,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -884,20 +1028,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/reverse/floatingips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPtrRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_ptr_record(self, request):
         """将弹性IP的PTR记录恢复为默认值
@@ -910,9 +1050,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.RestorePtrRecordRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.RestorePtrRecordResponse`
         """
-        return self._restore_ptr_record_with_http_info(request)
+        http_info = self._restore_ptr_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_ptr_record_with_http_info(self, request):
+    def restore_ptr_record_invoker(self, request):
+        http_info = self._restore_ptr_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_ptr_record_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestorePtrRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -931,11 +1084,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -944,20 +1097,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/reverse/floatingips/{region}:{floatingip_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestorePtrRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ptr_record_set(self, request):
         """查询单个弹性IP的PTR记录
@@ -970,9 +1119,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPtrRecordSetResponse`
         """
-        return self._show_ptr_record_set_with_http_info(request)
+        http_info = self._show_ptr_record_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ptr_record_set_with_http_info(self, request):
+    def show_ptr_record_set_invoker(self, request):
+        http_info = self._show_ptr_record_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_ptr_record_set_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPtrRecordSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -991,9 +1153,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1002,20 +1164,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/reverse/floatingips/{region}:{floatingip_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPtrRecordSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ptr_record(self, request):
         """修改弹性IP的PTR记录
@@ -1028,9 +1186,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePtrRecordResponse`
         """
-        return self._update_ptr_record_with_http_info(request)
+        http_info = self._update_ptr_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ptr_record_with_http_info(self, request):
+    def update_ptr_record_invoker(self, request):
+        http_info = self._update_ptr_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ptr_record_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/reverse/floatingips/{region}:{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePtrRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1049,11 +1220,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1062,20 +1233,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/reverse/floatingips/{region}:{floatingip_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePtrRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_health_check(self, request):
         """Record Set关联健康检查
@@ -1088,9 +1255,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.AssociateHealthCheckResponse`
         """
-        return self._associate_health_check_with_http_info(request)
+        http_info = self._associate_health_check_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_health_check_with_http_info(self, request):
+    def associate_health_check_invoker(self, request):
+        http_info = self._associate_health_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_health_check_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/recordsets/{recordset_id}/associatehealthcheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateHealthCheckResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1107,11 +1287,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1120,20 +1300,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/recordsets/{recordset_id}/associatehealthcheck',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateHealthCheckResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_record_set_with_line(self, request):
         """批量删除某个Zone下的Record Set资源
@@ -1147,9 +1323,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchDeleteRecordSetWithLineResponse`
         """
-        return self._batch_delete_record_set_with_line_with_http_info(request)
+        http_info = self._batch_delete_record_set_with_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_record_set_with_line_with_http_info(self, request):
+    def batch_delete_record_set_with_line_invoker(self, request):
+        http_info = self._batch_delete_record_set_with_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_record_set_with_line_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteRecordSetWithLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1166,11 +1355,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1179,20 +1368,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/zones/{zone_id}/recordsets',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteRecordSetWithLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_record_set_with_line(self, request):
         """批量修改RecordSet
@@ -1206,9 +1391,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchUpdateRecordSetWithLineResponse`
         """
-        return self._batch_update_record_set_with_line_with_http_info(request)
+        http_info = self._batch_update_record_set_with_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_record_set_with_line_with_http_info(self, request):
+    def batch_update_record_set_with_line_invoker(self, request):
+        http_info = self._batch_update_record_set_with_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_record_set_with_line_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateRecordSetWithLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1225,11 +1423,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1238,20 +1436,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/zones/{zone_id}/recordsets',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateRecordSetWithLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_record_set(self, request):
         """创建单个Record Set
@@ -1264,9 +1458,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetResponse`
         """
-        return self._create_record_set_with_http_info(request)
+        http_info = self._create_record_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_record_set_with_http_info(self, request):
+    def create_record_set_invoker(self, request):
+        http_info = self._create_record_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_record_set_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1283,11 +1490,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1296,20 +1503,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/recordsets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRecordSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_record_set_with_batch_lines(self, request):
         """批量线路创建RecordSet
@@ -1322,9 +1525,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithBatchLinesResponse`
         """
-        return self._create_record_set_with_batch_lines_with_http_info(request)
+        http_info = self._create_record_set_with_batch_lines_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_record_set_with_batch_lines_with_http_info(self, request):
+    def create_record_set_with_batch_lines_invoker(self, request):
+        http_info = self._create_record_set_with_batch_lines_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_record_set_with_batch_lines_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets/batch/lines",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordSetWithBatchLinesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1341,11 +1557,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1354,20 +1570,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/zones/{zone_id}/recordsets/batch/lines',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRecordSetWithBatchLinesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_record_set_with_line(self, request):
         """创建单个Record Set
@@ -1380,9 +1592,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateRecordSetWithLineResponse`
         """
-        return self._create_record_set_with_line_with_http_info(request)
+        http_info = self._create_record_set_with_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_record_set_with_line_with_http_info(self, request):
+    def create_record_set_with_line_invoker(self, request):
+        http_info = self._create_record_set_with_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_record_set_with_line_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRecordSetWithLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1399,11 +1624,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1412,20 +1637,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/zones/{zone_id}/recordsets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRecordSetWithLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_record_set(self, request):
         """删除单个Record Set
@@ -1438,9 +1659,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetResponse`
         """
-        return self._delete_record_set_with_http_info(request)
+        http_info = self._delete_record_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_record_set_with_http_info(self, request):
+    def delete_record_set_invoker(self, request):
+        http_info = self._delete_record_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_record_set_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecordSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1459,9 +1693,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1470,20 +1704,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/recordsets/{recordset_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRecordSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_record_sets(self, request):
         """删除单个Record Set
@@ -1496,9 +1726,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteRecordSetsResponse`
         """
-        return self._delete_record_sets_with_http_info(request)
+        http_info = self._delete_record_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_record_sets_with_http_info(self, request):
+    def delete_record_sets_invoker(self, request):
+        http_info = self._delete_record_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_record_sets_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRecordSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1517,9 +1760,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1528,20 +1771,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/zones/{zone_id}/recordsets/{recordset_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRecordSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_health_check(self, request):
         """Record Set解关联健康检查
@@ -1554,9 +1793,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DisassociateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DisassociateHealthCheckResponse`
         """
-        return self._disassociate_health_check_with_http_info(request)
+        http_info = self._disassociate_health_check_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_health_check_with_http_info(self, request):
+    def disassociate_health_check_invoker(self, request):
+        http_info = self._disassociate_health_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_health_check_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.1/recordsets/{recordset_id}/disassociatehealthcheck",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateHealthCheckResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1573,11 +1825,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1586,20 +1838,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/recordsets/{recordset_id}/disassociatehealthcheck',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateHealthCheckResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_record_sets(self, request):
         """查询租户Record Set资源列表
@@ -1612,9 +1860,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsResponse`
         """
-        return self._list_record_sets_with_http_info(request)
+        http_info = self._list_record_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_record_sets_with_http_info(self, request):
+    def list_record_sets_invoker(self, request):
+        http_info = self._list_record_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_record_sets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1655,9 +1916,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1666,20 +1927,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/recordsets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecordSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_record_sets_by_zone(self, request):
         """查询单个Zone下Record Set列表
@@ -1692,9 +1949,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsByZoneResponse`
         """
-        return self._list_record_sets_by_zone_with_http_info(request)
+        http_info = self._list_record_sets_by_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_record_sets_by_zone_with_http_info(self, request):
+    def list_record_sets_by_zone_invoker(self, request):
+        http_info = self._list_record_sets_by_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_record_sets_by_zone_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordSetsByZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1733,9 +2003,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1744,20 +2014,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/recordsets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecordSetsByZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_record_sets_with_line(self, request):
         """查询租户Record Set资源列表
@@ -1770,9 +2036,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListRecordSetsWithLineResponse`
         """
-        return self._list_record_sets_with_line_with_http_info(request)
+        http_info = self._list_record_sets_with_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_record_sets_with_line_with_http_info(self, request):
+    def list_record_sets_with_line_invoker(self, request):
+        http_info = self._list_record_sets_with_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_record_sets_with_line_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRecordSetsWithLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1817,9 +2096,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1828,20 +2107,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/recordsets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRecordSetsWithLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_record_sets_status(self, request):
         """设置Record Set状态
@@ -1854,9 +2129,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.SetRecordSetsStatusResponse`
         """
-        return self._set_record_sets_status_with_http_info(request)
+        http_info = self._set_record_sets_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_record_sets_status_with_http_info(self, request):
+    def set_record_sets_status_invoker(self, request):
+        http_info = self._set_record_sets_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_record_sets_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/recordsets/{recordset_id}/statuses/set",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetRecordSetsStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1873,11 +2161,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1886,20 +2174,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/recordsets/{recordset_id}/statuses/set',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetRecordSetsStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_record_set(self, request):
         """查询单个Record Set
@@ -1912,9 +2196,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetResponse`
         """
-        return self._show_record_set_with_http_info(request)
+        http_info = self._show_record_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_record_set_with_http_info(self, request):
+    def show_record_set_invoker(self, request):
+        http_info = self._show_record_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_record_set_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1933,9 +2230,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1944,20 +2241,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/recordsets/{recordset_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_record_set_by_zone(self, request):
         """查询单个Zone下Record Set列表
@@ -1970,9 +2263,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetByZoneResponse`
         """
-        return self._show_record_set_by_zone_with_http_info(request)
+        http_info = self._show_record_set_by_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_record_set_by_zone_with_http_info(self, request):
+    def show_record_set_by_zone_invoker(self, request):
+        http_info = self._show_record_set_by_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_record_set_by_zone_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordSetByZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2013,9 +2319,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2024,20 +2330,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/zones/{zone_id}/recordsets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordSetByZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_record_set_with_line(self, request):
         """查询单个Record Set
@@ -2050,9 +2352,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowRecordSetWithLineResponse`
         """
-        return self._show_record_set_with_line_with_http_info(request)
+        http_info = self._show_record_set_with_line_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_record_set_with_line_with_http_info(self, request):
+    def show_record_set_with_line_invoker(self, request):
+        http_info = self._show_record_set_with_line_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_record_set_with_line_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRecordSetWithLineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2071,9 +2386,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2082,20 +2397,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/zones/{zone_id}/recordsets/{recordset_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRecordSetWithLineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_record_set(self, request):
         """修改单个Record Set
@@ -2108,9 +2419,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetResponse`
         """
-        return self._update_record_set_with_http_info(request)
+        http_info = self._update_record_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_record_set_with_http_info(self, request):
+    def update_record_set_invoker(self, request):
+        http_info = self._update_record_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_record_set_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecordSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2129,11 +2453,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2142,20 +2466,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/recordsets/{recordset_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRecordSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_record_sets(self, request):
         """修改单个Record Set
@@ -2168,9 +2488,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdateRecordSetsResponse`
         """
-        return self._update_record_sets_with_http_info(request)
+        http_info = self._update_record_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_record_sets_with_http_info(self, request):
+    def update_record_sets_invoker(self, request):
+        http_info = self._update_record_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_record_sets_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.1/zones/{zone_id}/recordsets/{recordset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRecordSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2189,11 +2522,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2202,20 +2535,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.1/zones/{zone_id}/recordsets/{recordset_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRecordSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_tag(self, request):
         """为指定实例批量添加或删除标签
@@ -2228,9 +2557,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.BatchCreateTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.BatchCreateTagResponse`
         """
-        return self._batch_create_tag_with_http_info(request)
+        http_info = self._batch_create_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_tag_with_http_info(self, request):
+    def batch_create_tag_invoker(self, request):
+        http_info = self._batch_create_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2249,11 +2591,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2262,20 +2604,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tag(self, request):
         """为指定实例添加标签
@@ -2288,9 +2626,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreateTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreateTagResponse`
         """
-        return self._create_tag_with_http_info(request)
+        http_info = self._create_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tag_with_http_info(self, request):
+    def create_tag_invoker(self, request):
+        http_info = self._create_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2309,11 +2660,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2322,20 +2673,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tag(self, request):
         """删除资源标签
@@ -2348,9 +2695,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeleteTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeleteTagResponse`
         """
-        return self._delete_tag_with_http_info(request)
+        http_info = self._delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tag_with_http_info(self, request):
+    def delete_tag_invoker(self, request):
+        http_info = self._delete_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2371,9 +2731,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2382,20 +2742,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tag(self, request):
         """使用标签查询资源实例
@@ -2408,9 +2764,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListTagResponse`
         """
-        return self._list_tag_with_http_info(request)
+        http_info = self._list_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tag_with_http_info(self, request):
+    def list_tag_invoker(self, request):
+        http_info = self._list_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/{resource_type}/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2427,11 +2796,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2440,20 +2809,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags(self, request):
         """查询指定实例类型的所有标签集合
@@ -2466,9 +2831,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListTagsResponse`
         """
-        return self._list_tags_with_http_info(request)
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_with_http_info(self, request):
+    def list_tags_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2485,9 +2863,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2496,20 +2874,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_tag(self, request):
         """查询指定实例的标签信息
@@ -2522,9 +2896,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowResourceTagResponse`
         """
-        return self._show_resource_tag_with_http_info(request)
+        http_info = self._show_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_tag_with_http_info(self, request):
+    def show_resource_tag_invoker(self, request):
+        http_info = self._show_resource_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_resource_tag_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2543,9 +2930,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2554,20 +2941,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_router(self, request):
         """在内网Zone上关联VPC
@@ -2580,9 +2963,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.AssociateRouterRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.AssociateRouterResponse`
         """
-        return self._associate_router_with_http_info(request)
+        http_info = self._associate_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_router_with_http_info(self, request):
+    def associate_router_invoker(self, request):
+        http_info = self._associate_router_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_router_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/zones/{zone_id}/associaterouter",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2599,11 +2995,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2612,20 +3008,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/associaterouter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_private_zone(self, request):
         """创建单个内网Zone
@@ -2638,9 +3030,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreatePrivateZoneResponse`
         """
-        return self._create_private_zone_with_http_info(request)
+        http_info = self._create_private_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_private_zone_with_http_info(self, request):
+    def create_private_zone_invoker(self, request):
+        http_info = self._create_private_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_private_zone_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrivateZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2655,11 +3060,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2668,20 +3073,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrivateZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_public_zone(self, request):
         """创建单个公网Zone
@@ -2694,9 +3095,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.CreatePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.CreatePublicZoneResponse`
         """
-        return self._create_public_zone_with_http_info(request)
+        http_info = self._create_public_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_public_zone_with_http_info(self, request):
+    def create_public_zone_invoker(self, request):
+        http_info = self._create_public_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_public_zone_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePublicZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2711,11 +3125,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2724,20 +3138,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePublicZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_private_zone(self, request):
         """删除单个内网Zone
@@ -2750,9 +3160,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeletePrivateZoneResponse`
         """
-        return self._delete_private_zone_with_http_info(request)
+        http_info = self._delete_private_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_private_zone_with_http_info(self, request):
+    def delete_private_zone_invoker(self, request):
+        http_info = self._delete_private_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_private_zone_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/zones/{zone_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePrivateZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2769,9 +3192,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2780,20 +3203,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePrivateZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_public_zone(self, request):
         """删除单个公网Zone
@@ -2806,9 +3225,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DeletePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DeletePublicZoneResponse`
         """
-        return self._delete_public_zone_with_http_info(request)
+        http_info = self._delete_public_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_public_zone_with_http_info(self, request):
+    def delete_public_zone_invoker(self, request):
+        http_info = self._delete_public_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_public_zone_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/zones/{zone_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePublicZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2825,9 +3257,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2836,20 +3268,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePublicZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_router(self, request):
         """在内网Zone上解关联VPC
@@ -2862,9 +3290,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.DisassociateRouterRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.DisassociateRouterResponse`
         """
-        return self._disassociate_router_with_http_info(request)
+        http_info = self._disassociate_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_router_with_http_info(self, request):
+    def disassociate_router_invoker(self, request):
+        http_info = self._disassociate_router_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_router_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/zones/{zone_id}/disassociaterouter",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2881,11 +3322,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2894,20 +3335,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/disassociaterouter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_private_zones(self, request):
         """查询内网Zone列表
@@ -2920,9 +3357,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListPrivateZonesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPrivateZonesResponse`
         """
-        return self._list_private_zones_with_http_info(request)
+        http_info = self._list_private_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_private_zones_with_http_info(self, request):
+    def list_private_zones_invoker(self, request):
+        http_info = self._list_private_zones_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_private_zones_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPrivateZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2955,9 +3405,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2966,20 +3416,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPrivateZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_public_zones(self, request):
         """查询公网Zone列表
@@ -2992,9 +3438,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ListPublicZonesRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ListPublicZonesResponse`
         """
-        return self._list_public_zones_with_http_info(request)
+        http_info = self._list_public_zones_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_public_zones_with_http_info(self, request):
+    def list_public_zones_invoker(self, request):
+        http_info = self._list_public_zones_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_public_zones_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublicZonesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3027,9 +3486,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3038,20 +3497,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPublicZonesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_private_zone(self, request):
         """查询单个内网Zone
@@ -3064,9 +3519,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneResponse`
         """
-        return self._show_private_zone_with_http_info(request)
+        http_info = self._show_private_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_private_zone_with_http_info(self, request):
+    def show_private_zone_invoker(self, request):
+        http_info = self._show_private_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_zone_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones/{zone_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3083,9 +3551,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3094,20 +3562,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivateZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_private_zone_name_server(self, request):
         """查询单个内网Zone的名称服务器
@@ -3120,9 +3584,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPrivateZoneNameServerResponse`
         """
-        return self._show_private_zone_name_server_with_http_info(request)
+        http_info = self._show_private_zone_name_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_private_zone_name_server_with_http_info(self, request):
+    def show_private_zone_name_server_invoker(self, request):
+        http_info = self._show_private_zone_name_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_private_zone_name_server_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones/{zone_id}/nameservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPrivateZoneNameServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3139,9 +3616,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3150,20 +3627,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/nameservers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPrivateZoneNameServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_public_zone(self, request):
         """查询单个公网Zone
@@ -3176,9 +3649,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPublicZoneResponse`
         """
-        return self._show_public_zone_with_http_info(request)
+        http_info = self._show_public_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_public_zone_with_http_info(self, request):
+    def show_public_zone_invoker(self, request):
+        http_info = self._show_public_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_public_zone_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones/{zone_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3195,9 +3681,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3206,20 +3692,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_public_zone_name_server(self, request):
         """查询单个公网Zone的名称服务器
@@ -3232,9 +3714,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.ShowPublicZoneNameServerResponse`
         """
-        return self._show_public_zone_name_server_with_http_info(request)
+        http_info = self._show_public_zone_name_server_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_public_zone_name_server_with_http_info(self, request):
+    def show_public_zone_name_server_invoker(self, request):
+        http_info = self._show_public_zone_name_server_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_public_zone_name_server_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/zones/{zone_id}/nameservers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicZoneNameServerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3251,9 +3746,9 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3262,20 +3757,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/nameservers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicZoneNameServerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_private_zone(self, request):
         """修改单个内网Zone
@@ -3288,9 +3779,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePrivateZoneResponse`
         """
-        return self._update_private_zone_with_http_info(request)
+        http_info = self._update_private_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_private_zone_with_http_info(self, request):
+    def update_private_zone_invoker(self, request):
+        http_info = self._update_private_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_private_zone_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/zones/{zone_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrivateZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3307,11 +3811,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3320,20 +3824,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePrivateZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_public_zone(self, request):
         """修改单个公网Zone
@@ -3346,9 +3846,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneResponse`
         """
-        return self._update_public_zone_with_http_info(request)
+        http_info = self._update_public_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_public_zone_with_http_info(self, request):
+    def update_public_zone_invoker(self, request):
+        http_info = self._update_public_zone_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_public_zone_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/zones/{zone_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3365,11 +3878,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3378,20 +3891,16 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePublicZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_public_zone_status(self, request):
         """设置单个公网Zone状态
@@ -3404,9 +3913,22 @@ class DnsClient(Client):
         :type request: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusRequest`
         :rtype: :class:`huaweicloudsdkdns.v2.UpdatePublicZoneStatusResponse`
         """
-        return self._update_public_zone_status_with_http_info(request)
+        http_info = self._update_public_zone_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_public_zone_status_with_http_info(self, request):
+    def update_public_zone_status_invoker(self, request):
+        http_info = self._update_public_zone_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_public_zone_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/zones/{zone_id}/statuses",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicZoneStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3423,11 +3945,11 @@ class DnsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3436,20 +3958,25 @@ class DnsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/zones/{zone_id}/statuses',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePublicZoneStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

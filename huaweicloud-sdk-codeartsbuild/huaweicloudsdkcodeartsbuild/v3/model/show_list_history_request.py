@@ -35,7 +35,7 @@ class ShowListHistoryRequest:
 
         The model defined in huaweicloud sdk
 
-        :param job_id: 构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
+        :param job_id: 构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
         :type job_id: str
         :param offset: 分页页码， 表示从此页开始查询， offset大于等于0
         :type offset: int
@@ -62,7 +62,7 @@ class ShowListHistoryRequest:
     def job_id(self):
         """Gets the job_id of this ShowListHistoryRequest.
 
-        构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
+        构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
         :return: The job_id of this ShowListHistoryRequest.
         :rtype: str
@@ -73,7 +73,7 @@ class ShowListHistoryRequest:
     def job_id(self, job_id):
         """Sets the job_id of this ShowListHistoryRequest.
 
-        构建的任务ID [获取项目下构建任务列表](https://support.huaweicloud.com/api-codeci/ShowJobListByProjectId.html)； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
+        构建的任务ID； 编辑构建任务时，浏览器URL末尾的32位数字、字母组合的字符串。
 
         :param job_id: The job_id of this ShowListHistoryRequest.
         :type job_id: str

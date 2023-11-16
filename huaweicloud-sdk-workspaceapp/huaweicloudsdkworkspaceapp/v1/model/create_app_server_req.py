@@ -29,7 +29,8 @@ class CreateAppServerReq:
         'scheduler_hints': 'WdhParam',
         'subnet_id': 'str',
         'vpc_id': 'str',
-        'update_access_agent': 'bool'
+        'update_access_agent': 'bool',
+        'create_server_extend_param': 'CreateServerExtendParam'
     }
 
     attribute_map = {
@@ -45,10 +46,11 @@ class CreateAppServerReq:
         'scheduler_hints': 'scheduler_hints',
         'subnet_id': 'subnet_id',
         'vpc_id': 'vpc_id',
-        'update_access_agent': 'update_access_agent'
+        'update_access_agent': 'update_access_agent',
+        'create_server_extend_param': 'create_server_extend_param'
     }
 
-    def __init__(self, type=None, server_group_id=None, availability_zone=None, subscription_num=None, nics=None, ou_name=None, product_id=None, os_type=None, root_volume=None, scheduler_hints=None, subnet_id=None, vpc_id=None, update_access_agent=None):
+    def __init__(self, type=None, server_group_id=None, availability_zone=None, subscription_num=None, nics=None, ou_name=None, product_id=None, os_type=None, root_volume=None, scheduler_hints=None, subnet_id=None, vpc_id=None, update_access_agent=None, create_server_extend_param=None):
         """CreateAppServerReq
 
         The model defined in huaweicloud sdk
@@ -79,6 +81,8 @@ class CreateAppServerReq:
         :type vpc_id: str
         :param update_access_agent: 是否自动升级hda版本
         :type update_access_agent: bool
+        :param create_server_extend_param: 
+        :type create_server_extend_param: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerExtendParam`
         """
         
         
@@ -96,6 +100,7 @@ class CreateAppServerReq:
         self._subnet_id = None
         self._vpc_id = None
         self._update_access_agent = None
+        self._create_server_extend_param = None
         self.discriminator = None
 
         self.type = type
@@ -117,6 +122,8 @@ class CreateAppServerReq:
         self.vpc_id = vpc_id
         if update_access_agent is not None:
             self.update_access_agent = update_access_agent
+        if create_server_extend_param is not None:
+            self.create_server_extend_param = create_server_extend_param
 
     @property
     def type(self):
@@ -395,6 +402,24 @@ class CreateAppServerReq:
         :type update_access_agent: bool
         """
         self._update_access_agent = update_access_agent
+
+    @property
+    def create_server_extend_param(self):
+        """Gets the create_server_extend_param of this CreateAppServerReq.
+
+        :return: The create_server_extend_param of this CreateAppServerReq.
+        :rtype: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerExtendParam`
+        """
+        return self._create_server_extend_param
+
+    @create_server_extend_param.setter
+    def create_server_extend_param(self, create_server_extend_param):
+        """Sets the create_server_extend_param of this CreateAppServerReq.
+
+        :param create_server_extend_param: The create_server_extend_param of this CreateAppServerReq.
+        :type create_server_extend_param: :class:`huaweicloudsdkworkspaceapp.v1.CreateServerExtendParam`
+        """
+        self._create_server_extend_param = create_server_extend_param
 
     def to_dict(self):
         """Returns the model properties as a dict"""

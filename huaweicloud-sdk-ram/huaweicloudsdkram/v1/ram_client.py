@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkram'")
 
 
 class RamClient(Client):
@@ -38,9 +43,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.AssociateResourceSharePermissionRequest`
         :rtype: :class:`huaweicloudsdkram.v1.AssociateResourceSharePermissionResponse`
         """
-        return self._associate_resource_share_permission_with_http_info(request)
+        http_info = self._associate_resource_share_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_resource_share_permission_with_http_info(self, request):
+    def associate_resource_share_permission_invoker(self, request):
+        http_info = self._associate_resource_share_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_resource_share_permission_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/{resource_share_id}/associate-permission",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateResourceSharePermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}/associate-permission',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateResourceSharePermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_resource_share_permission(self, request):
         """移除共享资源权限
@@ -96,9 +110,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.DisassociateResourceSharePermissionRequest`
         :rtype: :class:`huaweicloudsdkram.v1.DisassociateResourceSharePermissionResponse`
         """
-        return self._disassociate_resource_share_permission_with_http_info(request)
+        http_info = self._disassociate_resource_share_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_resource_share_permission_with_http_info(self, request):
+    def disassociate_resource_share_permission_invoker(self, request):
+        http_info = self._disassociate_resource_share_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_resource_share_permission_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/{resource_share_id}/disassociate-permission",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateResourceSharePermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}/disassociate-permission',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateResourceSharePermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_share_permissions(self, request):
         """检索绑定的共享资源权限
@@ -154,9 +177,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListResourceSharePermissionsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListResourceSharePermissionsResponse`
         """
-        return self._list_resource_share_permissions_with_http_info(request)
+        http_info = self._list_resource_share_permissions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_share_permissions_with_http_info(self, request):
+    def list_resource_share_permissions_invoker(self, request):
+        http_info = self._list_resource_share_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_share_permissions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-shares/{resource_share_id}/associated-permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceSharePermissionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -179,9 +215,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -190,20 +226,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}/associated-permissions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceSharePermissionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quota(self, request):
         """查询资源共享的配额
@@ -216,9 +248,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListQuotaRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListQuotaResponse`
         """
-        return self._list_quota_with_http_info(request)
+        http_info = self._list_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quota_with_http_info(self, request):
+    def list_quota_invoker(self, request):
+        http_info = self._list_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-shares/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,9 +278,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_types(self, request):
         """检索云服务资源类型
@@ -270,9 +311,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListResourceTypesRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListResourceTypesResponse`
         """
-        return self._list_resource_types_with_http_info(request)
+        http_info = self._list_resource_types_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_types_with_http_info(self, request):
+    def list_resource_types_invoker(self, request):
+        http_info = self._list_resource_types_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_types_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTypesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,9 +345,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -302,20 +356,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceTypesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_organization_share(self, request):
         """关闭与组织共享
@@ -328,9 +378,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.DisableOrganizationShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.DisableOrganizationShareResponse`
         """
-        return self._disable_organization_share_with_http_info(request)
+        http_info = self._disable_organization_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_organization_share_with_http_info(self, request):
+    def disable_organization_share_invoker(self, request):
+        http_info = self._disable_organization_share_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disable_organization_share_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organization-share/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableOrganizationShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -345,9 +408,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -356,20 +419,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organization-share/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableOrganizationShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_organization_share(self, request):
         """启用与组织共享
@@ -382,9 +441,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.EnableOrganizationShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.EnableOrganizationShareResponse`
         """
-        return self._enable_organization_share_with_http_info(request)
+        http_info = self._enable_organization_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_organization_share_with_http_info(self, request):
+    def enable_organization_share_invoker(self, request):
+        http_info = self._enable_organization_share_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_organization_share_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/organization-share/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableOrganizationShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -399,9 +471,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -410,20 +482,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organization-share/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableOrganizationShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_organization_share(self, request):
         """检索是否启用与组织共享
@@ -436,9 +504,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ShowOrganizationShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ShowOrganizationShareResponse`
         """
-        return self._show_organization_share_with_http_info(request)
+        http_info = self._show_organization_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_organization_share_with_http_info(self, request):
+    def show_organization_share_invoker(self, request):
+        http_info = self._show_organization_share_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_organization_share_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/organization-share",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOrganizationShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -453,9 +534,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -464,20 +545,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/organization-share',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOrganizationShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_permissions(self, request):
         """检索共享资源权限列表
@@ -490,9 +567,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListPermissionsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListPermissionsResponse`
         """
-        return self._list_permissions_with_http_info(request)
+        http_info = self._list_permissions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_permissions_with_http_info(self, request):
+    def list_permissions_invoker(self, request):
+        http_info = self._list_permissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_permissions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPermissionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -513,9 +603,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -524,20 +614,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/permissions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPermissionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_permission(self, request):
         """检索资源共享权限内容
@@ -550,9 +636,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ShowPermissionRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ShowPermissionResponse`
         """
-        return self._show_permission_with_http_info(request)
+        http_info = self._show_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_permission_with_http_info(self, request):
+    def show_permission_invoker(self, request):
+        http_info = self._show_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_permission_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/permissions/{permission_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -569,9 +668,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -580,20 +679,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/permissions/{permission_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_shared_principals(self, request):
         """检索资源使用者
@@ -606,9 +701,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchSharedPrincipalsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchSharedPrincipalsResponse`
         """
-        return self._search_shared_principals_with_http_info(request)
+        http_info = self._search_shared_principals_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_shared_principals_with_http_info(self, request):
+    def search_shared_principals_invoker(self, request):
+        http_info = self._search_shared_principals_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_shared_principals_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/shared-principals/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchSharedPrincipalsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -623,11 +731,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -636,20 +744,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/shared-principals/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchSharedPrincipalsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_shared_resources(self, request):
         """检索共享的资源
@@ -662,9 +766,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchSharedResourcesRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchSharedResourcesResponse`
         """
-        return self._search_shared_resources_with_http_info(request)
+        http_info = self._search_shared_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_shared_resources_with_http_info(self, request):
+    def search_shared_resources_invoker(self, request):
+        http_info = self._search_shared_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_shared_resources_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/shared-resources/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchSharedResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -679,11 +796,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -692,20 +809,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/shared-resources/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchSharedResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resource_share(self, request):
         """创建资源共享实例
@@ -718,9 +831,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.CreateResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.CreateResourceShareResponse`
         """
-        return self._create_resource_share_with_http_info(request)
+        http_info = self._create_resource_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resource_share_with_http_info(self, request):
+    def create_resource_share_invoker(self, request):
+        http_info = self._create_resource_share_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_resource_share_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -735,11 +861,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -748,20 +874,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResourceShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_share(self, request):
         """删除资源共享实例
@@ -774,9 +896,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.DeleteResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.DeleteResourceShareResponse`
         """
-        return self._delete_resource_share_with_http_info(request)
+        http_info = self._delete_resource_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_share_with_http_info(self, request):
+    def delete_resource_share_invoker(self, request):
+        http_info = self._delete_resource_share_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_resource_share_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/resource-shares/{resource_share_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -793,9 +928,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -804,20 +939,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_resource_shares(self, request):
         """检索资源共享实例
@@ -830,9 +961,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchResourceSharesRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceSharesResponse`
         """
-        return self._search_resource_shares_with_http_info(request)
+        http_info = self._search_resource_shares_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_resource_shares_with_http_info(self, request):
+    def search_resource_shares_invoker(self, request):
+        http_info = self._search_resource_shares_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_resource_shares_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchResourceSharesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -847,11 +991,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -860,20 +1004,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchResourceSharesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_resource_share(self, request):
         """更新资源共享实例
@@ -886,9 +1026,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.UpdateResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.UpdateResourceShareResponse`
         """
-        return self._update_resource_share_with_http_info(request)
+        http_info = self._update_resource_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_resource_share_with_http_info(self, request):
+    def update_resource_share_invoker(self, request):
+        http_info = self._update_resource_share_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_resource_share_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/resource-shares/{resource_share_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateResourceShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -905,11 +1058,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -918,20 +1071,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateResourceShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_resource_share(self, request):
         """绑定资源使用者和共享资源
@@ -944,9 +1093,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.AssociateResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.AssociateResourceShareResponse`
         """
-        return self._associate_resource_share_with_http_info(request)
+        http_info = self._associate_resource_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_resource_share_with_http_info(self, request):
+    def associate_resource_share_invoker(self, request):
+        http_info = self._associate_resource_share_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_resource_share_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/{resource_share_id}/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateResourceShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -963,11 +1125,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -976,20 +1138,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}/associate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateResourceShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_resource_share(self, request):
         """移除资源使用者和共享资源
@@ -1002,9 +1160,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.DisassociateResourceShareRequest`
         :rtype: :class:`huaweicloudsdkram.v1.DisassociateResourceShareResponse`
         """
-        return self._disassociate_resource_share_with_http_info(request)
+        http_info = self._disassociate_resource_share_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_resource_share_with_http_info(self, request):
+    def disassociate_resource_share_invoker(self, request):
+        http_info = self._disassociate_resource_share_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_resource_share_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/{resource_share_id}/disassociate",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateResourceShareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1021,11 +1192,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1034,20 +1205,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}/disassociate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateResourceShareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_resource_share_associations(self, request):
         """检索绑定的资源使用者和共享资源
@@ -1060,9 +1227,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchResourceShareAssociationsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceShareAssociationsResponse`
         """
-        return self._search_resource_share_associations_with_http_info(request)
+        http_info = self._search_resource_share_associations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_resource_share_associations_with_http_info(self, request):
+    def search_resource_share_associations_invoker(self, request):
+        http_info = self._search_resource_share_associations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_resource_share_associations_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-share-associations/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchResourceShareAssociationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1077,11 +1257,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1090,20 +1270,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-share-associations/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchResourceShareAssociationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def accept_resource_share_invitation(self, request):
         """接受共享邀请
@@ -1116,9 +1292,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.AcceptResourceShareInvitationRequest`
         :rtype: :class:`huaweicloudsdkram.v1.AcceptResourceShareInvitationResponse`
         """
-        return self._accept_resource_share_invitation_with_http_info(request)
+        http_info = self._accept_resource_share_invitation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _accept_resource_share_invitation_with_http_info(self, request):
+    def accept_resource_share_invitation_invoker(self, request):
+        http_info = self._accept_resource_share_invitation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _accept_resource_share_invitation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-share-invitations/{resource_share_invitation_id}/accept",
+            "request_type": request.__class__.__name__,
+            "response_type": "AcceptResourceShareInvitationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1135,9 +1324,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1146,20 +1335,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-share-invitations/{resource_share_invitation_id}/accept',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AcceptResourceShareInvitationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reject_resource_share_invitation(self, request):
         """拒绝共享邀请
@@ -1172,9 +1357,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.RejectResourceShareInvitationRequest`
         :rtype: :class:`huaweicloudsdkram.v1.RejectResourceShareInvitationResponse`
         """
-        return self._reject_resource_share_invitation_with_http_info(request)
+        http_info = self._reject_resource_share_invitation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reject_resource_share_invitation_with_http_info(self, request):
+    def reject_resource_share_invitation_invoker(self, request):
+        http_info = self._reject_resource_share_invitation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reject_resource_share_invitation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-share-invitations/{resource_share_invitation_id}/reject",
+            "request_type": request.__class__.__name__,
+            "response_type": "RejectResourceShareInvitationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1191,9 +1389,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1202,20 +1400,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-share-invitations/{resource_share_invitation_id}/reject',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RejectResourceShareInvitationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_resource_share_invitation(self, request):
         """检索共享邀请
@@ -1228,9 +1422,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchResourceShareInvitationRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceShareInvitationResponse`
         """
-        return self._search_resource_share_invitation_with_http_info(request)
+        http_info = self._search_resource_share_invitation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_resource_share_invitation_with_http_info(self, request):
+    def search_resource_share_invitation_invoker(self, request):
+        http_info = self._search_resource_share_invitation_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_resource_share_invitation_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-share-invitations/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchResourceShareInvitationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1245,11 +1452,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1258,20 +1465,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-share-invitations/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchResourceShareInvitationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_resource_share_tags(self, request):
         """资源共享实例增加标签
@@ -1284,9 +1487,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.BatchCreateResourceShareTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.BatchCreateResourceShareTagsResponse`
         """
-        return self._batch_create_resource_share_tags_with_http_info(request)
+        http_info = self._batch_create_resource_share_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_resource_share_tags_with_http_info(self, request):
+    def batch_create_resource_share_tags_invoker(self, request):
+        http_info = self._batch_create_resource_share_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_resource_share_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/{resource_share_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateResourceShareTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1303,11 +1519,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1316,20 +1532,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateResourceShareTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_resource_share_tags(self, request):
         """删除资源共享实例的标签
@@ -1342,9 +1554,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.BatchDeleteResourceShareTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.BatchDeleteResourceShareTagsResponse`
         """
-        return self._batch_delete_resource_share_tags_with_http_info(request)
+        http_info = self._batch_delete_resource_share_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_resource_share_tags_with_http_info(self, request):
+    def batch_delete_resource_share_tags_invoker(self, request):
+        http_info = self._batch_delete_resource_share_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_resource_share_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/{resource_share_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteResourceShareTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1361,11 +1586,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1374,20 +1599,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/{resource_share_id}/tags/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteResourceShareTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_share_tags(self, request):
         """查询已使用的标签列表
@@ -1400,9 +1621,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListResourceShareTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListResourceShareTagsResponse`
         """
-        return self._list_resource_share_tags_with_http_info(request)
+        http_info = self._list_resource_share_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_share_tags_with_http_info(self, request):
+    def list_resource_share_tags_invoker(self, request):
+        http_info = self._list_resource_share_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_share_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/resource-shares/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceShareTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1421,9 +1655,9 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1432,20 +1666,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceShareTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_shares_by_tags(self, request):
         """根据标签信息查询实例列表
@@ -1458,9 +1688,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.ListResourceSharesByTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.ListResourceSharesByTagsResponse`
         """
-        return self._list_resource_shares_by_tags_with_http_info(request)
+        http_info = self._list_resource_shares_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_shares_by_tags_with_http_info(self, request):
+    def list_resource_shares_by_tags_invoker(self, request):
+        http_info = self._list_resource_shares_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_shares_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/resource-instances/filter",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceSharesByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1479,11 +1722,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1492,20 +1735,16 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/resource-instances/filter',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceSharesByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_resource_share_count_by_tags(self, request):
         """根据标签信息查询实例数量
@@ -1518,9 +1757,22 @@ class RamClient(Client):
         :type request: :class:`huaweicloudsdkram.v1.SearchResourceShareCountByTagsRequest`
         :rtype: :class:`huaweicloudsdkram.v1.SearchResourceShareCountByTagsResponse`
         """
-        return self._search_resource_share_count_by_tags_with_http_info(request)
+        http_info = self._search_resource_share_count_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_resource_share_count_by_tags_with_http_info(self, request):
+    def search_resource_share_count_by_tags_invoker(self, request):
+        http_info = self._search_resource_share_count_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_resource_share_count_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource-shares/resource-instances/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchResourceShareCountByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1535,11 +1787,11 @@ class RamClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1548,20 +1800,25 @@ class RamClient(Client):
 
         auth_settings = ['AccessKeyAuth']
 
-        return self.call_api(
-            resource_path='/v1/resource-shares/resource-instances/count',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchResourceShareCountByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

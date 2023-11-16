@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcbh'")
 
 
 class CbhAsyncClient(Client):
@@ -39,9 +44,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetworkRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceNetworkResponse`
         """
-        return self._change_instance_network_with_http_info(request)
+        http_info = self._change_instance_network_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_instance_network_with_http_info(self, request):
+    def change_instance_network_async_invoker(self, request):
+        http_info = self._change_instance_network_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_instance_network_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/{server_id}/network/change",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeInstanceNetworkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/{server_id}/network/change',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeInstanceNetworkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_instance_order_async(self, request):
         """创建变更云堡垒机实例订单
@@ -98,9 +111,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ChangeInstanceOrderResponse`
         """
-        return self._change_instance_order_with_http_info(request)
+        http_info = self._change_instance_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_instance_order_with_http_info(self, request):
+    def change_instance_order_async_invoker(self, request):
+        http_info = self._change_instance_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_instance_order_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cbs/{server_id}/alter/{instance_key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeInstanceOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,9 +144,9 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/{server_id}/alter/{instance_key}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeInstanceOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance_async(self, request):
         """创建云堡垒机实例
@@ -157,9 +178,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.CreateInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.CreateInstanceResponse`
         """
-        return self._create_instance_with_http_info(request)
+        http_info = self._create_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_with_http_info(self, request):
+    def create_instance_async_invoker(self, request):
+        http_info = self._create_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/instance/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -174,11 +207,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -187,20 +220,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance_order_async(self, request):
         """创建云堡垒机实例订单
@@ -214,9 +243,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.CreateInstanceOrderRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.CreateInstanceOrderResponse`
         """
-        return self._create_instance_order_with_http_info(request)
+        http_info = self._create_instance_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_order_with_http_info(self, request):
+    def create_instance_order_async_invoker(self, request):
+        http_info = self._create_instance_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_order_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/period/order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +272,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +285,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/period/order',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def install_instance_eip_async(self, request):
         """绑定弹性公网IP
@@ -271,9 +308,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.InstallInstanceEipResponse`
         """
-        return self._install_instance_eip_with_http_info(request)
+        http_info = self._install_instance_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _install_instance_eip_with_http_info(self, request):
+    def install_instance_eip_async_invoker(self, request):
+        http_info = self._install_instance_eip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _install_instance_eip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/instance/{server_id}/eip/bind",
+            "request_type": request.__class__.__name__,
+            "response_type": "InstallInstanceEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -290,11 +339,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -303,20 +352,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/{server_id}/eip/bind',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InstallInstanceEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_cbh_instance_async(self, request):
         """获取CBH实例列表
@@ -330,9 +375,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ListCbhInstanceResponse`
         """
-        return self._list_cbh_instance_with_http_info(request)
+        http_info = self._list_cbh_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_cbh_instance_with_http_info(self, request):
+    def list_cbh_instance_async_invoker(self, request):
+        http_info = self._list_cbh_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_cbh_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cbs/instance/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCbhInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -347,9 +404,9 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -358,20 +415,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCbhInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quota_status_async(self, request):
         """获取弹性云服务器配额
@@ -385,9 +438,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ListQuotaStatusRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ListQuotaStatusResponse`
         """
-        return self._list_quota_status_with_http_info(request)
+        http_info = self._list_quota_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quota_status_with_http_info(self, request):
+    def list_quota_status_async_invoker(self, request):
+        http_info = self._list_quota_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quota_status_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cbs/instance/ecs-quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotaStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -406,9 +471,9 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -417,20 +482,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/ecs-quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotaStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_login_method_async(self, request):
         """重置admin用户多因子认证方式
@@ -444,9 +505,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ResetLoginMethodResponse`
         """
-        return self._reset_login_method_with_http_info(request)
+        http_info = self._reset_login_method_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_login_method_with_http_info(self, request):
+    def reset_login_method_async_invoker(self, request):
+        http_info = self._reset_login_method_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_login_method_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cbs/instance/{server_id}/login-method",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetLoginMethodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -463,9 +536,9 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +547,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/{server_id}/login-method',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetLoginMethodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_password_async(self, request):
         """修改admin用户密码
@@ -501,9 +570,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ResetPasswordRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ResetPasswordResponse`
         """
-        return self._reset_password_with_http_info(request)
+        http_info = self._reset_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_password_with_http_info(self, request):
+    def reset_password_async_invoker(self, request):
+        http_info = self._reset_password_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reset_password_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cbs/instance/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -518,11 +599,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -531,20 +612,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_cbh_instance_async(self, request):
         """重启云堡垒机实例
@@ -558,9 +635,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.RestartCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.RestartCbhInstanceResponse`
         """
-        return self._restart_cbh_instance_with_http_info(request)
+        http_info = self._restart_cbh_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_cbh_instance_with_http_info(self, request):
+    def restart_cbh_instance_async_invoker(self, request):
+        http_info = self._restart_cbh_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _restart_cbh_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/instance/reboot",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartCbhInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -575,11 +664,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -588,20 +677,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/reboot',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartCbhInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_quota_async(self, request):
         """查询堡垒机配额
@@ -615,9 +700,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.SearchQuotaRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.SearchQuotaResponse`
         """
-        return self._search_quota_with_http_info(request)
+        http_info = self._search_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_quota_with_http_info(self, request):
+    def search_quota_async_invoker(self, request):
+        http_info = self._search_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cbs/instance/quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -632,9 +729,9 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -643,20 +740,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_available_zone_info_async(self, request):
         """获取可用用分区信息
@@ -670,9 +763,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ShowAvailableZoneInfoRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ShowAvailableZoneInfoResponse`
         """
-        return self._show_available_zone_info_with_http_info(request)
+        http_info = self._show_available_zone_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_available_zone_info_with_http_info(self, request):
+    def show_available_zone_info_async_invoker(self, request):
+        http_info = self._show_available_zone_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_available_zone_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cbs/available-zone",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAvailableZoneInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -687,9 +792,9 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -698,20 +803,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/available-zone',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAvailableZoneInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_network_configuration_async(self, request):
         """检查云堡垒机网络
@@ -725,9 +826,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.ShowNetworkConfigurationRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.ShowNetworkConfigurationResponse`
         """
-        return self._show_network_configuration_with_http_info(request)
+        http_info = self._show_network_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_network_configuration_with_http_info(self, request):
+    def show_network_configuration_async_invoker(self, request):
+        http_info = self._show_network_configuration_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_network_configuration_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/network/configuration",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNetworkConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -742,11 +855,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -755,20 +868,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/network/configuration',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNetworkConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_cbh_instance_async(self, request):
         """启动云堡垒机实例
@@ -782,9 +891,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.StartCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.StartCbhInstanceResponse`
         """
-        return self._start_cbh_instance_with_http_info(request)
+        http_info = self._start_cbh_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_cbh_instance_with_http_info(self, request):
+    def start_cbh_instance_async_invoker(self, request):
+        http_info = self._start_cbh_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_cbh_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/instance/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartCbhInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -799,11 +920,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -812,20 +933,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartCbhInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_cbh_instance_async(self, request):
         """关闭云堡垒机实例
@@ -839,9 +956,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.StopCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.StopCbhInstanceResponse`
         """
-        return self._stop_cbh_instance_with_http_info(request)
+        http_info = self._stop_cbh_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_cbh_instance_with_http_info(self, request):
+    def stop_cbh_instance_async_invoker(self, request):
+        http_info = self._stop_cbh_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_cbh_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/instance/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopCbhInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -856,11 +985,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -869,20 +998,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopCbhInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def uninstall_instance_eip_async(self, request):
         """解绑弹性公网IP
@@ -896,9 +1021,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.UninstallInstanceEipRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.UninstallInstanceEipResponse`
         """
-        return self._uninstall_instance_eip_with_http_info(request)
+        http_info = self._uninstall_instance_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _uninstall_instance_eip_with_http_info(self, request):
+    def uninstall_instance_eip_async_invoker(self, request):
+        http_info = self._uninstall_instance_eip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _uninstall_instance_eip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/instance/{server_id}/eip/unbind",
+            "request_type": request.__class__.__name__,
+            "response_type": "UninstallInstanceEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -915,11 +1052,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -928,20 +1065,16 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/{server_id}/eip/unbind',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UninstallInstanceEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_cbh_instance_async(self, request):
         """升级云堡垒机实例
@@ -955,9 +1088,21 @@ class CbhAsyncClient(Client):
         :type request: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceRequest`
         :rtype: :class:`huaweicloudsdkcbh.v1.UpgradeCbhInstanceResponse`
         """
-        return self._upgrade_cbh_instance_with_http_info(request)
+        http_info = self._upgrade_cbh_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_cbh_instance_with_http_info(self, request):
+    def upgrade_cbh_instance_async_invoker(self, request):
+        http_info = self._upgrade_cbh_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _upgrade_cbh_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cbs/instance/upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeCbhInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -972,11 +1117,11 @@ class CbhAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -985,20 +1130,26 @@ class CbhAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cbs/instance/upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeCbhInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1037,4 +1188,4 @@ class CbhAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

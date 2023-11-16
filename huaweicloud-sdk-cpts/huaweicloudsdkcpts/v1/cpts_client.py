@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcpts'")
 
 
 class CptsClient(Client):
@@ -38,9 +43,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.BatchUpdateTaskStatusRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.BatchUpdateTaskStatusResponse`
         """
-        return self._batch_update_task_status_with_http_info(request)
+        http_info = self._batch_update_task_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_task_status_with_http_info(self, request):
+    def batch_update_task_status_invoker(self, request):
+        http_info = self._batch_update_task_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_task_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suit_id}/tasks/batch-update-task-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateTaskStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suit_id}/tasks/batch-update-task-status',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateTaskStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_case(self, request):
         """创建用例
@@ -96,9 +110,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.CreateCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateCaseResponse`
         """
-        return self._create_case_with_http_info(request)
+        http_info = self._create_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_case_with_http_info(self, request):
+    def create_case_invoker(self, request):
+        http_info = self._create_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_case_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/task-cases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +140,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +153,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task-cases',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_directory(self, request):
         """创建目录
@@ -152,9 +175,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.CreateDirectoryRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateDirectoryResponse`
         """
-        return self._create_directory_with_http_info(request)
+        http_info = self._create_directory_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_directory_with_http_info(self, request):
+    def create_directory_invoker(self, request):
+        http_info = self._create_directory_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_directory_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}/directory",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDirectoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -171,11 +207,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -184,20 +220,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDirectoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_new_case(self, request):
         """创建用例v2
@@ -210,9 +242,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.CreateNewCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateNewCaseResponse`
         """
-        return self._create_new_case_with_http_info(request)
+        http_info = self._create_new_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_new_case_with_http_info(self, request):
+    def create_new_case_invoker(self, request):
+        http_info = self._create_new_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_new_case_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/test-cases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNewCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -227,11 +272,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +285,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/test-cases',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNewCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_new_task(self, request):
         """创建任务v3
@@ -266,9 +307,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.CreateNewTaskRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateNewTaskResponse`
         """
-        return self._create_new_task_with_http_info(request)
+        http_info = self._create_new_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_new_task_with_http_info(self, request):
+    def create_new_task_invoker(self, request):
+        http_info = self._create_new_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_new_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNewTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -283,11 +337,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -296,20 +350,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNewTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_task(self, request):
         """创建任务
@@ -322,9 +372,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateTaskResponse`
         """
-        return self._create_task_with_http_info(request)
+        http_info = self._create_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_task_with_http_info(self, request):
+    def create_task_invoker(self, request):
+        http_info = self._create_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -339,11 +402,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -352,20 +415,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_temp(self, request):
         """创建事务
@@ -378,9 +437,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.CreateTempRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateTempResponse`
         """
-        return self._create_temp_with_http_info(request)
+        http_info = self._create_temp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_temp_with_http_info(self, request):
+    def create_temp_invoker(self, request):
+        http_info = self._create_temp_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_temp_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTempResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -395,11 +467,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -408,20 +480,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTempResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_variable(self, request):
         """创建变量
@@ -434,9 +502,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.CreateVariableRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateVariableResponse`
         """
-        return self._create_variable_with_http_info(request)
+        http_info = self._create_variable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_variable_with_http_info(self, request):
+    def create_variable_invoker(self, request):
+        http_info = self._create_variable_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_variable_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/variables/{test_suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVariableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -453,11 +534,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -466,20 +547,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/variables/{test_suite_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVariableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def debug_case(self, request):
         """调试用例
@@ -492,9 +569,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DebugCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DebugCaseResponse`
         """
-        return self._debug_case_with_http_info(request)
+        http_info = self._debug_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _debug_case_with_http_info(self, request):
+    def debug_case_invoker(self, request):
+        http_info = self._debug_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _debug_case_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}/tasks/{task_id}/cases/{case_id}/debug",
+            "request_type": request.__class__.__name__,
+            "response_type": "DebugCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -515,11 +605,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -528,20 +618,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/tasks/{task_id}/cases/{case_id}/debug',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DebugCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_case(self, request):
         """删除用例
@@ -554,9 +640,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DeleteCaseResponse`
         """
-        return self._delete_case_with_http_info(request)
+        http_info = self._delete_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_case_with_http_info(self, request):
+    def delete_case_invoker(self, request):
+        http_info = self._delete_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_case_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/task-cases/{case_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -573,9 +672,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -584,20 +683,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task-cases/{case_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_directory(self, request):
         """删除目录
@@ -610,9 +705,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteDirectoryRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DeleteDirectoryResponse`
         """
-        return self._delete_directory_with_http_info(request)
+        http_info = self._delete_directory_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_directory_with_http_info(self, request):
+    def delete_directory_invoker(self, request):
+        http_info = self._delete_directory_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_directory_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}/directory/{directory_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDirectoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -631,9 +739,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -642,20 +750,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory/{directory_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDirectoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_new_case(self, request):
         """删除用例v2
@@ -668,9 +772,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteNewCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DeleteNewCaseResponse`
         """
-        return self._delete_new_case_with_http_info(request)
+        http_info = self._delete_new_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_new_case_with_http_info(self, request):
+    def delete_new_case_invoker(self, request):
+        http_info = self._delete_new_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_new_case_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/test-cases/{case_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNewCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -687,9 +804,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -698,20 +815,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/test-cases/{case_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNewCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_new_task(self, request):
         """删除任务v3
@@ -724,9 +837,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteNewTaskRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DeleteNewTaskResponse`
         """
-        return self._delete_new_task_with_http_info(request)
+        http_info = self._delete_new_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_new_task_with_http_info(self, request):
+    def delete_new_task_invoker(self, request):
+        http_info = self._delete_new_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_new_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNewTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -743,9 +869,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -754,20 +880,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNewTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task(self, request):
         """删除任务
@@ -780,9 +902,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DeleteTaskResponse`
         """
-        return self._delete_task_with_http_info(request)
+        http_info = self._delete_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_with_http_info(self, request):
+    def delete_task_invoker(self, request):
+        http_info = self._delete_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -799,9 +934,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -810,20 +945,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_temp(self, request):
         """删除事务
@@ -836,9 +967,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteTempRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DeleteTempResponse`
         """
-        return self._delete_temp_with_http_info(request)
+        http_info = self._delete_temp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_temp_with_http_info(self, request):
+    def delete_temp_invoker(self, request):
+        http_info = self._delete_temp_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_temp_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTempResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -855,9 +999,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -866,20 +1010,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTempResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_variable(self, request):
         """删除全局变量
@@ -892,9 +1032,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteVariableRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DeleteVariableResponse`
         """
-        return self._delete_variable_with_http_info(request)
+        http_info = self._delete_variable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_variable_with_http_info(self, request):
+    def delete_variable_invoker(self, request):
+        http_info = self._delete_variable_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_variable_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVariableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -913,9 +1066,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -924,20 +1077,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/variables',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVariableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_test_case(self, request):
         """查询用例树
@@ -950,9 +1099,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ListProjectTestCaseResponse`
         """
-        return self._list_project_test_case_with_http_info(request)
+        http_info = self._list_project_test_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_test_case_with_http_info(self, request):
+    def list_project_test_case_invoker(self, request):
+        http_info = self._list_project_test_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_test_case_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}/directory",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTestCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -969,9 +1131,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -980,20 +1142,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTestCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_task_cases(self, request):
         """获取任务关联的用例列表
@@ -1006,9 +1164,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ListTaskCasesRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ListTaskCasesResponse`
         """
-        return self._list_task_cases_with_http_info(request)
+        http_info = self._list_task_cases_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_task_cases_with_http_info(self, request):
+    def list_task_cases_invoker(self, request):
+        http_info = self._list_task_cases_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_task_cases_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suit_id}/tasks/{task_id}/test-cases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskCasesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1027,9 +1198,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1038,20 +1209,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suit_id}/tasks/{task_id}/test-cases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTaskCasesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_variables(self, request):
         """查询全局变量
@@ -1064,9 +1231,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ListVariablesRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ListVariablesResponse`
         """
-        return self._list_variables_with_http_info(request)
+        http_info = self._list_variables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_variables_with_http_info(self, request):
+    def list_variables_invoker(self, request):
+        http_info = self._list_variables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_variables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/variables/{variable_type}/test-suites/{test_suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVariablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1085,9 +1265,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1096,20 +1276,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/variables/{variable_type}/test-suites/{test_suite_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVariablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_agent_config(self, request):
         """全链路压测探针获取配置信息
@@ -1122,9 +1298,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowAgentConfigRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowAgentConfigResponse`
         """
-        return self._show_agent_config_with_http_info(request)
+        http_info = self._show_agent_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_agent_config_with_http_info(self, request):
+    def show_agent_config_invoker(self, request):
+        http_info = self._show_agent_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_agent_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stress/agents",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAgentConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1139,11 +1328,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1152,20 +1341,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stress/agents',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAgentConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_case(self, request):
         """查询用例
@@ -1178,9 +1363,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowCaseResponse`
         """
-        return self._show_case_with_http_info(request)
+        http_info = self._show_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_case_with_http_info(self, request):
+    def show_case_invoker(self, request):
+        http_info = self._show_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_case_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/test-cases/{case_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1197,9 +1395,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1208,20 +1406,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/test-cases/{case_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_history_run_info(self, request):
         """查询PerfTest任务离线报告列表
@@ -1234,9 +1428,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowHistoryRunInfoRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowHistoryRunInfoResponse`
         """
-        return self._show_history_run_info_with_http_info(request)
+        http_info = self._show_history_run_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_history_run_info_with_http_info(self, request):
+    def show_history_run_info_invoker(self, request):
+        http_info = self._show_history_run_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_history_run_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tasks/history-run-list/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHistoryRunInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1253,9 +1460,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1264,20 +1471,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tasks/history-run-list/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHistoryRunInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_merge_case_detail(self, request):
         """内外融合单个用例的详情数据
@@ -1290,9 +1493,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowMergeCaseDetailRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowMergeCaseDetailResponse`
         """
-        return self._show_merge_case_detail_with_http_info(request)
+        http_info = self._show_merge_case_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_merge_case_detail_with_http_info(self, request):
+    def show_merge_case_detail_invoker(self, request):
+        http_info = self._show_merge_case_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_merge_case_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/task-run-infos/{task_run_id}/case-run-infos/{case_run_id}/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMergeCaseDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1311,9 +1527,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1322,20 +1538,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/task-run-infos/{task_run_id}/case-run-infos/{case_run_id}/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMergeCaseDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_merge_report_logs_outline(self, request):
         """查询报告汇总数据接口
@@ -1348,9 +1560,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowMergeReportLogsOutlineRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowMergeReportLogsOutlineResponse`
         """
-        return self._show_merge_report_logs_outline_with_http_info(request)
+        http_info = self._show_merge_report_logs_outline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_merge_report_logs_outline_with_http_info(self, request):
+    def show_merge_report_logs_outline_invoker(self, request):
+        http_info = self._show_merge_report_logs_outline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_merge_report_logs_outline_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/task-run-infos/{task_run_id}/reports/log-outline",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMergeReportLogsOutlineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1367,9 +1592,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1378,20 +1603,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/task-run-infos/{task_run_id}/reports/log-outline',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMergeReportLogsOutlineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_merge_task_case(self, request):
         """内外融合当前任务用例列表接口
@@ -1404,9 +1625,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowMergeTaskCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowMergeTaskCaseResponse`
         """
-        return self._show_merge_task_case_with_http_info(request)
+        http_info = self._show_merge_task_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_merge_task_case_with_http_info(self, request):
+    def show_merge_task_case_invoker(self, request):
+        http_info = self._show_merge_task_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_merge_task_case_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/task-run-infos/{task_run_id}/cases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMergeTaskCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1423,9 +1657,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1434,20 +1668,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/task-run-infos/{task_run_id}/cases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMergeTaskCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_report(self, request):
         """查询报告
@@ -1460,9 +1690,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowReportRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowReportResponse`
         """
-        return self._show_report_with_http_info(request)
+        http_info = self._show_report_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_report_with_http_info(self, request):
+    def show_report_invoker(self, request):
+        http_info = self._show_report_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_report_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/task-run-infos/{task_run_id}/case-run-infos/{case_run_id}/reports",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowReportResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1483,9 +1726,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1494,20 +1737,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task-run-infos/{task_run_id}/case-run-infos/{case_run_id}/reports',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowReportResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task(self, request):
         """查询任务
@@ -1520,9 +1759,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowTaskResponse`
         """
-        return self._show_task_with_http_info(request)
+        http_info = self._show_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_with_http_info(self, request):
+    def show_task_invoker(self, request):
+        http_info = self._show_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1539,9 +1791,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1550,20 +1802,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_case_aw_chart(self, request):
         """内外融合获取用例的AW曲线图获取接口
@@ -1576,9 +1824,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTaskCaseAwChartRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowTaskCaseAwChartResponse`
         """
-        return self._show_task_case_aw_chart_with_http_info(request)
+        http_info = self._show_task_case_aw_chart_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_case_aw_chart_with_http_info(self, request):
+    def show_task_case_aw_chart_invoker(self, request):
+        http_info = self._show_task_case_aw_chart_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_case_aw_chart_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/task-run-infos/{task_run_id}/case-run-infos/{case_run_id}/detail/{detail_id}/chart",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskCaseAwChartResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1599,9 +1860,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1610,20 +1871,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/task-run-infos/{task_run_id}/case-run-infos/{case_run_id}/detail/{detail_id}/chart',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskCaseAwChartResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_set(self, request):
         """查询任务集
@@ -1636,9 +1893,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTaskSetRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowTaskSetResponse`
         """
-        return self._show_task_set_with_http_info(request)
+        http_info = self._show_task_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_set_with_http_info(self, request):
+    def show_task_set_invoker(self, request):
+        http_info = self._show_task_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_set_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/all-tasks/{test_suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1659,9 +1929,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1670,20 +1940,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/all-tasks/{test_suite_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_temp(self, request):
         """查询事务
@@ -1696,9 +1962,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTempRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowTempResponse`
         """
-        return self._show_temp_with_http_info(request)
+        http_info = self._show_temp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_temp_with_http_info(self, request):
+    def show_temp_invoker(self, request):
+        http_info = self._show_temp_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_temp_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTempResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1715,9 +1994,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1726,20 +2005,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTempResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_temp_set(self, request):
         """查询事务集
@@ -1752,9 +2027,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowTempSetRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowTempSetResponse`
         """
-        return self._show_temp_set_with_http_info(request)
+        http_info = self._show_temp_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_temp_set_with_http_info(self, request):
+    def show_temp_set_invoker(self, request):
+        http_info = self._show_temp_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_temp_set_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/all-templates/{test_suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTempSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1775,9 +2063,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1786,20 +2074,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/all-templates/{test_suite_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTempSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_agent_health_status(self, request):
         """全链路压测探针上报健康状态
@@ -1812,9 +2096,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateAgentHealthStatusRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateAgentHealthStatusResponse`
         """
-        return self._update_agent_health_status_with_http_info(request)
+        http_info = self._update_agent_health_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_agent_health_status_with_http_info(self, request):
+    def update_agent_health_status_invoker(self, request):
+        http_info = self._update_agent_health_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_agent_health_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/stress/agents/{agent_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAgentHealthStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1831,11 +2128,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1844,20 +2141,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stress/agents/{agent_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAgentHealthStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_case(self, request):
         """修改用例
@@ -1870,9 +2163,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateCaseResponse`
         """
-        return self._update_case_with_http_info(request)
+        http_info = self._update_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_case_with_http_info(self, request):
+    def update_case_invoker(self, request):
+        http_info = self._update_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_case_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/task-cases/{case_id}/target/{target}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1891,11 +2197,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1904,20 +2210,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/task-cases/{case_id}/target/{target}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_directory(self, request):
         """修改目录
@@ -1930,9 +2232,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateDirectoryRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateDirectoryResponse`
         """
-        return self._update_directory_with_http_info(request)
+        http_info = self._update_directory_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_directory_with_http_info(self, request):
+    def update_directory_invoker(self, request):
+        http_info = self._update_directory_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_directory_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}/directory/{directory_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDirectoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1951,11 +2266,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1964,20 +2279,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/directory/{directory_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDirectoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_new_case(self, request):
         """修改用例v2
@@ -1990,9 +2301,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateNewCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateNewCaseResponse`
         """
-        return self._update_new_case_with_http_info(request)
+        http_info = self._update_new_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_new_case_with_http_info(self, request):
+    def update_new_case_invoker(self, request):
+        http_info = self._update_new_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_new_case_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/test-cases/{case_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNewCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2009,11 +2333,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2022,20 +2346,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/test-cases/{case_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNewCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task(self, request):
         """修改任务
@@ -2048,9 +2368,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskResponse`
         """
-        return self._update_task_with_http_info(request)
+        http_info = self._update_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_with_http_info(self, request):
+    def update_task_invoker(self, request):
+        http_info = self._update_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2067,11 +2400,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2080,20 +2413,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tasks/{task_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_related_test_case(self, request):
         """修改任务关联用例
@@ -2106,9 +2435,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskRelatedTestCaseRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskRelatedTestCaseResponse`
         """
-        return self._update_task_related_test_case_with_http_info(request)
+        http_info = self._update_task_related_test_case_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_related_test_case_with_http_info(self, request):
+    def update_task_related_test_case_invoker(self, request):
+        http_info = self._update_task_related_test_case_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_related_test_case_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskRelatedTestCaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2125,11 +2467,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2138,20 +2480,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tasks/{task_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskRelatedTestCaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_status(self, request):
         """更新任务状态
@@ -2164,9 +2502,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTaskStatusResponse`
         """
-        return self._update_task_status_with_http_info(request)
+        http_info = self._update_task_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_status_with_http_info(self, request):
+    def update_task_status_invoker(self, request):
+        http_info = self._update_task_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2185,11 +2536,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2198,20 +2549,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}/tasks/{task_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_temp(self, request):
         """修改事务
@@ -2224,9 +2571,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateTempRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateTempResponse`
         """
-        return self._update_temp_with_http_info(request)
+        http_info = self._update_temp_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_temp_with_http_info(self, request):
+    def update_temp_invoker(self, request):
+        http_info = self._update_temp_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_temp_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTempResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2243,11 +2603,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2256,20 +2616,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTempResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_variable(self, request):
         """修改变量
@@ -2282,9 +2638,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateVariableRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateVariableResponse`
         """
-        return self._update_variable_with_http_info(request)
+        http_info = self._update_variable_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_variable_with_http_info(self, request):
+    def update_variable_invoker(self, request):
+        http_info = self._update_variable_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_variable_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/variables/{test_suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVariableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2301,11 +2670,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2314,20 +2683,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/variables/{test_suite_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVariableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project(self, request):
         """创建工程
@@ -2340,9 +2705,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.CreateProjectRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.CreateProjectResponse`
         """
-        return self._create_project_with_http_info(request)
+        http_info = self._create_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_with_http_info(self, request):
+    def create_project_invoker(self, request):
+        http_info = self._create_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_project_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/test-suites",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2357,11 +2735,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2370,20 +2748,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_project(self, request):
         """删除工程
@@ -2396,9 +2770,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.DeleteProjectRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.DeleteProjectResponse`
         """
-        return self._delete_project_with_http_info(request)
+        http_info = self._delete_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_project_with_http_info(self, request):
+    def delete_project_invoker(self, request):
+        http_info = self._delete_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_project_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2415,9 +2802,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2426,20 +2813,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_sets(self, request):
         """查询工程集
@@ -2452,9 +2835,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ListProjectSetsRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ListProjectSetsResponse`
         """
-        return self._list_project_sets_with_http_info(request)
+        http_info = self._list_project_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_sets_with_http_info(self, request):
+    def list_project_sets_invoker(self, request):
+        http_info = self._list_project_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_sets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/test-suites",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2473,9 +2869,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2484,20 +2880,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_process(self, request):
         """查询导入进度
@@ -2510,9 +2902,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowProcessRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowProcessResponse`
         """
-        return self._show_process_with_http_info(request)
+        http_info = self._show_process_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_process_with_http_info(self, request):
+    def show_process_invoker(self, request):
+        http_info = self._show_process_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_process_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/test-suites/upload/processes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProcessResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2527,9 +2932,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2538,20 +2943,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/upload/processes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProcessResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_project(self, request):
         """查询工程
@@ -2564,9 +2965,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.ShowProjectRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.ShowProjectResponse`
         """
-        return self._show_project_with_http_info(request)
+        http_info = self._show_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_project_with_http_info(self, request):
+    def show_project_invoker(self, request):
+        http_info = self._show_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_project_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2583,9 +2997,9 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2594,20 +3008,16 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_project(self, request):
         """修改工程
@@ -2620,9 +3030,22 @@ class CptsClient(Client):
         :type request: :class:`huaweicloudsdkcpts.v1.UpdateProjectRequest`
         :rtype: :class:`huaweicloudsdkcpts.v1.UpdateProjectResponse`
         """
-        return self._update_project_with_http_info(request)
+        http_info = self._update_project_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_project_with_http_info(self, request):
+    def update_project_invoker(self, request):
+        http_info = self._update_project_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_project_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/test-suites/{test_suite_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2639,11 +3062,11 @@ class CptsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2652,20 +3075,25 @@ class CptsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/test-suites/{test_suite_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProjectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

@@ -38,8 +38,7 @@ class UploadAppIconRequestBody:
         self._data = None
         self.discriminator = None
 
-        if data is not None:
-            self.data = data
+        self.data = data
 
     @property
     def data(self):

@@ -73,11 +73,9 @@ class CreateCustomTemplateBody:
         self._params = None
         self.discriminator = None
 
-        if template_id is not None:
-            self.template_id = template_id
+        self.template_id = template_id
         self.name = name
-        if type is not None:
-            self.type = type
+        self.type = type
         if engine is not None:
             self.engine = engine
         if cache_mode is not None:
@@ -86,8 +84,7 @@ class CreateCustomTemplateBody:
             self.description = description
         if engine_version is not None:
             self.engine_version = engine_version
-        if params is not None:
-            self.params = params
+        self.params = params
 
     @property
     def template_id(self):

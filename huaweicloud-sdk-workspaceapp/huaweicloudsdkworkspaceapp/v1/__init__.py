@@ -87,6 +87,7 @@ from huaweicloudsdkworkspaceapp.v1.model.create_policy_group_response import Cre
 from huaweicloudsdkworkspaceapp.v1.model.create_policy_template_req import CreatePolicyTemplateReq
 from huaweicloudsdkworkspaceapp.v1.model.create_policy_template_request import CreatePolicyTemplateRequest
 from huaweicloudsdkworkspaceapp.v1.model.create_policy_template_response import CreatePolicyTemplateResponse
+from huaweicloudsdkworkspaceapp.v1.model.create_server_extend_param import CreateServerExtendParam
 from huaweicloudsdkworkspaceapp.v1.model.create_server_group_req import CreateServerGroupReq
 from huaweicloudsdkworkspaceapp.v1.model.create_server_group_request import CreateServerGroupRequest
 from huaweicloudsdkworkspaceapp.v1.model.create_server_group_response import CreateServerGroupResponse
@@ -186,6 +187,7 @@ from huaweicloudsdkworkspaceapp.v1.model.pcsc_bandwidth_percentage_options impor
 from huaweicloudsdkworkspaceapp.v1.model.persistent_storage import PersistentStorage
 from huaweicloudsdkworkspaceapp.v1.model.persistent_storage_assignment import PersistentStorageAssignment
 from huaweicloudsdkworkspaceapp.v1.model.persistent_storage_claim import PersistentStorageClaim
+from huaweicloudsdkworkspaceapp.v1.model.platform_type_enum import PlatformTypeEnum
 from huaweicloudsdkworkspaceapp.v1.model.policies import Policies
 from huaweicloudsdkworkspaceapp.v1.model.policies_audio import PoliciesAudio
 from huaweicloudsdkworkspaceapp.v1.model.policies_client import PoliciesClient
@@ -238,6 +240,7 @@ from huaweicloudsdkworkspaceapp.v1.model.server_address import ServerAddress
 from huaweicloudsdkworkspaceapp.v1.model.server_group import ServerGroup
 from huaweicloudsdkworkspaceapp.v1.model.server_halt_req import ServerHaltReq
 from huaweicloudsdkworkspaceapp.v1.model.server_halt_type import ServerHaltType
+from huaweicloudsdkworkspaceapp.v1.model.server_id_set import ServerIdSet
 from huaweicloudsdkworkspaceapp.v1.model.server_status import ServerStatus
 from huaweicloudsdkworkspaceapp.v1.model.session import Session
 from huaweicloudsdkworkspaceapp.v1.model.session_printer_options import SessionPrinterOptions

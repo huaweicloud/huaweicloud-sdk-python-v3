@@ -33,6 +33,8 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'table_name': 'str',
         'detail': 'str',
         'user_conf': 'str',
+        'result_path': 'str',
+        'result_format': 'str',
         'statement': 'str',
         'is_success': 'bool',
         'message': 'str',
@@ -56,6 +58,8 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'table_name': 'table_name',
         'detail': 'detail',
         'user_conf': 'user_conf',
+        'result_path': 'result_path',
+        'result_format': 'result_format',
         'statement': 'statement',
         'is_success': 'is_success',
         'message': 'message',
@@ -63,7 +67,7 @@ class ShowSqlJobStatusResponse(SdkResponse):
         'tags': 'tags'
     }
 
-    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, detail=None, user_conf=None, statement=None, is_success=None, message=None, job_mode=None, tags=None):
+    def __init__(self, job_id=None, job_type=None, queue_name=None, owner=None, start_time=None, duration=None, status=None, input_row_count=None, bad_row_count=None, input_size=None, result_count=None, database_name=None, table_name=None, detail=None, user_conf=None, result_path=None, result_format=None, statement=None, is_success=None, message=None, job_mode=None, tags=None):
         """ShowSqlJobStatusResponse
 
         The model defined in huaweicloud sdk
@@ -98,6 +102,10 @@ class ShowSqlJobStatusResponse(SdkResponse):
         :type detail: str
         :param user_conf: SQL配置参数信息Json字符串。
         :type user_conf: str
+        :param result_path: 查询结果OBS路径
+        :type result_path: str
+        :param result_format: 查询结果格式
+        :type result_format: str
         :param statement: 作业执行的SQL语句。
         :type statement: str
         :param is_success: 执行请求是否成功。“true”表示请求执行成功。
@@ -127,6 +135,8 @@ class ShowSqlJobStatusResponse(SdkResponse):
         self._table_name = None
         self._detail = None
         self._user_conf = None
+        self._result_path = None
+        self._result_format = None
         self._statement = None
         self._is_success = None
         self._message = None
@@ -164,6 +174,10 @@ class ShowSqlJobStatusResponse(SdkResponse):
             self.detail = detail
         if user_conf is not None:
             self.user_conf = user_conf
+        if result_path is not None:
+            self.result_path = result_path
+        if result_format is not None:
+            self.result_format = result_format
         if statement is not None:
             self.statement = statement
         if is_success is not None:
@@ -504,6 +518,50 @@ class ShowSqlJobStatusResponse(SdkResponse):
         :type user_conf: str
         """
         self._user_conf = user_conf
+
+    @property
+    def result_path(self):
+        """Gets the result_path of this ShowSqlJobStatusResponse.
+
+        查询结果OBS路径
+
+        :return: The result_path of this ShowSqlJobStatusResponse.
+        :rtype: str
+        """
+        return self._result_path
+
+    @result_path.setter
+    def result_path(self, result_path):
+        """Sets the result_path of this ShowSqlJobStatusResponse.
+
+        查询结果OBS路径
+
+        :param result_path: The result_path of this ShowSqlJobStatusResponse.
+        :type result_path: str
+        """
+        self._result_path = result_path
+
+    @property
+    def result_format(self):
+        """Gets the result_format of this ShowSqlJobStatusResponse.
+
+        查询结果格式
+
+        :return: The result_format of this ShowSqlJobStatusResponse.
+        :rtype: str
+        """
+        return self._result_format
+
+    @result_format.setter
+    def result_format(self, result_format):
+        """Sets the result_format of this ShowSqlJobStatusResponse.
+
+        查询结果格式
+
+        :param result_format: The result_format of this ShowSqlJobStatusResponse.
+        :type result_format: str
+        """
+        self._result_format = result_format
 
     @property
     def statement(self):

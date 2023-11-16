@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdc'")
 
 
 class DcAsyncClient(Client):
@@ -40,9 +45,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateHostedDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateHostedDirectConnectResponse`
         """
-        return self._create_hosted_direct_connect_with_http_info(request)
+        http_info = self._create_hosted_direct_connect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_hosted_direct_connect_with_http_info(self, request):
+    def create_hosted_direct_connect_async_invoker(self, request):
+        http_info = self._create_hosted_direct_connect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_hosted_direct_connect_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/hosted-connects",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateHostedDirectConnectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +74,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +87,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/hosted-connects',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateHostedDirectConnectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_direct_connect_async(self, request):
         """删除物理连接
@@ -97,9 +110,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteDirectConnectResponse`
         """
-        return self._delete_direct_connect_with_http_info(request)
+        http_info = self._delete_direct_connect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_direct_connect_with_http_info(self, request):
+    def delete_direct_connect_async_invoker(self, request):
+        http_info = self._delete_direct_connect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_direct_connect_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/direct-connects/{direct_connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDirectConnectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -116,9 +141,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -127,20 +152,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/direct-connects/{direct_connect_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDirectConnectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_hosted_direct_connect_async(self, request):
         """删除托管专线连接
@@ -154,9 +175,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteHostedDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteHostedDirectConnectResponse`
         """
-        return self._delete_hosted_direct_connect_with_http_info(request)
+        http_info = self._delete_hosted_direct_connect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_hosted_direct_connect_with_http_info(self, request):
+    def delete_hosted_direct_connect_async_invoker(self, request):
+        http_info = self._delete_hosted_direct_connect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_hosted_direct_connect_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/hosted-connects/{hosted_connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteHostedDirectConnectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,9 +206,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -184,20 +217,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/hosted-connects/{hosted_connect_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteHostedDirectConnectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_direct_connects_async(self, request):
         """查询物理连接列表
@@ -211,9 +240,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListDirectConnectsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListDirectConnectsResponse`
         """
-        return self._list_direct_connects_with_http_info(request)
+        http_info = self._list_direct_connects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_direct_connects_with_http_info(self, request):
+    def list_direct_connects_async_invoker(self, request):
+        http_info = self._list_direct_connects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_direct_connects_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/direct-connects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDirectConnectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -252,9 +293,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -263,20 +304,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/direct-connects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDirectConnectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_hosted_direct_connects_async(self, request):
         """查询租户的托管专线列表
@@ -290,9 +327,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListHostedDirectConnectsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListHostedDirectConnectsResponse`
         """
-        return self._list_hosted_direct_connects_with_http_info(request)
+        http_info = self._list_hosted_direct_connects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_hosted_direct_connects_with_http_info(self, request):
+    def list_hosted_direct_connects_async_invoker(self, request):
+        http_info = self._list_hosted_direct_connects_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_hosted_direct_connects_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/hosted-connects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHostedDirectConnectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -328,9 +377,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -339,20 +388,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/hosted-connects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHostedDirectConnectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_direct_connect_async(self, request):
         """查询物理连接详情
@@ -366,9 +411,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowDirectConnectResponse`
         """
-        return self._show_direct_connect_with_http_info(request)
+        http_info = self._show_direct_connect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_direct_connect_with_http_info(self, request):
+    def show_direct_connect_async_invoker(self, request):
+        http_info = self._show_direct_connect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_direct_connect_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/direct-connects/{direct_connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDirectConnectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -388,9 +445,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -399,20 +456,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/direct-connects/{direct_connect_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDirectConnectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_hosted_direct_connect_async(self, request):
         """查询租户的托管专线详情
@@ -426,9 +479,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowHostedDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowHostedDirectConnectResponse`
         """
-        return self._show_hosted_direct_connect_with_http_info(request)
+        http_info = self._show_hosted_direct_connect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_hosted_direct_connect_with_http_info(self, request):
+    def show_hosted_direct_connect_async_invoker(self, request):
+        http_info = self._show_hosted_direct_connect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_hosted_direct_connect_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/hosted-connects/{hosted_connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHostedDirectConnectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -460,9 +525,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -471,20 +536,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/hosted-connects/{hosted_connect_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHostedDirectConnectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_direct_connect_async(self, request):
         """更新物理连接信息
@@ -498,9 +559,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateDirectConnectResponse`
         """
-        return self._update_direct_connect_with_http_info(request)
+        http_info = self._update_direct_connect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_direct_connect_with_http_info(self, request):
+    def update_direct_connect_async_invoker(self, request):
+        http_info = self._update_direct_connect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_direct_connect_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/direct-connects/{direct_connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDirectConnectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -517,11 +590,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -530,20 +603,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/direct-connects/{direct_connect_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDirectConnectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_hosted_direct_connect_async(self, request):
         """更新托管专线连接
@@ -557,9 +626,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateHostedDirectConnectRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateHostedDirectConnectResponse`
         """
-        return self._update_hosted_direct_connect_with_http_info(request)
+        http_info = self._update_hosted_direct_connect_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_hosted_direct_connect_with_http_info(self, request):
+    def update_hosted_direct_connect_async_invoker(self, request):
+        http_info = self._update_hosted_direct_connect_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_hosted_direct_connect_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/hosted-connects/{hosted_connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHostedDirectConnectResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -576,11 +657,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -589,20 +670,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/hosted-connects/{hosted_connect_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHostedDirectConnectResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas_async(self, request):
         """查询配额
@@ -616,9 +693,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_async_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -636,9 +725,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -647,20 +736,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_resource_tags_async(self, request):
         """批量添加删除资源标签
@@ -676,9 +761,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.BatchCreateResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.BatchCreateResourceTagsResponse`
         """
-        return self._batch_create_resource_tags_with_http_info(request)
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_resource_tags_with_http_info(self, request):
+    def batch_create_resource_tags_async_invoker(self, request):
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -697,11 +794,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +807,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resource_tag_async(self, request):
         """添加资源标签
@@ -739,9 +832,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateResourceTagResponse`
         """
-        return self._create_resource_tag_with_http_info(request)
+        http_info = self._create_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resource_tag_with_http_info(self, request):
+    def create_resource_tag_async_invoker(self, request):
+        http_info = self._create_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -760,11 +865,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -773,20 +878,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_tag_async(self, request):
         """删除资源标签
@@ -800,9 +901,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteResourceTagResponse`
         """
-        return self._delete_resource_tag_with_http_info(request)
+        http_info = self._delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_tag_with_http_info(self, request):
+    def delete_resource_tag_async_invoker(self, request):
+        http_info = self._delete_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -823,9 +936,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -834,20 +947,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags_async(self, request):
         """查询项目标签
@@ -862,9 +971,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_async_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -881,9 +1002,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -892,20 +1013,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tag_resource_instances_async(self, request):
         """通过标签查询资源实例
@@ -919,9 +1036,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListTagResourceInstancesRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListTagResourceInstancesResponse`
         """
-        return self._list_tag_resource_instances_with_http_info(request)
+        http_info = self._list_tag_resource_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tag_resource_instances_with_http_info(self, request):
+    def list_tag_resource_instances_async_invoker(self, request):
+        http_info = self._list_tag_resource_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tag_resource_instances_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/resource-instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagResourceInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -938,11 +1067,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -951,20 +1080,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/resource-instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagResourceInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_tag_async(self, request):
         """查询资源标签
@@ -978,9 +1103,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowResourceTagResponse`
         """
-        return self._show_resource_tag_with_http_info(request)
+        http_info = self._show_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_tag_with_http_info(self, request):
+    def show_resource_tag_async_invoker(self, request):
+        http_info = self._show_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -999,9 +1136,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1010,20 +1147,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_virtual_gateway_async(self, request):
         """创建虚拟网关
@@ -1037,9 +1170,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateVirtualGatewayRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateVirtualGatewayResponse`
         """
-        return self._create_virtual_gateway_with_http_info(request)
+        http_info = self._create_virtual_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_virtual_gateway_with_http_info(self, request):
+    def create_virtual_gateway_async_invoker(self, request):
+        http_info = self._create_virtual_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_virtual_gateway_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVirtualGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1054,11 +1199,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1067,20 +1212,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-gateways',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVirtualGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_virtual_gateway_async(self, request):
         """删除虚拟网关
@@ -1094,9 +1235,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteVirtualGatewayRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteVirtualGatewayResponse`
         """
-        return self._delete_virtual_gateway_with_http_info(request)
+        http_info = self._delete_virtual_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_virtual_gateway_with_http_info(self, request):
+    def delete_virtual_gateway_async_invoker(self, request):
+        http_info = self._delete_virtual_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_virtual_gateway_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-gateways/{virtual_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVirtualGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1113,9 +1266,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1124,20 +1277,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-gateways/{virtual_gateway_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVirtualGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_virtual_gateways_async(self, request):
         """查询虚拟网关列表
@@ -1151,9 +1300,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListVirtualGatewaysRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListVirtualGatewaysResponse`
         """
-        return self._list_virtual_gateways_with_http_info(request)
+        http_info = self._list_virtual_gateways_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_virtual_gateways_with_http_info(self, request):
+    def list_virtual_gateways_async_invoker(self, request):
+        http_info = self._list_virtual_gateways_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_virtual_gateways_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-gateways",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVirtualGatewaysResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1189,9 +1350,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1200,20 +1361,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-gateways',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVirtualGatewaysResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_virtual_gateway_async(self, request):
         """查询虚拟网关详情
@@ -1227,9 +1384,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowVirtualGatewayRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowVirtualGatewayResponse`
         """
-        return self._show_virtual_gateway_with_http_info(request)
+        http_info = self._show_virtual_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_virtual_gateway_with_http_info(self, request):
+    def show_virtual_gateway_async_invoker(self, request):
+        http_info = self._show_virtual_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_virtual_gateway_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-gateways/{virtual_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVirtualGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1249,9 +1418,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1260,20 +1429,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-gateways/{virtual_gateway_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVirtualGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_virtual_gateway_async(self, request):
         """更新虚拟网关信息
@@ -1287,9 +1452,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateVirtualGatewayRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateVirtualGatewayResponse`
         """
-        return self._update_virtual_gateway_with_http_info(request)
+        http_info = self._update_virtual_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_virtual_gateway_with_http_info(self, request):
+    def update_virtual_gateway_async_invoker(self, request):
+        http_info = self._update_virtual_gateway_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_virtual_gateway_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-gateways/{virtual_gateway_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVirtualGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1306,11 +1483,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1319,20 +1496,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-gateways/{virtual_gateway_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVirtualGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vif_peer_async(self, request):
         """创建虚拟接口对等体
@@ -1346,9 +1519,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateVifPeerRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateVifPeerResponse`
         """
-        return self._create_vif_peer_with_http_info(request)
+        http_info = self._create_vif_peer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vif_peer_with_http_info(self, request):
+    def create_vif_peer_async_invoker(self, request):
+        http_info = self._create_vif_peer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vif_peer_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/vif-peers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVifPeerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1363,11 +1548,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1376,20 +1561,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/vif-peers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVifPeerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_virtual_interface_async(self, request):
         """创建虚拟接口
@@ -1403,9 +1584,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.CreateVirtualInterfaceRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.CreateVirtualInterfaceResponse`
         """
-        return self._create_virtual_interface_with_http_info(request)
+        http_info = self._create_virtual_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_virtual_interface_with_http_info(self, request):
+    def create_virtual_interface_async_invoker(self, request):
+        http_info = self._create_virtual_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_virtual_interface_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-interfaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVirtualInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1420,11 +1613,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1433,20 +1626,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-interfaces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVirtualInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vif_peer_async(self, request):
         """删除虚拟接口对应的对等体
@@ -1460,9 +1649,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteVifPeerRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteVifPeerResponse`
         """
-        return self._delete_vif_peer_with_http_info(request)
+        http_info = self._delete_vif_peer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vif_peer_with_http_info(self, request):
+    def delete_vif_peer_async_invoker(self, request):
+        http_info = self._delete_vif_peer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vif_peer_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/vif-peers/{vif_peer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVifPeerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1479,9 +1680,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1490,20 +1691,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/vif-peers/{vif_peer_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVifPeerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_virtual_interface_async(self, request):
         """删除虚拟接口
@@ -1517,9 +1714,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.DeleteVirtualInterfaceRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.DeleteVirtualInterfaceResponse`
         """
-        return self._delete_virtual_interface_with_http_info(request)
+        http_info = self._delete_virtual_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_virtual_interface_with_http_info(self, request):
+    def delete_virtual_interface_async_invoker(self, request):
+        http_info = self._delete_virtual_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_virtual_interface_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-interfaces/{virtual_interface_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVirtualInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1536,9 +1745,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1547,20 +1756,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-interfaces/{virtual_interface_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVirtualInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_switchover_test_records_async(self, request):
         """查询虚拟接口倒换测试记录列表
@@ -1574,9 +1779,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListSwitchoverTestRecordsRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListSwitchoverTestRecordsResponse`
         """
-        return self._list_switchover_test_records_with_http_info(request)
+        http_info = self._list_switchover_test_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_switchover_test_records_with_http_info(self, request):
+    def list_switchover_test_records_async_invoker(self, request):
+        http_info = self._list_switchover_test_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_switchover_test_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/switchover-test",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSwitchoverTestRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1606,9 +1823,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1617,20 +1834,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/switchover-test',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSwitchoverTestRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_virtual_interfaces_async(self, request):
         """查询虚拟接口列表
@@ -1644,9 +1857,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ListVirtualInterfacesRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ListVirtualInterfacesResponse`
         """
-        return self._list_virtual_interfaces_with_http_info(request)
+        http_info = self._list_virtual_interfaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_virtual_interfaces_with_http_info(self, request):
+    def list_virtual_interfaces_async_invoker(self, request):
+        http_info = self._list_virtual_interfaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_virtual_interfaces_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-interfaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVirtualInterfacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1688,9 +1913,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1699,20 +1924,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-interfaces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVirtualInterfacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_virtual_interface_async(self, request):
         """查询虚拟接口详情
@@ -1726,9 +1947,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.ShowVirtualInterfaceRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.ShowVirtualInterfaceResponse`
         """
-        return self._show_virtual_interface_with_http_info(request)
+        http_info = self._show_virtual_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_virtual_interface_with_http_info(self, request):
+    def show_virtual_interface_async_invoker(self, request):
+        http_info = self._show_virtual_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_virtual_interface_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-interfaces/{virtual_interface_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVirtualInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1748,9 +1981,9 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1759,20 +1992,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-interfaces/{virtual_interface_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVirtualInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switchover_test_async(self, request):
         """执行虚拟接口倒换测试
@@ -1786,9 +2015,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.SwitchoverTestRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.SwitchoverTestResponse`
         """
-        return self._switchover_test_with_http_info(request)
+        http_info = self._switchover_test_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switchover_test_with_http_info(self, request):
+    def switchover_test_async_invoker(self, request):
+        http_info = self._switchover_test_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switchover_test_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/dcaas/switchover-test",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchoverTestResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1803,11 +2044,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1816,20 +2057,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/switchover-test',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchoverTestResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vif_peer_async(self, request):
         """更新虚拟接口对等体
@@ -1843,9 +2080,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateVifPeerRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateVifPeerResponse`
         """
-        return self._update_vif_peer_with_http_info(request)
+        http_info = self._update_vif_peer_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vif_peer_with_http_info(self, request):
+    def update_vif_peer_async_invoker(self, request):
+        http_info = self._update_vif_peer_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vif_peer_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/vif-peers/{vif_peer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVifPeerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1862,11 +2111,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1875,20 +2124,16 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/vif-peers/{vif_peer_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVifPeerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_virtual_interface_async(self, request):
         """更新虚拟接口
@@ -1902,9 +2147,21 @@ class DcAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdc.v3.UpdateVirtualInterfaceRequest`
         :rtype: :class:`huaweicloudsdkdc.v3.UpdateVirtualInterfaceResponse`
         """
-        return self._update_virtual_interface_with_http_info(request)
+        http_info = self._update_virtual_interface_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_virtual_interface_with_http_info(self, request):
+    def update_virtual_interface_async_invoker(self, request):
+        http_info = self._update_virtual_interface_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_virtual_interface_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/dcaas/virtual-interfaces/{virtual_interface_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVirtualInterfaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1921,11 +2178,11 @@ class DcAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1934,20 +2191,26 @@ class DcAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dcaas/virtual-interfaces/{virtual_interface_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVirtualInterfaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1986,4 +2249,4 @@ class DcAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

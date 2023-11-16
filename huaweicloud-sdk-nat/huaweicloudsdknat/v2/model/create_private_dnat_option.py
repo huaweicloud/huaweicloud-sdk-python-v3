@@ -43,7 +43,7 @@ class CreatePrivateDnatOption:
 
         The model defined in huaweicloud sdk
 
-        :param description: DNAT规则的描述。
+        :param description: DNAT规则的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         :param transit_ip_id: 中转IP的ID。
         :type transit_ip_id: str
@@ -92,7 +92,7 @@ class CreatePrivateDnatOption:
     def description(self):
         """Gets the description of this CreatePrivateDnatOption.
 
-        DNAT规则的描述。
+        DNAT规则的描述。长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this CreatePrivateDnatOption.
         :rtype: str
@@ -103,7 +103,7 @@ class CreatePrivateDnatOption:
     def description(self, description):
         """Sets the description of this CreatePrivateDnatOption.
 
-        DNAT规则的描述。
+        DNAT规则的描述。长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this CreatePrivateDnatOption.
         :type description: str

@@ -53,9 +53,9 @@ class ListDomainsRequest:
         :type domain_status: str
         :param service_area: 华为云CDN提供的加速服务范围，包含： - mainland_china 中国大陆 - outside_mainland_china 中国大陆境外 - global 全球。
         :type service_area: str
-        :param page_size: 每页加速域名的数量。
+        :param page_size: 每页加速域名的数量，取值范围1-10000，默认值为30。
         :type page_size: int
-        :param page_number: 查询的页码，即：从哪一页开始查询。
+        :param page_number: 查询的页码，即：从哪一页开始查询，取值范围1-65535，默认值为1。
         :type page_number: int
         :param show_tags: 展示标签标识 true：不展示 false：展示。
         :type show_tags: bool
@@ -189,7 +189,7 @@ class ListDomainsRequest:
     def page_size(self):
         """Gets the page_size of this ListDomainsRequest.
 
-        每页加速域名的数量。
+        每页加速域名的数量，取值范围1-10000，默认值为30。
 
         :return: The page_size of this ListDomainsRequest.
         :rtype: int
@@ -200,7 +200,7 @@ class ListDomainsRequest:
     def page_size(self, page_size):
         """Sets the page_size of this ListDomainsRequest.
 
-        每页加速域名的数量。
+        每页加速域名的数量，取值范围1-10000，默认值为30。
 
         :param page_size: The page_size of this ListDomainsRequest.
         :type page_size: int
@@ -211,7 +211,7 @@ class ListDomainsRequest:
     def page_number(self):
         """Gets the page_number of this ListDomainsRequest.
 
-        查询的页码，即：从哪一页开始查询。
+        查询的页码，即：从哪一页开始查询，取值范围1-65535，默认值为1。
 
         :return: The page_number of this ListDomainsRequest.
         :rtype: int
@@ -222,7 +222,7 @@ class ListDomainsRequest:
     def page_number(self, page_number):
         """Sets the page_number of this ListDomainsRequest.
 
-        查询的页码，即：从哪一页开始查询。
+        查询的页码，即：从哪一页开始查询，取值范围1-65535，默认值为1。
 
         :param page_number: The page_number of this ListDomainsRequest.
         :type page_number: int

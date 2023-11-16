@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdevstar'")
 
 
 class DevStarClient(Client):
@@ -38,9 +43,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationReleaseRepositoriesResponse`
         """
-        return self._show_application_release_repositories_with_http_info(request)
+        http_info = self._show_application_release_repositories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_application_release_repositories_with_http_info(self, request):
+    def show_application_release_repositories_invoker(self, request):
+        http_info = self._show_application_release_repositories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_application_release_repositories_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/applications/{application_id}/release-repositories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplicationReleaseRepositoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -67,9 +85,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -78,20 +96,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/release-repositories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplicationReleaseRepositoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_application_res_delete_status(self, request):
         """查询应用关联资源删除状态
@@ -104,9 +118,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationResDeleteStatusResponse`
         """
-        return self._show_application_res_delete_status_with_http_info(request)
+        http_info = self._show_application_res_delete_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_application_res_delete_status_with_http_info(self, request):
+    def show_application_res_delete_status_invoker(self, request):
+        http_info = self._show_application_res_delete_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_application_res_delete_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/application-resources/{application_id}/delete-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplicationResDeleteStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -125,9 +152,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -136,20 +163,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/application-resources/{application_id}/delete-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplicationResDeleteStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_application_dependent_resources(self, request):
         """获取应用依赖元数据资源
@@ -162,9 +185,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationDependentResourcesResponse`
         """
-        return self._show_application_dependent_resources_with_http_info(request)
+        http_info = self._show_application_dependent_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_application_dependent_resources_with_http_info(self, request):
+    def show_application_dependent_resources_invoker(self, request):
+        http_info = self._show_application_dependent_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_application_dependent_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/applications/{application_id}/dependent-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplicationDependentResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -187,9 +223,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -198,20 +234,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/applications/{application_id}/dependent-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplicationDependentResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_application_v3(self, request):
         """获取应用详情
@@ -224,9 +256,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowApplicationV3Response`
         """
-        return self._show_application_v3_with_http_info(request)
+        http_info = self._show_application_v3_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_application_v3_with_http_info(self, request):
+    def show_application_v3_invoker(self, request):
+        http_info = self._show_application_v3_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_application_v3_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowApplicationV3Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -245,9 +290,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -256,20 +301,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/applications/{application_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowApplicationV3Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_application(self, request):
         """更新应用信息
@@ -284,9 +325,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.UpdateApplicationResponse`
         """
-        return self._update_application_with_http_info(request)
+        http_info = self._update_application_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_application_with_http_info(self, request):
+    def update_application_invoker(self, request):
+        http_info = self._update_application_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_application_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -305,11 +359,11 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -318,20 +372,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/applications/{application_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateApplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_application_v4(self, request):
         """删除应用信息
@@ -344,9 +394,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.DeleteApplicationV4Response`
         """
-        return self._delete_application_v4_with_http_info(request)
+        http_info = self._delete_application_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_application_v4_with_http_info(self, request):
+    def delete_application_v4_invoker(self, request):
+        http_info = self._delete_application_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_application_v4_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v4/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApplicationV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -367,9 +430,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -378,20 +441,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v4/applications/{application_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApplicationV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_applications_v6(self, request):
         """获取应用列表
@@ -405,9 +464,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListApplicationsV6Response`
         """
-        return self._list_applications_v6_with_http_info(request)
+        http_info = self._list_applications_v6_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_applications_v6_with_http_info(self, request):
+    def list_applications_v6_invoker(self, request):
+        http_info = self._list_applications_v6_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_applications_v6_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v6/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApplicationsV6Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -446,9 +518,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -457,20 +529,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v6/applications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApplicationsV6Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_application_code(self, request):
         """下载模板产物
@@ -483,9 +551,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.DownloadApplicationCodeResponse`
         """
-        return self._download_application_code_with_http_info(request)
+        http_info = self._download_application_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_application_code_with_http_info(self, request):
+    def download_application_code_invoker(self, request):
+        http_info = self._download_application_code_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_application_code_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/application-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadApplicationCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -504,9 +585,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -515,20 +596,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/application-codes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadApplicationCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def confirm_deployment_job(self, request):
         """部署任务执行变更人工审核
@@ -541,9 +618,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ConfirmDeploymentJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ConfirmDeploymentJobResponse`
         """
-        return self._confirm_deployment_job_with_http_info(request)
+        http_info = self._confirm_deployment_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _confirm_deployment_job_with_http_info(self, request):
+    def confirm_deployment_job_invoker(self, request):
+        http_info = self._confirm_deployment_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _confirm_deployment_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/applications/{application_id}/environments/{environment_tag}/confirm",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmDeploymentJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -564,11 +654,11 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -577,20 +667,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments/{environment_tag}/confirm',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ConfirmDeploymentJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_deployment_jobs(self, request):
         """创建部署任务
@@ -606,9 +692,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CreateDeploymentJobsResponse`
         """
-        return self._create_deployment_jobs_with_http_info(request)
+        http_info = self._create_deployment_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_deployment_jobs_with_http_info(self, request):
+    def create_deployment_jobs_invoker(self, request):
+        http_info = self._create_deployment_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_deployment_jobs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/applications/{application_id}/environments/{environment_tag}/deployment-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeploymentJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -629,11 +728,11 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -642,20 +741,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments/{environment_tag}/deployment-jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeploymentJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deployment_jobs(self, request):
         """查询应用环境部署任务详情
@@ -668,9 +763,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowDeploymentJobsResponse`
         """
-        return self._show_deployment_jobs_with_http_info(request)
+        http_info = self._show_deployment_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deployment_jobs_with_http_info(self, request):
+    def show_deployment_jobs_invoker(self, request):
+        http_info = self._show_deployment_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_deployment_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/applications/{application_id}/environments/{environment_tag}/deployment-jobs/detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeploymentJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -691,9 +799,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -702,20 +810,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}/environments/{environment_tag}/deployment-jobs/detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeploymentJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_codehub_template_job(self, request):
         """CodeHub 模板生成代码
@@ -736,9 +840,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.RunCodehubTemplateJobResponse`
         """
-        return self._run_codehub_template_job_with_http_info(request)
+        http_info = self._run_codehub_template_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_codehub_template_job_with_http_info(self, request):
+    def run_codehub_template_job_invoker(self, request):
+        http_info = self._run_codehub_template_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_codehub_template_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/jobs/codehub",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCodehubTemplateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -755,11 +872,11 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -768,20 +885,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/jobs/codehub',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCodehubTemplateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_devstar_template_job(self, request):
         """Devstar 模板生成代码
@@ -802,9 +915,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.RunDevstarTemplateJobResponse`
         """
-        return self._run_devstar_template_job_with_http_info(request)
+        http_info = self._run_devstar_template_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_devstar_template_job_with_http_info(self, request):
+    def run_devstar_template_job_invoker(self, request):
+        http_info = self._run_devstar_template_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_devstar_template_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/jobs/template",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunDevstarTemplateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -821,11 +947,11 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -834,20 +960,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/jobs/template',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunDevstarTemplateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_detail(self, request):
         """查询任务详情
@@ -869,9 +991,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowJobDetailResponse`
         """
-        return self._show_job_detail_with_http_info(request)
+        http_info = self._show_job_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_detail_with_http_info(self, request):
+    def show_job_detail_invoker(self, request):
+        http_info = self._show_job_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -890,9 +1025,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -901,20 +1036,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pipeline_templates(self, request):
         """流水线模板列表查询
@@ -927,9 +1058,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListPipelineTemplatesResponse`
         """
-        return self._list_pipeline_templates_with_http_info(request)
+        http_info = self._list_pipeline_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pipeline_templates_with_http_info(self, request):
+    def list_pipeline_templates_invoker(self, request):
+        http_info = self._list_pipeline_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pipeline_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/pipeline-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPipelineTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -952,9 +1096,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -963,20 +1107,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/pipeline-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPipelineTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_pipeline_last_status_v2(self, request):
         """查询流水线最近一次运行状态查询接口
@@ -989,9 +1129,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowPipelineLastStatusV2Response`
         """
-        return self._show_pipeline_last_status_v2_with_http_info(request)
+        http_info = self._show_pipeline_last_status_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_pipeline_last_status_v2_with_http_info(self, request):
+    def show_pipeline_last_status_v2_invoker(self, request):
+        http_info = self._show_pipeline_last_status_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pipeline_last_status_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/pipelines/{pipeline_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPipelineLastStatusV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1010,9 +1163,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1021,20 +1174,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/pipelines/{pipeline_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPipelineLastStatusV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_pipeline(self, request):
         """根据流水线Id操作流水线启动
@@ -1047,9 +1196,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.StartPipelineRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.StartPipelineResponse`
         """
-        return self._start_pipeline_with_http_info(request)
+        http_info = self._start_pipeline_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_pipeline_with_http_info(self, request):
+    def start_pipeline_invoker(self, request):
+        http_info = self._start_pipeline_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_pipeline_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/pipelines/{pipeline_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartPipelineResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1068,9 +1230,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1079,20 +1241,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/pipelines/{pipeline_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartPipelineResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_projects_v4(self, request):
         """获取用户有权限的DevStar存量DevCloud项目列表
@@ -1106,9 +1264,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListProjectsV4Response`
         """
-        return self._list_projects_v4_with_http_info(request)
+        http_info = self._list_projects_v4_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_projects_v4_with_http_info(self, request):
+    def list_projects_v4_invoker(self, request):
+        http_info = self._list_projects_v4_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_projects_v4_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v4/projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectsV4Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1131,9 +1302,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1142,20 +1313,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v4/projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectsV4Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_repository_duplicate_name(self, request):
         """检查仓库名称是否重名
@@ -1172,9 +1339,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CheckRepositoryDuplicateNameResponse`
         """
-        return self._check_repository_duplicate_name_with_http_info(request)
+        http_info = self._check_repository_duplicate_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_repository_duplicate_name_with_http_info(self, request):
+    def check_repository_duplicate_name_invoker(self, request):
+        http_info = self._check_repository_duplicate_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_repository_duplicate_name_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/check-repository-duplicate-name",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckRepositoryDuplicateNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1197,9 +1377,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1208,20 +1388,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/check-repository-duplicate-name',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckRepositoryDuplicateNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repository_by_cloud_ide(self, request):
         """使用 CloudIDE 实例打开应用代码
@@ -1236,9 +1412,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryByCloudIdeResponse`
         """
-        return self._show_repository_by_cloud_ide_with_http_info(request)
+        http_info = self._show_repository_by_cloud_ide_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repository_by_cloud_ide_with_http_info(self, request):
+    def show_repository_by_cloud_ide_invoker(self, request):
+        http_info = self._show_repository_by_cloud_ide_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_repository_by_cloud_ide_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/repositories/{repository_id}/show/cloudide",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryByCloudIdeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1267,9 +1456,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1278,20 +1467,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/repositories/{repository_id}/show/cloudide',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRepositoryByCloudIdeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_repository_statistical_data_v2(self, request):
         """应用代码仓库统计信息
@@ -1304,9 +1489,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowRepositoryStatisticalDataV2Response`
         """
-        return self._show_repository_statistical_data_v2_with_http_info(request)
+        http_info = self._show_repository_statistical_data_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_repository_statistical_data_v2_with_http_info(self, request):
+    def show_repository_statistical_data_v2_invoker(self, request):
+        http_info = self._show_repository_statistical_data_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_repository_statistical_data_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/repositories/{repository_id}/statistical-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRepositoryStatisticalDataV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1325,9 +1523,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1336,20 +1534,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/repositories/{repository_id}/statistical-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRepositoryStatisticalDataV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_file(self, request):
         """读取模板文件
@@ -1362,9 +1556,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateFileResponse`
         """
-        return self._show_template_file_with_http_info(request)
+        http_info = self._show_template_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_file_with_http_info(self, request):
+    def show_template_file_invoker(self, request):
+        http_info = self._show_template_file_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_template_file_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/templates/{template_id}/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1387,9 +1594,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1398,20 +1605,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/templates/{template_id}/files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template_view_histories(self, request):
         """同步模板浏览记录
@@ -1424,9 +1627,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.CreateTemplateViewHistoriesResponse`
         """
-        return self._create_template_view_histories_with_http_info(request)
+        http_info = self._create_template_view_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_view_histories_with_http_info(self, request):
+    def create_template_view_histories_invoker(self, request):
+        http_info = self._create_template_view_histories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_template_view_histories_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/templates/view-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateViewHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1443,11 +1659,11 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1456,20 +1672,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/templates/view-histories',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateViewHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_published_templates(self, request):
         """查询模板列表（V1）
@@ -1482,9 +1694,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListPublishedTemplatesResponse`
         """
-        return self._list_published_templates_with_http_info(request)
+        http_info = self._list_published_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_published_templates_with_http_info(self, request):
+    def list_published_templates_invoker(self, request):
+        http_info = self._list_published_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_published_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublishedTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1507,9 +1732,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1518,20 +1743,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPublishedTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_view_histories(self, request):
         """我浏览的模板记录
@@ -1544,9 +1765,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplateViewHistoriesResponse`
         """
-        return self._list_template_view_histories_with_http_info(request)
+        http_info = self._list_template_view_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_view_histories_with_http_info(self, request):
+    def list_template_view_histories_invoker(self, request):
+        http_info = self._list_template_view_histories_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_template_view_histories_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/templates/view-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateViewHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1565,9 +1799,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1576,20 +1810,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/templates/view-histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateViewHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_templates(self, request):
         """查询模板列表
@@ -1602,9 +1832,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesResponse`
         """
-        return self._list_templates_with_http_info(request)
+        http_info = self._list_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_templates_with_http_info(self, request):
+    def list_templates_invoker(self, request):
+        http_info = self._list_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_templates_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/templates/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1621,11 +1864,11 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1634,20 +1877,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/templates/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_templates_v2(self, request):
         """查询模板列表（V2）
@@ -1660,9 +1899,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ListTemplatesV2Response`
         """
-        return self._list_templates_v2_with_http_info(request)
+        http_info = self._list_templates_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_templates_v2_with_http_info(self, request):
+    def list_templates_v2_invoker(self, request):
+        http_info = self._list_templates_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_templates_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/templates/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1681,11 +1933,11 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1694,20 +1946,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/templates/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplatesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_v3(self, request):
         """查询模板详情（V3）
@@ -1720,9 +1968,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Request`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateV3Response`
         """
-        return self._show_template_v3_with_http_info(request)
+        http_info = self._show_template_v3_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_v3_with_http_info(self, request):
+    def show_template_v3_invoker(self, request):
+        http_info = self._show_template_v3_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_template_v3_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateV3Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1741,9 +2002,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1752,20 +2013,16 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/templates/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateV3Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_detail(self, request):
         """查询模板详情（V1）
@@ -1778,9 +2035,22 @@ class DevStarClient(Client):
         :type request: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailRequest`
         :rtype: :class:`huaweicloudsdkdevstar.v1.ShowTemplateDetailResponse`
         """
-        return self._show_template_detail_with_http_info(request)
+        http_info = self._show_template_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_detail_with_http_info(self, request):
+    def show_template_detail_invoker(self, request):
+        http_info = self._show_template_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_template_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/templates/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1799,9 +2069,9 @@ class DevStarClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1810,20 +2080,25 @@ class DevStarClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/templates/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

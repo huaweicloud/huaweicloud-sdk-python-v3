@@ -20,7 +20,6 @@
 
 import datetime
 import decimal
-from mimetypes import MimeTypes
 
 import six
 
@@ -136,6 +135,3 @@ def select_header_content_type(content_types):
         return 'application/json'
     else:
         return content_types[0]
-
-
-

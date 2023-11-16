@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdsc'")
 
 
 class DscAsyncClient(Client):
@@ -39,9 +44,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.AddBucketsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.AddBucketsResponse`
         """
-        return self._add_buckets_with_http_info(request)
+        http_info = self._add_buckets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_buckets_with_http_info(self, request):
+    def add_buckets_async_invoker(self, request):
+        http_info = self._add_buckets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_buckets_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/asset/obs/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddBucketsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/asset/obs/buckets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddBucketsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_rule_async(self, request):
         """创建扫描规则
@@ -98,9 +111,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.AddRuleRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.AddRuleResponse`
         """
-        return self._add_rule_with_http_info(request)
+        http_info = self._add_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_rule_with_http_info(self, request):
+    def add_rule_async_invoker(self, request):
+        http_info = self._add_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_rule_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/server/scan/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +140,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +153,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/scan/rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_rule_group_async(self, request):
         """创建扫描规则组
@@ -155,9 +176,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.AddRuleGroupRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.AddRuleGroupResponse`
         """
-        return self._add_rule_group_with_http_info(request)
+        http_info = self._add_rule_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_rule_group_with_http_info(self, request):
+    def add_rule_group_async_invoker(self, request):
+        http_info = self._add_rule_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_rule_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/server/scan/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddRuleGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,11 +205,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -185,20 +218,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/scan/groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddRuleGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_scan_job_async(self, request):
         """创建扫描任务
@@ -212,9 +241,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.AddScanJobRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.AddScanJobResponse`
         """
-        return self._add_scan_job_with_http_info(request)
+        http_info = self._add_scan_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_scan_job_with_http_info(self, request):
+    def add_scan_job_async_invoker(self, request):
+        http_info = self._add_scan_job_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_scan_job_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/scan/job",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddScanJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -229,11 +270,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +283,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/scan/job',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddScanJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_data_mask_async(self, request):
         """对数据进行脱敏
@@ -269,9 +306,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.BatchAddDataMaskRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.BatchAddDataMaskResponse`
         """
-        return self._batch_add_data_mask_with_http_info(request)
+        http_info = self._batch_add_data_mask_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_data_mask_with_http_info(self, request):
+    def batch_add_data_mask_async_invoker(self, request):
+        http_info = self._batch_add_data_mask_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_add_data_mask_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data/mask",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddDataMaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -286,11 +335,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -299,20 +348,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data/mask',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddDataMaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_db_template_operation_async(self, request):
         """开启/停止脱敏任务
@@ -326,9 +371,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ChangeDbTemplateOperationRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ChangeDbTemplateOperationResponse`
         """
-        return self._change_db_template_operation_with_http_info(request)
+        http_info = self._change_db_template_operation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_db_template_operation_with_http_info(self, request):
+    def change_db_template_operation_async_invoker(self, request):
+        http_info = self._change_db_template_operation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_db_template_operation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/server/mask/dbs/templates/{template_id}/operation",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeDbTemplateOperationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -345,11 +402,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -358,20 +415,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/mask/dbs/templates/{template_id}/operation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeDbTemplateOperationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_rule_async(self, request):
         """修改扫描规则
@@ -385,9 +438,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ChangeRuleRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ChangeRuleResponse`
         """
-        return self._change_rule_with_http_info(request)
+        http_info = self._change_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_rule_with_http_info(self, request):
+    def change_rule_async_invoker(self, request):
+        http_info = self._change_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_rule_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/sdg/server/scan/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -402,11 +467,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -415,20 +480,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/scan/rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_database_water_mark_async(self, request):
         """嵌入数据水印
@@ -442,9 +503,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDatabaseWaterMarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDatabaseWaterMarkResponse`
         """
-        return self._create_database_water_mark_with_http_info(request)
+        http_info = self._create_database_water_mark_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_database_water_mark_with_http_info(self, request):
+    def create_database_water_mark_async_invoker(self, request):
+        http_info = self._create_database_water_mark_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_database_water_mark_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/database/watermark/embed",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatabaseWaterMarkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -459,11 +532,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -472,20 +545,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/database/watermark/embed',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatabaseWaterMarkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_doc_watermark_async(self, request):
         """文档嵌入水印
@@ -499,9 +568,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkResponse`
         """
-        return self._create_doc_watermark_with_http_info(request)
+        http_info = self._create_doc_watermark_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_doc_watermark_with_http_info(self, request):
+    def create_doc_watermark_async_invoker(self, request):
+        http_info = self._create_doc_watermark_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_doc_watermark_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/doc/watermark/embed",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDocWatermarkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -540,11 +621,11 @@ class DscAsyncClient(Client):
         if 'visible_type' in local_var_params:
             form_params['visible_type'] = local_var_params['visible_type']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -553,20 +634,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/doc/watermark/embed',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDocWatermarkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_doc_watermark_by_address_async(self, request):
         """文档嵌入水印（文件地址版本）
@@ -580,9 +657,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateDocWatermarkByAddressResponse`
         """
-        return self._create_doc_watermark_by_address_with_http_info(request)
+        http_info = self._create_doc_watermark_by_address_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_doc_watermark_by_address_with_http_info(self, request):
+    def create_doc_watermark_by_address_async_invoker(self, request):
+        http_info = self._create_doc_watermark_by_address_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_doc_watermark_by_address_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/doc-address/watermark/embed",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDocWatermarkByAddressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -597,11 +686,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -610,20 +699,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/doc-address/watermark/embed',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDocWatermarkByAddressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_image_watermark_async(self, request):
         """图片嵌入暗水印
@@ -637,9 +722,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkResponse`
         """
-        return self._create_image_watermark_with_http_info(request)
+        http_info = self._create_image_watermark_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_image_watermark_with_http_info(self, request):
+    def create_image_watermark_async_invoker(self, request):
+        http_info = self._create_image_watermark_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_image_watermark_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image/watermark/embed",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateImageWatermarkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -660,11 +757,11 @@ class DscAsyncClient(Client):
         if 'image_watermark' in local_var_params:
             form_params['image_watermark'] = local_var_params['image_watermark']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -673,20 +770,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/image/watermark/embed',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateImageWatermarkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_image_watermark_by_address_async(self, request):
         """图片嵌入暗水印（文件地址版本）
@@ -700,9 +793,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateImageWatermarkByAddressResponse`
         """
-        return self._create_image_watermark_by_address_with_http_info(request)
+        http_info = self._create_image_watermark_by_address_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_image_watermark_by_address_with_http_info(self, request):
+    def create_image_watermark_by_address_async_invoker(self, request):
+        http_info = self._create_image_watermark_by_address_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_image_watermark_by_address_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image-address/watermark/embed",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateImageWatermarkByAddressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -717,11 +822,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -730,20 +835,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/image-address/watermark/embed',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateImageWatermarkByAddressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_product_order_async(self, request):
         """实例下单
@@ -757,9 +858,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.CreateProductOrderRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.CreateProductOrderResponse`
         """
-        return self._create_product_order_with_http_info(request)
+        http_info = self._create_product_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_product_order_with_http_info(self, request):
+    def create_product_order_async_invoker(self, request):
+        http_info = self._create_product_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_product_order_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/period/order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProductOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -774,11 +887,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -787,20 +900,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/period/order',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProductOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_bucket_async(self, request):
         """删除资产授权
@@ -814,9 +923,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.DeleteBucketRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.DeleteBucketResponse`
         """
-        return self._delete_bucket_with_http_info(request)
+        http_info = self._delete_bucket_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_bucket_with_http_info(self, request):
+    def delete_bucket_async_invoker(self, request):
+        http_info = self._delete_bucket_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_bucket_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/sdg/asset/obs/bucket/{bucket_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBucketResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -833,9 +954,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -844,20 +965,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/asset/obs/bucket/{bucket_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBucketResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_rule_async(self, request):
         """删除扫描规则
@@ -871,9 +988,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.DeleteRuleResponse`
         """
-        return self._delete_rule_with_http_info(request)
+        http_info = self._delete_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_rule_with_http_info(self, request):
+    def delete_rule_async_invoker(self, request):
+        http_info = self._delete_rule_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_rule_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/sdg/server/scan/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -890,9 +1019,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -901,20 +1030,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/scan/rules/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_rule_group_async(self, request):
         """删除扫描规则组
@@ -928,9 +1053,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.DeleteRuleGroupRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.DeleteRuleGroupResponse`
         """
-        return self._delete_rule_group_with_http_info(request)
+        http_info = self._delete_rule_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_rule_group_with_http_info(self, request):
+    def delete_rule_group_async_invoker(self, request):
+        http_info = self._delete_rule_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_rule_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/sdg/server/scan/groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRuleGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -947,9 +1084,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -958,20 +1095,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/scan/groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRuleGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_buckets_async(self, request):
         """查看资产列表
@@ -985,9 +1118,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListBucketsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListBucketsResponse`
         """
-        return self._list_buckets_with_http_info(request)
+        http_info = self._list_buckets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_buckets_with_http_info(self, request):
+    def list_buckets_async_invoker(self, request):
+        http_info = self._list_buckets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_buckets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/asset/obs/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBucketsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1008,9 +1153,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1019,20 +1164,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/asset/obs/buckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBucketsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_db_mask_task_async(self, request):
         """查询脱敏任务执行列表
@@ -1046,9 +1187,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListDbMaskTaskRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListDbMaskTaskResponse`
         """
-        return self._list_db_mask_task_with_http_info(request)
+        http_info = self._list_db_mask_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_db_mask_task_with_http_info(self, request):
+    def list_db_mask_task_async_invoker(self, request):
+        http_info = self._list_db_mask_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_db_mask_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/server/mask/dbs/templates/{template_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDbMaskTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1071,9 +1224,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1082,20 +1235,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/mask/dbs/templates/{template_id}/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDbMaskTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_relation_buckets_async(self, request):
         """OBS血缘图桶级查询
@@ -1109,9 +1258,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationBucketsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationBucketsResponse`
         """
-        return self._list_relation_buckets_with_http_info(request)
+        http_info = self._list_relation_buckets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_relation_buckets_with_http_info(self, request):
+    def list_relation_buckets_async_invoker(self, request):
+        http_info = self._list_relation_buckets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_relation_buckets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/server/relation/jobs/{job_id}/obs/buckets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelationBucketsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1138,9 +1299,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1149,20 +1310,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/obs/buckets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRelationBucketsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_relation_column_async(self, request):
         """数据库血缘图表字段级查询
@@ -1176,9 +1333,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationColumnRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationColumnResponse`
         """
-        return self._list_relation_column_with_http_info(request)
+        http_info = self._list_relation_column_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_relation_column_with_http_info(self, request):
+    def list_relation_column_async_invoker(self, request):
+        http_info = self._list_relation_column_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_relation_column_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs/{table_id}/columns",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelationColumnResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1207,9 +1376,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1218,20 +1387,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs/{table_id}/columns',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRelationColumnResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_relation_db_async(self, request):
         """数据库血缘图数据库级查询
@@ -1245,9 +1410,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationDbRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationDbResponse`
         """
-        return self._list_relation_db_with_http_info(request)
+        http_info = self._list_relation_db_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_relation_db_with_http_info(self, request):
+    def list_relation_db_async_invoker(self, request):
+        http_info = self._list_relation_db_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_relation_db_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelationDbResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1274,9 +1451,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1285,20 +1462,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRelationDbResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_relation_file_async(self, request):
         """OBS血缘图文件分页查询
@@ -1312,9 +1485,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationFileRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationFileResponse`
         """
-        return self._list_relation_file_with_http_info(request)
+        http_info = self._list_relation_file_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_relation_file_with_http_info(self, request):
+    def list_relation_file_async_invoker(self, request):
+        http_info = self._list_relation_file_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_relation_file_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/server/relation/jobs/{job_id}/obs/{bucket_id}/files",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelationFileResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1345,9 +1530,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1356,20 +1541,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/obs/{bucket_id}/files',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRelationFileResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_relation_table_async(self, request):
         """数据库血缘图表分页查询
@@ -1383,9 +1564,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRelationTableRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRelationTableResponse`
         """
-        return self._list_relation_table_with_http_info(request)
+        http_info = self._list_relation_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_relation_table_with_http_info(self, request):
+    def list_relation_table_async_invoker(self, request):
+        http_info = self._list_relation_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_relation_table_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs/{db_id}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRelationTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1416,9 +1609,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1427,20 +1620,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/relation/jobs/{job_id}/dbs/{db_id}/tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRelationTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rule_groups_async(self, request):
         """查询扫描规则组列表
@@ -1454,9 +1643,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ListRuleGroupsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ListRuleGroupsResponse`
         """
-        return self._list_rule_groups_with_http_info(request)
+        http_info = self._list_rule_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rule_groups_with_http_info(self, request):
+    def list_rule_groups_async_invoker(self, request):
+        http_info = self._list_rule_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_rule_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/server/scan/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRuleGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1475,9 +1676,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1486,20 +1687,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/scan/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRuleGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_database_water_mark_async(self, request):
         """提取数据水印
@@ -1513,9 +1710,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDatabaseWaterMarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDatabaseWaterMarkResponse`
         """
-        return self._show_database_water_mark_with_http_info(request)
+        http_info = self._show_database_water_mark_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_database_water_mark_with_http_info(self, request):
+    def show_database_water_mark_async_invoker(self, request):
+        http_info = self._show_database_water_mark_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_database_water_mark_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/database/watermark/extract",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatabaseWaterMarkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1530,11 +1739,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1543,20 +1752,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/database/watermark/extract',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatabaseWaterMarkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_doc_watermark_async(self, request):
         """文档提取暗水印
@@ -1570,9 +1775,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkResponse`
         """
-        return self._show_doc_watermark_with_http_info(request)
+        http_info = self._show_doc_watermark_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_doc_watermark_with_http_info(self, request):
+    def show_doc_watermark_async_invoker(self, request):
+        http_info = self._show_doc_watermark_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_doc_watermark_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/sdg/doc/watermark/extract",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDocWatermarkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1593,11 +1810,11 @@ class DscAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1606,20 +1823,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/doc/watermark/extract',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDocWatermarkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_doc_watermark_by_address_async(self, request):
         """文档提取暗水印（文档地址版本）
@@ -1633,9 +1846,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowDocWatermarkByAddressResponse`
         """
-        return self._show_doc_watermark_by_address_with_http_info(request)
+        http_info = self._show_doc_watermark_by_address_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_doc_watermark_by_address_with_http_info(self, request):
+    def show_doc_watermark_by_address_async_invoker(self, request):
+        http_info = self._show_doc_watermark_by_address_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_doc_watermark_by_address_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/doc-address/watermark/extract",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDocWatermarkByAddressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1650,11 +1875,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1663,20 +1888,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/doc-address/watermark/extract',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDocWatermarkByAddressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_image_watermark_async(self, request):
         """提取图片中的文字暗水印
@@ -1690,9 +1911,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkResponse`
         """
-        return self._show_image_watermark_with_http_info(request)
+        http_info = self._show_image_watermark_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_image_watermark_with_http_info(self, request):
+    def show_image_watermark_async_invoker(self, request):
+        http_info = self._show_image_watermark_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_image_watermark_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image/watermark/extract",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageWatermarkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1711,11 +1944,11 @@ class DscAsyncClient(Client):
         if 'mark_len' in local_var_params:
             form_params['mark_len'] = local_var_params['mark_len']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1724,20 +1957,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/image/watermark/extract',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowImageWatermarkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_image_watermark_by_address_async(self, request):
         """提取图片中的文字暗水印（文件地址版本）
@@ -1751,9 +1980,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkByAddressResponse`
         """
-        return self._show_image_watermark_by_address_with_http_info(request)
+        http_info = self._show_image_watermark_by_address_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_image_watermark_by_address_with_http_info(self, request):
+    def show_image_watermark_by_address_async_invoker(self, request):
+        http_info = self._show_image_watermark_by_address_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_image_watermark_by_address_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image-address/watermark/extract",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageWatermarkByAddressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1768,11 +2009,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1781,20 +2022,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/image-address/watermark/extract',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowImageWatermarkByAddressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_image_watermark_with_image_async(self, request):
         """提取图片中的图片暗水印
@@ -1808,9 +2045,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageResponse`
         """
-        return self._show_image_watermark_with_image_with_http_info(request)
+        http_info = self._show_image_watermark_with_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_image_watermark_with_image_with_http_info(self, request):
+    def show_image_watermark_with_image_async_invoker(self, request):
+        http_info = self._show_image_watermark_with_image_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_image_watermark_with_image_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image/watermark/extract-image",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageWatermarkWithImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1827,11 +2076,11 @@ class DscAsyncClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1840,20 +2089,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/image/watermark/extract-image',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowImageWatermarkWithImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_image_watermark_with_image_by_address_async(self, request):
         """提取图片中的图片暗水印（文件地址版本）
@@ -1867,9 +2112,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageByAddressRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowImageWatermarkWithImageByAddressResponse`
         """
-        return self._show_image_watermark_with_image_by_address_with_http_info(request)
+        http_info = self._show_image_watermark_with_image_by_address_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_image_watermark_with_image_by_address_with_http_info(self, request):
+    def show_image_watermark_with_image_by_address_async_invoker(self, request):
+        http_info = self._show_image_watermark_with_image_by_address_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_image_watermark_with_image_by_address_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/image-address/watermark/extract-image",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageWatermarkWithImageByAddressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1884,11 +2141,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1897,20 +2154,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/image-address/watermark/extract-image',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowImageWatermarkWithImageByAddressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_rules_async(self, request):
         """查看规则列表
@@ -1924,9 +2177,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowRulesRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowRulesResponse`
         """
-        return self._show_rules_with_http_info(request)
+        http_info = self._show_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_rules_with_http_info(self, request):
+    def show_rules_async_invoker(self, request):
+        http_info = self._show_rules_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_rules_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/server/scan/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1945,9 +2210,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1956,20 +2221,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/server/scan/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_scan_job_results_async(self, request):
         """查询指定任务扫描结果
@@ -1983,9 +2244,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowScanJobResultsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowScanJobResultsResponse`
         """
-        return self._show_scan_job_results_with_http_info(request)
+        http_info = self._show_scan_job_results_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_scan_job_results_with_http_info(self, request):
+    def show_scan_job_results_async_invoker(self, request):
+        http_info = self._show_scan_job_results_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scan_job_results_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/scan/job/{job_id}/results",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScanJobResultsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2012,9 +2285,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2023,20 +2296,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/scan/job/{job_id}/results',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScanJobResultsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_scan_jobs_async(self, request):
         """查询扫描任务列表
@@ -2050,9 +2319,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowScanJobsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowScanJobsResponse`
         """
-        return self._show_scan_jobs_with_http_info(request)
+        http_info = self._show_scan_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_scan_jobs_with_http_info(self, request):
+    def show_scan_jobs_async_invoker(self, request):
+        http_info = self._show_scan_jobs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_scan_jobs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/scan/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowScanJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2077,9 +2358,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2088,20 +2369,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/scan/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowScanJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_specification_async(self, request):
         """查询资源开通信息
@@ -2115,9 +2392,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowSpecificationRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowSpecificationResponse`
         """
-        return self._show_specification_with_http_info(request)
+        http_info = self._show_specification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_specification_with_http_info(self, request):
+    def show_specification_async_invoker(self, request):
+        http_info = self._show_specification_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_specification_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/period/product/specification",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSpecificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2132,9 +2421,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2143,20 +2432,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/period/product/specification',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSpecificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_topics_async(self, request):
         """查询告警通知主题
@@ -2170,9 +2455,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowTopicsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowTopicsResponse`
         """
-        return self._show_topics_with_http_info(request)
+        http_info = self._show_topics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_topics_with_http_info(self, request):
+    def show_topics_async_invoker(self, request):
+        http_info = self._show_topics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_topics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/sdg/smn/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTopicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2191,9 +2488,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2202,20 +2499,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/smn/topics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTopicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_asset_name_async(self, request):
         """编辑资产名称
@@ -2229,9 +2522,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.UpdateAssetNameRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.UpdateAssetNameResponse`
         """
-        return self._update_asset_name_with_http_info(request)
+        http_info = self._update_asset_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_asset_name_with_http_info(self, request):
+    def update_asset_name_async_invoker(self, request):
+        http_info = self._update_asset_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_asset_name_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/sdg/asset/{asset_id}/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssetNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2248,11 +2553,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2261,20 +2566,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/asset/{asset_id}/name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAssetNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_default_topic_async(self, request):
         """修改告警通知主题
@@ -2288,9 +2589,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.UpdateDefaultTopicRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.UpdateDefaultTopicResponse`
         """
-        return self._update_default_topic_with_http_info(request)
+        http_info = self._update_default_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_default_topic_with_http_info(self, request):
+    def update_default_topic_async_invoker(self, request):
+        http_info = self._update_default_topic_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_default_topic_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/sdg/smn/topic",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDefaultTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2305,11 +2618,11 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2318,20 +2631,16 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/sdg/smn/topic',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDefaultTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_open_api_called_records_async(self, request):
         """查询OpenApi调用记录
@@ -2345,9 +2654,21 @@ class DscAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdsc.v1.ShowOpenApiCalledRecordsRequest`
         :rtype: :class:`huaweicloudsdkdsc.v1.ShowOpenApiCalledRecordsResponse`
         """
-        return self._show_open_api_called_records_with_http_info(request)
+        http_info = self._show_open_api_called_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_open_api_called_records_with_http_info(self, request):
+    def show_open_api_called_records_async_invoker(self, request):
+        http_info = self._show_open_api_called_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_open_api_called_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/openapi/called-records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowOpenApiCalledRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2372,9 +2693,9 @@ class DscAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2383,20 +2704,26 @@ class DscAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/openapi/called-records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowOpenApiCalledRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2435,4 +2762,4 @@ class DscAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

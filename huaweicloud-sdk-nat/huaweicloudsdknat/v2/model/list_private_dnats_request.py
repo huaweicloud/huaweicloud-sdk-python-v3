@@ -61,7 +61,7 @@ class ListPrivateDnatsRequest:
         :type id: list[str]
         :param enterprise_project_id: 企业项目ID。创建DNAT规则时，关联的企业项目ID。
         :type enterprise_project_id: list[str]
-        :param description: DNAT规则的描述。
+        :param description: DNAT规则的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: list[str]
         :param gateway_id: 私网NAT网关实例的ID。
         :type gateway_id: list[str]
@@ -232,7 +232,7 @@ class ListPrivateDnatsRequest:
     def description(self):
         """Gets the description of this ListPrivateDnatsRequest.
 
-        DNAT规则的描述。
+        DNAT规则的描述。长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this ListPrivateDnatsRequest.
         :rtype: list[str]
@@ -243,7 +243,7 @@ class ListPrivateDnatsRequest:
     def description(self, description):
         """Sets the description of this ListPrivateDnatsRequest.
 
-        DNAT规则的描述。
+        DNAT规则的描述。长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this ListPrivateDnatsRequest.
         :type description: list[str]

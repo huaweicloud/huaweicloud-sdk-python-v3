@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkaos'")
 
 
 class AosAsyncClient(Client):
@@ -56,9 +61,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ApplyExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ApplyExecutionPlanResponse`
         """
-        return self._apply_execution_plan_with_http_info(request)
+        http_info = self._apply_execution_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _apply_execution_plan_with_http_info(self, request):
+    def apply_execution_plan_async_invoker(self, request):
+        http_info = self._apply_execution_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _apply_execution_plan_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ApplyExecutionPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -79,11 +96,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -92,20 +109,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ApplyExecutionPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_execution_plan_async(self, request):
         """创建执行计划
@@ -133,9 +146,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.CreateExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.CreateExecutionPlanResponse`
         """
-        return self._create_execution_plan_with_http_info(request)
+        http_info = self._create_execution_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_execution_plan_with_http_info(self, request):
+    def create_execution_plan_async_invoker(self, request):
+        http_info = self._create_execution_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_execution_plan_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/execution-plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExecutionPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -154,11 +179,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -167,20 +192,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateExecutionPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_execution_plan_async(self, request):
         """删除执行计划
@@ -198,9 +219,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteExecutionPlanResponse`
         """
-        return self._delete_execution_plan_with_http_info(request)
+        http_info = self._delete_execution_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_execution_plan_with_http_info(self, request):
+    def delete_execution_plan_async_invoker(self, request):
+        http_info = self._delete_execution_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_execution_plan_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteExecutionPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -225,9 +258,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +269,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteExecutionPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def estimate_execution_plan_price_async(self, request):
         """预估执行计划价格
@@ -314,9 +343,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.EstimateExecutionPlanPriceRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.EstimateExecutionPlanPriceResponse`
         """
-        return self._estimate_execution_plan_price_with_http_info(request)
+        http_info = self._estimate_execution_plan_price_http_info(request)
+        return self._call_api(**http_info)
 
-    def _estimate_execution_plan_price_with_http_info(self, request):
+    def estimate_execution_plan_price_async_invoker(self, request):
+        http_info = self._estimate_execution_plan_price_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _estimate_execution_plan_price_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}/prices",
+            "request_type": request.__class__.__name__,
+            "response_type": "EstimateExecutionPlanPriceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,9 +382,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -352,20 +393,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}/prices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EstimateExecutionPlanPriceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def get_execution_plan_async(self, request):
         """获取执行计划
@@ -383,9 +420,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.GetExecutionPlanRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.GetExecutionPlanResponse`
         """
-        return self._get_execution_plan_with_http_info(request)
+        http_info = self._get_execution_plan_http_info(request)
+        return self._call_api(**http_info)
 
-    def _get_execution_plan_with_http_info(self, request):
+    def get_execution_plan_async_invoker(self, request):
+        http_info = self._get_execution_plan_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_execution_plan_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetExecutionPlanResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -410,9 +459,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -421,20 +470,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GetExecutionPlanResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def get_execution_plan_metadata_async(self, request):
         """获取执行计划元数据
@@ -454,9 +499,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.GetExecutionPlanMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.GetExecutionPlanMetadataResponse`
         """
-        return self._get_execution_plan_metadata_with_http_info(request)
+        http_info = self._get_execution_plan_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _get_execution_plan_metadata_with_http_info(self, request):
+    def get_execution_plan_metadata_async_invoker(self, request):
+        http_info = self._get_execution_plan_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_execution_plan_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetExecutionPlanMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -481,9 +538,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +549,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans/{execution_plan_name}/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GetExecutionPlanMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_execution_plans_async(self, request):
         """列举执行计划
@@ -528,9 +581,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListExecutionPlansRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListExecutionPlansResponse`
         """
-        return self._list_execution_plans_with_http_info(request)
+        http_info = self._list_execution_plans_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_execution_plans_with_http_info(self, request):
+    def list_execution_plans_async_invoker(self, request):
+        http_info = self._list_execution_plans_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_execution_plans_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/execution-plans",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListExecutionPlansResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -551,9 +616,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -562,20 +627,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/execution-plans',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListExecutionPlansResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def continue_deploy_stack_async(self, request):
         """继续部署资源栈
@@ -595,9 +656,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ContinueDeployStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ContinueDeployStackResponse`
         """
-        return self._continue_deploy_stack_with_http_info(request)
+        http_info = self._continue_deploy_stack_http_info(request)
+        return self._call_api(**http_info)
 
-    def _continue_deploy_stack_with_http_info(self, request):
+    def continue_deploy_stack_async_invoker(self, request):
+        http_info = self._continue_deploy_stack_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _continue_deploy_stack_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/continuations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ContinueDeployStackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -616,11 +689,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -629,20 +702,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/continuations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ContinueDeployStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def continue_rollback_stack_async(self, request):
         """继续回滚资源栈
@@ -663,9 +732,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ContinueRollbackStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ContinueRollbackStackResponse`
         """
-        return self._continue_rollback_stack_with_http_info(request)
+        http_info = self._continue_rollback_stack_http_info(request)
+        return self._call_api(**http_info)
 
-    def _continue_rollback_stack_with_http_info(self, request):
+    def continue_rollback_stack_async_invoker(self, request):
+        http_info = self._continue_rollback_stack_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _continue_rollback_stack_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/rollbacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ContinueRollbackStackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -684,11 +765,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -697,20 +778,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/rollbacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ContinueRollbackStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_stack_async(self, request):
         """创建资源栈
@@ -727,9 +804,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.CreateStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.CreateStackResponse`
         """
-        return self._create_stack_with_http_info(request)
+        http_info = self._create_stack_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_stack_with_http_info(self, request):
+    def create_stack_async_invoker(self, request):
+        http_info = self._create_stack_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_stack_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -746,11 +835,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -759,20 +848,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_stack_async(self, request):
         """删除资源栈
@@ -799,9 +884,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteStackResponse`
         """
-        return self._delete_stack_with_http_info(request)
+        http_info = self._delete_stack_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_stack_with_http_info(self, request):
+    def delete_stack_async_invoker(self, request):
+        http_info = self._delete_stack_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_stack_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -822,9 +919,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -833,20 +930,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_stack_enhanced_async(self, request):
         """条件删除资源栈
@@ -875,9 +968,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteStackEnhancedRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteStackEnhancedResponse`
         """
-        return self._delete_stack_enhanced_with_http_info(request)
+        http_info = self._delete_stack_enhanced_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_stack_enhanced_with_http_info(self, request):
+    def delete_stack_enhanced_async_invoker(self, request):
+        http_info = self._delete_stack_enhanced_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_stack_enhanced_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/deletion",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStackEnhancedResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -896,11 +1001,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -909,20 +1014,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/deletion',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStackEnhancedResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def deploy_stack_async(self, request):
         """部署资源栈
@@ -946,9 +1047,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeployStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeployStackResponse`
         """
-        return self._deploy_stack_with_http_info(request)
+        http_info = self._deploy_stack_http_info(request)
+        return self._call_api(**http_info)
 
-    def _deploy_stack_with_http_info(self, request):
+    def deploy_stack_async_invoker(self, request):
+        http_info = self._deploy_stack_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _deploy_stack_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeployStackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -967,11 +1080,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -980,20 +1093,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/deployments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeployStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def get_stack_metadata_async(self, request):
         """获取资源栈元数据
@@ -1028,9 +1137,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.GetStackMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.GetStackMetadataResponse`
         """
-        return self._get_stack_metadata_with_http_info(request)
+        http_info = self._get_stack_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _get_stack_metadata_with_http_info(self, request):
+    def get_stack_metadata_async_invoker(self, request):
+        http_info = self._get_stack_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_stack_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetStackMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1051,9 +1172,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1062,20 +1183,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GetStackMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def get_stack_template_async(self, request):
         """获取资源栈模板
@@ -1111,9 +1228,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.GetStackTemplateRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.GetStackTemplateResponse`
         """
-        return self._get_stack_template_with_http_info(request)
+        http_info = self._get_stack_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _get_stack_template_with_http_info(self, request):
+    def get_stack_template_async_invoker(self, request):
+        http_info = self._get_stack_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _get_stack_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "GetStackTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1134,9 +1263,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Location", ]
 
@@ -1145,20 +1274,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GetStackTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stack_events_async(self, request):
         """列举资源栈事件
@@ -1180,9 +1305,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackEventsRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackEventsResponse`
         """
-        return self._list_stack_events_with_http_info(request)
+        http_info = self._list_stack_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stack_events_with_http_info(self, request):
+    def list_stack_events_async_invoker(self, request):
+        http_info = self._list_stack_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stack_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStackEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1209,9 +1346,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1220,20 +1357,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStackEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stack_outputs_async(self, request):
         """列举资源栈输出
@@ -1258,9 +1391,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackOutputsRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackOutputsResponse`
         """
-        return self._list_stack_outputs_with_http_info(request)
+        http_info = self._list_stack_outputs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stack_outputs_with_http_info(self, request):
+    def list_stack_outputs_async_invoker(self, request):
+        http_info = self._list_stack_outputs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stack_outputs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/outputs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStackOutputsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1281,9 +1426,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1292,20 +1437,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/outputs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStackOutputsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stack_resources_async(self, request):
         """列举资源栈资源
@@ -1328,9 +1469,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackResourcesRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackResourcesResponse`
         """
-        return self._list_stack_resources_with_http_info(request)
+        http_info = self._list_stack_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stack_resources_with_http_info(self, request):
+    def list_stack_resources_async_invoker(self, request):
+        http_info = self._list_stack_resources_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stack_resources_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStackResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1351,9 +1504,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1362,20 +1515,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}/resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStackResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stacks_async(self, request):
         """列举资源栈
@@ -1397,9 +1546,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStacksRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStacksResponse`
         """
-        return self._list_stacks_with_http_info(request)
+        http_info = self._list_stacks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stacks_with_http_info(self, request):
+    def list_stacks_async_invoker(self, request):
+        http_info = self._list_stacks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stacks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/stacks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStacksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1416,9 +1577,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1427,20 +1588,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStacksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_stack_async(self, request):
         """更新资源栈
@@ -1472,9 +1629,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.UpdateStackRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateStackResponse`
         """
-        return self._update_stack_with_http_info(request)
+        http_info = self._update_stack_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_stack_with_http_info(self, request):
+    def update_stack_async_invoker(self, request):
+        http_info = self._update_stack_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_stack_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/stacks/{stack_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStackResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1493,11 +1662,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1506,20 +1675,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/stacks/{stack_name}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStackResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_stack_instance_async(self, request):
         """创建资源栈实例
@@ -1543,9 +1708,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.CreateStackInstanceRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.CreateStackInstanceResponse`
         """
-        return self._create_stack_instance_with_http_info(request)
+        http_info = self._create_stack_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_stack_instance_with_http_info(self, request):
+    def create_stack_instance_async_invoker(self, request):
+        http_info = self._create_stack_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_stack_instance_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/stack-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStackInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1564,11 +1741,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1577,20 +1754,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/stack-instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStackInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_stack_set_async(self, request):
         """创建资源栈集
@@ -1606,9 +1779,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.CreateStackSetRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.CreateStackSetResponse`
         """
-        return self._create_stack_set_with_http_info(request)
+        http_info = self._create_stack_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_stack_set_with_http_info(self, request):
+    def create_stack_set_async_invoker(self, request):
+        http_info = self._create_stack_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_stack_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/stack-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStackSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1625,11 +1810,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1638,20 +1823,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStackSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_stack_instance_async(self, request):
         """删除资源栈实例
@@ -1671,9 +1852,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteStackInstanceRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteStackInstanceResponse`
         """
-        return self._delete_stack_instance_with_http_info(request)
+        http_info = self._delete_stack_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_stack_instance_with_http_info(self, request):
+    def delete_stack_instance_async_invoker(self, request):
+        http_info = self._delete_stack_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_stack_instance_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/stack-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStackInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1692,11 +1885,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1705,20 +1898,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/stack-instances',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStackInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_stack_set_async(self, request):
         """删除资源栈集
@@ -1738,9 +1927,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteStackSetRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteStackSetResponse`
         """
-        return self._delete_stack_set_with_http_info(request)
+        http_info = self._delete_stack_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_stack_set_with_http_info(self, request):
+    def delete_stack_set_async_invoker(self, request):
+        http_info = self._delete_stack_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_stack_set_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/stack-sets/{stack_set_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStackSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1761,9 +1962,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1772,20 +1973,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStackSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def deploy_stack_set_async(self, request):
         """部署资源栈集
@@ -1811,9 +2008,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeployStackSetRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeployStackSetResponse`
         """
-        return self._deploy_stack_set_with_http_info(request)
+        http_info = self._deploy_stack_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _deploy_stack_set_with_http_info(self, request):
+    def deploy_stack_set_async_invoker(self, request):
+        http_info = self._deploy_stack_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _deploy_stack_set_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeployStackSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1832,11 +2041,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1845,20 +2054,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/deployments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeployStackSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stack_instances_async(self, request):
         """列举资源栈实例
@@ -1878,9 +2083,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackInstancesRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackInstancesResponse`
         """
-        return self._list_stack_instances_with_http_info(request)
+        http_info = self._list_stack_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stack_instances_with_http_info(self, request):
+    def list_stack_instances_async_invoker(self, request):
+        http_info = self._list_stack_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stack_instances_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/stack-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStackInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1909,9 +2126,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1920,20 +2137,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/stack-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStackInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stack_set_operations_async(self, request):
         """列举资源栈集操作
@@ -1953,9 +2166,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackSetOperationsRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackSetOperationsResponse`
         """
-        return self._list_stack_set_operations_with_http_info(request)
+        http_info = self._list_stack_set_operations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stack_set_operations_with_http_info(self, request):
+    def list_stack_set_operations_async_invoker(self, request):
+        http_info = self._list_stack_set_operations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stack_set_operations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/operations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStackSetOperationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1984,9 +2209,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1995,20 +2220,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/operations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStackSetOperationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_stack_sets_async(self, request):
         """列举资源栈集
@@ -2029,9 +2250,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListStackSetsRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListStackSetsResponse`
         """
-        return self._list_stack_sets_with_http_info(request)
+        http_info = self._list_stack_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_stack_sets_with_http_info(self, request):
+    def list_stack_sets_async_invoker(self, request):
+        http_info = self._list_stack_sets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_stack_sets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/stack-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStackSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2056,9 +2289,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2067,20 +2300,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStackSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_stack_instance_async(self, request):
         """获取资源栈实例
@@ -2096,9 +2325,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowStackInstanceRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowStackInstanceResponse`
         """
-        return self._show_stack_instance_with_http_info(request)
+        http_info = self._show_stack_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_stack_instance_with_http_info(self, request):
+    def show_stack_instance_async_invoker(self, request):
+        http_info = self._show_stack_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_stack_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/stack-instances/{stack_instance_addr}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStackInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2121,9 +2362,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2132,20 +2373,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/stack-instances/{stack_instance_addr}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStackInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_stack_set_metadata_async(self, request):
         """获取资源栈集元数据
@@ -2161,9 +2398,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowStackSetMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowStackSetMetadataResponse`
         """
-        return self._show_stack_set_metadata_with_http_info(request)
+        http_info = self._show_stack_set_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_stack_set_metadata_with_http_info(self, request):
+    def show_stack_set_metadata_async_invoker(self, request):
+        http_info = self._show_stack_set_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_stack_set_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStackSetMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2184,9 +2433,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2195,20 +2444,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStackSetMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_stack_set_operation_metadata_async(self, request):
         """获取资源栈集操作的元数据
@@ -2226,9 +2471,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowStackSetOperationMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowStackSetOperationMetadataResponse`
         """
-        return self._show_stack_set_operation_metadata_with_http_info(request)
+        http_info = self._show_stack_set_operation_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_stack_set_operation_metadata_with_http_info(self, request):
+    def show_stack_set_operation_metadata_async_invoker(self, request):
+        http_info = self._show_stack_set_operation_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_stack_set_operation_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/operations/{stack_set_operation_id}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStackSetOperationMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2251,9 +2508,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2262,20 +2519,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/operations/{stack_set_operation_id}/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStackSetOperationMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_stack_set_template_async(self, request):
         """获取资源栈集模板
@@ -2294,9 +2547,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowStackSetTemplateRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowStackSetTemplateResponse`
         """
-        return self._show_stack_set_template_with_http_info(request)
+        http_info = self._show_stack_set_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_stack_set_template_with_http_info(self, request):
+    def show_stack_set_template_async_invoker(self, request):
+        http_info = self._show_stack_set_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_stack_set_template_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStackSetTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2317,9 +2582,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Location", ]
 
@@ -2328,20 +2593,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStackSetTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_stack_instances_async(self, request):
         """更新资源栈实例
@@ -2367,9 +2628,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.UpdateStackInstancesRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateStackInstancesResponse`
         """
-        return self._update_stack_instances_with_http_info(request)
+        http_info = self._update_stack_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_stack_instances_with_http_info(self, request):
+    def update_stack_instances_async_invoker(self, request):
+        http_info = self._update_stack_instances_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_stack_instances_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/stack-sets/{stack_set_name}/stack-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStackInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2388,11 +2661,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2401,20 +2674,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}/stack-instances',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStackInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_stack_set_async(self, request):
         """更新资源栈集
@@ -2438,9 +2707,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.UpdateStackSetRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateStackSetResponse`
         """
-        return self._update_stack_set_with_http_info(request)
+        http_info = self._update_stack_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_stack_set_with_http_info(self, request):
+    def update_stack_set_async_invoker(self, request):
+        http_info = self._update_stack_set_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_stack_set_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/stack-sets/{stack_set_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStackSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2459,11 +2740,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2472,20 +2753,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/stack-sets/{stack_set_name}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStackSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def parse_template_variables_async(self, request):
         """解析模板参数
@@ -2505,9 +2782,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ParseTemplateVariablesResponse`
         """
-        return self._parse_template_variables_with_http_info(request)
+        http_info = self._parse_template_variables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _parse_template_variables_with_http_info(self, request):
+    def parse_template_variables_async_invoker(self, request):
+        http_info = self._parse_template_variables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _parse_template_variables_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/template-analyses/variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ParseTemplateVariablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2524,11 +2813,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2537,20 +2826,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['token']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/template-analyses/variables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ParseTemplateVariablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_async(self, request):
         """删除模板
@@ -2569,9 +2854,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteTemplateRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteTemplateResponse`
         """
-        return self._delete_template_with_http_info(request)
+        http_info = self._delete_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_with_http_info(self, request):
+    def delete_template_async_invoker(self, request):
+        http_info = self._delete_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/templates/{template_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2592,9 +2889,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2603,20 +2900,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_version_async(self, request):
         """删除模板版本
@@ -2637,9 +2930,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.DeleteTemplateVersionRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.DeleteTemplateVersionResponse`
         """
-        return self._delete_template_version_with_http_info(request)
+        http_info = self._delete_template_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_version_with_http_info(self, request):
+    def delete_template_version_async_invoker(self, request):
+        http_info = self._delete_template_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_template_version_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/templates/{template_name}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2662,9 +2967,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2673,20 +2978,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_name}/versions/{version_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_versions_async(self, request):
         """列举模板版本
@@ -2710,9 +3011,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListTemplateVersionsRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListTemplateVersionsResponse`
         """
-        return self._list_template_versions_with_http_info(request)
+        http_info = self._list_template_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_versions_with_http_info(self, request):
+    def list_template_versions_async_invoker(self, request):
+        http_info = self._list_template_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_template_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/templates/{template_name}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2733,9 +3046,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2744,20 +3057,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_name}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_templates_async(self, request):
         """列举模板
@@ -2780,9 +3089,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ListTemplatesRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ListTemplatesResponse`
         """
-        return self._list_templates_with_http_info(request)
+        http_info = self._list_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_templates_with_http_info(self, request):
+    def list_templates_async_invoker(self, request):
+        http_info = self._list_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2799,9 +3120,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2810,20 +3131,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_metadata_async(self, request):
         """获取模板元数据
@@ -2843,9 +3160,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowTemplateMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowTemplateMetadataResponse`
         """
-        return self._show_template_metadata_with_http_info(request)
+        http_info = self._show_template_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_metadata_with_http_info(self, request):
+    def show_template_metadata_async_invoker(self, request):
+        http_info = self._show_template_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_template_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/templates/{template_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2866,9 +3195,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2877,20 +3206,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_name}/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_version_content_async(self, request):
         """获取模板版本内容
@@ -2911,9 +3236,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowTemplateVersionContentRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowTemplateVersionContentResponse`
         """
-        return self._show_template_version_content_with_http_info(request)
+        http_info = self._show_template_version_content_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_version_content_with_http_info(self, request):
+    def show_template_version_content_async_invoker(self, request):
+        http_info = self._show_template_version_content_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_template_version_content_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/templates/{template_name}/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateVersionContentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2936,9 +3273,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["Location"]
 
@@ -2947,20 +3284,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_name}/versions/{version_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateVersionContentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_template_version_metadata_async(self, request):
         """获取模板版本元数据
@@ -2980,9 +3313,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.ShowTemplateVersionMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.ShowTemplateVersionMetadataResponse`
         """
-        return self._show_template_version_metadata_with_http_info(request)
+        http_info = self._show_template_version_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_template_version_metadata_with_http_info(self, request):
+    def show_template_version_metadata_async_invoker(self, request):
+        http_info = self._show_template_version_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_template_version_metadata_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/templates/{template_name}/versions/{version_id}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTemplateVersionMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3005,9 +3350,9 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3016,20 +3361,16 @@ class AosAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_name}/versions/{version_id}/metadata',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTemplateVersionMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_template_metadata_async(self, request):
         """更新模板元数据
@@ -3047,9 +3388,21 @@ class AosAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaos.v1.UpdateTemplateMetadataRequest`
         :rtype: :class:`huaweicloudsdkaos.v1.UpdateTemplateMetadataResponse`
         """
-        return self._update_template_metadata_with_http_info(request)
+        http_info = self._update_template_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_template_metadata_with_http_info(self, request):
+    def update_template_metadata_async_invoker(self, request):
+        http_info = self._update_template_metadata_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_template_metadata_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v1/{project_id}/templates/{template_name}/metadata",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTemplateMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3068,11 +3421,11 @@ class AosAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3081,20 +3434,26 @@ class AosAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/templates/{template_name}/metadata',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTemplateMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3133,4 +3492,4 @@ class AosAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

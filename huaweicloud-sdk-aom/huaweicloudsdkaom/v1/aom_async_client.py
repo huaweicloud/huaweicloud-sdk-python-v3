@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkaom'")
 
 
 class AomAsyncClient(Client):
@@ -39,9 +44,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.CreateFastExecuteScriptRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.CreateFastExecuteScriptResponse`
         """
-        return self._create_fast_execute_script_with_http_info(request)
+        http_info = self._create_fast_execute_script_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_fast_execute_script_with_http_info(self, request):
+    def create_fast_execute_script_async_invoker(self, request):
+        http_info = self._create_fast_execute_script_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_fast_execute_script_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/fast-execute-script",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFastExecuteScriptResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/fast-execute-script',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFastExecuteScriptResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_workflow_async(self, request):
         """创建任务
@@ -96,9 +109,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.CreateWorkflowRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.CreateWorkflowResponse`
         """
-        return self._create_workflow_with_http_info(request)
+        http_info = self._create_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_workflow_with_http_info(self, request):
+    def create_workflow_async_invoker(self, request):
+        http_info = self._create_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/workflow",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +138,11 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/workflow',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def execute_workflow_async(self, request):
         """执行工作流
@@ -153,9 +174,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ExecuteWorkflowRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ExecuteWorkflowResponse`
         """
-        return self._execute_workflow_with_http_info(request)
+        http_info = self._execute_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _execute_workflow_with_http_info(self, request):
+    def execute_workflow_async_invoker(self, request):
+        http_info = self._execute_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _execute_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/workflow/{workflow_id}/executions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExecuteWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,9 +205,9 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/workflow/{workflow_id}/executions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExecuteWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_job_by_name_async(self, request):
         """作业管理主页模糊查询
@@ -210,9 +239,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListAllJobByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListAllJobByNameResponse`
         """
-        return self._list_all_job_by_name_with_http_info(request)
+        http_info = self._list_all_job_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_job_by_name_with_http_info(self, request):
+    def list_all_job_by_name_async_invoker(self, request):
+        http_info = self._list_all_job_by_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_job_by_name_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/job/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllJobByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -227,11 +268,11 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +281,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/job/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllJobByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_script_by_name_async(self, request):
         """脚本查询
@@ -267,9 +304,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListAllScriptByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListAllScriptByNameResponse`
         """
-        return self._list_all_script_by_name_with_http_info(request)
+        http_info = self._list_all_script_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_script_by_name_with_http_info(self, request):
+    def list_all_script_by_name_async_invoker(self, request):
+        http_info = self._list_all_script_by_name_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_script_by_name_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/script/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllScriptByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -284,11 +333,11 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -297,20 +346,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/script/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllScriptByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_all_version_by_version_id_async(self, request):
         """脚本版本查询
@@ -324,9 +369,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListAllVersionByVersionIdRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListAllVersionByVersionIdResponse`
         """
-        return self._list_all_version_by_version_id_with_http_info(request)
+        http_info = self._list_all_version_by_version_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_all_version_by_version_id_with_http_info(self, request):
+    def list_all_version_by_version_id_async_invoker(self, request):
+        http_info = self._list_all_version_by_version_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_all_version_by_version_id_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/script-version-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAllVersionByVersionIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +398,11 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +411,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/script-version-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAllVersionByVersionIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_by_job_id_async(self, request):
         """根据作业id查询方案(自定义模板)列表
@@ -381,9 +434,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListTemplateByJobIdRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListTemplateByJobIdResponse`
         """
-        return self._list_template_by_job_id_with_http_info(request)
+        http_info = self._list_template_by_job_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_by_job_id_with_http_info(self, request):
+    def list_template_by_job_id_async_invoker(self, request):
+        http_info = self._list_template_by_job_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_template_by_job_id_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/template-list/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateByJobIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -400,11 +465,11 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -413,20 +478,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/template-list/{job_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateByJobIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workflow_async(self, request):
         """查询任务列表
@@ -440,9 +501,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListWorkflowRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListWorkflowResponse`
         """
-        return self._list_workflow_with_http_info(request)
+        http_info = self._list_workflow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workflow_with_http_info(self, request):
+    def list_workflow_async_invoker(self, request):
+        http_info = self._list_workflow_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_workflow_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/workflow-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkflowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -457,11 +530,11 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -470,20 +543,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/workflow-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkflowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_workflow_executions_async(self, request):
         """获取任务执行历史
@@ -497,9 +566,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.ListWorkflowExecutionsRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.ListWorkflowExecutionsResponse`
         """
-        return self._list_workflow_executions_with_http_info(request)
+        http_info = self._list_workflow_executions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_workflow_executions_with_http_info(self, request):
+    def list_workflow_executions_async_invoker(self, request):
+        http_info = self._list_workflow_executions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_workflow_executions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cms/workflow/{workflow_id}/executions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkflowExecutionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -518,9 +599,9 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -529,20 +610,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/workflow/{workflow_id}/executions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkflowExecutionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_template_by_id_async(self, request):
         """获取方案信息
@@ -556,9 +633,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.SearchTemplateByIdRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.SearchTemplateByIdResponse`
         """
-        return self._search_template_by_id_with_http_info(request)
+        http_info = self._search_template_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_template_by_id_with_http_info(self, request):
+    def search_template_by_id_async_invoker(self, request):
+        http_info = self._search_template_by_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_template_by_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cms/template/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchTemplateByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -577,9 +666,9 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -588,20 +677,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/template/{template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchTemplateByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_workflow_execution_detail_async(self, request):
         """获取工作流执行中的执行详情
@@ -615,9 +700,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.SearchWorkflowExecutionDetailRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.SearchWorkflowExecutionDetailResponse`
         """
-        return self._search_workflow_execution_detail_with_http_info(request)
+        http_info = self._search_workflow_execution_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_workflow_execution_detail_with_http_info(self, request):
+    def search_workflow_execution_detail_async_invoker(self, request):
+        http_info = self._search_workflow_execution_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _search_workflow_execution_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cms/workflow/{workflow_id}/executions/{execution_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchWorkflowExecutionDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -636,9 +733,9 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -647,20 +744,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/workflow/{workflow_id}/executions/{execution_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchWorkflowExecutionDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_pausing_workflow_executions_async(self, request):
         """对暂停中的任务进行操作
@@ -674,9 +767,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.StartPausingWorkflowExecutionsRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.StartPausingWorkflowExecutionsResponse`
         """
-        return self._start_pausing_workflow_executions_with_http_info(request)
+        http_info = self._start_pausing_workflow_executions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_pausing_workflow_executions_with_http_info(self, request):
+    def start_pausing_workflow_executions_async_invoker(self, request):
+        http_info = self._start_pausing_workflow_executions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_pausing_workflow_executions_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/workflow/{workflow_id}/executions/{execution_id}/operation",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartPausingWorkflowExecutionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -699,9 +804,9 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -710,20 +815,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/workflow/{workflow_id}/executions/{execution_id}/operation',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartPausingWorkflowExecutionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_execution_async(self, request):
         """终止任务执行
@@ -737,9 +838,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.StopExecutionRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.StopExecutionResponse`
         """
-        return self._stop_execution_with_http_info(request)
+        http_info = self._stop_execution_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_execution_with_http_info(self, request):
+    def stop_execution_async_invoker(self, request):
+        http_info = self._stop_execution_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _stop_execution_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/cms/workflow/{workflow_id}/executions/{execution_id}/terminate",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopExecutionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -758,9 +871,9 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -769,20 +882,16 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/workflow/{workflow_id}/executions/{execution_id}/terminate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopExecutionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_workflow_trigger_status_async(self, request):
         """更新任务
@@ -796,9 +905,21 @@ class AomAsyncClient(Client):
         :type request: :class:`huaweicloudsdkaom.v1.UpdateWorkflowTriggerStatusRequest`
         :rtype: :class:`huaweicloudsdkaom.v1.UpdateWorkflowTriggerStatusResponse`
         """
-        return self._update_workflow_trigger_status_with_http_info(request)
+        http_info = self._update_workflow_trigger_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_workflow_trigger_status_with_http_info(self, request):
+    def update_workflow_trigger_status_async_invoker(self, request):
+        http_info = self._update_workflow_trigger_status_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_workflow_trigger_status_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/cms/workflow/{workflow_id}/trigger/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkflowTriggerStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -817,9 +938,9 @@ class AomAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -828,20 +949,26 @@ class AomAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cms/workflow/{workflow_id}/trigger/action',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWorkflowTriggerStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -880,4 +1007,4 @@ class AomAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

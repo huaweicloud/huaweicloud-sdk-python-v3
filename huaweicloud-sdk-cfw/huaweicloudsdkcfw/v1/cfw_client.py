@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcfw'")
 
 
 class CfwClient(Client):
@@ -38,9 +43,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.AddAddressItemRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.AddAddressItemResponse`
         """
-        return self._add_address_item_with_http_info(request)
+        http_info = self._add_address_item_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_address_item_with_http_info(self, request):
+    def add_address_item_invoker(self, request):
+        http_info = self._add_address_item_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_address_item_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/address-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAddressItemResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -59,11 +77,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +90,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-items',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddAddressItemResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_address_set(self, request):
         """添加地址组
@@ -98,9 +112,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.AddAddressSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.AddAddressSetResponse`
         """
-        return self._add_address_set_with_http_info(request)
+        http_info = self._add_address_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_address_set_with_http_info(self, request):
+    def add_address_set_invoker(self, request):
+        http_info = self._add_address_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_address_set_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/address-set",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAddressSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +146,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +159,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-set',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddAddressSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_black_white_list(self, request):
         """创建黑白名单规则
@@ -158,9 +181,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.AddBlackWhiteListRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.AddBlackWhiteListResponse`
         """
-        return self._add_black_white_list_with_http_info(request)
+        http_info = self._add_black_white_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_black_white_list_with_http_info(self, request):
+    def add_black_white_list_invoker(self, request):
+        http_info = self._add_black_white_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_black_white_list_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/black-white-list",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddBlackWhiteListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -179,11 +215,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -192,20 +228,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/black-white-list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddBlackWhiteListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_domain_set(self, request):
         """添加域名组
@@ -217,9 +249,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.AddDomainSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.AddDomainSetResponse`
         """
-        return self._add_domain_set_with_http_info(request)
+        http_info = self._add_domain_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_domain_set_with_http_info(self, request):
+    def add_domain_set_invoker(self, request):
+        http_info = self._add_domain_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_domain_set_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/domain-set",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDomainSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -238,11 +283,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -251,20 +296,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain-set',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDomainSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_domains(self, request):
         """添加域名列表
@@ -277,9 +318,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.AddDomainsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.AddDomainsResponse`
         """
-        return self._add_domains_with_http_info(request)
+        http_info = self._add_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_domains_with_http_info(self, request):
+    def add_domains_invoker(self, request):
+        http_info = self._add_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_domains_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/domain-set/domains/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -300,11 +354,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -313,20 +367,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain-set/domains/{set_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_service_items(self, request):
         """新建服务成员
@@ -339,9 +389,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.AddServiceItemsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.AddServiceItemsResponse`
         """
-        return self._add_service_items_with_http_info(request)
+        http_info = self._add_service_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_service_items_with_http_info(self, request):
+    def add_service_items_invoker(self, request):
+        http_info = self._add_service_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_service_items_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddServiceItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -360,11 +423,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -373,20 +436,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-items',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddServiceItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_service_set(self, request):
         """新建服务组
@@ -399,9 +458,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.AddServiceSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.AddServiceSetResponse`
         """
-        return self._add_service_set_with_http_info(request)
+        http_info = self._add_service_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_service_set_with_http_info(self, request):
+    def add_service_set_invoker(self, request):
+        http_info = self._add_service_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_service_set_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/service-set",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddServiceSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -420,11 +492,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -433,20 +505,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-set',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddServiceSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_address_items(self, request):
         """批量删除地址组成员
@@ -458,9 +526,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.BatchDeleteAddressItemsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.BatchDeleteAddressItemsResponse`
         """
-        return self._batch_delete_address_items_with_http_info(request)
+        http_info = self._batch_delete_address_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_address_items_with_http_info(self, request):
+    def batch_delete_address_items_invoker(self, request):
+        http_info = self._batch_delete_address_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_address_items_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/address-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAddressItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -479,11 +560,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +573,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-items',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteAddressItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_service_items(self, request):
         """批量删除服务组成员信息
@@ -517,9 +594,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.BatchDeleteServiceItemsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.BatchDeleteServiceItemsResponse`
         """
-        return self._batch_delete_service_items_with_http_info(request)
+        http_info = self._batch_delete_service_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_service_items_with_http_info(self, request):
+    def batch_delete_service_items_invoker(self, request):
+        http_info = self._batch_delete_service_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_service_items_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/service-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteServiceItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -538,11 +628,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -551,20 +641,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-items',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteServiceItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_east_west_firewall_status(self, request):
         """修改东西向防火墙防护状态
@@ -577,9 +663,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ChangeEastWestFirewallStatusRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ChangeEastWestFirewallStatusResponse`
         """
-        return self._change_east_west_firewall_status_with_http_info(request)
+        http_info = self._change_east_west_firewall_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_east_west_firewall_status_with_http_info(self, request):
+    def change_east_west_firewall_status_invoker(self, request):
+        http_info = self._change_east_west_firewall_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_east_west_firewall_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/firewall/east-west/protect",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeEastWestFirewallStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -598,11 +697,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -611,20 +710,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/firewall/east-west/protect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeEastWestFirewallStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_address_item(self, request):
         """删除地址组成员
@@ -637,9 +732,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteAddressItemRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteAddressItemResponse`
         """
-        return self._delete_address_item_with_http_info(request)
+        http_info = self._delete_address_item_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_address_item_with_http_info(self, request):
+    def delete_address_item_invoker(self, request):
+        http_info = self._delete_address_item_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_address_item_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/address-items/{item_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAddressItemResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -660,9 +768,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -671,20 +779,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-items/{item_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAddressItemResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_address_set(self, request):
         """删除地址组
@@ -697,9 +801,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteAddressSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteAddressSetResponse`
         """
-        return self._delete_address_set_with_http_info(request)
+        http_info = self._delete_address_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_address_set_with_http_info(self, request):
+    def delete_address_set_invoker(self, request):
+        http_info = self._delete_address_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_address_set_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/address-sets/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAddressSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -720,9 +837,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -731,20 +848,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-sets/{set_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAddressSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_black_white_list(self, request):
         """删除黑白名单规则
@@ -757,9 +870,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteBlackWhiteListRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteBlackWhiteListResponse`
         """
-        return self._delete_black_white_list_with_http_info(request)
+        http_info = self._delete_black_white_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_black_white_list_with_http_info(self, request):
+    def delete_black_white_list_invoker(self, request):
+        http_info = self._delete_black_white_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_black_white_list_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/black-white-list/{list_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBlackWhiteListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -780,9 +906,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -791,20 +917,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/black-white-list/{list_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBlackWhiteListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domain_set(self, request):
         """删除域名组
@@ -816,9 +938,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteDomainSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteDomainSetResponse`
         """
-        return self._delete_domain_set_with_http_info(request)
+        http_info = self._delete_domain_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domain_set_with_http_info(self, request):
+    def delete_domain_set_invoker(self, request):
+        http_info = self._delete_domain_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domain_set_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/domain-set/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -839,9 +974,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -850,20 +985,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain-set/{set_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_domains(self, request):
         """删除域名列表
@@ -876,9 +1007,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteDomainsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteDomainsResponse`
         """
-        return self._delete_domains_with_http_info(request)
+        http_info = self._delete_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_domains_with_http_info(self, request):
+    def delete_domains_invoker(self, request):
+        http_info = self._delete_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_domains_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/domain-set/domains/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -897,11 +1041,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -910,20 +1054,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain-set/domains/{set_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_service_item(self, request):
         """删除服务成员
@@ -936,9 +1076,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteServiceItemRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteServiceItemResponse`
         """
-        return self._delete_service_item_with_http_info(request)
+        http_info = self._delete_service_item_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_service_item_with_http_info(self, request):
+    def delete_service_item_invoker(self, request):
+        http_info = self._delete_service_item_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_service_item_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/service-items/{item_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServiceItemResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -959,9 +1112,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -970,20 +1123,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-items/{item_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServiceItemResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_service_set(self, request):
         """删除服务组
@@ -996,9 +1145,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteServiceSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteServiceSetResponse`
         """
-        return self._delete_service_set_with_http_info(request)
+        http_info = self._delete_service_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_service_set_with_http_info(self, request):
+    def delete_service_set_invoker(self, request):
+        http_info = self._delete_service_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_service_set_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/service-sets/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServiceSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1019,9 +1181,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1030,20 +1192,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-sets/{set_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServiceSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_access_control_logs(self, request):
         """查询访问控制日志
@@ -1056,9 +1214,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListAccessControlLogsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListAccessControlLogsResponse`
         """
-        return self._list_access_control_logs_with_http_info(request)
+        http_info = self._list_access_control_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_access_control_logs_with_http_info(self, request):
+    def list_access_control_logs_invoker(self, request):
+        http_info = self._list_access_control_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_access_control_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/access-control",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAccessControlLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1111,9 +1282,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1122,20 +1293,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cfw/logs/access-control',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAccessControlLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_address_items(self, request):
         """查询地址组成员
@@ -1148,9 +1315,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListAddressItemsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListAddressItemsResponse`
         """
-        return self._list_address_items_with_http_info(request)
+        http_info = self._list_address_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_address_items_with_http_info(self, request):
+    def list_address_items_invoker(self, request):
+        http_info = self._list_address_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_address_items_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/address-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAddressItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1179,9 +1359,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1190,20 +1370,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-items',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAddressItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_address_set_detail(self, request):
         """查询地址组详细信息
@@ -1216,9 +1392,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListAddressSetDetailRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListAddressSetDetailResponse`
         """
-        return self._list_address_set_detail_with_http_info(request)
+        http_info = self._list_address_set_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_address_set_detail_with_http_info(self, request):
+    def list_address_set_detail_invoker(self, request):
+        http_info = self._list_address_set_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_address_set_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/address-sets/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAddressSetDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1239,9 +1428,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1250,20 +1439,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-sets/{set_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAddressSetDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_address_sets(self, request):
         """查询地址组列表
@@ -1276,9 +1461,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListAddressSetsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListAddressSetsResponse`
         """
-        return self._list_address_sets_with_http_info(request)
+        http_info = self._list_address_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_address_sets_with_http_info(self, request):
+    def list_address_sets_invoker(self, request):
+        http_info = self._list_address_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_address_sets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/address-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAddressSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1309,9 +1507,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1320,20 +1518,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-sets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAddressSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_attack_logs(self, request):
         """查询攻击日志
@@ -1346,9 +1540,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListAttackLogsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListAttackLogsResponse`
         """
-        return self._list_attack_logs_with_http_info(request)
+        http_info = self._list_attack_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_attack_logs_with_http_info(self, request):
+    def list_attack_logs_invoker(self, request):
+        http_info = self._list_attack_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_attack_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/attack",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAttackLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1407,9 +1614,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1418,20 +1625,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cfw/logs/attack',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAttackLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_black_white_lists(self, request):
         """查询黑白名单列表
@@ -1444,9 +1647,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListBlackWhiteListsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListBlackWhiteListsResponse`
         """
-        return self._list_black_white_lists_with_http_info(request)
+        http_info = self._list_black_white_lists_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_black_white_lists_with_http_info(self, request):
+    def list_black_white_lists_invoker(self, request):
+        http_info = self._list_black_white_lists_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_black_white_lists_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/black-white-lists",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBlackWhiteListsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1479,9 +1695,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1490,20 +1706,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/black-white-lists',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBlackWhiteListsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dns_servers(self, request):
         """查询dns服务器列表
@@ -1516,9 +1728,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListDnsServersRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListDnsServersResponse`
         """
-        return self._list_dns_servers_with_http_info(request)
+        http_info = self._list_dns_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dns_servers_with_http_info(self, request):
+    def list_dns_servers_invoker(self, request):
+        http_info = self._list_dns_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dns_servers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/dns/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDnsServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1541,9 +1766,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1552,20 +1777,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/dns/servers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDnsServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_parse_detail(self, request):
         """查询域名解析ip地址
@@ -1578,9 +1799,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListDomainParseDetailRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListDomainParseDetailResponse`
         """
-        return self._list_domain_parse_detail_with_http_info(request)
+        http_info = self._list_domain_parse_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_parse_detail_with_http_info(self, request):
+    def list_domain_parse_detail_invoker(self, request):
+        http_info = self._list_domain_parse_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_parse_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain/parse/{domain_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainParseDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1603,9 +1837,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1614,20 +1848,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain/parse/{domain_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainParseDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_sets(self, request):
         """查询域名组列表
@@ -1640,9 +1870,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListDomainSetsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListDomainSetsResponse`
         """
-        return self._list_domain_sets_with_http_info(request)
+        http_info = self._list_domain_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_sets_with_http_info(self, request):
+    def list_domain_sets_invoker(self, request):
+        http_info = self._list_domain_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_sets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1673,9 +1916,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1684,20 +1927,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain-sets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domains(self, request):
         """获取域名组下域名列表
@@ -1710,9 +1949,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListDomainsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListDomainsResponse`
         """
-        return self._list_domains_with_http_info(request)
+        http_info = self._list_domains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domains_with_http_info(self, request):
+    def list_domains_invoker(self, request):
+        http_info = self._list_domains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/domain-set/domains/{domain_set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1745,9 +1997,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1756,20 +2008,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain-set/domains/{domain_set_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_east_west_firewall(self, request):
         """获取东西向防火墙信息
@@ -1782,9 +2030,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListEastWestFirewallRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListEastWestFirewallResponse`
         """
-        return self._list_east_west_firewall_with_http_info(request)
+        http_info = self._list_east_west_firewall_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_east_west_firewall_with_http_info(self, request):
+    def list_east_west_firewall_invoker(self, request):
+        http_info = self._list_east_west_firewall_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_east_west_firewall_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/firewall/east-west",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEastWestFirewallResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1807,9 +2068,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1818,20 +2079,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/firewall/east-west',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEastWestFirewallResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_firewall_detail(self, request):
         """查询防火墙详细信息
@@ -1844,9 +2101,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListFirewallDetailRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListFirewallDetailResponse`
         """
-        return self._list_firewall_detail_with_http_info(request)
+        http_info = self._list_firewall_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_firewall_detail_with_http_info(self, request):
+    def list_firewall_detail_invoker(self, request):
+        http_info = self._list_firewall_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_firewall_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/firewall/exist",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFirewallDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1871,9 +2141,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1882,20 +2152,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/firewall/exist',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFirewallDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_firewall_list(self, request):
         """查询防火墙列表
@@ -1908,9 +2174,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListFirewallListRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListFirewallListResponse`
         """
-        return self._list_firewall_list_with_http_info(request)
+        http_info = self._list_firewall_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_firewall_list_with_http_info(self, request):
+    def list_firewall_list_invoker(self, request):
+        http_info = self._list_firewall_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_firewall_list_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/firewalls/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFirewallListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1927,11 +2206,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1940,20 +2219,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/firewalls/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFirewallListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flow_logs(self, request):
         """查询流日志
@@ -1966,9 +2241,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListFlowLogsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListFlowLogsResponse`
         """
-        return self._list_flow_logs_with_http_info(request)
+        http_info = self._list_flow_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flow_logs_with_http_info(self, request):
+    def list_flow_logs_invoker(self, request):
+        http_info = self._list_flow_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_flow_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cfw/logs/flow",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlowLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2017,9 +2305,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2028,20 +2316,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cfw/logs/flow',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlowLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_protected_vpcs(self, request):
         """查询防护VPC数
@@ -2054,9 +2338,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListProtectedVpcsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListProtectedVpcsResponse`
         """
-        return self._list_protected_vpcs_with_http_info(request)
+        http_info = self._list_protected_vpcs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_protected_vpcs_with_http_info(self, request):
+    def list_protected_vpcs_invoker(self, request):
+        http_info = self._list_protected_vpcs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_protected_vpcs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/vpcs/protection",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProtectedVpcsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2077,9 +2374,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2088,20 +2385,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vpcs/protection',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProtectedVpcsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_service_items(self, request):
         """查询服务成员列表
@@ -2114,9 +2407,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListServiceItemsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListServiceItemsResponse`
         """
-        return self._list_service_items_with_http_info(request)
+        http_info = self._list_service_items_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_service_items_with_http_info(self, request):
+    def list_service_items_invoker(self, request):
+        http_info = self._list_service_items_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_service_items_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service-items",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceItemsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2143,9 +2449,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2154,20 +2460,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-items',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServiceItemsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_service_set_detail(self, request):
         """查询服务组详情
@@ -2180,9 +2482,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListServiceSetDetailRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListServiceSetDetailResponse`
         """
-        return self._list_service_set_detail_with_http_info(request)
+        http_info = self._list_service_set_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_service_set_detail_with_http_info(self, request):
+    def list_service_set_detail_invoker(self, request):
+        http_info = self._list_service_set_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_service_set_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service-sets/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceSetDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2203,9 +2518,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2214,20 +2529,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-sets/{set_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServiceSetDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_service_sets(self, request):
         """获取服务组列表
@@ -2240,9 +2551,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListServiceSetsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListServiceSetsResponse`
         """
-        return self._list_service_sets_with_http_info(request)
+        http_info = self._list_service_sets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_service_sets_with_http_info(self, request):
+    def list_service_sets_invoker(self, request):
+        http_info = self._list_service_sets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_service_sets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/service-sets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServiceSetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2269,9 +2593,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2280,20 +2604,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-sets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServiceSetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_address_set(self, request):
         """更新地址组信息
@@ -2306,9 +2626,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateAddressSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateAddressSetResponse`
         """
-        return self._update_address_set_with_http_info(request)
+        http_info = self._update_address_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_address_set_with_http_info(self, request):
+    def update_address_set_invoker(self, request):
+        http_info = self._update_address_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_address_set_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/address-sets/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAddressSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2329,11 +2662,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2342,20 +2675,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/address-sets/{set_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAddressSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_black_white_list(self, request):
         """更新黑白名单列表
@@ -2368,9 +2697,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateBlackWhiteListRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateBlackWhiteListResponse`
         """
-        return self._update_black_white_list_with_http_info(request)
+        http_info = self._update_black_white_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_black_white_list_with_http_info(self, request):
+    def update_black_white_list_invoker(self, request):
+        http_info = self._update_black_white_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_black_white_list_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/black-white-list/{list_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBlackWhiteListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2391,11 +2733,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2404,20 +2746,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/black-white-list/{list_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBlackWhiteListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_dns_servers(self, request):
         """更新dns服务器列表
@@ -2430,9 +2768,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateDnsServersRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateDnsServersResponse`
         """
-        return self._update_dns_servers_with_http_info(request)
+        http_info = self._update_dns_servers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_dns_servers_with_http_info(self, request):
+    def update_dns_servers_invoker(self, request):
+        http_info = self._update_dns_servers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_dns_servers_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/dns/servers",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDnsServersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2451,11 +2802,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2464,20 +2815,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/dns/servers',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDnsServersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_set(self, request):
         """更新域名组
@@ -2489,9 +2836,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateDomainSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateDomainSetResponse`
         """
-        return self._update_domain_set_with_http_info(request)
+        http_info = self._update_domain_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_set_with_http_info(self, request):
+    def update_domain_set_invoker(self, request):
+        http_info = self._update_domain_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_set_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/domain-set/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2512,11 +2872,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2525,20 +2885,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/domain-set/{set_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_service_set(self, request):
         """修改服务组
@@ -2551,9 +2907,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateServiceSetRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateServiceSetResponse`
         """
-        return self._update_service_set_with_http_info(request)
+        http_info = self._update_service_set_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_service_set_with_http_info(self, request):
+    def update_service_set_invoker(self, request):
+        http_info = self._update_service_set_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_service_set_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/service-sets/{set_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServiceSetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2574,11 +2943,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2587,20 +2956,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/service-sets/{set_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServiceSetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_acl_rule(self, request):
         """创建ACL规则
@@ -2613,9 +2978,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.AddAclRuleRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.AddAclRuleResponse`
         """
-        return self._add_acl_rule_with_http_info(request)
+        http_info = self._add_acl_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_acl_rule_with_http_info(self, request):
+    def add_acl_rule_invoker(self, request):
+        http_info = self._add_acl_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_acl_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/acl-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddAclRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2634,11 +3012,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2647,20 +3025,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rule',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddAclRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_acl_rules(self, request):
         """批量删除Acl规则
@@ -2673,9 +3047,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.BatchDeleteAclRulesRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.BatchDeleteAclRulesResponse`
         """
-        return self._batch_delete_acl_rules_with_http_info(request)
+        http_info = self._batch_delete_acl_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_acl_rules_with_http_info(self, request):
+    def batch_delete_acl_rules_invoker(self, request):
+        http_info = self._batch_delete_acl_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_acl_rules_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/acl-rule",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAclRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2694,11 +3081,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2707,20 +3094,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rule',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteAclRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_acl_rule_actions(self, request):
         """批量更新规则动作
@@ -2732,9 +3115,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.BatchUpdateAclRuleActionsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.BatchUpdateAclRuleActionsResponse`
         """
-        return self._batch_update_acl_rule_actions_with_http_info(request)
+        http_info = self._batch_update_acl_rule_actions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_acl_rule_actions_with_http_info(self, request):
+    def batch_update_acl_rule_actions_invoker(self, request):
+        http_info = self._batch_update_acl_rule_actions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_acl_rule_actions_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/acl-rule/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateAclRuleActionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2751,11 +3147,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2764,20 +3160,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rule/action',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateAclRuleActionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_acl_rule(self, request):
         """删除ACL规则
@@ -2790,9 +3182,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteAclRuleRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteAclRuleResponse`
         """
-        return self._delete_acl_rule_with_http_info(request)
+        http_info = self._delete_acl_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_acl_rule_with_http_info(self, request):
+    def delete_acl_rule_invoker(self, request):
+        http_info = self._delete_acl_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_acl_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/acl-rule/{acl_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAclRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2813,9 +3218,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2824,20 +3229,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rule/{acl_rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAclRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_acl_rule_hit_count(self, request):
         """删除规则击中次数
@@ -2850,9 +3251,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.DeleteAclRuleHitCountRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.DeleteAclRuleHitCountResponse`
         """
-        return self._delete_acl_rule_hit_count_with_http_info(request)
+        http_info = self._delete_acl_rule_hit_count_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_acl_rule_hit_count_with_http_info(self, request):
+    def delete_acl_rule_hit_count_invoker(self, request):
+        http_info = self._delete_acl_rule_hit_count_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_acl_rule_hit_count_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/acl-rule/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAclRuleHitCountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2871,11 +3285,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2884,20 +3298,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rule/count',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAclRuleHitCountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_acl_rule_hit_count(self, request):
         """获取规则击中次数
@@ -2910,9 +3320,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListAclRuleHitCountRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListAclRuleHitCountResponse`
         """
-        return self._list_acl_rule_hit_count_with_http_info(request)
+        http_info = self._list_acl_rule_hit_count_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_acl_rule_hit_count_with_http_info(self, request):
+    def list_acl_rule_hit_count_invoker(self, request):
+        http_info = self._list_acl_rule_hit_count_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_acl_rule_hit_count_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/acl-rule/count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAclRuleHitCountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2931,11 +3354,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2944,20 +3367,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rule/count',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAclRuleHitCountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_acl_rules(self, request):
         """查询防护规则
@@ -2970,9 +3389,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListAclRulesRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListAclRulesResponse`
         """
-        return self._list_acl_rules_with_http_info(request)
+        http_info = self._list_acl_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_acl_rules_with_http_info(self, request):
+    def list_acl_rules_invoker(self, request):
+        http_info = self._list_acl_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_acl_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/acl-rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAclRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3021,9 +3453,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3032,20 +3464,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAclRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rule_acl_tags(self, request):
         """查询规则标签
@@ -3057,9 +3485,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListRuleAclTagsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListRuleAclTagsResponse`
         """
-        return self._list_rule_acl_tags_with_http_info(request)
+        http_info = self._list_rule_acl_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rule_acl_tags_with_http_info(self, request):
+    def list_rule_acl_tags_invoker(self, request):
+        http_info = self._list_rule_acl_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rule_acl_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/cfw-acl/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRuleAclTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3082,9 +3523,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3093,20 +3534,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/cfw-acl/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRuleAclTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_acl_rule(self, request):
         """更新ACL规则
@@ -3119,9 +3556,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateAclRuleRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateAclRuleResponse`
         """
-        return self._update_acl_rule_with_http_info(request)
+        http_info = self._update_acl_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_acl_rule_with_http_info(self, request):
+    def update_acl_rule_invoker(self, request):
+        http_info = self._update_acl_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_acl_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/acl-rule/{acl_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAclRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3142,11 +3592,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3155,20 +3605,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rule/{acl_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAclRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_acl_rule_order(self, request):
         """ACL防护规则优先级设置
@@ -3181,9 +3627,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.UpdateAclRuleOrderRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.UpdateAclRuleOrderResponse`
         """
-        return self._update_acl_rule_order_with_http_info(request)
+        http_info = self._update_acl_rule_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_acl_rule_order_with_http_info(self, request):
+    def update_acl_rule_order_invoker(self, request):
+        http_info = self._update_acl_rule_order_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_acl_rule_order_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/acl-rule/order/{acl_rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAclRuleOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3204,11 +3663,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3217,20 +3676,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/acl-rule/order/{acl_rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAclRuleOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_eip_status(self, request):
         """弹性IP开启关闭
@@ -3243,9 +3698,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ChangeEipStatusRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ChangeEipStatusResponse`
         """
-        return self._change_eip_status_with_http_info(request)
+        http_info = self._change_eip_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_eip_status_with_http_info(self, request):
+    def change_eip_status_invoker(self, request):
+        http_info = self._change_eip_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_eip_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/eip/protect",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeEipStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3264,11 +3732,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3277,20 +3745,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eip/protect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeEipStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_eip_count(self, request):
         """查询Eip个数
@@ -3303,9 +3767,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListEipCountRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListEipCountResponse`
         """
-        return self._list_eip_count_with_http_info(request)
+        http_info = self._list_eip_count_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_eip_count_with_http_info(self, request):
+    def list_eip_count_invoker(self, request):
+        http_info = self._list_eip_count_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_eip_count_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eip-count/{object_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEipCountResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3326,9 +3803,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3337,20 +3814,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eip-count/{object_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEipCountResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_eips(self, request):
         """弹性IP列表查询
@@ -3363,9 +3836,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListEipsRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListEipsResponse`
         """
-        return self._list_eips_with_http_info(request)
+        http_info = self._list_eips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_eips_with_http_info(self, request):
+    def list_eips_invoker(self, request):
+        http_info = self._list_eips_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_eips_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/eips/protect",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEipsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3406,9 +3892,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3417,20 +3903,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/eips/protect',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEipsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_ips_protect_mode(self, request):
         """切换防护模式
@@ -3443,9 +3925,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ChangeIpsProtectModeRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ChangeIpsProtectModeResponse`
         """
-        return self._change_ips_protect_mode_with_http_info(request)
+        http_info = self._change_ips_protect_mode_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_ips_protect_mode_with_http_info(self, request):
+    def change_ips_protect_mode_invoker(self, request):
+        http_info = self._change_ips_protect_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_ips_protect_mode_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ips/protect",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeIpsProtectModeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3464,11 +3959,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3477,20 +3972,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ips/protect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeIpsProtectModeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_ips_switch_status(self, request):
         """IPS特性开关操作
@@ -3503,9 +3994,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ChangeIpsSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ChangeIpsSwitchStatusResponse`
         """
-        return self._change_ips_switch_status_with_http_info(request)
+        http_info = self._change_ips_switch_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_ips_switch_status_with_http_info(self, request):
+    def change_ips_switch_status_invoker(self, request):
+        http_info = self._change_ips_switch_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_ips_switch_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/ips/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeIpsSwitchStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3524,11 +4028,11 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3537,20 +4041,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ips/switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeIpsSwitchStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ips_protect_mode(self, request):
         """查询防护模式
@@ -3563,9 +4063,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListIpsProtectModeRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListIpsProtectModeResponse`
         """
-        return self._list_ips_protect_mode_with_http_info(request)
+        http_info = self._list_ips_protect_mode_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ips_protect_mode_with_http_info(self, request):
+    def list_ips_protect_mode_invoker(self, request):
+        http_info = self._list_ips_protect_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ips_protect_mode_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ips/protect",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpsProtectModeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3586,9 +4099,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3597,20 +4110,16 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ips/protect',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIpsProtectModeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_ips_switch_status(self, request):
         """查询IPS特性开关状态
@@ -3623,9 +4132,22 @@ class CfwClient(Client):
         :type request: :class:`huaweicloudsdkcfw.v1.ListIpsSwitchStatusRequest`
         :rtype: :class:`huaweicloudsdkcfw.v1.ListIpsSwitchStatusResponse`
         """
-        return self._list_ips_switch_status_with_http_info(request)
+        http_info = self._list_ips_switch_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_ips_switch_status_with_http_info(self, request):
+    def list_ips_switch_status_invoker(self, request):
+        http_info = self._list_ips_switch_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_ips_switch_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/ips/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListIpsSwitchStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3646,9 +4168,9 @@ class CfwClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3657,20 +4179,25 @@ class CfwClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/ips/switch',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListIpsSwitchStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

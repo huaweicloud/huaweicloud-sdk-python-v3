@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcts'")
 
 
 class CtsClient(Client):
@@ -38,9 +43,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.BatchCreateResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.BatchCreateResourceTagsResponse`
         """
-        return self._batch_create_resource_tags_with_http_info(request)
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_resource_tags_with_http_info(self, request):
+    def batch_create_resource_tags_invoker(self, request):
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_resource_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -59,11 +77,11 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +90,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_resource_tags(self, request):
         """批量删除CTS资源标签
@@ -98,9 +112,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.BatchDeleteResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.BatchDeleteResourceTagsResponse`
         """
-        return self._batch_delete_resource_tags_with_http_info(request)
+        http_info = self._batch_delete_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_resource_tags_with_http_info(self, request):
+    def batch_delete_resource_tags_invoker(self, request):
+        http_info = self._batch_delete_resource_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_resource_tags_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +146,11 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +159,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/delete',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_obs_buckets(self, request):
         """检查已经配置OBS桶是否可以成功转储
@@ -158,9 +181,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.CheckObsBucketsRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.CheckObsBucketsResponse`
         """
-        return self._check_obs_buckets_with_http_info(request)
+        http_info = self._check_obs_buckets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_obs_buckets_with_http_info(self, request):
+    def check_obs_buckets_invoker(self, request):
+        http_info = self._check_obs_buckets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_obs_buckets_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{domain_id}/checkbucket",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckObsBucketsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -177,11 +213,11 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -190,20 +226,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/checkbucket',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckObsBucketsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_notification(self, request):
         """创建关键操作通知
@@ -216,9 +248,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.CreateNotificationRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.CreateNotificationResponse`
         """
-        return self._create_notification_with_http_info(request)
+        http_info = self._create_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_notification_with_http_info(self, request):
+    def create_notification_invoker(self, request):
+        http_info = self._create_notification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_notification_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/notifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,11 +278,11 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +291,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/notifications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_tracker(self, request):
         """创建追踪器
@@ -273,9 +314,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.CreateTrackerRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.CreateTrackerResponse`
         """
-        return self._create_tracker_with_http_info(request)
+        http_info = self._create_tracker_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_tracker_with_http_info(self, request):
+    def create_tracker_invoker(self, request):
+        http_info = self._create_tracker_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_tracker_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/tracker",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTrackerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -290,11 +344,11 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -303,20 +357,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tracker',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTrackerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_notification(self, request):
         """删除关键操作通知
@@ -329,9 +379,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.DeleteNotificationRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.DeleteNotificationResponse`
         """
-        return self._delete_notification_with_http_info(request)
+        http_info = self._delete_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_notification_with_http_info(self, request):
+    def delete_notification_invoker(self, request):
+        http_info = self._delete_notification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_notification_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/notifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -348,9 +411,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -359,20 +422,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/notifications',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_tracker(self, request):
         """删除追踪器
@@ -385,9 +444,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.DeleteTrackerRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.DeleteTrackerResponse`
         """
-        return self._delete_tracker_with_http_info(request)
+        http_info = self._delete_tracker_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_tracker_with_http_info(self, request):
+    def delete_tracker_invoker(self, request):
+        http_info = self._delete_tracker_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_tracker_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/trackers",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTrackerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -406,9 +478,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -417,20 +489,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/trackers',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTrackerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notifications(self, request):
         """查询关键操作通知
@@ -443,9 +511,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.ListNotificationsRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.ListNotificationsResponse`
         """
-        return self._list_notifications_with_http_info(request)
+        http_info = self._list_notifications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notifications_with_http_info(self, request):
+    def list_notifications_invoker(self, request):
+        http_info = self._list_notifications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notifications_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/notifications/{notification_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotificationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -464,9 +545,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -475,20 +556,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/notifications/{notification_type}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotificationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_operations(self, request):
         """查询云服务的全量操作列表
@@ -501,9 +578,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.ListOperationsRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.ListOperationsResponse`
         """
-        return self._list_operations_with_http_info(request)
+        http_info = self._list_operations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_operations_with_http_info(self, request):
+    def list_operations_invoker(self, request):
+        http_info = self._list_operations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_operations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/operations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOperationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -522,9 +612,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -533,20 +623,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/operations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOperationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas(self, request):
         """查询租户追踪器配额信息
@@ -559,9 +645,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -576,9 +675,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -587,20 +686,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_trace_resources(self, request):
         """查询事件的资源类型列表
@@ -613,9 +708,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.ListTraceResourcesRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.ListTraceResourcesResponse`
         """
-        return self._list_trace_resources_with_http_info(request)
+        http_info = self._list_trace_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_trace_resources_with_http_info(self, request):
+    def list_trace_resources_invoker(self, request):
+        http_info = self._list_trace_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_trace_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{domain_id}/resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTraceResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -632,9 +740,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -643,20 +751,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{domain_id}/resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTraceResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_traces(self, request):
         """查询事件列表
@@ -669,9 +773,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.ListTracesRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.ListTracesResponse`
         """
-        return self._list_traces_with_http_info(request)
+        http_info = self._list_traces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_traces_with_http_info(self, request):
+    def list_traces_invoker(self, request):
+        http_info = self._list_traces_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_traces_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/traces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTracesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -714,9 +831,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -725,20 +842,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/traces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTracesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_trackers(self, request):
         """查询追踪器
@@ -751,9 +864,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.ListTrackersRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.ListTrackersResponse`
         """
-        return self._list_trackers_with_http_info(request)
+        http_info = self._list_trackers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_trackers_with_http_info(self, request):
+    def list_trackers_invoker(self, request):
+        http_info = self._list_trackers_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_trackers_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/trackers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTrackersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -772,9 +898,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -783,20 +909,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/trackers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTrackersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_user_resources(self, request):
         """查询30天事件的操作用户列表
@@ -809,9 +931,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.ListUserResourcesRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.ListUserResourcesResponse`
         """
-        return self._list_user_resources_with_http_info(request)
+        http_info = self._list_user_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_user_resources_with_http_info(self, request):
+    def list_user_resources_invoker(self, request):
+        http_info = self._list_user_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_user_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/user-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListUserResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -826,9 +961,9 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -837,20 +972,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/user-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListUserResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_notification(self, request):
         """修改关键操作通知
@@ -863,9 +994,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.UpdateNotificationRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.UpdateNotificationResponse`
         """
-        return self._update_notification_with_http_info(request)
+        http_info = self._update_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_notification_with_http_info(self, request):
+    def update_notification_invoker(self, request):
+        http_info = self._update_notification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_notification_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/notifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -880,11 +1024,11 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -893,20 +1037,16 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/notifications',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_tracker(self, request):
         """修改追踪器
@@ -919,9 +1059,22 @@ class CtsClient(Client):
         :type request: :class:`huaweicloudsdkcts.v3.UpdateTrackerRequest`
         :rtype: :class:`huaweicloudsdkcts.v3.UpdateTrackerResponse`
         """
-        return self._update_tracker_with_http_info(request)
+        http_info = self._update_tracker_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_tracker_with_http_info(self, request):
+    def update_tracker_invoker(self, request):
+        http_info = self._update_tracker_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_tracker_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/tracker",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTrackerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -936,11 +1089,11 @@ class CtsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -949,20 +1102,25 @@ class CtsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tracker',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTrackerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

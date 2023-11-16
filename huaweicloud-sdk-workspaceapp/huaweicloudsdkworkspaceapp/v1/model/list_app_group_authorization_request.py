@@ -20,17 +20,19 @@ class ListAppGroupAuthorizationRequest:
         'limit': 'int',
         'offset': 'int',
         'app_group_id': 'str',
-        'account': 'str'
+        'account': 'str',
+        'account_type': 'str'
     }
 
     attribute_map = {
         'limit': 'limit',
         'offset': 'offset',
         'app_group_id': 'app_group_id',
-        'account': 'account'
+        'account': 'account',
+        'account_type': 'account_type'
     }
 
-    def __init__(self, limit=None, offset=None, app_group_id=None, account=None):
+    def __init__(self, limit=None, offset=None, app_group_id=None, account=None, account_type=None):
         """ListAppGroupAuthorizationRequest
 
         The model defined in huaweicloud sdk
@@ -41,8 +43,10 @@ class ListAppGroupAuthorizationRequest:
         :type offset: int
         :param app_group_id: 应用组ID
         :type app_group_id: str
-        :param account: 应用授权的用户(组)，精确查询。
+        :param account: 应用授权的用户(组)名称，精确查询。
         :type account: str
+        :param account_type: 应用授权的用户(组)类型 * &#39;USER&#39; - 用户 * &#39;USER_GROUP&#39; - 用户组
+        :type account_type: str
         """
         
         
@@ -51,6 +55,7 @@ class ListAppGroupAuthorizationRequest:
         self._offset = None
         self._app_group_id = None
         self._account = None
+        self._account_type = None
         self.discriminator = None
 
         if limit is not None:
@@ -61,6 +66,8 @@ class ListAppGroupAuthorizationRequest:
             self.app_group_id = app_group_id
         if account is not None:
             self.account = account
+        if account_type is not None:
+            self.account_type = account_type
 
     @property
     def limit(self):
@@ -132,7 +139,7 @@ class ListAppGroupAuthorizationRequest:
     def account(self):
         """Gets the account of this ListAppGroupAuthorizationRequest.
 
-        应用授权的用户(组)，精确查询。
+        应用授权的用户(组)名称，精确查询。
 
         :return: The account of this ListAppGroupAuthorizationRequest.
         :rtype: str
@@ -143,12 +150,34 @@ class ListAppGroupAuthorizationRequest:
     def account(self, account):
         """Sets the account of this ListAppGroupAuthorizationRequest.
 
-        应用授权的用户(组)，精确查询。
+        应用授权的用户(组)名称，精确查询。
 
         :param account: The account of this ListAppGroupAuthorizationRequest.
         :type account: str
         """
         self._account = account
+
+    @property
+    def account_type(self):
+        """Gets the account_type of this ListAppGroupAuthorizationRequest.
+
+        应用授权的用户(组)类型 * 'USER' - 用户 * 'USER_GROUP' - 用户组
+
+        :return: The account_type of this ListAppGroupAuthorizationRequest.
+        :rtype: str
+        """
+        return self._account_type
+
+    @account_type.setter
+    def account_type(self, account_type):
+        """Sets the account_type of this ListAppGroupAuthorizationRequest.
+
+        应用授权的用户(组)类型 * 'USER' - 用户 * 'USER_GROUP' - 用户组
+
+        :param account_type: The account_type of this ListAppGroupAuthorizationRequest.
+        :type account_type: str
+        """
+        self._account_type = account_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""

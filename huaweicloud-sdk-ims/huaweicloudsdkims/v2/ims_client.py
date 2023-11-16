@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkims'")
 
 
 class ImsClient(Client):
@@ -38,9 +43,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.AddImageTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.AddImageTagResponse`
         """
-        return self._add_image_tag_with_http_info(request)
+        http_info = self._add_image_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_image_tag_with_http_info(self, request):
+    def add_image_tag_invoker(self, request):
+        http_info = self._add_image_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_image_tag_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/images/{image_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddImageTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/images/{image_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddImageTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_members(self, request):
         """批量添加镜像成员
@@ -97,9 +111,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.BatchAddMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchAddMembersResponse`
         """
-        return self._batch_add_members_with_http_info(request)
+        http_info = self._batch_add_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_members_with_http_info(self, request):
+    def batch_add_members_invoker(self, request):
+        http_info = self._batch_add_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_members_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudimages/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -114,11 +141,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -127,20 +154,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/members',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_or_delete_tags(self, request):
         """批量添加删除镜像标签
@@ -153,9 +176,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchAddOrDeleteTagsResponse`
         """
-        return self._batch_add_or_delete_tags_with_http_info(request)
+        http_info = self._batch_add_or_delete_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_or_delete_tags_with_http_info(self, request):
+    def batch_add_or_delete_tags_invoker(self, request):
+        http_info = self._batch_add_or_delete_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_or_delete_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/images/{image_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddOrDeleteTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,11 +208,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -185,20 +221,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/images/{image_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddOrDeleteTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_members(self, request):
         """批量删除镜像成员
@@ -212,9 +244,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.BatchDeleteMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchDeleteMembersResponse`
         """
-        return self._batch_delete_members_with_http_info(request)
+        http_info = self._batch_delete_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_members_with_http_info(self, request):
+    def batch_delete_members_invoker(self, request):
+        http_info = self._batch_delete_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_members_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/cloudimages/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -229,11 +274,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +287,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/members',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_update_members(self, request):
         """批量更新镜像成员状态
@@ -269,9 +310,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.BatchUpdateMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.BatchUpdateMembersResponse`
         """
-        return self._batch_update_members_with_http_info(request)
+        http_info = self._batch_update_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_update_members_with_http_info(self, request):
+    def batch_update_members_invoker(self, request):
+        http_info = self._batch_update_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_update_members_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/cloudimages/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchUpdateMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -286,11 +340,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -299,20 +353,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/members',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchUpdateMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_image_cross_region(self, request):
         """跨Region复制镜像
@@ -327,9 +377,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageCrossRegionResponse`
         """
-        return self._copy_image_cross_region_with_http_info(request)
+        http_info = self._copy_image_cross_region_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_image_cross_region_with_http_info(self, request):
+    def copy_image_cross_region_invoker(self, request):
+        http_info = self._copy_image_cross_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_image_cross_region_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudimages/{image_id}/cross_region_copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyImageCrossRegionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -346,11 +409,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -359,20 +422,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/{image_id}/cross_region_copy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyImageCrossRegionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_image_in_region(self, request):
         """Region内复制镜像
@@ -386,9 +445,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CopyImageInRegionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CopyImageInRegionResponse`
         """
-        return self._copy_image_in_region_with_http_info(request)
+        http_info = self._copy_image_in_region_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_image_in_region_with_http_info(self, request):
+    def copy_image_in_region_invoker(self, request):
+        http_info = self._copy_image_in_region_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_image_in_region_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudimages/{image_id}/copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyImageInRegionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -405,11 +477,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -418,20 +490,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/{image_id}/copy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyImageInRegionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_data_image(self, request):
         """使用外部镜像文件制作数据镜像
@@ -444,9 +512,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CreateDataImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateDataImageResponse`
         """
-        return self._create_data_image_with_http_info(request)
+        http_info = self._create_data_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_data_image_with_http_info(self, request):
+    def create_data_image_invoker(self, request):
+        http_info = self._create_data_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_data_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudimages/dataimages/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,11 +542,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +555,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/dataimages/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDataImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_image(self, request):
         """制作镜像
@@ -511,9 +588,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CreateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateImageResponse`
         """
-        return self._create_image_with_http_info(request)
+        http_info = self._create_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_image_with_http_info(self, request):
+    def create_image_invoker(self, request):
+        http_info = self._create_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/cloudimages/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -528,11 +618,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -541,20 +631,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/cloudimages/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_or_update_tags(self, request):
         """增加或修改标签
@@ -567,9 +653,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CreateOrUpdateTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateOrUpdateTagsResponse`
         """
-        return self._create_or_update_tags_with_http_info(request)
+        http_info = self._create_or_update_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_or_update_tags_with_http_info(self, request):
+    def create_or_update_tags_invoker(self, request):
+        http_info = self._create_or_update_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_or_update_tags_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/cloudimages/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrUpdateTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -584,11 +683,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -597,20 +696,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/tags',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrUpdateTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_whole_image(self, request):
         """制作整机镜像
@@ -623,9 +718,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.CreateWholeImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.CreateWholeImageResponse`
         """
-        return self._create_whole_image_with_http_info(request)
+        http_info = self._create_whole_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_whole_image_with_http_info(self, request):
+    def create_whole_image_invoker(self, request):
+        http_info = self._create_whole_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_whole_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudimages/wholeimages/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWholeImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -640,11 +748,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -653,20 +761,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/wholeimages/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWholeImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_image_tag(self, request):
         """删除镜像标签
@@ -679,9 +783,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.DeleteImageTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.DeleteImageTagResponse`
         """
-        return self._delete_image_tag_with_http_info(request)
+        http_info = self._delete_image_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_image_tag_with_http_info(self, request):
+    def delete_image_tag_invoker(self, request):
+        http_info = self._delete_image_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_image_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/images/{image_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteImageTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -700,9 +817,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -711,20 +828,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/images/{image_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteImageTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_image(self, request):
         """导出镜像
@@ -737,9 +850,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ExportImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ExportImageResponse`
         """
-        return self._export_image_with_http_info(request)
+        http_info = self._export_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_image_with_http_info(self, request):
+    def export_image_invoker(self, request):
+        http_info = self._export_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_image_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/cloudimages/{image_id}/file",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -756,11 +882,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -769,20 +895,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/{image_id}/file',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_image_quick(self, request):
         """镜像文件快速导入
@@ -797,9 +919,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ImportImageQuickRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ImportImageQuickResponse`
         """
-        return self._import_image_quick_with_http_info(request)
+        http_info = self._import_image_quick_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_image_quick_with_http_info(self, request):
+    def import_image_quick_invoker(self, request):
+        http_info = self._import_image_quick_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_image_quick_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/cloudimages/quickimport/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportImageQuickResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -814,11 +949,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -827,20 +962,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/cloudimages/quickimport/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportImageQuickResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_image_by_tags(self, request):
         """按标签查询镜像
@@ -853,9 +984,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListImageByTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImageByTagsResponse`
         """
-        return self._list_image_by_tags_with_http_info(request)
+        http_info = self._list_image_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_image_by_tags_with_http_info(self, request):
+    def list_image_by_tags_invoker(self, request):
+        http_info = self._list_image_by_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_image_by_tags_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/images/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -870,11 +1014,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -883,20 +1027,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/images/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImageByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_image_tags(self, request):
         """查询镜像标签
@@ -909,9 +1049,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListImageTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImageTagsResponse`
         """
-        return self._list_image_tags_with_http_info(request)
+        http_info = self._list_image_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_image_tags_with_http_info(self, request):
+    def list_image_tags_invoker(self, request):
+        http_info = self._list_image_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_image_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/images/{image_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImageTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -928,9 +1081,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -939,20 +1092,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/images/{image_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImageTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_images(self, request):
         """查询镜像列表
@@ -966,9 +1115,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListImagesRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImagesResponse`
         """
-        return self._list_images_with_http_info(request)
+        http_info = self._list_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_images_with_http_info(self, request):
+    def list_images_invoker(self, request):
+        http_info = self._list_images_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_images_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/cloudimages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1057,9 +1219,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1068,20 +1230,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/cloudimages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_images_tags(self, request):
         """查询租户所有镜像标签
@@ -1094,9 +1252,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListImagesTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListImagesTagsResponse`
         """
-        return self._list_images_tags_with_http_info(request)
+        http_info = self._list_images_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_images_tags_with_http_info(self, request):
+    def list_images_tags_invoker(self, request):
+        http_info = self._list_images_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_images_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/images/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImagesTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1111,9 +1282,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1122,20 +1293,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/images/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImagesTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_os_versions(self, request):
         """查询镜像支持的OS列表
@@ -1148,9 +1315,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListOsVersionsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListOsVersionsResponse`
         """
-        return self._list_os_versions_with_http_info(request)
+        http_info = self._list_os_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_os_versions_with_http_info(self, request):
+    def list_os_versions_invoker(self, request):
+        http_info = self._list_os_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_os_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudimages/os_version",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOsVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1167,9 +1347,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1178,20 +1358,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/os_version',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOsVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags(self, request):
         """按条件查询租户镜像标签列表
@@ -1204,9 +1380,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListTagsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListTagsResponse`
         """
-        return self._list_tags_with_http_info(request)
+        http_info = self._list_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_with_http_info(self, request):
+    def list_tags_invoker(self, request):
+        http_info = self._list_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudimages/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1251,9 +1440,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1262,20 +1451,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def register_image(self, request):
         """注册镜像
@@ -1294,9 +1479,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.RegisterImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.RegisterImageResponse`
         """
-        return self._register_image_with_http_info(request)
+        http_info = self._register_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _register_image_with_http_info(self, request):
+    def register_image_invoker(self, request):
+        http_info = self._register_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _register_image_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/cloudimages/{image_id}/upload",
+            "request_type": request.__class__.__name__,
+            "response_type": "RegisterImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1313,11 +1511,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1326,20 +1524,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/{image_id}/upload',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RegisterImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_image_quota(self, request):
         """查询镜像配额
@@ -1352,9 +1546,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowImageQuotaRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowImageQuotaResponse`
         """
-        return self._show_image_quota_with_http_info(request)
+        http_info = self._show_image_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_image_quota_with_http_info(self, request):
+    def show_image_quota_invoker(self, request):
+        http_info = self._show_image_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_image_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudimages/quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowImageQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1369,9 +1576,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1380,20 +1587,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowImageQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job(self, request):
         """查询job状态
@@ -1406,9 +1609,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowJobRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowJobResponse`
         """
-        return self._show_job_with_http_info(request)
+        http_info = self._show_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_with_http_info(self, request):
+    def show_job_invoker(self, request):
+        http_info = self._show_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1425,9 +1641,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1436,20 +1652,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_progress(self, request):
         """异步任务进度查询
@@ -1462,9 +1674,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowJobProgressRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowJobProgressResponse`
         """
-        return self._show_job_progress_with_http_info(request)
+        http_info = self._show_job_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_progress_with_http_info(self, request):
+    def show_job_progress_invoker(self, request):
+        http_info = self._show_job_progress_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_progress_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/cloudimages/job/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1481,9 +1706,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1492,20 +1717,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/cloudimages/job/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_image(self, request):
         """更新镜像信息
@@ -1518,9 +1739,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.UpdateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.UpdateImageResponse`
         """
-        return self._update_image_with_http_info(request)
+        http_info = self._update_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_image_with_http_info(self, request):
+    def update_image_invoker(self, request):
+        http_info = self._update_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_image_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/cloudimages/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1537,11 +1771,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1550,20 +1784,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/cloudimages/{image_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_versions(self, request):
         """查询版本列表（OpenStack原生）
@@ -1576,9 +1806,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ListVersionsRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ListVersionsResponse`
         """
-        return self._list_versions_with_http_info(request)
+        http_info = self._list_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_versions_with_http_info(self, request):
+    def list_versions_invoker(self, request):
+        http_info = self._list_versions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_versions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1593,9 +1836,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1604,20 +1847,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_version(self, request):
         """查询版本列表（OpenStack原生）
@@ -1630,9 +1869,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.ShowVersionRequest`
         :rtype: :class:`huaweicloudsdkims.v2.ShowVersionResponse`
         """
-        return self._show_version_with_http_info(request)
+        http_info = self._show_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_version_with_http_info(self, request):
+    def show_version_invoker(self, request):
+        http_info = self._show_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1649,9 +1901,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1660,20 +1912,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_add_image_member(self, request):
         """添加镜像成员（OpenStack原生）
@@ -1686,9 +1934,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceAddImageMemberResponse`
         """
-        return self._glance_add_image_member_with_http_info(request)
+        http_info = self._glance_add_image_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_add_image_member_with_http_info(self, request):
+    def glance_add_image_member_invoker(self, request):
+        http_info = self._glance_add_image_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_add_image_member_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/images/{image_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceAddImageMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1705,11 +1966,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1718,20 +1979,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}/members',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceAddImageMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_create_image_metadata(self, request):
         """创建镜像元数据（OpenStack原生）
@@ -1744,9 +2001,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateImageMetadataResponse`
         """
-        return self._glance_create_image_metadata_with_http_info(request)
+        http_info = self._glance_create_image_metadata_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_create_image_metadata_with_http_info(self, request):
+    def glance_create_image_metadata_invoker(self, request):
+        http_info = self._glance_create_image_metadata_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_create_image_metadata_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceCreateImageMetadataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1761,11 +2031,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1774,20 +2044,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceCreateImageMetadataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_create_tag(self, request):
         """增加标签（OpenStack原生）
@@ -1800,9 +2066,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceCreateTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceCreateTagResponse`
         """
-        return self._glance_create_tag_with_http_info(request)
+        http_info = self._glance_create_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_create_tag_with_http_info(self, request):
+    def glance_create_tag_invoker(self, request):
+        http_info = self._glance_create_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_create_tag_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/images/{image_id}/tags/{tag}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceCreateTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1821,9 +2100,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1832,20 +2111,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}/tags/{tag}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceCreateTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_delete_image(self, request):
         """删除镜像（OpenStack原生）
@@ -1858,9 +2133,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageResponse`
         """
-        return self._glance_delete_image_with_http_info(request)
+        http_info = self._glance_delete_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_delete_image_with_http_info(self, request):
+    def glance_delete_image_invoker(self, request):
+        http_info = self._glance_delete_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_delete_image_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceDeleteImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1877,11 +2165,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1890,20 +2178,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceDeleteImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_delete_image_member(self, request):
         """删除指定的镜像成员（OpenStack原生）
@@ -1916,9 +2200,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteImageMemberResponse`
         """
-        return self._glance_delete_image_member_with_http_info(request)
+        http_info = self._glance_delete_image_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_delete_image_member_with_http_info(self, request):
+    def glance_delete_image_member_invoker(self, request):
+        http_info = self._glance_delete_image_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_delete_image_member_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/images/{image_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceDeleteImageMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1937,9 +2234,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1948,20 +2245,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}/members/{member_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceDeleteImageMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_delete_tag(self, request):
         """删除标签（OpenStack原生）
@@ -1974,9 +2267,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceDeleteTagRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceDeleteTagResponse`
         """
-        return self._glance_delete_tag_with_http_info(request)
+        http_info = self._glance_delete_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_delete_tag_with_http_info(self, request):
+    def glance_delete_tag_invoker(self, request):
+        http_info = self._glance_delete_tag_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_delete_tag_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/images/{image_id}/tags/{tag}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceDeleteTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1995,9 +2301,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2006,20 +2312,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}/tags/{tag}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceDeleteTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_list_image_member_schemas(self, request):
         """查询镜像成员列表视图（OpenStack原生）
@@ -2032,9 +2334,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageMemberSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageMemberSchemasResponse`
         """
-        return self._glance_list_image_member_schemas_with_http_info(request)
+        http_info = self._glance_list_image_member_schemas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_list_image_member_schemas_with_http_info(self, request):
+    def glance_list_image_member_schemas_invoker(self, request):
+        http_info = self._glance_list_image_member_schemas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_list_image_member_schemas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/schemas/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceListImageMemberSchemasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2049,9 +2364,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2060,20 +2375,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/schemas/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceListImageMemberSchemasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_list_image_members(self, request):
         """获取镜像成员列表（OpenStack原生）
@@ -2086,9 +2397,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageMembersRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageMembersResponse`
         """
-        return self._glance_list_image_members_with_http_info(request)
+        http_info = self._glance_list_image_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_list_image_members_with_http_info(self, request):
+    def glance_list_image_members_invoker(self, request):
+        http_info = self._glance_list_image_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_list_image_members_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/images/{image_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceListImageMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2105,9 +2429,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2116,20 +2440,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceListImageMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_list_image_schemas(self, request):
         """查询镜像列表视图（OpenStack原生）
@@ -2142,9 +2462,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImageSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImageSchemasResponse`
         """
-        return self._glance_list_image_schemas_with_http_info(request)
+        http_info = self._glance_list_image_schemas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_list_image_schemas_with_http_info(self, request):
+    def glance_list_image_schemas_invoker(self, request):
+        http_info = self._glance_list_image_schemas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_list_image_schemas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/schemas/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceListImageSchemasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2159,9 +2492,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2170,20 +2503,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/schemas/images',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceListImageSchemasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_list_images(self, request):
         """查询镜像列表（OpenStack原生）
@@ -2200,9 +2529,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceListImagesRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceListImagesResponse`
         """
-        return self._glance_list_images_with_http_info(request)
+        http_info = self._glance_list_images_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_list_images_with_http_info(self, request):
+    def glance_list_images_invoker(self, request):
+        http_info = self._glance_list_images_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_list_images_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/images",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceListImagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2281,9 +2623,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2292,20 +2634,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceListImagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_show_image(self, request):
         """查询镜像详情（OpenStack原生）
@@ -2318,9 +2656,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageResponse`
         """
-        return self._glance_show_image_with_http_info(request)
+        http_info = self._glance_show_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_show_image_with_http_info(self, request):
+    def glance_show_image_invoker(self, request):
+        http_info = self._glance_show_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_show_image_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceShowImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2337,9 +2688,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2348,20 +2699,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceShowImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_show_image_member(self, request):
         """获取镜像成员详情（OpenStack原生）
@@ -2374,9 +2721,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberResponse`
         """
-        return self._glance_show_image_member_with_http_info(request)
+        http_info = self._glance_show_image_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_show_image_member_with_http_info(self, request):
+    def glance_show_image_member_invoker(self, request):
+        http_info = self._glance_show_image_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_show_image_member_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/images/{image_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceShowImageMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2395,9 +2755,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2406,20 +2766,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}/members/{member_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceShowImageMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_show_image_member_schemas(self, request):
         """查询镜像成员视图（OpenStack原生）
@@ -2432,9 +2788,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageMemberSchemasResponse`
         """
-        return self._glance_show_image_member_schemas_with_http_info(request)
+        http_info = self._glance_show_image_member_schemas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_show_image_member_schemas_with_http_info(self, request):
+    def glance_show_image_member_schemas_invoker(self, request):
+        http_info = self._glance_show_image_member_schemas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_show_image_member_schemas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/schemas/member",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceShowImageMemberSchemasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2449,9 +2818,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2460,20 +2829,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/schemas/member',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceShowImageMemberSchemasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_show_image_schemas(self, request):
         """查询镜像视图（OpenStack原生）
@@ -2486,9 +2851,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceShowImageSchemasRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceShowImageSchemasResponse`
         """
-        return self._glance_show_image_schemas_with_http_info(request)
+        http_info = self._glance_show_image_schemas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_show_image_schemas_with_http_info(self, request):
+    def glance_show_image_schemas_invoker(self, request):
+        http_info = self._glance_show_image_schemas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_show_image_schemas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/schemas/image",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceShowImageSchemasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2503,9 +2881,9 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2514,20 +2892,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/schemas/image',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceShowImageSchemasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_update_image(self, request):
         """更新镜像信息（OpenStack原生）
@@ -2540,9 +2914,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageResponse`
         """
-        return self._glance_update_image_with_http_info(request)
+        http_info = self._glance_update_image_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_update_image_with_http_info(self, request):
+    def glance_update_image_invoker(self, request):
+        http_info = self._glance_update_image_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_update_image_http_info(cls, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/images/{image_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceUpdateImageResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2559,11 +2946,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2572,20 +2959,16 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceUpdateImageResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def glance_update_image_member(self, request):
         """更新镜像成员状态（OpenStack原生）
@@ -2598,9 +2981,22 @@ class ImsClient(Client):
         :type request: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberRequest`
         :rtype: :class:`huaweicloudsdkims.v2.GlanceUpdateImageMemberResponse`
         """
-        return self._glance_update_image_member_with_http_info(request)
+        http_info = self._glance_update_image_member_http_info(request)
+        return self._call_api(**http_info)
 
-    def _glance_update_image_member_with_http_info(self, request):
+    def glance_update_image_member_invoker(self, request):
+        http_info = self._glance_update_image_member_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _glance_update_image_member_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/images/{image_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "GlanceUpdateImageMemberResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2619,11 +3015,11 @@ class ImsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2632,20 +3028,25 @@ class ImsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/images/{image_id}/members/{member_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='GlanceUpdateImageMemberResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

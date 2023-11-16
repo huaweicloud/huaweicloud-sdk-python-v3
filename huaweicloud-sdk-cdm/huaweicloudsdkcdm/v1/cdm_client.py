@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcdm'")
 
 
 class CdmClient(Client):
@@ -38,9 +43,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.CreateAndStartRandomClusterJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.CreateAndStartRandomClusterJobResponse`
         """
-        return self._create_and_start_random_cluster_job_with_http_info(request)
+        http_info = self._create_and_start_random_cluster_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_and_start_random_cluster_job_with_http_info(self, request):
+    def create_and_start_random_cluster_job_invoker(self, request):
+        http_info = self._create_and_start_random_cluster_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_and_start_random_cluster_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/clusters/job",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAndStartRandomClusterJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/job',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAndStartRandomClusterJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_cluster(self, request):
         """创建集群
@@ -96,9 +110,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.CreateClusterResponse`
         """
-        return self._create_cluster_with_http_info(request)
+        http_info = self._create_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_with_http_info(self, request):
+    def create_cluster_invoker(self, request):
+        http_info = self._create_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_job(self, request):
         """指定集群创建作业
@@ -154,9 +177,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.CreateJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.CreateJobResponse`
         """
-        return self._create_job_with_http_info(request)
+        http_info = self._create_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_job_with_http_info(self, request):
+    def create_job_invoker(self, request):
+        http_info = self._create_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/job",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,11 +209,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -186,20 +222,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/job',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_link(self, request):
         """创建连接
@@ -212,9 +244,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.CreateLinkRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.CreateLinkResponse`
         """
-        return self._create_link_with_http_info(request)
+        http_info = self._create_link_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_link_with_http_info(self, request):
+    def create_link_invoker(self, request):
+        http_info = self._create_link_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_link_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/link",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLinkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -233,11 +278,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -246,20 +291,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/link',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLinkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cluster(self, request):
         """删除集群
@@ -272,9 +313,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.DeleteClusterResponse`
         """
-        return self._delete_cluster_with_http_info(request)
+        http_info = self._delete_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cluster_with_http_info(self, request):
+    def delete_cluster_invoker(self, request):
+        http_info = self._delete_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cluster_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,11 +345,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +358,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_job(self, request):
         """删除作业
@@ -330,9 +380,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.DeleteJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.DeleteJobResponse`
         """
-        return self._delete_job_with_http_info(request)
+        http_info = self._delete_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_job_with_http_info(self, request):
+    def delete_job_invoker(self, request):
+        http_info = self._delete_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -351,9 +414,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -362,20 +425,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_link(self, request):
         """删除连接
@@ -388,9 +447,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.DeleteLinkRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.DeleteLinkResponse`
         """
-        return self._delete_link_with_http_info(request)
+        http_info = self._delete_link_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_link_with_http_info(self, request):
+    def delete_link_invoker(self, request):
+        http_info = self._delete_link_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_link_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/link/{link_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLinkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -409,9 +481,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -420,20 +492,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/link/{link_name}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLinkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_clusters(self, request):
         """查询集群列表
@@ -446,9 +514,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ListClustersResponse`
         """
-        return self._list_clusters_with_http_info(request)
+        http_info = self._list_clusters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_clusters_with_http_info(self, request):
+    def list_clusters_invoker(self, request):
+        http_info = self._list_clusters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_clusters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClustersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -463,9 +544,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -474,20 +555,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClustersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_cluster(self, request):
         """重启集群
@@ -500,9 +577,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.RestartClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.RestartClusterResponse`
         """
-        return self._restart_cluster_with_http_info(request)
+        http_info = self._restart_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_cluster_with_http_info(self, request):
+    def restart_cluster_invoker(self, request):
+        http_info = self._restart_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -519,11 +609,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -532,20 +622,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cluster_detail(self, request):
         """查询集群详情
@@ -558,9 +644,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowClusterDetailRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowClusterDetailResponse`
         """
-        return self._show_cluster_detail_with_http_info(request)
+        http_info = self._show_cluster_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cluster_detail_with_http_info(self, request):
+    def show_cluster_detail_invoker(self, request):
+        http_info = self._show_cluster_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cluster_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -577,9 +676,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -588,20 +687,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClusterDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_status(self, request):
         """查询作业状态
@@ -614,9 +709,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowJobStatusRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowJobStatusResponse`
         """
-        return self._show_job_status_with_http_info(request)
+        http_info = self._show_job_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_status_with_http_info(self, request):
+    def show_job_status_invoker(self, request):
+        http_info = self._show_job_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -635,9 +743,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -646,20 +754,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_jobs(self, request):
         """查询作业
@@ -672,9 +776,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowJobsRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowJobsResponse`
         """
-        return self._show_jobs_with_http_info(request)
+        http_info = self._show_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_jobs_with_http_info(self, request):
+    def show_jobs_invoker(self, request):
+        http_info = self._show_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,9 +818,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -712,20 +829,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_link(self, request):
         """查询连接
@@ -738,9 +851,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowLinkRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowLinkResponse`
         """
-        return self._show_link_with_http_info(request)
+        http_info = self._show_link_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_link_with_http_info(self, request):
+    def show_link_invoker(self, request):
+        http_info = self._show_link_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_link_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/link/{link_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLinkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -759,9 +885,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -770,20 +896,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/link/{link_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLinkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_submissions(self, request):
         """查询作业执行历史
@@ -796,9 +918,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.ShowSubmissionsRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.ShowSubmissionsResponse`
         """
-        return self._show_submissions_with_http_info(request)
+        http_info = self._show_submissions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_submissions_with_http_info(self, request):
+    def show_submissions_invoker(self, request):
+        http_info = self._show_submissions_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_submissions_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/submissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSubmissionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -817,9 +952,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -828,20 +963,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/submissions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSubmissionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_cluster(self, request):
         """启动集群
@@ -854,9 +985,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.StartClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.StartClusterResponse`
         """
-        return self._start_cluster_with_http_info(request)
+        http_info = self._start_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_cluster_with_http_info(self, request):
+    def start_cluster_invoker(self, request):
+        http_info = self._start_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -873,11 +1017,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -886,20 +1030,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_job(self, request):
         """启动作业
@@ -912,9 +1052,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.StartJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.StartJobResponse`
         """
-        return self._start_job_with_http_info(request)
+        http_info = self._start_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_job_with_http_info(self, request):
+    def start_job_invoker(self, request):
+        http_info = self._start_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -933,9 +1086,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -944,20 +1097,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}/start',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_cluster(self, request):
         """停止集群
@@ -970,9 +1119,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.StopClusterRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.StopClusterResponse`
         """
-        return self._stop_cluster_with_http_info(request)
+        http_info = self._stop_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_cluster_with_http_info(self, request):
+    def stop_cluster_invoker(self, request):
+        http_info = self._stop_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -989,11 +1151,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1002,20 +1164,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_job(self, request):
         """停止作业
@@ -1028,9 +1186,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.StopJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.StopJobResponse`
         """
-        return self._stop_job_with_http_info(request)
+        http_info = self._stop_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_job_with_http_info(self, request):
+    def stop_job_invoker(self, request):
+        http_info = self._stop_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1049,9 +1220,9 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1060,20 +1231,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}/stop',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_job(self, request):
         """修改作业
@@ -1086,9 +1253,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.UpdateJobRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.UpdateJobResponse`
         """
-        return self._update_job_with_http_info(request)
+        http_info = self._update_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_job_with_http_info(self, request):
+    def update_job_invoker(self, request):
+        http_info = self._update_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1107,11 +1287,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1120,20 +1300,16 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/job/{job_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_link(self, request):
         """修改连接
@@ -1146,9 +1322,22 @@ class CdmClient(Client):
         :type request: :class:`huaweicloudsdkcdm.v1.UpdateLinkRequest`
         :rtype: :class:`huaweicloudsdkcdm.v1.UpdateLinkResponse`
         """
-        return self._update_link_with_http_info(request)
+        http_info = self._update_link_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_link_with_http_info(self, request):
+    def update_link_invoker(self, request):
+        http_info = self._update_link_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_link_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.1/{project_id}/clusters/{cluster_id}/cdm/link/{link_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLinkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1167,11 +1356,11 @@ class CdmClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1180,20 +1369,25 @@ class CdmClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/clusters/{cluster_id}/cdm/link/{link_name}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLinkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

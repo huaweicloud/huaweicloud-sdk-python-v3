@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcodeartscheck'")
 
 
 class CodeArtsCheckClient(Client):
@@ -38,9 +43,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.CheckParametersRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.CheckParametersResponse`
         """
-        return self._check_parameters_with_http_info(request)
+        http_info = self._check_parameters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_parameters_with_http_info(self, request):
+    def check_parameters_invoker(self, request):
+        http_info = self._check_parameters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_parameters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/ruleset/{ruleset_id}/check-parameters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckParametersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -63,9 +81,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -74,20 +92,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/ruleset/{ruleset_id}/check-parameters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckParametersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_record(self, request):
         """历史扫描结果查询
@@ -100,9 +114,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.CheckRecordRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.CheckRecordResponse`
         """
-        return self._check_record_with_http_info(request)
+        http_info = self._check_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_record_with_http_info(self, request):
+    def check_record_invoker(self, request):
+        http_info = self._check_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/checkrecord",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -129,9 +156,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -140,20 +167,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/checkrecord',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_ruleset_parameters(self, request):
         """查询任务规则集的检查参数
@@ -166,9 +189,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.CheckRulesetParametersRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.CheckRulesetParametersResponse`
         """
-        return self._check_ruleset_parameters_with_http_info(request)
+        http_info = self._check_ruleset_parameters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_ruleset_parameters_with_http_info(self, request):
+    def check_ruleset_parameters_invoker(self, request):
+        http_info = self._check_ruleset_parameters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_ruleset_parameters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tasks/{task_id}/ruleset/{ruleset_id}/check-parameters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckRulesetParametersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -195,9 +231,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -206,20 +242,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tasks/{task_id}/ruleset/{ruleset_id}/check-parameters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckRulesetParametersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_ruleset(self, request):
         """创建自定义规则集
@@ -232,9 +264,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.CreateRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.CreateRulesetResponse`
         """
-        return self._create_ruleset_with_http_info(request)
+        http_info = self._create_ruleset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_ruleset_with_http_info(self, request):
+    def create_ruleset_invoker(self, request):
+        http_info = self._create_ruleset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_ruleset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/ruleset",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRulesetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -249,11 +294,11 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -262,20 +307,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/ruleset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRulesetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_task(self, request):
         """新建检查任务
@@ -288,9 +329,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.CreateTaskResponse`
         """
-        return self._create_task_with_http_info(request)
+        http_info = self._create_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_task_with_http_info(self, request):
+    def create_task_invoker(self, request):
+        http_info = self._create_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -307,11 +361,11 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -320,20 +374,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_ruleset(self, request):
         """删除自定义规则集
@@ -346,9 +396,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.DeleteRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.DeleteRulesetResponse`
         """
-        return self._delete_ruleset_with_http_info(request)
+        http_info = self._delete_ruleset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_ruleset_with_http_info(self, request):
+    def delete_ruleset_invoker(self, request):
+        http_info = self._delete_ruleset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_ruleset_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/ruleset/{ruleset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRulesetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -367,9 +430,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -378,20 +441,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ruleset/{ruleset_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRulesetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task(self, request):
         """删除检查任务
@@ -404,9 +463,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.DeleteTaskResponse`
         """
-        return self._delete_task_with_http_info(request)
+        http_info = self._delete_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_with_http_info(self, request):
+    def delete_task_invoker(self, request):
+        http_info = self._delete_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -423,9 +495,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -434,20 +506,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rules(self, request):
         """获取规则列表接口
@@ -460,9 +528,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ListRulesResponse`
         """
-        return self._list_rules_with_http_info(request)
+        http_info = self._list_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rules_with_http_info(self, request):
+    def list_rules_invoker(self, request):
+        http_info = self._list_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -485,9 +566,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -496,20 +577,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rulesets(self, request):
         """查询规则集列表
@@ -522,9 +599,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ListRulesetsRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ListRulesetsResponse`
         """
-        return self._list_rulesets_with_http_info(request)
+        http_info = self._list_rulesets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rulesets_with_http_info(self, request):
+    def list_rulesets_invoker(self, request):
+        http_info = self._list_rulesets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rulesets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/rulesets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRulesetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -547,9 +637,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -558,20 +648,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/rulesets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRulesetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_task_parameter(self, request):
         """任务配置检查参数
@@ -584,9 +670,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ListTaskParameterRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ListTaskParameterResponse`
         """
-        return self._list_task_parameter_with_http_info(request)
+        http_info = self._list_task_parameter_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_task_parameter_with_http_info(self, request):
+    def list_task_parameter_invoker(self, request):
+        http_info = self._list_task_parameter_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_task_parameter_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/config-parameters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskParameterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -605,11 +704,11 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -618,20 +717,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/config-parameters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTaskParameterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_task_ruleset(self, request):
         """查询任务的已选规则集列表
@@ -644,9 +739,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ListTaskRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ListTaskRulesetResponse`
         """
-        return self._list_task_ruleset_with_http_info(request)
+        http_info = self._list_task_ruleset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_task_ruleset_with_http_info(self, request):
+    def list_task_ruleset_invoker(self, request):
+        http_info = self._list_task_ruleset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_task_ruleset_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/rulesets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTaskRulesetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -665,9 +773,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -676,20 +784,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/rulesets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTaskRulesetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_rules(self, request):
         """查看规则集的规则列表
@@ -702,9 +806,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ListTemplateRulesRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ListTemplateRulesResponse`
         """
-        return self._list_template_rules_with_http_info(request)
+        http_info = self._list_template_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_rules_with_http_info(self, request):
+    def list_template_rules_invoker(self, request):
+        http_info = self._list_template_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_template_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/ruleset/{ruleset_id}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -733,9 +850,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -744,20 +861,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ruleset/{ruleset_id}/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_task(self, request):
         """执行检查任务
@@ -770,9 +883,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.RunTaskRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.RunTaskResponse`
         """
-        return self._run_task_with_http_info(request)
+        http_info = self._run_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_task_with_http_info(self, request):
+    def run_task_invoker(self, request):
+        http_info = self._run_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/tasks/{task_id}/run",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -789,11 +915,11 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -802,20 +928,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/run',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_defaul_template(self, request):
         """设置每个项目对应语言的默认规则集配置
@@ -828,9 +950,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.SetDefaulTemplateRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.SetDefaulTemplateResponse`
         """
-        return self._set_defaul_template_with_http_info(request)
+        http_info = self._set_defaul_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_defaul_template_with_http_info(self, request):
+    def set_defaul_template_invoker(self, request):
+        http_info = self._set_defaul_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_defaul_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/ruleset/{ruleset_id}/{language}/default",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetDefaulTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -851,9 +986,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -862,20 +997,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/ruleset/{ruleset_id}/{language}/default',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetDefaulTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_progress_detail(self, request):
         """查询任务执行状态
@@ -888,9 +1019,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowProgressDetailRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowProgressDetailResponse`
         """
-        return self._show_progress_detail_with_http_info(request)
+        http_info = self._show_progress_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_progress_detail_with_http_info(self, request):
+    def show_progress_detail_invoker(self, request):
+        http_info = self._show_progress_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_progress_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/tasks/{task_id}/progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProgressDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -907,9 +1051,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -918,20 +1062,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/progress',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProgressDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_cmetrics(self, request):
         """查询cmertrics缺陷概要
@@ -944,9 +1084,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskCmetricsRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskCmetricsResponse`
         """
-        return self._show_task_cmetrics_with_http_info(request)
+        http_info = self._show_task_cmetrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_cmetrics_with_http_info(self, request):
+    def show_task_cmetrics_invoker(self, request):
+        http_info = self._show_task_cmetrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_cmetrics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/metrics-summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskCmetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -965,9 +1118,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -976,20 +1129,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/metrics-summary',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskCmetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_defects(self, request):
         """查询缺陷详情
@@ -1002,9 +1151,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskDefectsRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskDefectsResponse`
         """
-        return self._show_task_defects_with_http_info(request)
+        http_info = self._show_task_defects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_defects_with_http_info(self, request):
+    def show_task_defects_invoker(self, request):
+        http_info = self._show_task_defects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_defects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/tasks/{task_id}/defects-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskDefectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1029,9 +1191,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1040,20 +1202,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/defects-detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskDefectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_defects_statistic(self, request):
         """查询缺陷详情的统计
@@ -1066,9 +1224,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskDefectsStatisticRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskDefectsStatisticResponse`
         """
-        return self._show_task_defects_statistic_with_http_info(request)
+        http_info = self._show_task_defects_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_defects_statistic_with_http_info(self, request):
+    def show_task_defects_statistic_invoker(self, request):
+        http_info = self._show_task_defects_statistic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_defects_statistic_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/tasks/{task_id}/defects-statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskDefectsStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1085,9 +1256,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1096,20 +1267,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/defects-statistic',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskDefectsStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_detail(self, request):
         """查询缺陷概要
@@ -1122,9 +1289,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskDetailRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskDetailResponse`
         """
-        return self._show_task_detail_with_http_info(request)
+        http_info = self._show_task_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_detail_with_http_info(self, request):
+    def show_task_detail_invoker(self, request):
+        http_info = self._show_task_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/tasks/{task_id}/defects-summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1141,9 +1321,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1152,20 +1332,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/defects-summary',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_list_by_project_id(self, request):
         """查询任务列表
@@ -1178,9 +1354,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskListByProjectIdRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskListByProjectIdResponse`
         """
-        return self._show_task_list_by_project_id_with_http_info(request)
+        http_info = self._show_task_list_by_project_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_list_by_project_id_with_http_info(self, request):
+    def show_task_list_by_project_id_invoker(self, request):
+        http_info = self._show_task_list_by_project_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_list_by_project_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskListByProjectIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1201,9 +1390,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1212,20 +1401,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskListByProjectIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_path_tree(self, request):
         """获取任务的目录树
@@ -1238,9 +1423,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskPathTreeRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskPathTreeResponse`
         """
-        return self._show_task_path_tree_with_http_info(request)
+        http_info = self._show_task_path_tree_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_path_tree_with_http_info(self, request):
+    def show_task_path_tree_invoker(self, request):
+        http_info = self._show_task_path_tree_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_path_tree_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/listpathtree",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskPathTreeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1265,9 +1463,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1276,20 +1474,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/listpathtree',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskPathTreeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_settings(self, request):
         """查询任务的高级选项
@@ -1302,9 +1496,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskSettingsRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTaskSettingsResponse`
         """
-        return self._show_task_settings_with_http_info(request)
+        http_info = self._show_task_settings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_settings_with_http_info(self, request):
+    def show_task_settings_invoker(self, request):
+        http_info = self._show_task_settings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_settings_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskSettingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1327,9 +1534,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1338,20 +1545,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/settings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskSettingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tasklog(self, request):
         """查询任务检查失败日志
@@ -1364,9 +1567,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTasklogRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTasklogResponse`
         """
-        return self._show_tasklog_with_http_info(request)
+        http_info = self._show_tasklog_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tasklog_with_http_info(self, request):
+    def show_tasklog_invoker(self, request):
+        http_info = self._show_tasklog_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tasklog_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/log-detail",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTasklogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1387,9 +1603,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1398,20 +1614,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/log-detail',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTasklogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_tasks_rulesets(self, request):
         """查询任务的已选规则集列表
@@ -1424,9 +1636,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.ShowTasksRulesetsRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.ShowTasksRulesetsResponse`
         """
-        return self._show_tasks_rulesets_with_http_info(request)
+        http_info = self._show_tasks_rulesets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_tasks_rulesets_with_http_info(self, request):
+    def show_tasks_rulesets_invoker(self, request):
+        http_info = self._show_tasks_rulesets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_tasks_rulesets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tasks/{task_id}/rulesets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTasksRulesetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1449,9 +1674,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1460,20 +1685,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tasks/{task_id}/rulesets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTasksRulesetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_task_by_id(self, request):
         """终止检查任务
@@ -1486,9 +1707,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.StopTaskByIdRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.StopTaskByIdResponse`
         """
-        return self._stop_task_by_id_with_http_info(request)
+        http_info = self._stop_task_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_task_by_id_with_http_info(self, request):
+    def stop_task_by_id_invoker(self, request):
+        http_info = self._stop_task_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_task_by_id_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/tasks/{task_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopTaskByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1505,9 +1739,9 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1516,20 +1750,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopTaskByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_defect_status(self, request):
         """修改缺陷状态
@@ -1542,9 +1772,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.UpdateDefectStatusRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.UpdateDefectStatusResponse`
         """
-        return self._update_defect_status_with_http_info(request)
+        http_info = self._update_defect_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_defect_status_with_http_info(self, request):
+    def update_defect_status_invoker(self, request):
+        http_info = self._update_defect_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_defect_status_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/tasks/{task_id}/defect-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDefectStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1561,11 +1804,11 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1574,20 +1817,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/defect-status',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDefectStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ignore_path(self, request):
         """任务配置屏蔽目录
@@ -1600,9 +1839,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.UpdateIgnorePathRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.UpdateIgnorePathResponse`
         """
-        return self._update_ignore_path_with_http_info(request)
+        http_info = self._update_ignore_path_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ignore_path_with_http_info(self, request):
+    def update_ignore_path_invoker(self, request):
+        http_info = self._update_ignore_path_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_ignore_path_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/config-ignorepath",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIgnorePathResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1621,11 +1873,11 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1634,20 +1886,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/config-ignorepath',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIgnorePathResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_ruleset(self, request):
         """修改任务规则集
@@ -1660,9 +1908,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskRulesetRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskRulesetResponse`
         """
-        return self._update_task_ruleset_with_http_info(request)
+        http_info = self._update_task_ruleset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_ruleset_with_http_info(self, request):
+    def update_task_ruleset_invoker(self, request):
+        http_info = self._update_task_ruleset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_ruleset_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/tasks/{task_id}/ruleset",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskRulesetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1679,11 +1940,11 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1692,20 +1953,16 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/tasks/{task_id}/ruleset',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskRulesetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_settings(self, request):
         """任务配置高级选项
@@ -1718,9 +1975,22 @@ class CodeArtsCheckClient(Client):
         :type request: :class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskSettingsRequest`
         :rtype: :class:`huaweicloudsdkcodeartscheck.v2.UpdateTaskSettingsResponse`
         """
-        return self._update_task_settings_with_http_info(request)
+        http_info = self._update_task_settings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_settings_with_http_info(self, request):
+    def update_task_settings_invoker(self, request):
+        http_info = self._update_task_settings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_settings_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/tasks/{task_id}/settings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskSettingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1739,11 +2009,11 @@ class CodeArtsCheckClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1752,20 +2022,25 @@ class CodeArtsCheckClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/tasks/{task_id}/settings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskSettingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

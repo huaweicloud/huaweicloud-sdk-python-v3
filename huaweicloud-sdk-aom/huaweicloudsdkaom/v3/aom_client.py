@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkaom'")
 
 
 class AomClient(Client):
@@ -38,9 +43,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.CreateAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.CreateAppResponse`
         """
-        return self._create_app_with_http_info(request)
+        http_info = self._create_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_with_http_info(self, request):
+    def create_app_invoker(self, request):
+        http_info = self._create_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/applications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_component(self, request):
         """新增组件
@@ -94,9 +108,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.CreateComponentRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.CreateComponentResponse`
         """
-        return self._create_component_with_http_info(request)
+        http_info = self._create_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_component_with_http_info(self, request):
+    def create_component_invoker(self, request):
+        http_info = self._create_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_component_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/components",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/components',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_env(self, request):
         """创建环境
@@ -150,9 +173,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.CreateEnvRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.CreateEnvResponse`
         """
-        return self._create_env_with_http_info(request)
+        http_info = self._create_env_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_env_with_http_info(self, request):
+    def create_env_invoker(self, request):
+        http_info = self._create_env_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_env_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/environments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnvResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,11 +203,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/environments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_sub_app(self, request):
         """新增子应用
@@ -206,9 +238,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.CreateSubAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.CreateSubAppResponse`
         """
-        return self._create_sub_app_with_http_info(request)
+        http_info = self._create_sub_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_sub_app_with_http_info(self, request):
+    def create_sub_app_invoker(self, request):
+        http_info = self._create_sub_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_sub_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/sub-applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSubAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -223,11 +268,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -236,20 +281,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sub-applications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSubAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app(self, request):
         """删除应用
@@ -262,9 +303,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.DeleteAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.DeleteAppResponse`
         """
-        return self._delete_app_with_http_info(request)
+        http_info = self._delete_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_with_http_info(self, request):
+    def delete_app_invoker(self, request):
+        http_info = self._delete_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -281,9 +335,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -292,20 +346,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_component(self, request):
         """删除组件
@@ -318,9 +368,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.DeleteComponentRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.DeleteComponentResponse`
         """
-        return self._delete_component_with_http_info(request)
+        http_info = self._delete_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_component_with_http_info(self, request):
+    def delete_component_invoker(self, request):
+        http_info = self._delete_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_component_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -337,9 +400,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -348,20 +411,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/components/{component_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_env(self, request):
         """删除环境
@@ -374,9 +433,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.DeleteEnvRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.DeleteEnvResponse`
         """
-        return self._delete_env_with_http_info(request)
+        http_info = self._delete_env_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_env_with_http_info(self, request):
+    def delete_env_invoker(self, request):
+        http_info = self._delete_env_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_env_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnvResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -393,9 +465,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -404,20 +476,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/environments/{environment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_sub_app(self, request):
         """删除子应用
@@ -430,9 +498,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.DeleteSubAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.DeleteSubAppResponse`
         """
-        return self._delete_sub_app_with_http_info(request)
+        http_info = self._delete_sub_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_sub_app_with_http_info(self, request):
+    def delete_sub_app_invoker(self, request):
+        http_info = self._delete_sub_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_sub_app_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/sub-applications/{sub_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSubAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -449,9 +530,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -460,20 +541,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sub-applications/{sub_app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSubAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_under_node(self, request):
         """查询绑定在节点上的资源列表
@@ -486,9 +563,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ListResourceUnderNodeRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ListResourceUnderNodeResponse`
         """
-        return self._list_resource_under_node_with_http_info(request)
+        http_info = self._list_resource_under_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_under_node_with_http_info(self, request):
+    def list_resource_under_node_invoker(self, request):
+        http_info = self._list_resource_under_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_resource_under_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/resource/{rf_resource_type}/type/{type}/ci-relationships",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceUnderNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -507,11 +597,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -520,20 +610,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/resource/{rf_resource_type}/type/{type}/ci-relationships',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceUnderNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app(self, request):
         """查询应用详情
@@ -546,9 +632,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowAppResponse`
         """
-        return self._show_app_with_http_info(request)
+        http_info = self._show_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_with_http_info(self, request):
+    def show_app_invoker(self, request):
+        http_info = self._show_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -565,9 +664,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -576,20 +675,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_by_name(self, request):
         """根据应用名称查询应用详情
@@ -602,9 +697,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowAppByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowAppByNameResponse`
         """
-        return self._show_app_by_name_with_http_info(request)
+        http_info = self._show_app_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_by_name_with_http_info(self, request):
+    def show_app_by_name_invoker(self, request):
+        http_info = self._show_app_by_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_by_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/applications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -623,9 +731,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -634,20 +742,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/applications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_component(self, request):
         """查询组件详情
@@ -660,9 +764,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowComponentRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowComponentResponse`
         """
-        return self._show_component_with_http_info(request)
+        http_info = self._show_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_component_with_http_info(self, request):
+    def show_component_invoker(self, request):
+        http_info = self._show_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_component_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -679,9 +796,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -690,20 +807,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/components/{component_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_component_by_name(self, request):
         """根据组件名称查询组件详情
@@ -716,9 +829,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowComponentByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowComponentByNameResponse`
         """
-        return self._show_component_by_name_with_http_info(request)
+        http_info = self._show_component_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_component_by_name_with_http_info(self, request):
+    def show_component_by_name_invoker(self, request):
+        http_info = self._show_component_by_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_component_by_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/components/application/{application_id}/name/{component_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowComponentByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -737,9 +863,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -748,20 +874,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/components/application/{application_id}/name/{component_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowComponentByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_env(self, request):
         """查询环境详情
@@ -774,9 +896,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowEnvRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowEnvResponse`
         """
-        return self._show_env_with_http_info(request)
+        http_info = self._show_env_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_env_with_http_info(self, request):
+    def show_env_invoker(self, request):
+        http_info = self._show_env_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_env_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnvResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -793,9 +928,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -804,20 +939,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/environments/{environment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_env_by_name(self, request):
         """根据环境名称查询环境详情
@@ -830,9 +961,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.ShowEnvByNameRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.ShowEnvByNameResponse`
         """
-        return self._show_env_by_name_with_http_info(request)
+        http_info = self._show_env_by_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_env_by_name_with_http_info(self, request):
+    def show_env_by_name_invoker(self, request):
+        http_info = self._show_env_by_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_env_by_name_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/environments/name/{environment_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnvByNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -853,9 +997,9 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -864,20 +1008,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/environments/name/{environment_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnvByNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app(self, request):
         """修改应用
@@ -890,9 +1030,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.UpdateAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.UpdateAppResponse`
         """
-        return self._update_app_with_http_info(request)
+        http_info = self._update_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_with_http_info(self, request):
+    def update_app_invoker(self, request):
+        http_info = self._update_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/applications/{application_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -909,11 +1062,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -922,20 +1075,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/applications/{application_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_component(self, request):
         """修改组件
@@ -948,9 +1097,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.UpdateComponentRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.UpdateComponentResponse`
         """
-        return self._update_component_with_http_info(request)
+        http_info = self._update_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_component_with_http_info(self, request):
+    def update_component_invoker(self, request):
+        http_info = self._update_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_component_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/components/{component_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -967,11 +1129,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -980,20 +1142,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/components/{component_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_env(self, request):
         """修改环境
@@ -1006,9 +1164,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.UpdateEnvRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.UpdateEnvResponse`
         """
-        return self._update_env_with_http_info(request)
+        http_info = self._update_env_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_env_with_http_info(self, request):
+    def update_env_invoker(self, request):
+        http_info = self._update_env_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_env_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/environments/{environment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEnvResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1025,11 +1196,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1038,20 +1209,16 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/environments/{environment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEnvResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_sub_app(self, request):
         """修改子应用
@@ -1064,9 +1231,22 @@ class AomClient(Client):
         :type request: :class:`huaweicloudsdkaom.v3.UpdateSubAppRequest`
         :rtype: :class:`huaweicloudsdkaom.v3.UpdateSubAppResponse`
         """
-        return self._update_sub_app_with_http_info(request)
+        http_info = self._update_sub_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_sub_app_with_http_info(self, request):
+    def update_sub_app_invoker(self, request):
+        http_info = self._update_sub_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_sub_app_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/sub-applications/{sub_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSubAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1083,11 +1263,11 @@ class AomClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1096,20 +1276,25 @@ class AomClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/sub-applications/{sub_app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSubAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkgaussdb'")
 
 
 class GaussDBClient(Client):
@@ -38,9 +43,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.AddDatabasePermissionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.AddDatabasePermissionResponse`
         """
-        return self._add_database_permission_with_http_info(request)
+        http_info = self._add_database_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_database_permission_with_http_info(self, request):
+    def add_database_permission_invoker(self, request):
+        http_info = self._add_database_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_database_permission_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users/privilege",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDatabasePermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -59,11 +77,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +90,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/privilege',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDatabasePermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_tag_action(self, request):
         """批量添加或删除标签
@@ -98,9 +112,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.BatchTagActionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.BatchTagActionResponse`
         """
-        return self._batch_tag_action_with_http_info(request)
+        http_info = self._batch_tag_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_tag_action_with_http_info(self, request):
+    def batch_tag_action_invoker(self, request):
+        http_info = self._batch_tag_action_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_tag_action_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchTagActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +146,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +159,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchTagActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_gauss_my_sql_instance_eip(self, request):
         """解绑弹性公网IP
@@ -158,9 +181,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CancelGaussMySqlInstanceEipRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CancelGaussMySqlInstanceEipResponse`
         """
-        return self._cancel_gauss_my_sql_instance_eip_with_http_info(request)
+        http_info = self._cancel_gauss_my_sql_instance_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_gauss_my_sql_instance_eip_with_http_info(self, request):
+    def cancel_gauss_my_sql_instance_eip_invoker(self, request):
+        http_info = self._cancel_gauss_my_sql_instance_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_gauss_my_sql_instance_eip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/public-ips/unbind",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelGaussMySqlInstanceEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -179,9 +215,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -190,20 +226,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/public-ips/unbind',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelGaussMySqlInstanceEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_schedule_task(self, request):
         """取消定时任务
@@ -216,9 +248,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CancelScheduleTaskRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CancelScheduleTaskResponse`
         """
-        return self._cancel_schedule_task_with_http_info(request)
+        http_info = self._cancel_schedule_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_schedule_task_with_http_info(self, request):
+    def cancel_schedule_task_invoker(self, request):
+        http_info = self._cancel_schedule_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_schedule_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/scheduled-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelScheduleTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +280,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +293,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/scheduled-jobs',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelScheduleTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_gauss_my_sql_instance_specification(self, request):
         """变更实例规格
@@ -274,9 +315,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlInstanceSpecificationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlInstanceSpecificationResponse`
         """
-        return self._change_gauss_my_sql_instance_specification_with_http_info(request)
+        http_info = self._change_gauss_my_sql_instance_specification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_gauss_my_sql_instance_specification_with_http_info(self, request):
+    def change_gauss_my_sql_instance_specification_invoker(self, request):
+        http_info = self._change_gauss_my_sql_instance_specification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_gauss_my_sql_instance_specification_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeGaussMySqlInstanceSpecificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -295,11 +349,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -308,20 +362,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeGaussMySqlInstanceSpecificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_gauss_my_sql_proxy_specification(self, request):
         """数据库代理规格变更
@@ -334,9 +384,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlProxySpecificationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ChangeGaussMySqlProxySpecificationResponse`
         """
-        return self._change_gauss_my_sql_proxy_specification_with_http_info(request)
+        http_info = self._change_gauss_my_sql_proxy_specification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_gauss_my_sql_proxy_specification_with_http_info(self, request):
+    def change_gauss_my_sql_proxy_specification_invoker(self, request):
+        http_info = self._change_gauss_my_sql_proxy_specification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_gauss_my_sql_proxy_specification_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/flavor",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeGaussMySqlProxySpecificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -357,11 +420,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -370,20 +433,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/flavor',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeGaussMySqlProxySpecificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_resource(self, request):
         """资源预校验
@@ -396,9 +455,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CheckResourceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CheckResourceResponse`
         """
-        return self._check_resource_with_http_info(request)
+        http_info = self._check_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_resource_with_http_info(self, request):
+    def check_resource_invoker(self, request):
+        http_info = self._check_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/resource-check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -415,11 +487,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -428,20 +500,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/resource-check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_configurations(self, request):
         """复制参数组
@@ -454,9 +522,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CopyConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CopyConfigurationsResponse`
         """
-        return self._copy_configurations_with_http_info(request)
+        http_info = self._copy_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_configurations_with_http_info(self, request):
+    def copy_configurations_invoker(self, request):
+        http_info = self._copy_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_configurations_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/{configuration_id}/copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -475,11 +556,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -488,20 +569,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{configuration_id}/copy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def copy_instance_configurations(self, request):
         """复制实例参数组
@@ -514,9 +591,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CopyInstanceConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CopyInstanceConfigurationsResponse`
         """
-        return self._copy_instance_configurations_with_http_info(request)
+        http_info = self._copy_instance_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _copy_instance_configurations_with_http_info(self, request):
+    def copy_instance_configurations_invoker(self, request):
+        http_info = self._copy_instance_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _copy_instance_configurations_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations/{configuration_id}/copy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CopyInstanceConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -537,11 +627,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -550,20 +640,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations/{configuration_id}/copy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CopyInstanceConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_access_control(self, request):
         """设置访问控制规则
@@ -576,9 +662,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateAccessControlRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateAccessControlResponse`
         """
-        return self._create_access_control_with_http_info(request)
+        http_info = self._create_access_control_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_access_control_with_http_info(self, request):
+    def create_access_control_invoker(self, request):
+        http_info = self._create_access_control_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_access_control_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/access-control",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAccessControlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -599,11 +698,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -612,20 +711,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/access-control',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAccessControlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gauss_my_sql_backup(self, request):
         """创建手动备份
@@ -638,9 +733,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlBackupResponse`
         """
-        return self._create_gauss_my_sql_backup_with_http_info(request)
+        http_info = self._create_gauss_my_sql_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gauss_my_sql_backup_with_http_info(self, request):
+    def create_gauss_my_sql_backup_invoker(self, request):
+        http_info = self._create_gauss_my_sql_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_gauss_my_sql_backup_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/backups/create",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGaussMySqlBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -657,11 +765,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -670,20 +778,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/create',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGaussMySqlBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gauss_my_sql_configuration(self, request):
         """创建参数模板
@@ -696,9 +800,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlConfigurationResponse`
         """
-        return self._create_gauss_my_sql_configuration_with_http_info(request)
+        http_info = self._create_gauss_my_sql_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gauss_my_sql_configuration_with_http_info(self, request):
+    def create_gauss_my_sql_configuration_invoker(self, request):
+        http_info = self._create_gauss_my_sql_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_gauss_my_sql_configuration_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGaussMySqlConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -715,11 +832,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -728,20 +845,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGaussMySqlConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gauss_my_sql_database(self, request):
         """创建数据库
@@ -754,9 +867,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseResponse`
         """
-        return self._create_gauss_my_sql_database_with_http_info(request)
+        http_info = self._create_gauss_my_sql_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gauss_my_sql_database_with_http_info(self, request):
+    def create_gauss_my_sql_database_invoker(self, request):
+        http_info = self._create_gauss_my_sql_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_gauss_my_sql_database_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGaussMySqlDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -775,11 +901,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -788,20 +914,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/databases',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGaussMySqlDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gauss_my_sql_database_user(self, request):
         """创建数据库用户
@@ -814,9 +936,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlDatabaseUserResponse`
         """
-        return self._create_gauss_my_sql_database_user_with_http_info(request)
+        http_info = self._create_gauss_my_sql_database_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gauss_my_sql_database_user_with_http_info(self, request):
+    def create_gauss_my_sql_database_user_invoker(self, request):
+        http_info = self._create_gauss_my_sql_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_gauss_my_sql_database_user_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGaussMySqlDatabaseUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -835,11 +970,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -848,20 +983,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGaussMySqlDatabaseUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gauss_my_sql_instance(self, request):
         """创建数据库实例
@@ -874,9 +1005,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlInstanceResponse`
         """
-        return self._create_gauss_my_sql_instance_with_http_info(request)
+        http_info = self._create_gauss_my_sql_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gauss_my_sql_instance_with_http_info(self, request):
+    def create_gauss_my_sql_instance_invoker(self, request):
+        http_info = self._create_gauss_my_sql_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_gauss_my_sql_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGaussMySqlInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -893,11 +1037,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -906,20 +1050,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGaussMySqlInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gauss_my_sql_proxy(self, request):
         """开启数据库代理
@@ -932,9 +1072,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlProxyResponse`
         """
-        return self._create_gauss_my_sql_proxy_with_http_info(request)
+        http_info = self._create_gauss_my_sql_proxy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gauss_my_sql_proxy_with_http_info(self, request):
+    def create_gauss_my_sql_proxy_invoker(self, request):
+        http_info = self._create_gauss_my_sql_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_gauss_my_sql_proxy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGaussMySqlProxyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -953,11 +1106,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -966,20 +1119,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGaussMySqlProxyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gauss_my_sql_readonly_node(self, request):
         """创建只读节点
@@ -992,9 +1141,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlReadonlyNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMySqlReadonlyNodeResponse`
         """
-        return self._create_gauss_my_sql_readonly_node_with_http_info(request)
+        http_info = self._create_gauss_my_sql_readonly_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gauss_my_sql_readonly_node_with_http_info(self, request):
+    def create_gauss_my_sql_readonly_node_invoker(self, request):
+        http_info = self._create_gauss_my_sql_readonly_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_gauss_my_sql_readonly_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/enlarge",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGaussMySqlReadonlyNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1013,11 +1175,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1026,20 +1188,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/nodes/enlarge',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGaussMySqlReadonlyNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gauss_mysql_dns(self, request):
         """申请内网域名
@@ -1052,9 +1210,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMysqlDnsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateGaussMysqlDnsResponse`
         """
-        return self._create_gauss_mysql_dns_with_http_info(request)
+        http_info = self._create_gauss_mysql_dns_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gauss_mysql_dns_with_http_info(self, request):
+    def create_gauss_mysql_dns_invoker(self, request):
+        http_info = self._create_gauss_mysql_dns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_gauss_mysql_dns_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGaussMysqlDnsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1073,11 +1244,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1086,20 +1257,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/dns',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGaussMysqlDnsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_restore_tables(self, request):
         """表级时间点恢复
@@ -1112,9 +1279,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.CreateRestoreTablesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.CreateRestoreTablesResponse`
         """
-        return self._create_restore_tables_with_http_info(request)
+        http_info = self._create_restore_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_restore_tables_with_http_info(self, request):
+    def create_restore_tables_invoker(self, request):
+        http_info = self._create_restore_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_restore_tables_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/restore/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRestoreTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1133,11 +1313,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1146,20 +1326,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/restore/tables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRestoreTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_database_permission(self, request):
         """删除数据库用户的数据库权限
@@ -1172,9 +1348,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermissionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteDatabasePermissionResponse`
         """
-        return self._delete_database_permission_with_http_info(request)
+        http_info = self._delete_database_permission_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_database_permission_with_http_info(self, request):
+    def delete_database_permission_invoker(self, request):
+        http_info = self._delete_database_permission_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_database_permission_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users/privilege",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatabasePermissionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1193,11 +1382,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1206,20 +1395,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/privilege',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatabasePermissionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gauss_my_sql_backup(self, request):
         """删除手动备份
@@ -1232,9 +1417,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlBackupRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlBackupResponse`
         """
-        return self._delete_gauss_my_sql_backup_with_http_info(request)
+        http_info = self._delete_gauss_my_sql_backup_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gauss_my_sql_backup_with_http_info(self, request):
+    def delete_gauss_my_sql_backup_invoker(self, request):
+        http_info = self._delete_gauss_my_sql_backup_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_gauss_my_sql_backup_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/backups/{backup_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGaussMySqlBackupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1253,9 +1451,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1264,20 +1462,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups/{backup_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGaussMySqlBackupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gauss_my_sql_configuration(self, request):
         """删除参数模板
@@ -1290,9 +1484,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlConfigurationResponse`
         """
-        return self._delete_gauss_my_sql_configuration_with_http_info(request)
+        http_info = self._delete_gauss_my_sql_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gauss_my_sql_configuration_with_http_info(self, request):
+    def delete_gauss_my_sql_configuration_invoker(self, request):
+        http_info = self._delete_gauss_my_sql_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_gauss_my_sql_configuration_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/configurations/{configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGaussMySqlConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1311,9 +1518,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1322,20 +1529,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{configuration_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGaussMySqlConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gauss_my_sql_database(self, request):
         """删除数据库
@@ -1348,9 +1551,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseResponse`
         """
-        return self._delete_gauss_my_sql_database_with_http_info(request)
+        http_info = self._delete_gauss_my_sql_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gauss_my_sql_database_with_http_info(self, request):
+    def delete_gauss_my_sql_database_invoker(self, request):
+        http_info = self._delete_gauss_my_sql_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_gauss_my_sql_database_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGaussMySqlDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1369,11 +1585,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1382,20 +1598,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/databases',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGaussMySqlDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gauss_my_sql_database_user(self, request):
         """删除数据库用户
@@ -1408,9 +1620,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlDatabaseUserResponse`
         """
-        return self._delete_gauss_my_sql_database_user_with_http_info(request)
+        http_info = self._delete_gauss_my_sql_database_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gauss_my_sql_database_user_with_http_info(self, request):
+    def delete_gauss_my_sql_database_user_invoker(self, request):
+        http_info = self._delete_gauss_my_sql_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_gauss_my_sql_database_user_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGaussMySqlDatabaseUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1429,11 +1654,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1442,20 +1667,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGaussMySqlDatabaseUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gauss_my_sql_instance(self, request):
         """删除/退订数据库实例
@@ -1468,9 +1689,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlInstanceResponse`
         """
-        return self._delete_gauss_my_sql_instance_with_http_info(request)
+        http_info = self._delete_gauss_my_sql_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gauss_my_sql_instance_with_http_info(self, request):
+    def delete_gauss_my_sql_instance_invoker(self, request):
+        http_info = self._delete_gauss_my_sql_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_gauss_my_sql_instance_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGaussMySqlInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1489,9 +1723,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1500,20 +1734,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGaussMySqlInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gauss_my_sql_proxy(self, request):
         """关闭数据库代理
@@ -1526,9 +1756,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlProxyResponse`
         """
-        return self._delete_gauss_my_sql_proxy_with_http_info(request)
+        http_info = self._delete_gauss_my_sql_proxy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gauss_my_sql_proxy_with_http_info(self, request):
+    def delete_gauss_my_sql_proxy_invoker(self, request):
+        http_info = self._delete_gauss_my_sql_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_gauss_my_sql_proxy_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGaussMySqlProxyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1547,11 +1790,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1560,20 +1803,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGaussMySqlProxyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gauss_my_sql_readonly_node(self, request):
         """删除/退订只读节点
@@ -1586,9 +1825,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlReadonlyNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteGaussMySqlReadonlyNodeResponse`
         """
-        return self._delete_gauss_my_sql_readonly_node_with_http_info(request)
+        http_info = self._delete_gauss_my_sql_readonly_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gauss_my_sql_readonly_node_with_http_info(self, request):
+    def delete_gauss_my_sql_readonly_node_invoker(self, request):
+        http_info = self._delete_gauss_my_sql_readonly_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_gauss_my_sql_readonly_node_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGaussMySqlReadonlyNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1609,9 +1861,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1620,20 +1872,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/nodes/{node_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGaussMySqlReadonlyNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_schedule_tas_k(self, request):
         """删除定时任务
@@ -1646,9 +1894,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteScheduleTasKRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteScheduleTasKResponse`
         """
-        return self._delete_schedule_tas_k_with_http_info(request)
+        http_info = self._delete_schedule_tas_k_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_schedule_tas_k_with_http_info(self, request):
+    def delete_schedule_tas_k_invoker(self, request):
+        http_info = self._delete_schedule_tas_k_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_schedule_tas_k_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instance/{instance_id}/scheduled-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteScheduleTasKResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1667,11 +1928,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1680,20 +1941,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instance/{instance_id}/scheduled-jobs',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteScheduleTasKResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task_record(self, request):
         """删除指定任务记录
@@ -1706,9 +1963,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteTaskRecordRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteTaskRecordResponse`
         """
-        return self._delete_task_record_with_http_info(request)
+        http_info = self._delete_task_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_record_with_http_info(self, request):
+    def delete_task_record_invoker(self, request):
+        http_info = self._delete_task_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_task_record_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1727,9 +1997,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1738,20 +2008,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def describe_backup_encrypt_status(self, request):
         """查询实例是否开启备份加密功能
@@ -1764,9 +2030,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DescribeBackupEncryptStatusRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DescribeBackupEncryptStatusResponse`
         """
-        return self._describe_backup_encrypt_status_with_http_info(request)
+        http_info = self._describe_backup_encrypt_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _describe_backup_encrypt_status_with_http_info(self, request):
+    def describe_backup_encrypt_status_invoker(self, request):
+        http_info = self._describe_backup_encrypt_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _describe_backup_encrypt_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/encryption",
+            "request_type": request.__class__.__name__,
+            "response_type": "DescribeBackupEncryptStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1785,9 +2064,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1796,20 +2075,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/encryption',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DescribeBackupEncryptStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_gauss_my_sql_instance_volume(self, request):
         """包周期存储扩容
@@ -1822,9 +2097,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlInstanceVolumeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlInstanceVolumeResponse`
         """
-        return self._expand_gauss_my_sql_instance_volume_with_http_info(request)
+        http_info = self._expand_gauss_my_sql_instance_volume_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_gauss_my_sql_instance_volume_with_http_info(self, request):
+    def expand_gauss_my_sql_instance_volume_invoker(self, request):
+        http_info = self._expand_gauss_my_sql_instance_volume_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_gauss_my_sql_instance_volume_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/volume/extend",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandGaussMySqlInstanceVolumeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1843,11 +2131,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1856,20 +2144,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/volume/extend',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandGaussMySqlInstanceVolumeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_gauss_my_sql_proxy(self, request):
         """扩容数据库代理节点的数量
@@ -1883,9 +2167,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ExpandGaussMySqlProxyResponse`
         """
-        return self._expand_gauss_my_sql_proxy_with_http_info(request)
+        http_info = self._expand_gauss_my_sql_proxy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_gauss_my_sql_proxy_with_http_info(self, request):
+    def expand_gauss_my_sql_proxy_invoker(self, request):
+        http_info = self._expand_gauss_my_sql_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_gauss_my_sql_proxy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/enlarge",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandGaussMySqlProxyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1904,11 +2201,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1917,20 +2214,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/enlarge',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandGaussMySqlProxyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def invoke_gauss_my_sql_instance_switch_over(self, request):
         """手动主备倒换
@@ -1943,9 +2236,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.InvokeGaussMySqlInstanceSwitchOverRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.InvokeGaussMySqlInstanceSwitchOverResponse`
         """
-        return self._invoke_gauss_my_sql_instance_switch_over_with_http_info(request)
+        http_info = self._invoke_gauss_my_sql_instance_switch_over_http_info(request)
+        return self._call_api(**http_info)
 
-    def _invoke_gauss_my_sql_instance_switch_over_with_http_info(self, request):
+    def invoke_gauss_my_sql_instance_switch_over_invoker(self, request):
+        http_info = self._invoke_gauss_my_sql_instance_switch_over_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _invoke_gauss_my_sql_instance_switch_over_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/switchover",
+            "request_type": request.__class__.__name__,
+            "response_type": "InvokeGaussMySqlInstanceSwitchOverResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1964,11 +2270,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1977,20 +2283,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/switchover',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InvokeGaussMySqlInstanceSwitchOverResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_audit_log_download_link(self, request):
         """获取全量SQL的临时下载链接
@@ -2003,9 +2305,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListAuditLogDownloadLinkRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListAuditLogDownloadLinkResponse`
         """
-        return self._list_audit_log_download_link_with_http_info(request)
+        http_info = self._list_audit_log_download_link_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_audit_log_download_link_with_http_info(self, request):
+    def list_audit_log_download_link_invoker(self, request):
+        http_info = self._list_audit_log_download_link_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_audit_log_download_link_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instance/{instance_id}/auditlog/download-link",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAuditLogDownloadLinkResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2034,9 +2349,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2045,20 +2360,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instance/{instance_id}/auditlog/download-link',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAuditLogDownloadLinkResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configurations_differences(self, request):
         """对比参数模板
@@ -2071,9 +2382,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListConfigurationsDifferencesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListConfigurationsDifferencesResponse`
         """
-        return self._list_configurations_differences_with_http_info(request)
+        http_info = self._list_configurations_differences_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configurations_differences_with_http_info(self, request):
+    def list_configurations_differences_invoker(self, request):
+        http_info = self._list_configurations_differences_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_configurations_differences_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/configurations/comparison",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationsDifferencesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2090,11 +2414,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2103,20 +2427,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/comparison',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigurationsDifferencesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_configurations_instances(self, request):
         """查询可应用的实例列表
@@ -2129,9 +2449,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListConfigurationsInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListConfigurationsInstancesResponse`
         """
-        return self._list_configurations_instances_with_http_info(request)
+        http_info = self._list_configurations_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_configurations_instances_with_http_info(self, request):
+    def list_configurations_instances_invoker(self, request):
+        http_info = self._list_configurations_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_configurations_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{configuration_id}/applicable-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigurationsInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2154,9 +2487,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2165,20 +2498,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{configuration_id}/applicable-instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigurationsInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enterprise_projects(self, request):
         """查询企业项目
@@ -2191,9 +2520,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListEnterpriseProjectsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListEnterpriseProjectsResponse`
         """
-        return self._list_enterprise_projects_with_http_info(request)
+        http_info = self._list_enterprise_projects_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enterprise_projects_with_http_info(self, request):
+    def list_enterprise_projects_invoker(self, request):
+        http_info = self._list_enterprise_projects_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_enterprise_projects_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-projects",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseProjectsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2214,9 +2556,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2225,20 +2567,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-projects',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnterpriseProjectsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_gauss_my_sql_configurations(self, request):
         """查询参数模板
@@ -2251,9 +2589,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlConfigurationsResponse`
         """
-        return self._list_gauss_my_sql_configurations_with_http_info(request)
+        http_info = self._list_gauss_my_sql_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_gauss_my_sql_configurations_with_http_info(self, request):
+    def list_gauss_my_sql_configurations_invoker(self, request):
+        http_info = self._list_gauss_my_sql_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_gauss_my_sql_configurations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2274,9 +2625,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2285,20 +2636,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_gauss_my_sql_database(self, request):
         """查询数据库列表
@@ -2311,9 +2658,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseResponse`
         """
-        return self._list_gauss_my_sql_database_with_http_info(request)
+        http_info = self._list_gauss_my_sql_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_gauss_my_sql_database_with_http_info(self, request):
+    def list_gauss_my_sql_database_invoker(self, request):
+        http_info = self._list_gauss_my_sql_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_gauss_my_sql_database_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2340,9 +2700,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2351,20 +2711,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/databases',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_gauss_my_sql_database_charsets(self, request):
         """查询数据库可用字符集
@@ -2377,9 +2733,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseCharsetsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseCharsetsResponse`
         """
-        return self._list_gauss_my_sql_database_charsets_with_http_info(request)
+        http_info = self._list_gauss_my_sql_database_charsets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_gauss_my_sql_database_charsets_with_http_info(self, request):
+    def list_gauss_my_sql_database_charsets_invoker(self, request):
+        http_info = self._list_gauss_my_sql_database_charsets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_gauss_my_sql_database_charsets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/charsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlDatabaseCharsetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2398,9 +2767,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2409,20 +2778,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/databases/charsets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlDatabaseCharsetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_gauss_my_sql_database_user(self, request):
         """查询数据库用户
@@ -2435,9 +2800,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseUserRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDatabaseUserResponse`
         """
-        return self._list_gauss_my_sql_database_user_with_http_info(request)
+        http_info = self._list_gauss_my_sql_database_user_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_gauss_my_sql_database_user_with_http_info(self, request):
+    def list_gauss_my_sql_database_user_invoker(self, request):
+        http_info = self._list_gauss_my_sql_database_user_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_gauss_my_sql_database_user_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlDatabaseUserResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2460,9 +2838,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2471,20 +2849,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlDatabaseUserResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_gauss_my_sql_dedicated_resources(self, request):
         """查询专属资源池列表
@@ -2497,9 +2871,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDedicatedResourcesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlDedicatedResourcesResponse`
         """
-        return self._list_gauss_my_sql_dedicated_resources_with_http_info(request)
+        http_info = self._list_gauss_my_sql_dedicated_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_gauss_my_sql_dedicated_resources_with_http_info(self, request):
+    def list_gauss_my_sql_dedicated_resources_invoker(self, request):
+        http_info = self._list_gauss_my_sql_dedicated_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_gauss_my_sql_dedicated_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dedicated-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlDedicatedResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2520,9 +2907,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2531,20 +2918,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dedicated-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlDedicatedResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_gauss_my_sql_instance_detail_info(self, request):
         """批量查询实例详情
@@ -2557,9 +2940,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstanceDetailInfoResponse`
         """
-        return self._list_gauss_my_sql_instance_detail_info_with_http_info(request)
+        http_info = self._list_gauss_my_sql_instance_detail_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_gauss_my_sql_instance_detail_info_with_http_info(self, request):
+    def list_gauss_my_sql_instance_detail_info_invoker(self, request):
+        http_info = self._list_gauss_my_sql_instance_detail_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_gauss_my_sql_instance_detail_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlInstanceDetailInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2578,9 +2974,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2589,20 +2985,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlInstanceDetailInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_gauss_my_sql_instances(self, request):
         """查询实例列表
@@ -2615,9 +3007,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListGaussMySqlInstancesResponse`
         """
-        return self._list_gauss_my_sql_instances_with_http_info(request)
+        http_info = self._list_gauss_my_sql_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_gauss_my_sql_instances_with_http_info(self, request):
+    def list_gauss_my_sql_instances_invoker(self, request):
+        http_info = self._list_gauss_my_sql_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_gauss_my_sql_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGaussMySqlInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2658,9 +3063,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2669,20 +3074,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGaussMySqlInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_immediate_jobs(self, request):
         """获取即时任务列表
@@ -2695,9 +3096,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListImmediateJobsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListImmediateJobsResponse`
         """
-        return self._list_immediate_jobs_with_http_info(request)
+        http_info = self._list_immediate_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_immediate_jobs_with_http_info(self, request):
+    def list_immediate_jobs_invoker(self, request):
+        http_info = self._list_immediate_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_immediate_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/immediate-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListImmediateJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2728,9 +3142,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2739,20 +3153,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/immediate-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListImmediateJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_configurations(self, request):
         """获取指定实例的参数信息
@@ -2765,9 +3175,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListInstanceConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListInstanceConfigurationsResponse`
         """
-        return self._list_instance_configurations_with_http_info(request)
+        http_info = self._list_instance_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_configurations_with_http_info(self, request):
+    def list_instance_configurations_invoker(self, request):
+        http_info = self._list_instance_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_configurations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2790,9 +3213,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2801,20 +3224,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_tags(self, request):
         """查询资源标签
@@ -2827,9 +3246,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListInstanceTagsResponse`
         """
-        return self._list_instance_tags_with_http_info(request)
+        http_info = self._list_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_tags_with_http_info(self, request):
+    def list_instance_tags_invoker(self, request):
+        http_info = self._list_instance_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2852,9 +3284,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2863,20 +3295,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_lts_error_log_details(self, request):
         """获取错误日志详情列表
@@ -2889,9 +3317,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListLtsErrorLogDetailsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListLtsErrorLogDetailsResponse`
         """
-        return self._list_lts_error_log_details_with_http_info(request)
+        http_info = self._list_lts_error_log_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_lts_error_log_details_with_http_info(self, request):
+    def list_lts_error_log_details_invoker(self, request):
+        http_info = self._list_lts_error_log_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lts_error_log_details_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/error-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLtsErrorLogDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2910,11 +3351,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2923,20 +3364,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.1/{project_id}/instances/{instance_id}/error-logs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLtsErrorLogDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_lts_slowlog_details(self, request):
         """获取慢日志详情列表
@@ -2949,9 +3386,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListLtsSlowlogDetailsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListLtsSlowlogDetailsResponse`
         """
-        return self._list_lts_slowlog_details_with_http_info(request)
+        http_info = self._list_lts_slowlog_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_lts_slowlog_details_with_http_info(self, request):
+    def list_lts_slowlog_details_invoker(self, request):
+        http_info = self._list_lts_slowlog_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lts_slowlog_details_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3.1/{project_id}/instances/{instance_id}/slow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLtsSlowlogDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2970,11 +3420,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2983,20 +3433,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3.1/{project_id}/instances/{instance_id}/slow-logs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLtsSlowlogDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_modify_history(self, request):
         """查询参数修改历史
@@ -3009,9 +3455,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListModifyHistoryRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListModifyHistoryResponse`
         """
-        return self._list_modify_history_with_http_info(request)
+        http_info = self._list_modify_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_modify_history_with_http_info(self, request):
+    def list_modify_history_invoker(self, request):
+        http_info = self._list_modify_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_modify_history_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{configuration_id}/modify-history",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListModifyHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3034,9 +3493,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3045,20 +3504,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{configuration_id}/modify-history',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListModifyHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags(self, request):
         """查询项目标签
@@ -3071,9 +3526,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_tags_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3094,9 +3562,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3105,20 +3573,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_schedule_jobs(self, request):
         """获取定时任务列表
@@ -3131,9 +3595,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ListScheduleJobsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ListScheduleJobsResponse`
         """
-        return self._list_schedule_jobs_with_http_info(request)
+        http_info = self._list_schedule_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_schedule_jobs_with_http_info(self, request):
+    def list_schedule_jobs_invoker(self, request):
+        http_info = self._list_schedule_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_schedule_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/scheduled-jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListScheduleJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3164,9 +3641,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3175,20 +3652,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/scheduled-jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListScheduleJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_backup_encrypt_status(self, request):
         """打开或关闭备份加密
@@ -3201,9 +3674,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ModifyBackupEncryptStatusRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyBackupEncryptStatusResponse`
         """
-        return self._modify_backup_encrypt_status_with_http_info(request)
+        http_info = self._modify_backup_encrypt_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_backup_encrypt_status_with_http_info(self, request):
+    def modify_backup_encrypt_status_invoker(self, request):
+        http_info = self._modify_backup_encrypt_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_backup_encrypt_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/encryption",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyBackupEncryptStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3222,11 +3708,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3235,20 +3721,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/encryption',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyBackupEncryptStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_gauss_my_sql_proxy_route_mode(self, request):
         """设置读写分离路由模式
@@ -3261,9 +3743,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ModifyGaussMySqlProxyRouteModeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyGaussMySqlProxyRouteModeResponse`
         """
-        return self._modify_gauss_my_sql_proxy_route_mode_with_http_info(request)
+        http_info = self._modify_gauss_my_sql_proxy_route_mode_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_gauss_my_sql_proxy_route_mode_with_http_info(self, request):
+    def modify_gauss_my_sql_proxy_route_mode_invoker(self, request):
+        http_info = self._modify_gauss_my_sql_proxy_route_mode_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_gauss_my_sql_proxy_route_mode_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/route-mode",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyGaussMySqlProxyRouteModeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3284,11 +3779,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3297,20 +3792,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/route-mode',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyGaussMySqlProxyRouteModeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_gauss_mysql_dns(self, request):
         """修改内网域名
@@ -3323,9 +3814,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ModifyGaussMysqlDnsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ModifyGaussMysqlDnsResponse`
         """
-        return self._modify_gauss_mysql_dns_with_http_info(request)
+        http_info = self._modify_gauss_mysql_dns_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_gauss_mysql_dns_with_http_info(self, request):
+    def modify_gauss_mysql_dns_invoker(self, request):
+        http_info = self._modify_gauss_mysql_dns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_gauss_mysql_dns_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/dns",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifyGaussMysqlDnsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3344,11 +3848,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3357,20 +3861,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/dns',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifyGaussMysqlDnsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_gauss_my_sql_database_password(self, request):
         """修改数据库用户密码
@@ -3383,9 +3883,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlDatabasePasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlDatabasePasswordResponse`
         """
-        return self._reset_gauss_my_sql_database_password_with_http_info(request)
+        http_info = self._reset_gauss_my_sql_database_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_gauss_my_sql_database_password_with_http_info(self, request):
+    def reset_gauss_my_sql_database_password_invoker(self, request):
+        http_info = self._reset_gauss_my_sql_database_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_gauss_my_sql_database_password_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetGaussMySqlDatabasePasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3404,11 +3917,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3417,20 +3930,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/password',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetGaussMySqlDatabasePasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_gauss_my_sql_password(self, request):
         """重置数据库密码
@@ -3443,9 +3952,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlPasswordRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ResetGaussMySqlPasswordResponse`
         """
-        return self._reset_gauss_my_sql_password_with_http_info(request)
+        http_info = self._reset_gauss_my_sql_password_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_gauss_my_sql_password_with_http_info(self, request):
+    def reset_gauss_my_sql_password_invoker(self, request):
+        http_info = self._reset_gauss_my_sql_password_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_gauss_my_sql_password_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/password",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetGaussMySqlPasswordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3464,11 +3986,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3477,20 +3999,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/password',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetGaussMySqlPasswordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_gauss_my_sql_instance(self, request):
         """重启数据库实例
@@ -3503,9 +4021,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.RestartGaussMySqlInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.RestartGaussMySqlInstanceResponse`
         """
-        return self._restart_gauss_my_sql_instance_with_http_info(request)
+        http_info = self._restart_gauss_my_sql_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_gauss_my_sql_instance_with_http_info(self, request):
+    def restart_gauss_my_sql_instance_invoker(self, request):
+        http_info = self._restart_gauss_my_sql_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_gauss_my_sql_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartGaussMySqlInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3524,11 +4055,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3537,20 +4068,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartGaussMySqlInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restart_gauss_my_sql_node(self, request):
         """节点重启
@@ -3563,9 +4090,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.RestartGaussMySqlNodeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.RestartGaussMySqlNodeResponse`
         """
-        return self._restart_gauss_my_sql_node_with_http_info(request)
+        http_info = self._restart_gauss_my_sql_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restart_gauss_my_sql_node_with_http_info(self, request):
+    def restart_gauss_my_sql_node_invoker(self, request):
+        http_info = self._restart_gauss_my_sql_node_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restart_gauss_my_sql_node_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestartGaussMySqlNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3586,11 +4126,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3599,20 +4139,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/nodes/{node_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestartGaussMySqlNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def restore_old_instance(self, request):
         """备份恢复到当前实例或已有实例
@@ -3625,9 +4161,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.RestoreOldInstanceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.RestoreOldInstanceResponse`
         """
-        return self._restore_old_instance_with_http_info(request)
+        http_info = self._restore_old_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _restore_old_instance_with_http_info(self, request):
+    def restore_old_instance_invoker(self, request):
+        http_info = self._restore_old_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _restore_old_instance_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/restore",
+            "request_type": request.__class__.__name__,
+            "response_type": "RestoreOldInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3644,11 +4193,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3657,20 +4206,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/restore',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RestoreOldInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_gauss_my_sql_proxy_weight(self, request):
         """设置读写分离权重
@@ -3683,9 +4228,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlProxyWeightRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlProxyWeightResponse`
         """
-        return self._set_gauss_my_sql_proxy_weight_with_http_info(request)
+        http_info = self._set_gauss_my_sql_proxy_weight_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_gauss_my_sql_proxy_weight_with_http_info(self, request):
+    def set_gauss_my_sql_proxy_weight_invoker(self, request):
+        http_info = self._set_gauss_my_sql_proxy_weight_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_gauss_my_sql_proxy_weight_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/weight",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetGaussMySqlProxyWeightResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3706,11 +4264,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3719,20 +4277,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/weight',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetGaussMySqlProxyWeightResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_gauss_my_sql_quotas(self, request):
         """设置租户基于企业项目的资源配额
@@ -3745,9 +4299,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetGaussMySqlQuotasResponse`
         """
-        return self._set_gauss_my_sql_quotas_with_http_info(request)
+        http_info = self._set_gauss_my_sql_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_gauss_my_sql_quotas_with_http_info(self, request):
+    def set_gauss_my_sql_quotas_invoker(self, request):
+        http_info = self._set_gauss_my_sql_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_gauss_my_sql_quotas_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetGaussMySqlQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3764,11 +4331,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3777,20 +4344,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/quotas',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetGaussMySqlQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_audit_log(self, request):
         """查询全量SQL开关状态
@@ -3803,9 +4366,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAuditLogResponse`
         """
-        return self._show_audit_log_with_http_info(request)
+        http_info = self._show_audit_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_audit_log_with_http_info(self, request):
+    def show_audit_log_invoker(self, request):
+        http_info = self._show_audit_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_audit_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instance/{instance_id}/audit-log/switch-status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuditLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3824,9 +4400,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3835,20 +4411,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instance/{instance_id}/audit-log/switch-status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAuditLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_auto_scaling_policy(self, request):
         """查询自动变配
@@ -3861,9 +4433,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowAutoScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowAutoScalingPolicyResponse`
         """
-        return self._show_auto_scaling_policy_with_http_info(request)
+        http_info = self._show_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_auto_scaling_policy_with_http_info(self, request):
+    def show_auto_scaling_policy_invoker(self, request):
+        http_info = self._show_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-scaling/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAutoScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3882,9 +4467,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3893,20 +4478,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/auto-scaling/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAutoScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_backup_restore_time(self, request):
         """查询可恢复时间段
@@ -3919,9 +4500,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowBackupRestoreTimeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowBackupRestoreTimeResponse`
         """
-        return self._show_backup_restore_time_with_http_info(request)
+        http_info = self._show_backup_restore_time_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_backup_restore_time_with_http_info(self, request):
+    def show_backup_restore_time_invoker(self, request):
+        http_info = self._show_backup_restore_time_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_backup_restore_time_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/restore-time",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBackupRestoreTimeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3942,9 +4536,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3953,20 +4547,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/restore-time',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBackupRestoreTimeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dedicated_resource_info(self, request):
         """查询专属资源信息详情
@@ -3979,9 +4569,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowDedicatedResourceInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowDedicatedResourceInfoResponse`
         """
-        return self._show_dedicated_resource_info_with_http_info(request)
+        http_info = self._show_dedicated_resource_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dedicated_resource_info_with_http_info(self, request):
+    def show_dedicated_resource_info_invoker(self, request):
+        http_info = self._show_dedicated_resource_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dedicated_resource_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/dedicated-resource/{dedicated_resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDedicatedResourceInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4000,9 +4603,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4011,20 +4614,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/dedicated-resource/{dedicated_resource_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDedicatedResourceInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_backup_list(self, request):
         """查询全量备份列表
@@ -4037,9 +4636,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupListRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupListResponse`
         """
-        return self._show_gauss_my_sql_backup_list_with_http_info(request)
+        http_info = self._show_gauss_my_sql_backup_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_backup_list_with_http_info(self, request):
+    def show_gauss_my_sql_backup_list_invoker(self, request):
+        http_info = self._show_gauss_my_sql_backup_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_backup_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlBackupListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4074,9 +4686,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4085,20 +4697,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlBackupListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_backup_policy(self, request):
         """查询自动备份策略
@@ -4111,9 +4719,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlBackupPolicyResponse`
         """
-        return self._show_gauss_my_sql_backup_policy_with_http_info(request)
+        http_info = self._show_gauss_my_sql_backup_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_backup_policy_with_http_info(self, request):
+    def show_gauss_my_sql_backup_policy_invoker(self, request):
+        http_info = self._show_gauss_my_sql_backup_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_backup_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlBackupPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4132,9 +4753,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4143,20 +4764,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlBackupPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_configuration(self, request):
         """获取参数模板详情
@@ -4169,9 +4786,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlConfigurationResponse`
         """
-        return self._show_gauss_my_sql_configuration_with_http_info(request)
+        http_info = self._show_gauss_my_sql_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_configuration_with_http_info(self, request):
+    def show_gauss_my_sql_configuration_invoker(self, request):
+        http_info = self._show_gauss_my_sql_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_configuration_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/configurations/{configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4190,9 +4820,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4201,20 +4831,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{configuration_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_engine_version(self, request):
         """查询数据库引擎的版本
@@ -4227,9 +4853,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlEngineVersionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlEngineVersionResponse`
         """
-        return self._show_gauss_my_sql_engine_version_with_http_info(request)
+        http_info = self._show_gauss_my_sql_engine_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_engine_version_with_http_info(self, request):
+    def show_gauss_my_sql_engine_version_invoker(self, request):
+        http_info = self._show_gauss_my_sql_engine_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_engine_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/datastores/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlEngineVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4248,9 +4887,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4259,20 +4898,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/datastores/{database_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlEngineVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_flavors(self, request):
         """查询数据库规格
@@ -4285,9 +4920,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlFlavorsResponse`
         """
-        return self._show_gauss_my_sql_flavors_with_http_info(request)
+        http_info = self._show_gauss_my_sql_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_flavors_with_http_info(self, request):
+    def show_gauss_my_sql_flavors_invoker(self, request):
+        http_info = self._show_gauss_my_sql_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/flavors/{database_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4312,9 +4960,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4323,20 +4971,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/flavors/{database_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_incremental_backup_list(self, request):
         """查询增量备份列表
@@ -4349,9 +4993,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlIncrementalBackupListRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlIncrementalBackupListResponse`
         """
-        return self._show_gauss_my_sql_incremental_backup_list_with_http_info(request)
+        http_info = self._show_gauss_my_sql_incremental_backup_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_incremental_backup_list_with_http_info(self, request):
+    def show_gauss_my_sql_incremental_backup_list_invoker(self, request):
+        http_info = self._show_gauss_my_sql_incremental_backup_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_incremental_backup_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/incremental-backups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlIncrementalBackupListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4378,9 +5035,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4389,20 +5046,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/incremental-backups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlIncrementalBackupListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_instance_info(self, request):
         """查询实例详情信息
@@ -4415,9 +5068,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlInstanceInfoResponse`
         """
-        return self._show_gauss_my_sql_instance_info_with_http_info(request)
+        http_info = self._show_gauss_my_sql_instance_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_instance_info_with_http_info(self, request):
+    def show_gauss_my_sql_instance_info_invoker(self, request):
+        http_info = self._show_gauss_my_sql_instance_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_instance_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlInstanceInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4436,9 +5102,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4447,20 +5113,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlInstanceInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_job_info(self, request):
         """获取指定ID的任务信息
@@ -4473,9 +5135,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlJobInfoRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlJobInfoResponse`
         """
-        return self._show_gauss_my_sql_job_info_with_http_info(request)
+        http_info = self._show_gauss_my_sql_job_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_job_info_with_http_info(self, request):
+    def show_gauss_my_sql_job_info_invoker(self, request):
+        http_info = self._show_gauss_my_sql_job_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_job_info_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlJobInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4494,9 +5169,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4505,20 +5180,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlJobInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_project_quotas(self, request):
         """查询租户的实例配额
@@ -4531,9 +5202,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProjectQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProjectQuotasResponse`
         """
-        return self._show_gauss_my_sql_project_quotas_with_http_info(request)
+        http_info = self._show_gauss_my_sql_project_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_project_quotas_with_http_info(self, request):
+    def show_gauss_my_sql_project_quotas_invoker(self, request):
+        http_info = self._show_gauss_my_sql_project_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_project_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/project-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlProjectQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4552,9 +5236,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4563,20 +5247,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/project-quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlProjectQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_proxy_flavors(self, request):
         """查询数据库代理规格信息
@@ -4589,9 +5269,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyFlavorsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyFlavorsResponse`
         """
-        return self._show_gauss_my_sql_proxy_flavors_with_http_info(request)
+        http_info = self._show_gauss_my_sql_proxy_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_proxy_flavors_with_http_info(self, request):
+    def show_gauss_my_sql_proxy_flavors_invoker(self, request):
+        http_info = self._show_gauss_my_sql_proxy_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_proxy_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlProxyFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4610,9 +5303,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4621,20 +5314,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlProxyFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_proxy_list(self, request):
         """查询数据库代理信息列表
@@ -4647,9 +5336,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyListRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlProxyListResponse`
         """
-        return self._show_gauss_my_sql_proxy_list_with_http_info(request)
+        http_info = self._show_gauss_my_sql_proxy_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_proxy_list_with_http_info(self, request):
+    def show_gauss_my_sql_proxy_list_invoker(self, request):
+        http_info = self._show_gauss_my_sql_proxy_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_proxy_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxies",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlProxyListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4672,9 +5374,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4683,20 +5385,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxies',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlProxyListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_gauss_my_sql_quotas(self, request):
         """查询租户基于企业项目的资源配额
@@ -4709,9 +5407,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowGaussMySqlQuotasResponse`
         """
-        return self._show_gauss_my_sql_quotas_with_http_info(request)
+        http_info = self._show_gauss_my_sql_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_gauss_my_sql_quotas_with_http_info(self, request):
+    def show_gauss_my_sql_quotas_invoker(self, request):
+        http_info = self._show_gauss_my_sql_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_gauss_my_sql_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowGaussMySqlQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4734,9 +5445,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4745,20 +5456,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowGaussMySqlQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_database_version(self, request):
         """查询内核版本信息
@@ -4771,9 +5478,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceDatabaseVersionRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceDatabaseVersionResponse`
         """
-        return self._show_instance_database_version_with_http_info(request)
+        http_info = self._show_instance_database_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_database_version_with_http_info(self, request):
+    def show_instance_database_version_invoker(self, request):
+        http_info = self._show_instance_database_version_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_database_version_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/database-version",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceDatabaseVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4792,9 +5512,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4803,20 +5523,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/database-version',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceDatabaseVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_instance_monitor_extend(self, request):
         """查询实例秒级监控
@@ -4829,9 +5545,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceMonitorExtendRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowInstanceMonitorExtendResponse`
         """
-        return self._show_instance_monitor_extend_with_http_info(request)
+        http_info = self._show_instance_monitor_extend_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_instance_monitor_extend_with_http_info(self, request):
+    def show_instance_monitor_extend_invoker(self, request):
+        http_info = self._show_instance_monitor_extend_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_instance_monitor_extend_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/monitor-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowInstanceMonitorExtendResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4850,9 +5579,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4861,20 +5590,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/monitor-policy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowInstanceMonitorExtendResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_intelligent_diagnosis_abnormal_count_of_instances(self, request):
         """获取各指标的异常实例数
@@ -4887,9 +5612,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowIntelligentDiagnosisAbnormalCountOfInstancesRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse`
         """
-        return self._show_intelligent_diagnosis_abnormal_count_of_instances_with_http_info(request)
+        http_info = self._show_intelligent_diagnosis_abnormal_count_of_instances_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_intelligent_diagnosis_abnormal_count_of_instances_with_http_info(self, request):
+    def show_intelligent_diagnosis_abnormal_count_of_instances_invoker(self, request):
+        http_info = self._show_intelligent_diagnosis_abnormal_count_of_instances_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_intelligent_diagnosis_abnormal_count_of_instances_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/diagnosis-instance-count",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4906,9 +5644,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4917,20 +5655,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/diagnosis-instance-count',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIntelligentDiagnosisAbnormalCountOfInstancesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_intelligent_diagnosis_instance_infos_per_metric(self, request):
         """获取某个指标的异常实例信息
@@ -4943,9 +5677,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowIntelligentDiagnosisInstanceInfosPerMetricRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowIntelligentDiagnosisInstanceInfosPerMetricResponse`
         """
-        return self._show_intelligent_diagnosis_instance_infos_per_metric_with_http_info(request)
+        http_info = self._show_intelligent_diagnosis_instance_infos_per_metric_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_intelligent_diagnosis_instance_infos_per_metric_with_http_info(self, request):
+    def show_intelligent_diagnosis_instance_infos_per_metric_invoker(self, request):
+        http_info = self._show_intelligent_diagnosis_instance_infos_per_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_intelligent_diagnosis_instance_infos_per_metric_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/diagnosis-instance-infos",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIntelligentDiagnosisInstanceInfosPerMetricResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4968,9 +5715,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4979,20 +5726,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/diagnosis-instance-infos',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIntelligentDiagnosisInstanceInfosPerMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def shrink_gauss_my_sql_proxy(self, request):
         """减少数据库代理节点的数量
@@ -5006,9 +5749,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShrinkGaussMySqlProxyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShrinkGaussMySqlProxyResponse`
         """
-        return self._shrink_gauss_my_sql_proxy_with_http_info(request)
+        http_info = self._shrink_gauss_my_sql_proxy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _shrink_gauss_my_sql_proxy_with_http_info(self, request):
+    def shrink_gauss_my_sql_proxy_invoker(self, request):
+        http_info = self._shrink_gauss_my_sql_proxy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _shrink_gauss_my_sql_proxy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/reduce",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShrinkGaussMySqlProxyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5029,11 +5785,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5042,20 +5798,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/reduce',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShrinkGaussMySqlProxyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_access_control(self, request):
         """开启或关闭访问控制
@@ -5068,9 +5820,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SwitchAccessControlRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchAccessControlResponse`
         """
-        return self._switch_access_control_with_http_info(request)
+        http_info = self._switch_access_control_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_access_control_with_http_info(self, request):
+    def switch_access_control_invoker(self, request):
+        http_info = self._switch_access_control_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_access_control_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/access-control-switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchAccessControlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5091,11 +5856,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5104,20 +5869,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/access-control-switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchAccessControlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_gauss_my_sql_configuration(self, request):
         """应用参数模板
@@ -5130,9 +5891,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlConfigurationResponse`
         """
-        return self._switch_gauss_my_sql_configuration_with_http_info(request)
+        http_info = self._switch_gauss_my_sql_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_gauss_my_sql_configuration_with_http_info(self, request):
+    def switch_gauss_my_sql_configuration_invoker(self, request):
+        http_info = self._switch_gauss_my_sql_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_gauss_my_sql_configuration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/configurations/{configuration_id}/apply",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchGaussMySqlConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5151,11 +5925,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5164,20 +5938,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{configuration_id}/apply',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchGaussMySqlConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_gauss_my_sql_instance_ssl(self, request):
         """开关SSL
@@ -5190,9 +5960,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlInstanceSslRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SwitchGaussMySqlInstanceSslResponse`
         """
-        return self._switch_gauss_my_sql_instance_ssl_with_http_info(request)
+        http_info = self._switch_gauss_my_sql_instance_ssl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_gauss_my_sql_instance_ssl_with_http_info(self, request):
+    def switch_gauss_my_sql_instance_ssl_invoker(self, request):
+        http_info = self._switch_gauss_my_sql_instance_ssl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _switch_gauss_my_sql_instance_ssl_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ssl-option",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchGaussMySqlInstanceSslResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5211,11 +5994,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5224,20 +6007,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/ssl-option',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchGaussMySqlInstanceSslResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_audit_log(self, request):
         """开启或者关闭全量SQL
@@ -5250,9 +6029,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateAuditLogRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateAuditLogResponse`
         """
-        return self._update_audit_log_with_http_info(request)
+        http_info = self._update_audit_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_audit_log_with_http_info(self, request):
+    def update_audit_log_invoker(self, request):
+        http_info = self._update_audit_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_audit_log_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instance/{instance_id}/audit-log/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAuditLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5271,11 +6063,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5284,20 +6076,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instance/{instance_id}/audit-log/switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAuditLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_auto_scaling_policy(self, request):
         """设置自动变配
@@ -5310,9 +6098,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateAutoScalingPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateAutoScalingPolicyResponse`
         """
-        return self._update_auto_scaling_policy_with_http_info(request)
+        http_info = self._update_auto_scaling_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_auto_scaling_policy_with_http_info(self, request):
+    def update_auto_scaling_policy_invoker(self, request):
+        http_info = self._update_auto_scaling_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_auto_scaling_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/auto-scaling/policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAutoScalingPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5331,11 +6132,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5344,20 +6145,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/auto-scaling/policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAutoScalingPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_backup_offsite_policy(self, request):
         """设置跨区备份策略
@@ -5370,9 +6167,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateBackupOffsitePolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateBackupOffsitePolicyResponse`
         """
-        return self._update_backup_offsite_policy_with_http_info(request)
+        http_info = self._update_backup_offsite_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_backup_offsite_policy_with_http_info(self, request):
+    def update_backup_offsite_policy_invoker(self, request):
+        http_info = self._update_backup_offsite_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_backup_offsite_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/offsite-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBackupOffsitePolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5391,11 +6201,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5404,20 +6214,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/offsite-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBackupOffsitePolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_backup_policy(self, request):
         """设置备份策略
@@ -5430,9 +6236,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlBackupPolicyRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlBackupPolicyResponse`
         """
-        return self._update_gauss_my_sql_backup_policy_with_http_info(request)
+        http_info = self._update_gauss_my_sql_backup_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_backup_policy_with_http_info(self, request):
+    def update_gauss_my_sql_backup_policy_invoker(self, request):
+        http_info = self._update_gauss_my_sql_backup_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_backup_policy_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/backups/policy/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlBackupPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5451,11 +6270,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5464,20 +6283,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/backups/policy/update',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlBackupPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_configuration(self, request):
         """修改参数模板
@@ -5490,9 +6305,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlConfigurationRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlConfigurationResponse`
         """
-        return self._update_gauss_my_sql_configuration_with_http_info(request)
+        http_info = self._update_gauss_my_sql_configuration_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_configuration_with_http_info(self, request):
+    def update_gauss_my_sql_configuration_invoker(self, request):
+        http_info = self._update_gauss_my_sql_configuration_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_configuration_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/configurations/{configuration_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlConfigurationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5511,11 +6339,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5524,20 +6352,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/configurations/{configuration_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlConfigurationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_database_comment(self, request):
         """修改数据库备注
@@ -5550,9 +6374,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlDatabaseCommentRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlDatabaseCommentResponse`
         """
-        return self._update_gauss_my_sql_database_comment_with_http_info(request)
+        http_info = self._update_gauss_my_sql_database_comment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_database_comment_with_http_info(self, request):
+    def update_gauss_my_sql_database_comment_invoker(self, request):
+        http_info = self._update_gauss_my_sql_database_comment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_database_comment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/databases/comment",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlDatabaseCommentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5571,11 +6408,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5584,20 +6421,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/databases/comment',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlDatabaseCommentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_database_user_comment(self, request):
         """修改数据库用户备注
@@ -5610,9 +6443,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlDatabaseUserCommentRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlDatabaseUserCommentResponse`
         """
-        return self._update_gauss_my_sql_database_user_comment_with_http_info(request)
+        http_info = self._update_gauss_my_sql_database_user_comment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_database_user_comment_with_http_info(self, request):
+    def update_gauss_my_sql_database_user_comment_invoker(self, request):
+        http_info = self._update_gauss_my_sql_database_user_comment_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_database_user_comment_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-users/comment",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlDatabaseUserCommentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5631,11 +6477,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5644,20 +6490,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-users/comment',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlDatabaseUserCommentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_instance_alias(self, request):
         """修改实例备注
@@ -5670,9 +6512,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceAliasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceAliasResponse`
         """
-        return self._update_gauss_my_sql_instance_alias_with_http_info(request)
+        http_info = self._update_gauss_my_sql_instance_alias_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_instance_alias_with_http_info(self, request):
+    def update_gauss_my_sql_instance_alias_invoker(self, request):
+        http_info = self._update_gauss_my_sql_instance_alias_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_instance_alias_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/alias",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlInstanceAliasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5691,11 +6546,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5704,20 +6559,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/alias',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlInstanceAliasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_instance_eip(self, request):
         """绑定弹性公网IP
@@ -5730,9 +6581,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceEipRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceEipResponse`
         """
-        return self._update_gauss_my_sql_instance_eip_with_http_info(request)
+        http_info = self._update_gauss_my_sql_instance_eip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_instance_eip_with_http_info(self, request):
+    def update_gauss_my_sql_instance_eip_invoker(self, request):
+        http_info = self._update_gauss_my_sql_instance_eip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_instance_eip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/public-ips/bind",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlInstanceEipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5751,11 +6615,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5764,20 +6628,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/public-ips/bind',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlInstanceEipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_instance_internal_ip(self, request):
         """修改内网地址
@@ -5790,9 +6650,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceInternalIpRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceInternalIpResponse`
         """
-        return self._update_gauss_my_sql_instance_internal_ip_with_http_info(request)
+        http_info = self._update_gauss_my_sql_instance_internal_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_instance_internal_ip_with_http_info(self, request):
+    def update_gauss_my_sql_instance_internal_ip_invoker(self, request):
+        http_info = self._update_gauss_my_sql_instance_internal_ip_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_instance_internal_ip_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/internal-ip",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlInstanceInternalIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5811,11 +6684,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5824,20 +6697,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/internal-ip',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlInstanceInternalIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_instance_name(self, request):
         """修改实例名称
@@ -5850,9 +6719,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceNameRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceNameResponse`
         """
-        return self._update_gauss_my_sql_instance_name_with_http_info(request)
+        http_info = self._update_gauss_my_sql_instance_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_instance_name_with_http_info(self, request):
+    def update_gauss_my_sql_instance_name_invoker(self, request):
+        http_info = self._update_gauss_my_sql_instance_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_instance_name_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/name",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlInstanceNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5871,11 +6753,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5884,20 +6766,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/name',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlInstanceNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_instance_ops_window(self, request):
         """设置可维护时间段
@@ -5910,9 +6788,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceOpsWindowRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceOpsWindowResponse`
         """
-        return self._update_gauss_my_sql_instance_ops_window_with_http_info(request)
+        http_info = self._update_gauss_my_sql_instance_ops_window_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_instance_ops_window_with_http_info(self, request):
+    def update_gauss_my_sql_instance_ops_window_invoker(self, request):
+        http_info = self._update_gauss_my_sql_instance_ops_window_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_instance_ops_window_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/ops-window",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlInstanceOpsWindowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5931,11 +6822,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5944,20 +6835,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/ops-window',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlInstanceOpsWindowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_instance_port(self, request):
         """修改实例端口
@@ -5970,9 +6857,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstancePortRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstancePortResponse`
         """
-        return self._update_gauss_my_sql_instance_port_with_http_info(request)
+        http_info = self._update_gauss_my_sql_instance_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_instance_port_with_http_info(self, request):
+    def update_gauss_my_sql_instance_port_invoker(self, request):
+        http_info = self._update_gauss_my_sql_instance_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_instance_port_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/port",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlInstancePortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5991,11 +6891,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6004,20 +6904,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/port',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlInstancePortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_instance_security_group(self, request):
         """修改安全组
@@ -6030,9 +6926,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceSecurityGroupRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlInstanceSecurityGroupResponse`
         """
-        return self._update_gauss_my_sql_instance_security_group_with_http_info(request)
+        http_info = self._update_gauss_my_sql_instance_security_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_instance_security_group_with_http_info(self, request):
+    def update_gauss_my_sql_instance_security_group_invoker(self, request):
+        http_info = self._update_gauss_my_sql_instance_security_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_instance_security_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/security-group",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlInstanceSecurityGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6051,11 +6960,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6064,20 +6973,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/security-group',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlInstanceSecurityGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gauss_my_sql_quotas(self, request):
         """修改租户基于企业项目的资源配额
@@ -6090,9 +6995,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlQuotasRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateGaussMySqlQuotasResponse`
         """
-        return self._update_gauss_my_sql_quotas_with_http_info(request)
+        http_info = self._update_gauss_my_sql_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gauss_my_sql_quotas_with_http_info(self, request):
+    def update_gauss_my_sql_quotas_invoker(self, request):
+        http_info = self._update_gauss_my_sql_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_gauss_my_sql_quotas_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGaussMySqlQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6109,11 +7027,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6122,20 +7040,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/quotas',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGaussMySqlQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_configurations(self, request):
         """修改指定实例的参数
@@ -6148,9 +7062,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceConfigurationsResponse`
         """
-        return self._update_instance_configurations_with_http_info(request)
+        http_info = self._update_instance_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_configurations_with_http_info(self, request):
+    def update_instance_configurations_invoker(self, request):
+        http_info = self._update_instance_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_configurations_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6169,11 +7096,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6182,20 +7109,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/configurations',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_monitor(self, request):
         """设置实例秒级监控
@@ -6208,9 +7131,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceMonitorRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateInstanceMonitorResponse`
         """
-        return self._update_instance_monitor_with_http_info(request)
+        http_info = self._update_instance_monitor_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_monitor_with_http_info(self, request):
+    def update_instance_monitor_invoker(self, request):
+        http_info = self._update_instance_monitor_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_monitor_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/monitor-policy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceMonitorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6229,11 +7165,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6242,20 +7178,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/monitor-policy',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceMonitorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_proxy_connection_pool_type(self, request):
         """更改数据库代理连接池类型
@@ -6268,9 +7200,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyConnectionPoolTypeRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyConnectionPoolTypeResponse`
         """
-        return self._update_proxy_connection_pool_type_with_http_info(request)
+        http_info = self._update_proxy_connection_pool_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_proxy_connection_pool_type_with_http_info(self, request):
+    def update_proxy_connection_pool_type_invoker(self, request):
+        http_info = self._update_proxy_connection_pool_type_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_proxy_connection_pool_type_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/connection-pool-type",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProxyConnectionPoolTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6291,11 +7236,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6304,20 +7249,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/connection-pool-type',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProxyConnectionPoolTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_proxy_new_configurations(self, request):
         """修改代理实例参数
@@ -6330,9 +7271,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyNewConfigurationsRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyNewConfigurationsResponse`
         """
-        return self._update_proxy_new_configurations_with_http_info(request)
+        http_info = self._update_proxy_new_configurations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_proxy_new_configurations_with_http_info(self, request):
+    def update_proxy_new_configurations_invoker(self, request):
+        http_info = self._update_proxy_new_configurations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_proxy_new_configurations_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/configurations",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProxyNewConfigurationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6353,11 +7307,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6366,20 +7320,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/configurations',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProxyNewConfigurationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_proxy_port(self, request):
         """修改读写分离端口号
@@ -6392,9 +7342,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyPortRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxyPortResponse`
         """
-        return self._update_proxy_port_with_http_info(request)
+        http_info = self._update_proxy_port_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_proxy_port_with_http_info(self, request):
+    def update_proxy_port_invoker(self, request):
+        http_info = self._update_proxy_port_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_proxy_port_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/port",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProxyPortResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6415,11 +7378,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6428,20 +7391,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/port',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProxyPortResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_proxy_session_consistence(self, request):
         """修改代理会话一致性
@@ -6454,9 +7413,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateProxySessionConsistenceRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateProxySessionConsistenceResponse`
         """
-        return self._update_proxy_session_consistence_with_http_info(request)
+        http_info = self._update_proxy_session_consistence_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_proxy_session_consistence_with_http_info(self, request):
+    def update_proxy_session_consistence_invoker(self, request):
+        http_info = self._update_proxy_session_consistence_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_proxy_session_consistence_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/session-consistence",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProxySessionConsistenceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6477,11 +7449,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6490,20 +7462,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/{proxy_id}/session-consistence',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProxySessionConsistenceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_transaction_split_status(self, request):
         """设置proxy事务拆分
@@ -6516,9 +7484,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateTransactionSplitStatusRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateTransactionSplitStatusResponse`
         """
-        return self._update_transaction_split_status_with_http_info(request)
+        http_info = self._update_transaction_split_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_transaction_split_status_with_http_info(self, request):
+    def update_transaction_split_status_invoker(self, request):
+        http_info = self._update_transaction_split_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_transaction_split_status_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/proxy/transaction-split",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTransactionSplitStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6537,11 +7518,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6550,20 +7531,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/proxy/transaction-split',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTransactionSplitStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upgrade_gauss_my_sql_instance_database(self, request):
         """内核版本升级
@@ -6576,9 +7553,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpgradeGaussMySqlInstanceDatabaseRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpgradeGaussMySqlInstanceDatabaseResponse`
         """
-        return self._upgrade_gauss_my_sql_instance_database_with_http_info(request)
+        http_info = self._upgrade_gauss_my_sql_instance_database_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upgrade_gauss_my_sql_instance_database_with_http_info(self, request):
+    def upgrade_gauss_my_sql_instance_database_invoker(self, request):
+        http_info = self._upgrade_gauss_my_sql_instance_database_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upgrade_gauss_my_sql_instance_database_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/db-upgrade",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpgradeGaussMySqlInstanceDatabaseResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6597,11 +7587,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6610,20 +7600,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/db-upgrade',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpgradeGaussMySqlInstanceDatabaseResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_sql_filter_rule(self, request):
         """删除SQL限流规则
@@ -6636,9 +7622,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.DeleteSqlFilterRuleResponse`
         """
-        return self._delete_sql_filter_rule_with_http_info(request)
+        http_info = self._delete_sql_filter_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_sql_filter_rule_with_http_info(self, request):
+    def delete_sql_filter_rule_invoker(self, request):
+        http_info = self._delete_sql_filter_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_sql_filter_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSqlFilterRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6657,11 +7656,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6670,20 +7669,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-filter/rules',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSqlFilterRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_sql_filter_rule(self, request):
         """设置SQL限流规则
@@ -6696,9 +7691,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.SetSqlFilterRuleResponse`
         """
-        return self._set_sql_filter_rule_with_http_info(request)
+        http_info = self._set_sql_filter_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_sql_filter_rule_with_http_info(self, request):
+    def set_sql_filter_rule_invoker(self, request):
+        http_info = self._set_sql_filter_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _set_sql_filter_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetSqlFilterRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6717,11 +7725,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6730,20 +7738,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-filter/rules',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetSqlFilterRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_filter_control(self, request):
         """查询SQL限流开关状态
@@ -6756,9 +7760,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterControlResponse`
         """
-        return self._show_sql_filter_control_with_http_info(request)
+        http_info = self._show_sql_filter_control_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_filter_control_with_http_info(self, request):
+    def show_sql_filter_control_invoker(self, request):
+        http_info = self._show_sql_filter_control_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_filter_control_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlFilterControlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6777,9 +7794,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6788,20 +7805,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-filter/switch',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlFilterControlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_sql_filter_rule(self, request):
         """查询SQL限流规则
@@ -6814,9 +7827,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.ShowSqlFilterRuleResponse`
         """
-        return self._show_sql_filter_rule_with_http_info(request)
+        http_info = self._show_sql_filter_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_sql_filter_rule_with_http_info(self, request):
+    def show_sql_filter_rule_invoker(self, request):
+        http_info = self._show_sql_filter_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_sql_filter_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSqlFilterRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6839,9 +7865,9 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6850,20 +7876,16 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-filter/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSqlFilterRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_sql_filter_control(self, request):
         """开启或者关闭SQL限流
@@ -6876,9 +7898,22 @@ class GaussDBClient(Client):
         :type request: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlRequest`
         :rtype: :class:`huaweicloudsdkgaussdb.v3.UpdateSqlFilterControlResponse`
         """
-        return self._update_sql_filter_control_with_http_info(request)
+        http_info = self._update_sql_filter_control_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_sql_filter_control_with_http_info(self, request):
+    def update_sql_filter_control_invoker(self, request):
+        http_info = self._update_sql_filter_control_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_sql_filter_control_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/instances/{instance_id}/sql-filter/switch",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSqlFilterControlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6897,11 +7932,11 @@ class GaussDBClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6910,20 +7945,25 @@ class GaussDBClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/instances/{instance_id}/sql-filter/switch',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSqlFilterControlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

@@ -20,17 +20,29 @@ class PipelineDTO:
         'name': 'str',
         'description': 'str',
         'is_publish': 'bool',
-        'sources': 'list[CodeSource]'
+        'sources': 'list[CodeSource]',
+        'variables': 'list[CustomVariable]',
+        'schedules': 'list[PipelineSchedule]',
+        'triggers': 'list[PipelineTrigger]',
+        'manifest_version': 'str',
+        'definition': 'str',
+        'project_name': 'str'
     }
 
     attribute_map = {
         'name': 'name',
         'description': 'description',
         'is_publish': 'is_publish',
-        'sources': 'sources'
+        'sources': 'sources',
+        'variables': 'variables',
+        'schedules': 'schedules',
+        'triggers': 'triggers',
+        'manifest_version': 'manifest_version',
+        'definition': 'definition',
+        'project_name': 'project_name'
     }
 
-    def __init__(self, name=None, description=None, is_publish=None, sources=None):
+    def __init__(self, name=None, description=None, is_publish=None, sources=None, variables=None, schedules=None, triggers=None, manifest_version=None, definition=None, project_name=None):
         """PipelineDTO
 
         The model defined in huaweicloud sdk
@@ -43,6 +55,18 @@ class PipelineDTO:
         :type is_publish: bool
         :param sources: 流水线源
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeSource`]
+        :param variables: 流水线自定义全局变量
+        :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.CustomVariable`]
+        :param schedules: 流水线定时执行配置
+        :type schedules: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSchedule`]
+        :param triggers: 流水线代码事件触发配置
+        :type triggers: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTrigger`]
+        :param manifest_version: 流水线结构定义版本，新版默认为3.0
+        :type manifest_version: str
+        :param definition: 流水线结构定义
+        :type definition: str
+        :param project_name: 项目名称
+        :type project_name: str
         """
         
         
@@ -51,6 +75,12 @@ class PipelineDTO:
         self._description = None
         self._is_publish = None
         self._sources = None
+        self._variables = None
+        self._schedules = None
+        self._triggers = None
+        self._manifest_version = None
+        self._definition = None
+        self._project_name = None
         self.discriminator = None
 
         if name is not None:
@@ -61,6 +91,18 @@ class PipelineDTO:
             self.is_publish = is_publish
         if sources is not None:
             self.sources = sources
+        if variables is not None:
+            self.variables = variables
+        if schedules is not None:
+            self.schedules = schedules
+        if triggers is not None:
+            self.triggers = triggers
+        if manifest_version is not None:
+            self.manifest_version = manifest_version
+        if definition is not None:
+            self.definition = definition
+        if project_name is not None:
+            self.project_name = project_name
 
     @property
     def name(self):
@@ -149,6 +191,138 @@ class PipelineDTO:
         :type sources: list[:class:`huaweicloudsdkcodeartspipeline.v2.CodeSource`]
         """
         self._sources = sources
+
+    @property
+    def variables(self):
+        """Gets the variables of this PipelineDTO.
+
+        流水线自定义全局变量
+
+        :return: The variables of this PipelineDTO.
+        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.CustomVariable`]
+        """
+        return self._variables
+
+    @variables.setter
+    def variables(self, variables):
+        """Sets the variables of this PipelineDTO.
+
+        流水线自定义全局变量
+
+        :param variables: The variables of this PipelineDTO.
+        :type variables: list[:class:`huaweicloudsdkcodeartspipeline.v2.CustomVariable`]
+        """
+        self._variables = variables
+
+    @property
+    def schedules(self):
+        """Gets the schedules of this PipelineDTO.
+
+        流水线定时执行配置
+
+        :return: The schedules of this PipelineDTO.
+        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSchedule`]
+        """
+        return self._schedules
+
+    @schedules.setter
+    def schedules(self, schedules):
+        """Sets the schedules of this PipelineDTO.
+
+        流水线定时执行配置
+
+        :param schedules: The schedules of this PipelineDTO.
+        :type schedules: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineSchedule`]
+        """
+        self._schedules = schedules
+
+    @property
+    def triggers(self):
+        """Gets the triggers of this PipelineDTO.
+
+        流水线代码事件触发配置
+
+        :return: The triggers of this PipelineDTO.
+        :rtype: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTrigger`]
+        """
+        return self._triggers
+
+    @triggers.setter
+    def triggers(self, triggers):
+        """Sets the triggers of this PipelineDTO.
+
+        流水线代码事件触发配置
+
+        :param triggers: The triggers of this PipelineDTO.
+        :type triggers: list[:class:`huaweicloudsdkcodeartspipeline.v2.PipelineTrigger`]
+        """
+        self._triggers = triggers
+
+    @property
+    def manifest_version(self):
+        """Gets the manifest_version of this PipelineDTO.
+
+        流水线结构定义版本，新版默认为3.0
+
+        :return: The manifest_version of this PipelineDTO.
+        :rtype: str
+        """
+        return self._manifest_version
+
+    @manifest_version.setter
+    def manifest_version(self, manifest_version):
+        """Sets the manifest_version of this PipelineDTO.
+
+        流水线结构定义版本，新版默认为3.0
+
+        :param manifest_version: The manifest_version of this PipelineDTO.
+        :type manifest_version: str
+        """
+        self._manifest_version = manifest_version
+
+    @property
+    def definition(self):
+        """Gets the definition of this PipelineDTO.
+
+        流水线结构定义
+
+        :return: The definition of this PipelineDTO.
+        :rtype: str
+        """
+        return self._definition
+
+    @definition.setter
+    def definition(self, definition):
+        """Sets the definition of this PipelineDTO.
+
+        流水线结构定义
+
+        :param definition: The definition of this PipelineDTO.
+        :type definition: str
+        """
+        self._definition = definition
+
+    @property
+    def project_name(self):
+        """Gets the project_name of this PipelineDTO.
+
+        项目名称
+
+        :return: The project_name of this PipelineDTO.
+        :rtype: str
+        """
+        return self._project_name
+
+    @project_name.setter
+    def project_name(self, project_name):
+        """Sets the project_name of this PipelineDTO.
+
+        项目名称
+
+        :param project_name: The project_name of this PipelineDTO.
+        :type project_name: str
+        """
+        self._project_name = project_name
 
     def to_dict(self):
         """Returns the model properties as a dict"""

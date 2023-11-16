@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkmssi'")
 
 
 class MssiClient(Client):
@@ -38,9 +43,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.CreateConnectionInfoRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.CreateConnectionInfoResponse`
         """
-        return self._create_connection_info_with_http_info(request)
+        http_info = self._create_connection_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_connection_info_with_http_info(self, request):
+    def create_connection_info_invoker(self, request):
+        http_info = self._create_connection_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_connection_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConnectionInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConnectionInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_custom_connector_from_openapi(self, request):
         """新建自定义连接器(导入swagger方式)
@@ -94,9 +108,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.CreateCustomConnectorFromOpenapiRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.CreateCustomConnectorFromOpenapiResponse`
         """
-        return self._create_custom_connector_from_openapi_with_http_info(request)
+        http_info = self._create_custom_connector_from_openapi_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_custom_connector_from_openapi_with_http_info(self, request):
+    def create_custom_connector_from_openapi_invoker(self, request):
+        http_info = self._create_custom_connector_from_openapi_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_custom_connector_from_openapi_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/connectors/custom-connectors",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomConnectorFromOpenapiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -111,11 +138,11 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/connectors/custom-connectors',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCustomConnectorFromOpenapiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_flow(self, request):
         """创建flow
@@ -150,9 +173,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.CreateFlowRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.CreateFlowResponse`
         """
-        return self._create_flow_with_http_info(request)
+        http_info = self._create_flow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_flow_with_http_info(self, request):
+    def create_flow_invoker(self, request):
+        http_info = self._create_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_flow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/flows",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -167,11 +203,11 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -180,20 +216,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/flows',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFlowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_flow_template_from_flow(self, request):
         """根据流创建Flow模板
@@ -205,9 +237,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.CreateFlowTemplateFromFlowRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.CreateFlowTemplateFromFlowResponse`
         """
-        return self._create_flow_template_from_flow_with_http_info(request)
+        http_info = self._create_flow_template_from_flow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_flow_template_from_flow_with_http_info(self, request):
+    def create_flow_template_from_flow_invoker(self, request):
+        http_info = self._create_flow_template_from_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_flow_template_from_flow_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/flows/{flow_id}/templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlowTemplateFromFlowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -224,11 +269,11 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -237,20 +282,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/flows/{flow_id}/templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFlowTemplateFromFlowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_connection_info(self, request):
         """删除Connection
@@ -263,9 +304,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.DeleteConnectionInfoRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.DeleteConnectionInfoResponse`
         """
-        return self._delete_connection_info_with_http_info(request)
+        http_info = self._delete_connection_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_connection_info_with_http_info(self, request):
+    def delete_connection_info_invoker(self, request):
+        http_info = self._delete_connection_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_connection_info_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/connections/{connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConnectionInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -282,9 +336,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -293,20 +347,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connect_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConnectionInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_custom_connector(self, request):
         """删除自定义连接器
@@ -319,9 +369,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.DeleteCustomConnectorRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.DeleteCustomConnectorResponse`
         """
-        return self._delete_custom_connector_with_http_info(request)
+        http_info = self._delete_custom_connector_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_custom_connector_with_http_info(self, request):
+    def delete_custom_connector_invoker(self, request):
+        http_info = self._delete_custom_connector_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_custom_connector_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/connectors/custom-connectors/{connector_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomConnectorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -338,9 +401,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -349,20 +412,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/connectors/custom-connectors/{connector_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCustomConnectorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_flow(self, request):
         """删除Flow
@@ -375,9 +434,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.DeleteFlowRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.DeleteFlowResponse`
         """
-        return self._delete_flow_with_http_info(request)
+        http_info = self._delete_flow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_flow_with_http_info(self, request):
+    def delete_flow_invoker(self, request):
+        http_info = self._delete_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_flow_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/flows/{flow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFlowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -394,9 +466,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -405,20 +477,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/flows/{flow_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFlowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def search_flow_by_id(self, request):
         """查询特定flow
@@ -431,9 +499,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.SearchFlowByIdRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.SearchFlowByIdResponse`
         """
-        return self._search_flow_by_id_with_http_info(request)
+        http_info = self._search_flow_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _search_flow_by_id_with_http_info(self, request):
+    def search_flow_by_id_invoker(self, request):
+        http_info = self._search_flow_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _search_flow_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/flows/{flow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SearchFlowByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -452,9 +533,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -463,20 +544,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/flows/{flow_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SearchFlowByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_all_connections(self, request):
         """查询Connection列表
@@ -489,9 +566,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.ShowAllConnectionsRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.ShowAllConnectionsResponse`
         """
-        return self._show_all_connections_with_http_info(request)
+        http_info = self._show_all_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_all_connections_with_http_info(self, request):
+    def show_all_connections_invoker(self, request):
+        http_info = self._show_all_connections_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_all_connections_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAllConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -512,9 +602,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -523,20 +613,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAllConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_all_flows(self, request):
         """查询所有Flow
@@ -549,9 +635,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.ShowAllFlowsRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.ShowAllFlowsResponse`
         """
-        return self._show_all_flows_with_http_info(request)
+        http_info = self._show_all_flows_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_all_flows_with_http_info(self, request):
+    def show_all_flows_invoker(self, request):
+        http_info = self._show_all_flows_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_all_flows_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/flows",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAllFlowsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -578,9 +677,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -589,20 +688,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/flows',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAllFlowsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_connectors(self, request):
         """查询Connector列表
@@ -615,9 +710,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.ShowConnectorsRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.ShowConnectorsResponse`
         """
-        return self._show_connectors_with_http_info(request)
+        http_info = self._show_connectors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_connectors_with_http_info(self, request):
+    def show_connectors_invoker(self, request):
+        http_info = self._show_connectors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_connectors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/connectors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConnectorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -644,9 +752,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -655,20 +763,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/connectors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConnectorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_custom_connector(self, request):
         """发布连接器
@@ -681,9 +785,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.ShowCustomConnectorRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.ShowCustomConnectorResponse`
         """
-        return self._show_custom_connector_with_http_info(request)
+        http_info = self._show_custom_connector_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_custom_connector_with_http_info(self, request):
+    def show_custom_connector_invoker(self, request):
+        http_info = self._show_custom_connector_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_custom_connector_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/connectors/custom-connectors/{connector_id}/release",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomConnectorResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -700,9 +817,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -711,20 +828,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/connectors/custom-connectors/{connector_id}/release',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomConnectorResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_custom_connectors(self, request):
         """查询CustomConnector列表
@@ -737,9 +850,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.ShowCustomConnectorsRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.ShowCustomConnectorsResponse`
         """
-        return self._show_custom_connectors_with_http_info(request)
+        http_info = self._show_custom_connectors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_custom_connectors_with_http_info(self, request):
+    def show_custom_connectors_invoker(self, request):
+        http_info = self._show_custom_connectors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_custom_connectors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/connectors/custom-connectors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCustomConnectorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -760,9 +886,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -771,20 +897,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/connectors/custom-connectors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCustomConnectorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_single_connection(self, request):
         """查询单个Connection
@@ -797,9 +919,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.ShowSingleConnectionRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.ShowSingleConnectionResponse`
         """
-        return self._show_single_connection_with_http_info(request)
+        http_info = self._show_single_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_single_connection_with_http_info(self, request):
+    def show_single_connection_invoker(self, request):
+        http_info = self._show_single_connection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_single_connection_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/connections/{connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSingleConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -816,9 +951,9 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -827,20 +962,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connect_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSingleConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_connection_info(self, request):
         """修改连接配置内容
@@ -852,9 +983,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.UpdateConnectionInfoRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.UpdateConnectionInfoResponse`
         """
-        return self._update_connection_info_with_http_info(request)
+        http_info = self._update_connection_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_connection_info_with_http_info(self, request):
+    def update_connection_info_invoker(self, request):
+        http_info = self._update_connection_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_connection_info_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/connections/{connect_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConnectionInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -871,11 +1015,11 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -884,20 +1028,16 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/connections/{connect_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConnectionInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_flow(self, request):
         """更新flow
@@ -910,9 +1050,22 @@ class MssiClient(Client):
         :type request: :class:`huaweicloudsdkmssi.v1.UpdateFlowRequest`
         :rtype: :class:`huaweicloudsdkmssi.v1.UpdateFlowResponse`
         """
-        return self._update_flow_with_http_info(request)
+        http_info = self._update_flow_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_flow_with_http_info(self, request):
+    def update_flow_invoker(self, request):
+        http_info = self._update_flow_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_flow_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/flows/{flow_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlowResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -929,11 +1082,11 @@ class MssiClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -942,20 +1095,25 @@ class MssiClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/flows/{flow_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFlowResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

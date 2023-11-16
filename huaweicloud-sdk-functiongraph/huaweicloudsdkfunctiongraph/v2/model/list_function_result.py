@@ -17,6 +17,7 @@ class ListFunctionResult:
     sensitive_list = []
 
     openapi_types = {
+        'resource_id': 'str',
         'func_urn': 'str',
         'func_name': 'str',
         'domain_id': 'str',
@@ -58,6 +59,7 @@ class ListFunctionResult:
     }
 
     attribute_map = {
+        'resource_id': 'resource_id',
         'func_urn': 'func_urn',
         'func_name': 'func_name',
         'domain_id': 'domain_id',
@@ -98,11 +100,13 @@ class ListFunctionResult:
         'bind_bridge_func_urns': 'bind_bridge_funcUrns'
     }
 
-    def __init__(self, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc_id=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, fail_count=None, is_bridge_function=None, bind_bridge_func_urns=None):
+    def __init__(self, resource_id=None, func_urn=None, func_name=None, domain_id=None, namespace=None, project_name=None, package=None, runtime=None, timeout=None, handler=None, memory_size=None, gpu_memory=None, cpu=None, code_type=None, code_url=None, code_filename=None, code_size=None, user_data=None, encrypted_user_data=None, digest=None, version=None, image_name=None, xrole=None, app_xrole=None, description=None, last_modified=None, func_vpc_id=None, strategy_config=None, extend_config=None, initializer_handler=None, initializer_timeout=None, enterprise_project_id=None, long_time=None, log_group_id=None, log_stream_id=None, type=None, fail_count=None, is_bridge_function=None, bind_bridge_func_urns=None):
         """ListFunctionResult
 
         The model defined in huaweicloud sdk
 
+        :param resource_id: 资源id。
+        :type resource_id: str
         :param func_urn: 函数的URN（Uniform Resource Name），唯一标识函数。
         :type func_urn: str
         :param func_name: 函数名称。
@@ -183,6 +187,7 @@ class ListFunctionResult:
         
         
 
+        self._resource_id = None
         self._func_urn = None
         self._func_name = None
         self._domain_id = None
@@ -223,6 +228,8 @@ class ListFunctionResult:
         self._bind_bridge_func_urns = None
         self.discriminator = None
 
+        if resource_id is not None:
+            self.resource_id = resource_id
         self.func_urn = func_urn
         self.func_name = func_name
         self.domain_id = domain_id
@@ -282,6 +289,28 @@ class ListFunctionResult:
             self.is_bridge_function = is_bridge_function
         if bind_bridge_func_urns is not None:
             self.bind_bridge_func_urns = bind_bridge_func_urns
+
+    @property
+    def resource_id(self):
+        """Gets the resource_id of this ListFunctionResult.
+
+        资源id。
+
+        :return: The resource_id of this ListFunctionResult.
+        :rtype: str
+        """
+        return self._resource_id
+
+    @resource_id.setter
+    def resource_id(self, resource_id):
+        """Sets the resource_id of this ListFunctionResult.
+
+        资源id。
+
+        :param resource_id: The resource_id of this ListFunctionResult.
+        :type resource_id: str
+        """
+        self._resource_id = resource_id
 
     @property
     def func_urn(self):

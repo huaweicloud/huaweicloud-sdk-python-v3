@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkapig'")
 
 
 class ApigAsyncClient(Client):
@@ -39,9 +44,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AcceptOrRejectEndpointConnectionsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.AcceptOrRejectEndpointConnectionsResponse`
         """
-        return self._accept_or_reject_endpoint_connections_with_http_info(request)
+        http_info = self._accept_or_reject_endpoint_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _accept_or_reject_endpoint_connections_with_http_info(self, request):
+    def accept_or_reject_endpoint_connections_async_invoker(self, request):
+        http_info = self._accept_or_reject_endpoint_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _accept_or_reject_endpoint_connections_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/connections/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "AcceptOrRejectEndpointConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -71,20 +88,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/connections/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AcceptOrRejectEndpointConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_eip_v2_async(self, request):
         """实例更新或绑定EIP
@@ -98,9 +111,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AddEipV2Response`
         """
-        return self._add_eip_v2_with_http_info(request)
+        http_info = self._add_eip_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_eip_v2_with_http_info(self, request):
+    def add_eip_v2_async_invoker(self, request):
+        http_info = self._add_eip_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_eip_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddEipV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/eip',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddEipV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_endpoint_permissions_async(self, request):
         """批量添加实例终端节点连接白名单
@@ -157,9 +178,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddEndpointPermissionsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.AddEndpointPermissionsResponse`
         """
-        return self._add_endpoint_permissions_with_http_info(request)
+        http_info = self._add_endpoint_permissions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_endpoint_permissions_with_http_info(self, request):
+    def add_endpoint_permissions_async_invoker(self, request):
+        http_info = self._add_endpoint_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_endpoint_permissions_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions/batch-add",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddEndpointPermissionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -189,20 +222,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions/batch-add',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddEndpointPermissionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_engress_eip_v2_async(self, request):
         """开启实例公网出口
@@ -216,9 +245,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddEngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AddEngressEipV2Response`
         """
-        return self._add_engress_eip_v2_with_http_info(request)
+        http_info = self._add_engress_eip_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_engress_eip_v2_with_http_info(self, request):
+    def add_engress_eip_v2_async_invoker(self, request):
+        http_info = self._add_engress_eip_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_engress_eip_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/nat-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddEngressEipV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +276,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/nat-eip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddEngressEipV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_ingress_eip_v2_async(self, request):
         """开启实例公网入口
@@ -275,9 +312,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddIngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AddIngressEipV2Response`
         """
-        return self._add_ingress_eip_v2_with_http_info(request)
+        http_info = self._add_ingress_eip_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_ingress_eip_v2_with_http_info(self, request):
+    def add_ingress_eip_v2_async_invoker(self, request):
+        http_info = self._add_ingress_eip_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_ingress_eip_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddIngressEipV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -294,11 +343,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -307,20 +356,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddIngressEipV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_apps_for_app_quota_async(self, request):
         """凭据配额绑定凭据列表
@@ -334,9 +379,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateAppsForAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateAppsForAppQuotaResponse`
         """
-        return self._associate_apps_for_app_quota_with_http_info(request)
+        http_info = self._associate_apps_for_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_apps_for_app_quota_with_http_info(self, request):
+    def associate_apps_for_app_quota_async_invoker(self, request):
+        http_info = self._associate_apps_for_app_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_apps_for_app_quota_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}/binding-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateAppsForAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -355,11 +412,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -368,20 +425,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}/binding-apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateAppsForAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_certificate_v2_async(self, request):
         """绑定域名证书
@@ -396,9 +449,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateCertificateV2Response`
         """
-        return self._associate_certificate_v2_with_http_info(request)
+        http_info = self._associate_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_certificate_v2_with_http_info(self, request):
+    def associate_certificate_v2_async_invoker(self, request):
+        http_info = self._associate_certificate_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_certificate_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -419,11 +484,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -432,20 +497,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_domain_v2_async(self, request):
         """绑定域名
@@ -461,9 +522,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateDomainV2Response`
         """
-        return self._associate_domain_v2_with_http_info(request)
+        http_info = self._associate_domain_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_domain_v2_with_http_info(self, request):
+    def associate_domain_v2_async_invoker(self, request):
+        http_info = self._associate_domain_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_domain_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateDomainV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -482,11 +555,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -495,20 +568,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateDomainV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_signature_key_v2_async(self, request):
         """绑定签名密钥
@@ -528,9 +597,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateSignatureKeyV2Response`
         """
-        return self._associate_signature_key_v2_with_http_info(request)
+        http_info = self._associate_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_signature_key_v2_with_http_info(self, request):
+    def associate_signature_key_v2_async_invoker(self, request):
+        http_info = self._associate_signature_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_signature_key_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -547,11 +628,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -560,20 +641,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_api_to_plugin_async(self, request):
         """插件绑定API
@@ -591,9 +668,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AttachApiToPluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.AttachApiToPluginResponse`
         """
-        return self._attach_api_to_plugin_with_http_info(request)
+        http_info = self._attach_api_to_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_api_to_plugin_with_http_info(self, request):
+    def attach_api_to_plugin_async_invoker(self, request):
+        http_info = self._attach_api_to_plugin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_api_to_plugin_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachApiToPluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -612,11 +701,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -625,20 +714,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachApiToPluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_plugin_to_api_async(self, request):
         """API绑定插件
@@ -656,9 +741,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AttachPluginToApiRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.AttachPluginToApiResponse`
         """
-        return self._attach_plugin_to_api_with_http_info(request)
+        http_info = self._attach_plugin_to_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_plugin_to_api_with_http_info(self, request):
+    def attach_plugin_to_api_async_invoker(self, request):
+        http_info = self._attach_plugin_to_api_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _attach_plugin_to_api_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/plugins/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachPluginToApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -677,11 +774,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -690,20 +787,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/plugins/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachPluginToApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_or_delete_instance_tags_async(self, request):
         """批量添加或删除单个实例的标签
@@ -717,9 +810,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchCreateOrDeleteInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchCreateOrDeleteInstanceTagsResponse`
         """
-        return self._batch_create_or_delete_instance_tags_with_http_info(request)
+        http_info = self._batch_create_or_delete_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_or_delete_instance_tags_with_http_info(self, request):
+    def batch_create_or_delete_instance_tags_async_invoker(self, request):
+        http_info = self._batch_create_or_delete_instance_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_or_delete_instance_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/instance-tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateOrDeleteInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -736,11 +841,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -749,20 +854,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/instance-tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateOrDeleteInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_app_v2_async(self, request):
         """校验APP
@@ -777,9 +878,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CheckAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CheckAppV2Response`
         """
-        return self._check_app_v2_with_http_info(request)
+        http_info = self._check_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_app_v2_with_http_info(self, request):
+    def check_app_v2_async_invoker(self, request):
+        http_info = self._check_app_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_app_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/validation/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -798,9 +911,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -809,20 +922,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/validation/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_an_app_v2_async(self, request):
         """创建APP
@@ -837,9 +946,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAnAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAnAppV2Response`
         """
-        return self._create_an_app_v2_with_http_info(request)
+        http_info = self._create_an_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_an_app_v2_with_http_info(self, request):
+    def create_an_app_v2_async_invoker(self, request):
+        http_info = self._create_an_app_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_an_app_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAnAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -856,11 +977,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -869,20 +990,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAnAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_code_auto_v2_async(self, request):
         """自动生成APP Code
@@ -896,9 +1013,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAppCodeAutoV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAppCodeAutoV2Response`
         """
-        return self._create_app_code_auto_v2_with_http_info(request)
+        http_info = self._create_app_code_auto_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_code_auto_v2_with_http_info(self, request):
+    def create_app_code_auto_v2_async_invoker(self, request):
+        http_info = self._create_app_code_auto_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_app_code_auto_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppCodeAutoV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -917,9 +1046,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -928,20 +1057,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppCodeAutoV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_code_v2_async(self, request):
         """创建APP Code
@@ -955,9 +1080,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAppCodeV2Response`
         """
-        return self._create_app_code_v2_with_http_info(request)
+        http_info = self._create_app_code_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_code_v2_with_http_info(self, request):
+    def create_app_code_v2_async_invoker(self, request):
+        http_info = self._create_app_code_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_app_code_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppCodeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -976,11 +1113,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -989,20 +1126,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppCodeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_quota_async(self, request):
         """创建凭据配额
@@ -1016,9 +1149,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAppQuotaResponse`
         """
-        return self._create_app_quota_with_http_info(request)
+        http_info = self._create_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_quota_with_http_info(self, request):
+    def create_app_quota_async_invoker(self, request):
+        http_info = self._create_app_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_app_quota_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1035,11 +1180,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1048,20 +1193,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_custom_authorizer_v2_async(self, request):
         """创建自定义认证
@@ -1075,9 +1216,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateCustomAuthorizerV2Response`
         """
-        return self._create_custom_authorizer_v2_with_http_info(request)
+        http_info = self._create_custom_authorizer_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_custom_authorizer_v2_with_http_info(self, request):
+    def create_custom_authorizer_v2_async_invoker(self, request):
+        http_info = self._create_custom_authorizer_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_custom_authorizer_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/authorizers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomAuthorizerV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1094,11 +1247,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1107,20 +1260,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCustomAuthorizerV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_environment_v2_async(self, request):
         """创建环境
@@ -1140,9 +1289,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateEnvironmentV2Response`
         """
-        return self._create_environment_v2_with_http_info(request)
+        http_info = self._create_environment_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_environment_v2_with_http_info(self, request):
+    def create_environment_v2_async_invoker(self, request):
+        http_info = self._create_environment_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_environment_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/envs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnvironmentV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1159,11 +1320,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1172,20 +1333,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/envs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvironmentV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_environment_variable_v2_async(self, request):
         """新建变量
@@ -1210,9 +1367,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateEnvironmentVariableV2Response`
         """
-        return self._create_environment_variable_v2_with_http_info(request)
+        http_info = self._create_environment_variable_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_environment_variable_v2_with_http_info(self, request):
+    def create_environment_variable_v2_async_invoker(self, request):
+        http_info = self._create_environment_variable_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_environment_variable_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/env-variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnvironmentVariableV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1229,11 +1398,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1242,20 +1411,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/env-variables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvironmentVariableV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_feature_v2_async(self, request):
         """实例配置特性
@@ -1271,9 +1436,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateFeatureV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateFeatureV2Response`
         """
-        return self._create_feature_v2_with_http_info(request)
+        http_info = self._create_feature_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_feature_v2_with_http_info(self, request):
+    def create_feature_v2_async_invoker(self, request):
+        http_info = self._create_feature_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_feature_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/features",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFeatureV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1290,11 +1467,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1303,20 +1480,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/features',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFeatureV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_gateway_response_v2_async(self, request):
         """创建分组自定义响应
@@ -1330,9 +1503,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateGatewayResponseV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateGatewayResponseV2Response`
         """
-        return self._create_gateway_response_v2_with_http_info(request)
+        http_info = self._create_gateway_response_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_gateway_response_v2_with_http_info(self, request):
+    def create_gateway_response_v2_async_invoker(self, request):
+        http_info = self._create_gateway_response_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_gateway_response_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGatewayResponseV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1351,11 +1536,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1364,20 +1549,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGatewayResponseV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_instance_v2_async(self, request):
         """创建专享版实例（按需）
@@ -1391,9 +1572,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateInstanceV2Response`
         """
-        return self._create_instance_v2_with_http_info(request)
+        http_info = self._create_instance_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_instance_v2_with_http_info(self, request):
+    def create_instance_v2_async_invoker(self, request):
+        http_info = self._create_instance_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_instance_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateInstanceV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1408,11 +1601,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1421,20 +1614,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateInstanceV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_order_async(self, request):
         """创建专享版实例（包周期）
@@ -1448,9 +1637,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateOrderRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateOrderResponse`
         """
-        return self._create_order_with_http_info(request)
+        http_info = self._create_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_order_with_http_info(self, request):
+    def create_order_async_invoker(self, request):
+        http_info = self._create_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_order_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/prepay-instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1465,11 +1666,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1478,20 +1679,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/prepay-instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_plugin_async(self, request):
         """创建插件
@@ -1507,9 +1704,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreatePluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.CreatePluginResponse`
         """
-        return self._create_plugin_with_http_info(request)
+        http_info = self._create_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_plugin_with_http_info(self, request):
+    def create_plugin_async_invoker(self, request):
+        http_info = self._create_plugin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_plugin_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1526,11 +1735,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1539,20 +1748,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_post_pay_resize_order_async(self, request):
         """按需规格变更
@@ -1566,9 +1771,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreatePostPayResizeOrderRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.CreatePostPayResizeOrderResponse`
         """
-        return self._create_post_pay_resize_order_with_http_info(request)
+        http_info = self._create_post_pay_resize_order_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_post_pay_resize_order_with_http_info(self, request):
+    def create_post_pay_resize_order_async_invoker(self, request):
+        http_info = self._create_post_pay_resize_order_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_post_pay_resize_order_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/postpaid-resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePostPayResizeOrderResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1585,11 +1802,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1598,20 +1815,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/postpaid-resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePostPayResizeOrderResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_prepay_resize_async(self, request):
         """创建包周期规格变更订单
@@ -1625,9 +1838,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreatePrepayResizeRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.CreatePrepayResizeResponse`
         """
-        return self._create_prepay_resize_with_http_info(request)
+        http_info = self._create_prepay_resize_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_prepay_resize_with_http_info(self, request):
+    def create_prepay_resize_async_invoker(self, request):
+        http_info = self._create_prepay_resize_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_prepay_resize_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/prepay-resize",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrepayResizeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1644,11 +1869,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1657,20 +1882,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/prepay-resize',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrepayResizeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_request_throttling_policy_v2_async(self, request):
         """创建流控策略
@@ -1685,9 +1906,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateRequestThrottlingPolicyV2Response`
         """
-        return self._create_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._create_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_request_throttling_policy_v2_with_http_info(self, request):
+    def create_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._create_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1704,11 +1937,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1717,20 +1950,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_signature_key_v2_async(self, request):
         """创建签名密钥
@@ -1750,9 +1979,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateSignatureKeyV2Response`
         """
-        return self._create_signature_key_v2_with_http_info(request)
+        http_info = self._create_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_signature_key_v2_with_http_info(self, request):
+    def create_signature_key_v2_async_invoker(self, request):
+        http_info = self._create_signature_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_signature_key_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/signs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1769,11 +2010,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1782,20 +2023,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/signs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_special_throttling_configuration_v2_async(self, request):
         """创建特殊设置
@@ -1813,9 +2050,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateSpecialThrottlingConfigurationV2Response`
         """
-        return self._create_special_throttling_configuration_v2_with_http_info(request)
+        http_info = self._create_special_throttling_configuration_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_special_throttling_configuration_v2_with_http_info(self, request):
+    def create_special_throttling_configuration_v2_async_invoker(self, request):
+        http_info = self._create_special_throttling_configuration_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_special_throttling_configuration_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}/throttle-specials",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSpecialThrottlingConfigurationV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1834,11 +2083,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1847,20 +2096,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}/throttle-specials',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSpecialThrottlingConfigurationV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_acl_async(self, request):
         """删除APP的访问控制
@@ -1874,9 +2119,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAppAclRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteAppAclResponse`
         """
-        return self._delete_app_acl_with_http_info(request)
+        http_info = self._delete_app_acl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_acl_with_http_info(self, request):
+    def delete_app_acl_async_invoker(self, request):
+        http_info = self._delete_app_acl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_app_acl_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-acl",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppAclResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1895,9 +2152,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1906,20 +2163,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-acl',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppAclResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_code_v2_async(self, request):
         """删除APP Code
@@ -1933,9 +2186,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteAppCodeV2Response`
         """
-        return self._delete_app_code_v2_with_http_info(request)
+        http_info = self._delete_app_code_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_code_v2_with_http_info(self, request):
+    def delete_app_code_v2_async_invoker(self, request):
+        http_info = self._delete_app_code_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_app_code_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppCodeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1956,9 +2221,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1967,20 +2232,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppCodeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_quota_async(self, request):
         """删除凭据配额
@@ -1994,9 +2255,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteAppQuotaResponse`
         """
-        return self._delete_app_quota_with_http_info(request)
+        http_info = self._delete_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_quota_with_http_info(self, request):
+    def delete_app_quota_async_invoker(self, request):
+        http_info = self._delete_app_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_app_quota_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2015,9 +2288,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2026,20 +2299,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_v2_async(self, request):
         """删除APP
@@ -2054,9 +2323,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteAppV2Response`
         """
-        return self._delete_app_v2_with_http_info(request)
+        http_info = self._delete_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_v2_with_http_info(self, request):
+    def delete_app_v2_async_invoker(self, request):
+        http_info = self._delete_app_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_app_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2075,9 +2356,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2086,20 +2367,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_custom_authorizer_v2_async(self, request):
         """删除自定义认证
@@ -2113,9 +2390,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteCustomAuthorizerV2Response`
         """
-        return self._delete_custom_authorizer_v2_with_http_info(request)
+        http_info = self._delete_custom_authorizer_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_custom_authorizer_v2_with_http_info(self, request):
+    def delete_custom_authorizer_v2_async_invoker(self, request):
+        http_info = self._delete_custom_authorizer_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_custom_authorizer_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomAuthorizerV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2134,9 +2423,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2145,20 +2434,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCustomAuthorizerV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_endpoint_permissions_async(self, request):
         """批量删除实例终端节点连接白名单
@@ -2172,9 +2457,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteEndpointPermissionsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteEndpointPermissionsResponse`
         """
-        return self._delete_endpoint_permissions_with_http_info(request)
+        http_info = self._delete_endpoint_permissions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_endpoint_permissions_with_http_info(self, request):
+    def delete_endpoint_permissions_async_invoker(self, request):
+        http_info = self._delete_endpoint_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_endpoint_permissions_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEndpointPermissionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2191,11 +2488,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -2204,20 +2501,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEndpointPermissionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_environment_v2_async(self, request):
         """删除环境
@@ -2235,9 +2528,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentV2Response`
         """
-        return self._delete_environment_v2_with_http_info(request)
+        http_info = self._delete_environment_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_environment_v2_with_http_info(self, request):
+    def delete_environment_v2_async_invoker(self, request):
+        http_info = self._delete_environment_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_environment_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/envs/{env_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnvironmentV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2256,9 +2561,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2267,20 +2572,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/envs/{env_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvironmentV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_environment_variable_v2_async(self, request):
         """删除变量
@@ -2294,9 +2595,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteEnvironmentVariableV2Response`
         """
-        return self._delete_environment_variable_v2_with_http_info(request)
+        http_info = self._delete_environment_variable_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_environment_variable_v2_with_http_info(self, request):
+    def delete_environment_variable_v2_async_invoker(self, request):
+        http_info = self._delete_environment_variable_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_environment_variable_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/env-variables/{env_variable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnvironmentVariableV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2315,9 +2628,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2326,20 +2639,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/env-variables/{env_variable_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvironmentVariableV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gateway_response_type_v2_async(self, request):
         """删除分组指定错误类型的自定义响应配置
@@ -2353,9 +2662,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseTypeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseTypeV2Response`
         """
-        return self._delete_gateway_response_type_v2_with_http_info(request)
+        http_info = self._delete_gateway_response_type_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gateway_response_type_v2_with_http_info(self, request):
+    def delete_gateway_response_type_v2_async_invoker(self, request):
+        http_info = self._delete_gateway_response_type_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_gateway_response_type_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGatewayResponseTypeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2378,9 +2699,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2389,20 +2710,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGatewayResponseTypeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_gateway_response_v2_async(self, request):
         """删除分组自定义响应
@@ -2416,9 +2733,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteGatewayResponseV2Response`
         """
-        return self._delete_gateway_response_v2_with_http_info(request)
+        http_info = self._delete_gateway_response_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_gateway_response_v2_with_http_info(self, request):
+    def delete_gateway_response_v2_async_invoker(self, request):
+        http_info = self._delete_gateway_response_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_gateway_response_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGatewayResponseV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2439,9 +2768,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2450,20 +2779,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGatewayResponseV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_instances_v2_async(self, request):
         """删除专享版实例
@@ -2477,9 +2802,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteInstancesV2Response`
         """
-        return self._delete_instances_v2_with_http_info(request)
+        http_info = self._delete_instances_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_instances_v2_with_http_info(self, request):
+    def delete_instances_v2_async_invoker(self, request):
+        http_info = self._delete_instances_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_instances_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteInstancesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2496,9 +2833,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2507,20 +2844,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteInstancesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_plugin_async(self, request):
         """删除插件
@@ -2535,9 +2868,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeletePluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DeletePluginResponse`
         """
-        return self._delete_plugin_with_http_info(request)
+        http_info = self._delete_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_plugin_with_http_info(self, request):
+    def delete_plugin_async_invoker(self, request):
+        http_info = self._delete_plugin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_plugin_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2556,9 +2901,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2567,20 +2912,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_request_throttling_policy_v2_async(self, request):
         """删除流控策略
@@ -2594,9 +2935,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteRequestThrottlingPolicyV2Response`
         """
-        return self._delete_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._delete_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_request_throttling_policy_v2_with_http_info(self, request):
+    def delete_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._delete_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2615,9 +2968,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2626,20 +2979,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_signature_key_v2_async(self, request):
         """删除签名密钥
@@ -2653,9 +3002,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteSignatureKeyV2Response`
         """
-        return self._delete_signature_key_v2_with_http_info(request)
+        http_info = self._delete_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_signature_key_v2_with_http_info(self, request):
+    def delete_signature_key_v2_async_invoker(self, request):
+        http_info = self._delete_signature_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_signature_key_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/signs/{sign_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2674,9 +3035,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2685,20 +3046,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/signs/{sign_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_special_throttling_configuration_v2_async(self, request):
         """删除特殊设置
@@ -2712,9 +3069,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteSpecialThrottlingConfigurationV2Response`
         """
-        return self._delete_special_throttling_configuration_v2_with_http_info(request)
+        http_info = self._delete_special_throttling_configuration_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_special_throttling_configuration_v2_with_http_info(self, request):
+    def delete_special_throttling_configuration_v2_async_invoker(self, request):
+        http_info = self._delete_special_throttling_configuration_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_special_throttling_configuration_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}/throttle-specials/{strategy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSpecialThrottlingConfigurationV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2735,9 +3104,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2746,20 +3115,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}/throttle-specials/{strategy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSpecialThrottlingConfigurationV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_api_from_plugin_async(self, request):
         """解除绑定插件的API
@@ -2774,9 +3139,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DetachApiFromPluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DetachApiFromPluginResponse`
         """
-        return self._detach_api_from_plugin_with_http_info(request)
+        http_info = self._detach_api_from_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_api_from_plugin_with_http_info(self, request):
+    def detach_api_from_plugin_async_invoker(self, request):
+        http_info = self._detach_api_from_plugin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detach_api_from_plugin_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachApiFromPluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2795,11 +3172,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2808,20 +3185,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/detach',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachApiFromPluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_plugin_from_api_async(self, request):
         """解除绑定API的插件
@@ -2836,9 +3209,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DetachPluginFromApiRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DetachPluginFromApiResponse`
         """
-        return self._detach_plugin_from_api_with_http_info(request)
+        http_info = self._detach_plugin_from_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_plugin_from_api_with_http_info(self, request):
+    def detach_plugin_from_api_async_invoker(self, request):
+        http_info = self._detach_plugin_from_api_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _detach_plugin_from_api_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/plugins/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachPluginFromApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2857,11 +3242,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2870,20 +3255,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/plugins/detach',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachPluginFromApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_app_quota_with_app_async(self, request):
         """解除凭据配额和凭据的绑定
@@ -2897,9 +3278,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateAppQuotaWithAppRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateAppQuotaWithAppResponse`
         """
-        return self._disassociate_app_quota_with_app_with_http_info(request)
+        http_info = self._disassociate_app_quota_with_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_app_quota_with_app_with_http_info(self, request):
+    def disassociate_app_quota_with_app_async_invoker(self, request):
+        http_info = self._disassociate_app_quota_with_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_app_quota_with_app_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}/bound-apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateAppQuotaWithAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2920,9 +3313,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2931,20 +3324,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}/bound-apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateAppQuotaWithAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_certificate_v2_async(self, request):
         """删除域名证书
@@ -2958,9 +3347,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateCertificateV2Response`
         """
-        return self._disassociate_certificate_v2_with_http_info(request)
+        http_info = self._disassociate_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_certificate_v2_with_http_info(self, request):
+    def disassociate_certificate_v2_async_invoker(self, request):
+        http_info = self._disassociate_certificate_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_certificate_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2983,9 +3384,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2994,20 +3395,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate/{certificate_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_domain_v2_async(self, request):
         """解绑域名
@@ -3021,9 +3418,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateDomainV2Response`
         """
-        return self._disassociate_domain_v2_with_http_info(request)
+        http_info = self._disassociate_domain_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_domain_v2_with_http_info(self, request):
+    def disassociate_domain_v2_async_invoker(self, request):
+        http_info = self._disassociate_domain_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_domain_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateDomainV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3044,9 +3453,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3055,20 +3464,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateDomainV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_signature_key_v2_async(self, request):
         """解除API与签名密钥的绑定关系
@@ -3082,9 +3487,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateSignatureKeyV2Response`
         """
-        return self._disassociate_signature_key_v2_with_http_info(request)
+        http_info = self._disassociate_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_signature_key_v2_with_http_info(self, request):
+    def disassociate_signature_key_v2_async_invoker(self, request):
+        http_info = self._disassociate_signature_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_signature_key_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings/{sign_bindings_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3103,9 +3520,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3114,20 +3531,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings/{sign_bindings_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_microservice_async(self, request):
         """导入微服务
@@ -3141,9 +3554,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ImportMicroserviceRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ImportMicroserviceResponse`
         """
-        return self._import_microservice_with_http_info(request)
+        http_info = self._import_microservice_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_microservice_with_http_info(self, request):
+    def import_microservice_async_invoker(self, request):
+        http_info = self._import_microservice_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_microservice_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/microservice/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportMicroserviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3160,11 +3585,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3173,20 +3598,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/microservice/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportMicroserviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_attachable_plugins_async(self, request):
         """查询可绑定当前API的插件
@@ -3202,9 +3623,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiAttachablePluginsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiAttachablePluginsResponse`
         """
-        return self._list_api_attachable_plugins_with_http_info(request)
+        http_info = self._list_api_attachable_plugins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_attachable_plugins_with_http_info(self, request):
+    def list_api_attachable_plugins_async_invoker(self, request):
+        http_info = self._list_api_attachable_plugins_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_attachable_plugins_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/attachable-plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiAttachablePluginsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3235,9 +3668,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3246,20 +3679,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/attachable-plugins',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiAttachablePluginsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_attached_plugins_async(self, request):
         """查询API下绑定的插件
@@ -3276,9 +3705,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiAttachedPluginsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiAttachedPluginsResponse`
         """
-        return self._list_api_attached_plugins_with_http_info(request)
+        http_info = self._list_api_attached_plugins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_attached_plugins_with_http_info(self, request):
+    def list_api_attached_plugins_async_invoker(self, request):
+        http_info = self._list_api_attached_plugins_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_attached_plugins_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/attached-plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiAttachedPluginsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3311,9 +3752,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3322,20 +3763,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}/attached-plugins',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiAttachedPluginsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_groups_quantities_v2_async(self, request):
         """查询API分组概况
@@ -3349,9 +3786,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiGroupsQuantitiesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiGroupsQuantitiesV2Response`
         """
-        return self._list_api_groups_quantities_v2_with_http_info(request)
+        http_info = self._list_api_groups_quantities_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_groups_quantities_v2_with_http_info(self, request):
+    def list_api_groups_quantities_v2_async_invoker(self, request):
+        http_info = self._list_api_groups_quantities_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_groups_quantities_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/resources/outline/groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiGroupsQuantitiesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3368,9 +3817,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3379,20 +3828,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/resources/outline/groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiGroupsQuantitiesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_quantities_v2_async(self, request):
         """查询API概况
@@ -3406,9 +3851,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiQuantitiesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiQuantitiesV2Response`
         """
-        return self._list_api_quantities_v2_with_http_info(request)
+        http_info = self._list_api_quantities_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_quantities_v2_with_http_info(self, request):
+    def list_api_quantities_v2_async_invoker(self, request):
+        http_info = self._list_api_quantities_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_quantities_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/resources/outline/apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiQuantitiesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3425,9 +3882,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3436,20 +3893,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/resources/outline/apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiQuantitiesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_binded_to_signature_key_v2_async(self, request):
         """查看签名密钥绑定的API列表
@@ -3463,9 +3916,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisBindedToSignatureKeyV2Response`
         """
-        return self._list_apis_binded_to_signature_key_v2_with_http_info(request)
+        http_info = self._list_apis_binded_to_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_binded_to_signature_key_v2_with_http_info(self, request):
+    def list_apis_binded_to_signature_key_v2_async_invoker(self, request):
+        http_info = self._list_apis_binded_to_signature_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_binded_to_signature_key_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings/binded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisBindedToSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3496,9 +3961,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3507,20 +3972,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings/binded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisBindedToSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_not_bound_with_signature_key_v2_async(self, request):
         """查看签名密钥未绑定的API列表
@@ -3534,9 +3995,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisNotBoundWithSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisNotBoundWithSignatureKeyV2Response`
         """
-        return self._list_apis_not_bound_with_signature_key_v2_with_http_info(request)
+        http_info = self._list_apis_not_bound_with_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_not_bound_with_signature_key_v2_with_http_info(self, request):
+    def list_apis_not_bound_with_signature_key_v2_async_invoker(self, request):
+        http_info = self._list_apis_not_bound_with_signature_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_not_bound_with_signature_key_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings/unbinded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisNotBoundWithSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3567,9 +4040,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3578,20 +4051,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings/unbinded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisNotBoundWithSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_codes_v2_async(self, request):
         """查询APP Code列表
@@ -3605,9 +4074,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppCodesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppCodesV2Response`
         """
-        return self._list_app_codes_v2_with_http_info(request)
+        http_info = self._list_app_codes_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_codes_v2_with_http_info(self, request):
+    def list_app_codes_v2_async_invoker(self, request):
+        http_info = self._list_app_codes_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_codes_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppCodesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3630,9 +4111,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3641,20 +4122,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppCodesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_quantities_v2_async(self, request):
         """查询APP概况
@@ -3668,9 +4145,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppQuantitiesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppQuantitiesV2Response`
         """
-        return self._list_app_quantities_v2_with_http_info(request)
+        http_info = self._list_app_quantities_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_quantities_v2_with_http_info(self, request):
+    def list_app_quantities_v2_async_invoker(self, request):
+        http_info = self._list_app_quantities_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_quantities_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/resources/outline/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppQuantitiesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3687,9 +4176,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3698,20 +4187,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/resources/outline/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppQuantitiesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_quota_bindable_apps_async(self, request):
         """查询凭据配额可绑定的凭据列表
@@ -3725,9 +4210,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppQuotaBindableAppsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppQuotaBindableAppsResponse`
         """
-        return self._list_app_quota_bindable_apps_with_http_info(request)
+        http_info = self._list_app_quota_bindable_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_quota_bindable_apps_with_http_info(self, request):
+    def list_app_quota_bindable_apps_async_invoker(self, request):
+        http_info = self._list_app_quota_bindable_apps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_quota_bindable_apps_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}/bindable-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppQuotaBindableAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3752,9 +4249,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3763,20 +4260,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}/bindable-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppQuotaBindableAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_quota_bound_apps_async(self, request):
         """查询凭据配额已绑定的凭据列表
@@ -3790,9 +4283,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppQuotaBoundAppsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppQuotaBoundAppsResponse`
         """
-        return self._list_app_quota_bound_apps_with_http_info(request)
+        http_info = self._list_app_quota_bound_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_quota_bound_apps_with_http_info(self, request):
+    def list_app_quota_bound_apps_async_invoker(self, request):
+        http_info = self._list_app_quota_bound_apps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_quota_bound_apps_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}/bound-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppQuotaBoundAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3817,9 +4322,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3828,20 +4333,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}/bound-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppQuotaBoundAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_quotas_async(self, request):
         """获取凭据配额列表
@@ -3855,9 +4356,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppQuotasRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppQuotasResponse`
         """
-        return self._list_app_quotas_with_http_info(request)
+        http_info = self._list_app_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_quotas_with_http_info(self, request):
+    def list_app_quotas_async_invoker(self, request):
+        http_info = self._list_app_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_app_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3880,9 +4393,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3891,20 +4404,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps_v2_async(self, request):
         """查询APP列表
@@ -3918,9 +4427,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppsV2Response`
         """
-        return self._list_apps_v2_with_http_info(request)
+        http_info = self._list_apps_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_v2_with_http_info(self, request):
+    def list_apps_v2_async_invoker(self, request):
+        http_info = self._list_apps_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apps_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3953,9 +4474,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3964,20 +4485,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_available_zones_v2_async(self, request):
         """查看可用区信息
@@ -3991,9 +4508,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAvailableZonesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAvailableZonesV2Response`
         """
-        return self._list_available_zones_v2_with_http_info(request)
+        http_info = self._list_available_zones_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_available_zones_v2_with_http_info(self, request):
+    def list_available_zones_v2_async_invoker(self, request):
+        http_info = self._list_available_zones_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_available_zones_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/available-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailableZonesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4008,9 +4537,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4019,20 +4548,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/available-zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailableZonesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_custom_authorizers_v2_async(self, request):
         """查询自定义认证列表
@@ -4046,9 +4571,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListCustomAuthorizersV2Response`
         """
-        return self._list_custom_authorizers_v2_with_http_info(request)
+        http_info = self._list_custom_authorizers_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_custom_authorizers_v2_with_http_info(self, request):
+    def list_custom_authorizers_v2_async_invoker(self, request):
+        http_info = self._list_custom_authorizers_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_custom_authorizers_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/authorizers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomAuthorizersV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4075,9 +4612,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4086,20 +4623,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomAuthorizersV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_endpoint_connections_async(self, request):
         """查询实例终端节点连接列表
@@ -4113,9 +4646,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListEndpointConnectionsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListEndpointConnectionsResponse`
         """
-        return self._list_endpoint_connections_with_http_info(request)
+        http_info = self._list_endpoint_connections_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_endpoint_connections_with_http_info(self, request):
+    def list_endpoint_connections_async_invoker(self, request):
+        http_info = self._list_endpoint_connections_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_endpoint_connections_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/connections",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEndpointConnectionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4142,9 +4687,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -4153,20 +4698,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/connections',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEndpointConnectionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_endpoint_permissions_async(self, request):
         """查询实例的终端节点服务的白名单列表
@@ -4180,9 +4721,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListEndpointPermissionsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListEndpointPermissionsResponse`
         """
-        return self._list_endpoint_permissions_with_http_info(request)
+        http_info = self._list_endpoint_permissions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_endpoint_permissions_with_http_info(self, request):
+    def list_endpoint_permissions_async_invoker(self, request):
+        http_info = self._list_endpoint_permissions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_endpoint_permissions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEndpointPermissionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4205,9 +4758,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["x-request-id", ]
 
@@ -4216,20 +4769,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-endpoint/permissions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEndpointPermissionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_environment_variables_v2_async(self, request):
         """查询变量列表
@@ -4243,9 +4792,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListEnvironmentVariablesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListEnvironmentVariablesV2Response`
         """
-        return self._list_environment_variables_v2_with_http_info(request)
+        http_info = self._list_environment_variables_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_environment_variables_v2_with_http_info(self, request):
+    def list_environment_variables_v2_async_invoker(self, request):
+        http_info = self._list_environment_variables_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_environment_variables_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/env-variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvironmentVariablesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4274,9 +4835,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4285,20 +4846,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/env-variables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvironmentVariablesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_environments_v2_async(self, request):
         """查询环境列表
@@ -4312,9 +4869,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListEnvironmentsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListEnvironmentsV2Response`
         """
-        return self._list_environments_v2_with_http_info(request)
+        http_info = self._list_environments_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_environments_v2_with_http_info(self, request):
+    def list_environments_v2_async_invoker(self, request):
+        http_info = self._list_environments_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_environments_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/envs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvironmentsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4337,9 +4906,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4348,20 +4917,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/envs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvironmentsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_features_v2_async(self, request):
         """查看实例特性列表
@@ -4377,9 +4942,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListFeaturesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListFeaturesV2Response`
         """
-        return self._list_features_v2_with_http_info(request)
+        http_info = self._list_features_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_features_v2_with_http_info(self, request):
+    def list_features_v2_async_invoker(self, request):
+        http_info = self._list_features_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_features_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/features",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFeaturesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4400,9 +4977,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4411,20 +4988,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/features',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFeaturesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_gateway_responses_v2_async(self, request):
         """查询分组自定义响应列表
@@ -4438,9 +5011,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListGatewayResponsesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListGatewayResponsesV2Response`
         """
-        return self._list_gateway_responses_v2_with_http_info(request)
+        http_info = self._list_gateway_responses_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_gateway_responses_v2_with_http_info(self, request):
+    def list_gateway_responses_v2_async_invoker(self, request):
+        http_info = self._list_gateway_responses_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_gateway_responses_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGatewayResponsesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4463,9 +5048,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4474,20 +5059,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGatewayResponsesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_configs_v2_async(self, request):
         """查询租户实例配置列表
@@ -4501,9 +5082,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListInstanceConfigsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListInstanceConfigsV2Response`
         """
-        return self._list_instance_configs_v2_with_http_info(request)
+        http_info = self._list_instance_configs_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_configs_v2_with_http_info(self, request):
+    def list_instance_configs_v2_async_invoker(self, request):
+        http_info = self._list_instance_configs_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_configs_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instance/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceConfigsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4522,9 +5115,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4533,20 +5126,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instance/configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceConfigsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_tags_async(self, request):
         """查询单个实例标签
@@ -4560,9 +5149,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListInstanceTagsResponse`
         """
-        return self._list_instance_tags_with_http_info(request)
+        http_info = self._list_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_tags_with_http_info(self, request):
+    def list_instance_tags_async_invoker(self, request):
+        http_info = self._list_instance_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instance_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/instance-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4579,9 +5180,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4590,20 +5191,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/instance-tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instances_v2_async(self, request):
         """查询专享版实例列表
@@ -4617,9 +5214,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListInstancesV2Response`
         """
-        return self._list_instances_v2_with_http_info(request)
+        http_info = self._list_instances_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instances_v2_with_http_info(self, request):
+    def list_instances_v2_async_invoker(self, request):
+        http_info = self._list_instances_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_instances_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstancesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4644,9 +5253,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4655,20 +5264,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstancesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_lately_api_statistics_v2_async(self, request):
         """API统计信息查询-最近一段时间
@@ -4683,9 +5288,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListLatelyApiStatisticsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListLatelyApiStatisticsV2Response`
         """
-        return self._list_lately_api_statistics_v2_with_http_info(request)
+        http_info = self._list_lately_api_statistics_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_lately_api_statistics_v2_with_http_info(self, request):
+    def list_lately_api_statistics_v2_async_invoker(self, request):
+        http_info = self._list_lately_api_statistics_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_lately_api_statistics_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/statistics/api/latest",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLatelyApiStatisticsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4706,9 +5323,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4717,20 +5334,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/statistics/api/latest',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLatelyApiStatisticsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_lately_group_statistics_v2_async(self, request):
         """分组统计信息查询-最近一小时内
@@ -4745,9 +5358,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListLatelyGroupStatisticsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListLatelyGroupStatisticsV2Response`
         """
-        return self._list_lately_group_statistics_v2_with_http_info(request)
+        http_info = self._list_lately_group_statistics_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_lately_group_statistics_v2_with_http_info(self, request):
+    def list_lately_group_statistics_v2_async_invoker(self, request):
+        http_info = self._list_lately_group_statistics_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_lately_group_statistics_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/statistics/group/latest",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLatelyGroupStatisticsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4766,9 +5391,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4777,20 +5402,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/statistics/group/latest',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLatelyGroupStatisticsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_metric_data_async(self, request):
         """查询监控数据
@@ -4804,9 +5425,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListMetricDataRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListMetricDataResponse`
         """
-        return self._list_metric_data_with_http_info(request)
+        http_info = self._list_metric_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_metric_data_with_http_info(self, request):
+    def list_metric_data_async_invoker(self, request):
+        http_info = self._list_metric_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_metric_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4835,9 +5468,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4846,20 +5479,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/metric-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMetricDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_plugin_attachable_apis_async(self, request):
         """查询可绑定当前插件的API
@@ -4876,9 +5505,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginAttachableApisRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListPluginAttachableApisResponse`
         """
-        return self._list_plugin_attachable_apis_with_http_info(request)
+        http_info = self._list_plugin_attachable_apis_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_plugin_attachable_apis_with_http_info(self, request):
+    def list_plugin_attachable_apis_async_invoker(self, request):
+        http_info = self._list_plugin_attachable_apis_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_plugin_attachable_apis_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attachable-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginAttachableApisResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4913,9 +5554,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4924,20 +5565,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attachable-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPluginAttachableApisResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_plugin_attached_apis_async(self, request):
         """查询插件下绑定的API
@@ -4955,9 +5592,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginAttachedApisRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListPluginAttachedApisResponse`
         """
-        return self._list_plugin_attached_apis_with_http_info(request)
+        http_info = self._list_plugin_attached_apis_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_plugin_attached_apis_with_http_info(self, request):
+    def list_plugin_attached_apis_async_invoker(self, request):
+        http_info = self._list_plugin_attached_apis_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_plugin_attached_apis_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attached-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginAttachedApisResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4992,9 +5641,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5003,20 +5652,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}/attached-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPluginAttachedApisResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_plugins_async(self, request):
         """查询插件列表
@@ -5035,9 +5680,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListPluginsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListPluginsResponse`
         """
-        return self._list_plugins_with_http_info(request)
+        http_info = self._list_plugins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_plugins_with_http_info(self, request):
+    def list_plugins_async_invoker(self, request):
+        http_info = self._list_plugins_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_plugins_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5068,9 +5725,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5079,20 +5736,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPluginsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_cofigs_v2_async(self, request):
         """查询某个实例的租户配置列表
@@ -5106,9 +5759,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListProjectCofigsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListProjectCofigsV2Response`
         """
-        return self._list_project_cofigs_v2_with_http_info(request)
+        http_info = self._list_project_cofigs_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_cofigs_v2_with_http_info(self, request):
+    def list_project_cofigs_v2_async_invoker(self, request):
+        http_info = self._list_project_cofigs_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_cofigs_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/project/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectCofigsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5129,9 +5794,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5140,20 +5805,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/project/configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectCofigsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_instance_tags_async(self, request):
         """查询项目下所有实例标签
@@ -5167,9 +5828,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListProjectInstanceTagsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListProjectInstanceTagsResponse`
         """
-        return self._list_project_instance_tags_with_http_info(request)
+        http_info = self._list_project_instance_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_instance_tags_with_http_info(self, request):
+    def list_project_instance_tags_async_invoker(self, request):
+        http_info = self._list_project_instance_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_instance_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instance-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectInstanceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5184,9 +5857,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5195,20 +5868,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instance-tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectInstanceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_request_throttling_policy_v2_async(self, request):
         """查询流控策略列表
@@ -5222,9 +5891,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPolicyV2Response`
         """
-        return self._list_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._list_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_request_throttling_policy_v2_with_http_info(self, request):
+    def list_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._list_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5251,9 +5932,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5262,20 +5943,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_signature_keys_binded_to_api_v2_async(self, request):
         """查看API绑定的签名密钥列表
@@ -5289,9 +5966,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListSignatureKeysBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListSignatureKeysBindedToApiV2Response`
         """
-        return self._list_signature_keys_binded_to_api_v2_with_http_info(request)
+        http_info = self._list_signature_keys_binded_to_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_signature_keys_binded_to_api_v2_with_http_info(self, request):
+    def list_signature_keys_binded_to_api_v2_async_invoker(self, request):
+        http_info = self._list_signature_keys_binded_to_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_signature_keys_binded_to_api_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings/binded-signs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSignatureKeysBindedToApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5320,9 +6009,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5331,20 +6020,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/sign-bindings/binded-signs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSignatureKeysBindedToApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_signature_keys_v2_async(self, request):
         """查询签名密钥列表
@@ -5358,9 +6043,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListSignatureKeysV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListSignatureKeysV2Response`
         """
-        return self._list_signature_keys_v2_with_http_info(request)
+        http_info = self._list_signature_keys_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_signature_keys_v2_with_http_info(self, request):
+    def list_signature_keys_v2_async_invoker(self, request):
+        http_info = self._list_signature_keys_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_signature_keys_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/signs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSignatureKeysV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5387,9 +6084,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5398,20 +6095,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/signs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSignatureKeysV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_special_throttling_configurations_v2_async(self, request):
         """查看特殊设置列表
@@ -5425,9 +6118,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListSpecialThrottlingConfigurationsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListSpecialThrottlingConfigurationsV2Response`
         """
-        return self._list_special_throttling_configurations_v2_with_http_info(request)
+        http_info = self._list_special_throttling_configurations_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_special_throttling_configurations_v2_with_http_info(self, request):
+    def list_special_throttling_configurations_v2_async_invoker(self, request):
+        http_info = self._list_special_throttling_configurations_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_special_throttling_configurations_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}/throttle-specials",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSpecialThrottlingConfigurationsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5456,9 +6161,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5467,20 +6172,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}/throttle-specials',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSpecialThrottlingConfigurationsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags_v2_async(self, request):
         """查询标签列表
@@ -5494,9 +6195,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListTagsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListTagsV2Response`
         """
-        return self._list_tags_v2_with_http_info(request)
+        http_info = self._list_tags_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_v2_with_http_info(self, request):
+    def list_tags_v2_async_invoker(self, request):
+        http_info = self._list_tags_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tags_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5517,9 +6230,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5528,20 +6241,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_eip_v2_async(self, request):
         """实例解绑EIP
@@ -5555,9 +6264,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.RemoveEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.RemoveEipV2Response`
         """
-        return self._remove_eip_v2_with_http_info(request)
+        http_info = self._remove_eip_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_eip_v2_with_http_info(self, request):
+    def remove_eip_v2_async_invoker(self, request):
+        http_info = self._remove_eip_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_eip_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveEipV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5574,9 +6295,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5585,20 +6306,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/eip',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveEipV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_engress_eip_v2_async(self, request):
         """关闭实例公网出口
@@ -5612,9 +6329,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.RemoveEngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.RemoveEngressEipV2Response`
         """
-        return self._remove_engress_eip_v2_with_http_info(request)
+        http_info = self._remove_engress_eip_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_engress_eip_v2_with_http_info(self, request):
+    def remove_engress_eip_v2_async_invoker(self, request):
+        http_info = self._remove_engress_eip_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_engress_eip_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/nat-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveEngressEipV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5631,9 +6360,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5642,20 +6371,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/nat-eip',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveEngressEipV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_ingress_eip_v2_async(self, request):
         """关闭实例公网入口
@@ -5669,9 +6394,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.RemoveIngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.RemoveIngressEipV2Response`
         """
-        return self._remove_ingress_eip_v2_with_http_info(request)
+        http_info = self._remove_ingress_eip_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_ingress_eip_v2_with_http_info(self, request):
+    def remove_ingress_eip_v2_async_invoker(self, request):
+        http_info = self._remove_ingress_eip_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_ingress_eip_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemoveIngressEipV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5688,9 +6425,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5699,20 +6436,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemoveIngressEipV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def resetting_app_secret_v2_async(self, request):
         """重置密钥
@@ -5726,9 +6459,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ResettingAppSecretV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ResettingAppSecretV2Response`
         """
-        return self._resetting_app_secret_v2_with_http_info(request)
+        http_info = self._resetting_app_secret_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _resetting_app_secret_v2_with_http_info(self, request):
+    def resetting_app_secret_v2_async_invoker(self, request):
+        http_info = self._resetting_app_secret_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _resetting_app_secret_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/secret/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResettingAppSecretV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5747,11 +6492,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5760,20 +6505,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/secret/{app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResettingAppSecretV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_bound_app_quota_async(self, request):
         """查询凭据关联的凭据配额
@@ -5787,9 +6528,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowAppBoundAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowAppBoundAppQuotaResponse`
         """
-        return self._show_app_bound_app_quota_with_http_info(request)
+        http_info = self._show_app_bound_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_bound_app_quota_with_http_info(self, request):
+    def show_app_bound_app_quota_async_invoker(self, request):
+        http_info = self._show_app_bound_app_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_app_bound_app_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/bound-quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppBoundAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5808,9 +6561,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5819,20 +6572,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/bound-quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppBoundAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_quota_async(self, request):
         """获取凭据配额详情
@@ -5846,9 +6595,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowAppQuotaResponse`
         """
-        return self._show_app_quota_with_http_info(request)
+        http_info = self._show_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_quota_with_http_info(self, request):
+    def show_app_quota_async_invoker(self, request):
+        http_info = self._show_app_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_app_quota_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5867,9 +6628,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5878,20 +6639,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_app_acl_async(self, request):
         """查看APP的访问控制详情
@@ -5905,9 +6662,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppAclRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppAclResponse`
         """
-        return self._show_details_of_app_acl_with_http_info(request)
+        http_info = self._show_details_of_app_acl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_app_acl_with_http_info(self, request):
+    def show_details_of_app_acl_async_invoker(self, request):
+        http_info = self._show_details_of_app_acl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_app_acl_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-acl",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAppAclResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5926,9 +6695,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5937,20 +6706,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-acl',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAppAclResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_app_code_v2_async(self, request):
         """查看APP Code详情
@@ -5964,9 +6729,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppCodeV2Response`
         """
-        return self._show_details_of_app_code_v2_with_http_info(request)
+        http_info = self._show_details_of_app_code_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_app_code_v2_with_http_info(self, request):
+    def show_details_of_app_code_v2_async_invoker(self, request):
+        http_info = self._show_details_of_app_code_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_app_code_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAppCodeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5987,9 +6764,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5998,20 +6775,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAppCodeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_app_v2_async(self, request):
         """查看APP详情
@@ -6025,9 +6798,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAppV2Response`
         """
-        return self._show_details_of_app_v2_with_http_info(request)
+        http_info = self._show_details_of_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_app_v2_with_http_info(self, request):
+    def show_details_of_app_v2_async_invoker(self, request):
+        http_info = self._show_details_of_app_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_app_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6046,9 +6831,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6057,20 +6842,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_custom_authorizers_v2_async(self, request):
         """查看自定义认证详情
@@ -6084,9 +6865,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCustomAuthorizersV2Response`
         """
-        return self._show_details_of_custom_authorizers_v2_with_http_info(request)
+        http_info = self._show_details_of_custom_authorizers_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_custom_authorizers_v2_with_http_info(self, request):
+    def show_details_of_custom_authorizers_v2_async_invoker(self, request):
+        http_info = self._show_details_of_custom_authorizers_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_custom_authorizers_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfCustomAuthorizersV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6105,9 +6898,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6116,20 +6909,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfCustomAuthorizersV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_domain_name_certificate_v2_async(self, request):
         """查看域名证书
@@ -6143,9 +6932,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfDomainNameCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfDomainNameCertificateV2Response`
         """
-        return self._show_details_of_domain_name_certificate_v2_with_http_info(request)
+        http_info = self._show_details_of_domain_name_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_domain_name_certificate_v2_with_http_info(self, request):
+    def show_details_of_domain_name_certificate_v2_async_invoker(self, request):
+        http_info = self._show_details_of_domain_name_certificate_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_domain_name_certificate_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfDomainNameCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6168,9 +6969,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6179,20 +6980,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate/{certificate_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfDomainNameCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_environment_variable_v2_async(self, request):
         """查看变量详情
@@ -6206,9 +7003,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfEnvironmentVariableV2Response`
         """
-        return self._show_details_of_environment_variable_v2_with_http_info(request)
+        http_info = self._show_details_of_environment_variable_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_environment_variable_v2_with_http_info(self, request):
+    def show_details_of_environment_variable_v2_async_invoker(self, request):
+        http_info = self._show_details_of_environment_variable_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_environment_variable_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/env-variables/{env_variable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfEnvironmentVariableV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6227,9 +7036,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6238,20 +7047,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/env-variables/{env_variable_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfEnvironmentVariableV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_gateway_response_type_v2_async(self, request):
         """查看分组下指定错误类型的自定义响应
@@ -6265,9 +7070,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseTypeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseTypeV2Response`
         """
-        return self._show_details_of_gateway_response_type_v2_with_http_info(request)
+        http_info = self._show_details_of_gateway_response_type_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_gateway_response_type_v2_with_http_info(self, request):
+    def show_details_of_gateway_response_type_v2_async_invoker(self, request):
+        http_info = self._show_details_of_gateway_response_type_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_gateway_response_type_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfGatewayResponseTypeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6290,9 +7107,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6301,20 +7118,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfGatewayResponseTypeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_gateway_response_v2_async(self, request):
         """查询分组自定义响应详情
@@ -6328,9 +7141,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfGatewayResponseV2Response`
         """
-        return self._show_details_of_gateway_response_v2_with_http_info(request)
+        http_info = self._show_details_of_gateway_response_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_gateway_response_v2_with_http_info(self, request):
+    def show_details_of_gateway_response_v2_async_invoker(self, request):
+        http_info = self._show_details_of_gateway_response_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_gateway_response_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfGatewayResponseV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6351,9 +7176,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6362,20 +7187,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfGatewayResponseV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_instance_progress_v2_async(self, request):
         """查看专享版实例创建进度
@@ -6389,9 +7210,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceProgressV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceProgressV2Response`
         """
-        return self._show_details_of_instance_progress_v2_with_http_info(request)
+        http_info = self._show_details_of_instance_progress_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_instance_progress_v2_with_http_info(self, request):
+    def show_details_of_instance_progress_v2_async_invoker(self, request):
+        http_info = self._show_details_of_instance_progress_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_instance_progress_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfInstanceProgressV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6408,9 +7241,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6419,20 +7252,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/progress',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfInstanceProgressV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_instance_v2_async(self, request):
         """查看专享版实例详情
@@ -6446,9 +7275,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfInstanceV2Response`
         """
-        return self._show_details_of_instance_v2_with_http_info(request)
+        http_info = self._show_details_of_instance_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_instance_v2_with_http_info(self, request):
+    def show_details_of_instance_v2_async_invoker(self, request):
+        http_info = self._show_details_of_instance_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_instance_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfInstanceV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6465,9 +7306,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6476,20 +7317,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfInstanceV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_request_throttling_policy_v2_async(self, request):
         """查看流控策略详情
@@ -6503,9 +7340,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfRequestThrottlingPolicyV2Response`
         """
-        return self._show_details_of_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._show_details_of_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_request_throttling_policy_v2_with_http_info(self, request):
+    def show_details_of_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._show_details_of_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6524,9 +7373,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6535,20 +7384,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_plugin_async(self, request):
         """查询插件详情
@@ -6562,9 +7407,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowPluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowPluginResponse`
         """
-        return self._show_plugin_with_http_info(request)
+        http_info = self._show_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_plugin_with_http_info(self, request):
+    def show_plugin_async_invoker(self, request):
+        http_info = self._show_plugin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_plugin_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6583,9 +7440,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6594,20 +7451,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_restriction_of_instance_v2_async(self, request):
         """查看实例约束信息
@@ -6621,9 +7474,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowRestrictionOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowRestrictionOfInstanceV2Response`
         """
-        return self._show_restriction_of_instance_v2_with_http_info(request)
+        http_info = self._show_restriction_of_instance_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_restriction_of_instance_v2_with_http_info(self, request):
+    def show_restriction_of_instance_v2_async_invoker(self, request):
+        http_info = self._show_restriction_of_instance_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_restriction_of_instance_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/restriction",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRestrictionOfInstanceV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6640,9 +7505,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6651,20 +7516,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/restriction',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRestrictionOfInstanceV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_acl_async(self, request):
         """设置APP的访问控制
@@ -6678,9 +7539,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateAppAclRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateAppAclResponse`
         """
-        return self._update_app_acl_with_http_info(request)
+        http_info = self._update_app_acl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_acl_with_http_info(self, request):
+    def update_app_acl_async_invoker(self, request):
+        http_info = self._update_app_acl_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_app_acl_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-acl",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppAclResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6699,11 +7572,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6712,20 +7585,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}/app-acl',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppAclResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_quota_async(self, request):
         """修改凭据配额
@@ -6739,9 +7608,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateAppQuotaResponse`
         """
-        return self._update_app_quota_with_http_info(request)
+        http_info = self._update_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_quota_with_http_info(self, request):
+    def update_app_quota_async_invoker(self, request):
+        http_info = self._update_app_quota_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_app_quota_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6760,11 +7641,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6773,20 +7654,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-quotas/{app_quota_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_v2_async(self, request):
         """修改APP
@@ -6800,9 +7677,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateAppV2Response`
         """
-        return self._update_app_v2_with_http_info(request)
+        http_info = self._update_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_v2_with_http_info(self, request):
+    def update_app_v2_async_invoker(self, request):
+        http_info = self._update_app_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_app_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6821,11 +7710,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6834,20 +7723,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apps/{app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_custom_authorizer_v2_async(self, request):
         """修改自定义认证
@@ -6861,9 +7746,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateCustomAuthorizerV2Response`
         """
-        return self._update_custom_authorizer_v2_with_http_info(request)
+        http_info = self._update_custom_authorizer_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_custom_authorizer_v2_with_http_info(self, request):
+    def update_custom_authorizer_v2_async_invoker(self, request):
+        http_info = self._update_custom_authorizer_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_custom_authorizer_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomAuthorizerV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6882,11 +7779,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6895,20 +7792,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/authorizers/{authorizer_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCustomAuthorizerV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_v2_async(self, request):
         """修改域名
@@ -6922,9 +7815,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateDomainV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateDomainV2Response`
         """
-        return self._update_domain_v2_with_http_info(request)
+        http_info = self._update_domain_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_v2_with_http_info(self, request):
+    def update_domain_v2_async_invoker(self, request):
+        http_info = self._update_domain_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_domain_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6945,11 +7850,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6958,20 +7863,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_engress_eip_v2_async(self, request):
         """更新实例出公网带宽
@@ -6985,9 +7886,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateEngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateEngressEipV2Response`
         """
-        return self._update_engress_eip_v2_with_http_info(request)
+        http_info = self._update_engress_eip_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_engress_eip_v2_with_http_info(self, request):
+    def update_engress_eip_v2_async_invoker(self, request):
+        http_info = self._update_engress_eip_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_engress_eip_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/nat-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEngressEipV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7004,11 +7917,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7017,20 +7930,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/nat-eip',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEngressEipV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_environment_v2_async(self, request):
         """修改环境
@@ -7044,9 +7953,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateEnvironmentV2Response`
         """
-        return self._update_environment_v2_with_http_info(request)
+        http_info = self._update_environment_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_environment_v2_with_http_info(self, request):
+    def update_environment_v2_async_invoker(self, request):
+        http_info = self._update_environment_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_environment_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/envs/{env_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEnvironmentV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7065,11 +7986,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7078,20 +7999,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/envs/{env_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEnvironmentV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_environment_variable_v2_async(self, request):
         """修改变量
@@ -7105,9 +8022,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateEnvironmentVariableV2Response`
         """
-        return self._update_environment_variable_v2_with_http_info(request)
+        http_info = self._update_environment_variable_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_environment_variable_v2_with_http_info(self, request):
+    def update_environment_variable_v2_async_invoker(self, request):
+        http_info = self._update_environment_variable_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_environment_variable_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/env-variables/{env_variable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEnvironmentVariableV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7126,11 +8055,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7139,20 +8068,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/env-variables/{env_variable_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEnvironmentVariableV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gateway_response_type_v2_async(self, request):
         """修改分组下指定错误类型的自定义响应
@@ -7166,9 +8091,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseTypeV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseTypeV2Response`
         """
-        return self._update_gateway_response_type_v2_with_http_info(request)
+        http_info = self._update_gateway_response_type_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gateway_response_type_v2_with_http_info(self, request):
+    def update_gateway_response_type_v2_async_invoker(self, request):
+        http_info = self._update_gateway_response_type_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_gateway_response_type_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGatewayResponseTypeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7191,11 +8128,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7204,20 +8141,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}/{response_type}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGatewayResponseTypeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_gateway_response_v2_async(self, request):
         """修改分组自定义响应
@@ -7231,9 +8164,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateGatewayResponseV2Response`
         """
-        return self._update_gateway_response_v2_with_http_info(request)
+        http_info = self._update_gateway_response_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_gateway_response_v2_with_http_info(self, request):
+    def update_gateway_response_v2_async_invoker(self, request):
+        http_info = self._update_gateway_response_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_gateway_response_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGatewayResponseV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7254,11 +8199,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7267,20 +8212,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/gateway-responses/{response_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGatewayResponseV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_ingress_eip_v2_async(self, request):
         """更新实例入公网带宽
@@ -7294,9 +8235,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateIngressEipV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateIngressEipV2Response`
         """
-        return self._update_ingress_eip_v2_with_http_info(request)
+        http_info = self._update_ingress_eip_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_ingress_eip_v2_with_http_info(self, request):
+    def update_ingress_eip_v2_async_invoker(self, request):
+        http_info = self._update_ingress_eip_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_ingress_eip_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateIngressEipV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7313,11 +8266,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7326,20 +8279,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/ingress-eip',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateIngressEipV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance_v2_async(self, request):
         """更新专享版实例
@@ -7353,9 +8302,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateInstanceV2Response`
         """
-        return self._update_instance_v2_with_http_info(request)
+        http_info = self._update_instance_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_v2_with_http_info(self, request):
+    def update_instance_v2_async_invoker(self, request):
+        http_info = self._update_instance_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_instance_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7372,11 +8333,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7385,20 +8346,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_plugin_async(self, request):
         """修改插件
@@ -7414,9 +8371,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdatePluginRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdatePluginResponse`
         """
-        return self._update_plugin_with_http_info(request)
+        http_info = self._update_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_plugin_with_http_info(self, request):
+    def update_plugin_async_invoker(self, request):
+        http_info = self._update_plugin_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_plugin_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7435,11 +8404,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7448,20 +8417,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/plugins/{plugin_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_request_throttling_policy_v2_async(self, request):
         """修改流控策略
@@ -7475,9 +8440,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateRequestThrottlingPolicyV2Response`
         """
-        return self._update_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._update_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_request_throttling_policy_v2_with_http_info(self, request):
+    def update_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._update_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7496,11 +8473,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7509,20 +8486,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_signature_key_v2_async(self, request):
         """修改签名密钥
@@ -7536,9 +8509,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateSignatureKeyV2Response`
         """
-        return self._update_signature_key_v2_with_http_info(request)
+        http_info = self._update_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_signature_key_v2_with_http_info(self, request):
+    def update_signature_key_v2_async_invoker(self, request):
+        http_info = self._update_signature_key_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_signature_key_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/signs/{sign_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7557,11 +8542,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7570,20 +8555,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/signs/{sign_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_special_throttling_configuration_v2_async(self, request):
         """修改特殊设置
@@ -7597,9 +8578,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateSpecialThrottlingConfigurationV2Response`
         """
-        return self._update_special_throttling_configuration_v2_with_http_info(request)
+        http_info = self._update_special_throttling_configuration_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_special_throttling_configuration_v2_with_http_info(self, request):
+    def update_special_throttling_configuration_v2_async_invoker(self, request):
+        http_info = self._update_special_throttling_configuration_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_special_throttling_configuration_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}/throttle-specials/{strategy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSpecialThrottlingConfigurationV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7620,11 +8613,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7633,20 +8626,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttles/{throttle_id}/throttle-specials/{strategy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSpecialThrottlingConfigurationV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_acl_v2_async(self, request):
         """批量删除ACL策略
@@ -7662,9 +8651,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDeleteAclV2Response`
         """
-        return self._batch_delete_acl_v2_with_http_info(request)
+        http_info = self._batch_delete_acl_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_acl_v2_with_http_info(self, request):
+    def batch_delete_acl_v2_async_invoker(self, request):
+        http_info = self._batch_delete_acl_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_acl_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAclV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7683,11 +8684,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7696,20 +8697,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteAclV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_acl_strategy_v2_async(self, request):
         """创建ACL策略
@@ -7723,9 +8720,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAclStrategyV2Response`
         """
-        return self._create_acl_strategy_v2_with_http_info(request)
+        http_info = self._create_acl_strategy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_acl_strategy_v2_with_http_info(self, request):
+    def create_acl_strategy_v2_async_invoker(self, request):
+        http_info = self._create_acl_strategy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_acl_strategy_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAclStrategyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7742,11 +8751,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7755,20 +8764,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAclStrategyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_acl_v2_async(self, request):
         """删除ACL策略
@@ -7782,9 +8787,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteAclV2Response`
         """
-        return self._delete_acl_v2_with_http_info(request)
+        http_info = self._delete_acl_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_acl_v2_with_http_info(self, request):
+    def delete_acl_v2_async_invoker(self, request):
+        http_info = self._delete_acl_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_acl_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAclV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7803,9 +8820,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7814,20 +8831,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAclV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_acl_strategies_v2_async(self, request):
         """查看ACL策略列表
@@ -7841,9 +8854,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAclStrategiesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAclStrategiesV2Response`
         """
-        return self._list_acl_strategies_v2_with_http_info(request)
+        http_info = self._list_acl_strategies_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_acl_strategies_v2_with_http_info(self, request):
+    def list_acl_strategies_v2_async_invoker(self, request):
+        http_info = self._list_acl_strategies_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_acl_strategies_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAclStrategiesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7874,9 +8899,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7885,20 +8910,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAclStrategiesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_acl_policy_v2_async(self, request):
         """查看ACL策略详情
@@ -7912,9 +8933,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfAclPolicyV2Response`
         """
-        return self._show_details_of_acl_policy_v2_with_http_info(request)
+        http_info = self._show_details_of_acl_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_acl_policy_v2_with_http_info(self, request):
+    def show_details_of_acl_policy_v2_async_invoker(self, request):
+        http_info = self._show_details_of_acl_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_acl_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAclPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7933,9 +8966,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7944,20 +8977,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAclPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_acl_strategy_v2_async(self, request):
         """修改ACL策略
@@ -7971,9 +9000,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateAclStrategyV2Response`
         """
-        return self._update_acl_strategy_v2_with_http_info(request)
+        http_info = self._update_acl_strategy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_acl_strategy_v2_with_http_info(self, request):
+    def update_acl_strategy_v2_async_invoker(self, request):
+        http_info = self._update_acl_strategy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_acl_strategy_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAclStrategyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7992,11 +9033,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8005,20 +9046,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acls/{acl_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAclStrategyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_request_throttling_policy_v2_async(self, request):
         """绑定流控策略
@@ -8038,9 +9075,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AssociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AssociateRequestThrottlingPolicyV2Response`
         """
-        return self._associate_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._associate_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_request_throttling_policy_v2_with_http_info(self, request):
+    def associate_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._associate_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8057,11 +9106,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8070,20 +9119,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disassociate_throttling_policy_v2_async(self, request):
         """批量解绑流控策略
@@ -8097,9 +9142,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDisassociateThrottlingPolicyV2Response`
         """
-        return self._batch_disassociate_throttling_policy_v2_with_http_info(request)
+        http_info = self._batch_disassociate_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disassociate_throttling_policy_v2_with_http_info(self, request):
+    def batch_disassociate_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._batch_disassociate_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_disassociate_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociateThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8118,11 +9175,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8131,20 +9188,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisassociateThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_publish_or_offline_api_v2_async(self, request):
         """批量发布或下线API
@@ -8158,9 +9211,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchPublishOrOfflineApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchPublishOrOfflineApiV2Response`
         """
-        return self._batch_publish_or_offline_api_v2_with_http_info(request)
+        http_info = self._batch_publish_or_offline_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_publish_or_offline_api_v2_with_http_info(self, request):
+    def batch_publish_or_offline_api_v2_async_invoker(self, request):
+        http_info = self._batch_publish_or_offline_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_publish_or_offline_api_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchPublishOrOfflineApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8179,11 +9244,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8192,20 +9257,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchPublishOrOfflineApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_api_version_v2_async(self, request):
         """切换API版本
@@ -8221,9 +9282,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ChangeApiVersionV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ChangeApiVersionV2Response`
         """
-        return self._change_api_version_v2_with_http_info(request)
+        http_info = self._change_api_version_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_api_version_v2_with_http_info(self, request):
+    def change_api_version_v2_async_invoker(self, request):
+        http_info = self._change_api_version_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_api_version_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/publish/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeApiVersionV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8242,11 +9315,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8255,20 +9328,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/publish/{api_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeApiVersionV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_apis_v2_async(self, request):
         """校验API定义
@@ -8282,9 +9351,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CheckApisV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CheckApisV2Response`
         """
-        return self._check_apis_v2_with_http_info(request)
+        http_info = self._check_apis_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_apis_v2_with_http_info(self, request):
+    def check_apis_v2_async_invoker(self, request):
+        http_info = self._check_apis_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _check_apis_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckApisV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8301,11 +9382,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8314,20 +9395,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckApisV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_api_group_v2_async(self, request):
         """创建API分组
@@ -8341,9 +9418,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateApiGroupV2Response`
         """
-        return self._create_api_group_v2_with_http_info(request)
+        http_info = self._create_api_group_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_api_group_v2_with_http_info(self, request):
+    def create_api_group_v2_async_invoker(self, request):
+        http_info = self._create_api_group_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_api_group_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApiGroupV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8360,11 +9449,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8373,20 +9462,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApiGroupV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_api_v2_async(self, request):
         """创建API
@@ -8403,9 +9488,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateApiV2Response`
         """
-        return self._create_api_v2_with_http_info(request)
+        http_info = self._create_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_api_v2_with_http_info(self, request):
+    def create_api_v2_async_invoker(self, request):
+        http_info = self._create_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_api_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8422,11 +9519,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8435,20 +9532,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_or_delete_publish_record_for_api_v2_async(self, request):
         """发布或下线API
@@ -8466,9 +9559,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateOrDeletePublishRecordForApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateOrDeletePublishRecordForApiV2Response`
         """
-        return self._create_or_delete_publish_record_for_api_v2_with_http_info(request)
+        http_info = self._create_or_delete_publish_record_for_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_or_delete_publish_record_for_api_v2_with_http_info(self, request):
+    def create_or_delete_publish_record_for_api_v2_async_invoker(self, request):
+        http_info = self._create_or_delete_publish_record_for_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_or_delete_publish_record_for_api_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrDeletePublishRecordForApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8485,11 +9590,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8498,20 +9603,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrDeletePublishRecordForApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def debug_api_v2_async(self, request):
         """调试API
@@ -8525,9 +9626,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DebugApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DebugApiV2Response`
         """
-        return self._debug_api_v2_with_http_info(request)
+        http_info = self._debug_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _debug_api_v2_with_http_info(self, request):
+    def debug_api_v2_async_invoker(self, request):
+        http_info = self._debug_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _debug_api_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/debug/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DebugApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8546,11 +9659,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8559,20 +9672,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/debug/{api_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DebugApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api_by_version_id_v2_async(self, request):
         """根据版本编号下线API
@@ -8586,9 +9695,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiByVersionIdV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteApiByVersionIdV2Response`
         """
-        return self._delete_api_by_version_id_v2_with_http_info(request)
+        http_info = self._delete_api_by_version_id_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_by_version_id_v2_with_http_info(self, request):
+    def delete_api_by_version_id_v2_async_invoker(self, request):
+        http_info = self._delete_api_by_version_id_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_api_by_version_id_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiByVersionIdV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8607,9 +9728,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8618,20 +9739,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/versions/{version_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiByVersionIdV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api_group_v2_async(self, request):
         """删除API分组
@@ -8649,9 +9766,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteApiGroupV2Response`
         """
-        return self._delete_api_group_v2_with_http_info(request)
+        http_info = self._delete_api_group_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_group_v2_with_http_info(self, request):
+    def delete_api_group_v2_async_invoker(self, request):
+        http_info = self._delete_api_group_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_api_group_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiGroupV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8670,9 +9799,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8681,20 +9810,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiGroupV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api_v2_async(self, request):
         """删除API
@@ -8710,9 +9835,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteApiV2Response`
         """
-        return self._delete_api_v2_with_http_info(request)
+        http_info = self._delete_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_v2_with_http_info(self, request):
+    def delete_api_v2_async_invoker(self, request):
+        http_info = self._delete_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_api_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8731,9 +9868,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8742,20 +9879,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_request_throttling_policy_v2_async(self, request):
         """解除API与流控策略的绑定关系
@@ -8769,9 +9902,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DisassociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DisassociateRequestThrottlingPolicyV2Response`
         """
-        return self._disassociate_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._disassociate_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_request_throttling_policy_v2_with_http_info(self, request):
+    def disassociate_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._disassociate_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings/{throttle_binding_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8790,9 +9935,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8801,20 +9946,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings/{throttle_binding_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_groups_v2_async(self, request):
         """查询分组列表
@@ -8830,9 +9971,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiGroupsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiGroupsV2Response`
         """
-        return self._list_api_groups_v2_with_http_info(request)
+        http_info = self._list_api_groups_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_groups_v2_with_http_info(self, request):
+    def list_api_groups_v2_async_invoker(self, request):
+        http_info = self._list_api_groups_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_groups_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiGroupsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8859,9 +10012,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8870,20 +10023,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiGroupsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_runtime_definition_v2_async(self, request):
         """查询API运行时定义
@@ -8903,9 +10052,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiRuntimeDefinitionV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiRuntimeDefinitionV2Response`
         """
-        return self._list_api_runtime_definition_v2_with_http_info(request)
+        http_info = self._list_api_runtime_definition_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_runtime_definition_v2_with_http_info(self, request):
+    def list_api_runtime_definition_v2_async_invoker(self, request):
+        http_info = self._list_api_runtime_definition_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_runtime_definition_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/runtime/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiRuntimeDefinitionV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8926,9 +10087,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8937,20 +10098,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/runtime/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiRuntimeDefinitionV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_version_detail_v2_async(self, request):
         """查看版本详情
@@ -8964,9 +10121,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiVersionDetailV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiVersionDetailV2Response`
         """
-        return self._list_api_version_detail_v2_with_http_info(request)
+        http_info = self._list_api_version_detail_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_version_detail_v2_with_http_info(self, request):
+    def list_api_version_detail_v2_async_invoker(self, request):
+        http_info = self._list_api_version_detail_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_version_detail_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionDetailV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8985,9 +10154,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8996,20 +10165,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/versions/{version_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionDetailV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions_v2_async(self, request):
         """查询API历史版本列表
@@ -9023,9 +10188,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApiVersionsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApiVersionsV2Response`
         """
-        return self._list_api_versions_v2_with_http_info(request)
+        http_info = self._list_api_versions_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_v2_with_http_info(self, request):
+    def list_api_versions_v2_async_invoker(self, request):
+        http_info = self._list_api_versions_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_api_versions_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/publish/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9052,9 +10229,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9063,20 +10240,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/publish/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_binded_to_request_throttling_policy_v2_async(self, request):
         """查看流控策略绑定的API列表
@@ -9090,9 +10263,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisBindedToRequestThrottlingPolicyV2Response`
         """
-        return self._list_apis_binded_to_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._list_apis_binded_to_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_binded_to_request_throttling_policy_v2_with_http_info(self, request):
+    def list_apis_binded_to_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._list_apis_binded_to_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_binded_to_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings/binded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisBindedToRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9123,9 +10308,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9134,20 +10319,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings/binded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisBindedToRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_unbinded_to_request_throttling_policy_v2_async(self, request):
         """查看流控策略未绑定的API列表
@@ -9161,9 +10342,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToRequestThrottlingPolicyV2Response`
         """
-        return self._list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._list_apis_unbinded_to_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(self, request):
+    def list_apis_unbinded_to_request_throttling_policy_v2_async_invoker(self, request):
+        http_info = self._list_apis_unbinded_to_request_throttling_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_unbinded_to_request_throttling_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings/unbinded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisUnbindedToRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9194,9 +10387,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9205,20 +10398,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings/unbinded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisUnbindedToRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_v2_async(self, request):
         """查询API列表
@@ -9232,9 +10421,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisV2Response`
         """
-        return self._list_apis_v2_with_http_info(request)
+        http_info = self._list_apis_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_v2_with_http_info(self, request):
+    def list_apis_v2_async_invoker(self, request):
+        http_info = self._list_apis_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9277,9 +10478,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9288,20 +10489,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_request_throttling_policies_binded_to_api_v2_async(self, request):
         """查看API绑定的流控策略列表
@@ -9315,9 +10512,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPoliciesBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListRequestThrottlingPoliciesBindedToApiV2Response`
         """
-        return self._list_request_throttling_policies_binded_to_api_v2_with_http_info(request)
+        http_info = self._list_request_throttling_policies_binded_to_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_request_throttling_policies_binded_to_api_v2_with_http_info(self, request):
+    def list_request_throttling_policies_binded_to_api_v2_async_invoker(self, request):
+        http_info = self._list_request_throttling_policies_binded_to_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_request_throttling_policies_binded_to_api_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings/binded-throttles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRequestThrottlingPoliciesBindedToApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9346,9 +10555,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9357,20 +10566,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/throttle-bindings/binded-throttles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRequestThrottlingPoliciesBindedToApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_api_group_v2_async(self, request):
         """查询分组详情
@@ -9384,9 +10589,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiGroupV2Response`
         """
-        return self._show_details_of_api_group_v2_with_http_info(request)
+        http_info = self._show_details_of_api_group_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_api_group_v2_with_http_info(self, request):
+    def show_details_of_api_group_v2_async_invoker(self, request):
+        http_info = self._show_details_of_api_group_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_api_group_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfApiGroupV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9405,9 +10622,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9416,20 +10633,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfApiGroupV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_api_v2_async(self, request):
         """查询API详情
@@ -9443,9 +10656,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfApiV2Response`
         """
-        return self._show_details_of_api_v2_with_http_info(request)
+        http_info = self._show_details_of_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_api_v2_with_http_info(self, request):
+    def show_details_of_api_v2_async_invoker(self, request):
+        http_info = self._show_details_of_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_api_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9464,9 +10689,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9475,20 +10700,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_api_group_v2_async(self, request):
         """修改API分组
@@ -9502,9 +10723,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateApiGroupV2Response`
         """
-        return self._update_api_group_v2_with_http_info(request)
+        http_info = self._update_api_group_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_api_group_v2_with_http_info(self, request):
+    def update_api_group_v2_async_invoker(self, request):
+        http_info = self._update_api_group_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_api_group_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApiGroupV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9523,11 +10756,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9536,20 +10769,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateApiGroupV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_api_v2_async(self, request):
         """修改API
@@ -9563,9 +10792,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateApiV2Response`
         """
-        return self._update_api_v2_with_http_info(request)
+        http_info = self._update_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_api_v2_with_http_info(self, request):
+    def update_api_v2_async_invoker(self, request):
+        http_info = self._update_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_api_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9584,11 +10825,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9597,20 +10838,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/apis/{api_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_api_acl_binding_v2_async(self, request):
         """批量解除API与ACL策略的绑定
@@ -9624,9 +10861,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDeleteApiAclBindingV2Response`
         """
-        return self._batch_delete_api_acl_binding_v2_with_http_info(request)
+        http_info = self._batch_delete_api_acl_binding_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_api_acl_binding_v2_with_http_info(self, request):
+    def batch_delete_api_acl_binding_v2_async_invoker(self, request):
+        http_info = self._batch_delete_api_acl_binding_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_api_acl_binding_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteApiAclBindingV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9645,11 +10894,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9658,20 +10907,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteApiAclBindingV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_api_acl_binding_v2_async(self, request):
         """将API与ACL策略进行绑定
@@ -9687,9 +10932,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateApiAclBindingV2Response`
         """
-        return self._create_api_acl_binding_v2_with_http_info(request)
+        http_info = self._create_api_acl_binding_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_api_acl_binding_v2_with_http_info(self, request):
+    def create_api_acl_binding_v2_async_invoker(self, request):
+        http_info = self._create_api_acl_binding_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_api_acl_binding_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApiAclBindingV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9706,11 +10963,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9719,20 +10976,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApiAclBindingV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api_acl_binding_v2_async(self, request):
         """解除API与ACL策略的绑定
@@ -9746,9 +10999,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteApiAclBindingV2Response`
         """
-        return self._delete_api_acl_binding_v2_with_http_info(request)
+        http_info = self._delete_api_acl_binding_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_acl_binding_v2_with_http_info(self, request):
+    def delete_api_acl_binding_v2_async_invoker(self, request):
+        http_info = self._delete_api_acl_binding_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_api_acl_binding_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/{acl_bindings_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiAclBindingV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9767,9 +11032,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9778,20 +11043,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/{acl_bindings_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiAclBindingV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_acl_policy_binded_to_api_v2_async(self, request):
         """查看API绑定的ACL策略列表
@@ -9805,9 +11066,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAclPolicyBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAclPolicyBindedToApiV2Response`
         """
-        return self._list_acl_policy_binded_to_api_v2_with_http_info(request)
+        http_info = self._list_acl_policy_binded_to_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_acl_policy_binded_to_api_v2_with_http_info(self, request):
+    def list_acl_policy_binded_to_api_v2_async_invoker(self, request):
+        http_info = self._list_acl_policy_binded_to_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_acl_policy_binded_to_api_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/binded-acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAclPolicyBindedToApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9838,9 +11111,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9849,20 +11122,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/binded-acls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAclPolicyBindedToApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_binded_to_acl_policy_v2_async(self, request):
         """查看ACL策略绑定的API列表
@@ -9876,9 +11145,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisBindedToAclPolicyV2Response`
         """
-        return self._list_apis_binded_to_acl_policy_v2_with_http_info(request)
+        http_info = self._list_apis_binded_to_acl_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_binded_to_acl_policy_v2_with_http_info(self, request):
+    def list_apis_binded_to_acl_policy_v2_async_invoker(self, request):
+        http_info = self._list_apis_binded_to_acl_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_binded_to_acl_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/binded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisBindedToAclPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9909,9 +11190,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9920,20 +11201,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/binded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisBindedToAclPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_unbinded_to_acl_policy_v2_async(self, request):
         """查看ACL策略未绑定的API列表
@@ -9947,9 +11224,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAclPolicyV2Response`
         """
-        return self._list_apis_unbinded_to_acl_policy_v2_with_http_info(request)
+        http_info = self._list_apis_unbinded_to_acl_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_unbinded_to_acl_policy_v2_with_http_info(self, request):
+    def list_apis_unbinded_to_acl_policy_v2_async_invoker(self, request):
+        http_info = self._list_apis_unbinded_to_acl_policy_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_unbinded_to_acl_policy_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/unbinded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisUnbindedToAclPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9980,9 +11269,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9991,20 +11280,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/acl-bindings/unbinded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisUnbindedToAclPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def canceling_authorization_v2_async(self, request):
         """解除授权
@@ -10018,9 +11303,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CancelingAuthorizationV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CancelingAuthorizationV2Response`
         """
-        return self._canceling_authorization_v2_with_http_info(request)
+        http_info = self._canceling_authorization_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _canceling_authorization_v2_with_http_info(self, request):
+    def canceling_authorization_v2_async_invoker(self, request):
+        http_info = self._canceling_authorization_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _canceling_authorization_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-auths/{app_auth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelingAuthorizationV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10039,9 +11336,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10050,20 +11347,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-auths/{app_auth_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelingAuthorizationV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_authorizing_apps_v2_async(self, request):
         """APP授权
@@ -10077,9 +11370,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateAuthorizingAppsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateAuthorizingAppsV2Response`
         """
-        return self._create_authorizing_apps_v2_with_http_info(request)
+        http_info = self._create_authorizing_apps_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_authorizing_apps_v2_with_http_info(self, request):
+    def create_authorizing_apps_v2_async_invoker(self, request):
+        http_info = self._create_authorizing_apps_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_authorizing_apps_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-auths",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthorizingAppsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10096,11 +11401,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10109,20 +11414,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-auths',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAuthorizingAppsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_binded_to_app_v2_async(self, request):
         """查看APP已绑定的API列表
@@ -10136,9 +11437,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisBindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisBindedToAppV2Response`
         """
-        return self._list_apis_binded_to_app_v2_with_http_info(request)
+        http_info = self._list_apis_binded_to_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_binded_to_app_v2_with_http_info(self, request):
+    def list_apis_binded_to_app_v2_async_invoker(self, request):
+        http_info = self._list_apis_binded_to_app_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_binded_to_app_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-auths/binded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisBindedToAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10171,9 +11484,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10182,20 +11495,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-auths/binded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisBindedToAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_unbinded_to_app_v2_async(self, request):
         """查看APP未绑定的API列表
@@ -10209,9 +11518,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListApisUnbindedToAppV2Response`
         """
-        return self._list_apis_unbinded_to_app_v2_with_http_info(request)
+        http_info = self._list_apis_unbinded_to_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_unbinded_to_app_v2_with_http_info(self, request):
+    def list_apis_unbinded_to_app_v2_async_invoker(self, request):
+        http_info = self._list_apis_unbinded_to_app_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apis_unbinded_to_app_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-auths/unbinded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisUnbindedToAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10242,9 +11563,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10253,20 +11574,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-auths/unbinded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisUnbindedToAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps_binded_to_api_v2_async(self, request):
         """查看API已绑定的APP列表
@@ -10280,9 +11597,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAppsBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAppsBindedToApiV2Response`
         """
-        return self._list_apps_binded_to_api_v2_with_http_info(request)
+        http_info = self._list_apps_binded_to_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_binded_to_api_v2_with_http_info(self, request):
+    def list_apps_binded_to_api_v2_async_invoker(self, request):
+        http_info = self._list_apps_binded_to_api_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_apps_binded_to_api_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/app-auths/binded-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsBindedToApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10311,9 +11640,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10322,20 +11651,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/app-auths/binded-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsBindedToApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_api_definitions_v2_async(self, request):
         """导出API
@@ -10349,9 +11674,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ExportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ExportApiDefinitionsV2Response`
         """
-        return self._export_api_definitions_v2_with_http_info(request)
+        http_info = self._export_api_definitions_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_api_definitions_v2_with_http_info(self, request):
+    def export_api_definitions_v2_async_invoker(self, request):
+        http_info = self._export_api_definitions_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _export_api_definitions_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/openapi/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportApiDefinitionsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10370,11 +11707,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10383,20 +11720,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/openapi/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportApiDefinitionsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_api_definitions_v2_async(self, request):
         """导入API
@@ -10410,9 +11743,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ImportApiDefinitionsV2Response`
         """
-        return self._import_api_definitions_v2_with_http_info(request)
+        http_info = self._import_api_definitions_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_api_definitions_v2_with_http_info(self, request):
+    def import_api_definitions_v2_async_invoker(self, request):
+        http_info = self._import_api_definitions_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _import_api_definitions_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/openapi/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportApiDefinitionsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10443,11 +11788,11 @@ class ApigAsyncClient(Client):
         if 'file_name' in local_var_params:
             form_params['file_name'] = local_var_params['file_name']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10456,20 +11801,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/openapi/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportApiDefinitionsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_associate_certs_v2_async(self, request):
         """域名绑定SSL证书
@@ -10483,9 +11824,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchAssociateCertsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchAssociateCertsV2Response`
         """
-        return self._batch_associate_certs_v2_with_http_info(request)
+        http_info = self._batch_associate_certs_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_associate_certs_v2_with_http_info(self, request):
+    def batch_associate_certs_v2_async_invoker(self, request):
+        http_info = self._batch_associate_certs_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_associate_certs_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAssociateCertsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10506,11 +11859,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10519,20 +11872,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAssociateCertsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_associate_domains_v2_async(self, request):
         """SSL证书绑定域名
@@ -10546,9 +11895,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchAssociateDomainsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchAssociateDomainsV2Response`
         """
-        return self._batch_associate_domains_v2_with_http_info(request)
+        http_info = self._batch_associate_domains_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_associate_domains_v2_with_http_info(self, request):
+    def batch_associate_domains_v2_async_invoker(self, request):
+        http_info = self._batch_associate_domains_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_associate_domains_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/certificates/{certificate_id}/domains/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAssociateDomainsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10565,11 +11926,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10578,20 +11939,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}/domains/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAssociateDomainsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disassociate_certs_v2_async(self, request):
         """域名解绑SSL证书
@@ -10605,9 +11962,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateCertsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDisassociateCertsV2Response`
         """
-        return self._batch_disassociate_certs_v2_with_http_info(request)
+        http_info = self._batch_disassociate_certs_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disassociate_certs_v2_with_http_info(self, request):
+    def batch_disassociate_certs_v2_async_invoker(self, request):
+        http_info = self._batch_disassociate_certs_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_disassociate_certs_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociateCertsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10628,11 +11997,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10641,20 +12010,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/detach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisassociateCertsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disassociate_domains_v2_async(self, request):
         """SSL证书解绑域名
@@ -10668,9 +12033,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisassociateDomainsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDisassociateDomainsV2Response`
         """
-        return self._batch_disassociate_domains_v2_with_http_info(request)
+        http_info = self._batch_disassociate_domains_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disassociate_domains_v2_with_http_info(self, request):
+    def batch_disassociate_domains_v2_async_invoker(self, request):
+        http_info = self._batch_disassociate_domains_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_disassociate_domains_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/certificates/{certificate_id}/domains/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociateDomainsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10687,11 +12064,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10700,20 +12077,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}/domains/detach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisassociateDomainsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate_v2_async(self, request):
         """创建SSL证书
@@ -10727,9 +12100,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateCertificateV2Response`
         """
-        return self._create_certificate_v2_with_http_info(request)
+        http_info = self._create_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_v2_with_http_info(self, request):
+    def create_certificate_v2_async_invoker(self, request):
+        http_info = self._create_certificate_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_certificate_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10744,11 +12129,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10757,20 +12142,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/certificates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_certificate_v2_async(self, request):
         """删除SSL证书
@@ -10784,9 +12165,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteCertificateV2Response`
         """
-        return self._delete_certificate_v2_with_http_info(request)
+        http_info = self._delete_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_certificate_v2_with_http_info(self, request):
+    def delete_certificate_v2_async_invoker(self, request):
+        http_info = self._delete_certificate_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_certificate_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10803,9 +12196,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10814,20 +12207,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_attached_domains_v2_async(self, request):
         """获取SSL证书已绑定域名列表
@@ -10841,9 +12230,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListAttachedDomainsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListAttachedDomainsV2Response`
         """
-        return self._list_attached_domains_v2_with_http_info(request)
+        http_info = self._list_attached_domains_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_attached_domains_v2_with_http_info(self, request):
+    def list_attached_domains_v2_async_invoker(self, request):
+        http_info = self._list_attached_domains_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_attached_domains_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/certificates/{certificate_id}/attached-domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAttachedDomainsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10866,9 +12267,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10877,20 +12278,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}/attached-domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAttachedDomainsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certificates_v2_async(self, request):
         """获取SSL证书列表
@@ -10904,9 +12301,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListCertificatesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListCertificatesV2Response`
         """
-        return self._list_certificates_v2_with_http_info(request)
+        http_info = self._list_certificates_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certificates_v2_with_http_info(self, request):
+    def list_certificates_v2_async_invoker(self, request):
+        http_info = self._list_certificates_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_certificates_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificatesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10935,9 +12344,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10946,20 +12355,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/certificates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertificatesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_certificate_v2_async(self, request):
         """查看证书详情
@@ -10973,9 +12378,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfCertificateV2Response`
         """
-        return self._show_details_of_certificate_v2_with_http_info(request)
+        http_info = self._show_details_of_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_certificate_v2_with_http_info(self, request):
+    def show_details_of_certificate_v2_async_invoker(self, request):
+        http_info = self._show_details_of_certificate_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_certificate_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10992,9 +12409,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11003,20 +12420,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_certificate_v2_async(self, request):
         """修改SSL证书
@@ -11030,9 +12443,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateCertificateV2Response`
         """
-        return self._update_certificate_v2_with_http_info(request)
+        http_info = self._update_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_certificate_v2_with_http_info(self, request):
+    def update_certificate_v2_async_invoker(self, request):
+        http_info = self._update_certificate_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_certificate_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11049,11 +12474,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11062,20 +12487,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/certificates/{certificate_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def adding_backend_instances_v2_async(self, request):
         """添加或更新后端实例
@@ -11091,9 +12512,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.AddingBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.AddingBackendInstancesV2Response`
         """
-        return self._adding_backend_instances_v2_with_http_info(request)
+        http_info = self._adding_backend_instances_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _adding_backend_instances_v2_with_http_info(self, request):
+    def adding_backend_instances_v2_async_invoker(self, request):
+        http_info = self._adding_backend_instances_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _adding_backend_instances_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddingBackendInstancesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11112,11 +12545,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11125,20 +12558,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddingBackendInstancesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disable_members_async(self, request):
         """批量修改后端服务器状态不可用
@@ -11152,9 +12581,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchDisableMembersRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchDisableMembersResponse`
         """
-        return self._batch_disable_members_with_http_info(request)
+        http_info = self._batch_disable_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disable_members_with_http_info(self, request):
+    def batch_disable_members_async_invoker(self, request):
+        http_info = self._batch_disable_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_disable_members_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisableMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11173,11 +12614,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11186,20 +12627,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisableMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_enable_members_async(self, request):
         """批量修改后端服务器状态可用
@@ -11213,9 +12650,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.BatchEnableMembersRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.BatchEnableMembersResponse`
         """
-        return self._batch_enable_members_with_http_info(request)
+        http_info = self._batch_enable_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_enable_members_with_http_info(self, request):
+    def batch_enable_members_async_invoker(self, request):
+        http_info = self._batch_enable_members_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_enable_members_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchEnableMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11234,11 +12683,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11247,20 +12696,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchEnableMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_member_group_async(self, request):
         """添加或更新VPC通道后端服务器组
@@ -11276,9 +12721,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateMemberGroupResponse`
         """
-        return self._create_member_group_with_http_info(request)
+        http_info = self._create_member_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_member_group_with_http_info(self, request):
+    def create_member_group_async_invoker(self, request):
+        http_info = self._create_member_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_member_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMemberGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11297,11 +12754,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11310,20 +12767,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMemberGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc_channel_v2_async(self, request):
         """创建VPC通道
@@ -11338,9 +12791,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.CreateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.CreateVpcChannelV2Response`
         """
-        return self._create_vpc_channel_v2_with_http_info(request)
+        http_info = self._create_vpc_channel_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_channel_v2_with_http_info(self, request):
+    def create_vpc_channel_v2_async_invoker(self, request):
+        http_info = self._create_vpc_channel_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vpc_channel_v2_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcChannelV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11357,11 +12822,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11370,20 +12835,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcChannelV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_backend_instance_v2_async(self, request):
         """删除后端实例
@@ -11397,9 +12858,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteBackendInstanceV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteBackendInstanceV2Response`
         """
-        return self._delete_backend_instance_v2_with_http_info(request)
+        http_info = self._delete_backend_instance_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_backend_instance_v2_with_http_info(self, request):
+    def delete_backend_instance_v2_async_invoker(self, request):
+        http_info = self._delete_backend_instance_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_backend_instance_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBackendInstanceV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11420,9 +12893,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11431,20 +12904,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/{member_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBackendInstanceV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_member_group_async(self, request):
         """删除VPC通道后端服务器组
@@ -11458,9 +12927,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteMemberGroupResponse`
         """
-        return self._delete_member_group_with_http_info(request)
+        http_info = self._delete_member_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_member_group_with_http_info(self, request):
+    def delete_member_group_async_invoker(self, request):
+        http_info = self._delete_member_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_member_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMemberGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11481,9 +12962,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11492,20 +12973,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMemberGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc_channel_v2_async(self, request):
         """删除VPC通道
@@ -11519,9 +12996,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.DeleteVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.DeleteVpcChannelV2Response`
         """
-        return self._delete_vpc_channel_v2_with_http_info(request)
+        http_info = self._delete_vpc_channel_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_channel_v2_with_http_info(self, request):
+    def delete_vpc_channel_v2_async_invoker(self, request):
+        http_info = self._delete_vpc_channel_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vpc_channel_v2_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcChannelV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11540,9 +13029,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11551,20 +13040,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcChannelV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_backend_instances_v2_async(self, request):
         """查看后端实例列表
@@ -11578,9 +13063,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListBackendInstancesV2Response`
         """
-        return self._list_backend_instances_v2_with_http_info(request)
+        http_info = self._list_backend_instances_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_backend_instances_v2_with_http_info(self, request):
+    def list_backend_instances_v2_async_invoker(self, request):
+        http_info = self._list_backend_instances_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_backend_instances_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackendInstancesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11611,9 +13108,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11622,20 +13119,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackendInstancesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_member_groups_async(self, request):
         """查询VPC通道后端云服务组列表
@@ -11649,9 +13142,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListMemberGroupsRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ListMemberGroupsResponse`
         """
-        return self._list_member_groups_with_http_info(request)
+        http_info = self._list_member_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_member_groups_with_http_info(self, request):
+    def list_member_groups_async_invoker(self, request):
+        http_info = self._list_member_groups_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_member_groups_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMemberGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11680,9 +13185,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11691,20 +13196,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMemberGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpc_channels_v2_async(self, request):
         """查询VPC通道列表
@@ -11718,9 +13219,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ListVpcChannelsV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ListVpcChannelsV2Response`
         """
-        return self._list_vpc_channels_v2_with_http_info(request)
+        http_info = self._list_vpc_channels_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpc_channels_v2_with_http_info(self, request):
+    def list_vpc_channels_v2_async_invoker(self, request):
+        http_info = self._list_vpc_channels_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpc_channels_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcChannelsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11757,9 +13270,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11768,20 +13281,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcChannelsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_member_group_async(self, request):
         """查看VPC通道后端服务器组详情
@@ -11795,9 +13304,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfMemberGroupResponse`
         """
-        return self._show_details_of_member_group_with_http_info(request)
+        http_info = self._show_details_of_member_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_member_group_with_http_info(self, request):
+    def show_details_of_member_group_async_invoker(self, request):
+        http_info = self._show_details_of_member_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_member_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfMemberGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11818,9 +13339,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11829,20 +13350,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfMemberGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_vpc_channel_v2_async(self, request):
         """查看VPC通道详情
@@ -11856,9 +13373,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.ShowDetailsOfVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.ShowDetailsOfVpcChannelV2Response`
         """
-        return self._show_details_of_vpc_channel_v2_with_http_info(request)
+        http_info = self._show_details_of_vpc_channel_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_vpc_channel_v2_with_http_info(self, request):
+    def show_details_of_vpc_channel_v2_async_invoker(self, request):
+        http_info = self._show_details_of_vpc_channel_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_details_of_vpc_channel_v2_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfVpcChannelV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11877,9 +13406,9 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11888,20 +13417,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfVpcChannelV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_backend_instances_v2_async(self, request):
         """更新后端实例
@@ -11915,9 +13440,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateBackendInstancesV2Response`
         """
-        return self._update_backend_instances_v2_with_http_info(request)
+        http_info = self._update_backend_instances_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_backend_instances_v2_with_http_info(self, request):
+    def update_backend_instances_v2_async_invoker(self, request):
+        http_info = self._update_backend_instances_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_backend_instances_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBackendInstancesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11936,11 +13473,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11949,20 +13486,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBackendInstancesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_health_check_async(self, request):
         """修改VPC通道健康检查
@@ -11976,9 +13509,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateHealthCheckResponse`
         """
-        return self._update_health_check_with_http_info(request)
+        http_info = self._update_health_check_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_health_check_with_http_info(self, request):
+    def update_health_check_async_invoker(self, request):
+        http_info = self._update_health_check_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_health_check_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/health-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHealthCheckResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11997,11 +13542,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12010,20 +13555,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/health-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHealthCheckResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_member_group_async(self, request):
         """更新VPC通道后端服务器组
@@ -12037,9 +13578,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateMemberGroupResponse`
         """
-        return self._update_member_group_with_http_info(request)
+        http_info = self._update_member_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_member_group_with_http_info(self, request):
+    def update_member_group_async_invoker(self, request):
+        http_info = self._update_member_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_member_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMemberGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12060,11 +13613,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12073,20 +13626,16 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMemberGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpc_channel_v2_async(self, request):
         """更新VPC通道
@@ -12104,9 +13653,21 @@ class ApigAsyncClient(Client):
         :type request: :class:`huaweicloudsdkapig.v2.UpdateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkapig.v2.UpdateVpcChannelV2Response`
         """
-        return self._update_vpc_channel_v2_with_http_info(request)
+        http_info = self._update_vpc_channel_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpc_channel_v2_with_http_info(self, request):
+    def update_vpc_channel_v2_async_invoker(self, request):
+        http_info = self._update_vpc_channel_v2_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpc_channel_v2_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcChannelV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12125,11 +13686,11 @@ class ApigAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12138,20 +13699,26 @@ class ApigAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apigw/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcChannelV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -12190,4 +13757,4 @@ class ApigAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

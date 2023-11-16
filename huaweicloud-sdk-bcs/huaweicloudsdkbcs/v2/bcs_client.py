@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkbcs'")
 
 
 class BcsClient(Client):
@@ -38,9 +43,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchAddPeersToChannelResponse`
         """
-        return self._batch_add_peers_to_channel_with_http_info(request)
+        http_info = self._batch_add_peers_to_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_peers_to_channel_with_http_info(self, request):
+    def batch_add_peers_to_channel_invoker(self, request):
+        http_info = self._batch_add_peers_to_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_peers_to_channel_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/channels/peers",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddPeersToChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,11 +75,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -70,20 +88,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/channels/peers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddPeersToChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_channels(self, request):
         """创建通道
@@ -96,9 +110,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchCreateChannelsResponse`
         """
-        return self._batch_create_channels_with_http_info(request)
+        http_info = self._batch_create_channels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_channels_with_http_info(self, request):
+    def batch_create_channels_invoker(self, request):
+        http_info = self._batch_create_channels_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_create_channels_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateChannelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +142,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +155,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/channels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateChannelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_invite_members_to_channel(self, request):
         """邀请联盟成员
@@ -154,9 +177,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchInviteMembersToChannelResponse`
         """
-        return self._batch_invite_members_to_channel_with_http_info(request)
+        http_info = self._batch_invite_members_to_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_invite_members_to_channel_with_http_info(self, request):
+    def batch_invite_members_to_channel_invoker(self, request):
+        http_info = self._batch_invite_members_to_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_invite_members_to_channel_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/members/invitations",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchInviteMembersToChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -171,11 +207,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -184,20 +220,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/members/invitations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchInviteMembersToChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_remove_orgs_from_channel(self, request):
         """BCS组织退出某通道
@@ -210,9 +242,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemoveOrgsFromChannelResponse`
         """
-        return self._batch_remove_orgs_from_channel_with_http_info(request)
+        http_info = self._batch_remove_orgs_from_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_remove_orgs_from_channel_with_http_info(self, request):
+    def batch_remove_orgs_from_channel_invoker(self, request):
+        http_info = self._batch_remove_orgs_from_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_remove_orgs_from_channel_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/{channel_id}/orgs/quit",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRemoveOrgsFromChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -231,11 +276,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -244,20 +289,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/{channel_id}/orgs/quit',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRemoveOrgsFromChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_remove_peers_from_channel(self, request):
         """BCS某个组织中的节点退出某通道
@@ -270,9 +311,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.BatchRemovePeersFromChannelResponse`
         """
-        return self._batch_remove_peers_from_channel_with_http_info(request)
+        http_info = self._batch_remove_peers_from_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_remove_peers_from_channel_with_http_info(self, request):
+    def batch_remove_peers_from_channel_invoker(self, request):
+        http_info = self._batch_remove_peers_from_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_remove_peers_from_channel_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/{channel_id}/peers/quit",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchRemovePeersFromChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -291,11 +345,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -304,20 +358,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/{channel_id}/peers/quit',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchRemovePeersFromChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_blockchain_cert_by_user_name(self, request):
         """生成用户证书
@@ -330,9 +380,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateBlockchainCertByUserNameResponse`
         """
-        return self._create_blockchain_cert_by_user_name_with_http_info(request)
+        http_info = self._create_blockchain_cert_by_user_name_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_blockchain_cert_by_user_name_with_http_info(self, request):
+    def create_blockchain_cert_by_user_name_invoker(self, request):
+        http_info = self._create_blockchain_cert_by_user_name_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_blockchain_cert_by_user_name_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBlockchainCertByUserNameResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,11 +416,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +429,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBlockchainCertByUserNameResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_new_blockchain(self, request):
         """创建服务实例
@@ -392,9 +451,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.CreateNewBlockchainRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.CreateNewBlockchainResponse`
         """
-        return self._create_new_blockchain_with_http_info(request)
+        http_info = self._create_new_blockchain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_new_blockchain_with_http_info(self, request):
+    def create_new_blockchain_invoker(self, request):
+        http_info = self._create_new_blockchain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_new_blockchain_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNewBlockchainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -409,11 +481,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -422,20 +494,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNewBlockchainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_blockchain(self, request):
         """删除服务实例
@@ -448,9 +516,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteBlockchainRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteBlockchainResponse`
         """
-        return self._delete_blockchain_with_http_info(request)
+        http_info = self._delete_blockchain_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_blockchain_with_http_info(self, request):
+    def delete_blockchain_invoker(self, request):
+        http_info = self._delete_blockchain_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_blockchain_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBlockchainResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -479,9 +560,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -490,20 +571,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBlockchainResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_channel(self, request):
         """BCS删除某个通道
@@ -516,9 +593,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteChannelRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteChannelResponse`
         """
-        return self._delete_channel_with_http_info(request)
+        http_info = self._delete_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_channel_with_http_info(self, request):
+    def delete_channel_invoker(self, request):
+        http_info = self._delete_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_channel_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/channel/{channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -537,9 +627,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -548,20 +638,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/channel/{channel_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_member_invite(self, request):
         """删除邀请成员信息
@@ -574,9 +660,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DeleteMemberInviteResponse`
         """
-        return self._delete_member_invite_with_http_info(request)
+        http_info = self._delete_member_invite_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_member_invite_with_http_info(self, request):
+    def delete_member_invite_invoker(self, request):
+        http_info = self._delete_member_invite_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_member_invite_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/members/invitations",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMemberInviteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -591,11 +690,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -604,20 +703,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/members/invitations',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMemberInviteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_blockchain_cert(self, request):
         """下载证书
@@ -630,9 +725,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainCertResponse`
         """
-        return self._download_blockchain_cert_with_http_info(request)
+        http_info = self._download_blockchain_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_blockchain_cert_with_http_info(self, request):
+    def download_blockchain_cert_invoker(self, request):
+        http_info = self._download_blockchain_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_blockchain_cert_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/cert",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadBlockchainCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -653,9 +761,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -664,20 +772,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/cert',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadBlockchainCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_blockchain_sdk_config(self, request):
         """下载SDK配置
@@ -690,9 +794,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainSdkConfigRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.DownloadBlockchainSdkConfigResponse`
         """
-        return self._download_blockchain_sdk_config_with_http_info(request)
+        http_info = self._download_blockchain_sdk_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_blockchain_sdk_config_with_http_info(self, request):
+    def download_blockchain_sdk_config_invoker(self, request):
+        http_info = self._download_blockchain_sdk_config_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_blockchain_sdk_config_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/sdk-cfg",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadBlockchainSdkConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -709,11 +826,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -722,20 +839,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/sdk-cfg',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadBlockchainSdkConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def freeze_cert(self, request):
         """冻结用户证书
@@ -748,9 +861,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.FreezeCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.FreezeCertResponse`
         """
-        return self._freeze_cert_with_http_info(request)
+        http_info = self._freeze_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _freeze_cert_with_http_info(self, request):
+    def freeze_cert_invoker(self, request):
+        http_info = self._freeze_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _freeze_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}/freeze",
+            "request_type": request.__class__.__name__,
+            "response_type": "FreezeCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -773,11 +899,11 @@ class BcsClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -786,20 +912,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}/freeze',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='FreezeCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def handle_notification(self, request):
         """处理联盟邀请
@@ -812,9 +934,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.HandleNotificationRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleNotificationResponse`
         """
-        return self._handle_notification_with_http_info(request)
+        http_info = self._handle_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _handle_notification_with_http_info(self, request):
+    def handle_notification_invoker(self, request):
+        http_info = self._handle_notification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _handle_notification_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/notification/handle",
+            "request_type": request.__class__.__name__,
+            "response_type": "HandleNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -829,11 +964,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -842,20 +977,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notification/handle',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='HandleNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def handle_union_member_quit_list(self, request):
         """被邀请方退出指定联盟
@@ -868,9 +999,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.HandleUnionMemberQuitListRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.HandleUnionMemberQuitListResponse`
         """
-        return self._handle_union_member_quit_list_with_http_info(request)
+        http_info = self._handle_union_member_quit_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _handle_union_member_quit_list_with_http_info(self, request):
+    def handle_union_member_quit_list_invoker(self, request):
+        http_info = self._handle_union_member_quit_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _handle_union_member_quit_list_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/members/quit",
+            "request_type": request.__class__.__name__,
+            "response_type": "HandleUnionMemberQuitListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -885,11 +1029,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -898,20 +1042,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/members/quit',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='HandleUnionMemberQuitListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bcs_events(self, request):
         """查询服务实例告警信息
@@ -924,9 +1064,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListBcsEventsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsEventsResponse`
         """
-        return self._list_bcs_events_with_http_info(request)
+        http_info = self._list_bcs_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bcs_events_with_http_info(self, request):
+    def list_bcs_events_invoker(self, request):
+        http_info = self._list_bcs_events_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bcs_events_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBcsEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -945,11 +1098,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -958,20 +1111,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBcsEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bcs_events_statistic(self, request):
         """查询服务实例告警统计接口
@@ -984,9 +1133,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListBcsEventsStatisticRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsEventsStatisticResponse`
         """
-        return self._list_bcs_events_statistic_with_http_info(request)
+        http_info = self._list_bcs_events_statistic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bcs_events_statistic_with_http_info(self, request):
+    def list_bcs_events_statistic_invoker(self, request):
+        http_info = self._list_bcs_events_statistic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bcs_events_statistic_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/events/statistic",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBcsEventsStatisticResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1005,11 +1167,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1018,20 +1180,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/events/statistic',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBcsEventsStatisticResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bcs_metric(self, request):
         """查询服务实例监控数据
@@ -1044,9 +1202,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListBcsMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBcsMetricResponse`
         """
-        return self._list_bcs_metric_with_http_info(request)
+        http_info = self._list_bcs_metric_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bcs_metric_with_http_info(self, request):
+    def list_bcs_metric_invoker(self, request):
+        http_info = self._list_bcs_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_bcs_metric_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/metric/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBcsMetricResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1063,11 +1234,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1076,20 +1247,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/metric/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBcsMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_blockchain_channels(self, request):
         """查询通道信息
@@ -1102,9 +1269,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListBlockchainChannelsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBlockchainChannelsResponse`
         """
-        return self._list_blockchain_channels_with_http_info(request)
+        http_info = self._list_blockchain_channels_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_blockchain_channels_with_http_info(self, request):
+    def list_blockchain_channels_invoker(self, request):
+        http_info = self._list_blockchain_channels_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_blockchain_channels_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBlockchainChannelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1121,9 +1301,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1132,20 +1312,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/channels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBlockchainChannelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_blockchains(self, request):
         """查询服务实例列表
@@ -1158,9 +1334,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListBlockchainsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListBlockchainsResponse`
         """
-        return self._list_blockchains_with_http_info(request)
+        http_info = self._list_blockchains_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_blockchains_with_http_info(self, request):
+    def list_blockchains_invoker(self, request):
+        http_info = self._list_blockchains_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_blockchains_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/blockchains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBlockchainsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1175,9 +1364,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1186,20 +1375,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBlockchainsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_entity_metric(self, request):
         """查询BCS组织监控数据列表
@@ -1212,9 +1397,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListEntityMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListEntityMetricResponse`
         """
-        return self._list_entity_metric_with_http_info(request)
+        http_info = self._list_entity_metric_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_entity_metric_with_http_info(self, request):
+    def list_entity_metric_invoker(self, request):
+        http_info = self._list_entity_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_entity_metric_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/entity/metric/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEntityMetricResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1231,11 +1429,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1244,20 +1442,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/entity/metric/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEntityMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_instance_metric(self, request):
         """查询BCS组织实例监控数据详情
@@ -1270,9 +1464,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListInstanceMetricResponse`
         """
-        return self._list_instance_metric_with_http_info(request)
+        http_info = self._list_instance_metric_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_instance_metric_with_http_info(self, request):
+    def list_instance_metric_invoker(self, request):
+        http_info = self._list_instance_metric_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_instance_metric_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/entity/instance/metric/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListInstanceMetricResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1289,11 +1496,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1302,20 +1509,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/entity/instance/metric/list',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListInstanceMetricResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_members(self, request):
         """获取联盟成员列表
@@ -1328,9 +1531,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListMembersRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListMembersResponse`
         """
-        return self._list_members_with_http_info(request)
+        http_info = self._list_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_members_with_http_info(self, request):
+    def list_members_invoker(self, request):
+        http_info = self._list_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_members_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1345,9 +1561,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1356,20 +1572,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notifications(self, request):
         """获取全部通知
@@ -1382,9 +1594,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListNotificationsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListNotificationsResponse`
         """
-        return self._list_notifications_with_http_info(request)
+        http_info = self._list_notifications_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notifications_with_http_info(self, request):
+    def list_notifications_invoker(self, request):
+        http_info = self._list_notifications_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notifications_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/notifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotificationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1399,9 +1624,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1410,20 +1635,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/notifications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotificationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_op_record(self, request):
         """查询异步操作结果
@@ -1436,9 +1657,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListOpRecordRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListOpRecordResponse`
         """
-        return self._list_op_record_with_http_info(request)
+        http_info = self._list_op_record_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_op_record_with_http_info(self, request):
+    def list_op_record_invoker(self, request):
+        http_info = self._list_op_record_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_op_record_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/operation/record",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListOpRecordResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1463,9 +1697,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1474,20 +1708,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/operation/record',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListOpRecordResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas(self, request):
         """查询配额
@@ -1500,9 +1730,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1517,9 +1760,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1528,20 +1771,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_blockchain_detail(self, request):
         """查询实例信息
@@ -1554,9 +1793,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainDetailRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainDetailResponse`
         """
-        return self._show_blockchain_detail_with_http_info(request)
+        http_info = self._show_blockchain_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_blockchain_detail_with_http_info(self, request):
+    def show_blockchain_detail_invoker(self, request):
+        http_info = self._show_blockchain_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_blockchain_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBlockchainDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1573,9 +1825,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1584,20 +1836,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBlockchainDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_blockchain_flavors(self, request):
         """查询规格
@@ -1610,9 +1858,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainFlavorsRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainFlavorsResponse`
         """
-        return self._show_blockchain_flavors_with_http_info(request)
+        http_info = self._show_blockchain_flavors_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_blockchain_flavors_with_http_info(self, request):
+    def show_blockchain_flavors_invoker(self, request):
+        http_info = self._show_blockchain_flavors_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_blockchain_flavors_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/blockchains/flavors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBlockchainFlavorsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1631,9 +1892,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1642,20 +1903,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/flavors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBlockchainFlavorsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_blockchain_nodes(self, request):
         """查询节点信息
@@ -1668,9 +1925,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainNodesRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainNodesResponse`
         """
-        return self._show_blockchain_nodes_with_http_info(request)
+        http_info = self._show_blockchain_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_blockchain_nodes_with_http_info(self, request):
+    def show_blockchain_nodes_invoker(self, request):
+        http_info = self._show_blockchain_nodes_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_blockchain_nodes_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBlockchainNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1687,9 +1957,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1698,20 +1968,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBlockchainNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_blockchain_status(self, request):
         """查询创建状态
@@ -1724,9 +1990,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.ShowBlockchainStatusRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.ShowBlockchainStatusResponse`
         """
-        return self._show_blockchain_status_with_http_info(request)
+        http_info = self._show_blockchain_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_blockchain_status_with_http_info(self, request):
+    def show_blockchain_status_invoker(self, request):
+        http_info = self._show_blockchain_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_blockchain_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/status",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBlockchainStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1743,9 +2022,9 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1754,20 +2033,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/status',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBlockchainStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unfreeze_cert(self, request):
         """解冻用户证书
@@ -1780,9 +2055,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.UnfreezeCertRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.UnfreezeCertResponse`
         """
-        return self._unfreeze_cert_with_http_info(request)
+        http_info = self._unfreeze_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unfreeze_cert_with_http_info(self, request):
+    def unfreeze_cert_invoker(self, request):
+        http_info = self._unfreeze_cert_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _unfreeze_cert_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}/unfreeze",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnfreezeCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1805,11 +2093,11 @@ class BcsClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1818,20 +2106,16 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}/orgs/{org_name}/usercert/{user_name}/unfreeze',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnfreezeCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_instance(self, request):
         """修改服务实例
@@ -1844,9 +2128,22 @@ class BcsClient(Client):
         :type request: :class:`huaweicloudsdkbcs.v2.UpdateInstanceRequest`
         :rtype: :class:`huaweicloudsdkbcs.v2.UpdateInstanceResponse`
         """
-        return self._update_instance_with_http_info(request)
+        http_info = self._update_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_instance_with_http_info(self, request):
+    def update_instance_invoker(self, request):
+        http_info = self._update_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_instance_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/blockchains/{blockchain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1863,11 +2160,11 @@ class BcsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1876,20 +2173,25 @@ class BcsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/blockchains/{blockchain_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

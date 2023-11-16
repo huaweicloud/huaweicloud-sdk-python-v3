@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkvod'")
 
 
 class VodClient(Client):
@@ -38,9 +43,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CancelAssetTranscodeTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CancelAssetTranscodeTaskResponse`
         """
-        return self._cancel_asset_transcode_task_with_http_info(request)
+        http_info = self._cancel_asset_transcode_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_asset_transcode_task_with_http_info(self, request):
+    def cancel_asset_transcode_task_invoker(self, request):
+        http_info = self._cancel_asset_transcode_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_asset_transcode_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/asset/process",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelAssetTranscodeTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -57,9 +75,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/process',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelAssetTranscodeTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def cancel_extract_audio_task(self, request):
         """取消提取音频任务
@@ -94,9 +108,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CancelExtractAudioTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CancelExtractAudioTaskResponse`
         """
-        return self._cancel_extract_audio_task_with_http_info(request)
+        http_info = self._cancel_extract_audio_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _cancel_extract_audio_task_with_http_info(self, request):
+    def cancel_extract_audio_task_invoker(self, request):
+        http_info = self._cancel_extract_audio_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _cancel_extract_audio_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/asset/extract_audio",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelExtractAudioTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,9 +140,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/extract_audio',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelExtractAudioTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_md5_duplication(self, request):
         """上传检验
@@ -150,9 +173,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CheckMd5DuplicationRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CheckMd5DuplicationResponse`
         """
-        return self._check_md5_duplication_with_http_info(request)
+        http_info = self._check_md5_duplication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_md5_duplication_with_http_info(self, request):
+    def check_md5_duplication_invoker(self, request):
+        http_info = self._check_md5_duplication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_md5_duplication_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/duplication",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckMd5DuplicationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -171,9 +207,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -182,20 +218,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/duplication',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckMd5DuplicationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def confirm_asset_upload(self, request):
         """确认媒资上传
@@ -208,9 +240,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ConfirmAssetUploadResponse`
         """
-        return self._confirm_asset_upload_with_http_info(request)
+        http_info = self._confirm_asset_upload_http_info(request)
+        return self._call_api(**http_info)
 
-    def _confirm_asset_upload_with_http_info(self, request):
+    def confirm_asset_upload_invoker(self, request):
+        http_info = self._confirm_asset_upload_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _confirm_asset_upload_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/status/uploaded",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmAssetUploadResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -225,11 +270,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -238,20 +283,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/status/uploaded',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ConfirmAssetUploadResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def confirm_image_upload(self, request):
         """确认水印图片上传
@@ -264,9 +305,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ConfirmImageUploadResponse`
         """
-        return self._confirm_image_upload_with_http_info(request)
+        http_info = self._confirm_image_upload_http_info(request)
+        return self._call_api(**http_info)
 
-    def _confirm_image_upload_with_http_info(self, request):
+    def confirm_image_upload_invoker(self, request):
+        http_info = self._confirm_image_upload_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _confirm_image_upload_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/watermark/status/uploaded",
+            "request_type": request.__class__.__name__,
+            "response_type": "ConfirmImageUploadResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -281,11 +335,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -294,20 +348,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/watermark/status/uploaded',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ConfirmImageUploadResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_asset_by_file_upload(self, request):
         """创建媒资：上传方式
@@ -324,9 +374,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetByFileUploadResponse`
         """
-        return self._create_asset_by_file_upload_with_http_info(request)
+        http_info = self._create_asset_by_file_upload_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_asset_by_file_upload_with_http_info(self, request):
+    def create_asset_by_file_upload_invoker(self, request):
+        http_info = self._create_asset_by_file_upload_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_asset_by_file_upload_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetByFileUploadResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +404,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +417,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAssetByFileUploadResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_asset_category(self, request):
         """创建媒资分类
@@ -380,9 +439,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetCategoryResponse`
         """
-        return self._create_asset_category_with_http_info(request)
+        http_info = self._create_asset_category_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_asset_category_with_http_info(self, request):
+    def create_asset_category_invoker(self, request):
+        http_info = self._create_asset_category_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_asset_category_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/category",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetCategoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -397,11 +469,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -410,20 +482,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/category',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAssetCategoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_asset_process_task(self, request):
         """媒资处理
@@ -436,9 +504,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetProcessTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetProcessTaskResponse`
         """
-        return self._create_asset_process_task_with_http_info(request)
+        http_info = self._create_asset_process_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_asset_process_task_with_http_info(self, request):
+    def create_asset_process_task_invoker(self, request):
+        http_info = self._create_asset_process_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_asset_process_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/process",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetProcessTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -453,11 +534,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -466,20 +547,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/process',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAssetProcessTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_asset_review_task(self, request):
         """创建审核媒资任务
@@ -492,9 +569,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateAssetReviewTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateAssetReviewTaskResponse`
         """
-        return self._create_asset_review_task_with_http_info(request)
+        http_info = self._create_asset_review_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_asset_review_task_with_http_info(self, request):
+    def create_asset_review_task_invoker(self, request):
+        http_info = self._create_asset_review_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_asset_review_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/review",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetReviewTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -509,11 +599,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -522,20 +612,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/review',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAssetReviewTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_extract_audio_task(self, request):
         """音频提取
@@ -548,9 +634,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateExtractAudioTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateExtractAudioTaskResponse`
         """
-        return self._create_extract_audio_task_with_http_info(request)
+        http_info = self._create_extract_audio_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_extract_audio_task_with_http_info(self, request):
+    def create_extract_audio_task_invoker(self, request):
+        http_info = self._create_extract_audio_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_extract_audio_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/extract_audio",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateExtractAudioTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -565,11 +664,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -578,20 +677,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/extract_audio',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateExtractAudioTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_preheating_asset(self, request):
         """CDN预热
@@ -604,9 +699,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreatePreheatingAssetResponse`
         """
-        return self._create_preheating_asset_with_http_info(request)
+        http_info = self._create_preheating_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_preheating_asset_with_http_info(self, request):
+    def create_preheating_asset_invoker(self, request):
+        http_info = self._create_preheating_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_preheating_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/preheating",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePreheatingAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -621,11 +729,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -634,20 +742,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/preheating',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePreheatingAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_take_over_task(self, request):
         """创建媒资：OBS托管方式
@@ -662,9 +766,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTakeOverTaskResponse`
         """
-        return self._create_take_over_task_with_http_info(request)
+        http_info = self._create_take_over_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_take_over_task_with_http_info(self, request):
+    def create_take_over_task_invoker(self, request):
+        http_info = self._create_take_over_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_take_over_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/obs/host/stock/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTakeOverTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -679,11 +796,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -692,20 +809,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/obs/host/stock/task',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTakeOverTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template_group(self, request):
         """创建自定义转码模板组
@@ -718,9 +831,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupResponse`
         """
-        return self._create_template_group_with_http_info(request)
+        http_info = self._create_template_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_group_with_http_info(self, request):
+    def create_template_group_invoker(self, request):
+        http_info = self._create_template_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_template_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/template_group/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -735,11 +861,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -748,20 +874,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/template_group/transcodings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_template_group_collection(self, request):
         """创建转码模板组集合
@@ -774,9 +896,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTemplateGroupCollectionResponse`
         """
-        return self._create_template_group_collection_with_http_info(request)
+        http_info = self._create_template_group_collection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_template_group_collection_with_http_info(self, request):
+    def create_template_group_collection_invoker(self, request):
+        http_info = self._create_template_group_collection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_template_group_collection_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/template-collection/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTemplateGroupCollectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -791,11 +926,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -804,20 +939,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/template-collection/transcodings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTemplateGroupCollectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_transcode_template(self, request):
         """创建自定义转码模板
@@ -830,9 +961,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateTranscodeTemplateResponse`
         """
-        return self._create_transcode_template_with_http_info(request)
+        http_info = self._create_transcode_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_transcode_template_with_http_info(self, request):
+    def create_transcode_template_invoker(self, request):
+        http_info = self._create_transcode_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_transcode_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/asset/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTranscodeTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -847,11 +991,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -860,20 +1004,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/asset/template/transcodings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTranscodeTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_watermark_template(self, request):
         """创建水印模板
@@ -886,9 +1026,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.CreateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.CreateWatermarkTemplateResponse`
         """
-        return self._create_watermark_template_with_http_info(request)
+        http_info = self._create_watermark_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_watermark_template_with_http_info(self, request):
+    def create_watermark_template_invoker(self, request):
+        http_info = self._create_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/template/watermark",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWatermarkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -903,11 +1056,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -916,20 +1069,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/template/watermark',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWatermarkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_asset_category(self, request):
         """删除媒资分类
@@ -942,9 +1091,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetCategoryResponse`
         """
-        return self._delete_asset_category_with_http_info(request)
+        http_info = self._delete_asset_category_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_asset_category_with_http_info(self, request):
+    def delete_asset_category_invoker(self, request):
+        http_info = self._delete_asset_category_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_asset_category_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/asset/category",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetCategoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -961,9 +1123,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -972,20 +1134,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/category',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAssetCategoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_assets(self, request):
         """删除媒资
@@ -998,9 +1156,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteAssetsResponse`
         """
-        return self._delete_assets_with_http_info(request)
+        http_info = self._delete_assets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_assets_with_http_info(self, request):
+    def delete_assets_invoker(self, request):
+        http_info = self._delete_assets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_assets_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/asset",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1020,9 +1191,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1031,20 +1202,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAssetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_group(self, request):
         """删除自定义转码模板组
@@ -1057,9 +1224,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupResponse`
         """
-        return self._delete_template_group_with_http_info(request)
+        http_info = self._delete_template_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_group_with_http_info(self, request):
+    def delete_template_group_invoker(self, request):
+        http_info = self._delete_template_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_template_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/asset/template_group/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1076,9 +1256,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1087,20 +1267,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/template_group/transcodings',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_template_group_collection(self, request):
         """删除转码模板组集合
@@ -1113,9 +1289,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTemplateGroupCollectionResponse`
         """
-        return self._delete_template_group_collection_with_http_info(request)
+        http_info = self._delete_template_group_collection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_template_group_collection_with_http_info(self, request):
+    def delete_template_group_collection_invoker(self, request):
+        http_info = self._delete_template_group_collection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_template_group_collection_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/asset/template-collection/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTemplateGroupCollectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1132,9 +1321,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1143,20 +1332,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/template-collection/transcodings',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTemplateGroupCollectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_transcode_template(self, request):
         """删除自定义模板
@@ -1169,9 +1354,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteTranscodeTemplateResponse`
         """
-        return self._delete_transcode_template_with_http_info(request)
+        http_info = self._delete_transcode_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_transcode_template_with_http_info(self, request):
+    def delete_transcode_template_invoker(self, request):
+        http_info = self._delete_transcode_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_transcode_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/asset/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTranscodeTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1188,9 +1386,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1199,20 +1397,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/asset/template/transcodings',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTranscodeTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_watermark_template(self, request):
         """删除水印模板
@@ -1225,9 +1419,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.DeleteWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.DeleteWatermarkTemplateResponse`
         """
-        return self._delete_watermark_template_with_http_info(request)
+        http_info = self._delete_watermark_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_watermark_template_with_http_info(self, request):
+    def delete_watermark_template_invoker(self, request):
+        http_info = self._delete_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1.0/{project_id}/template/watermark",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWatermarkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1244,9 +1451,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1255,20 +1462,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/template/watermark',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWatermarkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_asset_category(self, request):
         """查询指定分类信息
@@ -1281,9 +1484,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListAssetCategoryResponse`
         """
-        return self._list_asset_category_with_http_info(request)
+        http_info = self._list_asset_category_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_asset_category_with_http_info(self, request):
+    def list_asset_category_invoker(self, request):
+        http_info = self._list_asset_category_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_asset_category_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/category",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetCategoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1300,9 +1516,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1311,20 +1527,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/category',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssetCategoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_asset_list(self, request):
         """查询媒资列表
@@ -1337,9 +1549,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListAssetListRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListAssetListResponse`
         """
-        return self._list_asset_list_with_http_info(request)
+        http_info = self._list_asset_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_asset_list_with_http_info(self, request):
+    def list_asset_list_invoker(self, request):
+        http_info = self._list_asset_list_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_asset_list_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/list",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1379,9 +1604,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1390,20 +1615,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/list',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssetListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_domain_logs(self, request):
         """查询域名播放日志
@@ -1416,9 +1637,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListDomainLogsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListDomainLogsResponse`
         """
-        return self._list_domain_logs_with_http_info(request)
+        http_info = self._list_domain_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_domain_logs_with_http_info(self, request):
+    def list_domain_logs_invoker(self, request):
+        http_info = self._list_domain_logs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_domain_logs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/vod/cdn/logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDomainLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1441,9 +1675,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1452,20 +1686,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/vod/cdn/logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDomainLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_group(self, request):
         """查询转码模板组列表
@@ -1478,9 +1708,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTemplateGroupResponse`
         """
-        return self._list_template_group_with_http_info(request)
+        http_info = self._list_template_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_group_with_http_info(self, request):
+    def list_template_group_invoker(self, request):
+        http_info = self._list_template_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_template_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/template_group/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1503,9 +1746,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1514,20 +1757,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/template_group/transcodings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_template_group_collection(self, request):
         """查询自定义模板组集合
@@ -1540,9 +1779,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTemplateGroupCollectionResponse`
         """
-        return self._list_template_group_collection_with_http_info(request)
+        http_info = self._list_template_group_collection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_template_group_collection_with_http_info(self, request):
+    def list_template_group_collection_invoker(self, request):
+        http_info = self._list_template_group_collection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_template_group_collection_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/template-collection/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTemplateGroupCollectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1563,9 +1815,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1574,20 +1826,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/template-collection/transcodings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTemplateGroupCollectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_top_statistics(self, request):
         """查询TopN媒资信息
@@ -1600,9 +1848,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTopStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTopStatisticsResponse`
         """
-        return self._list_top_statistics_with_http_info(request)
+        http_info = self._list_top_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_top_statistics_with_http_info(self, request):
+    def list_top_statistics_invoker(self, request):
+        http_info = self._list_top_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_top_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/top-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1621,9 +1882,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1632,20 +1893,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/top-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTopStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_transcode_template(self, request):
         """查询转码模板列表
@@ -1658,9 +1915,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTranscodeTemplateResponse`
         """
-        return self._list_transcode_template_with_http_info(request)
+        http_info = self._list_transcode_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_transcode_template_with_http_info(self, request):
+    def list_transcode_template_invoker(self, request):
+        http_info = self._list_transcode_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_transcode_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/asset/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTranscodeTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1685,9 +1955,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1696,20 +1966,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/asset/template/transcodings',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTranscodeTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_watermark_template(self, request):
         """查询水印列表
@@ -1722,9 +1988,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListWatermarkTemplateResponse`
         """
-        return self._list_watermark_template_with_http_info(request)
+        http_info = self._list_watermark_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_watermark_template_with_http_info(self, request):
+    def list_watermark_template_invoker(self, request):
+        http_info = self._list_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/template/watermark",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWatermarkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1746,9 +2025,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1757,20 +2036,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/template/watermark',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWatermarkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_asset_from_obs(self, request):
         """创建媒资：OBS转存方式
@@ -1783,9 +2058,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.PublishAssetFromObsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetFromObsResponse`
         """
-        return self._publish_asset_from_obs_with_http_info(request)
+        http_info = self._publish_asset_from_obs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_asset_from_obs_with_http_info(self, request):
+    def publish_asset_from_obs_invoker(self, request):
+        http_info = self._publish_asset_from_obs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_asset_from_obs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/reproduction",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishAssetFromObsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1800,11 +2088,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1813,20 +2101,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/reproduction',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishAssetFromObsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_assets(self, request):
         """媒资发布
@@ -1839,9 +2123,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.PublishAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.PublishAssetsResponse`
         """
-        return self._publish_assets_with_http_info(request)
+        http_info = self._publish_assets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_assets_with_http_info(self, request):
+    def publish_assets_invoker(self, request):
+        http_info = self._publish_assets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_assets_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/status/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishAssetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1856,11 +2153,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1869,20 +2166,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/status/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishAssetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_cipher(self, request):
         """密钥查询
@@ -1895,9 +2188,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetCipherRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetCipherResponse`
         """
-        return self._show_asset_cipher_with_http_info(request)
+        http_info = self._show_asset_cipher_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_cipher_with_http_info(self, request):
+    def show_asset_cipher_invoker(self, request):
+        http_info = self._show_asset_cipher_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_cipher_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/ciphers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetCipherResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1914,9 +2220,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1925,20 +2231,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/ciphers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetCipherResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_detail(self, request):
         """查询指定媒资的详细信息
@@ -1951,9 +2253,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetDetailRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetDetailResponse`
         """
-        return self._show_asset_detail_with_http_info(request)
+        http_info = self._show_asset_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_detail_with_http_info(self, request):
+    def show_asset_detail_invoker(self, request):
+        http_info = self._show_asset_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1973,9 +2288,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1984,20 +2299,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_meta(self, request):
         """查询媒资信息
@@ -2010,9 +2321,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetMetaRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetMetaResponse`
         """
-        return self._show_asset_meta_with_http_info(request)
+        http_info = self._show_asset_meta_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_meta_with_http_info(self, request):
+    def show_asset_meta_invoker(self, request):
+        http_info = self._show_asset_meta_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_meta_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetMetaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2053,9 +2377,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2064,20 +2388,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/info',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetMetaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_temp_authority(self, request):
         """获取分段上传授权
@@ -2096,9 +2416,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowAssetTempAuthorityRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowAssetTempAuthorityResponse`
         """
-        return self._show_asset_temp_authority_with_http_info(request)
+        http_info = self._show_asset_temp_authority_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_temp_authority_with_http_info(self, request):
+    def show_asset_temp_authority_invoker(self, request):
+        http_info = self._show_asset_temp_authority_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_temp_authority_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.1/{project_id}/asset/authority",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetTempAuthorityResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2127,9 +2460,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2138,20 +2471,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.1/{project_id}/asset/authority',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetTempAuthorityResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cdn_statistics(self, request):
         """查询CDN统计信息
@@ -2164,9 +2493,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowCdnStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowCdnStatisticsResponse`
         """
-        return self._show_cdn_statistics_with_http_info(request)
+        http_info = self._show_cdn_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cdn_statistics_with_http_info(self, request):
+    def show_cdn_statistics_invoker(self, request):
+        http_info = self._show_cdn_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cdn_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/cdn-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCdnStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2191,9 +2533,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2202,20 +2544,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/cdn-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCdnStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_preheating_asset(self, request):
         """查询CDN预热
@@ -2228,9 +2566,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowPreheatingAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowPreheatingAssetResponse`
         """
-        return self._show_preheating_asset_with_http_info(request)
+        http_info = self._show_preheating_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_preheating_asset_with_http_info(self, request):
+    def show_preheating_asset_invoker(self, request):
+        http_info = self._show_preheating_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_preheating_asset_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/preheating",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPreheatingAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2247,9 +2598,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2258,20 +2609,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/preheating',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPreheatingAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vod_statistics(self, request):
         """查询源站统计信息
@@ -2284,9 +2631,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowVodStatisticsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowVodStatisticsResponse`
         """
-        return self._show_vod_statistics_with_http_info(request)
+        http_info = self._show_vod_statistics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vod_statistics_with_http_info(self, request):
+    def show_vod_statistics_invoker(self, request):
+        http_info = self._show_vod_statistics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_vod_statistics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/vod-statistics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVodStatisticsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2307,9 +2667,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2318,20 +2678,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/vod-statistics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVodStatisticsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unpublish_assets(self, request):
         """媒资发布取消
@@ -2344,9 +2700,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UnpublishAssetsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UnpublishAssetsResponse`
         """
-        return self._unpublish_assets_with_http_info(request)
+        http_info = self._unpublish_assets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unpublish_assets_with_http_info(self, request):
+    def unpublish_assets_invoker(self, request):
+        http_info = self._unpublish_assets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _unpublish_assets_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/status/unpublish",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnpublishAssetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2361,11 +2730,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2374,20 +2743,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/status/unpublish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnpublishAssetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_asset(self, request):
         """视频更新
@@ -2406,9 +2771,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetResponse`
         """
-        return self._update_asset_with_http_info(request)
+        http_info = self._update_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_asset_with_http_info(self, request):
+    def update_asset_invoker(self, request):
+        http_info = self._update_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_asset_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/asset",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2423,11 +2801,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2436,20 +2814,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_asset_category(self, request):
         """修改媒资分类
@@ -2462,9 +2836,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetCategoryRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetCategoryResponse`
         """
-        return self._update_asset_category_with_http_info(request)
+        http_info = self._update_asset_category_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_asset_category_with_http_info(self, request):
+    def update_asset_category_invoker(self, request):
+        http_info = self._update_asset_category_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_asset_category_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/asset/category",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssetCategoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2479,11 +2866,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2492,20 +2879,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/category',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAssetCategoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_asset_meta(self, request):
         """修改媒资属性
@@ -2518,9 +2901,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateAssetMetaRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateAssetMetaResponse`
         """
-        return self._update_asset_meta_with_http_info(request)
+        http_info = self._update_asset_meta_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_asset_meta_with_http_info(self, request):
+    def update_asset_meta_invoker(self, request):
+        http_info = self._update_asset_meta_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_asset_meta_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/asset/info",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssetMetaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2535,11 +2931,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2548,20 +2944,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/info',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAssetMetaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_bucket_authorized(self, request):
         """桶授权
@@ -2574,9 +2966,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateBucketAuthorizedResponse`
         """
-        return self._update_bucket_authorized_with_http_info(request)
+        http_info = self._update_bucket_authorized_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_bucket_authorized_with_http_info(self, request):
+    def update_bucket_authorized_invoker(self, request):
+        http_info = self._update_bucket_authorized_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_bucket_authorized_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/asset/authority",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBucketAuthorizedResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2591,11 +2996,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2604,20 +3009,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/authority',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBucketAuthorizedResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cover_by_thumbnail(self, request):
         """设置封面
@@ -2630,9 +3031,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateCoverByThumbnailResponse`
         """
-        return self._update_cover_by_thumbnail_with_http_info(request)
+        http_info = self._update_cover_by_thumbnail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cover_by_thumbnail_with_http_info(self, request):
+    def update_cover_by_thumbnail_invoker(self, request):
+        http_info = self._update_cover_by_thumbnail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cover_by_thumbnail_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/asset/cover",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCoverByThumbnailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2647,11 +3061,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2660,20 +3074,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/cover',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCoverByThumbnailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_template_group(self, request):
         """修改自定义转码模板组
@@ -2686,9 +3096,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupResponse`
         """
-        return self._update_template_group_with_http_info(request)
+        http_info = self._update_template_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_template_group_with_http_info(self, request):
+    def update_template_group_invoker(self, request):
+        http_info = self._update_template_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_template_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/asset/template_group/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTemplateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2703,11 +3126,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2716,20 +3139,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/template_group/transcodings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTemplateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_template_group_collection(self, request):
         """修改转码模板组集合
@@ -2742,9 +3161,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupCollectionRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTemplateGroupCollectionResponse`
         """
-        return self._update_template_group_collection_with_http_info(request)
+        http_info = self._update_template_group_collection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_template_group_collection_with_http_info(self, request):
+    def update_template_group_collection_invoker(self, request):
+        http_info = self._update_template_group_collection_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_template_group_collection_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/asset/template-collection/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTemplateGroupCollectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2759,11 +3191,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2772,20 +3204,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/template-collection/transcodings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTemplateGroupCollectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_transcode_template(self, request):
         """修改转码模板
@@ -2798,9 +3226,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateTranscodeTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateTranscodeTemplateResponse`
         """
-        return self._update_transcode_template_with_http_info(request)
+        http_info = self._update_transcode_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_transcode_template_with_http_info(self, request):
+    def update_transcode_template_invoker(self, request):
+        http_info = self._update_transcode_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_transcode_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/asset/template/transcodings",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTranscodeTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2815,11 +3256,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2828,20 +3269,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/asset/template/transcodings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTranscodeTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_watermark_template(self, request):
         """修改水印模板
@@ -2854,9 +3291,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UpdateWatermarkTemplateRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UpdateWatermarkTemplateResponse`
         """
-        return self._update_watermark_template_with_http_info(request)
+        http_info = self._update_watermark_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_watermark_template_with_http_info(self, request):
+    def update_watermark_template_invoker(self, request):
+        http_info = self._update_watermark_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_watermark_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1.0/{project_id}/template/watermark",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWatermarkTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2871,11 +3321,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2884,20 +3334,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/template/watermark',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWatermarkTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_meta_data_by_url(self, request):
         """创建媒资：URL拉取注入
@@ -2910,9 +3356,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.UploadMetaDataByUrlResponse`
         """
-        return self._upload_meta_data_by_url_with_http_info(request)
+        http_info = self._upload_meta_data_by_url_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_meta_data_by_url_with_http_info(self, request):
+    def upload_meta_data_by_url_invoker(self, request):
+        http_info = self._upload_meta_data_by_url_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_meta_data_by_url_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1.0/{project_id}/asset/upload_by_url",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadMetaDataByUrlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2927,11 +3386,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2940,20 +3399,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/upload_by_url',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadMetaDataByUrlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_take_over_task(self, request):
         """查询托管任务
@@ -2966,9 +3421,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ListTakeOverTaskRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ListTakeOverTaskResponse`
         """
-        return self._list_take_over_task_with_http_info(request)
+        http_info = self._list_take_over_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_take_over_task_with_http_info(self, request):
+    def list_take_over_task_invoker(self, request):
+        http_info = self._list_take_over_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_take_over_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/obs/host/stock/task",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTakeOverTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2991,9 +3459,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3002,20 +3470,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/obs/host/stock/task',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTakeOverTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_take_over_asset_details(self, request):
         """查询托管媒资详情
@@ -3028,9 +3492,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowTakeOverAssetDetailsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowTakeOverAssetDetailsResponse`
         """
-        return self._show_take_over_asset_details_with_http_info(request)
+        http_info = self._show_take_over_asset_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_take_over_asset_details_with_http_info(self, request):
+    def show_take_over_asset_details_invoker(self, request):
+        http_info = self._show_take_over_asset_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_take_over_asset_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/obs/host/task/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTakeOverAssetDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3049,9 +3526,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3060,20 +3537,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/obs/host/task/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTakeOverAssetDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_take_over_task_details(self, request):
         """查询托管任务详情
@@ -3086,9 +3559,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ShowTakeOverTaskDetailsRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ShowTakeOverTaskDetailsResponse`
         """
-        return self._show_take_over_task_details_with_http_info(request)
+        http_info = self._show_take_over_task_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_take_over_task_details_with_http_info(self, request):
+    def show_take_over_task_details_invoker(self, request):
+        http_info = self._show_take_over_task_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_take_over_task_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1.0/{project_id}/asset/obs/host/stock/task/details",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTakeOverTaskDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3109,9 +3595,9 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3120,20 +3606,16 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1.0/{project_id}/asset/obs/host/stock/task/details',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTakeOverTaskDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def modify_subtitle(self, request):
         """多字幕封装
@@ -3146,9 +3628,22 @@ class VodClient(Client):
         :type request: :class:`huaweicloudsdkvod.v1.ModifySubtitleRequest`
         :rtype: :class:`huaweicloudsdkvod.v1.ModifySubtitleResponse`
         """
-        return self._modify_subtitle_with_http_info(request)
+        http_info = self._modify_subtitle_http_info(request)
+        return self._call_api(**http_info)
 
-    def _modify_subtitle_with_http_info(self, request):
+    def modify_subtitle_invoker(self, request):
+        http_info = self._modify_subtitle_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _modify_subtitle_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/asset/subtitles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ModifySubtitleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3163,11 +3658,11 @@ class VodClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3176,20 +3671,25 @@ class VodClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asset/subtitles',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ModifySubtitleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

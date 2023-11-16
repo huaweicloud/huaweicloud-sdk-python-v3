@@ -20,7 +20,7 @@ class InstanceModify:
         'version': 'str',
         'flavor_id': 'FlavorId',
         'artifacts': 'dict(str, object)',
-        'configuration': 'dict(str, object)',
+        'configuration': 'InstanceConfiguration',
         'description': 'str',
         'external_accesses': 'list[ExternalAccesses]',
         'refer_resources': 'list[ReferResourceCreate]'
@@ -47,8 +47,8 @@ class InstanceModify:
         :type flavor_id: :class:`huaweicloudsdkservicestage.v2.FlavorId`
         :param artifacts: 组件部署件。key为组件component_name，对于Docker多容器场景，key为容器名称。
         :type artifacts: dict(str, object)
-        :param configuration: 应用配置，如环境变量。
-        :type configuration: dict(str, object)
+        :param configuration: 
+        :type configuration: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
         :param description: 描述。
         :type description: str
         :param external_accesses: 访问方式列表。
@@ -148,10 +148,8 @@ class InstanceModify:
     def configuration(self):
         """Gets the configuration of this InstanceModify.
 
-        应用配置，如环境变量。
-
         :return: The configuration of this InstanceModify.
-        :rtype: dict(str, object)
+        :rtype: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
         """
         return self._configuration
 
@@ -159,10 +157,8 @@ class InstanceModify:
     def configuration(self, configuration):
         """Sets the configuration of this InstanceModify.
 
-        应用配置，如环境变量。
-
         :param configuration: The configuration of this InstanceModify.
-        :type configuration: dict(str, object)
+        :type configuration: :class:`huaweicloudsdkservicestage.v2.InstanceConfiguration`
         """
         self._configuration = configuration
 

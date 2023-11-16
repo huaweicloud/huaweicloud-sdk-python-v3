@@ -5,9 +5,13 @@ from __future__ import absolute_import
 from huaweicloudsdkmrs.v2.mrs_client import MrsClient
 from huaweicloudsdkmrs.v2.mrs_async_client import MrsAsyncClient
 
+from huaweicloudsdkmrs.v2.model.add_component_request import AddComponentRequest
+from huaweicloudsdkmrs.v2.model.add_component_response import AddComponentResponse
+from huaweicloudsdkmrs.v2.model.add_components_req import AddComponentsReq
 from huaweicloudsdkmrs.v2.model.add_jobs_req_v11 import AddJobsReqV11
 from huaweicloudsdkmrs.v2.model.agency_mapping import AgencyMapping
 from huaweicloudsdkmrs.v2.model.agency_mapping_array import AgencyMappingArray
+from huaweicloudsdkmrs.v2.model.assigned_node_group import AssignedNodeGroup
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy import AutoScalingPolicy
 from huaweicloudsdkmrs.v2.model.auto_scaling_policy_v2 import AutoScalingPolicyV2
 from huaweicloudsdkmrs.v2.model.batch_delete_jobs_request import BatchDeleteJobsRequest
@@ -18,6 +22,7 @@ from huaweicloudsdkmrs.v2.model.cancel_sql_response import CancelSqlResponse
 from huaweicloudsdkmrs.v2.model.charge_info import ChargeInfo
 from huaweicloudsdkmrs.v2.model.cluster_data_connector_map import ClusterDataConnectorMap
 from huaweicloudsdkmrs.v2.model.component_config import ComponentConfig
+from huaweicloudsdkmrs.v2.model.component_install_mode import ComponentInstallMode
 from huaweicloudsdkmrs.v2.model.config import Config
 from huaweicloudsdkmrs.v2.model.create_cluster_req_v2 import CreateClusterReqV2
 from huaweicloudsdkmrs.v2.model.create_cluster_request import CreateClusterRequest

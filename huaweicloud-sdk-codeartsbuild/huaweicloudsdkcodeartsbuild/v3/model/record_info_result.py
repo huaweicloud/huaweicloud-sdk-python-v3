@@ -44,6 +44,7 @@ class RecordInfoResult:
         'start_time': 'str',
         'runnable_time': 'str',
         'finish_time': 'str',
+        'duration': 'float',
         'record_status': 'str',
         'use_private_slave': 'int',
         'region': 'str',
@@ -79,6 +80,7 @@ class RecordInfoResult:
         'start_time': 'start_time',
         'runnable_time': 'runnable_time',
         'finish_time': 'finish_time',
+        'duration': 'duration',
         'record_status': 'record_status',
         'use_private_slave': 'use_private_slave',
         'region': 'region',
@@ -86,7 +88,7 @@ class RecordInfoResult:
         'build_config_type': 'build_config_type'
     }
 
-    def __init__(self, id=None, build_project_id=None, build_record_id=None, parent_record_id=None, devcloud_project_id=None, codeci_job_id=None, user_id=None, build_no=None, daily_build_num=None, execution_id=None, repo_name=None, repo_id=None, branch=None, tag=None, commit=None, commit_message=None, commit_create_time=None, trigger_type=None, build_type=None, status=None, domain_id=None, create_time=None, schedule_time=None, queued_time=None, start_time=None, runnable_time=None, finish_time=None, record_status=None, use_private_slave=None, region=None, err_msg=None, build_config_type=None):
+    def __init__(self, id=None, build_project_id=None, build_record_id=None, parent_record_id=None, devcloud_project_id=None, codeci_job_id=None, user_id=None, build_no=None, daily_build_num=None, execution_id=None, repo_name=None, repo_id=None, branch=None, tag=None, commit=None, commit_message=None, commit_create_time=None, trigger_type=None, build_type=None, status=None, domain_id=None, create_time=None, schedule_time=None, queued_time=None, start_time=None, runnable_time=None, finish_time=None, duration=None, record_status=None, use_private_slave=None, region=None, err_msg=None, build_config_type=None):
         """RecordInfoResult
 
         The model defined in huaweicloud sdk
@@ -145,6 +147,8 @@ class RecordInfoResult:
         :type runnable_time: str
         :param finish_time: 构建结束时间
         :type finish_time: str
+        :param duration: 构建时长
+        :type duration: float
         :param record_status: record状态
         :type record_status: str
         :param use_private_slave: 是否使用自定义执行机
@@ -186,6 +190,7 @@ class RecordInfoResult:
         self._start_time = None
         self._runnable_time = None
         self._finish_time = None
+        self._duration = None
         self._record_status = None
         self._use_private_slave = None
         self._region = None
@@ -247,6 +252,8 @@ class RecordInfoResult:
             self.runnable_time = runnable_time
         if finish_time is not None:
             self.finish_time = finish_time
+        if duration is not None:
+            self.duration = duration
         if record_status is not None:
             self.record_status = record_status
         if use_private_slave is not None:
@@ -851,6 +858,28 @@ class RecordInfoResult:
         :type finish_time: str
         """
         self._finish_time = finish_time
+
+    @property
+    def duration(self):
+        """Gets the duration of this RecordInfoResult.
+
+        构建时长
+
+        :return: The duration of this RecordInfoResult.
+        :rtype: float
+        """
+        return self._duration
+
+    @duration.setter
+    def duration(self, duration):
+        """Sets the duration of this RecordInfoResult.
+
+        构建时长
+
+        :param duration: The duration of this RecordInfoResult.
+        :type duration: float
+        """
+        self._duration = duration
 
     @property
     def record_status(self):

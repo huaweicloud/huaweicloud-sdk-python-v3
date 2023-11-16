@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkiotanalytics'")
 
 
 class IoTAnalyticsClient(Client):
@@ -38,9 +43,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetModelRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetModelResponse`
         """
-        return self._create_asset_model_with_http_info(request)
+        http_info = self._create_asset_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_asset_model_with_http_info(self, request):
+    def create_asset_model_invoker(self, request):
+        http_info = self._create_asset_model_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_asset_model_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/asset-models",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -55,11 +73,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -68,20 +86,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asset-models',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAssetModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_asset_model(self, request):
         """删除资产模型
@@ -94,9 +108,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetModelRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetModelResponse`
         """
-        return self._delete_asset_model_with_http_info(request)
+        http_info = self._delete_asset_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_asset_model_with_http_info(self, request):
+    def delete_asset_model_invoker(self, request):
+        http_info = self._delete_asset_model_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_asset_model_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/asset-models/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,9 +140,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -124,20 +151,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asset-models/{model_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAssetModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_asset_models(self, request):
         """获取资产模型列表
@@ -150,9 +173,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListAssetModelsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListAssetModelsResponse`
         """
-        return self._list_asset_models_with_http_info(request)
+        http_info = self._list_asset_models_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_asset_models_with_http_info(self, request):
+    def list_asset_models_invoker(self, request):
+        http_info = self._list_asset_models_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_asset_models_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset-models",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetModelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -173,9 +209,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -184,20 +220,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asset-models',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssetModelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_model(self, request):
         """获取资产模型详情
@@ -210,9 +242,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetModelRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetModelResponse`
         """
-        return self._show_asset_model_with_http_info(request)
+        http_info = self._show_asset_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_model_with_http_info(self, request):
+    def show_asset_model_invoker(self, request):
+        http_info = self._show_asset_model_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_model_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/asset-models/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -229,9 +274,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +285,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asset-models/{model_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_asset_model(self, request):
         """修改资产模型
@@ -266,9 +307,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetModelRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetModelResponse`
         """
-        return self._update_asset_model_with_http_info(request)
+        http_info = self._update_asset_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_asset_model_with_http_info(self, request):
+    def update_asset_model_invoker(self, request):
+        http_info = self._update_asset_model_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_asset_model_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/asset-models/{model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssetModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -285,11 +339,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -298,20 +352,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/asset-models/{model_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAssetModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_asset_new(self, request):
         """创建资产
@@ -324,9 +374,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateAssetNewResponse`
         """
-        return self._create_asset_new_with_http_info(request)
+        http_info = self._create_asset_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_asset_new_with_http_info(self, request):
+    def create_asset_new_invoker(self, request):
+        http_info = self._create_asset_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_asset_new_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAssetNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +404,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +417,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAssetNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_asset_new(self, request):
         """删除资产
@@ -380,9 +439,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteAssetNewResponse`
         """
-        return self._delete_asset_new_with_http_info(request)
+        http_info = self._delete_asset_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_asset_new_with_http_info(self, request):
+    def delete_asset_new_invoker(self, request):
+        http_info = self._delete_asset_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_asset_new_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -399,9 +471,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -410,20 +482,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAssetNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_assets_new(self, request):
         """获取资产列表
@@ -436,9 +504,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListAssetsNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListAssetsNewResponse`
         """
-        return self._list_assets_new_with_http_info(request)
+        http_info = self._list_assets_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_assets_new_with_http_info(self, request):
+    def list_assets_new_invoker(self, request):
+        http_info = self._list_assets_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_assets_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/assets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssetsNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -461,9 +542,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -472,20 +553,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssetsNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_root_asset(self, request):
         """发布资产
@@ -498,9 +575,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.PublishRootAssetRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.PublishRootAssetResponse`
         """
-        return self._publish_root_asset_with_http_info(request)
+        http_info = self._publish_root_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_root_asset_with_http_info(self, request):
+    def publish_root_asset_invoker(self, request):
+        http_info = self._publish_root_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_root_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/assets/{root_asset_id}/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishRootAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -517,9 +607,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -528,20 +618,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{root_asset_id}/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishRootAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_asset_new(self, request):
         """获取资产详情
@@ -554,9 +640,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAssetNewResponse`
         """
-        return self._show_asset_new_with_http_info(request)
+        http_info = self._show_asset_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_asset_new_with_http_info(self, request):
+    def show_asset_new_invoker(self, request):
+        http_info = self._show_asset_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_asset_new_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAssetNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -575,9 +674,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -586,20 +685,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAssetNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_asset_new(self, request):
         """修改资产
@@ -612,9 +707,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetNewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateAssetNewResponse`
         """
-        return self._update_asset_new_with_http_info(request)
+        http_info = self._update_asset_new_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_asset_new_with_http_info(self, request):
+    def update_asset_new_invoker(self, request):
+        http_info = self._update_asset_new_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_asset_new_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAssetNewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -631,11 +739,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -644,20 +752,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAssetNewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_last_property_value(self, request):
         """获取资产属性最新值
@@ -670,9 +774,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowLastPropertyValueRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowLastPropertyValueResponse`
         """
-        return self._show_last_property_value_with_http_info(request)
+        http_info = self._show_last_property_value_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_last_property_value_with_http_info(self, request):
+    def show_last_property_value_invoker(self, request):
+        http_info = self._show_last_property_value_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_last_property_value_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/property-values/query-last",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLastPropertyValueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -689,11 +806,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -702,20 +819,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/property-values/query-last',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLastPropertyValueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metric_value(self, request):
         """获取资产属性聚合值
@@ -728,9 +841,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowMetricValueRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowMetricValueResponse`
         """
-        return self._show_metric_value_with_http_info(request)
+        http_info = self._show_metric_value_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metric_value_with_http_info(self, request):
+    def show_metric_value_invoker(self, request):
+        http_info = self._show_metric_value_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_metric_value_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/metrics/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetricValueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -747,11 +873,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -760,20 +886,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/metrics/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMetricValueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_property_raw_value(self, request):
         """获取资产属性历史值
@@ -786,9 +908,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyRawValueRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyRawValueResponse`
         """
-        return self._show_property_raw_value_with_http_info(request)
+        http_info = self._show_property_raw_value_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_property_raw_value_with_http_info(self, request):
+    def show_property_raw_value_invoker(self, request):
+        http_info = self._show_property_raw_value_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_property_raw_value_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/assets/{asset_id}/property-values/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPropertyRawValueResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -805,11 +940,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -818,20 +953,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/assets/{asset_id}/property-values/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPropertyRawValueResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_datasource(self, request):
         """创建数据源
@@ -844,9 +975,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateDatasourceResponse`
         """
-        return self._create_datasource_with_http_info(request)
+        http_info = self._create_datasource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_datasource_with_http_info(self, request):
+    def create_datasource_invoker(self, request):
+        http_info = self._create_datasource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_datasource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/datasources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatasourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -861,11 +1005,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -874,20 +1018,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/datasources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatasourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_datasource(self, request):
         """删除数据源
@@ -900,9 +1040,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteDatasourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteDatasourceResponse`
         """
-        return self._delete_datasource_with_http_info(request)
+        http_info = self._delete_datasource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_datasource_with_http_info(self, request):
+    def delete_datasource_invoker(self, request):
+        http_info = self._delete_datasource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_datasource_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/datasources/{datasource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatasourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -919,9 +1072,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -930,20 +1083,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/datasources/{datasource_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatasourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_all_data_source(self, request):
         """查询数据源列表
@@ -956,9 +1105,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowAllDataSourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowAllDataSourceResponse`
         """
-        return self._show_all_data_source_with_http_info(request)
+        http_info = self._show_all_data_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_all_data_source_with_http_info(self, request):
+    def show_all_data_source_invoker(self, request):
+        http_info = self._show_all_data_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_all_data_source_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/datasources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAllDataSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -981,9 +1143,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -992,20 +1154,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/datasources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAllDataSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_source(self, request):
         """查询数据源详情
@@ -1018,9 +1176,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowDataSourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowDataSourceResponse`
         """
-        return self._show_data_source_with_http_info(request)
+        http_info = self._show_data_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_source_with_http_info(self, request):
+    def show_data_source_invoker(self, request):
+        http_info = self._show_data_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_data_source_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/datasources/{datasource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1037,9 +1208,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1048,20 +1219,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/datasources/{datasource_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_data_source(self, request):
         """修改数据源
@@ -1074,9 +1241,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataSourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataSourceResponse`
         """
-        return self._update_data_source_with_http_info(request)
+        http_info = self._update_data_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_data_source_with_http_info(self, request):
+    def update_data_source_invoker(self, request):
+        http_info = self._update_data_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_data_source_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/datasources/{datasource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1093,11 +1273,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1106,20 +1286,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/datasources/{datasource_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_group(self, request):
         """创建存储组
@@ -1132,9 +1308,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateGroupRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateGroupResponse`
         """
-        return self._create_group_with_http_info(request)
+        http_info = self._create_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_group_with_http_info(self, request):
+    def create_group_invoker(self, request):
+        http_info = self._create_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data-store-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1149,11 +1338,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1162,20 +1351,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-store-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_group(self, request):
         """删除存储组
@@ -1188,9 +1373,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteGroupRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteGroupResponse`
         """
-        return self._delete_group_with_http_info(request)
+        http_info = self._delete_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_group_with_http_info(self, request):
+    def delete_group_invoker(self, request):
+        http_info = self._delete_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/data-store-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1207,9 +1405,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1218,20 +1416,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-store-groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_groups(self, request):
         """查询存储组列表
@@ -1244,9 +1438,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListGroupsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListGroupsResponse`
         """
-        return self._list_groups_with_http_info(request)
+        http_info = self._list_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_groups_with_http_info(self, request):
+    def list_groups_invoker(self, request):
+        http_info = self._list_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/data-store-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1273,9 +1480,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1284,20 +1491,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-store-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_group(self, request):
         """更新存储组
@@ -1310,9 +1513,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateGroupRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateGroupResponse`
         """
-        return self._update_group_with_http_info(request)
+        http_info = self._update_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_group_with_http_info(self, request):
+    def update_group_invoker(self, request):
+        http_info = self._update_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/data-store-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1329,11 +1545,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1342,20 +1558,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-store-groups/{group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_data_store(self, request):
         """删除存储
@@ -1368,9 +1580,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteDataStoreRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteDataStoreResponse`
         """
-        return self._delete_data_store_with_http_info(request)
+        http_info = self._delete_data_store_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_data_store_with_http_info(self, request):
+    def delete_data_store_invoker(self, request):
+        http_info = self._delete_data_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_data_store_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/data-stores/{data_store_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDataStoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1387,9 +1612,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1398,20 +1623,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-stores/{data_store_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDataStoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_data_stores(self, request):
         """查询存储列表
@@ -1424,9 +1645,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListDataStoresRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListDataStoresResponse`
         """
-        return self._list_data_stores_with_http_info(request)
+        http_info = self._list_data_stores_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_data_stores_with_http_info(self, request):
+    def list_data_stores_invoker(self, request):
+        http_info = self._list_data_stores_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_data_stores_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/data-stores",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDataStoresResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1451,9 +1685,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1462,20 +1696,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-stores',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDataStoresResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_data_store(self, request):
         """更新存储
@@ -1488,9 +1718,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStoreRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateDataStoreResponse`
         """
-        return self._update_data_store_with_http_info(request)
+        http_info = self._update_data_store_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_data_store_with_http_info(self, request):
+    def update_data_store_invoker(self, request):
+        http_info = self._update_data_store_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_data_store_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/data-stores/{data_store_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataStoreResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1507,11 +1750,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1520,20 +1763,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-stores/{data_store_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataStoreResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_history(self, request):
         """根据标签查询设备历史值
@@ -1546,9 +1785,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListHistoryRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListHistoryResponse`
         """
-        return self._list_history_with_http_info(request)
+        http_info = self._list_history_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_history_with_http_info(self, request):
+    def list_history_invoker(self, request):
+        http_info = self._list_history_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_history_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data-stores/{data_store_id}/property-values/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListHistoryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1565,11 +1817,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1578,20 +1830,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-stores/{data_store_id}/property-values/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListHistoryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_metrics(self, request):
         """根据标签聚合、查询指标数据
@@ -1604,9 +1852,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListMetricsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListMetricsResponse`
         """
-        return self._list_metrics_with_http_info(request)
+        http_info = self._list_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_metrics_with_http_info(self, request):
+    def list_metrics_invoker(self, request):
+        http_info = self._list_metrics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_metrics_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data-stores/{data_store_id}/metrics/query",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1623,11 +1884,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1636,20 +1897,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-stores/{data_store_id}/metrics/query',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_property_values(self, request):
         """查询设备属性最新状态值
@@ -1662,9 +1919,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyValuesRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPropertyValuesResponse`
         """
-        return self._show_property_values_with_http_info(request)
+        http_info = self._show_property_values_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_property_values_with_http_info(self, request):
+    def show_property_values_invoker(self, request):
+        http_info = self._show_property_values_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_property_values_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/data-stores/{data_store_id}/property-values/query-last",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPropertyValuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1681,11 +1951,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1694,20 +1964,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-stores/{data_store_id}/property-values/query-last',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPropertyValuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tag_values(self, request):
         """查询标签的值列表
@@ -1720,9 +1986,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListTagValuesRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListTagValuesResponse`
         """
-        return self._list_tag_values_with_http_info(request)
+        http_info = self._list_tag_values_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tag_values_with_http_info(self, request):
+    def list_tag_values_invoker(self, request):
+        http_info = self._list_tag_values_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tag_values_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/data-stores/{data_store_id}/tags/{tag_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagValuesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1747,9 +2026,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1758,20 +2037,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/data-stores/{data_store_id}/tags/{tag_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagValuesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_dev_data(self, request):
         """通过API数据源上报设备数据
@@ -1784,9 +2059,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.AddDevDataRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AddDevDataResponse`
         """
-        return self._add_dev_data_with_http_info(request)
+        http_info = self._add_dev_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_dev_data_with_http_info(self, request):
+    def add_dev_data_invoker(self, request):
+        http_info = self._add_dev_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_dev_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/datasources/{datasource_id}/dev-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDevDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1803,11 +2091,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1816,20 +2104,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/datasources/{datasource_id}/dev-data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDevDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_pipeline_job(self, request):
         """新建管道作业
@@ -1842,9 +2126,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.AddPipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.AddPipelineJobResponse`
         """
-        return self._add_pipeline_job_with_http_info(request)
+        http_info = self._add_pipeline_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_pipeline_job_with_http_info(self, request):
+    def add_pipeline_job_invoker(self, request):
+        http_info = self._add_pipeline_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_pipeline_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/pipelines",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddPipelineJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1861,11 +2158,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1874,20 +2171,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/pipelines',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddPipelineJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_pipeline_job(self, request):
         """删除管道作业
@@ -1900,9 +2193,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeletePipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeletePipelineJobResponse`
         """
-        return self._delete_pipeline_job_with_http_info(request)
+        http_info = self._delete_pipeline_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_pipeline_job_with_http_info(self, request):
+    def delete_pipeline_job_invoker(self, request):
+        http_info = self._delete_pipeline_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_pipeline_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/pipelines/{pipeline_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePipelineJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1919,9 +2225,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1930,20 +2236,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/pipelines/{pipeline_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePipelineJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_pipeline_jobs(self, request):
         """获取管道作业列表
@@ -1956,9 +2258,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListPipelineJobsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListPipelineJobsResponse`
         """
-        return self._list_pipeline_jobs_with_http_info(request)
+        http_info = self._list_pipeline_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_pipeline_jobs_with_http_info(self, request):
+    def list_pipeline_jobs_invoker(self, request):
+        http_info = self._list_pipeline_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_pipeline_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/pipelines",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPipelineJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1989,9 +2304,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2000,20 +2315,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/pipelines',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPipelineJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_pipeline_job(self, request):
         """获取管道作业详情
@@ -2026,9 +2337,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowPipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowPipelineJobResponse`
         """
-        return self._show_pipeline_job_with_http_info(request)
+        http_info = self._show_pipeline_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_pipeline_job_with_http_info(self, request):
+    def show_pipeline_job_invoker(self, request):
+        http_info = self._show_pipeline_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_pipeline_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/pipelines/{pipeline_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPipelineJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2045,9 +2369,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2056,20 +2380,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/pipelines/{pipeline_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPipelineJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_pipeline_job(self, request):
         """启动管道作业
@@ -2082,9 +2402,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StartPipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StartPipelineJobResponse`
         """
-        return self._start_pipeline_job_with_http_info(request)
+        http_info = self._start_pipeline_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_pipeline_job_with_http_info(self, request):
+    def start_pipeline_job_invoker(self, request):
+        http_info = self._start_pipeline_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_pipeline_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/pipelines/{pipeline_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartPipelineJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2107,9 +2440,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2118,20 +2451,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/pipelines/{pipeline_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartPipelineJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_pipeline_job(self, request):
         """停止管道作业
@@ -2144,9 +2473,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StopPipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StopPipelineJobResponse`
         """
-        return self._stop_pipeline_job_with_http_info(request)
+        http_info = self._stop_pipeline_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_pipeline_job_with_http_info(self, request):
+    def stop_pipeline_job_invoker(self, request):
+        http_info = self._stop_pipeline_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_pipeline_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/pipelines/{pipeline_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopPipelineJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2165,9 +2507,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2176,20 +2518,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/pipelines/{pipeline_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopPipelineJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_pipeline_job(self, request):
         """更新管道作业
@@ -2202,9 +2540,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdatePipelineJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdatePipelineJobResponse`
         """
-        return self._update_pipeline_job_with_http_info(request)
+        http_info = self._update_pipeline_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_pipeline_job_with_http_info(self, request):
+    def update_pipeline_job_invoker(self, request):
+        http_info = self._update_pipeline_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_pipeline_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/pipelines/{pipeline_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePipelineJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2223,11 +2574,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2236,20 +2587,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/pipelines/{pipeline_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePipelineJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_streaming_job(self, request):
         """新建实时作业
@@ -2262,9 +2609,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateStreamingJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateStreamingJobResponse`
         """
-        return self._create_streaming_job_with_http_info(request)
+        http_info = self._create_streaming_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_streaming_job_with_http_info(self, request):
+    def create_streaming_job_invoker(self, request):
+        http_info = self._create_streaming_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_streaming_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/streaming/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStreamingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2281,11 +2641,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2294,20 +2654,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/streaming/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStreamingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_streaming_job_by_id(self, request):
         """删除实时作业
@@ -2320,9 +2676,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteStreamingJobByIdRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteStreamingJobByIdResponse`
         """
-        return self._delete_streaming_job_by_id_with_http_info(request)
+        http_info = self._delete_streaming_job_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_streaming_job_by_id_with_http_info(self, request):
+    def delete_streaming_job_by_id_invoker(self, request):
+        http_info = self._delete_streaming_job_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_streaming_job_by_id_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/streaming/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStreamingJobByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2339,9 +2708,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2350,20 +2719,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/streaming/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStreamingJobByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_job_by_id(self, request):
         """获取实时作业详情
@@ -2376,9 +2741,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowJobByIdRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowJobByIdResponse`
         """
-        return self._show_job_by_id_with_http_info(request)
+        http_info = self._show_job_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_job_by_id_with_http_info(self, request):
+    def show_job_by_id_invoker(self, request):
+        http_info = self._show_job_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_job_by_id_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/streaming/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2395,9 +2773,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2406,20 +2784,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/streaming/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_jobs(self, request):
         """获取实时作业列表
@@ -2432,9 +2806,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowJobsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowJobsResponse`
         """
-        return self._show_jobs_with_http_info(request)
+        http_info = self._show_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_jobs_with_http_info(self, request):
+    def show_jobs_invoker(self, request):
+        http_info = self._show_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/streaming/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2457,9 +2844,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2468,20 +2855,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/streaming/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_streaming_job(self, request):
         """更新实时作业
@@ -2494,9 +2877,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateStreamingJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateStreamingJobResponse`
         """
-        return self._update_streaming_job_with_http_info(request)
+        http_info = self._update_streaming_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_streaming_job_with_http_info(self, request):
+    def update_streaming_job_invoker(self, request):
+        http_info = self._update_streaming_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_streaming_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/streaming/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStreamingJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2515,11 +2911,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2528,20 +2924,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/streaming/jobs/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStreamingJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_job(self, request):
         """启动实时作业
@@ -2554,9 +2946,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StartJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StartJobResponse`
         """
-        return self._start_job_with_http_info(request)
+        http_info = self._start_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_job_with_http_info(self, request):
+    def start_job_invoker(self, request):
+        http_info = self._start_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/streaming/jobs/{job_id}/start",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2579,9 +2984,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2590,20 +2995,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/streaming/jobs/{job_id}/start',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_job(self, request):
         """停止实时作业
@@ -2616,9 +3017,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.StopJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.StopJobResponse`
         """
-        return self._stop_job_with_http_info(request)
+        http_info = self._stop_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_job_with_http_info(self, request):
+    def stop_job_invoker(self, request):
+        http_info = self._stop_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/streaming/jobs/{job_id}/stop",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2637,9 +3051,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2648,20 +3062,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/streaming/jobs/{job_id}/stop',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_computing_resource(self, request):
         """创建批计算资源
@@ -2674,9 +3084,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateComputingResourceResponse`
         """
-        return self._create_computing_resource_with_http_info(request)
+        http_info = self._create_computing_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_computing_resource_with_http_info(self, request):
+    def create_computing_resource_invoker(self, request):
+        http_info = self._create_computing_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_computing_resource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batch-computing-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateComputingResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2691,11 +3114,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2704,20 +3127,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch-computing-resources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateComputingResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_computing_resource(self, request):
         """删除批计算资源
@@ -2730,9 +3149,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteComputingResourceRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteComputingResourceResponse`
         """
-        return self._delete_computing_resource_with_http_info(request)
+        http_info = self._delete_computing_resource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_computing_resource_with_http_info(self, request):
+    def delete_computing_resource_invoker(self, request):
+        http_info = self._delete_computing_resource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_computing_resource_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/batch-computing-resources/{computing_resource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteComputingResourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2749,9 +3181,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2760,20 +3192,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch-computing-resources/{computing_resource_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteComputingResourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_computing_resources(self, request):
         """查询批计算资源列表
@@ -2786,9 +3214,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListComputingResourcesRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListComputingResourcesResponse`
         """
-        return self._list_computing_resources_with_http_info(request)
+        http_info = self._list_computing_resources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_computing_resources_with_http_info(self, request):
+    def list_computing_resources_invoker(self, request):
+        http_info = self._list_computing_resources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_computing_resources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/batch-computing-resources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListComputingResourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2809,9 +3250,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2820,20 +3261,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch-computing-resources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListComputingResourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_dataset(self, request):
         """下载离线作业结果
@@ -2846,9 +3283,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ExportDatasetRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ExportDatasetResponse`
         """
-        return self._export_dataset_with_http_info(request)
+        http_info = self._export_dataset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_dataset_with_http_info(self, request):
+    def export_dataset_invoker(self, request):
+        http_info = self._export_dataset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_dataset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batch/jobs/{job_id}/runs/{run_id}/export-dataset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportDatasetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2867,9 +3317,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2878,20 +3328,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/{job_id}/runs/{run_id}/export-dataset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportDatasetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_data(self, request):
         """执行导入数据离线作业
@@ -2904,9 +3350,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ImportDataRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ImportDataResponse`
         """
-        return self._import_data_with_http_info(request)
+        http_info = self._import_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_data_with_http_info(self, request):
+    def import_data_invoker(self, request):
+        http_info = self._import_data_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_data_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batch/jobs/import/runs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2921,11 +3380,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2934,20 +3393,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/import/runs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dataset(self, request):
         """查询离线作业结果
@@ -2960,9 +3415,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowDatasetRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowDatasetResponse`
         """
-        return self._show_dataset_with_http_info(request)
+        http_info = self._show_dataset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dataset_with_http_info(self, request):
+    def show_dataset_invoker(self, request):
+        http_info = self._show_dataset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dataset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batch/jobs/{job_id}/runs/{run_id}/query-dataset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDatasetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2985,9 +3453,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2996,20 +3464,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/{job_id}/runs/{run_id}/query-dataset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDatasetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_sql(self, request):
         """检查离线作业SQL语法
@@ -3022,9 +3486,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ValidateSqlResponse`
         """
-        return self._validate_sql_with_http_info(request)
+        http_info = self._validate_sql_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_sql_with_http_info(self, request):
+    def validate_sql_invoker(self, request):
+        http_info = self._validate_sql_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_sql_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batch/validate-sql",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateSqlResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3039,11 +3516,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3052,20 +3529,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/validate-sql',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateSqlResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_batch_job(self, request):
         """创建离线作业
@@ -3078,9 +3551,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateBatchJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateBatchJobResponse`
         """
-        return self._create_batch_job_with_http_info(request)
+        http_info = self._create_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_batch_job_with_http_info(self, request):
+    def create_batch_job_invoker(self, request):
+        http_info = self._create_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batch/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3095,11 +3581,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3108,20 +3594,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_batch_job(self, request):
         """删除离线作业
@@ -3134,9 +3616,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteBatchJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteBatchJobResponse`
         """
-        return self._delete_batch_job_with_http_info(request)
+        http_info = self._delete_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_batch_job_with_http_info(self, request):
+    def delete_batch_job_invoker(self, request):
+        http_info = self._delete_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/batch/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3153,9 +3648,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3164,20 +3659,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/{job_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_batch_jobs(self, request):
         """查询离线作业列表
@@ -3190,9 +3681,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListBatchJobsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListBatchJobsResponse`
         """
-        return self._list_batch_jobs_with_http_info(request)
+        http_info = self._list_batch_jobs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_batch_jobs_with_http_info(self, request):
+    def list_batch_jobs_invoker(self, request):
+        http_info = self._list_batch_jobs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_batch_jobs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/batch/jobs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBatchJobsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3221,9 +3725,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3232,20 +3736,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBatchJobsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_batch_job(self, request):
         """查询离线作业详情
@@ -3258,9 +3758,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowBatchJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowBatchJobResponse`
         """
-        return self._show_batch_job_with_http_info(request)
+        http_info = self._show_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_batch_job_with_http_info(self, request):
+    def show_batch_job_invoker(self, request):
+        http_info = self._show_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/batch/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3277,9 +3790,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3288,20 +3801,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_batch_job(self, request):
         """修改离线作业
@@ -3314,9 +3823,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.UpdateBatchJobRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.UpdateBatchJobResponse`
         """
-        return self._update_batch_job_with_http_info(request)
+        http_info = self._update_batch_job_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_batch_job_with_http_info(self, request):
+    def update_batch_job_invoker(self, request):
+        http_info = self._update_batch_job_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_batch_job_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/batch/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBatchJobResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3333,11 +3855,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3346,20 +3868,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/{job_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBatchJobResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_run(self, request):
         """执行离线作业
@@ -3372,9 +3890,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateRunRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateRunResponse`
         """
-        return self._create_run_with_http_info(request)
+        http_info = self._create_run_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_run_with_http_info(self, request):
+    def create_run_invoker(self, request):
+        http_info = self._create_run_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_run_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/batch/jobs/{job_id}/runs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRunResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3391,11 +3922,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3404,20 +3935,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/{job_id}/runs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRunResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_run(self, request):
         """停止离线作业
@@ -3430,9 +3957,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteRunRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteRunResponse`
         """
-        return self._delete_run_with_http_info(request)
+        http_info = self._delete_run_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_run_with_http_info(self, request):
+    def delete_run_invoker(self, request):
+        http_info = self._delete_run_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_run_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/batch/jobs/{job_id}/runs/{run_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRunResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3451,9 +3991,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3462,20 +4002,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/{job_id}/runs/{run_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRunResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_runs(self, request):
         """查询离线作业运行列表
@@ -3488,9 +4024,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListRunsRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListRunsResponse`
         """
-        return self._list_runs_with_http_info(request)
+        http_info = self._list_runs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_runs_with_http_info(self, request):
+    def list_runs_invoker(self, request):
+        http_info = self._list_runs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_runs_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/batch/jobs/runs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRunsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3527,9 +4076,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3538,20 +4087,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/runs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRunsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_run(self, request):
         """查询离线作业运行详情
@@ -3564,9 +4109,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowRunRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowRunResponse`
         """
-        return self._show_run_with_http_info(request)
+        http_info = self._show_run_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_run_with_http_info(self, request):
+    def show_run_invoker(self, request):
+        http_info = self._show_run_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_run_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/batch/jobs/{job_id}/runs/{run_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRunResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3587,9 +4145,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3598,20 +4156,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/batch/jobs/{job_id}/runs/{run_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRunResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_table(self, request):
         """创建离线数据表
@@ -3624,9 +4178,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.CreateTableRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.CreateTableResponse`
         """
-        return self._create_table_with_http_info(request)
+        http_info = self._create_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_table_with_http_info(self, request):
+    def create_table_invoker(self, request):
+        http_info = self._create_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_table_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3641,11 +4208,11 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3654,20 +4221,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_table(self, request):
         """删除离线数据表
@@ -3680,9 +4243,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.DeleteTableRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.DeleteTableResponse`
         """
-        return self._delete_table_with_http_info(request)
+        http_info = self._delete_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_table_with_http_info(self, request):
+    def delete_table_invoker(self, request):
+        http_info = self._delete_table_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_table_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/tables/{table_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3699,9 +4275,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3710,20 +4286,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tables/{table_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tables(self, request):
         """查询离线数据表列表
@@ -3736,9 +4308,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ListTablesRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ListTablesResponse`
         """
-        return self._list_tables_with_http_info(request)
+        http_info = self._list_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tables_with_http_info(self, request):
+    def list_tables_invoker(self, request):
+        http_info = self._list_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3765,9 +4350,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3776,20 +4361,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_table_preview(self, request):
         """预览离线数据表内容
@@ -3802,9 +4383,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowTablePreviewRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowTablePreviewResponse`
         """
-        return self._show_table_preview_with_http_info(request)
+        http_info = self._show_table_preview_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_table_preview_with_http_info(self, request):
+    def show_table_preview_invoker(self, request):
+        http_info = self._show_table_preview_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_table_preview_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tables/{table_id}/preview",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTablePreviewResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3821,9 +4415,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3832,20 +4426,16 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tables/{table_id}/preview',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTablePreviewResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_table_schema(self, request):
         """查询离线数据表结构
@@ -3858,9 +4448,22 @@ class IoTAnalyticsClient(Client):
         :type request: :class:`huaweicloudsdkiotanalytics.v1.ShowTableSchemaRequest`
         :rtype: :class:`huaweicloudsdkiotanalytics.v1.ShowTableSchemaResponse`
         """
-        return self._show_table_schema_with_http_info(request)
+        http_info = self._show_table_schema_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_table_schema_with_http_info(self, request):
+    def show_table_schema_invoker(self, request):
+        http_info = self._show_table_schema_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_table_schema_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/tables/{table_id}/schema",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTableSchemaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3877,9 +4480,9 @@ class IoTAnalyticsClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3888,20 +4491,25 @@ class IoTAnalyticsClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/tables/{table_id}/schema',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTableSchemaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

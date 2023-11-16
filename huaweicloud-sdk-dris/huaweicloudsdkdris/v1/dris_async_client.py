@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkdris'")
 
 
 class DrisAsyncClient(Client):
@@ -39,9 +44,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateDataChannelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateDataChannelResponse`
         """
-        return self._create_data_channel_with_http_info(request)
+        http_info = self._create_data_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_data_channel_with_http_info(self, request):
+    def create_data_channel_async_invoker(self, request):
+        http_info = self._create_data_channel_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_data_channel_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/data-channel",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDataChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/data-channel',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDataChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_data_channel_async(self, request):
         """删除业务通道
@@ -100,9 +113,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteDataChannelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteDataChannelResponse`
         """
-        return self._delete_data_channel_with_http_info(request)
+        http_info = self._delete_data_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_data_channel_with_http_info(self, request):
+    def delete_data_channel_async_invoker(self, request):
+        http_info = self._delete_data_channel_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_data_channel_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/data-channel",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDataChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -121,9 +146,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +157,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/data-channel',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDataChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_data_channel_async(self, request):
         """查询业务通道
@@ -159,9 +180,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowDataChannelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowDataChannelResponse`
         """
-        return self._show_data_channel_with_http_info(request)
+        http_info = self._show_data_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_data_channel_with_http_info(self, request):
+    def show_data_channel_async_invoker(self, request):
+        http_info = self._show_data_channel_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_data_channel_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/data-channel",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -180,9 +213,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -191,20 +224,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/data-channel',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_data_channel_async(self, request):
         """修改业务通道
@@ -218,9 +247,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateDataChannelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateDataChannelResponse`
         """
-        return self._update_data_channel_with_http_info(request)
+        http_info = self._update_data_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_data_channel_with_http_info(self, request):
+    def update_data_channel_async_invoker(self, request):
+        http_info = self._update_data_channel_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_data_channel_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/data-channel",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDataChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -239,11 +280,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -252,20 +293,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/data-channel',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDataChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_v2x_edge_async(self, request):
         """创建Edge
@@ -279,9 +316,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateV2xEdgeRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateV2xEdgeResponse`
         """
-        return self._create_v2x_edge_with_http_info(request)
+        http_info = self._create_v2x_edge_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_v2x_edge_with_http_info(self, request):
+    def create_v2x_edge_async_invoker(self, request):
+        http_info = self._create_v2x_edge_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_v2x_edge_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/v2x-edges",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateV2xEdgeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -298,11 +347,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -311,20 +360,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateV2xEdgeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_v2_x_edge_by_v2x_edge_id_async(self, request):
         """删除Edge
@@ -338,9 +383,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteV2XEdgeByV2xEdgeIdRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteV2XEdgeByV2xEdgeIdResponse`
         """
-        return self._delete_v2_x_edge_by_v2x_edge_id_with_http_info(request)
+        http_info = self._delete_v2_x_edge_by_v2x_edge_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_v2_x_edge_by_v2x_edge_id_with_http_info(self, request):
+    def delete_v2_x_edge_by_v2x_edge_id_async_invoker(self, request):
+        http_info = self._delete_v2_x_edge_by_v2x_edge_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_v2_x_edge_by_v2x_edge_id_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2XEdgeByV2xEdgeIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -359,9 +416,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -370,20 +427,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteV2XEdgeByV2xEdgeIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_v2x_edges_async(self, request):
         """查询Edge列表
@@ -397,9 +450,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ListV2xEdgesRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ListV2xEdgesResponse`
         """
-        return self._list_v2x_edges_with_http_info(request)
+        http_info = self._list_v2x_edges_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_v2x_edges_with_http_info(self, request):
+    def list_v2x_edges_async_invoker(self, request):
+        http_info = self._list_v2x_edges_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_v2x_edges_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/v2x-edges",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2xEdgesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -422,9 +487,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -433,20 +498,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListV2xEdgesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deployment_code_async(self, request):
         """生成部署应用安装命令
@@ -460,9 +521,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowDeploymentCodeRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowDeploymentCodeResponse`
         """
-        return self._show_deployment_code_with_http_info(request)
+        http_info = self._show_deployment_code_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deployment_code_with_http_info(self, request):
+    def show_deployment_code_async_invoker(self, request):
+        http_info = self._show_deployment_code_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_deployment_code_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/deployment-code",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeploymentCodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -481,9 +554,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +565,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/deployment-code',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeploymentCodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_v2x_edge_detail_async(self, request):
         """查询Edge
@@ -519,9 +588,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowV2xEdgeDetailRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowV2xEdgeDetailResponse`
         """
-        return self._show_v2x_edge_detail_with_http_info(request)
+        http_info = self._show_v2x_edge_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_v2x_edge_detail_with_http_info(self, request):
+    def show_v2x_edge_detail_async_invoker(self, request):
+        http_info = self._show_v2x_edge_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_v2x_edge_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2xEdgeDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -540,9 +621,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -551,20 +632,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowV2xEdgeDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_v2x_edge_async(self, request):
         """修改Edge
@@ -578,9 +655,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateV2xEdgeRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateV2xEdgeResponse`
         """
-        return self._update_v2x_edge_with_http_info(request)
+        http_info = self._update_v2x_edge_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_v2x_edge_with_http_info(self, request):
+    def update_v2x_edge_async_invoker(self, request):
+        http_info = self._update_v2x_edge_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_v2x_edge_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateV2xEdgeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -599,11 +688,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -612,20 +701,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateV2xEdgeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_forwarding_configs_async(self, request):
         """创建数据转发配置
@@ -639,9 +724,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.AddForwardingConfigsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.AddForwardingConfigsResponse`
         """
-        return self._add_forwarding_configs_with_http_info(request)
+        http_info = self._add_forwarding_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_forwarding_configs_with_http_info(self, request):
+    def add_forwarding_configs_async_invoker(self, request):
+        http_info = self._add_forwarding_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_forwarding_configs_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/forwarding-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddForwardingConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -658,11 +755,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -671,20 +768,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/forwarding-configs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddForwardingConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_forwarding_config_async(self, request):
         """删除数据转发配置
@@ -698,9 +791,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteForwardingConfigRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteForwardingConfigResponse`
         """
-        return self._delete_forwarding_config_with_http_info(request)
+        http_info = self._delete_forwarding_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_forwarding_config_with_http_info(self, request):
+    def delete_forwarding_config_async_invoker(self, request):
+        http_info = self._delete_forwarding_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_forwarding_config_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/forwarding-configs/{forwarding_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteForwardingConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -721,9 +826,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -732,20 +837,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/forwarding-configs/{forwarding_config_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteForwardingConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_forwarding_config_async(self, request):
         """查询数据转发配置
@@ -759,9 +860,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowForwardingConfigRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowForwardingConfigResponse`
         """
-        return self._show_forwarding_config_with_http_info(request)
+        http_info = self._show_forwarding_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_forwarding_config_with_http_info(self, request):
+    def show_forwarding_config_async_invoker(self, request):
+        http_info = self._show_forwarding_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_forwarding_config_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/forwarding-configs/{forwarding_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowForwardingConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -782,9 +895,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -793,20 +906,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/forwarding-configs/{forwarding_config_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowForwardingConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_forwarding_configs_async(self, request):
         """查询数据转发配置列表
@@ -820,9 +929,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowForwardingConfigsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowForwardingConfigsResponse`
         """
-        return self._show_forwarding_configs_with_http_info(request)
+        http_info = self._show_forwarding_configs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_forwarding_configs_with_http_info(self, request):
+    def show_forwarding_configs_async_invoker(self, request):
+        http_info = self._show_forwarding_configs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_forwarding_configs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/forwarding-configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowForwardingConfigsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -845,9 +966,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -856,20 +977,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/forwarding-configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowForwardingConfigsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_forwarding_config_async(self, request):
         """修改数据转发配置
@@ -883,9 +1000,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateForwardingConfigRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateForwardingConfigResponse`
         """
-        return self._update_forwarding_config_with_http_info(request)
+        http_info = self._update_forwarding_config_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_forwarding_config_with_http_info(self, request):
+    def update_forwarding_config_async_invoker(self, request):
+        http_info = self._update_forwarding_config_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_forwarding_config_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/forwarding-configs/{forwarding_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateForwardingConfigResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -906,11 +1035,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -919,20 +1048,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/forwarding-configs/{forwarding_config_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateForwardingConfigResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_edge_flows_async(self, request):
         """查询历史交通统计信息列表
@@ -946,9 +1071,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ListEdgeFlowsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ListEdgeFlowsResponse`
         """
-        return self._list_edge_flows_with_http_info(request)
+        http_info = self._list_edge_flows_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_edge_flows_with_http_info(self, request):
+    def list_edge_flows_async_invoker(self, request):
+        http_info = self._list_edge_flows_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_edge_flows_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/edge-flow",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEdgeFlowsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -975,9 +1112,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -986,20 +1123,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/edge-flow',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEdgeFlowsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_history_traffic_events_async(self, request):
         """查询历史交通事件列表
@@ -1013,9 +1146,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowHistoryTrafficEventsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowHistoryTrafficEventsResponse`
         """
-        return self._show_history_traffic_events_with_http_info(request)
+        http_info = self._show_history_traffic_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_history_traffic_events_with_http_info(self, request):
+    def show_history_traffic_events_async_invoker(self, request):
+        http_info = self._show_history_traffic_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_history_traffic_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/history-traffic-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowHistoryTrafficEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1048,9 +1193,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1059,20 +1204,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-app']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/history-traffic-events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowHistoryTrafficEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_ipcs_async(self, request):
         """查询IPC列表
@@ -1086,9 +1227,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowIpcsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowIpcsResponse`
         """
-        return self._batch_show_ipcs_with_http_info(request)
+        http_info = self._batch_show_ipcs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_ipcs_with_http_info(self, request):
+    def batch_show_ipcs_async_invoker(self, request):
+        http_info = self._batch_show_ipcs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_ipcs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cameras",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowIpcsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1113,9 +1266,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1124,20 +1277,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cameras',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowIpcsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_ipc_async(self, request):
         """查询IPC
@@ -1151,9 +1300,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowIpcRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowIpcResponse`
         """
-        return self._show_ipc_with_http_info(request)
+        http_info = self._show_ipc_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_ipc_with_http_info(self, request):
+    def show_ipc_async_invoker(self, request):
+        http_info = self._show_ipc_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_ipc_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/cameras/{camera_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowIpcResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1172,9 +1333,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1183,20 +1344,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/cameras/{camera_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowIpcResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_radars_async(self, request):
         """查询雷达列表
@@ -1210,9 +1367,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowRadarsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowRadarsResponse`
         """
-        return self._batch_show_radars_with_http_info(request)
+        http_info = self._batch_show_radars_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_radars_with_http_info(self, request):
+    def batch_show_radars_async_invoker(self, request):
+        http_info = self._batch_show_radars_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_radars_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/radars",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowRadarsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1237,9 +1406,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1248,20 +1417,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/radars',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowRadarsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_rsus_async(self, request):
         """查询RSU列表
@@ -1275,9 +1440,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowRsusRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowRsusResponse`
         """
-        return self._batch_show_rsus_with_http_info(request)
+        http_info = self._batch_show_rsus_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_rsus_with_http_info(self, request):
+    def batch_show_rsus_async_invoker(self, request):
+        http_info = self._batch_show_rsus_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_rsus_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rsus",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowRsusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1306,9 +1483,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1317,20 +1494,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsus',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowRsusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_rsu_async(self, request):
         """创建RSU
@@ -1344,9 +1517,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateRsuRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateRsuResponse`
         """
-        return self._create_rsu_with_http_info(request)
+        http_info = self._create_rsu_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_rsu_with_http_info(self, request):
+    def create_rsu_async_invoker(self, request):
+        http_info = self._create_rsu_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_rsu_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/rsus",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRsuResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1363,11 +1548,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1376,20 +1561,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsus',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRsuResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_rsu_async(self, request):
         """删除RSU
@@ -1403,9 +1584,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteRsuRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteRsuResponse`
         """
-        return self._delete_rsu_with_http_info(request)
+        http_info = self._delete_rsu_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_rsu_with_http_info(self, request):
+    def delete_rsu_async_invoker(self, request):
+        http_info = self._delete_rsu_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_rsu_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/rsus/{rsu_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRsuResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1424,9 +1617,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1435,20 +1628,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsus/{rsu_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRsuResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_rsu_async(self, request):
         """修改RSU
@@ -1462,9 +1651,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateRsuRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateRsuResponse`
         """
-        return self._update_rsu_with_http_info(request)
+        http_info = self._update_rsu_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_rsu_with_http_info(self, request):
+    def update_rsu_async_invoker(self, request):
+        http_info = self._update_rsu_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_rsu_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/rsus/{rsu_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRsuResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1483,11 +1684,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1496,20 +1697,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsus/{rsu_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRsuResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_immediate_event_async(self, request):
         """创建即时交通事件
@@ -1523,9 +1720,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.SendImmediateEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.SendImmediateEventResponse`
         """
-        return self._send_immediate_event_with_http_info(request)
+        http_info = self._send_immediate_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_immediate_event_with_http_info(self, request):
+    def send_immediate_event_async_invoker(self, request):
+        http_info = self._send_immediate_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _send_immediate_event_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/immediate-event",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendImmediateEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1542,11 +1751,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1555,20 +1764,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/immediate-event',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendImmediateEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_traffic_events_async(self, request):
         """查询长期交通事件列表
@@ -1582,9 +1787,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowTrafficEventsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowTrafficEventsResponse`
         """
-        return self._batch_show_traffic_events_with_http_info(request)
+        http_info = self._batch_show_traffic_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_traffic_events_with_http_info(self, request):
+    def batch_show_traffic_events_async_invoker(self, request):
+        http_info = self._batch_show_traffic_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_traffic_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/traffic-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowTrafficEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1626,9 +1843,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1637,20 +1854,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowTrafficEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_traffic_event_async(self, request):
         """创建长期交通事件
@@ -1664,9 +1877,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateTrafficEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateTrafficEventResponse`
         """
-        return self._create_traffic_event_with_http_info(request)
+        http_info = self._create_traffic_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_traffic_event_with_http_info(self, request):
+    def create_traffic_event_async_invoker(self, request):
+        http_info = self._create_traffic_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_traffic_event_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/traffic-events",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTrafficEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1683,11 +1908,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1696,20 +1921,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTrafficEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_traffic_event_async(self, request):
         """删除长期交通事件
@@ -1723,9 +1944,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteTrafficEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteTrafficEventResponse`
         """
-        return self._delete_traffic_event_with_http_info(request)
+        http_info = self._delete_traffic_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_traffic_event_with_http_info(self, request):
+    def delete_traffic_event_async_invoker(self, request):
+        http_info = self._delete_traffic_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_traffic_event_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/traffic-events/{event_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTrafficEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1744,9 +1977,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1755,20 +1988,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-events/{event_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTrafficEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_traffic_event_async(self, request):
         """查询长期交通事件
@@ -1782,9 +2011,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowTrafficEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowTrafficEventResponse`
         """
-        return self._show_traffic_event_with_http_info(request)
+        http_info = self._show_traffic_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_traffic_event_with_http_info(self, request):
+    def show_traffic_event_async_invoker(self, request):
+        http_info = self._show_traffic_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_traffic_event_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/traffic-events/{event_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTrafficEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1803,9 +2044,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1814,20 +2055,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-events/{event_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTrafficEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_traffic_event_async(self, request):
         """修改长期交通事件
@@ -1841,9 +2078,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateTrafficEventRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateTrafficEventResponse`
         """
-        return self._update_traffic_event_with_http_info(request)
+        http_info = self._update_traffic_event_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_traffic_event_with_http_info(self, request):
+    def update_traffic_event_async_invoker(self, request):
+        http_info = self._update_traffic_event_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_traffic_event_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/traffic-events/{event_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTrafficEventResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1862,11 +2111,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1875,20 +2124,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = ['apig-auth-iam']
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-events/{event_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTrafficEventResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_traffic_controllers_async(self, request):
         """查询信号机列表
@@ -1902,9 +2147,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowTrafficControllersRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowTrafficControllersResponse`
         """
-        return self._batch_show_traffic_controllers_with_http_info(request)
+        http_info = self._batch_show_traffic_controllers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_traffic_controllers_with_http_info(self, request):
+    def batch_show_traffic_controllers_async_invoker(self, request):
+        http_info = self._batch_show_traffic_controllers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_traffic_controllers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/traffic-controllers",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowTrafficControllersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1931,9 +2188,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1942,20 +2199,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-controllers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowTrafficControllersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_traffic_controller_async(self, request):
         """创建信号机
@@ -1969,9 +2222,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateTrafficControllerRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateTrafficControllerResponse`
         """
-        return self._create_traffic_controller_with_http_info(request)
+        http_info = self._create_traffic_controller_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_traffic_controller_with_http_info(self, request):
+    def create_traffic_controller_async_invoker(self, request):
+        http_info = self._create_traffic_controller_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_traffic_controller_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/traffic-controllers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTrafficControllerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1988,11 +2253,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2001,20 +2266,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-controllers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTrafficControllerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_traffic_controller_async(self, request):
         """删除信号机
@@ -2028,9 +2289,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteTrafficControllerRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteTrafficControllerResponse`
         """
-        return self._delete_traffic_controller_with_http_info(request)
+        http_info = self._delete_traffic_controller_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_traffic_controller_with_http_info(self, request):
+    def delete_traffic_controller_async_invoker(self, request):
+        http_info = self._delete_traffic_controller_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_traffic_controller_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/traffic-controllers/{traffic_controller_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTrafficControllerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2049,9 +2322,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2060,20 +2333,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-controllers/{traffic_controller_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTrafficControllerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_traffic_controller_async(self, request):
         """修改信号机
@@ -2087,9 +2356,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateTrafficControllerRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateTrafficControllerResponse`
         """
-        return self._update_traffic_controller_with_http_info(request)
+        http_info = self._update_traffic_controller_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_traffic_controller_with_http_info(self, request):
+    def update_traffic_controller_async_invoker(self, request):
+        http_info = self._update_traffic_controller_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_traffic_controller_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/traffic-controllers/{traffic_controller_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTrafficControllerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2108,11 +2389,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2121,20 +2402,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/traffic-controllers/{traffic_controller_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTrafficControllerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_v2x_edge_app_async(self, request):
         """部署边缘应用
@@ -2158,9 +2435,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateV2xEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateV2xEdgeAppResponse`
         """
-        return self._create_v2x_edge_app_with_http_info(request)
+        http_info = self._create_v2x_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_v2x_edge_app_with_http_info(self, request):
+    def create_v2x_edge_app_async_invoker(self, request):
+        http_info = self._create_v2x_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_v2x_edge_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateV2xEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2179,11 +2468,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2192,20 +2481,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateV2xEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_v2_x_edge_app_by_edge_app_id_async(self, request):
         """删除边缘应用
@@ -2219,9 +2504,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteV2XEdgeAppByEdgeAppIdRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteV2XEdgeAppByEdgeAppIdResponse`
         """
-        return self._delete_v2_x_edge_app_by_edge_app_id_with_http_info(request)
+        http_info = self._delete_v2_x_edge_app_by_edge_app_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_v2_x_edge_app_by_edge_app_id_with_http_info(self, request):
+    def delete_v2_x_edge_app_by_edge_app_id_async_invoker(self, request):
+        http_info = self._delete_v2_x_edge_app_by_edge_app_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_v2_x_edge_app_by_edge_app_id_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps/{edge_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteV2XEdgeAppByEdgeAppIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2242,9 +2539,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2253,20 +2550,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps/{edge_app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteV2XEdgeAppByEdgeAppIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_v2x_edge_app_async(self, request):
         """查询边缘应用列表
@@ -2280,9 +2573,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ListV2xEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ListV2xEdgeAppResponse`
         """
-        return self._list_v2x_edge_app_with_http_info(request)
+        http_info = self._list_v2x_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_v2x_edge_app_with_http_info(self, request):
+    def list_v2x_edge_app_async_invoker(self, request):
+        http_info = self._list_v2x_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_v2x_edge_app_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListV2xEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2305,9 +2610,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2316,20 +2621,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListV2xEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_v2_x_edge_app_detail_by_edge_app_id_async(self, request):
         """查询边缘应用
@@ -2343,9 +2644,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowV2XEdgeAppDetailByEdgeAppIdRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowV2XEdgeAppDetailByEdgeAppIdResponse`
         """
-        return self._show_v2_x_edge_app_detail_by_edge_app_id_with_http_info(request)
+        http_info = self._show_v2_x_edge_app_detail_by_edge_app_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_v2_x_edge_app_detail_by_edge_app_id_with_http_info(self, request):
+    def show_v2_x_edge_app_detail_by_edge_app_id_async_invoker(self, request):
+        http_info = self._show_v2_x_edge_app_detail_by_edge_app_id_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_v2_x_edge_app_detail_by_edge_app_id_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps/{edge_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowV2XEdgeAppDetailByEdgeAppIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2366,9 +2679,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2377,20 +2690,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps/{edge_app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowV2XEdgeAppDetailByEdgeAppIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_v2x_edge_app_async(self, request):
         """升级边缘应用
@@ -2414,9 +2723,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateV2xEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateV2xEdgeAppResponse`
         """
-        return self._update_v2x_edge_app_with_http_info(request)
+        http_info = self._update_v2x_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_v2x_edge_app_with_http_info(self, request):
+    def update_v2x_edge_app_async_invoker(self, request):
+        http_info = self._update_v2x_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_v2x_edge_app_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps/{edge_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateV2xEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2437,11 +2758,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2450,20 +2771,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edges/{v2x_edge_id}/apps/{edge_app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateV2xEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_vehicles_async(self, request):
         """查询车辆列表
@@ -2477,9 +2794,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowVehiclesRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowVehiclesResponse`
         """
-        return self._batch_show_vehicles_with_http_info(request)
+        http_info = self._batch_show_vehicles_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_vehicles_with_http_info(self, request):
+    def batch_show_vehicles_async_invoker(self, request):
+        http_info = self._batch_show_vehicles_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_vehicles_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/vehicles",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowVehiclesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2504,9 +2833,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2515,20 +2844,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vehicles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowVehiclesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vehicle_async(self, request):
         """创建车辆
@@ -2542,9 +2867,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateVehicleRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateVehicleResponse`
         """
-        return self._create_vehicle_with_http_info(request)
+        http_info = self._create_vehicle_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vehicle_with_http_info(self, request):
+    def create_vehicle_async_invoker(self, request):
+        http_info = self._create_vehicle_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vehicle_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/vehicles",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVehicleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2561,11 +2898,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2574,20 +2911,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vehicles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVehicleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vehicle_async(self, request):
         """删除车辆
@@ -2601,9 +2934,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteVehicleRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteVehicleResponse`
         """
-        return self._delete_vehicle_with_http_info(request)
+        http_info = self._delete_vehicle_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vehicle_with_http_info(self, request):
+    def delete_vehicle_async_invoker(self, request):
+        http_info = self._delete_vehicle_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vehicle_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/vehicles/{vehicle_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVehicleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2622,9 +2967,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2633,20 +2978,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vehicles/{vehicle_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVehicleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vehicle_async(self, request):
         """修改车辆
@@ -2660,9 +3001,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateVehicleRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateVehicleResponse`
         """
-        return self._update_vehicle_with_http_info(request)
+        http_info = self._update_vehicle_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vehicle_with_http_info(self, request):
+    def update_vehicle_async_invoker(self, request):
+        http_info = self._update_vehicle_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vehicle_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/vehicles/{vehicle_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVehicleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2681,11 +3034,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2694,20 +3047,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/vehicles/{vehicle_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVehicleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_edge_apps_async(self, request):
         """查询应用列表
@@ -2721,9 +3070,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowEdgeAppsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowEdgeAppsResponse`
         """
-        return self._batch_show_edge_apps_with_http_info(request)
+        http_info = self._batch_show_edge_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_edge_apps_with_http_info(self, request):
+    def batch_show_edge_apps_async_invoker(self, request):
+        http_info = self._batch_show_edge_apps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_edge_apps_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowEdgeAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2746,9 +3107,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2757,20 +3118,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowEdgeAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_app_async(self, request):
         """创建应用
@@ -2784,9 +3141,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateEdgeAppResponse`
         """
-        return self._create_edge_app_with_http_info(request)
+        http_info = self._create_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_app_with_http_info(self, request):
+    def create_edge_app_async_invoker(self, request):
+        http_info = self._create_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_edge_app_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2803,11 +3172,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2816,20 +3185,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_app_async(self, request):
         """删除应用
@@ -2843,9 +3208,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteEdgeAppResponse`
         """
-        return self._delete_edge_app_with_http_info(request)
+        http_info = self._delete_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_app_with_http_info(self, request):
+    def delete_edge_app_async_invoker(self, request):
+        http_info = self._delete_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_edge_app_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps/{edge_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2864,9 +3241,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2875,20 +3252,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps/{edge_app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_app_async(self, request):
         """修改应用
@@ -2902,9 +3275,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateEdgeAppRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateEdgeAppResponse`
         """
-        return self._update_edge_app_with_http_info(request)
+        http_info = self._update_edge_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_app_with_http_info(self, request):
+    def update_edge_app_async_invoker(self, request):
+        http_info = self._update_edge_app_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_edge_app_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps/{edge_app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2923,11 +3308,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2936,20 +3321,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps/{edge_app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_show_edge_app_versions_async(self, request):
         """查询应用版本列表
@@ -2963,9 +3344,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.BatchShowEdgeAppVersionsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.BatchShowEdgeAppVersionsResponse`
         """
-        return self._batch_show_edge_app_versions_with_http_info(request)
+        http_info = self._batch_show_edge_app_versions_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_show_edge_app_versions_with_http_info(self, request):
+    def batch_show_edge_app_versions_async_invoker(self, request):
+        http_info = self._batch_show_edge_app_versions_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_show_edge_app_versions_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchShowEdgeAppVersionsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2992,9 +3385,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3003,20 +3396,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchShowEdgeAppVersionsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_edge_application_version_async(self, request):
         """创建应用版本
@@ -3030,9 +3419,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateEdgeApplicationVersionResponse`
         """
-        return self._create_edge_application_version_with_http_info(request)
+        http_info = self._create_edge_application_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_edge_application_version_with_http_info(self, request):
+    def create_edge_application_version_async_invoker(self, request):
+        http_info = self._create_edge_application_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_edge_application_version_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEdgeApplicationVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3051,11 +3452,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3064,20 +3465,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEdgeApplicationVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_edge_application_version_async(self, request):
         """删除应用版本
@@ -3091,9 +3488,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteEdgeApplicationVersionResponse`
         """
-        return self._delete_edge_application_version_with_http_info(request)
+        http_info = self._delete_edge_application_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_edge_application_version_with_http_info(self, request):
+    def delete_edge_application_version_async_invoker(self, request):
+        http_info = self._delete_edge_application_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_edge_application_version_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEdgeApplicationVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3114,9 +3523,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3125,20 +3534,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions/{version}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEdgeApplicationVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_edge_application_version_async(self, request):
         """查询应用版本
@@ -3152,9 +3557,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowEdgeApplicationVersionResponse`
         """
-        return self._show_edge_application_version_with_http_info(request)
+        http_info = self._show_edge_application_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_edge_application_version_with_http_info(self, request):
+    def show_edge_application_version_async_invoker(self, request):
+        http_info = self._show_edge_application_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_edge_application_version_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEdgeApplicationVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3175,9 +3592,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3186,20 +3603,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions/{version}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEdgeApplicationVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_application_version_async(self, request):
         """修改应用版本
@@ -3213,9 +3626,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateEdgeApplicationVersionRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateEdgeApplicationVersionResponse`
         """
-        return self._update_edge_application_version_with_http_info(request)
+        http_info = self._update_edge_application_version_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_application_version_with_http_info(self, request):
+    def update_edge_application_version_async_invoker(self, request):
+        http_info = self._update_edge_application_version_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_edge_application_version_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions/{version}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeApplicationVersionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3236,11 +3661,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3249,20 +3674,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions/{version}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeApplicationVersionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_edge_application_version_state_async(self, request):
         """更新应用版本状态
@@ -3276,9 +3697,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateEdgeApplicationVersionStateRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateEdgeApplicationVersionStateResponse`
         """
-        return self._update_edge_application_version_state_with_http_info(request)
+        http_info = self._update_edge_application_version_state_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_edge_application_version_state_with_http_info(self, request):
+    def update_edge_application_version_state_async_invoker(self, request):
+        http_info = self._update_edge_application_version_state_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_edge_application_version_state_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions/{version}/state",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEdgeApplicationVersionStateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3299,11 +3732,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3312,20 +3745,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/v2x-edge-apps/{edge_app_id}/versions/{version}/state',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEdgeApplicationVersionStateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_rsu_model_async(self, request):
         """创建RSU型号
@@ -3339,9 +3768,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.CreateRsuModelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.CreateRsuModelResponse`
         """
-        return self._create_rsu_model_with_http_info(request)
+        http_info = self._create_rsu_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_rsu_model_with_http_info(self, request):
+    def create_rsu_model_async_invoker(self, request):
+        http_info = self._create_rsu_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_rsu_model_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/rsu-models",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRsuModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3358,11 +3799,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3371,20 +3812,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsu-models',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRsuModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_rsu_model_async(self, request):
         """删除RSU型号
@@ -3398,9 +3835,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.DeleteRsuModelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.DeleteRsuModelResponse`
         """
-        return self._delete_rsu_model_with_http_info(request)
+        http_info = self._delete_rsu_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_rsu_model_with_http_info(self, request):
+    def delete_rsu_model_async_invoker(self, request):
+        http_info = self._delete_rsu_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_rsu_model_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/rsu-models/{rsu_model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRsuModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3419,9 +3868,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3430,20 +3879,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsu-models/{rsu_model_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRsuModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rsu_models_async(self, request):
         """查询RSU型号列表
@@ -3457,9 +3902,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ListRsuModelsRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ListRsuModelsResponse`
         """
-        return self._list_rsu_models_with_http_info(request)
+        http_info = self._list_rsu_models_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rsu_models_with_http_info(self, request):
+    def list_rsu_models_async_invoker(self, request):
+        http_info = self._list_rsu_models_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_rsu_models_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rsu-models",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRsuModelsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3482,9 +3939,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3493,20 +3950,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsu-models',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRsuModelsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_rsu_model_async(self, request):
         """查询RSU型号
@@ -3520,9 +3973,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.ShowRsuModelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.ShowRsuModelResponse`
         """
-        return self._show_rsu_model_with_http_info(request)
+        http_info = self._show_rsu_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_rsu_model_with_http_info(self, request):
+    def show_rsu_model_async_invoker(self, request):
+        http_info = self._show_rsu_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_rsu_model_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/rsu-models/{rsu_model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRsuModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3541,9 +4006,9 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3552,20 +4017,16 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsu-models/{rsu_model_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRsuModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_rsu_model_async(self, request):
         """修改RSU型号
@@ -3579,9 +4040,21 @@ class DrisAsyncClient(Client):
         :type request: :class:`huaweicloudsdkdris.v1.UpdateRsuModelRequest`
         :rtype: :class:`huaweicloudsdkdris.v1.UpdateRsuModelResponse`
         """
-        return self._update_rsu_model_with_http_info(request)
+        http_info = self._update_rsu_model_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_rsu_model_with_http_info(self, request):
+    def update_rsu_model_async_invoker(self, request):
+        http_info = self._update_rsu_model_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_rsu_model_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/rsu-models/{rsu_model_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRsuModelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3600,11 +4073,11 @@ class DrisAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3613,20 +4086,26 @@ class DrisAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/rsu-models/{rsu_model_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRsuModelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3665,4 +4144,4 @@ class DrisAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

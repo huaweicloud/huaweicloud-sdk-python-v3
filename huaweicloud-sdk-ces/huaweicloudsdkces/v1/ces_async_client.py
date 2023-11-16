@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkces'")
 
 
 class CesAsyncClient(Client):
@@ -39,9 +44,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.BatchListMetricDataRequest`
         :rtype: :class:`huaweicloudsdkces.v1.BatchListMetricDataResponse`
         """
-        return self._batch_list_metric_data_with_http_info(request)
+        http_info = self._batch_list_metric_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_list_metric_data_with_http_info(self, request):
+    def batch_list_metric_data_async_invoker(self, request):
+        http_info = self._batch_list_metric_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_list_metric_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/V1.0/{project_id}/batch-query-metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchListMetricDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -56,11 +73,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -69,20 +86,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/batch-query-metric-data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchListMetricDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_alarm_async(self, request):
         """创建告警规则
@@ -96,9 +109,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.CreateAlarmRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateAlarmResponse`
         """
-        return self._create_alarm_with_http_info(request)
+        http_info = self._create_alarm_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alarm_with_http_info(self, request):
+    def create_alarm_async_invoker(self, request):
+        http_info = self._create_alarm_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_alarm_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/V1.0/{project_id}/alarms",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlarmResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -113,11 +138,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -126,20 +151,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarms',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlarmResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_alarm_template_async(self, request):
         """创建自定义告警模板
@@ -153,9 +174,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.CreateAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateAlarmTemplateResponse`
         """
-        return self._create_alarm_template_with_http_info(request)
+        http_info = self._create_alarm_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_alarm_template_with_http_info(self, request):
+    def create_alarm_template_async_invoker(self, request):
+        http_info = self._create_alarm_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_alarm_template_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/V1.0/{project_id}/alarm-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAlarmTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -170,11 +203,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -183,20 +216,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarm-template',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAlarmTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_events_async(self, request):
         """上报事件
@@ -210,9 +239,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.CreateEventsRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateEventsResponse`
         """
-        return self._create_events_with_http_info(request)
+        http_info = self._create_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_events_with_http_info(self, request):
+    def create_events_async_invoker(self, request):
+        http_info = self._create_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_events_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/V1.0/{project_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -227,11 +268,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -240,20 +281,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/events',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_metric_data_async(self, request):
         """添加监控数据
@@ -267,9 +304,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.CreateMetricDataRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateMetricDataResponse`
         """
-        return self._create_metric_data_with_http_info(request)
+        http_info = self._create_metric_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_metric_data_with_http_info(self, request):
+    def create_metric_data_async_invoker(self, request):
+        http_info = self._create_metric_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_metric_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/V1.0/{project_id}/metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMetricDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -284,11 +333,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -297,20 +346,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/metric-data',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMetricDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resource_group_async(self, request):
         """创建资源分组
@@ -324,9 +369,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.CreateResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.CreateResourceGroupResponse`
         """
-        return self._create_resource_group_with_http_info(request)
+        http_info = self._create_resource_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resource_group_with_http_info(self, request):
+    def create_resource_group_async_invoker(self, request):
+        http_info = self._create_resource_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_group_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/V1.0/{project_id}/resource-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -341,11 +398,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -354,20 +411,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/resource-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResourceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alarm_async(self, request):
         """删除告警规则
@@ -381,9 +434,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.DeleteAlarmRequest`
         :rtype: :class:`huaweicloudsdkces.v1.DeleteAlarmResponse`
         """
-        return self._delete_alarm_with_http_info(request)
+        http_info = self._delete_alarm_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alarm_with_http_info(self, request):
+    def delete_alarm_async_invoker(self, request):
+        http_info = self._delete_alarm_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_alarm_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/V1.0/{project_id}/alarms/{alarm_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlarmResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -400,9 +465,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -411,20 +476,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarms/{alarm_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlarmResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_alarm_template_async(self, request):
         """删除自定义告警模板
@@ -438,9 +499,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.DeleteAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v1.DeleteAlarmTemplateResponse`
         """
-        return self._delete_alarm_template_with_http_info(request)
+        http_info = self._delete_alarm_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_alarm_template_with_http_info(self, request):
+    def delete_alarm_template_async_invoker(self, request):
+        http_info = self._delete_alarm_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_alarm_template_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/V1.0/{project_id}/alarm-template/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAlarmTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -457,9 +530,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -468,20 +541,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarm-template/{template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAlarmTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_group_async(self, request):
         """删除资源分组
@@ -495,9 +564,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.DeleteResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.DeleteResourceGroupResponse`
         """
-        return self._delete_resource_group_with_http_info(request)
+        http_info = self._delete_resource_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_group_with_http_info(self, request):
+    def delete_resource_group_async_invoker(self, request):
+        http_info = self._delete_resource_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_group_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/V1.0/{project_id}/resource-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -514,9 +595,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -525,20 +606,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/resource-groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_histories_async(self, request):
         """查询告警历史
@@ -552,9 +629,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ListAlarmHistoriesRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListAlarmHistoriesResponse`
         """
-        return self._list_alarm_histories_with_http_info(request)
+        http_info = self._list_alarm_histories_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_histories_with_http_info(self, request):
+    def list_alarm_histories_async_invoker(self, request):
+        http_info = self._list_alarm_histories_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_histories_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/alarm-histories",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmHistoriesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -589,9 +678,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -600,20 +689,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarm-histories',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmHistoriesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarm_templates_async(self, request):
         """查询自定义告警模板列表
@@ -627,9 +712,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ListAlarmTemplatesRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListAlarmTemplatesResponse`
         """
-        return self._list_alarm_templates_with_http_info(request)
+        http_info = self._list_alarm_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarm_templates_with_http_info(self, request):
+    def list_alarm_templates_async_invoker(self, request):
+        http_info = self._list_alarm_templates_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarm_templates_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/alarm-template",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -654,9 +751,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -665,20 +762,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarm-template',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_alarms_async(self, request):
         """查询告警规则列表
@@ -692,9 +785,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ListAlarmsRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListAlarmsResponse`
         """
-        return self._list_alarms_with_http_info(request)
+        http_info = self._list_alarms_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_alarms_with_http_info(self, request):
+    def list_alarms_async_invoker(self, request):
+        http_info = self._list_alarms_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_alarms_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/alarms",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAlarmsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -715,9 +820,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -726,20 +831,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarms',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAlarmsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_event_detail_async(self, request):
         """查询某一事件监控详情
@@ -753,9 +854,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ListEventDetailRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListEventDetailResponse`
         """
-        return self._list_event_detail_with_http_info(request)
+        http_info = self._list_event_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_event_detail_with_http_info(self, request):
+    def list_event_detail_async_invoker(self, request):
+        http_info = self._list_event_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_event_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/event/{event_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -790,9 +903,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -801,20 +914,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/event/{event_name}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_events_async(self, request):
         """查询事件监控列表
@@ -828,9 +937,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ListEventsRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListEventsResponse`
         """
-        return self._list_events_with_http_info(request)
+        http_info = self._list_events_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_events_with_http_info(self, request):
+    def list_events_async_invoker(self, request):
+        http_info = self._list_events_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_events_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/events",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEventsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -857,9 +978,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -868,20 +989,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/events',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEventsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_metrics_async(self, request):
         """查询指标列表
@@ -895,9 +1012,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ListMetricsRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListMetricsResponse`
         """
-        return self._list_metrics_with_http_info(request)
+        http_info = self._list_metrics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_metrics_with_http_info(self, request):
+    def list_metrics_async_invoker(self, request):
+        http_info = self._list_metrics_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_metrics_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/metrics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMetricsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -928,9 +1057,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -939,20 +1068,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/metrics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMetricsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_group_async(self, request):
         """查询所有资源分组
@@ -966,9 +1091,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ListResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ListResourceGroupResponse`
         """
-        return self._list_resource_group_with_http_info(request)
+        http_info = self._list_resource_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_group_with_http_info(self, request):
+    def list_resource_group_async_invoker(self, request):
+        http_info = self._list_resource_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/resource-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -993,9 +1130,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1004,20 +1141,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/resource-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_alarm_async(self, request):
         """查询单条告警规则信息
@@ -1031,9 +1164,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ShowAlarmRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowAlarmResponse`
         """
-        return self._show_alarm_with_http_info(request)
+        http_info = self._show_alarm_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_alarm_with_http_info(self, request):
+    def show_alarm_async_invoker(self, request):
+        http_info = self._show_alarm_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_alarm_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/alarms/{alarm_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAlarmResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1050,9 +1195,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1061,20 +1206,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarms/{alarm_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAlarmResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_event_data_async(self, request):
         """查询主机配置数据
@@ -1088,9 +1229,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ShowEventDataRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowEventDataResponse`
         """
-        return self._show_event_data_with_http_info(request)
+        http_info = self._show_event_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_event_data_with_http_info(self, request):
+    def show_event_data_async_invoker(self, request):
+        http_info = self._show_event_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_event_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/event-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEventDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1121,9 +1274,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1132,20 +1285,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/event-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEventDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_metric_data_async(self, request):
         """查询监控数据
@@ -1159,9 +1308,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ShowMetricDataRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowMetricDataResponse`
         """
-        return self._show_metric_data_with_http_info(request)
+        http_info = self._show_metric_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_metric_data_with_http_info(self, request):
+    def show_metric_data_async_invoker(self, request):
+        http_info = self._show_metric_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_metric_data_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/metric-data",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMetricDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1196,9 +1357,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1207,20 +1368,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/metric-data',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMetricDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas_async(self, request):
         """查询配额
@@ -1234,9 +1391,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_async_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1251,9 +1420,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1262,20 +1431,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_group_async(self, request):
         """查询资源分组下的资源
@@ -1289,9 +1454,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.ShowResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.ShowResourceGroupResponse`
         """
-        return self._show_resource_group_with_http_info(request)
+        http_info = self._show_resource_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_group_with_http_info(self, request):
+    def show_resource_group_async_invoker(self, request):
+        http_info = self._show_resource_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_group_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/V1.0/{project_id}/resource-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1318,9 +1495,9 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1329,20 +1506,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/resource-groups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alarm_async(self, request):
         """修改告警规则
@@ -1356,9 +1529,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.UpdateAlarmRequest`
         :rtype: :class:`huaweicloudsdkces.v1.UpdateAlarmResponse`
         """
-        return self._update_alarm_with_http_info(request)
+        http_info = self._update_alarm_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alarm_with_http_info(self, request):
+    def update_alarm_async_invoker(self, request):
+        http_info = self._update_alarm_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_alarm_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/V1.0/{project_id}/alarms/{alarm_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlarmResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1375,11 +1560,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1388,20 +1573,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarms/{alarm_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlarmResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alarm_action_async(self, request):
         """启停告警规则
@@ -1415,9 +1596,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.UpdateAlarmActionRequest`
         :rtype: :class:`huaweicloudsdkces.v1.UpdateAlarmActionResponse`
         """
-        return self._update_alarm_action_with_http_info(request)
+        http_info = self._update_alarm_action_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alarm_action_with_http_info(self, request):
+    def update_alarm_action_async_invoker(self, request):
+        http_info = self._update_alarm_action_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_alarm_action_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/V1.0/{project_id}/alarms/{alarm_id}/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlarmActionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1434,11 +1627,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1447,20 +1640,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarms/{alarm_id}/action',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlarmActionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_alarm_template_async(self, request):
         """更新自定义告警模板
@@ -1474,9 +1663,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.UpdateAlarmTemplateRequest`
         :rtype: :class:`huaweicloudsdkces.v1.UpdateAlarmTemplateResponse`
         """
-        return self._update_alarm_template_with_http_info(request)
+        http_info = self._update_alarm_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_alarm_template_with_http_info(self, request):
+    def update_alarm_template_async_invoker(self, request):
+        http_info = self._update_alarm_template_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_alarm_template_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/V1.0/{project_id}/alarm-template/{template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAlarmTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1493,11 +1694,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1506,20 +1707,16 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/alarm-template/{template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAlarmTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_resource_group_async(self, request):
         """更新资源分组
@@ -1533,9 +1730,21 @@ class CesAsyncClient(Client):
         :type request: :class:`huaweicloudsdkces.v1.UpdateResourceGroupRequest`
         :rtype: :class:`huaweicloudsdkces.v1.UpdateResourceGroupResponse`
         """
-        return self._update_resource_group_with_http_info(request)
+        http_info = self._update_resource_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_resource_group_with_http_info(self, request):
+    def update_resource_group_async_invoker(self, request):
+        http_info = self._update_resource_group_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_resource_group_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/V1.0/{project_id}/resource-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateResourceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1552,11 +1761,11 @@ class CesAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1565,20 +1774,26 @@ class CesAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/V1.0/{project_id}/resource-groups/{group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateResourceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -1617,4 +1832,4 @@ class CesAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

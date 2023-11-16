@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkhilens'")
 
 
 class HiLensAsyncClient(Client):
@@ -39,9 +44,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.AddDeploymentNodesRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.AddDeploymentNodesResponse`
         """
-        return self._add_deployment_nodes_with_http_info(request)
+        http_info = self._add_deployment_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_deployment_nodes_with_http_info(self, request):
+    def add_deployment_nodes_async_invoker(self, request):
+        http_info = self._add_deployment_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_deployment_nodes_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddDeploymentNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -60,11 +77,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -73,20 +90,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/nodes',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddDeploymentNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_node_tags_async(self, request):
         """批量添加节点标签
@@ -100,9 +113,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.BatchCreateNodeTagsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.BatchCreateNodeTagsResponse`
         """
-        return self._batch_create_node_tags_with_http_info(request)
+        http_info = self._batch_create_node_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_node_tags_with_http_info(self, request):
+    def batch_create_node_tags_async_invoker(self, request):
+        http_info = self._batch_create_node_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_node_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/tag-mgr/node-tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateNodeTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tag-mgr/node-tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateNodeTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_config_map_async(self, request):
         """创建配置项
@@ -157,9 +178,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateConfigMapResponse`
         """
-        return self._create_config_map_with_http_info(request)
+        http_info = self._create_config_map_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_config_map_with_http_info(self, request):
+    def create_config_map_async_invoker(self, request):
+        http_info = self._create_config_map_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_config_map_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/configmaps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateConfigMapResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/configmaps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateConfigMapResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_deployment_async(self, request):
         """创建应用部署
@@ -216,9 +245,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateDeploymentResponse`
         """
-        return self._create_deployment_with_http_info(request)
+        http_info = self._create_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_deployment_with_http_info(self, request):
+    def create_deployment_async_invoker(self, request):
+        http_info = self._create_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_deployment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -237,11 +278,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -250,20 +291,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_node_async(self, request):
         """注册设备
@@ -277,9 +314,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateNodeResponse`
         """
-        return self._create_node_with_http_info(request)
+        http_info = self._create_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_node_with_http_info(self, request):
+    def create_node_async_invoker(self, request):
+        http_info = self._create_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -296,11 +345,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -309,20 +358,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_order_form_async(self, request):
         """创建免费技能订单
@@ -336,9 +381,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateOrderFormRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateOrderFormResponse`
         """
-        return self._create_order_form_with_http_info(request)
+        http_info = self._create_order_form_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_order_form_with_http_info(self, request):
+    def create_order_form_async_invoker(self, request):
+        http_info = self._create_order_form_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_order_form_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/skill-market/skill-order",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrderFormResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -353,11 +410,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -366,20 +423,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/skill-market/skill-order',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrderFormResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resource_tags_async(self, request):
         """添加资源标签
@@ -393,9 +446,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateResourceTagsResponse`
         """
-        return self._create_resource_tags_with_http_info(request)
+        http_info = self._create_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resource_tags_with_http_info(self, request):
+    def create_resource_tags_async_invoker(self, request):
+        http_info = self._create_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -414,11 +479,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -427,20 +492,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_secret_async(self, request):
         """创建密钥
@@ -454,9 +515,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateSecretRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateSecretResponse`
         """
-        return self._create_secret_with_http_info(request)
+        http_info = self._create_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_secret_with_http_info(self, request):
+    def create_secret_async_invoker(self, request):
+        http_info = self._create_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_secret_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/secrets",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -473,11 +546,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -486,20 +559,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/secrets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_task_async(self, request):
         """创建作业
@@ -513,9 +582,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateTaskRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateTaskResponse`
         """
-        return self._create_task_with_http_info(request)
+        http_info = self._create_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_task_with_http_info(self, request):
+    def create_task_async_invoker(self, request):
+        http_info = self._create_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -532,11 +613,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -545,20 +626,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_work_space_async(self, request):
         """创建工作空间
@@ -572,9 +649,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.CreateWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.CreateWorkSpaceResponse`
         """
-        return self._create_work_space_with_http_info(request)
+        http_info = self._create_work_space_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_work_space_with_http_info(self, request):
+    def create_work_space_async_invoker(self, request):
+        http_info = self._create_work_space_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_work_space_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateWorkSpaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -589,11 +678,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -602,20 +691,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/workspaces',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateWorkSpaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_config_map_async(self, request):
         """删除配置项
@@ -629,9 +714,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteConfigMapRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteConfigMapResponse`
         """
-        return self._delete_config_map_with_http_info(request)
+        http_info = self._delete_config_map_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_config_map_with_http_info(self, request):
+    def delete_config_map_async_invoker(self, request):
+        http_info = self._delete_config_map_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_config_map_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ai-mgr/configmaps/{config_map_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteConfigMapResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -648,9 +745,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -659,20 +756,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/configmaps/{config_map_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteConfigMapResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_deployment_async(self, request):
         """删除应用部署
@@ -686,9 +779,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteDeploymentResponse`
         """
-        return self._delete_deployment_with_http_info(request)
+        http_info = self._delete_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_deployment_with_http_info(self, request):
+    def delete_deployment_async_invoker(self, request):
+        http_info = self._delete_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_deployment_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -711,9 +816,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -722,20 +827,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_node_async(self, request):
         """删除设备
@@ -749,9 +850,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteNodeResponse`
         """
-        return self._delete_node_with_http_info(request)
+        http_info = self._delete_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_node_with_http_info(self, request):
+    def delete_node_async_invoker(self, request):
+        http_info = self._delete_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_node_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -770,9 +883,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -781,20 +894,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes/{node_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_pod_async(self, request):
         """删除应用实例
@@ -808,9 +917,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeletePodRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeletePodResponse`
         """
-        return self._delete_pod_with_http_info(request)
+        http_info = self._delete_pod_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_pod_with_http_info(self, request):
+    def delete_pod_async_invoker(self, request):
+        http_info = self._delete_pod_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_pod_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/{pod_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -831,9 +952,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -842,20 +963,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/{pod_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_tag_async(self, request):
         """删除资源标签
@@ -869,9 +986,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteResourceTagResponse`
         """
-        return self._delete_resource_tag_with_http_info(request)
+        http_info = self._delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_tag_with_http_info(self, request):
+    def delete_resource_tag_async_invoker(self, request):
+        http_info = self._delete_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -892,9 +1021,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -903,20 +1032,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_secret_async(self, request):
         """删除密钥
@@ -930,9 +1055,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteSecretRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteSecretResponse`
         """
-        return self._delete_secret_with_http_info(request)
+        http_info = self._delete_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_secret_with_http_info(self, request):
+    def delete_secret_async_invoker(self, request):
+        http_info = self._delete_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_secret_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ai-mgr/secrets/{secret_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -949,9 +1086,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -960,20 +1097,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/secrets/{secret_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task_async(self, request):
         """删除作业
@@ -987,9 +1120,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteTaskResponse`
         """
-        return self._delete_task_with_http_info(request)
+        http_info = self._delete_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_with_http_info(self, request):
+    def delete_task_async_invoker(self, request):
+        http_info = self._delete_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_task_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1008,9 +1153,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1019,20 +1164,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_work_space_async(self, request):
         """删除工作空间
@@ -1046,9 +1187,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.DeleteWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.DeleteWorkSpaceResponse`
         """
-        return self._delete_work_space_with_http_info(request)
+        http_info = self._delete_work_space_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_work_space_with_http_info(self, request):
+    def delete_work_space_async_invoker(self, request):
+        http_info = self._delete_work_space_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_work_space_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/ai-mgr/workspaces/{workspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteWorkSpaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1065,9 +1218,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1076,20 +1229,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/workspaces/{workspace_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteWorkSpaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def freeze_node_async(self, request):
         """将激活订单与设备解绑
@@ -1103,9 +1252,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.FreezeNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.FreezeNodeResponse`
         """
-        return self._freeze_node_with_http_info(request)
+        http_info = self._freeze_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _freeze_node_with_http_info(self, request):
+    def freeze_node_async_invoker(self, request):
+        http_info = self._freeze_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _freeze_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes/{node_id}/deactivate",
+            "request_type": request.__class__.__name__,
+            "response_type": "FreezeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1122,9 +1283,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1133,20 +1294,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes/{node_id}/deactivate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='FreezeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_config_maps_async(self, request):
         """查询配置项列表
@@ -1160,9 +1317,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListConfigMapsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListConfigMapsResponse`
         """
-        return self._list_config_maps_with_http_info(request)
+        http_info = self._list_config_maps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_config_maps_with_http_info(self, request):
+    def list_config_maps_async_invoker(self, request):
+        http_info = self._list_config_maps_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_config_maps_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/configmaps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListConfigMapsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1191,9 +1360,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1202,20 +1371,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/configmaps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListConfigMapsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_firmwares_async(self, request):
         """查询固件列表
@@ -1229,9 +1394,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListFirmwaresRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListFirmwaresResponse`
         """
-        return self._list_firmwares_with_http_info(request)
+        http_info = self._list_firmwares_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_firmwares_with_http_info(self, request):
+    def list_firmwares_async_invoker(self, request):
+        http_info = self._list_firmwares_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_firmwares_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/ai-mgr/firmwares",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFirmwaresResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1258,9 +1435,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1269,20 +1446,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/ai-mgr/firmwares',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFirmwaresResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_platform_manager_async(self, request):
         """获取运行服务费订单列表
@@ -1296,9 +1469,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListPlatformManagerRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListPlatformManagerResponse`
         """
-        return self._list_platform_manager_with_http_info(request)
+        http_info = self._list_platform_manager_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_platform_manager_with_http_info(self, request):
+    def list_platform_manager_async_invoker(self, request):
+        http_info = self._list_platform_manager_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_platform_manager_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/platform-manager/orders",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPlatformManagerResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1323,9 +1508,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1334,20 +1519,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/platform-manager/orders',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPlatformManagerResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_resource_tags_async(self, request):
         """查询某资源类型的标签
@@ -1361,9 +1542,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListResourceTagsResponse`
         """
-        return self._list_resource_tags_with_http_info(request)
+        http_info = self._list_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_resource_tags_with_http_info(self, request):
+    def list_resource_tags_async_invoker(self, request):
+        http_info = self._list_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/tag-mgr/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1380,9 +1573,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1391,20 +1584,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/tag-mgr/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_secrets_async(self, request):
         """查询密钥列表
@@ -1418,9 +1607,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListSecretsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListSecretsResponse`
         """
-        return self._list_secrets_with_http_info(request)
+        http_info = self._list_secrets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_secrets_with_http_info(self, request):
+    def list_secrets_async_invoker(self, request):
+        http_info = self._list_secrets_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_secrets_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/secrets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSecretsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1449,9 +1650,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1460,20 +1661,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/secrets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSecretsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tasks_async(self, request):
         """查询作业列表
@@ -1487,9 +1684,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListTasksResponse`
         """
-        return self._list_tasks_with_http_info(request)
+        http_info = self._list_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tasks_with_http_info(self, request):
+    def list_tasks_async_invoker(self, request):
+        http_info = self._list_tasks_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_tasks_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1510,9 +1719,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1521,20 +1730,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_work_spaces_async(self, request):
         """获取工作空间列表
@@ -1548,9 +1753,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ListWorkSpacesRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ListWorkSpacesResponse`
         """
-        return self._list_work_spaces_with_http_info(request)
+        http_info = self._list_work_spaces_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_work_spaces_with_http_info(self, request):
+    def list_work_spaces_async_invoker(self, request):
+        http_info = self._list_work_spaces_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_work_spaces_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/workspaces",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListWorkSpacesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1571,9 +1788,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1582,20 +1799,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/workspaces',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListWorkSpacesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def set_default_order_form_async(self, request):
         """设置默认订单
@@ -1609,9 +1822,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.SetDefaultOrderFormRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.SetDefaultOrderFormResponse`
         """
-        return self._set_default_order_form_with_http_info(request)
+        http_info = self._set_default_order_form_http_info(request)
+        return self._call_api(**http_info)
 
-    def _set_default_order_form_with_http_info(self, request):
+    def set_default_order_form_async_invoker(self, request):
+        http_info = self._set_default_order_form_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _set_default_order_form_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/skill-market/skill-order/{order_id}/default",
+            "request_type": request.__class__.__name__,
+            "response_type": "SetDefaultOrderFormResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1628,9 +1853,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1639,20 +1864,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/skill-market/skill-order/{order_id}/default',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SetDefaultOrderFormResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_config_map_async(self, request):
         """查询配置项详情
@@ -1666,9 +1887,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowConfigMapRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowConfigMapResponse`
         """
-        return self._show_config_map_with_http_info(request)
+        http_info = self._show_config_map_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_config_map_with_http_info(self, request):
+    def show_config_map_async_invoker(self, request):
+        http_info = self._show_config_map_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_config_map_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/configmaps/{config_map_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowConfigMapResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1685,9 +1918,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1696,20 +1929,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/configmaps/{config_map_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowConfigMapResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deployment_async(self, request):
         """查询应用部署详情
@@ -1723,9 +1952,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowDeploymentResponse`
         """
-        return self._show_deployment_with_http_info(request)
+        http_info = self._show_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deployment_with_http_info(self, request):
+    def show_deployment_async_invoker(self, request):
+        http_info = self._show_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_deployment_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1744,9 +1985,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1755,20 +1996,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deployment_pods_async(self, request):
         """查询应用实例列表
@@ -1782,9 +2019,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowDeploymentPodsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowDeploymentPodsResponse`
         """
-        return self._show_deployment_pods_with_http_info(request)
+        http_info = self._show_deployment_pods_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deployment_pods_with_http_info(self, request):
+    def show_deployment_pods_async_invoker(self, request):
+        http_info = self._show_deployment_pods_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_deployment_pods_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/pods",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeploymentPodsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1813,9 +2062,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1824,20 +2073,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/pods',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeploymentPodsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_deployments_async(self, request):
         """查询应用部署列表
@@ -1851,9 +2096,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowDeploymentsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowDeploymentsResponse`
         """
-        return self._show_deployments_with_http_info(request)
+        http_info = self._show_deployments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_deployments_with_http_info(self, request):
+    def show_deployments_async_invoker(self, request):
+        http_info = self._show_deployments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_deployments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeploymentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1882,9 +2139,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1893,20 +2150,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeploymentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_node_async(self, request):
         """查询设备详情
@@ -1920,9 +2173,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowNodeResponse`
         """
-        return self._show_node_with_http_info(request)
+        http_info = self._show_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_node_with_http_info(self, request):
+    def show_node_async_invoker(self, request):
+        http_info = self._show_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_node_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1939,9 +2204,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1950,20 +2215,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes/{node_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_node_activation_records_async(self, request):
         """获取激活记录列表
@@ -1977,9 +2238,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowNodeActivationRecordsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowNodeActivationRecordsResponse`
         """
-        return self._show_node_activation_records_with_http_info(request)
+        http_info = self._show_node_activation_records_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_node_activation_records_with_http_info(self, request):
+    def show_node_activation_records_async_invoker(self, request):
+        http_info = self._show_node_activation_records_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_node_activation_records_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes/{node_id}/activation/records",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodeActivationRecordsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2000,9 +2273,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2011,20 +2284,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes/{node_id}/activation/records',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNodeActivationRecordsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_nodes_async(self, request):
         """查询设备列表
@@ -2038,9 +2307,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowNodesRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowNodesResponse`
         """
-        return self._show_nodes_with_http_info(request)
+        http_info = self._show_nodes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_nodes_with_http_info(self, request):
+    def show_nodes_async_invoker(self, request):
+        http_info = self._show_nodes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_nodes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowNodesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2075,9 +2356,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2086,20 +2367,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowNodesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_tags_async(self, request):
         """查询资源标签
@@ -2113,9 +2390,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowResourceTagsRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowResourceTagsResponse`
         """
-        return self._show_resource_tags_with_http_info(request)
+        http_info = self._show_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_tags_with_http_info(self, request):
+    def show_resource_tags_async_invoker(self, request):
+        http_info = self._show_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2134,9 +2423,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2145,20 +2434,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_secret_async(self, request):
         """查询密钥详情
@@ -2172,9 +2457,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSecretRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSecretResponse`
         """
-        return self._show_secret_with_http_info(request)
+        http_info = self._show_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_secret_with_http_info(self, request):
+    def show_secret_async_invoker(self, request):
+        http_info = self._show_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_secret_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/secrets/{secret_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2191,9 +2488,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2202,20 +2499,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/secrets/{secret_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_skill_info_async(self, request):
         """获取技能详情
@@ -2229,9 +2522,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSkillInfoRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSkillInfoResponse`
         """
-        return self._show_skill_info_with_http_info(request)
+        http_info = self._show_skill_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_skill_info_with_http_info(self, request):
+    def show_skill_info_async_invoker(self, request):
+        http_info = self._show_skill_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_skill_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/skill-market/skills/{skill_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSkillInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2252,9 +2557,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-request-id", ]
 
@@ -2263,20 +2568,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/skill-market/skills/{skill_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSkillInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_skill_list_async(self, request):
         """查询技能列表
@@ -2290,9 +2591,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSkillListRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSkillListResponse`
         """
-        return self._show_skill_list_with_http_info(request)
+        http_info = self._show_skill_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_skill_list_with_http_info(self, request):
+    def show_skill_list_async_invoker(self, request):
+        http_info = self._show_skill_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_skill_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/skill-market/skills",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSkillListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2335,9 +2648,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2346,20 +2659,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/skill-market/skills',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSkillListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_skill_order_info_async(self, request):
         """查询订单详情
@@ -2373,9 +2682,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSkillOrderInfoRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSkillOrderInfoResponse`
         """
-        return self._show_skill_order_info_with_http_info(request)
+        http_info = self._show_skill_order_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_skill_order_info_with_http_info(self, request):
+    def show_skill_order_info_async_invoker(self, request):
+        http_info = self._show_skill_order_info_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_skill_order_info_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/skill-market/skill-order/{order_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSkillOrderInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2392,9 +2713,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2403,20 +2724,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/skill-market/skill-order/{order_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSkillOrderInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_skill_order_list_async(self, request):
         """查询订单列表
@@ -2430,9 +2747,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowSkillOrderListRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowSkillOrderListResponse`
         """
-        return self._show_skill_order_list_with_http_info(request)
+        http_info = self._show_skill_order_list_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_skill_order_list_with_http_info(self, request):
+    def show_skill_order_list_async_invoker(self, request):
+        http_info = self._show_skill_order_list_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_skill_order_list_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/skill-market/skill-order",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowSkillOrderListResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2455,9 +2784,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2466,20 +2795,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/skill-market/skill-order',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowSkillOrderListResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task_async(self, request):
         """查询作业详情
@@ -2493,9 +2818,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowTaskResponse`
         """
-        return self._show_task_with_http_info(request)
+        http_info = self._show_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_with_http_info(self, request):
+    def show_task_async_invoker(self, request):
+        http_info = self._show_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_task_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2514,9 +2851,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2525,20 +2862,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_upgrade_progress_async(self, request):
         """获取设备固件升级进度
@@ -2552,9 +2885,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowUpgradeProgressRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowUpgradeProgressResponse`
         """
-        return self._show_upgrade_progress_with_http_info(request)
+        http_info = self._show_upgrade_progress_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_upgrade_progress_with_http_info(self, request):
+    def show_upgrade_progress_async_invoker(self, request):
+        http_info = self._show_upgrade_progress_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_upgrade_progress_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/node-manager/node/{node_id}/firmware/upgrade-progress",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowUpgradeProgressResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2575,9 +2920,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2586,20 +2931,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/node-manager/node/{node_id}/firmware/upgrade-progress',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowUpgradeProgressResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_work_space_async(self, request):
         """获取工作空间详情
@@ -2613,9 +2954,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.ShowWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.ShowWorkSpaceResponse`
         """
-        return self._show_work_space_with_http_info(request)
+        http_info = self._show_work_space_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_work_space_with_http_info(self, request):
+    def show_work_space_async_invoker(self, request):
+        http_info = self._show_work_space_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_work_space_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/ai-mgr/workspaces/{workspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowWorkSpaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2632,9 +2985,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2643,20 +2996,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/workspaces/{workspace_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowWorkSpaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_and_stop_deployment_async(self, request):
         """暂停、继续部署负载
@@ -2670,9 +3019,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentResponse`
         """
-        return self._start_and_stop_deployment_with_http_info(request)
+        http_info = self._start_and_stop_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_and_stop_deployment_with_http_info(self, request):
+    def start_and_stop_deployment_async_invoker(self, request):
+        http_info = self._start_and_stop_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_and_stop_deployment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/action/{action}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartAndStopDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2691,9 +3052,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2702,20 +3063,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/action/{action}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartAndStopDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_and_stop_deployment_pod_async(self, request):
         """启动/停止部署下的指定实例
@@ -2729,9 +3086,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentPodRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.StartAndStopDeploymentPodResponse`
         """
-        return self._start_and_stop_deployment_pod_with_http_info(request)
+        http_info = self._start_and_stop_deployment_pod_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_and_stop_deployment_pod_with_http_info(self, request):
+    def start_and_stop_deployment_pod_async_invoker(self, request):
+        http_info = self._start_and_stop_deployment_pod_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _start_and_stop_deployment_pod_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/{pod_id}/action/{action}",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartAndStopDeploymentPodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2752,9 +3121,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2763,20 +3132,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/{pod_id}/action/{action}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartAndStopDeploymentPodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def switch_node_connection_async(self, request):
         """启停设备
@@ -2790,9 +3155,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.SwitchNodeConnectionRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.SwitchNodeConnectionResponse`
         """
-        return self._switch_node_connection_with_http_info(request)
+        http_info = self._switch_node_connection_http_info(request)
+        return self._call_api(**http_info)
 
-    def _switch_node_connection_with_http_info(self, request):
+    def switch_node_connection_async_invoker(self, request):
+        http_info = self._switch_node_connection_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _switch_node_connection_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes/{node_id}/action/{action}",
+            "request_type": request.__class__.__name__,
+            "response_type": "SwitchNodeConnectionResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2813,9 +3190,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2824,20 +3201,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes/{node_id}/action/{action}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SwitchNodeConnectionResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unfreeze_node_async(self, request):
         """使用运行服务费激活设备
@@ -2851,9 +3224,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UnfreezeNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UnfreezeNodeResponse`
         """
-        return self._unfreeze_node_with_http_info(request)
+        http_info = self._unfreeze_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unfreeze_node_with_http_info(self, request):
+    def unfreeze_node_async_invoker(self, request):
+        http_info = self._unfreeze_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _unfreeze_node_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes/{node_id}/activate",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnfreezeNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2870,11 +3255,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2883,20 +3268,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes/{node_id}/activate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnfreezeNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_config_map_async(self, request):
         """更新配置项
@@ -2910,9 +3291,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateConfigMapRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateConfigMapResponse`
         """
-        return self._update_config_map_with_http_info(request)
+        http_info = self._update_config_map_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_config_map_with_http_info(self, request):
+    def update_config_map_async_invoker(self, request):
+        http_info = self._update_config_map_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_config_map_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-mgr/configmaps/{config_map_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateConfigMapResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2929,11 +3322,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2942,20 +3335,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/configmaps/{config_map_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateConfigMapResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_deployment_async(self, request):
         """更新应用部署
@@ -2969,9 +3358,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentResponse`
         """
-        return self._update_deployment_with_http_info(request)
+        http_info = self._update_deployment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_deployment_with_http_info(self, request):
+    def update_deployment_async_invoker(self, request):
+        http_info = self._update_deployment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_deployment_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeploymentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2992,11 +3393,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3005,20 +3406,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeploymentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_deployment_using_patch_async(self, request):
         """部分更新应用部署
@@ -3032,9 +3429,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentUsingPatchRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateDeploymentUsingPatchResponse`
         """
-        return self._update_deployment_using_patch_with_http_info(request)
+        http_info = self._update_deployment_using_patch_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_deployment_using_patch_with_http_info(self, request):
+    def update_deployment_using_patch_async_invoker(self, request):
+        http_info = self._update_deployment_using_patch_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_deployment_using_patch_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeploymentUsingPatchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3051,11 +3460,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3064,20 +3473,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeploymentUsingPatchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_node_async(self, request):
         """更新设备信息
@@ -3091,9 +3496,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateNodeRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateNodeResponse`
         """
-        return self._update_node_with_http_info(request)
+        http_info = self._update_node_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_node_with_http_info(self, request):
+    def update_node_async_invoker(self, request):
+        http_info = self._update_node_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_node_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes/{node_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNodeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3110,11 +3527,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3123,20 +3540,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes/{node_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNodeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_node_cert_async(self, request):
         """更新设备证书
@@ -3150,9 +3563,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateNodeCertRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateNodeCertResponse`
         """
-        return self._update_node_cert_with_http_info(request)
+        http_info = self._update_node_cert_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_node_cert_with_http_info(self, request):
+    def update_node_cert_async_invoker(self, request):
+        http_info = self._update_node_cert_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_node_cert_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-mgr/nodes/{node_id}/cert",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNodeCertResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3169,9 +3594,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3180,20 +3605,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/nodes/{node_id}/cert',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNodeCertResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_node_firmware_async(self, request):
         """升级设备固件
@@ -3207,9 +3628,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateNodeFirmwareRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateNodeFirmwareResponse`
         """
-        return self._update_node_firmware_with_http_info(request)
+        http_info = self._update_node_firmware_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_node_firmware_with_http_info(self, request):
+    def update_node_firmware_async_invoker(self, request):
+        http_info = self._update_node_firmware_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_node_firmware_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/node-manager/node/{node_id}/firmware/{firmware_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNodeFirmwareResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3230,9 +3663,9 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["firmware_name", "firmware_id", ]
 
@@ -3241,20 +3674,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/node-manager/node/{node_id}/firmware/{firmware_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNodeFirmwareResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_secret_async(self, request):
         """更新密钥
@@ -3268,9 +3697,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateSecretRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateSecretResponse`
         """
-        return self._update_secret_with_http_info(request)
+        http_info = self._update_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_secret_with_http_info(self, request):
+    def update_secret_async_invoker(self, request):
+        http_info = self._update_secret_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_secret_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-mgr/secrets/{secret_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3287,11 +3728,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3300,20 +3741,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/secrets/{secret_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task_async(self, request):
         """编辑作业
@@ -3327,9 +3764,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateTaskResponse`
         """
-        return self._update_task_with_http_info(request)
+        http_info = self._update_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_with_http_info(self, request):
+    def update_task_async_invoker(self, request):
+        http_info = self._update_task_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_task_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/ai-mgr/deployments/{deployment_id}/task/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3348,11 +3797,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3361,20 +3810,16 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/deployments/{deployment_id}/task/{task_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_work_space_async(self, request):
         """修改工作空间
@@ -3388,9 +3833,21 @@ class HiLensAsyncClient(Client):
         :type request: :class:`huaweicloudsdkhilens.v3.UpdateWorkSpaceRequest`
         :rtype: :class:`huaweicloudsdkhilens.v3.UpdateWorkSpaceResponse`
         """
-        return self._update_work_space_with_http_info(request)
+        http_info = self._update_work_space_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_work_space_with_http_info(self, request):
+    def update_work_space_async_invoker(self, request):
+        http_info = self._update_work_space_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_work_space_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/ai-mgr/workspaces/{workspace_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateWorkSpaceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3407,11 +3864,11 @@ class HiLensAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3420,20 +3877,26 @@ class HiLensAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/ai-mgr/workspaces/{workspace_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateWorkSpaceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3472,4 +3935,4 @@ class HiLensAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

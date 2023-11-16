@@ -33,7 +33,7 @@ class ShowJobListByProjectIdRequest:
 
         The model defined in huaweicloud sdk
 
-        :param project_id: CodeArts项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
+        :param project_id: CodeArts项目ID，32位数字、小写字母组合。
         :type project_id: str
         :param page_index: 分页页码， 表示从此页开始查询， page_index大于等于0
         :type page_index: int
@@ -56,7 +56,7 @@ class ShowJobListByProjectIdRequest:
     def project_id(self):
         """Gets the project_id of this ShowJobListByProjectIdRequest.
 
-        CodeArts项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
+        CodeArts项目ID，32位数字、小写字母组合。
 
         :return: The project_id of this ShowJobListByProjectIdRequest.
         :rtype: str
@@ -67,7 +67,7 @@ class ShowJobListByProjectIdRequest:
     def project_id(self, project_id):
         """Sets the project_id of this ShowJobListByProjectIdRequest.
 
-        CodeArts项目ID，32位数字、小写字母组合。[查询项目列表](https://support.huaweicloud.com/api-projectman/ListProjectsV4.html)
+        CodeArts项目ID，32位数字、小写字母组合。
 
         :param project_id: The project_id of this ShowJobListByProjectIdRequest.
         :type project_id: str

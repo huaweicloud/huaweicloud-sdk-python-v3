@@ -33,7 +33,7 @@ class UpdatePrivateSnatOption:
 
         :param transit_ip_ids: 中转IP的ID的列表。
         :type transit_ip_ids: list[str]
-        :param description: SNAT规则的描述。
+        :param description: SNAT规则的描述。长度范围小于等于255个字符，不能包含&lt;&gt;
         :type description: str
         """
         
@@ -74,7 +74,7 @@ class UpdatePrivateSnatOption:
     def description(self):
         """Gets the description of this UpdatePrivateSnatOption.
 
-        SNAT规则的描述。
+        SNAT规则的描述。长度范围小于等于255个字符，不能包含<>
 
         :return: The description of this UpdatePrivateSnatOption.
         :rtype: str
@@ -85,7 +85,7 @@ class UpdatePrivateSnatOption:
     def description(self, description):
         """Sets the description of this UpdatePrivateSnatOption.
 
-        SNAT规则的描述。
+        SNAT规则的描述。长度范围小于等于255个字符，不能包含<>
 
         :param description: The description of this UpdatePrivateSnatOption.
         :type description: str

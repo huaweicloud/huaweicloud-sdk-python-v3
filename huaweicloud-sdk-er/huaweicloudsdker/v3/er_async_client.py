@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdker'")
 
 
 class ErAsyncClient(Client):
@@ -39,9 +44,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.AssociateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.AssociateRouteTableResponse`
         """
-        return self._associate_route_table_with_http_info(request)
+        http_info = self._associate_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_route_table_with_http_info(self, request):
+    def associate_route_table_async_invoker(self, request):
+        http_info = self._associate_route_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _associate_route_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/associate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -62,11 +79,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Client-Token", ]
 
@@ -75,20 +92,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/associate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_route_table_async(self, request):
         """删除路由关联
@@ -102,9 +115,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DisassociateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.DisassociateRouteTableResponse`
         """
-        return self._disassociate_route_table_with_http_info(request)
+        http_info = self._disassociate_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_route_table_with_http_info(self, request):
+    def disassociate_route_table_async_invoker(self, request):
+        http_info = self._disassociate_route_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disassociate_route_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/disassociate",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -123,11 +148,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -136,20 +161,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/disassociate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_associations_async(self, request):
         """查询路由关联列表
@@ -163,9 +184,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListAssociationsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAssociationsResponse`
         """
-        return self._list_associations_with_http_info(request)
+        http_info = self._list_associations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_associations_with_http_info(self, request):
+    def list_associations_async_invoker(self, request):
+        http_info = self._list_associations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_associations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/associations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAssociationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -203,9 +236,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -214,20 +247,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/associations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAssociationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def accept_attachment_async(self, request):
         """接受共享连接创建
@@ -241,9 +270,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.AcceptAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.AcceptAttachmentResponse`
         """
-        return self._accept_attachment_with_http_info(request)
+        http_info = self._accept_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _accept_attachment_with_http_info(self, request):
+    def accept_attachment_async_invoker(self, request):
+        http_info = self._accept_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _accept_attachment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}/accept",
+            "request_type": request.__class__.__name__,
+            "response_type": "AcceptAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -262,9 +303,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -273,20 +314,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}/accept',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AcceptAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_attachments_async(self, request):
         """查询连接列表
@@ -300,9 +337,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListAttachmentsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAttachmentsResponse`
         """
-        return self._list_attachments_with_http_info(request)
+        http_info = self._list_attachments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_attachments_with_http_info(self, request):
+    def list_attachments_async_invoker(self, request):
+        http_info = self._list_attachments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_attachments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAttachmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -338,9 +387,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -349,20 +398,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/attachments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAttachmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reject_attachment_async(self, request):
         """拒绝共享连接创建
@@ -376,9 +421,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.RejectAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.RejectAttachmentResponse`
         """
-        return self._reject_attachment_with_http_info(request)
+        http_info = self._reject_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reject_attachment_with_http_info(self, request):
+    def reject_attachment_async_invoker(self, request):
+        http_info = self._reject_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _reject_attachment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}/reject",
+            "request_type": request.__class__.__name__,
+            "response_type": "RejectAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -397,9 +454,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -408,20 +465,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}/reject',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RejectAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_attachment_async(self, request):
         """查询连接详情
@@ -435,9 +488,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowAttachmentResponse`
         """
-        return self._show_attachment_with_http_info(request)
+        http_info = self._show_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_attachment_with_http_info(self, request):
+    def show_attachment_async_invoker(self, request):
+        http_info = self._show_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_attachment_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -456,9 +521,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -467,20 +532,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_attachment_async(self, request):
         """更新连接基本信息
@@ -494,9 +555,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateAttachmentResponse`
         """
-        return self._update_attachment_with_http_info(request)
+        http_info = self._update_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_attachment_with_http_info(self, request):
+    def update_attachment_async_invoker(self, request):
+        http_info = self._update_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_attachment_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -515,11 +588,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -528,20 +601,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/attachments/{attachment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_availability_zone_async(self, request):
         """查询可用区列表
@@ -555,9 +624,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListAvailabilityZoneRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListAvailabilityZoneResponse`
         """
-        return self._list_availability_zone_with_http_info(request)
+        http_info = self._list_availability_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_availability_zone_with_http_info(self, request):
+    def list_availability_zone_async_invoker(self, request):
+        http_info = self._list_availability_zone_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_availability_zone_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/availability-zones",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAvailabilityZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -574,9 +655,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -585,20 +666,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/availability-zones',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAvailabilityZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_availability_zone_async(self, request):
         """更新企业路由器的可用区信息
@@ -612,9 +689,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ChangeAvailabilityZoneRequest`
         :rtype: :class:`huaweicloudsdker.v3.ChangeAvailabilityZoneResponse`
         """
-        return self._change_availability_zone_with_http_info(request)
+        http_info = self._change_availability_zone_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_availability_zone_with_http_info(self, request):
+    def change_availability_zone_async_invoker(self, request):
+        http_info = self._change_availability_zone_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_availability_zone_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/instances/{er_id}/change-availability-zone-ids",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeAvailabilityZoneResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -631,11 +720,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -644,20 +733,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/instances/{er_id}/change-availability-zone-ids',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeAvailabilityZoneResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_enterprise_router_async(self, request):
         """创建企业路由器
@@ -671,9 +756,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateEnterpriseRouterResponse`
         """
-        return self._create_enterprise_router_with_http_info(request)
+        http_info = self._create_enterprise_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_enterprise_router_with_http_info(self, request):
+    def create_enterprise_router_async_invoker(self, request):
+        http_info = self._create_enterprise_router_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_enterprise_router_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnterpriseRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -690,11 +787,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Client-Token", ]
 
@@ -703,20 +800,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/instances',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnterpriseRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_enterprise_router_async(self, request):
         """删除企业路由器
@@ -730,9 +823,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteEnterpriseRouterResponse`
         """
-        return self._delete_enterprise_router_with_http_info(request)
+        http_info = self._delete_enterprise_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_enterprise_router_with_http_info(self, request):
+    def delete_enterprise_router_async_invoker(self, request):
+        http_info = self._delete_enterprise_router_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_enterprise_router_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/enterprise-router/instances/{er_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnterpriseRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -749,9 +854,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -760,20 +865,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/instances/{er_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnterpriseRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_enterprise_routers_async(self, request):
         """查询企业路由器列表
@@ -787,9 +888,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListEnterpriseRoutersRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListEnterpriseRoutersResponse`
         """
-        return self._list_enterprise_routers_with_http_info(request)
+        http_info = self._list_enterprise_routers_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_enterprise_routers_with_http_info(self, request):
+    def list_enterprise_routers_async_invoker(self, request):
+        http_info = self._list_enterprise_routers_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_enterprise_routers_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnterpriseRoutersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -828,9 +941,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -839,20 +952,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnterpriseRoutersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_enterprise_router_async(self, request):
         """查询企业路由器详情
@@ -866,9 +975,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowEnterpriseRouterResponse`
         """
-        return self._show_enterprise_router_with_http_info(request)
+        http_info = self._show_enterprise_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_enterprise_router_with_http_info(self, request):
+    def show_enterprise_router_async_invoker(self, request):
+        http_info = self._show_enterprise_router_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_enterprise_router_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/instances/{er_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowEnterpriseRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -885,9 +1006,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -896,20 +1017,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/instances/{er_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowEnterpriseRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_enterprise_router_async(self, request):
         """更新企业路由器
@@ -923,9 +1040,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateEnterpriseRouterResponse`
         """
-        return self._update_enterprise_router_with_http_info(request)
+        http_info = self._update_enterprise_router_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_enterprise_router_with_http_info(self, request):
+    def update_enterprise_router_async_invoker(self, request):
+        http_info = self._update_enterprise_router_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_enterprise_router_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/enterprise-router/instances/{er_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEnterpriseRouterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -942,11 +1071,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -955,20 +1084,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/instances/{er_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEnterpriseRouterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_flow_log_async(self, request):
         """创建流日志
@@ -982,9 +1107,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateFlowLogRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateFlowLogResponse`
         """
-        return self._create_flow_log_with_http_info(request)
+        http_info = self._create_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_flow_log_with_http_info(self, request):
+    def create_flow_log_async_invoker(self, request):
+        http_info = self._create_flow_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_flow_log_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/flow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1003,11 +1140,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Client-Token", ]
 
@@ -1016,20 +1153,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_flow_log_async(self, request):
         """删除流日志
@@ -1043,9 +1176,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteFlowLogRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteFlowLogResponse`
         """
-        return self._delete_flow_log_with_http_info(request)
+        http_info = self._delete_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_flow_log_with_http_info(self, request):
+    def delete_flow_log_async_invoker(self, request):
+        http_info = self._delete_flow_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_flow_log_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1064,9 +1209,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1075,20 +1220,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_flow_log_async(self, request):
         """关闭流日志
@@ -1102,9 +1243,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DisableFlowLogRequest`
         :rtype: :class:`huaweicloudsdker.v3.DisableFlowLogResponse`
         """
-        return self._disable_flow_log_with_http_info(request)
+        http_info = self._disable_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_flow_log_with_http_info(self, request):
+    def disable_flow_log_async_invoker(self, request):
+        http_info = self._disable_flow_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_flow_log_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}/disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisableFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1123,9 +1276,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1134,20 +1287,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}/disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisableFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_flow_log_async(self, request):
         """开启流日志
@@ -1161,9 +1310,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.EnableFlowLogRequest`
         :rtype: :class:`huaweicloudsdker.v3.EnableFlowLogResponse`
         """
-        return self._enable_flow_log_with_http_info(request)
+        http_info = self._enable_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_flow_log_with_http_info(self, request):
+    def enable_flow_log_async_invoker(self, request):
+        http_info = self._enable_flow_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_flow_log_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}/enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1182,9 +1343,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1193,20 +1354,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}/enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_flow_logs_async(self, request):
         """查询流日志列表
@@ -1220,9 +1377,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListFlowLogsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListFlowLogsResponse`
         """
-        return self._list_flow_logs_with_http_info(request)
+        http_info = self._list_flow_logs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_flow_logs_with_http_info(self, request):
+    def list_flow_logs_async_invoker(self, request):
+        http_info = self._list_flow_logs_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_flow_logs_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/flow-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFlowLogsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1254,9 +1423,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1265,20 +1434,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFlowLogsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_flow_log_async(self, request):
         """查询流日志详情
@@ -1292,9 +1457,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowFlowLogRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowFlowLogResponse`
         """
-        return self._show_flow_log_with_http_info(request)
+        http_info = self._show_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_flow_log_with_http_info(self, request):
+    def show_flow_log_async_invoker(self, request):
+        http_info = self._show_flow_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_flow_log_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1313,9 +1490,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1324,20 +1501,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_flow_log_async(self, request):
         """更新流日志基本信息
@@ -1351,9 +1524,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateFlowLogRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateFlowLogResponse`
         """
-        return self._update_flow_log_with_http_info(request)
+        http_info = self._update_flow_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_flow_log_with_http_info(self, request):
+    def update_flow_log_async_invoker(self, request):
+        http_info = self._update_flow_log_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_flow_log_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateFlowLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1372,11 +1557,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1385,20 +1570,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/flow-logs/{flow_log_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateFlowLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disable_propagation_async(self, request):
         """删除路由传播
@@ -1412,9 +1593,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DisablePropagationRequest`
         :rtype: :class:`huaweicloudsdker.v3.DisablePropagationResponse`
         """
-        return self._disable_propagation_with_http_info(request)
+        http_info = self._disable_propagation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disable_propagation_with_http_info(self, request):
+    def disable_propagation_async_invoker(self, request):
+        http_info = self._disable_propagation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _disable_propagation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/disable-propagations",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisablePropagationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1433,11 +1626,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1446,20 +1639,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/disable-propagations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisablePropagationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_propagation_async(self, request):
         """创建路由传播
@@ -1473,9 +1662,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.EnablePropagationRequest`
         :rtype: :class:`huaweicloudsdker.v3.EnablePropagationResponse`
         """
-        return self._enable_propagation_with_http_info(request)
+        http_info = self._enable_propagation_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_propagation_with_http_info(self, request):
+    def enable_propagation_async_invoker(self, request):
+        http_info = self._enable_propagation_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _enable_propagation_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/enable-propagations",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnablePropagationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1496,11 +1697,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Client-Token", ]
 
@@ -1509,20 +1710,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/enable-propagations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnablePropagationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_propagations_async(self, request):
         """查询路由传播列表
@@ -1536,9 +1733,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListPropagationsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListPropagationsResponse`
         """
-        return self._list_propagations_with_http_info(request)
+        http_info = self._list_propagations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_propagations_with_http_info(self, request):
+    def list_propagations_async_invoker(self, request):
+        http_info = self._list_propagations_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_propagations_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/propagations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPropagationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1576,9 +1785,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1587,20 +1796,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}/propagations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPropagationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_quotas_async(self, request):
         """查询配额
@@ -1614,9 +1819,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowQuotasRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowQuotasResponse`
         """
-        return self._show_quotas_with_http_info(request)
+        http_info = self._show_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_quotas_with_http_info(self, request):
+    def show_quotas_async_invoker(self, request):
+        http_info = self._show_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1643,9 +1860,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1654,20 +1871,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_static_route_async(self, request):
         """创建静态路由
@@ -1681,9 +1894,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateStaticRouteResponse`
         """
-        return self._create_static_route_with_http_info(request)
+        http_info = self._create_static_route_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_static_route_with_http_info(self, request):
+    def create_static_route_async_invoker(self, request):
+        http_info = self._create_static_route_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_static_route_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateStaticRouteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1702,11 +1927,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Client-Token", ]
 
@@ -1715,20 +1940,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateStaticRouteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_static_route_async(self, request):
         """删除静态路由
@@ -1742,9 +1963,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteStaticRouteResponse`
         """
-        return self._delete_static_route_with_http_info(request)
+        http_info = self._delete_static_route_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_static_route_with_http_info(self, request):
+    def delete_static_route_async_invoker(self, request):
+        http_info = self._delete_static_route_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_static_route_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes/{route_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteStaticRouteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1763,9 +1996,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1774,20 +2007,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes/{route_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteStaticRouteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_effective_routes_async(self, request):
         """查询有效路由列表
@@ -1801,9 +2030,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListEffectiveRoutesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListEffectiveRoutesResponse`
         """
-        return self._list_effective_routes_with_http_info(request)
+        http_info = self._list_effective_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_effective_routes_with_http_info(self, request):
+    def list_effective_routes_async_invoker(self, request):
+        http_info = self._list_effective_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_effective_routes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEffectiveRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1830,9 +2071,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1841,20 +2082,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/routes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEffectiveRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_static_routes_async(self, request):
         """查询静态路由列表
@@ -1868,9 +2105,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListStaticRoutesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListStaticRoutesResponse`
         """
-        return self._list_static_routes_with_http_info(request)
+        http_info = self._list_static_routes_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_static_routes_with_http_info(self, request):
+    def list_static_routes_async_invoker(self, request):
+        http_info = self._list_static_routes_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_static_routes_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStaticRoutesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1906,9 +2155,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1917,20 +2166,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStaticRoutesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_static_route_async(self, request):
         """查询静态路由详情
@@ -1944,9 +2189,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowStaticRouteResponse`
         """
-        return self._show_static_route_with_http_info(request)
+        http_info = self._show_static_route_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_static_route_with_http_info(self, request):
+    def show_static_route_async_invoker(self, request):
+        http_info = self._show_static_route_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_static_route_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes/{route_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowStaticRouteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1965,9 +2222,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1976,20 +2233,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes/{route_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowStaticRouteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_static_route_async(self, request):
         """更新静态路由
@@ -2003,9 +2256,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateStaticRouteRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateStaticRouteResponse`
         """
-        return self._update_static_route_with_http_info(request)
+        http_info = self._update_static_route_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_static_route_with_http_info(self, request):
+    def update_static_route_async_invoker(self, request):
+        http_info = self._update_static_route_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_static_route_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes/{route_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateStaticRouteResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2024,11 +2289,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2037,20 +2302,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/route-tables/{route_table_id}/static-routes/{route_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateStaticRouteResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_route_table_async(self, request):
         """创建路由表
@@ -2064,9 +2325,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateRouteTableResponse`
         """
-        return self._create_route_table_with_http_info(request)
+        http_info = self._create_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_route_table_with_http_info(self, request):
+    def create_route_table_async_invoker(self, request):
+        http_info = self._create_route_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_route_table_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2085,11 +2358,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Client-Token", ]
 
@@ -2098,20 +2371,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_route_table_async(self, request):
         """删除路由表
@@ -2125,9 +2394,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteRouteTableResponse`
         """
-        return self._delete_route_table_with_http_info(request)
+        http_info = self._delete_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_route_table_with_http_info(self, request):
+    def delete_route_table_async_invoker(self, request):
+        http_info = self._delete_route_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_route_table_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2146,9 +2427,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2157,20 +2438,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_route_tables_async(self, request):
         """查询路由表列表
@@ -2184,9 +2461,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListRouteTablesRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListRouteTablesResponse`
         """
-        return self._list_route_tables_with_http_info(request)
+        http_info = self._list_route_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_route_tables_with_http_info(self, request):
+    def list_route_tables_async_invoker(self, request):
+        http_info = self._list_route_tables_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_route_tables_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRouteTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2220,9 +2509,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2231,20 +2520,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRouteTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_route_table_async(self, request):
         """查询路由表详情
@@ -2258,9 +2543,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowRouteTableResponse`
         """
-        return self._show_route_table_with_http_info(request)
+        http_info = self._show_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_route_table_with_http_info(self, request):
+    def show_route_table_async_invoker(self, request):
+        http_info = self._show_route_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_route_table_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2279,9 +2576,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2290,20 +2587,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_route_table_async(self, request):
         """更新路由表信息
@@ -2317,9 +2610,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateRouteTableRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateRouteTableResponse`
         """
-        return self._update_route_table_with_http_info(request)
+        http_info = self._update_route_table_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_route_table_with_http_info(self, request):
+    def update_route_table_async_invoker(self, request):
+        http_info = self._update_route_table_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_route_table_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRouteTableResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2338,11 +2643,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2351,20 +2656,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/route-tables/{route_table_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRouteTableResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_resource_tags_async(self, request):
         """批量添加删除资源标签
@@ -2380,9 +2681,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.BatchCreateResourceTagsRequest`
         :rtype: :class:`huaweicloudsdker.v3.BatchCreateResourceTagsResponse`
         """
-        return self._batch_create_resource_tags_with_http_info(request)
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_resource_tags_with_http_info(self, request):
+    def batch_create_resource_tags_async_invoker(self, request):
+        http_info = self._batch_create_resource_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_resource_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateResourceTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2401,11 +2714,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2414,20 +2727,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateResourceTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_resource_tag_async(self, request):
         """创建资源标签
@@ -2441,9 +2750,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateResourceTagRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateResourceTagResponse`
         """
-        return self._create_resource_tag_with_http_info(request)
+        http_info = self._create_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_resource_tag_with_http_info(self, request):
+    def create_resource_tag_async_invoker(self, request):
+        http_info = self._create_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2462,11 +2783,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2475,20 +2796,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_resource_tag_async(self, request):
         """删除资源标签
@@ -2502,9 +2819,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteResourceTagRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteResourceTagResponse`
         """
-        return self._delete_resource_tag_with_http_info(request)
+        http_info = self._delete_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_resource_tag_with_http_info(self, request):
+    def delete_resource_tag_async_invoker(self, request):
+        http_info = self._delete_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2525,9 +2854,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2536,20 +2865,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_tags_async(self, request):
         """查询项目标签
@@ -2563,9 +2888,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListProjectTagsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListProjectTagsResponse`
         """
-        return self._list_project_tags_with_http_info(request)
+        http_info = self._list_project_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_tags_with_http_info(self, request):
+    def list_project_tags_async_invoker(self, request):
+        http_info = self._list_project_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_project_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/{resource_type}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2582,9 +2919,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2593,20 +2930,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resource_tag_async(self, request):
         """查询资源标签
@@ -2620,9 +2953,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowResourceTagRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowResourceTagResponse`
         """
-        return self._show_resource_tag_with_http_info(request)
+        http_info = self._show_resource_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resource_tag_with_http_info(self, request):
+    def show_resource_tag_async_invoker(self, request):
+        http_info = self._show_resource_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resource_tag_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/{resource_type}/{resource_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourceTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2641,9 +2986,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2652,20 +2997,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/{resource_type}/{resource_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourceTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc_attachment_async(self, request):
         """创建VPC连接
@@ -2679,9 +3020,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.CreateVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.CreateVpcAttachmentResponse`
         """
-        return self._create_vpc_attachment_with_http_info(request)
+        http_info = self._create_vpc_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_attachment_with_http_info(self, request):
+    def create_vpc_attachment_async_invoker(self, request):
+        http_info = self._create_vpc_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_vpc_attachment_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2700,11 +3053,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = ["X-Client-Token", ]
 
@@ -2713,20 +3066,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc_attachment_async(self, request):
         """删除VPC连接
@@ -2740,9 +3089,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.DeleteVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.DeleteVpcAttachmentResponse`
         """
-        return self._delete_vpc_attachment_with_http_info(request)
+        http_info = self._delete_vpc_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_attachment_with_http_info(self, request):
+    def delete_vpc_attachment_async_invoker(self, request):
+        http_info = self._delete_vpc_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_vpc_attachment_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments/{vpc_attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2761,9 +3122,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2772,20 +3133,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments/{vpc_attachment_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpc_attachments_async(self, request):
         """查询VPC连接列表
@@ -2799,9 +3156,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ListVpcAttachmentsRequest`
         :rtype: :class:`huaweicloudsdker.v3.ListVpcAttachmentsResponse`
         """
-        return self._list_vpc_attachments_with_http_info(request)
+        http_info = self._list_vpc_attachments_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpc_attachments_with_http_info(self, request):
+    def list_vpc_attachments_async_invoker(self, request):
+        http_info = self._list_vpc_attachments_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_vpc_attachments_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcAttachmentsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2837,9 +3206,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2848,20 +3217,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcAttachmentsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_vpc_attachment_async(self, request):
         """查询VPC连接详情
@@ -2875,9 +3240,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.ShowVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.ShowVpcAttachmentResponse`
         """
-        return self._show_vpc_attachment_with_http_info(request)
+        http_info = self._show_vpc_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_vpc_attachment_with_http_info(self, request):
+    def show_vpc_attachment_async_invoker(self, request):
+        http_info = self._show_vpc_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_vpc_attachment_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments/{vpc_attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowVpcAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2896,9 +3273,9 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2907,20 +3284,16 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments/{vpc_attachment_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowVpcAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpc_attachment_async(self, request):
         """更新VPC连接基本信息
@@ -2934,9 +3307,21 @@ class ErAsyncClient(Client):
         :type request: :class:`huaweicloudsdker.v3.UpdateVpcAttachmentRequest`
         :rtype: :class:`huaweicloudsdker.v3.UpdateVpcAttachmentResponse`
         """
-        return self._update_vpc_attachment_with_http_info(request)
+        http_info = self._update_vpc_attachment_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpc_attachment_with_http_info(self, request):
+    def update_vpc_attachment_async_invoker(self, request):
+        http_info = self._update_vpc_attachment_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_vpc_attachment_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments/{vpc_attachment_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcAttachmentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2955,11 +3340,11 @@ class ErAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2968,20 +3353,26 @@ class ErAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v3/{project_id}/enterprise-router/{er_id}/vpc-attachments/{vpc_attachment_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcAttachmentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -3020,4 +3411,4 @@ class ErAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

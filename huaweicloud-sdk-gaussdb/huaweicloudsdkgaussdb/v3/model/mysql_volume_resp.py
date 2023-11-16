@@ -17,7 +17,7 @@ class MysqlVolumeResp:
     sensitive_list = []
 
     openapi_types = {
-        'size': 'str'
+        'size': 'int'
     }
 
     attribute_map = {
@@ -30,7 +30,7 @@ class MysqlVolumeResp:
         The model defined in huaweicloud sdk
 
         :param size: 磁盘大小。单位GB。  取值范围：10~128000，为10的整数倍。
-        :type size: str
+        :type size: int
         """
         
         
@@ -47,7 +47,7 @@ class MysqlVolumeResp:
         磁盘大小。单位GB。  取值范围：10~128000，为10的整数倍。
 
         :return: The size of this MysqlVolumeResp.
-        :rtype: str
+        :rtype: int
         """
         return self._size
 
@@ -58,7 +58,7 @@ class MysqlVolumeResp:
         磁盘大小。单位GB。  取值范围：10~128000，为10的整数倍。
 
         :param size: The size of this MysqlVolumeResp.
-        :type size: str
+        :type size: int
         """
         self._size = size
 

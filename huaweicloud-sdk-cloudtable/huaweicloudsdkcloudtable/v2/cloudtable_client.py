@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkcloudtable'")
 
 
 class CloudTableClient(Client):
@@ -43,9 +48,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.CreateClusterRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.CreateClusterResponse`
         """
-        return self._create_cluster_with_http_info(request)
+        http_info = self._create_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_cluster_with_http_info(self, request):
+    def create_cluster_invoker(self, request):
+        http_info = self._create_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -62,11 +80,11 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -75,20 +93,16 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_cluster(self, request):
         """删除CloudTable指定集群
@@ -104,9 +118,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.DeleteClusterRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.DeleteClusterResponse`
         """
-        return self._delete_cluster_with_http_info(request)
+        http_info = self._delete_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_cluster_with_http_info(self, request):
+    def delete_cluster_invoker(self, request):
+        http_info = self._delete_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_cluster_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -125,9 +152,9 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -136,20 +163,16 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def enable_component(self, request):
         """开启opentsdb组件
@@ -162,9 +185,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.EnableComponentRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.EnableComponentResponse`
         """
-        return self._enable_component_with_http_info(request)
+        http_info = self._enable_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _enable_component_with_http_info(self, request):
+    def enable_component_invoker(self, request):
+        http_info = self._enable_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _enable_component_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/components/{component_name}",
+            "request_type": request.__class__.__name__,
+            "response_type": "EnableComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -185,11 +221,11 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -198,20 +234,16 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/components/{component_name}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='EnableComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def expand_cluster_component(self, request):
         """扩容组件
@@ -224,9 +256,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.ExpandClusterComponentRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.ExpandClusterComponentResponse`
         """
-        return self._expand_cluster_component_with_http_info(request)
+        http_info = self._expand_cluster_component_http_info(request)
+        return self._call_api(**http_info)
 
-    def _expand_cluster_component_with_http_info(self, request):
+    def expand_cluster_component_invoker(self, request):
+        http_info = self._expand_cluster_component_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _expand_cluster_component_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/nodes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExpandClusterComponentResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -245,11 +290,11 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -258,20 +303,16 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/nodes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExpandClusterComponentResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_clusters(self, request):
         """查询CloudTable集群列表
@@ -284,9 +325,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.ListClustersRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.ListClustersResponse`
         """
-        return self._list_clusters_with_http_info(request)
+        http_info = self._list_clusters_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_clusters_with_http_info(self, request):
+    def list_clusters_invoker(self, request):
+        http_info = self._list_clusters_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_clusters_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListClustersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -305,9 +359,9 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -316,20 +370,16 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListClustersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reboot_cloud_table_cluster(self, request):
         """重启集群的api入口
@@ -342,9 +392,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.RebootCloudTableClusterRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.RebootCloudTableClusterResponse`
         """
-        return self._reboot_cloud_table_cluster_with_http_info(request)
+        http_info = self._reboot_cloud_table_cluster_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reboot_cloud_table_cluster_with_http_info(self, request):
+    def reboot_cloud_table_cluster_invoker(self, request):
+        http_info = self._reboot_cloud_table_cluster_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reboot_cloud_table_cluster_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/restart",
+            "request_type": request.__class__.__name__,
+            "response_type": "RebootCloudTableClusterResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -363,11 +426,11 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -376,20 +439,16 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/restart',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RebootCloudTableClusterResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cluster_detail(self, request):
         """查询CloudTable集群详情
@@ -402,9 +461,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.ShowClusterDetailRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.ShowClusterDetailResponse`
         """
-        return self._show_cluster_detail_with_http_info(request)
+        http_info = self._show_cluster_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cluster_detail_with_http_info(self, request):
+    def show_cluster_detail_invoker(self, request):
+        http_info = self._show_cluster_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cluster_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -423,9 +495,9 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -434,20 +506,16 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClusterDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_cluster_setting(self, request):
         """查询集群配置
@@ -460,9 +528,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.ShowClusterSettingRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.ShowClusterSettingResponse`
         """
-        return self._show_cluster_setting_with_http_info(request)
+        http_info = self._show_cluster_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_cluster_setting_with_http_info(self, request):
+    def show_cluster_setting_invoker(self, request):
+        http_info = self._show_cluster_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_cluster_setting_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowClusterSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -481,9 +562,9 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -492,20 +573,16 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/setting',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowClusterSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_cluster_setting(self, request):
         """修改集群配置
@@ -518,9 +595,22 @@ class CloudTableClient(Client):
         :type request: :class:`huaweicloudsdkcloudtable.v2.UpdateClusterSettingRequest`
         :rtype: :class:`huaweicloudsdkcloudtable.v2.UpdateClusterSettingResponse`
         """
-        return self._update_cluster_setting_with_http_info(request)
+        http_info = self._update_cluster_setting_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_cluster_setting_with_http_info(self, request):
+    def update_cluster_setting_invoker(self, request):
+        http_info = self._update_cluster_setting_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_cluster_setting_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/clusters/{cluster_id}/setting",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateClusterSettingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -539,11 +629,11 @@ class CloudTableClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -552,20 +642,25 @@ class CloudTableClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/clusters/{cluster_id}/setting',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateClusterSettingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,

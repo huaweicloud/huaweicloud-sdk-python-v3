@@ -29,7 +29,7 @@ class DeleteUserStorageAttachmentReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 200]
+        :param items: 用户名，请求数量区间 [1, 200]
         :type items: list[str]
         """
         
@@ -45,7 +45,7 @@ class DeleteUserStorageAttachmentReq:
     def items(self):
         """Gets the items of this DeleteUserStorageAttachmentReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 200]
+        用户名，请求数量区间 [1, 200]
 
         :return: The items of this DeleteUserStorageAttachmentReq.
         :rtype: list[str]
@@ -56,7 +56,7 @@ class DeleteUserStorageAttachmentReq:
     def items(self, items):
         """Sets the items of this DeleteUserStorageAttachmentReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 200]
+        用户名，请求数量区间 [1, 200]
 
         :param items: The items of this DeleteUserStorageAttachmentReq.
         :type items: list[str]

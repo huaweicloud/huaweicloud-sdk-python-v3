@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkimagesearch'")
 
 
 class ImageSearchAsyncClient(Client):
@@ -39,9 +44,21 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v2.RunAddDataRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v2.RunAddDataResponse`
         """
-        return self._run_add_data_with_http_info(request)
+        http_info = self._run_add_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_add_data_with_http_info(self, request):
+    def run_add_data_async_invoker(self, request):
+        http_info = self._run_add_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_add_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mms/{service_name}/data/add",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunAddDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class ImageSearchAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class ImageSearchAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mms/{service_name}/data/add',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunAddDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_check_data_async(self, request):
         """检查数据
@@ -98,9 +111,21 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v2.RunCheckDataRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v2.RunCheckDataResponse`
         """
-        return self._run_check_data_with_http_info(request)
+        http_info = self._run_check_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_check_data_with_http_info(self, request):
+    def run_check_data_async_invoker(self, request):
+        http_info = self._run_check_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_check_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mms/{service_name}/data/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunCheckDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -117,11 +142,11 @@ class ImageSearchAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -130,20 +155,16 @@ class ImageSearchAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mms/{service_name}/data/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunCheckDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_delete_data_async(self, request):
         """删除数据
@@ -157,9 +178,21 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v2.RunDeleteDataRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v2.RunDeleteDataResponse`
         """
-        return self._run_delete_data_with_http_info(request)
+        http_info = self._run_delete_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_delete_data_with_http_info(self, request):
+    def run_delete_data_async_invoker(self, request):
+        http_info = self._run_delete_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_delete_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mms/{service_name}/data/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunDeleteDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -176,11 +209,11 @@ class ImageSearchAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -189,20 +222,16 @@ class ImageSearchAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mms/{service_name}/data/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunDeleteDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_search_async(self, request):
         """搜索
@@ -216,9 +245,21 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v2.RunSearchRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v2.RunSearchResponse`
         """
-        return self._run_search_with_http_info(request)
+        http_info = self._run_search_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_search_with_http_info(self, request):
+    def run_search_async_invoker(self, request):
+        http_info = self._run_search_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_search_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mms/{service_name}/search",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunSearchResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -235,11 +276,11 @@ class ImageSearchAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -248,20 +289,16 @@ class ImageSearchAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mms/{service_name}/search',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunSearchResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_update_data_async(self, request):
         """更新数据
@@ -275,9 +312,21 @@ class ImageSearchAsyncClient(Client):
         :type request: :class:`huaweicloudsdkimagesearch.v2.RunUpdateDataRequest`
         :rtype: :class:`huaweicloudsdkimagesearch.v2.RunUpdateDataResponse`
         """
-        return self._run_update_data_with_http_info(request)
+        http_info = self._run_update_data_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_update_data_with_http_info(self, request):
+    def run_update_data_async_invoker(self, request):
+        http_info = self._run_update_data_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _run_update_data_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mms/{service_name}/data/update",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunUpdateDataResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -294,11 +343,11 @@ class ImageSearchAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -307,20 +356,26 @@ class ImageSearchAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mms/{service_name}/data/update',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunUpdateDataResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -359,4 +414,4 @@ class ImageSearchAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

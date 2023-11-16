@@ -31,7 +31,7 @@ class ServerHaltReq:
 
         The model defined in huaweicloud sdk
 
-        :param items: 批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        :param items: 批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
         :type items: list[str]
         :param type: 
         :type type: :class:`huaweicloudsdkworkspaceapp.v1.ServerHaltType`
@@ -50,7 +50,7 @@ class ServerHaltReq:
     def items(self):
         """Gets the items of this ServerHaltReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
         :return: The items of this ServerHaltReq.
         :rtype: list[str]
@@ -61,7 +61,7 @@ class ServerHaltReq:
     def items(self, items):
         """Sets the items of this ServerHaltReq.
 
-        批量唯一标识请求列表，一次请求数量区间 [1, 20]
+        批量请求的服务器ID列表，一次请求数量区间 [1, 20]。
 
         :param items: The items of this ServerHaltReq.
         :type items: list[str]

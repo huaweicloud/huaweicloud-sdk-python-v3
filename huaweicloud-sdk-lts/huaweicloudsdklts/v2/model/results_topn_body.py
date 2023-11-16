@@ -26,7 +26,8 @@ class ResultsTopnBody:
         'log_stream_name': 'str',
         'basic_transfer': 'float',
         'senior_transfer': 'float',
-        'is_agency_transfer': 'bool'
+        'is_agency_transfer': 'bool',
+        'cold_storage': 'float'
     }
 
     attribute_map = {
@@ -39,10 +40,11 @@ class ResultsTopnBody:
         'log_stream_name': 'log_stream_name',
         'basic_transfer': 'basic_transfer',
         'senior_transfer': 'senior_transfer',
-        'is_agency_transfer': 'is_agency_transfer'
+        'is_agency_transfer': 'is_agency_transfer',
+        'cold_storage': 'cold_storage'
     }
 
-    def __init__(self, index_traffic=None, storage=None, write_traffic=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, basic_transfer=None, senior_transfer=None, is_agency_transfer=None):
+    def __init__(self, index_traffic=None, storage=None, write_traffic=None, log_group_id=None, log_group_name=None, log_stream_id=None, log_stream_name=None, basic_transfer=None, senior_transfer=None, is_agency_transfer=None, cold_storage=None):
         """ResultsTopnBody
 
         The model defined in huaweicloud sdk
@@ -67,6 +69,8 @@ class ResultsTopnBody:
         :type senior_transfer: float
         :param is_agency_transfer: 不是委托转储，true，是委托转储，则前端资源统计展示的流不能跳
         :type is_agency_transfer: bool
+        :param cold_storage: 冷存储量
+        :type cold_storage: float
         """
         
         
@@ -81,6 +85,7 @@ class ResultsTopnBody:
         self._basic_transfer = None
         self._senior_transfer = None
         self._is_agency_transfer = None
+        self._cold_storage = None
         self.discriminator = None
 
         self.index_traffic = index_traffic
@@ -98,6 +103,8 @@ class ResultsTopnBody:
             self.senior_transfer = senior_transfer
         if is_agency_transfer is not None:
             self.is_agency_transfer = is_agency_transfer
+        if cold_storage is not None:
+            self.cold_storage = cold_storage
 
     @property
     def index_traffic(self):
@@ -318,6 +325,28 @@ class ResultsTopnBody:
         :type is_agency_transfer: bool
         """
         self._is_agency_transfer = is_agency_transfer
+
+    @property
+    def cold_storage(self):
+        """Gets the cold_storage of this ResultsTopnBody.
+
+        冷存储量
+
+        :return: The cold_storage of this ResultsTopnBody.
+        :rtype: float
+        """
+        return self._cold_storage
+
+    @cold_storage.setter
+    def cold_storage(self, cold_storage):
+        """Sets the cold_storage of this ResultsTopnBody.
+
+        冷存储量
+
+        :param cold_storage: The cold_storage of this ResultsTopnBody.
+        :type cold_storage: float
+        """
+        self._cold_storage = cold_storage
 
     def to_dict(self):
         """Returns the model properties as a dict"""

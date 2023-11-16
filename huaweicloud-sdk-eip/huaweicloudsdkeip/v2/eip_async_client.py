@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import AsyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkeip'")
 
 
 class EipAsyncClient(Client):
@@ -39,9 +44,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.AddPublicipsIntoSharedBandwidthResponse`
         """
-        return self._add_publicips_into_shared_bandwidth_with_http_info(request)
+        http_info = self._add_publicips_into_shared_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_publicips_into_shared_bandwidth_with_http_info(self, request):
+    def add_publicips_into_shared_bandwidth_async_invoker(self, request):
+        http_info = self._add_publicips_into_shared_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _add_publicips_into_shared_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/bandwidths/{bandwidth_id}/insert",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddPublicipsIntoSharedBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -58,11 +75,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -71,20 +88,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/bandwidths/{bandwidth_id}/insert',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddPublicipsIntoSharedBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_shared_bandwidths_async(self, request):
         """批量创建共享带宽
@@ -98,9 +111,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchCreateSharedBandwidthsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchCreateSharedBandwidthsResponse`
         """
-        return self._batch_create_shared_bandwidths_with_http_info(request)
+        http_info = self._batch_create_shared_bandwidths_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_shared_bandwidths_with_http_info(self, request):
+    def batch_create_shared_bandwidths_async_invoker(self, request):
+        http_info = self._batch_create_shared_bandwidths_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_shared_bandwidths_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/batch-bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreateSharedBandwidthsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -115,11 +140,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -128,20 +153,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/batch-bandwidths',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreateSharedBandwidthsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_bandwidth_to_period_async(self, request):
         """按需转包API
@@ -155,9 +176,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ChangeBandwidthToPeriodRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ChangeBandwidthToPeriodResponse`
         """
-        return self._change_bandwidth_to_period_with_http_info(request)
+        http_info = self._change_bandwidth_to_period_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_bandwidth_to_period_with_http_info(self, request):
+    def change_bandwidth_to_period_async_invoker(self, request):
+        http_info = self._change_bandwidth_to_period_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_bandwidth_to_period_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/bandwidths/change-to-period",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeBandwidthToPeriodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -172,11 +205,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -185,20 +218,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/bandwidths/change-to-period',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeBandwidthToPeriodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_shared_bandwidth_async(self, request):
         """创建共享带宽
@@ -212,9 +241,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CreateSharedBandwidthResponse`
         """
-        return self._create_shared_bandwidth_with_http_info(request)
+        http_info = self._create_shared_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_shared_bandwidth_with_http_info(self, request):
+    def create_shared_bandwidth_async_invoker(self, request):
+        http_info = self._create_shared_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_shared_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSharedBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -229,11 +270,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -242,20 +283,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/bandwidths',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSharedBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_shared_bandwidth_async(self, request):
         """删除共享带宽
@@ -269,9 +306,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.DeleteSharedBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.DeleteSharedBandwidthResponse`
         """
-        return self._delete_shared_bandwidth_with_http_info(request)
+        http_info = self._delete_shared_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_shared_bandwidth_with_http_info(self, request):
+    def delete_shared_bandwidth_async_invoker(self, request):
+        http_info = self._delete_shared_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_shared_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/bandwidths/{bandwidth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSharedBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -288,9 +337,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -299,20 +348,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/bandwidths/{bandwidth_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSharedBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bandwidth_pkg_async(self, request):
         """查询带宽加油包列表
@@ -326,9 +371,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListBandwidthPkgRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListBandwidthPkgResponse`
         """
-        return self._list_bandwidth_pkg_with_http_info(request)
+        http_info = self._list_bandwidth_pkg_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bandwidth_pkg_with_http_info(self, request):
+    def list_bandwidth_pkg_async_invoker(self, request):
+        http_info = self._list_bandwidth_pkg_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidth_pkg_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/bandwidthpkgs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthPkgResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -349,9 +406,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -360,20 +417,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/bandwidthpkgs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBandwidthPkgResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_bandwidths_async(self, request):
         """查询带宽列表
@@ -387,9 +440,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListBandwidthsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListBandwidthsResponse`
         """
-        return self._list_bandwidths_with_http_info(request)
+        http_info = self._list_bandwidths_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_bandwidths_with_http_info(self, request):
+    def list_bandwidths_async_invoker(self, request):
+        http_info = self._list_bandwidths_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_bandwidths_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/bandwidths",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBandwidthsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -412,9 +477,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -423,20 +488,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/bandwidths',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBandwidthsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_quotas_async(self, request):
         """查询配额接口
@@ -450,9 +511,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListQuotasRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListQuotasResponse`
         """
-        return self._list_quotas_with_http_info(request)
+        http_info = self._list_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_quotas_with_http_info(self, request):
+    def list_quotas_async_invoker(self, request):
+        http_info = self._list_quotas_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_quotas_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -469,9 +542,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -480,20 +553,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def remove_publicips_from_shared_bandwidth_async(self, request):
         """共享带宽移除弹性公网IP
@@ -507,9 +576,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.RemovePublicipsFromSharedBandwidthResponse`
         """
-        return self._remove_publicips_from_shared_bandwidth_with_http_info(request)
+        http_info = self._remove_publicips_from_shared_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _remove_publicips_from_shared_bandwidth_with_http_info(self, request):
+    def remove_publicips_from_shared_bandwidth_async_invoker(self, request):
+        http_info = self._remove_publicips_from_shared_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _remove_publicips_from_shared_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/bandwidths/{bandwidth_id}/remove",
+            "request_type": request.__class__.__name__,
+            "response_type": "RemovePublicipsFromSharedBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -526,11 +607,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -539,20 +620,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/bandwidths/{bandwidth_id}/remove',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RemovePublicipsFromSharedBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_bandwidth_async(self, request):
         """查询带宽
@@ -566,9 +643,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowBandwidthResponse`
         """
-        return self._show_bandwidth_with_http_info(request)
+        http_info = self._show_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_bandwidth_with_http_info(self, request):
+    def show_bandwidth_async_invoker(self, request):
+        http_info = self._show_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/bandwidths/{bandwidth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -585,9 +674,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -596,20 +685,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/bandwidths/{bandwidth_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_bandwidth_async(self, request):
         """更新带宽
@@ -623,9 +708,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.UpdateBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.UpdateBandwidthResponse`
         """
-        return self._update_bandwidth_with_http_info(request)
+        http_info = self._update_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_bandwidth_with_http_info(self, request):
+    def update_bandwidth_async_invoker(self, request):
+        http_info = self._update_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/bandwidths/{bandwidth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -642,11 +739,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -655,20 +752,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/bandwidths/{bandwidth_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_pre_paid_bandwidth_async(self, request):
         """更新包周期带宽
@@ -682,9 +775,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.UpdatePrePaidBandwidthResponse`
         """
-        return self._update_pre_paid_bandwidth_with_http_info(request)
+        http_info = self._update_pre_paid_bandwidth_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_pre_paid_bandwidth_with_http_info(self, request):
+    def update_pre_paid_bandwidth_async_invoker(self, request):
+        http_info = self._update_pre_paid_bandwidth_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_pre_paid_bandwidth_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/{project_id}/bandwidths/{bandwidth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePrePaidBandwidthResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -701,11 +806,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -714,20 +819,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/bandwidths/{bandwidth_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePrePaidBandwidthResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_publicip_tags_async(self, request):
         """批量创建弹性公网IP资源标签
@@ -741,9 +842,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipTagsResponse`
         """
-        return self._batch_create_publicip_tags_with_http_info(request)
+        http_info = self._batch_create_publicip_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_publicip_tags_with_http_info(self, request):
+    def batch_create_publicip_tags_async_invoker(self, request):
+        http_info = self._batch_create_publicip_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_publicip_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/publicips/{publicip_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreatePublicipTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -760,11 +873,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -773,20 +886,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips/{publicip_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreatePublicipTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_create_publicips_async(self, request):
         """批量创建弹性公网IP
@@ -800,9 +909,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchCreatePublicipsResponse`
         """
-        return self._batch_create_publicips_with_http_info(request)
+        http_info = self._batch_create_publicips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_create_publicips_with_http_info(self, request):
+    def batch_create_publicips_async_invoker(self, request):
+        http_info = self._batch_create_publicips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_create_publicips_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/batchpublicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchCreatePublicipsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -817,11 +938,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -830,20 +951,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/batchpublicips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchCreatePublicipsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_public_ip_async(self, request):
         """批量删除弹性公网IP
@@ -857,9 +974,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicIpResponse`
         """
-        return self._batch_delete_public_ip_with_http_info(request)
+        http_info = self._batch_delete_public_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_public_ip_with_http_info(self, request):
+    def batch_delete_public_ip_async_invoker(self, request):
+        http_info = self._batch_delete_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_public_ip_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/batchpublicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePublicIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -874,11 +1003,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -887,20 +1016,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/batchpublicips',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeletePublicIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_publicip_tags_async(self, request):
         """批量删除弹性公网IP资源标签
@@ -914,9 +1039,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDeletePublicipTagsResponse`
         """
-        return self._batch_delete_publicip_tags_with_http_info(request)
+        http_info = self._batch_delete_publicip_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_publicip_tags_with_http_info(self, request):
+    def batch_delete_publicip_tags_async_invoker(self, request):
+        http_info = self._batch_delete_publicip_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_delete_publicip_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/publicips/{publicip_id}/tags/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeletePublicipTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -933,11 +1070,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -946,20 +1083,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips/{publicip_id}/tags/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeletePublicipTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disassociate_publicips_async(self, request):
         """批量解绑弹性公网IP
@@ -973,9 +1106,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.BatchDisassociatePublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.BatchDisassociatePublicipsResponse`
         """
-        return self._batch_disassociate_publicips_with_http_info(request)
+        http_info = self._batch_disassociate_publicips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disassociate_publicips_with_http_info(self, request):
+    def batch_disassociate_publicips_async_invoker(self, request):
+        http_info = self._batch_disassociate_publicips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _batch_disassociate_publicips_http_info(self, request):
+        http_info = {
+            "method": "PATCH",
+            "resource_path": "/v2/{project_id}/batchpublicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociatePublicipsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -990,11 +1135,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1003,20 +1148,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/batchpublicips',
-            method='PATCH',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisassociatePublicipsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_publicip_to_period_async(self, request):
         """按需转包接口
@@ -1030,9 +1171,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ChangePublicipToPeriodRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ChangePublicipToPeriodResponse`
         """
-        return self._change_publicip_to_period_with_http_info(request)
+        http_info = self._change_publicip_to_period_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_publicip_to_period_with_http_info(self, request):
+    def change_publicip_to_period_async_invoker(self, request):
+        http_info = self._change_publicip_to_period_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _change_publicip_to_period_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/publicips/change-to-period",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangePublicipToPeriodResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1047,11 +1200,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1060,20 +1213,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips/change-to-period',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangePublicipToPeriodResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_public_ip_async(self, request):
         """查询PublicIp数量
@@ -1087,9 +1236,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CountPublicIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CountPublicIpResponse`
         """
-        return self._count_public_ip_with_http_info(request)
+        http_info = self._count_public_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_public_ip_with_http_info(self, request):
+    def count_public_ip_async_invoker(self, request):
+        http_info = self._count_public_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_public_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/elasticips",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountPublicIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1104,9 +1265,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1115,20 +1276,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/elasticips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountPublicIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_public_ip_instance_async(self, request):
         """查询PublicIp实例数
@@ -1142,9 +1299,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CountPublicIpInstanceRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CountPublicIpInstanceResponse`
         """
-        return self._count_public_ip_instance_with_http_info(request)
+        http_info = self._count_public_ip_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_public_ip_instance_with_http_info(self, request):
+    def count_public_ip_instance_async_invoker(self, request):
+        http_info = self._count_public_ip_instance_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _count_public_ip_instance_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/publicip/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountPublicIpInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1159,9 +1328,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1170,20 +1339,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/publicip/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountPublicIpInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_pre_paid_publicip_async(self, request):
         """申请包周期弹性公网IP
@@ -1197,9 +1362,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePrePaidPublicipResponse`
         """
-        return self._create_pre_paid_publicip_with_http_info(request)
+        http_info = self._create_pre_paid_publicip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_pre_paid_publicip_with_http_info(self, request):
+    def create_pre_paid_publicip_async_invoker(self, request):
+        http_info = self._create_pre_paid_publicip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_pre_paid_publicip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/publicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePrePaidPublicipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1214,11 +1391,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1227,20 +1404,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePrePaidPublicipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_publicip_async(self, request):
         """申请弹性公网IP
@@ -1255,9 +1428,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CreatePublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipResponse`
         """
-        return self._create_publicip_with_http_info(request)
+        http_info = self._create_publicip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_publicip_with_http_info(self, request):
+    def create_publicip_async_invoker(self, request):
+        http_info = self._create_publicip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_publicip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v1/{project_id}/publicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePublicipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1272,11 +1457,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1285,20 +1470,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/publicips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePublicipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_publicip_tag_async(self, request):
         """创建弹性公网IP资源标签
@@ -1312,9 +1493,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.CreatePublicipTagRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.CreatePublicipTagResponse`
         """
-        return self._create_publicip_tag_with_http_info(request)
+        http_info = self._create_publicip_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_publicip_tag_with_http_info(self, request):
+    def create_publicip_tag_async_invoker(self, request):
+        http_info = self._create_publicip_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _create_publicip_tag_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/publicips/{publicip_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePublicipTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1331,11 +1524,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1344,20 +1537,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips/{publicip_id}/tags',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePublicipTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_publicip_async(self, request):
         """删除弹性公网IP
@@ -1371,9 +1560,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.DeletePublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.DeletePublicipResponse`
         """
-        return self._delete_publicip_with_http_info(request)
+        http_info = self._delete_publicip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_publicip_with_http_info(self, request):
+    def delete_publicip_async_invoker(self, request):
+        http_info = self._delete_publicip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_publicip_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v1/{project_id}/publicips/{publicip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePublicipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1390,9 +1591,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1401,20 +1602,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/publicips/{publicip_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePublicipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_publicip_tag_async(self, request):
         """删除弹性公网IP的标签
@@ -1428,9 +1625,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.DeletePublicipTagRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.DeletePublicipTagResponse`
         """
-        return self._delete_publicip_tag_with_http_info(request)
+        http_info = self._delete_publicip_tag_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_publicip_tag_with_http_info(self, request):
+    def delete_publicip_tag_async_invoker(self, request):
+        http_info = self._delete_publicip_tag_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _delete_publicip_tag_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/{project_id}/publicips/{publicip_id}/tags/{key}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePublicipTagResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1449,9 +1658,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1460,20 +1669,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips/{publicip_id}/tags/{key}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePublicipTagResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_publicip_tags_async(self, request):
         """查询租户的弹性公网IP标签
@@ -1487,9 +1692,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListPublicipTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipTagsResponse`
         """
-        return self._list_publicip_tags_with_http_info(request)
+        http_info = self._list_publicip_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_publicip_tags_with_http_info(self, request):
+    def list_publicip_tags_async_invoker(self, request):
+        http_info = self._list_publicip_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_publicip_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/publicips/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublicipTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1504,9 +1721,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1515,20 +1732,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPublicipTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_publicips_async(self, request):
         """查询弹性公网IP列表
@@ -1542,9 +1755,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListPublicipsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipsResponse`
         """
-        return self._list_publicips_with_http_info(request)
+        http_info = self._list_publicips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_publicips_with_http_info(self, request):
+    def list_publicips_async_invoker(self, request):
+        http_info = self._list_publicips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_publicips_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/publicips",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublicipsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1582,9 +1807,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1593,20 +1818,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/publicips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPublicipsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_publicips_by_tags_async(self, request):
         """按标签查询弹性公网IP列表
@@ -1620,9 +1841,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ListPublicipsByTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ListPublicipsByTagsResponse`
         """
-        return self._list_publicips_by_tags_with_http_info(request)
+        http_info = self._list_publicips_by_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_publicips_by_tags_with_http_info(self, request):
+    def list_publicips_by_tags_async_invoker(self, request):
+        http_info = self._list_publicips_by_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _list_publicips_by_tags_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/{project_id}/publicips/resource_instances/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPublicipsByTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1637,11 +1870,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1650,20 +1883,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips/resource_instances/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPublicipsByTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_public_ip_type_async(self, request):
         """查询PublicIp类型
@@ -1677,9 +1906,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowPublicIpTypeRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicIpTypeResponse`
         """
-        return self._show_public_ip_type_with_http_info(request)
+        http_info = self._show_public_ip_type_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_public_ip_type_with_http_info(self, request):
+    def show_public_ip_type_async_invoker(self, request):
+        http_info = self._show_public_ip_type_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_public_ip_type_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/publicip_types",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicIpTypeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1694,9 +1935,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1705,20 +1946,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/publicip_types',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicIpTypeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_publicip_async(self, request):
         """查询弹性公网IP
@@ -1732,9 +1969,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowPublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicipResponse`
         """
-        return self._show_publicip_with_http_info(request)
+        http_info = self._show_publicip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_publicip_with_http_info(self, request):
+    def show_publicip_async_invoker(self, request):
+        http_info = self._show_publicip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_publicip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/publicips/{publicip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1751,9 +2000,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1762,20 +2011,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/publicips/{publicip_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_publicip_tags_async(self, request):
         """查询弹性公网IP的标签
@@ -1789,9 +2034,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowPublicipTagsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowPublicipTagsResponse`
         """
-        return self._show_publicip_tags_with_http_info(request)
+        http_info = self._show_publicip_tags_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_publicip_tags_with_http_info(self, request):
+    def show_publicip_tags_async_invoker(self, request):
+        http_info = self._show_publicip_tags_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_publicip_tags_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/{project_id}/publicips/{publicip_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPublicipTagsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1808,9 +2065,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1819,20 +2076,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/{project_id}/publicips/{publicip_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPublicipTagsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_publicip_async(self, request):
         """更新弹性公网IP
@@ -1846,9 +2099,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.UpdatePublicipRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.UpdatePublicipResponse`
         """
-        return self._update_publicip_with_http_info(request)
+        http_info = self._update_publicip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_publicip_with_http_info(self, request):
+    def update_publicip_async_invoker(self, request):
+        http_info = self._update_publicip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _update_publicip_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v1/{project_id}/publicips/{publicip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePublicipResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1865,11 +2130,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1878,20 +2143,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/publicips/{publicip_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePublicipResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_resources_job_detail_async(self, request):
         """查询Job状态接口
@@ -1905,9 +2166,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.ShowResourcesJobDetailRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.ShowResourcesJobDetailResponse`
         """
-        return self._show_resources_job_detail_with_http_info(request)
+        http_info = self._show_resources_job_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_resources_job_detail_with_http_info(self, request):
+    def show_resources_job_detail_async_invoker(self, request):
+        http_info = self._show_resources_job_detail_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _show_resources_job_detail_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v1/{project_id}/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResourcesJobDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1924,9 +2197,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1935,20 +2208,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v1/{project_id}/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResourcesJobDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_create_floating_ip_async(self, request):
         """创建浮动IP
@@ -1962,9 +2231,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronCreateFloatingIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronCreateFloatingIpResponse`
         """
-        return self._neutron_create_floating_ip_with_http_info(request)
+        http_info = self._neutron_create_floating_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_create_floating_ip_with_http_info(self, request):
+    def neutron_create_floating_ip_async_invoker(self, request):
+        http_info = self._neutron_create_floating_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _neutron_create_floating_ip_http_info(self, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2.0/floatingips",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronCreateFloatingIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1979,11 +2260,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1992,20 +2273,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/floatingips',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronCreateFloatingIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_delete_floating_ip_async(self, request):
         """删除浮动IP
@@ -2019,9 +2296,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronDeleteFloatingIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronDeleteFloatingIpResponse`
         """
-        return self._neutron_delete_floating_ip_with_http_info(request)
+        http_info = self._neutron_delete_floating_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_delete_floating_ip_with_http_info(self, request):
+    def neutron_delete_floating_ip_async_invoker(self, request):
+        http_info = self._neutron_delete_floating_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _neutron_delete_floating_ip_http_info(self, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2.0/floatingips/{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronDeleteFloatingIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2038,9 +2327,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2049,20 +2338,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/floatingips/{floatingip_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronDeleteFloatingIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_list_floating_ips_async(self, request):
         """查询浮动IP列表
@@ -2076,9 +2361,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronListFloatingIpsRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronListFloatingIpsResponse`
         """
-        return self._neutron_list_floating_ips_with_http_info(request)
+        http_info = self._neutron_list_floating_ips_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_list_floating_ips_with_http_info(self, request):
+    def neutron_list_floating_ips_async_invoker(self, request):
+        http_info = self._neutron_list_floating_ips_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _neutron_list_floating_ips_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/floatingips",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronListFloatingIpsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2113,9 +2410,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2124,20 +2421,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/floatingips',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronListFloatingIpsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_show_floating_ip_async(self, request):
         """查询浮动IP
@@ -2151,9 +2444,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronShowFloatingIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronShowFloatingIpResponse`
         """
-        return self._neutron_show_floating_ip_with_http_info(request)
+        http_info = self._neutron_show_floating_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_show_floating_ip_with_http_info(self, request):
+    def neutron_show_floating_ip_async_invoker(self, request):
+        http_info = self._neutron_show_floating_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _neutron_show_floating_ip_http_info(self, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2.0/floatingips/{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronShowFloatingIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2170,9 +2475,9 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2181,20 +2486,16 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/floatingips/{floatingip_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronShowFloatingIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def neutron_update_floating_ip_async(self, request):
         """更新浮动IP
@@ -2210,9 +2511,21 @@ class EipAsyncClient(Client):
         :type request: :class:`huaweicloudsdkeip.v2.NeutronUpdateFloatingIpRequest`
         :rtype: :class:`huaweicloudsdkeip.v2.NeutronUpdateFloatingIpResponse`
         """
-        return self._neutron_update_floating_ip_with_http_info(request)
+        http_info = self._neutron_update_floating_ip_http_info(request)
+        return self._call_api(**http_info)
 
-    def _neutron_update_floating_ip_with_http_info(self, request):
+    def neutron_update_floating_ip_async_invoker(self, request):
+        http_info = self._neutron_update_floating_ip_http_info(request)
+        return AsyncInvoker(self, http_info)
+
+    def _neutron_update_floating_ip_http_info(self, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2.0/floatingips/{floatingip_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "NeutronUpdateFloatingIpResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2229,11 +2542,11 @@ class EipAsyncClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2242,20 +2555,26 @@ class EipAsyncClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2.0/floatingips/{floatingip_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='NeutronUpdateFloatingIpResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            kwargs["async_request"] = True
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
@@ -2294,4 +2613,4 @@ class EipAsyncClient(Client):
             response_headers=response_headers,
             collection_formats=collection_formats,
             request_type=request_type,
-	    async_request=True)
+	        async_request=True)

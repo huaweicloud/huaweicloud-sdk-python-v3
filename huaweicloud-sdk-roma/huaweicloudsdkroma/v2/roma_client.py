@@ -3,10 +3,15 @@
 from __future__ import absolute_import
 
 import importlib
+import warnings
 
 from huaweicloudsdkcore.client import Client, ClientBuilder
 from huaweicloudsdkcore.utils import http_utils
 from huaweicloudsdkcore.sdk_stream_request import SdkStreamRequest
+try:
+    from huaweicloudsdkcore.invoker.invoker import SyncInvoker
+except ImportError as e:
+    warnings.warn(str(e) + ", please check if you are using the same versions of 'huaweicloudsdkcore' and 'huaweicloudsdkroma'")
 
 
 class RomaClient(Client):
@@ -38,9 +43,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AddSubsetsToGatewayResponse`
         """
-        return self._add_subsets_to_gateway_with_http_info(request)
+        http_info = self._add_subsets_to_gateway_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_subsets_to_gateway_with_http_info(self, request):
+    def add_subsets_to_gateway_invoker(self, request):
+        http_info = self._add_subsets_to_gateway_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_subsets_to_gateway_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/subsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddSubsetsToGatewayResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -59,11 +77,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -72,20 +90,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/subsets',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddSubsetsToGatewayResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_apps_for_app_quota(self, request):
         """客户端配额绑定客户端应用列表
@@ -98,9 +112,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateAppsForAppQuotaResponse`
         """
-        return self._associate_apps_for_app_quota_with_http_info(request)
+        http_info = self._associate_apps_for_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_apps_for_app_quota_with_http_info(self, request):
+    def associate_apps_for_app_quota_invoker(self, request):
+        http_info = self._associate_apps_for_app_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_apps_for_app_quota_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}/binding-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateAppsForAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -119,11 +146,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -132,20 +159,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}/binding-apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateAppsForAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_certificate_v2(self, request):
         """绑定域名证书
@@ -159,9 +182,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateCertificateV2Response`
         """
-        return self._associate_certificate_v2_with_http_info(request)
+        http_info = self._associate_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_certificate_v2_with_http_info(self, request):
+    def associate_certificate_v2_invoker(self, request):
+        http_info = self._associate_certificate_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_certificate_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -182,11 +218,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -195,20 +231,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_domain_v2(self, request):
         """绑定域名
@@ -222,9 +254,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateDomainV2Response`
         """
-        return self._associate_domain_v2_with_http_info(request)
+        http_info = self._associate_domain_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_domain_v2_with_http_info(self, request):
+    def associate_domain_v2_invoker(self, request):
+        http_info = self._associate_domain_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_domain_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateDomainV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -243,11 +288,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -256,20 +301,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateDomainV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_signature_key_v2(self, request):
         """绑定签名密钥
@@ -288,9 +329,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateSignatureKeyV2Response`
         """
-        return self._associate_signature_key_v2_with_http_info(request)
+        http_info = self._associate_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_signature_key_v2_with_http_info(self, request):
+    def associate_signature_key_v2_invoker(self, request):
+        http_info = self._associate_signature_key_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_signature_key_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/sign-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -307,11 +361,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -320,20 +374,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/sign-bindings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_api_to_plugin(self, request):
         """插件绑定API
@@ -350,9 +400,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AttachApiToPluginRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AttachApiToPluginResponse`
         """
-        return self._attach_api_to_plugin_with_http_info(request)
+        http_info = self._attach_api_to_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_api_to_plugin_with_http_info(self, request):
+    def attach_api_to_plugin_invoker(self, request):
+        http_info = self._attach_api_to_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_api_to_plugin_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachApiToPluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -371,11 +434,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -384,20 +447,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachApiToPluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def attach_plugin_to_api(self, request):
         """API绑定插件
@@ -414,9 +473,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AttachPluginToApiRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AttachPluginToApiResponse`
         """
-        return self._attach_plugin_to_api_with_http_info(request)
+        http_info = self._attach_plugin_to_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _attach_plugin_to_api_with_http_info(self, request):
+    def attach_plugin_to_api_invoker(self, request):
+        http_info = self._attach_plugin_to_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _attach_plugin_to_api_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/plugins/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "AttachPluginToApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -435,11 +507,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -448,20 +520,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/plugins/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AttachPluginToApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_add_device_to_group(self, request):
         """批量添加设备到设备分组
@@ -474,9 +542,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchAddDeviceToGroupResponse`
         """
-        return self._batch_add_device_to_group_with_http_info(request)
+        http_info = self._batch_add_device_to_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_add_device_to_group_with_http_info(self, request):
+    def batch_add_device_to_group_invoker(self, request):
+        http_info = self._batch_add_device_to_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_add_device_to_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}/devices/batch-add",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAddDeviceToGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -495,11 +576,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -508,20 +589,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}/devices/batch-add',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAddDeviceToGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_devices(self, request):
         """批量删除设备
@@ -534,9 +611,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteDevicesResponse`
         """
-        return self._batch_delete_devices_with_http_info(request)
+        http_info = self._batch_delete_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_devices_with_http_info(self, request):
+    def batch_delete_devices_invoker(self, request):
+        http_info = self._batch_delete_devices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_devices_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -553,11 +643,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -566,20 +656,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_mqs_instance_topic(self, request):
         """批量删除Topic
@@ -592,9 +678,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteMqsInstanceTopicResponse`
         """
-        return self._batch_delete_mqs_instance_topic_with_http_info(request)
+        http_info = self._batch_delete_mqs_instance_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_mqs_instance_topic_with_http_info(self, request):
+    def batch_delete_mqs_instance_topic_invoker(self, request):
+        http_info = self._batch_delete_mqs_instance_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_mqs_instance_topic_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteMqsInstanceTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -611,11 +710,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -624,20 +723,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteMqsInstanceTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_rules(self, request):
         """批量删除规则
@@ -650,9 +745,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteRulesResponse`
         """
-        return self._batch_delete_rules_with_http_info(request)
+        http_info = self._batch_delete_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_rules_with_http_info(self, request):
+    def batch_delete_rules_invoker(self, request):
+        http_info = self._batch_delete_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_rules_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/batch-delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -669,11 +777,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -682,20 +790,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/batch-delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_freeze_devices(self, request):
         """设备批量下线
@@ -708,9 +812,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchFreezeDevicesResponse`
         """
-        return self._batch_freeze_devices_with_http_info(request)
+        http_info = self._batch_freeze_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_freeze_devices_with_http_info(self, request):
+    def batch_freeze_devices_invoker(self, request):
+        http_info = self._batch_freeze_devices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_freeze_devices_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/force-offline",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchFreezeDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -727,11 +844,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -740,20 +857,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/force-offline',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchFreezeDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_start_or_stop_tasks(self, request):
         """批量启动\\停止任务
@@ -766,9 +879,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchStartOrStopTasksResponse`
         """
-        return self._batch_start_or_stop_tasks_with_http_info(request)
+        http_info = self._batch_start_or_stop_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_start_or_stop_tasks_with_http_info(self, request):
+    def batch_start_or_stop_tasks_invoker(self, request):
+        http_info = self._batch_start_or_stop_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_start_or_stop_tasks_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/batch-operation/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchStartOrStopTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -785,11 +911,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -798,20 +924,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/batch-operation/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchStartOrStopTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_livedata_apis_v2(self, request):
         """校验自定义后端API定义
@@ -824,9 +946,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckLivedataApisV2Response`
         """
-        return self._check_livedata_apis_v2_with_http_info(request)
+        http_info = self._check_livedata_apis_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_livedata_apis_v2_with_http_info(self, request):
+    def check_livedata_apis_v2_invoker(self, request):
+        http_info = self._check_livedata_apis_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_livedata_apis_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckLivedataApisV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -843,11 +978,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -856,20 +991,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckLivedataApisV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_devices(self, request):
         """设备数量统计
@@ -882,9 +1013,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CountDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CountDevicesResponse`
         """
-        return self._count_devices_with_http_info(request)
+        http_info = self._count_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_devices_with_http_info(self, request):
+    def count_devices_invoker(self, request):
+        http_info = self._count_devices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_devices_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/statistics/devices-count",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -901,9 +1045,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -912,20 +1056,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/statistics/devices-count',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def count_tasks(self, request):
         """统计不同类型不同状态任务数量
@@ -938,9 +1078,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CountTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CountTasksResponse`
         """
-        return self._count_tasks_with_http_info(request)
+        http_info = self._count_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _count_tasks_with_http_info(self, request):
+    def count_tasks_invoker(self, request):
+        http_info = self._count_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _count_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/statistics/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CountTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -957,9 +1110,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -968,20 +1121,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/statistics/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CountTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_code_auto_v2(self, request):
         """自动生成APP Code
@@ -994,9 +1143,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppCodeAutoV2Response`
         """
-        return self._create_app_code_auto_v2_with_http_info(request)
+        http_info = self._create_app_code_auto_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_code_auto_v2_with_http_info(self, request):
+    def create_app_code_auto_v2_invoker(self, request):
+        http_info = self._create_app_code_auto_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_code_auto_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppCodeAutoV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1015,9 +1177,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1026,20 +1188,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppCodeAutoV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_code_v2(self, request):
         """创建APP Code
@@ -1052,9 +1210,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppCodeV2Response`
         """
-        return self._create_app_code_v2_with_http_info(request)
+        http_info = self._create_app_code_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_code_v2_with_http_info(self, request):
+    def create_app_code_v2_invoker(self, request):
+        http_info = self._create_app_code_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_code_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppCodeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1073,11 +1244,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1086,20 +1257,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppCodeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_config_v2(self, request):
         """创建应用配置
@@ -1112,9 +1279,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppConfigV2Response`
         """
-        return self._create_app_config_v2_with_http_info(request)
+        http_info = self._create_app_config_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_config_v2_with_http_info(self, request):
+    def create_app_config_v2_invoker(self, request):
+        http_info = self._create_app_config_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_config_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppConfigV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1133,11 +1313,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1146,20 +1326,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/configs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppConfigV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_app_quota(self, request):
         """创建客户端配额
@@ -1172,9 +1348,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAppQuotaResponse`
         """
-        return self._create_app_quota_with_http_info(request)
+        http_info = self._create_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_app_quota_with_http_info(self, request):
+    def create_app_quota_invoker(self, request):
+        http_info = self._create_app_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_app_quota_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1191,11 +1380,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1204,20 +1393,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_command(self, request):
         """创建命令
@@ -1230,9 +1415,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommandResponse`
         """
-        return self._create_command_with_http_info(request)
+        http_info = self._create_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_command_with_http_info(self, request):
+    def create_command_invoker(self, request):
+        http_info = self._create_command_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_command_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1251,11 +1449,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1264,20 +1462,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_common_task(self, request):
         """创建普通任务
@@ -1290,9 +1484,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateCommonTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCommonTaskResponse`
         """
-        return self._create_common_task_with_http_info(request)
+        http_info = self._create_common_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_common_task_with_http_info(self, request):
+    def create_common_task_invoker(self, request):
+        http_info = self._create_common_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_common_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCommonTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1309,11 +1516,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1322,20 +1529,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCommonTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_custom_authorizer_v2(self, request):
         """创建自定义认证
@@ -1348,9 +1551,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCustomAuthorizerV2Response`
         """
-        return self._create_custom_authorizer_v2_with_http_info(request)
+        http_info = self._create_custom_authorizer_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_custom_authorizer_v2_with_http_info(self, request):
+    def create_custom_authorizer_v2_invoker(self, request):
+        http_info = self._create_custom_authorizer_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_custom_authorizer_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/authorizers",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCustomAuthorizerV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1367,11 +1583,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1380,20 +1596,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/authorizers',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCustomAuthorizerV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_datasource_info(self, request):
         """创建数据源
@@ -1406,9 +1618,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDatasourceInfoResponse`
         """
-        return self._create_datasource_info_with_http_info(request)
+        http_info = self._create_datasource_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_datasource_info_with_http_info(self, request):
+    def create_datasource_info_invoker(self, request):
+        http_info = self._create_datasource_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_datasource_info_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/datasources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDatasourceInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1425,11 +1650,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1438,20 +1663,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/datasources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDatasourceInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_destination(self, request):
         """添加目标数据源
@@ -1464,9 +1685,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDestinationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDestinationResponse`
         """
-        return self._create_destination_with_http_info(request)
+        http_info = self._create_destination_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_destination_with_http_info(self, request):
+    def create_destination_invoker(self, request):
+        http_info = self._create_destination_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_destination_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/destinations",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDestinationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1485,11 +1719,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1498,20 +1732,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/destinations',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDestinationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_device(self, request):
         """创建设备
@@ -1524,9 +1754,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceResponse`
         """
-        return self._create_device_with_http_info(request)
+        http_info = self._create_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_device_with_http_info(self, request):
+    def create_device_invoker(self, request):
+        http_info = self._create_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_device_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1543,11 +1786,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1556,20 +1799,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_device_group(self, request):
         """创建设备分组
@@ -1582,9 +1821,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDeviceGroupResponse`
         """
-        return self._create_device_group_with_http_info(request)
+        http_info = self._create_device_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_device_group_with_http_info(self, request):
+    def create_device_group_invoker(self, request):
+        http_info = self._create_device_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_device_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/device-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDeviceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1601,11 +1853,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1614,20 +1866,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/device-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDeviceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_dispatches(self, request):
         """创建调度计划
@@ -1640,9 +1888,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDispatchesResponse`
         """
-        return self._create_dispatches_with_http_info(request)
+        http_info = self._create_dispatches_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_dispatches_with_http_info(self, request):
+    def create_dispatches_invoker(self, request):
+        http_info = self._create_dispatches_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_dispatches_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/dispatches",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDispatchesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1661,11 +1922,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1674,20 +1935,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/dispatches',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDispatchesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_environment_v2(self, request):
         """创建环境
@@ -1706,9 +1963,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateEnvironmentV2Response`
         """
-        return self._create_environment_v2_with_http_info(request)
+        http_info = self._create_environment_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_environment_v2_with_http_info(self, request):
+    def create_environment_v2_invoker(self, request):
+        http_info = self._create_environment_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_environment_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/envs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnvironmentV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1725,11 +1995,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1738,20 +2008,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/envs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvironmentV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_environment_variable_v2(self, request):
         """新建变量
@@ -1775,9 +2041,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateEnvironmentVariableV2Response`
         """
-        return self._create_environment_variable_v2_with_http_info(request)
+        http_info = self._create_environment_variable_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_environment_variable_v2_with_http_info(self, request):
+    def create_environment_variable_v2_invoker(self, request):
+        http_info = self._create_environment_variable_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_environment_variable_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/env-variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateEnvironmentVariableV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1794,11 +2073,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1807,20 +2086,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/env-variables',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateEnvironmentVariableV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_feature_v2(self, request):
         """实例配置特性
@@ -1835,9 +2110,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateFeatureV2Response`
         """
-        return self._create_feature_v2_with_http_info(request)
+        http_info = self._create_feature_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_feature_v2_with_http_info(self, request):
+    def create_feature_v2_invoker(self, request):
+        http_info = self._create_feature_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_feature_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/features",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateFeatureV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1854,11 +2142,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1867,20 +2155,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/features',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateFeatureV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_live_data_api_script_v2(self, request):
         """创建后端API脚本
@@ -1893,9 +2177,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiScriptV2Response`
         """
-        return self._create_live_data_api_script_v2_with_http_info(request)
+        http_info = self._create_live_data_api_script_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_live_data_api_script_v2_with_http_info(self, request):
+    def create_live_data_api_script_v2_invoker(self, request):
+        http_info = self._create_live_data_api_script_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_live_data_api_script_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/scripts",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLiveDataApiScriptV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1914,11 +2211,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1927,20 +2224,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/scripts',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLiveDataApiScriptV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_live_data_api_v2(self, request):
         """创建后端API
@@ -1953,9 +2246,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateLiveDataApiV2Response`
         """
-        return self._create_live_data_api_v2_with_http_info(request)
+        http_info = self._create_live_data_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_live_data_api_v2_with_http_info(self, request):
+    def create_live_data_api_v2_invoker(self, request):
+        http_info = self._create_live_data_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_live_data_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateLiveDataApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -1972,11 +2278,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -1985,20 +2291,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateLiveDataApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_mqs_instance_topic(self, request):
         """创建Topic
@@ -2011,9 +2313,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMqsInstanceTopicResponse`
         """
-        return self._create_mqs_instance_topic_with_http_info(request)
+        http_info = self._create_mqs_instance_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_mqs_instance_topic_with_http_info(self, request):
+    def create_mqs_instance_topic_invoker(self, request):
+        http_info = self._create_mqs_instance_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_mqs_instance_topic_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMqsInstanceTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2030,11 +2345,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2043,20 +2358,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMqsInstanceTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_multi_task_mappings(self, request):
         """创建组合任务映射
@@ -2069,9 +2380,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMultiTaskMappingsResponse`
         """
-        return self._create_multi_task_mappings_with_http_info(request)
+        http_info = self._create_multi_task_mappings_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_multi_task_mappings_with_http_info(self, request):
+    def create_multi_task_mappings_invoker(self, request):
+        http_info = self._create_multi_task_mappings_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_multi_task_mappings_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/{task_id}/mappings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMultiTaskMappingsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2090,11 +2414,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2103,20 +2427,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/{task_id}/mappings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMultiTaskMappingsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_multi_tasks(self, request):
         """创建组合任务
@@ -2129,9 +2449,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMultiTasksResponse`
         """
-        return self._create_multi_tasks_with_http_info(request)
+        http_info = self._create_multi_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_multi_tasks_with_http_info(self, request):
+    def create_multi_tasks_invoker(self, request):
+        http_info = self._create_multi_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_multi_tasks_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMultiTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2148,11 +2481,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2161,20 +2494,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMultiTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_notification(self, request):
         """创建订阅管理
@@ -2187,9 +2516,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateNotificationResponse`
         """
-        return self._create_notification_with_http_info(request)
+        http_info = self._create_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_notification_with_http_info(self, request):
+    def create_notification_invoker(self, request):
+        http_info = self._create_notification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_notification_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/notifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2206,11 +2548,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2219,20 +2561,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/notifications',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_plugin(self, request):
         """创建插件
@@ -2247,9 +2585,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreatePluginRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreatePluginResponse`
         """
-        return self._create_plugin_with_http_info(request)
+        http_info = self._create_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_plugin_with_http_info(self, request):
+    def create_plugin_invoker(self, request):
+        http_info = self._create_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_plugin_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2266,11 +2617,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2279,20 +2630,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_product(self, request):
         """创建产品
@@ -2305,9 +2652,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductResponse`
         """
-        return self._create_product_with_http_info(request)
+        http_info = self._create_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_product_with_http_info(self, request):
+    def create_product_invoker(self, request):
+        http_info = self._create_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_product_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2324,11 +2684,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2337,20 +2697,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_product_template(self, request):
         """创建产品模板
@@ -2363,9 +2719,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTemplateResponse`
         """
-        return self._create_product_template_with_http_info(request)
+        http_info = self._create_product_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_product_template_with_http_info(self, request):
+    def create_product_template_invoker(self, request):
+        http_info = self._create_product_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_product_template_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/product-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProductTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2382,11 +2751,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2395,20 +2764,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/product-templates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProductTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_product_topic(self, request):
         """添加产品主题
@@ -2421,9 +2786,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProductTopicResponse`
         """
-        return self._create_product_topic_with_http_info(request)
+        http_info = self._create_product_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_product_topic_with_http_info(self, request):
+    def create_product_topic_invoker(self, request):
+        http_info = self._create_product_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_product_topic_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProductTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2442,11 +2820,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2455,20 +2833,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/topics',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProductTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_property(self, request):
         """创建属性
@@ -2481,9 +2855,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreatePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreatePropertyResponse`
         """
-        return self._create_property_with_http_info(request)
+        http_info = self._create_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_property_with_http_info(self, request):
+    def create_property_invoker(self, request):
+        http_info = self._create_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_property_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreatePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2502,11 +2889,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2515,20 +2902,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreatePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_request_property(self, request):
         """创建请求属性
@@ -2541,9 +2924,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRequestPropertyResponse`
         """
-        return self._create_request_property_with_http_info(request)
+        http_info = self._create_request_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_request_property_with_http_info(self, request):
+    def create_request_property_invoker(self, request):
+        http_info = self._create_request_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_request_property_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRequestPropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2564,11 +2960,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2577,20 +2973,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRequestPropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_request_throttling_policy_v2(self, request):
         """创建流控策略
@@ -2604,9 +2996,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRequestThrottlingPolicyV2Response`
         """
-        return self._create_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._create_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_request_throttling_policy_v2_with_http_info(self, request):
+    def create_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._create_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2623,11 +3028,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2636,20 +3041,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_response_property(self, request):
         """创建响应属性
@@ -2662,9 +3063,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateResponsePropertyResponse`
         """
-        return self._create_response_property_with_http_info(request)
+        http_info = self._create_response_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_response_property_with_http_info(self, request):
+    def create_response_property_invoker(self, request):
+        http_info = self._create_response_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_response_property_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateResponsePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2685,11 +3099,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2698,20 +3112,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateResponsePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_rule(self, request):
         """创建规则
@@ -2724,9 +3134,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRuleResponse`
         """
-        return self._create_rule_with_http_info(request)
+        http_info = self._create_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_rule_with_http_info(self, request):
+    def create_rule_invoker(self, request):
+        http_info = self._create_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2743,11 +3166,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2756,20 +3179,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_service(self, request):
         """创建服务
@@ -2782,9 +3201,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateServiceResponse`
         """
-        return self._create_service_with_http_info(request)
+        http_info = self._create_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_service_with_http_info(self, request):
+    def create_service_invoker(self, request):
+        http_info = self._create_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_service_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2801,11 +3233,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2814,20 +3246,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_signature_key_v2(self, request):
         """创建签名密钥
@@ -2844,9 +3272,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSignatureKeyV2Response`
         """
-        return self._create_signature_key_v2_with_http_info(request)
+        http_info = self._create_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_signature_key_v2_with_http_info(self, request):
+    def create_signature_key_v2_invoker(self, request):
+        http_info = self._create_signature_key_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_signature_key_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/signs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2863,11 +3304,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2876,20 +3317,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/signs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_source(self, request):
         """添加源数据源
@@ -2902,9 +3339,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateSourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSourceResponse`
         """
-        return self._create_source_with_http_info(request)
+        http_info = self._create_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_source_with_http_info(self, request):
+    def create_source_invoker(self, request):
+        http_info = self._create_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_source_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2923,11 +3373,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -2936,20 +3386,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/sources',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_special_throttling_configuration_v2(self, request):
         """创建特殊设置
@@ -2966,9 +3412,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateSpecialThrottlingConfigurationV2Response`
         """
-        return self._create_special_throttling_configuration_v2_with_http_info(request)
+        http_info = self._create_special_throttling_configuration_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_special_throttling_configuration_v2_with_http_info(self, request):
+    def create_special_throttling_configuration_v2_invoker(self, request):
+        http_info = self._create_special_throttling_configuration_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_special_throttling_configuration_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}/throttle-specials",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateSpecialThrottlingConfigurationV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -2987,11 +3446,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3000,20 +3459,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}/throttle-specials',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateSpecialThrottlingConfigurationV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def debug_live_data_api_v2(self, request):
         """测试后端API
@@ -3026,9 +3481,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugLiveDataApiV2Response`
         """
-        return self._debug_live_data_api_v2_with_http_info(request)
+        http_info = self._debug_live_data_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _debug_live_data_api_v2_with_http_info(self, request):
+    def debug_live_data_api_v2_invoker(self, request):
+        http_info = self._debug_live_data_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _debug_live_data_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/test",
+            "request_type": request.__class__.__name__,
+            "response_type": "DebugLiveDataApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3047,11 +3515,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3060,20 +3528,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/test',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DebugLiveDataApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def debug_rule(self, request):
         """规则调试
@@ -3086,9 +3550,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DebugRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugRuleResponse`
         """
-        return self._debug_rule_with_http_info(request)
+        http_info = self._debug_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _debug_rule_with_http_info(self, request):
+    def debug_rule_invoker(self, request):
+        http_info = self._debug_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _debug_rule_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rule-test",
+            "request_type": request.__class__.__name__,
+            "response_type": "DebugRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3105,11 +3582,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3118,20 +3595,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rule-test',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DebugRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_acl(self, request):
         """删除APP的访问控制
@@ -3144,9 +3617,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppAclResponse`
         """
-        return self._delete_app_acl_with_http_info(request)
+        http_info = self._delete_app_acl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_acl_with_http_info(self, request):
+    def delete_app_acl_invoker(self, request):
+        http_info = self._delete_app_acl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_acl_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-acl",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppAclResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3165,9 +3651,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3176,20 +3662,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-acl',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppAclResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_code_v2(self, request):
         """删除APP Code
@@ -3202,9 +3684,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppCodeV2Response`
         """
-        return self._delete_app_code_v2_with_http_info(request)
+        http_info = self._delete_app_code_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_code_v2_with_http_info(self, request):
+    def delete_app_code_v2_invoker(self, request):
+        http_info = self._delete_app_code_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_code_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppCodeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3225,9 +3720,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3236,20 +3731,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppCodeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_config_v2(self, request):
         """删除应用配置
@@ -3262,9 +3753,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppConfigV2Response`
         """
-        return self._delete_app_config_v2_with_http_info(request)
+        http_info = self._delete_app_config_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_config_v2_with_http_info(self, request):
+    def delete_app_config_v2_invoker(self, request):
+        http_info = self._delete_app_config_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_config_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/configs/{app_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppConfigV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3285,9 +3789,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3296,20 +3800,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/configs/{app_config_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppConfigV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_app_quota(self, request):
         """删除客户端配额
@@ -3322,9 +3822,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAppQuotaResponse`
         """
-        return self._delete_app_quota_with_http_info(request)
+        http_info = self._delete_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_app_quota_with_http_info(self, request):
+    def delete_app_quota_invoker(self, request):
+        http_info = self._delete_app_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_app_quota_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3343,9 +3856,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3354,20 +3867,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_command(self, request):
         """删除命令
@@ -3380,9 +3889,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteCommandResponse`
         """
-        return self._delete_command_with_http_info(request)
+        http_info = self._delete_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_command_with_http_info(self, request):
+    def delete_command_invoker(self, request):
+        http_info = self._delete_command_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_command_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3403,9 +3925,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3414,20 +3936,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_custom_authorizer_v2(self, request):
         """删除自定义认证
@@ -3440,9 +3958,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteCustomAuthorizerV2Response`
         """
-        return self._delete_custom_authorizer_v2_with_http_info(request)
+        http_info = self._delete_custom_authorizer_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_custom_authorizer_v2_with_http_info(self, request):
+    def delete_custom_authorizer_v2_invoker(self, request):
+        http_info = self._delete_custom_authorizer_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_custom_authorizer_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCustomAuthorizerV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3461,9 +3992,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3472,20 +4003,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/authorizers/{authorizer_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCustomAuthorizerV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_datasource_info_by_id(self, request):
         """通过数据源Id删除指定数据源信息
@@ -3498,9 +4025,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDatasourceInfoByIdResponse`
         """
-        return self._delete_datasource_info_by_id_with_http_info(request)
+        http_info = self._delete_datasource_info_by_id_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_datasource_info_by_id_with_http_info(self, request):
+    def delete_datasource_info_by_id_invoker(self, request):
+        http_info = self._delete_datasource_info_by_id_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_datasource_info_by_id_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDatasourceInfoByIdResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3519,9 +4059,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3530,20 +4070,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDatasourceInfoByIdResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_destination(self, request):
         """删除目标数据源
@@ -3556,9 +4092,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDestinationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDestinationResponse`
         """
-        return self._delete_destination_with_http_info(request)
+        http_info = self._delete_destination_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_destination_with_http_info(self, request):
+    def delete_destination_invoker(self, request):
+        http_info = self._delete_destination_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_destination_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/destinations/{destination_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDestinationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3579,9 +4128,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3590,20 +4139,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/destinations/{destination_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDestinationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_device(self, request):
         """删除设备
@@ -3616,9 +4161,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceResponse`
         """
-        return self._delete_device_with_http_info(request)
+        http_info = self._delete_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_device_with_http_info(self, request):
+    def delete_device_invoker(self, request):
+        http_info = self._delete_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_device_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3637,9 +4195,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3648,20 +4206,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_device_from_group(self, request):
         """删除设备分组内的设备
@@ -3674,9 +4228,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceFromGroupResponse`
         """
-        return self._delete_device_from_group_with_http_info(request)
+        http_info = self._delete_device_from_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_device_from_group_with_http_info(self, request):
+    def delete_device_from_group_invoker(self, request):
+        http_info = self._delete_device_from_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_device_from_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceFromGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3697,9 +4264,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3708,20 +4275,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}/devices/{device_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeviceFromGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_device_group(self, request):
         """删除设备分组
@@ -3734,9 +4297,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDeviceGroupResponse`
         """
-        return self._delete_device_group_with_http_info(request)
+        http_info = self._delete_device_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_device_group_with_http_info(self, request):
+    def delete_device_group_invoker(self, request):
+        http_info = self._delete_device_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_device_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDeviceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3755,9 +4331,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3766,20 +4342,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDeviceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_environment_v2(self, request):
         """删除环境
@@ -3793,9 +4365,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentV2Response`
         """
-        return self._delete_environment_v2_with_http_info(request)
+        http_info = self._delete_environment_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_environment_v2_with_http_info(self, request):
+    def delete_environment_v2_invoker(self, request):
+        http_info = self._delete_environment_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_environment_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/envs/{env_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnvironmentV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3814,9 +4399,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3825,20 +4410,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/envs/{env_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvironmentV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_environment_variable_v2(self, request):
         """删除变量
@@ -3851,9 +4432,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteEnvironmentVariableV2Response`
         """
-        return self._delete_environment_variable_v2_with_http_info(request)
+        http_info = self._delete_environment_variable_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_environment_variable_v2_with_http_info(self, request):
+    def delete_environment_variable_v2_invoker(self, request):
+        http_info = self._delete_environment_variable_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_environment_variable_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/env-variables/{env_variable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteEnvironmentVariableV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3872,9 +4466,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3883,20 +4477,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/env-variables/{env_variable_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteEnvironmentVariableV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_live_data_api_v2(self, request):
         """删除后端API
@@ -3909,9 +4499,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteLiveDataApiV2Response`
         """
-        return self._delete_live_data_api_v2_with_http_info(request)
+        http_info = self._delete_live_data_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_live_data_api_v2_with_http_info(self, request):
+    def delete_live_data_api_v2_invoker(self, request):
+        http_info = self._delete_live_data_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_live_data_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteLiveDataApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3930,9 +4533,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3941,20 +4544,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteLiveDataApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_mqs_instance_topic(self, request):
         """删除Topic
@@ -3967,9 +4566,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMqsInstanceTopicResponse`
         """
-        return self._delete_mqs_instance_topic_with_http_info(request)
+        http_info = self._delete_mqs_instance_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_mqs_instance_topic_with_http_info(self, request):
+    def delete_mqs_instance_topic_invoker(self, request):
+        http_info = self._delete_mqs_instance_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_mqs_instance_topic_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMqsInstanceTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -3988,9 +4600,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -3999,20 +4611,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMqsInstanceTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_multi_task_mapping(self, request):
         """删除指定任务映射
@@ -4025,9 +4633,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMultiTaskMappingResponse`
         """
-        return self._delete_multi_task_mapping_with_http_info(request)
+        http_info = self._delete_multi_task_mapping_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_multi_task_mapping_with_http_info(self, request):
+    def delete_multi_task_mapping_invoker(self, request):
+        http_info = self._delete_multi_task_mapping_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_multi_task_mapping_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/{task_id}/mappings/{mapping_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMultiTaskMappingResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4048,9 +4669,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4059,20 +4680,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/{task_id}/mappings/{mapping_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMultiTaskMappingResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_notification(self, request):
         """删除订阅管理
@@ -4085,9 +4702,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteNotificationResponse`
         """
-        return self._delete_notification_with_http_info(request)
+        http_info = self._delete_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_notification_with_http_info(self, request):
+    def delete_notification_invoker(self, request):
+        http_info = self._delete_notification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_notification_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/notifications/{notification_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4106,9 +4736,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4117,20 +4747,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/notifications/{notification_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_plugin(self, request):
         """删除插件
@@ -4144,9 +4770,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeletePluginRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeletePluginResponse`
         """
-        return self._delete_plugin_with_http_info(request)
+        http_info = self._delete_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_plugin_with_http_info(self, request):
+    def delete_plugin_invoker(self, request):
+        http_info = self._delete_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_plugin_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4165,9 +4804,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4176,20 +4815,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_product(self, request):
         """删除产品
@@ -4202,9 +4837,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductResponse`
         """
-        return self._delete_product_with_http_info(request)
+        http_info = self._delete_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_product_with_http_info(self, request):
+    def delete_product_invoker(self, request):
+        http_info = self._delete_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_product_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4223,9 +4871,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4234,20 +4882,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_product_template(self, request):
         """删除产品模板
@@ -4260,9 +4904,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductTemplateResponse`
         """
-        return self._delete_product_template_with_http_info(request)
+        http_info = self._delete_product_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_product_template_with_http_info(self, request):
+    def delete_product_template_invoker(self, request):
+        http_info = self._delete_product_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_product_template_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/product-templates/{product_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProductTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4281,9 +4938,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4292,20 +4949,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/product-templates/{product_template_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProductTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_product_topic(self, request):
         """删除产品主题
@@ -4318,9 +4971,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteProductTopicResponse`
         """
-        return self._delete_product_topic_with_http_info(request)
+        http_info = self._delete_product_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_product_topic_with_http_info(self, request):
+    def delete_product_topic_invoker(self, request):
+        http_info = self._delete_product_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_product_topic_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/topics/{topic_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteProductTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4341,9 +5007,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4352,20 +5018,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/topics/{topic_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteProductTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_property(self, request):
         """删除服务属性
@@ -4378,9 +5040,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeletePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeletePropertyResponse`
         """
-        return self._delete_property_with_http_info(request)
+        http_info = self._delete_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_property_with_http_info(self, request):
+    def delete_property_invoker(self, request):
+        http_info = self._delete_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_property_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeletePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4401,9 +5076,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4412,20 +5087,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties/{property_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeletePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_request_property(self, request):
         """删除请求属性
@@ -4438,9 +5109,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRequestPropertyResponse`
         """
-        return self._delete_request_property_with_http_info(request)
+        http_info = self._delete_request_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_request_property_with_http_info(self, request):
+    def delete_request_property_invoker(self, request):
+        http_info = self._delete_request_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_request_property_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRequestPropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4463,9 +5147,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4474,20 +5158,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests/{property_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRequestPropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_request_throttling_policy_v2(self, request):
         """删除流控策略
@@ -4500,9 +5180,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRequestThrottlingPolicyV2Response`
         """
-        return self._delete_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._delete_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_request_throttling_policy_v2_with_http_info(self, request):
+    def delete_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._delete_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4521,9 +5214,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4532,20 +5225,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_response_property(self, request):
         """删除响应属性
@@ -4558,9 +5247,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteResponsePropertyResponse`
         """
-        return self._delete_response_property_with_http_info(request)
+        http_info = self._delete_response_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_response_property_with_http_info(self, request):
+    def delete_response_property_invoker(self, request):
+        http_info = self._delete_response_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_response_property_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteResponsePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4583,9 +5285,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4594,20 +5296,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses/{property_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteResponsePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_rule(self, request):
         """删除规则
@@ -4620,9 +5318,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRuleResponse`
         """
-        return self._delete_rule_with_http_info(request)
+        http_info = self._delete_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_rule_with_http_info(self, request):
+    def delete_rule_invoker(self, request):
+        http_info = self._delete_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_rule_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4641,9 +5352,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4652,20 +5363,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_service(self, request):
         """删除服务
@@ -4678,9 +5385,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteServiceResponse`
         """
-        return self._delete_service_with_http_info(request)
+        http_info = self._delete_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_service_with_http_info(self, request):
+    def delete_service_invoker(self, request):
+        http_info = self._delete_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_service_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4699,9 +5419,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4710,20 +5430,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_signature_key_v2(self, request):
         """删除签名密钥
@@ -4736,9 +5452,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSignatureKeyV2Response`
         """
-        return self._delete_signature_key_v2_with_http_info(request)
+        http_info = self._delete_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_signature_key_v2_with_http_info(self, request):
+    def delete_signature_key_v2_invoker(self, request):
+        http_info = self._delete_signature_key_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_signature_key_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/signs/{sign_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4757,9 +5486,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4768,20 +5497,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/signs/{sign_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_source(self, request):
         """删除源数据源
@@ -4794,9 +5519,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSourceResponse`
         """
-        return self._delete_source_with_http_info(request)
+        http_info = self._delete_source_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_source_with_http_info(self, request):
+    def delete_source_invoker(self, request):
+        http_info = self._delete_source_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_source_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/sources/{source_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4817,9 +5555,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4828,20 +5566,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/sources/{source_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_special_throttling_configuration_v2(self, request):
         """删除特殊设置
@@ -4854,9 +5588,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteSpecialThrottlingConfigurationV2Response`
         """
-        return self._delete_special_throttling_configuration_v2_with_http_info(request)
+        http_info = self._delete_special_throttling_configuration_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_special_throttling_configuration_v2_with_http_info(self, request):
+    def delete_special_throttling_configuration_v2_invoker(self, request):
+        http_info = self._delete_special_throttling_configuration_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_special_throttling_configuration_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}/throttle-specials/{strategy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteSpecialThrottlingConfigurationV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4877,9 +5624,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4888,20 +5635,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}/throttle-specials/{strategy_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteSpecialThrottlingConfigurationV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_task(self, request):
         """通过任务ID删除指定任务
@@ -4914,9 +5657,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteTaskResponse`
         """
-        return self._delete_task_with_http_info(request)
+        http_info = self._delete_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_task_with_http_info(self, request):
+    def delete_task_invoker(self, request):
+        http_info = self._delete_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_task_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4935,9 +5691,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -4946,20 +5702,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_api_from_plugin(self, request):
         """解除绑定插件的API
@@ -4973,9 +5725,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DetachApiFromPluginRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DetachApiFromPluginResponse`
         """
-        return self._detach_api_from_plugin_with_http_info(request)
+        http_info = self._detach_api_from_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_api_from_plugin_with_http_info(self, request):
+    def detach_api_from_plugin_invoker(self, request):
+        http_info = self._detach_api_from_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_api_from_plugin_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachApiFromPluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -4994,11 +5759,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5007,20 +5772,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/detach',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachApiFromPluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def detach_plugin_from_api(self, request):
         """解除绑定API的插件
@@ -5034,9 +5795,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DetachPluginFromApiRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DetachPluginFromApiResponse`
         """
-        return self._detach_plugin_from_api_with_http_info(request)
+        http_info = self._detach_plugin_from_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _detach_plugin_from_api_with_http_info(self, request):
+    def detach_plugin_from_api_invoker(self, request):
+        http_info = self._detach_plugin_from_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _detach_plugin_from_api_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/plugins/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "DetachPluginFromApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5055,11 +5829,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5068,20 +5842,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/plugins/detach',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DetachPluginFromApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_app_quota_with_app(self, request):
         """解除客户端配额和客户端应用的绑定
@@ -5094,9 +5864,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateAppQuotaWithAppResponse`
         """
-        return self._disassociate_app_quota_with_app_with_http_info(request)
+        http_info = self._disassociate_app_quota_with_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_app_quota_with_app_with_http_info(self, request):
+    def disassociate_app_quota_with_app_invoker(self, request):
+        http_info = self._disassociate_app_quota_with_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_app_quota_with_app_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}/bound-apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateAppQuotaWithAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5117,9 +5900,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5128,20 +5911,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}/bound-apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateAppQuotaWithAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_certificate_v2(self, request):
         """删除域名证书
@@ -5154,9 +5933,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateCertificateV2Response`
         """
-        return self._disassociate_certificate_v2_with_http_info(request)
+        http_info = self._disassociate_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_certificate_v2_with_http_info(self, request):
+    def disassociate_certificate_v2_invoker(self, request):
+        http_info = self._disassociate_certificate_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_certificate_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5179,9 +5971,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5190,20 +5982,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate/{certificate_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_domain_v2(self, request):
         """解绑域名
@@ -5216,9 +6004,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateDomainV2Response`
         """
-        return self._disassociate_domain_v2_with_http_info(request)
+        http_info = self._disassociate_domain_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_domain_v2_with_http_info(self, request):
+    def disassociate_domain_v2_invoker(self, request):
+        http_info = self._disassociate_domain_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_domain_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateDomainV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5239,9 +6040,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5250,20 +6051,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateDomainV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_signature_key_v2(self, request):
         """解除绑定
@@ -5276,9 +6073,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateSignatureKeyV2Response`
         """
-        return self._disassociate_signature_key_v2_with_http_info(request)
+        http_info = self._disassociate_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_signature_key_v2_with_http_info(self, request):
+    def disassociate_signature_key_v2_invoker(self, request):
+        http_info = self._disassociate_signature_key_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_signature_key_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/sign-bindings/{sign_bindings_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5297,9 +6107,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5308,20 +6118,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/sign-bindings/{sign_bindings_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_products(self, request):
         """导出产品
@@ -5334,9 +6140,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DownloadProductsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DownloadProductsResponse`
         """
-        return self._download_products_with_http_info(request)
+        http_info = self._download_products_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_products_with_http_info(self, request):
+    def download_products_invoker(self, request):
+        http_info = self._download_products_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_products_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadProductsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5356,9 +6175,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5367,20 +6186,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/export',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadProductsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_mqs_instance_topic(self, request):
         """导出Topic
@@ -5393,9 +6208,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportMqsInstanceTopicResponse`
         """
-        return self._export_mqs_instance_topic_with_http_info(request)
+        http_info = self._export_mqs_instance_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_mqs_instance_topic_with_http_info(self, request):
+    def export_mqs_instance_topic_invoker(self, request):
+        http_info = self._export_mqs_instance_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_mqs_instance_topic_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportMqsInstanceTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5414,9 +6242,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5425,20 +6253,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics/export',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportMqsInstanceTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_mqs_instance_topic(self, request):
         """导入Topic
@@ -5451,9 +6275,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportMqsInstanceTopicResponse`
         """
-        return self._import_mqs_instance_topic_with_http_info(request)
+        http_info = self._import_mqs_instance_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_mqs_instance_topic_with_http_info(self, request):
+    def import_mqs_instance_topic_invoker(self, request):
+        http_info = self._import_mqs_instance_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_mqs_instance_topic_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportMqsInstanceTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5476,11 +6313,11 @@ class RomaClient(Client):
         if 'upload_file_name' in local_var_params:
             form_params['upload_file_name'] = local_var_params['upload_file_name']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5489,20 +6326,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportMqsInstanceTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def install_multi_tasks(self, request):
         """组合任务初始化
@@ -5515,9 +6348,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.InstallMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.InstallMultiTasksResponse`
         """
-        return self._install_multi_tasks_with_http_info(request)
+        http_info = self._install_multi_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _install_multi_tasks_with_http_info(self, request):
+    def install_multi_tasks_invoker(self, request):
+        http_info = self._install_multi_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _install_multi_tasks_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/init",
+            "request_type": request.__class__.__name__,
+            "response_type": "InstallMultiTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5534,11 +6380,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5547,20 +6393,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/init',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='InstallMultiTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_attachable_plugins(self, request):
         """查询可绑定当前API的插件
@@ -5575,9 +6417,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiAttachablePluginsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiAttachablePluginsResponse`
         """
-        return self._list_api_attachable_plugins_with_http_info(request)
+        http_info = self._list_api_attachable_plugins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_attachable_plugins_with_http_info(self, request):
+    def list_api_attachable_plugins_invoker(self, request):
+        http_info = self._list_api_attachable_plugins_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_attachable_plugins_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/attachable-plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiAttachablePluginsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5612,9 +6467,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5623,20 +6478,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/attachable-plugins',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiAttachablePluginsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_attached_plugins(self, request):
         """查询API下绑定的插件
@@ -5652,9 +6503,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiAttachedPluginsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiAttachedPluginsResponse`
         """
-        return self._list_api_attached_plugins_with_http_info(request)
+        http_info = self._list_api_attached_plugins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_attached_plugins_with_http_info(self, request):
+    def list_api_attached_plugins_invoker(self, request):
+        http_info = self._list_api_attached_plugins_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_attached_plugins_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/attached-plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiAttachedPluginsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5691,9 +6555,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5702,20 +6566,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}/attached-plugins',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiAttachedPluginsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_binded_to_signature_key_v2(self, request):
         """查看签名密钥绑定的API列表
@@ -5728,9 +6588,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToSignatureKeyV2Response`
         """
-        return self._list_apis_binded_to_signature_key_v2_with_http_info(request)
+        http_info = self._list_apis_binded_to_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_binded_to_signature_key_v2_with_http_info(self, request):
+    def list_apis_binded_to_signature_key_v2_invoker(self, request):
+        http_info = self._list_apis_binded_to_signature_key_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_binded_to_signature_key_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/sign-bindings/binded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisBindedToSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5761,9 +6634,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5772,20 +6645,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/sign-bindings/binded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisBindedToSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_not_bound_with_signature_key_v2(self, request):
         """查看签名密钥未绑定的API列表
@@ -5798,9 +6667,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisNotBoundWithSignatureKeyV2Response`
         """
-        return self._list_apis_not_bound_with_signature_key_v2_with_http_info(request)
+        http_info = self._list_apis_not_bound_with_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_not_bound_with_signature_key_v2_with_http_info(self, request):
+    def list_apis_not_bound_with_signature_key_v2_invoker(self, request):
+        http_info = self._list_apis_not_bound_with_signature_key_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_not_bound_with_signature_key_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/sign-bindings/unbinded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisNotBoundWithSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5831,9 +6713,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5842,20 +6724,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/sign-bindings/unbinded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisNotBoundWithSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_codes_v2(self, request):
         """查询APP Code列表
@@ -5868,9 +6746,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppCodesV2Response`
         """
-        return self._list_app_codes_v2_with_http_info(request)
+        http_info = self._list_app_codes_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_codes_v2_with_http_info(self, request):
+    def list_app_codes_v2_invoker(self, request):
+        http_info = self._list_app_codes_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_codes_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppCodesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5893,9 +6784,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5904,20 +6795,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppCodesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_configs_v2(self, request):
         """查询应用配置列表
@@ -5930,9 +6817,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppConfigsV2Response`
         """
-        return self._list_app_configs_v2_with_http_info(request)
+        http_info = self._list_app_configs_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_configs_v2_with_http_info(self, request):
+    def list_app_configs_v2_invoker(self, request):
+        http_info = self._list_app_configs_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_configs_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppConfigsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -5959,9 +6859,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -5970,20 +6870,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppConfigsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_quota_bindable_apps(self, request):
         """查询客户端配额可绑定的客户端应用列表
@@ -5996,9 +6892,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotaBindableAppsResponse`
         """
-        return self._list_app_quota_bindable_apps_with_http_info(request)
+        http_info = self._list_app_quota_bindable_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_quota_bindable_apps_with_http_info(self, request):
+    def list_app_quota_bindable_apps_invoker(self, request):
+        http_info = self._list_app_quota_bindable_apps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_quota_bindable_apps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}/bindable-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppQuotaBindableAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6023,9 +6932,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6034,20 +6943,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}/bindable-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppQuotaBindableAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_quota_bound_apps(self, request):
         """查询客户端配额已绑定的客户端应用列表
@@ -6060,9 +6965,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotaBoundAppsResponse`
         """
-        return self._list_app_quota_bound_apps_with_http_info(request)
+        http_info = self._list_app_quota_bound_apps_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_quota_bound_apps_with_http_info(self, request):
+    def list_app_quota_bound_apps_invoker(self, request):
+        http_info = self._list_app_quota_bound_apps_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_quota_bound_apps_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}/bound-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppQuotaBoundAppsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6087,9 +7005,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6098,20 +7016,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}/bound-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppQuotaBoundAppsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_app_quotas(self, request):
         """获取客户端配额列表
@@ -6124,9 +7038,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppQuotasRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppQuotasResponse`
         """
-        return self._list_app_quotas_with_http_info(request)
+        http_info = self._list_app_quotas_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_app_quotas_with_http_info(self, request):
+    def list_app_quotas_invoker(self, request):
+        http_info = self._list_app_quotas_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_app_quotas_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppQuotasResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6149,9 +7076,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6160,20 +7087,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppQuotasResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps_v2(self, request):
         """查询APP列表
@@ -6186,9 +7109,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppsV2Response`
         """
-        return self._list_apps_v2_with_http_info(request)
+        http_info = self._list_apps_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_v2_with_http_info(self, request):
+    def list_apps_v2_invoker(self, request):
+        http_info = self._list_apps_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apps_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6219,9 +7155,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6230,20 +7166,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_commands(self, request):
         """查询命令
@@ -6256,9 +7188,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListCommandsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListCommandsResponse`
         """
-        return self._list_commands_with_http_info(request)
+        http_info = self._list_commands_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_commands_with_http_info(self, request):
+    def list_commands_invoker(self, request):
+        http_info = self._list_commands_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_commands_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCommandsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6285,9 +7230,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6296,20 +7241,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCommandsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_custom_authorizers_v2(self, request):
         """查询自定义认证列表
@@ -6322,9 +7263,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListCustomAuthorizersV2Response`
         """
-        return self._list_custom_authorizers_v2_with_http_info(request)
+        http_info = self._list_custom_authorizers_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_custom_authorizers_v2_with_http_info(self, request):
+    def list_custom_authorizers_v2_invoker(self, request):
+        http_info = self._list_custom_authorizers_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_custom_authorizers_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/authorizers",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCustomAuthorizersV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6351,9 +7305,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6362,20 +7316,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/authorizers',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCustomAuthorizersV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_datasource_columns(self, request):
         """获取数据源中某个表中所有字段
@@ -6388,9 +7338,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourceColumnsResponse`
         """
-        return self._list_datasource_columns_with_http_info(request)
+        http_info = self._list_datasource_columns_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_datasource_columns_with_http_info(self, request):
+    def list_datasource_columns_invoker(self, request):
+        http_info = self._list_datasource_columns_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_datasource_columns_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}/columns",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatasourceColumnsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6415,9 +7378,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6426,20 +7389,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}/columns',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatasourceColumnsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_datasource_tables(self, request):
         """获取数据源中所有的表
@@ -6452,9 +7411,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourceTablesResponse`
         """
-        return self._list_datasource_tables_with_http_info(request)
+        http_info = self._list_datasource_tables_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_datasource_tables_with_http_info(self, request):
+    def list_datasource_tables_invoker(self, request):
+        http_info = self._list_datasource_tables_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_datasource_tables_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}/tables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatasourceTablesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6481,9 +7453,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6492,20 +7464,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}/tables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatasourceTablesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_datasources(self, request):
         """查询数据源
@@ -6518,9 +7486,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDatasourcesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDatasourcesResponse`
         """
-        return self._list_datasources_with_http_info(request)
+        http_info = self._list_datasources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_datasources_with_http_info(self, request):
+    def list_datasources_invoker(self, request):
+        http_info = self._list_datasources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_datasources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/datasources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDatasourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6553,9 +7534,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6564,20 +7545,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/datasources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDatasourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_destinations(self, request):
         """查询目标数据源列表
@@ -6590,9 +7567,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDestinationsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDestinationsResponse`
         """
-        return self._list_destinations_with_http_info(request)
+        http_info = self._list_destinations_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_destinations_with_http_info(self, request):
+    def list_destinations_invoker(self, request):
+        http_info = self._list_destinations_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_destinations_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/destinations",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDestinationsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6615,9 +7605,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6626,20 +7616,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/destinations',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDestinationsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_devices(self, request):
         """查询设备
@@ -6652,9 +7638,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDevicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDevicesResponse`
         """
-        return self._list_devices_with_http_info(request)
+        http_info = self._list_devices_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_devices_with_http_info(self, request):
+    def list_devices_invoker(self, request):
+        http_info = self._list_devices_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_devices_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6697,9 +7696,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6708,20 +7707,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDevicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_devices_in_product(self, request):
         """查询产品内设备数量
@@ -6734,9 +7729,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDevicesInProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDevicesInProductResponse`
         """
-        return self._list_devices_in_product_with_http_info(request)
+        http_info = self._list_devices_in_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_devices_in_product_with_http_info(self, request):
+    def list_devices_in_product_invoker(self, request):
+        http_info = self._list_devices_in_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_devices_in_product_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/devices-summary",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDevicesInProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6755,9 +7763,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6766,20 +7774,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/devices-summary',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDevicesInProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_environment_variables_v2(self, request):
         """查询变量列表
@@ -6792,9 +7796,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListEnvironmentVariablesV2Response`
         """
-        return self._list_environment_variables_v2_with_http_info(request)
+        http_info = self._list_environment_variables_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_environment_variables_v2_with_http_info(self, request):
+    def list_environment_variables_v2_invoker(self, request):
+        http_info = self._list_environment_variables_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_environment_variables_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/env-variables",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvironmentVariablesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6823,9 +7840,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6834,20 +7851,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/env-variables',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvironmentVariablesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_environments_v2(self, request):
         """查询环境列表
@@ -6860,9 +7873,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListEnvironmentsV2Response`
         """
-        return self._list_environments_v2_with_http_info(request)
+        http_info = self._list_environments_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_environments_v2_with_http_info(self, request):
+    def list_environments_v2_invoker(self, request):
+        http_info = self._list_environments_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_environments_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/envs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListEnvironmentsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6885,9 +7911,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6896,20 +7922,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/envs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListEnvironmentsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_features_v2(self, request):
         """查看实例特性列表
@@ -6924,9 +7946,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListFeaturesV2Response`
         """
-        return self._list_features_v2_with_http_info(request)
+        http_info = self._list_features_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_features_v2_with_http_info(self, request):
+    def list_features_v2_invoker(self, request):
+        http_info = self._list_features_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_features_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/features",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListFeaturesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -6947,9 +7982,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -6958,20 +7993,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/features',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListFeaturesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_lately_api_statistics_v2(self, request):
         """API指标统计值查询-最近一段时间
@@ -6985,9 +8016,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLatelyApiStatisticsV2Response`
         """
-        return self._list_lately_api_statistics_v2_with_http_info(request)
+        http_info = self._list_lately_api_statistics_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_lately_api_statistics_v2_with_http_info(self, request):
+    def list_lately_api_statistics_v2_invoker(self, request):
+        http_info = self._list_lately_api_statistics_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_lately_api_statistics_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/statistics/api/latest",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLatelyApiStatisticsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7008,9 +8052,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7019,20 +8063,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/statistics/api/latest',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLatelyApiStatisticsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_live_data_api_deployment_history_v2(self, request):
         """查询后端API部署历史
@@ -7045,9 +8085,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiDeploymentHistoryV2Response`
         """
-        return self._list_live_data_api_deployment_history_v2_with_http_info(request)
+        http_info = self._list_live_data_api_deployment_history_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_live_data_api_deployment_history_v2_with_http_info(self, request):
+    def list_live_data_api_deployment_history_v2_invoker(self, request):
+        http_info = self._list_live_data_api_deployment_history_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_live_data_api_deployment_history_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/deploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLiveDataApiDeploymentHistoryV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7066,9 +8119,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7077,20 +8130,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/deploy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLiveDataApiDeploymentHistoryV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_live_data_api_test_history_v2(self, request):
         """查询后端API测试结果
@@ -7103,9 +8152,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiTestHistoryV2Response`
         """
-        return self._list_live_data_api_test_history_v2_with_http_info(request)
+        http_info = self._list_live_data_api_test_history_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_live_data_api_test_history_v2_with_http_info(self, request):
+    def list_live_data_api_test_history_v2_invoker(self, request):
+        http_info = self._list_live_data_api_test_history_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_live_data_api_test_history_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/test",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLiveDataApiTestHistoryV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7128,9 +8190,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7139,20 +8201,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/test',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLiveDataApiTestHistoryV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_live_data_api_v2(self, request):
         """查询后端API列表
@@ -7165,9 +8223,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataApiV2Response`
         """
-        return self._list_live_data_api_v2_with_http_info(request)
+        http_info = self._list_live_data_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_live_data_api_v2_with_http_info(self, request):
+    def list_live_data_api_v2_invoker(self, request):
+        http_info = self._list_live_data_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_live_data_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLiveDataApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7200,9 +8271,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7211,20 +8282,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLiveDataApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_live_data_data_sources_v2(self, request):
         """查询自定义后端服务数据源列表
@@ -7237,9 +8304,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataDataSourcesV2Response`
         """
-        return self._list_live_data_data_sources_v2_with_http_info(request)
+        http_info = self._list_live_data_data_sources_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_live_data_data_sources_v2_with_http_info(self, request):
+    def list_live_data_data_sources_v2_invoker(self, request):
+        http_info = self._list_live_data_data_sources_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_live_data_data_sources_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/data-sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLiveDataDataSourcesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7264,9 +8344,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7275,20 +8355,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/data-sources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLiveDataDataSourcesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_live_data_quota_v2(self, request):
         """查询自定义后端服务配额
@@ -7301,9 +8377,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListLiveDataQuotaV2Response`
         """
-        return self._list_live_data_quota_v2_with_http_info(request)
+        http_info = self._list_live_data_quota_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_live_data_quota_v2_with_http_info(self, request):
+    def list_live_data_quota_v2_invoker(self, request):
+        http_info = self._list_live_data_quota_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_live_data_quota_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListLiveDataQuotaV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7320,9 +8409,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7331,20 +8420,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListLiveDataQuotaV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_monitor_infos(self, request):
         """任务监控信息列表查询
@@ -7357,9 +8442,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMonitorInfosRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMonitorInfosResponse`
         """
-        return self._list_monitor_infos_with_http_info(request)
+        http_info = self._list_monitor_infos_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_monitor_infos_with_http_info(self, request):
+    def list_monitor_infos_invoker(self, request):
+        http_info = self._list_monitor_infos_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_monitor_infos_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/task-monitors",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMonitorInfosResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7384,9 +8482,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7395,20 +8493,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/task-monitors',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMonitorInfosResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_monitor_log(self, request):
         """任务监控日志查询
@@ -7421,9 +8515,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMonitorLogRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMonitorLogResponse`
         """
-        return self._list_monitor_log_with_http_info(request)
+        http_info = self._list_monitor_log_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_monitor_log_with_http_info(self, request):
+    def list_monitor_log_invoker(self, request):
+        http_info = self._list_monitor_log_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_monitor_log_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/monitor-logs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMonitorLogResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7450,9 +8557,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7461,20 +8568,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/monitor-logs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMonitorLogResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_mqs_instance_topics(self, request):
         """查询Topic列表
@@ -7487,9 +8590,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMqsInstanceTopicsResponse`
         """
-        return self._list_mqs_instance_topics_with_http_info(request)
+        http_info = self._list_mqs_instance_topics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_mqs_instance_topics_with_http_info(self, request):
+    def list_mqs_instance_topics_invoker(self, request):
+        http_info = self._list_mqs_instance_topics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_mqs_instance_topics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMqsInstanceTopicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7516,9 +8632,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7527,20 +8643,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMqsInstanceTopicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_notification(self, request):
         """查询订阅管理信息
@@ -7553,9 +8665,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListNotificationResponse`
         """
-        return self._list_notification_with_http_info(request)
+        http_info = self._list_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_notification_with_http_info(self, request):
+    def list_notification_invoker(self, request):
+        http_info = self._list_notification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_notification_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/notifications",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7578,9 +8703,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7589,20 +8714,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/notifications',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_plugin_attachable_apis(self, request):
         """查询可绑定当前插件的API
@@ -7618,9 +8739,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListPluginAttachableApisRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListPluginAttachableApisResponse`
         """
-        return self._list_plugin_attachable_apis_with_http_info(request)
+        http_info = self._list_plugin_attachable_apis_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_plugin_attachable_apis_with_http_info(self, request):
+    def list_plugin_attachable_apis_invoker(self, request):
+        http_info = self._list_plugin_attachable_apis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_plugin_attachable_apis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attachable-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginAttachableApisResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7655,9 +8789,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7666,20 +8800,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attachable-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPluginAttachableApisResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_plugin_attached_apis(self, request):
         """查询插件下绑定的API
@@ -7696,9 +8826,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListPluginAttachedApisRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListPluginAttachedApisResponse`
         """
-        return self._list_plugin_attached_apis_with_http_info(request)
+        http_info = self._list_plugin_attached_apis_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_plugin_attached_apis_with_http_info(self, request):
+    def list_plugin_attached_apis_invoker(self, request):
+        http_info = self._list_plugin_attached_apis_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_plugin_attached_apis_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attached-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginAttachedApisResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7733,9 +8876,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7744,20 +8887,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}/attached-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPluginAttachedApisResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_plugins(self, request):
         """查询插件列表
@@ -7777,9 +8916,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListPluginsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListPluginsResponse`
         """
-        return self._list_plugins_with_http_info(request)
+        http_info = self._list_plugins_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_plugins_with_http_info(self, request):
+    def list_plugins_invoker(self, request):
+        http_info = self._list_plugins_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_plugins_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPluginsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7814,9 +8966,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7825,20 +8977,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPluginsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_product_templates(self, request):
         """查询产品模板
@@ -7851,9 +8999,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProductTemplatesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductTemplatesResponse`
         """
-        return self._list_product_templates_with_http_info(request)
+        http_info = self._list_product_templates_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_product_templates_with_http_info(self, request):
+    def list_product_templates_invoker(self, request):
+        http_info = self._list_product_templates_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_product_templates_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/product-templates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductTemplatesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7886,9 +9047,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7897,20 +9058,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/product-templates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductTemplatesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_product_topics(self, request):
         """查询产品主题
@@ -7923,9 +9080,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProductTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductTopicsResponse`
         """
-        return self._list_product_topics_with_http_info(request)
+        http_info = self._list_product_topics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_product_topics_with_http_info(self, request):
+    def list_product_topics_invoker(self, request):
+        http_info = self._list_product_topics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_product_topics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductTopicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -7948,9 +9118,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -7959,20 +9129,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/topics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductTopicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_products(self, request):
         """查询产品
@@ -7985,9 +9151,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProductsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProductsResponse`
         """
-        return self._list_products_with_http_info(request)
+        http_info = self._list_products_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_products_with_http_info(self, request):
+    def list_products_invoker(self, request):
+        http_info = self._list_products_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_products_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProductsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8036,9 +9215,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8047,20 +9226,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProductsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_cofigs_v2(self, request):
         """查询某个实例的租户配置列表
@@ -8073,9 +9248,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProjectCofigsV2Response`
         """
-        return self._list_project_cofigs_v2_with_http_info(request)
+        http_info = self._list_project_cofigs_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_cofigs_v2_with_http_info(self, request):
+    def list_project_cofigs_v2_invoker(self, request):
+        http_info = self._list_project_cofigs_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_cofigs_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/project/configs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectCofigsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8096,9 +9284,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8107,20 +9295,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/project/configs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectCofigsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_properties(self, request):
         """查询属性
@@ -8133,9 +9317,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListPropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListPropertiesResponse`
         """
-        return self._list_properties_with_http_info(request)
+        http_info = self._list_properties_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_properties_with_http_info(self, request):
+    def list_properties_invoker(self, request):
+        http_info = self._list_properties_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_properties_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListPropertiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8162,9 +9359,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8173,20 +9370,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListPropertiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_request_properties(self, request):
         """查询请求属性
@@ -8199,9 +9392,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestPropertiesResponse`
         """
-        return self._list_request_properties_with_http_info(request)
+        http_info = self._list_request_properties_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_request_properties_with_http_info(self, request):
+    def list_request_properties_invoker(self, request):
+        http_info = self._list_request_properties_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_request_properties_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRequestPropertiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8230,9 +9436,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8241,20 +9447,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRequestPropertiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_request_throttling_policy_v2(self, request):
         """查询流控策略列表
@@ -8267,9 +9469,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPolicyV2Response`
         """
-        return self._list_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._list_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_request_throttling_policy_v2_with_http_info(self, request):
+    def list_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._list_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8296,9 +9511,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8307,20 +9522,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_response_properties(self, request):
         """查询响应属性
@@ -8333,9 +9544,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListResponsePropertiesResponse`
         """
-        return self._list_response_properties_with_http_info(request)
+        http_info = self._list_response_properties_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_response_properties_with_http_info(self, request):
+    def list_response_properties_invoker(self, request):
+        http_info = self._list_response_properties_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_response_properties_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListResponsePropertiesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8364,9 +9588,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8375,20 +9599,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListResponsePropertiesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_rules(self, request):
         """查询规则
@@ -8401,9 +9621,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRulesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRulesResponse`
         """
-        return self._list_rules_with_http_info(request)
+        http_info = self._list_rules_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_rules_with_http_info(self, request):
+    def list_rules_invoker(self, request):
+        http_info = self._list_rules_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_rules_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRulesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8428,9 +9661,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8439,20 +9672,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRulesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_services(self, request):
         """查询服务
@@ -8465,9 +9694,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListServicesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListServicesResponse`
         """
-        return self._list_services_with_http_info(request)
+        http_info = self._list_services_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_services_with_http_info(self, request):
+    def list_services_invoker(self, request):
+        http_info = self._list_services_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_services_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListServicesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8502,9 +9744,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8513,20 +9755,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListServicesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_shadows(self, request):
         """查询设备影子
@@ -8539,9 +9777,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListShadowsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListShadowsResponse`
         """
-        return self._list_shadows_with_http_info(request)
+        http_info = self._list_shadows_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_shadows_with_http_info(self, request):
+    def list_shadows_invoker(self, request):
+        http_info = self._list_shadows_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_shadows_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/shadow",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListShadowsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8560,9 +9811,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8571,20 +9822,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/shadow',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListShadowsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_signature_keys_binded_to_api_v2(self, request):
         """查看API绑定的签名密钥列表
@@ -8597,9 +9844,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSignatureKeysBindedToApiV2Response`
         """
-        return self._list_signature_keys_binded_to_api_v2_with_http_info(request)
+        http_info = self._list_signature_keys_binded_to_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_signature_keys_binded_to_api_v2_with_http_info(self, request):
+    def list_signature_keys_binded_to_api_v2_invoker(self, request):
+        http_info = self._list_signature_keys_binded_to_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_signature_keys_binded_to_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/sign-bindings/binded-signs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSignatureKeysBindedToApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8628,9 +9888,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8639,20 +9899,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/sign-bindings/binded-signs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSignatureKeysBindedToApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_signature_keys_v2(self, request):
         """查询签名密钥列表
@@ -8665,9 +9921,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSignatureKeysV2Response`
         """
-        return self._list_signature_keys_v2_with_http_info(request)
+        http_info = self._list_signature_keys_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_signature_keys_v2_with_http_info(self, request):
+    def list_signature_keys_v2_invoker(self, request):
+        http_info = self._list_signature_keys_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_signature_keys_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/signs",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSignatureKeysV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8694,9 +9963,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8705,20 +9974,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/signs',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSignatureKeysV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_sources(self, request):
         """查询源数据源列表
@@ -8731,9 +9996,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSourcesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSourcesResponse`
         """
-        return self._list_sources_with_http_info(request)
+        http_info = self._list_sources_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_sources_with_http_info(self, request):
+    def list_sources_invoker(self, request):
+        http_info = self._list_sources_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_sources_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/sources",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSourcesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8756,9 +10034,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8767,20 +10045,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}/sources',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSourcesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_special_throttling_configurations_v2(self, request):
         """查看特殊设置列表
@@ -8793,9 +10067,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSpecialThrottlingConfigurationsV2Response`
         """
-        return self._list_special_throttling_configurations_v2_with_http_info(request)
+        http_info = self._list_special_throttling_configurations_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_special_throttling_configurations_v2_with_http_info(self, request):
+    def list_special_throttling_configurations_v2_invoker(self, request):
+        http_info = self._list_special_throttling_configurations_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_special_throttling_configurations_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}/throttle-specials",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSpecialThrottlingConfigurationsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8822,9 +10109,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8833,20 +10120,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}/throttle-specials',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSpecialThrottlingConfigurationsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_statistics_api(self, request):
         """查询API指标统计值
@@ -8859,9 +10142,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListStatisticsApiRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListStatisticsApiResponse`
         """
-        return self._list_statistics_api_with_http_info(request)
+        http_info = self._list_statistics_api_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_statistics_api_with_http_info(self, request):
+    def list_statistics_api_invoker(self, request):
+        http_info = self._list_statistics_api_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_statistics_api_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/statistics/api",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListStatisticsApiResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8892,9 +10188,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8903,20 +10199,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/statistics/api',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListStatisticsApiResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_subsets(self, request):
         """查询子设备
@@ -8929,9 +10221,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListSubsetsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListSubsetsResponse`
         """
-        return self._list_subsets_with_http_info(request)
+        http_info = self._list_subsets_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_subsets_with_http_info(self, request):
+    def list_subsets_invoker(self, request):
+        http_info = self._list_subsets_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_subsets_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/subsets",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListSubsetsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -8960,9 +10265,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -8971,20 +10276,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/subsets',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListSubsetsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tags_v2(self, request):
         """查询标签列表
@@ -8997,9 +10298,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListTagsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTagsV2Response`
         """
-        return self._list_tags_v2_with_http_info(request)
+        http_info = self._list_tags_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tags_v2_with_http_info(self, request):
+    def list_tags_v2_invoker(self, request):
+        http_info = self._list_tags_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tags_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/tags",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTagsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9020,9 +10334,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9031,20 +10345,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/tags',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTagsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_tasks(self, request):
         """查询任务列表
@@ -9057,9 +10367,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTasksResponse`
         """
-        return self._list_tasks_with_http_info(request)
+        http_info = self._list_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_tasks_with_http_info(self, request):
+    def list_tasks_invoker(self, request):
+        http_info = self._list_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_tasks_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9104,9 +10427,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9115,20 +10438,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_topics(self, request):
         """查询设备主题
@@ -9141,9 +10460,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListTopicsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListTopicsResponse`
         """
-        return self._list_topics_with_http_info(request)
+        http_info = self._list_topics_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_topics_with_http_info(self, request):
+    def list_topics_invoker(self, request):
+        http_info = self._list_topics_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_topics_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListTopicsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9174,9 +10506,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9185,20 +10517,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/topics',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListTopicsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def publish_live_data_api_v2(self, request):
         """部署后端API
@@ -9211,9 +10539,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.PublishLiveDataApiV2Response`
         """
-        return self._publish_live_data_api_v2_with_http_info(request)
+        http_info = self._publish_live_data_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _publish_live_data_api_v2_with_http_info(self, request):
+    def publish_live_data_api_v2_invoker(self, request):
+        http_info = self._publish_live_data_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _publish_live_data_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/deploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "PublishLiveDataApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9232,11 +10573,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9245,20 +10586,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/deploy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='PublishLiveDataApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_authentication(self, request):
         """重置设备鉴权信息
@@ -9271,9 +10608,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetAuthenticationResponse`
         """
-        return self._reset_authentication_with_http_info(request)
+        http_info = self._reset_authentication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_authentication_with_http_info(self, request):
+    def reset_authentication_invoker(self, request):
+        http_info = self._reset_authentication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_authentication_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/authentication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetAuthenticationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9292,11 +10642,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9305,20 +10655,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/authentication',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_messages(self, request):
         """重发消息
@@ -9331,9 +10677,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetMessagesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetMessagesResponse`
         """
-        return self._reset_messages_with_http_info(request)
+        http_info = self._reset_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_messages_with_http_info(self, request):
+    def reset_messages_invoker(self, request):
+        http_info = self._reset_messages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_messages_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/messages/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9352,11 +10711,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9365,20 +10724,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/messages/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_multi_task_offset(self, request):
         """重置组合任务进度
@@ -9391,9 +10746,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetMultiTaskOffsetResponse`
         """
-        return self._reset_multi_task_offset_with_http_info(request)
+        http_info = self._reset_multi_task_offset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_multi_task_offset_with_http_info(self, request):
+    def reset_multi_task_offset_invoker(self, request):
+        http_info = self._reset_multi_task_offset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_multi_task_offset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/{task_id}/reset",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetMultiTaskOffsetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9412,11 +10780,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9425,20 +10793,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/{task_id}/reset',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetMultiTaskOffsetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_product_authentication(self, request):
         """重置产品鉴权信息
@@ -9451,9 +10815,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetProductAuthenticationResponse`
         """
-        return self._reset_product_authentication_with_http_info(request)
+        http_info = self._reset_product_authentication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_product_authentication_with_http_info(self, request):
+    def reset_product_authentication_invoker(self, request):
+        http_info = self._reset_product_authentication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_product_authentication_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/authentication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetProductAuthenticationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9472,11 +10849,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9485,20 +10862,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/authentication',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetProductAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def run_task(self, request):
         """手工触发单个任务
@@ -9511,9 +10884,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.RunTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.RunTaskResponse`
         """
-        return self._run_task_with_http_info(request)
+        http_info = self._run_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _run_task_with_http_info(self, request):
+    def run_task_invoker(self, request):
+        http_info = self._run_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _run_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/run",
+            "request_type": request.__class__.__name__,
+            "response_type": "RunTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9532,9 +10918,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9543,20 +10929,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/run',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='RunTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def send_command(self, request):
         """发送命令
@@ -9569,9 +10951,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.SendCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.SendCommandResponse`
         """
-        return self._send_command_with_http_info(request)
+        http_info = self._send_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _send_command_with_http_info(self, request):
+    def send_command_invoker(self, request):
+        http_info = self._send_command_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _send_command_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/send-command",
+            "request_type": request.__class__.__name__,
+            "response_type": "SendCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9590,11 +10985,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9603,20 +10998,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/send-command',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='SendCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_bound_app_quota(self, request):
         """查询客户端应用关联的应用配额
@@ -9629,9 +11020,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAppBoundAppQuotaResponse`
         """
-        return self._show_app_bound_app_quota_with_http_info(request)
+        http_info = self._show_app_bound_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_bound_app_quota_with_http_info(self, request):
+    def show_app_bound_app_quota_invoker(self, request):
+        http_info = self._show_app_bound_app_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_bound_app_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/bound-quota",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppBoundAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9650,9 +11054,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9661,20 +11065,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/bound-quota',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppBoundAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_app_quota(self, request):
         """获取客户端配额详情
@@ -9687,9 +11087,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAppQuotaResponse`
         """
-        return self._show_app_quota_with_http_info(request)
+        http_info = self._show_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_app_quota_with_http_info(self, request):
+    def show_app_quota_invoker(self, request):
+        http_info = self._show_app_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_app_quota_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9708,9 +11121,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9719,20 +11132,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_authentication(self, request):
         """查询设备鉴权信息
@@ -9745,9 +11154,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowAuthenticationResponse`
         """
-        return self._show_authentication_with_http_info(request)
+        http_info = self._show_authentication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_authentication_with_http_info(self, request):
+    def show_authentication_invoker(self, request):
+        http_info = self._show_authentication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_authentication_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/authentication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowAuthenticationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9766,9 +11188,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9777,20 +11199,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}/authentication',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_command(self, request):
         """查询命令详情
@@ -9803,9 +11221,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowCommandResponse`
         """
-        return self._show_command_with_http_info(request)
+        http_info = self._show_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_command_with_http_info(self, request):
+    def show_command_invoker(self, request):
+        http_info = self._show_command_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_command_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9826,9 +11257,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9837,20 +11268,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dataource_detail(self, request):
         """查询指定数据源
@@ -9863,9 +11290,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDataourceDetailResponse`
         """
-        return self._show_dataource_detail_with_http_info(request)
+        http_info = self._show_dataource_detail_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dataource_detail_with_http_info(self, request):
+    def show_dataource_detail_invoker(self, request):
+        http_info = self._show_dataource_detail_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dataource_detail_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDataourceDetailResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9884,9 +11324,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9895,20 +11335,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDataourceDetailResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_app_acl(self, request):
         """查看APP的访问控制详情
@@ -9921,9 +11357,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppAclResponse`
         """
-        return self._show_details_of_app_acl_with_http_info(request)
+        http_info = self._show_details_of_app_acl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_app_acl_with_http_info(self, request):
+    def show_details_of_app_acl_invoker(self, request):
+        http_info = self._show_details_of_app_acl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_app_acl_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-acl",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAppAclResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -9942,9 +11391,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -9953,20 +11402,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-acl',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAppAclResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_app_code_v2(self, request):
         """查看APP Code详情
@@ -9979,9 +11424,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppCodeV2Response`
         """
-        return self._show_details_of_app_code_v2_with_http_info(request)
+        http_info = self._show_details_of_app_code_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_app_code_v2_with_http_info(self, request):
+    def show_details_of_app_code_v2_invoker(self, request):
+        http_info = self._show_details_of_app_code_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_app_code_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAppCodeV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10002,9 +11460,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10013,20 +11471,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-codes/{app_code_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAppCodeV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_app_config_v2(self, request):
         """查看应用配置详情
@@ -10039,9 +11493,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppConfigV2Response`
         """
-        return self._show_details_of_app_config_v2_with_http_info(request)
+        http_info = self._show_details_of_app_config_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_app_config_v2_with_http_info(self, request):
+    def show_details_of_app_config_v2_invoker(self, request):
+        http_info = self._show_details_of_app_config_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_app_config_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/configs/{app_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAppConfigV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10062,9 +11529,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10073,20 +11540,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/configs/{app_config_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAppConfigV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_app_v2(self, request):
         """查看APP详情
@@ -10099,9 +11562,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAppV2Response`
         """
-        return self._show_details_of_app_v2_with_http_info(request)
+        http_info = self._show_details_of_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_app_v2_with_http_info(self, request):
+    def show_details_of_app_v2_invoker(self, request):
+        http_info = self._show_details_of_app_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_app_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10120,9 +11596,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10131,20 +11607,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_custom_authorizers_v2(self, request):
         """查看自定义认证详情
@@ -10157,9 +11629,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCustomAuthorizersV2Response`
         """
-        return self._show_details_of_custom_authorizers_v2_with_http_info(request)
+        http_info = self._show_details_of_custom_authorizers_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_custom_authorizers_v2_with_http_info(self, request):
+    def show_details_of_custom_authorizers_v2_invoker(self, request):
+        http_info = self._show_details_of_custom_authorizers_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_custom_authorizers_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfCustomAuthorizersV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10178,9 +11663,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10189,20 +11674,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/authorizers/{authorizer_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfCustomAuthorizersV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_domain_name_certificate_v2(self, request):
         """查看域名证书
@@ -10215,9 +11696,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfDomainNameCertificateV2Response`
         """
-        return self._show_details_of_domain_name_certificate_v2_with_http_info(request)
+        http_info = self._show_details_of_domain_name_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_domain_name_certificate_v2_with_http_info(self, request):
+    def show_details_of_domain_name_certificate_v2_invoker(self, request):
+        http_info = self._show_details_of_domain_name_certificate_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_domain_name_certificate_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfDomainNameCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10240,9 +11734,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10251,20 +11745,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificate/{certificate_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfDomainNameCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_environment_variable_v2(self, request):
         """查看变量详情
@@ -10277,9 +11767,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfEnvironmentVariableV2Response`
         """
-        return self._show_details_of_environment_variable_v2_with_http_info(request)
+        http_info = self._show_details_of_environment_variable_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_environment_variable_v2_with_http_info(self, request):
+    def show_details_of_environment_variable_v2_invoker(self, request):
+        http_info = self._show_details_of_environment_variable_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_environment_variable_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/env-variables/{env_variable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfEnvironmentVariableV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10298,9 +11801,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10309,20 +11812,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/env-variables/{env_variable_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfEnvironmentVariableV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_instance_v2(self, request):
         """查看实例详情
@@ -10335,9 +11834,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfInstanceV2Response`
         """
-        return self._show_details_of_instance_v2_with_http_info(request)
+        http_info = self._show_details_of_instance_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_instance_v2_with_http_info(self, request):
+    def show_details_of_instance_v2_invoker(self, request):
+        http_info = self._show_details_of_instance_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_instance_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfInstanceV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10354,9 +11866,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10365,20 +11877,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfInstanceV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_request_throttling_policy_v2(self, request):
         """查看流控策略详情
@@ -10391,9 +11899,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfRequestThrottlingPolicyV2Response`
         """
-        return self._show_details_of_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._show_details_of_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_request_throttling_policy_v2_with_http_info(self, request):
+    def show_details_of_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._show_details_of_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10412,9 +11933,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10423,20 +11944,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device(self, request):
         """查询设备详情
@@ -10449,9 +11966,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceResponse`
         """
-        return self._show_device_with_http_info(request)
+        http_info = self._show_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_with_http_info(self, request):
+    def show_device_invoker(self, request):
+        http_info = self._show_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_device_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10470,9 +12000,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10481,20 +12011,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device_group(self, request):
         """查询设备分组详情
@@ -10507,9 +12033,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupResponse`
         """
-        return self._show_device_group_with_http_info(request)
+        http_info = self._show_device_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_group_with_http_info(self, request):
+    def show_device_group_invoker(self, request):
+        http_info = self._show_device_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_device_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10528,9 +12067,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10539,20 +12078,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_device_group_tree(self, request):
         """查询所有设备分组
@@ -10565,9 +12100,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDeviceGroupTreeResponse`
         """
-        return self._show_device_group_tree_with_http_info(request)
+        http_info = self._show_device_group_tree_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_device_group_tree_with_http_info(self, request):
+    def show_device_group_tree_invoker(self, request):
+        http_info = self._show_device_group_tree_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_device_group_tree_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/device-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDeviceGroupTreeResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10586,9 +12134,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10597,20 +12145,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/device-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDeviceGroupTreeResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_devices_in_group(self, request):
         """查询设备分组内设备
@@ -10623,9 +12167,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDevicesInGroupResponse`
         """
-        return self._show_devices_in_group_with_http_info(request)
+        http_info = self._show_devices_in_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_devices_in_group_with_http_info(self, request):
+    def show_devices_in_group_invoker(self, request):
+        http_info = self._show_devices_in_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_devices_in_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}/devices",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDevicesInGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10652,9 +12209,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10663,20 +12220,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}/devices',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDevicesInGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_dispatches(self, request):
         """查询调度计划
@@ -10689,9 +12242,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDispatchesResponse`
         """
-        return self._show_dispatches_with_http_info(request)
+        http_info = self._show_dispatches_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_dispatches_with_http_info(self, request):
+    def show_dispatches_invoker(self, request):
+        http_info = self._show_dispatches_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_dispatches_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/dispatches",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDispatchesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10710,9 +12276,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10721,20 +12287,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/dispatches',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDispatchesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_live_data_api_v2(self, request):
         """查询后端API详情
@@ -10747,9 +12309,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowLiveDataApiV2Response`
         """
-        return self._show_live_data_api_v2_with_http_info(request)
+        http_info = self._show_live_data_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_live_data_api_v2_with_http_info(self, request):
+    def show_live_data_api_v2_invoker(self, request):
+        http_info = self._show_live_data_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_live_data_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowLiveDataApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10768,9 +12343,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10779,20 +12354,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowLiveDataApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_mqs_instance_messages(self, request):
         """查询消息
@@ -10806,9 +12377,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceMessagesResponse`
         """
-        return self._show_mqs_instance_messages_with_http_info(request)
+        http_info = self._show_mqs_instance_messages_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_mqs_instance_messages_with_http_info(self, request):
+    def show_mqs_instance_messages_invoker(self, request):
+        http_info = self._show_mqs_instance_messages_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_mqs_instance_messages_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/messages",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMqsInstanceMessagesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10849,9 +12433,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10860,20 +12444,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/messages',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMqsInstanceMessagesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_mqs_instance_topic_access_policy(self, request):
         """查询Topic权限
@@ -10886,9 +12466,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceTopicAccessPolicyResponse`
         """
-        return self._show_mqs_instance_topic_access_policy_with_http_info(request)
+        http_info = self._show_mqs_instance_topic_access_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_mqs_instance_topic_access_policy_with_http_info(self, request):
+    def show_mqs_instance_topic_access_policy_invoker(self, request):
+        http_info = self._show_mqs_instance_topic_access_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_mqs_instance_topic_access_policy_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics/{topic_name}/accesspolicy",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMqsInstanceTopicAccessPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10911,9 +12504,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10922,20 +12515,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics/{topic_name}/accesspolicy',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMqsInstanceTopicAccessPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_plugin(self, request):
         """查询插件详情
@@ -10948,9 +12537,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowPluginRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowPluginResponse`
         """
-        return self._show_plugin_with_http_info(request)
+        http_info = self._show_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_plugin_with_http_info(self, request):
+    def show_plugin_invoker(self, request):
+        http_info = self._show_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_plugin_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -10969,9 +12571,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -10980,20 +12582,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_product(self, request):
         """查询产品详情
@@ -11006,9 +12604,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductResponse`
         """
-        return self._show_product_with_http_info(request)
+        http_info = self._show_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_product_with_http_info(self, request):
+    def show_product_invoker(self, request):
+        http_info = self._show_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_product_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11027,9 +12638,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11038,20 +12649,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_product_authentication(self, request):
         """查询产品鉴权信息
@@ -11064,9 +12671,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductAuthenticationResponse`
         """
-        return self._show_product_authentication_with_http_info(request)
+        http_info = self._show_product_authentication_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_product_authentication_with_http_info(self, request):
+    def show_product_authentication_invoker(self, request):
+        http_info = self._show_product_authentication_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_product_authentication_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/authentication",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProductAuthenticationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11085,9 +12705,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11096,20 +12716,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/authentication',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProductAuthenticationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_product_template(self, request):
         """查询产品模板详情
@@ -11122,9 +12738,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowProductTemplateResponse`
         """
-        return self._show_product_template_with_http_info(request)
+        http_info = self._show_product_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_product_template_with_http_info(self, request):
+    def show_product_template_invoker(self, request):
+        http_info = self._show_product_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_product_template_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/product-templates/{product_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowProductTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11143,9 +12772,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11154,20 +12783,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/product-templates/{product_template_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowProductTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_property(self, request):
         """查询服务属性详情
@@ -11180,9 +12805,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowPropertyResponse`
         """
-        return self._show_property_with_http_info(request)
+        http_info = self._show_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_property_with_http_info(self, request):
+    def show_property_invoker(self, request):
+        http_info = self._show_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_property_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowPropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11203,9 +12841,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11214,20 +12852,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties/{property_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowPropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_request_property(self, request):
         """查询请求属性详情
@@ -11240,9 +12874,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRequestPropertyResponse`
         """
-        return self._show_request_property_with_http_info(request)
+        http_info = self._show_request_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_request_property_with_http_info(self, request):
+    def show_request_property_invoker(self, request):
+        http_info = self._show_request_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_request_property_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRequestPropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11265,9 +12912,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11276,20 +12923,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests/{property_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRequestPropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_response_property(self, request):
         """查询响应属性详情
@@ -11302,9 +12945,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowResponsePropertyResponse`
         """
-        return self._show_response_property_with_http_info(request)
+        http_info = self._show_response_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_response_property_with_http_info(self, request):
+    def show_response_property_invoker(self, request):
+        http_info = self._show_response_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_response_property_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowResponsePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11327,9 +12983,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11338,20 +12994,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses/{property_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowResponsePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_restriction_of_instance_v2(self, request):
         """查看实例约束信息
@@ -11364,9 +13016,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRestrictionOfInstanceV2Response`
         """
-        return self._show_restriction_of_instance_v2_with_http_info(request)
+        http_info = self._show_restriction_of_instance_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_restriction_of_instance_v2_with_http_info(self, request):
+    def show_restriction_of_instance_v2_invoker(self, request):
+        http_info = self._show_restriction_of_instance_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_restriction_of_instance_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/restriction",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRestrictionOfInstanceV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11383,9 +13048,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11394,20 +13059,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/restriction',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRestrictionOfInstanceV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_rule(self, request):
         """查询规则详情
@@ -11420,9 +13081,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowRuleResponse`
         """
-        return self._show_rule_with_http_info(request)
+        http_info = self._show_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_rule_with_http_info(self, request):
+    def show_rule_invoker(self, request):
+        http_info = self._show_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_rule_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11441,9 +13115,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11452,20 +13126,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_service(self, request):
         """查询服务详情
@@ -11478,9 +13148,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowServiceResponse`
         """
-        return self._show_service_with_http_info(request)
+        http_info = self._show_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_service_with_http_info(self, request):
+    def show_service_invoker(self, request):
+        http_info = self._show_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_service_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11499,9 +13182,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11510,20 +13193,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_task(self, request):
         """通过任务ID查询指定任务的信息
@@ -11536,9 +13215,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowTaskResponse`
         """
-        return self._show_task_with_http_info(request)
+        http_info = self._show_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_task_with_http_info(self, request):
+    def show_task_invoker(self, request):
+        http_info = self._show_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_task_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11557,9 +13249,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11568,20 +13260,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def start_test_datasource(self, request):
         """测试数据源连通性
@@ -11594,9 +13282,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.StartTestDatasourceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.StartTestDatasourceResponse`
         """
-        return self._start_test_datasource_with_http_info(request)
+        http_info = self._start_test_datasource_http_info(request)
+        return self._call_api(**http_info)
 
-    def _start_test_datasource_with_http_info(self, request):
+    def start_test_datasource_invoker(self, request):
+        http_info = self._start_test_datasource_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _start_test_datasource_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}/test-connect",
+            "request_type": request.__class__.__name__,
+            "response_type": "StartTestDatasourceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11615,11 +13316,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11628,20 +13329,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}/test-connect',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StartTestDatasourceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def stop_task(self, request):
         """手工停止当前执行的任务
@@ -11654,9 +13351,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.StopTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.StopTaskResponse`
         """
-        return self._stop_task_with_http_info(request)
+        http_info = self._stop_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _stop_task_with_http_info(self, request):
+    def stop_task_invoker(self, request):
+        http_info = self._stop_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _stop_task_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/terminate",
+            "request_type": request.__class__.__name__,
+            "response_type": "StopTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11675,9 +13385,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11686,20 +13396,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/terminate',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='StopTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def unpublish_live_data_api_v2(self, request):
         """撤销后端API
@@ -11712,9 +13418,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UnpublishLiveDataApiV2Response`
         """
-        return self._unpublish_live_data_api_v2_with_http_info(request)
+        http_info = self._unpublish_live_data_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _unpublish_live_data_api_v2_with_http_info(self, request):
+    def unpublish_live_data_api_v2_invoker(self, request):
+        http_info = self._unpublish_live_data_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _unpublish_live_data_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/undeploy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UnpublishLiveDataApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11733,9 +13452,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11744,20 +13463,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}/undeploy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UnpublishLiveDataApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_acl(self, request):
         """设置APP的访问控制
@@ -11770,9 +13485,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppAclRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppAclResponse`
         """
-        return self._update_app_acl_with_http_info(request)
+        http_info = self._update_app_acl_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_acl_with_http_info(self, request):
+    def update_app_acl_invoker(self, request):
+        http_info = self._update_app_acl_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_acl_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-acl",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppAclResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11791,11 +13519,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11804,20 +13532,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/app-acl',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppAclResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_config_v2(self, request):
         """修改应用配置
@@ -11830,9 +13554,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppConfigV2Response`
         """
-        return self._update_app_config_v2_with_http_info(request)
+        http_info = self._update_app_config_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_config_v2_with_http_info(self, request):
+    def update_app_config_v2_invoker(self, request):
+        http_info = self._update_app_config_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_config_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/configs/{app_config_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppConfigV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11853,11 +13590,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11866,20 +13603,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apps/{app_id}/configs/{app_config_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppConfigV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_app_quota(self, request):
         """修改客户端配额
@@ -11892,9 +13625,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAppQuotaResponse`
         """
-        return self._update_app_quota_with_http_info(request)
+        http_info = self._update_app_quota_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_app_quota_with_http_info(self, request):
+    def update_app_quota_invoker(self, request):
+        http_info = self._update_app_quota_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_app_quota_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAppQuotaResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11913,11 +13659,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11926,20 +13672,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-quotas/{app_quota_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAppQuotaResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_command(self, request):
         """修改命令
@@ -11952,9 +13694,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCommandRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCommandResponse`
         """
-        return self._update_command_with_http_info(request)
+        http_info = self._update_command_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_command_with_http_info(self, request):
+    def update_command_invoker(self, request):
+        http_info = self._update_command_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_command_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCommandResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -11975,11 +13730,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -11988,20 +13743,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCommandResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_custom_authorizer_v2(self, request):
         """修改自定义认证
@@ -12014,9 +13765,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCustomAuthorizerV2Response`
         """
-        return self._update_custom_authorizer_v2_with_http_info(request)
+        http_info = self._update_custom_authorizer_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_custom_authorizer_v2_with_http_info(self, request):
+    def update_custom_authorizer_v2_invoker(self, request):
+        http_info = self._update_custom_authorizer_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_custom_authorizer_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/authorizers/{authorizer_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCustomAuthorizerV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12035,11 +13799,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12048,20 +13812,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/authorizers/{authorizer_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCustomAuthorizerV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_datasource_info(self, request):
         """修改数据源
@@ -12074,9 +13834,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDatasourceInfoResponse`
         """
-        return self._update_datasource_info_with_http_info(request)
+        http_info = self._update_datasource_info_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_datasource_info_with_http_info(self, request):
+    def update_datasource_info_invoker(self, request):
+        http_info = self._update_datasource_info_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_datasource_info_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDatasourceInfoResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12095,11 +13868,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12108,20 +13881,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/datasources/{datasource_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDatasourceInfoResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_device(self, request):
         """修改设备
@@ -12134,9 +13903,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceResponse`
         """
-        return self._update_device_with_http_info(request)
+        http_info = self._update_device_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_device_with_http_info(self, request):
+    def update_device_invoker(self, request):
+        http_info = self._update_device_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_device_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12155,11 +13937,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12168,20 +13950,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/devices/{device_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeviceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_device_group(self, request):
         """修改设备分组
@@ -12194,9 +13972,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDeviceGroupResponse`
         """
-        return self._update_device_group_with_http_info(request)
+        http_info = self._update_device_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_device_group_with_http_info(self, request):
+    def update_device_group_invoker(self, request):
+        http_info = self._update_device_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_device_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDeviceGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12215,11 +14006,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12228,20 +14019,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/device-groups/{group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDeviceGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_dispatches(self, request):
         """修改调度计划
@@ -12254,9 +14041,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDispatchesRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDispatchesResponse`
         """
-        return self._update_dispatches_with_http_info(request)
+        http_info = self._update_dispatches_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_dispatches_with_http_info(self, request):
+    def update_dispatches_invoker(self, request):
+        http_info = self._update_dispatches_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_dispatches_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/dispatches/{dispatch_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDispatchesResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12277,11 +14077,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12290,20 +14090,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}/dispatches/{dispatch_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDispatchesResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_domain_v2(self, request):
         """修改域名
@@ -12316,9 +14112,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDomainV2Response`
         """
-        return self._update_domain_v2_with_http_info(request)
+        http_info = self._update_domain_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_domain_v2_with_http_info(self, request):
+    def update_domain_v2_invoker(self, request):
+        http_info = self._update_domain_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_domain_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDomainV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12339,11 +14148,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12352,20 +14161,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDomainV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_environment_v2(self, request):
         """修改环境
@@ -12378,9 +14183,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentV2Response`
         """
-        return self._update_environment_v2_with_http_info(request)
+        http_info = self._update_environment_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_environment_v2_with_http_info(self, request):
+    def update_environment_v2_invoker(self, request):
+        http_info = self._update_environment_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_environment_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/envs/{env_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEnvironmentV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12399,11 +14217,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12412,20 +14230,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/envs/{env_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEnvironmentV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_environment_variable_v2(self, request):
         """修改变量
@@ -12438,9 +14252,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateEnvironmentVariableV2Response`
         """
-        return self._update_environment_variable_v2_with_http_info(request)
+        http_info = self._update_environment_variable_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_environment_variable_v2_with_http_info(self, request):
+    def update_environment_variable_v2_invoker(self, request):
+        http_info = self._update_environment_variable_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_environment_variable_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/env-variables/{env_variable_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateEnvironmentVariableV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12459,11 +14286,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12472,20 +14299,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/env-variables/{env_variable_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateEnvironmentVariableV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_live_data_api_v2(self, request):
         """修改后端API
@@ -12498,9 +14321,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateLiveDataApiV2Response`
         """
-        return self._update_live_data_api_v2_with_http_info(request)
+        http_info = self._update_live_data_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_live_data_api_v2_with_http_info(self, request):
+    def update_live_data_api_v2_invoker(self, request):
+        http_info = self._update_live_data_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_live_data_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateLiveDataApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12519,11 +14355,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12532,20 +14368,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/livedata-apis/{ld_api_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateLiveDataApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_mqs_instance_topic(self, request):
         """修改Topic
@@ -12558,9 +14390,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMqsInstanceTopicResponse`
         """
-        return self._update_mqs_instance_topic_with_http_info(request)
+        http_info = self._update_mqs_instance_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_mqs_instance_topic_with_http_info(self, request):
+    def update_mqs_instance_topic_invoker(self, request):
+        http_info = self._update_mqs_instance_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_mqs_instance_topic_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMqsInstanceTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12577,11 +14422,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12590,20 +14435,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMqsInstanceTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_multi_tasks(self, request):
         """修改组合任务
@@ -12616,9 +14457,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMultiTasksResponse`
         """
-        return self._update_multi_tasks_with_http_info(request)
+        http_info = self._update_multi_tasks_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_multi_tasks_with_http_info(self, request):
+    def update_multi_tasks_invoker(self, request):
+        http_info = self._update_multi_tasks_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_multi_tasks_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMultiTasksResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12637,11 +14491,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12650,20 +14504,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/multi-tasks/{task_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMultiTasksResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_notification(self, request):
         """修改订阅管理
@@ -12676,9 +14526,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateNotificationRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateNotificationResponse`
         """
-        return self._update_notification_with_http_info(request)
+        http_info = self._update_notification_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_notification_with_http_info(self, request):
+    def update_notification_invoker(self, request):
+        http_info = self._update_notification_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_notification_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/notifications/{notification_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateNotificationResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12697,11 +14560,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12710,20 +14573,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/notifications/{notification_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateNotificationResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_plugin(self, request):
         """修改插件
@@ -12738,9 +14597,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdatePluginRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdatePluginResponse`
         """
-        return self._update_plugin_with_http_info(request)
+        http_info = self._update_plugin_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_plugin_with_http_info(self, request):
+    def update_plugin_invoker(self, request):
+        http_info = self._update_plugin_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_plugin_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePluginResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12759,11 +14631,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12772,20 +14644,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/plugins/{plugin_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePluginResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_product(self, request):
         """修改产品信息
@@ -12798,9 +14666,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductResponse`
         """
-        return self._update_product_with_http_info(request)
+        http_info = self._update_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_product_with_http_info(self, request):
+    def update_product_invoker(self, request):
+        http_info = self._update_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_product_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12819,11 +14700,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12832,20 +14713,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_product_template(self, request):
         """修改产品模板
@@ -12858,9 +14735,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTemplateResponse`
         """
-        return self._update_product_template_with_http_info(request)
+        http_info = self._update_product_template_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_product_template_with_http_info(self, request):
+    def update_product_template_invoker(self, request):
+        http_info = self._update_product_template_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_product_template_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/product-templates/{product_template_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProductTemplateResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12879,11 +14769,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12892,20 +14782,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/product-templates/{product_template_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProductTemplateResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_product_topic(self, request):
         """更新产品主题
@@ -12918,9 +14804,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProductTopicRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProductTopicResponse`
         """
-        return self._update_product_topic_with_http_info(request)
+        http_info = self._update_product_topic_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_product_topic_with_http_info(self, request):
+    def update_product_topic_invoker(self, request):
+        http_info = self._update_product_topic_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_product_topic_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/topics/{topic_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProductTopicResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -12941,11 +14840,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -12954,20 +14853,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/{product_id}/topics/{topic_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProductTopicResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_property(self, request):
         """修改服务属性
@@ -12980,9 +14875,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdatePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdatePropertyResponse`
         """
-        return self._update_property_with_http_info(request)
+        http_info = self._update_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_property_with_http_info(self, request):
+    def update_property_invoker(self, request):
+        http_info = self._update_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_property_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdatePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13003,11 +14911,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13016,20 +14924,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/properties/{property_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdatePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_request_property(self, request):
         """修改请求属性
@@ -13042,9 +14946,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRequestPropertyResponse`
         """
-        return self._update_request_property_with_http_info(request)
+        http_info = self._update_request_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_request_property_with_http_info(self, request):
+    def update_request_property_invoker(self, request):
+        http_info = self._update_request_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_request_property_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRequestPropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13067,11 +14984,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13080,20 +14997,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/requests/{property_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRequestPropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_request_throttling_policy_v2(self, request):
         """修改流控策略
@@ -13106,9 +15019,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRequestThrottlingPolicyV2Response`
         """
-        return self._update_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._update_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_request_throttling_policy_v2_with_http_info(self, request):
+    def update_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._update_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13127,11 +15053,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13140,20 +15066,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_response_property(self, request):
         """修改响应属性
@@ -13166,9 +15088,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateResponsePropertyResponse`
         """
-        return self._update_response_property_with_http_info(request)
+        http_info = self._update_response_property_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_response_property_with_http_info(self, request):
+    def update_response_property_invoker(self, request):
+        http_info = self._update_response_property_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_response_property_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses/{property_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateResponsePropertyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13191,11 +15126,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13204,20 +15139,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}/commands/{command_id}/responses/{property_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateResponsePropertyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_rule(self, request):
         """修改规则
@@ -13230,9 +15161,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRuleRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRuleResponse`
         """
-        return self._update_rule_with_http_info(request)
+        http_info = self._update_rule_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_rule_with_http_info(self, request):
+    def update_rule_invoker(self, request):
+        http_info = self._update_rule_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_rule_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRuleResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13251,11 +15195,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13264,20 +15208,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/rules/{rule_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRuleResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_service(self, request):
         """修改服务
@@ -13290,9 +15230,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateServiceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateServiceResponse`
         """
-        return self._update_service_with_http_info(request)
+        http_info = self._update_service_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_service_with_http_info(self, request):
+    def update_service_invoker(self, request):
+        http_info = self._update_service_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_service_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/services/{service_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateServiceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13311,11 +15264,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13324,20 +15277,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/services/{service_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateServiceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_signature_key_v2(self, request):
         """修改签名密钥
@@ -13350,9 +15299,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateSignatureKeyV2Response`
         """
-        return self._update_signature_key_v2_with_http_info(request)
+        http_info = self._update_signature_key_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_signature_key_v2_with_http_info(self, request):
+    def update_signature_key_v2_invoker(self, request):
+        http_info = self._update_signature_key_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_signature_key_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/signs/{sign_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSignatureKeyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13371,11 +15333,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13384,20 +15346,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/signs/{sign_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSignatureKeyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_special_throttling_configuration_v2(self, request):
         """修改特殊设置
@@ -13410,9 +15368,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateSpecialThrottlingConfigurationV2Response`
         """
-        return self._update_special_throttling_configuration_v2_with_http_info(request)
+        http_info = self._update_special_throttling_configuration_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_special_throttling_configuration_v2_with_http_info(self, request):
+    def update_special_throttling_configuration_v2_invoker(self, request):
+        http_info = self._update_special_throttling_configuration_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_special_throttling_configuration_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}/throttle-specials/{strategy_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateSpecialThrottlingConfigurationV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13433,11 +15404,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13446,20 +15417,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttles/{throttle_id}/throttle-specials/{strategy_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateSpecialThrottlingConfigurationV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_task(self, request):
         """更新普通任务
@@ -13472,9 +15439,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateTaskRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateTaskResponse`
         """
-        return self._update_task_with_http_info(request)
+        http_info = self._update_task_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_task_with_http_info(self, request):
+    def update_task_invoker(self, request):
+        http_info = self._update_task_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_task_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTaskResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13493,11 +15473,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13506,20 +15486,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/fdi/instances/{instance_id}/tasks/{task_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTaskResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_topic_access_policy(self, request):
         """更新Topic权限
@@ -13532,9 +15508,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateTopicAccessPolicyResponse`
         """
-        return self._update_topic_access_policy_with_http_info(request)
+        http_info = self._update_topic_access_policy_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_topic_access_policy_with_http_info(self, request):
+    def update_topic_access_policy_invoker(self, request):
+        http_info = self._update_topic_access_policy_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_topic_access_policy_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}/topics/accesspolicy",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateTopicAccessPolicyResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13551,11 +15540,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13564,20 +15553,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}/topics/accesspolicy',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateTopicAccessPolicyResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def upload_product(self, request):
         """导入产品
@@ -13590,9 +15575,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UploadProductRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UploadProductResponse`
         """
-        return self._upload_product_with_http_info(request)
+        http_info = self._upload_product_http_info(request)
+        return self._call_api(**http_info)
 
-    def _upload_product_with_http_info(self, request):
+    def upload_product_invoker(self, request):
+        http_info = self._upload_product_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _upload_product_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/link/instances/{instance_id}/products/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "UploadProductResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13611,11 +15609,11 @@ class RomaClient(Client):
         if 'file' in local_var_params:
             form_params['file'] = local_var_params['file']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13624,20 +15622,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/link/instances/{instance_id}/products/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UploadProductResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_acl_v2(self, request):
         """批量删除ACL策略
@@ -13652,9 +15646,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteAclV2Response`
         """
-        return self._batch_delete_acl_v2_with_http_info(request)
+        http_info = self._batch_delete_acl_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_acl_v2_with_http_info(self, request):
+    def batch_delete_acl_v2_invoker(self, request):
+        http_info = self._batch_delete_acl_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_acl_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteAclV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13673,11 +15680,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13686,20 +15693,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acls',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteAclV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_acl_strategy_v2(self, request):
         """创建ACL策略
@@ -13712,9 +15715,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAclStrategyV2Response`
         """
-        return self._create_acl_strategy_v2_with_http_info(request)
+        http_info = self._create_acl_strategy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_acl_strategy_v2_with_http_info(self, request):
+    def create_acl_strategy_v2_invoker(self, request):
+        http_info = self._create_acl_strategy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_acl_strategy_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAclStrategyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13731,11 +15747,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13744,20 +15760,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acls',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAclStrategyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_acl_v2(self, request):
         """删除ACL策略
@@ -13770,9 +15782,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAclV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAclV2Response`
         """
-        return self._delete_acl_v2_with_http_info(request)
+        http_info = self._delete_acl_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_acl_v2_with_http_info(self, request):
+    def delete_acl_v2_invoker(self, request):
+        http_info = self._delete_acl_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_acl_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acls/{acl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAclV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13791,9 +15816,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13802,20 +15827,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acls/{acl_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAclV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_acl_strategies_v2(self, request):
         """查看ACL策略列表
@@ -13828,9 +15849,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAclStrategiesV2Response`
         """
-        return self._list_acl_strategies_v2_with_http_info(request)
+        http_info = self._list_acl_strategies_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_acl_strategies_v2_with_http_info(self, request):
+    def list_acl_strategies_v2_invoker(self, request):
+        http_info = self._list_acl_strategies_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_acl_strategies_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAclStrategiesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13861,9 +15895,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13872,20 +15906,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAclStrategiesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_acl_policy_v2(self, request):
         """查看ACL策略详情
@@ -13898,9 +15928,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfAclPolicyV2Response`
         """
-        return self._show_details_of_acl_policy_v2_with_http_info(request)
+        http_info = self._show_details_of_acl_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_acl_policy_v2_with_http_info(self, request):
+    def show_details_of_acl_policy_v2_invoker(self, request):
+        http_info = self._show_details_of_acl_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_acl_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acls/{acl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfAclPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13919,9 +15962,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13930,20 +15973,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acls/{acl_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfAclPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_acl_strategy_v2(self, request):
         """修改ACL策略
@@ -13956,9 +15995,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateAclStrategyV2Response`
         """
-        return self._update_acl_strategy_v2_with_http_info(request)
+        http_info = self._update_acl_strategy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_acl_strategy_v2_with_http_info(self, request):
+    def update_acl_strategy_v2_invoker(self, request):
+        http_info = self._update_acl_strategy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_acl_strategy_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acls/{acl_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateAclStrategyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -13977,11 +16029,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -13990,20 +16042,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acls/{acl_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateAclStrategyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def associate_request_throttling_policy_v2(self, request):
         """绑定流控策略
@@ -14022,9 +16070,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AssociateRequestThrottlingPolicyV2Response`
         """
-        return self._associate_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._associate_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _associate_request_throttling_policy_v2_with_http_info(self, request):
+    def associate_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._associate_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _associate_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "AssociateRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14041,11 +16102,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14054,20 +16115,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AssociateRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disassociate_throttling_policy_v2(self, request):
         """批量解绑流控策略
@@ -14080,9 +16137,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDisassociateThrottlingPolicyV2Response`
         """
-        return self._batch_disassociate_throttling_policy_v2_with_http_info(request)
+        http_info = self._batch_disassociate_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disassociate_throttling_policy_v2_with_http_info(self, request):
+    def batch_disassociate_throttling_policy_v2_invoker(self, request):
+        http_info = self._batch_disassociate_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_disassociate_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociateThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14101,11 +16171,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14114,20 +16184,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisassociateThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_publish_or_offline_api_v2(self, request):
         """批量发布或下线API
@@ -14142,9 +16208,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchPublishOrOfflineApiV2Response`
         """
-        return self._batch_publish_or_offline_api_v2_with_http_info(request)
+        http_info = self._batch_publish_or_offline_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_publish_or_offline_api_v2_with_http_info(self, request):
+    def batch_publish_or_offline_api_v2_invoker(self, request):
+        http_info = self._batch_publish_or_offline_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_publish_or_offline_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/publish",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchPublishOrOfflineApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14163,11 +16242,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14176,20 +16255,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/publish',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchPublishOrOfflineApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def change_api_version_v2(self, request):
         """切换API版本
@@ -14204,9 +16279,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ChangeApiVersionV2Response`
         """
-        return self._change_api_version_v2_with_http_info(request)
+        http_info = self._change_api_version_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _change_api_version_v2_with_http_info(self, request):
+    def change_api_version_v2_invoker(self, request):
+        http_info = self._change_api_version_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _change_api_version_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/publish/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ChangeApiVersionV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14225,11 +16313,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14238,20 +16326,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/publish/{api_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ChangeApiVersionV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_api_groups_v2(self, request):
         """校验API分组名称是否存在
@@ -14264,9 +16348,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckApiGroupsV2Response`
         """
-        return self._check_api_groups_v2_with_http_info(request)
+        http_info = self._check_api_groups_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_api_groups_v2_with_http_info(self, request):
+    def check_api_groups_v2_invoker(self, request):
+        http_info = self._check_api_groups_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_api_groups_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckApiGroupsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14283,11 +16380,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14296,20 +16393,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckApiGroupsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_apis_v2(self, request):
         """校验API定义
@@ -14322,9 +16415,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckApisV2Response`
         """
-        return self._check_apis_v2_with_http_info(request)
+        http_info = self._check_apis_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_apis_v2_with_http_info(self, request):
+    def check_apis_v2_invoker(self, request):
+        http_info = self._check_apis_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_apis_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/check",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckApisV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14341,11 +16447,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14354,20 +16460,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/check',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckApisV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_api_group_v2(self, request):
         """创建API分组
@@ -14380,9 +16482,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiGroupV2Response`
         """
-        return self._create_api_group_v2_with_http_info(request)
+        http_info = self._create_api_group_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_api_group_v2_with_http_info(self, request):
+    def create_api_group_v2_invoker(self, request):
+        http_info = self._create_api_group_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_api_group_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApiGroupV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14399,11 +16514,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14412,20 +16527,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApiGroupV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_api_v2(self, request):
         """创建API
@@ -14439,9 +16550,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiV2Response`
         """
-        return self._create_api_v2_with_http_info(request)
+        http_info = self._create_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_api_v2_with_http_info(self, request):
+    def create_api_v2_invoker(self, request):
+        http_info = self._create_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14458,11 +16582,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14471,20 +16595,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_or_delete_publish_record_for_api_v2(self, request):
         """发布或下线API
@@ -14501,9 +16621,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateOrDeletePublishRecordForApiV2Response`
         """
-        return self._create_or_delete_publish_record_for_api_v2_with_http_info(request)
+        http_info = self._create_or_delete_publish_record_for_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_or_delete_publish_record_for_api_v2_with_http_info(self, request):
+    def create_or_delete_publish_record_for_api_v2_invoker(self, request):
+        http_info = self._create_or_delete_publish_record_for_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_or_delete_publish_record_for_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/action",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateOrDeletePublishRecordForApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14520,11 +16653,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14533,20 +16666,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/action',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateOrDeletePublishRecordForApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def debug_api_v2(self, request):
         """调试API
@@ -14559,9 +16688,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DebugApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DebugApiV2Response`
         """
-        return self._debug_api_v2_with_http_info(request)
+        http_info = self._debug_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _debug_api_v2_with_http_info(self, request):
+    def debug_api_v2_invoker(self, request):
+        http_info = self._debug_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _debug_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/debug/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DebugApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14580,11 +16722,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14593,20 +16735,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/debug/{api_id}',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DebugApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api_by_version_id_v2(self, request):
         """根据版本编号下线API
@@ -14619,9 +16757,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiByVersionIdV2Response`
         """
-        return self._delete_api_by_version_id_v2_with_http_info(request)
+        http_info = self._delete_api_by_version_id_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_by_version_id_v2_with_http_info(self, request):
+    def delete_api_by_version_id_v2_invoker(self, request):
+        http_info = self._delete_api_by_version_id_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_api_by_version_id_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiByVersionIdV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14640,9 +16791,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14651,20 +16802,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/versions/{version_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiByVersionIdV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api_group_v2(self, request):
         """删除API分组
@@ -14681,9 +16828,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiGroupV2Response`
         """
-        return self._delete_api_group_v2_with_http_info(request)
+        http_info = self._delete_api_group_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_group_v2_with_http_info(self, request):
+    def delete_api_group_v2_invoker(self, request):
+        http_info = self._delete_api_group_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_api_group_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiGroupV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14702,9 +16862,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14713,20 +16873,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiGroupV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api_v2(self, request):
         """删除API
@@ -14741,9 +16897,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiV2Response`
         """
-        return self._delete_api_v2_with_http_info(request)
+        http_info = self._delete_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_v2_with_http_info(self, request):
+    def delete_api_v2_invoker(self, request):
+        http_info = self._delete_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14762,9 +16931,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14773,20 +16942,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def disassociate_request_throttling_policy_v2(self, request):
         """解除API与流控策略的绑定关系
@@ -14799,9 +16964,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DisassociateRequestThrottlingPolicyV2Response`
         """
-        return self._disassociate_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._disassociate_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _disassociate_request_throttling_policy_v2_with_http_info(self, request):
+    def disassociate_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._disassociate_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _disassociate_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings/{throttle_binding_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DisassociateRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14820,9 +16998,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14831,20 +17009,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings/{throttle_binding_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DisassociateRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_groups_v2(self, request):
         """查询分组列表
@@ -14859,9 +17033,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiGroupsV2Response`
         """
-        return self._list_api_groups_v2_with_http_info(request)
+        http_info = self._list_api_groups_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_groups_v2_with_http_info(self, request):
+    def list_api_groups_v2_invoker(self, request):
+        http_info = self._list_api_groups_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_groups_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiGroupsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14892,9 +17079,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14903,20 +17090,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiGroupsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_runtime_definition_v2(self, request):
         """查询API运行时定义
@@ -14935,9 +17118,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiRuntimeDefinitionV2Response`
         """
-        return self._list_api_runtime_definition_v2_with_http_info(request)
+        http_info = self._list_api_runtime_definition_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_runtime_definition_v2_with_http_info(self, request):
+    def list_api_runtime_definition_v2_invoker(self, request):
+        http_info = self._list_api_runtime_definition_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_runtime_definition_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/runtime/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiRuntimeDefinitionV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -14958,9 +17154,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -14969,20 +17165,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/runtime/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiRuntimeDefinitionV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_version_detail_v2(self, request):
         """查看版本详情
@@ -14995,9 +17187,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiVersionDetailV2Response`
         """
-        return self._list_api_version_detail_v2_with_http_info(request)
+        http_info = self._list_api_version_detail_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_version_detail_v2_with_http_info(self, request):
+    def list_api_version_detail_v2_invoker(self, request):
+        http_info = self._list_api_version_detail_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_version_detail_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/versions/{version_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionDetailV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15016,9 +17221,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15027,20 +17232,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/versions/{version_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionDetailV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_api_versions_v2(self, request):
         """查询API历史版本列表
@@ -15053,9 +17254,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApiVersionsV2Response`
         """
-        return self._list_api_versions_v2_with_http_info(request)
+        http_info = self._list_api_versions_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_api_versions_v2_with_http_info(self, request):
+    def list_api_versions_v2_invoker(self, request):
+        http_info = self._list_api_versions_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_api_versions_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/publish/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApiVersionsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15082,9 +17296,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15093,20 +17307,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/publish/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApiVersionsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_binded_to_request_throttling_policy_v2(self, request):
         """查看流控策略绑定的API列表
@@ -15119,9 +17329,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToRequestThrottlingPolicyV2Response`
         """
-        return self._list_apis_binded_to_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._list_apis_binded_to_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_binded_to_request_throttling_policy_v2_with_http_info(self, request):
+    def list_apis_binded_to_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._list_apis_binded_to_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_binded_to_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings/binded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisBindedToRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15152,9 +17375,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15163,20 +17386,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings/binded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisBindedToRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_unbinded_to_request_throttling_policy_v2(self, request):
         """查看流控策略未绑定的API列表
@@ -15189,9 +17408,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToRequestThrottlingPolicyV2Response`
         """
-        return self._list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(request)
+        http_info = self._list_apis_unbinded_to_request_throttling_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_unbinded_to_request_throttling_policy_v2_with_http_info(self, request):
+    def list_apis_unbinded_to_request_throttling_policy_v2_invoker(self, request):
+        http_info = self._list_apis_unbinded_to_request_throttling_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_unbinded_to_request_throttling_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings/unbinded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisUnbindedToRequestThrottlingPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15222,9 +17454,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15233,20 +17465,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings/unbinded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisUnbindedToRequestThrottlingPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_v2(self, request):
         """查询API列表
@@ -15259,9 +17487,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisV2Response`
         """
-        return self._list_apis_v2_with_http_info(request)
+        http_info = self._list_apis_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_v2_with_http_info(self, request):
+    def list_apis_v2_invoker(self, request):
+        http_info = self._list_apis_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15310,9 +17551,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15321,20 +17562,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_request_throttling_policies_binded_to_api_v2(self, request):
         """查看API绑定的流控策略列表
@@ -15347,9 +17584,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRequestThrottlingPoliciesBindedToApiV2Response`
         """
-        return self._list_request_throttling_policies_binded_to_api_v2_with_http_info(request)
+        http_info = self._list_request_throttling_policies_binded_to_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_request_throttling_policies_binded_to_api_v2_with_http_info(self, request):
+    def list_request_throttling_policies_binded_to_api_v2_invoker(self, request):
+        http_info = self._list_request_throttling_policies_binded_to_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_request_throttling_policies_binded_to_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings/binded-throttles",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRequestThrottlingPoliciesBindedToApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15378,9 +17628,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15389,20 +17639,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/throttle-bindings/binded-throttles',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRequestThrottlingPoliciesBindedToApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_api_group_v2(self, request):
         """查询分组详情
@@ -15415,9 +17661,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiGroupV2Response`
         """
-        return self._show_details_of_api_group_v2_with_http_info(request)
+        http_info = self._show_details_of_api_group_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_api_group_v2_with_http_info(self, request):
+    def show_details_of_api_group_v2_invoker(self, request):
+        http_info = self._show_details_of_api_group_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_api_group_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfApiGroupV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15436,9 +17695,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15447,20 +17706,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfApiGroupV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_api_v2(self, request):
         """查询API详情
@@ -15473,9 +17728,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfApiV2Response`
         """
-        return self._show_details_of_api_v2_with_http_info(request)
+        http_info = self._show_details_of_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_api_v2_with_http_info(self, request):
+    def show_details_of_api_v2_invoker(self, request):
+        http_info = self._show_details_of_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15494,9 +17762,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15505,20 +17773,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_api_group_v2(self, request):
         """修改API分组
@@ -15531,9 +17795,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateApiGroupV2Response`
         """
-        return self._update_api_group_v2_with_http_info(request)
+        http_info = self._update_api_group_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_api_group_v2_with_http_info(self, request):
+    def update_api_group_v2_invoker(self, request):
+        http_info = self._update_api_group_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_api_group_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApiGroupV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15552,11 +17829,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15565,20 +17842,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateApiGroupV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_api_v2(self, request):
         """修改API
@@ -15591,9 +17864,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateApiV2Response`
         """
-        return self._update_api_v2_with_http_info(request)
+        http_info = self._update_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_api_v2_with_http_info(self, request):
+    def update_api_v2_invoker(self, request):
+        http_info = self._update_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15612,11 +17898,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15625,20 +17911,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/apis/{api_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_delete_api_acl_binding_v2(self, request):
         """批量解除API与ACL策略的绑定
@@ -15651,9 +17933,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDeleteApiAclBindingV2Response`
         """
-        return self._batch_delete_api_acl_binding_v2_with_http_info(request)
+        http_info = self._batch_delete_api_acl_binding_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_delete_api_acl_binding_v2_with_http_info(self, request):
+    def batch_delete_api_acl_binding_v2_invoker(self, request):
+        http_info = self._batch_delete_api_acl_binding_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_delete_api_acl_binding_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acl-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDeleteApiAclBindingV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15672,11 +17967,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15685,20 +17980,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acl-bindings',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDeleteApiAclBindingV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_api_acl_binding_v2(self, request):
         """将API与ACL策略进行绑定
@@ -15713,9 +18004,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateApiAclBindingV2Response`
         """
-        return self._create_api_acl_binding_v2_with_http_info(request)
+        http_info = self._create_api_acl_binding_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_api_acl_binding_v2_with_http_info(self, request):
+    def create_api_acl_binding_v2_invoker(self, request):
+        http_info = self._create_api_acl_binding_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_api_acl_binding_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acl-bindings",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateApiAclBindingV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15732,11 +18036,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15745,20 +18049,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acl-bindings',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateApiAclBindingV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_api_acl_binding_v2(self, request):
         """解除API与ACL策略的绑定
@@ -15771,9 +18071,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteApiAclBindingV2Response`
         """
-        return self._delete_api_acl_binding_v2_with_http_info(request)
+        http_info = self._delete_api_acl_binding_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_api_acl_binding_v2_with_http_info(self, request):
+    def delete_api_acl_binding_v2_invoker(self, request):
+        http_info = self._delete_api_acl_binding_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_api_acl_binding_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acl-bindings/{acl_bindings_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteApiAclBindingV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15792,9 +18105,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15803,20 +18116,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acl-bindings/{acl_bindings_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteApiAclBindingV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_acl_policy_binded_to_api_v2(self, request):
         """查看API绑定的ACL策略列表
@@ -15829,9 +18138,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAclPolicyBindedToApiV2Response`
         """
-        return self._list_acl_policy_binded_to_api_v2_with_http_info(request)
+        http_info = self._list_acl_policy_binded_to_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_acl_policy_binded_to_api_v2_with_http_info(self, request):
+    def list_acl_policy_binded_to_api_v2_invoker(self, request):
+        http_info = self._list_acl_policy_binded_to_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_acl_policy_binded_to_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acl-bindings/binded-acls",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAclPolicyBindedToApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15862,9 +18184,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15873,20 +18195,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acl-bindings/binded-acls',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAclPolicyBindedToApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_binded_to_acl_policy_v2(self, request):
         """查看ACL策略绑定的API列表
@@ -15899,9 +18217,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToAclPolicyV2Response`
         """
-        return self._list_apis_binded_to_acl_policy_v2_with_http_info(request)
+        http_info = self._list_apis_binded_to_acl_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_binded_to_acl_policy_v2_with_http_info(self, request):
+    def list_apis_binded_to_acl_policy_v2_invoker(self, request):
+        http_info = self._list_apis_binded_to_acl_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_binded_to_acl_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acl-bindings/binded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisBindedToAclPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -15930,9 +18261,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -15941,20 +18272,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acl-bindings/binded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisBindedToAclPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_unbinded_to_acl_policy_v2(self, request):
         """查看ACL策略未绑定的API列表
@@ -15967,9 +18294,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAclPolicyV2Response`
         """
-        return self._list_apis_unbinded_to_acl_policy_v2_with_http_info(request)
+        http_info = self._list_apis_unbinded_to_acl_policy_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_unbinded_to_acl_policy_v2_with_http_info(self, request):
+    def list_apis_unbinded_to_acl_policy_v2_invoker(self, request):
+        http_info = self._list_apis_unbinded_to_acl_policy_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_unbinded_to_acl_policy_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/acl-bindings/unbinded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisUnbindedToAclPolicyV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16000,9 +18340,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16011,20 +18351,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/acl-bindings/unbinded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisUnbindedToAclPolicyV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def canceling_authorization_v2(self, request):
         """解除授权
@@ -16037,9 +18373,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CancelingAuthorizationV2Response`
         """
-        return self._canceling_authorization_v2_with_http_info(request)
+        http_info = self._canceling_authorization_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _canceling_authorization_v2_with_http_info(self, request):
+    def canceling_authorization_v2_invoker(self, request):
+        http_info = self._canceling_authorization_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _canceling_authorization_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-auths/{app_auth_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CancelingAuthorizationV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16058,9 +18407,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16069,20 +18418,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-auths/{app_auth_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CancelingAuthorizationV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_authorizing_apps_v2(self, request):
         """APP授权
@@ -16095,9 +18440,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateAuthorizingAppsV2Response`
         """
-        return self._create_authorizing_apps_v2_with_http_info(request)
+        http_info = self._create_authorizing_apps_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_authorizing_apps_v2_with_http_info(self, request):
+    def create_authorizing_apps_v2_invoker(self, request):
+        http_info = self._create_authorizing_apps_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_authorizing_apps_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-auths",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateAuthorizingAppsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16114,11 +18472,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16127,20 +18485,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-auths',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateAuthorizingAppsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_binded_to_app_v2(self, request):
         """查看APP已绑定的API列表
@@ -16153,9 +18507,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisBindedToAppV2Response`
         """
-        return self._list_apis_binded_to_app_v2_with_http_info(request)
+        http_info = self._list_apis_binded_to_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_binded_to_app_v2_with_http_info(self, request):
+    def list_apis_binded_to_app_v2_invoker(self, request):
+        http_info = self._list_apis_binded_to_app_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_binded_to_app_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-auths/binded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisBindedToAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16188,9 +18555,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16199,20 +18566,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-auths/binded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisBindedToAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apis_unbinded_to_app_v2(self, request):
         """查看APP未绑定的API列表
@@ -16225,9 +18588,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListApisUnbindedToAppV2Response`
         """
-        return self._list_apis_unbinded_to_app_v2_with_http_info(request)
+        http_info = self._list_apis_unbinded_to_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apis_unbinded_to_app_v2_with_http_info(self, request):
+    def list_apis_unbinded_to_app_v2_invoker(self, request):
+        http_info = self._list_apis_unbinded_to_app_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apis_unbinded_to_app_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-auths/unbinded-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListApisUnbindedToAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16258,9 +18634,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16269,20 +18645,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-auths/unbinded-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListApisUnbindedToAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_apps_binded_to_api_v2(self, request):
         """查看API已绑定的APP列表
@@ -16295,9 +18667,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAppsBindedToApiV2Response`
         """
-        return self._list_apps_binded_to_api_v2_with_http_info(request)
+        http_info = self._list_apps_binded_to_api_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_apps_binded_to_api_v2_with_http_info(self, request):
+    def list_apps_binded_to_api_v2_invoker(self, request):
+        http_info = self._list_apps_binded_to_api_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_apps_binded_to_api_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-auths/binded-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAppsBindedToApiV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16326,9 +18711,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16337,20 +18722,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-auths/binded-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAppsBindedToApiV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_duplicate_apis_for_app_v2(self, request):
         """查看APP下路径冲突的api列表
@@ -16363,9 +18744,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDuplicateApisForAppV2Response`
         """
-        return self._list_duplicate_apis_for_app_v2_with_http_info(request)
+        http_info = self._list_duplicate_apis_for_app_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_duplicate_apis_for_app_v2_with_http_info(self, request):
+    def list_duplicate_apis_for_app_v2_invoker(self, request):
+        http_info = self._list_duplicate_apis_for_app_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_duplicate_apis_for_app_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/app-auths/duplicate-apis",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDuplicateApisForAppV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16384,9 +18778,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16395,20 +18789,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/app-auths/duplicate-apis',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDuplicateApisForAppV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def add_user_to_app(self, request):
         """设置用户成员
@@ -16422,9 +18812,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AddUserToAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.AddUserToAppResponse`
         """
-        return self._add_user_to_app_with_http_info(request)
+        http_info = self._add_user_to_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _add_user_to_app_with_http_info(self, request):
+    def add_user_to_app_invoker(self, request):
+        http_info = self._add_user_to_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _add_user_to_app_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps/{app_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddUserToAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16443,11 +18846,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16456,20 +18859,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps/{app_id}/users',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddUserToAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_auth_users_of_app(self, request):
         """查询用户成员列表
@@ -16482,9 +18881,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckAuthUsersOfAppResponse`
         """
-        return self._check_auth_users_of_app_with_http_info(request)
+        http_info = self._check_auth_users_of_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_auth_users_of_app_with_http_info(self, request):
+    def check_auth_users_of_app_invoker(self, request):
+        http_info = self._check_auth_users_of_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_auth_users_of_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps/{app_id}/users",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckAuthUsersOfAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16505,9 +18917,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16516,20 +18928,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps/{app_id}/users',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckAuthUsersOfAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_can_auth_users_of_app(self, request):
         """查询候选用户成员
@@ -16542,9 +18950,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckCanAuthUsersOfAppResponse`
         """
-        return self._check_can_auth_users_of_app_with_http_info(request)
+        http_info = self._check_can_auth_users_of_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_can_auth_users_of_app_with_http_info(self, request):
+    def check_can_auth_users_of_app_invoker(self, request):
+        http_info = self._check_can_auth_users_of_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_can_auth_users_of_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps/{app_id}/candidates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckCanAuthUsersOfAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16565,9 +18986,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16576,20 +18997,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps/{app_id}/candidates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckCanAuthUsersOfAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_roma_app_details(self, request):
         """查询应用详情
@@ -16602,9 +19019,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaAppDetailsResponse`
         """
-        return self._check_roma_app_details_with_http_info(request)
+        http_info = self._check_roma_app_details_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_roma_app_details_with_http_info(self, request):
+    def check_roma_app_details_invoker(self, request):
+        http_info = self._check_roma_app_details_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_roma_app_details_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckRomaAppDetailsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16623,9 +19053,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16634,20 +19064,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps/{app_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckRomaAppDetailsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_roma_app_secret(self, request):
         """查询应用密钥
@@ -16660,9 +19086,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaAppSecretResponse`
         """
-        return self._check_roma_app_secret_with_http_info(request)
+        http_info = self._check_roma_app_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_roma_app_secret_with_http_info(self, request):
+    def check_roma_app_secret_invoker(self, request):
+        http_info = self._check_roma_app_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_roma_app_secret_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps/{app_id}/secret",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckRomaAppSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16681,9 +19120,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16692,20 +19131,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps/{app_id}/secret',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckRomaAppSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_roma_app(self, request):
         """创建应用
@@ -16718,9 +19153,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateRomaAppResponse`
         """
-        return self._create_roma_app_with_http_info(request)
+        http_info = self._create_roma_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_roma_app_with_http_info(self, request):
+    def create_roma_app_invoker(self, request):
+        http_info = self._create_roma_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_roma_app_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateRomaAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16737,11 +19185,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16750,20 +19198,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateRomaAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_roma_app(self, request):
         """删除应用
@@ -16776,9 +19220,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteRomaAppResponse`
         """
-        return self._delete_roma_app_with_http_info(request)
+        http_info = self._delete_roma_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_roma_app_with_http_info(self, request):
+    def delete_roma_app_invoker(self, request):
+        http_info = self._delete_roma_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_roma_app_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteRomaAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16797,9 +19254,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16808,20 +19265,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps/{app_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteRomaAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_roma_app(self, request):
         """查询应用列表
@@ -16834,9 +19287,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListRomaAppResponse`
         """
-        return self._list_roma_app_with_http_info(request)
+        http_info = self._list_roma_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_roma_app_with_http_info(self, request):
+    def list_roma_app_invoker(self, request):
+        http_info = self._list_roma_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_roma_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListRomaAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16867,9 +19333,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16878,20 +19344,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListRomaAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def reset_roma_app_secret(self, request):
         """重置应用密钥
@@ -16904,9 +19366,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ResetRomaAppSecretResponse`
         """
-        return self._reset_roma_app_secret_with_http_info(request)
+        http_info = self._reset_roma_app_secret_http_info(request)
+        return self._call_api(**http_info)
 
-    def _reset_roma_app_secret_with_http_info(self, request):
+    def reset_roma_app_secret_invoker(self, request):
+        http_info = self._reset_roma_app_secret_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _reset_roma_app_secret_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps/{app_id}/secret",
+            "request_type": request.__class__.__name__,
+            "response_type": "ResetRomaAppSecretResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16925,11 +19400,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16938,20 +19413,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps/{app_id}/secret',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ResetRomaAppSecretResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_roma_app(self, request):
         """更新应用
@@ -16964,9 +19435,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateRomaAppResponse`
         """
-        return self._update_roma_app_with_http_info(request)
+        http_info = self._update_roma_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_roma_app_with_http_info(self, request):
+    def update_roma_app_invoker(self, request):
+        http_info = self._update_roma_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_roma_app_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/apps/{app_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateRomaAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -16985,11 +19469,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -16998,20 +19482,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/apps/{app_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateRomaAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_roma_app(self, request):
         """校验应用是否存在
@@ -17024,9 +19504,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ValidateRomaAppRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ValidateRomaAppResponse`
         """
-        return self._validate_roma_app_with_http_info(request)
+        http_info = self._validate_roma_app_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_roma_app_with_http_info(self, request):
+    def validate_roma_app_invoker(self, request):
+        http_info = self._validate_roma_app_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_roma_app_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/validate-apps",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateRomaAppResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17049,9 +19542,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17060,20 +19553,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/validate-apps',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateRomaAppResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_asset_job_status(self, request):
         """查询作业进度
@@ -17086,9 +19575,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckAssetJobStatusResponse`
         """
-        return self._check_asset_job_status_with_http_info(request)
+        http_info = self._check_asset_job_status_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_asset_job_status_with_http_info(self, request):
+    def check_asset_job_status_invoker(self, request):
+        http_info = self._check_asset_job_status_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_asset_job_status_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/assets/jobs/{job_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckAssetJobStatusResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17107,9 +19609,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17118,20 +19620,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/assets/jobs/{job_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckAssetJobStatusResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_asset(self, request):
         """批量删除资产
@@ -17147,9 +19645,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteAssetResponse`
         """
-        return self._delete_asset_with_http_info(request)
+        http_info = self._delete_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_asset_with_http_info(self, request):
+    def delete_asset_invoker(self, request):
+        http_info = self._delete_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/assets/delete",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17166,11 +19677,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17179,20 +19690,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/assets/delete',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def download_asset_archive(self, request):
         """下载资产包
@@ -17206,9 +19713,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DownloadAssetArchiveResponse`
         """
-        return self._download_asset_archive_with_http_info(request)
+        http_info = self._download_asset_archive_http_info(request)
+        return self._call_api(**http_info)
 
-    def _download_asset_archive_with_http_info(self, request):
+    def download_asset_archive_invoker(self, request):
+        http_info = self._download_asset_archive_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _download_asset_archive_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/assets/archives/{archive_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DownloadAssetArchiveResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17227,9 +19747,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17238,20 +19758,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/assets/archives/{archive_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DownloadAssetArchiveResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_asset(self, request):
         """批量导出资产
@@ -17267,9 +19783,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ExportAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportAssetResponse`
         """
-        return self._export_asset_with_http_info(request)
+        http_info = self._export_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_asset_with_http_info(self, request):
+    def export_asset_invoker(self, request):
+        http_info = self._export_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/assets/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17286,11 +19815,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17299,20 +19828,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/assets/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_asset(self, request):
         """导入资产
@@ -17327,9 +19852,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ImportAssetRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportAssetResponse`
         """
-        return self._import_asset_with_http_info(request)
+        http_info = self._import_asset_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_asset_with_http_info(self, request):
+    def import_asset_invoker(self, request):
+        http_info = self._import_asset_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_asset_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/assets/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportAssetResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17348,11 +19886,11 @@ class RomaClient(Client):
         if 'import_asset_request_body' in local_var_params:
             form_params['ImportAssetRequestBody'] = local_var_params['import_asset_request_body']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17361,20 +19899,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/assets/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportAssetResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_dictionary(self, request):
         """查询字典详情
@@ -17387,9 +19921,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckDictionaryResponse`
         """
-        return self._check_dictionary_with_http_info(request)
+        http_info = self._check_dictionary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_dictionary_with_http_info(self, request):
+    def check_dictionary_invoker(self, request):
+        http_info = self._check_dictionary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_dictionary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckDictionaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17408,9 +19955,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17419,20 +19966,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckDictionaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_dictionary(self, request):
         """创建字典
@@ -17445,9 +19988,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateDictionaryResponse`
         """
-        return self._create_dictionary_with_http_info(request)
+        http_info = self._create_dictionary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_dictionary_with_http_info(self, request):
+    def create_dictionary_invoker(self, request):
+        http_info = self._create_dictionary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_dictionary_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/dictionaries",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateDictionaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17464,11 +20020,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17477,20 +20033,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateDictionaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_dictionary(self, request):
         """删除字典
@@ -17503,9 +20055,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteDictionaryResponse`
         """
-        return self._delete_dictionary_with_http_info(request)
+        http_info = self._delete_dictionary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_dictionary_with_http_info(self, request):
+    def delete_dictionary_invoker(self, request):
+        http_info = self._delete_dictionary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_dictionary_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteDictionaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17524,9 +20089,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17535,20 +20100,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteDictionaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_dictionary(self, request):
         """查询字典列表
@@ -17561,9 +20122,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListDictionaryResponse`
         """
-        return self._list_dictionary_with_http_info(request)
+        http_info = self._list_dictionary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_dictionary_with_http_info(self, request):
+    def list_dictionary_invoker(self, request):
+        http_info = self._list_dictionary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_dictionary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/dictionaries",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListDictionaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17590,9 +20164,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17601,20 +20175,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListDictionaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_dictionary(self, request):
         """更新字典
@@ -17627,9 +20197,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateDictionaryResponse`
         """
-        return self._update_dictionary_with_http_info(request)
+        http_info = self._update_dictionary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_dictionary_with_http_info(self, request):
+    def update_dictionary_invoker(self, request):
+        http_info = self._update_dictionary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_dictionary_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateDictionaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17648,11 +20231,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17661,20 +20244,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/dictionaries/{dict_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateDictionaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def validate_dictionary(self, request):
         """校验字典是否存在
@@ -17687,9 +20266,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ValidateDictionaryRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ValidateDictionaryResponse`
         """
-        return self._validate_dictionary_with_http_info(request)
+        http_info = self._validate_dictionary_http_info(request)
+        return self._call_api(**http_info)
 
-    def _validate_dictionary_with_http_info(self, request):
+    def validate_dictionary_invoker(self, request):
+        http_info = self._validate_dictionary_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _validate_dictionary_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances/{instance_id}/validate-dictionaries",
+            "request_type": request.__class__.__name__,
+            "response_type": "ValidateDictionaryResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17710,9 +20302,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17721,20 +20313,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances/{instance_id}/validate-dictionaries',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ValidateDictionaryResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def check_roma_instance_list_v2(self, request):
         """查询实例列表
@@ -17747,9 +20335,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CheckRomaInstanceListV2Response`
         """
-        return self._check_roma_instance_list_v2_with_http_info(request)
+        http_info = self._check_roma_instance_list_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _check_roma_instance_list_v2_with_http_info(self, request):
+    def check_roma_instance_list_v2_invoker(self, request):
+        http_info = self._check_roma_instance_list_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _check_roma_instance_list_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "CheckRomaInstanceListV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17770,9 +20371,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17781,20 +20382,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CheckRomaInstanceListV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_mqs_instance(self, request):
         """查询MQS实例列表
@@ -17807,9 +20404,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMqsInstanceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMqsInstanceResponse`
         """
-        return self._list_mqs_instance_with_http_info(request)
+        http_info = self._list_mqs_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_mqs_instance_with_http_info(self, request):
+    def list_mqs_instance_invoker(self, request):
+        http_info = self._list_mqs_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_mqs_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/mqs/instances",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMqsInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17826,9 +20436,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17837,20 +20447,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMqsInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_mqs_instance(self, request):
         """查询MQS实例详情
@@ -17863,9 +20469,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowMqsInstanceResponse`
         """
-        return self._show_mqs_instance_with_http_info(request)
+        http_info = self._show_mqs_instance_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_mqs_instance_with_http_info(self, request):
+    def show_mqs_instance_invoker(self, request):
+        http_info = self._show_mqs_instance_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_mqs_instance_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/mqs/instances/{instance_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowMqsInstanceResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17882,9 +20501,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17893,20 +20512,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/mqs/instances/{instance_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowMqsInstanceResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_api_definitions_v2(self, request):
         """导出API
@@ -17919,9 +20534,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportApiDefinitionsV2Response`
         """
-        return self._export_api_definitions_v2_with_http_info(request)
+        http_info = self._export_api_definitions_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_api_definitions_v2_with_http_info(self, request):
+    def export_api_definitions_v2_invoker(self, request):
+        http_info = self._export_api_definitions_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_api_definitions_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/openapi/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportApiDefinitionsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17938,11 +20566,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -17951,20 +20579,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/openapi/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportApiDefinitionsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def export_live_data_api_definitions_v2(self, request):
         """导出自定义后端API
@@ -17977,9 +20601,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ExportLiveDataApiDefinitionsV2Response`
         """
-        return self._export_live_data_api_definitions_v2_with_http_info(request)
+        http_info = self._export_live_data_api_definitions_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _export_live_data_api_definitions_v2_with_http_info(self, request):
+    def export_live_data_api_definitions_v2_invoker(self, request):
+        http_info = self._export_live_data_api_definitions_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _export_live_data_api_definitions_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/openapi/livedata-apis/export",
+            "request_type": request.__class__.__name__,
+            "response_type": "ExportLiveDataApiDefinitionsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -17996,11 +20633,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18009,20 +20646,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/openapi/livedata-apis/export',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ExportLiveDataApiDefinitionsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_api_definitions_v2(self, request):
         """导入API
@@ -18035,9 +20668,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportApiDefinitionsV2Response`
         """
-        return self._import_api_definitions_v2_with_http_info(request)
+        http_info = self._import_api_definitions_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_api_definitions_v2_with_http_info(self, request):
+    def import_api_definitions_v2_invoker(self, request):
+        http_info = self._import_api_definitions_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_api_definitions_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/openapi/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportApiDefinitionsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18070,11 +20716,11 @@ class RomaClient(Client):
         if 'file_name' in local_var_params:
             form_params['file_name'] = local_var_params['file_name']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18083,20 +20729,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/openapi/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportApiDefinitionsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def import_live_data_api_definitions_v2(self, request):
         """导入自定义后端API
@@ -18109,9 +20751,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ImportLiveDataApiDefinitionsV2Response`
         """
-        return self._import_live_data_api_definitions_v2_with_http_info(request)
+        http_info = self._import_live_data_api_definitions_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _import_live_data_api_definitions_v2_with_http_info(self, request):
+    def import_live_data_api_definitions_v2_invoker(self, request):
+        http_info = self._import_live_data_api_definitions_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _import_live_data_api_definitions_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/openapi/livedata-apis/import",
+            "request_type": request.__class__.__name__,
+            "response_type": "ImportLiveDataApiDefinitionsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18134,11 +20789,11 @@ class RomaClient(Client):
         if 'file_name' in local_var_params:
             form_params['file_name'] = local_var_params['file_name']
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18147,20 +20802,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/openapi/livedata-apis/import',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ImportLiveDataApiDefinitionsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_associate_certs_v2(self, request):
         """域名绑定SSL证书
@@ -18173,9 +20824,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchAssociateCertsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchAssociateCertsV2Response`
         """
-        return self._batch_associate_certs_v2_with_http_info(request)
+        http_info = self._batch_associate_certs_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_associate_certs_v2_with_http_info(self, request):
+    def batch_associate_certs_v2_invoker(self, request):
+        http_info = self._batch_associate_certs_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_associate_certs_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAssociateCertsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18196,11 +20860,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18209,20 +20873,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAssociateCertsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_associate_domains_v2(self, request):
         """SSL证书绑定域名
@@ -18235,9 +20895,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchAssociateDomainsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchAssociateDomainsV2Response`
         """
-        return self._batch_associate_domains_v2_with_http_info(request)
+        http_info = self._batch_associate_domains_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_associate_domains_v2_with_http_info(self, request):
+    def batch_associate_domains_v2_invoker(self, request):
+        http_info = self._batch_associate_domains_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_associate_domains_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/certificates/{certificate_id}/domains/attach",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchAssociateDomainsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18254,11 +20927,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18267,20 +20940,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}/domains/attach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchAssociateDomainsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disassociate_certs_v2(self, request):
         """域名解绑SSL证书
@@ -18293,9 +20962,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateCertsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDisassociateCertsV2Response`
         """
-        return self._batch_disassociate_certs_v2_with_http_info(request)
+        http_info = self._batch_disassociate_certs_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disassociate_certs_v2_with_http_info(self, request):
+    def batch_disassociate_certs_v2_invoker(self, request):
+        http_info = self._batch_disassociate_certs_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_disassociate_certs_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociateCertsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18316,11 +20998,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18329,20 +21011,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/api-groups/{group_id}/domains/{domain_id}/certificates/detach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisassociateCertsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disassociate_domains_v2(self, request):
         """SSL证书解绑域名
@@ -18355,9 +21033,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisassociateDomainsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDisassociateDomainsV2Response`
         """
-        return self._batch_disassociate_domains_v2_with_http_info(request)
+        http_info = self._batch_disassociate_domains_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disassociate_domains_v2_with_http_info(self, request):
+    def batch_disassociate_domains_v2_invoker(self, request):
+        http_info = self._batch_disassociate_domains_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_disassociate_domains_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/certificates/{certificate_id}/domains/detach",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisassociateDomainsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18374,11 +21065,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18387,20 +21078,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}/domains/detach',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisassociateDomainsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_certificate_v2(self, request):
         """创建SSL证书
@@ -18413,9 +21100,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateCertificateV2Response`
         """
-        return self._create_certificate_v2_with_http_info(request)
+        http_info = self._create_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_certificate_v2_with_http_info(self, request):
+    def create_certificate_v2_invoker(self, request):
+        http_info = self._create_certificate_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_certificate_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18430,11 +21130,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18443,20 +21143,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/certificates',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_certificate_v2(self, request):
         """删除SSL证书
@@ -18469,9 +21165,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteCertificateV2Response`
         """
-        return self._delete_certificate_v2_with_http_info(request)
+        http_info = self._delete_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_certificate_v2_with_http_info(self, request):
+    def delete_certificate_v2_invoker(self, request):
+        http_info = self._delete_certificate_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_certificate_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18488,9 +21197,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18499,20 +21208,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_attached_domains_v2(self, request):
         """获取SSL证书已绑定域名列表
@@ -18525,9 +21230,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListAttachedDomainsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListAttachedDomainsV2Response`
         """
-        return self._list_attached_domains_v2_with_http_info(request)
+        http_info = self._list_attached_domains_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_attached_domains_v2_with_http_info(self, request):
+    def list_attached_domains_v2_invoker(self, request):
+        http_info = self._list_attached_domains_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_attached_domains_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/certificates/{certificate_id}/attached-domains",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListAttachedDomainsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18550,9 +21268,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18561,20 +21279,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}/attached-domains',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListAttachedDomainsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_certificates_v2(self, request):
         """获取SSL证书列表
@@ -18587,9 +21301,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListCertificatesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListCertificatesV2Response`
         """
-        return self._list_certificates_v2_with_http_info(request)
+        http_info = self._list_certificates_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_certificates_v2_with_http_info(self, request):
+    def list_certificates_v2_invoker(self, request):
+        http_info = self._list_certificates_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_certificates_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/certificates",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListCertificatesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18620,9 +21347,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18631,20 +21358,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/certificates',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListCertificatesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_certificate_v2(self, request):
         """查看证书详情
@@ -18657,9 +21380,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfCertificateV2Response`
         """
-        return self._show_details_of_certificate_v2_with_http_info(request)
+        http_info = self._show_details_of_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_certificate_v2_with_http_info(self, request):
+    def show_details_of_certificate_v2_invoker(self, request):
+        http_info = self._show_details_of_certificate_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_certificate_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18676,9 +21412,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18687,20 +21423,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_certificate_v2(self, request):
         """修改SSL证书
@@ -18713,9 +21445,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateCertificateV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateCertificateV2Response`
         """
-        return self._update_certificate_v2_with_http_info(request)
+        http_info = self._update_certificate_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_certificate_v2_with_http_info(self, request):
+    def update_certificate_v2_invoker(self, request):
+        http_info = self._update_certificate_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_certificate_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/certificates/{certificate_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateCertificateV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18732,11 +21477,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18745,20 +21490,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/certificates/{certificate_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateCertificateV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def adding_backend_instances_v2(self, request):
         """添加后端实例
@@ -18773,9 +21514,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.AddingBackendInstancesV2Response`
         """
-        return self._adding_backend_instances_v2_with_http_info(request)
+        http_info = self._adding_backend_instances_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _adding_backend_instances_v2_with_http_info(self, request):
+    def adding_backend_instances_v2_invoker(self, request):
+        http_info = self._adding_backend_instances_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _adding_backend_instances_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "AddingBackendInstancesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18794,11 +21548,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18807,20 +21561,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='AddingBackendInstancesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_disable_members(self, request):
         """批量修改后端服务器状态不可用
@@ -18833,9 +21583,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchDisableMembersRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchDisableMembersResponse`
         """
-        return self._batch_disable_members_with_http_info(request)
+        http_info = self._batch_disable_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_disable_members_with_http_info(self, request):
+    def batch_disable_members_invoker(self, request):
+        http_info = self._batch_disable_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_disable_members_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-disable",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchDisableMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18854,11 +21617,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18867,20 +21630,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-disable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchDisableMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def batch_enable_members(self, request):
         """批量修改后端服务器状态可用
@@ -18893,9 +21652,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.BatchEnableMembersRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.BatchEnableMembersResponse`
         """
-        return self._batch_enable_members_with_http_info(request)
+        http_info = self._batch_enable_members_http_info(request)
+        return self._call_api(**http_info)
 
-    def _batch_enable_members_with_http_info(self, request):
+    def batch_enable_members_invoker(self, request):
+        http_info = self._batch_enable_members_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _batch_enable_members_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-enable",
+            "request_type": request.__class__.__name__,
+            "response_type": "BatchEnableMembersResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18914,11 +21686,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18927,20 +21699,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/batch-enable',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='BatchEnableMembersResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_member_group(self, request):
         """添加VPC通道后端服务器组
@@ -18955,9 +21723,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateMemberGroupResponse`
         """
-        return self._create_member_group_with_http_info(request)
+        http_info = self._create_member_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_member_group_with_http_info(self, request):
+    def create_member_group_invoker(self, request):
+        http_info = self._create_member_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_member_group_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateMemberGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -18976,11 +21757,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -18989,20 +21770,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateMemberGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_vpc_channel_v2(self, request):
         """创建VPC通道
@@ -19016,9 +21793,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateVpcChannelV2Response`
         """
-        return self._create_vpc_channel_v2_with_http_info(request)
+        http_info = self._create_vpc_channel_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_vpc_channel_v2_with_http_info(self, request):
+    def create_vpc_channel_v2_invoker(self, request):
+        http_info = self._create_vpc_channel_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_vpc_channel_v2_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateVpcChannelV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19035,11 +21825,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19048,20 +21838,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateVpcChannelV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_backend_instance_v2(self, request):
         """删除后端实例
@@ -19074,9 +21860,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteBackendInstanceV2Response`
         """
-        return self._delete_backend_instance_v2_with_http_info(request)
+        http_info = self._delete_backend_instance_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_backend_instance_v2_with_http_info(self, request):
+    def delete_backend_instance_v2_invoker(self, request):
+        http_info = self._delete_backend_instance_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_backend_instance_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/{member_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteBackendInstanceV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19097,9 +21896,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19108,20 +21907,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members/{member_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteBackendInstanceV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_member_group(self, request):
         """删除VPC通道后端服务器组
@@ -19134,9 +21929,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteMemberGroupResponse`
         """
-        return self._delete_member_group_with_http_info(request)
+        http_info = self._delete_member_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_member_group_with_http_info(self, request):
+    def delete_member_group_invoker(self, request):
+        http_info = self._delete_member_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_member_group_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteMemberGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19157,9 +21965,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19168,20 +21976,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteMemberGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def delete_vpc_channel_v2(self, request):
         """删除VPC通道
@@ -19194,9 +21998,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.DeleteVpcChannelV2Response`
         """
-        return self._delete_vpc_channel_v2_with_http_info(request)
+        http_info = self._delete_vpc_channel_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _delete_vpc_channel_v2_with_http_info(self, request):
+    def delete_vpc_channel_v2_invoker(self, request):
+        http_info = self._delete_vpc_channel_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _delete_vpc_channel_v2_http_info(cls, request):
+        http_info = {
+            "method": "DELETE",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "DeleteVpcChannelV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19215,9 +22032,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19226,20 +22043,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
-            method='DELETE',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='DeleteVpcChannelV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_backend_instances_v2(self, request):
         """查看后端实例列表
@@ -19252,9 +22065,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListBackendInstancesV2Response`
         """
-        return self._list_backend_instances_v2_with_http_info(request)
+        http_info = self._list_backend_instances_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_backend_instances_v2_with_http_info(self, request):
+    def list_backend_instances_v2_invoker(self, request):
+        http_info = self._list_backend_instances_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_backend_instances_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListBackendInstancesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19285,9 +22111,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19296,20 +22122,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListBackendInstancesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_member_groups(self, request):
         """查询VPC通道后端云服务组列表
@@ -19322,9 +22144,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListMemberGroupsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ListMemberGroupsResponse`
         """
-        return self._list_member_groups_with_http_info(request)
+        http_info = self._list_member_groups_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_member_groups_with_http_info(self, request):
+    def list_member_groups_invoker(self, request):
+        http_info = self._list_member_groups_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_member_groups_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListMemberGroupsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19353,9 +22188,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19364,20 +22199,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListMemberGroupsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_vpc_channels_v2(self, request):
         """查询VPC通道列表
@@ -19390,9 +22221,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListVpcChannelsV2Response`
         """
-        return self._list_vpc_channels_v2_with_http_info(request)
+        http_info = self._list_vpc_channels_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_vpc_channels_v2_with_http_info(self, request):
+    def list_vpc_channels_v2_invoker(self, request):
+        http_info = self._list_vpc_channels_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_vpc_channels_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListVpcChannelsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19429,9 +22273,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19440,20 +22284,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListVpcChannelsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_member_group(self, request):
         """查看VPC通道后端服务器组详情
@@ -19466,9 +22306,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfMemberGroupResponse`
         """
-        return self._show_details_of_member_group_with_http_info(request)
+        http_info = self._show_details_of_member_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_member_group_with_http_info(self, request):
+    def show_details_of_member_group_invoker(self, request):
+        http_info = self._show_details_of_member_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_member_group_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfMemberGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19489,9 +22342,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19500,20 +22353,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfMemberGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def show_details_of_vpc_channel_v2(self, request):
         """查看VPC通道详情
@@ -19526,9 +22375,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ShowDetailsOfVpcChannelV2Response`
         """
-        return self._show_details_of_vpc_channel_v2_with_http_info(request)
+        http_info = self._show_details_of_vpc_channel_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _show_details_of_vpc_channel_v2_with_http_info(self, request):
+    def show_details_of_vpc_channel_v2_invoker(self, request):
+        http_info = self._show_details_of_vpc_channel_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _show_details_of_vpc_channel_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "ShowDetailsOfVpcChannelV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19547,9 +22409,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19558,20 +22420,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ShowDetailsOfVpcChannelV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_backend_instances_v2(self, request):
         """修改后端实例
@@ -19584,9 +22442,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateBackendInstancesV2Response`
         """
-        return self._update_backend_instances_v2_with_http_info(request)
+        http_info = self._update_backend_instances_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_backend_instances_v2_with_http_info(self, request):
+    def update_backend_instances_v2_invoker(self, request):
+        http_info = self._update_backend_instances_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_backend_instances_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateBackendInstancesV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19605,11 +22476,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19618,20 +22489,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/members',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateBackendInstancesV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_health_check(self, request):
         """修改VPC通道健康检查
@@ -19644,9 +22511,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateHealthCheckResponse`
         """
-        return self._update_health_check_with_http_info(request)
+        http_info = self._update_health_check_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_health_check_with_http_info(self, request):
+    def update_health_check_invoker(self, request):
+        http_info = self._update_health_check_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_health_check_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/health-config",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateHealthCheckResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19665,11 +22545,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19678,20 +22558,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/health-config',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateHealthCheckResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_member_group(self, request):
         """修改VPC通道后端服务器组
@@ -19704,9 +22580,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateMemberGroupResponse`
         """
-        return self._update_member_group_with_http_info(request)
+        http_info = self._update_member_group_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_member_group_with_http_info(self, request):
+    def update_member_group_invoker(self, request):
+        http_info = self._update_member_group_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_member_group_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateMemberGroupResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19727,11 +22616,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19740,20 +22629,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}/member-groups/{member_group_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateMemberGroupResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_vpc_channel_v2(self, request):
         """修改VPC通道
@@ -19770,9 +22655,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateVpcChannelV2Response`
         """
-        return self._update_vpc_channel_v2_with_http_info(request)
+        http_info = self._update_vpc_channel_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_vpc_channel_v2_with_http_info(self, request):
+    def update_vpc_channel_v2_invoker(self, request):
+        http_info = self._update_vpc_channel_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_vpc_channel_v2_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateVpcChannelV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19791,11 +22689,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19804,20 +22702,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/instances/{instance_id}/vpc-channels/{vpc_channel_id}',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateVpcChannelV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project_vpc_channel(self, request):
         """项目下创建VPC通道
@@ -19830,9 +22724,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelResponse`
         """
-        return self._create_project_vpc_channel_with_http_info(request)
+        http_info = self._create_project_vpc_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_vpc_channel_with_http_info(self, request):
+    def create_project_vpc_channel_invoker(self, request):
+        http_info = self._create_project_vpc_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_project_vpc_channel_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/vpc-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectVpcChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19847,11 +22754,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19860,20 +22767,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/vpc-channels',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectVpcChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def create_project_vpc_channel_syncs(self, request):
         """项目下同步VPC通道
@@ -19886,9 +22789,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.CreateProjectVpcChannelSyncsResponse`
         """
-        return self._create_project_vpc_channel_syncs_with_http_info(request)
+        http_info = self._create_project_vpc_channel_syncs_http_info(request)
+        return self._call_api(**http_info)
 
-    def _create_project_vpc_channel_syncs_with_http_info(self, request):
+    def create_project_vpc_channel_syncs_invoker(self, request):
+        http_info = self._create_project_vpc_channel_syncs_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _create_project_vpc_channel_syncs_http_info(cls, request):
+        http_info = {
+            "method": "POST",
+            "resource_path": "/v2/{project_id}/apic/vpc-channels/syncs",
+            "request_type": request.__class__.__name__,
+            "response_type": "CreateProjectVpcChannelSyncsResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19903,11 +22819,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19916,20 +22832,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/vpc-channels/syncs',
-            method='POST',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='CreateProjectVpcChannelSyncsResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def list_project_vpc_channels_v2(self, request):
         """查询项目下所有实例的VPC通道列表
@@ -19942,9 +22854,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Request`
         :rtype: :class:`huaweicloudsdkroma.v2.ListProjectVpcChannelsV2Response`
         """
-        return self._list_project_vpc_channels_v2_with_http_info(request)
+        http_info = self._list_project_vpc_channels_v2_http_info(request)
+        return self._call_api(**http_info)
 
-    def _list_project_vpc_channels_v2_with_http_info(self, request):
+    def list_project_vpc_channels_v2_invoker(self, request):
+        http_info = self._list_project_vpc_channels_v2_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _list_project_vpc_channels_v2_http_info(cls, request):
+        http_info = {
+            "method": "GET",
+            "resource_path": "/v2/{project_id}/apic/vpc-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "ListProjectVpcChannelsV2Response"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -19979,9 +22904,9 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -19990,20 +22915,16 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/vpc-channels',
-            method='GET',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='ListProjectVpcChannelsV2Response',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
 
     def update_project_vpc_channel(self, request):
         """项目下批量修改VPC通道
@@ -20016,9 +22937,22 @@ class RomaClient(Client):
         :type request: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelRequest`
         :rtype: :class:`huaweicloudsdkroma.v2.UpdateProjectVpcChannelResponse`
         """
-        return self._update_project_vpc_channel_with_http_info(request)
+        http_info = self._update_project_vpc_channel_http_info(request)
+        return self._call_api(**http_info)
 
-    def _update_project_vpc_channel_with_http_info(self, request):
+    def update_project_vpc_channel_invoker(self, request):
+        http_info = self._update_project_vpc_channel_http_info(request)
+        return SyncInvoker(self, http_info)
+
+    @classmethod
+    def _update_project_vpc_channel_http_info(cls, request):
+        http_info = {
+            "method": "PUT",
+            "resource_path": "/v2/{project_id}/apic/vpc-channels",
+            "request_type": request.__class__.__name__,
+            "response_type": "UpdateProjectVpcChannelResponse"
+            }
+
         local_var_params = {attr: getattr(request, attr) for attr in request.attribute_map if hasattr(request, attr)}
 
         cname = None
@@ -20033,11 +22967,11 @@ class RomaClient(Client):
 
         form_params = {}
 
-        body_params = None
+        body = None
         if 'body' in local_var_params:
-            body_params = local_var_params['body']
+            body = local_var_params['body']
         if isinstance(request, SdkStreamRequest):
-            body_params = request.get_file_stream()
+            body = request.get_file_stream()
 
         response_headers = []
 
@@ -20046,20 +22980,25 @@ class RomaClient(Client):
 
         auth_settings = []
 
-        return self.call_api(
-            resource_path='/v2/{project_id}/apic/vpc-channels',
-            method='PUT',
-            path_params=path_params,
-            query_params=query_params,
-            header_params=header_params,
-            body=body_params,
-            post_params=form_params,
-            cname=cname,
-            response_type='UpdateProjectVpcChannelResponse',
-            response_headers=response_headers,
-            auth_settings=auth_settings,
-            collection_formats=collection_formats,
-            request_type=request.__class__.__name__)
+        http_info["cname"] = cname
+        http_info["collection_formats"] = collection_formats
+        http_info["path_params"] = path_params
+        http_info["query_params"] = query_params
+        http_info["header_params"] = header_params
+        http_info["post_params"] = form_params
+        http_info["body"] = body
+        http_info["response_headers"] = response_headers
+
+        return http_info
+
+    def _call_api(self, **kwargs):
+        try:
+            return self.do_http_request(**kwargs)
+        except TypeError:
+            import inspect
+            params = inspect.signature(self.do_http_request).parameters
+            http_info = {param_name: kwargs.get(param_name) for param_name in params if param_name in kwargs}
+            return self.do_http_request(**http_info)
 
     def call_api(self, resource_path, method, path_params=None, query_params=None, header_params=None, body=None,
                  post_params=None, cname=None, response_type=None, response_headers=None, auth_settings=None,
